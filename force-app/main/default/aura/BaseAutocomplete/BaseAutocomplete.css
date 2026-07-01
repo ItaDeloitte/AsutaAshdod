@@ -1,0 +1,49 @@
+.THIS .dropdown-container.is-loading {
+  min-height: 50px;
+}
+
+.THIS.styled .slds-input {
+  padding-right: 35px;
+}
+
+.THIS.slds-has-error .slds-input {
+  border-color: #c23934;
+}
+
+.THIS .slds-dropdown {
+  left: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  right: 0;
+  float: none;
+  display: none;
+}
+
+.THIS .create-item {
+  display: flex;
+  align-items: center;
+}
+
+.THIS .create-item__label {
+  margin-left: 5px;
+}
+
+.THIS .item-with-link {
+  position: relative;
+}
+
+.THIS .item-with-link .item-inner {
+  padding-right: 20px;
+}
+
+.THIS .item-with-link .item-link {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.THIS .item-with-link .item-link:hover svg {
+  fill: currentColor;
+}

@@ -1,0 +1,171 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="screenMode" type="String" default="" />
+  <aura:attribute name="editData" type="Map" default="{
+    startDate:'',
+    domain:'',
+    site:'',
+    calendar:''
+  }" />
+  <aura:attribute name="editDataDisableConfig" type="Map" default="{
+    startDate:{},
+    domain:{},
+    site:{},
+    calendar:{}
+  }" />
+  <aura:attribute name="selectedOptions" type="Map" default="{
+    site:null,
+    calendar:null,
+    domain:null
+  }" />
+  <aura:attribute name="slotsData" type="Map" />
+  <aura:attribute name="tableColumns" type="List" default="[]" />
+  <aura:attribute name="tableData" type="List" default="[]" />
+  <aura:attribute name="selectedRow" type="Map" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="position-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ScheduleAppointmentService aura:id="scheduleAppointmentService" />
+    <input class="catch-autofocus" type="text" />
+    <div class="d-flex position-relative main-wrapper" dir="{!$Locale.dir}">
+      <aura:if isTrue="{!v.staticData}">
+        <div class="content-col flex-grow-1" dir="{!$Locale.dir}">
+          <ui:scrollerWrapper aura:id="appointmentScrollerWrapper" class="w-100 appointment">
+            <div class="position-relative appointment__inner">
+              <div class="appointment__header">
+                <div class="mb-2 text-center">
+                  <div class="">
+                    <span class="font-weight-bold">{!$Label.c.Patient_Name}: </span>
+                    <!-- <span>{!v.staticData.accountName}</span> -->
+                  </div>
+                </div>
+                <aura:if isTrue="{!v.serverError}">
+                  <div class="mb-4">
+                    <c:Alert theme="error" class="error-alert">
+                      <div>
+                        <aura:unescapedHtml value="{!v.serverError}" />
+                      </div>
+                    </c:Alert>
+                  </div>
+                </aura:if>
+
+              </div>
+              <div class="appoinment__body">
+                <div class="mb-5">
+                  <div class="mb-4">
+                    <div class="bs-row">
+                      <div class="bs-col-auto edit-col">
+                        <c:AppointmentsEditField isDisabled="{!v.slotsData}" isEditable="false"
+                          label="{!$Label.c.Domain}"
+                          value="{!v.selectedOptions.domain?v.selectedOptions.domain.Name:'-'}" name="domain"
+                          onedit="{!c.onFieldEdit}">
+                          <c:BaseAutocomplete aura:id="editField" name="domain" value="{!v.editData.domain}"
+                            class="edit-autocomplete edit-autocomplete_domain edit-input" label="{!$Label.c.Domain}"
+                            onsearch="{!c.onAutocompleteSearch}" required="false"
+                            oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                            isDisabled="{!v.slotsData}" onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                            placeholder="{!$Label.c.Search}" messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                            selectedOption="{!v.selectedOptions.domain}" />
+                        </c:AppointmentsEditField>
+                      </div>
+                      <div class="bs-col-auto edit-col">
+                        <c:AppointmentsEditField isDisabled="{!v.slotsData}" isEditable="false" label="{!$Label.c.Site}"
+                          value="{!v.selectedOptions.site?v.selectedOptions.site.Name:'-'}" name="site">
+                          <c:BaseAutocomplete aura:id="editField" name="site" value="{!v.editData.site}"
+                            class="edit-autocomplete edit-autocomplete_site edit-input" label="{!$Label.c.Site}"
+                            onsearch="{!c.onAutocompleteSearch}" required="true"
+                            oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                            isDisabled="{!v.slotsData}" onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                            placeholder="{!$Label.c.Search}" messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                            selectedOption="{!v.selectedOptions.site}" />
+                        </c:AppointmentsEditField>
+
+                      </div>
+                      <div class="bs-col-auto edit-col">
+                        <c:AppointmentsEditField isDisabled="{!v.slotsData}" isEditable="false"
+                          label="{!$Label.c.ClinicCalendar}"
+                          value="{!v.selectedOptions.calendar?v.selectedOptions.calendar.Name:'-'}" name="calendar"
+                          onedit="{!c.onFieldEdit}">
+                          <c:BaseAutocomplete aura:id="editField" name="calendar" value="{!v.editData.calendar}"
+                            class="edit-autocomplete edit-autocomplete_calendar edit-input"
+                            label="{!$Label.c.ClinicCalendar}" onsearch="{!c.onAutocompleteSearch}" required="true"
+                            oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                            isDisabled="{!v.slotsData}" placeholder="{!$Label.c.Search}"
+                            onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                            messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                            selectedOption="{!v.selectedOptions.calendar}" />
+                        </c:AppointmentsEditField>
+                      </div>
+
+
+                      <div class="bs-col-auto edit-col">
+                        <c:AppointmentsEditField isDisabled="{!v.slotsData}" isEditable="false"
+                          label="{!$Label.c.Start_Date}" value="{!v.editData.startDate}" name="startDate"
+                          onedit="{!c.onFieldEdit}">
+                          <lightning:input aura:id="editField" class="start-date" type="date"
+                            value="{!v.editData.startDate}" label="{!$Label.c.Start_Date}"
+                            min="{!v.staticData.formattedCurrentDate}" required="true" disabled="{!v.slotsData}"
+                            messageWhenValueMissing="{!$Label.c.Complete_this_field}" />
+                        </c:AppointmentsEditField>
+
+                      </div>
+
+                      <aura:if isTrue="{!!v.slotsData}">
+                        <div class="{!join(' ',
+                          'bs-col-auto'
+                          )}">
+                          <div class="{!join(' ',
+                          'fake-edit-field'
+                          )}">
+                            <lightning:button variant="neutral" label="{!$Label.c.Search_Slots}"
+                              onclick="{!c.onSearchSlots}" disabled="false" tabindex="0" />
+                          </div>
+                        </div>
+                      </aura:if>
+
+                      <aura:if isTrue="{!v.slotsData}">
+                        <div class="{!join(' ',
+                          'bs-col-auto'
+                          )}">
+                          <div class="edit-btn-wrapper">
+                            <button class="edit-btn" onclick="{!c.onFieldEdit}" tabindex="0">
+                              <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-edit'}" />
+                            </button>
+                          </div>
+                        </div>
+                      </aura:if>
+                    </div>
+                  </div>
+                </div>
+                <aura:if isTrue="{!v.slotsData}">
+                  <div class="">
+                    <div class="slds-m-bottom_large table-wrapper">
+                      <lightning:datatable aura:id="slotsTable" columns="{!v.tableColumns }" data="{!v.tableData }"
+                        keyField="Id" showRowNumberColumn="false" onrowaction="{!c.onTableRowAction}"
+                        hideCheckboxColumn="false" maxRowSelection="1" onrowselection="{!c.onRowSelect}">
+                      </lightning:datatable>
+                    </div>
+                    <div class="slds-p-vertical_medium slds-text-align_center">
+                      <lightning:button variant="brand" label="Schedule forced appointment" disabled="{!!v.selectedRow}"
+                        onclick="{!c.onShowSchedulePopup}" />
+                    </div>
+
+                  </div>
+                </aura:if>
+              </div>
+            </div>
+          </ui:scrollerWrapper>
+        </div>
+      </aura:if>
+    </div>
+    <c:Spinner isLoading="{!v.isLoading}" size="medium" />
+  </div>
+</aura:component>

@@ -1,0 +1,212 @@
+<aura:component extends="c:AppointmentsBase">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" /> 
+  <aura:attribute name="doctorId" type="String" default="" /> 
+  <aura:attribute name="initData" type="Map" />
+  <aura:attribute name="message" type="String" default="" />
+  <aura:attribute name="editData" type="Map" default="{
+    domain:'',
+    clinic:'',
+    site:'',
+    calendar:'',
+    procedure:'',
+    startDate:'',
+    time:'',
+    overbook:'',
+    insurerFactor:''
+  }" />
+  <aura:attribute name="selectedOptions" type="Map" default="{
+    site:null,
+    clinic:null,
+    calendar:null,
+    domain:null,
+    procedure:null,
+    insurerFactor:null
+  }" />
+  <aura:attribute name="timeGap" type="Integer" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="steps" type="List" default="[]" />
+  <aura:attribute name="currentStep" type="Map" />
+  <aura:attribute name="currentStepIndex" type="Integer" />
+  <aura:attribute name="slotsData" type="Map" />
+  <aura:attribute name="tableColumns" type="List" default="[]" />
+  <aura:attribute name="tableData" type="List" default="[]" />
+  <aura:attribute name="selectedSlot" type="Map" />
+  <aura:attribute name="isForDocExpert" type="Boolean" default="false" />
+  <aura:attribute name="isForUrgent" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="oncreated" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <c:ScheduleAppointmentService aura:id="scheduleAppointmentService" />
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <aura:if isTrue="{!v.staticData}">
+      <c:ActionModalInner applyStyles="true">
+        <aura:set attribute="styles">
+          <aura:html tag="style">
+            .slds-modal__container { width:80%;max-width:900px;}
+          </aura:html>
+        </aura:set>
+        <aura:set attribute="title">
+          {!$Label.c.Schedule_forced_appointment}
+        </aura:set>
+
+        <div class="slds-p-around_medium">
+          <aura:if isTrue="{!v.serverError}">
+            <div class="mb-4">
+              <c:Alert theme="error" class="error-alert">
+                <div>
+                  <aura:unescapedHtml value="{!v.serverError}" />
+                </div>
+              </c:Alert>
+            </div>
+          </aura:if>
+
+          <div class="{!join(' ',
+          v.currentStep.id=='search'?'slds-show':'slds-hide'
+        )}">
+          <div class="slds-grid slds-gutters slds-wrap">
+              <aura:if isTrue="{!v.isForDocExpert}">
+                <div class="slds-col slds-size_1-of-1">
+                  <c:BaseAutocomplete aura:id="step1Field" name="clinic" value="{!v.editData.clinic}"
+                                      class="edit-autocomplete edit-autocomplete_site edit-input" label="{!$Label.c.DocClinic}"
+                                      onsearch="{!c.onAutocompleteSearch}" required="true"
+                                      oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                      onchange="{!c.onChangeAutocomplete}" tabindex="1" placeholder="{!$Label.c.Search}"
+                                      messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                      selectedOption="{!v.selectedOptions.clinic}" isDisabled="true"/>
+                </div>
+              <aura:set attribute="else">
+                  <div class="slds-col slds-size_1-of-1">
+                    <c:BaseAutocomplete aura:id="step1Field" name="site" value="{!v.editData.site}"
+                                        class="edit-autocomplete edit-autocomplete_site edit-input" label="{!$Label.c.Site}"
+                                        onsearch="{!c.onAutocompleteSearch}" required="true"
+                                        oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                        onchange="{!c.onChangeAutocomplete}" tabindex="1" placeholder="{!$Label.c.Search}"
+                                        messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                        selectedOption="{!v.selectedOptions.site}" />
+                  </div>
+                </aura:set>  
+              </aura:if>
+              <div class="slds-col slds-size_1-of-1">
+                <c:BaseAutocomplete aura:id="step1Field" name="procedure" value="{!v.editData.procedure}" class=""
+                                    label="{!$Label.c.Medical_Procedure}" onsearch="{!c.onAutocompleteSearch}"
+                                    required="true" oninitsearch="{!c.onAutocompleteInitSearch}"
+                                    isPlainAutoComplete="false" onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                    messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                    selectedOption="{!v.selectedOptions.procedure}" isDisabled="true" />
+              </div>
+              <aura:if isTrue="{!v.isForUrgent}">
+                <div class="slds-col slds-size_1-of-1">
+                  <c:BaseAutocomplete aura:id="step1Field" name="domain" value="{!v.editData.domain}" class=""
+                  label="{!$Label.c.Domain}" onsearch="{!c.onAutocompleteSearch}" required="true"
+                  oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                  onchange="{!c.onChangeAutocomplete}" tabindex="1" placeholder="{!$Label.c.Search}"
+                  messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                  selectedOption="{!v.selectedOptions.domain}" isDisabled="true"/>
+                </div>
+               <aura:set attribute="else">                            
+                  <div class="slds-col slds-size_1-of-1">
+                    <c:BaseAutocomplete aura:id="step1Field" name="calendar" value="{!v.editData.calendar}" class=""
+                                      label="{!$Label.c.ClinicCalendar}" onsearch="{!c.onAutocompleteSearch}"
+                                      required="true" oninitsearch="{!c.onAutocompleteInitSearch}"
+                                      isPlainAutoComplete="false" placeholder="{!$Label.c.Search}"
+                                      onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                      messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                      selectedOption="{!v.selectedOptions.calendar}" isDisabled="{!v.isForDocExpert}"/>                   
+                  </div>
+                </aura:set>
+              </aura:if> 
+              <div class="slds-col slds-size_1-of-1">
+                <lightning:input aura:id="step1Field" class="" type="date" value="{!v.editData.startDate}"
+                                 label="{!$Label.c.Start_Date}" min="{!v.staticData.formattedCurrentDate}"
+                                 required="true" messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                 autocomplete="off" />
+              </div>
+            </div>
+          </div>
+          <div class="{!join(' ',
+          v.currentStep.id=='select'?'slds-show':'slds-hide'
+        )}">
+            <div>
+              <lightning:datatable aura:id="slotsTable" columns="{!v.tableColumns }" data="{!v.tableData }"
+                                   keyField="Id" showRowNumberColumn="false" onrowaction="{!c.onTableRowAction}"
+                                   hideCheckboxColumn="false" maxRowSelection="1" onrowselection="{!c.onRowSelect}">
+              </lightning:datatable>
+            </div>
+          </div>
+          <aura:if isTrue="{!v.currentStep.id=='edit'}">
+
+
+            <div class="{!join(' ',
+          v.currentStep.id=='edit'?'slds-show':'slds-hide'
+        )}">
+
+              <aura:if isTrue="{!v.selectedSlot}">
+                <div class="slds-m-bottom_medium slot-info">
+                  <div>
+                    <span class="slot-info__label">{!$Label.c.Date}</span>
+                    <span>
+                      <lightning:formattedDateTime value="{!v.selectedSlot.date}" year="2-digit" day="2-digit"
+                                                   month="2-digit"></lightning:formattedDateTime>
+                    </span>
+                  </div>
+                  <div>
+                    <span class="slot-info__label">{!$Label.c.Start_time}</span>
+                    <span>{!v.selectedSlot.startTime}</span>
+                  </div>
+                  <div>
+                    <span class="slot-info__label">{!$Label.c.End_time}</span>
+                    <span>{!v.selectedSlot.endTime}</span>
+                  </div>
+                  <div>
+                    <span class="slot-info__label">{!$Label.c.Forced_slot_type}</span>
+                    <span>{!v.selectedSlot.type}</span>
+                  </div>
+                  <div>
+                    <span class="slot-info__label">{!$Label.c.Forced_slot_description}</span>
+                    <span>{!v.selectedSlot.description}</span>
+                  </div>
+                </div>
+              </aura:if>
+
+              <div class="slds-grid slds-gutters slds-wrap">
+                <div class="slds-col slds-size_1-of-1">
+                  <lightning:input aura:id="step3Field" type="time" name="time" value="{!v.editData.time}"
+                                   min="{!v.selectedSlot.startTime}" max="{!v.selectedSlot.endTime}"
+                                   label="{!$Label.c.Time_of_appointment}" placeholder="time" required="true"
+                                   autocomplete="off" />
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                  <lightning:select aura:id="step3Field" name="overbook" value="{!v.editData.overbook}"
+                                    label="{!$Label.c.Overbook_reason}" required="true">
+                    <option value=""></option>
+                    <aura:iteration items="{!v.staticData.urgentReasonOptions}" var="option" indexVar="_index">
+                      <option value="{!option.value}">{!option.label}</option>
+                    </aura:iteration>
+                  </lightning:select>
+                </div>
+              </div>
+            </div>
+          </aura:if>
+        </div>
+        <aura:set attribute="footer">
+          <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+                            label="{!$Label.c.Cancel}" />
+          <aura:if isTrue="{!v.currentStepIndex>0}">
+            <lightning:button variant="neutral" type="button" onclick="{!c.onPrev}" disabled="{!v.isLoading}"
+                              label="{!$Label.c.Back}" />
+          </aura:if>
+          <lightning:button variant="brand" type="button" onclick="{!c.onNext}" disabled="{!v.isLoading}"
+                            label="{!v.currentStepIndex==v.steps.length-1?$Label.c.Submit:$Label.c.Next}" />
+        </aura:set>
+      </c:ActionModalInner>
+    </aura:if>
+    <c:Spinner isLoading="{!v.isLoading}" size="medium" />
+  </div>
+</aura:component>

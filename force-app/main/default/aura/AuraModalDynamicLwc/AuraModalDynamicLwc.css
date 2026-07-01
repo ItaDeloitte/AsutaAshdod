@@ -1,0 +1,20 @@
+.THIS.modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.THIS.modal .slds-modal__container {
+  min-height: 100%;
+  height: auto;
+}
+
+.THIS.modal .modal-body.slds-modal__content {
+  padding: 0;
+  overflow: visible;
+}
+
+@media (max-width: 480px) {
+  .THIS.modal .slds-modal__container {
+    margin: 0 10px;
+  }
+}

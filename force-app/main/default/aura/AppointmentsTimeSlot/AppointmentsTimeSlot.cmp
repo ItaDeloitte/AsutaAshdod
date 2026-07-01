@@ -1,0 +1,32 @@
+<aura:component extends="c:AppointmentsBase">
+  <!-- attrs -->
+  <aura:attribute name="slotKey" type="String" default="" />
+  <aura:attribute name="slotsMap" type="Map" default="{}" />
+  <aura:attribute name="lockedData" type="Map" />
+  <aura:attribute name="slot" type="Map" />
+  <aura:attribute name="isLocked" type="Boolean" default="false" />
+  <aura:attribute name="selectedRow" type="Integer" />
+
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="change" value="{!v.slotsMap}" action="{!c.onChangeSlotsMap}" />
+  <aura:handler name="change" value="{!v.lockedData}" action="{!c.onChangeLockedData}" />
+  <!-- events -->
+  <aura:registerEvent name="onSlotSelect" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+
+  <div>
+    <aura:if isTrue="{!v.slot}">
+      <lightning:button class="{!join(' ',
+        'time-btn',
+        v.isLocked?'is-locked':''
+        )}" variant="bare" onclick="{!c.onSelect}" disabled="{!v.slot.isDisabled}">
+        <c:FormattedDateTime date="{!v.slot.StartTime}" format="HH:mm" locale="{!$Locale.langLocale}" />
+      </lightning:button>
+    </aura:if>
+
+  </div>
+
+</aura:component>

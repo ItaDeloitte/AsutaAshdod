@@ -1,0 +1,68 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="isAvailable" type="Boolean" default="true" />
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="mode" type="String" default="" />
+  <aura:attribute name="screenMode" type="String" default="" />
+  <aura:attribute name="screenTitleOverride" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="sobjectType" type="String" default="" />
+
+  <aura:attribute name="nextLabel" type="String" default="Next" />
+  <aura:attribute name="updateLabel" type="String" default="Update" />
+  <aura:attribute name="cancelLabel" type="String" default="Cancel" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler event="force:refreshView" action="{!c.onInit}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <span>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+    <aura:if isTrue="{!v.isAvailable}">
+      <!-- <div class="slds-card"> -->
+
+      <!-- <header class="slds-card__header slds-grid">
+          <div class="slds-media slds-media_center slds-has-flexi-truncate">
+            <div class="slds-media__figure">
+              <lightning:icon iconName="standard:service_appointment" size="small" />
+            </div>
+            <div class="slds-media__body slds-truncate">
+              <span class="slds-text-heading_small card-title">
+                <aura:if isTrue="{!v.screenTitleOverride == ''}">
+                    {!$Label.c.Find_me_appointment}
+                  <aura:set attribute="else">
+                    {!v.screenTitleOverride}
+                  </aura:set>
+                </aura:if>
+
+              </span>
+            </div>
+          </div>
+        </header>
+        <div class="slds-card__body">
+          <div class="slds-card__body_inner">
+            <div class="slds-text-align_center"> -->
+      <lightning:button onclick="{!c.onShowModal}" disabled="{!v.isLoading}">
+        <aura:if isTrue="{!v.mode=='create'}">
+          {!v.nextLabel}
+        </aura:if>
+        <aura:if isTrue="{!v.mode=='update'}">
+          {!v.updateLabel}
+        </aura:if>
+        <aura:if isTrue="{!v.mode=='cancel'}">
+          {!v.cancelLabel}
+        </aura:if>
+      </lightning:button>
+
+
+    </aura:if>
+  </span>
+
+
+
+</aura:component>

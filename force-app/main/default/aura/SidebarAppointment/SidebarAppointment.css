@@ -1,0 +1,9 @@
+.THIS {
+  min-height: 50px;
+  border-bottom: 1px solid #979797;
+}
+
+.THIS.is-prepared {
+  border-top: 1px solid #979797;
+  background-color: #e8f3ff;
+}

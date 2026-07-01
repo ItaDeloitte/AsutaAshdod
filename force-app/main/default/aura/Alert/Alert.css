@@ -1,0 +1,12 @@
+.THIS {
+  /* .slds-theme_success {
+    background-color: $t-success;
+  } */
+}
+
+.THIS .slds-notify_alert {
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 3px;
+  word-break: break-word;
+}

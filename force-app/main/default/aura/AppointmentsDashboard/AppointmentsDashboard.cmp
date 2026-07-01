@@ -1,0 +1,1001 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:appHostable"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="selectedFilters" type="Map" default="{
+    weekDays:[],
+    timePeriods:[],
+    geoAreas:[]
+  }" />
+  <aura:attribute name="appointments" type="List" />
+  <aura:attribute name="isSlotsNotFoundMessageVisible" type="Boolean" default="false" />
+  <aura:attribute name="isSummaryScreen" type="Boolean" default="false" />
+  <aura:attribute name="guidanceList" type="List" default="[]" />
+  <aura:attribute name="hasGuidances" type="Boolean" default="false" />
+  <aura:attribute name="isInstitutes" type="Boolean" default="false" />
+
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="editData" type="Map" default="{
+      domain:'',
+      procedure:'',
+      insurerFactor:'',
+      startDate:'',
+      endDate:'',
+      site:'',
+      sequenceSite:'',
+      calendar:'',
+      qflowCalendar:'',
+      qflowCalendarLabel:'',
+      file:'',
+      protocol:'',
+      urgentReason:'',
+      sequenceProcedures:[],
+      qflowCalendarOptions:[],
+      technician:'',
+      technicianProcedure:'',
+      alertProcedureCodes:'',
+      alertMessage: '',
+    }" />
+  <aura:attribute name="isSequence" type="Boolean" default="false" />
+  <aura:attribute name="canAddSequence" type="Boolean" default="false" />
+  <aura:attribute name="serverError" type="String" default="" />
+
+  <aura:attribute name="lockTimeCounter" type="Map" />
+  <aura:attribute name="sequenceProcedureFields" type="List" default="[]" />
+  <aura:attribute name="selectedOptions" type="Map" default="{
+    procedure: null,
+    clinic: null,
+    sequenceSite: null,
+    file: null,
+    calendar: null,
+    domain: null,
+    insurerFactor:null,
+    protocol:null,
+    technician:null,
+    technicianProcedure:null
+  }" />
+  <aura:attribute name="selectedAppointment" type="Map" />
+  <aura:attribute name="mode" type="String" default="create" description="'create','update','cancel'" />
+  <aura:attribute name="screenMode" type="String" default="" description="'full','doctorHeader','limitedProcedures'" />
+  <aura:attribute name="isForDocExpert" type="Boolean" default="false" />
+  <aura:attribute name="isAvailableTimeSlots" type="Boolean" default="false" />
+  <aura:attribute name="availableTimeSlotsString" type="String" default="false" />
+
+  <aura:attribute name="isTechnician" type="Boolean" default="false" />
+  <aura:attribute name="hasTechnicianProcedure" type="Boolean" default="false" />
+  <aura:attribute name="isTimeGroupVisible" type="Boolean" default="false" />
+  <aura:attribute name="clinic" type="Map" />
+  <aura:attribute name="doctorId" type="String" default="" />
+  <aura:attribute name="editDataDisableConfig" type="Map" default="{
+      domain:{},
+      procedure:{},
+      insurerFactor:{},
+      protocol:{},
+      startDate:{},
+      endDate:{},
+      calendar:{},
+      clinic:{},
+      sequenceSite:{}
+    }" />
+
+  <!-- new attrs -->
+  <aura:attribute name="slotRows" type="List" default="[]" />
+  <aura:attribute name="lockedData" type="Map" default="{
+    slotsByRow: [],
+    lockedSlots: []
+  }" />
+  <aura:attribute name="slotsData" type="Map" />
+  <aura:attribute name="selectedDayData" type="Map" default="{day:null,dayEl:null,rowIndex:null}" />
+  <aura:attribute name="preparedAppointments" type="List" default="[]" />
+  <aura:attribute name="isFileRequired" type="Boolean" default="false" />
+  <aura:attribute name="isShowForcedAppointmentVisible" type="Boolean" default="true" />
+  <aura:attribute name="appointmentData" type="Map" default="{
+    isUrgent:false,
+    urgentReason:''
+  }" />
+  <aura:attribute name="isClinicChanged" type="Boolean" default="false" />
+  <aura:attribute name="isUrgentVisible" type="Boolean" default="false" />
+  <!--  -->
+
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="onSlotSelect" event="c:GenericComponentEvent" action="{!c.onSlotSelect}" />
+  <aura:handler name="onDaySelect" event="c:GenericComponentEvent" action="{!c.onDaySelect}" />
+  <aura:handler name="onSlideMove" event="c:GenericComponentEvent" action="{!c.onSlideMove}" />
+  <aura:handler name="onSelectModality" event="c:GenericComponentEvent" action="{!c.onSelectModality}" />
+  <aura:handler name="change" value="{!v.editData}" action="{!c.onChangeEditData}" />
+  <!-- events -->
+  <!-- methods -->
+  <div class="position-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ScheduleAppointmentService aura:id="scheduleAppointmentService" />
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+    <c:globalService aura:id="globalServiceNew"></c:globalService>
+    <input class="catch-autofocus" type="text" />
+    <div class="d-flex position-relative main-wrapper" dir="{!$Locale.dir}">
+      <aura:if isTrue="{!v.isSummaryScreen}">
+        <div class="summaryScreenWrapper">
+          <div class="summaryScreenHeader" onclick="{!c.onTest}">
+            <span class="font-weight-bold">{!$Label.c.summaryScreen_Title}</span>
+            <span class="summaryScreenHeaderParagraph">{!$Label.c.appointmentGuidanceReview}</span>
+          </div>
+
+          <aura:if isTrue="{!v.hasGuidances}">
+            <aura:iteration items="{!v.guidanceList}" var="guidance">
+
+              <div class="appointmentInfoCard">
+                 <h4 class="appointmentInfoCardTitle">{!guidance.label}</h4>
+                 <aura:iteration items="{!guidance.appointmentInfo}" var="appointProp">
+                    <div class="appointmentInfoEntry">
+                      <span class="font-weight-bold appointmentInfoEntryLabel">{!appointProp.label}: </span>
+                      <aura:if isTrue="{!appointProp.isDate}">
+                        <lightning:formattedDateTime
+                          value="{!appointProp.value}"
+                          year="numeric"
+                          month="short"
+                          day="2-digit"
+                          hour="2-digit"
+                          minute="2-digit"
+                        />
+                        <aura:set attribute="else">
+                          {!appointProp.value}
+                        </aura:set>
+                      </aura:if>
+                    </div>
+                  </aura:iteration>
+                  <div class="appointmentGuidances">
+                    <div class="sideLine"></div>
+                    <p class="appointmentGuidancesTitle">{!$Label.c.GuidanceFor} {!guidance.label}</p>
+                    <aura:if isTrue="{!guidance.isEmpty}">
+                      <p class="appointmentGuidancesFallback">
+                        <!-- No guidances for {!guidance.label} -->
+                         <!-- No specific guidance is associated with this appointment. -->
+                         {!$Label.c.noGuidanceFallback}
+                      </p>
+
+                      <aura:set attribute="else">
+                        <ol class="guidancesList">
+                          <aura:iteration items="{!guidance.values}" var="val">
+                            <li>
+                              <span>{!val}</span>
+                            </li>
+                          </aura:iteration>
+                        </ol>
+                      </aura:set>
+                    </aura:if>
+                  </div>
+
+                  <!-- <aura:if isTrue="{!guidance.showDivider}">
+                    <hr/>
+                  </aura:if> -->
+              </div>
+
+            </aura:iteration>
+          </aura:if>
+
+        </div>
+
+        <lightning:button variant="neutral" class="closeButton" onclick="{!c.onClose}">Close</lightning:button>
+
+
+        <aura:set attribute="else">
+        <aura:if isTrue="{!v.staticData}">
+        <div class="content-col flex-grow-1" dir="{!$Locale.dir}">
+          <ui:scrollerWrapper aura:id="appointmentScrollerWrapper" class="w-100 appointment">
+            <div class="position-relative appointment-inner">
+              <div class="appointment__header">
+                <div class="position-relative mb-2 text-center">
+                  <div class="appointment__header-title" onclick="{!c.onTest}">
+                    <span class="font-weight-bold">{!$Label.c.Patient_Name}: </span>
+                    <span>{!v.staticData.accountName}</span>
+                  </div>
+                </div>
+                <aura:if isTrue="{!v.serverError}">
+                  <div class="mb-4">
+                    <c:Alert theme="error" class="error-alert">
+                      <div>
+                        <aura:unescapedHtml value="{!v.serverError}" />
+                      </div>
+                    </c:Alert>
+                  </div>
+                </aura:if>
+
+              </div>
+              <div class="appoinment__body">
+                <div class="mb-5">
+                  <div class="mb-4">
+                    <div class="bs-row">
+                      <aura:if isTrue="{!v.isForDocExpert}">
+                        <div class="bs-col-auto edit-col">
+                          <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.clinic.isDisabled}"
+                                                   isEditable="{!v.editDataDisableConfig.clinic.isEditable}"
+                                                   label="{!$Label.c.DocClinic}"
+                                                   value="{!v.selectedOptions.clinic?v.selectedOptions.clinic.name:'-'}"
+                                                   name="clinic" onedit="{!c.onFieldEdit}">
+                            <c:BaseAutocomplete aura:id="editField" name="clinic" value="{!v.editData.clinic}"
+                                                class="edit-autocomplete edit-autocomplete_clinic edit-input"
+                                                label="{!$Label.c.DocClinic}" onsearch="{!c.onAutocompleteSearch}"
+                                                required="false" oninitsearch="{!c.onAutocompleteInitSearch}"
+                                                isPlainAutoComplete="false"
+                                                isDisabled="{!v.editDataDisableConfig.clinic.isDisabled}"
+                                                onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                                placeholder="{!$Label.c.Search}"
+                                                messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                selectedOption="{!v.selectedOptions.clinic}" />
+                          </c:AppointmentsEditField>
+                        </div>
+                        <div class="bs-col-auto edit-col">
+                          <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.calendar.isDisabled}"
+                                                   isEditable="{!v.editDataDisableConfig.calendar.isEditable}"
+                                                   label="{!$Label.c.ClinicCalendar}"
+                                                   value="{!v.selectedOptions.calendar?v.selectedOptions.calendar.Name:'-'}"
+                                                   name="calendar" onedit="{!c.onFieldEdit}">
+                            <c:BaseAutocomplete aura:id="editField" name="calendar" value="{!v.editData.calendar}"
+                                                class="edit-autocomplete edit-autocomplete_calendar edit-input"
+                                                label="{!$Label.c.ClinicCalendar}" onsearch="{!c.onAutocompleteSearch}"
+                                                required="true" oninitsearch="{!c.onAutocompleteInitSearch}"
+                                                isPlainAutoComplete="false"
+                                                isDisabled="{!v.editDataDisableConfig.calendar.isDisabled}"
+                                                placeholder="{!$Label.c.Search}" onchange="{!c.onChangeAutocomplete}"
+                                                tabindex="1" messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                selectedOption="{!v.selectedOptions.calendar}" />
+                          </c:AppointmentsEditField>
+                        </div>
+                      </aura:if>
+                      <aura:if isTrue="{!!v.isForDocExpert}">
+                        <div class="bs-col-auto edit-col">
+                          <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.domain.isDisabled}"
+                                                   isEditable="{!v.editDataDisableConfig.domain.isEditable}"
+                                                   label="{!$Label.c.Domain}"
+                                                   value="{!v.selectedOptions.domain?v.selectedOptions.domain.Name:'-'}"
+                                                   name="domain" onedit="{!c.onFieldEdit}">
+                            <c:BaseAutocomplete aura:id="editField" name="domain" value="{!v.editData.domain}"
+                                                class="edit-autocomplete edit-autocomplete_domain edit-input"
+                                                label="{!$Label.c.Domain}" onsearch="{!c.onAutocompleteSearch}"
+                                                required="false" oninitsearch="{!c.onAutocompleteInitSearch}"
+                                                isPlainAutoComplete="false"
+                                                isDisabled="{!v.editDataDisableConfig.domain.isDisabled}"
+                                                onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                                placeholder="{!$Label.c.Search}"
+                                                messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                selectedOption="{!v.selectedOptions.domain}" />
+                          </c:AppointmentsEditField>
+                        </div>
+
+                      </aura:if>
+
+                      <div class="bs-col-auto edit-col">
+                        <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                 isEditable="{!v.editDataDisableConfig.procedure.isEditable}"
+                                                 label="{!$Label.c.Medical_Procedure}"
+                                                 value="{!v.selectedOptions.procedure?v.selectedOptions.procedure.Name:'-'}"
+                                                 name="procedure" onedit="{!c.onFieldEdit}">
+                          <div class="d-flex">
+                            <c:BaseAutocomplete aura:id="editField" name="procedure" value="{!v.editData.procedure}"
+                                                class="edit-autocomplete edit-autocomplete_procedure edit-input"
+                                                label="{!$Label.c.Medical_Procedure}"
+                                                onsearch="{!c.onAutocompleteSearch}" required="true"
+                                                oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                                onchange="{!c.onChangeAutocomplete}"
+                                                isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                tabindex="1" messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                selectedOption="{!v.selectedOptions.procedure}" />
+
+
+                              <aura:if isTrue="{!
+                                    and(
+                                      v.canAddSequence,
+                                      !v.slotsData
+                                      )
+                                  }">
+                                <aura:if isTrue="{!empty(v.sequenceProcedureFields)}">
+                                  <div class="add-btn-wrapper">
+                                    <lightning:buttonIcon iconName="utility:add" size="medium" variant="bare"
+                                                          alternativeText="add" onclick="{!c.onAddSequenceProcedure}" />
+                                  </div>
+                                </aura:if>
+                              </aura:if>
+
+
+                          </div>
+                        </c:AppointmentsEditField>
+
+                         <aura:if isTrue="{!!v.isForDocExpert}">
+                        <aura:if isTrue="{!!v.staticData.isAshdodEmloyee}">
+                        <aura:if isTrue="{!!empty(v.sequenceProcedureFields)}">
+                          <div class="">
+                            <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.file.isDisabled}"
+                                                     isEditable="{!v.editDataDisableConfig.file.isEditable}"
+                                                     label="{!$Label.c.File}"
+                                                     value="{!v.selectedOptions.file?v.selectedOptions.file.Name:'-'}"
+                                                     name="file" onedit="{!c.onFieldEdit}">
+                              <c:BaseAutocomplete aura:id="editField" name="file" value="{!v.editData.file}"
+                                                  class="edit-autocomplete edit-autocomplete_domain edit-input"
+                                                  label="{!$Label.c.File}" onsearch="{!c.onAutocompleteSearch}"
+                                                  required="{!
+                                    and(
+                                      v.mode =='create',
+                                      and(v.editData.domain,v.isFileRequired)
+                                    )
+
+                                  }" oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                                  isDisabled="{!
+                                    or(!v.editData.domain,v.editDataDisableConfig.file.isDisabled)
+                                  }" onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                                  messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                  selectedOption="{!v.selectedOptions.file}" />
+                            </c:AppointmentsEditField>
+                          </div>
+                          <aura:if
+                                   isTrue="{!and(v.selectedOptions.procedure,v.selectedOptions.procedure.protocols.length>0)}">
+                            <div class="">
+                              <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                       isEditable="{!v.editDataDisableConfig.procedure.isEditable}"
+                                                       label="{!$Label.c.Protocol}"
+                                                       value="{!v.selectedOptions.protocol?v.selectedOptions.protocol.label:'-'}"
+                                                       name="protocol" onedit="{!c.onFieldEdit}">
+                                <lightning:select aura:id="editField" label="{!$Label.c.Protocol}"
+                                                  value="{!v.editData.protocol}" required="true" class="edit-input"
+                                                  disabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                  name="protocol" tabindex="1"
+                                                  messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                  onchange="{!c.onChangeField}">
+                                  <option value=""></option>
+                                  <aura:iteration items="{!v.selectedOptions.procedure.protocols}" var="option">
+                                    <option value="{!option.value}">{!option.label}</option>
+                                  </aura:iteration>
+                                </lightning:select>
+                              </c:AppointmentsEditField>
+                            </div>
+                          </aura:if>
+                        </aura:if>
+                        </aura:if>
+                        </aura:if>
+                      </div>
+
+                      <aura:if isTrue="{!v.mode =='create'}">
+                        <aura:if isTrue="{!v.isTechnician}">
+                          <div class="bs-col-auto edit-col">
+                            <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                     isEditable="{!v.editDataDisableConfig.procedure.isEditable}"
+                                                     label="{!$Label.c.Technician_at_site}"
+                                                     value="{!v.selectedOptions.technician?v.selectedOptions.technician.label:'-'}"
+                                                     name="technician" onedit="{!c.onFieldEdit}">
+                              <div class="d-flex">
+                                <c:BaseAutocomplete aura:id="editField" name="technician"
+                                                    value="{!v.editData.technician}"
+                                                    class="edit-autocomplete edit-autocomplete_procedure edit-input"
+                                                    label="{!$Label.c.Technician_at_site}"
+                                                    onsearch="{!c.onAutocompleteSearch}" required="true"
+                                                    oninitsearch="{!c.onAutocompleteInitSearch}"
+                                                    isPlainAutoComplete="false" onchange="{!c.onChangeAutocomplete}"
+                                                    isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                    tabindex="1"
+                                                    messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                    selectedOption="{!v.selectedOptions.technician}" />
+                                <aura:if isTrue="{false}">
+                                </aura:if>
+                              </div>
+                            </c:AppointmentsEditField>
+
+                            <aura:if isTrue="{!!v.isForDocExpert}">
+                              <aura:if isTrue="{!!v.staticData.isAshdodEmloyee}">
+                                <aura:if isTrue="{!!empty(v.sequenceProcedureFields)}">
+                                  <div class="">
+                                    <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.file.isDisabled}"
+                                                             isEditable="{!v.editDataDisableConfig.file.isEditable}"
+                                                             label="{!$Label.c.File}"
+                                                             value="{!v.selectedOptions.file?v.selectedOptions.file.Name:'-'}"
+                                                             name="file" onedit="{!c.onFieldEdit}">
+                                      <c:BaseAutocomplete aura:id="editField" name="file" value="{!v.editData.file}"
+                                                          class="edit-autocomplete edit-autocomplete_domain edit-input"
+                                                          label="{!$Label.c.File}" onsearch="{!c.onAutocompleteSearch}"
+                                                          required="{!
+                                              and(
+                                                v.mode =='create',
+                                                and(v.editData.domain,v.isFileRequired)
+                                              )
+
+                                            }" oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                                          isDisabled="{!
+                                              or(!v.editData.domain,v.editDataDisableConfig.file.isDisabled)
+                                            }" onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                                          messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                          selectedOption="{!v.selectedOptions.file}" />
+                                    </c:AppointmentsEditField>
+                                  </div>
+                                </aura:if>
+                              </aura:if>
+                            </aura:if>
+                          </div>
+
+                          <aura:if isTrue="{!v.hasTechnicianProcedure}">
+                            <div class="bs-col-auto edit-col">
+                              <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                       isEditable="{!v.editDataDisableConfig.procedure.isEditable}"
+                                                       label="{!$Label.c.Medical_Procedure_2}"
+                                                       value="{!v.selectedOptions.technicianProcedure?v.selectedOptions.technicianProcedure.Name:'-'}"
+                                                       name="technicianProcedure" onedit="{!c.onFieldEdit}">
+                                <div class="d-flex">
+                                  <c:BaseAutocomplete aura:id="editField" name="technicianProcedure"
+                                                      value="{!v.editData.technicianProcedure}"
+                                                      class="edit-autocomplete edit-autocomplete_procedure edit-input"
+                                                      label="{!$Label.c.Medical_Procedure_2}"
+                                                      onsearch="{!c.onAutocompleteSearch}" required="false"
+                                                      oninitsearch="{!c.onAutocompleteInitSearch}"
+                                                      isPlainAutoComplete="false" onchange="{!c.onChangeAutocomplete}"
+                                                      isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                      tabindex="1"
+                                                      messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                      selectedOption="{!v.selectedOptions.technicianProcedure}" />
+                                </div>
+                              </c:AppointmentsEditField>
+                            </div>
+                          </aura:if>
+
+                        </aura:if>
+                      </aura:if>
+
+
+                      <aura:iteration items="{!v.sequenceProcedureFields}" var="field" indexVar="_index">
+                        <div class="bs-col-auto edit-col">
+                          <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                   isEditable="{!v.editDataDisableConfig.procedure.isEditable}"
+                                                   label="{!$Label.c.Medical_Procedure + ' '+(_index+2)}"
+                                                   value="{!field.option?field.option.Name:'-'}"
+                                                   name="{!'sequenceProcedure_'+_index}" onedit="{!c.onFieldEdit}">
+                            <div class="d-flex">
+                              <c:BaseAutocomplete aura:id="editField" name="{!'sequenceProcedure_'+_index}"
+                                                  class="edit-autocomplete edit-autocomplete_procedure edit-input"
+                                                  label="{!$Label.c.Medical_Procedure + ' '+(_index+2)}"
+                                                  onsearch="{!c.onAutocompleteSearch}" required="false"
+                                                  oninitsearch="{!c.onAutocompleteInitSearch}"
+                                                  isPlainAutoComplete="false" onchange="{!c.onChangeAutocomplete}"
+                                                  value="{!field.value}" selectedOption="{!field.option}"
+                                                  isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                  tabindex="1"
+                                                  messageWhenValueMissing="{!$Label.c.Complete_this_field}" />
+                              <aura:if isTrue="{!!v.slotsData}">
+                                <aura:if isTrue="{!
+                                                      and(
+                                                        equals(v.sequenceProcedureFields.length,_index+1),
+                                                        and(field.option,field.option.hasSequence)
+                                                        )
+                                                      }">
+                                  <div class="add-btn-wrapper">
+                                    <lightning:buttonIcon iconName="utility:add" size="medium" variant="bare"
+                                                          alternativeText="add" onclick="{!c.onAddSequenceProcedure}" />
+                                  </div>
+                                </aura:if>
+                              </aura:if>
+                            </div>
+
+                          </c:AppointmentsEditField>
+                          <aura:if isTrue="{!!v.isForDocExpert}">
+                            <aura:if isTrue="{!!v.staticData.isAshdodEmloyee}">
+                              <aura:if isTrue="{!v.mode=='create'}">
+                                <div class="">
+                                  <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.file.isDisabled}"
+                                                           isEditable="{!v.editDataDisableConfig.file.isEditable}"
+                                                           label="{!$Label.c.File + ' '+(_index+2)}"
+                                                           value="{!field.fileOption?field.fileOption.Name:'-'}"
+                                                           name="file" onedit="{!c.onFieldEdit}">
+                                    <c:BaseAutocomplete aura:id="editField" name="{!'sequenceFile_'+_index}"
+                                                        value="{!field.fileId}"
+                                                        class="edit-autocomplete edit-autocomplete_domain edit-input"
+                                                        label="{!$Label.c.File + ' '+(_index+2)}"
+                                                        onsearch="{!c.onAutocompleteSearch}" required="{!
+                                              and(
+                                                v.mode =='create',
+                                                and(v.editData.domain,v.isFileRequired)
+                                              )
+
+                                            }" oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                                        isDisabled="{!
+                                              or(!v.editData.domain,v.editDataDisableConfig.file.isDisabled)
+                                            }" onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                                        messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                        selectedOption="{!field.fileOption}" />
+                                  </c:AppointmentsEditField>
+                                </div>
+                                <!-- sequence protocols start -->
+                                <aura:if isTrue="{!and(field.option,field.option.protocols.length>0)}">
+                                  <div class="">
+                                    <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                             isEditable="{!v.editDataDisableConfig.procedure.isEditable}"
+                                                             label="{!$Label.c.Protocol + ' '+(_index+2)}"
+                                                             value="{!field.protocolId?field.protocolOption.label:'-'}"
+                                                             name="sequenceProtocol" onedit="{!c.onFieldEdit}">
+                                      <lightning:select aura:id="editField"
+                                                        label="{!$Label.c.Protocol + ' '+(_index+2)}"
+                                                        value="{!field.protocolId}" required="true" class="edit-input"
+                                                        disabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                        name="{!'sequenceProtocol_'+_index}" tabindex="1"
+                                                        messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                        onchange="{!c.onChangeField}">
+                                        <option value=""></option>
+                                        <aura:iteration items="{!field.option.protocols}" var="option">
+                                          <option value="{!option.value}">{!option.label}</option>
+                                        </aura:iteration>
+                                      </lightning:select>
+                                    </c:AppointmentsEditField>
+                                  </div>
+                                </aura:if>
+                                <!-- sequence protocols end -->
+                              </aura:if>
+                            </aura:if>
+                          </aura:if>
+                        </div>
+                      </aura:iteration>
+
+                      <aura:if isTrue="{!!v.isForDocExpert}">
+                        <aura:if isTrue="{!!v.staticData.isAshdodEmloyee}">
+                          <aura:if isTrue="{!v.mode=='create'}">
+                            <aura:if isTrue="{!empty(v.sequenceProcedureFields)}">
+                              <div class="bs-col-auto edit-col">
+                                <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.file.isDisabled}"
+                                                         isEditable="{!v.editDataDisableConfig.file.isEditable}"
+                                                         label="{!$Label.c.File}"
+                                                         value="{!v.selectedOptions.file?v.selectedOptions.file.Name:'-'}"
+                                                         name="file" onedit="{!c.onFieldEdit}">
+                                  <c:BaseAutocomplete aura:id="editField" name="file" value="{!v.editData.file}"
+                                                      class="edit-autocomplete edit-autocomplete_domain edit-input"
+                                                      label="{!$Label.c.File}" onsearch="{!c.onAutocompleteSearch}"
+                                                      required="{!
+                                    and(
+                                      v.mode =='create',
+                                      and(v.editData.domain,v.isFileRequired)
+                                    )
+
+                                  }" oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                                      isDisabled="{!
+                                    or(!v.editData.domain,v.editDataDisableConfig.file.isDisabled)
+                                  }" onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                                      messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                      selectedOption="{!v.selectedOptions.file}" />
+                                </c:AppointmentsEditField>
+                              </div>
+
+                              <aura:if
+                                       isTrue="{!and(v.selectedOptions.procedure,v.selectedOptions.procedure.protocols.length>0)}">
+                                <div class="bs-col-auto edit-col">
+                                  <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                           isEditable="{!v.editDataDisableConfig.procedure.isEditable}"
+                                                           label="{!$Label.c.Protocol}"
+                                                           value="{!v.selectedOptions.protocol?v.selectedOptions.protocol.label:'-'}"
+                                                           name="protocol" onedit="{!c.onFieldEdit}">
+                                    <lightning:select aura:id="editField" label="{!$Label.c.Protocol}"
+                                                      value="{!v.editData.protocol}" required="true" class="edit-input"
+                                                      disabled="{!v.editDataDisableConfig.procedure.isDisabled}"
+                                                      name="protocol" tabindex="1"
+                                                      messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                      onchange="{!c.onChangeField}">
+                                      <option value=""></option>
+                                      <aura:iteration items="{!v.selectedOptions.procedure.protocols}" var="option">
+                                        <option value="{!option.value}">{!option.label}</option>
+                                      </aura:iteration>
+                                    </lightning:select>
+                                  </c:AppointmentsEditField>
+                                </div>
+                              </aura:if>
+                            </aura:if>
+                          </aura:if>
+						 </aura:if>
+                      </aura:if>
+
+                        <aura:if isTrue="{!!v.isForDocExpert}">
+                        <!-- Diary -->
+                        <aura:if isTrue="{!v.staticData.isAshdodEmloyee}">
+                          <div class="bs-col-auto edit-col">
+                            <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.diary.isDisabled}"
+                                                     isEditable="{!v.editDataDisableConfig.diary.isEditable}"
+                                                     label="{!$Label.c.Diary}"
+                                                     value="{!v.editData.qflowCalendarLabel?v.editData.qflowCalendarLabel:'-'}"
+                                                     name="calendarQflow" onedit="{!c.onFieldEdit}">
+                              <lightning:select aura:id="editField" label="{!$Label.c.Diary}"
+                                                value="{!v.editData.qflowCalendar}" required="false" class="edit-input"
+                                                disabled="{!!v.editData.procedure}" name="calendarQflow" tabindex="1"
+                                                messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                onchange="{!c.onChangeField}">
+                                <option value="" disabled="true" class="slds-hide"></option>
+                                <aura:iteration items="{!v.editData.qflowCalendarOptions}" var="option">
+                                  <option value="{!option.value}" selected="{!v.editData.qflowCalendarLabel}">
+                                    {!option.label}</option>
+                                </aura:iteration>
+                              </lightning:select>
+                            </c:AppointmentsEditField>
+                          </div>
+                        </aura:if>
+                      </aura:if>
+
+                        <aura:if isTrue="{!!v.isForDocExpert}">
+                          <div class="bs-col-auto edit-col">
+
+                            <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.insurerFactor.isDisabled}"
+                                                     isEditable="{!v.editDataDisableConfig.insurerFactor.isEditable}"
+                                                     label="{!v.isForDocExpert?$Label.c.DocPayerFactor:$Label.c.Insurer_Factor}"
+                                                     value="{!v.selectedOptions.insurerFactor?v.selectedOptions.insurerFactor.label:'-'}"
+                                                     name="insurerFactor" onedit="{!c.onFieldEdit}">
+                              <lightning:select aura:id="editField"
+                                                label="{!v.isForDocExpert?$Label.c.DocPayerFactor:$Label.c.Insurer_Factor}"
+                                                value="{!v.editData.insurerFactor}" required="true" class="edit-input"
+                                                disabled="{!v.editDataDisableConfig.insurerFactor.isDisabled}"
+                                                name="insurerFactor" tabindex="1"
+                                                messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                onchange="{!c.onChangeField}">
+                                <option value="" disabled="true" class="slds-hide"></option>
+                                <aura:iteration items="{!v.staticData.insurerFactorOptions}" var="option">
+
+                                  <option value="{!option.value}">{!option.label}</option>
+                                </aura:iteration>
+                              </lightning:select>
+                            </c:AppointmentsEditField>
+                          </div>
+						</aura:if>
+
+                      <aura:if isTrue="{!!v.isForDocExpert}">
+                        <div class="bs-col-auto edit-col">
+                          <c:AppointmentsEditField isDisabled="{!v.editDataDisableConfig.sequenceSite.isDisabled}"
+                                                   isEditable="{!v.editDataDisableConfig.sequenceSite.isEditable}"
+                                                   label="{!$Label.c.Site}"
+                                                   value="{!v.selectedOptions.sequenceSite?v.selectedOptions.sequenceSite.Name:'-'}"
+                                                   name="sequenceSite">
+                            <c:BaseAutocomplete aura:id="editField" name="sequenceSite"
+                                                value="{!v.editData.sequenceSite}"
+                                                class="edit-autocomplete edit-autocomplete_site edit-input"
+                                                label="{!$Label.c.Site}" onsearch="{!c.onAutocompleteSearch}"
+                                                required="{!true}" oninitsearch="{!c.onAutocompleteInitSearch}"
+                                                isPlainAutoComplete="false"
+                                                isDisabled="{!v.editDataDisableConfig.sequenceSite.isDisabled}"
+                                                onchange="{!c.onChangeAutocomplete}" tabindex="1"
+                                                placeholder="{!$Label.c.Search}"
+                                                messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                                selectedOption="{!v.selectedOptions.sequenceSite}" />
+                          </c:AppointmentsEditField>
+                        </div>
+                      </aura:if>
+                      <aura:if isTrue="{!!v.slotsData}">
+                        <div class="{!join(' ',
+                          'bs-col-auto'
+                          )}">
+                          <div class="{!join(' ',
+                          and(v.mode=='update',v.isForDocExpert)?'':'fake-edit-field'
+                          )}">
+                            <lightning:button variant="neutral" label="{!$Label.c.Search_Slots}"
+                                              onclick="{!c.onSearchSlots}" disabled="false" tabindex="0" />
+                          </div>
+                        </div>
+                      </aura:if>
+
+                      <aura:if isTrue="{!v.isForDocExpert}">
+                        <div style="padding-left: 1rem;">
+                          <h1>{!v.staticData.payerFactorName}</h1>
+                          <aura:unescapedHtml value="{!v.staticData.payerFactorIconPath}" />
+                        </div>
+                      </aura:if>
+
+
+                      <!--  <aura:if isTrue="{!v.mode=='create'}">
+                        <div class="bs-col-auto">
+                          <div class="{!join(' ',
+                            empty(v.slotRows)?'fake-edit-field fake-edit-field_appointment':''
+                          )}">
+                            <c:AppointmentsEditField isDisabled="true" isEditable="false"
+                              label="{!$Label.c.Appointment}" value="{!v.appointments.length+1}" name="appointment">
+                            </c:AppointmentsEditField>
+                          </div>
+                        </div>
+                      </aura:if> -->
+                      <aura:if isTrue="{!v.slotsData}">
+                        <div class="{!join(' ',
+                          'bs-col-auto'
+                          )}">
+                          <div class="edit-btn-wrapper">
+                            <button class="edit-btn" onclick="{!c.onFieldEdit}" tabindex="0">
+                              <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-edit'}" />
+                            </button>
+                          </div>
+                        </div>
+                      </aura:if>
+                    </div>
+                  </div>
+                  <aura:if isTrue="{!and(v.selectedOptions.domain,v.selectedOptions.domain.warning)}">
+                    <div class="slds-m-bottom_medium">
+                      <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning"
+                           role="alert">
+                        <h2>
+                          <lightning:formattedRichText value="{!v.selectedOptions.domain.warning}">
+                          </lightning:formattedRichText>
+                        </h2>
+                      </div>
+                    </div>
+                  </aura:if>
+
+                  <div class="mb-4">
+                    <div class="bs-row mb-2">
+                      <aura:if isTrue="{!!v.isForDocExpert}">
+                        <aura:if isTrue="{!and(!v.editData.sequenceSite,!v.isTechnician)}">
+                          <div class="bs-col-lg-auto mb-2">
+                            <c:AppointmentFilter filterName="geoAreas" options="{!v.staticData.regionOptions}"
+                                                 filterChanged="{!c.onFilterChanged}" label="{!$Label.c.Area}"
+                                                 value="{!v.selectedFilters.geoAreas}" />
+                          </div>
+                        </aura:if>
+                      </aura:if>
+                      <div class="bs-col-lg-auto mb-2">
+                        <c:AppointmentFilter filterName="timePeriods" options="{!v.staticData.timePeriodsOptions}"
+                                             filterChanged="{!c.onFilterChanged}" label="{!$Label.c.Time_period}"
+                                             showTooltip="true" value="{!v.selectedFilters.timePeriods}">
+                          <aura:set attribute="tooltip">
+                            <c:AppointmentsTooltip>
+                              <aura:set attribute="content">
+                                <div class="periods-tooltip">
+                                  <div class="periods-tooltip__header">
+                                    {!$Label.c.Time_period}
+                                  </div>
+                                  <div class="periods-tooltip__body">
+                                    <ul class="periods-list">
+                                      <li class="period-item">
+                                        <div class="period-item__icon-wrapper">
+                                          <c:SvgIcon
+                                                     src="{!$Resource.appointments + '/assets/sprite.svg#icon-morning'}" />
+                                        </div>
+                                        <div class="period-item__label">06:00-12:00 {!$Label.c.Morning}</div>
+                                      </li>
+                                      <li class="period-item">
+                                        <div class="period-item__icon-wrapper">
+                                          <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-noon'}" />
+                                        </div>
+                                        <div class="period-item__label">12:00-18:00 {!$Label.c.Noon}</div>
+                                      </li>
+                                      <li class="period-item">
+                                        <div class="period-item__icon-wrapper">
+                                          <c:SvgIcon
+                                                     src="{!$Resource.appointments + '/assets/sprite.svg#icon-evening'}" />
+                                        </div>
+                                        <div class="period-item__label">18:00-22:00 {!$Label.c.Evening}</div>
+                                      </li>
+                                      <li class="period-item">
+                                        <div class="period-item__icon-wrapper">
+                                          <c:SvgIcon
+                                                     src="{!$Resource.appointments + '/assets/sprite.svg#icon-night'}" />
+                                        </div>
+                                        <div class="period-item__label">22:00-06:00 {!$Label.c.Night}</div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </aura:set>
+                            </c:AppointmentsTooltip>
+                          </aura:set>
+                        </c:AppointmentFilter>
+                      </div>
+                      <div class="bs-col-lg-auto mb-2">
+                        <c:AppointmentFilter filterName="weekDays" options="{!v.staticData.weekDaysOptions}"
+                                             filterChanged="{!c.onFilterChanged}" label="{!$Label.c.Days}"
+                                             value="{!v.selectedFilters.weekDays}" />
+                      </div>
+                      <div class="date-pick">
+                        <lightning:input aura:id="editField" class="start-date" type="date"
+                                         value="{!v.editData.startDate}" label="{!$Label.c.Start_Date}"
+                                         min="{!v.staticData.formattedCurrentDate}" required="true"
+                                         disabled="{!v.editDataDisableConfig.startDate.isDisabled}"
+                                         messageWhenValueMissing="{!$Label.c.Complete_this_field}" />
+                      </div>
+                      <aura:if isTrue="{!!v.isForDocExpert}">
+                        <!-- Diary -->
+                        <aura:if isTrue="{!v.staticData.isAshdodEmloyee}">
+                          <div class="date-pick">
+                            <lightning:input aura:id="editField" class="start-date" type="date"
+                                             value="{!v.editData.endDate}" label="{!$Label.c.End_Date}"
+                                             min="{!v.editData.startDate}" required="false"
+                                             disabled="{!v.editDataDisableConfig.endDate.isDisabled}"
+                                             messageWhenValueMissing="{!$Label.c.Complete_this_field}" />
+                          </div>
+                        </aura:if>
+                      </aura:if>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+
+                  <aura:if isTrue="{!!empty(v.slotsData)}">
+                    <aura:if isTrue="{!v.isForDocExpert}">
+                      <div class="slds-text-align_center slds-m-bottom_medium forced-text">
+                        {!v.slotsData.infoMessage}
+                      </div>
+                    </aura:if>
+
+                    <aura:if isTrue="{!v.mode=='create'}">
+                      <aura:if isTrue="{!v.slotsData.isForcedAvailable}">
+                        <div class="slds-text-align_center slds-m-bottom_medium forced-text">
+                          <span>
+                            {!$Label.c.Can_not_find_slot_you_need}&nbsp;
+                          </span> <a onclick="{!c.onShowForcedAppointment}">{!$Label.c.Schedule_forced_appointment}</a>
+                        </div>
+                      </aura:if>
+                    </aura:if>
+                    <aura:if isTrue="{!!empty(v.slotsData.pricesInfo)}">
+                      <div class="prices-info ">
+                        <div class="prices-info__title slds-text-align_center slds-m-bottom_medium">
+                          {!v.slotsData.infoMessage}</div>
+                        <div class="slds-m-bottom_small">{!$Label.c.Prices_for_private_factors}</div>
+                        <ul class="prices-list">
+                          <aura:iteration items="{!v.slotsData.pricesInfo}" var="priceItem">
+                            <li class="prices-item">
+                              <lightning:formattedRichText
+                                                           value="{!format($Label.c.Price_for_payer_factor_is,priceItem.label,priceItem.Price,priceItem.Site)}">
+                              </lightning:formattedRichText>
+                            </li>
+                          </aura:iteration>
+                        </ul>
+                      </div>
+                    </aura:if>
+
+
+
+                  </aura:if>
+                  <aura:if isTrue="{!v.isSlotsNotFoundMessageVisible}">
+                    <div class="py-4 text-center">{!$Label.c.Slots_not_found}</div>
+                  </aura:if>
+                  <aura:iteration items="{!v.slotRows}" var="row" indexVar="rowIndex">
+                    <div class="mb-2 appointment-site-wrapper">
+                      <c:AppointmentsSite row="{!row}" staticData="{!v.staticData}" rowIndex="{!rowIndex}"
+                                          selectedDay="{!v.selectedDayData.day}"
+                                          selectedRow="{!v.selectedDayData.rowIndex}" lockedData="{!v.lockedData}"
+                                          onTransfer="{!c.onTransferToDepartment}" slotsData="{!v.slotsData}"
+                                          enableCalendarFilter="{!v.slotsData.isCalendarFilterEnabled}" />
+                      <!-- TODO:enableCalendarFilter -->
+                    </div>
+                  </aura:iteration>
+
+                </div>
+
+                <aura:if isTrue="{!v.staticData.showKMS}">
+                  <div class="{!join(' ',
+                                  'slds-is-relative',
+                                  v.selectedOptions.procedure?'slds-show':'slds-hide'
+                                )}">
+                    <kmslh:KMS_MainSearchComponent aura:id="kms" usedFromCase="false" hideSearchInput="false" searchstring=""
+                                                   recordId="{!v.staticData.caseId}">
+                    </kmslh:KMS_MainSearchComponent>
+                  </div>
+                </aura:if>
+
+              </div>
+              <div class="{!join(' ',
+              'position-element',
+              and(v.isTimeGroupVisible,v.selectedDayData.day)?'is-visible':''
+              )}">
+                <div class="px-2 pb-2">
+                  <div class="">
+                    <aura:if isTrue="{!and(v.slotsData,v.selectedDayData.day)}">
+                      <c:AppointmentsTimeGroup day="{!v.selectedDayData.day}" slotRows="{!v.slotRows}"
+                                               selectedRow="{!v.selectedDayData.rowIndex}" lockedData="{!v.lockedData}"
+                                               staticData="{!v.staticData}" slotsMap="{!v.slotsData.slotsMap}" />
+                    </aura:if>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ui:scrollerWrapper>
+        </div>
+        <div class="sidebar-col flex-shrink-0" dir="{!$Locale.dir}">
+          <div class="d-flex flex-column py-3 sidebar">
+            <aura:if isTrue="{!v.isAvailableTimeSlots}">
+              <div class="slds-p-horizontal_medium slds-grid slds-grid_align-spread" style="flex-direction: column;">
+                <div>
+                  <div class="slds-grid slds-grid_align-spread " style="align-items: center;">
+                    <h1 style="font-weight: 600;">{!$Label.c.AppointmentDashboard_ListOfAvailabelSlots}</h1>
+                    <lightning:icon
+                            class="slds-m-right_small"
+                            style="cursor: pointer"
+                            iconName="utility:copy"
+                            size="small"
+                            onclick="{!c.onCopyAvailableTimeSlot}">
+                    </lightning:icon>
+                  </div>
+                  <lightning:formattedRichText value="{!v.availableTimeSlotsString}"/>
+                </div>
+                <br />
+                <div>
+                  <h1>{!$Label.c.AppointmentDashboard_GeneralSentence}</h1>
+                  <h1>{!$Label.c.AppointmentDashboard_GeneralSentence1}</h1>
+                </div>
+              </div>
+              <aura:set attribute="else">
+                <aura:if isTrue="{!v.lockTimeCounter}">
+                  <div class="mb-3 px-3 text-center refresh-timer">
+                    <div class="mb-2">
+                      <c:SvgIcon class="refresh-timer__icon"
+                                 src="{!$Resource.appointments + '/assets/sprite.svg#icon-timer'}"/>
+                    </div>
+                    <div class="slds-m-bottom_small">
+                      <lightning:button label="{!$Label.c.UnLock_Slot}" variant="bare" onclick="{!c.onUnLock}"
+                                        class="btnCustomStyle"/>
+                      <lightning:button label="{!$Label.c.Refresh_Lock}" variant="bare" onclick="{!c.onRefreshLock}"
+                                        class="btnCustomStyle"/>
+                    </div>
+                    <div class="refresh-timer__text font-weight-bold">
+                      <aura:unescapedHtml
+                              value="{!format($Label.c.The_queues_will_be_kept_for_about,v.lockTimeCounter.formattedTime)}"/>
+                    </div>
+                  </div>
+                </aura:if>
+                <ui:scrollerWrapper aura:id="sideScrollerWrapper" class="mb-3 appointments-list">
+                  <aura:iteration items="{!v.staticData.historyAppointments}" var="appointment" indexVar="_index">
+                    <c:SidebarAppointment class="mb-1" appointment="{!appointment}" number="{!_index+1}"
+                                          isHistory="true"
+                                          isDocExpert="{!v.isForDocExpert}"/>
+                  </aura:iteration>
+                  <!-- <aura:if isTrue="{!and(v.mode=='create',!empty(v.staticData.historyAppointments))}">
+                    <aura:if isTrue="{!!empty(v.preparedAppointments)}">
+                      <div class="py-3 text-center font-weight-bold new-title">New</div>
+                    </aura:if>
+                  </aura:if> -->
+                  <aura:iteration items="{!v.preparedAppointments}" var="appointment" indexVar="_index">
+                    <c:SidebarAppointment class="mb-1" appointment="{!appointment}" selected="{!c.onSelectAppointment}"
+                                          number="{!v.staticData.historyAppointments.length+_index+1}"
+                                          isDocExpert="{!v.isForDocExpert}"/>
+                  </aura:iteration>
+                </ui:scrollerWrapper>
+                <aura:if isTrue="{!!v.isForDocExpert}">
+                  <div class="appointment-fields">
+                    <aura:if isTrue="{!v.mode=='create'}">
+                      <aura:if isTrue="{!v.isUrgentVisible}">
+                        <div>
+                          <div>
+                            <lightning:input aura:id="appointmentField" name="urgent" type="checkbox"
+                                             label="{!$Label.c.Is_Urgent}" checked="{!v.appointmentData.isUrgent}"
+                                             onchange="{!c.onChangeField}"/>
+                          </div>
+                          <aura:if isTrue="{!v.appointmentData.isUrgent}">
+                            <div>
+                              <lightning:select aura:id="appointmentField" label="{!$Label.c.Urgent_Reason}"
+                                                value="{!v.appointmentData.urgentReason}"
+                                                required="{!v.appointmentData.isUrgent}" class="" name="urgentReason"
+                                                tabindex="1" messageWhenValueMissing="{!$Label.c.Complete_this_field}">
+                                <option value="" disabled="true"></option>
+                                <aura:iteration items="{!v.staticData.urgentReasonOptions}" var="option">
+                                  <option value="{!option.value}">{!option.label}</option>
+                                </aura:iteration>
+                              </lightning:select>
+                            </div>
+                          </aura:if>
+                        </div>
+                      </aura:if>
+
+                    </aura:if>
+                    <aura:if isTrue="{!v.mode!='create'}">
+                      <aura:if isTrue="{!v.staticData.defaultUrgentReasonOption}">
+                        <div>
+                          <span class="font-weight-bold">{!$Label.c.Urgent_Reason}&nbsp;</span>
+                          {!v.staticData.defaultUrgentReasonOption.label}
+                        </div>
+                      </aura:if>
+
+                    </aura:if>
+                  </div>
+                </aura:if>
+                <aura:if isTrue="{!
+              and(
+                v.slotsData,
+                v.slotsData.procedures.length==v.lockedData.lockedSlots.length)
+              }">
+                  <div class="py-2 text-center">
+                    <lightning:button variant="brand" label="{!$Label.c.Submit}" onclick="{!c.onSubmit}"/>
+                  </div>
+                </aura:if>
+              </aura:set>
+            </aura:if>
+          </div>
+        </div>
+      </aura:if>
+      </aura:set>
+      </aura:if>
+    </div>
+    <c:Spinner isLoading="{!v.isLoading}" size="medium" />
+  </div>
+</aura:component>

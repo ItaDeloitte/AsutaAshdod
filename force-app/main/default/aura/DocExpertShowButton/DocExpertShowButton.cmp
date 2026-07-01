@@ -1,0 +1,37 @@
+<aura:component extends="c:BaseComponent" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="isAvailable" type="Boolean" default="true" />
+  <aura:attribute name="mode" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="recordId" type="String" default="" />
+
+  <aura:attribute name="nextLabel" type="String" default="Next" />
+  <aura:attribute name="updateLabel" type="String" default="Update" />
+  <aura:attribute name="cancelLabel" type="String" default="Cancel" />
+  <aura:attribute name="sobjectType" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler event="force:refreshView" action="{!c.onInit}" />
+  <!-- events -->
+
+  <!-- methods -->
+
+  <aura:if isTrue="{!v.isAvailable}">
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+    <c:globalService aura:id="globalServiceNew"></c:globalService>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <lightning:button onclick="{!c.onShowModal}" disabled="{!v.isLoading}">
+      <aura:if isTrue="{!v.mode=='create'}">
+        {!v.nextLabel}
+      </aura:if>
+      <aura:if isTrue="{!v.mode=='update'}">
+        {!v.updateLabel}
+      </aura:if>
+      <aura:if isTrue="{!v.mode=='cancel'}">
+        {!v.cancelLabel}
+      </aura:if>
+    </lightning:button>
+  </aura:if>
+</aura:component>

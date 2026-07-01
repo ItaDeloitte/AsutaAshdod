@@ -1,0 +1,43 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="title" type="String" default="Title" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="actionClicked" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <c:ActionModalInner applyStyles="true">
+      <aura:set attribute="styles">
+        <aura:html tag="style">
+          .slds-modal__container { width:80%;max-width:600px;}
+        </aura:html>
+      </aura:set>
+      <aura:set attribute="title">
+        {!v.title}
+      </aura:set>
+      <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.serverError}">
+          <c:Alert theme="error">
+            <aura:unescapedHtml value="{!v.serverError}" />
+          </c:Alert>
+        </aura:if>
+      </div>
+      <aura:set attribute="footer">
+        <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}">
+          Cancel
+        </lightning:button>
+        <lightning:button variant="brand" type="button" onclick="{!c.onRetry}" disabled="{!v.isLoading}">
+          Retry
+        </lightning:button>
+      </aura:set>
+    </c:ActionModalInner>
+
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+
+</aura:component>

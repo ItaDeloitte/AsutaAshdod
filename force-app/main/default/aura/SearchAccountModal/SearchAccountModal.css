@@ -1,0 +1,8 @@
+.THIS {
+  /* ! */
+}
+
+.THIS .cBaseModal .slds-modal__header {
+  padding: 1rem;
+  border-bottom: 2px solid #dddbda;
+}

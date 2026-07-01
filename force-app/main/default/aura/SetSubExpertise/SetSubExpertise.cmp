@@ -1,0 +1,52 @@
+<aura:component extends="c:BaseComponent"
+  implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="recordId" type="String" />
+  <aura:attribute name="subExpertiseId" type="String" default="" />
+
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+
+
+  <div class="slds-card">
+    <header class="slds-card__header slds-grid">
+      <div class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <lightning:icon iconName="standard:contact" size="small" />
+        </div>
+        <div class="slds-media__body slds-truncate">
+          <span class="slds-text-heading_small card-title">
+            {!$Label.c.Set_Sub_Expertise}
+          </span>
+        </div>
+      </div>
+    </header>
+    <div class="slds-card__body">
+      <div class="slds-card__body_inner">
+        <div>
+          <c:BaseAutocomplete aura:id="formField" label="{!$Label.c.Sub_Expertise}" value="{!v.subExpertiseId}"
+            onsearch="{!c.onSearch}" oninitsearch="{!c.onSearch}" required="true" placeholder="Search..." />
+        </div>
+        <aura:if isTrue="{!v.serverError}">
+          <div class="slds-p-top_medium">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+        <div class="slds-p-top_medium slds-text-align_right">
+          <lightning:button variant="neutral" type="button" onclick="{!c.onSubmit}" disabled="{!v.isLoading}"
+            label="{!$Label.c.Ok}" />
+        </div>
+      </div>
+      <c:Spinner isLoading="{!v.isLoading}" size="small" />
+    </div>
+  </div>
+
+</aura:component>

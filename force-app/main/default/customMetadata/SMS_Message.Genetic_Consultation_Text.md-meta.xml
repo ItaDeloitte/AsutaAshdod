@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ייעוץ גנטי-נוסח מסרון</label>
+    <protected>false</protected>
+    <values>
+        <field>SMS_Content__c</field>
+        <value xsi:type="xsd:string">שלום רב, 
+נקבע לך תור לייעוץ גנטי מרחוק בתאריך {0} שיתקיים באופן וירטואלי.
+לתשומת ליבך, עם הגעת מועד התור תקבלי הודעת סמס והודעת אי-מייל עם לינק התחברות לפגישה. 
+להעלאת מסמכים רפואיים נדרשים לפני מועד הייעוץ גנטי מרחוק: {1}
+לחוברת הדרכה על בדיקות גנטיות ודיקור מי שפיר, אנא לחצי כאן: http://assuta.digitaler.co.il/assuta14/ 
+חשוב לציין שביצוע דיקור מי שפיר מותנה בביצוע תור של יעוץ גנטי, ללא ביצועו לא יתקיים הדיקור מי שפיר באסותא.
+בברכה, בית חולים אסותא.</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">ASSUTA</value>
+    </values>
+    <values>
+        <field>SMS_Note__c</field>
+        <value xsi:type="xsd:string">תאריך הפגישה = {0}, לינק לקיט ={1}</value>
+    </values>
+</CustomMetadata>

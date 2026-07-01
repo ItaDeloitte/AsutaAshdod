@@ -1,0 +1,58 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="editData" type="Map" default="{
+    closeReason:''
+  }" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="false">
+      <aura:set attribute="title">
+        Close Recommendation
+      </aura:set>
+      <div class="">
+        <aura:if isTrue="{!v.serverError}">
+          <div class="slds-p-around_medium">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+        <aura:if isTrue="{!v.staticData}">
+          <div class="slds-p-around_medium">
+            <div class="slds-grid slds-gutters slds-wrap">
+              <div class="slds-col slds-size_1-of-1">
+                <lightning:select aura:id="formField" label="Close Reason" name="closeReason"
+                  value="{!v.editData.closeReason}">
+                  <aura:iteration items="{!v.staticData.closeReasons}" var="option">
+                    <option value="{!option.value}">{!option.label}</option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+            </div>
+
+          </div>
+        </aura:if>
+      </div>
+      <aura:set attribute="footer">
+        <lightning:button variant="neutral" label="{!$Label.c.Cancel}" onclick="{!c.onCancel}" />
+        <aura:if isTrue="{!v.staticData}">
+          <lightning:button variant="brand" label="{!$Label.c.Submit}" onclick="{!c.onSubmit}" />
+        </aura:if>
+
+      </aura:set>
+    </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+</aura:component>

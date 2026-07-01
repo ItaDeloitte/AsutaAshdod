@@ -1,0 +1,18 @@
+/**@type {import("AppointmentsDate").Controller} */
+({
+  onInit: function(cmp, event, helper) {
+    helper.init(cmp);
+  },
+  onDestroy: function(cmp, event, helper) {
+    helper.destroy(cmp);
+  },
+  onRender: function(cmp, event, helper) {
+    helper.render(cmp);
+  },
+  onSelectDay: function(cmp, event, helper) {
+    helper.selectDay(cmp);
+  },
+  onChangeLockedData: function(cmp, event, helper) {
+    helper.updateIsSelected(cmp);
+  }
+});

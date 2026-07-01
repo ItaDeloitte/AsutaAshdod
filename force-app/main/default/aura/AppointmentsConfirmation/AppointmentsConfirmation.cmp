@@ -1,0 +1,35 @@
+<aura:component extends="c:AppointmentsBase">
+
+  <!-- attrs -->
+  <aura:attribute name="message" type="String" default="message" />
+  <aura:attribute name="showCancel" type="Boolean" default="true" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="onconfirmation" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="false">
+      <aura:set attribute="title">
+        {!$Label.c.Confirmation}
+      </aura:set>
+      <div class="slds-p-around_medium">
+        <div class="confirm-message">
+          {!v.message}
+        </div>
+
+      </div>
+      <aura:set attribute="footer">
+        <lightning:button label="{!$Label.c.Continue}" onclick="{!c.onConfirm}" variant="brand" />
+        <aura:if isTrue="{!v.showCancel}">
+          <lightning:button label="{!$Label.c.Cancel}" onclick="{!c.onCancel}" variant="neutral" />
+        </aura:if>
+      </aura:set>
+    </c:ActionModalInner>
+  </div>
+
+
+</aura:component>

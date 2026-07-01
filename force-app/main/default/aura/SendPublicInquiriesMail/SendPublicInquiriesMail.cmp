@@ -1,0 +1,138 @@
+<aura:component controller="SendPublicInquiriesMailCtrl" implements="force:lightningQuickAction,force:hasRecordId" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="caseWrapperList" type="Object[]" />
+    <aura:attribute name="isTryingToSendRightNow" type="Boolean" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <div style="text-align: center; margin-top: 10px; font-weight: bold;">בחירת פרטי פניה</div>
+
+    <aura:if isTrue="{!not(v.isTryingToSendRightNow)}">
+        <div style="height: 360px; overflow-y: scroll; overflow-x: hidden; margin-bottom: 5px; margin-top: 5px;">
+            <aura:iteration items="{!v.caseWrapperList}" var="wrapper">
+
+            <div class="wrapperContainer"> 
+
+                <div class="gridContainer">
+
+                    <div class="gridItem">
+                        <div class="labelFont">נושא</div>
+                        <div class="cutText">{!wrapper.subject}</div>
+                    </div>
+
+                    <div class="gridItem">
+                        <div class="labelFont">תת נושא</div>
+                        <div class="cutText">{!wrapper.subSubject}</div>
+                    </div>
+
+                    <div class="gridItem" >
+                        <div class="labelFont">סטטוס</div>
+                        <div class="cutText">{!wrapper.status}</div>
+                    </div>
+
+                    <div class="gridItem">
+                        <div class="labelFont">ת.יצירה</div>
+                        <div class="cutText">{!wrapper.createdDate}</div>
+                    </div>
+
+                    <div class="gridItem">
+                        <div class="labelFont">פריט פניה</div>
+                        <div class="cutText">{!wrapper.caseNum}</div>
+                    </div>
+
+                    <div class="gridItem"> 
+                        <lightning:input variant="label-hidden" type="checkbox" label="" checked="{!wrapper.isCaseChecked}" name="{!wrapper.caseId}" onchange="{!c.onCaseCheckboxChange}" />
+                    </div>
+                        
+                </div>
+
+                <div class="gridContainer2 additionalCheckboxes">
+
+                    <div class="gridItem">
+
+                        <div class="gridContainer3">
+                            <div>ג.אחראי</div>
+                            <div> 
+                                <lightning:input variant="label-hidden" type="checkbox" name="" checked="{!wrapper.isResponsibleChecked}" disabled="{!not(wrapper.isCaseChecked)}" />
+                            </div>
+                        </div>
+                    
+                        <div class="gridContainer3">
+                            <div>הוסף הערות</div>
+                            <div>
+                                <lightning:input variant="label-hidden" type="checkbox" name="" checked="{!wrapper.isResponsibleNotesChecked}" disabled="{!not(wrapper.isResponsibleChecked)}" />
+                            </div>
+                        </div>
+
+                        <aura:if isTrue="{!wrapper.isResponsibleNotesChecked}">
+                            <div style="direction: rtl;">
+                                <lightning:textarea value="{!wrapper.responsibleNotes}" disabled="{!not(wrapper.isResponsibleChecked)}" />
+                            </div>
+                        </aura:if>
+
+                    </div>
+                    <div class="gridItem">
+
+                        <div class="gridContainer3">
+                            <div>ג.מטפל</div>
+                            <div> 
+                                <lightning:input variant="label-hidden" type="checkbox" name="" checked="{!wrapper.isTakingCareChecked}" disabled="{!not(wrapper.isCaseChecked)}" />
+                            </div>
+                        </div>
+                        
+                        <div class="gridContainer3">
+                            <div>הוסף הערות</div>
+                            <div>
+                                <lightning:input variant="label-hidden" type="checkbox" name="" checked="{!wrapper.isTakingCareNotesChecked}" disabled="{!not(wrapper.isTakingCareChecked)}" />
+                            </div>
+                        </div>
+
+                        <aura:if isTrue="{!wrapper.isTakingCareNotesChecked}">
+                            <div style="direction: rtl;">
+                                <lightning:textarea value="{!wrapper.takingCareNotes}" disabled="{!not(wrapper.isTakingCareChecked)}" />
+                            </div>
+                        </aura:if>
+
+                    </div>
+
+                </div>
+                
+                <aura:if isTrue="{!!empty(wrapper.files)}">
+                    <div class="">
+                        <div class="gridItem">
+                            <div class="gridContainer4">
+                                <div class="labelFont">צרף מסמך</div>                               
+                                <div> 
+                                    <lightning:input variant="label-hidden" type="checkbox" name="" checked="{!wrapper.isFilesChecked}" disabled="{!not(wrapper.isCaseChecked)}" />
+                                </div>
+                            </div>                                                    
+                            <aura:if isTrue="{!wrapper.isFilesChecked}">                                                     
+                                <aura:iteration items="{!wrapper.files}" var="file">
+                                    <div class="gridContainer4">
+                                        <div>{!file.Name}</div>
+                                        <div>
+                                            <lightning:input variant="label-hidden" type="checkbox" name="{!file.Id}" onchange="{!c.onFileCheckboxChange}" value="{!wrapper.caseId}"/>
+                                        </div>
+                                    </div>
+                                </aura:iteration>
+                            </aura:if>    
+                        </div>
+                    </div>
+                </aura:if>
+            </div>
+            </aura:iteration>
+        </div>
+
+        <aura:set attribute="else">
+            <div style="margin-top: auto; margin-bottom: auto; height: 360px;">
+                <lightning:spinner alternativeText="Loading" size="medium" />
+            </div>
+        </aura:set>
+    </aura:if>
+
+    <div style="width: 100%;"> 
+        <div style="float: right; margin-bottom: 5px;">
+            <lightning:button label="שלח" onclick="{! c.sendButtonFunction }" disabled="{!v.isTryingToSendRightNow}" />
+        </div>
+    </div>
+
+</aura:component>

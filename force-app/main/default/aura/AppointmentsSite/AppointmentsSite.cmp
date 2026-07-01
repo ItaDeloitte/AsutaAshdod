@@ -1,0 +1,116 @@
+<aura:component extends="c:AppointmentsBase">
+  <!-- require -->
+  <!-- attrs -->
+  <aura:attribute name="row" type="Map" default="{label:'Name'}" />
+  <aura:attribute name="rowIndex" type="Integer" />
+  <aura:attribute name="lockedData" type="Map" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="slotsData" type="Map" />
+  <aura:attribute name="rowColor" type="String" default="transparent" />
+  <aura:attribute name="colors" type="List" default="['#194366', '#5c7386', '#4085bf', '#7dbfb8']" />
+  <aura:attribute name="selectedDay" type="Map" />
+  <aura:attribute name="selectedRow" type="Integer" />
+  <aura:attribute name="isNoteVisible" type="Boolean" default="false" />
+  <aura:attribute name="enableCalendarFilter" type="Boolean" default="false" />
+  <aura:attribute name="days" type="List" default="[]" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="onGroupSelect" event="c:GenericComponentEvent" action="{!c.onGroupSelect}" />
+  <aura:handler name="change" value="{!v.row}" action="{!c.onRowChanged}" />
+  <!-- events -->
+
+  <aura:registerEvent name="onTransfer" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onSelectModality" type="c:GenericComponentEvent" />
+  <!-- methods -->
+  <div class="">
+    <c:ScheduleAppointmentService aura:id="scheduleAppointmentService" />
+    <div class="d-flex flex-wrap flex-xl-nowrap">
+      <div class="flex-shrink-0 sitename-col pt-2">
+        <div class="d-flex flex-column justify-content-center align-items-center sitename" style="{!join(';',
+        'background-color:'+v.rowColor
+        )}">
+          <div class="site-label-wrapper">
+            <div class="site-label-col">
+              <span>{!v.row.label}</span>
+            </div>
+            <aura:if isTrue="{!v.enableCalendarFilter}">
+              <aura:if isTrue="{!v.row.modalityCodes.length>0}">
+                <div class="site-menu-col">
+                  <lightning:buttonMenu onselect="{!c.onModalitySelect}" variant="border-inverse" iconSize="x-small">
+                    <aura:iteration items="{!v.row.modalityCodes}" var="modality">
+                      <lightning:menuItem value="{!modality.modalityCode}" label="{!modality.label}"
+                                          checked="{!modality.modalityCode==v.row.selectedModality}">
+                      </lightning:menuItem>
+                    </aura:iteration>
+                  </lightning:buttonMenu>
+
+                </div>
+              </aura:if>
+            </aura:if>
+
+          </div>
+
+
+
+          <aura:if isTrue="{!v.row.note}">
+            <div class="sitename__note">
+              <span>{!v.row.smallNote}
+                <!-- <aura:if isTrue="{!v.row.note.length>20}">
+                  ...
+                </aura:if> -->
+              </span>
+              <aura:if isTrue="{!v.row.note.length>20}">
+                <div class="slds-p-top_x-small">
+                  <a class="show-note-btn" onclick="{!c.onShowNote}">{!$Label.c.Show_more}</a>
+                  <div class="{!join(' ',
+                'full-note',
+                v.isNoteVisible?'slds-show':'slds-hide'
+                )}">
+                    <div class="full-note__inner">
+                      <div>
+                        {!v.row.note}
+                      </div>
+                      <button class="full-note__close-btn" onclick="{!c.onHideNote}">
+                        <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-close'}" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </aura:if>
+            </div>
+          </aura:if>
+        </div>
+
+      </div>
+      <div class="flex-grow-1 slider-col">
+        <aura:if isTrue="{!v.days.length>0}">
+          <c:AppointmentsDatesSlider aura:id="slider">
+            <aura:set attribute="slides">
+              <aura:iteration items="{!v.days}" var="day" indexVar="dayIndex">
+                <div class="swiper-slide p-2">
+                  <c:AppointmentsDate day="{!day}" staticData="{!v.staticData}" selectedDay="{!v.selectedDay}"
+                                      selectedRow="{!v.selectedRow}" lockedData="{!v.lockedData}"
+                                      rowIndex="{!v.rowIndex}" />
+                </div>
+              </aura:iteration>
+            </aura:set>
+          </c:AppointmentsDatesSlider>
+          <!--  <aura:set attribute="else">
+            No Slots
+          </aura:set> -->
+        </aura:if>
+        <aura:if isTrue="{!empty(v.row.days)}">
+          <aura:if isTrue="{!v.row.transferToDepartment}">
+            <div class="transfer-wrapper">
+              <lightning:button class="transfer-btn" variant="neutral" onclick="{!c.onTransferToDepartment}">
+                {!$Label.c.Transfer_to_department}
+              </lightning:button>
+            </div>
+          </aura:if>
+        </aura:if>
+      </div>
+    </div>
+  </div>
+
+</aura:component>

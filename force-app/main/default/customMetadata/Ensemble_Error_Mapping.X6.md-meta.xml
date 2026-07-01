@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Message 6</label>
+    <protected>false</protected>
+    <values>
+        <field>ErrorCode__c</field>
+        <value xsi:type="xsd:string">3</value>
+    </values>
+    <values>
+        <field>ErrorMessage__c</field>
+        <value xsi:type="xsd:string">תור נתפס ע&quot;י משתמש אחר. אנא בחר מועד חדש.</value>
+    </values>
+    <values>
+        <field>InterfaceType__c</field>
+        <value xsi:type="xsd:string">3</value>
+    </values>
+</CustomMetadata>

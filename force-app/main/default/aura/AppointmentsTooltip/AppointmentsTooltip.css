@@ -1,0 +1,128 @@
+.THIS {
+  /* ! */
+  display: inline-block;
+}
+
+.THIS .toggler-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.THIS .tooltip-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.THIS .tooltip-btn:hover, .THIS .tooltip-btn:active, .THIS .tooltip-btn:focus {
+  outline: none;
+}
+
+.THIS .tooltip-btn .slds-icon {
+  width: 20px;
+  height: 20px;
+  transition: fill 0.2s ease;
+}
+
+.THIS .tooltip-btn.toggler-btn {
+  width: 20px;
+  height: 20px;
+}
+
+.THIS .tooltip-btn.toggler-btn .slds-icon {
+  width: 20px;
+  height: 20px;
+  fill: #525252;
+}
+
+.THIS .tooltip-btn.toggler-btn:hover .slds-icon, .THIS .tooltip-btn.toggler-btn:active .slds-icon, .THIS .tooltip-btn.toggler-btn:focus .slds-icon {
+  fill: #2c2c2c;
+}
+
+.THIS .tooltip-btn.close-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+}
+
+.THIS .tooltip-btn.close-btn .slds-icon {
+  width: 12px;
+  height: 12px;
+  color: #525252;
+}
+
+.THIS .tooltip-btn.close-btn:hover .slds-icon, .THIS .tooltip-btn.close-btn:active .slds-icon, .THIS .tooltip-btn.close-btn:focus .slds-icon {
+  color: #2c2c2c;
+}
+
+.THIS .tooltip {
+  z-index: 98;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  left: 50%;
+  border-radius: 4px;
+  -webkit-transform: translate(-50%, 10px);
+          transform: translate(-50%, 10px);
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  background-color: #c2c2c2;
+  padding: 5px;
+}
+
+.THIS .tooltip::before {
+  content: "";
+  position: absolute;
+  margin-left: -15px;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #c2c2c2 transparent;
+}
+
+.THIS .tooltip.is-visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.THIS .tooltip__inner {
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.THIS[dir="rtl"] .tooltip {
+  left: 50%;
+  -webkit-transform: translate(50%, 10px);
+          transform: translate(50%, 10px);
+}
+
+.THIS[dir="rtl"] .tooltip::before {
+  left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.THIS[dir="rtl"] .tooltip.is-visible {
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}

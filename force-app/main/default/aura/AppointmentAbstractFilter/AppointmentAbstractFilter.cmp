@@ -1,0 +1,10 @@
+<aura:component extensible="true" abstract="true" extends="c:AppointmentsBase">
+  <!-- attrs -->
+  <aura:attribute name="filterName" type="String" default="" />
+  <aura:attribute name="value" type="String" />
+  <!-- events -->
+  <aura:registerEvent name="filterChanged" type="c:GenericComponentEvent" />
+
+  {!v.body}
+
+</aura:component>

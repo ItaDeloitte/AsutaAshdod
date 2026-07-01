@@ -1,0 +1,45 @@
+.THIS {
+  /* ! */
+  height: 100%;
+}
+
+.THIS .cActionModalInner {
+  max-width: 800px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.THIS .cActionModalInner .dm-body {
+  padding-bottom: 0;
+}
+
+.THIS .cActionModalInner .dm-body > div {
+  padding-top: 5px;
+}
+
+.THIS .cActionModalInner .dm-header {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.THIS .cActionModalInner .dm-footer {
+  border-radius: 0;
+}
+
+.THIS .cBaseAutocomplete .slds-listbox__item {
+  border-bottom: 1px solid #ccc;
+}
+
+.THIS .cBaseAutocomplete .slds-listbox__item:last-of-type {
+  border-bottom: none;
+}
+
+.THIS .account-option__label {
+  font-weight: bold;
+}
+
+.THIS .logo-img {
+  max-height: 50%;
+}

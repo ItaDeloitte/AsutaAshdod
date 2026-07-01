@@ -1,0 +1,21 @@
+<aura:component extends="c:BaseComponent" access="global">
+  <!-- attrs -->
+
+  <aura:attribute name="modalParams" type="Map" />
+  <aura:attribute name="lwcModal" type="Aura.Component[]" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+  <div>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <!-- <c:AuraLwcBridge></c:AuraLwcBridge> -->
+    <c:globalService aura:id="globalService">
+    </c:globalService>
+    <div onclose="{!c.onClose}">
+      {!v.lwcModal}
+    </div>
+  </div>
+</aura:component>

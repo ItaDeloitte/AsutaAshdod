@@ -1,0 +1,291 @@
+<aura:component extends="c:DocExpertBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="editData" type="Map"
+                  default="{procedure:'',expertise:'',subExpertise:'',area:[],agreements:[],arrangments:[]}" />
+  <aura:attribute name="filters" type="Map" default="{gender:'',degree:'',rank:1,procedures:[],procedureOptions:[],sites:[],expert:false,
+    arrangments:[],agreements:[],operationsInLastMonths:false}" />
+  <aura:attribute name="sortBy" type="String" default="" />
+  <aura:attribute name="doctors" type="List" default="[]" />
+  <aura:attribute name="recommendedDoctors" type="List" default="[]" />
+  <aura:attribute name="selectedDoctorId" type="String" />
+  <aura:attribute name="filteredDoctors" type="List" default="[]" />
+  <aura:attribute name="filteredAndSortedDoctors" type="List" default="[]" />
+  <aura:attribute name="selectedEditAutocompleteRelation" type="String" default="procedure" />
+  <aura:attribute name="filterOptions" type="Map" default="{minRank:1,maxRank:10}" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="isNotFoundMessageVisible" type="Boolean" default="false" />
+  <aura:attribute name="privateLabel" type="String" default="Private" />
+  <aura:attribute name="multiSelectNoMatchesFoundLabel" type="String" default="{!$Label.c.No_matches_found}" />
+  <aura:attribute name="maxMultiSelections" type="Integer" default="3" />
+
+  <aura:attribute name="isRecommendChanged" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="ondocaction" event="c:GenericComponentEvent" action="{!c.onDoctorAction}" />
+  <!-- events -->
+  <aura:registerEvent name="onCloseModal" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <div class="d-flex position-relative main-wrapper">
+      <aura:if isTrue="{!v.staticData}">
+        <div class="sidebar-col flex-shrink-0">
+          <div class="d-flex flex-column py-3 sidebar">
+            <div class="px-2 mb-2 filters">
+              <!-- <div class="mb-2">{!$Label.c.DocFilters}</div> -->
+              <div class="mb-1 py-2">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-checkbox">
+                      <label class="slds-checkbox__label">
+                        <input type="checkbox" name="expert" checked="{!v.filters.expert==true}"
+                               onchange="{!c.onChangeFilter}" />
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{!$Label.c.Only_experts}</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-1 py-2">
+                <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <div class="slds-checkbox">
+                      <label class="slds-checkbox__label">
+                        <input type="checkbox" name="operationsInLastMonths"
+                               checked="{!v.filters.operationsInLastMonths==true}" onchange="{!c.onChangeFilter}" />
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{!$Label.c.Operated_2_times}</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-1">
+                <lightning:select label="{!$Label.c.DocGender}" value="{!v.filters.gender}" required="false"
+                                  name="gender" onchange="{!c.onChangeFilter}"
+                                  messageWhenValueMissing="{!$Label.c.Complete_this_field}">
+                  <option value="">{!$Label.c.All}</option>
+                  <aura:iteration items="{!v.filterOptions.genderOptions}" var="option">
+                    <option value="{!option.value}">{!option.label}</option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+              <div class="mb-1">
+                <lightning:select label="{!$Label.c.DoctorDegree}" value="{!v.filters.degree}" required="false"
+                                  name="degree" onchange="{!c.onChangeFilter}"
+                                  messageWhenValueMissing="{!$Label.c.Complete_this_field}">
+                  <option value="">{!$Label.c.All}</option>
+                  <aura:iteration items="{!v.filterOptions.degreeOptions}" var="option">
+                    <option value="{!option.value}">{!option.label}</option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+              <!-- <div class="mb-1">
+                <lightning:slider name="rank" label="{!$Label.c.DocAdvisorRank}" value="{!v.filters.rank}" default="1"
+                  onchange="{!c.onChangeFilter}" required="false" min="{!v.filterOptions.minRank}"
+                  max="{!v.filterOptions.maxRank}" step="0.1" />
+              </div> -->
+              <div class="mb-1">
+                <c:lookupInput aura:id="lookupFilter" label="{!$Label.c.DocMedicalProcedure}" customKey="procedure"
+                               help="{!$Label.c.Up_to_3_procedures_messaxe}"
+                               selection="{!v.filters.procedureOptions}" isMultiEntry="true" initSearch="true"
+                               minSearchTermLength="0" onsearch="{!c.onSearchLookupFilter}"
+                               onselectionchange="{!c.onChangeLookupFilter}"
+                               maxMultiSelections="{!v.maxMultiSelections}">
+                </c:lookupInput>
+              </div>
+              <div class="mb-1">
+                <c:MultiSelect name="arrangment" label="{!$Label.c.Arrangment}"
+                               selectAllLabel="{!$Label.c.selectAllLabel}" allSelectedLabel="{!$Label.c.All_Selected}"
+                               options="{!v.filterOptions.arrangmentOptions}" onchange="{!c.onChangeFilter}"
+                               required="false" placeholder="{!$Label.c.All}" value="{!v.filters.arrangments}"
+                               selectAll="true" noMatchesFoundLabel="{!v.multiSelectNoMatchesFoundLabel}" />
+              </div>
+              <div class="mb-1">
+                <c:MultiSelect name="agreement" label="{!$Label.c.Agreement}"
+                               selectAllLabel="{!$Label.c.selectAllLabel}" allSelectedLabel="{!$Label.c.All_Selected}"
+                               options="{!v.filterOptions.agreementOptions}" onchange="{!c.onChangeFilter}"
+                               required="false" placeholder="{!$Label.c.All}" value="{!v.filters.agreements}"
+                               messageWhenValueMissing="{!$Label.c.Complete_this_field}" selectAll="true"
+                               noMatchesFoundLabel="{!v.multiSelectNoMatchesFoundLabel}" />
+              </div>
+              <div class="mb-1">
+                <c:MultiSelect name="site" label="{!$Label.c.Site}" selectAllLabel="{!$Label.c.selectAllLabel}"
+                               messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                               allSelectedLabel="{!$Label.c.All_Selected}" options="{!v.filterOptions.siteOptions}"
+                               onchange="{!c.onChangeFilter}" required="false" placeholder="{!$Label.c.All}"
+                               value="{!v.filters.sites}" selectAll="true"
+                               noMatchesFoundLabel="{!v.multiSelectNoMatchesFoundLabel}" />
+              </div>
+
+            </div>
+            <div class="px-2 sorting">
+              <div>
+                <lightning:select label="{!$Label.c.DocSortBy}" value="{!v.sortBy}" required="false" name="sortBy"
+                                  onchange="{!c.onChangeSortBy}">
+                  <option value="">{!$Label.c.None}</option>
+                  <aura:iteration items="{!v.staticData.sortOptions}" var="item" indexVar="_index">
+                    <option value="{!item.value}">{!item.label}</option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-col flex-grow-1">
+          <ui:scrollerWrapper aura:id="appointmentScrollerWrapper" class="w-100 p-3 docs-content">
+            <div class="position-relative d-flex flex-column docs-content__inner">
+              <div class="w-100 docs-content__header">
+                <aura:if isTrue="{!v.serverError}">
+                  <div class="mb-4">
+                    <c:Alert theme="error" class="error-alert">
+                      <div>
+                        <aura:unescapedHtml value="{!v.serverError}" />
+                      </div>
+                    </c:Alert>
+                  </div>
+                </aura:if>
+              </div>
+              <div class="w-100 flex-grow-1 docs-content__body">
+                <div class="mb-3">
+                  <div class="mb-2 bs-row">
+                    <div class="bs-col-auto">
+                      <c:BaseAutocomplete aura:id="editField" name="expertise" value="{!v.editData.expertise}"
+                                          class="edit-autocomplete edit-autocomplete_expertise"
+                                          label="{!$Label.c.DocExpertise}" onsearch="{!c.onAutocompleteSearch}"
+                                          oninitsearch="{!c.onAutocompleteInitSearch}" placeholder="{!$Label.c.Search}"
+                                          isPlainAutoComplete="false" onchange="{!c.onChangeAutocomplete}"
+                                          isDisabled="false"
+                                          messageWhenValueMissing="{!$Label.c.Complete_this_field}" />
+                    </div>
+                    <div class="bs-col-auto">
+                      <c:BaseAutocomplete aura:id="editField" name="subExpertise" value="{!v.editData.subExpertise}"
+                                          class="edit-autocomplete edit-autocomplete_expertise"
+                                          label="{!$Label.c.DocSubExpertise}" onsearch="{!c.onAutocompleteSearch}"
+                                          required="{!!v.editData.procedure}"
+                                          oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                          placeholder="{!$Label.c.Search}" onchange="{!c.onChangeAutocomplete}"
+                                          isDisabled="false"
+                                          messageWhenValueMissing="{!$Label.c.Complete_this_field}" />
+                    </div>
+                    <div class="bs-col-auto">
+                      <c:BaseAutocomplete aura:id="editField" name="procedure" value="{!v.editData.procedure}"
+                                          class="edit-autocomplete edit-autocomplete_procedure"
+                                          label="{!$Label.c.DocMedicalProcedure}" onsearch="{!c.onAutocompleteSearch}"
+                                          required="{!!v.editData.subExpertise}" placeholder="{!$Label.c.Search}"
+                                          oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                                          onchange="{!c.onChangeAutocomplete}" isDisabled="false"
+                                          messageWhenValueMissing="{!$Label.c.Complete_this_field}" />
+                    </div>
+                    <div class="bs-col-auto">
+                      <c:MultiSelect aura:id="editField" name="agreements"
+                                     options="{!v.staticData.agreementFactorOptions}"
+                                     placeholder="{!$Label.c.SelectPayerFactor}" label="{!$Label.c.Agreements}"
+                                     value="{!v.editData.agreements}" required="true"
+                                     selectAllLabel="{!$Label.c.selectAllLabel}"
+                                     allSelectedLabel="{!$Label.c.All_Selected}"
+                                     messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                     noMatchesFoundLabel="{!v.multiSelectNoMatchesFoundLabel}" />
+                    </div>
+                    <div class="bs-col-auto">
+                      <c:MultiSelect aura:id="editField" name="arrangments"
+                                     options="{!v.staticData.arrangementFactorOptions}"
+                                     placeholder="{!$Label.c.SelectPayerFactor}" label="{!$Label.c.Arrangments}"
+                                     value="{!v.editData.arrangments}" required="true"
+                                     selectAllLabel="{!$Label.c.selectAllLabel}"
+                                     allSelectedLabel="{!$Label.c.All_Selected}"
+                                     messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                     noMatchesFoundLabel="{!v.multiSelectNoMatchesFoundLabel}" />
+                    </div>
+                    <div class="bs-col-auto">
+                      <c:MultiSelect aura:id="editField" name="area" options="{!v.staticData.areaOptions}"
+                                     placeholder="{!$Label.c.SelectArea}" label="{!$Label.c.DocArea}"
+                                     value="{!v.editData.area}" required="true"
+                                     selectAllLabel="{!$Label.c.selectAllLabel}"
+                                     allSelectedLabel="{!$Label.c.All_Selected}"
+                                     messageWhenValueMissing="{!$Label.c.Complete_this_field}"
+                                     noMatchesFoundLabel="{!v.multiSelectNoMatchesFoundLabel}" />
+                    </div>
+                    <div class="bs-col-auto align-self-end pt-2">
+                      <lightning:button variant="neutral" label="{!$Label.c.Search}" onclick="{!c.onSearchDoctors}"
+                                        disabled="false" />
+                      <lightning:button variant="neutral" label="{!$Label.c.Reset}" onclick="{!c.onResetSearch}"
+                                        disabled="false" />
+                    </div>
+                  </div>
+                </div>
+                <aura:if isTrue="{!v.doctors.length>0}">
+                  <aura:if isTrue="{!v.filteredAndSortedDoctors.length==0}">
+                    <div class="slds-p-around_medium slds-text-align_center">
+                      {!format($Label.c.Zero_of_doctors_found)}
+                    </div>
+                  </aura:if>
+                  <aura:if isTrue="{!v.filteredAndSortedDoctors.length>0}">
+                    <div class="slds-p-around_medium slds-text-align_center">
+                      {!format($Label.c.Number_of_Doctors_found,v.filteredAndSortedDoctors.length )}
+                    </div>
+                    <div>
+                      <div class="">
+                        <c:DocExpertDoctorsSlider aura:id="slider" doctors="{!v.filteredAndSortedDoctors}"
+                                                  recommendedDoctors="{!v.recommendedDoctors}"
+                                                  selectedDoctorId="{!v.selectedDoctorId}" recordId="{!v.recordId}">
+                          <!-- <aura:set attribute="slides">
+                          <aura:iteration items="{!v.filteredAndSortedDoctors}" var="doctor" indexVar="_index">
+                            <div class="swiper-slide doctor-slide">
+                              <c:DocExpertDoctor doctor="{!doctor}" recommendedDoctors="{!v.recommendedDoctors}"
+                                                 selectedDoctor="{!v.selectedDoctor}" onaction="{!c.onDoctorAction}"
+                                                 isSelected="{!v.selectedDoctorId==doctor.doctorId}" />
+                            </div>
+                          </aura:iteration>
+                        </aura:set> -->
+                        </c:DocExpertDoctorsSlider>
+                      </div>
+                      <div class="py-4 text-center">
+                        <div class="bs-row justify-content-center">
+                          <div class="bs-col-auto">
+                            <lightning:button class="submit-btn" label="{!$Label.c.DocSave}" type="button"
+                                              variant="brand" onclick="{!c.onSubmit}"
+                                              disabled="{!empty(v.recommendedDoctors)}" name="save" />
+                          </div>
+                          <!-- <div class="bs-col-auto">
+                          <lightning:button class="submit-btn" label="{!$Label.c.DocScheduleAppointment}" type="button"
+                            variant="brand" onclick="{!c.onSubmit}" disabled="{!!v.selectedDoctorId}" name="schedule" />
+                        </div> -->
+                          <div class="bs-col-auto">
+                            <lightning:button class="submit-btn" label="{!$Label.c.	DocSendDocAdv}" type="button"
+                                              variant="brand" onclick="{!c.onSubmit}" disabled="{!
+                              or(
+                                !v.isRecommendChanged,
+                                empty(v.recommendedDoctors)
+                                )
+                              }" name="sendDocAdv" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </aura:if>
+                  <aura:set attribute="else">
+                    <aura:if isTrue="{!v.isNotFoundMessageVisible}">
+                      <div class="py-4">
+                        {!$Label.c.DoctorsNotFound}
+                      </div>
+                    </aura:if>
+                  </aura:set>
+                </aura:if>
+
+              </div>
+            </div>
+          </ui:scrollerWrapper>
+        </div>
+      </aura:if>
+    </div>
+    <c:Spinner isLoading="{!v.isLoading}" size="medium" />
+  </div>
+</aura:component>

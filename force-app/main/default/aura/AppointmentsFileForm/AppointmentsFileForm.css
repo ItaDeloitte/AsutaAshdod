@@ -1,0 +1,25 @@
+.THIS {
+  /* ! */
+}
+
+.THIS.file-form .modal-container,
+.THIS.file-form .slds-modal__container {
+  margin: 0 auto;
+  min-width: 20rem;
+  max-width: 800px;
+}
+
+.THIS.file-form .modal-body,
+.THIS.file-form .slds-modal__content {
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+
+.THIS .cActionModalInner .dm-body {
+  padding: 0;
+}
+
+.THIS .confirm-message {
+  font-size: 16px;
+}

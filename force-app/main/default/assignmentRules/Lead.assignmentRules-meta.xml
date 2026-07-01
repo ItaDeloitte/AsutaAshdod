@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assign to sales agents</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Q_0_02</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>Campaign__r.Name = &apos;תיירות מרפא- רוסית&apos;
+||
+Campaign__r.Name = &apos;תיירות מרפא- בוט&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Q_0_01</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>Campaign__r.Name = &apos;תיירות מרפא- אנגלית&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sales_agents</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>true</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

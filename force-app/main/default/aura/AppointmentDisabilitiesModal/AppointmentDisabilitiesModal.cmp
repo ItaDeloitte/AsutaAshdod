@@ -1,0 +1,130 @@
+<aura:component extends="c:AppointmentsBase">
+  <!-- attrs -->
+  <aura:attribute name="modalParams" type="Map" default="{}" />
+  <aura:attribute name="caseId" type="String" default="" />
+  <aura:attribute name="appointmentIds" type="List" default="[]" />
+  <aura:attribute name="disabilityData" type="Map" />
+  <aura:attribute name="disabilityFields" type="List" default="[]" />
+  <aura:attribute name="assistOptions" type="List" default="[]" />
+  <aura:attribute name="errors" type="List" default="[]" />
+  <aura:attribute name="labels" type="Map" default="{}" />
+  <aura:attribute name="isReady" type="Boolean" default="true" />
+  <aura:attribute name="stepIndex" type="Integer" default="-1" />
+  <aura:attribute name="selectedAppointment" type="Map" />
+  <aura:attribute name="appointmentsList" type="List" default="[]" />
+  <aura:attribute name="minSearchTermLength" type="Integer" default="0" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <aura:if isTrue="{!v.isReady}">
+      <aura:if isTrue="{!v.stepIndex==0}">
+        <c:ActionModalInner applyStyles="false">
+          <aura:set attribute="title">
+            {!v.labels.AppointmentDisabilities}
+          </aura:set>
+
+          <div class="slds-p-around_medium">
+            <c:errorsAlert errors="{!v.errors}" closeable="true" onclose="{!c.onCloseErrors}"></c:errorsAlert>
+            <div>
+              <div class="slds-grid slds-gutters slds-wrap slds-m-bottom_medium">
+                <div class="slds-col slds-size_1-of-1">
+                  <c:lookupInput label="{!v.labels.Appointment}" selection="{!v.selectedAppointment}"
+                                 onsearch="{!c.onAppointmentSearch}" onselectionchange="{!c.onAppointmentSelect}"
+                                 minSearchTermLength="{!v.minSearchTermLength}">
+                  </c:lookupInput>
+                </div>
+              </div>
+              <aura:if isTrue="{!v.selectedAppointment}">
+                <div class="">
+                  <aura:iteration items="{!v.appointmentsList}" var="appointment" indexVar="_index">
+                    <div class="mb-2">
+                      <div class="font-weight-bold underline">{!v.labels.Appointment+' '+(_index+1)}</div>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-size_1-of-2">
+                          <span class="font-weight-bold">{!v.labels.Date}</span>
+                        </div>
+                        <div class="slds-size_1-of-2">
+                          <c:FormattedDateTime date="{!appointment.Appointment_Date_Time__c}"
+                                               locale="{!$Locale.langLocale}" format="dd/MM, EEE, HH:mm" />
+                        </div>
+                      </div>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-size_1-of-2">
+                          <span class="font-weight-bold">{!v.labels.MedicalProcedure}</span>
+                        </div>
+                        <div class="slds-size_1-of-2">
+                          <span>{!appointment.Medical_Procedure__r.Name}</span>
+                        </div>
+                      </div>
+                      <div class="slds-grid slds-wrap">
+                        <div class="slds-size_1-of-2">
+                          <span class="font-weight-bold">{!v.labels.Site}</span>
+                        </div>
+                        <div class="slds-size_1-of-2">
+                          <span>{!appointment.Site__r.Name}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </aura:iteration>
+                </div>
+              </aura:if>
+            </div>
+          </div>
+          <aura:set attribute="footer">
+            <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+                              label="{!v.labels.Cancel}" />
+            <aura:if isTrue="{!true}">
+              <lightning:button variant="brand" type="button" onclick="{!c.onGoToDisabilityStepHandler}"
+                                disabled="{!or(v.isLoading,empty(v.appointmentIds))}" label="{!v.labels.Next}" />
+            </aura:if>
+
+          </aura:set>
+        </c:ActionModalInner>
+      </aura:if>
+      <aura:if isTrue="{!v.stepIndex==1}">
+        <c:ActionModalInner applyStyles="false">
+          <aura:set attribute="title">
+            {!v.labels.AppointmentDisabilities}
+          </aura:set>
+
+          <div class="slds-p-around_medium">
+            <c:errorsAlert errors="{!v.errors}" closeable="true" onclose="{!c.onCloseErrors}"></c:errorsAlert>
+            <div>
+              <div class="slds-grid slds-gutters slds-wrap">
+                <aura:iteration items="{!v.disabilityFields}" var="disability" indexVar="_index">
+                  <div class="slds-col slds-size_1-of-1 slds-m-bottom_medium">
+                    <lightning:checkboxGroup name="{!disability.id}" label="{!disability.label}"
+                                             options="{!disability.assistOptions}" value="{!disability.selectedAssists}"
+                                             onchange="{!c.onGroupChange}" />
+                  </div>
+                </aura:iteration>
+              </div>
+            </div>
+          </div>
+          <aura:set attribute="footer">
+            <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+                              label="{!v.labels.Cancel}" />
+            <aura:if isTrue="{!v.modalParams.modalData.search}">
+              <lightning:button variant="neutral" type="button" onclick="{!c.onBack}" disabled="{!v.isLoading}"
+                                label="{!v.labels.Back}" />
+            </aura:if>
+            <aura:if isTrue="{!v.disabilityData}">
+              <lightning:button variant="brand" type="button" onclick="{!c.onSubmit}" disabled="{!v.isLoading}"
+                                label="{!v.labels.Submit}" />
+            </aura:if>
+
+          </aura:set>
+        </c:ActionModalInner>
+      </aura:if>
+
+    </aura:if>
+    <c:Spinner isLoading="{!v.isLoading}" size="medium" />
+  </div>
+</aura:component>

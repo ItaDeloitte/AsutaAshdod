@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>IVF_Reminder_Seperate_85</label>
+    <protected>false</protected>
+    <values>
+        <field>SMS_Content__c</field>
+        <value xsi:type="xsd:string">שלום רב, בהמשך לשיחתנו מיום {1}, אנו ממתינים לקבלת החלטתכם. נבקש להזכיר לכם כי בהעדר הוראה מכם עד ליום {2}, אסותא תפעל בהתאם להנחיות משרד הבריאות. את הטפסים תוכלו להעביר לידנו באמצעות העלאתם לקישור זה {3}. בברכה, אסותא מרכזים רפואיים</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">ASSUTA</value>
+    </values>
+    <values>
+        <field>SMS_Note__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

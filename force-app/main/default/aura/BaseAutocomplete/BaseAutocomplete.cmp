@@ -1,0 +1,187 @@
+<aura:component extends="c:BaseComponent">
+  <!-- require -->
+  <!-- attrs -->
+  <aura:attribute name="class" type="String" default="" />
+  <aura:attribute name="searchTerm" type="String" default="" />
+  <aura:attribute name="keyupTimeoutId" type="Integer" />
+  <aura:attribute name="searchResults" type="List" default="[]" />
+  <aura:attribute name="searchDelay" type="Integer" default="200" />
+  <aura:attribute name="value" type="String" />
+  <aura:attribute name="selectedOption" type="Map" />
+  <aura:attribute name="isListOpen" type="Boolean" default="false" />
+  <aura:attribute name="placeholder" type="String" default="{!$Label.c.Search}" />
+  <aura:attribute name="label" type="String" default="" />
+  <aura:attribute name="isInited" type="Boolean" default="true" />
+  <aura:attribute name="required" type="Boolean" default="false" />
+  <aura:attribute name="isFocused" type="Boolean" default="false" />
+  <aura:attribute name="isTouched" type="Boolean" default="false" />
+  <aura:attribute name="validity" type="Map" default="{valid:true}" />
+  <aura:attribute name="messageWhenValueMissing" type="String" default="Complete this field." />
+  <aura:attribute name="styled" type="Boolean" default="false" />
+  <aura:attribute name="isForceClearTerm" type="Boolean" default="true" />
+  <aura:attribute name="isPlainAutoComplete" type="Boolean" default="false" />
+  <aura:attribute name="name" type="String" default="" />
+  <aura:attribute name="customValidityMessage" type="String" default="" />
+  <aura:attribute name="customMessageVisible" type="Boolean" default="" />
+  <aura:attribute name="customMessage" type="String" default="" />
+  <aura:attribute name="isDisabled" type="Boolean" default="false" />
+  <aura:attribute name="tabindex" type="Integer" default="0" />
+  <aura:attribute name="canCreate" type="Boolean" default="false" />
+  <aura:attribute name="createLabel" type="String" default="New" />
+  <aura:attribute name="createIconName" type="String" default="utility:add" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="change" value="{!v.isDisabled}" action="{!c.onChangeDisabled}" />
+  <!-- <aura:handler name="change" value="{!v.value}" action="{!c.onChangeValue}" /> -->
+  <!-- events -->
+  <aura:registerEvent name="onchange" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onsearch" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="oninitsearch" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="oncreate" type="c:GenericComponentEvent" />
+  <!-- methods -->
+  <aura:method name="showHelpMessageIfInvalid" action="{!c.onShowHelpMessageIfInvalid}" />
+  <aura:method name="checkValidity" action="{!c.onCheckValidity}" />
+  <aura:method name="setCustomValidity" action="{!c.onSetCustomValidity}">
+    <aura:attribute name="message" type="String" default="" />
+  </aura:method>
+  <aura:method name="setCustomMessage" action="{!c.onSetCustomMessage}">
+    <aura:attribute name="message" type="String" default="" />
+  </aura:method>
+  <aura:method name="resetCustomMessage" action="{!c.onResetCustomMessage}">
+  </aura:method>
+  <aura:method name="triggerSearch" action="{!c.onTriggerSearch}">
+  </aura:method>
+  <aura:method name="reset" action="{!c.onReset}">
+    <aura:attribute name="emitChange" type="Boolean" default="true" />
+  </aura:method>
+  <aura:method name="setOption" action="{!c.onSetOption}">
+    <aura:attribute name="option" type="Map" />
+  </aura:method>
+
+
+
+
+  <div class="{!join(' ',
+  'slds-form-element app-autocomplete',
+  and(and(v.isTouched,!v.isListOpen),!v.validity.valid)?'slds-has-error':'',
+  v.styled?'styled':'',
+  v.class
+  )}">
+    <aura:if isTrue="{!!empty(v.label)}">
+      <label class="slds-form-element__label">
+        <abbr title="required" class="{!join(' ',
+              'slds-required',
+              v.required?'':'slds-hide'
+              )}">*</abbr>
+        {!v.label}</label>
+    </aura:if>
+    <div class="slds-form-element__control" data-handler="{!globalId}">
+      <div class="{!join(' ',
+      'slds-combobox_container',
+      v.value?'slds-has-selection':''
+      )}">
+        <div class="{!join(' ',
+        'slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click',
+        v.isListOpen?'slds-is-open':''
+        )}" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+          <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+            <input type="text" class="{!join(' ',
+            'slds-input slds-combobox__input',
+            and(v.value,!v.isPlainAutoComplete)?'slds-combobox__input-value':''
+            )}" aura:id="input" aria-autocomplete="list" autocomplete="off" role="textbox"
+                   placeholder="{!v.placeholder + '...'}" onkeyup="{!c.onKeyup}" value="{!v.searchTerm}"
+                   disabled="{!or(v.isDisabled,!v.isInited)}" onfocus="{!c.onFocusInput}"
+                   readonly="{!and(v.value,!v.isPlainAutoComplete)}" title="{!v.searchTerm}" onblur="{!c.onBlurInput}"
+                   name="{!v.name}" tabindex="{!v.tabindex}" />
+            <aura:if isTrue="{!!v.isDisabled}">
+              <aura:if isTrue="{!empty(v.value)}">
+                <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                  <lightning:icon class="" iconName="utility:search" size="x-small" alternativeText="Doc image" />
+                </span>
+                <aura:set attribute="else">
+                  <lightning:buttonIcon class="slds-input__icon slds-input__icon_right"
+                                        iconName="{!v.isPlainAutoComplete?'utility:clear':'utility:close'}"
+                                        variant="bare" size="small" onclick="{!c.onClear}" alternativeText="Clear"
+                                        disabled="{!v.isDisabled}" />
+                </aura:set>
+              </aura:if>
+            </aura:if>
+          </div>
+          <div class="{!join(' ',
+            'slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid dropdown-container',
+            v.isLoading?'is-loading':''
+            )}" role="listbox">
+            <c:Spinner alternativeText="Loading" size="small" isLoading="{!v.isLoading}" />
+            <div class="{!join(' ',
+            v.isLoading?'slds-hide':'slds-show'
+            )}">
+              <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                <aura:iteration items="{!v.searchResults}" var="result">
+                  <li role="presentation" class="{!join(' ',
+                  'slds-listbox__item',
+                  result.link?'item-with-link':''
+                  )}" onclick="{!c.onSelectOption}" data-value="{!result.value}">
+                    <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+                         role="option">
+                      <span class="{!join(' ',
+                      'slds-media__body item-inner'
+                      )}">
+                        <aura:if isTrue="{!result.labelHtml}">
+                          <aura:unescapedHtml value="{!result.labelHtml}" />
+                        </aura:if>
+                        <aura:if isTrue="{!!result.labelHtml}">
+                          <span class="slds-truncate" title="{!result.label}">{!result.label}</span>
+                        </aura:if>
+                        <aura:if isTrue="{!result.link}">
+                          <a class="item-link" href="{!result.link}" target="_blank" onclick="{!c.onLinkClick}">
+                            <lightning:icon iconName="utility:link" size="x-small"></lightning:icon>
+                          </a>
+                        </aura:if>
+                      </span>
+                    </div>
+                  </li>
+                </aura:iteration>
+                <aura:if isTrue="{!v.canCreate}">
+                  <li class="slds-listbox__item" onclick="{!c.onCreate}">
+                    <div
+                         class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small create-item">
+                      <span class="slds-media__body">
+                        <lightning:icon class="create-item__icon" iconName="{!v.createIconName}" size="x-small" />
+                        <span class="create-item__label">{!v.createLabel}</span>
+                      </span>
+                    </div>
+                  </li>
+                </aura:if>
+                <aura:if isTrue="{!v.customMessageVisible}">
+                  <li class="slds-listbox__item">
+                    <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small create-item">
+                      <span class="slds-media__body">
+                        <span class="create-item__label">{!v.customMessage}</span>
+                      </span>
+                    </div>
+                  </li>
+                </aura:if>
+              </ul>
+              <!-- <aura:set attribute="else">
+                    <div>No Search Results</div>
+                  </aura:set> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aura:if isTrue="{!and(!v.validity.valid,and(v.isTouched,!v.isListOpen))}">
+      <div class="slds-form-element__help">
+        <aura:if isTrue="{!v.validity.valueMissing}">
+          {!v.messageWhenValueMissing}
+        </aura:if>
+        <aura:if isTrue="{!v.validity.customMessage}">
+          {!v.validity.customMessage}
+        </aura:if>
+      </div>
+    </aura:if>
+  </div>
+</aura:component>

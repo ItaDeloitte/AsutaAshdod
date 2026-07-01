@@ -1,0 +1,33 @@
+.THIS .periods-tooltip {
+  color: #525252;
+  min-width: 190px;
+  margin-top: -10px;
+}
+
+.THIS .periods-tooltip__header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.THIS .periods-tooltip .period-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.THIS .periods-tooltip .period-item .slds-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.THIS .periods-tooltip .period-item__icon-wrapper {
+  padding: 0 5px;
+}
+
+.THIS .periods-tooltip .period-item__label {
+  padding: 0 5px;
+}

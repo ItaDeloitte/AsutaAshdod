@@ -1,0 +1,37 @@
+<aura:component
+  implements="lightningsnapin:prechatUI"
+  access="global"
+  extends="c:BaseComponent"
+>
+  <!-- attrs -->
+  <aura:attribute name="wrapper" type="Boolean" default="true" />
+  <aura:attribute name="fieldCmps" type="Aura.Component[]" />
+  <!-- For Aura performance -->
+  <aura:locator
+    target="startButton"
+    description="Pre-chat form submit button."
+  />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+
+  <lightningsnapin:prechatAPI aura:id="prechatAPI" />
+  <aura:if isTrue="{!v.fieldCmps.length>0}">
+    <div class="prechatUI">
+      <div class="formContent">
+        <div class="fieldsList">
+          {!v.fieldCmps}
+        </div>
+      </div>
+      <div class="buttonWrapper">
+        <lightning:button
+          aura:id="startButton"
+          variant="brand"
+          class="startButton embeddedServiceSidebarButton"
+          label="Start Chatting"
+          onclick="{!c.onStart}"
+        />
+      </div>
+    </div>
+  </aura:if>
+</aura:component>

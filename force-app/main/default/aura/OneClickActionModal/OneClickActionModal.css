@@ -1,0 +1,14 @@
+.THIS .cBaseModal .slds-modal__header {
+  padding: 1rem;
+  border-bottom: 2px solid #dddbda;
+}
+
+.THIS .cActionModalInner {
+  max-width: 800px;
+  margin: 0 auto;
+  max-height: 250px;
+}
+
+.THIS .cActionModalInner .dm-body {
+  padding-bottom: 0;
+}

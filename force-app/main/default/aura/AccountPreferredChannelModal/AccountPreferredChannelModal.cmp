@@ -1,0 +1,79 @@
+<aura:component extends="c:AppointmentsBase" access="global">
+  <!-- attrs -->
+  <aura:attribute name="modalParams" type="Map" default="{}" />
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="errors" type="List" default="[]" />
+  <aura:attribute name="labels" type="Map" default="{}" />
+  <aura:attribute name="isReady" type="Boolean" default="true" />
+  <aura:attribute name="minSearchTermLength" type="Integer" default="0" />
+  <aura:attribute name="channelOptions" type="List" default="[]" />
+  <aura:attribute name="selectedChannel" type="String" default="" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="additionalInputs" type="List" default="[]" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <aura:if isTrue="{!v.isReady}">
+      <c:ActionModalInner applyStyles="false">
+        <aura:set attribute="title">
+          {!v.labels.AccountPreferredChannel}
+        </aura:set>
+
+        <div class="slds-p-around_medium">
+          <c:errorsAlert errors="{!v.errors}" closeable="true" onclose="{!c.onCloseErrors}"></c:errorsAlert>
+          <aura:if isTrue="{!v.staticData}">
+            <div>
+              <aura:if isTrue="{!!empty(v.channelOptions)}">
+                <div class="slds-m-bottom_medium">
+                  <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-1">
+                      <lightning:select aura:id="formField" label="{!v.labels.SelectPreferredChannel}"
+                                        value="{!v.selectedChannel}" onchange="{!c.onChangeChannel}">
+                        <aura:iteration items="{!v.channelOptions}" var="option">
+                          <option value="{!option.value}" disabled="{!option.disabled}">{!option.label}</option>
+                        </aura:iteration>
+                      </lightning:select>
+                    </div>
+                  </div>
+                  <div class="additional-inputs">
+                    <div class="slds-grid slds-gutters slds-wrap">
+                      <aura:iteration items="{!v.additionalInputs}" var="item">
+                        <div class="slds-col slds-size_1-of-1">
+                          <lightning:input aura:id="additionalInput" label="{!item.label}" value="{!item.value}"
+                                           type="{!item.type}" required="{!item.required}" autocomplete="off">
+                          </lightning:input>
+                        </div>
+                      </aura:iteration>
+                    </div>
+                  </div>
+                </div>
+
+              </aura:if>
+            </div>
+            <div>
+              {!v.staticData.infoMessage}
+            </div>
+          </aura:if>
+
+        </div>
+        <aura:set attribute="footer">
+          <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" label="{!v.labels.Cancel}" />
+          <aura:if isTrue="{!!empty(v.channelOptions)}">
+            <lightning:button variant="brand" type="button" onclick="{!c.onSubmit}"
+                              disabled="{!or(v.isLoading,!v.selectedChannel)}" label="{!v.labels.Next}" />
+          </aura:if>
+
+
+        </aura:set>
+      </c:ActionModalInner>
+    </aura:if>
+    <c:Spinner isLoading="{!v.isLoading}" size="medium" />
+  </div>
+</aura:component>

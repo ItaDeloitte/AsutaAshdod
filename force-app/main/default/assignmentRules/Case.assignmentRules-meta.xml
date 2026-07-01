@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Cases Record type and Origin Assignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>ivf_rishon</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>IVF הקפאת ביציות</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Case_site__c</field>
+                <operation>equals</operation>
+                <value>Rishon_Letzion</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>מוקד זימון-פניות ממערך קרדיאלי</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>מערכות מקור</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>זימון תורים למכונים ומרפאות</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>העברה למחלקה</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CreatedByAlias</field>
+                <operation>equals</operation>
+                <value>ens</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>!ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Surgery_Auto_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>ניתוחים</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>מערכות מקור</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.insurer_factor__c</field>
+                <operation>equals</operation>
+                <value>3,43,44,89,35,31</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.CreatedById</field>
+                <operation>contains</operation>
+                <value>Integration</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Shikum_Bait</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>שיקום בית</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ivf_ramat</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>IVF הקפאת ביציות</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Case_site__c</field>
+                <operation>equals</operation>
+                <value>Ramat_Hahayal</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ExpertsWeb</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>טופס מקוון,Web_Site</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>רופאים מומחים</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Q_33_Moked_Ashdod_Public</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web_Site</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.tofes_web__c</field>
+                <operation>equals</operation>
+                <value>טופס 2</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>notEqual</operation>
+                <value>פניות הציבור</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>QM_90_706</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>שיחה יוצאת חיצונית,שיחה יוצאת פנימית,שיחה נכנסת חיצונית,שיחה נכנסת פנימית,SMS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>זימון תורים למכונים ומרפאות</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>QM_90_143</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>רופאים מומחים</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>notEqual</operation>
+                <value>SMS,פייסבוק מסנג&apos;ר,WhatsApp,Chat</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SurgeryWeb</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>ניתוחים</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>טופס מקוון,Web_Site</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Zimun_Web</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>זימון תורים למכונים ומרפאות,מידע כללי</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>טופס מקוון,Web_Site</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Digital</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>SMS,WhatsApp,זימון אינטרנטי אסותא,זימון אינטרנטי מכבי,טופס מקוון,Web_Site</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>זימון תורים למכונים ומרפאות,מידע כללי,ניתוחים</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>notEqual</operation>
+                <value>Caneclled,Closed</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Doctors_Box_Mail</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>קו לרופא</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>שיחה יוצאת חיצונית,שיחה יוצאת פנימית,שיחה נכנסת חיצונית,שיחה נכנסת פנימית</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>QM_90_388</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>ניתוחים</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>שיחה יוצאת חיצונית,שיחה יוצאת פנימית,שיחה נכנסת חיצונית,שיחה נכנסת פנימית</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>notEqual</operation>
+                <value>Caneclled,Closed</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>QM_90_388</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>ניתוחים</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>מערכות מקור</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Payer_factor_code__c</field>
+                <operation>notEqual</operation>
+                <value>3</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>notEqual</operation>
+                <value>Caneclled,Closed</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>QM_90_143</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR (4 AND 5)) AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Case.sub_case_subject__c</field>
+                <operation>equals</operation>
+                <value>המלצה על רופא מומחה</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>רופאים מומחים</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>,דואר אלקטרוני,זימון אינטרנטי אסותא,זימון אינטרנטי מכבי,טופס מקוון,מערכות מקור,פניות הציבור,פקס,Web_Site</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Experts_center__c</field>
+                <operation>equals</operation>
+                <value>אמת</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.sub_case_subject__c</field>
+                <operation>equals</operation>
+                <value>זימון תור לרופא מומחה</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>QM_90_371</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>אסותא 360</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.X360_who_treat__c</field>
+                <operation>equals</operation>
+                <value>מוקד</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>M_90_3712</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>אסותא 360</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.X360_who_treat__c</field>
+                <operation>notEqual</operation>
+                <value>מוקד</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>ידנית</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AutomateClosedcases</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Chat</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>AutomateClosedcases</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Closed</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Q_33_PublicInquiryAshdod</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(RecordType.DeveloperName = &quot;PublicInquiries&quot;,  ISPICKVAL(Origin , &quot;Web_Site&quot;),  Site_Ashdod__c = true )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PublicInquiryMerkazim</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(RecordType.DeveloperName = &quot;PublicInquiries&quot;,  ISPICKVAL(Origin , &quot;Web_Site&quot;),  Site_Ashdod__c = false )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Q_85_120_2</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>מידע כללי</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.WebsiteFormCaseSubject__c</field>
+                <operation>contains</operation>
+                <value>בקשת דוח</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>QM_90_120</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>מידע כללי</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.WebsiteFormCaseSubject__c</field>
+                <operation>equals</operation>
+                <value>בקשה לשוחח עם גורם רפואי</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.WebsiteFormCaseSubject__c</field>
+                <operation>equals</operation>
+                <value>אחר</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Q_85_120_4</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>מידע כללי</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.WebsiteFormCaseSubject__c</field>
+                <operation>equals</operation>
+                <value>פניה למחלקת IVF</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

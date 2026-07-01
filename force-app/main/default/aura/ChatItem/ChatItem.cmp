@@ -1,0 +1,63 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="chat" type="Map" />
+  <aura:attribute name="chatDescribe" type="Map" />
+  <aura:attribute name="messages" type="List" default="[]" />
+  <aura:attribute name="newMessageText" type="String" default="" />
+  <aura:attribute name="labels" type="Map" default="{}" />
+
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler event="lightning:conversationAgentSend" value="{!this}" action="{!c.onConversationAgentSend}" />
+  <aura:handler event="lightning:conversationNewMessage" value="{!this}" action="{!c.onConversationNewMessage}" />
+  <!-- events -->
+  <aura:registerEvent name="onclosechattab" type="c:GenericComponentEvent" />
+
+  <!-- methods -->
+  <div>
+    <div class="chat-item">
+      <lightning:omniToolkitAPI aura:id="omniApi" />
+      <lightning:conversationToolkitAPI aura:id="conversationKit" />
+      <lightning:utilityBarAPI aura:id="utilityBar" />
+      <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+      <ui:scrollerWrapper class="slds-chat" aura:id="chatScroller">
+        <ul class="slds-chat-list">
+          <aura:iteration items="{!v.messages}" var="message" indexVar="_index">
+            <li class="{!join(' ',
+            'slds-chat-listitem',
+            message.type=='Agent'?'slds-chat-listitem_outbound':'slds-chat-listitem_inbound'
+            )}">
+              <div class="slds-chat-message">
+                <div class="slds-chat-message__body">
+                  <div class="{!join(' ',
+                  'slds-chat-message__text',
+                  message.type=='Agent'?'slds-chat-message__text_outbound':'slds-chat-message__text_inbound'
+
+                  )}">
+                    <span>{!message.content}</span>
+                  </div>
+                  <div class="slds-chat-message__meta">{!message.name}
+                    •
+                    <span>
+                      <lightning:formattedDateTime value="{!message.timestamp}" hour="2-digit" minute="2-digit"
+                                                   second="2-digit" /></span></div>
+                </div>
+              </div>
+            </li>
+          </aura:iteration>
+        </ul>
+      </ui:scrollerWrapper>
+      <div class="chat-toolbar">
+        <div class="slds-grow"></div>
+        <lightning:button type="button" variant="neutral" onclick="{!c.onEndChat}">{!v.labels.CloseChatTab}
+        </lightning:button>
+      </div>
+      <div onkeyup="{!c.onKeyup}">
+        <lightning:textarea value="{!v.newMessageText}" variant="label-hidden" placeholder="{!v.labels.TypeMessage}" />
+      </div>
+    </div>
+  </div>
+
+</aura:component>

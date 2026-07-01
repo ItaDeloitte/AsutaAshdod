@@ -1,0 +1,68 @@
+<aura:component implements="lightningsnapin:prechatUI" access="global" extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="wrapper" type="Boolean" default="true" />
+  <aura:attribute name="formData" type="Map" />
+  <aura:attribute name="editData" type="Map" default="{recordType:''}" />
+  <aura:attribute name="fieldCmps" type="Aura.Component[]" />
+  <aura:attribute name="caseRecordType" type="String" />
+  <aura:attribute name="currentStep" type="Integer" default="1" />
+  <aura:attribute name="recordTypeFieldDef" type="Map" />
+  <!-- For Aura performance -->
+  <aura:locator target="startButton" description="Pre-chat form submit button." />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+
+  <lightningsnapin:prechatAPI aura:id="prechatAPI" />
+  <aura:if isTrue="{!v.fieldCmps.length>0}">
+    <div class="prechatUI">
+      <div class="formContent">
+        <div class="fieldsList">
+
+          <div dir="ltr" class="{!join(' ',
+          v.currentStep==1?'slds-show':'slds-hide'
+          )}">
+            <fieldset class="slds-form-element" onchange="{!c.onChangeRecordType}">
+              <legend class="slds-form-element__legend slds-form-element__label">בחר סוג פנייה</legend>
+              <div class="slds-form-element__control">
+                <aura:iteration items="{!v.formData.recordTypesList}" var="option" indexVar="_index">
+                  <span class="slds-radio">
+                    <label class="slds-radio__label">
+                      <input type="radio" value="{!option.Id}" name="{!join('','recordType',globalID)}"
+                        checked="{!v.editData.recordType==option.Id}" />
+                      <span class="slds-radio_faux"></span>
+                      <span class="slds-form-element__label">{!option.Name}</span>
+                      <div class="slds-form-element__label radio-description">
+                        {!option.Description}
+                      </div>
+                    </label>
+                  </span>
+                </aura:iteration>
+              </div>
+            </fieldset>
+          </div>
+          <div class="{!join(' ',
+          v.currentStep==2?'slds-show':'slds-hide'
+          )}">
+            {!v.fieldCmps}
+          </div>
+
+        </div>
+      </div>
+      <div class="buttonWrapper">
+        <aura:if isTrue="{!v.currentStep==1}">
+          <lightning:button variant="brand" class="startButton embeddedServiceSidebarButton" label="הבא"
+            onclick="{!c.onNextStep}" disabled="{!!v.editData.recordType}" />
+        </aura:if>
+
+        <aura:if isTrue="{!v.currentStep==2}">
+          <lightning:button aura:id="startButton" variant="brand" class="startButton embeddedServiceSidebarButton"
+            label="{!$Label.LiveAgentPrechat.StartChat}" onclick="{!c.onStart}" />
+        </aura:if>
+
+      </div>
+    </div>
+  </aura:if>
+
+
+</aura:component>

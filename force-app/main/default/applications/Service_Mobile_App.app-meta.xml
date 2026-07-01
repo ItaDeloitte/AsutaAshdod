@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#B2FD03</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Service Mobile App</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>standard-OmniSupervisorLightning</tabs>
+    <tabs>standard-OmniUiCard</tabs>
+    <tabs>standard-OmnichannelInventory</tabs>
+    <tabs>Appointment_Manager__c</tabs>
+    <tabs>AssutaFileLog__c</tabs>
+    <tabs>Bot_Business_Hours__c</tabs>
+    <tabs>Service_Line__c</tabs>
+    <tabs>Collective_Eligibility__c</tabs>
+    <tabs>WATemplate__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Service_Mobile_App_UtilityBar</utilityBar>
+</CustomApplication>

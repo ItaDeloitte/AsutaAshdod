@@ -1,0 +1,29 @@
+<aura:component implements="lightning:recordHomeTemplate"
+    description="A record page you always dreamed of, 3 columns with header.">
+
+    <aura:attribute name="header" type="Aura.Component[]" />
+    <aura:attribute name="column1" type="Aura.Component[]" />
+    <aura:attribute name="column2" type="Aura.Component[]" />
+    <aura:attribute name="column3" type="Aura.Component[]" />
+
+    <header role="banner" class="forceHighlightsPanel">
+        {!v.header}
+    </header>
+
+    <div>
+        <lightning:layout pullToBoundary="small">
+            <lightning:layoutItem size="3" flexibility="no-flex" padding="around-small">
+                {!v.column1}
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="6" flexibility="no-flex" class="customFlex" padding="around-small">
+                {!v.column2}
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="3" flexibility="no-flex" padding="around-small">
+                {!v.column3}
+            </lightning:layoutItem>
+
+        </lightning:layout>
+    </div>
+</aura:component>

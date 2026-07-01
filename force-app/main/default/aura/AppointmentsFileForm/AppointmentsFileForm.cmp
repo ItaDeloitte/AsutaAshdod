@@ -1,0 +1,58 @@
+<aura:component extends="c:AppointmentsBase" access="global">
+  <!-- attrs -->
+  <aura:attribute name="caseId" type="String" default="" />
+  <aura:attribute name="procedureCode" type="String" default="" />
+  <aura:attribute name="objectApiName" type="String" default="File__c" />
+  <aura:attribute name="formData" type="Map" />
+  <aura:attribute name="formFields" type="List" default="[]" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="isFormLoaded" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="oncreate" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="false">
+      <aura:set attribute="title">
+        New File
+      </aura:set>
+      <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.formData}">
+          <lightning:recordEditForm aura:id="recordForm" objectApiName="{!v.objectApiName}"
+            onsuccess="{!c.onFormSuccess}" onload="{!c.onFormLoad}" onerror="{!c.onFormError}" density="auto"
+            recordTypeId="{!v.formData.RecordTypeId}">
+            <lightning:messages />
+            <aura:if isTrue="{!empty(v.formFields)}">
+              <lightning:inputField fieldName="Account__c" />
+              <aura:set attribute="else">
+                <div class="bs-row">
+                  <aura:iteration items="{!v.formFields}" var="field" indexVar="_index">
+                    <div class="bs-col-12 bs-col-md-6">
+                      <lightning:inputField fieldName="{!field.name}" value="{!field.value}" />
+                    </div>
+                  </aura:iteration>
+                </div>
+
+              </aura:set>
+            </aura:if>
+
+
+          </lightning:recordEditForm>
+        </aura:if>
+      </div>
+
+      <aura:set attribute="footer">
+
+        <lightning:button type="button" label="{!$Label.c.Cancel}" onclick="{!c.onCancel}" variant="neutral" />
+        <lightning:button type="button" label="Test" onclick="{!c.onTest}" variant="neutral" />
+        <lightning:button type="button" label="Submit" onclick="{!c.onSubmit}" variant="brand"
+          disabled="{!v.isLoading}" />
+      </aura:set>
+    </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+</aura:component>

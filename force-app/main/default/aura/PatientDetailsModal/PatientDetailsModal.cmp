@@ -1,0 +1,197 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+ access="global">
+  <!-- attrs -->
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="steps" type="List" default="[]" />
+  <aura:attribute name="currentStep" type="Map" />
+  <aura:attribute name="currentStepIndex" type="Integer" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="modalParams" type="Map" default="{}" />
+  <aura:attribute name="showSensitivitiesInfo" type="Map" default="{}" />
+  <aura:attribute name="actionInfo" type="Map" default="{}" />
+  <aura:attribute name="patientId" type="String" default="" />
+  <aura:attribute name="idType" type="String" default="" />
+  <aura:attribute name="schParameterRows" type="List" default="[]" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="messageInfo" type="String" default="" />
+  <aura:attribute name="labels" type="Map" default="{}" />
+  <!--<aura:attribute name="formOptions" type="Map" />-->
+  <aura:attribute name="editData" type="Map" default="{
+    asthma: null,
+    metalsInBody: null,
+    iodineSensitivity: null,
+    diabetic: null,
+    dust: null,
+    bloodDilution: null,
+    weight: null,
+    gender: null
+    }" />
+  <aura:attribute name="selectedOptions" type="Map" default="{
+    asthma: null,
+    metalsInBody: null,
+    iodineSensitivity: null,
+    diabetic: null,
+    dust: null,
+    bloodDilution: null,
+    weight: null,
+    gender: null
+    }" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="true">
+      <aura:set attribute="styles">
+        <aura:html tag="style">
+          .slds-modal__container { width:80%;max-width:600px;}
+          .cActionModalInner {
+            height: 600;
+            max-height: 600px;}
+        </aura:html>
+      </aura:set>
+      <aura:set attribute="title">
+        <span class="font-weight-bold">{!v.staticData.accountName}</span>
+      </aura:set>
+
+      <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.serverError}">
+          <div class="">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+        <div class="{!join(' ',
+          v.currentStep.id=='sensitivities'?'slds-show':'slds-hide'
+        )}">
+            <aura:if isTrue="{!v.showSensitivitiesInfo.showAsthma}">
+              <div>
+                  <lightning:select aura:id="step1Field" label="{!v.labels.Asthma}" required="true"
+                                    value="{!v.editData.asthma}" class="edit-input"
+                                    name = "asthma" messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                      <option value="" disabled="true" class="slds-hide"></option>
+                      <aura:iteration items="{!v.selectedOptions.asthma}" var="option">
+                      <option value="{!option.value}" selected = "{!v.editData.asthma == option.value}">{!option.label}</option>
+                      </aura:iteration>
+                  </lightning:select>
+              </div>
+            </aura:if>
+            <aura:if isTrue="{!v.showSensitivitiesInfo.showIodineSensitivity}">
+              <div>
+                <lightning:select aura:id="step1Field" label="{!v.labels.IodineSensitivity}" required="true"
+                                  value="{!v.editData.iodineSensitivity}" class="edit-input"
+                                  name = "iodineSensitivity" messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                    <option value="" disabled="true" class="slds-hide"></option>
+                    <aura:iteration items="{!v.selectedOptions.iodineSensitivity}" var="option" indexVar="_index">
+                    <option value="{!option.value}" selected = "{!v.editData.iodineSensitivity == option.value}">{!option.label}</option>
+                    </aura:iteration>
+                </lightning:select>
+              </div>
+            </aura:if>
+            <aura:if isTrue="{!v.showSensitivitiesInfo.showDiabetes}">
+              <div>
+                <lightning:select aura:id="step1Field" label="{!v.labels.Diabetic}" required="true"
+                                  value="{!v.editData.diabetic}" class="edit-input"
+                                  name = "diabetic" messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                    <option value="" disabled="true" class="slds-hide"></option>
+                    <aura:iteration items="{!v.selectedOptions.diabetic}" var="option" indexVar="_index">
+                    <option value="{!option.value}" selected = "{!v.editData.diabetic == option.value}">{!option.label}</option>
+                    </aura:iteration>
+                </lightning:select>
+              </div>
+            </aura:if>
+            <aura:if isTrue="{!v.showSensitivitiesInfo.showDust}">
+              <div>
+                <lightning:select aura:id="step1Field" label="{!v.labels.Dust}" required="true"
+                                  value="{!v.editData.dust}" class="edit-input"
+                                  name = "dust" messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                    <option value="" disabled="true" class="slds-hide"></option>
+                    <aura:iteration items="{!v.selectedOptions.dust}" var="option" indexVar="_index">
+                    <option value="{!option.value}" selected = "{!v.editData.dust == option.value}">{!option.label}</option>
+                    </aura:iteration>
+                </lightning:select>
+              </div>
+            </aura:if>
+            <aura:if isTrue="{!v.showSensitivitiesInfo.showBloodThinningPills}">
+              <div>
+                <lightning:select aura:id="step1Field" label="{!v.labels.BloodDilution}" required="true"
+                                  value="{!v.editData.bloodDilution}" class="edit-input"
+                                  name = "bloodDilution" messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                    <option value="" disabled="true" class="slds-hide"></option>
+                    <aura:iteration items="{!v.selectedOptions.bloodDilution}" var="option" indexVar="_index">
+                    <option value="{!option.value}" selected = "{!v.editData.bloodDilution == option.value}">{!option.label}</option>
+                    </aura:iteration>
+                </lightning:select>
+              </div>
+            </aura:if>
+            <aura:if isTrue="{!v.showSensitivitiesInfo.showWeight}">
+              <div>
+                <lightning:select aura:id="step1Field" label="{!v.labels.Weight}" required="true"
+                                  value="{!v.editData.weight}" class="edit-input"
+                                  name = "Weight" messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                    <option value="" disabled="true" class="slds-hide"></option>
+                    <aura:iteration items="{!v.selectedOptions.weight}" var="option" indexVar="_index">
+                    <option value="{!option.value}" selected = "{!v.editData.weight == option.value}">{!option.label}</option>
+                    </aura:iteration>
+                </lightning:select>
+              </div>
+            </aura:if>
+            <aura:if isTrue="{!v.showSensitivitiesInfo.showGender}">
+              <div>
+                  <lightning:select aura:id="step1Field" label="{!v.labels.Gender}" required="true"
+                                    value="{!v.editData.gender}" class="edit-input"
+                                    name = "gender" messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                      <option value="" disabled="true" class="slds-hide"></option>
+                      <aura:iteration items="{!v.selectedOptions.gender}" var="option" indexVar="_index">
+                      <option value="{!option.value}" selected = "{!v.editData.gender == option.value}">{!option.label}</option>
+                      </aura:iteration>
+                  </lightning:select>
+              </div>
+          </aura:if>
+          <aura:if isTrue="{!v.showSensitivitiesInfo.showMetalsInBody}">
+            <div class ="sld-m-around_xx-large">
+              <lightning:dualListbox aura:id="step1Field" label="{!v.labels.MetalsInBody}" 
+                                     sourceLabel="Available" selectedLabel="Chosen"
+                                     class="edit-input" value="{!v.editData.metalsInBody}" 
+                                     name="metalsInBody" 
+                                     options="{!v.selectedOptions.metalsInBody}">
+              </lightning:dualListbox>
+            </div>
+          </aura:if>
+        </div>
+        <div class="{!join(' ',
+        v.currentStep.id=='message'?'slds-show':'slds-hide'
+        )}">
+        <aura:if isTrue="{!v.messageInfo}">
+          <div class="">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.messageInfo}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+      </div>
+      </div>
+      <aura:set attribute="footer">
+          <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+                            label="{!v.labels.Cancel}" />
+          <aura:if isTrue="{!v.currentStepIndex>0}">
+            <lightning:button variant="neutral" type="button" onclick="{!c.onPrev}" disabled="{!v.isLoading}"
+                              label="{!v.labels.Back}" />
+          </aura:if>
+          <lightning:button variant="brand" type="button" onclick="{!c.onNext}" disabled="{!v.isLoading}"
+                            label="{!v.currentStepIndex==v.steps.length-1?v.labels.Submit:v.labels.Next}" />
+  
+      </aura:set>
+    </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+</aura:component>

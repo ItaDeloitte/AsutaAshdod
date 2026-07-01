@@ -1,0 +1,37 @@
+<aura:component access="global" extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="content" type="Aura.Component[]" />
+  <aura:attribute name="class" type="String" default="" />
+  <aura:attribute name="isVisible" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="{!v.class}" dir="{!$Locale.dir}">
+    <lightning:overlayLibrary aura:id="overlay" />
+    <div class="toggler-wrapper" data-handler="{!globalId}">
+      <button class="tooltip-btn toggler-btn" onclick="{!c.onTogglerClick}" onmouseover="{!c.onTogglerHover}"
+        onmouseout="{!c.onTogglerOut}">
+        <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-info'}" />
+      </button>
+      <div class="{!join(' ',
+          'tooltip',
+          v.isVisible?'is-visible':''
+        )}">
+        <div class="tooltip__inner">
+          <button class="tooltip-btn close-btn" onclick="{!c.onHide}">
+            <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-close'}" />
+          </button>
+          <div>
+            {!v.content}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</aura:component>

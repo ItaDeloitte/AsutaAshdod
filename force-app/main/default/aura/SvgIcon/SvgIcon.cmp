@@ -1,0 +1,23 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="class" type="String" default="" />
+  <aura:attribute name="src" type="String" default="" />
+  <aura:attribute name="prevSrc" type="String" default="" />
+  <aura:attribute name="type" type="String" default="" />
+  <aura:attribute name="alternativeText" type="String" default="icon" />
+  <aura:attribute name="title" type="String" default="" />
+  <aura:attribute name="size" type="String" default="medium" />
+  <aura:attribute name="variant" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- require -->
+  <ltng:require scripts="{!$Resource.svgxuse+'/svgxuse.min.js'}" />
+
+  <span class="{!join(' ',
+            'slds-icon_container',
+            v.class
+            )}" aura:id="container"></span>
+
+</aura:component>

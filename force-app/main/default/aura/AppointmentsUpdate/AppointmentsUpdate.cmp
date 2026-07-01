@@ -1,0 +1,73 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="selectedAppointment" type="Map" />
+  <aura:attribute name="inputData" type="Map" default="{appointment:''}" />
+  <aura:attribute name="sequenceAppointments" type="List" default="[]" />
+  <aura:attribute name="closeCallback" type="Object" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="onShowUpdateDashboard" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="false">
+      <aura:set attribute="title">
+        {!$Label.c.Update_Appointment}
+      </aura:set>
+      <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.serverError}">
+          <div class="">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+        <div class="{!join(' ',
+        ''
+          )}">
+          <div>
+            <c:BaseAutocomplete aura:id="formField" label="{!$Label.c.Appointment}" value="{!v.inputData.appointment}"
+                                onsearch="{!c.onSearch}" oninitsearch="{!c.onInitSearch}" required="true"
+                                placeholder="{!$Label.c.Search}" isPlainAutoComplete="false"
+                                onchange="{!c.onSelectAppointment}" />
+          </div>
+          <aura:if isTrue="{!v.selectedAppointment}">
+            <div class="mb-2 py-2">
+              <aura:iteration items="{!v.sequenceAppointments}" var="appointment" indexVar="_index">
+                <div class="mb-2">
+                  <div class="font-weight-bold">{!$Label.c.Appointment+' '+(_index+1)}&nbsp;</div>
+                  <div><span class="font-weight-bold">{!$Label.c.Date} &nbsp;</span>
+                    <c:FormattedDateTime date="{!appointment.Appointment_Date_Time__c}" locale="{!$Locale.langLocale}"
+                                         format="dd/MM, EEE, HH:mm" />
+                  </div>
+                  <div><span class="font-weight-bold">{!$Label.c.Medical_Procedure} &nbsp;</span>
+                    <span>{!appointment.Medical_Procedure__r.Name}</span>
+                  </div>
+                  <div><span class="font-weight-bold">{!$Label.c.Site}&nbsp; </span>
+                    <span>{!appointment.Site__r.Name}</span>
+                  </div>
+                </div>
+              </aura:iteration>
+            </div>
+          </aura:if>
+        </div>
+      </div>
+      <aura:set attribute="footer">
+        <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+                          label="{!$Label.c.Cancel}" />
+        <lightning:button variant="brand" type="button" onclick="{!c.onNext}" disabled="{!v.isLoading}"
+                          label="{!$Label.c.Next}" />
+      </aura:set>
+    </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+</aura:component>

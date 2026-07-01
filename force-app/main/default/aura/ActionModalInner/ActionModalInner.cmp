@@ -1,0 +1,40 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="title" type="Aura.Component[]" />
+  <aura:attribute name="topContent" type="Aura.Component[]" />
+  <aura:attribute name="footer" type="Aura.Component[]" />
+  <aura:attribute name="applyStyles" type="Boolean" default="false" />
+  <aura:attribute name="styles" type="Aura.Component[]" />
+  <aura:attribute name="dir" type="String" default="ltr" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <!-- methods -->
+  <aura:method name="scrollBody" action="{!c.onScrollBody}" />
+
+  <div class="slds-grid slds-grid_vertical slds-is-relative">
+    <aura:if isTrue="{!v.applyStyles}">
+      <aura:html tag="style">
+        .slds-modal__content { overflow: visible; } .modal-body { height: auto
+        !important; max-height: unset !important; padding: 0; }
+        .forceChatterBasePublisher :not(.PHONE) .cuf-content{ padding: 0; }
+        .slds-modal__container { width:80%;max-width:80%;}
+      </aura:html>
+      {!v.styles}
+    </aura:if>
+
+    <div class="catch-autofocus"> <input /> </div>
+
+    <div class="slds-modal__header dm-header">
+      <h2 class="dm-header__title">{!v.title}</h2>
+    </div>
+    <div>
+      {!v.topContent}
+    </div>
+    <ui:scrollerWrapper class="slds-grow" aura:id="bodyScroller">
+      <div class="slds-is-relative dm-body"> {!v.body} </div>
+    </ui:scrollerWrapper>
+    <aura:if isTrue="{!!empty(v.footer)}">
+      <div class="slds-modal__footer dm-footer"> {!v.footer} </div>
+    </aura:if>
+  </div>
+</aura:component>

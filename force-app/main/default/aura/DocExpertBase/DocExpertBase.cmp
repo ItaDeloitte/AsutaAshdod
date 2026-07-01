@@ -1,0 +1,10 @@
+<aura:component extends="c:BaseComponent" abstract="true" extensible="true">
+  <!-- require -->
+  <ltng:require styles="{!$Resource.bootstrap+'/dist/css/bootstrap-custom.min.css'}" />
+  <!-- attrs -->
+  <!-- handlers -->
+  <!-- events -->
+  <!-- methods -->
+
+  {!v.body}
+</aura:component>

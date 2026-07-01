@@ -1,0 +1,15 @@
+/**@type {import("ScheduleAppointmentService").Controller} */
+({
+  onInit: function(cmp, event, helper) {
+    helper.init(cmp);
+  },
+  onDestroy: function(cmp, event, helper) {
+    helper.destroy(cmp);
+  },
+  onRender: function(cmp, event, helper) {
+    helper.render(cmp);
+  },
+  onGetService: function(cmp, event, helper) {
+    return helper.getService(cmp);
+  }
+});
