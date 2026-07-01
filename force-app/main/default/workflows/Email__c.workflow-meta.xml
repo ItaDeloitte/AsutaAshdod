@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>email_360_doctor</fullName>
+        <description>מייל לרופא 360</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/expert_360_details_for_doctor</template>
+    </alerts>
+    <rules>
+        <fullName>Send Email From Case</fullName>
+        <actions>
+            <name>email_360_doctor</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Email__c.Content__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Send Email when &apos;Contact&apos; button is pressed on Case 360 object</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

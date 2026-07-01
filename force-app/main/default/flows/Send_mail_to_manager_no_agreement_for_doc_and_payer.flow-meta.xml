@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_email_to_manager_about_no_agreement</name>
+        <label>Send email to manager about no agreement</label>
+        <locationX>265</locationX>
+        <locationY>50</locationY>
+        <actionName>Appointment__c.Send_to_Manager_no_agreement_Doc_and_payer_factor</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Appointment__c.Send_to_Manager_no_agreement_Doc_and_payer_factor</nameSegment>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>שולח מייל למנהל כי אין הסכם בין הגורם המשלם לרופא</description>
+    <interviewLabel>Send mail to manager - no agreement for doc and payer {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send mail to manager - no agreement for doc and payer</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <startElementReference>Send_email_to_manager_about_no_agreement</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Id Appointment</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

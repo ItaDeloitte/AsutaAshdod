@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Nyt eksternt medlem</label>
+        <name>HealthCloudGA__QuickAddIndividual</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- Doctor Account --></label>
+        <name>Doctor_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General Account --></label>
+        <name>General_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Repræsenterer en forretning eller en organisation</description>
+        <label>Forretning</label>
+        <name>HealthCloudGA__IndustriesBusiness</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Repræsenterer en husstand</description>
+        <label>Husstand</label>
+        <name>HealthCloudGA__IndustriesHousehold</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Repræsenterer en enkeltperson</description>
+        <label>Enkeltperson</label>
+        <name>HealthCloudGA__IndustriesIndividual</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Repræsenterer en betaler</description>
+        <label>Betaler</label>
+        <name>HealthCloudGA__IndustriesPayer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- health-care professional trained in methods of treatment and rehabilitation other than the use of drugs or surgery --></description>
+        <label><!-- Psychotherapist --></label>
+        <name>Psychotherapist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Supplier --></label>
+        <name>Supplier</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Surgeons Group --></label>
+        <name>Surgeons_Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Technician --></label>
+        <name>Technician</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- נא לוודא ששם החשבון מכיל אותיות בלבד! --></errorMessage>
+        <name>AccountNameCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- שים לב - לא ניתן לעדכן פרטי קשר למטופל אנונימי --></errorMessage>
+        <name>Anonymous_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר חשבון בנק מכיל מספרים בלבד! --></errorMessage>
+        <name>BankAccountCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר סניף מכיל מספרים בלבד! --></errorMessage>
+        <name>BranchNumberCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר זיהוי של קמיליון מכיל מספרים בלבד! --></errorMessage>
+        <name>CameleonIDCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- קוד רופא הינו שדה חובה עבור התפקיד שהוזן --></errorMessage>
+        <name>Doctor_Code_Is_Mandatory_For_Roles</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- רופא שלא מוצג באתר המלצת רופאים חייב סיבת אי הצגה --></errorMessage>
+        <name>Doctor_Not_Showing_In_DA_Fill_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר פקס מכיל מספרים בלבד! --></errorMessage>
+        <name>Faxcheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לתשומת ליבך: לא ניתן להקים מטופל עם תאריך לידה עתידי. יש לעדכן תאריך הלידה ולשמור בשנית --></errorMessage>
+        <name>Future_Birth_Date_is_not_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registreringstypen Enkeltperson kan ikke ændres</errorMessage>
+        <name>HealthCloudGA__NotAllowingConversionFromIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registreringstypen kan ikke ændres til Enkeltperson.</errorMessage>
+        <name>HealthCloudGA__NotAllowingConversionToIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לקדם רופא לא פעיל או שאינו מוצג באתר המלצת רופאים --></errorMessage>
+        <name>Inactive_Doctor_cant_be_promoted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא בחר גורם מבטח --></errorMessage>
+        <name>Insurer_Factor_is_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא מלא שם פרטי --></errorMessage>
+        <name>Must_have_First_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- הערוץ המועדף שנבחר הינו sms , יש למלא את המספר הרצוי למסרונים --></errorMessage>
+        <name>NO_SMS_number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- רק לפרופיל מנהל מערכת מותר לשנות את שם הרופא --></errorMessage>
+        <name>Only_admin_can_change_doc_name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- במידה ולמטופל אין כתובת דוא&quot;ל, ערוץ זה אינו יכול להיות הערוץ המועדף --></errorMessage>
+        <name>Patient_has_no_email_TRUE_cant_be_channe</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר טלפון מכיל מספרים בלבד! --></errorMessage>
+        <name>PhoneCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מספר הטלפון אינו נייד --></errorMessage>
+        <name>Phone_is_cell_if_its_also_for_SMS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מספר הטלפון שהוקלד לקבלת מסרונים נכלל ברשימת הקומות הכשרות --></errorMessage>
+        <name>Phone_is_not_kosher_if_its_also_for_SMS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- למטופל לא מוגדר ערוץ מועדף כראוי --></errorMessage>
+        <name>Preferred_channel_details_are_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר רחוב מכיל מספרים בלבד! --></errorMessage>
+        <name>StreetNumberCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר ספק מכיל מספרים בלבד! --></errorMessage>
+        <name>SupplierNumberCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מספר הטלפון אינו תקין --></errorMessage>
+        <name>Validation_on_Other_Phone_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מספר הנייד אינו תקין --></errorMessage>
+        <name>Validation_on_SMS_phone_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש להזין את כתובת התמונה של הרופא בשדה המתאים --></errorMessage>
+        <name>fill_doctor_picture_URL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- למטופל 360 חייב להיות נציג מתאם --></errorMessage>
+        <name>for_360_patient_should_have_coordinator</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר תא דואר מכיל אותיות בלבד! --></errorMessage>
+        <name>mailboxcheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמיקוד מכיל מספרים בלבד! --></errorMessage>
+        <name>postalcheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- סימון רופא עבור קידום באתר מחייב למלא חוות דעת --></errorMessage>
+        <name>promoted_doc_must_have_opinion</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Titan_Sign_Wizard --></label>
+        <name>Form_Builder__Titan_Sign_Wizard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Insurance_SMS --></label>
+        <name>Insurance_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Search_Account --></label>
+        <name>Search_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assuta_employee_name</name>
+        <label>Assuta employee name</label>
+        <locationX>690</locationX>
+        <locationY>385</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Firstandlastname</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <formulas>
+        <name>Firstandlastname</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.First_Name__c} &amp; &quot; &quot; &amp; {!$Record.Last_Name__c}</expression>
+    </formulas>
+    <interviewLabel>Assuta employe name update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Assuta employe name update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>562</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Assuta_employee_name</targetReference>
+        </connector>
+        <object>Assuta_Employee__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

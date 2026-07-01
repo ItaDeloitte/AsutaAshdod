@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <name>Account_Creation</name>
+        <label>Account Creation</label>
+        <locationX>679</locationX>
+        <locationY>231</locationY>
+        <actionName>Account.Account_Name</actionName>
+        <actionType>quickAction</actionType>
+        <inputParameters>
+            <name>contextId</name>
+            <value>
+                <elementReference>AccountID</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Account.Account_Name</nameSegment>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Is_an_account_was_found</name>
+        <label>Is an account was found?</label>
+        <locationX>674</locationX>
+        <locationY>52</locationY>
+        <defaultConnector>
+            <targetReference>Account_Creation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Account_was_found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AccountID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Your_account_was_found</targetReference>
+            </connector>
+            <label>Account was found</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>IDType</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>ID_Type__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <formulas>
+        <name>Formula</name>
+        <dataType>Number</dataType>
+        <expression>LEN({!ID_Number})</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>ValidationID</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(LEN({!ID_Number} ) == 9,TRUE,FALSE)</expression>
+    </formulas>
+    <interviewLabel>New Account Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>New Account Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Will search for an account with the same ID</description>
+        <name>Check_if_account_exists</name>
+        <label>Check if account exists</label>
+        <locationX>443</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_an_account_was_found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ID_Number__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ID_Number</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>AccountID</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <screens>
+        <description>First screen for fillinf ID</description>
+        <name>New_Account</name>
+        <label>New Account</label>
+        <locationX>235</locationX>
+        <locationY>50</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Check_if_account_exists</targetReference>
+        </connector>
+        <fields>
+            <name>ID_Type</name>
+            <choiceReferences>IDType</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>ID Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>ID_Number</name>
+            <dataType>String</dataType>
+            <fieldText>ID Number</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>יתן להזין ת.ז בעלת 9 ספרות בלבד. 
+במידה ות.ז אינה 9 ספרות עליך להזין 0 במקום הספרות החסרות. 
+לדוגמה - 1111 = 000001111</helpText>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>TEST screen</description>
+        <name>Your_account_was_found</name>
+        <label>Your account was found</label>
+        <locationX>973</locationX>
+        <locationY>45</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>New_Account</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <name>AccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>potential_appointment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Potential Appointment</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Appointment__c.Appointment_Status__c</field>
+            <operation>equals</operation>
+            <value>תור ברשימת המתנה/ממתין למחזור</value>
+        </filterItems>
+        <filterItems>
+            <field>Appointment__c.apt_date_time_not_yet__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Appointment__c</referenceTo>
+    <relationshipLabel>Waiting Lists (פגישה פוטנציאלית)</relationshipLabel>
+    <relationshipName>potential_waiting_list</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

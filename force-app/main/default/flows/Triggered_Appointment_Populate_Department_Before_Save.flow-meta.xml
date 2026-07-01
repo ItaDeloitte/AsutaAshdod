@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Department_Code</name>
+        <label>Assign Department Code</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Department__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Calendar__r.Department__r.Code__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>AM: 13102025- 5034942026- populate department field on appointment (with department code)
+LA: 29122025 - 2582596975 -  populate department field on appointment (with department code) record type Institute</description>
+    <environments>Default</environments>
+    <interviewLabel>Triggered- Appointment- Populate Department- Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Triggered- Appointment- Populate Department- Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Department_Code</targetReference>
+        </connector>
+        <filterFormula>AND( NOT(ISBLANK({!$Record.Calendar__c})),  OR(  ISCHANGED({!$Record.Calendar__c}),ISNEW()    )   ,
+          OR(  {!$Record.RecordType.DeveloperName} = &apos;Experts&apos;,{!$Record.RecordType.DeveloperName} = &apos;Institutes&apos; )
+        )</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>1500</triggerOrder>
+</Flow>

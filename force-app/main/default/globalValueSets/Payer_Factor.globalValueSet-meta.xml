@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>מכבי</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>כללית</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>מאוחדת</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>לאומית</label>
+    </customValue>
+    <customValue>
+        <fullName>0</fullName>
+        <default>false</default>
+        <label>פרטי</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>מנורה</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>הפניקס</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>מגדל</label>
+    </customValue>
+    <customValue>
+        <fullName>11</fullName>
+        <default>false</default>
+        <label>ביטוח הראל</label>
+    </customValue>
+    <customValue>
+        <fullName>22</fullName>
+        <default>false</default>
+        <label>פרסונל</label>
+    </customValue>
+    <customValue>
+        <fullName>24</fullName>
+        <default>false</default>
+        <label>כלל ביטוח</label>
+    </customValue>
+    <customValue>
+        <fullName>25</fullName>
+        <default>false</default>
+        <label>פמי נ. שירותים בע&quot;מ</label>
+    </customValue>
+    <customValue>
+        <fullName>36</fullName>
+        <default>false</default>
+        <label>ענף תקציבים-צהל</label>
+    </customValue>
+    <customValue>
+        <fullName>37</fullName>
+        <default>false</default>
+        <label>תיירות מרפא</label>
+    </customValue>
+    <customValue>
+        <fullName>39</fullName>
+        <default>false</default>
+        <label>דקלה חברה לביטוח</label>
+    </customValue>
+    <customValue>
+        <fullName>41</fullName>
+        <default>false</default>
+        <label>ביטוח איילון</label>
+    </customValue>
+    <customValue>
+        <fullName>42</fullName>
+        <default>false</default>
+        <label>ביטוח ישיר</label>
+    </customValue>
+    <customValue>
+        <fullName>110</fullName>
+        <default>false</default>
+        <label>פרטי -תיירות מרפא</label>
+    </customValue>
+    <customValue>
+        <fullName>133</fullName>
+        <default>false</default>
+        <label>פרטי-חבילה</label>
+    </customValue>
+    <customValue>
+        <fullName>166</fullName>
+        <default>false</default>
+        <label>פרסונל משפחה</label>
+    </customValue>
+    <customValue>
+        <fullName>1111</fullName>
+        <default>false</default>
+        <label>פרטי - תייר</label>
+    </customValue>
+    <customValue>
+        <fullName>1317</fullName>
+        <default>false</default>
+        <label>משרד הבטחון</label>
+    </customValue>
+    <customValue>
+        <fullName>22139</fullName>
+        <default>false</default>
+        <label>דיוויד שילדס</label>
+    </customValue>
+    <customValue>
+        <fullName>45380</fullName>
+        <default>false</default>
+        <label>גיל ורדי</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>כללית מושלם</label>
+    </customValue>
+    <customValue>
+        <fullName>43</fullName>
+        <default>false</default>
+        <label>מכבי ללא החזר</label>
+    </customValue>
+    <customValue>
+        <fullName>44</fullName>
+        <default>false</default>
+        <label>מכבי כסף</label>
+    </customValue>
+    <customValue>
+        <fullName>47</fullName>
+        <default>false</default>
+        <label>כללית פלטינום</label>
+    </customValue>
+    <customValue>
+        <fullName>89</fullName>
+        <default>false</default>
+        <label>מכבי שב&quot;ן</label>
+    </customValue>
+    <customValue>
+        <fullName>411</fullName>
+        <default>false</default>
+        <label>מאוחדת שיא</label>
+    </customValue>
+    <customValue>
+        <fullName>412</fullName>
+        <default>false</default>
+        <label>מאוחדת עדיף</label>
+    </customValue>
+    <customValue>
+        <fullName>422</fullName>
+        <default>false</default>
+        <label>לאומית זהב</label>
+    </customValue>
+    <customValue>
+        <fullName>974631</fullName>
+        <default>false</default>
+        <label>לאומית כסף</label>
+    </customValue>
+    <customValue>
+        <fullName>35</fullName>
+        <default>false</default>
+        <label>מכבי זהב</label>
+    </customValue>
+    <customValue>
+        <fullName>31</fullName>
+        <default>false</default>
+        <label>מכבי שלי</label>
+    </customValue>
+    <customValue>
+        <fullName>610</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז אילת</label>
+    </customValue>
+    <customValue>
+        <fullName>68</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז דן / פ&quot;ת</label>
+    </customValue>
+    <customValue>
+        <fullName>615</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז דרום</label>
+    </customValue>
+    <customValue>
+        <fullName>616</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז חיפה</label>
+    </customValue>
+    <customValue>
+        <fullName>614</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז ירושלים</label>
+    </customValue>
+    <customValue>
+        <fullName>613</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז מרכז</label>
+    </customValue>
+    <customValue>
+        <fullName>612</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז צפון</label>
+    </customValue>
+    <customValue>
+        <fullName>622</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז שפלה</label>
+    </customValue>
+    <customValue>
+        <fullName>611</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז שרון / שומרון</label>
+    </customValue>
+    <customValue>
+        <fullName>62</fullName>
+        <default>false</default>
+        <label>קופ&quot;ח כללית - מחוז ת&quot;א</label>
+    </customValue>
+    <customValue>
+        <fullName>81</fullName>
+        <default>false</default>
+        <label>קופח מכבי שלי</label>
+    </customValue>
+    <customValue>
+        <fullName>425</fullName>
+        <default>false</default>
+        <label>קופח לאומית שבן</label>
+    </customValue>
+    <customValue>
+        <fullName>525</fullName>
+        <default>false</default>
+        <label>קופח מאוחדת שבן</label>
+    </customValue>
+    <customValue>
+        <fullName>83</fullName>
+        <default>false</default>
+        <label>אליהו חברה לביטוח</label>
+    </customValue>
+    <customValue>
+        <fullName>86</fullName>
+        <default>false</default>
+        <label>הכשרה חברה לביטוח בעמ</label>
+    </customValue>
+    <customValue>
+        <fullName>303</fullName>
+        <default>false</default>
+        <label>קופח מכבי-מרפאות חוץ</label>
+    </customValue>
+    <customValue>
+        <fullName>4024</fullName>
+        <default>false</default>
+        <label>קופח לאומית כסף</label>
+    </customValue>
+    <customValue>
+        <fullName>לא ידוע</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>לא ידוע</label>
+    </customValue>
+    <customValue>
+        <fullName>ענף תקציבים</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ענף תקציבים</label>
+    </customValue>
+    <description>גורם משלם</description>
+    <masterLabel>Payer Factor</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

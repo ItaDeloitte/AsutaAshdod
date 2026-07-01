@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>פרטי שינוי התור שנשלחים ללקוח</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>פרטי שינוי התור - מכונים</name>
+    <style>freeForm</style>
+    <subject>פרטי שינוי התור לאסותא</subject>
+    <textOnly>{!Appointment__c.Patient_Account__c} שלום,
+
+
+
+נקבע עבורך תור ל{!Appointment__c.Medical_Procedure__c} אשר תתקיים ב{!Appointment__c.Site__c} בתאריך ה{!Appointment__c.Appointment_Date_Time__c},
+
+
+
+במידה ותהיה מעוניין לשנות את התור או לקבל מידע נוסף ניתן לקבל מידע נוסף במוקד אסותא במספר 6474*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

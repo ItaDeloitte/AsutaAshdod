@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>sp1ActionEmail1010</name>
+        <label>Medical_Aid_Appointment__c.ActionEmail1010</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Medical_Aid_Appointment__c.ActionEmail1010</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Medical_Aid_Appointment__c.ActionEmail1010</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: התראה על עזר workflow rule
+Workflow rule description: &quot;</description>
+    <label>התראה על עזר_3</label>
+    <migratedFromWorkflowRuleName>התראה על עזר</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>בטיפול המחלקה</stringValue>
+            </value>
+        </filters>
+        <object>Medical_Aid_Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>ScheduledPath1</name>
+            <connector>
+                <targetReference>sp1ActionEmail1010</targetReference>
+            </connector>
+            <label>ScheduledPath1</label>
+            <offsetNumber>-38</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Appointment_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

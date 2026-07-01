@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Update the Case Origin field according to the Parent Case&apos;s origin</description>
+        <name>Update_the_Case_Origin_Field</name>
+        <label>עדכן את מקור הפניה לפי פניית האב</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Origin</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Parent.Origin</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>מזין את הערך של שדה &apos;מקור הפניה&apos; מפניית האב מסוג &apos;פניות הציבור&apos; ברקורד &apos;פריט פניות הציבור&apos; שמקושר אליו.
+AM: 05022025- Task 20830- REFACTOR</description>
+    <environments>Default</environments>
+    <interviewLabel>Public Inquiries Item&apos;s Origin Equals to the Parent Case&apos;s Origin {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Public Inquiries Item&apos;s Origin Equals to the Parent Case&apos;s Origin</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_the_Case_Origin_Field</targetReference>
+        </connector>
+        <filterFormula>{!$Record.RecordType.DeveloperName} = &apos;PublicInquiriesItem&apos;</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

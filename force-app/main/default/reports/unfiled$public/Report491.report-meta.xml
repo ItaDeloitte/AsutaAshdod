@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>SurveyTaker__c.Survey__c</field>
+    </columns>
+    <columns>
+        <field>SurveyTaker__c.Site__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SurveyTaker__c.is_sms_sent__c</field>
+    </columns>
+    <columns>
+        <field>SurveyTaker__c.activity_code__c</field>
+    </columns>
+    <description>נדרש לבטל את שליחת השאלונים הללו למטופלים</description>
+    <filter>
+        <criteriaItems>
+            <column>SurveyTaker__c.Survey__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>מסירת מידע רפואי לקרובים,להתקבל</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyTaker__c.is_sms_sent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyTaker__c.Site__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>אסותא חיפה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SurveyTaker__c.activity_code__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>13</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>שאלונים אסותא חיפה שטרם נשלחו נדרש לנטרל</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyTaker__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SurveyTaker__c.visit_date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

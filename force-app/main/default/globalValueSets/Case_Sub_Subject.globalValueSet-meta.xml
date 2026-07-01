@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>זימון תור חדש</fullName>
+        <default>false</default>
+        <label>זימון תור חדש</label>
+    </customValue>
+    <customValue>
+        <fullName>שינוי תור קיים</fullName>
+        <default>false</default>
+        <label>שינוי תור קיים</label>
+    </customValue>
+    <customValue>
+        <fullName>ביטול תור קיים</fullName>
+        <default>false</default>
+        <label>ביטול תור קיים</label>
+    </customValue>
+    <customValue>
+        <fullName>בירור מועד ושעת התור</fullName>
+        <default>false</default>
+        <label>בירור מועד ושעת התור</label>
+    </customValue>
+    <customValue>
+        <fullName>בירור לגבי הנחיות לבדיקה</fullName>
+        <default>false</default>
+        <label>בירור לגבי הנחיות לבדיקה</label>
+    </customValue>
+    <customValue>
+        <fullName>כתובות ודרכי הגעה</fullName>
+        <default>false</default>
+        <label>כתובות ודרכי הגעה</label>
+    </customValue>
+    <customValue>
+        <fullName>ברור סטטוס תוצאות בדיקה</fullName>
+        <default>false</default>
+        <label>ברור סטטוס תוצאות בדיקה</label>
+    </customValue>
+    <customValue>
+        <fullName>תוצאות לא מופיעות באתר</fullName>
+        <default>false</default>
+        <label>תוצאות לא מופיעות באתר</label>
+    </customValue>
+    <customValue>
+        <fullName>זימון תור לרופא מומחה</fullName>
+        <default>false</default>
+        <label>זימון תור לרופא מומחה</label>
+    </customValue>
+    <customValue>
+        <fullName>המלצה על רופא מומחה</fullName>
+        <default>false</default>
+        <label>המלצה על רופא מומחה</label>
+    </customValue>
+    <customValue>
+        <fullName>שינוי מועד התור</fullName>
+        <default>false</default>
+        <label>שינוי מועד התור</label>
+    </customValue>
+    <customValue>
+        <fullName>הפקת התחייבות</fullName>
+        <default>false</default>
+        <label>הפקת התחייבות</label>
+    </customValue>
+    <customValue>
+        <fullName>בירור השתתפות עצמית</fullName>
+        <default>false</default>
+        <label>בירור השתתפות עצמית</label>
+    </customValue>
+    <customValue>
+        <fullName>הנחיות לקראת ניתוח</fullName>
+        <default>false</default>
+        <label>הנחיות לקראת ניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>דרכי הגעה</fullName>
+        <default>false</default>
+        <label>דרכי הגעה</label>
+    </customValue>
+    <customValue>
+        <fullName>מידע על הניתוח</fullName>
+        <default>false</default>
+        <label>מידע על הניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>בקשה לדו&quot;ח ניתוח</fullName>
+        <default>false</default>
+        <label>בקשה לדו&quot;ח ניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>בקשה להתחשבנות לאחר ניתוח</fullName>
+        <default>false</default>
+        <label>בקשה להתחשבנות לאחר ניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>ניידת MRI</fullName>
+        <default>false</default>
+        <label>ניידת MRI</label>
+    </customValue>
+    <customValue>
+        <fullName>אסותא באר שבע</fullName>
+        <default>false</default>
+        <label>אסותא באר שבע</label>
+    </customValue>
+    <customValue>
+        <fullName>אסותא השלום</fullName>
+        <default>false</default>
+        <label>אסותא השלום</label>
+    </customValue>
+    <customValue>
+        <fullName>אסותא חיפה</fullName>
+        <default>false</default>
+        <label>אסותא חיפה</label>
+    </customValue>
+    <customValue>
+        <fullName>אסותא אשדוד כלניות</fullName>
+        <default>false</default>
+        <label>אסותא אשדוד כלניות</label>
+    </customValue>
+    <customValue>
+        <fullName>אסותא ראשל&quot;צ</fullName>
+        <default>false</default>
+        <label>אסותא ראשל&quot;צ</label>
+    </customValue>
+    <customValue>
+        <fullName>אסותא רמת החייל</fullName>
+        <default>false</default>
+        <label>אסותא רמת החייל</label>
+    </customValue>
+    <customValue>
+        <fullName>אסותא רעננה</fullName>
+        <default>false</default>
+        <label>אסותא רעננה</label>
+    </customValue>
+    <customValue>
+        <fullName>בית החולים האוניברסיטאי אסותא אשדוד ע&quot;ש סמסון</fullName>
+        <default>false</default>
+        <label>בית החולים האוניברסיטאי אסותא אשדוד ע&quot;ש סמסון</label>
+    </customValue>
+    <customValue>
+        <fullName>בניין העוגן - ת&quot;א</fullName>
+        <default>false</default>
+        <label>בניין העוגן - ת&quot;א</label>
+    </customValue>
+    <description>לא בשימוש</description>
+    <masterLabel>תת נושא הפנייה - לא בשימוש</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

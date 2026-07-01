@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Medical_Info_Management_haifa</name>
+    <style>none</style>
+    <subject>טיפול בפערי ניהול רשומה רפואית  - ד&quot;ר {!Case.Doctor_case__c} - {!Case.Tafnit_Case_Number__c}, {!Case.Site__c}</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

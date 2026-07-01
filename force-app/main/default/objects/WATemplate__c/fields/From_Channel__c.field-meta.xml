@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>From_Channel__c</fullName>
+    <label>From Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Surgery_Bot</fullName>
+                <default>false</default>
+                <label>Surgery_Bot</label>
+            </value>
+            <value>
+                <fullName>Assuta_Enhanced_Bot</fullName>
+                <default>false</default>
+                <label>Assuta_Enhanced_Bot</label>
+            </value>
+            <value>
+                <fullName>WHATSAPP_US_594522617086919</fullName>
+                <default>false</default>
+                <label>Private Services</label>
+            </value>
+            <value>
+                <fullName>Patient_At_Home</fullName>
+                <default>false</default>
+                <label>Patient_At_Home</label>
+            </value>
+            <value>
+                <fullName>Insurance_Company</fullName>
+                <default>false</default>
+                <label>Insurance_Company</label>
+            </value>
+            <value>
+                <fullName>WHATSAPP_US_661176770420244</fullName>
+                <default>false</default>
+                <label>Doctors Line</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

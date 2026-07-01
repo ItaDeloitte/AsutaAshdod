@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Employment Type --></label>
+    <name>Employement_Type7__c</name>
+    <picklistValues>
+        <masterLabel>אינו עובד מטעם אסותא</masterLabel>
+        <translation><!-- אינו עובד מטעם אסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משובל:הסכם כולל שכר רופא+ עבור או מטעם</masterLabel>
+        <translation><!-- משובל:הסכם כולל שכר רופא+ עבור או מטעם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משולב: אינו עבור+עבור או מטעם</masterLabel>
+        <translation><!-- משולב: אינו עבור+עבור או מטעם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משולב:הסכם כולל שכר רופא+ אינו עבור או מטעם</masterLabel>
+        <translation><!-- משולב:הסכם כולל שכר רופא+ אינו עבור או מטעם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עובד בהסכם כולל שכר רופא</masterLabel>
+        <translation><!-- עובד בהסכם כולל שכר רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עובד מטעם אסותא</masterLabel>
+        <translation><!-- עובד מטעם אסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עובד משולב מטעם אסותא</masterLabel>
+        <translation><!-- עובד משולב מטעם אסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שכיר-עבור או מטעם</masterLabel>
+        <translation><!-- שכיר-עבור או מטעם --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>QuickText$Name</field>
+    </columns>
+    <columns>
+        <field>QuickText$Message</field>
+    </columns>
+    <columns>
+        <field>QuickText$Folder</field>
+    </columns>
+    <columns>
+        <field>QuickText$Channel</field>
+    </columns>
+    <columns>
+        <field>QuickText$Category</field>
+    </columns>
+    <columns>
+        <field>QuickText$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>QuickText$LastModifiedDate</field>
+    </columns>
+    <format>Tabular</format>
+    <name>All Quick Text</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Quick_Text_1__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>QuickText$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

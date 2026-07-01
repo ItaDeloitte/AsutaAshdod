@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- האם יש לך חום מעל 38 או תסמינים נשימתיים ( שיעול או קוצר נשימה ) ב 10 ימים האחרונים? --></help>
+    <label><!-- Question 2 --></label>
+    <name>Question_2__c</name>
+    <picklistValues>
+        <masterLabel>כן</masterLabel>
+        <translation><!-- כן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא</masterLabel>
+        <translation><!-- לא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

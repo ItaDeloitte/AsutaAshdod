@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Doctors_weekly_survey</fullName>
+        <description>Doctors weekly survey</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Doctors_weekly_survey</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>doctor_clinic_name</fullName>
+        <field>Name</field>
+        <formula>Clinic__r.Name &amp;&quot;-&quot;&amp; Doctors__r.fullname2__c</formula>
+        <name>שם רופא במרפאה</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>doctor_have_clinic</fullName>
+        <field>clinics_for_doctor__c</field>
+        <literalValue>1</literalValue>
+        <name>לרופא יש מרפאות</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Doctors__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>set_unique_id</fullName>
+        <field>Unique_Id__c</field>
+        <formula>Clinic__c &amp;&apos;_&apos;&amp;  Doctors__c</formula>
+        <name>set_unique_id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Set_Unique_Id</fullName>
+        <actions>
+            <name>set_unique_id</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>NOT(ISBLANK(Doctors__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>doctor_have_clinic</fullName>
+        <actions>
+            <name>doctor_have_clinic</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <failedMigrationToolVersion>260.14.16</failedMigrationToolVersion>
+        <formula>NOT(ISNULL( Name ))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>שם רופא במרפאה</fullName>
+        <actions>
+            <name>doctor_clinic_name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>Name&lt;&gt;Clinic__r.Name &amp;&quot;-&quot;&amp; Doctors__r.fullname2__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

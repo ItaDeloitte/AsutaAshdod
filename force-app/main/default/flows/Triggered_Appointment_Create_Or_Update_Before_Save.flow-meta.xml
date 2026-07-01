@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Appointment_Data_Doc_Not_Allowed</name>
+        <label>Assign Appointment Data- (Doc Not Allowed)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Doc_not_allowed_to_do_medical_procedure__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign_Appointment_Data_Doc_Not_Allowed</name>
+        <label>Assign Appointment Data- (Doc Is Allowed)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Doc_not_allowed_to_do_medical_procedure__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_If_Doctor_Is_Allowed_For_Med_Procedure</name>
+        <label>New Appointment Or Changed Doctor Or Medical Procedure</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Check_If_Doctor_Allowed_For_Medical_Procedure</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>fISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Doctor_Account__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Medical_Procedure__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Doctor_Medical_Procedure</targetReference>
+            </connector>
+            <label>Yes- Check If Doctor Allowed For Medical Procedure</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>if The medical procedure does not exists for that doctor - it is not alowed to do the medical procedure.</description>
+        <name>Found_Doctor_Medical_Procedure</name>
+        <label>Found Doctor Medical Procedure?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Assign_Appointment_Data_Doc_Not_Allowed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_Doctor_Is_Not_Allowed_For_Medical_Procedure</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Doctor_Medical_Procedure</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Appointment_Data_Doc_Not_Allowed</targetReference>
+            </connector>
+            <label>No- Doctor Is Not Allowed For Medical Procedure</label>
+        </rules>
+    </decisions>
+    <description>AM: 22022026- deactivate PB- Doctor_is_allowed_Medical_Procedure_Flow (checks if the doctor can perform the surgery by medical
+                          procedure)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Triggered- Appointment- Create Or Update- Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Triggered- Appointment- Create Or Update- Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Doctor_Medical_Procedure</name>
+        <label>Get Doctor Medical Procedure</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Found_Doctor_Medical_Procedure</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Doctor__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Doctor_Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Medical_Procedure__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Medical_Procedure__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Doctor_Medical_Procedure__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_If_Doctor_Is_Allowed_For_Med_Procedure</targetReference>
+        </connector>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

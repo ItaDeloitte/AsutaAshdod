@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>time_between_appointments</fullName>
+    <active>false</active>
+    <description>ההפרש בין התור החדש לתור המקורי של המטופל צריך להיות שבוע או יותר</description>
+    <errorConditionFormula>Appointment__r.Appointment_Date_Time__c - potential_appointment__r.Appointment_Date_Time__c &lt;7</errorConditionFormula>
+    <errorMessage>לא ניתן להציע למטופל תור פוטנציאלי בשבוע בו מתקיים התור המקורי שלו</errorMessage>
+</ValidationRule>

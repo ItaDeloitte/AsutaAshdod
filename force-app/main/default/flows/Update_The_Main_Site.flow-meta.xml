@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Updates the main site when ensemble or &quot;moked&quot; creates a new record in &quot;Doctor In Site&quot; object</description>
+    <interviewLabel>Update Main Site {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update The Main Site</label>
+    <loops>
+        <description>Going Throw the records and removing the tick from main site</description>
+        <name>Removing_Tick</name>
+        <label>Removing Tick</label>
+        <locationX>734</locationX>
+        <locationY>332</locationY>
+        <collectionReference>Sites</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Update_Tick_on_main_site</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_the_main_Site</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Find all the sites for the doctor</description>
+        <name>Find_all_sites</name>
+        <label>Find all sites</label>
+        <locationX>129</locationX>
+        <locationY>336</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_main_site</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>פעיל</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>doctor_id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Doc_Id_Text</elementReference>
+            </value>
+        </filters>
+        <object>Doctor_in_site__c</object>
+        <outputAssignments>
+            <assignToReference>ChosenSite</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the current main site</description>
+        <name>Get_main_site</name>
+        <label>Get main site</label>
+        <locationX>433</locationX>
+        <locationY>330</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Removing_Tick</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>doctor_id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Doc_Id_Text</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Main_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Doctor_in_site__c</object>
+        <outputReference>Sites</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update The site we found to be the main site</description>
+        <name>Update_the_main_Site</name>
+        <label>Update the main Site</label>
+        <locationX>1045</locationX>
+        <locationY>338</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ChosenSite</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Main_Site__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Doctor_in_site__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Tick on main site to False</description>
+        <name>Update_Tick_on_main_site</name>
+        <label>Update Tick on main site</label>
+        <locationX>731</locationX>
+        <locationY>120</locationY>
+        <connector>
+            <targetReference>Removing_Tick</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Main_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>doctor_id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Doc_Id_Text</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Main_Site__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Doctor_in_site__c</object>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>3</locationX>
+        <locationY>83</locationY>
+        <connector>
+            <targetReference>Find_all_sites</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ChosenSite</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>The Doctor we will check his sites</description>
+        <name>Doc_Id</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <description>doctor id from the Process Builder</description>
+        <name>Doc_Id_Text</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Remove the current main site</description>
+        <name>RemoveMainSite</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Sites with the same doc</description>
+        <name>Sites</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Doctor_in_site__c</objectType>
+    </variables>
+    <variables>
+        <description>SSIS Profile Create the record</description>
+        <name>SSISID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

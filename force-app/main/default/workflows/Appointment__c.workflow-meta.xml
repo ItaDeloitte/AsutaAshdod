@@ -1,0 +1,2173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ActionEmail</fullName>
+        <description>מייל תזכורת על התור</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/hoursaheadAppointment</template>
+    </alerts>
+    <alerts>
+        <fullName>ActionEmail2</fullName>
+        <description>מייל תזכורת על התור2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/hoursaheadAppointment</template>
+    </alerts>
+    <alerts>
+        <fullName>Appointment</fullName>
+        <description>תזכורת לגביי התור</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/hoursaheadAppointment</template>
+    </alerts>
+    <alerts>
+        <fullName>Appointment_change_Details</fullName>
+        <description>מייל עם פרטי שינוי התור - מכונים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Appointment_change_Details</template>
+    </alerts>
+    <alerts>
+        <fullName>Appointment_s_Details</fullName>
+        <description>מייל עם פרטי התור - מכונים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Inst</template>
+    </alerts>
+    <alerts>
+        <fullName>Appointment_s_Details_Ashdod</fullName>
+        <description>מייל עם פרטי התור - מכונים עבור אשדוד</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Inst_Ashdod_MRI_20223</template>
+    </alerts>
+    <alerts>
+        <fullName>Appointment_s_Details_Genetic</fullName>
+        <description>מייל עם פרטי התור - מכונים יעוץ גנטי</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Inst_Genetic_Consultation</template>
+    </alerts>
+    <alerts>
+        <fullName>Arabic43233</fullName>
+        <description>מסמכים נלווים לבדיקת עבירות מעי-קפ. מתמוססת</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Arabic43233</template>
+    </alerts>
+    <alerts>
+        <fullName>Arabic45380_evening</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Arabic45380_evening</template>
+    </alerts>
+    <alerts>
+        <fullName>Arabic45380_morning</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Arabic45380_morning</template>
+    </alerts>
+    <alerts>
+        <fullName>Armonit_Biopsy_HE</fullName>
+        <description>בדיקת ביופסיה של ערמונית מונחית אולטרסאונד (טרנס רקטאלי+ ביופסיה)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Armonit_Biopsy_HE</template>
+    </alerts>
+    <alerts>
+        <fullName>Armonit_Biopsy_RU</fullName>
+        <description>בדיקת ביופסיה של ערמונית מונחית אולטרסאונד (טרנס רקטאלי+ ביופסיה)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Armonit_Biopsy_RU</template>
+    </alerts>
+    <alerts>
+        <fullName>Cardial_CT</fullName>
+        <description>מסמכים נלווים הדרכה לקראת בדיקת CT קרדיאלי</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/ct_cardiac</template>
+    </alerts>
+    <alerts>
+        <fullName>Disabilities_to_site</fullName>
+        <description>Disabilities to site</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Site_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Disabilities</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Cancelation</fullName>
+        <description>מייל עם פרטי ביטול התור מכונים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Canceled_Appointment</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Cancelation_Ashdod</fullName>
+        <description>מייל עם פרטי ביטול התור מכונים עבור אשדוד ציבורי</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Canceled_Appointment_Ashdod_20223</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Cancelation_exp</fullName>
+        <description>מייל עם פרטי ביטול התור מומחים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Canceled_Appointment_exp</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_experts_clinic</fullName>
+        <description>מייל עם פרטי תור במרפאת מומחים נשלח למרפאה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>clinic_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Experts_4_clinic</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_experts_clinic_cncl</fullName>
+        <description>מייל עם פרטי תור במרפאת מומחים נשלח למרפאה - ביטול</description>
+        <protected>false</protected>
+        <recipients>
+            <field>clinic_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Experts_4_clinic_cncl</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_experts_clinic_upd</fullName>
+        <description>מייל עם פרטי תור במרפאת מומחים נשלח למרפאה - עדכון</description>
+        <protected>false</protected>
+        <recipients>
+            <field>clinic_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Experts_4_clinic_upd</template>
+    </alerts>
+    <alerts>
+        <fullName>English45380_evening</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/English45380_evening</template>
+    </alerts>
+    <alerts>
+        <fullName>English45380_morning</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/English45380_morning</template>
+    </alerts>
+    <alerts>
+        <fullName>Expert_survey</fullName>
+        <description>Expert survey</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Experts_Survey</template>
+    </alerts>
+    <alerts>
+        <fullName>Hebrew45380_evening</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Hebrew45380_evening</template>
+    </alerts>
+    <alerts>
+        <fullName>Hebrew45380_morning</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Hebrew45380_morning</template>
+    </alerts>
+    <alerts>
+        <fullName>Home_Admision_Email</fullName>
+        <description>Home Admission Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>assutaservice@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Home_Admission</template>
+    </alerts>
+    <alerts>
+        <fullName>Questionnaire_For_Genetic_Check</fullName>
+        <description>שאלון לקראת בדיקת ייעוץ גנטי</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Questionnaire_for_genetic_consultation</template>
+    </alerts>
+    <alerts>
+        <fullName>Russian43233</fullName>
+        <description>מסמכים נלווים לבדיקת עבירות מעי-קפ. מתמוססת</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Russian43233</template>
+    </alerts>
+    <alerts>
+        <fullName>Russian45380_evening</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Russian45380_evening</template>
+    </alerts>
+    <alerts>
+        <fullName>Russian45380_morning</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Russian45380_morning</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_appointment_approval_to_pateint</fullName>
+        <description>Send appointment approval to pateint</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_pre_form_to_pateint</fullName>
+        <description>Send pre form to pateint</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Form</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_surgery_was_canceled_to_site</fullName>
+        <description>Send surgery was canceled to site</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Surgey_Reception_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Surgery_was_canceled_by_agent</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_to_Manager_no_agreement_Doc_and_payer_factor</fullName>
+        <description>Send to Manager - no agreement Doc and payer factor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Site_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Manager_no_agreement_for_doc_and_payer_factor</template>
+    </alerts>
+    <alerts>
+        <fullName>Surgery_Kit_Leumit_Meuhedet</fullName>
+        <description>קיט ניתוחי עבור לאומית ומאוחדת עם אופציה להעלאת קבצים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Surgery</template>
+    </alerts>
+    <alerts>
+        <fullName>TRUS_MRI</fullName>
+        <description>ביופסיית TRUS  מוכוונת MRI</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Check_Biopsia</template>
+    </alerts>
+    <alerts>
+        <fullName>Upload_files_to_expert_appointment</fullName>
+        <description>קישור להעלאת טפסים לתור לרופא מומחה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Upload_files_to_expert_appointment</template>
+    </alerts>
+    <alerts>
+        <fullName>Upload_files_to_surgey_appointment</fullName>
+        <description>קישור להעלאת טפסים לתור לניתוח</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Upload_files_to_surgery_appointment</template>
+    </alerts>
+    <alerts>
+        <fullName>Virtual_Appointments_Details</fullName>
+        <description>מייל עם פרטי התור הוירטואלי - מכונים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Virtual_Inst</template>
+    </alerts>
+    <alerts>
+        <fullName>appointment_d_expert</fullName>
+        <description>DEL-מייל עם פרטי התור - מומחים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Break_Of_SLA6</template>
+    </alerts>
+    <alerts>
+        <fullName>appointment_d_surgeries</fullName>
+        <description>מייל עם פרטי התור - ניתוחים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Surgery</template>
+    </alerts>
+    <alerts>
+        <fullName>biops</fullName>
+        <description>מסמכים נלווים-הדרכה לנבדקת 760922</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/biops</template>
+    </alerts>
+    <alerts>
+        <fullName>briatry_a</fullName>
+        <description>מסמכים נלווים להערכה בריאטרית</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Barietric_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>briatry_e</fullName>
+        <description>מסמכים נלווים להערכה בריאטרית</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Barietric_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>briatry_h</fullName>
+        <description>מסמכים נלווים להערכה בריאטרית</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Barietric</template>
+    </alerts>
+    <alerts>
+        <fullName>briatry_r</fullName>
+        <description>מסמכים נלווים להערכה בריאטרית</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Barietric_rus</template>
+    </alerts>
+    <alerts>
+        <fullName>colon_a</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/colonos_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>colon_e</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/colonos_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>colon_h</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/colonos</template>
+    </alerts>
+    <alerts>
+        <fullName>colon_r</fullName>
+        <description>מסמכים נלווים לבדיקת קולונוסקופיה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/colonos_rus</template>
+    </alerts>
+    <alerts>
+        <fullName>ct_a</fullName>
+        <description>פרוטוקול הכנה לבדיקת CT הכוללת הזרקת חומר ניגוד תוך ורידי - לנבדקים הרגישים ליוד</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/ct_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>ct_e</fullName>
+        <description>פרוטוקול הכנה לבדיקת CT הכוללת הזרקת חומר ניגוד תוך ורידי - לנבדקים הרגישים ליוד</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/ct_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>ct_h</fullName>
+        <description>פרוטוקול הכנה לבדיקת CT הכוללת הזרקת חומר ניגוד תוך ורידי - לנבדקים הרגישים ליוד</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/ct</template>
+    </alerts>
+    <alerts>
+        <fullName>ct_r</fullName>
+        <description>פרוטוקול הכנה לבדיקת CT הכוללת הזרקת חומר ניגוד תוך ורידי - לנבדקים הרגישים ליוד</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/ct_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>english43233</fullName>
+        <description>מסמכים נלווים לבדיקת עבירות מעי-קפ. מתמוססת</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/English43233</template>
+    </alerts>
+    <alerts>
+        <fullName>gastro_a</fullName>
+        <description>מסמכים נלווים לבדיקת גסטרוסקופיה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/gastro</template>
+    </alerts>
+    <alerts>
+        <fullName>gastro_e</fullName>
+        <description>מסמכים נלווים לבדיקת גסטרוסקופיה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/gastro_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>gastro_h</fullName>
+        <description>מסמכים נלווים לבדיקת גסטרוסקופיה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/gastro</template>
+    </alerts>
+    <alerts>
+        <fullName>gastro_r</fullName>
+        <description>מסמכים נלווים לבדיקת גסטרוסקופיה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/gastro_rus</template>
+    </alerts>
+    <alerts>
+        <fullName>heart_a</fullName>
+        <description>בדיקות מיפוי לב - שאלון לנבדק</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/heart_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>heart_e</fullName>
+        <description>בדיקות מיפוי לב - שאלון לנבדק</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/heart_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>heart_h</fullName>
+        <description>בדיקות מיפוי לב - שאלון לנבדק</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/heart</template>
+    </alerts>
+    <alerts>
+        <fullName>heart_r</fullName>
+        <description>בדיקות מיפוי לב - שאלון לנבדק</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/heart_rus</template>
+    </alerts>
+    <alerts>
+        <fullName>hebrew43233</fullName>
+        <description>מסמכים נלווים לבדיקת עבירות מעי-קפ. מתמוססת</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Hebrew43233</template>
+    </alerts>
+    <alerts>
+        <fullName>kit_exp</fullName>
+        <description>קיט תור למומחים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Experts</template>
+    </alerts>
+    <alerts>
+        <fullName>kit_exp_contact</fullName>
+        <description>קיט תור למומחים (מטופל עם איש קשר)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Contact_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Assuta_Kit_Experts</template>
+    </alerts>
+    <alerts>
+        <fullName>mail_for_Pre_Surgery</fullName>
+        <description>מייל תזכורת לקביעת טרום ניתוח</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Pre_surgery</template>
+    </alerts>
+    <alerts>
+        <fullName>mail_to_expert</fullName>
+        <description>מייל לרופא מומחה עם פרטי תור שנקבע עבורו</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Doctor_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/expert_appointment_details_for_doctor</template>
+    </alerts>
+    <alerts>
+        <fullName>quick_h_a</fullName>
+        <description>מסמכים נלווים לבדיקתך ביחידה לבירור מהיר,חיפה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/files_Ramat_Haifa_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>quick_h_e</fullName>
+        <description>מסמכים נלווים לבדיקתך ביחידה לבירור מהיר,חיפה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/files_Ramat_Haifa_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>quick_h_h</fullName>
+        <description>מסמכים נלווים לבדיקתך ביחידה לבירור מהיר,חיפה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/files_Ramat_Haifa</template>
+    </alerts>
+    <alerts>
+        <fullName>quick_h_r</fullName>
+        <description>מסמכים נלווים לבדיקתך ביחידה לבירור מהיר,חיפה</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/files_Ramat_Haifa_rus</template>
+    </alerts>
+    <alerts>
+        <fullName>quick_rh_a</fullName>
+        <description>מסמכים נלווים לבדיקתך ביחידה לבירור מהיר,רמת החיל</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/files_Ramat_HaHayal_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>quick_rh_e</fullName>
+        <description>מסמכים נלווים לבדיקתך ביחידה לבירור מהיר,רמת החיל</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/files_Ramat_HaHayal_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>quick_rh_h</fullName>
+        <description>מסמכים נלווים לבדיקתך ביחידה לבירור מהיר,רמת החיל</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/files_Ramat_HaHayal</template>
+    </alerts>
+    <alerts>
+        <fullName>quick_rh_r</fullName>
+        <description>מסמכים נלווים לבדיקתך ביחידה לבירור מהיר,רמת החיל</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/files_Ramat_HaHayal_rus</template>
+    </alerts>
+    <alerts>
+        <fullName>shefir</fullName>
+        <description>מסמכים נלווים למי שפיר</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/shefir</template>
+    </alerts>
+    <alerts>
+        <fullName>upload_hitchayvut</fullName>
+        <description>upload hitchayvut</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/upload_hitchayvut</template>
+    </alerts>
+    <alerts>
+        <fullName>video_a</fullName>
+        <description>מסמכים נלווים לבדיקת וידאו קפסולה למעי הדק</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/video_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>video_aa</fullName>
+        <description>מסמכים נלווים לבדיקת וידאו קפסולה למעי הדק</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/video_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>video_h</fullName>
+        <description>מסמכים נלווים לבדיקת וידאו קפסולה למעי הדק</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/video</template>
+    </alerts>
+    <alerts>
+        <fullName>video_r</fullName>
+        <description>מסמכים נלווים לבדיקת וידאו קפסולה למעי הדק</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/video_rus</template>
+    </alerts>
+    <alerts>
+        <fullName>virtual_a</fullName>
+        <description>מסמכים נלווים להדרכה לנבדק לקראת בדיקת קולונוסקופיה וירטואלית</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/virtual_arab</template>
+    </alerts>
+    <alerts>
+        <fullName>virtual_e</fullName>
+        <description>מסמכים נלווים להדרכה לנבדק לקראת בדיקת קולונוסקופיה וירטואלית</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/virtual_eng</template>
+    </alerts>
+    <alerts>
+        <fullName>virtual_h</fullName>
+        <description>מסמכים נלווים להדרכה לנבדק לקראת בדיקת קולונוסקופיה וירטואלית</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/virtual</template>
+    </alerts>
+    <alerts>
+        <fullName>virtual_r</fullName>
+        <description>מסמכים נלווים להדרכה לנבדק לקראת בדיקת קולונוסקופיה וירטואלית</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Patient_Mail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/virtual_rus</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ActionFieldUpdate</fullName>
+        <field>Date_Instuction_Read__c</field>
+        <formula>DATETIMEVALUE(today())</formula>
+        <name>עדכן את תאריך הסכמת קריאת ההנחיות</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ActionFieldUpdate1</fullName>
+        <field>type_of_consult__c</field>
+        <literalValue>זימון תור לרופא מומחה</literalValue>
+        <name>עדכן סוג פגישת ייעוץ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ActionFieldUpdate2</fullName>
+        <field>type_of_consult__c</field>
+        <literalValue>המלצה על רופא מומחה</literalValue>
+        <name>עדכן סוג פגישת ייעוץ2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ActionFieldUpdate2222222</fullName>
+        <field>all_med_pr_cost__c</field>
+        <formula>Final_Cost_of_Med_1__c +
+ Final_Cost_of_Med_2__c +
+ Final_Cost_of_Med_3__c +
+ Final_Cost_of_Med_4__c</formula>
+        <name>עדכן מחיר סופי</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cancel_appointment</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>Canceled</literalValue>
+        <name>Cancel appointment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Consultancy_Document_Stat_Update1</fullName>
+        <field>ConsultancySummaryDocumentStatus__c</field>
+        <literalValue>Unrequired</literalValue>
+        <name>עדכון סטטוס מסמך סיכום ייעוץ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Consultancy_Summary_Document_Stat_Update</fullName>
+        <field>ConsultancySummaryDocumentStatus__c</field>
+        <literalValue>YetUploaded</literalValue>
+        <name>עדכון סטטוס מסמך סיכום ייעוץ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IF1</fullName>
+        <field>Payer_factor__c</field>
+        <literalValue>3</literalValue>
+        <name>IF1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IF2</fullName>
+        <field>Payer_factor__c</field>
+        <literalValue>6</literalValue>
+        <name>IF2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IF3</fullName>
+        <field>Payer_factor__c</field>
+        <literalValue>5</literalValue>
+        <name>IF3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IF4</fullName>
+        <field>Payer_factor__c</field>
+        <literalValue>4</literalValue>
+        <name>IF4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IF5</fullName>
+        <field>Payer_factor__c</field>
+        <literalValue>36</literalValue>
+        <name>IF5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IF6</fullName>
+        <field>Payer_factor__c</field>
+        <literalValue>110</literalValue>
+        <name>IF6</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Miss_match_med_pro_1</fullName>
+        <description>יהיה TRUE במידה ואין התאמה בין הפעולה הרפואית בספינקל לבין הפעולה הרפואית בהפניה מרופא</description>
+        <field>Miss_match_medical_pro_1__c</field>
+        <literalValue>1</literalValue>
+        <name>Miss match med pro 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Miss_match_med_pro_2</fullName>
+        <field>Miss_match_medical_pro_2__c</field>
+        <literalValue>1</literalValue>
+        <name>Miss match med pro 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Miss_match_med_pro_3</fullName>
+        <field>Miss_match_medical_pro_3__c</field>
+        <literalValue>1</literalValue>
+        <name>Miss match med pro 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Miss_match_med_pro_4</fullName>
+        <field>Miss_match_medical_pro_4__c</field>
+        <literalValue>1</literalValue>
+        <name>Miss match med pro 4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Send_pre_app_form_to_FALSE</fullName>
+        <field>Send_pre_appointement_form__c</field>
+        <literalValue>0</literalValue>
+        <name>Send pre app form to FALSE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sign_date</fullName>
+        <field>RIS_Signature_date_time__c</field>
+        <formula>RISStatusChangeDateTime__c</formula>
+        <name>Sign_date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Agent_Name</fullName>
+        <field>Field1__c</field>
+        <formula>$User.FirstName &amp;&quot; &quot;&amp; $User.LastName</formula>
+        <name>Update Agent Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Commitment_Date</fullName>
+        <field>Date_of_commitment__c</field>
+        <formula>TODAY()</formula>
+        <name>עדכון תאריך התחייבות</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Commitment_Expiration_Date</fullName>
+        <field>Expiration_date_commitment__c</field>
+        <formula>TODAY()+90</formula>
+        <name>עדכון תוקף התחייבות</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Domain_ID</fullName>
+        <field>Domain_ID__c</field>
+        <formula>Medical_Procedure__r.Domain__r.Id</formula>
+        <name>Update Domain ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Link</fullName>
+        <field>Kit_Link_URL__c</field>
+        <formula>Kit_Link__c</formula>
+        <name>Update Link</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Mail</fullName>
+        <description>איכלוס המייל של המטופל בפנייה לצורך שליחת מייל</description>
+        <field>Patient_Mail__c</field>
+        <formula>Case__r.email_from_patient__c</formula>
+        <name>עדכון מייל</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Mail_2</fullName>
+        <field>Patient_Contact_Mail__c</field>
+        <formula>Patient_Account__r.PersonContact.Email</formula>
+        <name>עדכון מייל 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Spincal_Status</fullName>
+        <description>עדכון סטאטוס זימון חדר ניתוח לחדש</description>
+        <field>status_surgery_room__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Spincal Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>WaitingForAppointment</literalValue>
+        <name>Update Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Surgery_Name_not_Marketing</fullName>
+        <field>Name</field>
+        <formula>IF(NOT(ISBLANK(Date_of_appointment__c)),
+ Medical_Procedure__r.Name &amp;&quot; &quot;&amp; TEXT(DAY(Date_of_appointment__c)) &amp;&quot;/&quot;&amp; TEXT( MONTH(Date_of_appointment__c)) &amp;&quot;/&quot;&amp; TEXT(YEAR(Date_of_appointment__c)),
+ LEFT(Medical_Procedure__r.Name, 69)  )</formula>
+        <name>Update Surgery Name not Marketing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_Kit_Was_Sent</fullName>
+        <description>Updates the last time the kit was sent</description>
+        <field>Kit_Date_Time_Last_Sent__c</field>
+        <formula>NOW()</formula>
+        <name>Update Time Kit Was Sent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_administrative_status</fullName>
+        <field>Administrative_Status__c</field>
+        <literalValue>ממתין להתחייבות</literalValue>
+        <name>Update administrative status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_Classification_to_Green</fullName>
+        <field>Classification__c</field>
+        <literalValue>ירוק</literalValue>
+        <name>Update app Classification to Green</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_Classification_to_Orange</fullName>
+        <field>Classification__c</field>
+        <literalValue>כתום</literalValue>
+        <name>Update app Classification to Orange</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_name_to_medical_precedure</fullName>
+        <description>עדכון שם תור לניתוח או תור למכון לשם הפעולה הרפואית</description>
+        <field>Name</field>
+        <formula>IF(NOT(ISBLANK(Date_of_appointment__c)),
+Medical_Procedure__r.Marketing_Procedure_Name__c &amp;&quot; &quot;&amp;  TEXT(DAY(Date_of_appointment__c)) &amp;&quot;/&quot;&amp; TEXT( MONTH(Date_of_appointment__c)) &amp;&quot;/&quot;&amp; TEXT(YEAR(Date_of_appointment__c)),
+LEFT(Medical_Procedure__r.Marketing_Procedure_Name__c , 69))</formula>
+        <name>Update app name to medical precedure</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_status</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>בתהליך אישור מנהל</literalValue>
+        <name>עדכן סטטוס פגישה</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_status_Admission</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>התקבל בביה&quot;ח</literalValue>
+        <name>Update app status - Admission</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_status_Bad</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>בתהליך אישור מנהל</literalValue>
+        <name>Update app status Bad</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_status_Release</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>שחרור מטופל</literalValue>
+        <name>Update app status - Release</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_status_ok</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>WaitingForAppointment</literalValue>
+        <name>Update app status ok</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_status_to_Waiting_for_commit</fullName>
+        <description>עדכון סטאטוס הפגישה ל&quot;ממתין להתחייבות&quot;</description>
+        <field>Appointment_Status__c</field>
+        <literalValue>ממתין להתחייבות</literalValue>
+        <name>Update app status to Waiting for commit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_app_status_wait_com</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>ממתין להתחייבות</literalValue>
+        <name>סטטוס ממתין להתחייבות</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_arrival_confirmation</fullName>
+        <field>Arrival_Confirmation__c</field>
+        <literalValue>1</literalValue>
+        <name>Update arrival confirmation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_doctor_mail</fullName>
+        <field>Doctor_Mail__c</field>
+        <name>עדכון מייל רופא בתור</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_name_to_Doctor_s_name</fullName>
+        <field>Name</field>
+        <formula>IF( NOT(ISBLANK(Doctor_Account__c)), Doctor_Account__r.Name ,Calendar__r.Doc_Name__c)  &amp;&quot; &quot;&amp;
+LPAD(TEXT(DAY( Date_of_appointment__c )),2,&quot;0&quot;)&amp;&quot;/&quot;&amp;LPAD(TEXT(MONTH (Date_of_appointment__c)),2,&quot;0&quot;)&amp;&quot;/&quot;&amp; 
+TEXT(YEAR(Date_of_appointment__c))</formula>
+        <name>Update name to Doctor&apos;s name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_pre_needed</fullName>
+        <field>Presurgery_needed1__c</field>
+        <literalValue>1</literalValue>
+        <name>עדכון ט.ניתוח לתור</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_reason</fullName>
+        <field>agent_reason_to_cancel__c</field>
+        <literalValue>בוטל ע&quot;י חדר ניתוח</literalValue>
+        <name>Update reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_site_email_in_appointment</fullName>
+        <description>עדכן את השדה כתובת דוא&quot;ל של אתר ברשומת התור</description>
+        <field>Site_Email__c</field>
+        <formula>Site__r.Site_Email__c</formula>
+        <name>Update site email in appointment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_status_mehironim_to_failed</fullName>
+        <field>Agreement_with_assuta__c</field>
+        <literalValue>התקבלה שגיאה מתפנית</literalValue>
+        <name>Update status mehironim to failed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Value_Unicorn_Checked</fullName>
+        <field>Value_Unicorn__c</field>
+        <literalValue>1</literalValue>
+        <name>Value Unicorn Checked</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>a</fullName>
+        <field>way_of_results_deliver__c</field>
+        <literalValue>שליחה בפקס</literalValue>
+        <name>a</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>approval</fullName>
+        <field>more_than_14_days_status__c</field>
+        <literalValue>Done</literalValue>
+        <name>approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>check</fullName>
+        <field>IsUrgent__c</field>
+        <literalValue>1</literalValue>
+        <name>check</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>checkbox</fullName>
+        <field>more_than_14_days__c</field>
+        <literalValue>0</literalValue>
+        <name>checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>clinic_email_sent_create</fullName>
+        <field>Clinic_email_sent_status__c</field>
+        <literalValue>זימון</literalValue>
+        <name>נשלח מייל למרפאה - זימון</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>formtitan_unique</fullName>
+        <field>formtitan_id_2__c</field>
+        <formula>formtitan_external_id__c</formula>
+        <name>עדכון מזהה פורמטייטן</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>hatima_status</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>Signature</literalValue>
+        <name>hatima_status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>reminder_approval</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>וידוא הגעה לפגישה</literalValue>
+        <name>וידוא הגעה לפגישה</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>NewAppointment</literalValue>
+        <name>status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status7</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>בתהליך אישור מנהל</literalValue>
+        <name>status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status_r</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>WaitingForCanceled</literalValue>
+        <name>status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update30days</fullName>
+        <field>Next30days__c</field>
+        <formula>Today()+30</formula>
+        <name>update30days</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_prevent_automation</fullName>
+        <field>Prevent_Automation__c</field>
+        <literalValue>1</literalValue>
+        <name>update prevent automation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_site_name</fullName>
+        <field>App_site_text__c</field>
+        <formula>Site__r.Id</formula>
+        <name>update_site_name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_status_to_unarrived</fullName>
+        <description>עדכון סטאטוס הפגישה כאשר המטופל לא הגיע</description>
+        <field>Appointment_Status__c</field>
+        <literalValue>לא התקבל דיווח</literalValue>
+        <name>update status to unarrived</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>updatrdocreff</fullName>
+        <field>Doctor_License_From_Referral__c</field>
+        <formula>Doctor_Account__r.Doctor_Code__c</formula>
+        <name>updatrdocreff</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>waiting_for_apt</fullName>
+        <field>Appointment_Status__c</field>
+        <literalValue>WaitingForAppointment</literalValue>
+        <name>ממתין למועד הפגישה</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>App Update Link</fullName>
+        <actions>
+            <name>Update_Link</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Appointment__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ניתוח</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Arrival confirmation</fullName>
+        <actions>
+            <name>Update_arrival_confirmation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Appointment__c.Rep_Reminder_Status__c</field>
+            <operation>equals</operation>
+            <value>אישור הגעה</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Change app to Green if no referral</fullName>
+        <actions>
+            <name>Update_app_Classification_to_Green</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>במידה ולא הגיעה הפניה מסוג HOSPITALIZATION או ביצוע פעולה, אך הרופא הינו רופא קופה, הפגישה תסווג למסלול ירוק</description>
+        <formula>ISPICKVAL(Doctor_Account__r.Maccabi_Arrangement__c , &quot;cash_doc&quot;) &amp;&amp; ISPICKVAL( Classification__c  , &quot;&quot;) &amp;&amp;  ISCHANGED(Referral_Status_Maccabi__c ) &amp;&amp; (PayerFactor__r.InsuranceCode__c =&quot;3&quot; || PayerFactor__r.InsuranceCode__c = &quot;89&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Change app to Orange if no referral</fullName>
+        <actions>
+            <name>Update_app_Classification_to_Orange</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>במידה ולא הגיעה הפניה מסוג חיוב ישיר, אך הרופא הינו רופא רשת, הפגישה תסווג למסלול כתום</description>
+        <formula>ISPICKVAL(Doctor_Account__r.Maccabi_Arrangement__c , &quot;רופא בהסדר&quot;) &amp;&amp; ISPICKVAL( Classification__c  , &quot;&quot;) &amp;&amp; ISCHANGED(Referral_Status_Maccabi__c ) &amp;&amp; (PayerFactor__r.InsuranceCode__c =&quot;3&quot; || PayerFactor__r.InsuranceCode__c = &quot;89&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Copy email to appointment</fullName>
+        <actions>
+            <name>Update_Mail</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>המייל מפניית המקור יעבור לתור</description>
+        <formula>NOT(ISBLANK(  Case__r.email_from_patient__c  ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Copy email to appointment 2</fullName>
+        <actions>
+            <name>Update_Mail_2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>המשך</description>
+        <formula>NOT(ISBLANK(  Patient_Account__r.PersonContact.Email  ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Kit was sent%3F</fullName>
+        <actions>
+            <name>Update_Time_Kit_Was_Sent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Checks If a Kit Was Sent Manually</description>
+        <formula>(ISNEW() &amp;&amp; sent_kit_confirmation__c) || (sent_kit_confirmation__c &amp;&amp; ISCHANGED(sent_kit_confirmation__c)) || (ISCHANGED(Didkitsent__c ) &amp;&amp; Didkitsent__c )|| (ISCHANGED(sent_kit_contact__c )&amp;&amp;sent_kit_contact__c  )|| (ISCHANGED(resend_kit__c )&amp;&amp; resend_kit__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send pre appointment form</fullName>
+        <actions>
+            <name>Send_pre_form_to_pateint</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Send_pre_app_form_to_FALSE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Appointment__c.Send_pre_appointement_form__c</field>
+            <operation>equals</operation>
+            <value>אמת</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send surgery cancelation to site</fullName>
+        <actions>
+            <name>Send_surgery_was_canceled_to_site</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>במידה וזימון חדר הניתוח בוטל ע&quot;י נציג, ישלח מייל לקבלת הניתוחים באתר</description>
+        <formula>ISCHANGED( Canceled_Reason__c) &amp;&amp; ISPICKVAL( Appointment_Status__c ,&quot;Canceled&quot;) &amp;&amp; ISPICKVAL( Canceled_Reason__c , &quot;בוטל עי נציג&quot;)&amp;&amp; RecordType.DeveloperName = &quot;Surgeries&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sign date</fullName>
+        <actions>
+            <name>Sign_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISBLANK(RIS_Signature_date_time__c)  &amp;&amp;  ISPICKVAL(RisAnswerStatus__c,&apos;6&apos;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Site_Update</fullName>
+        <actions>
+            <name>update_site_name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>NOT(ISBLANK (Site__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Site email address to appointment</fullName>
+        <actions>
+            <name>Update_site_email_in_appointment</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>יעתיק את כתובת המייל של האתר לתוך התור על מנת שנוכל לשלוח להם מייל בעת ביטול תור</description>
+        <formula>(ISNEW() || ISCHANGED( Site__c ))  &amp;&amp; NOT(ISBLANK( Site__c )) &amp;&amp; NOT(ISBLANK( Site__r.Site_Email__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Value Unicorn Checkbox</fullName>
+        <actions>
+            <name>Value_Unicorn_Checked</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>NOT (ISBLANK( UNICORN__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update name of experts appointment</fullName>
+        <actions>
+            <name>Update_name_to_Doctor_s_name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>עדכון שם תור לייעוץ לשם הרופא ולתאריך</description>
+        <formula>(RecordType.DeveloperName = &quot;Experts&quot; || RecordType.DeveloperName = &quot;ClosedExperts&quot;) &amp;&amp; (IF( NOT(ISBLANK(Doctor_Account__c)), Doctor_Account__r.Name ,Calendar__r.Doc_Name__c) &amp;&quot; &quot;&amp; LPAD(TEXT(DAY( Date_of_appointment__c )),2,&quot;0&quot;)&amp;&quot;/&quot;&amp;LPAD(TEXT(MONTH (Date_of_appointment__c)),2,&quot;0&quot;)&amp;&quot;/&quot;&amp; TEXT(YEAR(Date_of_appointment__c)) &lt;&gt;  Name  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update name of surgery and institue appointment marketing</fullName>
+        <actions>
+            <name>Update_app_name_to_medical_precedure</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>עדכון שם תור לניתוח או למכונים לשם הפעולה הרפואית השיווקי ולתאריך</description>
+        <formula>(ISNEW() ||  ISCHANGED(  Medical_Procedure__c  ) ||  ISCHANGED(   Appointment_Date_Time__c    ) ) &amp;&amp; NOT(ISBLANK( Medical_Procedure_Marketing_Name__c )) &amp;&amp; (RecordType.DeveloperName = &quot;Institutes&quot; || RecordType.DeveloperName = &quot;Surgeries&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update name of surgery and institue appointment not marketing</fullName>
+        <actions>
+            <name>Update_Surgery_Name_not_Marketing</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>עדכון שם תור לניתוח או למכונים לשם הפעולה הרפואית
+כשאין שם שיווקי</description>
+        <formula>(ISNEW() ||  ISCHANGED(  Medical_Procedure__c  )||  ISCHANGED(    Appointment_Date_Time__c )) &amp;&amp; ISBLANK( Medical_Procedure_Marketing_Name__c ) &amp;&amp; (RecordType.DeveloperName = &quot;Institutes&quot; || RecordType.DeveloperName = &quot;Surgeries&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update site and domain Id</fullName>
+        <actions>
+            <name>Update_Domain_ID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>NOT(ISBLANK (Site__c))&amp;&amp; RecordType.DeveloperName &lt;&gt; &apos;Surgeries&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update status of app from commitment status</fullName>
+        <actions>
+            <name>Update_administrative_status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_app_status_to_Waiting_for_commit</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>במידה וסטאטוס ההתחייבות = ממתין לאישור נעדכן את
+סטאטוס הפגישה = ממתין להתחייבות</description>
+        <formula>RecordType.DeveloperName = &quot;Surgeries&quot;  &amp;&amp; (ISPICKVAL( Commitment_Status__c , &quot;6&quot;) || ISPICKVAL( Commitment_Status__c , &quot;1b&quot;)) &amp;&amp; ISCHANGED(Commitment_Status__c) = TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update status of mehironim if faield</fullName>
+        <actions>
+            <name>Update_status_mehironim_to_failed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCHANGED(Error_description_Mehironim__c ) &amp;&amp; NOT(ISBLANK(Error_description_Mehironim__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>update leumit meuhedet</fullName>
+        <actions>
+            <name>Update_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND (2 OR 7) AND (3 OR 4) AND 5 AND 6 AND 8</booleanFilter>
+        <criteriaItems>
+            <field>Appointment__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ניתוח</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Prevent_Automation__c</field>
+            <operation>equals</operation>
+            <value>אמת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Help_Parent_Code_in__c</field>
+            <operation>equals</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Help_Parent_Code_in__c</field>
+            <operation>equals</operation>
+            <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Agreement_with_assuta__c</field>
+            <operation>equals</operation>
+            <value>Y</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Didkitsent__c</field>
+            <operation>equals</operation>
+            <value>שקר</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Prevent_Automation__c</field>
+            <operation>equals</operation>
+            <value>שקר</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Appointment_Status__c</field>
+            <operation>equals</operation>
+            <value>בטיפול אדמיניסטרטיבי</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>update30days</fullName>
+        <actions>
+            <name>update30days</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Appointment__c.Appointment_Status__c</field>
+            <operation>equals</operation>
+            <value>WaitingForAppointment</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>גורם משלם אינו מצריך מסמך סיכום ייעוץ</fullName>
+        <actions>
+            <name>Consultancy_Document_Stat_Update1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>Not(ISBLANK(PayerFactor__c)) &amp;&amp; PayerFactor__r.Consultancy_summary_document_required__c=False &amp;&amp; OR(ISPICKVAL(ConsultancySummaryDocumentStatus__c, &quot;&quot;), ISCHANGED(PayerFactor__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>גורם משלם מצריך מסמך סיכום ייעוץ</fullName>
+        <actions>
+            <name>Consultancy_Summary_Document_Stat_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>Not(ISBLANK(PayerFactor__c)) &amp;&amp; PayerFactor__r.Consultancy_summary_document_required__c = True &amp;&amp;  OR(ISPICKVAL(ConsultancySummaryDocumentStatus__c, &quot;&quot;), ISCHANGED(PayerFactor__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>סימון וקולו וגסטר</fullName>
+        <actions>
+            <name>update_prevent_automation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Appointment__c.MP_code__c</field>
+            <operation>equals</operation>
+            <value>45380,43231,43.112,43234,43.111,44234,44380</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכון ט%2Eניתוח לתור</fullName>
+        <actions>
+            <name>Update_pre_needed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>(Medical_Procedure__r.Is_there_a_need_for_pre_surgery__c)=TRUE</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכון תאריכי התחייבות לניתוחים</fullName>
+        <actions>
+            <name>Update_Commitment_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Commitment_Expiration_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>RecordType.DeveloperName= &apos;Surgeries&apos; &amp;&amp; NOT(CONTAINS(PayerFactor__r.Name, &apos;מכבי&apos;)) &amp;&amp; ( ISCHANGED(Number_of_commitment__c) || (ISNEW()&amp;&amp; NOT(ISBLANK(Number_of_commitment__c))))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכן את תאריך הקראת ואישור ההנחיות</fullName>
+        <actions>
+            <name>ActionFieldUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Appointment__c.Have_you_read_medical_instructors__c</field>
+            <operation>equals</operation>
+            <value>אמת</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכן מחיר פעולות</fullName>
+        <actions>
+            <name>ActionFieldUpdate2222222</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Appointment__c.Help_Parent_Code_in__c</field>
+            <operation>notEqual</operation>
+            <value>3,4,5,6,7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ניתוח</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכן סוג פגישת ייעוץ</fullName>
+        <actions>
+            <name>ActionFieldUpdate1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(NOT( ISBLANK(Case__c ) ),  ISPICKVAL(Case__r.sub_case_subject__c , &quot;זימון תור לרופא מומחה&quot;))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכן סוג פגישת ייעוץ2</fullName>
+        <actions>
+            <name>ActionFieldUpdate2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(NOT( ISBLANK(Case__c ) ),  ISPICKVAL(Case__r.sub_case_subject__c , &quot;המלצה על רופא מומחה&quot;))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>תזכורות אישור הגעה</fullName>
+        <actions>
+            <name>reminder_approval</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND (2 OR 3 OR 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <field>Appointment__c.Appointment_Status__c</field>
+            <operation>equals</operation>
+            <value>NewAppointment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Date_for_tizkorit_reminder__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Date_for_human_reminder__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Remainder_time__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.more_than_14_days__c</field>
+            <operation>equals</operation>
+            <value>שקר</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>תזכורות אישור הגעה - אין</fullName>
+        <actions>
+            <name>waiting_for_apt</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Appointment__c.Appointment_Status__c</field>
+            <operation>equals</operation>
+            <value>NewAppointment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Date_for_tizkorit_reminder__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Date_for_human_reminder__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Remainder_time__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.more_than_14_days__c</field>
+            <operation>equals</operation>
+            <value>שקר</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

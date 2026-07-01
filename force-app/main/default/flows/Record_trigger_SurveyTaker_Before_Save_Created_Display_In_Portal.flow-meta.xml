@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Fred: 15/06/2026 - 2984251213 
+Description:
+This is a before save Flow, when a surveyTaker is Created, the entry condition formula checks Survey__r.Display_In_Portal__c.
+If True, It will check the coresponding fields in the Survey Taker as well</description>
+    <environments>Default</environments>
+    <interviewLabel>Record trigger - SurveyTaker - Display In Portal {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Record trigger - SurveyTaker - Before Save- Created - Display In Portal</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>If this survey needs to be displaied in the portal, then update the value on the survey taker</description>
+        <name>Update_Disply_in_portal</name>
+        <label>Update Disply in portal</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>DisplayOnPortal__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Disply_in_portal</targetReference>
+        </connector>
+        <filterFormula>{!$Record.Survey__r.Display_In_Portal__c}</filterFormula>
+        <object>SurveyTaker__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_values_to_messaging_session_records_for_updated</name>
+        <label>Assign values to messaging session records for updated</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rv_messagingSession</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_messaging_session</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rv_messagingSession.routing_destination__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Routing_Destination_point</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rv_messagingSession.routing_start_point__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Routing_Start_point</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_messaging_session_record_with_the_starting_point_and_destination_point</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Check if all inputs are not blank</description>
+        <name>Check_if_all_inputs_are_not_blank</name>
+        <label>Check if all inputs are not blank</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>All_inputs_are_not_blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>RoutableId</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Routing_Destination_point</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Routing_Start_point</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_messaging_session</targetReference>
+            </connector>
+            <label>All inputs are not blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_records_returned_from_previous_step_are_not_null</name>
+        <label>Check if records returned from previous step are not null</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>records_returned_from_previous_step_are_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_messaging_session.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_values_to_messaging_session_records_for_updated</targetReference>
+            </connector>
+            <label>records returned from previous step are not null</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Bots - set routing Start Point and destination on messaging session {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Bots - set routing Start Point and destination on messaging session</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get messaging session record based on the routable id passed from the bot</description>
+        <name>Get_messaging_session</name>
+        <label>Get messaging session record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_records_returned_from_previous_step_are_not_null</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RoutableId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MessagingSession</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_messaging_session_record_with_the_starting_point_and_destination_point</name>
+        <label>Update messaging session record with the starting point and destination point</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>rv_messagingSession</inputReference>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_all_inputs_are_not_blank</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Messaging session id passed from Bot</description>
+        <name>RoutableId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The Bot/Dialog the Bot should&apos;ve gone to</description>
+        <name>Routing_Destination_point</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The Dialog name the flow was triggered from</description>
+        <name>Routing_Start_point</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>rv_messagingSession</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MessagingSession</objectType>
+    </variables>
+</Flow>

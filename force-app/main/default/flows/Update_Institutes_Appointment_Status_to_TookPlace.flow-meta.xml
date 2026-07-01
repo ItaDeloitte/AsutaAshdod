@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Appointment_Status_to_TookPlace1</name>
+        <label>עדכן סטאטוס ל&quot;התקיים&quot;</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Appointment_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>TookPlace</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>לא כולל תחום בדיקות רפואיות ביתיות - קוד 263</description>
+        <name>Is_The_RecordType_Institutes</name>
+        <label>האם הפגישה מסוג &quot;בדיקה&quot;?</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>הפגישה אינה מסוג בדיקה</defaultConnectorLabel>
+        <rules>
+            <name>The_RecordType_is_Institutes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Institutes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Domain__r.DomainCode__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <numberValue>263.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Appointment_Status_to_TookPlace1</targetReference>
+            </connector>
+            <label>הפגישה היא מסוג בדיקה</label>
+        </rules>
+    </decisions>
+    <description>מעדכן את סטטוס פגישה מסוג (RecordType) &quot;בדיקה&quot; לערך &quot;התקיים&quot; , כאשר ישנו ערך בשדה &quot;Tafnit Case Number&quot; והערך בשדה &quot;מערכת מקור זימון הפגישה&quot; שווה ל&quot;QFlow&quot;.
+
+לא כולל בדיקות רפואיות ביתיות תחום 263
+
+30-01-25 : שניתי UPDATE ל ASSIGNMENT</description>
+    <environments>Default</environments>
+    <interviewLabel>Update Appointment Status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Institutes Appointment Status to TookPlace</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_The_RecordType_Institutes</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Appointment_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>TookPlace</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Tafnit_Case_Number__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SourceSystem__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QFlow</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Tafnit_Case_Number__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

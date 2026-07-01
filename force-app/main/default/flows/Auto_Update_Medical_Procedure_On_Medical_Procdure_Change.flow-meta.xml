@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Set_Marketing_Name</name>
+        <label>Set Marketing Name</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvMedicalProcedureUpdate.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvMedicalProcedureTrig.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvMedicalProcedureUpdate.Marketing_Procedure_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvMedicalProcedureTrig.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvMedicalProcedureUpdate.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Is_Marketing_Name_Empty</name>
+        <label>Is Marketing Name Empty ?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Marketing_Name_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>rvMedicalProcedureTrig.Marketing_Procedure_Name__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Marketing_Name</targetReference>
+            </connector>
+            <label>Marketing Name Empty ?</label>
+        </rules>
+    </decisions>
+    <description>Monday 2929195911
+Workflows Rules to Flows
+LA 06-2026</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Auto Update Medical Procedure On Medical Procdure Change&apos;+&apos; ||| &apos;+&apos;Triggered By:&apos;+ {!TriggeredByAutomationName}</expression>
+    </formulas>
+    <interviewLabel>Auto Update Medical Procedure On Medical Procdure Change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Auto Update Medical Procedure On Medical Procedure Change</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Marketing_Name_Empty</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>rvMedicalProcedurePrior</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Medical_Procedure__c</objectType>
+    </variables>
+    <variables>
+        <name>rvMedicalProcedureTrig</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Medical_Procedure__c</objectType>
+    </variables>
+    <variables>
+        <name>rvMedicalProcedureUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Medical_Procedure__c</objectType>
+    </variables>
+    <variables>
+        <name>TriggeredByAutomationName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

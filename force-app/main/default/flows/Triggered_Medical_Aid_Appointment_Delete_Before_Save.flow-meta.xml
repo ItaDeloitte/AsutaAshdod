@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Appointment_Medical_Aid_Appointment_Indication_False</name>
+        <label>Assign Appointment- Medical Aid Appointment Indication- False</label>
+        <locationX>314</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>rvAppointment.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Appointment__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAppointment.MedicalAidAppointmentIndication__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Related_Appointments</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Appointment_Medical_Aid_Appointment_Indication_True</name>
+        <label>Assign Appointment- Medical Aid Appointment Indication- True</label>
+        <locationX>50</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>rvAppointment.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Medical_Aid_Appointments_By_Status.Appointment__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAppointment.MedicalAidAppointmentIndication__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Related_Appointments</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>if no appointment is found on the medical aid appointment record- dont do nothing. this is here since appointment is not mandatory on medical aid appointment record</description>
+        <name>Found_Appointment</name>
+        <label>Found Appointment?</label>
+        <locationX>380</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Appointment_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Appointment</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Medical_Aid_Appointments_By_Status</targetReference>
+            </connector>
+            <label>Yes- Appointment Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Found_Medical_Aid_Appointment_Record</name>
+        <label>Found Medical Aid Appointment Record?</label>
+        <locationX>182</locationX>
+        <locationY>611</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Appointment_Medical_Aid_Appointment_Indication_False</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Assign_Status_True</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Medical_Aid_Appointments_By_Status</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Appointment_Medical_Aid_Appointment_Indication_True</targetReference>
+            </connector>
+            <label>Yes- Assign Status True</label>
+        </rules>
+    </decisions>
+    <description>AM: 24122024- User Story 19985- update the appointment if no other Medical Aid Appointment exists (depends on status)</description>
+    <environments>Default</environments>
+    <interviewLabel>Triggered- Medical Aid Appointment- Delete- Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Triggered- Medical Aid Appointment- Delete- Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Appointment</name>
+        <label>Get Appointment</label>
+        <locationX>380</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Found_Appointment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Appointment__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Appointment__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>עזר לפגישה</description>
+        <name>Get_Medical_Aid_Appointments_By_Status</name>
+        <label>Get Medical Aid Appointments By Status</label>
+        <locationX>182</locationX>
+        <locationY>503</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Found_Medical_Aid_Appointment_Record</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 4)</filterLogic>
+        <filters>
+            <field>Appointment__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Appointment.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>בטיפול המחלקה</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>בטיפול מנהלת השירות באתר</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Medical_Aid_Appointment__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Related_Appointments</name>
+        <label>Update Related Appointments</label>
+        <locationX>182</locationX>
+        <locationY>911</locationY>
+        <inputReference>rvAppointment</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Appointment</targetReference>
+        </connector>
+        <object>Medical_Aid_Appointment__c</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>rvAppointment</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Appointment__c</objectType>
+    </variables>
+    <variables>
+        <name>rvcAppointment</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Appointment__c</objectType>
+    </variables>
+</Flow>

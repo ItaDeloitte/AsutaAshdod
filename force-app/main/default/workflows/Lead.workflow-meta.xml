@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>newLead</fullName>
+        <description>newLead</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/newLead</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Check_LeadAccount</fullName>
+        <field>LeadAccount__c</field>
+        <literalValue>1</literalValue>
+        <name>Check LeadAccount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadCreatedDate</fullName>
+        <field>LeadCreatedDate__c</field>
+        <formula>NOW()</formula>
+        <name>LeadCreatedDate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_campaignId</fullName>
+        <field>campaignID__c</field>
+        <formula>Campaign__r.FormtitanId__c</formula>
+        <name>update campaignId</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_parentCampaignId</fullName>
+        <field>parentCampaignId__c</field>
+        <formula>IF(ISBLANK( Campaign__r.ParentId ),
+Campaign__r.FormtitanId__c,
+Campaign__r.Parent.FormtitanId__c )</formula>
+        <name>update parentCampaignId</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Check LeadAccount</fullName>
+        <actions>
+            <name>Check_LeadAccount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.LeadAccount__c</field>
+            <operation>equals</operation>
+            <value>שקר</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>update campaign id</fullName>
+        <actions>
+            <name>update_campaignId</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>update_parentCampaignId</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>not(isblank(Campaign__c ))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

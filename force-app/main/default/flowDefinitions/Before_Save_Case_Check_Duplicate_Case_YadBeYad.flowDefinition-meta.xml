@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>US 20486 - בדיקת כפילות - אם קיימת עוד פנייה של יד ביד לאותו מטופל , לא ניתן ליצור</description>
+    <masterLabel>Before Save - Case - Check Duplicate Case YadBeYad</masterLabel>
+</FlowDefinition>

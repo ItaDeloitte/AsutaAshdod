@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>queue1</name>
+        <label>תור ל: אגף סחר ושיווק</label>
+        <locationX>1096</locationX>
+        <locationY>800</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>get_queue_Trade_Marketing_Division.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>queue1_0</name>
+        <label>תור ל: אגף התחשבנות</label>
+        <locationX>816</locationX>
+        <locationY>817</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>get_queue_Accounting_Division.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>queue1_0_0</name>
+        <label>תור ל: אגף רפואה</label>
+        <locationX>599</locationX>
+        <locationY>822</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>get_queue_Medical_Division.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>queue1_0_0_0</name>
+        <label>תור ל: המשך טיפול צוות תשלומי רופאים</label>
+        <locationX>324</locationX>
+        <locationY>822</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>get_queue_Doctors_Payments.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>check_status</name>
+        <label>check status</label>
+        <locationX>726</locationX>
+        <locationY>506</locationY>
+        <defaultConnector>
+            <targetReference>get_queue_Doctors_Payments</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>המשך טיפול צוות תשלומי רופאים</defaultConnectorLabel>
+        <rules>
+            <name>Trade_Marketing_Division</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>בטיפול אגף סחר ושיווק</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_queue_Trade_Marketing_Division</targetReference>
+            </connector>
+            <label>בטיפול אגף סחר ושיווק</label>
+        </rules>
+        <rules>
+            <name>Accounting_Division</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>בטיפול אגף התחשבנות</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_queue_Accounting_Division</targetReference>
+            </connector>
+            <label>בטיפול אגף התחשבנות</label>
+        </rules>
+        <rules>
+            <name>Medical_Division</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>בטיפול אגף רפואה</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_queue_Medical_Division</targetReference>
+            </connector>
+            <label>אגף רפואה</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>status_is_changed</name>
+        <label>status is changed</label>
+        <locationX>700</locationX>
+        <locationY>375</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>check_status</targetReference>
+            </connector>
+            <label>yes</label>
+        </rules>
+    </decisions>
+    <interviewLabel>update queue for doctor payments {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>update queue for Doctors Payments</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>get_queue_Accounting_Division</name>
+        <label>get queue Accounting_Division</label>
+        <locationX>815</locationX>
+        <locationY>681</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>queue1_0</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Accounting_Division</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>get_queue_Doctors_Payments</name>
+        <label>get queue Doctors_Payments</label>
+        <locationX>416</locationX>
+        <locationY>633</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>queue1_0_0_0</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Doctors_Payments</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>get_queue_Medical_Division</name>
+        <label>get queue Medical_Division</label>
+        <locationX>631</locationX>
+        <locationY>667</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>queue1_0_0</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Medical_Division</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>get_queue_Trade_Marketing_Division</name>
+        <label>get queue Trade_Marketing_Division</label>
+        <locationX>1098</locationX>
+        <locationY>632</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>queue1</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Trade_Marketing_Division</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>597</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>status_is_changed</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>בטיפול אגף סחר ושיווק</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>בטיפול אגף התחשבנות</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>בטיפול אגף רפואה</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>המשך טיפול צוות תשלומי רופאים</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>בטיפול צוות תשלומי רופאים</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Set SMSAddress__c with Calendar__r.Directions__c if field not null, otherwise with accurate_site__r.Address__c value</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>If calendar__r.Directions is null, take value from accurate_site__r.Address. Else, take from Calendar__r.Directions__c</description>
+        <name>SetAddressFieldValue</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!$Record.Calendar__r.Directions__c}), {!$Record.accurate_site__r.Address__c}, {!$Record.Calendar__r.Directions__c})</expression>
+    </formulas>
+    <interviewLabel>Set Appointment Field With Address {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set SMSAddress With Address Value</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_SMS_Address_Field_With_Address</name>
+        <label>Set SMS Address Field With Address</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>SMS_Address__c</field>
+            <value>
+                <elementReference>SetAddressFieldValue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_SMS_Address_Field_With_Address</targetReference>
+        </connector>
+        <filterFormula>(ISCHANGED({!$Record.accurate_site__c})||ISCHANGED({!$Record.Calendar__c})) &amp;&amp; {!$Record.RecordType.DeveloperName}=&apos;Institutes&apos;</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

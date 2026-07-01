@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>Update First Assign Date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update First Assign Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>First_Assign_Date</name>
+        <label>First Assign Date</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>First_Assign_Date__c</field>
+            <value>
+                <elementReference>$Record.AcceptTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>First_Assign_Date</targetReference>
+        </connector>
+        <filterFormula>( {!$Record.MessagingChannel.DeveloperName} = &apos;Assuta_Ashdod_Enhanced_Bot&apos; || {!$Record.MessagingChannel.DeveloperName} = &apos;Assuta_Ashdod_Chat_for_Bot&apos;) 
+&amp;&amp;
+ischanged({!$Record.AcceptTime})
+&amp;&amp;
+isnull({!$Record.First_Assign_Date__c})
+&amp;&amp;
+{!$Record.Owner:User.Ashdod_employee__c}</filterFormula>
+        <object>MessagingSession</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

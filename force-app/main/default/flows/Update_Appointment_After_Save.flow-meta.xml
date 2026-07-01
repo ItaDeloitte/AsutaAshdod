@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Cant be BEFORE because of formula fields assign</description>
+        <name>Assign_Kit</name>
+        <label>Assign Kit</label>
+        <locationX>314</locationX>
+        <locationY>1139</locationY>
+        <assignmentItems>
+            <assignToReference>TriggeredAppointment.Kit_Link_URL__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Kit_Link__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Appointment</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>TriggeredAppointmentAssign</name>
+        <label>TriggeredAppointmentAssign</label>
+        <locationX>446</locationX>
+        <locationY>323</locationY>
+        <assignmentItems>
+            <assignToReference>TriggeredAppointment.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_appointment_name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>WorkFlow - Update name of experts appointment</description>
+        <name>Update_App_Name_experts</name>
+        <label>Update App Name experts</label>
+        <locationX>578</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>TriggeredAppointment.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppointmentNameExperts</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_leumit_meuhedet</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>עדכון שם תור לניתוח או תור למכון לשם הפעולה הרפואית</description>
+        <name>Update_App_Name_marketing</name>
+        <label>Update App Name marketing</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>TriggeredAppointment.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppointmentName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_leumit_meuhedet</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_App_Name_not_marketing</name>
+        <label>Update App Name not marketing</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>TriggeredAppointment.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AppointmentNameNotMarketing</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_leumit_meuhedet</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_final_cost_field</name>
+        <label>Update final cost field</label>
+        <locationX>446</locationX>
+        <locationY>839</locationY>
+        <assignmentItems>
+            <assignToReference>TriggeredAppointment.all_med_pr_cost__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>FinalCostSum</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>App_Update_Link</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Status_to_waiting</name>
+        <label>Update Status to waiting</label>
+        <locationX>182</locationX>
+        <locationY>839</locationY>
+        <assignmentItems>
+            <assignToReference>TriggeredAppointment.Appointment_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>WaitingForAppointment</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>App_Update_Link</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>WorkFlow - App Update Link</description>
+        <name>App_Update_Link</name>
+        <label>App Update Link</label>
+        <locationX>446</locationX>
+        <locationY>1031</locationY>
+        <defaultConnector>
+            <targetReference>Update_Appointment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Surgeries</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Kit</targetReference>
+            </connector>
+            <label>Is Surgeries</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - Update name of surgery and institue appointment marketing
+WorkFlow - Update name of surgery and institue appointment not marketing</description>
+        <name>Update_appointment_name</name>
+        <label>Update appointment name</label>
+        <locationX>446</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Update_leumit_meuhedet</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Institutes_Surgeries_Marketing</name>
+            <conditionLogic>(1 OR 2) AND 3 AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Institutes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Medical_Procedure_Marketing_Name__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>AppointmentName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_App_Name_marketing</targetReference>
+            </connector>
+            <label>Institutes/Surgeries Marketing</label>
+        </rules>
+        <rules>
+            <name>Institutes_Surgeries_Not_Marketing</name>
+            <conditionLogic>(1 OR 2) AND 3 AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Institutes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Medical_Procedure_Marketing_Name__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>AppointmentName</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_App_Name_not_marketing</targetReference>
+            </connector>
+            <label>Institutes/Surgeries Not Marketing</label>
+        </rules>
+        <rules>
+            <name>Experts</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Experts</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>AppointmentNameExperts</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_App_Name_experts</targetReference>
+            </connector>
+            <label>Experts</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - update leumit meuhedet
+WorkFow - עדכן מחיר פעולות</description>
+        <name>Update_leumit_meuhedet</name>
+        <label>Update leumit meuhedet</label>
+        <locationX>446</locationX>
+        <locationY>731</locationY>
+        <defaultConnector>
+            <targetReference>App_Update_Link</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_leumit_meuhedet_out</name>
+            <conditionLogic>1 AND 2 AND 3 AND 4 AND (5 OR 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Agreement_with_assuta__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Y</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Didkitsent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>בטיפול אדמיניסטרטיבי</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Help_Parent_Code_in__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>4</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Help_Parent_Code_in__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>5</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status_to_waiting</targetReference>
+            </connector>
+            <label>Update leumit meuhedet - out</label>
+        </rules>
+        <rules>
+            <name>Update_Final_Cost</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Help_Parent_Code_in__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>3</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Help_Parent_Code_in__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>4</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Help_Parent_Code_in__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>5</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Help_Parent_Code_in__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>6</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Help_Parent_Code_in__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>7</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_final_cost_field</targetReference>
+            </connector>
+            <label>Update Final Cost</label>
+        </rules>
+    </decisions>
+    <description>WorkFlow - Update name of experts appointment
+WorkFlow - Update name of surgery and institue appointment marketing
+WorkFlow - Update name of surgery and institue appointment not marketing
+WorkFlow - עדכן מחיר פעולות
+WorkFlow - App Update Link
+WorkFlow - update leumit meuhedet</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>WorkFlow - Update app name to medical precedure</description>
+        <name>AppointmentName</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!$Record.Date_of_appointment__c})),
+{!$Record.Medical_Procedure__r.Marketing_Procedure_Name__c} +&quot; &quot;+ TEXT(DAY({!$Record.Date_of_appointment__c})) +&quot;/&quot;+ TEXT( MONTH({!$Record.Date_of_appointment__c})) +&quot;/&quot;+ TEXT(YEAR({!$Record.Date_of_appointment__c})),
+LEFT({!$Record.Medical_Procedure__r.Marketing_Procedure_Name__c} , 69))</expression>
+    </formulas>
+    <formulas>
+        <description>WorkFlow - Update name of experts appointment</description>
+        <name>AppointmentNameExperts</name>
+        <dataType>String</dataType>
+        <expression>IF( NOT(ISBLANK({!$Record.Doctor_Account__c})), 
+{!$Record.Doctor_Account__r.Name} , 
+{!$Record.Calendar__r.Doc_Name__c}) +&quot; &quot;+
+LPAD(TEXT(DAY({!$Record.Date_of_appointment__c})),2,&quot;0&quot;)+&quot;/&quot;+LPAD(TEXT(MONTH({!$Record.Date_of_appointment__c})),2,&quot;0&quot;)+&quot;/&quot;+
+TEXT(YEAR({!$Record.Date_of_appointment__c}))</expression>
+    </formulas>
+    <formulas>
+        <description>WorkFlow -Update Surgery Name not Marketing</description>
+        <name>AppointmentNameNotMarketing</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!$Record.Date_of_appointment__c})),
+{!$Record.Medical_Procedure__r.Name}+&quot; &quot;+TEXT(DAY({!$Record.Date_of_appointment__c}))+&quot;/&quot;+TEXT( MONTH({!$Record.Date_of_appointment__c}))+&quot;/&quot;+TEXT(YEAR({!$Record.Date_of_appointment__c})),
+ LEFT({!$Record.Medical_Procedure__r.Name}, 69)  )</expression>
+    </formulas>
+    <formulas>
+        <name>FinalCostSum</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Final_Cost_of_Med_1__c}+{!$Record.Final_Cost_of_Med_2__c}+{!$Record.Final_Cost_of_Med_3__c}+{!$Record.Final_Cost_of_Med_4__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Update Appointment - After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Appointment - After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Appointment</name>
+        <label>Update Appointment</label>
+        <locationX>446</locationX>
+        <locationY>1331</locationY>
+        <inputReference>TriggeredAppointment</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>TriggeredAppointmentAssign</targetReference>
+        </connector>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>TriggeredAppointment</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Appointment__c</objectType>
+    </variables>
+</Flow>

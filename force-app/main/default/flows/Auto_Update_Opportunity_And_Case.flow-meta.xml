@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Case</name>
+        <label>Assign Case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvCase.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvCase.subStatus__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>appointment was not summoned</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvCase.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvOpportunityTrig.Case__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvCase.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Opportunity_To_Update</name>
+        <label>Assign Opportunity To Update</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvOpportunityToUpdate.CloseDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvOpportunityToUpdate.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvOpportunityTrig.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvOpportunityToUpdate.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Stage_Closed_Lost</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_Stage_Closed_Lost</name>
+        <label>Is Stage Closed Lost?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Case</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_The_Stage_Is_Closed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>rvOpportunityTrig.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>rvOpportunityTrig.Case__r.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>preSale</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Case</targetReference>
+            </connector>
+            <label>Yes , The Stage  Is Closed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Stage_Closed_Or_Change</name>
+        <label>Is Stage Closed Or Change?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Stage_Closed_Lost</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_Is_Closed_Or_Change</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>rvTrigOpportunityPrior.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>rvOpportunityTrig.StageName</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>rvOpportunityTrig.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>rvOpportunityTrig.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Opportunity_To_Update</targetReference>
+            </connector>
+            <label>Stage Is Closed Or Change</label>
+        </rules>
+    </decisions>
+    <description>Mb-15.04.26-PB To flow (Opportunity)- Opportunity changes
+MB-21.04.2026 - Add Automation Name</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Auto-Update Opportunity And Case&apos;
++ &apos; ||| &apos; + &apos;Triggered By:&apos; + {!tvAutomationName}</expression>
+    </formulas>
+    <interviewLabel>Auto-Update Opportunity And Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Auto-Update Opportunity And Case</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>rvCase</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Stage_Closed_Or_Change</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>rvCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>rvOpportunityToUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>rvOpportunityTrig</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>rvTrigOpportunityPrior</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>tvAutomationName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

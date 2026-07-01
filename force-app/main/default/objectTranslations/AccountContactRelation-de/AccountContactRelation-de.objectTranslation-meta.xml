@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage><!-- על מנת לקשר איש קשר לחשבון, יש לוודא כי איש הקשר פעיל, שגם הוא וגם המטופל מאשרים דיוור ומעודכן לשניהם כתובת מייל או מספר טלפון לקבלת מסרונים --></errorMessage>
+        <name>Contact_Not_Active</name>
+    </validationRules>
+</CustomObjectTranslation>

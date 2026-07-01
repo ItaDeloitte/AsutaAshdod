@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Checks if Survey Link has value</description>
+        <name>Check_Link</name>
+        <label>Check Link</label>
+        <locationX>1050</locationX>
+        <locationY>437</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Has_Link</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Survey_link__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_SMS_Status</targetReference>
+            </connector>
+            <label>Has Link</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Preferred_Channel</name>
+        <label>Check Preferred Channel</label>
+        <locationX>678</locationX>
+        <locationY>432</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Email_Preferred_Channel</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account__r.Preferred_Channel__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Person_Email</targetReference>
+            </connector>
+            <label>Email Preferred Channel</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the SMS was already Send</description>
+        <name>Check_SMS_Status</name>
+        <label>Check SMS Status</label>
+        <locationX>1214</locationX>
+        <locationY>438</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SMS_was_not_Sent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.is_sms_sent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Email</targetReference>
+            </connector>
+            <label>SMS was not Sent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Status</name>
+        <label>Check Status</label>
+        <locationX>861</locationX>
+        <locationY>434</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_is_Active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>active</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Link</targetReference>
+            </connector>
+            <label>Status is Active</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Person_Email</name>
+        <label>Person Email</label>
+        <locationX>670</locationX>
+        <locationY>640</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Has_Email</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account__r.PersonEmail</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Status</targetReference>
+            </connector>
+            <label>Has Email</label>
+        </rules>
+    </decisions>
+    <description>מחליף פרוסס בשם יצירת רשומת מייל לחוות דעת</description>
+    <environments>Default</environments>
+    <interviewLabel>Create Record - Email Feedback from Patient {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Record Email Feedback from Patient</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Email</name>
+        <label>Create Email</label>
+        <locationX>1223</locationX>
+        <locationY>694</locationY>
+        <connector>
+            <targetReference>Update_SMS_Status_Field</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId__c</field>
+            <value>
+                <elementReference>$Record.Account__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AppointmentId__c</field>
+            <value>
+                <elementReference>$Record.Appointment__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>EmailTemplateDeveloperName__c</field>
+            <value>
+                <stringValue>Assuta_doc_Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ExpectedSendingDateTime__c</field>
+            <value>
+                <elementReference>$Record.sms_send_time__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>noreply@assuta.co.il</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FromName</field>
+            <value>
+                <stringValue>No-Reply-Assuta</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>$Record.Case__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>חוות דעת על הרופא</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Survey_Taker__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TemplateMergeField__c</field>
+            <value>
+                <stringValue>Survey_Taker__c</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Account__r.PersonEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_Reminder_Sent</name>
+        <label>Update Reminder Sent</label>
+        <locationX>1176</locationX>
+        <locationY>159</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Taken__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsReminderSent__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Send_Email_Reminder__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_SMS_Status_Field</name>
+        <label>Update SMS Status Field</label>
+        <locationX>978</locationX>
+        <locationY>694</locationY>
+        <inputAssignments>
+            <field>is_sms_sent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>564</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Check_Preferred_Channel</targetReference>
+        </connector>
+        <filterFormula>{!$Record.Survey__r.Name}=&apos;חוות דעת על רופא&apos;</filterFormula>
+        <object>SurveyTaker__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>Reminder_Path</name>
+            <connector>
+                <targetReference>Update_Reminder_Sent</targetReference>
+            </connector>
+            <label>Reminder Path</label>
+            <offsetNumber>4</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>sms_send_time__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

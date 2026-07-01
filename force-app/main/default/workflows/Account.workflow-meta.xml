@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>OTP_for_bot_account</fullName>
+        <description>OTP for bot account</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OTP_EMAIL_HIDDEN__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>systemteam@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/OTP_for_acc1</template>
+    </alerts>
+    <alerts>
+        <fullName>Report_for_expert</fullName>
+        <description>Report for expert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Report_for_expert</template>
+    </alerts>
+    <alerts>
+        <fullName>formtitan_link_for_approval</fullName>
+        <ccEmails>mariaa@assuta.co.il</ccEmails>
+        <ccEmails>kerenmes@assuta.co.il</ccEmails>
+        <description>formtitan link for approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>motin@assuta.co.il</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>zzz_94e30680-3c21-49e6-b6b6-d9514bf373f1@deleted.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Formtitan_approval_link</template>
+    </alerts>
+    <alerts>
+        <fullName>otp_for_account</fullName>
+        <description>שלח קוד חד פעמי לחשבון</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OTP_EMAIL_HIDDEN__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/OTP_for_acc1</template>
+    </alerts>
+    <alerts>
+        <fullName>otp_for_account_2</fullName>
+        <description>שלח קוד חד פעמי לחשבון 2</description>
+        <protected>false</protected>
+        <recipients>
+            <field>OTP_EMAIL_HIDDEN__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/OTP_for_acc2</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Change_mailing</fullName>
+        <field>Mailing_approval__c</field>
+        <literalValue>לא מאשר דיוור - הכל</literalValue>
+        <name>Change mailing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_preferred_channel</fullName>
+        <field>Preferred_Channel__c</field>
+        <literalValue>לא פעיל</literalValue>
+        <name>Change preferred channel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Phone</fullName>
+        <field>Phone</field>
+        <name>Clear Phone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_SMS_Number</fullName>
+        <field>SMS_Phone_Number__c</field>
+        <name>Clear SMS Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_SMS_use</fullName>
+        <field>Use_for_SMS__c</field>
+        <literalValue>0</literalValue>
+        <name>Clear SMS use</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Concatenate_Passport_Num</fullName>
+        <field>PassportNumList__c</field>
+        <formula>IF( ISBLANK( PassportNumList__c ),
+PRIORVALUE( ID_Number__c ), 
+PassportNumList__c &amp; &apos;, &apos; &amp; PRIORVALUE( ID_Number__c ))</formula>
+        <name>Concatenate Passport Num</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_the_main_phone_to_sms_phone</fullName>
+        <description>העתק את הטלפון הראשי למספר לשליחת מסרונים</description>
+        <field>SMS_Phone_Number__c</field>
+        <formula>Phone</formula>
+        <name>Copy the main phone to sms phone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Deactivatate_Use_for_SMS</fullName>
+        <field>Use_for_SMS__c</field>
+        <literalValue>0</literalValue>
+        <name>Deactivatate- Use for SMS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Delete_SMS_number</fullName>
+        <field>SMS_Phone_Number__c</field>
+        <name>Delete SMS number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Insurer_factor_null</fullName>
+        <field>Insurer_factor__c</field>
+        <name>Insurer factor null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Israel</fullName>
+        <field>PersonMailingCountry</field>
+        <formula>&quot;ישראל&quot;</formula>
+        <name>Israel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadBirthdate</fullName>
+        <field>PersonBirthdate</field>
+        <formula>LeadBirthdate__c</formula>
+        <name>LeadBirthdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>New_Doctor_Name</fullName>
+        <field>Name</field>
+        <formula>doctor_full__c</formula>
+        <name>New Doctor Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_use_for_SMS</fullName>
+        <field>Use_for_SMS__c</field>
+        <literalValue>1</literalValue>
+        <name>Set use for SMS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Date_of_approval_request</fullName>
+        <field>Date_of_approval_request__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Date of approval request</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Satisfaction</fullName>
+        <field>satisfaction__c</field>
+        <formula>IF( (( Survey_Avg__c + if(isblank(satisfaction__c), grade_sum__c ,satisfaction__c) )/ 2) &gt;99 ,99.99 ,( Survey_Avg__c + if(isblank(satisfaction__c),grade_sum__c ,satisfaction__c) )/ 2
+)</formula>
+        <name>Update Satisfaction</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_preferred_channel_to_Phone</fullName>
+        <field>Preferred_Channel__c</field>
+        <literalValue>Phone</literalValue>
+        <name>Update preferred channel to Phone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_preferred_channel_to_SMS</fullName>
+        <field>Preferred_Channel__c</field>
+        <literalValue>SMS</literalValue>
+        <name>Update preferred channel to SMS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>doctor_email</fullName>
+        <description>דוא&quot;ל לרופא</description>
+        <field>Email__c</field>
+        <name>דוא&quot;ל לרופא</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>otp_for_account</fullName>
+        <field>OTP_EMAIL_HIDDEN__c</field>
+        <formula>PersonEmail</formula>
+        <name>otp_for_account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>otp_sent_account2</fullName>
+        <field>otp_sent__c</field>
+        <literalValue>0</literalValue>
+        <name>מסרון חד פעמי לחשבון 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>otp_sent_pc_2</fullName>
+        <field>otp_sent__pc</field>
+        <literalValue>0</literalValue>
+        <name>מסרון חד פעמי 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>set_mailing_approval</fullName>
+        <field>Mailing_approval__c</field>
+        <literalValue>מאשר דיוור - שירותי</literalValue>
+        <name>set mailing approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>sites_for_doctor</fullName>
+        <field>sites_for_doctor__c</field>
+        <literalValue>1</literalValue>
+        <name>אתרים לרופא</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_account</fullName>
+        <field>otp_sent__c</field>
+        <literalValue>1</literalValue>
+        <name>עדכון חשבון</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_person_account</fullName>
+        <field>otp_sent__pc</field>
+        <literalValue>1</literalValue>
+        <name>עדכון חשבון אדם</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Clear fields for deactivated accounts</fullName>
+        <actions>
+            <name>Change_mailing</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Change_preferred_channel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Not_active__c</field>
+            <operation>equals</operation>
+            <value>אמת</value>
+        </criteriaItems>
+        <description>תהליך שמשנה ומוחק שדות לאחר שעברו לסטטוס לא פעיל</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Concatenate Passport Num</fullName>
+        <actions>
+            <name>Concatenate_Passport_Num</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>שמירת מספרי דרכון ישנים בעת עדכון מספר דרכון חדש</description>
+        <formula>ISCHANGED( ID_Number__c ) &amp;&amp; ISPICKVAL( ID_Type__c , &quot;9&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Formtitan approval launch</fullName>
+        <actions>
+            <name>formtitan_link_for_approval</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(Approval_request_number__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LeadBirthdate</fullName>
+        <actions>
+            <name>LeadBirthdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.LeadBirthdate__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>יעדכן את השדה תאריך לידה הסטנדרטי ת=מתוך השדה תאריך לידה שמגיע מהליד בהמרה</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Passport number</fullName>
+        <actions>
+            <name>Insurer_factor_null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.ID_Type__c</field>
+            <operation>equals</operation>
+            <value>9</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Insurer_factor__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>איפוס גורם מבטח במטופל</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SMS_not_allowed</fullName>
+        <actions>
+            <name>Delete_SMS_number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>sms_disability__c &amp;&amp;
+NOT(ISBLANK(SMS_Phone_Number__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>UPDATE ACCOUNT OTP</fullName>
+        <actions>
+            <name>otp_for_account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>OTP_EMAIL_HIDDEN__c &lt;&gt; PersonEmail</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update approval request date</fullName>
+        <actions>
+            <name>Update_Date_of_approval_request</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCHANGED(Approval_request_number__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update preferred channel if blank</fullName>
+        <actions>
+            <name>Set_use_for_SMS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_preferred_channel_to_SMS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>If preferred channel is blank and phone is NOT kosher
+Activate on GO LIVE</description>
+        <formula>NOT(OR(
+BEGINS(Phone , &quot;05271&quot;), BEGINS(Phone , &quot;05276&quot;),
+BEGINS(Phone , &quot;05484&quot;), BEGINS(Phone , &quot;05485&quot;),
+BEGINS(Phone , &quot;05832&quot;), BEGINS(Phone , &quot;05567&quot;),
+BEGINS(Phone , &quot;05331&quot;), BEGINS(Phone , &quot;05341&quot;)))
+&amp;&amp;
+(ISPICKVAL( Preferred_Channel__c , &quot;&quot; ) ||
+ISPICKVAL( Preferred_Channel__c , &quot;Unknown&quot; ))
+&amp;&amp;
+
+( Use_for_SMS__c &amp;&amp; ISPICKVAL( Preferred_Channel__c , &apos;SMS&apos;)||Use_for_SMS__c &amp;&amp; NOT(sms_disability__c) )
+&amp;&amp;
+NOT(
+
+NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+( LastModifiedById&lt;&gt;&apos;0054J000002QSkU&apos; &amp;&amp; CreatedById&lt;&gt;&apos;0054J000002QSkU&apos;)
+&amp;&amp;
+(( DisableValidation__c = false) ) &amp;&amp;
+
+( CONTAINS(PersonMailingCountry , &quot;ישראל&quot;)
+||
+ISBLANK(PersonMailingCountry) )
+&amp;&amp;
+NOT( ISBLANK(Phone ))
+&amp;&amp;
+(LEN( Phone ) &lt;&gt; 10
+||
+LEFT( Phone , 1) &lt;&gt; &quot;0&quot;)&amp;&amp; CreatedById &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;
+
+)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update preferred channel if phone kosher</fullName>
+        <actions>
+            <name>Update_preferred_channel_to_Phone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>If preferred channel is blank and phone is kosher
+Activate on GO LIVE</description>
+        <formula>OR(
+BEGINS(Phone , &quot;05271&quot;), BEGINS(Phone , &quot;05276&quot;),
+BEGINS(Phone , &quot;05484&quot;), BEGINS(Phone , &quot;05485&quot;),
+BEGINS(Phone , &quot;05832&quot;), BEGINS(Phone , &quot;05567&quot;),
+BEGINS(Phone , &quot;05331&quot;), BEGINS(Phone , &quot;05341&quot;))
+&amp;&amp;
+(ISPICKVAL( Preferred_Channel__c , &quot;&quot; ) || 
+ISPICKVAL( Preferred_Channel__c , &quot;Unknown&quot; ))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>mailing address israel</fullName>
+        <actions>
+            <name>Israel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISBLANK( PersonMailingCountry ) &amp;&amp;  RecordType.DeveloperName  = &apos;PersonAccount&apos;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>send OTP code - Email 1</fullName>
+        <actions>
+            <name>otp_for_account</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>otp_sent_pc_2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>update_person_account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>RecordType.DeveloperName  = &quot;PersonAccount&quot; &amp;&amp;
+ISCHANGED(Secret__pc ) &amp;&amp; 
+ISBLANK(SMS_Phone_Number__c ) &amp;&amp; NOT(otp_sent__pc) 
+ &amp;&amp; NOT(ISBLANK(PersonEmail ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>send OTP code - Email 2</fullName>
+        <actions>
+            <name>otp_for_account_2</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>otp_sent_account2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>update_account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>RecordType.DeveloperName  = &quot;PersonAccount&quot; &amp;&amp;
+ISCHANGED(Secret__c ) &amp;&amp; 
+ISBLANK(SMS_Phone_Number__c ) &amp;&amp; NOT(otp_sent__c) 
+ &amp;&amp; NOT(ISBLANK(PersonEmail ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>set mailing approval</fullName>
+        <actions>
+            <name>set_mailing_approval</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Person Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.LeadAccount__c</field>
+            <operation>equals</operation>
+            <value>שקר</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>האם קיבל סקר%3F</fullName>
+        <actions>
+            <name>Update_Satisfaction</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>תהליך המעדכן את ציון שביעות הרצון של המטופל</description>
+        <formula>(grade_sum__c &gt; 0 &amp;&amp; grade_sum__c &gt; 0)&amp;&amp;
+
+ISCHANGED(grade_sum__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>הוספת תואר לרופא</fullName>
+        <actions>
+            <name>New_Doctor_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>RecordType.DeveloperName = &quot;Doctor_Account&quot; 
+&amp;&amp;(Name &lt;&gt;  doctor_full__c)
+&amp;&amp;  NOT(ISBLANK(doctor_name__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

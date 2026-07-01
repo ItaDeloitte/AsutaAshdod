@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>15</activeVersionNumber>
+    <description>PB בשם &quot;canceled appointment&quot; שהומר לפלואו.
+שליחת אימייל או SMS במידה והתור בוטל והפעולה הרפואית אינה חסויה
+29.9 -&quot;בדיקת תנאים לסימון &quot;הועברה בקשה לזיכוי
+8.10 - הוספת תנאים לבדיקה של &quot;הועברה בקשה לזיכוי&quot;
+12.11 -  מחיקת טמפלייטים בשני צמתים Cancelled Appointment, SMS ו Canceled Doctor Appointment SMS:
+ &apos;Canceled_Appointment_Institutes_Doc_Consult&apos;
+&apos;Canceled_Appointment_Institutes_Private_Service&apos;
+31.12 - הוספת תנאי לסימון הצ&apos;קבוקס, שלא יסמן אם הזכאות שווה ללא זכאי
+24.2 - הוספתי את החלק של credits  ו - Check If Status Chacnged To Approved</description>
+    <masterLabel>Cancelled Appointment PB to Flow</masterLabel>
+</FlowDefinition>

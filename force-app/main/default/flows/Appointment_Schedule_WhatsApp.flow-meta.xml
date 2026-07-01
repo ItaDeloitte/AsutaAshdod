@@ -1,0 +1,2530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>assuta1_new_appointment</name>
+        <label>assuta1_new_appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_assuta1_new_appointment</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>assuta1_new_appointment</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address_Exact_Location_in_Domain}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;kit_for_inst&quot;,
+    &quot;textValue&quot;: &quot;{!kit_for_inst}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sessionLongevityPreference</name>
+            <value>
+                <stringValue>EndSession</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>family_virtual_new_appointment</name>
+        <label>family_virtual_new_appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_family_virtual_new_appointment</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>family_virtual_new_appointment</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;Appointment_Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>MessagingEndUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>new_appoinment_institutes</name>
+        <label>new_appoinment_institutes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_new_appoinment_institutes</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>new_appoinment_institutes</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address_Exact_Location_in_Domain}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>new_appointment_checkup_99187</name>
+        <label>new_appointment_checkup_99187</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_new_appointment_checkup_99187</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>new_appointment_checkup_99187</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;First_Name&quot;,
+    &quot;textValue&quot;: &quot;{!tvFirstName}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Appointment_Date&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Appointment_Time&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>MessagingEndUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>new_appointment_family_domain_new</name>
+        <label>new_appointment_family_domain_new</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_new_appointment_family_domain_new</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>new_appointment_family_domain_new</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Appointment_Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;patient_full_name&quot;,
+    &quot;textValue&quot;: &quot;{!Patient_full_name}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address_Exact_Location_In_Domain&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address_Exact_Location_in_Domain}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>MessagingEndUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>new_appointment_institutes_amnioticfluid</name>
+        <label>new_appointment_institutes_amnioticfluid</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_new_appointment_institutes_amnioticfluid</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>new_appointment_institutes_amnioticfluid</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;Patient_full_name&quot;,
+    &quot;textValue&quot;: &quot;{!Patient_full_name}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>MessagingEndUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>new_appointment_institutes_files</name>
+        <label>new_appointment_institutes_files</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_new_appointment_institutes_files</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>new_appointment_institutes_files</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;Appointment_Date_in_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Appointment_Time&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Site_Address&quot;,
+    &quot;textValue&quot;: &quot;{!Site_Address}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>MessagingEndUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>new_regular_appointment_memo_2026</name>
+        <label>new_regular_appointment_memo_2026</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_new_regular_appointment_memo_2026</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>new_regular_appointment_memo_2026</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;FirstName&quot;,
+    &quot;textValue&quot;: &quot;{!tvFirstName}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Appointment_Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address_Exact_Location_in_Domain&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address_Exact_Location_in_Domain}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>new_regular_appointment_new</name>
+        <label>new_regular_appointment_new</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_new_regular_appointment_new</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>new_regular_appointment_new</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;kit_for_inst&quot;,
+    &quot;textValue&quot;: &quot;{!kit_for_inst}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address_Exact_Location_in_Domain}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sessionLongevityPreference</name>
+            <value>
+                <stringValue>EndSession</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>new_regular_appointment_new_No_Upload_Nedded</name>
+        <label>new_regular_appointment_new (No Upload Nedded)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_new_regular_appointment_new_No_Upload_Nedded</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>new_regular_appointment_new</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;kit_for_inst&quot;,
+    &quot;textValue&quot;: &quot;{!kit_for_inst}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Exact_Location_In_Domain_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Exact_Location_In_Domain}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>MessagingEndUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>ps_new_regular_appointment</name>
+        <label>ps_new_regular_appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_ps_new_regular_appointment</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>ps_new_regular_appointment</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;FirstName&quot;,
+    &quot;textValue&quot;: &quot;{!tvFirstName}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Appointment_Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Exact_Location_In_Domain&quot;,
+    &quot;textValue&quot;: &quot;{!Exact_Location_In_Domain}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Link_To_Inst_Kit&quot;,
+    &quot;textValue&quot;: &quot;{!kit_for_inst}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>MessagingEndUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>ps_new_regular_appointment_converted_2026</name>
+        <label>ps_new_regular_appointment_converted_2026</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <connector>
+            <targetReference>WA_Record_Details_ps_new_regular_appointment_converted_2026</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>ps_new_regular_appointment_converted_2026</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;FirstName&quot;,
+    &quot;textValue&quot;: &quot;{!tvFirstName}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Appointment_Date_In_Text&quot;,
+    &quot;textValue&quot;: &quot;{!Date_In_Text}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;AppointmentTime&quot;,
+    &quot;textValue&quot;: &quot;{!AppointmentTime}&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address_Exact_Location_in_Domain&quot;,
+    &quot;textValue&quot;: &quot;{!SMS_Address_Exact_Location_in_Domain}&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>MessagingEndUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MessagingUser</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_to_Collection</name>
+        <label>Add to Collection</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>Apps_to_Update</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>App_Single_rec</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_to_Create</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>WA_Single_rec</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Clear_Exact_Location_in_Domain</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>add_User</name>
+        <label>add User</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>MessagingUser</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>End_User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Populate_Message_Prams</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>add_User_0</name>
+        <label>add User</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>MessagingUser</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>New_End_User</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Populate_Message_Prams</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>App_values</name>
+        <label>App values</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>App_Single_rec.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.appointmentId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>App_Single_rec.sent_kit_confirmation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>App_Single_rec.Exact_Location_In_Domain_Text__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.exactLocationInDomain</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>App_Single_rec.Remainder_type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Reminder_Type_f</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>App_Single_rec.SMS_Address__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Sms_Address_f</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>App_Single_rec.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>WA_values</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Clear_Exact_Location_in_Domain</name>
+        <label>Clear Exact Location in Domain</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>SMS_Address_Exact_Location_in_Domain</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>over_New_App</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>parameters that is used in the &quot;Send Conversation Messages&quot; action (that their name is like the messaging template name)</description>
+        <name>Populate_Message_Prams</name>
+        <label>Populate Message Prams</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>SMS_Address_Exact_Location_in_Domain</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Sms_Address_f</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SMS_Address_Exact_Location_in_Domain</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Space</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>kit_for_inst</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.kitForInst</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AppointmentTime</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.appointmentTime</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Date_In_Text</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.dateText</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SMS_Address</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Sms_Address_f</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SMS_Address_Exact_Location_in_Domain</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>over_New_App.exactLocationInDomain</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Site_Address</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.accurateSiteAddress</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Patient_full_name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.patientName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FT_PreSurgery_Upload_Files</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.fTPreSurgeryUploadFiles</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvFirstName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.firstName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_second_App_for_same_Patient</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_assuta1_new_appointment</name>
+        <label>WA Record Details- assuta1_new_appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>assuta1_new_appointment</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_assuta1_new_appointment</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_family_virtual_new_appointment</name>
+        <label>WA Record Details- family_virtual_new_appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>family_virtual_new_appointment</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_2514907331_family_virtual_new_appointment</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_new_appoinment_institutes</name>
+        <label>WA Record Details- new_appoinment_institutes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>new_appoinment_institutes</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_new_appoinment_institutes</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_new_appointment_checkup_99187</name>
+        <label>WA Record Details- new_appointment_checkup_99187</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>new_appointment_checkup_99187</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_2809506285_new_appointment_checkup_99187</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_new_appointment_family_domain_new</name>
+        <label>WA Record Details- new_appointment_family_domain_new</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>new_appointment_family_domain_new</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_2514907331_new_appointment_family_domain_new</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_new_appointment_institutes_amnioticfluid</name>
+        <label>WA Record Details- new_appointment_institutes_amnioticfluid</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>new_appointment_institutes_amnioticfluid</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_2514907331_new_appointment_institutes_amnioticfluid</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_new_appointment_institutes_files</name>
+        <label>WA Record Details- new_appointment_institutes_files</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>new_appointment_institutes_files</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_2556029491_new_appointment_institutes_files</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_new_regular_appointment_memo_2026</name>
+        <label>WA Record Details- new_regular_appointment_memo_2026</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>new_regular_appointment_memo_2026</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_Mamography</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_new_regular_appointment_new</name>
+        <label>WA Record Details- new_regular_appointment_new</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>new_regular_appointment_new</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_new_regular_appointment_new</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_new_regular_appointment_new_No_Upload_Nedded</name>
+        <label>WA Record Details- new_regular_appointment_new (No Upload Nedded)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>new_regular_appointment_new</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_new_regular_appointment_new</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_ps_new_regular_appointment</name>
+        <label>WA Record Details- ps_new_regular_appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ps_new_regular_appointment</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_2582874175_ps_new_regular_appointment</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_Record_Details_ps_new_regular_appointment_converted_2026</name>
+        <label>WA Record Details- ps_new_regular_appointment_converted_2026</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvWATemplate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ps_new_regular_appointment_converted_2026</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tvWAContent</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Content_f_2582874175_ps_new_regular_appointment_converted_2026</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_WA_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>WA_values</name>
+        <label>WA values</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.patientAccount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Actual_Sending_Date_Time__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DateTime_Now</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Appointment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.appointmentId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Automation_name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Case__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.caseId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Content__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tvWAContent</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Expected_Sending_Date_Time__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DateTime_Now</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.From_Phone__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>over_New_App.messagingChannelName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Messaging_Template__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tvWATemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Messaging_User__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Messaging_End_User_Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Phone_Number__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Phone_Number_f</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>WA_Single_rec.Outbound_Success__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Create_WA_Record</name>
+        <label>Create WA Record?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>over_New_App</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Create_Wa_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tvWATemplate</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>tvWAContent</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>App_values</targetReference>
+            </connector>
+            <label>Yes- Create Wa Record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Domain_check</name>
+        <label>Domain check</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Sending_Options</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Mamography</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.domainCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>307</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>new_regular_appointment_memo_2026</targetReference>
+            </connector>
+            <label>Mamography</label>
+        </rules>
+        <rules>
+            <name>Assuta_Family</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.domainCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>119</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>over_New_App.isVirtualAppointment</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>new_appointment_family_domain_new</targetReference>
+            </connector>
+            <label>Assuta Family</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>End_User_populated</name>
+        <label>End User populated</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>End_User</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>not</defaultConnectorLabel>
+        <rules>
+            <name>populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>MessagingUser</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Populate_Message_Prams</targetReference>
+            </connector>
+            <label>populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>found_End_User</name>
+        <label>found End User</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>add_User</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>continue</defaultConnectorLabel>
+        <rules>
+            <name>no</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>End_User</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>New_End_User</targetReference>
+            </connector>
+            <label>no</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Check_Up</name>
+        <label>Is Check Up?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>assuta1_new_appointment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Check_Up_99187</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.procedureCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>99187</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>new_appointment_checkup_99187</targetReference>
+            </connector>
+            <label>Yes- Check Up (99187)</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_second_App_for_same_Patient</name>
+        <label>Is second App for same Patient</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Domain_check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>no</defaultConnectorLabel>
+        <rules>
+            <name>yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.isSequence</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Wait_1_minute</targetReference>
+            </connector>
+            <label>yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>(monday- 2711135885)</description>
+        <name>Private_Service_Check</name>
+        <label>Private Service Check</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>new_appoinment_institutes</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Private_Service</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.isPrivateService</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>over_New_App.payerFactorCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Receipt_Number_Exists_Patient_Paid</targetReference>
+            </connector>
+            <label>Private Service</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Receipt_Number_Exists_Patient_Paid</name>
+        <label>Receipt Number Exists? (Patient Paid)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Create_WA_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Patient_Paid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.receiptNum</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ps_new_regular_appointment_converted_2026</targetReference>
+            </connector>
+            <label>Yes- Patient Paid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sending_Options</name>
+        <label>Sending Options</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>new_regular_appointment_new</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assuta_One_Procedure</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.isAssutaOneProcedure</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Check_Up</targetReference>
+            </connector>
+            <label>Assuta One Procedure</label>
+        </rules>
+        <rules>
+            <name>family_virtual_new_appointment_OC</name>
+            <conditionLogic>1 AND (2 AND 3 AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.isVirtualAppointment</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>over_New_App.procedureCode</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>992698</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>over_New_App.procedureCode</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>992694</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>over_New_App.procedureCode</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>992501</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>family_virtual_new_appointment</targetReference>
+            </connector>
+            <label>family_virtual_new_appointment</label>
+        </rules>
+        <rules>
+            <name>Convert_Private_Zone_Is_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.converPrivateZone</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Upload_documents_required</targetReference>
+            </connector>
+            <label>Convert Private Zone Is True</label>
+        </rules>
+        <rules>
+            <name>new_appointment_institutes_amnioticfluid_OC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.procedureCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>992501</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>new_appointment_institutes_amnioticfluid</targetReference>
+            </connector>
+            <label>new_appointment_institutes_amnioticfluid</label>
+        </rules>
+        <rules>
+            <name>PS_New_Regular_Appointment_OC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.converPrivateZone</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>over_New_App.isPrivateService</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>over_New_App.payerFactorCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ps_new_regular_appointment</targetReference>
+            </connector>
+            <label>PS_New_Regular_Appointment</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Upload_documents_required</name>
+        <label>Upload documents required?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Private_Service_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Upload_documents_required</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>over_New_App.isDocRequired</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Appintment_Check_Conidiations_In_Guidelines</targetReference>
+            </connector>
+            <label>Yes- Upload documents required</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Message_To_Send</name>
+        <label>What Message To Send?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>new_regular_appointment_new_No_Upload_Nedded</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>new_appointment_institutes_files_OC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Appintment_Check_Conidiations_In_Guidelines.RV_Guideline_with_req_docs</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>new_appointment_institutes_files</targetReference>
+            </connector>
+            <label>new_appointment_institutes_files</label>
+        </rules>
+    </decisions>
+    <description>******* IMPORTENT INFO******* 
+IN &quot;Populate Message Prams&quot; - ASSIGNMENT MUST BE ADDRESED WHEN ADDING A NEW MESSAGING TEMPLATE. IF NOT ALL PREMS ARE SET IN &quot;Populate Message Prams&quot;
+THEN THE MESSAGE WILL NOT BE SENT TO THE PATIENT.
+
+
+AM: 28052025- 1979177679- שינוי נוסח במסרון שנשלח למטופלים בבדיקות פרטיות
+EM: 2037907016 -  (FALSE) new_appoinment_institutes ,  (TRUE) new_regular_appointment_new הוספת תנאי ( אם הוסב לאזור האישי) לשליחת תבניות
+EM: 17.8 - תיקון פרמטר של sms address
+EM: 17.9 - 2151499365 - הוספת תבנית לשליחה לאחר קביעת תור לאסותא ONE &quot;assuta1_new_appointment&quot;
+AM : 03102025- added assuta one decision (Assuta One Procedure)
+AM: 10112025- fix formulas for assuta one
+AM: 26012026- 2556029491- added wa template &apos;new_appointment_institutes_files&apos; + flow goes from free form to auto layout.
+AM: 27012026- 2514907331-  egg import unit demand + send WA + REFACTOR (REMOVE FORMULA- which_content+ 
+        Which_Messaging_Template)
+AM: 29012026- 2514907331- added new_appointment_institutes_amnioticfluid +some
+        logic changes
+AM: 08022026- 2582874175- adding new templates- ps_new_regular_appointment_converted + ps_new_regular_appointment
+AM: 11022026- 2711135885- chanses in logic for template ps_new_regular_appointment_converted
+AM: 12022025- 2695823211- change text for template- new_regular_appointment_memo1
+AM: 16022025- 2711135885- changes in wa template- new_appointment_family_domain_new
+AM: 19022026- 2695823211- replace new_regular_appointment_memo1 with  new_regular_appointment_memo_2026
+AM: 19022026- 2711135885- replace  ps_new_regular_appointment_converted with ps_new_regular_appointment_converted_2026
+AM: 22022026- added check for the existence of data before creating WA record. (decision - Create WA Record)
+AM: 18032026- 2787923077- ps_new_regular_appointment_converted_2026 - SEND ONLY IF PAYER FACTOR = 0 AND PRIVATE 
+        SERVICES.
+AM: 03052026- 2886871373- set automation name
+SP: 03062026 - 2809506285 - New template - new_appointment_checkup_99187 for assuta CheckUp</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Content_f_2514907331_family_virtual_new_appointment</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום,&quot; &amp; BR() &amp;
+&quot;נקבע לך תור לפגישת ייעוץ בתאריך &quot; &amp; {!Date_In_Text} &amp;
+&quot; בשעה &quot; &amp;{!AppointmentTime} &amp;
+&quot; שתתקיים באופן וירטואלי.&quot; &amp; BR() &amp;
+&quot;לתשומת ליבך, עם הגעת מועד התור תתקבל הודעת סמס והודעת אי-מייל עם לינק התחברות לפגישה.&quot; &amp; BR() &amp;
+&quot;ריכזנו עבורך את כל הנחיות ההכנה ופרטי התור המלאים באזור האישי:&quot; &amp; BR() &amp;
+&quot;https://online.assuta.co.il/future-appointments&quot; &amp; BR() &amp;
+&quot;באמצעות האזור האישי ניתן גם לחפש מועד תור מוקדם יותר, לעדכן מועד תור או לבטל את התור.&quot; &amp; BR() &amp;
+&quot;מאחלים לך בריאות איתנה ומצפים לראותך,&quot; &amp; BR() &amp;
+&quot;אסותא מרכזים רפואיים.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_2514907331_new_appointment_family_domain_new</name>
+        <dataType>String</dataType>
+        <expression>{!Patient_full_name} &amp; &quot; שלום,&quot; &amp; BR() &amp;
+&quot;נקבע עבורך תור לתאריך &quot; &amp; {!Date_In_Text} &amp; &quot; בשעה &quot; &amp; {!AppointmentTime} &amp; &quot;.&quot; &amp; BR() &amp;
+&quot;בכתובת: &quot; &amp; {!SMS_Address_Exact_Location_in_Domain} &amp; BR() &amp;
+&quot;פרטי התור המלאים מופיעים גם באזור האישי: https://online.assuta.co.il/future-appointments&quot; &amp; BR() &amp;
+&quot;באזור האישי ניתן גם לחפש מועד תור מוקדם יותר, לעדכן מועד תור או לבטל את התור.&quot; &amp; BR() &amp;
+&quot;מאחלים לך בריאות איתנה ומצפים לראותך.&quot; &amp; BR() &amp;
+&quot;אסותא Family&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_2514907331_new_appointment_institutes_amnioticfluid</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום,&quot; &amp;{!Patient_full_name} &amp; br() &amp;
+&quot;תואם לך תור לייעוץ גנטי מרחוק בתאריך &quot; &amp; {!Date_In_Text} &amp; &quot; בשעה &quot; &amp; {!AppointmentTime} &amp; &quot;.&quot; &amp; br() &amp;
+&quot;שימי לב: הייעוץ הינו תנאי הכרחי לביצוע בדיקת מי שפיר.&quot; &amp; br() &amp;
+&quot;לקראת פגישת הייעוץ, יש להיכנס לקישור, להעלות מסמכים רפואיים רלוונטיים (תוצאות בדיקות וסיכומי רופאים) ולמלא את השאלון הדיגיטלי.&quot; &amp; br() &amp;
+&quot;https://online.assuta.co.il/future-appointments&quot; &amp; br() &amp;
+&quot;קישור לשיחת הוידאו יישלח אליך סמוך למועד התור.&quot; &amp; br() &amp;
+&quot;בברכת בריאות איתנה,&quot; &amp; br() &amp;
+&quot;אסותא מרכזים רפואיים.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_2514907331_remote_presurgery_meeting</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום &quot; &amp; {!Patient_full_name} &amp; &quot;,&quot; &amp; br() &amp;
+&quot;נקבעה עבורך פגישת אחות טרום ניתוח מרחוק בתאריך &quot; &amp; {!Date_In_Text} &amp; &quot; בשעה &quot; &amp; {!AppointmentTime} &amp; &quot;.&quot; &amp; br() &amp;
+&quot;הפגישה תתקיים בשיחת וידאו.&quot; &amp; br() &amp;
+&quot;לתשומת ליבך, עם הגעת מועד הפגישה, תישלח אלייך הודעת סמס והודעת דוא\&quot;ל עם קישור התחברות לפגישה.&quot; &amp; br() &amp;
+&quot;טרם הפגישה, יש להעלות את המסמכים הנדרשים בקישור הבא:&quot; &amp; br() &amp;
+{!FT_PreSurgery_Upload_Files} &amp; br() &amp;
+&quot;בקישור שלפניך, ריכזנו עבורך את כל הנחיות ההכנה ופרטי הפגישה המלאים באזור האישי:&quot; &amp; br() &amp;
+&quot;https://online.assuta.co.il/future-appointments&quot; &amp; br() &amp;
+&quot;בברכת בריאות איתנה,&quot; &amp; br() &amp;
+&quot;אסותא מרכזים רפואיים&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_2556029491_new_appointment_institutes_files</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום,&quot; &amp; br() &amp;
+&quot;נקבע עבורך תור לתאריך &quot; &amp; {!Date_In_Text}&amp; &quot; בשעה &quot; &amp; {!AppointmentTime} &amp; &quot; בכתובת &quot; &amp; {!Site_Address} &amp; &quot;.&quot; &amp; br() &amp;
+&quot;על מנת להכין אותך בצורה מיטבית ולחסוך לך זמן יקר ביום הבדיקה, ריכזנו עבורך את כלל הנחיות ההכנה פרטי התור.&quot; &amp; br() &amp;
+&quot;חשוב! באפשרותך להעלות את המסמכים הנדרשים לקראת הגעתך מראש באזור האישי:&quot; &amp; br() &amp;
+&quot;https://online.assuta.co.il/future-appointments&quot; &amp; br() &amp;
+&quot;בנוסף, באזור האישי ניתן לחפש מועד תור מוקדם יותר, לעדכן או לבטל את תור קיים.&quot; &amp; br() &amp;
+&quot;מצפים לראותך, בברכת בריאות איתנה,&quot; &amp; br() &amp;
+&quot;אסותא מרכזים רפואיים.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_2582874175_ps_new_regular_appointment</name>
+        <dataType>String</dataType>
+        <expression>{!tvFirstName} &amp; &quot; שלום,&quot; &amp; BR() &amp;
+&quot;נקבע עבורך תור לתאריך &quot; &amp; {!Date_In_Text} &amp; &quot; בשעה &quot; &amp; {!AppointmentTime} &amp; &quot;, בכתובת: &quot; &amp; {!SMS_Address} &amp; &quot;, קומה &quot; &amp; {!Exact_Location_In_Domain} &amp; &quot;.&quot; &amp; BR() &amp;
+&quot;לקראת הבדיקה חשוב מאוד להיכנס לקישור המצורף ולפעול לפי ההנחיות המופיעות בו:&quot; &amp; BR() &amp;
+&quot;קישור לקיט מכונים&quot; &amp; BR() &amp;
+{!kit_for_inst}&amp; BR() &amp;
+&quot;לתשומת ליבך: הבדיקה שנרכשה הינה בדיקה פרטית המשולמת מראש.&quot; &amp; BR() &amp;
+&quot;לא יינתן החזר כספי מאסותא (בכפוף למדיניות הביטולים),&quot; &amp; BR() &amp;
+&quot;גם אם קיימת התחייבות מקופת חולים או מגורם משלם אחר.&quot; &amp; BR() &amp;
+&quot;לבדיקת זכאות באמצעות ביטוח פרטי ניתן ליצור קשר בטלפון 03-7644777&quot; &amp; BR() &amp;
+&quot;או לפנות ישירות לחברת הביטוח שלך.&quot; &amp; BR() &amp;
+&quot;לצפייה במדיניות הביטולים:&quot; &amp; BR() &amp;
+&quot;https://assuta.co.il/general/cancellation_policy/&quot; &amp; BR() &amp; BR() &amp;
+&quot;בברכת בריאות איתנה,&quot; &amp; BR() &amp;
+&quot;אסותא מרכזים רפואיים&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_2582874175_ps_new_regular_appointment_converted_2026</name>
+        <dataType>String</dataType>
+        <expression>{!tvFirstName} &amp; &quot; שלום,&quot; &amp; BR() &amp;
+&quot;נקבע עבורך תור לתאריך &quot; &amp; {!Date_In_Text} &amp; &quot; בשעה &quot; &amp; {!AppointmentTime} &amp; &quot;,&quot; &amp; BR() &amp;
+&quot;בכתובת: &quot; &amp; {!SMS_Address_Exact_Location_in_Domain} &amp; &quot;.&quot; &amp; BR() &amp;
+&quot;על מנת להתכונן לבדיקה/פעולה בצורה הטובה ביותר, ריכזנו עבורך את כל הנחיות ההכנה ופרטי התור המלאים באזור האישי:&quot; &amp; BR() &amp;
+&quot;https://online.assuta.co.il/future-appointments&quot; &amp; BR() &amp;
+&quot;באמצעות האזור האישי ניתן גם לחפש מועד תור מוקדם יותר, לעדכן או לבטל את התור.&quot; &amp; BR() &amp;
+&quot;לתשומת ליבך: הבדיקה שנרכשה הינה בדיקה פרטית המשולמת מראש.&quot; &amp; BR() &amp;
+&quot;לא יינתן בעבורה החזר כספי מאסותא (בכפוף למדיניות הביטולים), גם אם קיימת התחייבות מקופת חולים או מגורם משלם אחר.&quot; &amp; BR() &amp;
+&quot;לבדיקת זכאות באמצעות ביטוח פרטי ניתן ליצור קשר בטלפון 03-7644777 או לפנות ישירות לחברת הביטוח שלך.&quot; &amp; BR() &amp;
+&quot;לצפייה במדיניות הביטולים, ניתן לעיין באתר אסותא.&quot; &amp; BR() &amp; BR() &amp;
+&quot;מאחלים לך בריאות טובה ומצפים לראותך,&quot; &amp; BR() &amp;
+&quot;אסותא מרכזים רפואיים&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_2809506285_new_appointment_checkup_99187</name>
+        <dataType>String</dataType>
+        <expression>{!tvFirstName} &amp; &quot; שלום,&quot; &amp; BR() &amp;
+&quot;נקבע עבורך תור לאסותא CheckUp, בתאריך &quot; &amp; {!Date_In_Text} &amp; &quot; בשעה &quot; &amp; {!AppointmentTime} &amp; &quot; בכתובת: &quot; &amp; {!SMS_Address} &amp; BR() &amp;
+&quot;על מנת להכינך ליום הבדיקות בצורה מיטבית, ריכזנו עבורך את כל הנחיות ההכנה ופרטי התור המלאים באזור האישי:&quot; &amp; BR() &amp;
+&quot;https://online.assuta.co.il/future-appointments&quot; &amp; BR() &amp;
+&quot;באמצעות האזור האישי ניתן גם לחפש מועד תור מוקדם יותר, לעדכן או לבטל תור קיים.&quot; &amp; BR() &amp;
+&quot;זמינים לכל נושא ושאלה גם באמצעות הוואטסאפ - 03-7644335&quot; &amp; BR() &amp;
+&quot;בברכת בריאות איתנה,&quot; &amp; BR() &amp;
+&quot;צוות אסותא CheckUp&quot; &amp; BR() &amp;
+&quot;אסותא מרכזים רפואיים&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_assuta1_new_appointment</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום,&quot; &amp; br() &amp;
+&quot;נקבע עבורך תור ליחידת אסותא ONE בתאריך &quot; &amp; {!Date_In_Text} &amp;
+&quot; בשעה &quot; &amp; {!AppointmentTime} &amp;
+&quot; בכתובת: &quot; &amp; {!SMS_Address_Exact_Location_in_Domain} &amp; &quot;.&quot; &amp; br() &amp;
+&quot;לפרטים נוספים אודות התור שנקבע ניתן להיכנס לקישור המצורף: &quot; &amp; {!kit_for_inst} &amp; br() &amp; 
+&quot;לתשומת לבך, ניתן לשנות או לבטל את מועד התור באתר אסותא באזור האישי: https://online.assuta.co.il/future-appointments&quot; &amp; br() &amp;
+&quot;אנחנו בשבילך לאורך כל הדרך גם בוואטסאפ.&quot; &amp; br() &amp;
+&quot;צוות אסותא ONE&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_Mamography</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום &quot; &amp; {!tvFirstName} &amp; &quot;,&quot; &amp; br() &amp; 
+&quot;נקבע עבורך תור לתאריך: &quot; &amp; {!Date_In_Text} &amp; 
+&quot; בשעה &quot; &amp; {!AppointmentTime} &amp; 
+&quot; בכתובת &quot; &amp; {!SMS_Address_Exact_Location_in_Domain} &amp; &quot; &quot; &amp; {!Exact_Location_In_Domain} &amp; &quot;.&quot; &amp; br() &amp; 
+&quot;לידיעתך, זמן השהות במכון הוא עד שעתיים.&quot; &amp; br() &amp; 
+&quot;על מנת להכינך לבדיקה בצורה מיטבית, ריכזנו עבורך את כלל הנחיות ופרטי התור המלאים באזור האישי שלך באתר אסותא:&quot; &amp; br() &amp; 
+&quot;https://online.assuta.co.il/future-appointments&quot; &amp; br() &amp; 
+&quot;באמצעות האזור האישי ניתן גם לבדוק מועד תור מוקדם יותר וכן לעדכן או לבטל מועד תור קיים.&quot; &amp; br() &amp; 
+br() &amp; 
+&quot;מאחלים לך בריאות טובה ומצפים לראותך,&quot; &amp; br() &amp; 
+&quot;אסותא מרכזים רפואיים.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_new_appoinment_institutes</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום,&quot; &amp; br() &amp;
+&quot;נקבע עבורך תור לתאריך: &quot; &amp;{!Date_In_Text}&amp;&quot; בשעה &quot;&amp;{!AppointmentTime}&amp;&quot; בכתובת &quot;&amp;{!SMS_Address_Exact_Location_in_Domain}&amp;&quot;. על מנת להכין אותך לבדיקה/פעולה בצורה הטובה ביותר, ריכזנו עבורך את כל הנחיות ההכנה ופרטי התור המלאים באזור האישי:&quot; &amp; br() &amp;
+&quot;https://online.assuta.co.il/future-appointments&quot; &amp; br() &amp;
+&quot;באמצעות האזור האישי ניתן גם לחפש מועד תור מוקדם יותר, לעדכן מועד תור או לבטל את התור.&quot; &amp; br() &amp;
+&quot;מאחלים לך בריאות איתנה ומצפים לראותך,&quot; &amp; br() &amp;
+&quot;אסותא מרכזים רפואיים.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_new_regular_appointment_new</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום,&quot; &amp; br() &amp;
+&quot;נקבע עבורך תור לתאריך: &quot; &amp;{!Date_In_Text}&amp;&quot; בשעה &quot;&amp;{!AppointmentTime}&amp;&quot; בכתובת &quot;&amp;{!SMS_Address_Exact_Location_in_Domain}&amp;&quot;.לפרטים נוספים אודות התור שנקבע כדי לעזור לך להתכונן לבדיקה יש לנו מספר הנחיות חשובות עבורך.&quot; &amp; br() &amp;
+&quot;חשוב ביותר להיכנס לקישור המצורף מטה ולהיצמד להנחיות.&quot; &amp; br() &amp;
+{!kit_for_inst} &amp;&quot;.&quot; &amp; br() &amp;
+&quot;לתשומת לבך, ניתן לשנות או לבטל את מועד התור באתר אסותא באזור האישי&quot; &amp; br() &amp;
+&quot;www.assuta.co.il&quot; &amp; br() &amp;
+&quot;מאחלים לך בריאות טובה ומצפים לראותך. אסותא מרכזים רפואיים.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Content_f_new_regular_appointment_private</name>
+        <dataType>String</dataType>
+        <expression>&quot;שלום,&quot; &amp; br() &amp;
+&quot;נקבע עבורך תור לתאריך: &quot; &amp;{!Date_In_Text}&amp;&quot; בשעה &quot;&amp;{!AppointmentTime}&amp;&quot; בכתובת &quot;&amp;{!SMS_Address_Exact_Location_in_Domain}&amp;&quot;.לפרטים נוספים אודות התור שנקבע כדי לעזור לך להתכונן לבדיקה יש לנו מספר הנחיות חשובות עבורך.&quot; &amp; br() &amp;
+&quot;חשוב ביותר להיכנס לקישור המצורף מטה ולהיצמד להנחיות.&quot; &amp; br() &amp;
+{!kit_for_inst} &amp;&quot;.&quot; &amp; br() &amp;
+&quot;במידה ותרצה לבדוק את זכאותך באמצעות ביטוח פרטי, ניתן לפנות אלינו בטלפון 03-7644777&quot; &amp; br() &amp;
+&quot;לתשומת לבך, ניתן לשנות או לבטל את מועד התור באתר אסותא באזור האישי&quot; &amp; br() &amp;
+&quot;www.assuta.co.il&quot; &amp; br() &amp;
+&quot;מאחלים לך בריאות טובה ומצפים לראותך. אסותא מרכזים רפואיים.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>contentforupdated</name>
+        <dataType>String</dataType>
+        <expression>{!recordId.Patient_Account__r.FirstName}&amp; &quot; שלום,&quot;
+&amp; &quot;&quot;&amp; &quot;בהמשך לבקשתך לעדכן את פרטי התור &quot;&amp;
+&quot;נקבע עבורך תור לתאריך:&quot;&amp; TEXT(MONTH({!recordId.Date_of_appointment__c})) &amp; &quot;/&quot;&amp; TEXT(DAY({!recordId.Date_of_appointment__c})) &amp; &quot;/&quot; &amp; TEXT(YEAR({!recordId.Date_of_appointment__c}))  &amp; &quot;בשעה&quot; &amp; {!recordId.AppointmentTime__c} &amp;&quot;ב&quot; &amp; {!recordId.Site__r.Name}&amp;&quot; (כתובת: &quot; &amp; {!recordId.accurate_site__r.Address__c}&amp; &quot;).&quot; 
+&amp; &quot;&quot;&amp;
+&quot; לקבלת פרטים נוספים אודות התור שנקבע, אישור מועד הגעה וקבלת הוראות והנחיות בקישור המצורף: &quot; &amp;&quot;https://myassuta.formtitan.com/ft418a1f9e1591797594336_copy?fld82=&quot;&amp;{!recordId.formtitan_id_2__c} &amp; &apos;. &apos; &amp;
+{!recordId.link_memo_text__c}
+&amp;&quot;. תודה בית חולים אסותא&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>DateTime_Now</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Appointment Schedule WhatsApp&apos;+&apos; ||| &apos;+&apos; Triggered By: &apos;+{!over_New_App.automationName}</expression>
+    </formulas>
+    <formulas>
+        <name>Messaging_End_User_Id</name>
+        <dataType>String</dataType>
+        <expression>if( isblank({!End_User.Id}), {!New_End_User}, {!End_User.Id})</expression>
+    </formulas>
+    <formulas>
+        <name>Phone_Number_f</name>
+        <dataType>String</dataType>
+        <expression>if(mid({!over_New_App.phoneNumber}, 4, 1) = &apos;-&apos;,
+&quot;0&quot;+right({!over_New_App.phoneNumber},10),
+&quot;0&quot;+right({!over_New_App.phoneNumber},9))</expression>
+    </formulas>
+    <formulas>
+        <name>Reminder_Type_f</name>
+        <dataType>String</dataType>
+        <expression>if( {!over_New_App.remainderType} &lt;&gt; &apos;WhatsApp&apos;, &apos;WhatsApp&apos;, {!over_New_App.remainderType})</expression>
+    </formulas>
+    <formulas>
+        <name>Sms_Address_f</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!over_New_App.calendarDirection}), {!over_New_App.accurateSiteAddress}, {!over_New_App.calendarDirection})</expression>
+    </formulas>
+    <formulas>
+        <name>Space</name>
+        <dataType>String</dataType>
+        <expression>&quot; &quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Whatsapp_Phone_Number_4_Sent_formula</name>
+        <dataType>String</dataType>
+        <expression>if(mid({!over_New_App.phoneNumber}, 4, 1) = &apos;-&apos;,
+&apos;972&apos; + right({!over_New_App.phoneNumber},10),
+&apos;972&apos; + right({!over_New_App.phoneNumber},9))</expression>
+    </formulas>
+    <interviewLabel>Appointment Schedule WhatsApp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Appointment Schedule WhatsApp</label>
+    <loops>
+        <name>over_New_App</name>
+        <label>over_New_App</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Values_from_New_App</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>End_User_populated</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Apps_Update</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>New_End_User</name>
+        <label>New End User</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>add_User_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>over_New_App.patientAccount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessageType</field>
+            <value>
+                <stringValue>WhatsApp</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessagingChannelId</field>
+            <value>
+                <elementReference>over_New_App.messagingChannelId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessagingConsentStatus</field>
+            <value>
+                <stringValue>ImplicitlyOptedIn</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>MessagingPlatformKey</field>
+            <value>
+                <elementReference>Whatsapp_Phone_Number_4_Sent_formula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Whatsapp_Phone_Number_4_Sent_formula</elementReference>
+            </value>
+        </inputAssignments>
+        <object>MessagingEndUser</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>WhatsApp_Record_Creation</name>
+        <label>WhatsApp Record Creation</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>WA_to_Create</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>End_User</name>
+        <label>End User</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>found_End_User</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MessagingChannelId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>over_New_App.messagingChannelId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>MessagingPlatformKey</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Whatsapp_Phone_Number_4_Sent_formula</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MessagingEndUser</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Apps_Update</name>
+        <label>Apps Update</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>WhatsApp_Record_Creation</targetReference>
+        </connector>
+        <inputReference>Apps_to_Update</inputReference>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>over_New_App</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Appintment_Check_Conidiations_In_Guidelines</name>
+        <label>Appintment- Check Conidiations In Guidelines</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>What_Message_To_Send</targetReference>
+        </connector>
+        <flowName>Appintment_Check_Conidiations_In_Guidelines</flowName>
+        <inputAssignments>
+            <name>appointment_id</name>
+            <value>
+                <elementReference>over_New_App.appointmentId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <variables>
+        <name>App_Single_rec</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Appointment__c</objectType>
+    </variables>
+    <variables>
+        <name>AppointmentTime</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Apps_to_Update</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Appointment__c</objectType>
+    </variables>
+    <variables>
+        <name>Case_Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Clinic_Address</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Date_In_Text</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>day_date_hour</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Doctor_Degree</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Doctor_Name</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Exact_Location_In_Domain</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>formtitan_expert_link</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>FT_PreSurgery_Upload_Files</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>kit_for_inst</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>MessagingUser</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Patient_Account</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Patient_full_name</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Record_id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>the appointment record</description>
+        <name>recordId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Appointment__c</objectType>
+    </variables>
+    <variables>
+        <name>Second_Appointment</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Site_Address</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SMS_Address</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SMS_Address_Exact_Location_in_Domain</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Sms_Developer_Name</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>smscontent</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>smsTemplateId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>Specific_Phone</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>tvAutomationName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>tvFirstName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>tvWAContent</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>tvWATemplate</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Values_from_New_App</name>
+        <apexClass>WA_scheduleAppointmentWrapper</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>WA_Single_rec</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WhatsApp__c</objectType>
+    </variables>
+    <variables>
+        <name>WA_to_Create</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WhatsApp__c</objectType>
+    </variables>
+    <variables>
+        <name>WhatsApp</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Whatsapp_Phone_Number_4_Sent</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <waits>
+        <name>Wait_1_minute</name>
+        <elementSubtype>WaitDuration</elementSubtype>
+        <label>Wait 1 minute</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Path</defaultConnectorLabel>
+        <waitEvents>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>Domain_check</targetReference>
+            </connector>
+            <label>el_0</label>
+            <offset>1</offset>
+            <offsetUnit>Minutes</offsetUnit>
+        </waitEvents>
+    </waits>
+</Flow>

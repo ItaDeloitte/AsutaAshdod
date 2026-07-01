@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_referral_name</fullName>
+        <field>Name</field>
+        <formula>Medical_Procedure_1__r.Marketing_Procedure_Name__c  &amp;&quot; &quot;&amp;
+LPAD(TEXT(DAY( Status_update_date__c )),2,&quot;0&quot;)&amp;&quot;/&quot;&amp;LPAD(TEXT(MONTH  (Status_update_date__c)),2,&quot;0&quot;)&amp;&quot;/&quot;&amp;
+TEXT(YEAR(Status_update_date__c))</formula>
+        <name>Update referral name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Referral Name</fullName>
+        <actions>
+            <name>Update_referral_name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISNEW() || ISCHANGED( Status_update_date__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

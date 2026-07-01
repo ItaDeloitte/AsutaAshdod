@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Lead_Duplication_Indication</name>
+        <label>Assign Lead Duplication Indication</label>
+        <locationX>138</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Contacted_Previously__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Found_Other_Leads</name>
+        <label>Found Other Leads?</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Similar_Leads_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Lead_Records_By_Conditions</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Get_Leads_By_Conditions</targetReference>
+            </connector>
+            <label>Yes- Similar Leads Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>checks if the lead exists in similar campain ( 4 campaigns are possible. others we dont care)</description>
+        <name>Lead_In_Campaign</name>
+        <label>Lead In Campaign?</label>
+        <locationX>270</locationX>
+        <locationY>611</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Get_Leads_By_Conditions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Lead_In_Campaign</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Get_Leads_By_Conditions.Campaign__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>אסותא אופטיק - עמוד נחיתה חיצוני</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Get_Leads_By_Conditions.Campaign__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>אסותא אופטיק קולבוקס</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Get_Leads_By_Conditions.Campaign__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>אסותא אופטיק - טופס אתר הבית</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Get_Leads_By_Conditions.Campaign__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>אסותא אופטיק</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Lead_Duplication_Indication</targetReference>
+            </connector>
+            <label>Yes- Lead In Campaign</label>
+        </rules>
+    </decisions>
+    <description>AM: 26032025- 1830063020- ביצוע התאמות לאסותא אופטיק בסביבת מכירות</description>
+    <environments>Default</environments>
+    <interviewLabel>Triggered- Lead- Assuta Optic- Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Triggered- Lead- Assuta Optic- Before Save</label>
+    <loops>
+        <name>Loop_Get_Leads_By_Conditions</name>
+        <label>Loop Get Leads By Conditions</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <collectionReference>Get_Lead_Records_By_Conditions</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Lead_In_Campaign</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Lead_Records_By_Conditions</name>
+        <label>Get Lead Records By Conditions</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Found_Other_Leads</targetReference>
+        </connector>
+        <filterLogic>1 AND 2</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Phone</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Phone</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Lead_Records_By_Conditions</targetReference>
+        </connector>
+        <filterFormula>OR(
+       {!$Record.Campaign__r.Name}=&apos;אסותא אופטיק - עמוד נחיתה חיצוני&apos;, 
+       {!$Record.Campaign__r.Name}=&apos;אסותא אופטיק קולבוקס&apos;,
+       {!$Record.Campaign__r.Name}=&apos;אסותא אופטיק - טופס אתר הבית&apos;, 
+       {!$Record.Campaign__r.Name}=&apos;אסותא אופטיק&apos;
+      )</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

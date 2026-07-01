@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Men&apos;s Health Clinic Status --></label>
+    <name>Men_s_Health_Clinic_Status__c</name>
+    <picklistValues>
+        <masterLabel>Biopdy Results Received</masterLabel>
+        <translation><!-- Biopdy Results Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tracking</masterLabel>
+        <translation><!-- Tracking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Examination</masterLabel>
+        <translation><!-- Under Examination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting  For Surgery / Biopsy</masterLabel>
+        <translation><!-- Waiting  For Surgery / Biopsy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting For Biopsy Results</masterLabel>
+        <translation><!-- Waiting For Biopsy Results --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting For Initial Consultation</masterLabel>
+        <translation><!-- Waiting For Initial Consultation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting For Review</masterLabel>
+        <translation><!-- Waiting For Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

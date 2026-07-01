@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Medical_Form_To_User</name>
+        <label>שליחת מייל למשתמש רפואי</label>
+        <locationX>951</locationX>
+        <locationY>301</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>EmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>עדכון פרטים רפואיים אצל הרופא</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Send_Email_To_Medical_User</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>52.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Not_Found</name>
+        <label>Not Found</label>
+        <locationX>721</locationX>
+        <locationY>628</locationY>
+        <assignmentItems>
+            <assignToReference>EmailAddress</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>dianayo@assuta.co.il</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Not_Found_2</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Not_Found_2</name>
+        <label>Not Found 2</label>
+        <locationX>848</locationX>
+        <locationY>627</locationY>
+        <assignmentItems>
+            <assignToReference>EmailAddress</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>shanikan@assuta.co.il</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Medical_Form_To_User</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>User_Mail</name>
+        <label>User Mail</label>
+        <locationX>756</locationX>
+        <locationY>352</locationY>
+        <assignmentItems>
+            <assignToReference>EmailAddress</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>FInd_User_With_Identical_Site.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Medical_Form_To_User</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_User_Found</name>
+        <label>Is User Found</label>
+        <locationX>490</locationX>
+        <locationY>520</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FInd_User_With_Identical_Site.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>User_Mail</targetReference>
+            </connector>
+            <label>Found</label>
+        </rules>
+        <rules>
+            <name>NotFound</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FInd_User_With_Identical_Site.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Not_Found</targetReference>
+            </connector>
+            <label>NotFound</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>שליחת מייל לאישור טופס רפואי {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>שליחת מייל לאישור טופס רפואי</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Find_Doctor_In_SIte_Main</name>
+        <label>מצא רופא באתר ראשי</label>
+        <locationX>170</locationX>
+        <locationY>403</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>FInd_User_With_Identical_Site</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>doctor_code__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Doctor_Code__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Main_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>פעיל</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Doctor_in_site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>FInd_User_With_Identical_Site</name>
+        <label>מצא את המשתמש עם אתר זהה לאתר הרופא</label>
+        <locationX>493</locationX>
+        <locationY>301</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_User_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Email</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Site_Code__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Find_Doctor_In_SIte_Main.site_code__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Find_Doctor_In_SIte_Main</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0124J000000hAuFQAU</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Approval_request_number_Medical__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Approval_request_number_Medical__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Send_Email_To_Medical_User</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>שלום, 
+
+
+
+הרופא {!$Record.Name} עדכן את הפרופיל האישי שלו. 
+
+אנא היכנס ללינק ואשר את השינויים: 
+
+{!$Record.Medical_formtitan_approval_link__c}
+
+
+
+
+
+
+
+תודה</text>
+    </textTemplates>
+    <variables>
+        <name>EmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

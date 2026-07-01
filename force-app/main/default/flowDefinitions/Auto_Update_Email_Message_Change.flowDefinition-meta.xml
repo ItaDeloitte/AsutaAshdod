@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>LA 06 04 2026 Monday 2822293567 PB  Task creation due to email arrival to Flow</description>
+    <masterLabel>Auto - Email Message - Change</masterLabel>
+</FlowDefinition>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Appointment__c$CreatedById$Name</field>
+    </columns>
+    <columns>
+        <field>User.Appointment__c$CreatedById$Medical_Procedure__c</field>
+    </columns>
+    <description>מרכז מומחים - פגישות אינטרנט שסטאטוס התשלום שלהן הוא &quot;טרם בוצע&quot; ונוצרו על ידי Ensemble</description>
+    <filter>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ensemble</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Appointment__c$CreatedById$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>10/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Appointment__c$CreatedById$PaymentStatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>עותק של מרכז מומחים - פגישות אינטרנט שטר</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_and_Appointments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>User.Appointment__c$CreatedById$Medical_Procedure__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>User$LastLoginDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

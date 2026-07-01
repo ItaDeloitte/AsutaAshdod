@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>מאשר דיוור - הכל</fullName>
+        <default>true</default>
+        <label>מאשר דיוור - הכל</label>
+    </customValue>
+    <customValue>
+        <fullName>מאשר דיוור - שירותי</fullName>
+        <default>false</default>
+        <label>מאשר דיוור - שירותי</label>
+    </customValue>
+    <customValue>
+        <fullName>מאשר דיוור - שיווקי</fullName>
+        <default>false</default>
+        <label>מאשר דיוור - שיווקי</label>
+    </customValue>
+    <customValue>
+        <fullName>לא מאשר דיוור - הכל</fullName>
+        <default>false</default>
+        <label>לא מאשר דיוור - הכל</label>
+    </customValue>
+    <masterLabel>Mailing Approval</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

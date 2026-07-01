@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Check_Prevent_Messaging_Action_1</name>
+        <label>Check Prevent Messaging Action 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>PreventMessagingUtils</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Send_SMS</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Custom_Error_Message_1</targetReference>
+        </faultConnector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>appointment</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>PreventMessagingUtils</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Custom_Error_Message_1</name>
+        <label>Custom Error Message 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <customErrorMessages>
+            <errorMessage>ארעה שגיאה בבדיקת מניעת מסרים
+הנה השגיאה
+{!Check_Prevent_Messaging_Action_1.errorText}</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Check_Channel</name>
+        <label>Check Channel</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SMS_Channel</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case__r.preferd_chanal_case__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SMS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case__r.preferd_chanal_case__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Whatsapp</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case__r.preferd_chanal_case__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Phone</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Prevent_Messaging_Action_1</targetReference>
+            </connector>
+            <label>SMS Channel</label>
+        </rules>
+        <rules>
+            <name>Email_Channel</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case__r.preferd_chanal_case__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case__r.email_from_patient__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case__r.email_from_patient__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Get_Email_Template_Id</targetReference>
+            </connector>
+            <label>Email Channel</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Answered_With_Agent</name>
+        <label>Check if Answered With Agent</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Answered_With_Agent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FeedBack_Survey_With_Agent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Agent_Name_in_Field</targetReference>
+            </connector>
+            <label>Answered With Agent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Send_SMS</name>
+        <label>Send SMS?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Send_SMS</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Check_Prevent_Messaging_Action_1.isPrevented</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_SMS</targetReference>
+            </connector>
+            <label>Yes- Send SMS</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Was_Survey_Answered_By_Agent</name>
+        <label>Was Survey Answered By Agent?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_Channel</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Was_Answered_By_Agent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.FeedBack_Survey_With_Agent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes- Was Answered By Agent</label>
+        </rules>
+    </decisions>
+    <description>This flow substitutes a PB named send_sms_after_experts_app
+AM: 02122025- 2549821890- changes in logic for entery criterias
+AM: 12102025- 2150382332- prevent message check for SMS (and i did not created this flow which i dont like. garbage flows in this
+        org may upset you from time to time...its not me!)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>OwnerName</name>
+        <dataType>String</dataType>
+        <expression>/*TEXT({!$Flow.CurrentDateTime})+&quot; &quot;+*/
+/*ניטרול השורה של התאריך- שינוי אפיון מה10.01.24  לבקשת גל בסטורי  14099*/
+
+{!$Record.Owner:User.FirstName}+&quot; &quot;+{!$Record.Owner:User.LastName}</expression>
+    </formulas>
+    <interviewLabel>Send SMS After Experts Appointment - RT {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send SMS After Experts Appointment - RT</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Email</name>
+        <label>Create Email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Appointment_Status_Email</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountId__c</field>
+            <value>
+                <elementReference>$Record.Patient_Account__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AppointmentId__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Automation_name__c</field>
+            <value>
+                <stringValue>Send SMS After Experts Appointment - RT</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>EmailTemplateDeveloperName__c</field>
+            <value>
+                <stringValue>Assuta_Experts_Survey</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>EmailTemplateId</field>
+            <value>
+                <elementReference>Get_Email_Template_Id.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ExpectedSendingDateTime__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FromAddress</field>
+            <value>
+                <stringValue>nonreply@assuta.co.il</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FromName</field>
+            <value>
+                <stringValue>Assuta No-Reply</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ToAddress</field>
+            <value>
+                <elementReference>$Record.Patient_Mail__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EmailMessage</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_SMS</name>
+        <label>Create SMS</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Appointment_Status_SMS</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Appointment__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone_Number__c</field>
+            <value>
+                <elementReference>$Record.Case__r.SMS_Phone_Number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SmsTemplate__c</field>
+            <value>
+                <stringValue>SMS_After_Experts_Appointment</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <stringValue>Outgoing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>question_type__c</field>
+            <value>
+                <stringValue>סקר לאחר תור</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>status__c</field>
+            <value>
+                <stringValue>2</stringValue>
+            </value>
+        </inputAssignments>
+        <object>SMS__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Email_Template_Id</name>
+        <label>Get Email Template Id</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Email</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Assuta_Experts_Survey</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>EmailTemplate</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the Agent&apos;s name that triggered the &quot;FeedBack Survey With Agent&quot; field</description>
+        <name>Update_Agent_Name_in_Field</name>
+        <label>Update Agent Name in Field</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>FeedBack_Survey_With_Agent__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>FeedBackSurveyAssistingAgent__c</field>
+            <value>
+                <elementReference>OwnerName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Appointment Status field &amp;</description>
+        <name>Update_Appointment_Status_Email</name>
+        <label>Update Appointment Status- Email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Appointment_Status__c</field>
+            <value>
+                <stringValue>ממתין לאישור המטופל על קיום הפגישה</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>doc_survey_expert_send__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Appointment Status field &amp;</description>
+        <name>Update_Appointment_Status_SMS</name>
+        <label>Update Appointment Status- SMS</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Appointment_Status__c</field>
+            <value>
+                <stringValue>ממתין לאישור המטופל על קיום הפגישה</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>doc_survey_expert_send__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_Answered_With_Agent</targetReference>
+        </connector>
+        <filterFormula>AND(NOT(ISPICKVAL({!$Record.Appointment_Status__c}, &apos;Canceled&apos;)),
+                 ISCHANGED({!$Record.Appointment_Status__c}),
+                  NOT( {!$Record.doc_survey_expert_send__c}), 
+                  NOT({!$Record.Prevent_Automation__c}),
+                  {!$Record.RecordType.DeveloperName} = &apos;Experts&apos;
+         )</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>X24H_After_Appointment</name>
+            <connector>
+                <targetReference>Was_Survey_Answered_By_Agent</targetReference>
+            </connector>
+            <label>24H After Appointment</label>
+            <offsetNumber>24</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Appointment_Date_Time__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

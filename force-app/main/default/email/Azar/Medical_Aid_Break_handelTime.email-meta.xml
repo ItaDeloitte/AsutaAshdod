@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>חריגה בטיפול בעזר לפגישה</name>
+    <style>none</style>
+    <subject>חריגה בטיפול בעזר לפגישה</subject>
+    <textOnly>Assuta Mail
+
+שלום,
+
+
+הינך מקבל הודעה זאת כיוון שזמן הטיפול בעזר לפגישה  לא הושלם במסגרת הזמן המתאים לטיפול   . למעבר לפרטי הפנייה לחץ/י כאן
+
+בברכה,
+אסותא</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

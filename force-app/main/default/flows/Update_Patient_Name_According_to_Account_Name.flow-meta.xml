@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Patient_Name</name>
+        <label>Update Patient Name</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Patient_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAccountName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>מעדכן את ערך השדה Patient Name במידה ויש לפניה מטופל שמקושר אליה
+AM: 04022025- Task 20833 -REFACTOR</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAccountName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.FirstName}+&apos; &apos;+{!$Record.Account.LastName}</expression>
+    </formulas>
+    <interviewLabel>Update Patient Name According to Account Name {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Patient Name According to Account Name</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Patient_Name</targetReference>
+        </connector>
+        <filterFormula>AND(
+         OR({!$Record.RecordType.DeveloperName} = &apos;PublicInquiriesItem&apos;, {!$Record.RecordType.DeveloperName} = &apos;PublicInquiries&apos;), 
+         ISBLANK({!$Record.Patient_Name__c}),
+         NOT(ISBLANK({!$Record.AccountId})))</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

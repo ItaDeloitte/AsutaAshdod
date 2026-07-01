@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>חשד ל- DVT</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>מטופל לפני ניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>חשד לגידול</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>אונקולוג</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>הפניה דחופה לבקשת רופא</label>
+    </customValue>
+    <customValue>
+        <fullName>13</fullName>
+        <default>false</default>
+        <label>מטופל לאחר ניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>14</fullName>
+        <default>false</default>
+        <label>היצרות שוער קיבה (תינוקות)</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>תייר</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>תור דחוף לאור תלונה</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>אחר</label>
+    </customValue>
+    <customValue>
+        <fullName>12</fullName>
+        <default>false</default>
+        <label>תיאום תור דחוף ידני</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>חשד לדימום</label>
+    </customValue>
+    <customValue>
+        <fullName>11</fullName>
+        <default>false</default>
+        <label>חלק מתכנית רפואית</label>
+    </customValue>
+    <customValue>
+        <fullName>High</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High</label>
+    </customValue>
+    <customValue>
+        <fullName>Normal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Normal</label>
+    </customValue>
+    <customValue>
+        <fullName>Urgent</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Urgent</label>
+    </customValue>
+    <masterLabel>רמת דחיפות התור</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

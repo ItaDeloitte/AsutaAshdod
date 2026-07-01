@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>בודק האם סטטוס הפניה לא שווה ל&quot;סגור&quot;, &quot;בוטל&quot; או &quot;במעקב&quot; למרות עבר תאריך היעד לטיפול בפניה.</description>
+        <name>Was_the_case_handled</name>
+        <label>האם הפניה טופלה</label>
+        <locationX>989</locationX>
+        <locationY>371</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Case_not_yet_handled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Following</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Caneclled</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Search_for_the_next_business_day</targetReference>
+            </connector>
+            <label>הפניה עדיין לא טופלה</label>
+        </rules>
+    </decisions>
+    <description>פניות הציבור: הטיפול בפניה חרג מתאריך היעד</description>
+    <environments>Default</environments>
+    <interviewLabel>Public Inquiries Deadline Handling Date Passed {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Public Inquiries Deadline Handling Date Passed</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_the_next_business_day_after_the_deadline_handling_date</name>
+        <label>מעדכן את יום העסקים הבא בשדה המתאים</label>
+        <locationX>597</locationX>
+        <locationY>382</locationY>
+        <inputAssignments>
+            <field>NextBusinessDayAfterDeadlineHandlingDate__c</field>
+            <value>
+                <elementReference>Search_for_the_next_business_day.Due_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>650</locationX>
+        <locationY>47</locationY>
+        <connector>
+            <targetReference>Was_the_case_handled</targetReference>
+        </connector>
+        <filterFormula>NOT(ISBLANK({!$Record.DeadlineHandlingDate__c})) &amp;&amp; (ISNEW() || ISCHANGED({!$Record.DeadlineHandlingDate__c}))</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Case_Closed_Too_Late</name>
+            <connector>
+                <targetReference>Was_the_case_handled</targetReference>
+            </connector>
+            <label>Case Closed Too Late</label>
+            <offsetNumber>19</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>DeadlineHandlingDate__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <subflows>
+        <name>Search_for_the_next_business_day</name>
+        <label>מחפש את יום העסקים הבא</label>
+        <locationX>784</locationX>
+        <locationY>384</locationY>
+        <connector>
+            <targetReference>Update_the_next_business_day_after_the_deadline_handling_date</targetReference>
+        </connector>
+        <flowName>Counts_Business_Days</flowName>
+        <inputAssignments>
+            <name>Number_of_Days</name>
+            <value>
+                <elementReference>OneDay</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <triggerOrder>780</triggerOrder>
+    <variables>
+        <name>OneDay</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>1.0</numberValue>
+        </value>
+    </variables>
+</Flow>

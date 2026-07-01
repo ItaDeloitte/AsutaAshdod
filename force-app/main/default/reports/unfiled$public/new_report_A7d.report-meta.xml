@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
+        <field>Account.ID_Number__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.ID_Number__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>033118936,038532636,321510372,036471837,016502619,029652997,028967222,037712932,066163734,308887751,306196098,308673706,037677259,033821372,024627929,040891533,037824786,317927671,300233053,307169011,320422488,305892374,033048919,053050001,034953158,026621623,303132880,033601501,028017432,035974880,029664877,039519004,034968164,036210961,037513280,317786010,031441173,303737357,033636291,310944384,301887931,032480022,011596046,033130063,027262617,027269695,040884611,038525085,022459473,040145476,038532107,037679875,040370264,033852781,303093413,034718569,319467312,037670643,312055932,034178764,011401254,043041144,035995331,486981605,317585511,028483428,032310344,303897474</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.ID_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>קובץ לטעינה- ת.ז מטופלת</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

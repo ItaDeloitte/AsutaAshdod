@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>For Assuta Family. MONDAY- 2514907331 - SEE UPDATES</description>
+        <name>Create_Opportunity_Assuta_Family</name>
+        <label>Create Opportunity? (Assuta Family)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Opportunity_Assuta_Family</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Create_Opportunity</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Order_Notes__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>internet_site</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Institutes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Medical_Procedure__r.Procedure_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>96108   </stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Medical_Procedure__r.Procedure_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>96100</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Opportunity_Assuta_Family_Sub</targetReference>
+            </connector>
+            <label>Yes- Create Opportunity</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_New_Or_Update</name>
+        <label>Is New Or Update?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Uploaded_Patient_Files_Confirmed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Update</defaultConnectorLabel>
+        <rules>
+            <name>New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Opportunity_Assuta_Family</targetReference>
+            </connector>
+            <label>New</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>monday- 2514907331</description>
+        <name>Update_Opportunity_Assuta_Family</name>
+        <label>Update Opportunity (Assuta Family)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Trigger_Appointment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Update_Opportunity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CaseAfterSale</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Opportunity__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Assuta_Family</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Opportunity_With_Appointment_Data</targetReference>
+            </connector>
+            <label>Yes- Update Opportunity</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>לקראת הפגישה מתבצעת בדיקה של המסמכים שהמטופל העלה. אם הכל תקין נשלחת הודעה למטופל שהכל תקין ואין צורך בדבר נוסף.</description>
+        <name>Uploaded_Patient_Files_Confirmed</name>
+        <label>Uploaded Patient Files Confirmed?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Trigger_Appointment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Send_WA_file_reviewed_and_accepted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Required_document_integrity__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Required_document_integrity__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AllValid</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Outbound_WA_for_Surgery_file_reviewed_and_accepted</targetReference>
+            </connector>
+            <label>Yes- Send WA- file_reviewed_and_accepted</label>
+        </rules>
+    </decisions>
+    <description>THIS FLOW CAN BE USED FOR ANY APPOINTMENT TRIGGER SCENARIO. PLEASE USE IT WISELY!
+AM: 25122025- 2514907331- egg import unit demand + send WA
+EM: 29012026- 2556281199- Link between Mey Shafir Appointment To Genetic Counseling Appointment
+AM: 29012026- 2514907331- added WA template-  file_reviewed_and_accepted
+AM: 05022026- 2514907331- added subflow- Update_Opportunity_With_Appointment_Data
+AM: 16022026- refactor- added subflow - Create_Opportunity_Assuta_Family
+AM:24022026-REMOVE 2556281199 -Link between Mey Shafir Appointment To Genetic Counseling Appointment - IT GOES TO CODE
+FB: 24/02/2026 - Send Email to assutaFamily - 2726928258  ************in v27- did not deployed to prod today (02032026)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Triggered- Appointment- Create Or Update- After Save&apos;+&apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <formulas>
+        <name>fISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Triggered- Appointment- Create Or Update- After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Triggered- Appointment- Create Or Update- After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Trigger_Appointment</name>
+        <label>Update Trigger Appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>rvAppointment</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_New_Or_Update</targetReference>
+        </connector>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <subflows>
+        <name>Create_Opportunity_Assuta_Family_Sub</name>
+        <label>Create Opportunity- Assuta Family (Sub)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Opportunity_Assuta_Family</targetReference>
+        </connector>
+        <flowName>Create_Opportunity_Assuta_Family</flowName>
+        <inputAssignments>
+            <name>rvTriggeringAppointment</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>TriggeredByAutomationName</name>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Outbound_WA_for_Surgery_file_reviewed_and_accepted</name>
+        <label>Outbound WA for Surgery- file_reviewed_and_accepted</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Trigger_Appointment</targetReference>
+        </connector>
+        <flowName>Outbound_WA_for_Surgery</flowName>
+        <inputAssignments>
+            <name>AccountId</name>
+            <value>
+                <elementReference>$Record.Patient_Account__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>AppId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>AutomationName</name>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>CaseId</name>
+            <value>
+                <elementReference>$Record.Case__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>FirstName</name>
+            <value>
+                <elementReference>$Record.Patient_Account__r.FirstName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>MessageTemplate</name>
+            <value>
+                <stringValue>file_reviewed_and_accepted</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>MessageTime</name>
+            <value>
+                <stringValue>now</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>PhoneNumber</name>
+            <value>
+                <elementReference>$Record.Patient_Account__r.SMS_Phone_Number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>WhichChannel</name>
+            <value>
+                <stringValue>assutabot</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Update_Opportunity_With_Appointment_Data</name>
+        <label>Update Opportunity With Appointment Data</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Trigger_Appointment</targetReference>
+        </connector>
+        <flowName>Update_Opportunity_With_Appointment_Data</flowName>
+        <inputAssignments>
+            <name>rvAppointment</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>TriggeringProcessAPI</name>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>rvAppointment</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Appointment__c</objectType>
+    </variables>
+    <variables>
+        <name>rvOpportunity</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>rvOtherAppointmentUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Appointment__c</objectType>
+    </variables>
+</Flow>

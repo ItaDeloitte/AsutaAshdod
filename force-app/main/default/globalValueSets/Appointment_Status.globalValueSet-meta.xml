@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NewAppointment</fullName>
+        <default>true</default>
+        <label>חדש</label>
+    </customValue>
+    <customValue>
+        <fullName>בטיפול אדמיניסטרטיבי</fullName>
+        <default>false</default>
+        <label>בטיפול אדמיניסטרטיבי</label>
+    </customValue>
+    <customValue>
+        <fullName>וידוא הגעה לפגישה</fullName>
+        <default>false</default>
+        <label>וידוא הגעה לפגישה</label>
+    </customValue>
+    <customValue>
+        <fullName>WaitingForAppointment</fullName>
+        <default>false</default>
+        <label>ממתין למועד הפגישה</label>
+    </customValue>
+    <customValue>
+        <fullName>Urgent_WaitingList</fullName>
+        <default>false</default>
+        <label>תור ברשימת המתנה/ממתין למחזור</label>
+    </customValue>
+    <customValue>
+        <fullName>ממתין להתחייבות</fullName>
+        <default>false</default>
+        <label>ממתין להתחייבות</label>
+    </customValue>
+    <customValue>
+        <fullName>ממתין לאישור</fullName>
+        <default>false</default>
+        <label>ממתין לאישור</label>
+    </customValue>
+    <customValue>
+        <fullName>בתהליך אישור מנהל</fullName>
+        <default>false</default>
+        <label>בתהליך אישור מנהל</label>
+    </customValue>
+    <customValue>
+        <fullName>ממתין לאישור המטופל על קיום הפגישה</fullName>
+        <default>false</default>
+        <label>ממתין לאישור המטופל על קיום הפגישה</label>
+    </customValue>
+    <customValue>
+        <fullName>Recording</fullName>
+        <default>false</default>
+        <label>הקלטה</label>
+    </customValue>
+    <customValue>
+        <fullName>Typing</fullName>
+        <default>false</default>
+        <label>הקלדה</label>
+    </customValue>
+    <customValue>
+        <fullName>StoppedDuringAppointment</fullName>
+        <default>false</default>
+        <label>הופסק במעמד הבדיקה</label>
+    </customValue>
+    <customValue>
+        <fullName>TookPlace</fullName>
+        <default>false</default>
+        <label>התקיים</label>
+    </customValue>
+    <customValue>
+        <fullName>Signature</fullName>
+        <default>false</default>
+        <label>חתימה</label>
+    </customValue>
+    <customValue>
+        <fullName>מטופל אישר שנכח בפגישה</fullName>
+        <default>false</default>
+        <label>מטופל אישר שנכח בפגישה</label>
+    </customValue>
+    <customValue>
+        <fullName>מטופל אישר שלא נכח בפגישה</fullName>
+        <default>false</default>
+        <label>מטופל אישר שלא נכח בפגישה</label>
+    </customValue>
+    <customValue>
+        <fullName>RescheduleByClient</fullName>
+        <default>false</default>
+        <label>תור שונה ע&quot;י הלקוח</label>
+    </customValue>
+    <customValue>
+        <fullName>RescheduleByAssuta</fullName>
+        <default>false</default>
+        <label>תור שונה ע&quot;י אסותא</label>
+    </customValue>
+    <customValue>
+        <fullName>נדחה על ידי המנהל</fullName>
+        <default>false</default>
+        <label>נדחה על ידי המנהל</label>
+    </customValue>
+    <customValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>בוטל</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>התקבל בביה&quot;ח</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>שחרור מטופל</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>ביטול תיק</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>תיק הופעל מחדש</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>שחרור בוטל</label>
+    </customValue>
+    <customValue>
+        <fullName>WaitingForCanceled</fullName>
+        <default>false</default>
+        <label>ממתין לביטול התור</label>
+    </customValue>
+    <customValue>
+        <fullName>CanceledFailed</fullName>
+        <default>false</default>
+        <label>ביטול התור נכשל</label>
+    </customValue>
+    <customValue>
+        <fullName>not_arrived</fullName>
+        <default>false</default>
+        <label>לא התקבל דיווח</label>
+    </customValue>
+    <customValue>
+        <fullName>מטופל לא ענה על אישור נוכחות בפגישה</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>מטופל לא ענה על אישור נוכחות בפגישה</label>
+    </customValue>
+    <customValue>
+        <fullName>בוטל על ידי נציג</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>בוטל על ידי נציג</label>
+    </customValue>
+    <customValue>
+        <fullName>בוטל עי חדר ניתוח</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>בוטל עי חדר ניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>בוטל עי רופא</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>בוטל עי רופא</label>
+    </customValue>
+    <customValue>
+        <fullName>אישור נוכחות</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>אישור נוכחות</label>
+    </customValue>
+    <masterLabel>סטאטוס התור</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

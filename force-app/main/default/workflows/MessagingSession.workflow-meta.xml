@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Start_waiting</fullName>
+        <field>Start_waiting__c</field>
+        <formula>NOW()</formula>
+        <name>תחילת המתנה לנציג</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>תחילת המתנה לנציג</fullName>
+        <actions>
+            <name>Start_waiting</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>MessagingSession.Status</field>
+            <operation>equals</operation>
+            <value>ממתין</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>MessagingSession.Start_waiting__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Facebook &amp; Whatsapp</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

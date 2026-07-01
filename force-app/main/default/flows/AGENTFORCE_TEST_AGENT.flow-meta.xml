@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>interactive_reminder_test</name>
+        <label>interactive_reminder_test</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>sendConversationMessages</actionName>
+        <actionType>sendConversationMessages</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>messageDefinitionName</name>
+            <value>
+                <stringValue>interactive_reminder_test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingDefinitionInputParameters</name>
+            <value>
+                <apexValue>[
+  {
+    &quot;name&quot;: &quot;First_Name&quot;,
+    &quot;textValue&quot;: &quot;סרגיי&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Site_Name&quot;,
+    &quot;textValue&quot;: &quot;אסותא רמת החייל&quot;
+  },
+  {
+    &quot;name&quot;: &quot;SMS_Address&quot;,
+    &quot;textValue&quot;: &quot;הברזל 20&quot;
+  },
+  {
+    &quot;name&quot;: &quot;Day_Date_Hour&quot;,
+    &quot;textValue&quot;: &quot;21.03.2024&quot;
+  }
+]</apexValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>requestType</name>
+            <value>
+                <stringValue>SendNotificationMessages</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>isEnforceMessagingChannelConsent</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>allowedSessionStatus</name>
+            <value>
+                <stringValue>Any</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messagingEndUserIds</name>
+            <value>
+                <elementReference>MESSAGINGUSERNEWST</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sessionLongevityPreference</name>
+            <value>
+                <stringValue>KeepSessionOpen</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>sendConversationMessages</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>assign</name>
+        <label>assign</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>MESSAGINGUSERNEWST</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>0PAKO000000QKPK4A4</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>interactive_reminder_test</targetReference>
+        </connector>
+    </assignments>
+    <environments>Default</environments>
+    <interviewLabel>AGENTFORCE TEST AGENT {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AGENTFORCE TEST AGENT</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>assign</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>MESSAGINGUSERNEWST</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

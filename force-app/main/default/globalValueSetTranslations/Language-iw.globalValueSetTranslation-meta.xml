@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>אנגלית</masterLabel>
+        <translation>אנגלית</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>עברית</masterLabel>
+        <translation>עברית</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ערבית</masterLabel>
+        <translation>ערבית</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>צרפתית</masterLabel>
+        <translation><!-- צרפתית --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>רוסית</masterLabel>
+        <translation>רוסית</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Owner_to_Queue</name>
+        <label>Update Owner to Queue</label>
+        <locationX>1106</locationX>
+        <locationY>587</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>OwnerIdVAR</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Checks which Queue was selected and needs to be assigned</description>
+        <name>Which_Queue_to_Assign</name>
+        <label>Which Queue to Assign?</label>
+        <locationX>1106</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Institute_Tasks_Info_Center</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מוקד מידע וזימון תורים – משימות מהמכונים</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Clinic_CallCenter_Queue</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>מוקד מידע וזימון תורים – משימות מהמכונים</label>
+        </rules>
+        <rules>
+            <name>Amniotic_Fluid_Consultation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מוקד מידע וזימון תורים- ייעוץ טרום מי שפיר</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Amniotic_fluid_Queue</targetReference>
+            </connector>
+            <label>מוקד מידע וזימון תורים- ייעוץ טרום מי שפיר</label>
+        </rules>
+        <rules>
+            <name>GeneticConsult</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ליועצות גנטיות טרום מי שפיר</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Genetic_Consult_Queue</targetReference>
+            </connector>
+            <label>ליועצות גנטיות טרום מי שפיר</label>
+        </rules>
+        <rules>
+            <name>Expert_Center</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מרכז מומחים</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Expert_CallCenter_Queue</targetReference>
+            </connector>
+            <label>מרכז מומחים</label>
+        </rules>
+        <rules>
+            <name>Surgery_Center</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מרכז ניתוחים</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Surgery_CallCenter_Queue</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>מרכז ניתוחים</label>
+        </rules>
+        <rules>
+            <name>Assuta_360_Call_Center</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>אסותא 360 מוקד</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Assuta360_CallCenter_Queue</targetReference>
+            </connector>
+            <label>אסותא 360 מוקד</label>
+        </rules>
+        <rules>
+            <name>Assuta_Home_Calls_Services</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>פניות לשירותי אסותא עד הבית</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_House_Call_Services_Queue</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>פניות לשירותי אסותא עד הבית</label>
+        </rules>
+        <rules>
+            <name>Typing_Call_Center</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מוקד הקלדות</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Typing_Center_Queue</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>מוקד הקלדות</label>
+        </rules>
+    </decisions>
+    <description>AM: 13022025- Task 21010- REFACTOR</description>
+    <environments>Default</environments>
+    <interviewLabel>Assign Queue to Institutes and Clinic - RT {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Assign Queue to Institutes and Clinic - RT</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get Group Id based on Developer Name of the Queue</description>
+        <name>Get_Amniotic_fluid_Queue</name>
+        <label>Get Amniotic fluid Queue</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_to_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Moked_Shafir_Molecular</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>OwnerIdVAR</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Group Id based on Developer Name of the Queue</description>
+        <name>Get_Assuta360_CallCenter_Queue</name>
+        <label>Get Assuta360 CallCenter Queue</label>
+        <locationX>1370</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_to_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Assuta_360_moked</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>OwnerIdVAR</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Group Id based on Developer Name of the Queue</description>
+        <name>Get_Clinic_CallCenter_Queue</name>
+        <label>Get Clinic CallCenter Queue</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_to_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Appointment_Beginners</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>OwnerIdVAR</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Group Id based on Developer Name of the Queue</description>
+        <name>Get_Expert_CallCenter_Queue</name>
+        <label>Get Expert CallCenter Queue</label>
+        <locationX>842</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_to_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Doc_experties</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>OwnerIdVAR</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Group Id based on Developer Name of the Queue</description>
+        <name>Get_Genetic_Consult_Queue</name>
+        <label>Get Genetic Consult Queue</label>
+        <locationX>578</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_to_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Yoazot_Trom_Meishafir</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>OwnerIdVAR</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Group Id based on Developer Name of the Queue</description>
+        <name>Get_House_Call_Services_Queue</name>
+        <label>Get House Call Services Queue</label>
+        <locationX>1634</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_to_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>assutahome_internalcases</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>OwnerIdVAR</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Group Id based on Developer Name of the Queue</description>
+        <name>Get_Surgery_CallCenter_Queue</name>
+        <label>Get Surgery CallCenter Queue</label>
+        <locationX>1106</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_to_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Surgeries</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>OwnerIdVAR</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Group Id based on Developer Name of the Queue</description>
+        <name>Get_Typing_Center_Queue</name>
+        <label>Get Typing  Center Queue</label>
+        <locationX>1898</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_to_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>TypingMoked</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>OwnerIdVAR</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <start>
+        <locationX>980</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Which_Queue_to_Assign</targetReference>
+        </connector>
+        <filterFormula>OR(AND(ISPICKVAL({!$Record.Case_subject__c},&apos;העברת שיחה למוקד אחר&apos;)  , {!$Record.RecordType.DeveloperName} = &apos;Appointments&apos;),
+      AND(ISPICKVAL({!$Record.Case_subject__c},&apos;העברת שיחה למוקד אחר&apos;)  , {!$Record.RecordType.DeveloperName} = &apos;Appointments&apos;, 
+               ISCHANGED({!$Record.sub_case_subject__c})
+               )
+       )</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>120</triggerOrder>
+    <variables>
+        <name>OwnerIdVAR</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

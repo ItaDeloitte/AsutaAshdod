@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>this is added since flow &quot;Triggered_Quality_Control_Create_Or_Update_After_Save&quot; fails if user.managerId is null</description>
+        <name>Does_Running_User_Has_Manager</name>
+        <label>Does Running User Has Manager?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Add_Mannager_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Running_User_Has_Manager</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.ManagerId</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Profile_Id_Public_Inquiries</targetReference>
+            </connector>
+            <label>Yes- Running User Has Manager</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>just a check to the triggered flow: Triggered- Quality Control- Create Or Update- After Save will not fail after creation of QC</description>
+        <name>Found_Public_Inquiries_Admin</name>
+        <label>Found Public Inquiries Admin?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>No_Public_Inquiries_Administrator_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Found_Public_Inquiries_Admin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Public_Inquiries_Administrators</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>fill_the_fields</targetReference>
+            </connector>
+            <label>Yes- Found Public Inquiries Admin</label>
+        </rules>
+    </decisions>
+    <description>AM: 17122025- SN- INC0033110- if running user has manager on his user record. (added this check on
+        Triggered_Quality_Control_Create_Or_Update_After_Save as well since it will fall if created via this flow)
+AM: 23122025- 2585784781 - added check - if no public inquiries ראש צוות  exists then this process can not be done. 
+      ( Triggered_Quality_Control_Create_Or_Update_After_Save will fail on notification)</description>
+    <dynamicChoiceSets>
+        <name>Consequences</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Consequences__c</picklistField>
+        <picklistObject>QualityControl__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Consequences1</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Implications2__c</picklistField>
+        <picklistObject>QualityControl__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Mistake</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Mistake_type__c</picklistField>
+        <picklistObject>QualityControl__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Mistake2</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>MistakeType2__c</picklistField>
+        <picklistObject>QualityControl__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Origin</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>QC_Source__c</picklistField>
+        <picklistObject>QualityControl__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <interviewLabel>Create qa From Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create qa From Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_QA_record</name>
+        <label>Create QA record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>success_message</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Consequences__c</field>
+            <value>
+                <elementReference>Conseq</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Feedback_Desc__c</field>
+            <value>
+                <elementReference>Describe_qa</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Mistake_type__c</field>
+            <value>
+                <elementReference>Mistake_type_p</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <stringValue>123</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Related_Account__c</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>QualityControl__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_account_from_record</name>
+        <label>Get account from record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_QA_record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AccountId</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>recordId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Profile_Id_Public_Inquiries</name>
+        <label>Get Profile Id (Public Inquiries)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Public_Inquiries_Administrators</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Public Inquiries</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Profile</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>just a check to the triggered flow: Triggered- Quality Control- Create Or Update- After Save will not fail after creation of QC</description>
+        <name>Get_Public_Inquiries_Administrators</name>
+        <label>Get Public Inquiries Administrator</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Found_Public_Inquiries_Admin</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Title</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>ראש צוות</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ProfileId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Profile_Id_Public_Inquiries.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Add_Mannager_Screen</name>
+        <label>Add Mannager Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>AddMannagerDisplay</name>
+            <fieldText>&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;⚠️&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;לא קיים לך מנהל ברשומת המשתמש שלך. יש להוסיף מנהל בשדה &quot;רשיונות&quot; ברשומת המשתמש.&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;שם שדה באנגלית (manager)&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;לאחר מכן יש לחזור על התהליך.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>יציאה</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>fill_the_fields</name>
+        <label>מלא את השדות הבאים</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Get_account_from_record</targetReference>
+        </connector>
+        <fields>
+            <name>Mistake_type_p</name>
+            <choiceReferences>Mistake</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>סוג טעות</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Conseq</name>
+            <choiceReferences>Consequences</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>השלכות</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Describe_qa</name>
+            <fieldText>תיאור</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>No_Public_Inquiries_Administrator_Screen</name>
+        <label>No Public Inquiries Administrator Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>NoPublicInquiriesAdministratorDisplay</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;🚩&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(228, 16, 16); font-size: 18px;&quot;&gt;לא קיים משתמש פעיל בארגון שהינו ראש&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(228, 16, 16); font-size: 18px;&quot;&gt; צוות פניות הציבור&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;(user.Title = ראש צוות פניות הציבור)&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;יש להגדיר משתמש כזה בעל פרופיל מתאים לפניות הציבור&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;לאחר מכן יש לחזור על התהליך&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>יציאה</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>success_message</name>
+        <label>success message</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Sucess</name>
+            <fieldText>&lt;p style=&quot;text-align: right;&quot;&gt;&lt;b&gt;בקרת איכות נוצרה בהצלחה&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Does_Running_User_Has_Manager</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>AccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

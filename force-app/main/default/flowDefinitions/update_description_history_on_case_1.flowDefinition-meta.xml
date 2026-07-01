@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>Migrated from the update description history on case process using multiple criteria.
+17.12 - Add check if referral content is change true . If yes copy referral content to description.</description>
+    <masterLabel>update description history on case PB to Flow</masterLabel>
+</FlowDefinition>

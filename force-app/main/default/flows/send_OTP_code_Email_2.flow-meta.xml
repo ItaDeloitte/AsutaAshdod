@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>otp_for_account_2</name>
+        <label>Account.otp_for_account_2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Account.otp_for_account_2</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Account.otp_for_account_2</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: send OTP code - Email 2 workflow rule
+Workflow rule description: &quot;</description>
+    <label>send OTP code - Email 2</label>
+    <migratedFromWorkflowRuleName>send OTP code - Email 2</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>otp_for_account_2</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>otp_sent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>otp_sent__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterFormula>{!$Record.RecordType.DeveloperName}  = &quot;PersonAccount&quot; &amp;&amp;
+ISCHANGED({!$Record.Secret__c} ) &amp;&amp; 
+ISBLANK({!$Record.SMS_Phone_Number__c} ) &amp;&amp; NOT({!$Record.otp_sent__c}) 
+ &amp;&amp; NOT(ISBLANK({!$Record.PersonEmail} ))</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+</Flow>

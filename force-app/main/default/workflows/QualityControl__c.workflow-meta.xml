@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ActionEmail44333</fullName>
+        <description>מייל על בקרת איכות שפתוחה</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Quality_of_Service_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/EmailTemplateqanotdone</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Rename_QC</fullName>
+        <field>Name</field>
+        <formula>TEXT(DAY( DATEVALUE(CreatedDate ) )) &amp;&quot;/&quot;&amp; TEXT( MONTH(DATEVALUE(CreatedDate) )) &amp;&quot;/&quot;&amp; TEXT(YEAR(DATEVALUE(CreatedDate) ))&amp;&quot; &quot;&amp; text(Mistake_type__c)</formula>
+        <name>Rename QC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Target_date_RED</fullName>
+        <field>Date_target__c</field>
+        <formula>CreatedDate + 1</formula>
+        <name>בקרת איכות אדומה תאירך יעד</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Target_date_orange</fullName>
+        <field>Date_target__c</field>
+        <formula>CreatedDate + 3</formula>
+        <name>בקרת איכות כתומה תאריך יעד</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_SLA_GREEN</fullName>
+        <field>SLA__c</field>
+        <literalValue>ירוק</literalValue>
+        <name>Update SLA GREEN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_qa_to_red</fullName>
+        <field>SLA__c</field>
+        <literalValue>אדום</literalValue>
+        <name>Update qa to red</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_sla_orange</fullName>
+        <field>SLA__c</field>
+        <literalValue>כתום</literalValue>
+        <name>Update sla orange</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>changetomanagerstatus</fullName>
+        <field>Status_QA__c</field>
+        <literalValue>בטיפול מנהל ישיר</literalValue>
+        <name>העברה למנהל</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>qa_origin_inst</fullName>
+        <field>QC_Source__c</field>
+        <literalValue>פניה מהמכון</literalValue>
+        <name>מקור הבקרה - מכון</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>qa_source_moked</fullName>
+        <field>QC_Source__c</field>
+        <literalValue>פניה מהמוקד</literalValue>
+        <name>מקור הבקרה - מוקד</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>tranferedto_manager</fullName>
+        <field>manager_transfered__c</field>
+        <literalValue>1</literalValue>
+        <name>tranferedto manager</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_close</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>closeqa</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>update close</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_target_date</fullName>
+        <field>Date_target__c</field>
+        <formula>CreatedDate + 10</formula>
+        <name>עדכן יעד בקרה</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>open%2Fclosed</fullName>
+        <actions>
+            <name>update_close</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>QualityControl__c.Status_QA__c</field>
+            <operation>equals</operation>
+            <value>בוצע משוב,לא נמצא כטעות,לא רלוונטי</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>בקרת איכות אדומה</fullName>
+        <actions>
+            <name>Target_date_RED</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>QualityControl__c.SLA__c</field>
+            <operation>equals</operation>
+            <value>אדום</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>בקרת איכות ירוקה</fullName>
+        <actions>
+            <name>update_target_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>QualityControl__c.SLA__c</field>
+            <operation>equals</operation>
+            <value>ירוק</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>בקרת איכות כתומה</fullName>
+        <actions>
+            <name>Target_date_orange</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>QualityControl__c.SLA__c</field>
+            <operation>equals</operation>
+            <value>כתום</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>מילוי מנהל</fullName>
+        <actions>
+            <name>changetomanagerstatus</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>tranferedto_manager</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>QualityControl__c.Related_User__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.manager__c</field>
+            <operation>equals</operation>
+            <value>שקר</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.manager_transfered__c</field>
+            <operation>equals</operation>
+            <value>שקר</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>מקור הפנייה - מוקד</fullName>
+        <actions>
+            <name>qa_source_moked</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>(ISNEW() || ISCHANGED(Created_by_User__c)) &amp;&amp; (   Created_by_User__r.Profile.Name = &quot;New System Admin&quot; ||  Created_by_User__r.Profile.Name = &quot;משתמש סטנדרטי - חדש&quot; ||  Created_by_User__r.Profile.Name = &quot;מנהל&quot; ||   Created_by_User__r.Profile.Name = &quot;Service user DEV&quot; ||   Created_by_User__r.Profile.Name = &quot;Call_Center_Coordinator&quot; ||  Created_by_User__r.Profile.Name = &quot;Call_Center_Senior_Coordinator&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>מקור הפנייה - מכון</fullName>
+        <actions>
+            <name>qa_origin_inst</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>(ISNEW() || ISCHANGED(Created_by_User__c)) &amp;&amp; (   Created_by_User__r.Profile.Name = &quot;Secretary&quot; ||  Created_by_User__r.Profile.Name = &quot;Partner Community User Custom&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכן SLA לאדום</fullName>
+        <actions>
+            <name>Update_qa_to_red</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 AND 2) OR ( 3 AND 4) OR (5 AND 6) OR (7 AND 8) OR (9 AND 10) OR (11 AND 12) OR ( 13 AND 14) OR (15 AND 16) OR (17 AND 18) OR (19 AND 20) OR 21</booleanFilter>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>פניית שירות</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>זיכוי כספי,מטופל נשלח הביתה ללא ביצוע הבדיקה,נוצר עיכוב במחלקה,התור הוזז,טעות המטופל</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>לא בוצע אימות פרטים</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>זיכוי כספי,מטופל נשלח הביתה ללא ביצוע הבדיקה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>קביעה שגויה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,זיכוי כספי,שיחת התנצלות,מטופל נשלח הביתה ללא ביצוע הבדיקה,נוצר עיכוב במחלקה,התור הוזז,טרטור המטופל/ת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>ביטול תור שגוי</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,זיכוי כספי,מטופל נשלח הביתה ללא ביצוע הבדיקה,נוצר עיכוב במחלקה,התור הוזז,טרטור המטופל/ת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>לא הועברה פניה למכון,העברת פניה שגויה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>זיכוי כספי,מטופל נשלח הביתה ללא ביצוע הבדיקה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>מסירת מידע שגוי,אי מסירה של הנחיות</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>זיכוי כספי,שיחת התנצלות,מטופל נשלח הביתה ללא ביצוע הבדיקה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>הגשה לא נכונה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>זיכוי כספי,מטופל נשלח הביתה ללא ביצוע הבדיקה,נוצר עיכוב במחלקה,טרטור המטופל/ת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>שליחת קיט למערכת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>זיכוי כספי,שיחת התנצלות</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>הצעת מחיר שגויה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>זיכוי כספי,שיחת התנצלות,נוצר עיכוב במחלקה,טרטור המטופל/ת,לא נגרם נזק</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>המלצת רופא לא נכונה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>זיכוי כספי,מטופל נשלח הביתה ללא ביצוע הבדיקה,התור הוזז,טרטור המטופל/ת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Feedback_Desc__c</field>
+            <operation>equals</operation>
+            <value>התקבל ציון נמוך מ80 בסקר</value>
+        </criteriaItems>
+        <failedMigrationToolVersion>260.12.9</failedMigrationToolVersion>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכן SLA לירוק</fullName>
+        <actions>
+            <name>Update_SLA_GREEN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>לא נגרם נזק</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>העברת פניה שגויה,לא בוצע אימות פרטים,לא הועברה פניה למכון,פניית שירות</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכן SLA לכתום</fullName>
+        <actions>
+            <name>Update_sla_orange</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 AND 2) OR ( 3 AND 4) OR (5 AND 6) OR (7 AND 8) OR (9 AND 10) OR (11 AND 12) OR ( 13 AND 14) OR (15 AND 16) OR (17 AND 18) OR (19 AND 20)</booleanFilter>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>פניית שירות</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,שיחת התנצלות,טרטור המטופל/ת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>לא בוצע אימות פרטים</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,שיחת התנצלות,נוצר עיכוב במחלקה,התור הוזז,טרטור המטופל/ת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>קביעה שגויה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>לא נגרם נזק</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>ביטול תור שגוי</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>שיחת התנצלות,לא נגרם נזק</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>העברת פניה שגויה,לא הועברה פניה למכון</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,שיחת התנצלות,נוצר עיכוב במחלקה,התור הוזז,טרטור המטופל/ת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>מסירת מידע שגוי</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,נוצר עיכוב במחלקה,התור הוזז,טרטור המטופל/ת,לא נגרם נזק</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>אי מסירה של הנחיות</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,נוצר עיכוב במחלקה,התור הוזז,טרטור המטופל/ת,לא נגרם נזק</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>הגשה לא נכונה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,שיחת התנצלות,לא נגרם נזק</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>שליחת קיט למערכת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,נוצר עיכוב במחלקה,טרטור המטופל/ת,לא נגרם נזק</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>equals</operation>
+            <value>המלצת רופא לא נכונה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>QualityControl__c.Consequences__c</field>
+            <operation>equals</operation>
+            <value>טעות צוות המכון / מרפאה,שיחת התנצלות,נוצר עיכוב במחלקה,לא נגרם נזק</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>עדכן שם בקרת איכות</fullName>
+        <actions>
+            <name>Rename_QC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>QualityControl__c.Mistake_type__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

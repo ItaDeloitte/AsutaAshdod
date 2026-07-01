@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Medical_Procedure__c$Name</field>
+    </columns>
+    <columns>
+        <field>Medical_Procedure__c$Procedure_Code__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Procedure__c$Protocols__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Medical_Procedure__c$Protocol__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Medical_Procedure__c$Protocols__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>פעולות רפואיות עם פרוטוקולים</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>medical_procedures__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Medical_Procedure__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

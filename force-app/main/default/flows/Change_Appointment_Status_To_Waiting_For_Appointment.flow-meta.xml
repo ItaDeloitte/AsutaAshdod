@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Appointment_Status_c</name>
+        <label>Update Appointment_Status__c</label>
+        <locationX>790</locationX>
+        <locationY>664</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Appointment_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>WaitingForAppointment</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VarCB_NeedToBeUpdated</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_An_Update_Needed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Kit_approved_signed2_c</name>
+        <label>Update Kit_approved_signed__c</label>
+        <locationX>795</locationX>
+        <locationY>464</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Kit_approved_signed__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VarCB_NeedToBeUpdated</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CheckingConditions</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>במידה ושדה &quot;אישור קריאת עלויות&quot; מקבל ערך טרו מהממשק
+יש לעדכן שדה &quot;קיט אושר ונחתם&quot; באובייקט תור</description>
+        <name>Check_PaymentsRead_c_is_True</name>
+        <label>Check PaymentsRead__c is True</label>
+        <locationX>1018</locationX>
+        <locationY>324</locationY>
+        <defaultConnector>
+            <targetReference>CheckingConditions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>KitSigned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PaymentsRead__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Kit_approved_signed2_c</targetReference>
+            </connector>
+            <label>KitSigned</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>בדיקה אם התנאים הבאים מתקיימים בפגישת ניתוח:
+1. גורם משלם בפגישה מגבי סל או מרפאות חוץ
+2. סטטוס התחייבות = תקין
+3. סטטוס הפגישה = ממתין להתחייבות
+4. אין השתתפות עצמית
+5. לא נשלח קיט לפגישה</description>
+        <name>CheckingConditions</name>
+        <label>בדיקת אישור התחייבות במידה ולא נשלח קיט</label>
+        <locationX>1014</locationX>
+        <locationY>551</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Appointment_Status</name>
+            <conditionLogic>(1 OR 2 ) AND ( 3 AND 4 AND 5 AND 6 AND 7 AND 8 )</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.InsuranceCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>3</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.InsuranceCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>303</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Commitment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ממתין להתחייבות</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deductibles__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deductibles_Hospitalization__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Didkitsent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.text_for_kit_Formula__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>האם עבד</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Appointment_Status_c</targetReference>
+            </connector>
+            <label>Update Appointment Status</label>
+        </rules>
+        <rules>
+            <name>Check_Read</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PaymentsRead__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_An_Update_Needed</targetReference>
+            </connector>
+            <label>Check Read</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_An_Update_Needed</name>
+        <label>Is An Update Needed?</label>
+        <locationX>1011</locationX>
+        <locationY>780</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Needed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>VarCB_NeedToBeUpdated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Appointment</targetReference>
+            </connector>
+            <label>Update Needed</label>
+        </rules>
+    </decisions>
+    <description>שינוי סטטוס של פגישת ניתוח ל &quot;ממתין למועד התור&quot; לאחר אישור התחייבות במידה ולא נשלח קיט (קורה בפגישות ששייכות ללובי הניתוחי)
+
+בנוסף, כאשר נוצרת או מתעדכנת פגישת ניתוח והשדה &quot;אישור קריאת עלויות&quot; מקבל טרו, הפלואו מעדכן את השדה &quot;קיט אושר ונחתם&quot; לטרו
+-------------------------------------------
+שיניתי את הפלואו כך שירוץ בצורה אסינכרונית, בנוסף שיניתי כך שירוץ רק כאשר הטריגר = טרו
+-------------------------------------------
+ שיניתי את הפלואו החלפת העדכונים במטלות : אין אשרויות לסים 
+בגלל  BEFORE SAVE 
+ASYNCHRONUS</description>
+    <environments>Default</environments>
+    <interviewLabel>Change Appointment Status To &quot;Waiting For Appointment&quot; {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Change Appointment Status To &quot;Waiting For Appointment&quot;</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Appointment</name>
+        <label>Update Appointment</label>
+        <locationX>1388</locationX>
+        <locationY>772</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>1254</locationX>
+        <locationY>207</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>{!$Record.RecordType.DeveloperName} = &apos;Surgeries&apos; &amp;&amp; 
+(
+       ({!$Record.PaymentsRead__c} = TRUE &amp;&amp;  {!$Record.Kit_approved_signed__c} = FALSE)
+||
+       ( {!$Record.PayerFactor__r.InsuranceCode__c} = &apos;3&apos; ||  {!$Record.PayerFactor__r.InsuranceCode__c} = &apos;303&apos;) &amp;&amp;
+        ISPICKVAL( {!$Record.Commitment_Status__c}, &apos;0&apos; ) &amp;&amp;
+        ISPICKVAL( {!$Record.Appointment_Status__c}, &apos;ממתין להתחייבות&apos; ) &amp;&amp;
+        ISBLANK( {!$Record.Deductibles__c}) = TRUE &amp;&amp;
+        ISBLANK( {!$Record.Deductibles_Hospitalization__c}) = TRUE &amp;&amp;  
+        {!$Record.Didkitsent__c} = FALSE &amp;&amp;
+        {!$Record.text_for_kit_Formula__c} = &quot;האם עבד&quot;
+)</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Check_PaymentsRead_c_is_True</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>VarCB_NeedToBeUpdated</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

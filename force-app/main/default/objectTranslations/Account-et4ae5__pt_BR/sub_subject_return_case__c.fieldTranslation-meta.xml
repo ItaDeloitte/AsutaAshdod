@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- השדה יכיל את תתי-הנושא של הפניות החוזרות של החשבון מהשבוע האחרון --></help>
+    <label><!-- Sub subject return case --></label>
+    <name>sub_subject_return_case__c</name>
+</CustomFieldTranslation>

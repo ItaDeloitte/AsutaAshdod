@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Assuta_Letterhead</letterhead>
+    <name>נוסח לקישור להעלאת מסמכים-מטופלת</name>
+    <style>freeForm</style>
+    <subject>אסותא - קישור להעלאת מסמכים</subject>
+    <textOnly>שלום רב  {!Case.Female_First_Name__c} ,
+
+בהמשך לשיחתנו, את הטפסים ניתן להעביר לידנו באמצעות העלאתם לקישור זה:  https://liom25792assutaqa.formtitan.com/UploadFilesIVF?fld38={!Case.Id}&amp;fld40=Female
+
+, או באמצעות פקס שמספרו   {!Case.Fax_Number_IVF__c} (fax to mail).
+
+ניתן לפנות אלינו בכל נושא והתייעצות, במייל : {!Case.Site_Email__c}.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

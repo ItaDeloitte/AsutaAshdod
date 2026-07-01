@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>התמחות</label>
+    <name>specialization__c</name>
+    <picklistValues>
+        <masterLabel>אשדוד</masterLabel>
+        <translation><!-- אשדוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאסטרים</masterLabel>
+        <translation><!-- מאסטרים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתחילים</masterLabel>
+        <translation><!-- מתחילים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתחילים א</masterLabel>
+        <translation><!-- מתחילים א --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתחילים ב</masterLabel>
+        <translation><!-- מתחילים ב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתקדמים</masterLabel>
+        <translation><!-- מתקדמים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ActionEmail1010</fullName>
+        <description>מייל על כך שיש צורך בטיפול בעזר</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Azar/Medical_Aid_Break_handelTime</template>
+    </alerts>
+    <alerts>
+        <fullName>ActionEmail202020</fullName>
+        <description>עזר לפגישה באשדוד ציבורי בוטל</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Azar/Canceled_Medical_Aid_ashdodpublic</template>
+    </alerts>
+    <alerts>
+        <fullName>ActionEmailashdod</fullName>
+        <description>עזר לפגישה באשדוד ציבורי</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Azar/Medical_Aid_ashdodpublic</template>
+    </alerts>
+    <alerts>
+        <fullName>Cancel_app_specific_MedAid</fullName>
+        <description>ביטול פגישה עם עזר שפת הסימנים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email_MedicalAidManager__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Azar/Medical_Aid_SpecificAId_cancel</template>
+    </alerts>
+    <alerts>
+        <fullName>Medical_Aid_Sites</fullName>
+        <description>עזר לפגישה במרכזים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Azar/Medical_Aid_Sites</template>
+    </alerts>
+    <alerts>
+        <fullName>Medical_Aid_Sites_Canceled</fullName>
+        <description>עזר לפגישה במרכזים בוטל</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Azar/Canceled_Medical_Aid_Sites</template>
+    </alerts>
+    <alerts>
+        <fullName>Specific_Medical_Aid_Alert</fullName>
+        <description>שליחת הודעה לרכז נגישות על פגישה עם מתרגם לשפת הסימנים</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email_MedicalAidManager__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Azar/Medical_Aid_SpecificAId</template>
+    </alerts>
+    <alerts>
+        <fullName>Specific_Medical_Aid_Alert_4YanaRaz</fullName>
+        <description>שליחת הודעה ליאנה רז על פגישה עם מתרגם לשפת הסימנים</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>yanar@assuta.co.il</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Azar/Medical_Aid_SpecificAId</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Rename_Medical_Aid</fullName>
+        <field>Name</field>
+        <formula>Appointment__r.Name  &amp;&quot; &quot;&amp;  Patient__r.FirstName &amp;&quot; &quot;&amp;Patient__r.LastName &amp;&quot;-&quot;&amp; TEXT(Type_of_Disability__c)</formula>
+        <name>Rename Medical Aid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Rename Medical Aid</fullName>
+        <actions>
+            <name>Rename_Medical_Aid</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Medical_Aid_Appointment__c.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>התראה על עזר</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Medical_Aid_Appointment__c.Status__c</field>
+            <operation>equals</operation>
+            <value>בטיפול המחלקה</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>ActionEmail1010</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Medical_Aid_Appointment__c.Appointment_Date__c</offsetFromField>
+            <timeLength>-38</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

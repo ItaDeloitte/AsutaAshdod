@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Is_the_status_Closed_or_Caneclled_or_Following</name>
+        <label>האם סטטוס הפניה סגור, בוטל או במעקב</label>
+        <locationX>651</locationX>
+        <locationY>171</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_is_not_Closed_or_Caneclled_or_Following</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Following</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Caneclled</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UniqueName</targetReference>
+            </connector>
+            <label>סטטוס הפניה לא סגור, בוטל או במעקב</label>
+        </rules>
+    </decisions>
+    <description>מעדכן את השדה &quot;האם הטיפול בפניה חרג מתאריך היעד&quot; לערך true ואת השדה &quot;כמות ימי החריגה בטיפול בפניה&quot; לערך 1 ביום העסקים הבא אחרי תאריך היעד לסגירת הפניה במידה והפניה עדיין פתוחה</description>
+    <environments>Default</environments>
+    <interviewLabel>Public Inquiries Cases Not Closed In Time {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Public Inquiries Cases Not Closed In Time</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>מעדכן את הצ&apos;קבוקס &quot;האם הטיפול בפניה חרג מתאריך היעד&quot; לערך true, ואת השדה &quot;מספר ימי החריגה בטיפול בפניה&quot; לערך 1.</description>
+        <name>UniqueName</name>
+        <label>מעדכן את השדות של פניה שלא נסגרה בזמן.</label>
+        <locationX>1042</locationX>
+        <locationY>167</locationY>
+        <inputAssignments>
+            <field>DeadlineHandlingDatePassed__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>NumOfDaysPassedDeadlineHandlingDate__c</field>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>93</locationX>
+        <locationY>56</locationY>
+        <connector>
+            <targetReference>Is_the_status_Closed_or_Caneclled_or_Following</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>NextBusinessDayAfterDeadlineHandlingDate__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>One_business_day_has_passed_since_the_deadline_handling_date</name>
+            <connector>
+                <targetReference>Is_the_status_Closed_or_Caneclled_or_Following</targetReference>
+            </connector>
+            <label>עבר יום עסקים אחד מאז תאריך היעד</label>
+            <offsetNumber>19</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>NextBusinessDayAfterDeadlineHandlingDate__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <triggerOrder>840</triggerOrder>
+</Flow>

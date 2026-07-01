@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: update campaign id workflow rule
+Workflow rule description: &quot;</description>
+    <formulas>
+        <name>update_parentCampaignIdFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK( $Record.Campaign__r.ParentId ),
+$Record.Campaign__r.FormtitanId__c,
+$Record.Campaign__r.Parent.FormtitanId__c )</expression>
+    </formulas>
+    <label>update campaign id</label>
+    <migratedFromWorkflowRuleName>update campaign id</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>campaignID__c</field>
+            <value>
+                <elementReference>$Record.Campaign__r.FormtitanId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>parentCampaignId__c</field>
+            <value>
+                <elementReference>update_parentCampaignIdFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterFormula>not(isblank({!$Record.Campaign__c} ))</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

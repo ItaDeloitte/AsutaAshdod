@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_application_for_credit</name>
+        <label>Update application for credit</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.applicationforcredit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Which_RT</name>
+        <label>Which RT</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Experts_Or_Institutes</name>
+            <conditionLogic>(1 AND 2) OR 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Experts</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Medical_Procedure__r.Domain__r.DomainCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>412.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Institutes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_application_for_credit</targetReference>
+            </connector>
+            <label>Is Experts Or Institutes?</label>
+        </rules>
+    </decisions>
+    <description>NC: 180825 - 2103429800 - הקמת שדות עבור דוח זיכויים + עדכון פלואו</description>
+    <environments>Default</environments>
+    <interviewLabel>Refund after Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Refund after Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Which_RT</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(
+        OR( {!$Record.RecordType.DeveloperName} = &quot;Institutes&quot;,
+               {!$Record.RecordType.DeveloperName} = &quot;Experts&quot;
+             ) ,
+{!$Record.Medical_Procedure__r.Are_services_private__c} = True,
+TEXT({!$Record.Appointment_Status__c}) = &quot;Canceled&quot; , 
+TEXT({!$Record.PaymentStatus__c}) = &quot;Valid&quot;,
+         OR( TEXT({!$Record.Canceled_Reason__c}) = &quot;59&quot;,
+                TEXT({!$Record.Canceled_Reason__c}) = &quot;60&quot;
+               )
+     )</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

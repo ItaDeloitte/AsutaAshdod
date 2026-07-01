@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Medical_Procedure__c.Procedure_Code__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Procedure__c.Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Medical_Procedure__c.Is_there_a_need_for_pre_surgery__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_$Domain__c.DomainCode__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Domain__c.Status__c</field>
+    </columns>
+    <description>דוח פעולות + תחום כולל קוד פעולה וסטטוס</description>
+    <filter>
+        <criteriaItems>
+            <column>Medical_Procedure__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,1,פעיל,2,לא פעיל</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>עותק של עותק של פעולות ניתוחיות + תחום</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Medical_Procedure__c@Medical_Procedure__c.Domain__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

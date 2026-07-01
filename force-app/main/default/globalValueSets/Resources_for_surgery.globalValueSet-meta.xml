@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>4093</fullName>
+        <default>false</default>
+        <label>(ULTRA FLEX) סטנט לוושט</label>
+    </customValue>
+    <customValue>
+        <fullName>3046</fullName>
+        <default>false</default>
+        <label>AO</label>
+    </customValue>
+    <customValue>
+        <fullName>4056</fullName>
+        <default>false</default>
+        <label>BONE PATE COLLECTOR</label>
+    </customValue>
+    <customValue>
+        <fullName>3039</fullName>
+        <default>false</default>
+        <label>BRANDINGEN</label>
+    </customValue>
+    <customValue>
+        <fullName>4030</fullName>
+        <default>false</default>
+        <label>C.T.</label>
+    </customValue>
+    <customValue>
+        <fullName>4049</fullName>
+        <default>false</default>
+        <label>C-ARM</label>
+    </customValue>
+    <customValue>
+        <fullName>4068</fullName>
+        <default>false</default>
+        <label>COBLATION</label>
+    </customValue>
+    <customValue>
+        <fullName>4051</fullName>
+        <default>false</default>
+        <label>CT אנגיו לב</label>
+    </customValue>
+    <customValue>
+        <fullName>3041</fullName>
+        <default>false</default>
+        <label>DELTA 1/12</label>
+    </customValue>
+    <customValue>
+        <fullName>3036</fullName>
+        <default>false</default>
+        <label>DOC</label>
+    </customValue>
+    <customValue>
+        <fullName>3044</fullName>
+        <default>false</default>
+        <label>DRILL</label>
+    </customValue>
+    <customValue>
+        <fullName>3049</fullName>
+        <default>false</default>
+        <label>EEA</label>
+    </customValue>
+    <customValue>
+        <fullName>3053</fullName>
+        <default>false</default>
+        <label>H.Scalpel</label>
+    </customValue>
+    <customValue>
+        <fullName>3040</fullName>
+        <default>false</default>
+        <label>ISOLA</label>
+    </customValue>
+    <customValue>
+        <fullName>3052</fullName>
+        <default>false</default>
+        <label>Ligashure</label>
+    </customValue>
+    <customValue>
+        <fullName>3042</fullName>
+        <default>false</default>
+        <label>MESH</label>
+    </customValue>
+    <customValue>
+        <fullName>4046</fullName>
+        <default>false</default>
+        <label>NAVIGATOR</label>
+    </customValue>
+    <customValue>
+        <fullName>4021</fullName>
+        <default>false</default>
+        <label>O-ARM</label>
+    </customValue>
+    <customValue>
+        <fullName>3045</fullName>
+        <default>false</default>
+        <label>P.P.H</label>
+    </customValue>
+    <customValue>
+        <fullName>3043</fullName>
+        <default>false</default>
+        <label>PLIF</label>
+    </customValue>
+    <customValue>
+        <fullName>4045</fullName>
+        <default>false</default>
+        <label>PTH</label>
+    </customValue>
+    <customValue>
+        <fullName>3051</fullName>
+        <default>false</default>
+        <label>SELSCTOR</label>
+    </customValue>
+    <customValue>
+        <fullName>4062</fullName>
+        <default>false</default>
+        <label>SHAVER של 60 מעלות</label>
+    </customValue>
+    <customValue>
+        <fullName>3037</fullName>
+        <default>false</default>
+        <label>SOCON</label>
+    </customValue>
+    <customValue>
+        <fullName>4069</fullName>
+        <default>false</default>
+        <label>STARION</label>
+    </customValue>
+    <customValue>
+        <fullName>4053</fullName>
+        <default>false</default>
+        <label>TEE</label>
+    </customValue>
+    <customValue>
+        <fullName>4077</fullName>
+        <default>false</default>
+        <label>TRUECUT</label>
+    </customValue>
+    <customValue>
+        <fullName>3048</fullName>
+        <default>false</default>
+        <label>U.S</label>
+    </customValue>
+    <customValue>
+        <fullName>3050</fullName>
+        <default>false</default>
+        <label>VARILIFT</label>
+    </customValue>
+    <customValue>
+        <fullName>4002</fullName>
+        <default>false</default>
+        <label>א. בוקר</label>
+    </customValue>
+    <customValue>
+        <fullName>4004</fullName>
+        <default>false</default>
+        <label>א. ערב</label>
+    </customValue>
+    <customValue>
+        <fullName>4007</fullName>
+        <default>false</default>
+        <label>א. ערב לפני</label>
+    </customValue>
+    <customValue>
+        <fullName>4003</fullName>
+        <default>false</default>
+        <label>א. צהרים</label>
+    </customValue>
+    <customValue>
+        <fullName>4001</fullName>
+        <default>false</default>
+        <label>אמבולטורי</label>
+    </customValue>
+    <customValue>
+        <fullName>4072</fullName>
+        <default>false</default>
+        <label>אנדוסקופ לאף - 30 מעלות</label>
+    </customValue>
+    <customValue>
+        <fullName>4073</fullName>
+        <default>false</default>
+        <label>אנדוסקופ לאף 45 מעלות</label>
+    </customValue>
+    <customValue>
+        <fullName>4074</fullName>
+        <default>false</default>
+        <label>אנדוסקופ לאף 70 מעלות</label>
+    </customValue>
+    <customValue>
+        <fullName>4052</fullName>
+        <default>false</default>
+        <label>אקו לב</label>
+    </customValue>
+    <customValue>
+        <fullName>4015</fullName>
+        <default>false</default>
+        <label>אשפוז לב</label>
+    </customValue>
+    <customValue>
+        <fullName>4081</fullName>
+        <default>false</default>
+        <label>אשפוז להשגחה של 24 שעות</label>
+    </customValue>
+    <customValue>
+        <fullName>4071</fullName>
+        <default>false</default>
+        <label>ביפולר</label>
+    </customValue>
+    <customValue>
+        <fullName>4089</fullName>
+        <default>false</default>
+        <label>בלון דינמי לקיבה</label>
+    </customValue>
+    <customValue>
+        <fullName>4085</fullName>
+        <default>false</default>
+        <label>בלון להרחבת וושט קוטר 10-12</label>
+    </customValue>
+    <customValue>
+        <fullName>4086</fullName>
+        <default>false</default>
+        <label>בלון להרחבת וושט קוטר 12-15</label>
+    </customValue>
+    <customValue>
+        <fullName>4087</fullName>
+        <default>false</default>
+        <label>בלון להרחבת וושט קוטר 15-18</label>
+    </customValue>
+    <customValue>
+        <fullName>4088</fullName>
+        <default>false</default>
+        <label>בלון להרחבת וושט קוטר 18-20</label>
+    </customValue>
+    <customValue>
+        <fullName>4084</fullName>
+        <default>false</default>
+        <label>בלון להרחבת וושט קוטר 8-10</label>
+    </customValue>
+    <customValue>
+        <fullName>4076</fullName>
+        <default>false</default>
+        <label>FNA דיקור שאיבה</label>
+    </customValue>
+    <customValue>
+        <fullName>4057</fullName>
+        <default>false</default>
+        <label>דריל אאג</label>
+    </customValue>
+    <customValue>
+        <fullName>3001</fullName>
+        <default>false</default>
+        <label>ה. מקומית</label>
+    </customValue>
+    <customValue>
+        <fullName>3003</fullName>
+        <default>false</default>
+        <label>ה. מקומית + השגחה</label>
+    </customValue>
+    <customValue>
+        <fullName>4010</fullName>
+        <default>false</default>
+        <label>טיפול נמרץ</label>
+    </customValue>
+    <customValue>
+        <fullName>4082</fullName>
+        <default>false</default>
+        <label>טכנאי שיקוף</label>
+    </customValue>
+    <customValue>
+        <fullName>4005</fullName>
+        <default>false</default>
+        <label>יום</label>
+    </customValue>
+    <customValue>
+        <fullName>4006</fullName>
+        <default>false</default>
+        <label>לילה</label>
+    </customValue>
+    <customValue>
+        <fullName>4011</fullName>
+        <default>false</default>
+        <label>ללא טיפול נמרץ</label>
+    </customValue>
+    <customValue>
+        <fullName>3019</fullName>
+        <default>false</default>
+        <label>ללא עוזר</label>
+    </customValue>
+    <customValue>
+        <fullName>4024</fullName>
+        <default>false</default>
+        <label>ללא פרוזן</label>
+    </customValue>
+    <customValue>
+        <fullName>3030</fullName>
+        <default>false</default>
+        <label>מביא ציוד</label>
+    </customValue>
+    <customValue>
+        <fullName>4047</fullName>
+        <default>false</default>
+        <label>לא מונה גייגר</label>
+    </customValue>
+    <customValue>
+        <fullName>4055</fullName>
+        <default>false</default>
+        <label>מוניטור עצב הפנים</label>
+    </customValue>
+    <customValue>
+        <fullName>4060</fullName>
+        <default>false</default>
+        <label>מיקרודריל לאוזן</label>
+    </customValue>
+    <customValue>
+        <fullName>4035</fullName>
+        <default>false</default>
+        <label>ממוגרפיה</label>
+    </customValue>
+    <customValue>
+        <fullName>4061</fullName>
+        <default>false</default>
+        <label>מנוע SHAVER/מקדח אאג</label>
+    </customValue>
+    <customValue>
+        <fullName>4058</fullName>
+        <default>false</default>
+        <label>מקדחי אוזניים</label>
+    </customValue>
+    <customValue>
+        <fullName>4059</fullName>
+        <default>false</default>
+        <label>FESSמקדחים ל</label>
+    </customValue>
+    <customValue>
+        <fullName>3012</fullName>
+        <default>false</default>
+        <label>מרדים</label>
+    </customValue>
+    <customValue>
+        <fullName>3009</fullName>
+        <default>false</default>
+        <label>מרדים פרטי</label>
+    </customValue>
+    <customValue>
+        <fullName>3035</fullName>
+        <default>false</default>
+        <label>משתלים לדיסק</label>
+    </customValue>
+    <customValue>
+        <fullName>4070</fullName>
+        <default>false</default>
+        <label>נזופור</label>
+    </customValue>
+    <customValue>
+        <fullName>4079</fullName>
+        <default>false</default>
+        <label>סדציה מתונה</label>
+    </customValue>
+    <customValue>
+        <fullName>4080</fullName>
+        <default>false</default>
+        <label>סדציה עמוקה</label>
+    </customValue>
+    <customValue>
+        <fullName>4063</fullName>
+        <default>false</default>
+        <label>סט אנדוסקופים לאוזן</label>
+    </customValue>
+    <customValue>
+        <fullName>4090</fullName>
+        <default>false</default>
+        <label>MEGA סטנט</label>
+    </customValue>
+    <customValue>
+        <fullName>4094</fullName>
+        <default>false</default>
+        <label>WALLFLEX BILIARY סטנט ביליארי</label>
+    </customValue>
+    <customValue>
+        <fullName>4095</fullName>
+        <default>false</default>
+        <label>סטנט דואודינלי WALLFLEX DUODENAL 10/80 ממ</label>
+    </customValue>
+    <customValue>
+        <fullName>4048</fullName>
+        <default>false</default>
+        <label>סט פלסטיקה של האף</label>
+    </customValue>
+    <customValue>
+        <fullName>3018</fullName>
+        <default>false</default>
+        <label>עוזר</label>
+    </customValue>
+    <customValue>
+        <fullName>3015</fullName>
+        <default>false</default>
+        <label>עוזר חיצוני</label>
+    </customValue>
+    <customValue>
+        <fullName>4083</fullName>
+        <default>false</default>
+        <label>פעולה בהרדמה מלאה</label>
+    </customValue>
+    <customValue>
+        <fullName>4025</fullName>
+        <default>false</default>
+        <label>פרוזן</label>
+    </customValue>
+    <customValue>
+        <fullName>4027</fullName>
+        <default>false</default>
+        <label>פרוזן לאומית/מאוחדת</label>
+    </customValue>
+    <customValue>
+        <fullName>4026</fullName>
+        <default>false</default>
+        <label>פרוזן מכבי</label>
+    </customValue>
+    <customValue>
+        <fullName>4067</fullName>
+        <default>false</default>
+        <label>TORP/PORP פרוטזות</label>
+    </customValue>
+    <customValue>
+        <fullName>4064</fullName>
+        <default>false</default>
+        <label>STAPESפרוטזות ל</label>
+    </customValue>
+    <customValue>
+        <fullName>4040</fullName>
+        <default>false</default>
+        <label>צילום</label>
+    </customValue>
+    <customValue>
+        <fullName>4050</fullName>
+        <default>false</default>
+        <label>צילום לרקמת שד</label>
+    </customValue>
+    <customValue>
+        <fullName>4075</fullName>
+        <default>false</default>
+        <label>צילום פרפרט</label>
+    </customValue>
+    <customValue>
+        <fullName>4078</fullName>
+        <default>false</default>
+        <label>ניטור עמוד שדרה</label>
+    </customValue>
+    <customValue>
+        <fullName>4091</fullName>
+        <default>false</default>
+        <label>קייט להכנסת פ&apos;ג</label>
+    </customValue>
+    <customValue>
+        <fullName>4092</fullName>
+        <default>false</default>
+        <label>קייט לקשירת דליות וושט</label>
+    </customValue>
+    <customValue>
+        <fullName>1003</fullName>
+        <default>false</default>
+        <label>שולחן ג&apos;קסון</label>
+    </customValue>
+    <customValue>
+        <fullName>89000022</fullName>
+        <default>false</default>
+        <label>שולחן קרבון</label>
+    </customValue>
+    <customValue>
+        <fullName>4042</fullName>
+        <default>false</default>
+        <label>שולחן רגיל</label>
+    </customValue>
+    <customValue>
+        <fullName>4041</fullName>
+        <default>false</default>
+        <label>שולחן שבור</label>
+    </customValue>
+    <customValue>
+        <fullName>4020</fullName>
+        <default>false</default>
+        <label>שיקוף</label>
+    </customValue>
+    <customValue>
+        <fullName>4054</fullName>
+        <default>false</default>
+        <label>FESS תוספת</label>
+    </customValue>
+    <customValue>
+        <fullName>1040</fullName>
+        <default>false</default>
+        <label>נביגטור</label>
+    </customValue>
+    <customValue>
+        <fullName>89000024</fullName>
+        <default>false</default>
+        <label>89000024</label>
+    </customValue>
+    <customValue>
+        <fullName>1005</fullName>
+        <default>false</default>
+        <label>מיקרוסקופ פנטרו</label>
+    </customValue>
+    <customValue>
+        <fullName>1006</fullName>
+        <default>false</default>
+        <label>מיקרוסקופ NC4</label>
+    </customValue>
+    <customValue>
+        <fullName>1008</fullName>
+        <default>false</default>
+        <label>מיקרוסקופ א.א.ג</label>
+    </customValue>
+    <customValue>
+        <fullName>1009</fullName>
+        <default>false</default>
+        <label>מיקרוסקופ עיניים</label>
+    </customValue>
+    <customValue>
+        <fullName>1030</fullName>
+        <default>false</default>
+        <label>קונסטליישן לרשתית</label>
+    </customValue>
+    <customValue>
+        <fullName>1031</fullName>
+        <default>false</default>
+        <label>סט פזילה</label>
+    </customValue>
+    <customValue>
+        <fullName>1041</fullName>
+        <default>false</default>
+        <label>מכונת לב-ריאה</label>
+    </customValue>
+    <customValue>
+        <fullName>1064</fullName>
+        <default>false</default>
+        <label>מכשיר לשאיבת שומן</label>
+    </customValue>
+    <customValue>
+        <fullName>1079</fullName>
+        <default>false</default>
+        <label>NERVE MONITOR</label>
+    </customValue>
+    <customValue>
+        <fullName>1080</fullName>
+        <default>false</default>
+        <label>תוספת סטפדקטומי</label>
+    </customValue>
+    <customValue>
+        <fullName>1082</fullName>
+        <default>false</default>
+        <label>DCR רשת</label>
+    </customValue>
+    <customValue>
+        <fullName>1085</fullName>
+        <default>false</default>
+        <label>מכשיר לייזר CO2</label>
+    </customValue>
+    <customValue>
+        <fullName>3020</fullName>
+        <default>false</default>
+        <label>5ALA</label>
+    </customValue>
+    <customValue>
+        <fullName>4065</fullName>
+        <default>false</default>
+        <label>Legend חשמלי</label>
+    </customValue>
+    <customValue>
+        <fullName>89000003</fullName>
+        <default>false</default>
+        <label>מיני CARM</label>
+    </customValue>
+    <customValue>
+        <fullName>4098</fullName>
+        <default>false</default>
+        <label>מזרק זכוכית</label>
+    </customValue>
+    <customValue>
+        <fullName>1070</fullName>
+        <default>false</default>
+        <label>מונה גייגר</label>
+    </customValue>
+    <customValue>
+        <fullName>8110083</fullName>
+        <default>false</default>
+        <label>מיקרוסקופ לניתוחי נוירוכירורגיה</label>
+    </customValue>
+    <customValue>
+        <fullName>89000001</fullName>
+        <default>false</default>
+        <label>מייפילד</label>
+    </customValue>
+    <customValue>
+        <fullName>89000002</fullName>
+        <default>false</default>
+        <label>CUSA</label>
+    </customValue>
+    <customValue>
+        <fullName>89000004</fullName>
+        <default>false</default>
+        <label>TUR ביפולר</label>
+    </customValue>
+    <customValue>
+        <fullName>89000005</fullName>
+        <default>false</default>
+        <label>אינטראבים</label>
+    </customValue>
+    <customValue>
+        <fullName>89000006</fullName>
+        <default>false</default>
+        <label>רובוט</label>
+    </customValue>
+    <customValue>
+        <fullName>89000007</fullName>
+        <default>false</default>
+        <label>תוספת שולחן כתף</label>
+    </customValue>
+    <customValue>
+        <fullName>89000008</fullName>
+        <default>false</default>
+        <label>מצלמת ICG</label>
+    </customValue>
+    <customValue>
+        <fullName>89000009</fullName>
+        <default>false</default>
+        <label>מצלמת תלת מימד</label>
+    </customValue>
+    <customValue>
+        <fullName>89000010</fullName>
+        <default>false</default>
+        <label>גסטרוסקופ</label>
+    </customValue>
+    <customValue>
+        <fullName>89000011</fullName>
+        <default>false</default>
+        <label>בוכוולטר</label>
+    </customValue>
+    <customValue>
+        <fullName>89000012</fullName>
+        <default>false</default>
+        <label>מגדל ארטרוסקופיה</label>
+    </customValue>
+    <customValue>
+        <fullName>89000013</fullName>
+        <default>false</default>
+        <label>מנוע shaver/ מיקרודברידר</label>
+    </customValue>
+    <customValue>
+        <fullName>89000014</fullName>
+        <default>false</default>
+        <label>מקדח סקיטר לסטפדקטומי</label>
+    </customValue>
+    <customValue>
+        <fullName>89000015</fullName>
+        <default>false</default>
+        <label>שולחן מתיחה</label>
+    </customValue>
+    <customValue>
+        <fullName>89000016</fullName>
+        <default>false</default>
+        <label>bone scalpel</label>
+    </customValue>
+    <customValue>
+        <fullName>89000017</fullName>
+        <default>false</default>
+        <label>לייזר הולמיום 120</label>
+    </customValue>
+    <customValue>
+        <fullName>89000018</fullName>
+        <default>false</default>
+        <label>USBK</label>
+    </customValue>
+    <customValue>
+        <fullName>89000019</fullName>
+        <default>false</default>
+        <label>קונסולת IPC</label>
+    </customValue>
+    <customValue>
+        <fullName>89000020</fullName>
+        <default>false</default>
+        <label>רשת ארטרוסקופיה כף יד</label>
+    </customValue>
+    <customValue>
+        <fullName>89000021</fullName>
+        <default>false</default>
+        <label>לייזר הולמיום</label>
+    </customValue>
+    <customValue>
+        <fullName>89000023</fullName>
+        <default>false</default>
+        <label>ליטוטריפטר ל-PCNL</label>
+    </customValue>
+    <customValue>
+        <fullName>89000026</fullName>
+        <default>false</default>
+        <label>מערכת TEM</label>
+    </customValue>
+    <customValue>
+        <fullName>89000027</fullName>
+        <default>false</default>
+        <label>AIR SEAL</label>
+    </customValue>
+    <customValue>
+        <fullName>25000001</fullName>
+        <default>false</default>
+        <label>מכשיר שיקוף</label>
+    </customValue>
+    <customValue>
+        <fullName>1011</fullName>
+        <default>false</default>
+        <label>רשת אורטופדיה גדולה</label>
+    </customValue>
+    <customValue>
+        <fullName>1022</fullName>
+        <default>false</default>
+        <label>הרניה ילדים</label>
+    </customValue>
+    <customValue>
+        <fullName>1028</fullName>
+        <default>false</default>
+        <label>מכשירי היסטרו. אבחנתית</label>
+    </customValue>
+    <customValue>
+        <fullName>1032</fullName>
+        <default>false</default>
+        <label>סט לשטיפת דרכי דמעות</label>
+    </customValue>
+    <customValue>
+        <fullName>1076</fullName>
+        <default>false</default>
+        <label>TUR מכשור</label>
+    </customValue>
+    <customValue>
+        <fullName>4099</fullName>
+        <default>false</default>
+        <label>כפתורי ארמסטרונג</label>
+    </customValue>
+    <customValue>
+        <fullName>89000028</fullName>
+        <default>false</default>
+        <label>LEG HOLDER</label>
+    </customValue>
+    <customValue>
+        <fullName>89000029</fullName>
+        <default>false</default>
+        <label>נביגציה למפרקים</label>
+    </customValue>
+    <customValue>
+        <fullName>89000030</fullName>
+        <default>false</default>
+        <label>מיקרוסקופ קינבו</label>
+    </customValue>
+    <customValue>
+        <fullName>89000031</fullName>
+        <default>false</default>
+        <label>דופלר לטחורים</label>
+    </customValue>
+    <customValue>
+        <fullName>89000032</fullName>
+        <default>false</default>
+        <label>רובוט למפרקים ג&apos;ונסון</label>
+    </customValue>
+    <customValue>
+        <fullName>89000034</fullName>
+        <default>false</default>
+        <label>מיקרוסקופ טיווטו</label>
+    </customValue>
+    <customValue>
+        <fullName>89000025</fullName>
+        <default>false</default>
+        <label>VSP</label>
+    </customValue>
+    <customValue>
+        <fullName>89000036</fullName>
+        <default>false</default>
+        <label>89000036</label>
+    </customValue>
+    <customValue>
+        <fullName>89000037</fullName>
+        <default>false</default>
+        <label>רובוט מאקו</label>
+    </customValue>
+    <customValue>
+        <fullName>3038</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VSP</label>
+    </customValue>
+    <description>משאבים לניתוח</description>
+    <masterLabel>Resources for surgery</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

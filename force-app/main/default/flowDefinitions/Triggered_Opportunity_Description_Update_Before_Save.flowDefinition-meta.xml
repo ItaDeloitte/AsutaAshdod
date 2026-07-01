@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>4</activeVersionNumber>
+    <description>AM: 27032025- 1830063020- ביצוע התאמות לאסותא אופטיק בסביבת מכירות
+YL: 15092025 - 2144048054 - לפי בקשת בר זנטי בוטל תהליך של העתקת תוכן לשדה נוסף</description>
+    <masterLabel>Triggered- Opportunity Description Update- Before Save</masterLabel>
+</FlowDefinition>
