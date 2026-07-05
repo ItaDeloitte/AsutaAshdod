@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Patologia</label>
+    <name>HealthCloudGA__Condition__c</name>
+    <relationshipLabel><!-- חששות בתוכנית טיפול EHR --></relationshipLabel>
+</CustomFieldTranslation>

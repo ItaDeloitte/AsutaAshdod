@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>민감도 검사 2</label>
+    <name>HealthCloudGA__SensitivityTest2__c</name>
+    <relationshipLabel>EHR 알레르기 과민증(민감도 검사 2)</relationshipLabel>
+</CustomFieldTranslation>

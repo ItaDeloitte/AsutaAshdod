@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Patient this applies to --></help>
+    <label>EHR 患者</label>
+    <name>HealthCloudGA__EhrPatient__c</name>
+    <relationshipLabel>EHR 剂量说明</relationshipLabel>
+</CustomFieldTranslation>

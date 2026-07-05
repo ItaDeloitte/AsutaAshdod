@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Objetivo 1 de seguro médico relacionado</label>
+    <name>HealthCloudGA__RelatedCarePlanGoal1__c</name>
+    <relationshipLabel>Actividades de seguro médico</relationshipLabel>
+</CustomFieldTranslation>

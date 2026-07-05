@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Encuentro</label>
+    <name>HealthCloudGA__Encounter__c</name>
+    <relationshipLabel>Dolencias de HCE</relationshipLabel>
+</CustomFieldTranslation>

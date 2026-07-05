@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Teste de sensibilidade 2</label>
+    <name>HealthCloudGA__SensitivityTest2__c</name>
+    <relationshipLabel>Intolerâncias alérgicas do RES (teste de sensibilidade 2)</relationshipLabel>
+</CustomFieldTranslation>
