@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DEL-יומן הרופא מנוהל ב --></label>
+    <name>CalendarSystem__c</name>
+    <picklistValues>
+        <masterLabel>Odoro</masterLabel>
+        <translation><!-- Odoro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QFlow</masterLabel>
+        <translation><!-- QFlow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rapid</masterLabel>
+        <translation><!-- Rapid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דרך אתר אסותא</masterLabel>
+        <translation><!-- דרך אתר אסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא ניתן לזמן</masterLabel>
+        <translation><!-- לא ניתן לזמן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיאום דרך אתר האינטרנט של הרופא</masterLabel>
+        <translation><!-- תיאום דרך אתר האינטרנט של הרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיאום טלפוני דרך המזכירה</masterLabel>
+        <translation><!-- תיאום טלפוני דרך המזכירה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

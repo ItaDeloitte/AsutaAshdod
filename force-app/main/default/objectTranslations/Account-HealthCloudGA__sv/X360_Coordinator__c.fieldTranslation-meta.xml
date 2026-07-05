@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 360 Coordinator --></label>
+    <name>X360_Coordinator__c</name>
+    <relationshipLabel><!-- חשבונות (מתאם 360) --></relationshipLabel>
+</CustomFieldTranslation>
