@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>מנהל לא ביצע בקרת איכות</name>
+    <style>formalLetter</style>
+    <subject>בקרת האיכות של {!QualityControl__c.OwnerFullName} לא נסגרה בזמן הראוי</subject>
+    <textOnly>שלום,
+
+בקרת האיכות שנפתחה לגבי {!QualityControl__c.Related_User__c} וטופלה על ידי מנהולו הישיר {!QualityControl__c.Related_User__c} לא עמדה בזמני הטיפול.
+
+יש לבדוק את סיבת החריגה.
+
+למעבר ישיר לבקרה:
+
+https://assuta--dev.lightning.force.com/{!QualityControl__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

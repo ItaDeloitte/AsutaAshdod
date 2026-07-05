@@ -1,0 +1,18 @@
+<template>
+  <div onclick={selectHandler} class="slds-listbox__item" role="presentation" style={optionStyle}>
+    <div class={listItemStyle} role="option">
+      <span class="slds-media__figure">
+        <lightning-icon if:false={isOrdered} icon-name="utility:check" size="x-small" alternative-text="selected"
+                        class="slds-icon-utility-check slds-current-color slds-listbox__icon-selected slds-icon_container">
+        </lightning-icon>
+        <span if:true={isOrdered}><b>{index}</b></span>
+      </span>
+      <span class="slds-media__body select-option__label">
+        <span class="no-selection" title={label} dir="rtl">&nbsp;{label}</span>
+        <span if:true={icon}>
+          <img src={icon} alt={label} class="select-option__icon"/>
+        </span>
+      </span>
+    </div>
+  </div>
+</template>

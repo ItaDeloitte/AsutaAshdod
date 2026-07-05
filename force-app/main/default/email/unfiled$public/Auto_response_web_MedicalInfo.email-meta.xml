@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>מענה לפנייה שהתקבלה מהאתר-נרמ&quot;ר</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>תשובה לפנייה מהאינטרנט- נרמ&quot;ר</name>
+    <style>freeForm</style>
+    <subject>הפנייה התקבלה</subject>
+    <textOnly>{!Appointment__c.Patient_Account__c} שלום,
+
+התור שנקבע עבורך לאסותא עבור {!Appointment__c.Medical_Procedure__c} בתאריך ה{!Appointment__c.Appointment_Date_Time__c}, {!Appointment__c.Appointment_Status__c}.
+
+במידה ותהיה מעוניין לקבוע תור חדש או לקבל מידע נוסף ניתן לעשות זאת במוקד אסותא.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

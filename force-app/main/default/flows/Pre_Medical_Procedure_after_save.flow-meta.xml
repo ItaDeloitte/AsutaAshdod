@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>מעדכן קוד פרוצדורה</description>
+        <name>Assign_MedProc_Values</name>
+        <label>Assign MedProc Values</label>
+        <locationX>776</locationX>
+        <locationY>336</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.MedicalProcedureCode__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.MedicalProcedure__r.Procedure_Code__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.PreMedCode__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PreMedicalProcedure__r.Procedure_Code__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RecordNameCreation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.PreMedUnic_ID__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PreMedProcID</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Monday 1819157652
+Yulia: + cut Name to be max 80 chars</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>PreMedProcID</name>
+        <dataType>String</dataType>
+        <expression>/*פעולה רפואית*/
+{!$Record.MedicalProcedure__r.Procedure_Code__c} &amp;
+/*פעולה מקדמית*/
+   {!$Record.PreMedicalProcedure__r.Procedure_Code__c} &amp;
+/*קוד אתר*/
+      {!$Record.Site__r.Site_Code__c}</expression>
+    </formulas>
+    <formulas>
+        <name>RecordNameCreation</name>
+        <dataType>String</dataType>
+        <expression>Left(/*שם הפעולה הרפואית המקדמית*/
+{!$Record.PreMedicalProcedure__r.Name}&amp;&quot; עבור &quot; &amp;
+/*שם הפעולה הרפאוית*/
+{!$Record.MedicalProcedure__r.Name}, 80)</expression>
+    </formulas>
+    <interviewLabel>Pre Medical Procedure after save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Pre Medical Procedure after save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Assign_MedProc_Values</targetReference>
+        </connector>
+        <filterFormula>OR ( ISNEW() , ISCHANGED({!$Record.Site__r.Id}), ISCHANGED({!$Record.PreMedicalProcedure__r.Id}) )</filterFormula>
+        <object>PreMedicalProcedure__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>קוד פעולה רפואית מאובייקט פעולות רפואיות 
+Procedure_Code__c</description>
+        <name>MedProcCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>PreMedCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

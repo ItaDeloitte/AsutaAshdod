@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Break Of SLA</name>
+    <style>formalLetter</style>
+    <subject>הטיפול בפנייה {!Case.CaseNumber} לא הושלם</subject>
+    <textOnly>שלום,
+
+הינך מקבל הודעה זאת כיוון שזמן הטיפול בפנייה {!Case.CaseNumber}
+
+הנציג המטפל הינו {!Case.OwnerFullName}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Upload Files from Opp Russian</name>
+    <style>none</style>
+    <subject>Запрос медицинских документов  и копии паспорта</subject>
+    <textOnly>Assuta Mail
+
+Здравствуйте,
+
+В продолжение нашего телефонного разговора, пожалуйста, пройдите по ссылке, чтобы прикрепить соответствующие документы.
+
+С уважением,
+Assuta Hospital
+Международный отдел больницы &quot;Ассута&quot;
+touristcenter@assuta.co.il
+
+Улица Ха-Барзель 20, Рамат ха-Хаяль, Тель Авив</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

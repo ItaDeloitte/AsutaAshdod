@@ -1,0 +1,83 @@
+<template>
+    <div class="timeline_container">
+        <div class="filter_button">            
+
+            <div if:false={loaded} class="loaderHolder">
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </div>
+
+            <div if:true={loaded} class="padIcon">
+                <lightning-icon class="slds-icon slds-icon_small" icon-name="standard:today" size="small"></lightning-icon>
+            </div>
+            
+            <h3 class="filtertext">ציר הזמן</h3>
+
+            <lightning-button-icon icon-name={colExpIcon}               
+                class="slds-p-left_x-small chevronFocus slds-button"  
+                size="medium" 
+                onclick={colupsExpandAction}>
+            </lightning-button-icon>
+            <lightning-button-icon icon-name="utility:filterList"                
+                class="slds-p-left_x-small chevronFocus slds-button"  
+                size="medium" 
+                onclick={openFilter}>
+            </lightning-button-icon>
+            <lightning-button-icon icon-name="utility:refresh"                
+                class="slds-p-left_x-small chevronFocus slds-button"  
+                size="medium" 
+                onclick={refresh}>
+            </lightning-button-icon>
+        </div>
+        <div class="filter_window_container">
+            <template if:true={openmodel}>
+                <section aria-label="Dialog title" aria-describedby="popover-body-id" class="slds-popover slds-nubbin_top-left" role="dialog">
+                    <div class="dateFilter">
+                        <lightning-input class= "inputDate" type="datetime" name="fromDate" value={fromDate} label="מתאריך" autocomplete="off" onchange={genericOnChange}></lightning-input>
+                        <div class="separator"></div>
+                        <lightning-input class= "inputDate" type="datetime" name="toDate" value={toDate} label="עד תאריך" autocomplete="off" onchange={genericOnChange}></lightning-input>                       
+                    </div>
+                    <div class="check-all-container">
+                        <div class="check-all">                            
+                                <div class="chekall" onclick={checkAll}>בחר הכל</div>
+                                <lightning-icon class="slds-icon slds-icon_small icon-time" icon-name="utility:multi_select_checkbox" size="x-small"></lightning-icon>
+                        </div>
+
+                        <div class="typeFilter slds-col--padded-large">
+                            <lightning-checkbox-group name="timelineTypes"
+                                                    label="סוג ‎פעילות‎"
+                                                    options={timelineTypesOptions}
+                                                    value={timelineTypeFilter}
+                                                    onchange={setTimelineType}>
+                            </lightning-checkbox-group>                        
+                        </div>
+                    </div>
+                    <div class="closeBtn">
+                        <lightning-button label="סנן"
+                                        title="get documents"
+                                        onclick={closeFilter} 
+                                        class="slds-m-left_x-small getDocBtn">
+                        </lightning-button>                        
+                    </div>
+                </section>
+            </template>
+                
+        </div>
+        <div class="timelineItems_container" style={overflow}>
+            <template for:each={timelineDataFilteredFirst} for:item="item">
+                <c-timeline-item key={item.key}
+                                id={item.id}
+                                type={item.type} 
+                                title={item.title}
+                                body={item.body} 
+                                sub-title={item.subTitle} 
+                                date-time={item.dateTime}></c-timeline-item>
+            </template>
+        </div>
+        <template if:true={isMoreData}>
+            <a href="javascript:void(0);" class="seeAll" onclick={seeAllData}>
+                <strong>הצג הכל</strong>
+            </a>            
+        </template>
+
+    </div>
+</template>

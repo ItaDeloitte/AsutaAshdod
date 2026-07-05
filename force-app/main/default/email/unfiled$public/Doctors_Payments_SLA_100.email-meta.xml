@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Doctors_Payments_SLA_100%</name>
+    <style>none</style>
+    <subject>התראה טיפול בפניה</subject>
+    <textOnly>התראת טיפול בפניה מסוג תשלומי רופאים
+לתשומת ליבך,
+בפניה מספר {!Case.CaseNumber} פג הזמן שהוגדר להשלמת הטיפול בפניה  {!Case.Link}
+נא התייחסותך</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

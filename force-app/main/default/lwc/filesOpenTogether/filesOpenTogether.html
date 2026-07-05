@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title={labels.accountFilesTitle}>
+        <div style="padding: 1em">
+            <lightning-datatable
+                key-field="id"
+                data={files}
+                columns={columns}
+                onrowselection={handleRowSelection}
+            ></lightning-datatable>
+
+            <div style="display:inline-flex">
+                <div class="slds-p-top_medium">
+                    <lightning-button 
+                        class="slds-m-left_small"
+                        label={labels.openSelectedFilesBtn}
+                        variant="neutral"
+                        onclick={handleOpenFilesClick}
+                        disabled={isButtonDisabled}
+                    ></lightning-button>                 
+                </div> 
+            </div>  
+        </div>
+    </lightning-card>
+</template>

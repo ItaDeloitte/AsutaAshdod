@@ -1,0 +1,9 @@
+Hi Vicky!!
+
+A new user was created manually in the system!!
+
+Is Active? {!User.IsActive}
+
+Federation ID: {!User.FederationIdentifier}
+
+Link to record: {!User.Link}

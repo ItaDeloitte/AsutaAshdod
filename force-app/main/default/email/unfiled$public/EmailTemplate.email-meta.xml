@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>מייל לתגובה על כך שיש תגובה על הפנייה</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>תגובה חדשה</name>
+    <style>none</style>
+    <subject>מחכה לך תגובה חדשה על הפנייה שלך</subject>
+    <textOnly>שלום {!Case.Contact}  תגובה:</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

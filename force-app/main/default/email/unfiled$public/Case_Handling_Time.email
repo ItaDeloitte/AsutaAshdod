@@ -1,0 +1,75 @@
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Assuta Mail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<center>
+<!-- Save for Web Slices (General Mail 2 Copy 4.png) -->
+<table id="Table_01" width="1200" height="1953" border="0" cellpadding="0" cellspacing="0" style="color:#555555;">
+    <tr>
+        <td colspan="5">
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000JIXz&oid=00D4J000000D53o&lastMod=1574252767000" width="1200" height="745" alt></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <h1 style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 2em; font-size: 2.6em;">
+                שלום רב,
+            </h1>
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 2em; line-height: 1.6em;">
+
+<br>
+פניה זו <a href="{!Case.Link}"><button>{!Case.CaseNumber}</button></a> טרם טופלה על ידך ומועד הטיפול שנקבע חלף.
+<br>
+אנא העבר התייחסותך לפניה זו עוד היום.
+<br>
+<br>
+פניה זו התקבלה בתאריך {!Case.CreatedDate} בפנה'צ ביה"ח אסותא אשדוד ציבורי והעוברה לטיפולך.
+<br>
+<br>
+
+
+<br>
+<br>
+הפניה כלשונה מצורפת במייל זה.
+<br>
+<br>
+
+מקור הפניה: "{!Case.Origin}"
+<br>
+<br>
+
+נושא: "{!Case.Subject_Public_Inquiry__c}"
+
+<br>
+<br>
+
+תקציר: "{!Case.Status_Discription__c}"
+
+<br>
+<br>
+
+תאריך יעד לטיפול:"{!Case.DeadlineDateForResponse__c}"
+
+
+
+<br> 
+
+בברכה,
+<br>
+{!Case.OwnerFullName}
+<br>
+{!Case.OwnerTitle}
+
+            </p>
+        </td>
+    </tr>
+    <tr>
+   
+
+</table>
+<!-- End Save for Web Slices -->
+
+</center></body>
+</html>

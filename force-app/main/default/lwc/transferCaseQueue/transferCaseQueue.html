@@ -1,0 +1,34 @@
+<template>
+  <div class="slds-card">
+    <header class="slds-card__header slds-p-horizontal_medium">
+      <div class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <lightning-icon icon-name="standard:product_transfer" size="small"></lightning-icon>
+        </div>
+        <div class="slds-media__body slds-truncate">
+          <span class="slds-text-heading_small card-title">
+            {labels.TransferCaseTitle}
+          </span>
+        </div>
+      </div>
+    </header>
+    <div class="slds-card__body slds-p-horizontal_small">
+      <div class="slds-card__body_inner">
+        <c-errors-alert errors={errors} closeable onclose={closeErrorsHandler}></c-errors-alert>
+        <div class="slds-m-bottom_medium">
+          <c-lookup-input data-form-field="queue" label={labels.Queue} onsearch={searchQueueHandler} placeholder=""
+                          min-search-term-length="0" onselectionchange={changeQueueHandler} selection={editData.queue}>
+          </c-lookup-input>
+        </div>
+      </div>
+      <lightning-spinner if:true={isLoading} variant="brand" size="small"></lightning-spinner>
+    </div>
+    <div class="slds-card__footer slds-p-horizontal_small">
+      <div class="slds-text-align_right">
+        <button class="slds-button slds-button_neutral" disabled={isTransferButtonDisabled}
+                onclick={transferClickHandler}>{labels.Transfer}</button>
+      </div>
+    </div>
+  </div>
+
+</template>

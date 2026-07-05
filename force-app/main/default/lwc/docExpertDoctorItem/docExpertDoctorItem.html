@@ -1,0 +1,100 @@
+<template>
+  <div class={cardClassName}>
+    <div class="doctor-card__header">
+      <div class="slds-grid slds-grid_align-center slds-grid_vertical-align-center doctor-img-wrapper">
+        <img class="doctor-img" src={doctor.photo} />
+      </div>
+      <img if:true={doctor.isExpert} class="doctor-expert-logo" src={doctorImages.expertLogo}>
+      <button type="button" class="slds-button_reset doctor-recommend-btn" title={labels.RecommendDoctor}
+              onclick={recommendClickHandler}>
+        <svg class="doctor-recommend-btn__icon">
+          <use xlink:href={doctorImages.checkCircle}></use>
+        </svg>
+      </button>
+    </div>
+    <div class="slds-grow doctor-card__body slds-p-top_xx-small slds-p-horizontal_small">
+      <div class="doctor-content">
+        <div class="">
+          <span class="fw-bold">{labels.Name}</span>&nbsp;<a href={doctor.recordUrl} target="_blank">{doctor.name}</a>
+        </div>
+        <div class="">
+          <span class="fw-bold">{labels.Gender}</span>&nbsp;{genderLabel}
+        </div>
+        <div class="">
+          <span class="fw-bold">{labels.Quantity}</span>&nbsp;{doctor.quantity}
+        </div>
+        <div class="">
+          <span class="fw-bold">{labels.ExpertiseETL1}</span>&nbsp;{doctor.expertiseETL1}
+        </div>
+        <div class="">
+          <span class="fw-bold">{labels.ExpertiseETL2}</span>&nbsp;{doctor.expertiseETL2}
+        </div>
+        <div class="slds-grid slds-gutters_direct-xx-small slds-wrap slds-grid_align-spread">
+          <template for:each={detailLinks} for:item="link">
+            <div key={link.type} class="slds-col">
+              <a class="slds-button slds-button_neutral details-link" href="#" data-details-type={link.type}
+                 onclick={showDetailsClickHandler}>{link.label}</a>
+            </div>
+          </template>
+        </div>
+        <!-- <div class="fw-bold">
+          <a href="#" data-details-type="arrangements" onclick={showDetailsClickHandler}>{ labels.Arrangements}</a>
+        </div> -->
+        <div class="arrangement-container">
+          <div class="slds-col slds-grow-none">
+            <div class="slds-form-element__label slds-align_absolute-center">{labels.Arrangement}</div>
+          </div>
+          <div class="slds-col" onmousedown={stopEventHandler}>
+            <c-multi-picklist options={arrangementOptions} label-hidden select-all-disabled onchange={arrangementChangeHandler} single-select></c-multi-picklist>
+          </div>
+        </div>
+
+        <div if:true={doctor.closestAvailableSlotInfo} class="closest-appointment">
+          <!-- <span class="fw-bold">{labels.ClosestAppointment}</span>&nbsp; -->
+          <span class="fw-bold">
+            {doctor.closestAvailableSlotInfo}
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="doctor-card__footer slds-text-align_center slds-p-horizontal_small slds-p-bottom_x-small">
+      <button class="slds-button slds-button_neutral action-btn" type="button" data-action="select"
+              onclick={selectClickHandler}>{labels.Select}</button>
+    </div>
+
+    <div class={detailsPanelClassName}>
+      <button class="slds-button_reset details-panel__close" onclick={closeDetailsClickHandler}>
+        <svg class="details-panel__close-icon">
+          <use xlink:href={doctorImages.close}></use>
+        </svg>
+      </button>
+
+      <div if:true={isDetailsPanelActive} class="slds-grid slds-grid_vertical details-wrapper">
+        <div class="slds-text-align_center slds-shrink-none slds-p-horizontal_medium slds-p-top_small details-title">
+          {detailsTitle}</div>
+        <div class="slds-scrollable slds-grow slds-p-around_small details-content">
+          <ul class="details-list">
+
+            <template for:each={detailsList} for:item="item">
+              <li key={item.key} class="details-item">
+                <template for:each={item.fields} for:item="field">
+                  <div key={field.key} class="">
+                    <span if:true={field.label} class="fw-bold">{field.label}&nbsp;</span><a if:true={field.url}
+                       href={field.url} target="blank">
+                      <lightning-formatted-rich-text value={field.value}></lightning-formatted-rich-text>
+                    </a>
+                    <span if:false={field.url}>
+                      <lightning-formatted-rich-text value={field.value}></lightning-formatted-rich-text>
+                    </span>
+                  </div>
+                </template>
+              </li>
+            </template>
+          </ul>
+        </div>
+      </div>
+      <lightning-spinner if:true={isLoading} variant="brand" size="small"></lightning-spinner>
+    </div>
+
+  </div>
+</template>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>2141528398- used in flow: Case_Owner_Is_Devinchicampaign_Created_Or_Updated_After_Save</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>דה וינצ&apos;י קמפיין</name>
+    <style>none</style>
+    <subject>דה וינצ&apos;י קמפיין- התקבלה פנייה</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

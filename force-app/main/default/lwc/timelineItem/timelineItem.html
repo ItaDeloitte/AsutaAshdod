@@ -1,0 +1,460 @@
+<template>
+    <div class="timeline_container">
+        <ul class="slds-timeline">
+            <template if:true={isCaseType}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-timeline__item_case slds-timeline__item_all">
+                        <span class="slds-assistive-text">case</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" variant="bare"
+                                    class="slds-p-left_x-small chevronFocus slds-button" size="medium"
+                                    onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container slds-icon_container_all slds-icon-standard-case slds-timeline__icon"
+                                    title="case">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="standard:case"
+                                        size="small"></lightning-icon>
+                                </div>
+                            </div>
+
+                            <div class="slds-media__body bodyContainer">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article
+                                    class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                    id="case-item-narrow1" aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li
+                                                class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span
+                                                    class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <template if:true={isAppointmentType}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-timeline__item_appointment slds-timeline__item_all">
+                        <span class="slds-assistive-text">log_a_call</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" variant="bare"
+                                    class="slds-p-left_x-small chevronFocus slds-button" size="medium"
+                                    onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container  slds-icon_container_all slds-icon-standard-partners slds-timeline__icon"
+                                    title="appointment">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="standard:partners"
+                                        size="small"></lightning-icon>
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article
+                                    class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                    id="appointment-item-narrow1" aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li
+                                                class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span
+                                                    class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <template if:true={isFileType}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-icon-standard-files slds-timeline__item_all">
+                        <span class="slds-assistive-text">file</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" variant="bare"
+                                    class="slds-p-left_x-small chevronFocus slds-button" size="medium"
+                                    onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container  slds-icon_container_all slds-icon-standard-files slds-timeline__icon"
+                                    title="files">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="custom:custom67"
+                                        size="small"></lightning-icon>
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article
+                                    class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                    id="files-item-narrow1" aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li
+                                                class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span
+                                                    class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <template if:true={isDisabilitiesType}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-icon-standard-dis  slds-timeline__item_all">
+                        <span class="slds-assistive-text">event</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" variant="bare"
+                                    class="slds-p-left_x-small chevronFocus slds-button" size="medium"
+                                    onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container  slds-icon_container_all slds-icon-standard-dis slds-timeline__icon"
+                                    title="disabilities">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="custom:custom1"
+                                        size="small"></lightning-icon>
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article
+                                    class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                    id="dasabilities-item-narrow1" aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li
+                                                class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span
+                                                    class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <template if:true={isTaskType}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-timeline__item_task slds-timeline__item_all">
+                        <span class="slds-assistive-text">case</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" variant="bare"
+                                    class="slds-p-left_x-small chevronFocus slds-button" size="medium"
+                                    onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container  slds-icon_container_all slds-icon-standard-task slds-timeline__icon"
+                                    title="task">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="standard:task"
+                                        size="small"></lightning-icon>
+                                </div>
+                            </div>
+
+                            <div class="slds-media__body bodyContainer">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article
+                                    class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                    id="task-item-narrow2" aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li
+                                                class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span
+                                                    class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <template if:true={isEmailType}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-timeline__item_email slds-timeline__item_all">
+                        <span class="slds-assistive-text">log_a_call</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" variant="bare"
+                                    class="slds-p-left_x-small chevronFocus slds-button" size="medium"
+                                    onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container  slds-icon_container_all slds-icon-standard-email slds-timeline__icon"
+                                    title="email">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="standard:email"
+                                        size="small"></lightning-icon>
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article
+                                    class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                    id="email-item-narrow1" aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li
+                                                class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span
+                                                    class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                                <div class="emailActions slds-var-p-vertical_xx-small"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <template if:true={isCallType}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-timeline__item_call slds-timeline__item_all">
+                        <span class="slds-assistive-text">file</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" variant="bare"
+                                    class="slds-p-left_x-small chevronFocus slds-button" size="medium"
+                                    onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container  slds-icon_container_all slds-icon-standard-call slds-timeline__icon"
+                                    title="call">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="standard:log_a_call"
+                                        size="small"></lightning-icon>
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article
+                                    class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                    id="call-item-narrow1" aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li
+                                                class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span
+                                                    class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+            <template if:true={isContact}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-icon-standard-cont slds-timeline__item_all">
+                        <span class="slds-assistive-text">file</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" variant="bare"
+                                    class="slds-p-left_x-small chevronFocus slds-button" size="medium"
+                                    onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container  slds-icon_container_all slds-icon-standard-cont slds-timeline__icon"
+                                    title="contact">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="standard:contact"
+                                        size="small"></lightning-icon>
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article
+                                    class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                    id="contact-item-narrow1" aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li
+                                                class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span
+                                                    class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+
+            <template if:true={isApphistory}>
+                <li>
+                    <div class="slds-timeline__item_expandable slds-timeline__item_appointment slds-timeline__item_all">
+                        <span class="slds-assistive-text">log_a_call</span>
+                        <div class="slds-media">
+                            <div class="media_figure">
+                                <lightning-button-icon icon-name="utility:chevronleft" 
+                                                       variant="bare"
+                                                       class="slds-p-left_x-small chevronFocus slds-button" 
+                                                       size="medium"
+                                                       onclick={openCloseContainer}>
+                                </lightning-button-icon>
+                                <div class="slds-icon_container  slds-icon_container_all slds-icon-standard-partners slds-timeline__icon" title="appointment">
+                                    <lightning-icon class="slds-icon slds-icon_small" icon-name="standard:partners" size="small"></lightning-icon>
+                                </div>
+                            </div>
+                            <div class="slds-media__body">
+                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                    <div
+                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                        <h3 class="slds-truncate" title={_title}>
+                                            <a href="javascript:void(0);" onclick={navigateToObject}>
+                                                <strong>{_title}</strong>
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <!-- <lightning-icon class="slds-icon slds-icon_small" icon-name="utility:notification" size="xx-small"></lightning-icon> -->
+                                    <lightning-helptext class="slds-icon slds-icon_small" icon-name="utility:notification" content="הסטורית שינויים אודות תור"></lightning-helptext>
+                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                        <p class="timeline_date">{dateTime.time} | {dateTime.date}</p>
+                                    </div>
+                                </div>
+                                <p class="subTitle slds-m-horizontal_xx-small">{_subTitle}</p>
+                                <article class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium"
+                                         id="appointment-item-narrow2" 
+                                         aria-hidden="false">
+                                    <template for:each={_body} for:item="field">
+                                        <ul key={field.fieldName} class="slds-list_horizontal slds-wrap">
+                                            <li class="slds-grid slds-grid_vertical slds-p-bottom_small">
+                                                <span class="slds-text-title slds-p-bottom_x-small fieldName">{field.fieldName}</span>
+                                                <span class="subTitle bodyField">{field.value}</span>
+                                            </li>
+                                        </ul>
+                                    </template>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </template>
+        </ul>
+    </div>
+</template>

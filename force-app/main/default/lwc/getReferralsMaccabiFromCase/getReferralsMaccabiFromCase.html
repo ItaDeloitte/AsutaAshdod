@@ -1,0 +1,15 @@
+<template>
+    <template if:true={isMaccabi}>
+        <lightning-button 
+            label={label.btnTitle}
+            title="get referrals"
+            onclick={getReferrals} 
+            class="slds-m-left_x-small getDocBtn">
+        </lightning-button>
+        <div class="loaderHolder">
+            <template if:true={loaded}>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </template>
+        </div>
+    </template>    
+</template>

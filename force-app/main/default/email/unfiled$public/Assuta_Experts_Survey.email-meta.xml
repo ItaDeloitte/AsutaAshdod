@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Assuta - Experts Survey</name>
+    <style>none</style>
+    <subject>אסותא - תור לרופא מומחה</subject>
+    <textOnly>Assuta Mail
+
+אסותא - תור לרופא מומחה
+
+שלום {!Appointment__c.First_Name__c},
+
+בהמשך לתור שנקבע עבורך אצל {!Appointment__c.doc_from_try__c},
+נשמח אם תוכל/י להשיב על מספר שאלות קצרות:
+{!Appointment__c.formtitan_experts_survey_link__c}
+
+תודה, אסותא</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

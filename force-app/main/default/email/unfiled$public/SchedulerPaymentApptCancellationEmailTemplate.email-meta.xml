@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תבנית דואר אלקטרוני לאישור הביטול של פעילות שירות בתשלום.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>תשלומים בכלי התזמון: דוא&quot;ל לביטול פעילות שירות</name>
+    <style>none</style>
+    <subject>הפגישה בוטלה!</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תבנית מייל צורך שלחית בקשה להתחייבות</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>בקשת התחייבות ידנית מתוך פגישה</name>
+    <style>formalLetter</style>
+    <subject>{!Appointment__c.Patient_Account__c} {!Appointment__c.Id_Patient__c} מועד הניתוח {!Appointment__c.Date_of_appointment__c}</subject>
+    <textOnly>תאריך: {!Appointment__c.CreatedDate}
+לכבוד: {!Appointment__c.Payer_factor__c}
+הנדון: אישור התחייבות לניתוח - במסגרת הסכם
+שלוחה: {!Appointment__c.Site__c}
+מר/גב&apos; {!Appointment__c.Patient_Account__c} ת.ז {!Appointment__c.Id_Patient__c}
+מועמד לניתוח: {!Appointment__c.Medical_Procedure_Marketing_Name__c}
+{!Appointment__c.Medical_Procedure2__c}
+{!Appointment__c.Medical_Procedure3__c}
+{!Appointment__c.Medical_Procedure4__c}
+
+תאריך מתוכנן לניתוח: {!Appointment__c.Date_of_appointment__c}
+
+רופא מנתח: {!Appointment__c.Doctor_Account__c}
+
+מצ&quot;ב מסמך רפואי , אנא הכינו התחייבות כספית בהתאם, תודה,
+
+הערות:
+בברכה,
+מח&apos; שיווק
+בי&quot;ח אסותא
+טל&apos;: 03-7643200
+פקס: 03-7643239</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

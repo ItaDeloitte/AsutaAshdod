@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>קיט תור למומחים</name>
+    <style>freeForm</style>
+    <subject>תור לרופא מומחה - אסותא</subject>
+    <textOnly>{!Appointment__c.Patient_Account__c} שלום,
+
+
+
+מצורף לנוחיותך קישור לאתר דירוג רופאים עבור {!Appointment__c.Doctor_Account__c.Name}:
+
+
+
+{!Appointment__c.Doctor_Account__c.docadvisor_link__c}
+
+
+
+לכל מידע נוסף ניתן לפנות למוקד אסותא במספר 6474*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

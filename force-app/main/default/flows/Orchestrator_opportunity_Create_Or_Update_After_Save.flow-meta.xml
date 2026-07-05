@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Is_Stage_Closed_Or_Change</name>
+        <label>Is Stage Closed Or Change?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Opportunity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_The_Stage_Is_Closed</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_And_Trig</targetReference>
+            </connector>
+            <label>Yes ,The Stage Is  Closed</label>
+        </rules>
+    </decisions>
+    <description>MB-15.04.2026 PB to flow
+MB-21.04.2026 - Add Automation Name</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Orchestrator- opportunity- Create Or Update- After Save&apos; + &apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <interviewLabel>Orchestrator- opportunity- Create Or Update- After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Orchestrator- opportunity- Create Or Update- After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>rvOpportunity</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Stage_Closed_Or_Change</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Update_Case_And_Trig</name>
+        <label>Update Case And Trig</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+        <flowName>Auto_Update_Opportunity_And_Case</flowName>
+        <inputAssignments>
+            <name>rvOpportunityToUpdate</name>
+            <value>
+                <elementReference>rvOpportunity</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>rvOpportunityTrig</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>rvTrigOpportunityPrior</name>
+            <value>
+                <elementReference>$Record__Prior</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>tvAutomationName</name>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>rvOpportunity</assignToReference>
+            <name>rvOpportunityToUpdate</name>
+        </outputAssignments>
+    </subflows>
+    <variables>
+        <name>rvOpportunity</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

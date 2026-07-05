@@ -1,0 +1,18 @@
+<template>
+  <div class={modalContainerClassName}>
+    <header class="slds-modal__header modal-header">
+      <slot name="header"></slot>
+    </header>
+    <div class="slds-modal__content modal-content">
+      <slot> </slot>
+    </div>
+    <footer class="slds-modal__footer modal-footer">
+      <slot name="footer" onslotchange={slotChangeHandler}></slot>
+    </footer>
+    <template if:true={isLoading}>
+      <slot name="loader">
+        <lightning-spinner variant="brand"></lightning-spinner>
+      </slot>
+    </template>
+  </div>
+</template>

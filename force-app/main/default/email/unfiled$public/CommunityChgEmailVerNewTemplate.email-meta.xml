@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>הודעה שהמשתמשים יקבלו בכתובתם החדשה בעת שינוי כתובת הדוא&quot;ל שלהם</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>קהילות: כתובת דוא&quot;ל חדשה - אימות שינוי דוא&quot;ל</name>
+    <style>none</style>
+    <subject>השלמת שינוי כתובת הדואר האלקטרוני של חשבון {!Community_Name} שלך</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

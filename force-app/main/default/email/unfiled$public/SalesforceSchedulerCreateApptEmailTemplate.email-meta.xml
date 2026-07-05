@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תבנית דואר אלקטרוני לאישור שפעילות שירות נקבעה.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>דוא&quot;ל לאישור קביעת פעילות שירות</name>
+    <style>none</style>
+    <subject>פעילויות השירות שלך הוא נקבעו</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

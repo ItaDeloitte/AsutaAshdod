@@ -1,0 +1,37 @@
+<html lang="en">
+            <body style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.6; color: rgb(51, 51, 51); margin: auto; padding: 20px; height: auto; min-height: auto; margin: 0px;">
+            <p>שלום לצוות של {{Insurance_InsuranceProviderName}},</p>
+
+            <p>
+            אנו פונים אליכם כדי לאמת את ההטבות של אחד ממטופלינו,
+            <strong>{{Patient_Name}}</strong>.<br /></p>
+            <p>להלן סיכום של פרטי המטופל הקיימים:
+            </p>
+
+            <h3 style="font-size: 14px; margin-bottom: 0;">פרטי ביטוח:</h3>
+
+            <ul style="margin-top: 0;">
+            <li><strong>תוכנית החבר:</strong> {{Insurance_MemberPlanName}}</li>
+            <li><strong>מספר החבר:</strong> {{Insurance_MemberPlanMemberNumber}}</li>
+            <li><strong>מספר קבוצה:</strong> {{Insurance_MemberPlanGroupNumber}}</li>
+            <li><strong>סוג תוכנית:</strong> {{Insurance_MemberPlanType}}</li>
+            <li><strong>תקופת כיסוי:</strong> {{Insurance_MemberPlanEffectiveFromDate}} – {{Insurance_MemberPlanEffectiveToDate}}</li>
+            </ul>
+
+            <h3 style="font-size: 14px; margin-bottom: 0;">פרטי מנפיק מרשם ותרופה:</h3>
+
+            <ul style="margin-top: 0;">
+            <li><strong>מנפיק המרשם:</strong> {{HealthcareProvider_Salutation}} {{HealthcareProvider_FirstName}} {{HealthcareProvider_LastName}}</li>
+            <li><strong>תרופה:</strong> {{Prescription_Name}} ({{Prescription_Quantity}} {{Prescription_UnitOfMeasure}} למשך {{Prescription_SupplyDuration}} ימים)</li>
+            <li><strong>בית מרקחת מועדף:</strong> {{Pharmacy_Name}}</li>
+            </ul>
+
+            <p>
+            כדי להבטיח שהמטופל ימשיך לקבל טיפול ללא שיבושים, עלינו לעדכן את פרטי ההטבות של המטופל. פרטים אלה כוללים השתתפות עצמית (copay‏, coinsurance‏, deductible), דרישות לאישור מראש וכל מגבלות הכיסוי. כדי לספק את פרטי ההטבות העדכניים של המטופל, נא למלא את <a href="{{Assessment_Link}}">טופס אימות הטבות ביטוח התרופות</a> עד לתאריך <strong>{{AssessmentForm_Expiration_Date}}</strong>.
+            </p>
+            <p>
+            בכבוד רב,<br />
+            <strong>{{Organization_Name}}</strong>
+            </p>
+            </body>
+            </html>

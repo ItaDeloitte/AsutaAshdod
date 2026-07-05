@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>הדרכה לנבדקת לקראת ביופסיית שד עם מחט עבה TRU-CUT  760922</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>הדרכה לנבדקת לקראת ביופסיית שד עם מחט עבה TRU-CUT  760922</name>
+    <style>freeForm</style>
+    <subject>מסמכים נלווים לבדיקה שלך</subject>
+    <textOnly>{!Appointment__c.Patient_Account__c} שלום,
+
+מצורפים מסמכים נלווים להכנה לביופסית שד</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

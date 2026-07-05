@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New requirement from 20223 story</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Assuta - Kit Inst Ashdod MRI - 20223</name>
+    <style>none</style>
+    <subject>הבדיקה שלך באסותא אשדוד</subject>
+    <textOnly>שלום,
+קיבלת דואר אלקטרוני מבית החולים הציבורי אסותא אשדוד.
+על מנת לצפות בתוכן יש ללחוץ על הקישור המצורף ולהקליד את ת.ז שלך.
+בברכה,
+בית החולים הציבורי אסותא אשדוד</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

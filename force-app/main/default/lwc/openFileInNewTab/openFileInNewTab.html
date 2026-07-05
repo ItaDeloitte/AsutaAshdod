@@ -1,0 +1,8 @@
+<template>
+    <lightning-record-view-form record-id={recordId} object-api-name="File__C">
+        <div if:true={isShownLink}>
+            <a onclick={navigateToFile}>{label.openFileInNewTab}</a>
+        </div> 
+    </lightning-record-view-form>
+    
+</template>

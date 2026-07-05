@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>אישור על העברת פנייה למנהל</name>
+    <style>formalLetter</style>
+    <subject>נציג ביקש אישור להעביר פנייה למנהל</subject>
+    <textOnly>למנהל שלום,
+
+נציג ביקש אישור על העברת פנייה {!Case.CaseNumber} לטיפול מנהל.
+
+אנא אישורך.
+
+למעבר ישיר לפנייה:
+https://assuta.lightning.force.com/lightning/r/Case/{!Case.Id}/view</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,8 @@
+למנהל שלום,
+
+נציג ביקש אישור על העברת פנייה {!Case.CaseNumber} לטיפול מנהל.
+
+אנא אישורך.
+
+למעבר ישיר לפנייה:
+https://assuta.lightning.force.com/lightning/r/Case/{!Case.Id}/view

@@ -1,0 +1,36 @@
+.slds-btn_pad {
+  margin: 5px;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.message {
+  margin: 15px;
+  padding-bottom: 10px;
+  white-space: pre-line;
+}
+
+.error {
+  color: red;
+  margin: 15px;
+  padding-bottom: 10px;
+  white-space: pre-line;
+  font-weight: normal;
+}
+
+.slds-button_neutral, .slds-button--neutral {
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+}
+
+.loaderHolder{
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  width: 55px;
+  vertical-align: middle;
+  white-space: nowrap;
+}

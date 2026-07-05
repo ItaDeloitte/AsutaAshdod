@@ -1,0 +1,49 @@
+:host {
+  /* ! */
+}
+
+.slds-combobox__input,
+.slds-combobox_container {
+  transition: border 0.1s linear, box-shadow 0.1 linear;
+}
+
+.slds-combobox_container {
+  transition: border 0.1s linear, box-shadow 0.1 linear;
+}
+
+.slds-combobox_container.has-custom-error {
+  border: none !important;
+}
+
+.slds-combobox__input {
+  box-shadow: none;
+}
+
+.slds-combobox__input.has-custom-border {
+  box-shadow: 0 0 0 2px #fff inset, 0 0 0 3px #dddbda inset;
+}
+
+.slds-combobox__input.has-custom-error {
+  border: 1px solid #c23934;
+  box-shadow: #c23934 0 0 0 1px inset;
+}
+
+.slds-combobox__input .has-custom-height {
+  height: 32px !important;
+}
+
+.slds-listbox.slds-dropdown {
+  left: 0;
+  right: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.result-search-item .slds-media__figure {
+  margin-top: 0;
+}
+
+.form-error {
+  color: #c23934;
+  display: block;
+}

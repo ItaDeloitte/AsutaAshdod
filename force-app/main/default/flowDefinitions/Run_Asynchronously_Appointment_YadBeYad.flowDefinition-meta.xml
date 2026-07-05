@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>4</activeVersionNumber>
+    <description>US 20145 - קישור בין פניות יד ביד שד לבין פגישות מסוג ביופסיה
+US 20147 - קישור בין פניות יד ביד שד לבין פגישות מתאמת שד
+US 20148 - קישור בין פניית יד ביד שד לבין פגישות מכון אונקולוגי
+
+19.1 - בדיקה אם נמצאה פנייה העונה לתנאים של יד ביד כדי שהפלוא לא ייפול</description>
+    <masterLabel>Run Asynchronously - Appointment - YadBeYad</masterLabel>
+</FlowDefinition>

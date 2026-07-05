@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תבנית דוא&quot;ל זו נוגעת לבקשות לרישום עצמי העוברות עיבוד באצוות לאחר שליחת הבקשה. המשתמש מקבל הודעה זו כשמתרחשת שגיאה בעיבוד הבקשה שלו לרישום עצמי.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Experience Cloud: דוא&quot;ל למשתמש על שגיאת שליחה של מיקרו-אצוות רישום עצמי</name>
+    <style>none</style>
+    <subject>הרישום שלך ל-{!Community_Name} נכשל</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

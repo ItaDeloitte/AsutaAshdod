@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>לינק לאתר דירוג רופאים-קייס</name>
+    <style>freeForm</style>
+    <subject>אסותא - הרופאים המומלצים עבורך</subject>
+    <textOnly>{!Case.first_name_patient__c} שלום,
+
+
+
+להלן פרטי הרופאים המומלצים עבורך:
+
+https://{!$Setup.Form_Titan_Domain__c.Domain__c}/ft2c74c1741566399354614_copy?fld77={!Case.external_id_formtitan__c}#/
+
+
+
+
+לכל מידע נוסף ניתן לפנות למוקד אסותא במספר 6474*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

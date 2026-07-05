@@ -1,0 +1,36 @@
+/* div input[readonly] {
+    padding-left: 1.75rem !important;  
+}
+.slds-input{
+    padding-left: 1.75rem !important;
+}
+
+.slds-input-has-icon .slds-input__icon {
+    top: 56% !important;
+} */
+.slds-icon_small, .slds-icon--small {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 2;
+}
+
+.slds-dropdown-trigger_click.slds-is-open .slds-dropdown{
+    max-height: 7rem;
+    transform: translateX(50%) !important;
+}
+
+.mediaBody{
+    direction: rtl;
+    float: right;
+    width: 99%;
+}
+
+.val2{
+    padding-right: 18%;
+}
+
+.label{
+    direction: rtl;
+    position: absolute;
+    padding-right: 1%;
+}

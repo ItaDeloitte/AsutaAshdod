@@ -1,0 +1,7 @@
+<template>
+  <div class="slds-is-relative button-wrapper">
+    <lightning-button label={labels.ButtonLabel} onclick={buttonClickHandler} disabled={isButtonDisabled}>
+    </lightning-button>
+    <lightning-spinner if:true={isLoading} class="button-loader" size="small"></lightning-spinner>
+  </div>
+</template>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__UtilityBar</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__UtilityBar">
+
+            <property name="dashboardId" type="String" label="Dashboard ID" />
+            <property name="refreshDelay" type="Integer" min="30" default="60"
+                label="Time delay for refresh (in seconds)" />
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Assuta - Medical Records Survey</name>
+    <style>none</style>
+    <subject>אסותא - ניהול ורישום מידע רפואי</subject>
+    <textOnly>Assuta Mail
+
+אסותא - ניהול ורישום מידע רפואי
+
+מטופל/ת יקר/ה,
+
+נודה להקדשת מספר דקות לשאלון קצר אודות שביעות רצונך מהשירות שניתן לך על ידי מחלקת ניהול ורישום מידע רפואי.
+בלינק הבא:
+ https://nemalaplus.assuta.co.il/aws/Survey.aspx?id=1dd9d1db8cf6459c8693c8f3d197d2c8&amp;fsg=e009fe5c-d251-419e-bb1a-099a162dfe5b&amp;ctx=6
+
+בברכה,
+אסותא.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

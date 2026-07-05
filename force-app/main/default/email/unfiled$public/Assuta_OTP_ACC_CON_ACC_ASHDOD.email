@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assuta Mail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<table dir="rtl"
+style="font-family: Arial Hebrew,Arial; direction: rtl; font-size: 1.5em; line-height: 1.6em;">
+<tbody>
+<tr>
+<td colspan="5">
+<div> <img
+src="https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=015J7000000styC&oid=00D4J000000D53o&lastMod=1740490192000"
+style="" height="90" width="500"> </div>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<p
+style="font-family: Arial Hebrew,Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 1.5em; line-height: 1.6em;">
+<be>
+
+            </h1>
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 2em; line-height: 1.6em;">
+
+               אסותא אשדוד- תהליך זיהוי
+            </h1>
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 2em; line-height: 1.6em;">
+שלום {!AccountContactRelation.Account},
+<br>
+<br>
+קיבלנו בקשה למנות את {!AccountContactRelation.Contact} כאיש קשר בחשבונך. על מנת לאשר את
+הבקשה לחצ/י <a href={!AccountContactRelation.formtitan_account_link__c}>כאן</a> 
+
+<br>
+<br>
+תודה,
+<br>
+בית החולים הציבורי אסותא אשדוד
+
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<div style=""> <img
+src="https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=015J7000000styH&oid=00D4J000000D53o&lastMod=1740491230000"
+style="" height="200" width="500"> </div>
+</td>
+</tr>
+
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.button-wrapper {
+  display: inline-flex;
+}
+
+.button-loader {
+  /* position: fixed; */
+  bottom: 10px;
+}

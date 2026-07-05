@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>et_QA_Source_to_Call_Center</name>
+        <label>Set QA Source to פניה מהמוקד</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.QC_Source__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>פניה מהמוקד</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_QA_Source</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Existing_Record_SLA_Value_as_SLAChosen</name>
+        <label>Set Existing Record SLA Value as SLAChosen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.SLA__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tvSLAChosen</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Isnew_or_Ischanged_Created_By_User</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_QA_Source_to_Institute</name>
+        <label>Set QA Source to פניה מהמכון</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.QC_Source__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>פניה מהמכון</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_QA_Source</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Set QA Source to בטיפול מנהל ישיר &amp; Transferred to Manager</description>
+        <name>Set_QA_Source_to_Manager_Filling</name>
+        <label>Set QA Source to בטיפול מנהל ישיר</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Status_QA__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>בטיפול מנהל ישיר</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.manager_transfered__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_SLA_Values</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_QA_Target_Closure_Date_to_CreatedDate_1</name>
+        <label>Set QA Target Closure Date to CreatedDate + 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Date_target__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fCreatedDatePlus1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_QA_Target_Closure_Date_to_CreatedDate_10</name>
+        <label>Set QA Target Closure Date to CreatedDate + 10</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Date_target__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fCreatedDatePlus10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_QA_Target_Closure_Date_to_CreatedDate_3</name>
+        <label>Set QA Target Closure Date to CreatedDate + 3</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Date_target__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fCreatedDatePlus3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Quality_Control_Number</name>
+        <label>Set Quality Control Number Name</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fQualityControlNumber</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Update_SLA_to_Green_Needed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_REcord_Recordtype_to_closeqa</name>
+        <label>Set Record Recordtype to closeqa</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_RecordType_closeqa.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Manager_Filling_Required</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_SLA_to_Green</name>
+        <label>Set SLA to Green</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvSLAChosen</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ירוק</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Update_SLA_to_Orange_Needed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_SLA_to_Orange</name>
+        <label>Set SLA to Orange</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvSLAChosen</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>כתום</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Update_SLA_to_Red_Needed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_SLA_to_Red</name>
+        <label>Set SLA to Red</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvSLAChosen</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>אדום</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_SLAChosen_Empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_SLAChosen_as_Existing_Record_SLA_Value</name>
+        <label>Set SLAChosen as Existing Record SLA Value</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvSLAChosen</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.SLA__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Isnew_or_Ischanged_Created_By_User</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Workflows Rules to Flow : 
+בקרת איכות אדומה
+בקרת איכות ירוקה
+בקרת איכות כתוםה</description>
+        <name>Check_SLA_Values</name>
+        <label>Check SLA Values</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SLA_Green</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tvSLAChosen</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ירוק</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Date_target__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>fCreatedDatePlus10</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_QA_Target_Closure_Date_to_CreatedDate_10</targetReference>
+            </connector>
+            <label>SLA Green</label>
+        </rules>
+        <rules>
+            <name>SLA_Orange</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tvSLAChosen</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>כתום</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Date_target__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>fCreatedDatePlus3</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_QA_Target_Closure_Date_to_CreatedDate_3</targetReference>
+            </connector>
+            <label>SLA Orange</label>
+        </rules>
+        <rules>
+            <name>SLA_Red</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tvSLAChosen</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>אדום</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Date_target__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>fCreatedDatePlus1</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_QA_Target_Closure_Date_to_CreatedDate_1</targetReference>
+            </connector>
+            <label>SLA Red</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>From Workflow Rules : מקור הפנייה - מוקד and מקור הפנייה - מכון</description>
+        <name>Is_Isnew_or_Ischanged_Created_By_User</name>
+        <label>Is Isnew or Ischanged(Created By User) ?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_QA_Source</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>For_Institute</name>
+            <conditionLogic>(1 OR 2) AND ( 3 OR 4 ) AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__r.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Secretary</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__r.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Partner Community User Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QC_Source__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>פניה מהמכון</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_QA_Source_to_Institute</targetReference>
+            </connector>
+            <label>For Institute</label>
+        </rules>
+        <rules>
+            <name>For_Call_Center</name>
+            <conditionLogic>(1 OR 2 ) AND (3 OR 4 OR 5 OR 6 OR 7 OR 8) AND 9</conditionLogic>
+            <conditions>
+                <leftValueReference>ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__r.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New System Admin</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__r.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>משתמש סטנדרטי - חדש</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__r.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מנהל</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__r.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Service user DEV</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__r.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Call_Center_Coordinator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Created_by_User__r.Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Call_Center_Senior_Coordinator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QC_Source__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>פניה מהמוקד</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>et_QA_Source_to_Call_Center</targetReference>
+            </connector>
+            <label>For Call Center</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>From Workflow Rules : מילוי מנהל
+needed t o replace the formula field &quot;Managed?&quot;(not compatible with Before Update) by the formula itself	 
+
+IF( NOT(ISblank( Related_User__c ))&amp;&amp;ISblank(Related_User__r.ManagerId) , TRUE, FALSE)
+
+as the related agent is always not null (condition 1 below),
+ to get the result required False, the ManagerId has to be Not Blank</description>
+        <name>Is_Manager_Filling_Required</name>
+        <label>Is Manager Filling Required?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_SLA_Values</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Manager_Filling_Required</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Related_User__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.manager_transfered__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Related_User__r.ManagerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_QA_Source_to_Manager_Filling</targetReference>
+            </connector>
+            <label>Manager Filling Required</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Mistake_Type_Not_Empty</name>
+        <label>Is Mistake Type Not Empty?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_SLAChosen_Empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Mistake_Type_Not_Empty</name>
+            <conditionLogic>1 AND ( 2 OR 3 OR (4 AND 5))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Mistake_type__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Mistake_type__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SLA__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>fSLA_Empty</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Quality_Control_Number_Name_not_Set</targetReference>
+            </connector>
+            <label>Mistake Type Not Empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Workflows Rules to Flow : open/closed</description>
+        <name>Is_QA_Source</name>
+        <label>Is QA Source בוצע משוב,לא נמצא כטעות,לא רלוונטי</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Manager_Filling_Required</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>QA_Source</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status_QA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>בוצע משוב</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status_QA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>לא נמצא כטעות</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status_QA__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>לא רלוונטי</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_RecordType_closeqa</targetReference>
+            </connector>
+            <label>QA Source בוצע משוב,לא נמצא כטעות,לא רלוונטי</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Workflow עדכן שם בקרת איכות</description>
+        <name>Is_Quality_Control_Number_Name_not_Set</name>
+        <label>Is Quality Control Number Name not Set</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Update_SLA_to_Green_Needed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Quality_Control_Number_Name_not_Set</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>fQualityControlNumber</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Quality_Control_Number</targetReference>
+            </connector>
+            <label>Set Name</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_SLAChosen_Empty</name>
+        <label>Is SLAChosen Empty?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Set_Existing_Record_SLA_Value_as_SLAChosen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>SLAChosen Set</defaultConnectorLabel>
+        <rules>
+            <name>SLAChosen_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>tvSLAChosen</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_SLAChosen_as_Existing_Record_SLA_Value</targetReference>
+            </connector>
+            <label>SLAChosen Empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Update_SLA_to_Green_Needed</name>
+        <label>Is Update SLA to Green Needed?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Update_SLA_to_Orange_Needed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_SLA_to_Green_Needed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fSetSLAtoGreenConditions</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SLA__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>ירוק</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_SLA_to_Green</targetReference>
+            </connector>
+            <label>Update SLA to Green Needed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Update_SLA_to_Orange_Needed</name>
+        <label>Is Update SLA to Orange Needed?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Update_SLA_to_Red_Needed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_SLA_to_Orange_Needed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fSetSLAOrangeConditions</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SLA__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>כתום</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_SLA_to_Orange</targetReference>
+            </connector>
+            <label>Update SLA to Orange Needed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Update_SLA_to_Red_Needed</name>
+        <label>Update SLA to Red Needed?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_SLAChosen_Empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_SLA_to_Red_Needed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fSetSLAtoRedConditions</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SLA__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>אדום</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_SLA_to_Red</targetReference>
+            </connector>
+            <label>Update SLA to Red Needed</label>
+        </rules>
+    </decisions>
+    <description>Monday 2845183817
+WF TO FLOW - Quality Control Number
+LA 26/04/2026</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Orchestrator- Quality Control Number - Create Or Update- Before Save&apos;+&apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <formulas>
+        <name>fCreatedDatePlus1</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!$Record.CreatedDate}) + 1</expression>
+    </formulas>
+    <formulas>
+        <name>fCreatedDatePlus10</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!$Record.CreatedDate}) + 10</expression>
+    </formulas>
+    <formulas>
+        <name>fCreatedDatePlus3</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!$Record.CreatedDate}) + 3</expression>
+    </formulas>
+    <formulas>
+        <name>fQualityControlNumber</name>
+        <dataType>String</dataType>
+        <expression>IF(
+NOT(ISNEW()),
+TEXT(DAY( DATEVALUE({!$Record.CreatedDate}) )) &amp;&quot;/&quot;&amp; TEXT( MONTH(DATEVALUE({!$Record.CreatedDate}) )) &amp;&quot;/&quot;&amp; TEXT(YEAR(DATEVALUE({!$Record.CreatedDate}) ))&amp;&quot; &quot;&amp; text({!$Record.Mistake_type__c}),
+/* in Before Save, the created date for a new record is not available */
+TEXT(DAY({!$Flow.CurrentDate})) &amp;&quot;/&quot;&amp; TEXT(MONTH({!$Flow.CurrentDate}))  &amp;&quot;/&quot;&amp; TEXT(YEAR({!$Flow.CurrentDate})) &amp;&quot; &quot;&amp; text({!$Record.Mistake_type__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fSetSLAOrangeConditions</name>
+        <dataType>Boolean</dataType>
+        <expression>OR( 
+/*1 - פניית שירות */
+AND( 
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;פניית שירות&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;)
+)
+),
+/*2 - לא בוצע אימות פרטים */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;לא בוצע אימות פרטים&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;התור הוזז&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;)
+)
+),
+/*3 - קביעה שגויה */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;קביעה שגויה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+),
+/*4 -ביטול תור שגוי */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;ביטול תור שגוי&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+)
+),
+/*5 - העברת פניה שגויה&quot; /לא הועברה פניה למכון */
+AND(
+OR( 
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;העברת פניה שגויה&quot;),
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;לא הועברה פניה למכון&quot;)
+),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;התור הוזז&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;)
+)
+),
+/*6 - מסירת מידע שגוי */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;מסירת עלויות שגויה&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;התור הוזז&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+)
+),
+/*7 -אי מסירה של הנחיות */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;אי מסירה של הנחיות&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;התור הוזז&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+)
+),
+/*8 - הגשה לא נכונה */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;הגשה לא נכונה&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+)
+),
+/*9 - שליחת קיט למערכת */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;שליחת קיט למערכת&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+)
+),
+/*10 - המלצת רופא לא נכונה */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;המלצת רופא לא נכונה&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+)
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fSetSLAtoGreenConditions</name>
+        <dataType>Boolean</dataType>
+        <expression>AND( 
+OR(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;העברת פניה שגויה&quot;)  ,
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;לא בוצע אימות פרטים&quot;),
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;לא הועברה פניה למכון&quot;),
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;פניית שירות&quot;)
+         ),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+      )</expression>
+    </formulas>
+    <formulas>
+        <name>fSetSLAtoRedConditions</name>
+        <dataType>Boolean</dataType>
+        <expression>OR( 
+/*1 - פניית שירות */
+AND( 
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;פניית שירות&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;מטופל נשלח הביתה ללא ביצוע הבדיקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;התור הוזז&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות המטופל&quot;)
+)
+),
+/*2 - לא בוצע אימות פרטים */
+AND(  
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;לא בוצע אימות פרטים&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;מטופל נשלח הביתה ללא ביצוע הבדיקה&quot;)
+)
+),
+/*3 - קביעה שגויה */
+AND( 
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;קביעה שגויה&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;מטופל נשלח הביתה ללא ביצוע הבדיקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;התור הוזז&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;)
+)
+),
+/*4 -ביטול תור שגוי */
+AND( 
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;ביטול תור שגוי&quot;),
+OR(
+ISPICKVAL({!$Record.Consequences__c}, &quot;טעות צוות המכון / מרפאה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;מטופל נשלח הביתה ללא ביצוע הבדיקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;התור הוזז&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;)
+)
+),
+/*5 - העברת פניה שגויה&quot; /לא הועברה פניה למכון */
+AND(
+OR(  
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;לא הועברה פניה למכון&quot;),
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;העברת פניה שגויה&quot;)
+),
+OR(  
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;מטופל נשלח הביתה ללא ביצוע הבדיקה&quot;)
+)
+),
+/*6 - מסירת מידע שגוי/אי מסירה של הנחיות */
+AND(
+OR(  
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;מסירת מידע שגוי&quot;),
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;אי מסירה של הנחיות&quot;)
+),
+OR(  
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;מטופל נשלח הביתה ללא ביצוע הבדיקה&quot;)
+)
+),
+/*7 -הגשה לא נכונה */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;אהגשה לא נכונה&quot;),
+OR(  
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;מטופל נשלח הביתה ללא ביצוע הבדיקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;)
+)
+),
+/*8 - שליחת קיט למערכת */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;שליחת קיט למערכת&quot;),
+OR(  
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;)
+)
+),
+/*9 - הצעת מחיר שגויה */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;הצעת מחיר שגויה&quot;),
+OR( 
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;שיחת התנצלות&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נוצר עיכוב במחלקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;לא נגרם נזק&quot;)
+)
+),
+/*10 - המלצת רופא לא נכונה */
+AND(
+ISPICKVAL({!$Record.Mistake_type__c}, &quot;המלצת רופא לא נכונה&quot;),
+OR(  
+ISPICKVAL({!$Record.Consequences__c}, &quot;זיכוי כספי&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;מטופל נשלח הביתה ללא ביצוע הבדיקה&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;נהתור הוזז&quot;),
+ISPICKVAL({!$Record.Consequences__c}, &quot;טרטור המטופל/ת&quot;)
+)
+),
+{!$Record.Feedback_Desc__c}= &quot;התקבל ציון נמוך מ80 בסקר&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fSLA_Empty</name>
+        <dataType>Boolean</dataType>
+        <expression>ISPICKVAL({!$Record.SLA__c}, &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>ISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Orchestrator-Quality Control Number - Create Or Update- Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Orchestrator-Quality Control Number - Create Or Update- Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_RecordType_closeqa</name>
+        <label>Get RecordType closeqa</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_REcord_Recordtype_to_closeqa</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>closeqa</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Mistake_Type_Not_Empty</targetReference>
+        </connector>
+        <object>QualityControl__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Used as internal SLA as it used more than once</description>
+        <name>tvSLAChosen</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title={title} icon-name={icon}>
+        <div class="slds-m-around_medium">
+            <lightning-record-form object-api-name={caseObject} fields={fields} columns="2" onsubmit={handleSubmit} onsuccess={handleSuccess} onerror={handleError}>
+            </lightning-record-form>
+        </div>
+
+        <div if-true={successMsg} class="slds-media__body slds-truncate" style="text-align: center;color: green;font-weight: bold;">
+          <span class="slds-text-heading_small card-title">{successMsg}</span>
+        </div>
+        <div if-true={errorMsg} class="slds-media__body slds-truncate" style="text-align: center;color: red;font-weight: bold;">
+          <span class="slds-text-heading_small card-title">{errorMsg}</span>
+        </div>
+
+        <div class="slds-text-align_center">
+            <button class="slds-button slds-button_brand" disabled={isTransferButtonDisabled}
+                    onclick={handleRefreshView}>פניה חדשה</button>
+        </div>
+
+        <lightning-spinner if:true={isLoading} variant="brand" size="small"></lightning-spinner>
+    </lightning-card>
+</template>

@@ -1,0 +1,105 @@
+<template>
+  <template if:true={showModal}>
+    <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large"
+             aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+      <div class="slds-modal__container slds-is-relative">
+        <header class="slds-modal__header">
+          <!-- if:true={showModel}-->
+          <lightning-button-icon icon-name="utility:close" class="slds-float_right" onclick={closeModal}
+                                 alternative-text="close"></lightning-button-icon>
+          <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">{label.modalPaymentMakePayment}</h2>
+          <!-- <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">{modalHeading}</h2> -->
+        </header>
+        <div class="slds-modal__content slds-p-around_large slds-is-relative" id="modal-content-id-1">
+          <template if:true={showPrePayment}>            
+            <div class="section-0">
+              <div class="input-0">
+                <lightning-input type="checkbox" data-id="checkbox" label={label.modalPaymentUseDefaultAddress}
+                                 onchange={onAddressAutoFill}></lightning-input>
+              </div>
+            </div>
+            <div class="section-1">
+              <div class="input-0">
+                <lightning-input type="checkbox" data-id="checkbox" label={label.modalPaymentUseDefaultEmail}
+                                 onchange={onEmailAutoFill}></lightning-input>
+              </div>
+
+            </div>
+
+
+            <div class="section-2">
+              <div class="input-1">
+                <lightning-input type="text" value={country} label={label.modalPaymentCountry} required
+                                 onchange={onCountryChange}></lightning-input>
+              </div>
+              <div class="input-2">
+                <lightning-input type="text" value={city} label={label.modalPaymentCity} required
+                                 onchange={onCityChange}></lightning-input>
+              </div>
+              <div class="input-2">
+                <lightning-input type="text" value={street} label={label.modalPaymentStreet} required
+                                 onchange={onStreetChange}></lightning-input>
+              </div>
+            </div>
+
+            <div class="input-4">
+                <lightning-radio-group name="radioGroup" label={label.modalPaymentType} options={options}
+                                value={paymentType} type="radio" onchange={onPaymentTypeChanged}>
+                </lightning-radio-group>      
+          </div>
+
+            <div class="section-2">
+              <div class="input-3">
+                <lightning-input type="email" value={email} label={label.modalPaymentEmail} required
+                                 onchange={onEmailChange}></lightning-input>
+              </div>
+            </div>
+            <div class="section-2">
+              <div class="input-3">
+                <lightning-input class="preLoaded" type="number" value={Deductibles} name="amount" data-id="amount"
+                                 label={label.modalPaymentAmount} min="0" required onchange={onAmountChange}
+                                 disabled={payAmountLocked}></lightning-input>
+                <template if:true={isDiscount}>
+                  <lightning-input class="preLoaded" type="number" value={priceAfterDiscount} name="priceAfterDiscount" data-id="priceAfterDiscount"
+                                    label= {label.modalPaymentPriceAfterDiscount} min="0" required 
+                                    disabled=false>
+                  </lightning-input>
+                  <lightning-input class="preLoaded" type="text" value={noteForDiscount} name="note" data-id="note"
+                                    label={label.modalPaymentNoteForDiscount}
+                                    disabled=false>
+                  </lightning-input>
+              </template>
+                <lightning-combobox name="numOfPayments" label={label.modalPaymentNumPayments} value={numOfPayments}
+                                    options={paymentOptions} placeholder={label.modalPaymentChooseNumPayments}
+                                    onchange={onNumOfPaymentsChange} disabled={paymentsAmountLocked} required>
+                </lightning-combobox>
+                <lightning-input type="text" data-id="checkbox" value={ActionDetails} disabled
+                                 label={label.modalPaymentDescription} onchange={onRemarkChange}>
+                </lightning-input>
+
+                <!-- <lightning-input class="preLoaded" type="number" value="1" min="1"  max="36" name="numOfPayments" data-id="numOfPayments" label="מספר תשלומים" onchange={onNumOfPaymentsChange} ></lightning-input> -->
+              </div>
+              <!-- <lightning-card  title="Payment screen" icon-name="custom:custom59">
+              </lightning-card> -->
+            </div>
+          </template>
+          <template if:true={showIframe}>
+            <div class="slds-m-around_medium">
+              <iframe id="cgiframe" width="560" height="400" src={fullUrl}></iframe>
+            </div>
+          </template>
+          <lightning-spinner if:true={spinnerOn} alternative-text="Loading..." size="medium">
+          </lightning-spinner>
+        </div>
+        <footer class="slds-modal__footer">
+          <lightning-button variant="neutral" label='המשך' disabled={isSubmitButtonDisabled} onclick={submitModal}
+                            class="slds-m-left_x-small">
+          </lightning-button>
+          <lightning-button variant="neutral" label='סגור' onclick={closeModal} class="slds-m-left_x-small">
+          </lightning-button>
+        </footer>
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+</template>

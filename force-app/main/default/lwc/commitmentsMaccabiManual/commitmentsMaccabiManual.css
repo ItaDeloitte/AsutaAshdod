@@ -1,0 +1,32 @@
+.slds-button_neutral {
+    padding: 0;
+}
+
+.message {
+    margin: 15px;
+    padding-bottom: 10px;
+    white-space: pre-line;
+    display: inline-flex;
+  }
+  
+  .error {
+    color: red;
+    margin: 15px;
+    padding-bottom: 10px;
+    white-space: pre-line;
+    font-weight: normal;
+    display: inline-flex;
+  }
+
+  .loaderHolder{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 55px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.slds-spinner:before, .slds-spinner:after, .slds-spinner__dot-a:before, .slds-spinner__dot-b:before, .slds-spinner__dot-a:after, .slds-spinner__dot-b:after {
+  background: white !important;
+}

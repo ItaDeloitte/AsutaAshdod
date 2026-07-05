@@ -1,0 +1,85 @@
+<template>
+    <lightning-card title={label.displayHistoryCall} icon-name="custom:custom14">
+      <div class="slds-m-around_medium btn">
+        <lightning-button if:false={historicCalls} label={label.displayHistoryCall}  onclick={getHistoricCalls}></lightning-button>
+      </div>
+  
+      <div class="resultWrapper" >
+        <template if:true={historicCalls} >
+          <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container modalContainer">
+               <header class="slds-modal__header">
+                  <h2 id="modal-heading-01"  class="slds-text-heading_medium slds-hyphenate">{label.displayHistoryCall}</h2>
+               </header>
+               <table class="slds-table slds-table_bordered slds-border_left slds-border_right">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                      <th class="" scope="col">
+                        <div class="slds-truncate"  title={label.PatientId}>{label.PatientId}</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title={label.CallComments}>{label.CallComments}</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title={label.PatientPhone}>{label.PatientPhone}</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title={label.CallDate}>{label.CallDate}</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title={label.CallResults}>{label.PhoneForCallback}</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title={label.CallResults}>{label.CallResults}</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title={label.CallResults}>{label.CallOwner}</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title={label.CallResults}>{label.CallbackStatus}</div>
+                      </th>
+                      <th class="" scope="col">
+                        <div class="slds-truncate" title={label.CallResults}>{label.CallDirection}</div>
+                      </th>
+
+
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                <template for:each={historicCalls} for:item="his">
+                    <!-- <p key={his.ExternalId}>{his.Patient_ID__c}</p> -->
+                    <tr class="slds-hint-parent" key={his.ExternalId}>
+                        <td>{his.Patient_ID__c}</td>
+                        <td>{his.Comments__c}</td>
+                        <td>{his.Patient_Phone_No__c}</td>
+                        <!-- <td>{his.Phone_for_callback__c}</td> -->
+                        <td>{his.Call_date__c}</td>
+                        <td>{his.Phone_for_callback__c}</td>
+                        <td>{his.Call_Results__c}</td>
+                        <td>{his.Owner__c}</td>
+                        <td>{his.Callback_status__c}</td>
+                        <td>{his.Direction__c}</td>
+                      </tr>
+                </template>
+                </tbody>
+            </table>
+               <footer class="slds-modal__footer">
+                <lightning-button 
+                label={label.closeHistoryModal}
+                  title="Close"
+                  onclick={closeModal} 
+                  class="slds-m-left_x-small">
+              </lightning-button>
+               </footer>
+            </div>
+         </section>
+
+          </template>
+          <lightning-card if:true={error}>{error}</lightning-card>
+      </div>
+  
+  
+    </lightning-card>
+  </template>

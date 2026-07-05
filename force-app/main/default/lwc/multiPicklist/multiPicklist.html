@@ -1,0 +1,47 @@
+<template>
+
+  <div class="slds-form-element">
+    <label if:false={labelHidden} class={labelStyle} for="combobox-input-1">
+      <abbr if:true={required} class="slds-required" title="required">* </abbr>{label}
+    </label>
+    <div class="slds-form-element__control" onclick={formElementClickHandler}>
+      <div class="slds-combobox_container">
+
+        <div class={mainDivClass} aria-expanded="false" aria-haspopup="listbox" role="combobox">
+          <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+            <input type="text" class="slds-input slds-combobox__input multipicklist__input" id="combobox-input-1"
+                   autocomplete="off" role="textbox" readonly disabled={disabled} value={valueText}
+                   placeholder={placeholder} onclick={inputClickHandler} onkeydown={inputKeyDownHandler}
+                   onkeyup={inputKeyUpHandler} dir="rtl">
+            <!-- <div onclick={inputClickHandler} class="slds-input slds-combobox__input" style="padding-left: .5rem;"
+                 id="combobox-div-1" aria-controls="listbox-id-1">{valueText}
+            </div> -->
+            <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+              <lightning-icon icon-name="utility:down" size="x-small" alternative-text="Approved"></lightning-icon>
+            </span>
+          </div>
+          <div class={dropdownOuterStyle} role="listbox">
+            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+              <c-multi-select-item if:false={selectAllDisabled} value="" label={selectAllLabel} selected={isAllSelected}
+                                   onselected={allSelectClickHandler}></c-multi-select-item>
+              <template for:each={options} for:item="option">
+                <c-multi-select-item key={option.key} value={option.value} label={option.label} is-ordered={isOrderedOptionsPicklist}
+                                     list-of-order={listOfOrder} option-style={option.style} icon={option.icon}
+                                     selected={option.selected} onselected={handleSelectedClick}></c-multi-select-item>
+
+              </template>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div if:true={hasError} class="slds-has-error">
+        <div role="alert" class="form-error slds-form-element__help">
+          {error}
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</template>

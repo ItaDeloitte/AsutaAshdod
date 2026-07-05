@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Is_the_Site_Ashdod</name>
+        <label>Is the Site Ashdod</label>
+        <locationX>158</locationX>
+        <locationY>150</locationY>
+        <defaultConnectorLabel>It is not Ashdod</defaultConnectorLabel>
+        <rules>
+            <name>It_is_Ashdod</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site_Public_Inquiry__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>33</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetCases</targetReference>
+            </connector>
+            <label>It is Ashdod</label>
+        </rules>
+    </decisions>
+    <description>קישור בין פניית ציבור חדשה לפניית ציבור ישנה עם אותו הנושא, תת נושא ומטופל לפניות של אשדוד</description>
+    <environments>Default</environments>
+    <interviewLabel>PublicInquires {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PublicInquires Find Parent Case</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>מביא את כל הקייסים של המטופל עם אותו נושא</description>
+        <name>GetCases</name>
+        <label>GetCases</label>
+        <locationX>167</locationX>
+        <locationY>420</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Case_ParentId</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Subject_Public_Inquiry__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Subject_Public_Inquiry__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.RecordTypeId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <object>Case</object>
+        <outputReference>OneCase</outputReference>
+        <queriedFields>Id</queriedFields>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case_ParentId</name>
+        <label>Update Case ParentId</label>
+        <locationX>382</locationX>
+        <locationY>419</locationY>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>OneCase.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>408</locationX>
+        <locationY>37</locationY>
+        <connector>
+            <targetReference>Is_the_Site_Ashdod</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula> !ISNULL({!$Record.AccountId}) &amp;&amp;
+ {!$Record.RecordType.DeveloperName} = &apos;PublicInquiries&apos; &amp;&amp;
+ !ISNULL({!$Record.Site_Public_Inquiry__c})</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>660</triggerOrder>
+    <variables>
+        <description>כל הקייסים שנמצאו של המטופל עם אותו נושא,תת נושא ורקורד טייפ פניות הציבור</description>
+        <name>Cases</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <description>שומר קייס אחד מכל הקייסים שמצא כדי לקשר אליו</description>
+        <name>OneCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<div style="direction: rtl;"><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">עבור המטופלת&nbsp;{!Case.Account}&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">ת.ז&nbsp;</span><font face="arial">{!Case.id_patient__c}&nbsp;</font><span style="font-family: arial; font-size: 12pt;">אשר נתגלה אצלה ממצא חשוד בשד,&nbsp;</span><span style="font-family: arial; font-size: 12pt;">הוחלט שלא להמשיך בתהליך בירור המחלה והמשך טיפול בבית החולים אסותא.</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; direction: rtl;">בהתאם לזאת נסגר הטיפול בתיק.</div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

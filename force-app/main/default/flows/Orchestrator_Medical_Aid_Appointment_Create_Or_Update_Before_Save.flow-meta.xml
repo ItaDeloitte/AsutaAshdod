@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Medical_Aid_Appointment</name>
+        <label>Assign Medical Aid Appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fGeneratedAppointmentName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>New_Or_Update</name>
+        <label>New Or Update?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Update</defaultConnectorLabel>
+        <rules>
+            <name>New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Medical_Aid_Appointment</targetReference>
+            </connector>
+            <label>New</label>
+        </rules>
+    </decisions>
+    <description>IS 6/4/2026 2942877240 - Update Medical Aid Appointment Name  (Orchestrator- Medical Aid Appointment- Create Or Update- Before Save)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Orchestrator- Medical Aid Appointment- Create Or Update- Before Save&apos;+&apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <formulas>
+        <name>fGeneratedAppointmentName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Appointment__r.Name} &amp; &quot; &quot; &amp; {!$Record.Patient__r.FirstName} &amp; &quot; &quot; &amp; {!$Record.Patient__r.LastName} &amp; &quot;-&quot; &amp; TEXT({!$Record.Type_of_Disability__c})</expression>
+    </formulas>
+    <formulas>
+        <name>fISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Orchestrator- Medical Aid Appointment- Create Or Update- Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Orchestrator- Medical Aid Appointment- Create Or Update- Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>New_Or_Update</targetReference>
+        </connector>
+        <object>Medical_Aid_Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,21 @@
+<p>
+  Hi Team,
+</p>
+
+<p>
+ A new user was created  without  a role, Please find details below.
+</p>
+
+<p><b>Username:</b>{!User.Username}</p>
+<p><b>First Name:</b>{!User.FirstName}</p>
+<p><b>Last Name:</b> {!User.LastName}</p>
+
+<p>
+  <b>Click here: </b><a href={!User.Link} />user Link</a>
+</p>
+
+<p>
+  Thank You,<br/>
+</p>
+
+</div>

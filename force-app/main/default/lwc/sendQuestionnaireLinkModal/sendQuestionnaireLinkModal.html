@@ -1,0 +1,25 @@
+<!--
+ - Created by danilvinnik on 15.09.2022.
+ -->
+
+<!-- Send Questionnaire Link Modal -->
+<template>
+    <c-modal-container is-loading={isLoading}>
+        <div slot="header">
+            <h2 class="slds-modal__title slds-hyphenate">{labels.title}</h2>
+        </div>
+        <div class="inner-content slds-p-around_medium">
+            <lightning-datatable columns={columns}
+                                 data={tableRows}
+                                 key-field="id"
+                                 onrowselection={handleRowSelection}
+                                 max-row-selection=1
+            >
+            </lightning-datatable>
+        </div>
+        <div slot="footer">
+            <lightning-button class="slds-button" onclick={cancelClickHandler} label={labels.cancel}></lightning-button>
+            <lightning-button class="slds-button" variant="brand" disabled={isButtonDisabled} label={labels.save} onclick={saveClickHandler}></lightning-button>
+        </div>
+    </c-modal-container>
+</template>
