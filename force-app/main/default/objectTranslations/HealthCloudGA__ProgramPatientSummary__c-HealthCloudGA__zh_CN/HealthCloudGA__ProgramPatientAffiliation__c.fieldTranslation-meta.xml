@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>计划患者从属关系</label>
+    <name>HealthCloudGA__ProgramPatientAffiliation__c</name>
+    <relationshipLabel>计划患者摘要</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Местоположение на карантината</label>
+    <name>HealthCloudGA__QuarantineLocation__c</name>
+    <relationshipLabel>Оценки на жилищни условия</relationshipLabel>
+</CustomFieldTranslation>
