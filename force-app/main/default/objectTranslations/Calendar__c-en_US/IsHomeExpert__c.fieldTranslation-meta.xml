@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- יומן אסותא מומחים - בית הרופאים, מרפאות רופאים בתוך אסותא. רופאים שישבו באסותא עם שרותים מלאים, היומנים שלהם ינהלו בתוך שידורית. --></help>
+    <label><!-- Is Home Expert --></label>
+    <name>IsHomeExpert__c</name>
+</CustomFieldTranslation>

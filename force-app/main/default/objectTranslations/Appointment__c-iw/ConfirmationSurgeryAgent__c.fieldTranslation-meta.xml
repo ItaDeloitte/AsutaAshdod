@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אישור הגעה לניתוח ע&quot;י נציג</label>
+    <name>ConfirmationSurgeryAgent__c</name>
+    <picklistValues>
+        <masterLabel>אין מענה ע&quot;י המטופל/ת</masterLabel>
+        <translation><!-- אין מענה ע&quot;י המטופל/ת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא ידוע</masterLabel>
+        <translation><!-- לא ידוע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מאשר/ת הגעה לניתוח</masterLabel>
+        <translation><!-- לא מאשר/ת הגעה לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאשר/ת הגעה לניתוח</masterLabel>
+        <translation><!-- מאשר/ת הגעה לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוח בוטל/נדחה/בוצע</masterLabel>
+        <translation><!-- ניתוח בוטל/נדחה/בוצע --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

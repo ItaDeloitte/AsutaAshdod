@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ris Answer Status --></label>
+    <name>RisAnswerStatus__c</name>
+    <picklistValues>
+        <masterLabel>Addendum</masterLabel>
+        <translation><!-- Addendum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arrived</masterLabel>
+        <translation><!-- Arrived --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CancelTechRepReqd</masterLabel>
+        <translation><!-- CancelTechRepReqd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CheckingIn</masterLabel>
+        <translation><!-- CheckingIn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completion</masterLabel>
+        <translation><!-- Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dictated</masterLabel>
+        <translation><!-- Dictated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discontinued</masterLabel>
+        <translation><!-- Discontinued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ExamDone</masterLabel>
+        <translation><!-- ExamDone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ExamDoneTechOnly</masterLabel>
+        <translation><!-- ExamDoneTechOnly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ReportDrafted</masterLabel>
+        <translation><!-- ReportDrafted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled</masterLabel>
+        <translation><!-- Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed1</masterLabel>
+        <translation><!-- Signed1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Started</masterLabel>
+        <translation><!-- Started --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transcribed</masterLabel>
+        <translation><!-- Transcribed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Void</masterLabel>
+        <translation><!-- Void --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

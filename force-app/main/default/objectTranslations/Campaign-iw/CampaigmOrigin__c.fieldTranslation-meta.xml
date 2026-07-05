@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מקורות הגעה</label>
+    <name>CampaigmOrigin__c</name>
+    <picklistValues>
+        <masterLabel>WhatsApp</masterLabel>
+        <translation><!-- WhatsApp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אימייל</masterLabel>
+        <translation><!-- אימייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אתר</masterLabel>
+        <translation><!-- אתר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוקטור</masterLabel>
+        <translation><!-- דוקטור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טלפון</masterLabel>
+        <translation><!-- טלפון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדיקו</masterLabel>
+        <translation><!-- מדיקו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פייסבוק</masterLabel>
+        <translation><!-- פייסבוק --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

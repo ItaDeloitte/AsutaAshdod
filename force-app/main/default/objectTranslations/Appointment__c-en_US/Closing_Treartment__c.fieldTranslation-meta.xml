@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Closing Treatment --></label>
+    <name>Closing_Treartment__c</name>
+    <picklistValues>
+        <masterLabel>אין מענה מצד המטופל</masterLabel>
+        <translation><!-- אין מענה מצד המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניין לעבור ניתוח באסותא</masterLabel>
+        <translation><!-- לא מעוניין לעבור ניתוח באסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוח עם רופא אחר</masterLabel>
+        <translation><!-- ניתוח עם רופא אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נקבע ניתוח חדש</masterLabel>
+        <translation><!-- נקבע ניתוח חדש --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

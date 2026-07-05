@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of biopsy required --></label>
+    <name>Type_of_biopsy_required__c</name>
+    <picklistValues>
+        <masterLabel>Biopsy after MRI</masterLabel>
+        <translation><!-- Biopsy after MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FNA under ultrasound guidance (breast)</masterLabel>
+        <translation><!-- FNA under ultrasound guidance (breast) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI-guided biopsy</masterLabel>
+        <translation><!-- MRI-guided biopsy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mammotome</masterLabel>
+        <translation><!-- Mammotome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trucut</masterLabel>
+        <translation><!-- Trucut --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

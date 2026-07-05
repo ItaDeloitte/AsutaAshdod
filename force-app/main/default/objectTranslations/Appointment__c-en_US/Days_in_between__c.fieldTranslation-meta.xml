@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- מספר ימים שעברו בין בקשה לזיכוי ועד לביצוע הזיכוי (לא בימי עסקים) --></help>
+    <label><!-- Days in between --></label>
+    <name>Days_in_between__c</name>
+</CustomFieldTranslation>

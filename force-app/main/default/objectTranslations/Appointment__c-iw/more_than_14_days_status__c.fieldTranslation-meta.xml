@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- more than 14 days status --></label>
+    <name>more_than_14_days_status__c</name>
+    <picklistValues>
+        <masterLabel>Agent</masterLabel>
+        <translation><!-- Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approval process</masterLabel>
+        <translation><!-- Approval process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Done</masterLabel>
+        <translation><!-- Done --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- כחלק מפרויקט מנכ&quot;ל לטיפול בהתחייבויות של מטופלים שמגיעים לפעולות גסטרו דרך ביטוחים. סימון שטופל ע&quot;י נציג מיצוי זכויות - סימון ידני --></help>
+    <label><!-- Handled Fulfillment Representative --></label>
+    <name>HandledByRFR__c</name>
+</CustomFieldTranslation>

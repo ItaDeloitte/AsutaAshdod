@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Result --></label>
+    <name>CallResult__c</name>
+    <picklistValues>
+        <masterLabel>אין תשובה</masterLabel>
+        <translation><!-- אין תשובה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הושארה הודעה קולית</masterLabel>
+        <translation><!-- הושארה הודעה קולית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתינה</masterLabel>
+        <translation><!-- ממתינה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מענה</masterLabel>
+        <translation><!-- מענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נשלח SMS</masterLabel>
+        <translation><!-- נשלח SMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ענה וניתק לפני מענה נציג</masterLabel>
+        <translation><!-- ענה וניתק לפני מענה נציג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תפוס</masterLabel>
+        <translation><!-- תפוס --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

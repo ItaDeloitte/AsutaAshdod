@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Subject Public Inquiry --></label>
+    <name>Sub_Subject_2__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי ביצוע השוואה</masterLabel>
+        <translation><!-- אי ביצוע השוואה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי חזרה למטופל</masterLabel>
+        <translation><!-- אי חזרה למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי קבלת טופס התחייבות</masterLabel>
+        <translation><!-- אי קבלת טופס התחייבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי שינוי פרטים אישיים לבקשת המטופל/ת</masterLabel>
+        <translation><!-- אי שינוי פרטים אישיים לבקשת המטופל/ת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי שליחת דיסק/מסמכים רפואיים</masterLabel>
+        <translation><!-- אי שליחת דיסק/מסמכים רפואיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי תמורה על תשלום</masterLabel>
+        <translation><!-- אי תמורה על תשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישורים תקציביים</masterLabel>
+        <translation><!-- אישורים תקציביים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול בדיקה</masterLabel>
+        <translation><!-- ביטול בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול תור</masterLabel>
+        <translation><!-- ביטול תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול/שינוי  מועד ניתוח</masterLabel>
+        <translation><!-- ביטול/שינוי  מועד ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול/שינוי מועד ניתוח ללא ידיעת המטופל</masterLabel>
+        <translation><!-- ביטול/שינוי מועד ניתוח ללא ידיעת המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בעיות באתר האינטרנט</masterLabel>
+        <translation><!-- בעיות באתר האינטרנט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דיסק שלא נפתח</masterLabel>
+        <translation><!-- דיסק שלא נפתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דיסק תקול</masterLabel>
+        <translation><!-- דיסק תקול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות על חיוב בגין טיפול\בדיקה</masterLabel>
+        <translation><!-- השגות על חיוב בגין טיפול\בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיוב שגוי(טכני)</masterLabel>
+        <translation><!-- חיוב שגוי(טכני) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא בוטל הפקדון</masterLabel>
+        <translation><!-- לא בוטל הפקדון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נסגר החשבון עם המטופל</masterLabel>
+        <translation><!-- לא נסגר החשבון עם המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא קיבל חשבונית / קבלה</masterLabel>
+        <translation><!-- לא קיבל חשבונית / קבלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין להחזר כספי</masterLabel>
+        <translation><!-- ממתין להחזר כספי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קבלת מידע</masterLabel>
+        <translation><!-- קבלת מידע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קובץ זימון לא נפתח</masterLabel>
+        <translation><!-- קובץ זימון לא נפתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קובץ פענוח לא נפתח</masterLabel>
+        <translation><!-- קובץ פענוח לא נפתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שינוי באופן הטיפול/רופא מטפל ללא ידיעת מטופל</masterLabel>
+        <translation><!-- שינוי באופן הטיפול/רופא מטפל ללא ידיעת מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שינוי מועד בדיקה ללא עדכון המטופל</masterLabel>
+        <translation><!-- שינוי מועד בדיקה ללא עדכון המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שינוי רופא מטפל ללא ידיעת מטופל</masterLabel>
+        <translation><!-- שינוי רופא מטפל ללא ידיעת מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תודה</masterLabel>
+        <translation><!-- תודה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיאום פגישה</masterLabel>
+        <translation><!-- תיאום פגישה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תלונה</masterLabel>
+        <translation><!-- תלונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תלונת מטופל</masterLabel>
+        <translation><!-- תלונת מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקלה בהודעת SMS לזימון תור</masterLabel>
+        <translation><!-- תקלה בהודעת SMS לזימון תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקלה בהודעת SMS לניתוח</masterLabel>
+        <translation><!-- תקלה בהודעת SMS לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקלה בהודעת SMS לפענוח חתום</masterLabel>
+        <translation><!-- תקלה בהודעת SMS לפענוח חתום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקלה בכניסה לאזור האישי</masterLabel>
+        <translation><!-- תקלה בכניסה לאזור האישי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

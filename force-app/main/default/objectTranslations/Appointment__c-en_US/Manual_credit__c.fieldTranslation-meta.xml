@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Manual credit --></label>
+    <name>Manual_credit__c</name>
+    <picklistValues>
+        <masterLabel>50% Refund</masterLabel>
+        <translation><!-- 50% Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Refund</masterLabel>
+        <translation><!-- Full Refund --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Agent Reason To Cancel --></label>
+    <name>agent_reason_to_cancel__c</name>
+    <picklistValues>
+        <masterLabel>אין הפניה לבדיקה</masterLabel>
+        <translation><!-- אין הפניה לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה לא אושרה</masterLabel>
+        <translation><!-- בדיקה לא אושרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל ע&quot;י חדר ניתוח</masterLabel>
+        <translation><!-- בוטל ע&quot;י חדר ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל ע&quot;י נציג</masterLabel>
+        <translation><!-- בוטל ע&quot;י נציג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל ע&quot;י רופא</masterLabel>
+        <translation><!-- בוטל ע&quot;י רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצע במקום אחר</masterLabel>
+        <translation><!-- בוצע במקום אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול המטופל</masterLabel>
+        <translation><!-- ביטול המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה התחייבות</masterLabel>
+        <translation><!-- חסרה התחייבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא ביצע הכנה לבדיקה</masterLabel>
+        <translation><!-- לא ביצע הכנה לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא אפוטרופוס</masterLabel>
+        <translation><!-- ללא אפוטרופוס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל חולה</masterLabel>
+        <translation><!-- מטופל חולה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל נפטר</masterLabel>
+        <translation><!-- מטופל נפטר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל/ת מסרב/ת לעשות את הבדיקה</masterLabel>
+        <translation><!-- מטופל/ת מסרב/ת לעשות את הבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכשיר לא תקין</masterLabel>
+        <translation><!-- מכשיר לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נבדק לא הגיע</masterLabel>
+        <translation><!-- נבדק לא הגיע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נציג לא קבע תור בצורה תקינה</masterLabel>
+        <translation><!-- נציג לא קבע תור בצורה תקינה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא\טכנאי לא הגיע</masterLabel>
+        <translation><!-- רופא\טכנאי לא הגיע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור נדחה</masterLabel>
+        <translation><!-- תור נדחה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

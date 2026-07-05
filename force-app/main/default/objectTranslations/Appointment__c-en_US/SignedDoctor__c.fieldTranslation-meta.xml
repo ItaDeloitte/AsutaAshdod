@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Doctor Signed Appointment --></label>
+    <name>SignedDoctor__c</name>
+    <relationshipLabel><!-- Appointments (רופא שחתם על הבדיקה) --></relationshipLabel>
+</CustomFieldTranslation>

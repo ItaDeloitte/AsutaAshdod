@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אירוע</label>
+    <name>EventID__c</name>
+    <picklistValues>
+        <masterLabel>Distributed to Personal Area</masterLabel>
+        <translation>הפצה לאזור אישי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Read by Doctor</masterLabel>
+        <translation>קריאת המסמך על ידי הרופא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Read by Patient</masterLabel>
+        <translation>קריאה ע&quot;י מטופל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Update</masterLabel>
+        <translation>עדכון המטופל</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Stage --></label>
+    <name>Partner_Stage__c</name>
+    <picklistValues>
+        <masterLabel>החלטה</masterLabel>
+        <translation><!-- החלטה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול ראשוני והשלמת פרטים</masterLabel>
+        <translation><!-- טיפול ראשוני והשלמת פרטים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניהול מסמכים</masterLabel>
+        <translation><!-- ניהול מסמכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סגור - ללא החלטה</masterLabel>
+        <translation><!-- סגור - ללא החלטה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

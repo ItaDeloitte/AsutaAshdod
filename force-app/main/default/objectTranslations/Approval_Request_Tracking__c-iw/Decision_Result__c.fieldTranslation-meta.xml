@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- תוצאת ההחלטה --></label>
+    <name>Decision_Result__c</name>
+    <picklistValues>
+        <masterLabel>אושר</masterLabel>
+        <translation><!-- אושר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדחה</masterLabel>
+        <translation><!-- נדחה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

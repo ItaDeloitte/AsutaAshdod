@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- שדה זה משקף את הגורם המבטח של המטופל לפעולה הרפואית --></help>
+    <label><!-- DEL גורם משלם --></label>
+    <name>Payer_factor__c</name>
+</CustomFieldTranslation>

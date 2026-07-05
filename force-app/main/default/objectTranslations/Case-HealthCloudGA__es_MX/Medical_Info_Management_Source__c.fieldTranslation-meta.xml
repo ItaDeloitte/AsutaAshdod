@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Medical Info Management Source --></label>
+    <name>Medical_Info_Management_Source__c</name>
+    <picklistValues>
+        <masterLabel>DATABANK</masterLabel>
+        <translation><!-- DATABANK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אימג&apos;סטור</masterLabel>
+        <translation><!-- אימג&apos;סטור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא</masterLabel>
+        <translation><!-- אסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אפוטרופוס</masterLabel>
+        <translation><!-- אפוטרופוס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ארכיברים</masterLabel>
+        <translation><!-- ארכיברים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטוח לאומי</masterLabel>
+        <translation><!-- ביטוח לאומי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית דין לעבודה</masterLabel>
+        <translation><!-- בית דין לעבודה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים</masterLabel>
+        <translation><!-- בית חולים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברה לאיסוף מידע- בזק</masterLabel>
+        <translation><!-- חברה לאיסוף מידע- בזק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברה לאיסוף מידע- ערן מור</masterLabel>
+        <translation><!-- חברה לאיסוף מידע- ערן מור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברה לאיסוף מידע- פתרונות</masterLabel>
+        <translation><!-- חברה לאיסוף מידע- פתרונות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברה לאיסוף מידע- צ.ר מידע רפואי בע&quot;מ</masterLabel>
+        <translation><!-- חברה לאיסוף מידע- צ.ר מידע רפואי בע&quot;מ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברה לאיסוף מידע- רפואון</masterLabel>
+        <translation><!-- חברה לאיסוף מידע- רפואון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברה לאיסוף מידע- תיקל</masterLabel>
+        <translation><!-- חברה לאיסוף מידע- תיקל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל</masterLabel>
+        <translation><!-- מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משרד עורכי דין</masterLabel>
+        <translation><!-- משרד עורכי דין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צד שלישי</masterLabel>
+        <translation><!-- צד שלישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא בקהילה</masterLabel>
+        <translation><!-- רופא בקהילה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רשם בריאטרי</masterLabel>
+        <translation><!-- רשם בריאטרי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

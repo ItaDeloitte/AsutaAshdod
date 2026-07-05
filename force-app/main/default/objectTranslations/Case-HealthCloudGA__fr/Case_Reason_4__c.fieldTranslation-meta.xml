@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Reason 4 --></label>
+    <name>Case_Reason_4__c</name>
+    <picklistValues>
+        <masterLabel>חסר טופס</masterLabel>
+        <translation><!-- חסר טופס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר צד</masterLabel>
+        <translation><!-- חסר צד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר תאריך קבלה/ ניתוח/ שחרור</masterLabel>
+        <translation><!-- חסר תאריך קבלה/ ניתוח/ שחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדכון ידני ללא עדכון בתיק קליני</masterLabel>
+        <translation><!-- עדכון ידני ללא עדכון בתיק קליני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בתיעוד מהלך האשפוז</masterLabel>
+        <translation><!-- פער בתיעוד מהלך האשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בתיעוד מקרים מיוחדים באשפוז</masterLabel>
+        <translation><!-- פער בתיעוד מקרים מיוחדים באשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צד שגוי</masterLabel>
+        <translation><!-- צד שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תאריך שחרור ידני</masterLabel>
+        <translation><!-- תאריך שחרור ידני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תאריך שחרור לא תקין</masterLabel>
+        <translation><!-- תאריך שחרור לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיעוד אבחנות לא מלא/לא תקין</masterLabel>
+        <translation><!-- תיעוד אבחנות לא מלא/לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיעוד פעולה לא מלא/לא תקין</masterLabel>
+        <translation><!-- תיעוד פעולה לא מלא/לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תן המלצות בשחרור לתרופה עבורה רשומה רגישות בתיק המטופל</masterLabel>
+        <translation><!-- תן המלצות בשחרור לתרופה עבורה רשומה רגישות בתיק המטופל --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

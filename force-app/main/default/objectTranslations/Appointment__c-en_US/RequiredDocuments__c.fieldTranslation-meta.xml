@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Required Documents --></label>
+    <name>RequiredDocuments__c</name>
+    <picklistValues>
+        <masterLabel>בדיקות דם – כימיה/ספירה</masterLabel>
+        <translation><!-- בדיקות דם – כימיה/ספירה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקת דימות</masterLabel>
+        <translation><!-- בדיקת דימות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקת שתן</masterLabel>
+        <translation><!-- בדיקת שתן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יעוץ מומחה</masterLabel>
+        <translation><!-- יעוץ מומחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צילום א.ק.ג</masterLabel>
+        <translation><!-- צילום א.ק.ג --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

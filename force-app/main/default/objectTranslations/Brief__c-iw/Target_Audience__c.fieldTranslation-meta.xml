@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>קהל יעד</label>
+    <name>Target_Audience__c</name>
+    <picklistValues>
+        <masterLabel>אסותא אישי</masterLabel>
+        <translation><!-- אסותא אישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בכירים</masterLabel>
+        <translation><!-- בכירים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דיגיטל</masterLabel>
+        <translation><!-- דיגיטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הקלדות</masterLabel>
+        <translation><!-- הקלדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיפה - מוריה</masterLabel>
+        <translation><!-- חיפה - מוריה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טלאול</masterLabel>
+        <translation><!-- טלאול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יסמין</masterLabel>
+        <translation><!-- יסמין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לילך</masterLabel>
+        <translation><!-- לילך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מומחים</masterLabel>
+        <translation><!-- מומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוחים</masterLabel>
+        <translation><!-- ניתוחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נרקיס</masterLabel>
+        <translation><!-- נרקיס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סביון</masterLabel>
+        <translation><!-- סביון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סחלב</masterLabel>
+        <translation><!-- סחלב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרימיום</masterLabel>
+        <translation><!-- פרימיום --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

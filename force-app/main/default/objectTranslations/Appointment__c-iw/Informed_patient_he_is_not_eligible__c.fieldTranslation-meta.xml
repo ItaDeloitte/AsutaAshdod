@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מטופל עודכן כי לא זכאי להחזר</label>
+    <name>Informed_patient_he_is_not_eligible__c</name>
+    <picklistValues>
+        <masterLabel>אמת</masterLabel>
+        <translation><!-- אמת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שקר</masterLabel>
+        <translation><!-- שקר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

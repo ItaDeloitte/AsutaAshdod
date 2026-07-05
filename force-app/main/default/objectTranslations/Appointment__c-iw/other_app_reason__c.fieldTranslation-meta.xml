@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- במידה וסיבת דחיפות התור היא אחר אנא מלא את הסיבה --></help>
+    <label>סיבת דחיפות הפגישת האחרת</label>
+    <name>other_app_reason__c</name>
+</CustomFieldTranslation>

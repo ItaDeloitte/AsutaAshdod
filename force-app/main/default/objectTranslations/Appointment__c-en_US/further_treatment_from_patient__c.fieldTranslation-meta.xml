@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Patient Further Treatment --></label>
+    <name>further_treatment_from_patient__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה</masterLabel>
+        <translation><!-- בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול מחליף ניתוח</masterLabel>
+        <translation><!-- טיפול מחליף ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיאום ניתוח</masterLabel>
+        <translation><!-- תיאום ניתוח --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

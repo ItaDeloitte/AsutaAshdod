@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- בחר את נושא הפנייה --></help>
+    <label><!-- Case Subject --></label>
+    <name>Field4__c</name>
+</CustomFieldTranslation>

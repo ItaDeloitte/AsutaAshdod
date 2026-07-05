@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אירוע בוצע על ידי</label>
+    <name>EventFactorID__c</name>
+    <picklistValues>
+        <masterLabel>Automated Process</masterLabel>
+        <translation>תהליך אוטומטי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Center</masterLabel>
+        <translation>מוקד</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decoding Doctor</masterLabel>
+        <translation>רופא מפענח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Execute Doctor</masterLabel>
+        <translation>רופא מבצע</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referring Doctor</masterLabel>
+        <translation>רופא מפנה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

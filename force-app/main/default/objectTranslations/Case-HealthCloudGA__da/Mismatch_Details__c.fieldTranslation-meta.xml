@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mismatch Details --></label>
+    <name>Mismatch_Details__c</name>
+    <picklistValues>
+        <masterLabel>Additional Exam Required (MRI/US)</masterLabel>
+        <translation><!-- Additional Exam Required (MRI/US) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate Record</masterLabel>
+        <translation><!-- Duplicate Record --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient without recommendation</masterLabel>
+        <translation><!-- Patient without recommendation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Routine Follow-up</masterLabel>
+        <translation><!-- Routine Follow-up --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

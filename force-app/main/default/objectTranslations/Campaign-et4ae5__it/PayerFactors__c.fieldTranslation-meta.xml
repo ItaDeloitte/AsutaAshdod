@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PayerFactors --></label>
+    <name>PayerFactors__c</name>
+    <picklistValues>
+        <masterLabel>כללית</masterLabel>
+        <translation><!-- כללית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לאומית</masterLabel>
+        <translation><!-- לאומית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאוחדת</masterLabel>
+        <translation><!-- מאוחדת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי</masterLabel>
+        <translation><!-- מכבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ענף תקציבים</masterLabel>
+        <translation><!-- ענף תקציבים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי</masterLabel>
+        <translation><!-- פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תייר</masterLabel>
+        <translation><!-- תייר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Conversation with the Doctor --></label>
+    <name>Conversation_with_the_Doctor__c</name>
+    <picklistValues>
+        <masterLabel>Doctor Updated</masterLabel>
+        <translation><!-- Doctor Updated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response</masterLabel>
+        <translation><!-- No Response --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

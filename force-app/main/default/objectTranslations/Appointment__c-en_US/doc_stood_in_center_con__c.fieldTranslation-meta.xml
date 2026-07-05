@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Doctor Stood In Center Conditions? --></label>
+    <name>doc_stood_in_center_con__c</name>
+    <picklistValues>
+        <masterLabel>אישר</masterLabel>
+        <translation><!-- אישר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא אישר</masterLabel>
+        <translation><!-- לא אישר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

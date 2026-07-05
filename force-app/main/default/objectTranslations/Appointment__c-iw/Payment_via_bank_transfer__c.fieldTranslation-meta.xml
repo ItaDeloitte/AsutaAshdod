@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- האם התשלום בוצע באמצעות העברה בנקאית? --></help>
+    <label>תשלום באמצעות העברה בנקאית</label>
+    <name>Payment_via_bank_transfer__c</name>
+</CustomFieldTranslation>

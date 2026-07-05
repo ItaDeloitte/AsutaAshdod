@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Decision --></label>
+    <name>call_decision__c</name>
+    <picklistValues>
+        <masterLabel>טיפול המשך - אונקולוגי</masterLabel>
+        <translation><!-- טיפול המשך - אונקולוגי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול המשך - ניתוח</masterLabel>
+        <translation><!-- טיפול המשך - ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול המשך אחרי ניתוח - ייעוץ</masterLabel>
+        <translation><!-- טיפול המשך אחרי ניתוח - ייעוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יש למטופלת רופא כירורג</masterLabel>
+        <translation><!-- יש למטופלת רופא כירורג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופלת לא מעוניינת בהמשך תהליך</masterLabel>
+        <translation><!-- מטופלת לא מעוניינת בהמשך תהליך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופלת מעוניינת בהמלצה על כירורג</masterLabel>
+        <translation><!-- מטופלת מעוניינת בהמלצה על כירורג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופלת מעוניינת לחשוב/להמתין</masterLabel>
+        <translation><!-- מטופלת מעוניינת לחשוב/להמתין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיום טיפול</masterLabel>
+        <translation><!-- סיום טיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא לא מעוניין בהמשך תהליך</masterLabel>
+        <translation><!-- רופא לא מעוניין בהמשך תהליך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא מבקש לתאם פגישה</masterLabel>
+        <translation><!-- רופא מבקש לתאם פגישה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא מודיע עצמאית</masterLabel>
+        <translation><!-- רופא מודיע עצמאית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא מעוניין בהמשך תהליך</masterLabel>
+        <translation><!-- רופא מעוניין בהמשך תהליך --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

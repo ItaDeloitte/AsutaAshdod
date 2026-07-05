@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מערכת מקור</label>
+    <name>EventSourceSystem__c</name>
+    <picklistValues>
+        <masterLabel>AssutaDoc</masterLabel>
+        <translation>AssutaDoc</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maccabi</masterLabel>
+        <translation>מכבי</translation>
+    </picklistValues>
+</CustomFieldTranslation>

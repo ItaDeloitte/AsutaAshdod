@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call center treatment status --></label>
+    <name>Call_center_treatment_status__c</name>
+    <picklistValues>
+        <masterLabel>מטופל טרם עודכן</masterLabel>
+        <translation><!-- מטופל טרם עודכן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל עודכן</masterLabel>
+        <translation><!-- מטופל עודכן --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

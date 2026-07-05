@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס המשך טיפול</label>
+    <name>Digital_Followup_Status__c</name>
+    <picklistValues>
+        <masterLabel>Compatible with follow-up treatment</masterLabel>
+        <translation>תואם המשך טיפול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In treatment</masterLabel>
+        <translation>בטיפול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No follow-up treatment</masterLabel>
+        <translation>אין המשך טיפול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No response</masterLabel>
+        <translation>אין מענה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested</masterLabel>
+        <translation>לא מעוניין</translation>
+    </picklistValues>
+</CustomFieldTranslation>

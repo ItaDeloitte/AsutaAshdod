@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>תת סיבת ביטול הניתוח</label>
+    <name>Surgery_Canacel_Reason__c</name>
+    <picklistValues>
+        <masterLabel>BMI</masterLabel>
+        <translation><!-- BMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>איחור הרופא המנתח</masterLabel>
+        <translation><!-- איחור הרופא המנתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין צורך בניתוח</masterLabel>
+        <translation><!-- אין צורך בניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות חסרות</masterLabel>
+        <translation><!-- בדיקות חסרות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בעיה בציוד</masterLabel>
+        <translation><!-- בעיה בציוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דת (שמירת שבת)</masterLabel>
+        <translation><!-- דת (שמירת שבת) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החתמה על הסכמה מדעת</masterLabel>
+        <translation><!-- החתמה על הסכמה מדעת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>העדר מוכנות חדר ניתוח</masterLabel>
+        <translation><!-- העדר מוכנות חדר ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפניה</masterLabel>
+        <translation><!-- הפניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפסקת עישון</masterLabel>
+        <translation><!-- הפסקת עישון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התחייבות</masterLabel>
+        <translation><!-- התחייבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התחרט</masterLabel>
+        <translation><!-- התחרט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקף חרדה, לחץ</masterLabel>
+        <translation><!-- התקף חרדה, לחץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זיהום</masterLabel>
+        <translation><!-- זיהום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס המנתח</masterLabel>
+        <translation><!-- יחס המנתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס לקוי</masterLabel>
+        <translation><!-- יחס לקוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס צוות אסותא</masterLabel>
+        <translation><!-- יחס צוות אסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדדים לא תקינים</masterLabel>
+        <translation><!-- מדדים לא תקינים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל מדווח על חולי</masterLabel>
+        <translation><!-- מטופל מדווח על חולי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדרש טרום בשנית</masterLabel>
+        <translation><!-- נדרש טרום בשנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדרש יעוץ מומחה</masterLabel>
+        <translation><!-- נדרש יעוץ מומחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סוכר גבוה</masterLabel>
+        <translation><!-- סוכר גבוה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיכוב בהמתנה</masterLabel>
+        <translation><!-- עיכוב בהמתנה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פקדון</masterLabel>
+        <translation><!-- פקדון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צום</masterLabel>
+        <translation><!-- צום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קורונה</masterLabel>
+        <translation><!-- קורונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שינוי במצב הרפואי</masterLabel>
+        <translation><!-- שינוי במצב הרפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תרופות</masterLabel>
+        <translation><!-- תרופות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תרופות לפני ניתוח</masterLabel>
+        <translation><!-- תרופות לפני ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשלומים</masterLabel>
+        <translation><!-- תשלומים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

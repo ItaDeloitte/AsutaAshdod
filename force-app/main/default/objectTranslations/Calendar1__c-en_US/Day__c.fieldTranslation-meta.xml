@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- יום בשבוע --></label>
+    <name>Day__c</name>
+    <picklistValues>
+        <masterLabel>חמישי</masterLabel>
+        <translation><!-- חמישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ראשון</masterLabel>
+        <translation><!-- ראשון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רביעי</masterLabel>
+        <translation><!-- רביעי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שבת</masterLabel>
+        <translation><!-- שבת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שישי</masterLabel>
+        <translation><!-- שישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שלישי</masterLabel>
+        <translation><!-- שלישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שני</masterLabel>
+        <translation><!-- שני --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

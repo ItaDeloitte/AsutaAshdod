@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Means of transmitting information --></label>
+    <name>Means_of_transmitting_information__c</name>
+    <picklistValues>
+        <masterLabel>דוא&quot;ל</masterLabel>
+        <translation><!-- דוא&quot;ל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הגעה למכון</masterLabel>
+        <translation><!-- הגעה למכון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לינק</masterLabel>
+        <translation><!-- לינק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פקס</masterLabel>
+        <translation><!-- פקס --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

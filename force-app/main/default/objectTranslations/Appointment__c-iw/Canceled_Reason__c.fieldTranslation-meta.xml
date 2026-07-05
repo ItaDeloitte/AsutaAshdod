@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבת הביטול</label>
+    <name>Canceled_Reason__c</name>
+    <picklistValues>
+        <masterLabel>א.ס לא בוצע</masterLabel>
+        <translation><!-- א.ס לא בוצע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי הכנה לאסטמה</masterLabel>
+        <translation><!-- אי הכנה לאסטמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>איחוד תיקים</masterLabel>
+        <translation><!-- איחוד תיקים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין בדיקות דם</masterLabel>
+        <translation><!-- אין בדיקות דם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין הפניה לבדיקה</masterLabel>
+        <translation><!-- אין הפניה לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין מלווה לבדיקה</masterLabel>
+        <translation><!-- אין מלווה לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין מענה בווידואי הגעה לתור</masterLabel>
+        <translation><!-- אין מענה בווידואי הגעה לתור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין צורך בפענוח נביגציה</masterLabel>
+        <translation><!-- אין צורך בפענוח נביגציה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אלרגיה ליוד</masterLabel>
+        <translation><!-- אלרגיה ליוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה גרסה</masterLabel>
+        <translation><!-- בדיקה גרסה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה לא אושרה</masterLabel>
+        <translation><!-- בדיקה לא אושרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות חסרות/לא תקינות</masterLabel>
+        <translation><!-- בדיקות חסרות/לא תקינות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל דרך האתר</masterLabel>
+        <translation><!-- בוטל דרך האתר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל ע&quot;י חדר ניתוח</masterLabel>
+        <translation><!-- בוטל ע&quot;י חדר ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל ע&quot;י נציג</masterLabel>
+        <translation><!-- בוטל ע&quot;י נציג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל ע&quot;י רופא</masterLabel>
+        <translation><!-- בוטל ע&quot;י רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל תיק בתפנית</masterLabel>
+        <translation><!-- בוטל תיק בתפנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצע במקום אחר</masterLabel>
+        <translation><!-- בוצע במקום אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצעה השלמה, פענוח בביקור החדש</masterLabel>
+        <translation><!-- בוצעה השלמה, פענוח בביקור החדש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול המטופל</masterLabel>
+        <translation><!-- ביטול המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול המטופל + זיכוי</masterLabel>
+        <translation><!-- ביטול המטופל + זיכוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול על ידי המחלקה</masterLabel>
+        <translation><!-- ביטול על ידי המחלקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דיסק לא תקין</masterLabel>
+        <translation><!-- דיסק לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוטמע דיסק</masterLabel>
+        <translation><!-- הוטמע דיסק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הזמנה כפולה/בדיקה בוצעה</masterLabel>
+        <translation><!-- הזמנה כפולה/בדיקה בוצעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הכנה לקויה/ תרופות חסרות</masterLabel>
+        <translation><!-- הכנה לקויה/ תרופות חסרות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>העדרות מביקור</masterLabel>
+        <translation><!-- העדרות מביקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמן המתנה ארוך</masterLabel>
+        <translation><!-- זמן המתנה ארוך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה התחייבות</masterLabel>
+        <translation><!-- חסרה התחייבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא ביצע הכנה לבדיקה</masterLabel>
+        <translation><!-- לא ביצע הכנה לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא בצום</masterLabel>
+        <translation><!-- לא בצום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא אפוטרופוס</masterLabel>
+        <translation><!-- ללא אפוטרופוס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחיקת ממתינים</masterLabel>
+        <translation><!-- מחיקת ממתינים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל חולה</masterLabel>
+        <translation><!-- מטופל חולה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל/ת מסרב/ת לעשות את הבדיקה</masterLabel>
+        <translation><!-- מטופל/ת מסרב/ת לעשות את הבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיועד למיחזור</masterLabel>
+        <translation><!-- מיועד למיחזור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכשיר לא תקין</masterLabel>
+        <translation><!-- מכשיר לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממוגרפיה לא בוצעה</masterLabel>
+        <translation><!-- ממוגרפיה לא בוצעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מצב ביטחוני</masterLabel>
+        <translation><!-- מצב ביטחוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרקם לא מתאים</masterLabel>
+        <translation><!-- מרקם לא מתאים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משבר קורונה</masterLabel>
+        <translation><!-- משבר קורונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משקל</masterLabel>
+        <translation><!-- משקל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתכות/קוצב לב</masterLabel>
+        <translation><!-- מתכות/קוצב לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נבדק לא הגיע</masterLabel>
+        <translation><!-- נבדק לא הגיע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נבדק מתחרט (חשש)</masterLabel>
+        <translation><!-- נבדק מתחרט (חשש) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נכשל</masterLabel>
+        <translation><!-- נכשל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נקבע תור שגוי</masterLabel>
+        <translation><!-- נקבע תור שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סימולציה</masterLabel>
+        <translation><!-- סימולציה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיכוב בהמתנה לבדיקה</masterLabel>
+        <translation><!-- עיכוב בהמתנה לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פג תוקף הזמנה</masterLabel>
+        <translation><!-- פג תוקף הזמנה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח בביקור העליון/תחתון</masterLabel>
+        <translation><!-- פענוח בביקור העליון/תחתון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קלסטרופוביה</masterLabel>
+        <translation><!-- קלסטרופוביה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא\טכנאי לא הגיע</masterLabel>
+        <translation><!-- רופא\טכנאי לא הגיע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תאריך מחזור לא רלוונטי</masterLabel>
+        <translation><!-- תאריך מחזור לא רלוונטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור הוחלף</masterLabel>
+        <translation><!-- תור הוחלף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור הוקדם</masterLabel>
+        <translation><!-- תור הוקדם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור הוקדם מהאזור האישי</masterLabel>
+        <translation><!-- תור הוקדם מהאזור האישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור נדחה</masterLabel>
+        <translation><!-- תור נדחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור נכשל לא קיים במערכת מקור</masterLabel>
+        <translation><!-- תור נכשל לא קיים במערכת מקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור עודכן מהאזור האישי</masterLabel>
+        <translation><!-- תור עודכן מהאזור האישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור פיקטיבי</masterLabel>
+        <translation><!-- תור פיקטיבי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

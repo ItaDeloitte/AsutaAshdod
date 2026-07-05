@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטאטוס callBack</label>
+    <name>CALLBACK_status__c</name>
+    <picklistValues>
+        <masterLabel>ביטול CALLBACK</masterLabel>
+        <translation><!-- ביטול CALLBACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשת לקוח לא לעבור לנציג בחיוג חוזר</masterLabel>
+        <translation><!-- בקשת לקוח לא לעבור לנציג בחיוג חוזר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>העברה למוניטור</masterLabel>
+        <translation><!-- העברה למוניטור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חזרה להמתנה בCallback</masterLabel>
+        <translation><!-- חזרה להמתנה בCallback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחיקת הרשומה</masterLabel>
+        <translation><!-- מחיקת הרשומה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניסיון חיוג</masterLabel>
+        <translation><!-- ניסיון חיוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רישום לשירות ה-CALLBACK</masterLabel>
+        <translation><!-- רישום לשירות ה-CALLBACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שליחת SMS</masterLabel>
+        <translation><!-- שליחת SMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שליחת VOICEMAIL</masterLabel>
+        <translation><!-- שליחת VOICEMAIL --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

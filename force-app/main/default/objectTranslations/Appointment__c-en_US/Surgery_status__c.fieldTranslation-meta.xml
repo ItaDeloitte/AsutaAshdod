@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Surgery status --></label>
+    <name>Surgery_status__c</name>
+    <picklistValues>
+        <masterLabel>בוטל</masterLabel>
+        <translation><!-- בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדחה</masterLabel>
+        <translation><!-- נדחה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סגירת הטיפול</label>
+    <name>urgent_Type__c</name>
+    <picklistValues>
+        <masterLabel>מיוחד</masterLabel>
+        <translation><!-- מיוחד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רפואי</masterLabel>
+        <translation><!-- רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירותי</masterLabel>
+        <translation><!-- שירותי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

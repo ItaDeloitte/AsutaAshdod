@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- שדה בחירה שתמאר סיבה עבור ביטול הזמנה של חדר פרטי --></help>
+    <label><!-- Cancelation Reason Private Room --></label>
+    <name>CancelationReasonPrivateRoom__c</name>
+    <picklistValues>
+        <masterLabel>Not interested - No hospitalization for surgery</masterLabel>
+        <translation><!-- Not interested - No hospitalization for surgery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested - Patient does not know if he will stay</masterLabel>
+        <translation><!-- Not interested - Patient does not know if he will stay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested - in being alone in the room</masterLabel>
+        <translation><!-- Not interested - in being alone in the room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested – few days of hospitalization</masterLabel>
+        <translation><!-- Not interested – few days of hospitalization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested – high price</masterLabel>
+        <translation><!-- Not interested – high price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested – will get back to us if relevant</masterLabel>
+        <translation><!-- Not interested – will get back to us if relevant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patients called on the day of surgery to reserve a private room</masterLabel>
+        <translation><!-- Patients called on the day of surgery to reserve a private room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The surgery is performed at a site where the call center does not reserve rooms (Haifa, Ashdod, Be&apos;er Sheva).</masterLabel>
+        <translation><!-- The surgery is performed at a site where the call center does not reserve rooms (Haifa, Ashdod, Be&apos;er Sheva). --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

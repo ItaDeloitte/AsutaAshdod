@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Food type --></label>
+    <name>Food_type__c</name>
+    <picklistValues>
+        <masterLabel>גלאט</masterLabel>
+        <translation><!-- גלאט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טבעוני</masterLabel>
+        <translation><!-- טבעוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ילדים</masterLabel>
+        <translation><!-- ילדים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צמחוני</masterLabel>
+        <translation><!-- צמחוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רגיל</masterLabel>
+        <translation><!-- רגיל --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

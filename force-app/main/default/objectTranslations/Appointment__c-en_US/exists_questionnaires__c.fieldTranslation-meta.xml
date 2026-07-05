@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Existing Questionnaires --></label>
+    <name>exists_questionnaires__c</name>
+    <picklistValues>
+        <masterLabel>לא קיימים שאלונים</masterLabel>
+        <translation><!-- לא קיימים שאלונים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קיים שאלון אחד או יותר</masterLabel>
+        <translation><!-- קיים שאלון אחד או יותר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

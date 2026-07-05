@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- יש לתאם את החוסרים ללא מידע קליני, אדמיניסטרטיבי בלבד. --></help>
+    <label>פרטים</label>
+    <name>Details__c</name>
+</CustomFieldTranslation>
