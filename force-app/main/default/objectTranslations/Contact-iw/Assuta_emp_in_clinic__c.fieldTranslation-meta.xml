@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>תפקיד העובד במרפאה</label>
+    <name>Assuta_emp_in_clinic__c</name>
+    <picklistValues>
+        <masterLabel>מזכיר/ה</masterLabel>
+        <translation><!-- מזכיר/ה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מנהל/ת</masterLabel>
+        <translation><!-- מנהל/ת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מנכ&quot;לית</masterLabel>
+        <translation><!-- מנכ&quot;לית --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

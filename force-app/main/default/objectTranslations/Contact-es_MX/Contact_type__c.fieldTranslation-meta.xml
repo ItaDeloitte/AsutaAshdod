@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contact Type --></label>
+    <name>Contact_type__c</name>
+    <picklistValues>
+        <masterLabel>מטופל ואנשי קשר למטופל</masterLabel>
+        <translation><!-- מטופל ואנשי קשר למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עובד אסותא</masterLabel>
+        <translation><!-- עובד אסותא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>קביעות</label>
+    <name>Permanency__c</name>
+    <picklistValues>
+        <masterLabel>Permanent</masterLabel>
+        <translation>קבוע</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary</masterLabel>
+        <translation>זמני</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- מהות השינוי --></label>
+    <name>Change_Reason__c</name>
+    <picklistValues>
+        <masterLabel>בוצע תשלום</masterLabel>
+        <translation><!-- בוצע תשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הושלם תהליך (התקבלה החלטה)</masterLabel>
+        <translation><!-- הושלם תהליך (התקבלה החלטה) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לכמה נשלחו מסמכים</masterLabel>
+        <translation><!-- לכמה נשלחו מסמכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה נסגרה</masterLabel>
+        <translation><!-- פניה נסגרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה סומנה כרגישה</masterLabel>
+        <translation><!-- פניה סומנה כרגישה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה יוצאת</masterLabel>
+        <translation><!-- שיחה יוצאת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה יוצאת במענה</masterLabel>
+        <translation><!-- שיחה יוצאת במענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה יוצאת ללא מענה</masterLabel>
+        <translation><!-- שיחה יוצאת ללא מענה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

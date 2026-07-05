@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג העזר</label>
+    <name>Type_of_Assist__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הכוונה קולית – לעיוורים</masterLabel>
+        <translation><!-- הכוונה קולית – לעיוורים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הליכון הידראולי</masterLabel>
+        <translation><!-- הליכון הידראולי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיית שירות</masterLabel>
+        <translation><!-- חיית שירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חניה נגישה לרכב גבוה</masterLabel>
+        <translation><!-- חניה נגישה לרכב גבוה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חניה נגישה לרכב רגיל</masterLabel>
+        <translation><!-- חניה נגישה לרכב רגיל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול ללא מסיכה</masterLabel>
+        <translation><!-- טיפול ללא מסיכה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כיסא גלגלים</masterLabel>
+        <translation><!-- כיסא גלגלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מנוף הרמה</masterLabel>
+        <translation><!-- מנוף הרמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמך מונגש קולי/מוגדל/ברייל</masterLabel>
+        <translation><!-- מסמך מונגש קולי/מוגדל/ברייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מערכת עזר לשמיעה</masterLabel>
+        <translation><!-- מערכת עזר לשמיעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עובד מלווה</masterLabel>
+        <translation><!-- עובד מלווה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עזר בוטל</masterLabel>
+        <translation><!-- עזר בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קביים</masterLabel>
+        <translation><!-- קביים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחת מנהל לתיאום העזר</masterLabel>
+        <translation><!-- שיחת מנהל לתיאום העזר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תרגום שפת הסימנים</masterLabel>
+        <translation><!-- תרגום שפת הסימנים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

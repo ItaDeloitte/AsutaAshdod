@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is used to store signature HTML received from FormTitan, as well as optional long-form text that can be used in a document. --></help>
+    <label><!-- Optional Long Text --></label>
+    <name>Optional_Long_Text__c</name>
+</CustomFieldTranslation>

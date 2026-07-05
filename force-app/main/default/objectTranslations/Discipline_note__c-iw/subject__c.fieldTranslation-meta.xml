@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- נושא --></label>
+    <name>subject__c</name>
+    <picklistValues>
+        <masterLabel>אוכל/שתיה בעמדה</masterLabel>
+        <translation><!-- אוכל/שתיה בעמדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי התחברות לקו בזמן</masterLabel>
+        <translation><!-- אי התחברות לקו בזמן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>איחור מהפסקה</masterLabel>
+        <translation><!-- איחור מהפסקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התחצפות למנהל/אחמ&quot;ש</masterLabel>
+        <translation><!-- התחצפות למנהל/אחמ&quot;ש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסימת קו ללא אישור</masterLabel>
+        <translation><!-- חסימת קו ללא אישור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יציאה ללא אישור</masterLabel>
+        <translation><!-- יציאה ללא אישור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שימוש בנייד במשמרת</masterLabel>
+        <translation><!-- שימוש בנייד במשמרת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיק על העמדה</masterLabel>
+        <translation><!-- תיק על העמדה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
