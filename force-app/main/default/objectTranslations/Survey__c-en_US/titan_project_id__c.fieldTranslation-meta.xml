@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- titan project id --></label>
+    <name>titan_project_id__c</name>
+</CustomFieldTranslation>

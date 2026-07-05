@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג טעות</label>
+    <name>Mistake_type__c</name>
+    <picklistValues>
+        <masterLabel>אי מסירה של הנחיות</masterLabel>
+        <translation><!-- אי מסירה של הנחיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי עמידה בזמן טיפול</masterLabel>
+        <translation><!-- אי עמידה בזמן טיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול תור שגוי</masterLabel>
+        <translation><!-- ביטול תור שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הגשה לא נכונה</masterLabel>
+        <translation><!-- הגשה לא נכונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המלצת רופא לא נכונה</masterLabel>
+        <translation><!-- המלצת רופא לא נכונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>העברת פניה שגויה</masterLabel>
+        <translation><!-- העברת פניה שגויה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הצעת מחיר שגויה</masterLabel>
+        <translation><!-- הצעת מחיר שגויה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הקצאה שגויה</masterLabel>
+        <translation><!-- הקצאה שגויה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כפילות תורים</masterLabel>
+        <translation><!-- כפילות תורים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא בוצע אימות פרטים</masterLabel>
+        <translation><!-- לא בוצע אימות פרטים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא הועברה פניה למכון</masterLabel>
+        <translation><!-- לא הועברה פניה למכון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נמצא כטעות</masterLabel>
+        <translation><!-- לא נמצא כטעות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נפתחה משימה</masterLabel>
+        <translation><!-- לא נפתחה משימה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נשמר איש קשר</masterLabel>
+        <translation><!-- לא נשמר איש קשר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא פעל/ה עפ&quot;י תסריט השיחה</masterLabel>
+        <translation><!-- לא פעל/ה עפ&quot;י תסריט השיחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא תואם תור</masterLabel>
+        <translation><!-- לא תואם תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא תואם תור לטרום ניתוח</masterLabel>
+        <translation><!-- לא תואם תור לטרום ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע שגוי / חסר</masterLabel>
+        <translation><!-- מידע שגוי / חסר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסירת מידע שגוי</masterLabel>
+        <translation><!-- מסירת מידע שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסירת עלויות שגויה</masterLabel>
+        <translation><!-- מסירת עלויות שגויה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה שגויה – מוקד הקלדות</masterLabel>
+        <translation><!-- פניה שגויה – מוקד הקלדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניית שירות</masterLabel>
+        <translation><!-- פניית שירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קביעה שגויה</masterLabel>
+        <translation><!-- קביעה שגויה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שליחת קיט למערכת</masterLabel>
+        <translation><!-- שליחת קיט למערכת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם באמצעות שירות עצמי</masterLabel>
+        <translation><!-- תואם באמצעות שירות עצמי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

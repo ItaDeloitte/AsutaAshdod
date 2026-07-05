@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- שם קולקטיב/סוכן באנגלית לטובת יצירת קישור לדף הנחיתה ב-TITAN --></help>
+    <label>שם הקולקטיב באנגלית</label>
+    <name>Name_for_URL__c</name>
+</CustomFieldTranslation>

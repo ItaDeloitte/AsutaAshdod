@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבת הפיכה ללא פעיל</label>
+    <name>Reason_not_active__c</name>
+    <picklistValues>
+        <masterLabel>לבקשת המטופל</masterLabel>
+        <translation><!-- לבקשת המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לבקשת הרופא</masterLabel>
+        <translation><!-- לבקשת הרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מילים לא ראויות</masterLabel>
+        <translation><!-- מילים לא ראויות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ציון סקר נמוך</masterLabel>
+        <translation><!-- ציון סקר נמוך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שליחת סקר פעם נוספת</masterLabel>
+        <translation><!-- שליחת סקר פעם נוספת --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

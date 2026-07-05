@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס</label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>בטיפול נציג</masterLabel>
+        <translation><!-- בטיפול נציג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוקצה לטיפול</masterLabel>
+        <translation><!-- הוקצה לטיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרם טופל</masterLabel>
+        <translation><!-- טרם טופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיום טיפול</masterLabel>
+        <translation><!-- סיום טיפול --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אוכלוסיית יעד</label>
+    <name>Target__c</name>
+    <picklistValues>
+        <masterLabel>גברים</masterLabel>
+        <translation><!-- גברים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יום הבדיקה</masterLabel>
+        <translation><!-- יום הבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל גיל 12</masterLabel>
+        <translation><!-- מעל גיל 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל גיל 55</masterLabel>
+        <translation><!-- מעל גיל 55 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתחת לגיל 50</masterLabel>
+        <translation><!-- מתחת לגיל 50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתחת לגיל 55</masterLabel>
+        <translation><!-- מתחת לגיל 55 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתחת לגיל 65</masterLabel>
+        <translation><!-- מתחת לגיל 65 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נשים</masterLabel>
+        <translation><!-- נשים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

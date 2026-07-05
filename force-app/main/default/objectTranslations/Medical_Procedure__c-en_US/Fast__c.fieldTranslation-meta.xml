@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Fast --></label>
+    <name>Fast__c</name>
+    <picklistValues>
+        <masterLabel>Adult - No</masterLabel>
+        <translation><!-- Adult - No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adult - Yes</masterLabel>
+        <translation><!-- Adult - Yes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child - No</masterLabel>
+        <translation><!-- Child - No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child - Yes</masterLabel>
+        <translation><!-- Child - Yes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

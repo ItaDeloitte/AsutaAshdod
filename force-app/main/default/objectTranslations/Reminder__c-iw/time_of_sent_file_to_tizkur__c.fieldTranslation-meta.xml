@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>שעת שליחת הקובץ לתזכור</label>
+    <name>time_of_sent_file_to_tizkur__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס</label>
+    <name>StageStatus__c</name>
+    <picklistValues>
+        <masterLabel>Assuta doctor recommended</masterLabel>
+        <translation>הומלץ רופא אסותא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compatibility meeting was scheduled</masterLabel>
+        <translation>נקבעה פגישת התאמה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concerned</masterLabel>
+        <translation>מתחרים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consulting</masterLabel>
+        <translation>מתייעץ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Signed In Unit</masterLabel>
+        <translation>נחתם חוזה ביחידה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disappeared</masterLabel>
+        <translation>נעלם</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doctor not at Assuta</masterLabel>
+        <translation>רופא לא באסותא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate Opportunity</masterLabel>
+        <translation>הזדמנות כפולה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation>בתהליך</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In process of medical tests</masterLabel>
+        <translation>בתהליך בדיקות רפואיות</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information sheets have been sent</masterLabel>
+        <translation>נשלחו דפי מידע</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Market survey</masterLabel>
+        <translation>סקר שוק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Insurance Eligibility</masterLabel>
+        <translation>אין כיסוי ביטוחי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient performs a market research</masterLabel>
+        <translation>מטופלת מבצעת סקר שוק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient undergoing medical tests</masterLabel>
+        <translation>מבצע/ת בדיקות רפואיות / נשלח לרופא מומחה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Opertation Instruction Review</masterLabel>
+        <translation>לחדד הסברים והנחיות לקראת ניתוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Assuta HaShalom</masterLabel>
+        <translation>נשלח לבדיקה באסותא השלום</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Coordinators</masterLabel>
+        <translation>הועבר/ה למתאמות</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regretted</masterLabel>
+        <translation>התחרט</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Consultation</masterLabel>
+        <translation>ממתין לפגישת ההתאמה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Shaban eligibility</masterLabel>
+        <translation>מחכה לזכאות שב&quot;ן</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Surgery</masterLabel>
+        <translation>ממתין לביצוע הניתוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for a convenient time</masterLabel>
+        <translation>ממתין למועד נוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for doctor&apos;s response</masterLabel>
+        <translation>ממתין לתשובת רופא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for experts approval</masterLabel>
+        <translation>ממתין לאישור רופא מומחה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for response from Optic</masterLabel>
+        <translation>ממתין לתגובה מאופטיק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>availability</masterLabel>
+        <translation>זמינות</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>checkDepartment</masterLabel>
+        <translation>בבדיקה מול המחלקה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>checkDoctor</masterLabel>
+        <translation>בבדיקה מול הרופא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>checkMoked</masterLabel>
+        <translation>בבדיקה מול המוקד</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>competitors</masterLabel>
+        <translation>מתחרים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>distance</masterLabel>
+        <translation>מרחק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>doctorsSuggested</masterLabel>
+        <translation>הומלצו רופאים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>doesntMatch</masterLabel>
+        <translation>לאמתאים לשירות</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>expert</masterLabel>
+        <translation>תיאום תור לייעוץ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>institute</masterLabel>
+        <translation>תואם תור לבדיקה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>materialSent</masterLabel>
+        <translation>נשלח חומר רפואי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>noAnswer</masterLabel>
+        <translation>אין מענה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>other</masterLabel>
+        <translation>אחר</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>price</masterLabel>
+        <translation>מחיר</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>questioning</masterLabel>
+        <translation>מסירת פרטים ותשאול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>surgery</masterLabel>
+        <translation>תיאום תור לניתוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>transferToDepartment</masterLabel>
+        <translation>העברה למחלקה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין הסדר ביטוחי לניתוח</masterLabel>
+        <translation><!-- אין הסדר ביטוחי לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין יומן פתוח לרופא</masterLabel>
+        <translation><!-- אין יומן פתוח לרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בבדיקה מול סוכן ביטוח</masterLabel>
+        <translation><!-- בבדיקה מול סוכן ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה\תחום לא קיים כרגע בשירות</masterLabel>
+        <translation><!-- בדיקה\תחום לא קיים כרגע בשירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביצע ניתוח אופטיק</masterLabel>
+        <translation><!-- ביצע ניתוח אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גיל</masterLabel>
+        <translation><!-- גיל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הגיע לבדיקת התאמה</masterLabel>
+        <translation><!-- הגיע לבדיקת התאמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוזמן חדר פרטי</masterLabel>
+        <translation><!-- הוזמן חדר פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניין בחדר פרטי</masterLabel>
+        <translation><!-- לא מעוניין בחדר פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניין בשירות</masterLabel>
+        <translation><!-- לא מעוניין בשירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נמצא רופא מתאים בקרבת מקום מגוריו</masterLabel>
+        <translation><!-- לא נמצא רופא מתאים בקרבת מקום מגוריו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאגר</masterLabel>
+        <translation><!-- מאגר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מבקש לברר על החזרים מול הביטוח</masterLabel>
+        <translation><!-- מבקש לברר על החזרים מול הביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחלות כרוניות</masterLabel>
+        <translation><!-- מחלות כרוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחלות עיניים</masterLabel>
+        <translation><!-- מחלות עיניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נותח בעבר</masterLabel>
+        <translation><!-- נותח בעבר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פונה לקופה</masterLabel>
+        <translation><!-- פונה לקופה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פנה בנוגע לשירות אחר</masterLabel>
+        <translation><!-- פנה בנוגע לשירות אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא שלא מתואם דרכינו</masterLabel>
+        <translation><!-- רופא שלא מתואם דרכינו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם הראל</masterLabel>
+        <translation><!-- תואם הראל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם ייעוץ בעזרת סוכן ביטוח</masterLabel>
+        <translation><!-- תואם ייעוץ בעזרת סוכן ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם תור בעזרת סוכן ביטוח</masterLabel>
+        <translation><!-- תואם תור בעזרת סוכן ביטוח --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

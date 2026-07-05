@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיווג</label>
+    <name>Type_of_quicktext__c</name>
+    <picklistValues>
+        <masterLabel>זימון תורים</masterLabel>
+        <translation><!-- זימון תורים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כללי</masterLabel>
+        <translation><!-- כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מהלך שיחה</masterLabel>
+        <translation><!-- מהלך שיחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיום שיחה</masterLabel>
+        <translation><!-- סיום שיחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סרטוני הדרכה</masterLabel>
+        <translation><!-- סרטוני הדרכה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירות והמתנה</masterLabel>
+        <translation><!-- שירות והמתנה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שליחת תוצאות</masterLabel>
+        <translation><!-- שליחת תוצאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקה</masterLabel>
+        <translation><!-- תוצאות בדיקה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

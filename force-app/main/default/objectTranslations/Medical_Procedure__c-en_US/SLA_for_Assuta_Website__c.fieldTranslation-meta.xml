@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- עבור הצגת SLA לפענוח באזור האישי --></help>
+    <label><!-- SLA for Assuta Website --></label>
+    <name>SLA_for_Assuta_Website__c</name>
+</CustomFieldTranslation>

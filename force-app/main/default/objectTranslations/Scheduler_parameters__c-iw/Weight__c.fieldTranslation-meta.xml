@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>משקל</label>
+    <name>Weight__c</name>
+    <picklistValues>
+        <masterLabel>בין 120 ל-140</masterLabel>
+        <translation><!-- בין 120 ל-140 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בין 140 ל-200</masterLabel>
+        <translation><!-- בין 140 ל-200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 200</masterLabel>
+        <translation><!-- מעל 200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתחת ל-120</masterLabel>
+        <translation><!-- מתחת ל-120 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- מספר הטלפון אליו נשלחה ההודעה או ממנו התקבלה ההודעה --></help>
+    <label>מספר טלפון</label>
+    <name>Phone_Number__c</name>
+</CustomFieldTranslation>

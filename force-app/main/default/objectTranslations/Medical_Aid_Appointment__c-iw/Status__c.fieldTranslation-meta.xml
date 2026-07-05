@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס עזר לפגישה</label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>בוטל</masterLabel>
+        <translation><!-- בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטיפול המחלקה</masterLabel>
+        <translation><!-- בטיפול המחלקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטיפול מנהלת השירות באתר</masterLabel>
+        <translation><!-- בטיפול מנהלת השירות באתר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סגור</masterLabel>
+        <translation><!-- סגור --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

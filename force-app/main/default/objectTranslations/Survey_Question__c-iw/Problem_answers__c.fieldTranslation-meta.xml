@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>תשובות בעייתיות</label>
+    <name>Problem_answers__c</name>
+    <picklistValues>
+        <masterLabel>כן</masterLabel>
+        <translation><!-- כן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא</masterLabel>
+        <translation><!-- לא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מסכים להזרקה</masterLabel>
+        <translation><!-- לא מסכים להזרקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא רלוונטי לבדיקה</masterLabel>
+        <translation><!-- לא רלוונטי לבדיקה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

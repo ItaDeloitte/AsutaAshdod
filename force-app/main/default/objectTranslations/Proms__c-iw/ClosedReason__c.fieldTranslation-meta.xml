@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבת סיום טיפול</label>
+    <name>ClosedReason__c</name>
+    <picklistValues>
+        <masterLabel>כפילות</masterLabel>
+        <translation><!-- כפילות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניין למלא הסקר</masterLabel>
+        <translation><!-- לא מעוניין למלא הסקר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל מילא</masterLabel>
+        <translation><!-- מטופל מילא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פג תוקף</masterLabel>
+        <translation><!-- פג תוקף --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Had eye surgery outside Assuta? --></label>
+    <name>Had_eye_surgery_outside_Assuta__c</name>
+    <picklistValues>
+        <masterLabel>כן</masterLabel>
+        <translation><!-- כן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא</masterLabel>
+        <translation><!-- לא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

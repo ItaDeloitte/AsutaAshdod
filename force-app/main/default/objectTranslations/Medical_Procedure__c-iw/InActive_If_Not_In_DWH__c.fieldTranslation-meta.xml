@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>הפוך ללא פעיל אם לא קיים ב-DWH?</label>
+    <name>InActive_If_Not_In_DWH__c</name>
+</CustomFieldTranslation>

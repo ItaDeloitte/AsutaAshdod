@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type Of Blood Thinner --></label>
+    <name>TypeOfBloodThinner__c</name>
+    <picklistValues>
+        <masterLabel>אליקוויס</masterLabel>
+        <translation><!-- אליקוויס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרדקסה</masterLabel>
+        <translation><!-- פרדקסה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קומדין</masterLabel>
+        <translation><!-- קומדין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קסרלטו</masterLabel>
+        <translation><!-- קסרלטו --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

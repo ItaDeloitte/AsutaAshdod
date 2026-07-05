@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- בשדה זה יש לשמור את שם הרשומה. יש לתת שם משמעותי המכיל אותיות באנגלית (קטנות וגדולות), מספרים וקווים תחתונים בלבד --></help>
+    <label><!-- DeveloperName --></label>
+    <name>DeveloperName__c</name>
+</CustomFieldTranslation>

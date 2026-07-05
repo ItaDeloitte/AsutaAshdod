@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- המטופל/ת מאשר/ת קבלת הודעות, מידע מקצועי ומנהלתי וכן חומרים שיווקיים מאסותא אופטיק, לטלפון הסלולארי או לדואר האלקטרוני --></help>
+    <label>מאשר דיוור - אופטיק</label>
+    <name>Approves_Mailling_Optic__c</name>
+</CustomFieldTranslation>

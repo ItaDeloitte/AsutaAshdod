@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type 3 --></label>
+    <name>Type_3__c</name>
+    <picklistValues>
+        <masterLabel>CheckBox</masterLabel>
+        <translation><!-- CheckBox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DropDown</masterLabel>
+        <translation><!-- DropDown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PickDate</masterLabel>
+        <translation><!-- PickDate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RadioButton</masterLabel>
+        <translation><!-- RadioButton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RadioButtonWithMessage</masterLabel>
+        <translation><!-- RadioButtonWithMessage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextArea</masterLabel>
+        <translation><!-- TextArea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextBox</masterLabel>
+        <translation><!-- TextBox --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

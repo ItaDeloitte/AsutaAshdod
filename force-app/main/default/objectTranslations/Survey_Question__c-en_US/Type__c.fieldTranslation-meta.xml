@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>--SELECT--</masterLabel>
+        <translation><!-- - - SELECT- -  --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CheckBox</masterLabel>
+        <translation><!-- CheckBox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CheckBoxAllwaysInst</masterLabel>
+        <translation><!-- CheckBoxAllwaysInst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CheckBoxWithInstructions</masterLabel>
+        <translation><!-- CheckBoxWithInstructions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DropDown</masterLabel>
+        <translation><!-- DropDown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DropDownAllwaysInst</masterLabel>
+        <translation><!-- DropDownAllwaysInst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DropDownAllwaysMsg</masterLabel>
+        <translation><!-- DropDownAllwaysMsg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DropDownWithInstructions</masterLabel>
+        <translation><!-- DropDownWithInstructions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Free Text</masterLabel>
+        <translation><!-- Free Text --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Free Text - Single Row Visible</masterLabel>
+        <translation><!-- Free Text - Single Row Visible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GroupHeadline</masterLabel>
+        <translation><!-- GroupHeadline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GroupHeadlineAllwaysInst</masterLabel>
+        <translation><!-- GroupHeadlineAllwaysInst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GroupHeadlineAllwaysMsg</masterLabel>
+        <translation><!-- GroupHeadlineAllwaysMsg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lookup</masterLabel>
+        <translation><!-- Lookup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-Select--Vertical</masterLabel>
+        <translation><!-- Multi-Select- - Vertical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MultiSelection</masterLabel>
+        <translation><!-- MultiSelection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PickDate</masterLabel>
+        <translation><!-- PickDate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PickDateAllwaysInst</masterLabel>
+        <translation><!-- PickDateAllwaysInst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PickDateWithInstructions</masterLabel>
+        <translation><!-- PickDateWithInstructions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RadioButton</masterLabel>
+        <translation><!-- RadioButton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RadioButtonAllwaysInst</masterLabel>
+        <translation><!-- RadioButtonAllwaysInst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RadioButtonAllwaysMsg</masterLabel>
+        <translation><!-- RadioButtonAllwaysMsg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RadioButtonWithInstructions</masterLabel>
+        <translation><!-- RadioButtonWithInstructions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RadioButtonWithMessage</masterLabel>
+        <translation><!-- RadioButtonWithMessage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Select--Horizontal</masterLabel>
+        <translation><!-- Select- - Horizontal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Select--Horizontal</masterLabel>
+        <translation><!-- Single Select- - Horizontal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Select--Vertical</masterLabel>
+        <translation><!-- Single Select- - Vertical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StarRating</masterLabel>
+        <translation><!-- StarRating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextArea</masterLabel>
+        <translation><!-- TextArea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextAreaAllwaysInst</masterLabel>
+        <translation><!-- TextAreaAllwaysInst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextAreaWithInstructions</masterLabel>
+        <translation><!-- TextAreaWithInstructions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextBox</masterLabel>
+        <translation><!-- TextBox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextBoxAllwaysInst</masterLabel>
+        <translation><!-- TextBoxAllwaysInst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextBoxAllwaysMsg</masterLabel>
+        <translation><!-- TextBoxAllwaysMsg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextBoxWithInstructions</masterLabel>
+        <translation><!-- TextBoxWithInstructions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TextBoxWithMessage</masterLabel>
+        <translation><!-- TextBoxWithMessage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Time</masterLabel>
+        <translation><!-- Time --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

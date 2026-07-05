@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס</label>
+    <name>Status_QA__c</name>
+    <picklistValues>
+        <masterLabel>בוצע משוב</masterLabel>
+        <translation><!-- בוצע משוב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטיפול מנהל השירות</masterLabel>
+        <translation><!-- בטיפול מנהל השירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטיפול מנהל ישיר</masterLabel>
+        <translation><!-- בטיפול מנהל ישיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נמצא כטעות</masterLabel>
+        <translation><!-- לא נמצא כטעות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא רלוונטי</masterLabel>
+        <translation><!-- לא רלוונטי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

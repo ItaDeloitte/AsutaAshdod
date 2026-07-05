@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- AF Feadback Type --></label>
+    <name>AF_Feadback_Type__c</name>
+    <picklistValues>
+        <masterLabel>באג</masterLabel>
+        <translation><!-- באג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדכון תוכן</masterLabel>
+        <translation><!-- עדכון תוכן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שו&quot;ש</masterLabel>
+        <translation><!-- שו&quot;ש --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

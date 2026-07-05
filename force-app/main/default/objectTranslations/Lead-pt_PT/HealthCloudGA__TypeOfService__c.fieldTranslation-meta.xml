@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type Of Service --></label>
+    <name>HealthCloudGA__TypeOfService__c</name>
+    <picklistValues>
+        <masterLabel>2nd Opinion</masterLabel>
+        <translation>2.ª opinião</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation</masterLabel>
+        <translation>Consulta</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow up</masterLabel>
+        <translation>Seguimento</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Care</masterLabel>
+        <translation><!-- Home Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lab Services</masterLabel>
+        <translation>Serviços de laboratório</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nurse/VNA</masterLabel>
+        <translation><!-- Nurse/VNA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Occupational Therapy</masterLabel>
+        <translation><!-- Occupational Therapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (please specify in comments)</masterLabel>
+        <translation>Outro (especifique nos comentários)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Therapy</masterLabel>
+        <translation><!-- Physical Therapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology Services</masterLabel>
+        <translation>Serviços de radiologia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech Therapy</masterLabel>
+        <translation><!-- Speech Therapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation>Cirurgia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wound Care</masterLabel>
+        <translation><!-- Wound Care --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

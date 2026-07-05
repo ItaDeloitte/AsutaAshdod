@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the survey has an associated consent form, then when a SurveyTaken record is created, a corresponding ConsentFormTaken record will also be created. This ConsentFormTaken record will be linked to both the appointment and the SurveyTaken. --></help>
+    <label><!-- ConsentForm --></label>
+    <name>ConsentForm__c</name>
+    <relationshipLabel><!-- Surveys --></relationshipLabel>
+</CustomFieldTranslation>

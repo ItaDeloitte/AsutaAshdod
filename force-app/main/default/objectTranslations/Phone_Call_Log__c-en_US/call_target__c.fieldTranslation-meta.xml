@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Target --></label>
+    <name>call_target__c</name>
+    <picklistValues>
+        <masterLabel>המלצה על כירורג שד</masterLabel>
+        <translation><!-- המלצה על כירורג שד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה</masterLabel>
+        <translation><!-- לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה למטופלת לקביעת תור לביופסיה</masterLabel>
+        <translation><!-- שיחה למטופלת לקביעת תור לביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה למטופלת לקביעת תור לייעוץ</masterLabel>
+        <translation><!-- שיחה למטופלת לקביעת תור לייעוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה לרופא לאחר ייעוץ</masterLabel>
+        <translation><!-- שיחה לרופא לאחר ייעוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה לרופא לאחר שחרור מניתוח</masterLabel>
+        <translation><!-- שיחה לרופא לאחר שחרור מניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה לרופא לאחר תוצאות ביופסיה</masterLabel>
+        <translation><!-- שיחה לרופא לאחר תוצאות ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה ראשונית לרופא</masterLabel>
+        <translation><!-- שיחה ראשונית לרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחת מעקב למטופלת באונקולוגיה</masterLabel>
+        <translation><!-- שיחת מעקב למטופלת באונקולוגיה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

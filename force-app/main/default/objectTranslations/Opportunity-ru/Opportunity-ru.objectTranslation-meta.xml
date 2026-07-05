@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- Assuta Family --></label>
+        <name>Assuta_Family</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Assuta Optic --></label>
+        <name>Assuta_Optic</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Patient Referral --></label>
+        <name>HealthCloudGA__Patient_Referral</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Opp-012 נא להזין את תאריך הבדיקה שנקבעה --></errorMessage>
+        <name>Assuta_Family_Enter_Exam_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה למלא ערך בשדה סטטוס שלב עבור שלב &quot;הפסד&quot; או &quot;ניצחון&quot; --></errorMessage>
+        <name>Assuta_Optic_StageStatus_If_Win_Or_Lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה למלא את השדה CallBack --></errorMessage>
+        <name>CallBack_Required_If_Not_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא להזין תאריך יעד לחזרה --></errorMessage>
+        <name>Callback_Required_Assuta_Family</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opp-001 - Please choose a branch --></errorMessage>
+        <name>Choose_Branch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה למלא מספר טלפון במידה ואופן זימון התור הוא על ידי המטופל בדיגיטל --></errorMessage>
+        <name>Digital_Opp_Psychotherapy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opp-007: נא להזין פירוט מחלות עיניים --></errorMessage>
+        <name>Eye_Diseases_history</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opp-006 - נא להזין מספר משקפיים --></errorMessage>
+        <name>Glasses_Number_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה לבחור תת סטטוס --></errorMessage>
+        <name>Must_choose_subStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לתעד מה סוכם עם המטופל --></errorMessage>
+        <name>NursePhoneRecord_for_Psychotherapy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה למלא את השדה OtherReasonExplanation --></errorMessage>
+        <name>OtherReasonExplanation_Lost_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- OPP-008: לא ניתן ליצור הזדמנות ללא ליד --></errorMessage>
+        <name>Restrict_Agents</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בעת בחירת סטטוס אחר חובה למלא טקסט חופשי --></errorMessage>
+        <name>other_explanation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Agreement_SMS_Home_Psychotherapy_Button --></label>
+        <name>Agreement_SMS_Home_Psychotherapy_Button</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Titan_Sign_Wizard --></label>
+        <name>Form_Builder__Titan_Sign_Wizard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DeliveryStatus --></label>
+        <name>HealthCloudGA__DeliveryStatus</name>
+    </webLinks>
+</CustomObjectTranslation>

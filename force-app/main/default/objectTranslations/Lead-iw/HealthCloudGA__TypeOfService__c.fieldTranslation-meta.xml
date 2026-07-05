@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type Of Service --></label>
+    <name>HealthCloudGA__TypeOfService__c</name>
+    <picklistValues>
+        <masterLabel>2nd Opinion</masterLabel>
+        <translation>חוות דעת נוספת</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation</masterLabel>
+        <translation>התייעצות</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow up</masterLabel>
+        <translation>מעקב</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Care</masterLabel>
+        <translation>טיפול ביתי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lab Services</masterLabel>
+        <translation>שירותי מעבדה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nurse/VNA</masterLabel>
+        <translation>שירותי אחיות/טיפול ביתי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Occupational Therapy</masterLabel>
+        <translation>רפואה תעסוקתית</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (please specify in comments)</masterLabel>
+        <translation>אחר (נא לציין בהערות)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Therapy</masterLabel>
+        <translation>פיזיותרפיה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology Services</masterLabel>
+        <translation>שירותי רדיולוגיה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech Therapy</masterLabel>
+        <translation>קלינאות תקשורת</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation>ניתוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wound Care</masterLabel>
+        <translation>טיפול בפציעות</translation>
+    </picklistValues>
+</CustomFieldTranslation>

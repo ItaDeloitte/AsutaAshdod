@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- Assuta Family --></label>
+        <name>Assuta_Family</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Assuta Optic --></label>
+        <name>Assuta_Optic</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Patient record type --></description>
+        <label><!-- Patient --></label>
+        <name>HealthCloudGA__Patient</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Patient Referral --></label>
+        <name>HealthCloudGA__PatientReferral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- תיירות מרפא --></label>
+        <name>Medical_Tourism</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Secretary Leads --></label>
+        <name>Secretary_Leads</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- תאריך לידה לא יכול להיות תאריך עתידי --></errorMessage>
+        <name>Birthdate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש לשייך קמפיין לפני סגירת הליד --></errorMessage>
+        <name>ChooseCampaign</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה למלא סיבת הפסד בעת בחירת סטטוס הפסד, כאשר הסיבה היא אחר חובה למלא טקסט חופשי --></errorMessage>
+        <name>Lost_status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה להשאיר טלפון או אימייל --></errorMessage>
+        <name>Must_have_email_or_phone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead-002: Please write reason --></errorMessage>
+        <name>Reason_lead_status_is_Pool</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש להזין תאריך יעד לחזרה בעת בחירת סטטוס ממתין לחזרה --></errorMessage>
+        <name>Waiting_status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead-006: Must fill Lost Reason --></errorMessage>
+        <name>Wrong_Lead</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_Leads --></label>
+        <name>HealthCloudGA__Convert_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label>Volver a suscribirse a Marketing Cloud</label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label>Anular suscripción de Marketing Cloud</label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label>Enviar email de Marketing Cloud</label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label>Enviar SMS de Marketing Cloud</label>
+        <name>et4ae5__Send_ExactTarget_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Ver Marketing Cloud Analytics</label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+</CustomObjectTranslation>

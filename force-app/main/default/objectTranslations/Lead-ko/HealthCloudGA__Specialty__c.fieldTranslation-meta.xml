@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Specialty --></label>
+    <name>HealthCloudGA__Specialty__c</name>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation>심장학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certified Home Health</masterLabel>
+        <translation>인증된 가정 건강</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatology</masterLabel>
+        <translation>피부 과학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENT</masterLabel>
+        <translation>ENT</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Practice</masterLabel>
+        <translation>가정 의학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GI</masterLabel>
+        <translation>GI</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gynecology</masterLabel>
+        <translation>부인과학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Medicine</masterLabel>
+        <translation>내과학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mental Health</masterLabel>
+        <translation>정신 건강</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurology</masterLabel>
+        <translation>신경학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurosurgery</masterLabel>
+        <translation>신경외과학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oncology</masterLabel>
+        <translation>종양학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orthopedics</masterLabel>
+        <translation>정형외과학</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical therapy</masterLabel>
+        <translation>물리 치료</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation>수술</translation>
+    </picklistValues>
+</CustomFieldTranslation>

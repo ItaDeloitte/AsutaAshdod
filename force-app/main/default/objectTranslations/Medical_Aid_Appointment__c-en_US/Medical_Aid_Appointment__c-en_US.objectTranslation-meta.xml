@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Medical Aid Appointment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Medical Aid Appointments</value>
+    </caseValues>
+    <nameFieldLabel><!-- Medical Aid Appointment Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

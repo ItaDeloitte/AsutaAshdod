@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Holds Submission from Created by FormTitan. usually used in PDF documetns --></help>
+    <label><!-- My Submission --></label>
+    <name>My_Submission__c</name>
+    <relationshipLabel><!-- Surveys Taken --></relationshipLabel>
+</CustomFieldTranslation>

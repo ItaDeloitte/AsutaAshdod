@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- אינדיקציה על ההודעה אם נשלחה בהצלחה --></help>
+    <label><!-- Success --></label>
+    <name>Success__c</name>
+</CustomFieldTranslation>

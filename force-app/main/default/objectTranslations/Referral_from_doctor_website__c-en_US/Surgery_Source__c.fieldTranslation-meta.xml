@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Surgery Source --></label>
+    <name>Surgery_Source__c</name>
+    <picklistValues>
+        <masterLabel>אסותא מומחים</masterLabel>
+        <translation><!-- אסותא מומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא</masterLabel>
+        <translation><!-- ללא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

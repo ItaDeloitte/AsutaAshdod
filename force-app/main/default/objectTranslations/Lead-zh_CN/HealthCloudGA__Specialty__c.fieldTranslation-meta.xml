@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Specialty --></label>
+    <name>HealthCloudGA__Specialty__c</name>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation>心脏科</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certified Home Health</masterLabel>
+        <translation>认证的家庭健康</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatology</masterLabel>
+        <translation>皮肤病学</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENT</masterLabel>
+        <translation>ENT</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Practice</masterLabel>
+        <translation>家庭实践</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GI</masterLabel>
+        <translation>GI</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gynecology</masterLabel>
+        <translation>妇科学</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Medicine</masterLabel>
+        <translation>内科</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mental Health</masterLabel>
+        <translation>心理健康</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurology</masterLabel>
+        <translation>神经病学</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurosurgery</masterLabel>
+        <translation>神经外科</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oncology</masterLabel>
+        <translation>肿瘤学</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orthopedics</masterLabel>
+        <translation>骨科</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical therapy</masterLabel>
+        <translation>物理治疗</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation>外科</translation>
+    </picklistValues>
+</CustomFieldTranslation>
