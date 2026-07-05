@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SubType --></label>
+    <name>kmslh__SubType__c</name>
+    <picklistValues>
+        <masterLabel>ARTICLE</masterLabel>
+        <translation><!-- ARTICLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCENARIO</masterLabel>
+        <translation><!-- SCENARIO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

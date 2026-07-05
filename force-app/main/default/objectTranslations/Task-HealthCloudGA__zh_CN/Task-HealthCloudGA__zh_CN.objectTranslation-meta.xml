@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>HcCarePlanTaskFields</label>
+        <name>HealthCloudGA__HcCarePlanTaskFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>HC 任务列表</label>
+        <name>HealthCloudGA__HcTaskList</name>
+    </fieldSets>
+    <recordTypes>
+        <description>与医疗计划相关的任务</description>
+        <label>护理计划任务</label>
+        <name>HealthCloudGA__CarePlanTask</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- משימות --></description>
+        <label><!-- TASKS --></label>
+        <name>TASKS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- יש להזין את הרופא של המטופלת בשדה &quot;רופא כירורג&quot; בפנייה --></errorMessage>
+        <name>fill_surgeon_doctor_of_patient</name>
+    </validationRules>
+</CustomObjectTranslation>

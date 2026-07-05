@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permission Set Group Name --></label>
+    <name>esp2p__Permission_Set_Group_Name__c</name>
+    <relationshipLabel><!-- Permission Set Assignment Logs --></relationshipLabel>
+</CustomFieldTranslation>
