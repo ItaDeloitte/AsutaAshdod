@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Treartment__c</fullName>
+    <label>Closing Treatment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>נקבע ניתוח חדש</fullName>
+                <default>false</default>
+                <label>נקבע ניתוח חדש</label>
+            </value>
+            <value>
+                <fullName>ניתוח עם רופא אחר</fullName>
+                <default>false</default>
+                <label>ניתוח עם רופא אחר</label>
+            </value>
+            <value>
+                <fullName>לא מעוניין לעבור ניתוח באסותא</fullName>
+                <default>false</default>
+                <label>לא מעוניין לעבור ניתוח באסותא</label>
+            </value>
+            <value>
+                <fullName>אין מענה מצד המטופל</fullName>
+                <default>false</default>
+                <label>אין מענה מצד המטופל</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

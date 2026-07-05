@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_or_Closed__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR (ISPICKVAL( Status_QA__c, &quot;חדש&quot;),ISPICKVAL( Status_QA__c,&quot;בטיפול מנהל השירות&quot;),
+ISPICKVAL( Status_QA__c, &quot;בטיפול מנהל ישיר&quot;)), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cyVe&amp;oid=00DKI000000MTJU&amp;lastMod=1566988591000&quot;, &quot;&quot; , 30, 30), 
+IF(OR (ISPICKVAL( Status_QA__c, &quot;בוצע משוב&quot;),ISPICKVAL( Status_QA__c,&quot;לא נמצא כטעות&quot;),
+ISPICKVAL( Status_QA__c, &quot;לא רלוונטי&quot;),ISPICKVAL( Status_QA__c, &quot;מקרה טופל על ידי המחלקה&quot;)), 
+IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cyVj&amp;oid=00DKI000000MTJU&amp;lastMod=1566990568000&quot;, &quot;&quot; , 30, 30), &quot;&quot; ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>QA Status (Open/Closed)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

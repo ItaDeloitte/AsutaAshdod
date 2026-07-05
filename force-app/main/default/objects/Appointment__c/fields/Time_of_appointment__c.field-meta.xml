@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_of_appointment__c</fullName>
+    <formula>IF(NOT(ISBLANK(appointment_hour__c)), appointment_hour__c, 
+TIMEVALUE( Appointment_Date_Time__c + ($User.TimeZoneOffset__c /24))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Time of appointment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

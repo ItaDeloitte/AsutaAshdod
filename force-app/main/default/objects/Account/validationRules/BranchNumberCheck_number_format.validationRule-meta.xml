@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BranchNumberCheck_number_format</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISNUMBER(  Branch_Number__c ) &amp;&amp;
+!ISBLANK(Branch_Number__c )&amp;&amp;
+RecordTypeId== &apos;0128d000000cRDg&apos;</errorConditionFormula>
+    <errorDisplayField>Branch_Number__c</errorDisplayField>
+    <errorMessage>נא לוודא שמספר סניף מכיל מספרים בלבד!</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsSendToClinicalSystem__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>השדה יהיה בשימוש מנהלי הרדמה ואחיות במרכזים הם עובדים על REPORT של מטופלים עתידיים לניתוח היום קימים רק 100% מילוי שאלון, רוצים שתהיה להם האופציה לשלוח את השאלון גם אם לא ממלא לגמריי. התהליך הוא שבאמצעות ה-REPORT  הם יסמנו את השדה דבר שיביא לפתיחת תיק.</description>
+    <label>Is send to a clinical system</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

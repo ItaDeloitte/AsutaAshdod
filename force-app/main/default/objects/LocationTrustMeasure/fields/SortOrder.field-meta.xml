@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SortOrder</fullName>
+    <inlineHelpText>מציין היכן מדד אמון זה ממוקם בפריסה שלך. לדוגמה, בפריסת באנר, סדר התצוגה 1 מציב את כרטיס האמון בצד שמאל. סדר התצוגה 2 מציב את מדד האמון מימין ל-1.</inlineHelpText>
+</CustomField>

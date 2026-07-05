@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reviewed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>שדה שישמור עבור נציג אם בוצע עבורו סקר. ב16 וב 1 לכל חודש, השדה ינוקה</description>
+    <label>Reviewed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

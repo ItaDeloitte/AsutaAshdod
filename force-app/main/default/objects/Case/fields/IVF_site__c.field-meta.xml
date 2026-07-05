@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IVF_site__c</fullName>
+    <description>שדה לצורך חמ&quot;ל IVF</description>
+    <label>IVF Site</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>רמת החייל</fullName>
+                <default>false</default>
+                <label>רמת החייל</label>
+            </value>
+            <value>
+                <fullName>ראשון לציון</fullName>
+                <default>false</default>
+                <label>ראשון לציון</label>
+            </value>
+            <value>
+                <fullName>חיפה</fullName>
+                <default>false</default>
+                <label>חיפה</label>
+            </value>
+            <value>
+                <fullName>רעננה</fullName>
+                <default>false</default>
+                <label>רעננה</label>
+            </value>
+            <value>
+                <fullName>באר שבע</fullName>
+                <default>false</default>
+                <label>באר שבע</label>
+            </value>
+            <value>
+                <fullName>אשדוד כלניות</fullName>
+                <default>false</default>
+                <label>אשדוד כלניות</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

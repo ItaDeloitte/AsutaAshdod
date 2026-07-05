@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surgery_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>שדה שמתאלס אוטומטית בשיקום בית</inlineHelpText>
+    <label>Surgery Name</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Appointment__c.Patient_Account__r.Id</field>
+            <operation>equals</operation>
+            <valueField>$Source.AccountId</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Appointment__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Surgeries</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Appointment__c</referenceTo>
+    <relationshipLabel>Cases (שם הניתוח)</relationshipLabel>
+    <relationshipName>Cases1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

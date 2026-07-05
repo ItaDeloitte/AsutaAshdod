@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oncology_Institute_Treatment_Status__c</fullName>
+    <label>Oncology Institute Treatment Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Scheduled For Oncologist</fullName>
+                <default>false</default>
+                <label>Scheduled For Oncologist</label>
+            </value>
+            <value>
+                <fullName>Scheduled For Chemotherapy</fullName>
+                <default>false</default>
+                <label>Scheduled For Chemotherapy</label>
+            </value>
+            <value>
+                <fullName>Scheduled For Radiotherapy</fullName>
+                <default>false</default>
+                <label>Scheduled For Radiotherapy</label>
+            </value>
+            <value>
+                <fullName>Contacted Pacient And Closed Treatment</fullName>
+                <default>false</default>
+                <label>Contacted Pacient And Closed Treatment</label>
+            </value>
+            <value>
+                <fullName>Closed Without Outbond Call</fullName>
+                <default>false</default>
+                <label>Closed Without Outbond Call</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

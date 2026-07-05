@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QA_COMPACT</fullName>
+    <fields>Name</fields>
+    <fields>OwnerId</fields>
+    <fields>Status_QA__c</fields>
+    <fields>Open_or_Closed__c</fields>
+    <fields>SLA_Icon__c</fields>
+    <label>QA COMPACT</label>
+</CompactLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Future_Birth_Date_is_not_allowed</fullName>
+    <active>true</active>
+    <description>לא ניתן להקים מטופל עם תאריך לידה עתידי</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos; || $User.Id =&apos;0054J000000vlO1&apos;) &amp;&amp;
+PersonBirthdate &gt; TODAY()
+&amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;</errorConditionFormula>
+    <errorMessage>לתשומת ליבך: לא ניתן להקים מטופל עם תאריך לידה עתידי. יש לעדכן תאריך הלידה ולשמור בשנית</errorMessage>
+</ValidationRule>

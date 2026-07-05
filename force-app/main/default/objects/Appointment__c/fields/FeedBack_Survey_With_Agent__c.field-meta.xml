@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FeedBack_Survey_With_Agent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>לאחר פגישה מסוג ייעוץ נשלח סקר למטופל, במידה והסקר בוצע טלפונית עם נציג הנציג יזין ערך</description>
+    <inlineHelpText>יש לסמן אם בוצע סקר משוב טלפוני</inlineHelpText>
+    <label>FeedBack Survey With Agent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

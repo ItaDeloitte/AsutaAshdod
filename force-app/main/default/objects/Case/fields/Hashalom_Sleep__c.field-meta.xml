@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hashalom_Sleep__c</fullName>
+    <formula>Domain_ID__c = &apos;a0L4J000000SBBA&apos;
+&amp;&amp;
+ Site_ID__c = &apos;a0u4J000000iN4z&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hashalom Sleep</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

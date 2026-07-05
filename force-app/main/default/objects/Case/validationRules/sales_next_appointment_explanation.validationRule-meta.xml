@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sales_next_appointment_explanation</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.Name = &quot;מכירות&quot; &amp;&amp;
+ISPICKVAL(  subStatus__c , &quot;Next appointment scheduled&quot;) &amp;&amp;
+ISBLANK(  nextAppointmentExplanation__c  )</errorConditionFormula>
+    <errorMessage>בעת בחירת תת סטטוס נקבעה פגישת המשך חייב למלא פירוט פגישת המשך</errorMessage>
+</ValidationRule>

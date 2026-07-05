@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>digital_archive_url__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://myassuta.formtitan.com/Archive_Request?fld184=&quot;&amp; formtitan_id_2__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Digital Archive Url</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

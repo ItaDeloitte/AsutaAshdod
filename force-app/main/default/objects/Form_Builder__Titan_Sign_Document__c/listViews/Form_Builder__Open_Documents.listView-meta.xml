@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Builder__Open_Documents</fullName>
+    <columns>NAME</columns>
+    <columns>Form_Builder__Document_Name__c</columns>
+    <columns>Form_Builder__Document_Status__c</columns>
+    <columns>Form_Builder__Number_Of_Signers__c</columns>
+    <columns>Form_Builder__Completed_Percentage__c</columns>
+    <columns>Form_Builder__Current_Signer_Name__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Form_Builder__Document_Status__c</field>
+        <operation>equals</operation>
+        <value>In Progress</value>
+    </filters>
+    <label>In Progress</label>
+</ListView>

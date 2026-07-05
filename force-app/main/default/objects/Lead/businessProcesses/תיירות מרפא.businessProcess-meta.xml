@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>תיירות מרפא</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>בטיפול</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>הומר</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>הפסד</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>חדש</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>ממתין לחזרה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>שגוי</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>check_queue_LiveChatTranscript</fullName>
+    <columns>Name</columns>
+    <columns>LiveChatVisitor</columns>
+    <columns>StartTime</columns>
+    <columns>EndTime</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SMS_Phone__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>SMS queue</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

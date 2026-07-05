@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Domain__c</columns>
+    <columns>NAME</columns>
+    <columns>Procedure_Code__c</columns>
+    <columns>Mabar_Code__c</columns>
+    <columns>Medical_Procedure_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Survey__c</columns>
+    <columns>taking_blood__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Price_After_Discount__c</columns>
+    <columns>MedicalProcedurePrice__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Domain__c</field>
+        <operation>notEqual</operation>
+        <value>מעבדה</value>
+    </filters>
+    <filters>
+        <field>Service_Type__c</field>
+        <operation>equals</operation>
+        <value>ScheduleInMahon</value>
+    </filters>
+    <label>All</label>
+</ListView>

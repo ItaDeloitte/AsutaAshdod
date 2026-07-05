@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>procedures_for_children</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+(((Medical_Procedure__r.Procedure_Code__c =&apos;801268&apos;)  || 
+ (Medical_Procedure__r.Procedure_Code__c =&apos;801272&apos;))
+ &amp;&amp;((FLOOR((TODAY() -  Patient_Account__r.PersonContact.Birthdate ) / 365))&gt;12) &amp;&amp;
+ Site__r.Site_Code__c =&apos;20&apos;)
+ ||
+(((Medical_Procedure__r.Procedure_Code__c =&apos;801268&apos;)  || 
+ (Medical_Procedure__r.Procedure_Code__c =&apos;801272&apos;))
+ &amp;&amp;((FLOOR((TODAY() -  Patient_Account__r.PersonContact.Birthdate ) / 365))&gt;16) &amp;&amp;
+ Site__r.Site_Code__c &lt;&gt;  &apos;20&apos;)&amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;</errorConditionFormula>
+    <errorMessage>גיל המטופל אינו תואם לפעולה הרפואית</errorMessage>
+</ValidationRule>

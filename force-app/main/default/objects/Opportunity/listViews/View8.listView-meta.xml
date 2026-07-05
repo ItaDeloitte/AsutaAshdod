@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View8</fullName>
+    <columns>CallBack__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Phone__c</columns>
+    <columns>Email__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>StageStatus__c</columns>
+    <columns>OtherReasonExplanation__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Campaign_Name__c</field>
+        <operation>equals</operation>
+        <value>בנק הזרע - טופס עמוד נחיתה נשים</value>
+    </filters>
+    <filters>
+        <field>CallBack__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Waiting for patient</value>
+    </filters>
+    <filters>
+        <field>UPDATEDBY_USER.ALIAS</field>
+        <operation>contains</operation>
+        <value>esterda</value>
+    </filters>
+    <label>בנק הזרע - מטופלות שיש לחזור אסתר</label>
+</ListView>

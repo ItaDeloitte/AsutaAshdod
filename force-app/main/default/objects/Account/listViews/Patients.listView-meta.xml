@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Patients</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ID_Number__c</columns>
+    <columns>Gender__c</columns>
+    <columns>Icon_insurgence__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ID_Type__c</columns>
+    <columns>Patient_Age__c</columns>
+    <columns>Age_Number__c</columns>
+    <columns>HealthCloudGA__Age__pc</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__pc</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>HealthCloudGA__Age__pc</field>
+        <operation>lessThan</operation>
+        <value>18</value>
+    </filters>
+    <label>מטופלים</label>
+</ListView>

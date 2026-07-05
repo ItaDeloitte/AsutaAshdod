@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>status__c</fullName>
+    <label>סטטוס</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>sent</fullName>
+                <default>false</default>
+                <label>נשלח למטופל</label>
+            </value>
+            <value>
+                <fullName>done</fullName>
+                <default>false</default>
+                <label>הושלם ע&quot;י מטופל</label>
+            </value>
+            <value>
+                <fullName>canceled</fullName>
+                <default>false</default>
+                <label>בוטל</label>
+            </value>
+            <value>
+                <fullName>create</fullName>
+                <default>true</default>
+                <label>נוצר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

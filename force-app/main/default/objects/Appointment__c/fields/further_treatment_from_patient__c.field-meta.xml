@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>further_treatment_from_patient__c</fullName>
+    <description>במסגרת סקר מומחים שנשלח לאחר התור, שאלה 3 תתעדכן פה</description>
+    <label>Patient Further Treatment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>בדיקה</fullName>
+                <default>false</default>
+                <label>בדיקה</label>
+            </value>
+            <value>
+                <fullName>תיאום ניתוח</fullName>
+                <default>false</default>
+                <label>תיאום ניתוח</label>
+            </value>
+            <value>
+                <fullName>טיפול מחליף ניתוח</fullName>
+                <default>false</default>
+                <label>טיפול מחליף ניתוח</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>אין</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אין</label>
+            </value>
+            <value>
+                <fullName>טיפול תרופתי</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>טיפול תרופתי</label>
+            </value>
+            <value>
+                <fullName>ניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ניתוח</label>
+            </value>
+            <value>
+                <fullName>תחליף ניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תחליף ניתוח</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

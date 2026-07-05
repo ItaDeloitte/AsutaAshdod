@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>for_360_patient_only_parent_case</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+AND(
+Case__r.Parent.RecordType.DeveloperName = &quot;Assuta_360&quot;,
+NOT(ISCHANGED( Remainder_status__c )),
+NOT(ISCHANGED(  Remainder_type__c )),
+NOT(ISCHANGED(   sent_to_tizkurit__c )),
+NOT(ISCHANGED(   human_reminder_transferred__c )),
+NOT(ISCHANGED(    sms_reminder_sent__c ))
+)</errorConditionFormula>
+    <errorMessage>מטופל זה הינו 360. ניהול התורים יתבצע רק מתוך פניית ה-360 של מטופל זה שמקושרת כפניית אב לפנייה זו</errorMessage>
+</ValidationRule>

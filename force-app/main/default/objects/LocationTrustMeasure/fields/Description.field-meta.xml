@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description</fullName>
+    <inlineHelpText>הסבר כיצד תוציא את מדד האמון אל הפועל. השתמש בניסוח תמציתי. תן עדיפות לבהירות על פני משפטים שלמים – לרשותך רק 250 תווים.</inlineHelpText>
+</CustomField>

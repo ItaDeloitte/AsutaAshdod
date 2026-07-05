@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MEYSHAFIR</fullName>
+    <columns>NAME</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Site__c</columns>
+    <columns>Calendar__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>RisAppointmentNotes__c</columns>
+    <columns>Notes__c</columns>
+    <columns>Remarks__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Date_of_appointment__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/1/2021</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>contains</operation>
+        <value>זכאי</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date_Time__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/1/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>בטיפול אדמיניסטרטיבי,Canceled</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <filters>
+        <field>Verification_Done_With_Case__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>תורים עתידיים למי שפיר - זכאיות</label>
+</ListView>

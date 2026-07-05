@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier_Type__c</fullName>
+    <label>Supplier Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>עוסק מורשה</fullName>
+                <default>false</default>
+                <label>עוסק מורשה</label>
+            </value>
+            <value>
+                <fullName>חברה</fullName>
+                <default>false</default>
+                <label>חברה</label>
+            </value>
+            <value>
+                <fullName>עמותה</fullName>
+                <default>false</default>
+                <label>עמותה</label>
+            </value>
+            <value>
+                <fullName>עוסק פטור</fullName>
+                <default>false</default>
+                <label>עוסק פטור</label>
+            </value>
+            <value>
+                <fullName>חשבונית עצמית</fullName>
+                <default>false</default>
+                <label>חשבונית עצמית</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

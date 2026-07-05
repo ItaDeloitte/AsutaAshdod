@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Type__c</fullName>
+    <description>תחום ההפנייה
+מגיע ממשק מכבי</description>
+    <label>Maccabi Case Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hospitalization</fullName>
+                <default>false</default>
+                <label>Hospitalization</label>
+            </value>
+            <value>
+                <fullName>חיוב ישיר</fullName>
+                <default>false</default>
+                <label>חיוב ישיר</label>
+            </value>
+            <value>
+                <fullName>ביצוע פעולה</fullName>
+                <default>false</default>
+                <label>ביצוע פעולה</label>
+            </value>
+            <value>
+                <fullName>Ergometric</fullName>
+                <default>false</default>
+                <label>Ergometric</label>
+            </value>
+            <value>
+                <fullName>CT</fullName>
+                <default>false</default>
+                <label>CT</label>
+            </value>
+            <value>
+                <fullName>Mammography</fullName>
+                <default>false</default>
+                <label>Mammography</label>
+            </value>
+            <value>
+                <fullName>MRI</fullName>
+                <default>false</default>
+                <label>MRI</label>
+            </value>
+            <value>
+                <fullName>OrganUS</fullName>
+                <default>false</default>
+                <label>OrganUS</label>
+            </value>
+            <value>
+                <fullName>NM</fullName>
+                <default>false</default>
+                <label>NM</label>
+            </value>
+            <value>
+                <fullName>DXA</fullName>
+                <default>false</default>
+                <label>DXA</label>
+            </value>
+            <value>
+                <fullName>MGASTRO</fullName>
+                <default>false</default>
+                <label>MGASTRO</label>
+            </value>
+            <value>
+                <fullName>EcoCard</fullName>
+                <default>false</default>
+                <label>EcoCard</label>
+            </value>
+            <value>
+                <fullName>OutPationClinic</fullName>
+                <default>false</default>
+                <label>OutPationClinic</label>
+            </value>
+            <value>
+                <fullName>CONSULT</fullName>
+                <default>false</default>
+                <label>CONSULT</label>
+            </value>
+            <value>
+                <fullName>SleepLab</fullName>
+                <default>false</default>
+                <label>SleepLab</label>
+            </value>
+            <value>
+                <fullName>EmotionalCare</fullName>
+                <default>false</default>
+                <label>EmotionalCare</label>
+            </value>
+            <value>
+                <fullName>CardiacCatheter</fullName>
+                <default>false</default>
+                <label>CardiacCatheter</label>
+            </value>
+            <value>
+                <fullName>מכון</fullName>
+                <default>false</default>
+                <label>מכון</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

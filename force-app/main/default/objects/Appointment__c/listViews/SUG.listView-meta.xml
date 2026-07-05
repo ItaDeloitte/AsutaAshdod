@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SUG</fullName>
+    <columns>Site__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Anesthesia_Type__c</columns>
+    <columns>SurveyResults__c</columns>
+    <columns>NurseStatus__c</columns>
+    <columns>NurseDescription__c</columns>
+    <columns>PreSurgery_date_time__c</columns>
+    <columns>presurgery_answer__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>PercentageOfCompletion__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pre_surgery_DONE__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date_Time__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>TOMORROW</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>Spincal__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>notContain</operation>
+        <value>סמסון,באר,אשדוד,מעיין</value>
+    </filters>
+    <filters>
+        <field>SurveyResults__c</field>
+        <operation>notEqual</operation>
+        <value>לא נדרש טרום ניתוח</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>קולונו,גסטרו,הפסקת,הריון,מי,שפיר,צינטור,צינתור,אבלצ,צנתור</value>
+    </filters>
+    <filters>
+        <field>NurseStatus__c</field>
+        <operation>notEqual</operation>
+        <value>לא נדרש טרום לפני הניתוח,זומן תור למרפאה,סיום טיפול</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>ממתין לאישור,Canceled,3,2</value>
+    </filters>
+    <label>בקרה לשאלון טרום - דם לסוג</label>
+</ListView>

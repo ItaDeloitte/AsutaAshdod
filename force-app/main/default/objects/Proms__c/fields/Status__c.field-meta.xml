@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>טרם טופל</fullName>
+                <default>true</default>
+                <label>טרם טופל</label>
+            </value>
+            <value>
+                <fullName>הוקצה לטיפול</fullName>
+                <default>false</default>
+                <label>הוקצה לטיפול</label>
+            </value>
+            <value>
+                <fullName>בטיפול נציג</fullName>
+                <default>false</default>
+                <label>בטיפול נציג</label>
+            </value>
+            <value>
+                <fullName>סיום טיפול</fullName>
+                <default>false</default>
+                <label>סיום טיפול</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

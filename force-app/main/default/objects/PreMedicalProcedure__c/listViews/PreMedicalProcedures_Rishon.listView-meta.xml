@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreMedicalProcedures_Rishon</fullName>
+    <columns>MedicalProcedure__c</columns>
+    <columns>PreMedicalProcedure__c</columns>
+    <columns>Active__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>אסותא ראשל&quot;צ</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>הנחיות טרום ניתוחיות - אסותא ראשון לציון</label>
+</ListView>

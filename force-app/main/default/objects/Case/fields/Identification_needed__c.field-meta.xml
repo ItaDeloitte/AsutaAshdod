@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Identification_needed__c</fullName>
+    <description>ע&quot;פ נושא הפנייה, מוחלט סוג הזיהוי הנדרש שהנציג צריך לבצע מול המטופל בטרם הוא נותן לו מענה</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL(Case_subject__c , &quot;כתובות ודרכי הגעה&quot;) || ISPICKVAL(Case_subject__c , &quot;שעות פעילות מכונים ומרפאות&quot;) || ISPICKVAL(Case_subject__c , &quot;טיפול אדמיניסטרטיבי טרום הניתוח&quot;) || ISPICKVAL(Case_subject__c , &quot;מועמד ל-360&quot;) || ISPICKVAL(Case_subject__c , &quot;עדכון פרטים אישיים&quot;) || ISPICKVAL(Case_subject__c , &quot;שעות פעילות מוקדי השירות של אסותא&quot;) || ISPICKVAL(Case_subject__c , &quot;נגישות&quot;) || ISPICKVAL(Case_subject__c , &quot;דרושים/דרושות&quot;) || ISPICKVAL(Case_subject__c , &quot;העברת פנייה למחלקה&quot;) || ISPICKVAL(Case_subject__c , &quot;זימון תור חדש&quot;)|| ISPICKVAL(Case_subject__c , &quot;זימון רופא מומחה&quot;),NOT(OTP_Succeeded__c)) ,IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlO&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF(AND(ISPICKVAL(Case_subject__c , &quot;עדכון תור קיים&quot;) || ISPICKVAL(Case_subject__c , &quot;ממוגרפיה&quot;) || ISPICKVAL(Case_subject__c , &quot;בירור אודות תור&quot;) || ISPICKVAL(Case_subject__c , &quot;עדכון תור לרופא&quot;) ,NOT(OTP_Succeeded__c)), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlM&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+
+IF(AND(ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) || ISPICKVAL(Case_subject__c,&quot;טיפול אדמיניסטרטיבי לאחר הניתוח&quot;)||(ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) &amp;&amp; ISPICKVAL(sub_case_subject__c,&apos;אחזור מידע מהארכיון ורשומות רפואיות&apos;)) || (ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) &amp;&amp; ISPICKVAL(sub_case_subject__c,&apos;בקשה לשליחת תוצאות&apos;) || RecordType.DeveloperName = &quot;PublicInquiries&quot; || RecordType.DeveloperName = &quot;PublicInquiriesItem&quot; ) ,NOT(OTP_Succeeded__c)), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlN&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+
+IF(AND(ISPICKVAL(Case_subject__c , &quot;כתובות ודרכי הגעה&quot;) || ISPICKVAL(Case_subject__c , &quot;שעות פעילות מכונים ומרפאות&quot;) || ISPICKVAL(Case_subject__c , &quot;טיפול אדמיניסטרטיבי טרום הניתוח&quot;) || ISPICKVAL(Case_subject__c , &quot;מועמד ל-360&quot;)|| ISPICKVAL(Case_subject__c , &quot;זימון תור חדש&quot;)|| ISPICKVAL(Case_subject__c , &quot;זימון רופא מומחה&quot;),OTP_Succeeded__c) ,IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000IfAH&amp;oid=00DKI000000MTJU&amp;lastMod=1568903149000&quot;, &quot;&quot; , 30, 30),
+
+IF(AND(ISPICKVAL(Case_subject__c , &quot;עדכון תור קיים&quot;) || ISPICKVAL(Case_subject__c , &quot;ממוגרפיה&quot;) || ISPICKVAL(Case_subject__c , &quot;בירור אודות תור&quot;) || ISPICKVAL(Case_subject__c , &quot;עדכון תור לרופא&quot;),OTP_Succeeded__c), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000IfAC&amp;oid=00DKI000000MTJU&amp;lastMod=1568903104000&quot;, &quot;&quot; , 30, 30),
+
+IF(AND(ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) || ISPICKVAL(Case_subject__c,&quot;טיפול אדמיניסטרטיבי לאחר הניתוח&quot;)|| (ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) &amp;&amp; ISPICKVAL(sub_case_subject__c,&apos;בקשה לשליחת תוצאות&apos;) || RecordType.DeveloperName = &quot;PublicInquiries&quot; || RecordType.DeveloperName = &quot;PublicInquiriesItem&quot; ) ,OTP_Succeeded__c), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000IfA7&amp;oid=00DKI000000MTJU&amp;lastMod=1568903045000&quot;, &quot;&quot; , 30, 30),&quot;&quot;
+
+)
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>צהוב - בסיסי, כתום - רגיל, אדום - מחמיר</inlineHelpText>
+    <label>Identification needed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

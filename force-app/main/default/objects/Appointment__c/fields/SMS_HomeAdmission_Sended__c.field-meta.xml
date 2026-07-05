@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_HomeAdmission_Sended__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>סימון עבור שליחת סמס קבלה מהבית</description>
+    <label>SMS Home Admission Sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

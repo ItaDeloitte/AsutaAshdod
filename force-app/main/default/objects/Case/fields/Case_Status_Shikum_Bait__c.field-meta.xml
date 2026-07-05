@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Status_Shikum_Bait__c</fullName>
+    <label>Case Status Shikum Bait</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Case_Phase__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaits_Patient</fullName>
+                <default>false</default>
+                <label>ממתין לתשובת מטופל</label>
+            </value>
+            <value>
+                <fullName>Pending_Documents</fullName>
+                <default>false</default>
+                <label>ממתין למסמכים</label>
+            </value>
+            <value>
+                <fullName>Pending_Doctor_Approval</fullName>
+                <default>false</default>
+                <label>ממתין לאישור גורם רפואי</label>
+            </value>
+            <value>
+                <fullName>Received_Doctor_Response</fullName>
+                <default>false</default>
+                <label>התקבלה תשובה מהרופא</label>
+            </value>
+            <value>
+                <fullName>No_Reply</fullName>
+                <default>false</default>
+                <label>אין מענה</label>
+            </value>
+            <value>
+                <fullName>First_Visit_Scheduled</fullName>
+                <default>false</default>
+                <label>זומן ביקור ראשוני</label>
+            </value>
+            <value>
+                <fullName>Awaits_Appointments_Schedule</fullName>
+                <default>false</default>
+                <label>ממתין לתיאום תורים</label>
+            </value>
+            <value>
+                <fullName>Appointments_Scheduled</fullName>
+                <default>false</default>
+                <label>תואמו תורים</label>
+            </value>
+            <value>
+                <fullName>Collection_Made</fullName>
+                <default>false</default>
+                <label>בוצעה גבייה</label>
+            </value>
+            <value>
+                <fullName>Department_Clarification</fullName>
+                <default>false</default>
+                <label>בירור מול המחלקה</label>
+            </value>
+            <value>
+                <fullName>Service_Unqualified</fullName>
+                <default>false</default>
+                <label>לא מתאים לשירות</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>מחיר</label>
+            </value>
+            <value>
+                <fullName>Customer_Regrets</fullName>
+                <default>false</default>
+                <label>לקוח התחרט</label>
+            </value>
+            <value>
+                <fullName>Surgery_Cancelled</fullName>
+                <default>false</default>
+                <label>ניתוח נדחה/בוטל</label>
+            </value>
+            <value>
+                <fullName>Chosen_Kupa_Route</fullName>
+                <default>false</default>
+                <label>בחר במסלול קופה</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>חדש</label>
+            </value>
+            <value>
+                <fullName>Shikum_Bait_Completed</fullName>
+                <default>false</default>
+                <label>הושלם שיקום בית</label>
+            </value>
+            <value>
+                <fullName>Approved_Professional</fullName>
+                <default>false</default>
+                <label>אושר ע&quot;י גורם מקצועי</label>
+            </value>
+            <value>
+                <fullName>Geographic_location</fullName>
+                <default>false</default>
+                <label>מיקום גאוגרפי</label>
+            </value>
+            <value>
+                <fullName>לא מעוניין</fullName>
+                <default>false</default>
+                <label>לא מעוניין</label>
+            </value>
+            <value>
+                <fullName>הושלם אבחון בית</fullName>
+                <default>false</default>
+                <label>השירות הושלם</label>
+            </value>
+            <value>
+                <fullName>כפילות</fullName>
+                <default>false</default>
+                <label>כפילות</label>
+            </value>
+            <value>
+                <fullName>תואם איסוף ציוד</fullName>
+                <default>false</default>
+                <label>תואם איסוף ציוד</label>
+            </value>
+            <value>
+                <fullName>availability</fullName>
+                <default>false</default>
+                <label>זמינות</label>
+            </value>
+            <value>
+                <fullName>Turns to the cash register</fullName>
+                <default>false</default>
+                <label>פונה לקופה</label>
+            </value>
+            <value>
+                <fullName>emergency</fullName>
+                <default>false</default>
+                <label>מיון</label>
+            </value>
+            <value>
+                <fullName>Ordered service elsewhere</fullName>
+                <default>false</default>
+                <label>הזמין שירות במקום אחר</label>
+            </value>
+            <value>
+                <fullName>General Information</fullName>
+                <default>false</default>
+                <label>מידע כללי</label>
+            </value>
+            <value>
+                <fullName>לא מתאים רפואית</fullName>
+                <default>false</default>
+                <label>לא מתאים רפואית</label>
+            </value>
+            <value>
+                <fullName>שירות לא קיים</fullName>
+                <default>false</default>
+                <label>שירות לא קיים</label>
+            </value>
+            <value>
+                <fullName>Pre_surgery_Outbound_Call</fullName>
+                <default>false</default>
+                <label>Pre surgery Outbound Call</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>New</controllingFieldValue>
+            <valueName>New</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service_Adaption</controllingFieldValue>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>Awaits_Patient</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service_Adaption</controllingFieldValue>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>Pending_Documents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service_Adaption</controllingFieldValue>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>Pending_Doctor_Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service_Adaption</controllingFieldValue>
+            <valueName>Received_Doctor_Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service_Adaption</controllingFieldValue>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>No_Reply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service_Adaption</controllingFieldValue>
+            <valueName>Approved_Professional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>First_Visit_Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>Awaits_Appointments_Schedule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>Appointments_Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>Collection_Made</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>Department_Clarification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In_Process</controllingFieldValue>
+            <valueName>תואם איסוף ציוד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Service_Unqualified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Customer_Regrets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Surgery_Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Chosen_Kupa_Route</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Shikum_Bait_Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Geographic_location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>לא מעוניין</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>הושלם אבחון בית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>כפילות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Turns to the cash register</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>emergency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>Ordered service elsewhere</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>General Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>לא מתאים רפואית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closing</controllingFieldValue>
+            <valueName>שירות לא קיים</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

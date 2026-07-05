@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>include_merge_field</fullName>
+    <active>true</active>
+    <description>חייבים להכניס api name  כאשר יש {}  והפוך.</description>
+    <errorConditionFormula>( ISBLANK( apiNames__c )&amp;&amp; CONTAINS( Sms_content__c , &quot;{0}&quot;)  )||( NOT( ISBLANK( apiNames__c ) )&amp;&amp;  NOT(CONTAINS( Sms_content__c , &quot;{0}&quot;)) )</errorConditionFormula>
+    <errorMessage>עבור שדות דינמיים חייב להוסיף  api names  וסוגריים מסולסלים</errorMessage>
+</ValidationRule>

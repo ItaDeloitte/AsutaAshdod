@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q_62_23_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CallBack__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LeadDescription__c</columns>
+    <columns>HealthCloudGA__StartResumptionOfCareDate__c</columns>
+    <columns>LostReasonExplanation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>campaignIdFromWebToLead__c</field>
+        <operation>equals</operation>
+        <value>7018d000000YfQlAAK</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>New,חדש,Working,waiting</value>
+    </filters>
+    <label>לידים מרכז אורולוגי אסותא באר שבע</label>
+</ListView>

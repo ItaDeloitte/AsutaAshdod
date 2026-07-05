@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field1__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( Group__c , &quot;ניתוחים&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqMG&amp;oid=00DKI000000MTJU&amp;lastMod=1564665463000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;נרקיס&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqML&amp;oid=00DKI000000MTJU&amp;lastMod=1564665513000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;סחלב&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqMV&amp;oid=00DKI000000MTJU&amp;lastMod=1564665604000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;יסמין&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqM1&amp;oid=00DKI000000MTJU&amp;lastMod=1564665333000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;סביון&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqMQ&amp;oid=00DKI000000MTJU&amp;lastMod=1564665540000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;לילך&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqM6&amp;oid=00DKI000000MTJU&amp;lastMod=1564665364000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;דיגיטל&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqLr&amp;oid=00DKI000000MTJU&amp;lastMod=1564665201000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;בכירים&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqLm&amp;oid=00DKI000000MTJU&amp;lastMod=1564665161000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;הקלדות&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqLw&amp;oid=00DKI000000MTJU&amp;lastMod=1564665294000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;מומחים&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqMB&amp;oid=00DKI000000MTJU&amp;lastMod=1564665402000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Group__c, &quot;אסותא אישי&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000crG1&amp;oid=00DKI000000MTJU&amp;lastMod=1565078279000&quot;, &quot;&quot; , 30, 30),
+&quot;&quot;)))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Field 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

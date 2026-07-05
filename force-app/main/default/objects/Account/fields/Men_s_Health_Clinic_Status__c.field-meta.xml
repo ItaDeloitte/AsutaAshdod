@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Men_s_Health_Clinic_Status__c</fullName>
+    <label>Men&apos;s Health Clinic Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waiting_For_Initial_Consultation</fullName>
+                <default>false</default>
+                <label>Waiting For Initial Consultation</label>
+            </value>
+            <value>
+                <fullName>Under_Examination</fullName>
+                <default>false</default>
+                <label>Under Examination</label>
+            </value>
+            <value>
+                <fullName>Waiting _For_Surgery_Biopsy</fullName>
+                <default>false</default>
+                <label>Waiting  For Surgery / Biopsy</label>
+            </value>
+            <value>
+                <fullName>Waiting_For_Biopsy_Results</fullName>
+                <default>false</default>
+                <label>Waiting For Biopsy Results</label>
+            </value>
+            <value>
+                <fullName>Biopdy_Results_Received</fullName>
+                <default>false</default>
+                <label>Biopdy Results Received</label>
+            </value>
+            <value>
+                <fullName>Waiting_For_Review</fullName>
+                <default>false</default>
+                <label>Waiting For Review</label>
+            </value>
+            <value>
+                <fullName>Tracking</fullName>
+                <default>false</default>
+                <label>Tracking</label>
+            </value>
+            <value>
+                <fullName>Awaiting _Surgery_Biopsy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Awaiting _Surgery_Biopsy</label>
+            </value>
+            <value>
+                <fullName>Awaiting_Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Awaiting_Review</label>
+            </value>
+            <value>
+                <fullName>Pathological_Answers_Were_Received</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pathological_Answers_Were_Received</label>
+            </value>
+            <value>
+                <fullName>Under Investigation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Under Investigation</label>
+            </value>
+            <value>
+                <fullName>מעקב</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>מעקב</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

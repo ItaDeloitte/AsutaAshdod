@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RemindersStatusConsultancySummary__c</fullName>
+    <label>Reminders status- Consultancy summary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RemindersYetSent</fullName>
+                <default>false</default>
+                <label>טרם נשלחה תזכורת</label>
+            </value>
+            <value>
+                <fullName>FirstReminderSent</fullName>
+                <default>false</default>
+                <label>נשלחה תזכורת ראשונה</label>
+            </value>
+            <value>
+                <fullName>SecondReminderSent</fullName>
+                <default>false</default>
+                <label>נשלחה תזכורת שנייה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

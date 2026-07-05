@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gastro_files</fullName>
+    <columns>NAME</columns>
+    <columns>Domain__c</columns>
+    <columns>Medical_Procedure__c</columns>
+    <columns>Site__c</columns>
+    <columns>Language__c</columns>
+    <columns>Iodine_sensitivity__c</columns>
+    <columns>Asthma__c</columns>
+    <columns>FromHour__c</columns>
+    <columns>ToHour__c</columns>
+    <columns>AppointmentRecordType__c</columns>
+    <columns>Active__c</columns>
+    <columns>ClinicalInstructionsGiven__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>GastroGuidelines__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>מסמכים עבור גסטרו</label>
+</ListView>

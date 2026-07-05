@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payer_Factor__c</fullName>
+    <label>גורם משלם</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>מכבי</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>פרטי</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>כללית</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>מאוחדת</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>לאומית</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>ענף תקציבים</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>ביטוח הראל</label>
+            </value>
+            <value>
+                <fullName>59</fullName>
+                <default>false</default>
+                <label>בירור מהיר</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>הקריה למחקר גרעיני - (קמג)</label>
+            </value>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>משרד הבטחון</label>
+            </value>
+            <value>
+                <fullName>1314</fullName>
+                <default>false</default>
+                <label>משרד הבריאות - מי שפיר</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>כללית מושלם</label>
+            </value>
+            <value>
+                <fullName>47</fullName>
+                <default>false</default>
+                <label>כללית פלטינום</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>ביטוח מנורה</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>ביטוח הפניקס</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>ביטוח מגדל</label>
+            </value>
+            <value>
+                <fullName>24</fullName>
+                <default>false</default>
+                <label>ביטוח כלל</label>
+            </value>
+            <value>
+                <fullName>39</fullName>
+                <default>false</default>
+                <label>ביטוח דיקלה</label>
+            </value>
+            <value>
+                <fullName>41</fullName>
+                <default>false</default>
+                <label>ביטוח איילון</label>
+            </value>
+            <value>
+                <fullName>42</fullName>
+                <default>false</default>
+                <label>ביטוח ישיר</label>
+            </value>
+            <value>
+                <fullName>86</fullName>
+                <default>false</default>
+                <label>הכשרה</label>
+            </value>
+            <value>
+                <fullName>110</fullName>
+                <default>false</default>
+                <label>פרטי – תיירות מרפא</label>
+            </value>
+            <value>
+                <fullName>133</fullName>
+                <default>false</default>
+                <label>פרטי חבילה</label>
+            </value>
+            <value>
+                <fullName>166</fullName>
+                <default>false</default>
+                <label>פרסונל משפחה</label>
+            </value>
+            <value>
+                <fullName>22139</fullName>
+                <default>false</default>
+                <label>דיוויד שילדס</label>
+            </value>
+            <value>
+                <fullName>525</fullName>
+                <default>false</default>
+                <label>קופח מאוחדת שבן</label>
+            </value>
+            <value>
+                <fullName>425</fullName>
+                <default>false</default>
+                <label>קופח לאומית שבן</label>
+            </value>
+            <value>
+                <fullName>422</fullName>
+                <default>false</default>
+                <label>לאומית זהב</label>
+            </value>
+            <value>
+                <fullName>35</fullName>
+                <default>false</default>
+                <label>מכבי זהב</label>
+            </value>
+            <value>
+                <fullName>44</fullName>
+                <default>false</default>
+                <label>מכבי כסף</label>
+            </value>
+            <value>
+                <fullName>81</fullName>
+                <default>false</default>
+                <label>מכבי שלי</label>
+            </value>
+            <value>
+                <fullName>89</fullName>
+                <default>false</default>
+                <label>מכבי שב&quot;ן</label>
+            </value>
+            <value>
+                <fullName>303</fullName>
+                <default>false</default>
+                <label>מכבי מרפאות חוץ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

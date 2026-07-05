@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>如果此候选患者和客户记录表示，将为真</help>
+    <label><!-- IsConvertedToPatient --></label>
+    <name>HealthCloudGA__IsConvertedToPatient__c</name>
+</CustomFieldTranslation>

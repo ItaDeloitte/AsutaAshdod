@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRI_7</fullName>
+    <columns>NAME</columns>
+    <columns>Site__c</columns>
+    <columns>Remainder_status__c</columns>
+    <columns>manual_arrival__c</columns>
+    <columns>Arrival_Confirmation__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Case__c</columns>
+    <columns>sent_to_tizkurit__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>Number_of_commitment__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Date_of_appointment__c</field>
+        <operation>equals</operation>
+        <value>NEXT_N_DAYS:3</value>
+    </filters>
+    <filters>
+        <field>domain2__c</field>
+        <operation>contains</operation>
+        <value>M.R.I</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>החייל</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>NewAppointment,וידוא הגעה לפגישה,WaitingForAppointment</value>
+    </filters>
+    <filters>
+        <field>Canceled_Reason__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>של וודוא הגעה MRI 7 ימים קדימה</label>
+</ListView>

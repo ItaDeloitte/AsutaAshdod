@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>corona_credit_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>מוקד מידע וזימון תורים – מעקב זיכוי קורו</label>
+    <queue>corona_credit</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

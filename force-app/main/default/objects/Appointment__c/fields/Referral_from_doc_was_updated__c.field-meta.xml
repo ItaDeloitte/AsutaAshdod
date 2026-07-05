@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_from_doc_was_updated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>במידה ורשומת הפניה מאתר רופאים התעדכנה עבור השדות - גורם משלם, שכר רופא, אתר, פעולה רפואית שדה זה יהיה TRUE 
+יעודכן ע&quot;י P</description>
+    <label>Referral from doc was updated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

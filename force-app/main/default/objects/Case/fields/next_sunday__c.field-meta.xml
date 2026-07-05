@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>next_sunday__c</fullName>
+    <description>במידה והיום הוא יום חמישי אחרי 15, שישי או שבת- השדה יעודכן להיות יום ראשון הקרוב בשעה 8. אחרת- השדה ישארך תאריך היצירה.</description>
+    <formula>IF(WEEKDAY(DATEVALUE(CreatedDate))=5 &amp;&amp; TIMEVALUE(CreatedDate)&gt;TIMEVALUE(&quot;12:00:00.000&quot;) ,
+
+DATETIMEVALUE(DATE( year(DATEVALUE(CreatedDate)), month(DATEVALUE(CreatedDate)),day(DATEVALUE(CreatedDate)))) +3 +  300/1440,
+
+CASE( WEEKDAY(DATEVALUE(CreatedDate)),
+
+6,
+DATETIMEVALUE(DATE( year(DATEVALUE(CreatedDate)), month(DATEVALUE(CreatedDate)),day(DATEVALUE(CreatedDate)))) +2 +  300/1440,
+
+
+7,
+DATETIMEVALUE(DATE( year(DATEVALUE(CreatedDate)), month(DATEVALUE(CreatedDate)),day(DATEVALUE(CreatedDate)))) +1 +  300/1440,
+
+CreatedDate
+
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>next_sunday</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

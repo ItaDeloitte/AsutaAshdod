@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>AppointmentSys__c</columns>
+    <columns>code__c</columns>
+    <columns>Doctor__c</columns>
+    <columns>view_in_app_sch__c</columns>
+    <columns>push_app__c</columns>
+    <columns>BranchName__c</columns>
+    <columns>ServiceId__c</columns>
+    <columns>code_tizkurit__c</columns>
+    <columns>ReminderId__c</columns>
+    <columns>status__c</columns>
+    <columns>technician1__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

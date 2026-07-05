@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>returning_case_icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(ISPICKVAL(return_case_type__c, &quot;נפתחה עוד פנייה לפנייה זו&quot; ),ISPICKVAL(return_case_type__c, &quot;אחרון&quot; )), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000ckNa&amp;oid=00DKI000000MTJU&amp;lastMod=1563183874000&quot;,&quot;&quot;,30,30),
+&quot;&quot;)</formula>
+    <label>Returning Case Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

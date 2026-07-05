@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>formtitan_otp_link__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF($User.Ashdod_employee__c,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/CASE_OTP_AP?fld114=&quot;&amp;formtitan_id_2__c,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/CASE_OTP?fld114=&quot;&amp;formtitan_id_2__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>formtitan otp link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

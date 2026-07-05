@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Subject__c</fullName>
+    <description>תת נושא פניות הציבור</description>
+    <label>Subject Public Inquiry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Subject_Public_Inquiry__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SLA קבלת פיענוח</fullName>
+                <default>false</default>
+                <label>SLA קבלת פיענוח</label>
+            </value>
+            <value>
+                <fullName>אבזור / תקלות בחדר</fullName>
+                <default>false</default>
+                <label>אבזור / תקלות בחדר</label>
+            </value>
+            <value>
+                <fullName>אבזור / תקלות בחדר פרטי</fullName>
+                <default>false</default>
+                <label>אבזור / תקלות בחדר פרטי</label>
+            </value>
+            <value>
+                <fullName>אבחון שגוי</fullName>
+                <default>false</default>
+                <label>אבחון שגוי</label>
+            </value>
+            <value>
+                <fullName>אובדן / נזק לחפצים אישיים</fullName>
+                <default>false</default>
+                <label>אובדן / נזק לחפצים אישיים</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>אחריות לאבדן \ נזק לחפצים אישיים - אשפוז</fullName>
+                <default>false</default>
+                <label>אחריות לאבדן \ נזק לחפצים אישיים - אשפוז</label>
+            </value>
+            <value>
+                <fullName>איכות המזון</fullName>
+                <default>false</default>
+                <label>איכות המזון</label>
+            </value>
+            <value>
+                <fullName>אי מסירת מידע רפואי</fullName>
+                <default>false</default>
+                <label>אי מסירת מידע רפואי</label>
+            </value>
+            <value>
+                <fullName>אי מסירת מידע רפואי בטלפון</fullName>
+                <default>false</default>
+                <label>אי מסירת מידע רפואי בטלפון</label>
+            </value>
+            <value>
+                <fullName>אי מציאת וריד</fullName>
+                <default>false</default>
+                <label>אי מציאת וריד</label>
+            </value>
+            <value>
+                <fullName>אי מתן תרופה ללא הוראת רופא</fullName>
+                <default>false</default>
+                <label>אי מתן תרופה ללא הוראת רופא</label>
+            </value>
+            <value>
+                <fullName>אי עמידה בSLA</fullName>
+                <default>false</default>
+                <label>אי עמידה בSLA</label>
+            </value>
+            <value>
+                <fullName>אי עמידה בתאום ציפיות</fullName>
+                <default>false</default>
+                <label>אי עמידה בתאום ציפיות</label>
+            </value>
+            <value>
+                <fullName>אישור למעסיק</fullName>
+                <default>false</default>
+                <label>אישור למעסיק</label>
+            </value>
+            <value>
+                <fullName>אישור למעסיק- ביקור במכון/אשפוז</fullName>
+                <default>false</default>
+                <label>אישור למעסיק- ביקור במכון/אשפוז</label>
+            </value>
+            <value>
+                <fullName>אישור על ימי אשפוז</fullName>
+                <default>false</default>
+                <label>אישור על ימי אשפוז</label>
+            </value>
+            <value>
+                <fullName>אי שמירה על נהלי מיגון- קורונה</fullName>
+                <default>false</default>
+                <label>אי שמירה על נהלי מיגון- קורונה</label>
+            </value>
+            <value>
+                <fullName>אי שמירה על פרטיות</fullName>
+                <default>false</default>
+                <label>אי שמירה על פרטיות</label>
+            </value>
+            <value>
+                <fullName>בטחון</fullName>
+                <default>false</default>
+                <label>בטחון</label>
+            </value>
+            <value>
+                <fullName>ביצוע פעולות בהרדמה \ אשפוז</fullName>
+                <default>false</default>
+                <label>ביצוע פעולות בהרדמה \ אשפוז</label>
+            </value>
+            <value>
+                <fullName>בעיות התחשבנות וכספים</fullName>
+                <default>false</default>
+                <label>בעיות התחשבנות וכספים</label>
+            </value>
+            <value>
+                <fullName>בעיות מחשוב</fullName>
+                <default>false</default>
+                <label>בעיות מחשוב</label>
+            </value>
+            <value>
+                <fullName>בעיות תהליכיות</fullName>
+                <default>false</default>
+                <label>בעיות תהליכיות</label>
+            </value>
+            <value>
+                <fullName>בקשה להנחה</fullName>
+                <default>false</default>
+                <label>בקשה להנחה</label>
+            </value>
+            <value>
+                <fullName>בקשה לחידוש סיסמא שפג תוקפה</fullName>
+                <default>false</default>
+                <label>בקשה לחידוש סיסמא שפג תוקפה</label>
+            </value>
+            <value>
+                <fullName>בקשה לשליחת מסמכים רפואיים/דיסק בדיקה</fullName>
+                <default>false</default>
+                <label>בקשה לשליחת מסמכים רפואיים/דיסק בדיקה</label>
+            </value>
+            <value>
+                <fullName>דחיית חיוב</fullName>
+                <default>false</default>
+                <label>דחיית חיוב</label>
+            </value>
+            <value>
+                <fullName>הטרדה מינית</fullName>
+                <default>false</default>
+                <label>הטרדה מינית</label>
+            </value>
+            <value>
+                <fullName>היגיינת ידיים</fullName>
+                <default>false</default>
+                <label>היגיינת ידיים</label>
+            </value>
+            <value>
+                <fullName>היצע שירותים/ טיפולים</fullName>
+                <default>false</default>
+                <label>היצע שירותים/ טיפולים</label>
+            </value>
+            <value>
+                <fullName>היצע שרותים</fullName>
+                <default>false</default>
+                <label>היצע שרותים</label>
+            </value>
+            <value>
+                <fullName>הנחיות לבדיקה</fullName>
+                <default>false</default>
+                <label>הנחיות לבדיקה</label>
+            </value>
+            <value>
+                <fullName>הנחיות לניתוח</fullName>
+                <default>false</default>
+                <label>הנחיות לניתוח</label>
+            </value>
+            <value>
+                <fullName>הסדרי נגישות</fullName>
+                <default>false</default>
+                <label>הסדרי נגישות</label>
+            </value>
+            <value>
+                <fullName>הסכמה מדעת</fullName>
+                <default>false</default>
+                <label>הסכמה מדעת</label>
+            </value>
+            <value>
+                <fullName>הערכת עלות לבדיקה</fullName>
+                <default>false</default>
+                <label>הערכת עלות לבדיקה</label>
+            </value>
+            <value>
+                <fullName>הערכת עלות לפני ניתוח</fullName>
+                <default>false</default>
+                <label>הערכת עלות לפני ניתוח</label>
+            </value>
+            <value>
+                <fullName>הערכת עלות לפני ניתוח - מוקד</fullName>
+                <default>false</default>
+                <label>הערכת עלות לפני ניתוח - מוקד</label>
+            </value>
+            <value>
+                <fullName>הערכת עלות לפני ניתוח - קבלה</fullName>
+                <default>false</default>
+                <label>הערכת עלות לפני ניתוח - קבלה</label>
+            </value>
+            <value>
+                <fullName>העתק חשבונית קבלה/ אישור תשלום</fullName>
+                <default>false</default>
+                <label>העתק חשבונית קבלה/ אישור תשלום</label>
+            </value>
+            <value>
+                <fullName>הפקת סיסמה</fullName>
+                <default>false</default>
+                <label>הפקת סיסמה</label>
+            </value>
+            <value>
+                <fullName>הצלבות בין תיקי מטופלים</fullName>
+                <default>false</default>
+                <label>הצלבות בין תיקי מטופלים</label>
+            </value>
+            <value>
+                <fullName>הצלבות פענוח בין נבדקים</fullName>
+                <default>false</default>
+                <label>הצלבות פענוח בין נבדקים</label>
+            </value>
+            <value>
+                <fullName>הקדמת / דחיית תור</fullName>
+                <default>false</default>
+                <label>הקדמת / דחיית תור</label>
+            </value>
+            <value>
+                <fullName>השגות לגבי טיפול רפואי</fullName>
+                <default>false</default>
+                <label>השגות לגבי טיפול רפואי</label>
+            </value>
+            <value>
+                <fullName>השגות על החלטת ועדה</fullName>
+                <default>false</default>
+                <label>השגות על החלטת ועדה</label>
+            </value>
+            <value>
+                <fullName>השגות על הערכה גריאטרית</fullName>
+                <default>false</default>
+                <label>השגות על הערכה גריאטרית</label>
+            </value>
+            <value>
+                <fullName>השגות על מועד שחרור</fullName>
+                <default>false</default>
+                <label>השגות על מועד שחרור</label>
+            </value>
+            <value>
+                <fullName>השגות על פענוח</fullName>
+                <default>false</default>
+                <label>השגות על פענוח</label>
+            </value>
+            <value>
+                <fullName>השגות על תוכן ברשומה רפואית</fullName>
+                <default>false</default>
+                <label>השגות על תוכן ברשומה רפואית</label>
+            </value>
+            <value>
+                <fullName>התמצאות באתר האינטרנט</fullName>
+                <default>false</default>
+                <label>התמצאות באתר האינטרנט</label>
+            </value>
+            <value>
+                <fullName>התעניינות תיירים</fullName>
+                <default>false</default>
+                <label>התעניינות תיירים</label>
+            </value>
+            <value>
+                <fullName>זהות גורם מטפל</fullName>
+                <default>false</default>
+                <label>זהות גורם מטפל</label>
+            </value>
+            <value>
+                <fullName>זיהוי מטופל</fullName>
+                <default>false</default>
+                <label>זיהוי מטופל</label>
+            </value>
+            <value>
+                <fullName>זירוז פענוח</fullName>
+                <default>false</default>
+                <label>זירוז פענוח</label>
+            </value>
+            <value>
+                <fullName>זירור פענוח</fullName>
+                <default>false</default>
+                <label>זירור פענוח</label>
+            </value>
+            <value>
+                <fullName>זמינות חדר ניתוח לרופאים</fullName>
+                <default>false</default>
+                <label>זמינות חדר ניתוח לרופאים</label>
+            </value>
+            <value>
+                <fullName>זמינות טלפונית לקויה</fullName>
+                <default>false</default>
+                <label>זמינות טלפונית לקויה</label>
+            </value>
+            <value>
+                <fullName>זמינות תורים</fullName>
+                <default>false</default>
+                <label>זמינות תורים</label>
+            </value>
+            <value>
+                <fullName>זמינות תור לבדיקה</fullName>
+                <default>false</default>
+                <label>זמינות תור לבדיקה</label>
+            </value>
+            <value>
+                <fullName>זמן המתנה ממושך- העברה מהמיון למחלקה</fullName>
+                <default>false</default>
+                <label>זמן המתנה ממושך- העברה מהמיון למחלקה</label>
+            </value>
+            <value>
+                <fullName>זמן המתנה ממושך לבדיקה / לניתוח</fullName>
+                <default>false</default>
+                <label>זמן המתנה ממושך לבדיקה / לניתוח</label>
+            </value>
+            <value>
+                <fullName>זמן המתנה ממושך לדיסק בדיקה במכון</fullName>
+                <default>false</default>
+                <label>זמן המתנה ממושך לדיסק בדיקה במכון</label>
+            </value>
+            <value>
+                <fullName>זמן המתנה ממושך לשחרור</fullName>
+                <default>false</default>
+                <label>זמן המתנה ממושך לשחרור</label>
+            </value>
+            <value>
+                <fullName>חוסר מידע / הדרכה בשחרור</fullName>
+                <default>false</default>
+                <label>חוסר מידע / הדרכה בשחרור</label>
+            </value>
+            <value>
+                <fullName>חיטוי מכשור רפואי</fullName>
+                <default>false</default>
+                <label>חיטוי מכשור רפואי</label>
+            </value>
+            <value>
+                <fullName>חשד להונאה</fullName>
+                <default>false</default>
+                <label>חשד להונאה</label>
+            </value>
+            <value>
+                <fullName>טופס התחייבות</fullName>
+                <default>false</default>
+                <label>טופס התחייבות</label>
+            </value>
+            <value>
+                <fullName>טיפול רפואי לקוי</fullName>
+                <default>false</default>
+                <label>טיפול רפואי לקוי</label>
+            </value>
+            <value>
+                <fullName>טיפול רפואי לקוי- אחר</fullName>
+                <default>false</default>
+                <label>טיפול רפואי לקוי- אחר</label>
+            </value>
+            <value>
+                <fullName>טעות בזימון התור - מקום/ מועד / סוג בדיקה</fullName>
+                <default>false</default>
+                <label>טעות בזימון התור - מקום/ מועד / סוג בדיקה</label>
+            </value>
+            <value>
+                <fullName>טעות במתן הנחיות לפני בדיקה</fullName>
+                <default>false</default>
+                <label>טעות במתן הנחיות לפני בדיקה</label>
+            </value>
+            <value>
+                <fullName>טעות במתן הנחיות לפני ניתוח</fullName>
+                <default>false</default>
+                <label>טעות במתן הנחיות לפני ניתוח</label>
+            </value>
+            <value>
+                <fullName>יחס אחות</fullName>
+                <default>false</default>
+                <label>יחס אחות</label>
+            </value>
+            <value>
+                <fullName>יחס במרפאות חוץ</fullName>
+                <default>false</default>
+                <label>יחס במרפאות חוץ</label>
+            </value>
+            <value>
+                <fullName>יחס טכנאי</fullName>
+                <default>false</default>
+                <label>יחס טכנאי</label>
+            </value>
+            <value>
+                <fullName>יחס כח עזר</fullName>
+                <default>false</default>
+                <label>יחס כח עזר</label>
+            </value>
+            <value>
+                <fullName>יחס לקוי</fullName>
+                <default>false</default>
+                <label>יחס לקוי</label>
+            </value>
+            <value>
+                <fullName>יחס מאבטח</fullName>
+                <default>false</default>
+                <label>יחס מאבטח</label>
+            </value>
+            <value>
+                <fullName>יחס מזכירות</fullName>
+                <default>false</default>
+                <label>יחס מזכירה</label>
+            </value>
+            <value>
+                <fullName>יחס מרדים / רופא מחלקה- לא לשימוש</fullName>
+                <default>false</default>
+                <label>יחס מרדים / רופא מחלקה- לא לשימוש</label>
+            </value>
+            <value>
+                <fullName>יחס מתנדב/שירות לאומי</fullName>
+                <default>false</default>
+                <label>יחס מתנדב/שירות לאומי</label>
+            </value>
+            <value>
+                <fullName>יחס נציג מוקד</fullName>
+                <default>false</default>
+                <label>יחס נציג מוקד</label>
+            </value>
+            <value>
+                <fullName>יחס סניטר</fullName>
+                <default>false</default>
+                <label>יחס סניטר</label>
+            </value>
+            <value>
+                <fullName>יחס עובד מיקור חוץ</fullName>
+                <default>false</default>
+                <label>יחס עובד מיקור חוץ</label>
+            </value>
+            <value>
+                <fullName>יחס פרא רפואי</fullName>
+                <default>false</default>
+                <label>יחס פרא רפואי</label>
+            </value>
+            <value>
+                <fullName>יחס פרסונל אחר</fullName>
+                <default>false</default>
+                <label>יחס פרסונל אחר</label>
+            </value>
+            <value>
+                <fullName>יחס צוות מטפל</fullName>
+                <default>false</default>
+                <label>יחס צוות מטפל</label>
+            </value>
+            <value>
+                <fullName>יחס רופא מחלקה</fullName>
+                <default>false</default>
+                <label>יחס רופא מחלקה</label>
+            </value>
+            <value>
+                <fullName>יחס רופא מנתח</fullName>
+                <default>false</default>
+                <label>יחס רופא מנתח</label>
+            </value>
+            <value>
+                <fullName>יחס רופא מרדים</fullName>
+                <default>false</default>
+                <label>יחס רופא מרדים</label>
+            </value>
+            <value>
+                <fullName>יחס רופא מרפאה/מכון</fullName>
+                <default>false</default>
+                <label>יחס רופא מרפאה/מכון</label>
+            </value>
+            <value>
+                <fullName>כניסת מבקרים לבית החולים</fullName>
+                <default>false</default>
+                <label>כניסת מבקרים לבית החולים</label>
+            </value>
+            <value>
+                <fullName>כניסת מבקרים למחלקות אשפוז</fullName>
+                <default>false</default>
+                <label>כניסת מבקרים למחלקות אשפוז</label>
+            </value>
+            <value>
+                <fullName>כשירות תרבותית</fullName>
+                <default>false</default>
+                <label>כשירות תרבותית</label>
+            </value>
+            <value>
+                <fullName>כשרות ודת</fullName>
+                <default>false</default>
+                <label>כשרות ודת</label>
+            </value>
+            <value>
+                <fullName>מבנה ותשתיות</fullName>
+                <default>false</default>
+                <label>מבנה ותשתיות</label>
+            </value>
+            <value>
+                <fullName>מדיניות חברה</fullName>
+                <default>false</default>
+                <label>מדיניות חברה</label>
+            </value>
+            <value>
+                <fullName>מדיניות מלווה לבדיקה</fullName>
+                <default>false</default>
+                <label>מדיניות מלווה לבדיקה</label>
+            </value>
+            <value>
+                <fullName>מדיניות מלווה לניתוח</fullName>
+                <default>false</default>
+                <label>מדיניות מלווה לניתוח</label>
+            </value>
+            <value>
+                <fullName>מהירות תגובה אחיות</fullName>
+                <default>false</default>
+                <label>מהירות תגובה אחיות</label>
+            </value>
+            <value>
+                <fullName>מועד בדיקה/ ניתוח</fullName>
+                <default>false</default>
+                <label>מועד בדיקה/ ניתוח</label>
+            </value>
+            <value>
+                <fullName>מזון - איכות/ מגוון/ התאמה</fullName>
+                <default>false</default>
+                <label>מזון - איכות/ מגוון/ התאמה</label>
+            </value>
+            <value>
+                <fullName>מחסור בציוד</fullName>
+                <default>false</default>
+                <label>מחסור בציוד</label>
+            </value>
+            <value>
+                <fullName>מידע למטופל</fullName>
+                <default>false</default>
+                <label>מידע למטופל</label>
+            </value>
+            <value>
+                <fullName>מידע מרשומה רפואית</fullName>
+                <default>false</default>
+                <label>מידע מרשומה רפואית</label>
+            </value>
+            <value>
+                <fullName>מידע על תורים</fullName>
+                <default>false</default>
+                <label>מידע על תורים</label>
+            </value>
+            <value>
+                <fullName>מידע על תנאי אשפוז</fullName>
+                <default>false</default>
+                <label>מידע על תנאי אשפוז</label>
+            </value>
+            <value>
+                <fullName>מידע על תשלומים</fullName>
+                <default>false</default>
+                <label>מידע על תשלומים</label>
+            </value>
+            <value>
+                <fullName>מידע רפואי- כללי</fullName>
+                <default>false</default>
+                <label>מידע רפואי- כללי</label>
+            </value>
+            <value>
+                <fullName>מידע שגוי אודות שירותים קיימים באסותא</fullName>
+                <default>false</default>
+                <label>מידע שגוי אודות שירותים קיימים באסותא</label>
+            </value>
+            <value>
+                <fullName>מידע שגוי - אחר</fullName>
+                <default>false</default>
+                <label>מידע שגוי - אחר</label>
+            </value>
+            <value>
+                <fullName>מידע שגוי- כיסוי ביטוחי</fullName>
+                <default>false</default>
+                <label>מידע שגוי- כיסוי ביטוחי</label>
+            </value>
+            <value>
+                <fullName>מענה טלפוני</fullName>
+                <default>false</default>
+                <label>מענה טלפוני</label>
+            </value>
+            <value>
+                <fullName>מקצועיות אחיות</fullName>
+                <default>false</default>
+                <label>מקצועיות אחיות</label>
+            </value>
+            <value>
+                <fullName>מקצועיות נציג שירות</fullName>
+                <default>false</default>
+                <label>מקצועיות נציג שירות</label>
+            </value>
+            <value>
+                <fullName>מקצועיות צוות  מטפל</fullName>
+                <default>false</default>
+                <label>מקצועיות צוות  מטפל</label>
+            </value>
+            <value>
+                <fullName>מקצועיות רופא</fullName>
+                <default>false</default>
+                <label>מקצועיות רופא</label>
+            </value>
+            <value>
+                <fullName>משאבי אנוש</fullName>
+                <default>false</default>
+                <label>משאבי אנוש</label>
+            </value>
+            <value>
+                <fullName>נגישות</fullName>
+                <default>false</default>
+                <label>נגישות</label>
+            </value>
+            <value>
+                <fullName>נזקי שיניים</fullName>
+                <default>false</default>
+                <label>נזקי שיניים</label>
+            </value>
+            <value>
+                <fullName>ניהול תור לקוי</fullName>
+                <default>false</default>
+                <label>ניהול תור לקוי</label>
+            </value>
+            <value>
+                <fullName>ניתוח שלא הצליח</fullName>
+                <default>false</default>
+                <label>ניתוח שלא הצליח</label>
+            </value>
+            <value>
+                <fullName>נפילה/חבלה בשטח בית החולים</fullName>
+                <default>false</default>
+                <label>נפילה/חבלה בשטח בית החולים</label>
+            </value>
+            <value>
+                <fullName>נקיון</fullName>
+                <default>false</default>
+                <label>נקיון</label>
+            </value>
+            <value>
+                <fullName>סיסמא לא תקפה לאחר חודש</fullName>
+                <default>false</default>
+                <label>סיסמא לא תקפה לאחר חודש</label>
+            </value>
+            <value>
+                <fullName>סקר מטופלים</fullName>
+                <default>false</default>
+                <label>סקר מטופלים</label>
+            </value>
+            <value>
+                <fullName>עדכון פרטים אישיים</fullName>
+                <default>false</default>
+                <label>עדכון פרטים אישיים</label>
+            </value>
+            <value>
+                <fullName>עיכוב בקבלת טיפול רפואי</fullName>
+                <default>false</default>
+                <label>עיכוב בקבלת טיפול רפואי</label>
+            </value>
+            <value>
+                <fullName>עיכוב בקבלת ייעוץ רפואי - אשפוז</fullName>
+                <default>false</default>
+                <label>עיכוב בקבלת ייעוץ רפואי - אשפוז</label>
+            </value>
+            <value>
+                <fullName>עישון במקום אסור</fullName>
+                <default>false</default>
+                <label>עישון במקום אסור</label>
+            </value>
+            <value>
+                <fullName>עלויות שירותים</fullName>
+                <default>false</default>
+                <label>עלויות שירותים</label>
+            </value>
+            <value>
+                <fullName>פגיעה באוטונומיה</fullName>
+                <default>false</default>
+                <label>פגיעה באוטונומיה</label>
+            </value>
+            <value>
+                <fullName>פגיעה בחיסיון מטופל</fullName>
+                <default>false</default>
+                <label>פגיעה בחיסיון מטופל</label>
+            </value>
+            <value>
+                <fullName>פגיעה בפרטיות</fullName>
+                <default>false</default>
+                <label>פגיעה בפרטיות</label>
+            </value>
+            <value>
+                <fullName>פניה ממשרד הבריאות</fullName>
+                <default>false</default>
+                <label>פניה ממשרד הבריאות</label>
+            </value>
+            <value>
+                <fullName>פניה משפטית</fullName>
+                <default>false</default>
+                <label>פניה משפטית</label>
+            </value>
+            <value>
+                <fullName>פניית מטופל</fullName>
+                <default>false</default>
+                <label>פניית מטופל</label>
+            </value>
+            <value>
+                <fullName>פניית ספק</fullName>
+                <default>false</default>
+                <label>פניית ספק</label>
+            </value>
+            <value>
+                <fullName>פניית עובד</fullName>
+                <default>false</default>
+                <label>פניית עובד</label>
+            </value>
+            <value>
+                <fullName>פניית רופא</fullName>
+                <default>false</default>
+                <label>פניית רופא</label>
+            </value>
+            <value>
+                <fullName>פרטי התקשרות עם מכונים/ מרפאות/ מחלקות</fullName>
+                <default>false</default>
+                <label>פרטי התקשרות עם מכונים/ מרפאות/ מחלקות</label>
+            </value>
+            <value>
+                <fullName>פרטי התקשרות- רופאים</fullName>
+                <default>false</default>
+                <label>פרטי התקשרות- רופאים</label>
+            </value>
+            <value>
+                <fullName>קביעת תור</fullName>
+                <default>false</default>
+                <label>קביעת תור</label>
+            </value>
+            <value>
+                <fullName>רשומות רפואיות</fullName>
+                <default>false</default>
+                <label>רשומות רפואיות</label>
+            </value>
+            <value>
+                <fullName>שגיאה בפרטי מטופל</fullName>
+                <default>false</default>
+                <label>שגיאה בפרטי מטופל</label>
+            </value>
+            <value>
+                <fullName>שגיאה בפרטי רופא</fullName>
+                <default>false</default>
+                <label>שגיאה בפרטי רופא</label>
+            </value>
+            <value>
+                <fullName>שיח צוות בשפה זרה</fullName>
+                <default>false</default>
+                <label>שיח צוות בשפה זרה</label>
+            </value>
+            <value>
+                <fullName>שיקום</fullName>
+                <default>false</default>
+                <label>שיקום</label>
+            </value>
+            <value>
+                <fullName>שליחת תוצאות למטופל</fullName>
+                <default>false</default>
+                <label>שליחת תוצאות למטופל</label>
+            </value>
+            <value>
+                <fullName>שמירת חפצים</fullName>
+                <default>false</default>
+                <label>שמירת חפצים</label>
+            </value>
+            <value>
+                <fullName>שעות ביקור</fullName>
+                <default>false</default>
+                <label>שעות ביקור</label>
+            </value>
+            <value>
+                <fullName>תאום ציפיות לקוי</fullName>
+                <default>false</default>
+                <label>תאום ציפיות לקוי</label>
+            </value>
+            <value>
+                <fullName>תודה</fullName>
+                <default>false</default>
+                <label>תודה</label>
+            </value>
+            <value>
+                <fullName>תוצאות בדיקה</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקה</label>
+            </value>
+            <value>
+                <fullName>תוקף סיסמא</fullName>
+                <default>false</default>
+                <label>תוקף סיסמא</label>
+            </value>
+            <value>
+                <fullName>תחזוקה</fullName>
+                <default>false</default>
+                <label>תחזוקה</label>
+            </value>
+            <value>
+                <fullName>תנאים סביבתיים</fullName>
+                <default>false</default>
+                <label>תנאים סביבתיים</label>
+            </value>
+            <value>
+                <fullName>תעריפי חניה</fullName>
+                <default>false</default>
+                <label>תעריפי חניה</label>
+            </value>
+            <value>
+                <fullName>תעריפי שירותים</fullName>
+                <default>false</default>
+                <label>תעריפי שירותים</label>
+            </value>
+            <value>
+                <fullName>תקלה בציוד רפואי</fullName>
+                <default>false</default>
+                <label>תקלה בציוד רפואי</label>
+            </value>
+            <value>
+                <fullName>תקלות דיגיטל / אזור אישי</fullName>
+                <default>false</default>
+                <label>תקלות דיגיטל / אזור אישי</label>
+            </value>
+            <value>
+                <fullName>השגות על תוצאות בדיקה סרולוגית</fullName>
+                <default>false</default>
+                <label>השגות על תוצאות בדיקה סרולוגית</label>
+            </value>
+            <value>
+                <fullName>הקדמת תור/ דחיית תור</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>הקדמת תור/ דחיית תור</label>
+            </value>
+            <value>
+                <fullName>זמן המתנה - זמינות תור לבדיקה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>זמן המתנה - זמינות תור לבדיקה</label>
+            </value>
+            <value>
+                <fullName>תקלות דיגיטל</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תקלות דיגיטל</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>אבזור / תקלות בחדר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>אבזור / תקלות בחדר פרטי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>אובדן / נזק לחפצים אישיים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>אי מסירת מידע רפואי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>אי עמידה בSLA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>אי עמידה בתאום ציפיות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>אי שמירה על נהלי מיגון- קורונה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>בעיות התחשבנות וכספים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>בעיות מחשוב</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>השגות על מועד שחרור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>זמינות טלפונית לקויה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>זמינות תור לבדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>זמן המתנה ממושך- העברה מהמיון למחלקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>זמן המתנה ממושך לבדיקה / לניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>זמן המתנה ממושך לדיסק בדיקה במכון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>זמן המתנה ממושך לשחרור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>חשד להונאה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>מהירות תגובה אחיות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>מזון - איכות/ מגוון/ התאמה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>מחסור בציוד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>נגישות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>ניהול תור לקוי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>נקיון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>פגיעה בפרטיות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>שגיאה בפרטי מטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>שיח צוות בשפה זרה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>תחזוקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>תנאים סביבתיים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>תקלה בציוד רפואי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירות לקוי</controllingFieldValue>
+            <valueName>תקלות דיגיטל / אזור אישי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אחר</controllingFieldValue>
+            <controllingFieldValue>בקשות חריגות</controllingFieldValue>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <controllingFieldValue>פניה למנכ&quot;ל</controllingFieldValue>
+            <valueName>אחר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אחר</controllingFieldValue>
+            <valueName>מדיניות חברה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשות חריגות</controllingFieldValue>
+            <valueName>בקשה להנחה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשות חריגות</controllingFieldValue>
+            <valueName>בקשה לחידוש סיסמא שפג תוקפה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשות חריגות</controllingFieldValue>
+            <valueName>דחיית חיוב</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשות חריגות</controllingFieldValue>
+            <valueName>הקדמת / דחיית תור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשות חריגות</controllingFieldValue>
+            <valueName>זירוז פענוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשות חריגות</controllingFieldValue>
+            <valueName>משאבי אנוש</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשות חריגות</controllingFieldValue>
+            <valueName>קביעת תור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>התנהגות לא הולמת</controllingFieldValue>
+            <valueName>הטרדה מינית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס אחות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס טכנאי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס כח עזר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס מאבטח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס מזכירות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס מתנדב/שירות לאומי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס נציג מוקד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס סניטר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס עובד מיקור חוץ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס פרא רפואי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס פרסונל אחר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס צוות מטפל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס רופא מחלקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס רופא מנתח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס רופא מרדים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>יחס לקוי</controllingFieldValue>
+            <valueName>יחס רופא מרפאה/מכון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>SLA קבלת פיענוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>אי מסירת מידע רפואי בטלפון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>אי מתן תרופה ללא הוראת רופא</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>בטחון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>היצע שרותים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>זיהוי מטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>זמינות חדר ניתוח לרופאים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>זמינות תורים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>טופס התחייבות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>כשירות תרבותית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>כשרות ודת</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>מבנה ותשתיות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>מדיניות מלווה לבדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>מדיניות מלווה לניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>מענה טלפוני</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>סקר מטופלים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>עישון במקום אסור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>רשומות רפואיות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>שיקום</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>שליחת תוצאות למטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>שמירת חפצים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>שעות ביקור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>תוקף סיסמא</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>תעריפי חניה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מדיניות חברה</controllingFieldValue>
+            <valueName>תעריפי שירותים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>הערכת עלות לבדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>הערכת עלות לפני ניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>הערכת עלות לפני ניתוח - מוקד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>הערכת עלות לפני ניתוח - קבלה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>זהות גורם מטפל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>חוסר מידע / הדרכה בשחרור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>טעות בזימון התור - מקום/ מועד / סוג בדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>טעות במתן הנחיות לפני בדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>טעות במתן הנחיות לפני ניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>מידע שגוי אודות שירותים קיימים באסותא</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>מידע שגוי - אחר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>מידע שגוי- כיסוי ביטוחי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>שגיאה בפרטי רופא</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע חסר/שגוי</controllingFieldValue>
+            <valueName>תאום ציפיות לקוי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>אישור למעסיק</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>אישור למעסיק- ביקור במכון/אשפוז</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>בקשה לשליחת מסמכים רפואיים/דיסק בדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>היצע שירותים/ טיפולים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>הנחיות לבדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>הנחיות לניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>הסדרי נגישות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>העתק חשבונית קבלה/ אישור תשלום</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>הפקת סיסמה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>התמצאות באתר האינטרנט</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>התעניינות תיירים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>מועד בדיקה/ ניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>מידע למטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>מידע מרשומה רפואית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>מידע על תורים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>מידע על תנאי אשפוז</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>מידע על תשלומים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>מידע רפואי- כללי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>עדכון פרטים אישיים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>עלויות שירותים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>פרטי התקשרות עם מכונים/ מרפאות/ מחלקות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>פרטי התקשרות- רופאים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע למטופל</controllingFieldValue>
+            <valueName>תוצאות בדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה למנכ&quot;ל</controllingFieldValue>
+            <valueName>פניה ממשרד הבריאות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה למנכ&quot;ל</controllingFieldValue>
+            <valueName>פניית מטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה למנכ&quot;ל</controllingFieldValue>
+            <valueName>פניית ספק</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה למנכ&quot;ל</controllingFieldValue>
+            <valueName>פניית עובד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה למנכ&quot;ל</controllingFieldValue>
+            <valueName>פניית רופא</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_MedicalWing</controllingFieldValue>
+            <valueName>בעיות תהליכיות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_MedicalWing</controllingFieldValue>
+            <valueName>טיפול רפואי לקוי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_MedicalWing</controllingFieldValue>
+            <valueName>יחס לקוי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_MedicalWing</controllingFieldValue>
+            <valueName>פניה משפטית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>אבחון שגוי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>אי מציאת וריד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>היגיינת ידיים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>הסכמה מדעת</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>הצלבות בין תיקי מטופלים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>הצלבות פענוח בין נבדקים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>השגות לגבי טיפול רפואי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>השגות על החלטת ועדה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>השגות על פענוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>השגות על תוכן ברשומה רפואית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>חיטוי מכשור רפואי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>טיפול רפואי לקוי- אחר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>נזקי שיניים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>ניתוח שלא הצליח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>נפילה/חבלה בשטח בית החולים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>פגיעה באוטונומיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>פגיעה בחיסיון מטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical_RiskAssessment</controllingFieldValue>
+            <valueName>השגות על תוצאות בדיקה סרולוגית</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

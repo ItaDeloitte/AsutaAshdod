@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upload_Hitchayvut_Afnaya__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/Upload_Files_Hithaivut_Afnaya?fld56=&quot;&amp; Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Upload Hichayvut Afnaya</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View</fullName>
+    <columns>CallBack__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>StageStatus__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LeadDescription__c</columns>
+    <columns>Name_of_the_insurance_company__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Campaign_Name__c</field>
+        <operation>equals</operation>
+        <value>אבחון מהיר - טופס עמוד תוכן באתר</value>
+    </filters>
+    <label>הזדמנויות - אבחון מהיר - טופס עמוד תוכן</label>
+</ListView>

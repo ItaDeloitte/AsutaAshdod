@@ -1,0 +1,4472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedExp</fullName>
+    <active>true</active>
+    <businessProcess>רופאים מומחים</businessProcess>
+    <compactLayoutAssignment>Zimun</compactLayoutAssignment>
+    <label>רופאים מומחים - סגור</label>
+    <picklistValues>
+        <picklist>ActivityType__c</picklist>
+        <values>
+            <fullName>אמבולטורי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז ואמבולטורי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Sub_Topic__c</picklist>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Topic__c</picklist>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ApprovingUser__c</picklist>
+        <values>
+            <fullName>אורטל סולומון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>דוד דולב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חופית בר יוסף</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טטיאנה דוביז%27נסקי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יקטרינה סומוב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יקטרינה רביאקין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ליאורה יונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רגינה פיינליייב פודגור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רוול בלורי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רינת זינזיח דדון</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Arival_Source__c</picklist>
+        <values>
+            <fullName>Ad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lobby %E2%80%93 Post Surgery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lobby %E2%80%93 Pre Surgery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magazine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Summary Screen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PatientFriend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Area%3A Dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Area%3A Results %26 Summaries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Area%3A Upcoming Surgery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secretary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secretary Dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BiopsyAppointmentschedulingStatus__c</picklist>
+        <values>
+            <fullName>Appointment Not Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appointment Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred to Department</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Biopsy_Results_Status__c</picklist>
+        <values>
+            <fullName>Results_Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting_for_Results</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Type__c</picklist>
+        <values>
+            <fullName>חברה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עוסק מורשה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Phase__c</picklist>
+        <values>
+            <fullName>Closing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In_Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service_Adaption</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason_2__c</picklist>
+        <values>
+            <fullName>שימוש בטופס הסכמה כללי ללא תיעוד הסבר לגבי סיכונים וסיבוכים האפשריים%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שימוש בטופס כללי ללא רישום שם הניתוח</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason_3__c</picklist>
+        <values>
+            <fullName>חסר טופס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסרה חותמת מרדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסרה חתימת מטופל%2F אפוטרופוס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסרה חתימת מרדים</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason_4__c</picklist>
+        <values>
+            <fullName>חסר טופס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר תאריך קבלה%2F ניתוח%2F שחרור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון ידני ללא עדכון בתיק קליני</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פער בתיעוד מהלך האשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פער בתיעוד מקרים מיוחדים באשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צד שגוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תאריך שחרור ידני</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תאריך שחרור לא תקין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תיעוד אבחנות לא מלא%2Fלא תקין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תיעוד פעולה לא מלא%2Fלא תקין</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason_5__c</picklist>
+        <values>
+            <fullName>חסר טופס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר צד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר שם רופא מרדים%2F מנתח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר תאריך</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר תיעוד מתן דם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון ידני ללא עדכון בתיק קליני</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פער בתיעוד אובדן דם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פער בתיעוד מהלך ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פער בתיעוד מצב המטופל בסיום הניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פער בתיעוד סיבוכים בניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צד שגוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שם ניתוח לא תואם את מהלך הניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תיעוד מכלי פתולוגיה לא תקין</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason_6__c</picklist>
+        <values>
+            <fullName>חסר שם ומספר רישיון רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכתב שחרור</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason_7__c</picklist>
+        <values>
+            <fullName>אבחנות של מחלות הגבר עבור מטופלת אישה ולהפך</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason_8__c</picklist>
+        <values>
+            <fullName>אבחנה לא תקינה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר שם ניתוח%2Fאבחנה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסרה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פער בתיעוד בדיקה גופנית בקבלה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פער בתיעוד תולדות המחלה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צד שגוי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Reason__c</picklist>
+        <values>
+            <fullName>חסר טופס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר ציון צד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסרה חותמת רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסרה חתימת מטופל%2Fאפוטרופוס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסרה חתימת רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צד שגוי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Route__c</picklist>
+        <values>
+            <fullName>Donation_Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double_Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seperate_Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet_Determined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Source_YadBeYad__c</picklist>
+        <values>
+            <fullName>Outpatient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommendation After Examination</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Stage__c</picklist>
+        <values>
+            <fullName>Closed_No_Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First_Treatment_Details_Completion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Status_Shikum_Bait__c</picklist>
+        <values>
+            <fullName>Appointments_Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaits_Appointments_Schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaits_Patient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chosen_Kupa_Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collection_Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer_Regrets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department_Clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First_Visit_Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending_Doctor_Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending_Documents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received_Doctor_Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service_Unqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shikum_Bait_Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgery_Cancelled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Status__c</picklist>
+        <values>
+            <fullName>30_Days_Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Holds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documnets_Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In_Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal_Situation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Conception_HealthDepartment_Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Details_Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payed_Freezing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research_Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risks_Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment_Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UnControlled_Defrost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הוזמן תיק מהארכיון</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Time__c</picklist>
+        <values>
+            <fullName>24hto48h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>above48h</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>under24h</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_site__c</picklist>
+        <values>
+            <fullName>Ramat_Hahayal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rishon_Letzion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_subject__c</picklist>
+        <values>
+            <fullName>ContinueTreatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון רופא מומחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון תור לרופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קבלת מידע</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel__c</picklist>
+        <values>
+            <fullName>פרטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קופה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitors_Name__c</picklist>
+        <values>
+            <fullName>Ashdod Public Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assaf Harofeh Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barzilai Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blinson Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bnei Zion Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hadassah Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hillel Yaffe Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ichilov Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kaplan Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laniado Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rambam Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shaare Zedek Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soroka Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tel Hashomer Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wolfson Hospital</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_With_Corona_Patient__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Control_Gaps__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conversation_with_the_Doctor__c</picklist>
+        <values>
+            <fullName>Doctor Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conversation_with_the_Patient__c</picklist>
+        <values>
+            <fullName>Call Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Future Call Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Couple_Status__c</picklist>
+        <values>
+            <fullName>Seperately</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Together</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>rrelevant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DetailsoftheConversation__c</picklist>
+        <values>
+            <fullName>Has Not Seen Test Results Yet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Doctors Appointment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Doctor_Update_Status__c</picklist>
+        <values>
+            <fullName>Doctor Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor yet Updated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Female_Stage__c</picklist>
+        <values>
+            <fullName>Closed_No_Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First_Treatment_Details_Completion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Female_Status__c</picklist>
+        <values>
+            <fullName>30_Days_Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Holds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documnets_Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In_Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal_Situation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Conception_HealthDepartment_Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Details_Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payed_Freezing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research_Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risks_Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment_Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UnControlled_Defrost</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fever_Symptoms_Last_14_Days__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Findings_Details__c</picklist>
+        <values>
+            <fullName>Negative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gap_Placement__c</picklist>
+        <values>
+            <fullName>איכות סריקה ירודה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אישור ממזער מוסמך פג תוקף</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בעיות בהעברת ממשק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר קובץ PDF בפורטל מסמכים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חסר קובץ PDF בתפנית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תוספת שנייה של בית חולים אחר</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Have_cleared__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IVF_after_death_decision__c</picklist>
+        <values>
+            <fullName>Anonymous_Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defrost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donation_for_Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donation_to_Another_Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parents_Decide_Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner_Decides_Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner_Use_Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>no_decision</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IVF_site__c</picklist>
+        <values>
+            <fullName>אשדוד כלניות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>באר שבע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חיפה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ראשון לציון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רמת החייל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רעננה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Identification_Done__c</picklist>
+        <values>
+            <fullName>Couple_Identification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only_Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only_Woman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet_Identified</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interface_handled__c</picklist>
+        <values>
+            <fullName>Interface_Handled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interface_not_Handled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Jastification__c</picklist>
+        <values>
+            <fullName>לא מוצדק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא רלוונטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מוצדק</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Languages__c</picklist>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hebrew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Last_Biops_Result__c</picklist>
+        <values>
+            <fullName>חיובית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא רלוונטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שלילית</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Live_With_Coronat_Patient__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Match_with_RIS__c</picklist>
+        <values>
+            <fullName>Not Yet checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>recommendations match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>recommendations mismatch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MedicalTourismCaseType__c</picklist>
+        <values>
+            <fullName>ספאם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניית המשך</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Medical_Info_Management_Source__c</picklist>
+        <values>
+            <fullName>אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אסותא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אפוטרופוס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בית דין לעבודה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בית חולים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חברה לאיסוף מידע- בזק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חברה לאיסוף מידע- ערן מור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חברה לאיסוף מידע- צ%2Eר מידע רפואי בע%22מ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חברה לאיסוף מידע- רפואון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חברה לאיסוף מידע- תיקל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>משרד עורכי דין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צד שלישי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא בקהילה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mismatch_Details__c</picklist>
+        <values>
+            <fullName>Additional Exam Required %28MRI%2FUS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routine Follow-up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Moked_queue__c</picklist>
+        <values>
+            <fullName>מאסטרים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מתחילים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מתקדמים</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oncology_Institute_Treatment_Status__c</picklist>
+        <values>
+            <fullName>Closed Without Outbond Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contacted Pacient And Closed Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled For Chemotherapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled For Oncologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled For Radiotherapy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Operated_Area__c</picklist>
+        <values>
+            <fullName>Knee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spinal_Column</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thigh</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון אינטרנטי אסותא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון אינטרנטי מכבי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טופס מקוון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ידנית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מערכות מקור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פייסבוק מסנג%27ר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניות הציבור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פקס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פרונטלי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה יוצאת פנימית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה נכנסת חיצונית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה נכנסת פנימית</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Package__c</picklist>
+        <values>
+            <fullName>BI_Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Stage__c</picklist>
+        <values>
+            <fullName>Closed_No_Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First_Treatment_Details_Completion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Status__c</picklist>
+        <values>
+            <fullName>30_Days_Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Holds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documents_Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documnets_Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In_Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal_Situation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Conception_HealthDepartment_Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Details_Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No_Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payed_Freezing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research_Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risks_Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treatment_Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UnControlled_Defrost</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Patient_Stage__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow_up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Further_Treatment_Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting_for_Biopsy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting_for_Biopsy_Results</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting_for_Initial_Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payer_Factor__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1111</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1317</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>133</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>166</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22139</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>303</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4024</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>411</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>412</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>422</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>425</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45380</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>83</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>86</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>974631</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payer__c</picklist>
+        <values>
+            <fullName>Man</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet_Determined</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>יש לבדוק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא רלוונטי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferable_Communication_Chanel_Partner__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sms</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferable_Communication_Channel_Female__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>med_pro_not_in_assuta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בבדיקה מול גורם מקצועי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה טופלה ללא חזרה למטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה כפולה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פרטים חסרים</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_closing_hand_in_hand_case__c</picklist>
+        <values>
+            <fullName>Change in radiologist%27s recommendation by treating doctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuation at another medical center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor%27s decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End of hand-in-hand process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative biopsy result</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No response more than 3 times</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient does not wish to continue the process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Recommendation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reasons_for_scheduling_cancelation__c</picklist>
+        <values>
+            <fullName>Biopsy_Performed_Elsewhere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctor%27s_Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient%27s_Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting_for_Appointment_with_Doctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting_for_Doctor%27s_Referral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Received_Documents__c</picklist>
+        <values>
+            <fullName>Couple_Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Female_Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID_Photo_Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID_Photo_Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner_Decision</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RecomendedTestType__c</picklist>
+        <values>
+            <fullName>אקו במאמץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אקו לב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ארגומטריה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיפוי לב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קרדיאק CT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recommendation__c</picklist>
+        <values>
+            <fullName>Defrost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HealthDepartment _Reference_defrost_Approval_Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment_Freezing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repeating_Trials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research_Transfer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Refund_NotApproved__c</picklist>
+        <values>
+            <fullName>אי חיוב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>החזר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פיצוי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Subtopic__c</picklist>
+        <values>
+            <fullName>הקמת ספק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון פרטי ספק</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Topic__c</picklist>
+        <values>
+            <fullName>הקמת ספק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון פרטי ספק</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Required_procedure_Nurse__c</picklist>
+        <values>
+            <fullName>Drainage Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fluid%2FMedication Infusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insertion%2FRemoval of a Catheter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insertion%2FRemoval of a Zonda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratory Tests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pain Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removing Stitches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training in Administering Medications%2FInjections%2FDiabetic Foot Assessment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Risk_Description__c</picklist>
+        <values>
+            <fullName>Cancellation Of Appointments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Want To Continue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Answer More Than 3 Times</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Route_Shikum_Bait__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Selected_services__c</picklist>
+        <values>
+            <fullName>בדיקות דם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בדיקות שתן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בדיקת US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביקור אחות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביקור רופא מקוון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביקור רופא פרונטלי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צילום רנטגן</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Semen_Source__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shikum_Bait_Approval__c</picklist>
+        <values>
+            <fullName>Approves_Shikum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not_Approved_Shikum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shikum_Bait_Doctor_Rec__c</picklist>
+        <values>
+            <fullName>Not_Recommended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_Center_Department__c</picklist>
+        <values>
+            <fullName>IVF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PGD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אונקולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורודינמיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורתופדיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורתופדית ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אם ועובר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אנדרולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אסותא אופטיק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אף אוזן גרון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז אשדוד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז אשדוד כלניות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז באר שבע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז חיפה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז יום כירורגי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז יום כירורגי ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז ראשל%22צ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בטחון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביניים- לב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בירור מהיר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בית כנסת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בית מרקחת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בנק הדם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בנק הזרע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ברונכוסקופיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בריאות האישה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בריאטריה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>גסטרו</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>דיאליזה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>דיגיטל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>דימות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המטולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המתנת משפחות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הנהלה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הפסקת הריון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הריון בסיכון גבוה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התאוששות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התאוששות אמבולטורית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר אוכל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר ניתוח אשדוד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר ניתוח ב%22ש</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר ניתוח חיפה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר ניתוח ראשל%22צ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר נפטרים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדרי לידה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חנויות ושירותי הסעדה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חניון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול נמרץ ביילוד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול נמרץ ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול נמרץ כללי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול נמרץ לב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טראומה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טרום ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טריאז%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יד שרה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יולדות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ילדים - הכנה לניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ילדים - התאוששות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ילודים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יקר %28ר%22מ 2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כאב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כאב מתקדם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כירורגיה כללית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כירורגיה פלסטית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כירורגיית ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כירורגיית כלי דם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כירורגית שד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כללי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כספים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לב ביניים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לב חזה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לשכת מנכל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מודיעין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מומחים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מוניטור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מוקד זימון תורים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מוקד מומחים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מוקד ניתוחים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מחלקה משפטית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מחלקת הרדמה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מחלקת ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מי שפיר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון א%2Eא%2Eג%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון אורתופדי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון אף אוזן גרון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון יולדות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון מהלכים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון נשים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון עיניים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיון שוכבים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכבידנט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון אונקולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון בריאות האישה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון בריאות השד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון גסטרואנטרולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון דימות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון הלב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון נפרולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון עיניים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון פתולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון ריאות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון שמיעה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מעבדה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מעבדת זרע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מערכות מידע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאה אורולוגית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאה אורתופדית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאה כירורגית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאה- בריאות האישה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאות חוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאות פנימיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאת אף אוזן גרון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאת טרום ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאת ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרפאת כאב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>משאבי אנוש</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>משרדי קופות חולים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נוירולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ניהול סיכונים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ניקיון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נשים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיניים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיניים ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עמדת משטרה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פוטותרפיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פיזיותרפיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניות הציבור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פנימית א%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פנימית א%27-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פנימית ב%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פנימית ה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פתולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צוואר רחם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ציטולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ציסטוסקופיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צנתורים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קבלה אדמיניסטרטיבית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קבלה לחדר ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קבלה- אשפוז יום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קרדיולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רדיותרפיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא מנתח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רפואה דחופה %28מיון%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רשומות רפואיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שטחים ציבוריים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיווק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שינה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תיירות מרפא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תפעול%2Fלוגיסטיקה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_demands__c</picklist>
+        <values>
+            <fullName>אחות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ארוחות-גלאט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ארוחות-צמחוני</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הלנת מלווים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר דה לוקס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר פרטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מחשב אישי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרדים פרטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שירותי ליווי צמודים</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_Ambulatory_Referrals__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_Kit_delievery__c</picklist>
+        <values>
+            <fullName>Couple_Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Female_Patient_Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner_Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet_Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Subject_2__c</picklist>
+        <values>
+            <fullName>אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי ביצוע השוואה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי חזרה למטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי קבלת טופס התחייבות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי שינוי פרטים אישיים לבקשת המטופל%2Fת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי שליחת דיסק%2Fמסמכים רפואיים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי תמורה על תשלום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אישורים תקציביים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביטול בדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביטול תור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביטול%2Fשינוי  מועד ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בעיות באתר האינטרנט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>דיסק שלא נפתח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>דיסק תקול</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות על חיוב בגין טיפול%5Cבדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חיוב שגוי%28טכני%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא בוטל הפקדון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נסגר החשבון עם המטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא קיבל חשבונית %2F קבלה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממתין להחזר כספי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קבלת מידע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קובץ זימון לא נפתח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קובץ פענוח לא נפתח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שינוי באופן הטיפול%2Fרופא מטפל ללא ידיעת מטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שינוי מועד בדיקה ללא עדכון המטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שינוי רופא מטפל ללא ידיעת מטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תודה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תיאום פגישה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תלונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תלונת מטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תקלה בכניסה לאזור האישי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Subject__c</picklist>
+        <values>
+            <fullName>SLA קבלת פיענוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אבזור %2F תקלות בחדר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אבזור %2F תקלות בחדר פרטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אבחון שגוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אובדן %2F נזק לחפצים אישיים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אחריות לאבדן %5C נזק לחפצים אישיים - אשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי מסירת מידע רפואי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי מסירת מידע רפואי בטלפון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי מציאת וריד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי מתן תרופה ללא הוראת רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי עמידה בSLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי עמידה בתאום ציפיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי שמירה על נהלי מיגון- קורונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי שמירה על פרטיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>איכות המזון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אישור למעסיק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אישור למעסיק- ביקור במכון%2Fאשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אישור על ימי אשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בטחון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביצוע פעולות בהרדמה %5C אשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בעיות התחשבנות וכספים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בעיות מחשוב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בעיות תהליכיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בקשה להנחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בקשה לחידוש סיסמא שפג תוקפה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בקשה לשליחת מסמכים רפואיים%2Fדיסק בדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>דחיית חיוב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הטרדה מינית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>היגיינת ידיים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>היצע שירותים%2F טיפולים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>היצע שרותים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הנחיות לבדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הנחיות לניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הסדרי נגישות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הסכמה מדעת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הערכת עלות לבדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הערכת עלות לפני ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הערכת עלות לפני ניתוח - מוקד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הערכת עלות לפני ניתוח - קבלה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>העתק חשבונית קבלה%2F אישור תשלום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הפקת סיסמה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הצלבות בין תיקי מטופלים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הצלבות פענוח בין נבדקים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות לגבי טיפול רפואי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות על החלטת ועדה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות על הערכה גריאטרית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות על מועד שחרור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות על פענוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות על תוכן ברשומה רפואית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות על תוצאות בדיקה סרולוגית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התמצאות באתר האינטרנט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התעניינות תיירים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זהות גורם מטפל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זיהוי מטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זירוז פענוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זירור פענוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זמינות חדר ניתוח לרופאים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זמינות טלפונית לקויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זמינות תורים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זמן המתנה ממושך לבדיקה %2F לניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זמן המתנה ממושך לדיסק בדיקה במכון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זמן המתנה ממושך לשחרור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זמן המתנה ממושך- העברה מהמיון למחלקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חוסר מידע %2F הדרכה בשחרור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חיטוי מכשור רפואי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חשד להונאה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טופס התחייבות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול רפואי לקוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול רפואי לקוי- אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טעות בזימון התור - מקום%2F מועד %2F סוג בדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טעות במתן הנחיות לפני בדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טעות במתן הנחיות לפני ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס אחות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס במרפאות חוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס טכנאי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס כח עזר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס לקוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס מאבטח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס מזכירות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס מרדים %2F רופא מחלקה- לא לשימוש</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס מתנדב%2Fשירות לאומי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס נציג מוקד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס סניטר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס עובד מיקור חוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס פרא רפואי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס פרסונל אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס צוות מטפל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס רופא מחלקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס רופא מנתח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס רופא מרדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס רופא מרפאה%2Fמכון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כניסת מבקרים לבית החולים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כניסת מבקרים למחלקות אשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כשירות תרבותית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כשרות ודת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מבנה ותשתיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מדיניות חברה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מדיניות מלווה לבדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מדיניות מלווה לניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מהירות תגובה אחיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מועד בדיקה%2F ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מזון - איכות%2F מגוון%2F התאמה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מחסור בציוד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע למטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע מרשומה רפואית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע על תורים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע על תנאי אשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע על תשלומים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע רפואי- כללי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע שגוי - אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע שגוי אודות שירותים קיימים באסותא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע שגוי- כיסוי ביטוחי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מענה טלפוני</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מקצועיות אחיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מקצועיות נציג שירות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מקצועיות צוות  מטפל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מקצועיות רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>משאבי אנוש</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נגישות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נזקי שיניים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ניהול תור לקוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ניתוח שלא הצליח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נפילה%2Fחבלה בשטח בית החולים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נקיון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סיסמא לא תקפה לאחר חודש</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סקר מטופלים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון פרטים אישיים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיכוב בקבלת טיפול רפואי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיכוב בקבלת ייעוץ רפואי - אשפוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עישון במקום אסור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עלויות שירותים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פגיעה באוטונומיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פגיעה בחיסיון מטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פגיעה בפרטיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה ממשרד הבריאות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה משפטית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניית מטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניית ספק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניית עובד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניית רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פרטי התקשרות עם מכונים%2F מרפאות%2F מחלקות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פרטי התקשרות- רופאים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קביעת תור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רשומות רפואיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שגיאה בפרטי מטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שגיאה בפרטי רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיח צוות בשפה זרה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיקום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שליחת תוצאות למטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שמירת חפצים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שעות ביקור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תאום ציפיות לקוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תודה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תוצאות בדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תוקף סיסמא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תחזוקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תנאים סביבתיים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תעריפי חניה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תעריפי שירותים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תקלה בציוד רפואי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject_Public_Inquiry__c</picklist>
+        <values>
+            <fullName>Medical_MedicalWing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical_RiskAssessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בקשות חריגות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התנהגות לא הולמת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחס לקוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מדיניות חברה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע חסר%2Fשגוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע למטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה למנכ%22ל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שירות לקוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תודה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תלונה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject_Shikum_Bait__c</picklist>
+        <values>
+            <fullName>מועמד לאחר ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מועמד לפני ניתוח</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject__c</picklist>
+        <values>
+            <fullName>אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בקשות חריגות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע למטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה למנכ%22ל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רפואי%2Fניהול סיכונים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תודה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תלונה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Test_Type__c</picklist>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EEG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RELAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US שד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>א%2Eר%2Eם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורולוגיה א%2Eא%2Eג</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורומדיק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורטוקליניק מרפאת אגר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורתופדיה נוירוכירורגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>איה מדיקל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אישפוז יום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אסותא אופטיק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אסיה מדיקל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אקו %2F אקו במאמץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ארגומטריה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אשפוז כללי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בדיקה ביתית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בדיקה במכון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביופסיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביופסיות שד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בנק הזרע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בריאטריה ראשל%22צ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>גניקולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>גסטרו סרג%27רי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>גסטרוסקופיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הולטר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הלפרין - החלפות מפרק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המרכז הישראלי לבריאות המרפק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המרכז לאורתופדיה מתקדמת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המרכז לניתוחי עמוד שדרה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השגות על תוצאות בדיקה סרולוגית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול נמרץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ייעוץ אונקולוגי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יעוץ רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כימותרפיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כירוגיה כללית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לב חזה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מחלקת ילדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיפוי לב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מיפויים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכבידנט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכון ריפוי בעיסוק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממוגרפיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ניתוח עיניים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נשים%2Fכירורגיה ב%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סרג%27יקר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פנימית המטולוגיה%2F אונקולוגיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פנימית%2F אורתופדית ב%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צפיפות עצם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קולונוסקופיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קולונוסקופיה וירטואלית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קולפרו סרג%27יקל גרופ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קרדיוהיל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רדיולוגיה פולשנית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רדיותרפיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רנטגן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיניים ראשל%22צ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Treat_status__c</picklist>
+        <values>
+            <fullName>המטופל ביקש שיחזרו אליו ממוקד הזימון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נעשו מספר ניסיונות להשגת המטופל ללא הצלחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תואם תור</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Treatment_Continuation_Status__c</picklist>
+        <values>
+            <fullName>Additional_Tests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Breast_MRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not_Interested_in_Continuing_the_Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other_Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PET CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred_to_Hemato_Oncology_Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred_to_Oncology_Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repeat_Additional_Biopsy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialist_Recommended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgery_Appointment_Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verification_Nurse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_biopsy_required__c</picklist>
+        <values>
+            <fullName>Biopsy after MRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FNA under ultrasound guidance %28breast%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRI-guided biopsy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mammotome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trucut</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeofDoctor__c</picklist>
+        <values>
+            <fullName>Family Doctor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialist</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Visited_Abroad_During_Last_14_Days__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Website_Language__c</picklist>
+        <values>
+            <fullName>ar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>en</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>he</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ru</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>biopsy_result__c</picklist>
+        <values>
+            <fullName>חיובי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא רלוונטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שלילי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>change_owner_rt__c</picklist>
+        <values>
+            <fullName>IVF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הצעות מחיר פרטיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חדר פרטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מומחים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכירות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ניתוחים</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>dummy_formtitan_picklist__c</picklist>
+        <values>
+            <fullName>דרכון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון תורים למכונים ומרפאות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע כללי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ניתוחים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופאים מומחים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תעודת זהות</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>formtitan_picklist_2__c</picklist>
+        <values>
+            <fullName>דרכון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תעודת זהות</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ivf_upload_files_sent__c</picklist>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מייל</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>kav_larofe_type__c</picklist>
+        <values>
+            <fullName>בקשה %2F מידע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תלונה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>passed__c</picklist>
+        <values>
+            <fullName>בן זוג</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מטופלת</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>payment_been_transferred__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>preferd_chanal_case__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook Messenger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whatsapp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא פעיל</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>referralAgency__c</picklist>
+        <values>
+            <fullName>381</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>382</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>383</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>384</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>385</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>386</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>387</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>388</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>389</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>390</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>391</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>392</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>393</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>394</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>395</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>396</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>397</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>398</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>399</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>401</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>403</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>404</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>405</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>406</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>407</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>408</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>409</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>410</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>412</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>414</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>428</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>429</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>431</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>432</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>433</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>434</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>435</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אורור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אסף לוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>גור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הילסון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חברת חשמל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חגי לנצט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יעל אדרי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יעקב סמוטריצקי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יצחק יעקב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ליאת לנץ-ניב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מנורה hug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עמותת ידידים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פרשקונספט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קדנס -דובי פרייס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רוגומד %28מרפאה %29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>return_case_type__c</picklist>
+        <values>
+            <fullName>אחרון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ללא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נפתחה עוד פנייה לפנייה זו</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>subStatus__c</picklist>
+        <values>
+            <fullName>Didn%27t execute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t need next appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Next appointment scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested in next appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for reminder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>appointment was not summoned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>sub_case_subject__c</picklist>
+        <values>
+            <fullName>ביטול תור קיים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המלצה על רופא מומחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון באופן פרטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון תור לאחר המלצה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון תור לרופא מומחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מערכת קודמת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון עזר לפגישה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קבלת מידע על מומחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שינוי מועד התור</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>tofes_web__c</picklist>
+        <values>
+            <fullName>טופס 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טופס 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טופס 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טופס 4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

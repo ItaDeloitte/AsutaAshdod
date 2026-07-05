@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dummy_formtitan_picklist__c</fullName>
+    <label>Dummy Formtitan Picklist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>תעודת זהות</fullName>
+                <default>false</default>
+                <label>תעודת זהות</label>
+            </value>
+            <value>
+                <fullName>דרכון</fullName>
+                <default>false</default>
+                <label>דרכון</label>
+            </value>
+            <value>
+                <fullName>זימון תורים למכונים ומרפאות</fullName>
+                <default>false</default>
+                <label>זימון תורים למכונים ומרפאות</label>
+            </value>
+            <value>
+                <fullName>מידע כללי</fullName>
+                <default>false</default>
+                <label>מידע כללי</label>
+            </value>
+            <value>
+                <fullName>ניתוחים</fullName>
+                <default>false</default>
+                <label>ניתוחים</label>
+            </value>
+            <value>
+                <fullName>רופאים מומחים</fullName>
+                <default>false</default>
+                <label>רופאים מומחים</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

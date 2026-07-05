@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>referralAgency__c</fullName>
+    <label>referralAgency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>411</fullName>
+                <default>false</default>
+                <label>PRO ביטוח</label>
+            </value>
+            <value>
+                <fullName>381</fullName>
+                <default>false</default>
+                <label>אביבית אורן</label>
+            </value>
+            <value>
+                <fullName>אורור</fullName>
+                <default>false</default>
+                <label>אורור</label>
+            </value>
+            <value>
+                <fullName>382</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>383</fullName>
+                <default>false</default>
+                <label>אילנה גלבוע</label>
+            </value>
+            <value>
+                <fullName>417</fullName>
+                <default>false</default>
+                <label>אלה מאיר</label>
+            </value>
+            <value>
+                <fullName>410</fullName>
+                <default>false</default>
+                <label>אלומה</label>
+            </value>
+            <value>
+                <fullName>421</fullName>
+                <default>false</default>
+                <label>אלינור כבירי</label>
+            </value>
+            <value>
+                <fullName>431</fullName>
+                <default>false</default>
+                <label>אסיה מדיקל</label>
+            </value>
+            <value>
+                <fullName>אסף לוי</fullName>
+                <default>false</default>
+                <label>אסף לוי</label>
+            </value>
+            <value>
+                <fullName>413</fullName>
+                <default>false</default>
+                <label>אקספנסיה</label>
+            </value>
+            <value>
+                <fullName>384</fullName>
+                <default>false</default>
+                <label>ג&apos;ינג&apos;ר</label>
+            </value>
+            <value>
+                <fullName>416</fullName>
+                <default>false</default>
+                <label>גולדווסר</label>
+            </value>
+            <value>
+                <fullName>גור</fullName>
+                <default>false</default>
+                <label>גור</label>
+            </value>
+            <value>
+                <fullName>385</fullName>
+                <default>false</default>
+                <label>גיל ורדי</label>
+            </value>
+            <value>
+                <fullName>412</fullName>
+                <default>false</default>
+                <label>גילי מלמן</label>
+            </value>
+            <value>
+                <fullName>386</fullName>
+                <default>false</default>
+                <label>דורון סינמון</label>
+            </value>
+            <value>
+                <fullName>428</fullName>
+                <default>false</default>
+                <label>דני סיני</label>
+            </value>
+            <value>
+                <fullName>הילסון</fullName>
+                <default>false</default>
+                <label>הילסון</label>
+            </value>
+            <value>
+                <fullName>387</fullName>
+                <default>false</default>
+                <label>ואסים פארג&apos;</label>
+            </value>
+            <value>
+                <fullName>388</fullName>
+                <default>false</default>
+                <label>ורדה לבקוביץ&apos;</label>
+            </value>
+            <value>
+                <fullName>433</fullName>
+                <default>false</default>
+                <label>ורד וילדר</label>
+            </value>
+            <value>
+                <fullName>389</fullName>
+                <default>false</default>
+                <label>זיו ברק</label>
+            </value>
+            <value>
+                <fullName>חברת חשמל</fullName>
+                <default>false</default>
+                <label>חברת חשמל</label>
+            </value>
+            <value>
+                <fullName>חגי לנצט</fullName>
+                <default>false</default>
+                <label>חגי לנצט</label>
+            </value>
+            <value>
+                <fullName>390</fullName>
+                <default>false</default>
+                <label>יהושע קליין</label>
+            </value>
+            <value>
+                <fullName>391</fullName>
+                <default>false</default>
+                <label>יהלומית</label>
+            </value>
+            <value>
+                <fullName>392</fullName>
+                <default>false</default>
+                <label>יוסי כבירי</label>
+            </value>
+            <value>
+                <fullName>393</fullName>
+                <default>false</default>
+                <label>יניב ברוך</label>
+            </value>
+            <value>
+                <fullName>394</fullName>
+                <default>false</default>
+                <label>יניב מוסקוביץ&apos;</label>
+            </value>
+            <value>
+                <fullName>יעל אדרי</fullName>
+                <default>false</default>
+                <label>יעל אדרי</label>
+            </value>
+            <value>
+                <fullName>יעקב סמוטריצקי</fullName>
+                <default>false</default>
+                <label>יעקב סמוטריצקי</label>
+            </value>
+            <value>
+                <fullName>395</fullName>
+                <default>false</default>
+                <label>יפית תמיר</label>
+            </value>
+            <value>
+                <fullName>396</fullName>
+                <default>false</default>
+                <label>יפעת צורי</label>
+            </value>
+            <value>
+                <fullName>יצחק יעקב</fullName>
+                <default>false</default>
+                <label>יצחק יעקב</label>
+            </value>
+            <value>
+                <fullName>397</fullName>
+                <default>false</default>
+                <label>כהן אדלסברג פסטמן</label>
+            </value>
+            <value>
+                <fullName>398</fullName>
+                <default>false</default>
+                <label>כנען</label>
+            </value>
+            <value>
+                <fullName>399</fullName>
+                <default>false</default>
+                <label>לא לבד</label>
+            </value>
+            <value>
+                <fullName>ליאת לנץ-ניב</fullName>
+                <default>false</default>
+                <label>ליאת לנץ-ניב</label>
+            </value>
+            <value>
+                <fullName>400</fullName>
+                <default>false</default>
+                <label>ליטל מארק</label>
+            </value>
+            <value>
+                <fullName>419</fullName>
+                <default>false</default>
+                <label>מבטח סיימון</label>
+            </value>
+            <value>
+                <fullName>401</fullName>
+                <default>false</default>
+                <label>מדנס</label>
+            </value>
+            <value>
+                <fullName>402</fullName>
+                <default>false</default>
+                <label>מיי אינווסט</label>
+            </value>
+            <value>
+                <fullName>425</fullName>
+                <default>false</default>
+                <label>מל סוכנות לביטוח 2015 בע&quot;מ</label>
+            </value>
+            <value>
+                <fullName>מנורה hug</fullName>
+                <default>false</default>
+                <label>מנורה hug</label>
+            </value>
+            <value>
+                <fullName>מרוז</fullName>
+                <default>false</default>
+                <label>מרוז</label>
+            </value>
+            <value>
+                <fullName>426</fullName>
+                <default>false</default>
+                <label>מרש אנד מקלנן</label>
+            </value>
+            <value>
+                <fullName>422</fullName>
+                <default>false</default>
+                <label>נחמה גולדווסר</label>
+            </value>
+            <value>
+                <fullName>423</fullName>
+                <default>false</default>
+                <label>נחמה כלל</label>
+            </value>
+            <value>
+                <fullName>403</fullName>
+                <default>false</default>
+                <label>נטו</label>
+            </value>
+            <value>
+                <fullName>424</fullName>
+                <default>false</default>
+                <label>נעם קלט</label>
+            </value>
+            <value>
+                <fullName>404</fullName>
+                <default>false</default>
+                <label>סטאס צביליכובוסקי</label>
+            </value>
+            <value>
+                <fullName>420</fullName>
+                <default>false</default>
+                <label>עוז פסטמן</label>
+            </value>
+            <value>
+                <fullName>עמותת ידידים</fullName>
+                <default>false</default>
+                <label>עמותת ידידים</label>
+            </value>
+            <value>
+                <fullName>427</fullName>
+                <default>false</default>
+                <label>עתידים סוכנות לביטוח</label>
+            </value>
+            <value>
+                <fullName>414</fullName>
+                <default>false</default>
+                <label>פמי פרימיום</label>
+            </value>
+            <value>
+                <fullName>פרשקונספט</fullName>
+                <default>false</default>
+                <label>פרשקונספט</label>
+            </value>
+            <value>
+                <fullName>418</fullName>
+                <default>false</default>
+                <label>פרש קונספט</label>
+            </value>
+            <value>
+                <fullName>430</fullName>
+                <default>false</default>
+                <label>פתרונות סוכנות לביטוח</label>
+            </value>
+            <value>
+                <fullName>405</fullName>
+                <default>false</default>
+                <label>צביה טבע</label>
+            </value>
+            <value>
+                <fullName>406</fullName>
+                <default>false</default>
+                <label>צמרת</label>
+            </value>
+            <value>
+                <fullName>קדנס -דובי פרייס</fullName>
+                <default>false</default>
+                <label>קדנס -דובי פרייס</label>
+            </value>
+            <value>
+                <fullName>435</fullName>
+                <default>false</default>
+                <label>קובי דורון</label>
+            </value>
+            <value>
+                <fullName>415</fullName>
+                <default>false</default>
+                <label>קורל לבקוביץ</label>
+            </value>
+            <value>
+                <fullName>407</fullName>
+                <default>false</default>
+                <label>קלט פתרונות ביטוח</label>
+            </value>
+            <value>
+                <fullName>408</fullName>
+                <default>false</default>
+                <label>קרן נוביק</label>
+            </value>
+            <value>
+                <fullName>רוגומד (מרפאה )</fullName>
+                <default>false</default>
+                <label>רוגומד (מרפאה )</label>
+            </value>
+            <value>
+                <fullName>434</fullName>
+                <default>false</default>
+                <label>רוני בר יהודה</label>
+            </value>
+            <value>
+                <fullName>429</fullName>
+                <default>false</default>
+                <label>רפאל</label>
+            </value>
+            <value>
+                <fullName>432</fullName>
+                <default>false</default>
+                <label>תמורה</label>
+            </value>
+            <value>
+                <fullName>409</fullName>
+                <default>false</default>
+                <label>תמר אביזמר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

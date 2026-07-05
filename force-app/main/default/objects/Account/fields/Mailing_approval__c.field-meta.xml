@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mailing_approval__c</fullName>
+    <description>איזה סוג דיוור המטופל מאשר לקבל</description>
+    <inlineHelpText>איזה סוג דיוור המטופל מאשר לקבל</inlineHelpText>
+    <label>Mailing approval</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Mailing_Approval</valueSetName>
+    </valueSet>
+</CustomField>

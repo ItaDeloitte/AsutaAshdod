@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CanSubstitute</fullName>
+    <inlineHelpText>התרופה שצוינה בבקשת תרופה זו ניתנת להחלפה בתרופה אחרת. אם תסמן תיבה זו, לא תוכל לבחור ערך עבור &apos;קוד סוג של תחליף מותר&apos;.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>closedcase__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>גבייה גנרית - לשינוי ע&quot;י נציג שהסתיים טיפול בצד תפנית בנושא זיכוי</description>
+    <label>Closed Case</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

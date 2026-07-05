@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_documents_status__c</fullName>
+    <label>Required documents status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NotUploaded</fullName>
+                <default>true</default>
+                <label>No documents uploaded yet</label>
+            </value>
+            <value>
+                <fullName>SomeUploaded</fullName>
+                <default>false</default>
+                <label>Some documents sent</label>
+            </value>
+            <value>
+                <fullName>AllUploaded</fullName>
+                <default>false</default>
+                <label>All documents sent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

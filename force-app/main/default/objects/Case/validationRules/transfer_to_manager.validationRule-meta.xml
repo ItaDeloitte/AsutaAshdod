@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>transfer_to_manager</fullName>
+    <active>true</active>
+    <description>בהעברה למנהל מוודא שקיים מנהל אצל המשתמש</description>
+    <errorConditionFormula>Owner:User.ManagerId = &quot;&quot; &amp;&amp;
+RecordType.DeveloperName = &quot;transfer_to_secretaries&quot; &amp;&amp;   
+ ISCHANGED(Status) &amp;&amp;
+ISPICKVAL(Status, &quot;העברה לטיפול מנהל&quot;)</errorConditionFormula>
+    <errorMessage>לא מוגדר לך מנהל במערכת, לא ניתן לשנות לסטטוס זה</errorMessage>
+</ValidationRule>

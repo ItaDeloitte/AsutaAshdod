@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>itut_beersheva</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Memo_refferal_doctor__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,סגור</value>
+    </filters>
+    <filters>
+        <field>sub_case_subject__c</field>
+        <operation>equals</operation>
+        <value>decrease_num_surg1</value>
+    </filters>
+    <label>סגל רפואי באר שבע איתות נטישה</label>
+    <queue>medical_staff_beersheva</queue>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_as_Number__c</fullName>
+    <description>Useful to find bugs on FN or LN</description>
+    <formula>ISNUMBER( FirstName )  ||  ISNUMBER(  LastName )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Name as Number</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

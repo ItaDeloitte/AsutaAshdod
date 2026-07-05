@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_have_email_or_phone</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+
+ISBLANK( Email ) &amp;&amp;
+ISBLANK( Phone )</errorConditionFormula>
+    <errorMessage>חובה להשאיר טלפון או אימייל</errorMessage>
+</ValidationRule>

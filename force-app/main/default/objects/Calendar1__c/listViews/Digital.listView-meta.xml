@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Gregorian_Date__c</columns>
+    <columns>Day__c</columns>
+    <columns>Start_hours_for_WA_weekday__c</columns>
+    <columns>End_hours_for_WA_weekday__c</columns>
+    <columns>Start_time_for_WA_holiday_eve_Friday__c</columns>
+    <columns>End_time_for_WA_holiday_eve_fri__c</columns>
+    <columns>Holiday_Description__c</columns>
+    <columns>Selected_Start_Time__c</columns>
+    <columns>Selected_End_time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Gregorian_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Gregorian_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>Gregorian_Date__c</field>
+        <operation>equals</operation>
+        <value>NEXT_MONTH</value>
+    </filters>
+    <label>Digital</label>
+</ListView>

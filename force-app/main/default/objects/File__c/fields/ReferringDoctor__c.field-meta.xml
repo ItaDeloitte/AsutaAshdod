@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReferringDoctor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>סגירת מעגל - פתולוגיה- להצגת מסמכי דימות לרופא מפנה/מבצע/מפענח</description>
+    <label>Referring Doctor</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Assuta Files (Referring Doctor)</relationshipLabel>
+    <relationshipName>Assuta_Files</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

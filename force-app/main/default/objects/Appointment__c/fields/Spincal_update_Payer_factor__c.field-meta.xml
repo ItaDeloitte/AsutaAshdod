@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Spincal_update_Payer_factor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>גורם משלם התעדכן בספינקל
+יעודכן עי PB</description>
+    <label>Spincal update Payer factor</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

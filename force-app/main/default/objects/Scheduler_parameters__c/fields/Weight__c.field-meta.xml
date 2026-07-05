@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight__c</fullName>
+    <description>משקל המטופל</description>
+    <label>Weight</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מתחת ל-120</fullName>
+                <default>false</default>
+                <label>מתחת ל-120</label>
+            </value>
+            <value>
+                <fullName>בין 120 ל-140</fullName>
+                <default>false</default>
+                <label>בין 120 ל-140</label>
+            </value>
+            <value>
+                <fullName>בין 140 ל-200</fullName>
+                <default>false</default>
+                <label>בין 140 ל-200</label>
+            </value>
+            <value>
+                <fullName>מעל 200</fullName>
+                <default>false</default>
+                <label>מעל 200</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

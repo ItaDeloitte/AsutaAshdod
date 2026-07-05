@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>needs_to_be_calculated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>יעודכן ע&quot;י וורק פלואו במידה ויש לחשב את המשתל בפגישה כעלות משתלים</description>
+    <label>needs to be calculated</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

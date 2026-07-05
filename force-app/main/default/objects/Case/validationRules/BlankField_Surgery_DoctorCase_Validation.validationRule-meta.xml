@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BlankField_Surgery_DoctorCase_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName == &apos;Medical_Info_Management&apos; 
+
+&amp;&amp; ISPICKVAL(Case_subject__c , &apos;פניה לרופא לעדכון רשומה רפואית&apos;)   
+&amp;&amp; ISPICKVAL(sub_case_subject__c, &apos;לפי פגישה מסוג ניתוח&apos;)
+&amp;&amp; ISBLANK( Surgery_Name__c )</errorConditionFormula>
+    <errorMessage>!נא להזין ערך בשדה &quot;שם הניתוח&quot;</errorMessage>
+</ValidationRule>

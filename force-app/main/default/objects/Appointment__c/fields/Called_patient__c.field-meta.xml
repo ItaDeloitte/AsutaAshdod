@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Called_patient__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>שדה שמעיד על כך שבוצעה שיחה עם המטופל - לניתוחים</description>
+    <inlineHelpText>סמן במידה וביצעת שיחה עם המטופל</inlineHelpText>
+    <label>Called Patient</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

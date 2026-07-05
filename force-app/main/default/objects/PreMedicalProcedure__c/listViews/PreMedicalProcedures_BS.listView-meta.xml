@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreMedicalProcedures_BS</fullName>
+    <columns>MedicalProcedure__c</columns>
+    <columns>PreMedicalProcedure__c</columns>
+    <columns>Active__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>אסותא באר שבע</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>הנחיות טרום ניתוחיות - אסותא באר שבע</label>
+</ListView>

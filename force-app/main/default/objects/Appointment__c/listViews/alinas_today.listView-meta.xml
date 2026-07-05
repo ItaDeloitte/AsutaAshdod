@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>alinas_today</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>Doctor_Account__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Icon_payer__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Agreement_with_assuta__c</columns>
+    <columns>Case__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>7/15/2020 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>contains</operation>
+        <value>צנתור,השתלת קוצב,אנגיו,אבלציה,דיאליזה</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date_bigger_than_today__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>MP_code__c</field>
+        <operation>notEqual</operation>
+        <value>88.409,01.5</value>
+    </filters>
+    <label>הלוח של אלינה - היום</label>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>yadBeYadWA_MessagingSession</fullName>
+    <filterScope>Queue</filterScope>
+    <label>וואטסאפ יד ביד</label>
+    <queue>yadBeYadWA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

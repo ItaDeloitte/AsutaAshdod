@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dont_sent_request_hitayvut__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>יש להחריג בתהליך שליחה של הודעה או אימייל לפגישות שמקושרות לחשבון רופא שאין צורך בהעלאת התחייבות מצד המטופל</description>
+    <label>Dont_Send_Request_Hitayvut</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

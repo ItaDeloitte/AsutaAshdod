@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relevant_for_patient_lobby__c</fullName>
+    <formula>and(
+Appointment__r.Help_Parent_Code_in__c &lt;&gt; &apos;3&apos;,
+Appointment__r.Help_Parent_Code_in__c &lt;&gt; &apos;4&apos;,
+Appointment__r.Help_Parent_Code_in__c &lt;&gt; &apos;5&apos;,
+Appointment__r.Help_Parent_Code_in__c &lt;&gt; &apos;6&apos;,
+Appointment__r.Help_Parent_Code_in__c &lt;&gt; &apos;7&apos;)
+||
+contains(Appointment__r.Medical_Procedure__r.Name,&apos;קטרקט&apos;)
+||
+contains(Appointment__r.Medical_Procedure2__r.Name,&apos;קטרקט&apos;)
+||
+contains(Appointment__r.Medical_Procedure3__r.Name,&apos;קטרקט&apos;)
+||
+contains(Appointment__r.Medical_Procedure4__r.Name,&apos;קטרקט&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Relevant for patient lobby</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

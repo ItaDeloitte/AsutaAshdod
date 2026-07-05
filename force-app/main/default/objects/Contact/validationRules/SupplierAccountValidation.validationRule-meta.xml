@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SupplierAccountValidation</fullName>
+    <active>false</active>
+    <description>Makes sure that the account related to a contact is of record type supplier</description>
+    <errorConditionFormula>Account.RecordType.DeveloperName!= &quot;Supplier&quot;
+&amp;&amp; RecordType.DeveloperName == &apos;Supplier_Contact&apos;</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>&quot;נא לוודא שהחברה שמשויכת לאיש קשר הזה היא מסוג &quot;ספק!</errorMessage>
+</ValidationRule>

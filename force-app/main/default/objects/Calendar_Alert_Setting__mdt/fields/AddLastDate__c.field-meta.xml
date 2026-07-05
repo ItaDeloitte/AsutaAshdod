@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AddLastDate__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>If true, &apos;The last calendar date is LAST DATE&apos; sentence will be added to the message</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>AddLastDate</label>
+    <type>Checkbox</type>
+</CustomField>

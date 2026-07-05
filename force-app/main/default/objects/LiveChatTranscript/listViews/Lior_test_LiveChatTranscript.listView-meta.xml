@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lior_test_LiveChatTranscript</fullName>
+    <columns>Name</columns>
+    <columns>SMS_Phone__c</columns>
+    <columns>LiveChatVisitor</columns>
+    <columns>StartTime</columns>
+    <columns>EndTime</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LastModifiedDate</field>
+        <operation>greaterThan</operation>
+        <value>4/1/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>SMS_Phone__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Lior test</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

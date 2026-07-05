@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_have_First_Name</fullName>
+    <active>true</active>
+    <description>עבור חשבון נדרש למלא שם פרטי</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+((ISNEW() &amp;&amp; DisableValidation__c = false) 
+|| 
+(NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(DisableValidation__c)))) 
+&amp;&amp;
+ISBLANK( FirstName )
+&amp;&amp; 
+RecordType.DeveloperName = &apos;PersonAccount&apos;&amp;&amp;
+(  CreatedBy.ProfileId  &lt;&gt;  $Label.Integration_ProfileId  ||  LastModifiedBy.ProfileId &lt;&gt; $Label.Integration_ProfileId )</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>נא מלא שם פרטי</errorMessage>
+</ValidationRule>

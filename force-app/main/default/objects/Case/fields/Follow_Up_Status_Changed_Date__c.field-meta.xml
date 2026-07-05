@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Follow_Up_Status_Changed_Date__c</fullName>
+    <description>יתעדכן לפי תאריך שבה עברה הפניה לסטטוס במעקב ויהיה ניתן לעריכה</description>
+    <encryptionScheme>None</encryptionScheme>
+    <inlineHelpText>תאריך עדכון סטטוס &quot;במעקב&quot;</inlineHelpText>
+    <label>Follow Up&quot; Status Changed Date&quot;</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

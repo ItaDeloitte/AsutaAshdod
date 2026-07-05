@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>question_type__c</fullName>
+    <label>Question Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>אישור תור</fullName>
+                <default>false</default>
+                <label>אישור תור</label>
+            </value>
+            <value>
+                <fullName>ביטול תור</fullName>
+                <default>false</default>
+                <label>ביטול תור</label>
+            </value>
+            <value>
+                <fullName>סקר לאחר תור</fullName>
+                <default>false</default>
+                <label>סקר לאחר תור</label>
+            </value>
+            <value>
+                <fullName>האם שבע רצון מהשירות?</fullName>
+                <default>false</default>
+                <label>האם שבע רצון מהשירות?</label>
+            </value>
+            <value>
+                <fullName>הומלץ טיפול המשך</fullName>
+                <default>false</default>
+                <label>הומלץ טיפול המשך?</label>
+            </value>
+            <value>
+                <fullName>סיבת אי הגעה</fullName>
+                <default>false</default>
+                <label>סיבת אי הגעה</label>
+            </value>
+            <value>
+                <fullName>יש לתאם תור חדש?</fullName>
+                <default>false</default>
+                <label>יש לתאם תור חדש?</label>
+            </value>
+            <value>
+                <fullName>מדוע אין לתאם תור חדש?</fullName>
+                <default>false</default>
+                <label>מדוע אין לתאם תור חדש?</label>
+            </value>
+            <value>
+                <fullName>סיבת חוסר שביעות רצון</fullName>
+                <default>false</default>
+                <label>סיבת חוסר שביעות רצון</label>
+            </value>
+            <value>
+                <fullName>פנייתך התקבלה</fullName>
+                <default>false</default>
+                <label>פנייתך התקבלה</label>
+            </value>
+            <value>
+                <fullName>תשובתך נקלטה</fullName>
+                <default>false</default>
+                <label>תשובתך נקלטה</label>
+            </value>
+            <value>
+                <fullName>עלות הייעוץ בהתאם לואוצר?</fullName>
+                <default>false</default>
+                <label>עלות הייעוץ בהתאם לואוצר?</label>
+            </value>
+            <value>
+                <fullName>סכום שנגבה בפועל</fullName>
+                <default>false</default>
+                <label>סכום שנגבה בפועל</label>
+            </value>
+            <value>
+                <fullName>סיבת הפער</fullName>
+                <default>false</default>
+                <label>סיבת הפער</label>
+            </value>
+            <value>
+                <fullName>מדוע לא הומלץ המשך טיפול?</fullName>
+                <default>false</default>
+                <label>מדוע לא הומלץ המשך טיפול?</label>
+            </value>
+            <value>
+                <fullName>טיפול המשך - רשימה</fullName>
+                <default>false</default>
+                <label>טיפול המשך - רשימה</label>
+            </value>
+            <value>
+                <fullName>טיפול המשך - אחר</fullName>
+                <default>false</default>
+                <label>טיפול המשך - אחר</label>
+            </value>
+            <value>
+                <fullName>recycle</fullName>
+                <default>false</default>
+                <label>מעוניין בתור ממוחזר</label>
+            </value>
+            <value>
+                <fullName>טרום ניתוח</fullName>
+                <default>false</default>
+                <label>טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>OTP</fullName>
+                <default>false</default>
+                <label>OTP</label>
+            </value>
+            <value>
+                <fullName>האם אתה שבע רצון מהשירות?</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>האם אתה שבע רצון מהשירות?</label>
+            </value>
+            <value>
+                <fullName>סקר לאחר תור 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>סקר לאחר תור 2</label>
+            </value>
+            <value>
+                <fullName>סקר לאחר תור 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>סקר לאחר תור 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

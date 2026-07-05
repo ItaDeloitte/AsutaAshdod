@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Code_Parent_for_Interface__c</columns>
+    <columns>InsuranceCode__c</columns>
+    <columns>quick_reception__c</columns>
+    <columns>Code_Payer_Tizkurit__c</columns>
+    <columns>Name_of_parent__c</columns>
+    <columns>Parent_Code__c</columns>
+    <columns>Show_Icon__c</columns>
+    <columns>ShowToRep__c</columns>
+    <columns>PresentOnSchdeuleScreen__c</columns>
+    <columns>Insurer_Name__c</columns>
+    <columns>Insurance_Company__c</columns>
+    <columns>Parent_Code_Help__c</columns>
+    <columns>TafnitPayerType__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>הכול</label>
+</ListView>

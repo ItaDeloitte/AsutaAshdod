@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pre_surgery_for_15_years_old</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+((( datevalue(Appointment_Date_Time__c)- Patient_Account__r.PersonContact.Birthdate  )/365) &lt;= 15)
+ &amp;&amp;
+(Medical_Procedure__r.Domain__r.Name =&quot;טרום ניתוח&quot;)
+&amp;&amp;
+(TIMEVALUE(Appointment_Date_Time__c)+10800000 )&gt;= TIMEVALUE(&quot;20:00:00.000&quot;)&amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;</errorConditionFormula>
+    <errorMessage>לא ניתן לקבוע למטופל מתחת גיל 15 תור לאחר השעה 20:00</errorMessage>
+</ValidationRule>

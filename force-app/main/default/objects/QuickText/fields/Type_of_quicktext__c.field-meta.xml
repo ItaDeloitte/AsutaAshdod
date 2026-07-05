@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_quicktext__c</fullName>
+    <label>Quick Text Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מהלך שיחה</fullName>
+                <default>false</default>
+                <label>מהלך שיחה</label>
+            </value>
+            <value>
+                <fullName>שירות והמתנה</fullName>
+                <default>false</default>
+                <label>שירות והמתנה</label>
+            </value>
+            <value>
+                <fullName>זימון תורים</fullName>
+                <default>false</default>
+                <label>זימון תורים</label>
+            </value>
+            <value>
+                <fullName>תוצאות בדיקה</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקה</label>
+            </value>
+            <value>
+                <fullName>סיום שיחה</fullName>
+                <default>false</default>
+                <label>סיום שיחה</label>
+            </value>
+            <value>
+                <fullName>סרטוני הדרכה</fullName>
+                <default>false</default>
+                <label>סרטוני הדרכה</label>
+            </value>
+            <value>
+                <fullName>כללי</fullName>
+                <default>false</default>
+                <label>כללי</label>
+            </value>
+            <value>
+                <fullName>שליחת תוצאות</fullName>
+                <default>false</default>
+                <label>שליחת תוצאות</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitors_Name__c</fullName>
+    <description>פירוט בית חולים מתחרה</description>
+    <label>Competitors Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ichilov Hospital</fullName>
+                <default>false</default>
+                <label>Ichilov Hospital</label>
+            </value>
+            <value>
+                <fullName>Tel Hashomer Hospital</fullName>
+                <default>false</default>
+                <label>Tel Hashomer Hospital</label>
+            </value>
+            <value>
+                <fullName>Assaf Harofeh Hospital</fullName>
+                <default>false</default>
+                <label>Assaf Harofeh Hospital</label>
+            </value>
+            <value>
+                <fullName>Soroka Hospital</fullName>
+                <default>false</default>
+                <label>Soroka Hospital</label>
+            </value>
+            <value>
+                <fullName>Blinson Hospital</fullName>
+                <default>false</default>
+                <label>Blinson Hospital</label>
+            </value>
+            <value>
+                <fullName>Hillel Yaffe Hospital</fullName>
+                <default>false</default>
+                <label>Hillel Yaffe Hospital</label>
+            </value>
+            <value>
+                <fullName>Laniado Hospital</fullName>
+                <default>false</default>
+                <label>Laniado Hospital</label>
+            </value>
+            <value>
+                <fullName>Rambam Hospital</fullName>
+                <default>false</default>
+                <label>Rambam Hospital</label>
+            </value>
+            <value>
+                <fullName>Hadassah Hospital</fullName>
+                <default>false</default>
+                <label>Hadassah Hospital</label>
+            </value>
+            <value>
+                <fullName>Shaare Zedek Hospital</fullName>
+                <default>false</default>
+                <label>Shaare Zedek Hospital</label>
+            </value>
+            <value>
+                <fullName>Barzilai Hospital</fullName>
+                <default>false</default>
+                <label>Barzilai Hospital</label>
+            </value>
+            <value>
+                <fullName>Wolfson Hospital</fullName>
+                <default>false</default>
+                <label>Wolfson Hospital</label>
+            </value>
+            <value>
+                <fullName>Ashdod Public Hospital</fullName>
+                <default>false</default>
+                <label>Ashdod Public Hospital</label>
+            </value>
+            <value>
+                <fullName>Bnei Zion Hospital</fullName>
+                <default>false</default>
+                <label>Bnei Zion Hospital</label>
+            </value>
+            <value>
+                <fullName>Kaplan Hospital</fullName>
+                <default>false</default>
+                <label>Kaplan Hospital</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

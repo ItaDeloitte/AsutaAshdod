@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>file_type__c</fullName>
+    <label>File Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>הפנייה</label>
+            </value>
+            <value>
+                <fullName>Waiver_of_confidentiality</fullName>
+                <default>false</default>
+                <label>ויתור סודיות</label>
+            </value>
+            <value>
+                <fullName>13</fullName>
+                <default>false</default>
+                <label>תעודת זהות</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>טופס התחייבות</label>
+            </value>
+            <value>
+                <fullName>מינוי איש קשר</fullName>
+                <default>false</default>
+                <label>מינוי איש קשר</label>
+            </value>
+            <value>
+                <fullName>טופס הנחיות</fullName>
+                <default>false</default>
+                <label>טופס הנחיות</label>
+            </value>
+            <value>
+                <fullName>26</fullName>
+                <default>false</default>
+                <label>סיכום בדיקה/ביקור במכון עיניים</label>
+            </value>
+            <value>
+                <fullName>48</fullName>
+                <default>false</default>
+                <label>תשובת ציטוגנטיקה</label>
+            </value>
+            <value>
+                <fullName>63</fullName>
+                <default>false</default>
+                <label>תשובות פתולוגיה</label>
+            </value>
+            <value>
+                <fullName>97</fullName>
+                <default>false</default>
+                <label>תשובת גנטיקה</label>
+            </value>
+            <value>
+                <fullName>98</fullName>
+                <default>false</default>
+                <label>תשובת פתולוגיה לא פעיל</label>
+            </value>
+            <value>
+                <fullName>122</fullName>
+                <default>false</default>
+                <label>החזר כספי</label>
+            </value>
+            <value>
+                <fullName>162</fullName>
+                <default>false</default>
+                <label>תשובה ממכון עיניים</label>
+            </value>
+            <value>
+                <fullName>211</fullName>
+                <default>false</default>
+                <label>טיפול/ייעוץ במרפאת כאב</label>
+            </value>
+            <value>
+                <fullName>216</fullName>
+                <default>false</default>
+                <label>סיכום בדיקה/ביקור במכון שינה</label>
+            </value>
+            <value>
+                <fullName>300</fullName>
+                <default>false</default>
+                <label>סיכום טיפול/ייעוץ במכון גסטרו</label>
+            </value>
+            <value>
+                <fullName>301</fullName>
+                <default>false</default>
+                <label>תשובת רנטגן</label>
+            </value>
+            <value>
+                <fullName>302</fullName>
+                <default>false</default>
+                <label>סיכום בדיקה/ביקור במכון לב</label>
+            </value>
+            <value>
+                <fullName>303</fullName>
+                <default>false</default>
+                <label>תשובת MRI</label>
+            </value>
+            <value>
+                <fullName>304</fullName>
+                <default>false</default>
+                <label>תשובת CT</label>
+            </value>
+            <value>
+                <fullName>305</fullName>
+                <default>false</default>
+                <label>סיכום בדיקת צפיפות עצם</label>
+            </value>
+            <value>
+                <fullName>307</fullName>
+                <default>false</default>
+                <label>תשובת בדיקת ממוגרפיה</label>
+            </value>
+            <value>
+                <fullName>309</fullName>
+                <default>false</default>
+                <label>סיכום אורודינמיקה</label>
+            </value>
+            <value>
+                <fullName>310</fullName>
+                <default>false</default>
+                <label>תשובת PET CT</label>
+            </value>
+            <value>
+                <fullName>320</fullName>
+                <default>false</default>
+                <label>תשובת מיפוי כללי</label>
+            </value>
+            <value>
+                <fullName>321</fullName>
+                <default>false</default>
+                <label>תשובת מיפוי לב</label>
+            </value>
+            <value>
+                <fullName>330</fullName>
+                <default>false</default>
+                <label>תשובת אולטראסאונד כללי</label>
+            </value>
+            <value>
+                <fullName>931</fullName>
+                <default>false</default>
+                <label>מכתב שחרור</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>כללי</label>
+            </value>
+            <value>
+                <fullName>ארכיון</fullName>
+                <default>false</default>
+                <label>ארכיון</label>
+            </value>
+            <value>
+                <fullName>בקשה לרשומה רפואית</fullName>
+                <default>false</default>
+                <label>בקשה לרשומה רפואית</label>
+            </value>
+            <value>
+                <fullName>אישור ועדה</fullName>
+                <default>false</default>
+                <label>אישור ועדה</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>הפניה</label>
+            </value>
+            <value>
+                <fullName>מכתב דחייה</fullName>
+                <default>false</default>
+                <label>מכתב דחייה</label>
+            </value>
+            <value>
+                <fullName>165</fullName>
+                <default>false</default>
+                <label>סיכום רפואי מרופא משפחה/מנתח</label>
+            </value>
+            <value>
+                <fullName>IVF</fullName>
+                <default>false</default>
+                <label>IVF</label>
+            </value>
+            <value>
+                <fullName>53</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקת מעבדה</label>
+            </value>
+            <value>
+                <fullName>865</fullName>
+                <default>false</default>
+                <label>סיכום ייעוץ</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>מסמכים רפואיים</label>
+            </value>
+            <value>
+                <fullName>270</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקת שקיפות עורפית (שבוע 11-13 להריון)</label>
+            </value>
+            <value>
+                <fullName>271</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקת סקר ביוכימי שליש ראשון (Papp-A)</label>
+            </value>
+            <value>
+                <fullName>272</fullName>
+                <default>false</default>
+                <label>תוצאות סקירת מערכות מוקדמת (אולטרסאונד שבוע 14-16 להריון)</label>
+            </value>
+            <value>
+                <fullName>273</fullName>
+                <default>false</default>
+                <label>תוצאות סקר ביוכימי שליש שני (חלבון עוברי)</label>
+            </value>
+            <value>
+                <fullName>274</fullName>
+                <default>false</default>
+                <label>בדיקות סקר נשאות גנטית מההיריון הנוכחי והריונות קודמים</label>
+            </value>
+            <value>
+                <fullName>275</fullName>
+                <default>false</default>
+                <label>ייעוציים גנטיים שבוצעו בעבר</label>
+            </value>
+            <value>
+                <fullName>276</fullName>
+                <default>false</default>
+                <label>מסמכים אחרים רלוונטיים לייעוץ גנטי</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>קורסי החיאה</label>
+            </value>
+            <value>
+                <fullName>Nurse Documentation</fullName>
+                <default>false</default>
+                <label>Nurse Documentation</label>
+            </value>
+            <value>
+                <fullName>808</fullName>
+                <default>false</default>
+                <label>שאלון טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>622</fullName>
+                <default>false</default>
+                <label>גסטרוסקופיה- בדיקות חיצוניות</label>
+            </value>
+            <value>
+                <fullName>621</fullName>
+                <default>false</default>
+                <label>בדיקות דם (מעקב שוטף) – בדיקות חיצוניות</label>
+            </value>
+            <value>
+                <fullName>623</fullName>
+                <default>false</default>
+                <label>קולונוסקופיה (רגילה או וירטואלית) בדיקות חיצוניות</label>
+            </value>
+            <value>
+                <fullName>624</fullName>
+                <default>false</default>
+                <label>CT בטן/אגן – חיצוניות</label>
+            </value>
+            <value>
+                <fullName>625</fullName>
+                <default>false</default>
+                <label>פיענוח CT- חיצוניות</label>
+            </value>
+            <value>
+                <fullName>626</fullName>
+                <default>false</default>
+                <label>בדיקת קפסולה- חיצוניות</label>
+            </value>
+            <value>
+                <fullName>627</fullName>
+                <default>false</default>
+                <label>MRCP- חיצוניות</label>
+            </value>
+            <value>
+                <fullName>628</fullName>
+                <default>false</default>
+                <label>דוחות ניתוח רלוונטים לייעוץ - חיצוניות</label>
+            </value>
+            <value>
+                <fullName>629</fullName>
+                <default>false</default>
+                <label>סיכום רפואי מרופא משפחה או מומחה - חיצוניות</label>
+            </value>
+            <value>
+                <fullName>630</fullName>
+                <default>false</default>
+                <label>MRI בטן/אגן/ערמונית- חיצוניות</label>
+            </value>
+            <value>
+                <fullName>631</fullName>
+                <default>false</default>
+                <label>אולטרהסאונד בטן/דרכי שתן/ערמונית/אשכים- חיצוניות</label>
+            </value>
+            <value>
+                <fullName>632</fullName>
+                <default>false</default>
+                <label>מיפוי PET CT, PSMA- חיצוניות</label>
+            </value>
+            <value>
+                <fullName>633</fullName>
+                <default>false</default>
+                <label>מיפוי כליות- חיצוניות</label>
+            </value>
+            <value>
+                <fullName>634</fullName>
+                <default>false</default>
+                <label>מיפוי כבד- חיצוניות</label>
+            </value>
+            <value>
+                <fullName>816</fullName>
+                <default>false</default>
+                <label>רשימת תרופות קבועות</label>
+            </value>
+            <value>
+                <fullName>817</fullName>
+                <default>false</default>
+                <label>תרשים א.ק.ג</label>
+            </value>
+            <value>
+                <fullName>801</fullName>
+                <default>false</default>
+                <label>פענוח בדיקת מאמץ</label>
+            </value>
+            <value>
+                <fullName>831</fullName>
+                <default>false</default>
+                <label>פענוח בדיקת הולטר</label>
+            </value>
+            <value>
+                <fullName>821</fullName>
+                <default>false</default>
+                <label>פענוח מיפוי לב</label>
+            </value>
+            <value>
+                <fullName>811</fullName>
+                <default>false</default>
+                <label>פענוח אקו לב דופלר ECHO</label>
+            </value>
+            <value>
+                <fullName>815</fullName>
+                <default>false</default>
+                <label>פענוח אקו לב במאמץ</label>
+            </value>
+            <value>
+                <fullName>921</fullName>
+                <default>false</default>
+                <label>סיכום פעולה – צנתור/אבלציה/ניתוח</label>
+            </value>
+            <value>
+                <fullName>646</fullName>
+                <default>false</default>
+                <label>PAP</label>
+            </value>
+            <value>
+                <fullName>647</fullName>
+                <default>false</default>
+                <label>Mammography</label>
+            </value>
+            <value>
+                <fullName>648</fullName>
+                <default>false</default>
+                <label>בדיקת שד ידנית</label>
+            </value>
+            <value>
+                <fullName>649</fullName>
+                <default>false</default>
+                <label>שתן</label>
+            </value>
+            <value>
+                <fullName>650</fullName>
+                <default>false</default>
+                <label>סקר גנטי בפתיחת תיק</label>
+            </value>
+            <value>
+                <fullName>636</fullName>
+                <default>false</default>
+                <label>ECG</label>
+            </value>
+            <value>
+                <fullName>645</fullName>
+                <default>false</default>
+                <label>בדיקות מעקב U.S זקיקים</label>
+            </value>
+            <value>
+                <fullName>958</fullName>
+                <default>false</default>
+                <label>צילום של האזור</label>
+            </value>
+            <value>
+                <fullName>959</fullName>
+                <default>false</default>
+                <label>תשובות ביופסיה עורית</label>
+            </value>
+            <value>
+                <fullName>356</fullName>
+                <default>false</default>
+                <label>השלמת בדיקות טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>148</fullName>
+                <default>false</default>
+                <label>זימון רופא מאסותא דוק</label>
+            </value>
+            <value>
+                <fullName>920</fullName>
+                <default>false</default>
+                <label>הסכמה מדעת</label>
+            </value>
+            <value>
+                <fullName>651</fullName>
+                <default>false</default>
+                <label>בדיקות חובה שנתיות</label>
+            </value>
+            <value>
+                <fullName>652</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>הצעת מחיר</fullName>
+                <default>false</default>
+                <label>הצעת מחיר</label>
+            </value>
+            <value>
+                <fullName>922</fullName>
+                <default>false</default>
+                <label>הודעה למטופל על תוצאות בדיקות</label>
+            </value>
+            <value>
+                <fullName>100</fullName>
+                <default>false</default>
+                <label>הדרכה סיעודית לשחרור</label>
+            </value>
+            <value>
+                <fullName>972</fullName>
+                <default>false</default>
+                <label>טופס הסכמה לשיקום בית</label>
+            </value>
+            <value>
+                <fullName>121</fullName>
+                <default>false</default>
+                <label>שאלון מטופל</label>
+            </value>
+            <value>
+                <fullName>123</fullName>
+                <default>false</default>
+                <label>אישור אפוטרופוסיות</label>
+            </value>
+            <value>
+                <fullName>124</fullName>
+                <default>false</default>
+                <label>אישור לקיחת דיסק/פענוח בדיקה</label>
+            </value>
+            <value>
+                <fullName>125</fullName>
+                <default>false</default>
+                <label>הרשאות לרופא</label>
+            </value>
+            <value>
+                <fullName>126</fullName>
+                <default>false</default>
+                <label>תשובת מי שפיר</label>
+            </value>
+            <value>
+                <fullName>127</fullName>
+                <default>false</default>
+                <label>תשובה לא תקינה- מי שפיר</label>
+            </value>
+            <value>
+                <fullName>129</fullName>
+                <default>false</default>
+                <label>הסכמה לגביית היטל מכבי</label>
+            </value>
+            <value>
+                <fullName>130</fullName>
+                <default>false</default>
+                <label>טופס הסכמה לטיפול ציטוטוקסי</label>
+            </value>
+            <value>
+                <fullName>131</fullName>
+                <default>false</default>
+                <label>טופס הסכמה לטיפול ביולוגי/אימונולוגי</label>
+            </value>
+            <value>
+                <fullName>132</fullName>
+                <default>false</default>
+                <label>טופס הסכמה למתן מוצרי דם</label>
+            </value>
+            <value>
+                <fullName>133</fullName>
+                <default>false</default>
+                <label>טופס הסכמה לבדיקות גנומיות</label>
+            </value>
+            <value>
+                <fullName>136</fullName>
+                <default>false</default>
+                <label>טופס הסכמה לניתוח</label>
+            </value>
+            <value>
+                <fullName>137</fullName>
+                <default>false</default>
+                <label>תוצאות מעבדה</label>
+            </value>
+            <value>
+                <fullName>138</fullName>
+                <default>false</default>
+                <label>הדרכת אחות לטיפול בית</label>
+            </value>
+            <value>
+                <fullName>139</fullName>
+                <default>false</default>
+                <label>הדרכת אחות בתחילת הקרנות</label>
+            </value>
+            <value>
+                <fullName>140</fullName>
+                <default>false</default>
+                <label>מרשם</label>
+            </value>
+            <value>
+                <fullName>141</fullName>
+                <default>false</default>
+                <label>תעודת החזרה חתומה</label>
+            </value>
+            <value>
+                <fullName>146</fullName>
+                <default>false</default>
+                <label>סיכום רפואי - העברה לקהילה</label>
+            </value>
+            <value>
+                <fullName>147</fullName>
+                <default>false</default>
+                <label>ספח לתעודת זהות</label>
+            </value>
+            <value>
+                <fullName>15</fullName>
+                <default>false</default>
+                <label>תוכנית טיפול IVF</label>
+            </value>
+            <value>
+                <fullName>150</fullName>
+                <default>false</default>
+                <label>פער בניהול רשומה באחריות רופא</label>
+            </value>
+            <value>
+                <fullName>151</fullName>
+                <default>false</default>
+                <label>דוח החזרה - מוקפאים</label>
+            </value>
+            <value>
+                <fullName>153</fullName>
+                <default>false</default>
+                <label>מכתב תזונאית</label>
+            </value>
+            <value>
+                <fullName>154</fullName>
+                <default>false</default>
+                <label>תשובה לבדיקת פיברוסקאן</label>
+            </value>
+            <value>
+                <fullName>155</fullName>
+                <default>false</default>
+                <label>דיון צוות</label>
+            </value>
+            <value>
+                <fullName>160</fullName>
+                <default>false</default>
+                <label>שאלון לאיתור מטופלים החשודים כחולים בקורונה</label>
+            </value>
+            <value>
+                <fullName>161</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקות סרולוגיות-בנק הזרע</label>
+            </value>
+            <value>
+                <fullName>163</fullName>
+                <default>false</default>
+                <label>טופס מרדים פרטי</label>
+            </value>
+            <value>
+                <fullName>170</fullName>
+                <default>false</default>
+                <label>דוח מעבדה</label>
+            </value>
+            <value>
+                <fullName>175</fullName>
+                <default>false</default>
+                <label>מסמכי אנגיו</label>
+            </value>
+            <value>
+                <fullName>204</fullName>
+                <default>false</default>
+                <label>דוח פינוי אמבולנס</label>
+            </value>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>סיכום מחזור הפריה חוץ גופית</label>
+            </value>
+            <value>
+                <fullName>212</fullName>
+                <default>false</default>
+                <label>סיכום בדיקה ביחידה לנוירוכירורגיה תפקודית</label>
+            </value>
+            <value>
+                <fullName>217</fullName>
+                <default>false</default>
+                <label>מסמכי בירור מהיר</label>
+            </value>
+            <value>
+                <fullName>220</fullName>
+                <default>false</default>
+                <label>תוצאת בדיקת זרע</label>
+            </value>
+            <value>
+                <fullName>225</fullName>
+                <default>false</default>
+                <label>סיכום ביקור ריפוי בעיסוק</label>
+            </value>
+            <value>
+                <fullName>226</fullName>
+                <default>false</default>
+                <label>סיכום ביקור דיאטנית/תזונאית</label>
+            </value>
+            <value>
+                <fullName>230</fullName>
+                <default>false</default>
+                <label>ניטור חומציות באמצעות BRAVO</label>
+            </value>
+            <value>
+                <fullName>231</fullName>
+                <default>false</default>
+                <label>תשובת מנומטריה</label>
+            </value>
+            <value>
+                <fullName>232</fullName>
+                <default>false</default>
+                <label>סיכום סיעודי</label>
+            </value>
+            <value>
+                <fullName>25</fullName>
+                <default>false</default>
+                <label>הפניה לפתולוגיה</label>
+            </value>
+            <value>
+                <fullName>280</fullName>
+                <default>false</default>
+                <label>סיכום ביקור רדיותרפיה</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>הסכמה לטיפול</label>
+            </value>
+            <value>
+                <fullName>308</fullName>
+                <default>false</default>
+                <label>תשובת FMRI</label>
+            </value>
+            <value>
+                <fullName>311</fullName>
+                <default>false</default>
+                <label>סיכום אבחון נוירופסיכולוגי</label>
+            </value>
+            <value>
+                <fullName>312</fullName>
+                <default>false</default>
+                <label>אישור מחלה</label>
+            </value>
+            <value>
+                <fullName>313</fullName>
+                <default>false</default>
+                <label>טופס הדרכה בשחרור</label>
+            </value>
+            <value>
+                <fullName>314</fullName>
+                <default>false</default>
+                <label>סיכום יעוץ גנטי מרחוק - לפני דיקור</label>
+            </value>
+            <value>
+                <fullName>315</fullName>
+                <default>false</default>
+                <label>סיכום פעולה רדיולוגיה פולשנית</label>
+            </value>
+            <value>
+                <fullName>316</fullName>
+                <default>false</default>
+                <label>הפניה מאומתת</label>
+            </value>
+            <value>
+                <fullName>317</fullName>
+                <default>false</default>
+                <label>PETMR</label>
+            </value>
+            <value>
+                <fullName>322</fullName>
+                <default>false</default>
+                <label>דוח ניתוח במרכז מעין</label>
+            </value>
+            <value>
+                <fullName>323</fullName>
+                <default>false</default>
+                <label>מדידת עדשה – ביומטריה</label>
+            </value>
+            <value>
+                <fullName>324</fullName>
+                <default>false</default>
+                <label>ספירת תאי אנתודל</label>
+            </value>
+            <value>
+                <fullName>325</fullName>
+                <default>false</default>
+                <label>מדידת לחץ תוך עיני-מכשיר ביתי</label>
+            </value>
+            <value>
+                <fullName>331</fullName>
+                <default>false</default>
+                <label>תשובת אולטראסאונד גינקולוגי</label>
+            </value>
+            <value>
+                <fullName>332</fullName>
+                <default>false</default>
+                <label>תשובת אולטראסאונד מפרקי ירך</label>
+            </value>
+            <value>
+                <fullName>334</fullName>
+                <default>false</default>
+                <label>תשובת אולטראסאונד רקטאלי</label>
+            </value>
+            <value>
+                <fullName>338</fullName>
+                <default>false</default>
+                <label>קבלה רפואית – אשפוז בית</label>
+            </value>
+            <value>
+                <fullName>345</fullName>
+                <default>false</default>
+                <label>ביופסיה צוואר הרחם- תשובה תקינה</label>
+            </value>
+            <value>
+                <fullName>353</fullName>
+                <default>false</default>
+                <label>אישור ביקור</label>
+            </value>
+            <value>
+                <fullName>383</fullName>
+                <default>false</default>
+                <label>סיכום ציטולוגיה</label>
+            </value>
+            <value>
+                <fullName>384</fullName>
+                <default>false</default>
+                <label>סיכום אנדרולוגיה</label>
+            </value>
+            <value>
+                <fullName>385</fullName>
+                <default>false</default>
+                <label>פענוח מתמחים לא סופי</label>
+            </value>
+            <value>
+                <fullName>386</fullName>
+                <default>false</default>
+                <label>תשובת Tumor Board</label>
+            </value>
+            <value>
+                <fullName>392</fullName>
+                <default>false</default>
+                <label>תוצאות מיקרוביולוגיה</label>
+            </value>
+            <value>
+                <fullName>401</fullName>
+                <default>false</default>
+                <label>מעבדה</label>
+            </value>
+            <value>
+                <fullName>420</fullName>
+                <default>false</default>
+                <label>מסמך לביטוח לאומי</label>
+            </value>
+            <value>
+                <fullName>430</fullName>
+                <default>false</default>
+                <label>בדיקת שמיעה</label>
+            </value>
+            <value>
+                <fullName>431</fullName>
+                <default>false</default>
+                <label>בדיקת קוצב</label>
+            </value>
+            <value>
+                <fullName>432</fullName>
+                <default>false</default>
+                <label>תפקודי ריאות</label>
+            </value>
+            <value>
+                <fullName>453</fullName>
+                <default>false</default>
+                <label>מכתב קבלה עוס</label>
+            </value>
+            <value>
+                <fullName>480</fullName>
+                <default>false</default>
+                <label>רישיון קבורה</label>
+            </value>
+            <value>
+                <fullName>499</fullName>
+                <default>false</default>
+                <label>דוח פתולוגיה</label>
+            </value>
+            <value>
+                <fullName>500</fullName>
+                <default>false</default>
+                <label>אישור רפואי אסותא אופטיק</label>
+            </value>
+            <value>
+                <fullName>501</fullName>
+                <default>false</default>
+                <label>מעקב אסותא אופטיק</label>
+            </value>
+            <value>
+                <fullName>502</fullName>
+                <default>false</default>
+                <label>סיכום אופטומטריסט אסותא אופטיק</label>
+            </value>
+            <value>
+                <fullName>503</fullName>
+                <default>false</default>
+                <label>תקצירים אסותא אופטיק</label>
+            </value>
+            <value>
+                <fullName>54</fullName>
+                <default>false</default>
+                <label>דוח ביצוע דיקור מי שפיר</label>
+            </value>
+            <value>
+                <fullName>590</fullName>
+                <default>false</default>
+                <label>דוח ביציות</label>
+            </value>
+            <value>
+                <fullName>591</fullName>
+                <default>false</default>
+                <label>סיכום שאיבת ביציות</label>
+            </value>
+            <value>
+                <fullName>603</fullName>
+                <default>false</default>
+                <label>אונקולוגיה: גיליון אנמנזה סיעודית</label>
+            </value>
+            <value>
+                <fullName>604</fullName>
+                <default>false</default>
+                <label>אונקולוגיה: גיליון אומדן סיעודי</label>
+            </value>
+            <value>
+                <fullName>605</fullName>
+                <default>false</default>
+                <label>אונקולוגיה: גיליון ביקור במרפאה</label>
+            </value>
+            <value>
+                <fullName>606</fullName>
+                <default>false</default>
+                <label>אונקולוגיה: הוראות רפואיות לטיפול</label>
+            </value>
+            <value>
+                <fullName>609</fullName>
+                <default>false</default>
+                <label>סיכומי מרפאת אונקולוגיה להעברה לאינטרנט</label>
+            </value>
+            <value>
+                <fullName>611</fullName>
+                <default>false</default>
+                <label>אסמכתא לביצוע סימולציה</label>
+            </value>
+            <value>
+                <fullName>612</fullName>
+                <default>false</default>
+                <label>אסמכתא לביצוע טיפול קרינתי</label>
+            </value>
+            <value>
+                <fullName>613</fullName>
+                <default>false</default>
+                <label>סיכום טיפול קרינתי</label>
+            </value>
+            <value>
+                <fullName>615</fullName>
+                <default>false</default>
+                <label>סיכום ביקור קרינה</label>
+            </value>
+            <value>
+                <fullName>616</fullName>
+                <default>false</default>
+                <label>מידע רפואי מאוחזר</label>
+            </value>
+            <value>
+                <fullName>620</fullName>
+                <default>false</default>
+                <label>הדמיה תפקודית של המוח</label>
+            </value>
+            <value>
+                <fullName>635</fullName>
+                <default>false</default>
+                <label>רשימת תרופות קבועות- מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>637</fullName>
+                <default>false</default>
+                <label>פענוח בדיקת מאמץ- מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>638</fullName>
+                <default>false</default>
+                <label>פענוח בדיקת הולטר- מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>639</fullName>
+                <default>false</default>
+                <label>פענוח מיפוי לב- מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>640</fullName>
+                <default>false</default>
+                <label>פענוח אקו לב – מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>641</fullName>
+                <default>false</default>
+                <label>פענוח אקו לב במאמץ- מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>642</fullName>
+                <default>false</default>
+                <label>פענוח צילום חזה – מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>643</fullName>
+                <default>false</default>
+                <label>פענוח בדיקת MRI – מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>644</fullName>
+                <default>false</default>
+                <label>סיכום פעולה – צנתור/אבלציה/ניתוח לב- מסמך חיצוני</label>
+            </value>
+            <value>
+                <fullName>653</fullName>
+                <default>false</default>
+                <label>שחרור משירותי פיזיותרפיה</label>
+            </value>
+            <value>
+                <fullName>654</fullName>
+                <default>false</default>
+                <label>עובדת סוציאלית</label>
+            </value>
+            <value>
+                <fullName>655</fullName>
+                <default>false</default>
+                <label>נספח למכתב שחרור</label>
+            </value>
+            <value>
+                <fullName>660</fullName>
+                <default>false</default>
+                <label>הצעת מחיר פרטית</label>
+            </value>
+            <value>
+                <fullName>665</fullName>
+                <default>false</default>
+                <label>מסמכים אדמיניסטרטיביים</label>
+            </value>
+            <value>
+                <fullName>701</fullName>
+                <default>false</default>
+                <label>סיכום טיפול בפוטותרפיה</label>
+            </value>
+            <value>
+                <fullName>721</fullName>
+                <default>false</default>
+                <label>סיכום טיפול מכון שינה</label>
+            </value>
+            <value>
+                <fullName>731</fullName>
+                <default>false</default>
+                <label>סיכום טיפול אסותא אופטיק</label>
+            </value>
+            <value>
+                <fullName>741</fullName>
+                <default>false</default>
+                <label>קבלה ויעוץ לפני דיקור מי שפיר</label>
+            </value>
+            <value>
+                <fullName>791</fullName>
+                <default>false</default>
+                <label>סיכום ביקור במרפאת חוץ</label>
+            </value>
+            <value>
+                <fullName>792</fullName>
+                <default>false</default>
+                <label>סיכום ביקור טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>793</fullName>
+                <default>false</default>
+                <label>סיכום ביקור גינקולוגיה ומיילדות</label>
+            </value>
+            <value>
+                <fullName>794</fullName>
+                <default>false</default>
+                <label>סיכום ביקור קלינאי תקשורת</label>
+            </value>
+            <value>
+                <fullName>796</fullName>
+                <default>false</default>
+                <label>סיכום ביקור אחות</label>
+            </value>
+            <value>
+                <fullName>797</fullName>
+                <default>false</default>
+                <label>סיכום ביקור אחות פרונטלי</label>
+            </value>
+            <value>
+                <fullName>798</fullName>
+                <default>false</default>
+                <label>סיכום ביקור אחות וירטואלי</label>
+            </value>
+            <value>
+                <fullName>829</fullName>
+                <default>false</default>
+                <label>סיכום יעוץ אונקוגנטי</label>
+            </value>
+            <value>
+                <fullName>834</fullName>
+                <default>false</default>
+                <label>סיכום מעבדה IVF</label>
+            </value>
+            <value>
+                <fullName>837</fullName>
+                <default>false</default>
+                <label>סיכום פיענוח הולטר</label>
+            </value>
+            <value>
+                <fullName>839</fullName>
+                <default>false</default>
+                <label>סיכום פענוח הולטר</label>
+            </value>
+            <value>
+                <fullName>840</fullName>
+                <default>false</default>
+                <label>מכתב הרכבה ופענוח</label>
+            </value>
+            <value>
+                <fullName>841</fullName>
+                <default>false</default>
+                <label>סיכום TILT TEST</label>
+            </value>
+            <value>
+                <fullName>851</fullName>
+                <default>false</default>
+                <label>סיכום ביקור במרפאת קוצבים</label>
+            </value>
+            <value>
+                <fullName>861</fullName>
+                <default>false</default>
+                <label>סיכום ייעוץ קרדיולוגי</label>
+            </value>
+            <value>
+                <fullName>864</fullName>
+                <default>false</default>
+                <label>סיכום ביקור יעוץ אונקולוגי</label>
+            </value>
+            <value>
+                <fullName>866</fullName>
+                <default>false</default>
+                <label>סיכום ייעוץ רופא ריאות</label>
+            </value>
+            <value>
+                <fullName>870</fullName>
+                <default>false</default>
+                <label>הודעת רופא למטופל</label>
+            </value>
+            <value>
+                <fullName>871</fullName>
+                <default>false</default>
+                <label>סיכום מרפאת ליפידים</label>
+            </value>
+            <value>
+                <fullName>872</fullName>
+                <default>false</default>
+                <label>מסמך הכנה לניתוח</label>
+            </value>
+            <value>
+                <fullName>880</fullName>
+                <default>false</default>
+                <label>סיכום טיפול פוטוטרפי</label>
+            </value>
+            <value>
+                <fullName>882</fullName>
+                <default>false</default>
+                <label>טופס הפנייה לבדיקות מעבדה</label>
+            </value>
+            <value>
+                <fullName>883</fullName>
+                <default>false</default>
+                <label>בקשה ליעוץ/טיפול בית</label>
+            </value>
+            <value>
+                <fullName>884</fullName>
+                <default>false</default>
+                <label>בקשה לציוד רפואי</label>
+            </value>
+            <value>
+                <fullName>885</fullName>
+                <default>false</default>
+                <label>הפנייה לבדיקות הדמיה</label>
+            </value>
+            <value>
+                <fullName>886</fullName>
+                <default>false</default>
+                <label>הפנייה למחלקה לרפואה דחופה</label>
+            </value>
+            <value>
+                <fullName>887</fullName>
+                <default>false</default>
+                <label>טופס הזמנת מחולל חמצן</label>
+            </value>
+            <value>
+                <fullName>901</fullName>
+                <default>false</default>
+                <label>דוח ניתוח</label>
+            </value>
+            <value>
+                <fullName>902</fullName>
+                <default>false</default>
+                <label>דוח ניתוח ושחרור</label>
+            </value>
+            <value>
+                <fullName>930</fullName>
+                <default>false</default>
+                <label>סיכום אשפוז ביניים</label>
+            </value>
+            <value>
+                <fullName>932</fullName>
+                <default>false</default>
+                <label>שחרור סיעודי</label>
+            </value>
+            <value>
+                <fullName>933</fullName>
+                <default>false</default>
+                <label>סיכום אשפוז- העברה</label>
+            </value>
+            <value>
+                <fullName>934</fullName>
+                <default>false</default>
+                <label>סיכום סיעודי- העברה</label>
+            </value>
+            <value>
+                <fullName>935</fullName>
+                <default>false</default>
+                <label>סיכום לידה</label>
+            </value>
+            <value>
+                <fullName>936</fullName>
+                <default>false</default>
+                <label>שחרור יילוד</label>
+            </value>
+            <value>
+                <fullName>937</fullName>
+                <default>false</default>
+                <label>סיכום התאוששות</label>
+            </value>
+            <value>
+                <fullName>938</fullName>
+                <default>false</default>
+                <label>סיכום ביקור במיון</label>
+            </value>
+            <value>
+                <fullName>940</fullName>
+                <default>false</default>
+                <label>מכתב שחרור מתוכנן לשיקום בית</label>
+            </value>
+            <value>
+                <fullName>941</fullName>
+                <default>false</default>
+                <label>סיכום פרוצדורה במכון גסטרו</label>
+            </value>
+            <value>
+                <fullName>942</fullName>
+                <default>false</default>
+                <label>הודעת לידה</label>
+            </value>
+            <value>
+                <fullName>943</fullName>
+                <default>false</default>
+                <label>אישורים</label>
+            </value>
+            <value>
+                <fullName>944</fullName>
+                <default>false</default>
+                <label>מכתבי סיכום - אופטיק</label>
+            </value>
+            <value>
+                <fullName>946</fullName>
+                <default>false</default>
+                <label>ביקור עובדת סוציאלית וירטואלי</label>
+            </value>
+            <value>
+                <fullName>947</fullName>
+                <default>false</default>
+                <label>ביקור הקפצה</label>
+            </value>
+            <value>
+                <fullName>950</fullName>
+                <default>false</default>
+                <label>סיכום בדיקת מכון שמיעה</label>
+            </value>
+            <value>
+                <fullName>951</fullName>
+                <default>false</default>
+                <label>מסמכים בריאטריים</label>
+            </value>
+            <value>
+                <fullName>952</fullName>
+                <default>false</default>
+                <label>שאלון בריאטריה א&apos;</label>
+            </value>
+            <value>
+                <fullName>960</fullName>
+                <default>false</default>
+                <label>סריקת מסמכים לאחר השבתה</label>
+            </value>
+            <value>
+                <fullName>971</fullName>
+                <default>false</default>
+                <label>הסכמה להשתתפות במחקר</label>
+            </value>
+            <value>
+                <fullName>973</fullName>
+                <default>false</default>
+                <label>טופס הפניה למצפן או לקהילה</label>
+            </value>
+            <value>
+                <fullName>975</fullName>
+                <default>false</default>
+                <label>סיכום מחקר CONNECARE</label>
+            </value>
+            <value>
+                <fullName>980</fullName>
+                <default>false</default>
+                <label>תיק סרוק ה&quot;ה</label>
+            </value>
+            <value>
+                <fullName>981</fullName>
+                <default>false</default>
+                <label>בל 250 או 283</label>
+            </value>
+            <value>
+                <fullName>982</fullName>
+                <default>false</default>
+                <label>צילומי פה ולסת</label>
+            </value>
+            <value>
+                <fullName>983</fullName>
+                <default>false</default>
+                <label>שטר חוב</label>
+            </value>
+            <value>
+                <fullName>985</fullName>
+                <default>false</default>
+                <label>מסמכים בריאטריים שלא להעברה למטופל</label>
+            </value>
+            <value>
+                <fullName>988</fullName>
+                <default>false</default>
+                <label>תיעוד טיפול תרופתי (רפואה גרעינית)</label>
+            </value>
+            <value>
+                <fullName>989</fullName>
+                <default>false</default>
+                <label>שאלון סרוק</label>
+            </value>
+            <value>
+                <fullName>991</fullName>
+                <default>false</default>
+                <label>מסמך סרוק בתפנית</label>
+            </value>
+            <value>
+                <fullName>993</fullName>
+                <default>false</default>
+                <label>השלמת תיק סרוק</label>
+            </value>
+            <value>
+                <fullName>997</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקה לבדיקות חוץ</label>
+            </value>
+            <value>
+                <fullName>Internal Survey</fullName>
+                <default>false</default>
+                <label>Internal Survey</label>
+            </value>
+            <value>
+                <fullName>קיט ניתוחי</fullName>
+                <default>false</default>
+                <label>קיט ניתוחי</label>
+            </value>
+            <value>
+                <fullName>319</fullName>
+                <default>false</default>
+                <label>פענוח קודם</label>
+            </value>
+            <value>
+                <fullName>923</fullName>
+                <default>false</default>
+                <label>תוצאות PSA</label>
+            </value>
+            <value>
+                <fullName>167</fullName>
+                <default>false</default>
+                <label>מרשם אסותא מומחים</label>
+            </value>
+            <value>
+                <fullName>166</fullName>
+                <default>false</default>
+                <label>שאלון מטופל אסותא מומחים</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

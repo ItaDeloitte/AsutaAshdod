@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SurveyResults__c</fullName>
+    <label>Survey Results</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>נדרשת הערכה במרפאת טרום ניתוח</fullName>
+                <default>false</default>
+                <label>נדרשת הערכה במרפאת טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>לבדיקת אחות טרום ניתוח – החלטה והמלצות</fullName>
+                <default>false</default>
+                <label>לבדיקת אחות טרום ניתוח – החלטה והמלצות</label>
+            </value>
+            <value>
+                <fullName>לא נדרש טרום ניתוח</fullName>
+                <default>false</default>
+                <label>לא נדרש טרום ניתוח</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

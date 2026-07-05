@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>link__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( CONTAINS(Survey__r.Name, &quot;לניתוח&quot;) ,&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/ft191aa88a1574070898267_copy?fld48=&quot;&amp; formtitan_id_2__c,
+IF (CONTAINS(Survey__r.Name, &quot;cpap&quot;), &quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/ftproject/cpap_survey?sid=&quot;&amp; formtitan_id_2__c,
+IF($User.Ashdod_employee__c,&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/ft95bc0dcb1594544259490_copy?fld47=&quot;&amp; formtitan_id_2__c ,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/patient_survey?fld47=&quot;&amp; formtitan_id_2__c )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>קישור לסקר</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

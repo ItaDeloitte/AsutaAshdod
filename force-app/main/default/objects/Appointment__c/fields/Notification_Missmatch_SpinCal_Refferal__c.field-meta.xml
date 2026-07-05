@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notification_Missmatch_SpinCal_Refferal__c</fullName>
+    <description>שדה טקסט שיופיע בקומפוננטת ההתראות במידה ויש אי התאמה בין ספינקל לאתר רופאים בפעולות הרפואיות</description>
+    <externalId>false</externalId>
+    <formula>IF(
+Miss_match_medical_pro_1__c  = TRUE ||
+Miss_match_medical_pro_2__c  = TRUE ||
+Miss_match_medical_pro_3__c  = TRUE ||
+Miss_match_medical_pro_4__c  = TRUE ,&quot;ישנה אי התאמה בפעולות הרפואיות בין הזימון בספינקל לבין הפניה מאתר רופאים&quot;, &quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Notification Missmatch SpinCal Refferal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

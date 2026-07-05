@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_as_Answered__c</fullName>
+    <formula>Survey_Question__r.Count_as_Answered__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Count_as_Answered</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>doctor_degree__c</fullName>
+    <description>ד&quot;ר או פרופסור - מגיע בממשק מתפנית</description>
+    <label>Doctor Degree</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ד&quot;ר</fullName>
+                <default>false</default>
+                <label>ד&quot;ר</label>
+            </value>
+            <value>
+                <fullName>פרופסור</fullName>
+                <default>false</default>
+                <label>פרופ&apos;</label>
+            </value>
+            <value>
+                <fullName>גב&apos;</fullName>
+                <default>false</default>
+                <label>גב&apos;</label>
+            </value>
+            <value>
+                <fullName>מר</fullName>
+                <default>false</default>
+                <label>מר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

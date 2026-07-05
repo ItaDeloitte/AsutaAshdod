@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateToWaitingForAgent__c</fullName>
+    <description>שדה שיעודכן בעת שינוי הקייס לסטטוס ממתין למימוש נשלח סקר, לפי הערך בקמפיין מספר ימים לחזרת נציג</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>DateToWaitingForAgent</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

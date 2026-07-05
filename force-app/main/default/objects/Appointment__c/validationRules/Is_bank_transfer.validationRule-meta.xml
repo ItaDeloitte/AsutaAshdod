@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_bank_transfer</fullName>
+    <active>true</active>
+    <description>מחייב את הנציג למלא את השדה  &quot;סכום ששולם&quot; אם הצ&apos;קבוקס אם השדה &quot;שולם ע&quot;י העברה בנקאית&quot; = TRUE</description>
+    <errorConditionFormula>AND(
+    Payment_via_bank_transfer__c = TRUE,
+    ISBLANK(paid_amount__c)
+)</errorConditionFormula>
+    <errorDisplayField>paid_amount__c</errorDisplayField>
+    <errorMessage>APP-0020: יש להזין את הסכום ששולם</errorMessage>
+</ValidationRule>

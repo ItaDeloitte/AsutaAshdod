@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_medical_procedures_ids__c</fullName>
+    <description>Contains all medical procedures&apos; ids from Doctor_Medical_Procedure__c junction</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>All medical procedures ids</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

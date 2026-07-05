@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Floor__c</fullName>
+    <description>03.06.25 גלית: אנו מבקשים להגדיל את כמות התווים בשדה- בעקבות המעבר לבית חולים החדש בב&quot;ש אנו נדרשים לפרט..
+לדוגמא – במקום לציין &quot;5&quot; לציין &quot;5 מכון עיניים&quot;...
+הגדלתי מ10 ל 30</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Floor</label>
+    <length>30</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

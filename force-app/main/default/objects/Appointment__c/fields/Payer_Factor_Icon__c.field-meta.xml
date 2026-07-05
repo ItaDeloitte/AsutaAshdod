@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payer_Factor_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL(Payer_factor__c, &quot;3&quot;),ISPICKVAL(Payer_factor__c, &quot;43&quot;),ISPICKVAL(Payer_factor__c, &quot;44&quot;),ISPICKVAL(Payer_factor__c, &quot;89&quot;)), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXPm&amp;oid=00DKI000000MTJU&amp;lastMod=1560677509000&quot;, &quot;&quot; , 30, 30), 
+IF(OR(ISPICKVAL(Payer_factor__c, &quot;6&quot;),ISPICKVAL(Payer_factor__c, &quot;7&quot;),ISPICKVAL(Payer_factor__c, &quot;47&quot;)), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXPw&amp;oid=00DKI000000MTJU&amp;lastMod=1560677600000&quot;, &quot;&quot; , 30, 30), 
+IF(OR(ISPICKVAL(Payer_factor__c, &quot;4&quot;),ISPICKVAL(Payer_factor__c, &quot;422&quot;),ISPICKVAL(Payer_factor__c, &quot;974631&quot;)), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXPr&amp;oid=00DKI000000MTJU&amp;lastMod=1560677722000&quot;, &quot;&quot; , 30, 30), 
+IF(ISPICKVAL(Payer_factor__c, &quot;5&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQ1&amp;oid=00DKI000000MTJU&amp;lastMod=1560677837000&quot;, &quot;&quot; , 30, 30), 
+IF(ISPICKVAL(Payer_factor__c, &quot;36&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQ6&amp;oid=00DKI000000MTJU&amp;lastMod=1559476346000&quot;, &quot;&quot; , 30, 30), 
+IF(ISPICKVAL(Payer_factor__c, &quot;37&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQB&amp;oid=00DKI000000MTJU&amp;lastMod=1559476681000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Payer_factor__c, &quot;110&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQB&amp;oid=00DKI000000MTJU&amp;lastMod=1559476681000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Payer_factor__c, &quot;1111&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQB&amp;oid=00DKI000000MTJU&amp;lastMod=1559476681000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Payer_factor__c, &quot;0&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmY&amp;oid=00DKI000000MTJU&amp;lastMod=1564932057000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Payer_factor__c, &quot;133&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmY&amp;oid=00DKI000000MTJU&amp;lastMod=1559561565000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Payer_factor__c, &quot;1317&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmd&amp;oid=00DKI000000MTJU&amp;lastMod=1559561611000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Payer_factor__c, &quot;8&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlk&amp;oid=00DKI000000MTJU&amp;lastMod=1559561010000&quot;, &quot;&quot; , 30, 30), 
+IF(ISPICKVAL(Payer_factor__c, &quot;9&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlp&amp;oid=00DKI000000MTJU&amp;lastMod=1559561048000&quot;, &quot;&quot; , 30, 30), 
+IF(ISPICKVAL(Payer_factor__c, &quot;10&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlu&amp;oid=00DKI000000MTJU&amp;lastMod=1559561094000&quot;, &quot;&quot; , 30, 30), 
+IF(ISPICKVAL(Payer_factor__c, &quot;11&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlz&amp;oid=00DKI000000MTJU&amp;lastMod=1559561134000&quot;, &quot;&quot; , 30, 30), 
+IF(ISPICKVAL(Payer_factor__c, &quot;22&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXm4&amp;oid=00DKI000000MTJU&amp;lastMod=1560677108000&quot;, &quot;&quot; , 33, 33), 
+IF(ISPICKVAL(Payer_factor__c, &quot;24&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXm9&amp;oid=00DKI000000MTJU&amp;lastMod=1560328908000&quot;, &quot;&quot; , 30, 30), 
+IF(ISPICKVAL(Payer_factor__c, &quot;25&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmE&amp;oid=00DKI000000MTJU&amp;lastMod=1561301745000&quot;, &quot;&quot; , 35, 35), 
+IF(ISPICKVAL(Payer_factor__c, &quot;39&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmJ&amp;oid=00DKI000000MTJU&amp;lastMod=1559561465000&quot;, &quot;&quot; , 30, 30), 
+
+&quot;&quot;)))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Payor Factor Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

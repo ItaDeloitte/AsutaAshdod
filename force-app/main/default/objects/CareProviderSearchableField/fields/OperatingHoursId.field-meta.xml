@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OperatingHoursId</fullName>
+    <inlineHelpText>השעות הזמינות עבור רופא במוסד. מתוך &apos;שעות פעילות מוסד רופא מטפל&apos; עבור הרופא; מתוך &apos;שעות פעילות של חשבון&apos; עבור המוסד</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

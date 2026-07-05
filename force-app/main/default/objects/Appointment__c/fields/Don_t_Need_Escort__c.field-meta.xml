@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Don_t_Need_Escort__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>לא מעוניין למסור פרטי קרובי משפחה לליווי לניתוח - קבלה מהבית</description>
+    <label>Dont Need Escort</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

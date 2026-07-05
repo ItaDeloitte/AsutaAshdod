@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Domain_for_appoitment__c</fullName>
+    <label>Appointment Domain</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>C.T (מכון)</fullName>
+                <default>false</default>
+                <label>C.T (מכון)</label>
+            </value>
+            <value>
+                <fullName>I.V.F (מכון)</fullName>
+                <default>false</default>
+                <label>I.V.F (מכון)</label>
+            </value>
+            <value>
+                <fullName>M.R.I (מכון)</fullName>
+                <default>false</default>
+                <label>M.R.I (מכון)</label>
+            </value>
+            <value>
+                <fullName>PET CT (מכון)</fullName>
+                <default>false</default>
+                <label>PET CT (מכון)</label>
+            </value>
+            <value>
+                <fullName>TUMOR BOARD</fullName>
+                <default>false</default>
+                <label>TUMOR BOARD</label>
+            </value>
+            <value>
+                <fullName>אורודינמיקה</fullName>
+                <default>false</default>
+                <label>אורודינמיקה</label>
+            </value>
+            <value>
+                <fullName>אורולוגיה</fullName>
+                <default>false</default>
+                <label>אורולוגיה</label>
+            </value>
+            <value>
+                <fullName>אורטופדיה</fullName>
+                <default>false</default>
+                <label>אורטופדיה</label>
+            </value>
+            <value>
+                <fullName>אישפוז</fullName>
+                <default>false</default>
+                <label>אישפוז</label>
+            </value>
+            <value>
+                <fullName>אלקטרופיזיולוגיה</fullName>
+                <default>false</default>
+                <label>אלקטרופיזיולוגיה</label>
+            </value>
+            <value>
+                <fullName>אנדרולוגיה</fullName>
+                <default>false</default>
+                <label>אנדרולוגיה</label>
+            </value>
+            <value>
+                <fullName>אסותא אופטיק</fullName>
+                <default>false</default>
+                <label>אסותא אופטיק</label>
+            </value>
+            <value>
+                <fullName>בירור מהיר</fullName>
+                <default>false</default>
+                <label>בירור מהיר</label>
+            </value>
+            <value>
+                <fullName>בנק הזרע - אסותא סופרם</fullName>
+                <default>false</default>
+                <label>בנק הזרע - אסותא סופרם</label>
+            </value>
+            <value>
+                <fullName>גנטיקה</fullName>
+                <default>false</default>
+                <label>גנטיקה</label>
+            </value>
+            <value>
+                <fullName>גניקולוגי US</fullName>
+                <default>false</default>
+                <label>גניקולוגי US</label>
+            </value>
+            <value>
+                <fullName>גניקולוגיה</fullName>
+                <default>false</default>
+                <label>גניקולוגיה</label>
+            </value>
+            <value>
+                <fullName>גסטרואנטרולוגיה</fullName>
+                <default>false</default>
+                <label>גסטרואנטרולוגיה</label>
+            </value>
+            <value>
+                <fullName>טרום ניתוח</fullName>
+                <default>false</default>
+                <label>טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>טרנס רקטלי US</fullName>
+                <default>false</default>
+                <label>טרנס רקטלי US</label>
+            </value>
+            <value>
+                <fullName>כאב</fullName>
+                <default>false</default>
+                <label>כאב</label>
+            </value>
+            <value>
+                <fullName>כימותרפיה</fullName>
+                <default>false</default>
+                <label>כימותרפיה</label>
+            </value>
+            <value>
+                <fullName>כירו-אמבולטורית</fullName>
+                <default>false</default>
+                <label>כירו-אמבולטורית</label>
+            </value>
+            <value>
+                <fullName>כירורגיה כללית</fullName>
+                <default>false</default>
+                <label>כירורגיה כללית</label>
+            </value>
+            <value>
+                <fullName>כירורגית שד</fullName>
+                <default>false</default>
+                <label>כירורגית שד</label>
+            </value>
+            <value>
+                <fullName>כלי דם</fullName>
+                <default>false</default>
+                <label>כלי דם</label>
+            </value>
+            <value>
+                <fullName>כללי US</fullName>
+                <default>false</default>
+                <label>כללי US</label>
+            </value>
+            <value>
+                <fullName>לב</fullName>
+                <default>false</default>
+                <label>לב</label>
+            </value>
+            <value>
+                <fullName>מיפויים כלליים</fullName>
+                <default>false</default>
+                <label>מיפויים כלליים</label>
+            </value>
+            <value>
+                <fullName>מיפויים לב</fullName>
+                <default>false</default>
+                <label>מיפויים לב</label>
+            </value>
+            <value>
+                <fullName>מי שפיר</fullName>
+                <default>false</default>
+                <label>מי שפיר</label>
+            </value>
+            <value>
+                <fullName>מכון EEG</fullName>
+                <default>false</default>
+                <label>מכון EEG</label>
+            </value>
+            <value>
+                <fullName>מכון דיאליזה</fullName>
+                <default>false</default>
+                <label>מכון דיאליזה</label>
+            </value>
+            <value>
+                <fullName>מכון לבריאות האישה אשדוד ציבורי</fullName>
+                <default>false</default>
+                <label>מכון לבריאות האישה אשדוד ציבורי</label>
+            </value>
+            <value>
+                <fullName>מכון פיזיותרפיה</fullName>
+                <default>false</default>
+                <label>מכון פיזיותרפיה</label>
+            </value>
+            <value>
+                <fullName>מכון ריאות</fullName>
+                <default>false</default>
+                <label>מכון ריאות</label>
+            </value>
+            <value>
+                <fullName>מכון שינה</fullName>
+                <default>false</default>
+                <label>מכון שינה</label>
+            </value>
+            <value>
+                <fullName>מכון שמיעה אשדוד ציבורי</fullName>
+                <default>false</default>
+                <label>מכון שמיעה אשדוד ציבורי</label>
+            </value>
+            <value>
+                <fullName>ממוגרפיה</fullName>
+                <default>false</default>
+                <label>ממוגרפיה</label>
+            </value>
+            <value>
+                <fullName>מעבדה PGD</fullName>
+                <default>false</default>
+                <label>מעבדה PGD</label>
+            </value>
+            <value>
+                <fullName>מרכז המטולוגי</fullName>
+                <default>false</default>
+                <label>מרכז המטולוגי</label>
+            </value>
+            <value>
+                <fullName>מרפ&apos; גינקולוגית</fullName>
+                <default>false</default>
+                <label>מרפ&apos; גינקולוגית</label>
+            </value>
+            <value>
+                <fullName>מרפאה אורולוגית</fullName>
+                <default>false</default>
+                <label>מרפאה אורולוגית</label>
+            </value>
+            <value>
+                <fullName>מרפאה אורטופדית</fullName>
+                <default>false</default>
+                <label>מרפאה אורטופדית</label>
+            </value>
+            <value>
+                <fullName>מרפאה כירורגית אשדוד ציבורי</fullName>
+                <default>false</default>
+                <label>מרפאה כירורגית אשדוד ציבורי</label>
+            </value>
+            <value>
+                <fullName>מרפאה נוירולוגית - אשדוד ציבורי</fullName>
+                <default>false</default>
+                <label>מרפאה נוירולוגית - אשדוד ציבורי</label>
+            </value>
+            <value>
+                <fullName>מרפאת אאג אשדוד ציבורי</fullName>
+                <default>false</default>
+                <label>מרפאת אאג אשדוד ציבורי</label>
+            </value>
+            <value>
+                <fullName>מרפאת אנדוקרינולוגיה וסכרת ילדים אשדוד</fullName>
+                <default>false</default>
+                <label>מרפאת אנדוקרינולוגיה וסכרת ילדים אשדוד</label>
+            </value>
+            <value>
+                <fullName>מרפאת אנדוקרינולוגיה מבוגרים</fullName>
+                <default>false</default>
+                <label>מרפאת אנדוקרינולוגיה מבוגרים</label>
+            </value>
+            <value>
+                <fullName>מרפאת בריאטריה - השמנת יתר</fullName>
+                <default>false</default>
+                <label>מרפאת בריאטריה - השמנת יתר</label>
+            </value>
+            <value>
+                <fullName>מרפאת מעקב פגים אשדוד</fullName>
+                <default>false</default>
+                <label>מרפאת מעקב פגים אשדוד</label>
+            </value>
+            <value>
+                <fullName>מרפאת שיניים</fullName>
+                <default>false</default>
+                <label>מרפאת שיניים</label>
+            </value>
+            <value>
+                <fullName>ניתוחי א.א.ג.</fullName>
+                <default>false</default>
+                <label>ניתוחי א.א.ג.</label>
+            </value>
+            <value>
+                <fullName>ניתוחי נוירוכירורגיה</fullName>
+                <default>false</default>
+                <label>ניתוחי נוירוכירורגיה</label>
+            </value>
+            <value>
+                <fullName>ניתוחי עיניים</fullName>
+                <default>false</default>
+                <label>ניתוחי עיניים</label>
+            </value>
+            <value>
+                <fullName>נפרולוגיה</fullName>
+                <default>false</default>
+                <label>נפרולוגיה</label>
+            </value>
+            <value>
+                <fullName>נשים</fullName>
+                <default>false</default>
+                <label>נשים</label>
+            </value>
+            <value>
+                <fullName>עיניים אמבולטורי</fullName>
+                <default>false</default>
+                <label>עיניים אמבולטורי</label>
+            </value>
+            <value>
+                <fullName>פוטותרפיה</fullName>
+                <default>false</default>
+                <label>פוטותרפיה</label>
+            </value>
+            <value>
+                <fullName>פיזיותרפיה-פנימי</fullName>
+                <default>false</default>
+                <label>פיזיותרפיה-פנימי</label>
+            </value>
+            <value>
+                <fullName>פלסטיקה</fullName>
+                <default>false</default>
+                <label>פלסטיקה</label>
+            </value>
+            <value>
+                <fullName>פנימית</fullName>
+                <default>false</default>
+                <label>פנימית</label>
+            </value>
+            <value>
+                <fullName>צוואר הרחם</fullName>
+                <default>false</default>
+                <label>צוואר הרחם</label>
+            </value>
+            <value>
+                <fullName>ציטולוגיה</fullName>
+                <default>false</default>
+                <label>ציטולוגיה</label>
+            </value>
+            <value>
+                <fullName>צינטורים</fullName>
+                <default>false</default>
+                <label>צינטורים</label>
+            </value>
+            <value>
+                <fullName>ציסטוסקופיה - אורולוגיה</fullName>
+                <default>false</default>
+                <label>ציסטוסקופיה - אורולוגיה</label>
+            </value>
+            <value>
+                <fullName>צפיפות עצם</fullName>
+                <default>false</default>
+                <label>צפיפות עצם</label>
+            </value>
+            <value>
+                <fullName>קרדיולוגיה-לב</fullName>
+                <default>false</default>
+                <label>קרדיולוגיה-לב</label>
+            </value>
+            <value>
+                <fullName>רדיו כירורגיה</fullName>
+                <default>false</default>
+                <label>רדיו כירורגיה</label>
+            </value>
+            <value>
+                <fullName>רדיותרפיה</fullName>
+                <default>false</default>
+                <label>רדיותרפיה</label>
+            </value>
+            <value>
+                <fullName>ריפוי בעיסוק אשדוד ציבורי</fullName>
+                <default>false</default>
+                <label>ריפוי בעיסוק אשדוד ציבורי</label>
+            </value>
+            <value>
+                <fullName>רנטגן</fullName>
+                <default>false</default>
+                <label>רנטגן</label>
+            </value>
+            <value>
+                <fullName>שונות רפואי</fullName>
+                <default>false</default>
+                <label>שונות רפואי</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommitmentOnlyNumber</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+NOT( ISBLANK(Number_of_commitment__c) ) &amp;&amp;
+
+(RecordType.DeveloperName=&apos;Surgeries&apos;)&amp;&amp;
+
+NOT(ISNUMBER(Number_of_commitment__c))</errorConditionFormula>
+    <errorDisplayField>Number_of_commitment__c</errorDisplayField>
+    <errorMessage>יש להזין מספר בשדה זה. שכן השדה מכיל רק מספרים</errorMessage>
+</ValidationRule>

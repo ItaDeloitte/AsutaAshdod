@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>From_to_hour</fullName>
+    <active>true</active>
+    <errorConditionFormula>(VALUE(TEXT( ToHour__c ))  &lt;= VALUE(TEXT(  FromHour__c  )) )</errorConditionFormula>
+    <errorDisplayField>FromHour__c</errorDisplayField>
+    <errorMessage>שים לב יש להזין בשדה עד שעה ערך גדול יותר מערך בשדה משעה</errorMessage>
+</ValidationRule>

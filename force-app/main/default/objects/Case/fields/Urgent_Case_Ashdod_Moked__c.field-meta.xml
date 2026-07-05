@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Urgent_Case_Ashdod_Moked__c</fullName>
+    <description>לסמן בדגל קריאות שהמקור שלהן הוא מהתיבה &apos;medconfirm@clalit.org.il&apos;</description>
+    <externalId>false</externalId>
+    <formula>IF(AND($User.Ashdod_employee__c ,SuppliedEmail=&apos;medconfirm@clalit.org.il&apos;),
+IMAGE(&quot;https://assuta--c.vf.force.com/resource/1731849084000/HighImportanceImage&quot;, &quot;High Importance&quot;, 50, 50),
+IF(AND(Owner_Queue_wf__c = &apos;אשדוד ציבורי מוקד שח&quot;מ&apos;, Owner_Queue_wf_Prior__c = &apos;קשרי קהילה אשדוד ציבורי&apos;),
+IMAGE(&quot;https://assuta--c.vf.force.com/resource/1754912936000/BlueCircle?&quot;,&quot;Ashdod Shaham To Community&quot;,50,50),
+&quot;&quot;
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Urgent Case Ashdod Moked</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

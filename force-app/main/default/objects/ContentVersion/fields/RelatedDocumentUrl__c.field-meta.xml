@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelatedDocumentUrl__c</fullName>
+    <description>Url for Related Document object . created by ContentDistribution object</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>RelatedDocumentUrl</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>doctor_impression_text__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( General_Impression_avg__c =0, &quot;&quot;, IF(AND(General_Impression_avg__c &gt;=0 , General_Impression_avg__c &lt;= 4 ), &quot;גרוע&quot;,IF( General_Impression_avg__c &lt;= 6 , &quot;לא טוב&quot;,IF( General_Impression_avg__c &lt;= 8 , &quot;טוב&quot;,IF( General_Impression_avg__c &lt;= 10 , &quot;מצוין&quot;,&quot;&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Doctor Impression Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

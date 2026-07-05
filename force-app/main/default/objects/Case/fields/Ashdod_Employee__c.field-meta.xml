@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ashdod_Employee__c</fullName>
+    <formula>Owner:User.Ashdod_employee__c</formula>
+    <label>Ashdod Employee</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

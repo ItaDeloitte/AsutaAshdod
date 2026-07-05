@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Biopsy_Appointment_Date</fullName>
+    <active>true</active>
+    <description>אם בשדה &quot;Biopsy Appointment scheduling Status&quot; הערך הוא &quot;Appointment Scheduled&quot;
+אז השדה &quot;Biopsy Appointment Date&quot; יהיה שדה חובה.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(  BiopsyAppointmentschedulingStatus__c  , &quot;Appointment Scheduled&quot;),
+ISBLANK(  BiopsyAppointmentDate__c )
+)</errorConditionFormula>
+    <errorDisplayField>BiopsyAppointmentDate__c</errorDisplayField>
+    <errorMessage>השדה &quot;מועד התור לביופסיה&quot; הינו שדה חובה.</errorMessage>
+</ValidationRule>

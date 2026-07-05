@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SyncToMC__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>שדה בוליאני אשר נותן אינדיקציה האם לסנכן את הליד ל MC</description>
+    <label>Sync To MC</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

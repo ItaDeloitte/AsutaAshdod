@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Status__c</fullName>
+    <label>Partner Decision</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Partner_Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Treatment_Hold</fullName>
+                <default>false</default>
+                <label>ממתין לטיפול</label>
+            </value>
+            <value>
+                <fullName>In_Treatment</fullName>
+                <default>false</default>
+                <label>בטיפול</label>
+            </value>
+            <value>
+                <fullName>No_Details_Found</fullName>
+                <default>false</default>
+                <label>לא נמצאו פרטים</label>
+            </value>
+            <value>
+                <fullName>Documents_Holds</fullName>
+                <default>false</default>
+                <label>ממתין לקבלת מסמכים</label>
+            </value>
+            <value>
+                <fullName>Risks_Management</fullName>
+                <default>false</default>
+                <label>ניהול סיכונים</label>
+            </value>
+            <value>
+                <fullName>Documents_Received</fullName>
+                <default>false</default>
+                <label>התקבלו מסמכים</label>
+            </value>
+            <value>
+                <fullName>Documnets_Approved</fullName>
+                <default>false</default>
+                <label>אושרו מסמכים</label>
+            </value>
+            <value>
+                <fullName>No_Reply</fullName>
+                <default>false</default>
+                <label>ללא מענה</label>
+            </value>
+            <value>
+                <fullName>No_Conception_HealthDepartment_Transfer</fullName>
+                <default>false</default>
+                <label>אין הסכמה - הועבר למשרד הבריאות</label>
+            </value>
+            <value>
+                <fullName>30_Days_Passed</fullName>
+                <default>false</default>
+                <label>חלפו 30 ימים</label>
+            </value>
+            <value>
+                <fullName>Payed_Freezing</fullName>
+                <default>false</default>
+                <label>הקפאה בתשלום</label>
+            </value>
+            <value>
+                <fullName>UnControlled_Defrost</fullName>
+                <default>false</default>
+                <label>הפשרה לא מבוקרת</label>
+            </value>
+            <value>
+                <fullName>Research_Donation</fullName>
+                <default>false</default>
+                <label>תרומה למחקר</label>
+            </value>
+            <value>
+                <fullName>Legal_Situation</fullName>
+                <default>false</default>
+                <label>מצב משפטי</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>First_Treatment_Details_Completion</controllingFieldValue>
+            <valueName>Treatment_Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>First_Treatment_Details_Completion</controllingFieldValue>
+            <controllingFieldValue>Documents_Management</controllingFieldValue>
+            <valueName>In_Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>First_Treatment_Details_Completion</controllingFieldValue>
+            <controllingFieldValue>Documents_Management</controllingFieldValue>
+            <controllingFieldValue>Closed_No_Decision</controllingFieldValue>
+            <valueName>No_Reply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documents_Management</controllingFieldValue>
+            <valueName>Documents_Holds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documents_Management</controllingFieldValue>
+            <valueName>Risks_Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documents_Management</controllingFieldValue>
+            <valueName>Documents_Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Documents_Management</controllingFieldValue>
+            <valueName>Documnets_Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Decision</controllingFieldValue>
+            <valueName>No_Conception_HealthDepartment_Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Decision</controllingFieldValue>
+            <valueName>Payed_Freezing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Decision</controllingFieldValue>
+            <valueName>UnControlled_Defrost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Decision</controllingFieldValue>
+            <valueName>Research_Donation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed_No_Decision</controllingFieldValue>
+            <valueName>No_Details_Found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed_No_Decision</controllingFieldValue>
+            <valueName>30_Days_Passed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed_No_Decision</controllingFieldValue>
+            <valueName>Legal_Situation</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

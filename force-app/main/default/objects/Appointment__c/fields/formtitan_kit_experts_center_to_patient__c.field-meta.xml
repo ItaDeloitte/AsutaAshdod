@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>formtitan_kit_experts_center_to_patient__c</fullName>
+    <description>פורמולה המחשבת את הלינק לקיט מומחים וקיט מצוינות בהתאם לערך של השדה Calendar__r.Excellent_Clinics__c</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  Calendar__r.Excellent_Clinics__c,
+  &quot;https://&quot; &amp; $Setup.Form_Titan_Domain__c.Domain__c &amp;
+    &quot;/ftproject/voucher_excellent_patient/Voucher?apt_external_id=&quot; &amp; formtitan_id_2__c,
+  &quot;https://&quot; &amp; $Setup.Form_Titan_Domain__c.Domain__c &amp;
+    &quot;/Voucher_Experts_Patient?fld130=&quot; &amp; formtitan_id_2__c
+)</formula>
+    <label>formtitan kit experts center to patient</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

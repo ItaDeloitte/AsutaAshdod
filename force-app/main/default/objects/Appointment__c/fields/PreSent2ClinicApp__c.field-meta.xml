@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreSent2ClinicApp__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Monday 1839158709
+נתוני שאלון נשלחו למטהוויזן
+ממשק תהליך קבלה מרחוק למחלקת טרום טרום ניתוח יפתח תיק בתפנית לאחר שמטופל סיים למלא שאלון טרום ניתוח</description>
+    <label>PreSent2ClinicApp</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

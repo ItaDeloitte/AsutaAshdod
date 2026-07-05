@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assuta_360_moked</fullName>
+    <columns>NAME</columns>
+    <columns>RecommendationsType__c</columns>
+    <columns>Recommend_Desc__c</columns>
+    <columns>BIRAD__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>Type_of_recommendation__c</field>
+        <operation>contains</operation>
+        <value>שד</value>
+    </filters>
+    <filters>
+        <field>BIRAD__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>משימות יד ביד</label>
+    <queue>QM_90_371</queue>
+</ListView>

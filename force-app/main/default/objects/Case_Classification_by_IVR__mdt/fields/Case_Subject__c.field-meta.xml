@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Subject__c</fullName>
+    <description>נושא התור.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Case Subject</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>זימון תור חדש</fullName>
+                <default>true</default>
+                <label>זימון תור חדש</label>
+            </value>
+            <value>
+                <fullName>עדכון תור קיים</fullName>
+                <default>false</default>
+                <label>עדכון תור קיים</label>
+            </value>
+            <value>
+                <fullName>בירור אודות תור</fullName>
+                <default>false</default>
+                <label>בירור אודות תור</label>
+            </value>
+            <value>
+                <fullName>בירור תוצאות בדיקה</fullName>
+                <default>false</default>
+                <label>בירור תוצאות בדיקה</label>
+            </value>
+            <value>
+                <fullName>זימון רופא מומחה</fullName>
+                <default>false</default>
+                <label>זימון רופא מומחה</label>
+            </value>
+            <value>
+                <fullName>עדכון תור לרופא</fullName>
+                <default>false</default>
+                <label>עדכון תור לרופא</label>
+            </value>
+            <value>
+                <fullName>טיפול אדמיניסטרטיבי טרום הניתוח</fullName>
+                <default>false</default>
+                <label>טיפול אדמיניסטרטיבי טרום הניתוח</label>
+            </value>
+            <value>
+                <fullName>טיפול אדמיניסטרטיבי לאחר הניתוח</fullName>
+                <default>false</default>
+                <label>טיפול אדמיניסטרטיבי לאחר הניתוח</label>
+            </value>
+            <value>
+                <fullName>כתובות ודרכי הגעה</fullName>
+                <default>false</default>
+                <label>כתובות ודרכי הגעה</label>
+            </value>
+            <value>
+                <fullName>שעות פעילות מכונים ומרפאות</fullName>
+                <default>false</default>
+                <label>שעות פעילות מכונים ומרפאות</label>
+            </value>
+            <value>
+                <fullName>Info_about_patient</fullName>
+                <default>false</default>
+                <label>מידע אודות מטופלים</label>
+            </value>
+            <value>
+                <fullName>הסכמים</fullName>
+                <default>false</default>
+                <label>הסכמים</label>
+            </value>
+            <value>
+                <fullName>תשלומים שטרם שולמו</fullName>
+                <default>false</default>
+                <label>תשלומים שטרם שולמו</label>
+            </value>
+            <value>
+                <fullName>פעולות בגין מטופלים</fullName>
+                <default>false</default>
+                <label>פעולות בגין מטופלים</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

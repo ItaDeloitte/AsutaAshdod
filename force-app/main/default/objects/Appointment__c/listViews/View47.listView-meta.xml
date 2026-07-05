@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View47</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>PHONE__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>Patient_Age__c</columns>
+    <columns>NAME</columns>
+    <columns>Taking_Blood__c</columns>
+    <columns>Site__c</columns>
+    <columns>PreSurgery_date_time__c</columns>
+    <columns>NurseStatus__c</columns>
+    <columns>SurveyDescription__c</columns>
+    <columns>doc_from_try__c</columns>
+    <columns>Referral_from_doctor_website__c</columns>
+    <columns>Nurse_Field_History__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>12/1/2022 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>SurveyResults__c</field>
+        <operation>equals</operation>
+        <value>לבדיקת אחות טרום ניתוח – החלטה והמלצות</value>
+    </filters>
+    <filters>
+        <field>NurseStatus__c</field>
+        <operation>notEqual</operation>
+        <value>לא נדרש טרום לפני הניתוח,נדרש לזמן טרום במרפאה,סיום טיפול,זומן תור למרפאה</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>חיפה</value>
+    </filters>
+    <label>תוצאות לשאלונים לטריאז אחות - חיפה</label>
+</ListView>

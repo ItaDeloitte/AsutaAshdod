@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch__c</fullName>
+    <label>Branch</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hashalom</fullName>
+                <default>false</default>
+                <label>Hashalom</label>
+            </value>
+            <value>
+                <fullName>Rishon LeZion</fullName>
+                <default>false</default>
+                <label>Rishon LeZion</label>
+            </value>
+            <value>
+                <fullName>Haifa</fullName>
+                <default>false</default>
+                <label>Haifa</label>
+            </value>
+            <value>
+                <fullName>Jerusalem</fullName>
+                <default>false</default>
+                <label>Jerusalem</label>
+            </value>
+            <value>
+                <fullName>Ra&apos;anana</fullName>
+                <default>false</default>
+                <label>Ra&apos;anana</label>
+            </value>
+            <value>
+                <fullName>Ashdod</fullName>
+                <default>false</default>
+                <label>Ashdod</label>
+            </value>
+            <value>
+                <fullName>Beer Sheva</fullName>
+                <default>false</default>
+                <label>Beer Sheva</label>
+            </value>
+            <value>
+                <fullName>Bnei Brak</fullName>
+                <default>false</default>
+                <label>Bnei Brak</label>
+            </value>
+            <value>
+                <fullName>Beit Shemesh</fullName>
+                <default>false</default>
+                <label>Beit Shemesh</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

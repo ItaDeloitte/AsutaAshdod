@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gender__c</fullName>
+    <description>מגדר המטופל</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(Appointment__r.Patient_Account__r.Gender__c, &apos;ז&apos;),
+&apos;1&apos;, 
+IF(
+NOT(ISBLANK(TEXT(Appointment__r.Patient_Account__r.Gender__c))),&apos;2&apos;,&apos;1&apos;
+)
+
+
+
+
+)</formula>
+    <label>Gender</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

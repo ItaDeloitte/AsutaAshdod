@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpenLeads_AssutaHome</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>Campaign__c</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LostReason__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CallBack__c</columns>
+    <columns>LeadDescription__c</columns>
+    <columns>LEAD.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>12/9/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>lost,false,win</value>
+    </filters>
+    <filters>
+        <field>Campaign__c</field>
+        <operation>notContain</operation>
+        <value>OPEN,נוירו,DOC</value>
+    </filters>
+    <filters>
+        <field>Campaign__c</field>
+        <operation>contains</operation>
+        <value>בית,עור וירטואלי</value>
+    </filters>
+    <filters>
+        <field>Campaign__c</field>
+        <operation>notContain</operation>
+        <value>פסיכ</value>
+    </filters>
+    <label>לידים פתוחים - אסותא עד הבית</label>
+</ListView>

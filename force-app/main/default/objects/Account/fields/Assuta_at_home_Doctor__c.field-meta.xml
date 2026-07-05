@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assuta_at_home_Doctor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>האם רופא אסותא עד הבית?</inlineHelpText>
+    <label>Assuta at home Doctor</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

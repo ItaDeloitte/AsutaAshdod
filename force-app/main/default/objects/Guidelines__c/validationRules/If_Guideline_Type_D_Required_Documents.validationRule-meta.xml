@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Guideline_Type_D_Required_Documents</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Guideline_Type__c,&apos;D&apos;),
+    ISNULL(Required_documents__c)
+    )</errorConditionFormula>
+    <errorDisplayField>Required_documents__c</errorDisplayField>
+    <errorMessage>אם סוג ההנחיה הינה &quot;הנחיית מסמכים&quot;  חובה לבחור ערך עבור &quot;מסמכים נדרשים&quot;.</errorMessage>
+</ValidationRule>

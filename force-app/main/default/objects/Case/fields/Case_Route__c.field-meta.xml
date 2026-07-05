@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Route__c</fullName>
+    <label>Case Route</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Donation_Route</fullName>
+                <default>false</default>
+                <label>מסלול תורם</label>
+            </value>
+            <value>
+                <fullName>Double_Route</fullName>
+                <default>false</default>
+                <label>מסלול ביחד</label>
+            </value>
+            <value>
+                <fullName>Seperate_Route</fullName>
+                <default>false</default>
+                <label>מסלול בנפרד</label>
+            </value>
+            <value>
+                <fullName>Yet_Determined</fullName>
+                <default>false</default>
+                <label>טרם נקבע</label>
+            </value>
+            <value>
+                <fullName>Alone</fullName>
+                <default>false</default>
+                <label>מסלול יחיד</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

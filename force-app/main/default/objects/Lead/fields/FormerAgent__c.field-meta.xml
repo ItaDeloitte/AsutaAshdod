@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FormerAgent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>הנציג שטיפל קודם. שומר את שם הנציג שטיפל בליד- רלוונטי למקרים בהם הליד חוזר לתור הכללי</description>
+    <label>FormerAgent</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Leads</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

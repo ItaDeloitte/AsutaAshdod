@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HANHAYOUT</fullName>
+    <columns>NAME</columns>
+    <columns>Recording_Code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Recording_Code__c</field>
+        <operation>notContain</operation>
+        <value>&quot; &quot;</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure_Type__c</field>
+        <operation>equals</operation>
+        <value>Ambulatory</value>
+    </filters>
+    <filters>
+        <field>Domain__c</field>
+        <operation>contains</operation>
+        <value>C.T</value>
+    </filters>
+    <label>הנחיות קוליות</label>
+</ListView>

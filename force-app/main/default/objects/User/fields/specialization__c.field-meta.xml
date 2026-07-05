@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>specialization__c</fullName>
+    <label>Specialization</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מתחילים א</fullName>
+                <default>false</default>
+                <label>מתחילים א</label>
+            </value>
+            <value>
+                <fullName>מתחילים ב</fullName>
+                <default>false</default>
+                <label>מתחילים ב</label>
+            </value>
+            <value>
+                <fullName>מתקדמים</fullName>
+                <default>false</default>
+                <label>מתקדמים</label>
+            </value>
+            <value>
+                <fullName>מאסטרים</fullName>
+                <default>false</default>
+                <label>מאסטרים</label>
+            </value>
+            <value>
+                <fullName>אשדוד</fullName>
+                <default>false</default>
+                <label>אשדוד</label>
+            </value>
+            <value>
+                <fullName>מתחילים</fullName>
+                <default>false</default>
+                <label>מתחילים</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

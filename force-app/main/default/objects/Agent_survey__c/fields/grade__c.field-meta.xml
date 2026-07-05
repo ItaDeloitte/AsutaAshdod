@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>grade__c</fullName>
+    <externalId>false</externalId>
+    <formula>(Survey__r.X1__c*value(text(A1__c))
++ 
+ Survey__r.X2__c * value(text(A2__c))
++
+ Survey__r.X3__c *value(text(A3__c))
++
+ Survey__r.X6__c *  value(text(A6__c)))
+/7</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ציון הסקר</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upload_Files_Minor__c</fullName>
+    <description>משמש להאעלת למסמכים לקטינים עבור תהליך זהוי איש קשר</description>
+    <externalId>false</externalId>
+    <formula>IF($User.Ashdod_employee__c,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/Upload_File_Minors_Ashdod?fld38=&quot;&amp; formtitan_id_2__c,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/Upload_File_Minors?fld38=&quot;&amp; formtitan_id_2__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Upload Files Minor</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

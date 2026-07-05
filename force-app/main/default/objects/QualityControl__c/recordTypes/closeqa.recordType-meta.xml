@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>closeqa</fullName>
+    <active>true</active>
+    <label>בקרת איכות סגורה</label>
+    <picklistValues>
+        <picklist>Consequences__c</picklist>
+        <values>
+            <fullName>בקרה פנימית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התור הוזז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זיכוי כספי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טעות המטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טעות צוות המכון %2F מרפאה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טרטור המטופל%2Fת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נגרם נזק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מטופל נשלח הביתה ללא ביצוע הבדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נוצר עיכוב במחלקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחת התנצלות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחת מנהל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תקלה מערכתית</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Implications2__c</picklist>
+        <values>
+            <fullName>התור הוזז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זיכוי כספי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טעות המטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טעות צוות המכון %2F מרפאה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טרטור המטופל%2Fת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נגרם נזק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נמצא כטעות מוקד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מטופל נשלח הביתה ללא ביצוע הבדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נוצר עיכוב במחלקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחת התנצלות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תקלה מערכתית</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MistakeType2__c</picklist>
+        <values>
+            <fullName>אי עמידה בזמן טיפול</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביטול תור שגוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הגשה לא נכונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המלצת רופא לא נכונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הצעת מחיר שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הקצאה שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כפילות תורים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נמצא כטעות מוקד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נפתחה משימה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נשמר איש קשר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא תואם תור לטרום ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע שגוי %2F חסר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מסירת עלויות שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נשלח קיט למערכת%2C קביעה שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניית שירות</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mistake_type__c</picklist>
+        <values>
+            <fullName>אי מסירה של הנחיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>אי עמידה בזמן טיפול</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביטול תור שגוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הגשה לא נכונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המלצת רופא לא נכונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>העברת פניה שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הצעת מחיר שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הקצאה שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא בוצע אימות פרטים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא הועברה פניה למכון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נמצא כטעות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא פעל%2Fה עפ%22י תסריט השיחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא תואם תור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע שגוי %2F חסר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מסירת מידע שגוי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מסירת עלויות שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה שגויה %E2%80%93 מוקד הקלדות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניית שירות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קביעה שגויה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שליחת קיט למערכת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תואם באמצעות שירות עצמי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QC_Source__c</picklist>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סקרים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה מהמוקד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה מהמכון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניות הציבור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחת מנהל</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SLA__c</picklist>
+        <values>
+            <fullName>אדום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ירוק</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כתום</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_QA__c</picklist>
+        <values>
+            <fullName>בוצע משוב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בטיפול מנהל השירות</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>בטיפול מנהל ישיר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא נמצא כטעות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא רלוונטי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

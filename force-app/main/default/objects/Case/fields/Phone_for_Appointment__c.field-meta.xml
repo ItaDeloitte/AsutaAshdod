@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_for_Appointment__c</fullName>
+    <description>טלפון ליצירת קשר עם הנציג</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Phone For Appointment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Phone</type>
+</CustomField>

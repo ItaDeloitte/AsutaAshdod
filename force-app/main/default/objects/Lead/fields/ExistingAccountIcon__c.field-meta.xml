@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExistingAccountIcon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK( ExistingAccount__c )), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.FileDownload?file=0154J000000KBxS&quot;, &quot;&quot; , 40, 40), &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ExistingAccountIcon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance_is_valid__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>האם הביטוח תקף
+ממשק מכבי</description>
+    <label>Insurance is valid</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

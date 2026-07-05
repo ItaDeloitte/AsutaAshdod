@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>abc__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(IsNull(ClosedDate),
+If(MOD( DateValue(CreatedDate)  - DATE(1985,6,24),7)&lt;=MOD( DateValue(Now())  - DATE(1985,6,24),7),
+Now() - CreatedDate - (FLOOR((DateValue(Now()) - DateValue(CreatedDate))/7)*2),
+Now() - CreatedDate - (FLOOR((DateValue(Now()) - DateValue(CreatedDate))/7)*2+2)
+)
+,
+If(MOD( DateValue(CreatedDate)  - DATE(1985,6,24),7)&lt;=MOD( DateValue(ClosedDate)  - DATE(1985,6,24),7),
+ClosedDate - CreatedDate - (FLOOR((DateValue(ClosedDate) - DateValue(CreatedDate))/7)*2),
+ClosedDate - CreatedDate - (FLOOR((DateValue(ClosedDate) - DateValue(CreatedDate))/7)*2+2)
+)
+-
+CASE(MOD( DateValue(ClosedDate)  - DATE(1985,6,24),7)
+  ,5, ClosedDate - DateTimeValue(DateValue(ClosedDate))
+  ,6, ClosedDate - (DateTimeValue(DateValue(ClosedDate))-1)
+  ,0)
+)
+-
+CASE(MOD( DateValue(CreatedDate)  - DATE(1985,6,24),7)
+,5, DateTimeValue(DateValue(CreatedDate))+2-CreatedDate-2
+,6, DateTimeValue(DateValue(CreatedDate))+1-CreatedDate-2
+,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>abc</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

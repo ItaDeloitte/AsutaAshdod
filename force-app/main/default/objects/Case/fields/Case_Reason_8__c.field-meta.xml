@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason_8__c</fullName>
+    <label>Case Reason 8</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>חסרה</fullName>
+                <default>false</default>
+                <label>חסרה</label>
+            </value>
+            <value>
+                <fullName>צד שגוי</fullName>
+                <default>false</default>
+                <label>צד שגוי</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד תולדות המחלה</fullName>
+                <default>false</default>
+                <label>פער בתיעוד תולדות המחלה</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד בדיקה גופנית בקבלה</fullName>
+                <default>false</default>
+                <label>פער בתיעוד בדיקה גופנית בקבלה</label>
+            </value>
+            <value>
+                <fullName>אבחנה לא תקינה</fullName>
+                <default>false</default>
+                <label>אבחנה לא תקינה</label>
+            </value>
+            <value>
+                <fullName>חסר שם ניתוח/אבחנה</fullName>
+                <default>false</default>
+                <label>חסר שם ניתוח/אבחנה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

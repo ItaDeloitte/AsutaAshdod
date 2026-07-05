@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShowDoctorInDA__c</fullName>
+    <description>מוקד</description>
+    <inlineHelpText>מוקד</inlineHelpText>
+    <label>Show Doctor In Docadvisor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>true</fullName>
+                <default>false</default>
+                <label>כן</label>
+            </value>
+            <value>
+                <fullName>false</fullName>
+                <default>false</default>
+                <label>לא</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

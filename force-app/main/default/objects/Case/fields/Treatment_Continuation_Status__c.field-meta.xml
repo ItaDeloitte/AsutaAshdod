@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Treatment_Continuation_Status__c</fullName>
+    <label>Treatment Continuation Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Verification_Nurse</fullName>
+                <default>false</default>
+                <label>Verification Nurse</label>
+            </value>
+            <value>
+                <fullName>Breast_MRI</fullName>
+                <default>false</default>
+                <label>Breast MRI</label>
+            </value>
+            <value>
+                <fullName>PET CT</fullName>
+                <default>false</default>
+                <label>PET CT</label>
+            </value>
+            <value>
+                <fullName>Additional_Tests</fullName>
+                <default>false</default>
+                <label>Additional Tests</label>
+            </value>
+            <value>
+                <fullName>Repeat_Additional_Biopsy</fullName>
+                <default>false</default>
+                <label>Repeat Additional Biopsy</label>
+            </value>
+            <value>
+                <fullName>Specialist_Recommended</fullName>
+                <default>false</default>
+                <label>Specialist Recommended</label>
+            </value>
+            <value>
+                <fullName>Surgery_Appointment_Scheduling</fullName>
+                <default>false</default>
+                <label>Surgery Appointment Scheduling</label>
+            </value>
+            <value>
+                <fullName>Referred_to_Oncology_Center</fullName>
+                <default>false</default>
+                <label>Referred to Oncology Center</label>
+            </value>
+            <value>
+                <fullName>Referred_to_Hemato_Oncology_Center</fullName>
+                <default>false</default>
+                <label>Referred to Hemato Oncology Center</label>
+            </value>
+            <value>
+                <fullName>Other_Clinic</fullName>
+                <default>false</default>
+                <label>Other Clinic</label>
+            </value>
+            <value>
+                <fullName>Not_Interested_in_Continuing_the_Process</fullName>
+                <default>false</default>
+                <label>Not Interested in Continuing the Process</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Patient_Stage__c</fullName>
+    <label>Patient Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Waiting_for_Initial_Call</fullName>
+                <default>false</default>
+                <label>Waiting for Initial Call</label>
+            </value>
+            <value>
+                <fullName>Waiting_for_Biopsy</fullName>
+                <default>false</default>
+                <label>Waiting for Biopsy</label>
+            </value>
+            <value>
+                <fullName>Waiting_for_Biopsy_Results</fullName>
+                <default>false</default>
+                <label>Waiting for Biopsy Results</label>
+            </value>
+            <value>
+                <fullName>Further_Treatment_Required</fullName>
+                <default>false</default>
+                <label>Further Treatment Required</label>
+            </value>
+            <value>
+                <fullName>Follow_up</fullName>
+                <default>false</default>
+                <label>Follow-up</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

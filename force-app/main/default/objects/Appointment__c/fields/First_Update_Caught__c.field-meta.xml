@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Update_Caught__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>שדה שמסמן האם הגיע העדכון הראשון (הכפול) עבור התור ממערכת RIS.
+על בסיסו פועל הטריגר שדואג להשאיר את הסטטוס &quot;חדש&quot; ומוחק את ה-case ורשומת הצומת המיותרים.</description>
+    <label>First Update Caught?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

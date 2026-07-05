@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>transfer_to_dep_must_queue</fullName>
+    <active>false</active>
+    <errorConditionFormula>Transfer_to_department__c &amp;&amp; ISBLANK( Queue__c )</errorConditionFormula>
+    <errorMessage>אם רוצים להעביר למחלקה, יש למלא תור עבודה רלוונטי</errorMessage>
+</ValidationRule>

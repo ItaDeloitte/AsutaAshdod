@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YadBeYadBreast</fullName>
+    <fields>CaseNumber</fields>
+    <fields>Account_Name__c</fields>
+    <fields>Status</fields>
+    <fields>Case_Source_YadBeYad__c</fields>
+    <fields>RecordTypeId</fields>
+    <label>יד ביד - שד</label>
+</CompactLayout>

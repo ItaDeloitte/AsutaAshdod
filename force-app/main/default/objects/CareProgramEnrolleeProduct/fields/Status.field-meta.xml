@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status</fullName>
+    <inlineHelpText>סטטוס המוצר או השירות בתוכנית הטיפול, בהקשר לנותן שירות של תוכנית הטיפול ולנרשם בתוכנית הטיפול (הנמען) של המוצר או השירות.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

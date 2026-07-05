@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequiredDocuments__c</fullName>
+    <label>Required Documents</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>צילום א.ק.ג</fullName>
+                <default>false</default>
+                <label>צילום א.ק.ג</label>
+            </value>
+            <value>
+                <fullName>בדיקות דם – כימיה/ספירה</fullName>
+                <default>false</default>
+                <label>בדיקות דם – כימיה/ספירה</label>
+            </value>
+            <value>
+                <fullName>בדיקת שתן</fullName>
+                <default>false</default>
+                <label>בדיקת שתן</label>
+            </value>
+            <value>
+                <fullName>יעוץ מומחה</fullName>
+                <default>false</default>
+                <label>יעוץ מומחה</label>
+            </value>
+            <value>
+                <fullName>בדיקת דימות</fullName>
+                <default>false</default>
+                <label>בדיקת דימות</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Belong_to_other_Domain__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>תיאור מלא בUS 13294
+שדה להפעלה ידנית של מייל שונה של המרפאה - למקרים בהם המייל של הדומיין שונה מהמייל של המרפאה 
+
+לדוג&apos; בפרוצדורה הרפואית &quot;בדיקת רופא נוירולוג ילדים&quot; הדומיין הוא &quot;מרפאה נוירולוגית - אשדוד ציבורי&quot;, בפועל צריך להיות מרפאה נוירולוגית ילדים)</description>
+    <label>Belong to other Domain</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

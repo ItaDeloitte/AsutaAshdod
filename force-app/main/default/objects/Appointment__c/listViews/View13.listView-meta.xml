@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View13</fullName>
+    <booleanFilter>(  7 and 6 and 4 and 5 and 2 and 1) or (3 and 2 and 1 and 8 and 9)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Referral_Status_Maccabi__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>doc_from_try__c</columns>
+    <columns>Expiration_date_commitment__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Deductibles__c</columns>
+    <columns>Anesthesia_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>אסותא אשדוד</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date_Time__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>7/22/2020 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <filters>
+        <field>PayerFactor__c</field>
+        <operation>notContain</operation>
+        <value>קופח מכבי,לאומית,מאוחדת,צה</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>גסטרו,קולונו,סיגמו</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>וירטואל-קולונוסקופי</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>גסטרו,קולונו,סיגמו</value>
+    </filters>
+    <filters>
+        <field>PayerFactor__c</field>
+        <operation>notContain</operation>
+        <value>מאוחדת,לאומית,צה</value>
+    </filters>
+    <label>אשדוד כלניות ניתוחים - דוד</label>
+</ListView>

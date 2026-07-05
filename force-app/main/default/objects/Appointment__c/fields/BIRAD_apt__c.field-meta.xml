@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BIRAD_apt__c</fullName>
+    <label>BIRAD</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>הבדיקה טרם הושלמה</fullName>
+                <default>false</default>
+                <label>הבדיקה טרם הושלמה</label>
+            </value>
+            <value>
+                <fullName>תקין</fullName>
+                <default>false</default>
+                <label>תקין</label>
+            </value>
+            <value>
+                <fullName>ממצא שפיר</fullName>
+                <default>false</default>
+                <label>ממצא שפיר</label>
+            </value>
+            <value>
+                <fullName>ממצא כנראה שפיר</fullName>
+                <default>false</default>
+                <label>ממצא כנראה שפיר</label>
+            </value>
+            <value>
+                <fullName>ממצא חריג - דרגת חשד נמוך</fullName>
+                <default>false</default>
+                <label>ממצא חריג - דרגת חשד נמוך</label>
+            </value>
+            <value>
+                <fullName>ממצא חריג - דרגת חשד בינוני</fullName>
+                <default>false</default>
+                <label>ממצא חריג - דרגת חשד בינוני</label>
+            </value>
+            <value>
+                <fullName>ממצא חריג, ייתכן שאתי</fullName>
+                <default>false</default>
+                <label>ממצא חריג, ייתכן שאתי</label>
+            </value>
+            <value>
+                <fullName>חשוד מאוד לשאת</fullName>
+                <default>false</default>
+                <label>חשוד מאוד לשאת</label>
+            </value>
+            <value>
+                <fullName>הובחן כשאתי</fullName>
+                <default>false</default>
+                <label>הובחן כשאתי</label>
+            </value>
+            <value>
+                <fullName>לא התקבלו תוצאות בדיקה</fullName>
+                <default>false</default>
+                <label>לא התקבלו תוצאות בדיקה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>published_articles</fullName>
+    <columns>TITLE</columns>
+    <columns>Question__c</columns>
+    <columns>Answer__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>ABSTRACT</columns>
+    <columns>ARTICLE_NUMBER</columns>
+    <columns>LANGUAGE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Published Articles</label>
+</ListView>

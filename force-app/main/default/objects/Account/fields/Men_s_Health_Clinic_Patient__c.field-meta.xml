@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Men_s_Health_Clinic_Patient__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>האם הוא מטופל של מרפאת בריאות הגבר?</description>
+    <label>Men&apos;s Health Clinic Patient</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

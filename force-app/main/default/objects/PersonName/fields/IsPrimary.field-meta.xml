@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPrimary</fullName>
+    <inlineHelpText>בחר שדה זה אם השם הזה הוא השם הראשי שבו אדם זה משתמש.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

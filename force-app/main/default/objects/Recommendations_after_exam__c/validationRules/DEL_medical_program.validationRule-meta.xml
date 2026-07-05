@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEL_medical_program</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos;) &amp;&amp;
+ Related_Appointment__r.after_appointment__c &lt;&gt; &apos;&apos; &amp;&amp;
+ Case360__c &lt;&gt; &apos;&apos;</errorConditionFormula>
+    <errorMessage>בתוכנית רפואית תישלח רק המלצה אחת</errorMessage>
+</ValidationRule>

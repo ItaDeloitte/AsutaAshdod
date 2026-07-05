@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurer_Factor_text__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Insurer_factor__c,&quot;1&quot; ), &quot;כללית&quot;,
+IF( ISPICKVAL(Insurer_factor__c,&quot;2&quot; ) , &quot;מכבי&quot;,
+IF( ISPICKVAL(Insurer_factor__c,&quot;3&quot; ) , &quot;מאוחדת&quot;,
+ IF(ISPICKVAL(Insurer_factor__c,&quot;4&quot; ) , &quot;לאומית&quot;,
+ IF(ISPICKVAL(Insurer_factor__c,&quot;2000&quot; ) , &quot;ענף&quot;&amp;&quot; &quot;&amp; &quot;תקציבים&quot;,
+&quot;&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Insurance Factor Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

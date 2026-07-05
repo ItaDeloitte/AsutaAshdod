@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>icon_identification__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(ISPICKVAL( title__c , &quot;בסיסי&quot;),NOT(ISPICKVAL( status__c ,&quot;מאושר&quot;))),IMAGE(&quot;https://assuta--dev--c.documentforce.com/servlet/servlet.ImageServer?id=0158E000000w9pJ&amp;oid=00D8E0000000ot9&amp;lastMod=1558873372000&quot;, &quot;&quot; , 30, 30),
+IF(AND(ISPICKVAL( title__c , &quot;רגיל&quot;),NOT(ISPICKVAL( status__c ,&quot;מאושר&quot;))),IMAGE(&quot;https://assuta--dev--c.documentforce.com/servlet/servlet.ImageServer?id=0158E000000w9pO&amp;oid=00D8E0000000ot9&amp;lastMod=1558873353000&quot;, &quot;&quot; , 30, 30),
+IF(AND(ISPICKVAL( title__c , &quot;מחמיר&quot;),NOT(ISPICKVAL( status__c ,&quot;מאושר&quot;))),IMAGE(&quot;https://assuta--dev--c.documentforce.com/servlet/servlet.ImageServer?id=0158E000000w9pE&amp;oid=00D8E0000000ot9&amp;lastMod=1558873410000&quot;, &quot;&quot; , 30, 30),
+IF(AND(ISPICKVAL( title__c , &quot;בסיסי&quot;),ISPICKVAL(status__c ,&quot;מאושר&quot;)),IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000IfAH&amp;oid=00DKI000000MTJU&amp;lastMod=1568903149000&quot;, &quot;&quot; , 30, 30),
+IF(AND(ISPICKVAL( title__c , &quot;רגיל&quot;),ISPICKVAL(status__c ,&quot;מאושר&quot;)),IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000IfAC&amp;oid=00DKI000000MTJU&amp;lastMod=1568903104000&quot;, &quot;&quot; , 30, 30),
+IF(AND(ISPICKVAL( title__c , &quot;מחמיר&quot;),ISPICKVAL( status__c ,&quot;מאושר&quot;)),IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000IfA7&amp;oid=00DKI000000MTJU&amp;lastMod=1568903045000&quot;, &quot;&quot; , 30, 30),&quot;&quot;
+
+)
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Icon Identification</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CallBack_Required_If_Not_Closed</fullName>
+    <active>true</active>
+    <description>השדה CallBack הוא חובה אלא אם ההזדמנות נסגרת בהפסד או ניצחון.
+29.7 הוספת תנאי:
+כאשר בשדה &quot;מקור הליד&quot; (LeadSource) הערך הוא &quot;שיחה נכנסת&quot; (Inbound_Call) השדה לא יהיה שדה חובה.</description>
+    <errorConditionFormula>AND(
+ISBLANK(CallBack__c),
+NOT(ISPICKVAL(LeadSource, &apos;Inbound_Call&apos;)),
+NOT(
+OR(
+ISPICKVAL(StageName, &apos;Closed Won&apos;),
+ISPICKVAL(StageName, &apos;Closed Lost&apos;),
+ISPICKVAL(StageName, &apos;Providing details and questioning&apos;),
+NOT(RecordTypeId = &apos;Assuta_Family&apos;)
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>CallBack__c</errorDisplayField>
+    <errorMessage>חובה למלא את השדה CallBack</errorMessage>
+</ValidationRule>

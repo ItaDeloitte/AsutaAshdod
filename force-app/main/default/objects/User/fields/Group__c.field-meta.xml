@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group__c</fullName>
+    <label>Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ניתוחים</fullName>
+                <default>false</default>
+                <label>ניתוחים</label>
+            </value>
+            <value>
+                <fullName>נרקיס</fullName>
+                <default>false</default>
+                <label>נרקיס</label>
+            </value>
+            <value>
+                <fullName>סחלב</fullName>
+                <default>false</default>
+                <label>סחלב</label>
+            </value>
+            <value>
+                <fullName>יסמין</fullName>
+                <default>false</default>
+                <label>יסמין</label>
+            </value>
+            <value>
+                <fullName>סביון</fullName>
+                <default>false</default>
+                <label>סביון</label>
+            </value>
+            <value>
+                <fullName>לילך</fullName>
+                <default>false</default>
+                <label>לילך</label>
+            </value>
+            <value>
+                <fullName>דיגיטל</fullName>
+                <default>false</default>
+                <label>דיגיטל</label>
+            </value>
+            <value>
+                <fullName>בכירים</fullName>
+                <default>false</default>
+                <label>בכירים</label>
+            </value>
+            <value>
+                <fullName>הקלדות</fullName>
+                <default>false</default>
+                <label>הקלדות</label>
+            </value>
+            <value>
+                <fullName>מומחים</fullName>
+                <default>false</default>
+                <label>מומחים</label>
+            </value>
+            <value>
+                <fullName>אסותא אישי</fullName>
+                <default>false</default>
+                <label>אסותא אישי</label>
+            </value>
+            <value>
+                <fullName>פרימיום</fullName>
+                <default>false</default>
+                <label>פרימיום</label>
+            </value>
+            <value>
+                <fullName>טלאול</fullName>
+                <default>false</default>
+                <label>טלאול</label>
+            </value>
+            <value>
+                <fullName>דפנה</fullName>
+                <default>false</default>
+                <label>דפנה</label>
+            </value>
+            <value>
+                <fullName>חממה</fullName>
+                <default>false</default>
+                <label>חממה</label>
+            </value>
+            <value>
+                <fullName>חיפה – עמית</fullName>
+                <default>false</default>
+                <label>חיפה – עמית</label>
+            </value>
+            <value>
+                <fullName>חיפה – נאג&apos;יה</fullName>
+                <default>false</default>
+                <label>חיפה – נאג&apos;יה</label>
+            </value>
+            <value>
+                <fullName>חיפה - מוריה</fullName>
+                <default>false</default>
+                <label>חיפה - מוריה</label>
+            </value>
+            <value>
+                <fullName>קבלה ראשית רמה&quot;ח</fullName>
+                <default>false</default>
+                <label>קבלה ראשית רמה&quot;ח</label>
+            </value>
+            <value>
+                <fullName>מחלקות ח&quot;נ רמה&quot;ח</fullName>
+                <default>false</default>
+                <label>מחלקות ח&quot;נ רמה&quot;ח</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

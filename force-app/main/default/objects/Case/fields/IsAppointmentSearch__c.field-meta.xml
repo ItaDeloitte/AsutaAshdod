@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsAppointmentSearch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>True when Case_subject__c = &apos;זימון תור חדש&apos; AND sub_case_subject__c == &apos;זימון תור חדש&apos; AND RecordType.DeveloperName == &apos;Appointments&apos;</description>
+    <label>IsAppointmentSearch</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

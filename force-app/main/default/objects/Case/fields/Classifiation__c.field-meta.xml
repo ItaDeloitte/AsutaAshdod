@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classifiation__c</fullName>
+    <description>שדה לא בלייאאוט.
+נוצא כדי להופיע ברשימה המקורשת של המטופל</description>
+    <externalId>false</externalId>
+    <formula>RecordType.Name &amp;&quot;, &quot; &amp;  TEXT( Case_subject__c ) &amp;&quot;, &quot;&amp; TEXT(  sub_case_subject__c  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Classifiation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

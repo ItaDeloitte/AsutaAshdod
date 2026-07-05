@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refund_Amount_Private_Rooms__c</fullName>
+    <formula>CASE(
+   Refund_Eligibility_Private_Rooms__c,
+   &quot;🟢 זיכוי מלא&quot;, paid_amount__c,
+   &quot;🟡 זיכוי 50%&quot;, paid_amount__c * 0.5,
+   &quot;🔴 לא זכאי&quot;, 0,
+   0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Refund Amount- Private Rooms</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

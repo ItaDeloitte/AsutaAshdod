@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>return_case_type__c</fullName>
+    <inlineHelpText>אחרון - לא נפתחה פנייה חוזרת לפנייה זו
+נפתחה עוד פנייה - נוצרה פנייה חוזרת לפנייה זו</inlineHelpText>
+    <label>Return Case Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>אחרון</fullName>
+                <default>false</default>
+                <label>אחרון</label>
+            </value>
+            <value>
+                <fullName>נפתחה עוד פנייה לפנייה זו</fullName>
+                <default>false</default>
+                <label>נפתחה עוד פנייה לפנייה זו</label>
+            </value>
+            <value>
+                <fullName>ללא</fullName>
+                <default>true</default>
+                <label>ללא</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

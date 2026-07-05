@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpportunityOpenTime__c</fullName>
+    <description>משך זמן שההזדמנות פתוחה</description>
+    <externalId>false</externalId>
+    <formula>(IF( ISBLANK( DATEVALUE(  OpportunityCloseDate__c )), TODAY(), DATEVALUE(OpportunityCloseDate__c ))-
+
+IF( WEEKDAY( DATEVALUE(CreatedDate ) ) = 6, DATEVALUE(CreatedDate) +2,
+IF( WEEKDAY(DATEVALUE(CreatedDate ))= 7, DATEVALUE(CreatedDate )+1,
+DATEVALUE(CreatedDate )
+) )
+
+-(ROUND(
+
+IF( ISBLANK( DATEVALUE( OpportunityCloseDate__c )), TODAY(), DATEVALUE(OpportunityCloseDate__c ))-
+
+IF( WEEKDAY(DATEVALUE(CreatedDate )) = 6, DATEVALUE(CreatedDate )+2,
+IF( WEEKDAY(DATEVALUE(CreatedDate ) )= 7, DATEVALUE(CreatedDate )+1,
+DATEVALUE(CreatedDate )
+) )
+,0)*2)
+)*-1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OpportunityOpenTime</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

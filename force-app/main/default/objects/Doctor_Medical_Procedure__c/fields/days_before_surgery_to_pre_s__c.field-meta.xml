@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>days_before_surgery_to_pre_s__c</fullName>
+    <description>מה מס&apos; הימים המינ&apos; בין ניתוח לטרום ניתוח (עבור ניתוח שמחייב טרום)</description>
+    <externalId>false</externalId>
+    <label>Minimum Days Between Pre-Surgery And Sur</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

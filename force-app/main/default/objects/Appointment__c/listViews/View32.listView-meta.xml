@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View32</fullName>
+    <columns>NAME</columns>
+    <columns>Doctor_Account__c</columns>
+    <columns>Courses_Icon__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Referral_Status_Maccabi__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Site__c</columns>
+    <columns>processing_status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Administrative_Status__c</columns>
+    <columns>Number_of_commitment__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>PayerFactor__c</field>
+        <operation>contains</operation>
+        <value>מכבי</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>רמת</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>צנתור</value>
+    </filters>
+    <label>ניתוחים בטיפול אדמיניסטרטיבי -מכבי טסט</label>
+</ListView>

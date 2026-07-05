@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Always__c</fullName>
+    <formula>(Appointment__r.Medical_Procedure__r.Always_send_SMS__c) ||( ISPICKVAL( question_type__c ,&apos;OTP&apos;) || CONTAINS( Automation_name__c , &quot;פורטל טפסים&quot;)  ) ||  Appointment__r.ADName__c = &apos;internet_site&apos;&amp;&amp; Automation_name__c = &apos;logic to send institute sms&apos; ||  CONTAINS(  SmsTemplate__c , &quot;IVR&quot;)|| CONTAINS(Automation_name__c, &apos;שליחת OTP עבור איש קשר למטופל&apos;) || CONTAINS(Automation_name__c, &apos;Send Secret Code OTP&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SMS Always</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

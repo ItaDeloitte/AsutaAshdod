@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>טבלה לניהול תוכן SMS המוגדרים במערכת</description>
+    <label>SMS Message</label>
+    <pluralLabel>SMS Messages</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

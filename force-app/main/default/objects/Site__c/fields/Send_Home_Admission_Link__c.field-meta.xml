@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Home_Admission_Link__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>האם לשלוח קבלה מהבית</description>
+    <label>Send Home Admission Link</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

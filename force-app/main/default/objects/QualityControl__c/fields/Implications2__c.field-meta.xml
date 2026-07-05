@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Implications2__c</fullName>
+    <label>Additional Implications</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>טעות המטופל</fullName>
+                <default>false</default>
+                <label>טעות המטופל</label>
+            </value>
+            <value>
+                <fullName>תקלה מערכתית</fullName>
+                <default>false</default>
+                <label>תקלה מערכתית</label>
+            </value>
+            <value>
+                <fullName>טעות צוות המכון / מרפאה</fullName>
+                <default>false</default>
+                <label>טעות צוות המכון / מרפאה</label>
+            </value>
+            <value>
+                <fullName>זיכוי כספי</fullName>
+                <default>false</default>
+                <label>זיכוי כספי</label>
+            </value>
+            <value>
+                <fullName>שיחת התנצלות</fullName>
+                <default>false</default>
+                <label>שיחת התנצלות</label>
+            </value>
+            <value>
+                <fullName>מטופל נשלח הביתה ללא ביצוע הבדיקה</fullName>
+                <default>false</default>
+                <label>מטופל נשלח הביתה ללא ביצוע הבדיקה</label>
+            </value>
+            <value>
+                <fullName>נוצר עיכוב במחלקה</fullName>
+                <default>false</default>
+                <label>נוצר עיכוב במחלקה</label>
+            </value>
+            <value>
+                <fullName>התור הוזז</fullName>
+                <default>false</default>
+                <label>התור הוזז</label>
+            </value>
+            <value>
+                <fullName>טרטור המטופל/ת</fullName>
+                <default>false</default>
+                <label>טרטור המטופל/ת</label>
+            </value>
+            <value>
+                <fullName>לא נגרם נזק</fullName>
+                <default>false</default>
+                <label>לא נגרם נזק</label>
+            </value>
+            <value>
+                <fullName>לא נמצא כטעות מוקד</fullName>
+                <default>false</default>
+                <label>לא נמצא כטעות מוקד</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

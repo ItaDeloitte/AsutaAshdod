@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test_lior__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(UUI__c), &apos;לא רלוונטי&apos;,
+IF( ISBLANK(related_account__c) , &apos;נמען ריק למרות שיש תעודת זהות&apos;  , 
+IF( ISBLANK(WhoId) , &apos;נמען מלא ושם ריק&apos;, 
+IF( WhoId =  related_account__r.PersonContact.Id  , &apos;שניהם מלאים וזהים&apos;, 
+IF( WhoId &lt;&gt; related_account__r.PersonContact.Id  , &apos;שניהם מלאים אך שונים&apos;, 
+&apos;אחר&apos;
+
+)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>test lior</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

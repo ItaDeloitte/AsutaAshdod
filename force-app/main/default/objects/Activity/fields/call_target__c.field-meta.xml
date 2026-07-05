@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>call_target__c</fullName>
+    <label>Call Target</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>המלצה על כירורג שד</fullName>
+                <default>false</default>
+                <label>המלצה על כירורג שד</label>
+            </value>
+            <value>
+                <fullName>שיחה לרופא לאחר ייעוץ</fullName>
+                <default>false</default>
+                <label>שיחה לרופא לאחר ייעוץ</label>
+            </value>
+            <value>
+                <fullName>שיחה ראשונית לרופא</fullName>
+                <default>false</default>
+                <label>שיחה ראשונית לרופא</label>
+            </value>
+            <value>
+                <fullName>שיחה למטופלת לקביעת תור לייעוץ</fullName>
+                <default>false</default>
+                <label>שיחה למטופלת לקביעת תור לייעוץ</label>
+            </value>
+            <value>
+                <fullName>שיחה למטופלת לקביעת תור לביופסיה</fullName>
+                <default>false</default>
+                <label>שיחה למטופלת לקביעת תור לביופסיה</label>
+            </value>
+            <value>
+                <fullName>שיחה לרופא לאחר תוצאות ביופסיה</fullName>
+                <default>false</default>
+                <label>שיחה לרופא לאחר תוצאות ביופסיה</label>
+            </value>
+            <value>
+                <fullName>לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה</fullName>
+                <default>false</default>
+                <label>לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה</label>
+            </value>
+            <value>
+                <fullName>שיחת מעקב למטופלת באונקולוגיה</fullName>
+                <default>false</default>
+                <label>שיחת מעקב למטופלת באונקולוגיה</label>
+            </value>
+            <value>
+                <fullName>שיחה לרופא לאחר שחרור מניתוח</fullName>
+                <default>false</default>
+                <label>שיחה לרופא לאחר שחרור מניתוח</label>
+            </value>
+            <value>
+                <fullName>אישור הגעה לפגישה</fullName>
+                <default>false</default>
+                <label>אישור הגעה לפגישה</label>
+            </value>
+            <value>
+                <fullName>שיחה למטופלת לאחר ביופסיה</fullName>
+                <default>false</default>
+                <label>שיחה למטופלת לאחר ביופסיה</label>
+            </value>
+            <value>
+                <fullName>שיחה למטופלת על ביופסיה שלילית</fullName>
+                <default>false</default>
+                <label>שיחה למטופלת על ביופסיה שלילית</label>
+            </value>
+            <value>
+                <fullName>שיחה למטופלת על ביופסיה חיובית</fullName>
+                <default>false</default>
+                <label>שיחה למטופלת על ביופסיה חיובית</label>
+            </value>
+            <value>
+                <fullName>טופל</fullName>
+                <default>false</default>
+                <label>טופל</label>
+            </value>
+            <value>
+                <fullName>נדרש המשך טיפול</fullName>
+                <default>false</default>
+                <label>נדרש המשך טיפול</label>
+            </value>
+            <value>
+                <fullName>רופא ממתין לתוצאת ביופסיה מלאה</fullName>
+                <default>false</default>
+                <label>רופא ממתין לתוצאת ביופסיה מלאה</label>
+            </value>
+            <value>
+                <fullName>רופא קיבל תוצאת ביופסיה חיובית</fullName>
+                <default>false</default>
+                <label>רופא קיבל תוצאת ביופסיה חיובית</label>
+            </value>
+            <value>
+                <fullName>רופא קיבל תוצאת תוצאת ביופסיה שלילית</fullName>
+                <default>false</default>
+                <label>רופא קיבל תוצאת תוצאת ביופסיה שלילית</label>
+            </value>
+            <value>
+                <fullName>קביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</fullName>
+                <default>false</default>
+                <label>קביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</label>
+            </value>
+            <value>
+                <fullName>קביעת תור לניתוח</fullName>
+                <default>false</default>
+                <label>קביעת תור לניתוח</label>
+            </value>
+            <value>
+                <fullName>קביעת תור למחלקה אונקולוגית</fullName>
+                <default>false</default>
+                <label>קביעת תור למחלקה אונקולוגית</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

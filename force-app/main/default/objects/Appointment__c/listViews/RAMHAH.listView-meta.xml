@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAMHAH</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Calendar__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Patient_Age__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>PHONE__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Remainder_status__c</columns>
+    <columns>Rep_Reminder_Status__c</columns>
+    <columns>manual_arrival__c</columns>
+    <columns>Remainder_type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Appointment_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/14/2026</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>1/16/2026</value>
+    </filters>
+    <filters>
+        <field>manual_arrival__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Rep_Reminder_Status__c</field>
+        <operation>notEqual</operation>
+        <value>אישור הגעה</value>
+    </filters>
+    <filters>
+        <field>Remainder_status__c</field>
+        <operation>notEqual</operation>
+        <value>השיב להודעה בחיוב,השיב להודעה בשלילה</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>וידוא הגעה לפגישה,WaitingForAppointment</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>רמה&quot;ח - מגדל המכונים והמרפאות,רמת החייל,רמת,חייל</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <filters>
+        <field>domain2__c</field>
+        <operation>contains</operation>
+        <value>PET CT (מכון),C.T (מכון),M.R.I (מכון),מיפויים כלליים,מיפויים לב</value>
+    </filters>
+    <label>וידואי הגעה- רמה&quot;ח - דימות</label>
+</ListView>

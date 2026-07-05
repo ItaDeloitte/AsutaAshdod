@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CalendarSystem__c</fullName>
+    <description>אם היומן מנוהל במערכות חיצוניות (Odoro או Rapid), הנציג יוכל להזין את פרטי התור שתואמו</description>
+    <label>DEL-יומן הרופא מנוהל ב</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>QFlow</fullName>
+                <default>true</default>
+                <label>QFlow</label>
+            </value>
+            <value>
+                <fullName>Odoro</fullName>
+                <default>false</default>
+                <label>Odoro</label>
+            </value>
+            <value>
+                <fullName>Rapid</fullName>
+                <default>false</default>
+                <label>Rapid</label>
+            </value>
+            <value>
+                <fullName>תיאום טלפוני דרך המזכירה</fullName>
+                <default>false</default>
+                <label>תיאום טלפוני דרך המזכירה</label>
+            </value>
+            <value>
+                <fullName>תיאום דרך אתר האינטרנט של הרופא</fullName>
+                <default>false</default>
+                <label>תיאום דרך אתר האינטרנט של הרופא</label>
+            </value>
+            <value>
+                <fullName>דרך אתר אסותא</fullName>
+                <default>false</default>
+                <label>דרך אתר אסותא</label>
+            </value>
+            <value>
+                <fullName>לא ניתן לזמן</fullName>
+                <default>false</default>
+                <label>לא ניתן לזמן</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

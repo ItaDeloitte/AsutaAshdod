@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>case_owned_dep__c</fullName>
+    <formula>OR(
+ CONTAINS(Owner:Queue.QueueName, &quot;אשדוד&quot;),
+ CONTAINS(Owner:Queue.QueueName, &quot;חיפה&quot;), 
+ CONTAINS(Owner:Queue.QueueName, &quot;רמת החייל&quot;), 
+ CONTAINS(Owner:Queue.QueueName, &quot;רעננה&quot;), 
+ CONTAINS(Owner:Queue.QueueName, &quot;ראשון&quot;), 
+ CONTAINS(Owner:Queue.QueueName, &quot;באר שבע&quot;),
+CONTAINS(Owner:Queue.QueueName, &quot;ניידת&quot;), 
+CONTAINS(Owner:Queue.QueueName, &quot;חולון&quot;),
+ CONTAINS(Owner:Queue.QueueName, &quot;השלום&quot;) 
+)
+&amp;&amp;
+NOT(
+ CONTAINS(Owner:Queue.QueueName, &quot;ציבורי&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Owned by Department Queue</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

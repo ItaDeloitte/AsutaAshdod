@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>min_surgery__c</fullName>
+    <description>סוכם את מחיר המינימום למשתלים, שכר טרחה ומחיר פעולות</description>
+    <externalId>false</externalId>
+    <formula>implantsMinPrice__c   +
+all_med_pr_cost__c +
+Payment_to_Doctor__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>min surgery</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

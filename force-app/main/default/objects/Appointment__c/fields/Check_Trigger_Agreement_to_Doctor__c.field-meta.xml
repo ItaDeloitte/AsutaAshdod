@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Trigger_Agreement_to_Doctor__c</fullName>
+    <description>ניתוחים
+הצ&apos;קבוקס יהיה מסומן כאשר הגורם המשלם היא חברת ביטוח
+עבור TRUE נבדוק האם לרופא יש הסכם עם חברת הביטוח עבור ניתוח</description>
+    <formula>RecordType.DeveloperName = &quot;Surgeries&quot;
+&amp;&amp;
+ PayerFactor__r.Insurance_Company__c = TRUE</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Check Trigger Agreement to Doctor</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

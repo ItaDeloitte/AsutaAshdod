@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PublicInquiriesDalit</fullName>
+    <booleanFilter>1 AND 2 AND 4 AND 3</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Site_Public_Inquiry__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CaseCreationDate__c</columns>
+    <columns>ClosedDate__c</columns>
+    <columns>SLADeviation__c</columns>
+    <columns>DeadlineHandlingDatePassed__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>contains</operation>
+        <value>בטיפול,הועבר לצד שלישי,במעקב</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.PublicInquiries</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>contains</operation>
+        <value>dalit</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notContain</operation>
+        <value>אשדוד</value>
+    </filters>
+    <label>פניות הציבור בטיפול/במעקב- דלית</label>
+</ListView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Primary Owner Mapping for Case created in the Doctor Abandonment Checker job.</description>
+    <label>Primary Owner Mapping</label>
+    <pluralLabel>Primary Owner Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

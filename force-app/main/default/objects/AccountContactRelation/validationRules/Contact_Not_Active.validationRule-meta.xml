@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Not_Active</fullName>
+    <active>true</active>
+    <description>לא ניתן לקשר איש קשר לא פעיל לחשבון</description>
+    <errorConditionFormula>$User.Id &lt;&gt; &quot;0054J000000vlO1&quot; &amp;&amp;
+(Contact.Account.Not_active__c || 
+(
+Contact.Account.Name &lt;&gt; &quot;General Account&quot; &amp;&amp;
+NOT(ISPICKVAL(Contact.Account.Mailing_approval__c,&quot;מאשר דיוור - הכל&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Contact.Account.Mailing_approval__c,
+&quot;מאשר דיוור - שירותי&quot;))
+)
+||
+(
+NOT(ISPICKVAL(Account.Mailing_approval__c,&quot;מאשר דיוור - הכל&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Account.Mailing_approval__c,
+&quot;מאשר דיוור - שירותי&quot;))
+)
+||
+(ISBLANK(Account.PersonContact.Email) &amp;&amp; ISBLANK( Account.SMS_Phone_Number__c ))
+||
+(Contact.Account.Name &lt;&gt; &quot;General Account&quot; &amp;&amp; ISBLANK(Contact.Account.PersonContact.Email) &amp;&amp; ISBLANK( Contact.Account.SMS_Phone_Number__c )))
+&amp;&amp;
+ Account.Name &lt;&gt; &quot;General Account&quot;
+&amp;&amp;
+Contact.RecordType.DeveloperName &lt;&gt; &quot;Escort&quot;
+&amp;&amp;
+Contact.RecordType.DeveloperName &lt;&gt; &quot;Supplier_Contact&quot;
+&amp;&amp;
+(NOT(CreatedBy.Ashdod_employee__c) || NOT(ISPICKVAL(title__c , &quot;בסיסי&quot;) ))</errorConditionFormula>
+    <errorMessage>על מנת לקשר איש קשר לחשבון, יש לוודא כי איש הקשר פעיל, שגם הוא וגם המטופל מאשרים דיוור ומעודכן לשניהם כתובת מייל או מספר טלפון לקבלת מסרונים</errorMessage>
+</ValidationRule>

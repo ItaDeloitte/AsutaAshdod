@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_History_Documentation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Creation_Type__c , &quot;Case&quot;)  ,
+History_Documentation__c  = &quot; &quot;)</errorConditionFormula>
+    <errorDisplayField>History_Documentation__c</errorDisplayField>
+    <errorMessage>History Documentation Require</errorMessage>
+</ValidationRule>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>first_medical_procedure__c</columns>
+    <columns>sec_1_to_2__c</columns>
+    <columns>max_sec_1_to_2__c</columns>
+    <columns>domain_mp1__c</columns>
+    <columns>second_medical_procedure__c</columns>
+    <columns>sec_2_to_3__c</columns>
+    <columns>max_sec_2_to_3__c</columns>
+    <columns>domain_mp2__c</columns>
+    <columns>third_medical_procedure__c</columns>
+    <columns>calendar__c</columns>
+    <columns>domain_mp3__c</columns>
+    <columns>same_day__c</columns>
+    <columns>Ashdod__c</columns>
+    <columns>Site_Codes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site_Codes__c</field>
+        <operation>equals</operation>
+        <value>33</value>
+    </filters>
+    <label>All</label>
+</ListView>

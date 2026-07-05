@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offset</fullName>
+    <inlineHelpText>משך הזמן לפני או אחרי אירוע או היום המסוים בשבוע שבו עליך לקיים תקשורת עם נקודת הקשר. הגדר את יחידת הזמן ב&apos;יחידה&apos;. לדוגמה, אם תגדיר את היחידה כ&apos;שבוע&apos; ואת ההיסט כ- &apos;4-&apos;, עליך לקיים תקשורת עם נקודת הקשר ארבעה שבועות אחרי האירוע. אם תגדיר את היחידה כ&apos;יום בשבוע&apos; ואת ההיסט כ-&apos;1&apos;, עליך לקיים תקשורת עם נקודת הקשר ביום שני. אם תגדיר היסט של &apos;7&apos;, עליך לקיים תקשורת עם נקודת הקשר ביום ראשון.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

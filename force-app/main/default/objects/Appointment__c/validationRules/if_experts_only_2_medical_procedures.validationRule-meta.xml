@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>if_experts_only_2_medical_procedures</fullName>
+    <active>false</active>
+    <description>בפגישת ייעוץ ניתן לבחור רק ב-2 פעולות רפואיות: זימון רופא חדש או זימון רופא חוזר</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+RecordType.DeveloperName  = &quot;Experts&quot; &amp;&amp;
+ (Medical_Procedure__r.Procedure_Code__c  &lt;&gt;  &quot;99400&quot;) &amp;&amp; 
+(Medical_Procedure__r.Procedure_Code__c  &lt;&gt;  &quot;99401&quot;) &amp;&amp;
+(Medical_Procedure__r.Procedure_Code__c  &lt;&gt;  &quot;99120&quot;) &amp;&amp;
+(Medical_Procedure__r.Procedure_Code__c  &lt;&gt;  &quot;99148&quot;)</errorConditionFormula>
+    <errorMessage>בפגישת ייעוץ ניתן לבחור רק ב-2 פעולות רפואיות: זימון רופא חדש או זימון רופא חוזר</errorMessage>
+</ValidationRule>

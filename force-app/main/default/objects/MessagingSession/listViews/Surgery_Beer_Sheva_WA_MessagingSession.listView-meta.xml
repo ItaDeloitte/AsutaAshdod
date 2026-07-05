@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surgery_Beer_Sheva_WA_MessagingSession</fullName>
+    <filterScope>Queue</filterScope>
+    <label>זימון חדר ניתוח - באר שבע</label>
+    <queue>Surgery_Beer_Sheva_WA</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

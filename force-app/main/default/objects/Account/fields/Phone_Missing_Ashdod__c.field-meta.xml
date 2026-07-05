@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Missing_Ashdod__c</fullName>
+    <formula>ISBLANK(Phone) &amp;&amp; $User.Ashdod_employee__c = true &amp;&amp;
+(ISPICKVAL(Preferred_Channel__c , &apos;Phone&apos;) || ISPICKVAL(Preferred_Channel__c , &apos;SMS&apos;) || ISPICKVAL(Preferred_Channel__c , &apos;Whatsapp&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Phone Missing Ashdod</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurer_Factor_is_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+( ISNEW() || ISCHANGED(ID_Type__c ) || ISCHANGED(Insurer_factor__c) )
+&amp;&amp;
+ISPICKVAL(  ID_Type__c  , &quot;1&quot; )
+&amp;&amp;
+((ISNEW() &amp;&amp; DisableValidation__c = false)
+||
+(NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(DisableValidation__c))))
+&amp;&amp;
+ISPICKVAL(Insurer_factor__c, &quot;&quot;)
+&amp;&amp;
+RecordType.DeveloperName = &apos;PersonAccount&apos;
+&amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;
+&amp;&amp; NOT( AccountStatus__c = &apos;לקוח רזה&apos;)</errorConditionFormula>
+    <errorDisplayField>Insurer_factor__c</errorDisplayField>
+    <errorMessage>נא בחר גורם מבטח</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherReasonExplanation_Lost_Opp</fullName>
+    <active>true</active>
+    <description>חובה למלא את השדות OtherReasonExplanation בהינתן:
+Stage = &quot;הפסד&quot;
+AND
+StageStatus = &quot;בדיקה\תחום לא קיים כרגע בשירות&quot;</description>
+    <errorConditionFormula>AND(
+ISPICKVAL ( StageName , &quot;Closed Lost&quot;) ,
+ISPICKVAL ( StageStatus__c , &quot;Domain not applying in assuta&quot;),
+ISBLANK ( OtherReasonExplanation__c )
+)</errorConditionFormula>
+    <errorDisplayField>OtherReasonExplanation__c</errorDisplayField>
+    <errorMessage>חובה למלא את השדה OtherReasonExplanation</errorMessage>
+</ValidationRule>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assuta_emp_in_clinic__c</fullName>
+    <label>Assuta Clinic Employee</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מזכיר/ה</fullName>
+                <default>false</default>
+                <label>מזכיר/ה</label>
+            </value>
+            <value>
+                <fullName>מנהל/ת</fullName>
+                <default>false</default>
+                <label>מנהל/ת</label>
+            </value>
+            <value>
+                <fullName>מנכ&quot;לית</fullName>
+                <default>false</default>
+                <label>מנכ&quot;לית</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

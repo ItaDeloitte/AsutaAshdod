@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pre_surgery_for_breast</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+(Medical_Procedure__r.Domain__r.Name =&quot;טרום ניתוח&quot;)
+ &amp;&amp;   CONTAINS(Medical_Procedure__r.Marketing_Procedure_Name__c , &quot;שד&quot;) 
+ &amp;&amp;  ((TIMEVALUE(Appointment_Date_Time__c) )&gt;= TIMEVALUE(&quot;13:00:00.000&quot;))</errorConditionFormula>
+    <errorMessage>לא ניתן לקבוע טרום ניתוח למנותחות שד לאחר השעה 13:00</errorMessage>
+</ValidationRule>

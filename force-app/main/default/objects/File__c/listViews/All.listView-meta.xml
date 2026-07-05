@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Account__c</columns>
+    <columns>Domain__c</columns>
+    <columns>Case__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>file_type__c</field>
+        <operation>equals</operation>
+        <value>IVF</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>4/6/2026 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>File__c.General</value>
+    </filters>
+    <filters>
+        <field>Case__c</field>
+        <operation>equals</operation>
+        <value>50233206</value>
+    </filters>
+    <label>מסמכים IVF ללא שיוך מטופל/ת</label>
+</ListView>

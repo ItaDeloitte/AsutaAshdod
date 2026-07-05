@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ensemble_Error</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>ErrorCode__c</columns>
+    <columns>ErrorMessage__c</columns>
+    <columns>InterfaceType__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Ensemble Error</label>
+    <language>iw</language>
+</ListView>

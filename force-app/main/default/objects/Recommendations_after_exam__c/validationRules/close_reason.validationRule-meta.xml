@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>close_reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos;) &amp;&amp;
+ISPICKVAL(Status_recommendation__c, &quot;נסגר ללא טיפול המשך&quot; ) &amp;&amp;
+ ISBLANK(TEXT(Close_Reason_Memo__c ))</errorConditionFormula>
+    <errorMessage>יש למלא סיבת סגירה</errorMessage>
+</ValidationRule>

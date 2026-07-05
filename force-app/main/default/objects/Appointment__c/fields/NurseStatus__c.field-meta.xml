@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NurseStatus__c</fullName>
+    <label>Nurse Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>לא נדרש טרום לפני הניתוח</fullName>
+                <default>false</default>
+                <label>לא נדרש טרום לפני הניתוח</label>
+            </value>
+            <value>
+                <fullName>נדרש לזמן טרום במרפאה</fullName>
+                <default>false</default>
+                <label>נדרש לזמן טרום במרפאה</label>
+            </value>
+            <value>
+                <fullName>זומן תור למרפאה</fullName>
+                <default>false</default>
+                <label>זומן תור למרפאה</label>
+            </value>
+            <value>
+                <fullName>סיום טיפול</fullName>
+                <default>false</default>
+                <label>סיום טיפול</label>
+            </value>
+            <value>
+                <fullName>חסרים מסמכים</fullName>
+                <default>false</default>
+                <label>חסרים מסמכים</label>
+            </value>
+            <value>
+                <fullName>אין מענה</fullName>
+                <default>false</default>
+                <label>אין מענה</label>
+            </value>
+            <value>
+                <fullName>נשלח לינק להעלאת מסמכים</fullName>
+                <default>false</default>
+                <label>נשלח לינק להעלאת מסמכים</label>
+            </value>
+            <value>
+                <fullName>טרם הושלם טיפול</fullName>
+                <default>false</default>
+                <label>טרם הושלם טיפול</label>
+            </value>
+            <value>
+                <fullName>הערכה מרחוק</fullName>
+                <default>false</default>
+                <label>לביצוע הערכה מרחוק</label>
+            </value>
+            <value>
+                <fullName>בוצע מרחוק</fullName>
+                <default>false</default>
+                <label>בוצע מרחוק</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

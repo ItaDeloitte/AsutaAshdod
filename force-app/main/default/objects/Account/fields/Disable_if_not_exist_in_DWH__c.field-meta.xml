@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_if_not_exist_in_DWH__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>הפוך ללא פעיל אם לא קיים בDWH</description>
+    <label>Disable if not exist in DWH</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

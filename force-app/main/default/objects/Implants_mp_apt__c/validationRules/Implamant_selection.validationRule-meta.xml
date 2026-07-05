@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Implamant_selection</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(ISBLANK(Implants__c) &amp;&amp; ISBLANK(Implants_mp__c) ,
+NOT(ISBLANK(Implants__c)) &amp;&amp; NOT(ISBLANK(Implants_mp__c))
+)</errorConditionFormula>
+    <errorMessage>יש לבחור משתל יחיד או מטבלת משתלים או מטבלת משתלים לפעולה רפואית</errorMessage>
+</ValidationRule>

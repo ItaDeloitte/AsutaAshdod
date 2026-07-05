@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QC_Source__c</fullName>
+    <defaultValue>&quot;פניה מהמוקד&quot;</defaultValue>
+    <label>QA Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>פניה מהמכון</fullName>
+                <default>false</default>
+                <label>פניה מהמכון</label>
+            </value>
+            <value>
+                <fullName>פניה מהמוקד</fullName>
+                <default>true</default>
+                <label>פניה מהמוקד</label>
+            </value>
+            <value>
+                <fullName>פניות הציבור</fullName>
+                <default>false</default>
+                <label>פניות הציבור</label>
+            </value>
+            <value>
+                <fullName>סקרים</fullName>
+                <default>false</default>
+                <label>סקרים</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>שיחת מנהל</fullName>
+                <default>false</default>
+                <label>שיחת מנהל</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

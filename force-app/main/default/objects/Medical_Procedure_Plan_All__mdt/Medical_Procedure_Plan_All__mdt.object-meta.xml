@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Replaces Medical_Procedure_Plan__mdt and Modality_Code_per_Site_Medical_plan__mdt metadatas</description>
+    <label>Medical Procedure Plan All</label>
+    <pluralLabel>Medical Procedure Plan All</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

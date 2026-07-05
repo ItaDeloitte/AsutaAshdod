@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X48H_SMS_Survey_Reminder__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Monday 2060089388</description>
+    <label>48H SMS Survey Reminder</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

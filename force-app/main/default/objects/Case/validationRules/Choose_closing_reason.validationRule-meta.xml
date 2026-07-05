@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Choose_closing_reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &quot;Closed&quot;),
+    ISPICKVAL(Reason_for_closing_hand_in_hand_case__c, &quot;&quot;),
+    $RecordType.DeveloperName = &quot;YadBeYad_Breast&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_closing_hand_in_hand_case__c</errorDisplayField>
+    <errorMessage>Please enter the reason for closing the hand-in-hand case</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wrong_Lead</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(    
+  NOT(RecordType.DeveloperName = &quot;Patient&quot;),
+  ISPICKVAL(Status, &quot;FALSE&quot;),     
+  ISBLANK(TEXT(LostReason__c))
+)</errorConditionFormula>
+    <errorDisplayField>LostReason__c</errorDisplayField>
+    <errorMessage>Lead-006: Must fill Lost Reason</errorMessage>
+</ValidationRule>

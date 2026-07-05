@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Conversation_with_the_Doctor</fullName>
+    <active>true</active>
+    <description>אם השדה Is a Conversation with Doctor Required = TRUE
+אז השדה &quot;Conversation with the Doctor&quot; יהיה שדה חובה.</description>
+    <errorConditionFormula>AND(
+ IsaConversationwithDoctorRequired__c = TRUE,
+ ISPICKVAL(Conversation_with_the_Doctor__c , &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Conversation_with_the_Doctor__c</errorDisplayField>
+    <errorMessage>השדה &quot;מצב שיחה עם רופא&quot; הינו שדה חובה.</errorMessage>
+</ValidationRule>

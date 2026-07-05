@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_relashion__c</fullName>
+    <label>Contact Relation</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>הורה</fullName>
+                <default>false</default>
+                <label>הורה</label>
+            </value>
+            <value>
+                <fullName>אפוטרופוס לא מאומת</fullName>
+                <default>false</default>
+                <label>אפוטרופוס לא מאומת</label>
+            </value>
+            <value>
+                <fullName>ילד</fullName>
+                <default>false</default>
+                <label>ילד</label>
+            </value>
+            <value>
+                <fullName>קרבה משפחתית</fullName>
+                <default>false</default>
+                <label>קרבה משפחתית</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

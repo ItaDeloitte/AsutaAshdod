@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>myteamsurveies</fullName>
+    <columns>NAME</columns>
+    <columns>Account_Survived__c</columns>
+    <columns>agent__c</columns>
+    <columns>grade__c</columns>
+    <columns>sending_date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>grade__c</field>
+        <operation>greaterThan</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>agent__c</field>
+        <operation>contains</operation>
+        <value>תמר משיח</value>
+    </filters>
+    <label>הסקרים על הנציגם שלי 😈😈😈</label>
+</ListView>

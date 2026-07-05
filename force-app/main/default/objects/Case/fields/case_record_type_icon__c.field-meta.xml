@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>case_record_type_icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  RecordType.DeveloperName = &quot;General_Info&quot; , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cvim&amp;oid=00DKI000000MTJU&amp;lastMod=1566209683000&quot;, &quot;&quot; , 30, 30), 
+IF( RecordType.DeveloperName = &quot;Assuta_360&quot; , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cqMa&amp;oid=00DKI000000MTJU&amp;lastMod=1564667712000&quot;, &quot;&quot; , 30, 30), 
+IF( RecordType.DeveloperName = &quot;Appointments&quot; , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cvkY&amp;oid=00DKI000000MTJU&amp;lastMod=1566202447000&quot;, &quot;&quot; , 30, 30), 
+IF( RecordType.DeveloperName = &quot;DOC_expert&quot; , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cvkd&amp;oid=00DKI000000MTJU&amp;lastMod=1566202510000&quot;, &quot;&quot; , 30, 30), 
+IF( RecordType.DeveloperName = &quot;Surgery&quot; , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cvki&amp;oid=00DKI000000MTJU&amp;lastMod=1566209350000&quot;, &quot;&quot; , 30, 30), 
+IF( RecordType.DeveloperName = &quot;Doctor_Case&quot; , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cvkx&amp;oid=00DKI000000MTJU&amp;lastMod=1566202648000&quot;, &quot;&quot; , 30, 30),
+&quot;&quot;))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Record Type Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Colonoscopy_Single_SMS__c</fullName>
+    <description>Checks if the colonoscopy medical procedure requires only 1 sms or 4. If the checkbox is true only one sms will be sent- the template called &quot;Non Colonscopy SMS Content&quot;</description>
+    <formula>IF(  Number_of_Colonoscopy_Links__c = 1, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Colonoscopy Single SMS?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

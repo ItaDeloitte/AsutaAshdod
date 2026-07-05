@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bear_sheva_zvar_harahem_Medical_Aid_Appointment</fullName>
+    <filterScope>Queue</filterScope>
+    <label>באר שבע – מרפאת צוואר הרחם</label>
+    <queue>bear_sheva_zvar_harahem</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

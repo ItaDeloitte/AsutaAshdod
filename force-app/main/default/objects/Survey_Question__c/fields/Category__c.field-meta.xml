@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>פרטי המטופל</fullName>
+                <default>false</default>
+                <label>פרטי המטופל</label>
+            </value>
+            <value>
+                <fullName>פרטי הניתוח</fullName>
+                <default>false</default>
+                <label>פרטי הניתוח</label>
+            </value>
+            <value>
+                <fullName>תחום קרדיולוגיה:</fullName>
+                <default>false</default>
+                <label>תחום קרדיולוגיה:</label>
+            </value>
+            <value>
+                <fullName>תחום מחלות ריאה:</fullName>
+                <default>false</default>
+                <label>תחום מחלות ריאה:</label>
+            </value>
+            <value>
+                <fullName>תחום כליות:</fullName>
+                <default>false</default>
+                <label>תחום כליות:</label>
+            </value>
+            <value>
+                <fullName>תחום מחלות ניורולוגיות:</fullName>
+                <default>false</default>
+                <label>תחום מחלות ניורולוגיות:</label>
+            </value>
+            <value>
+                <fullName>תחום מחלות אנדוקרינולוגיות:</fullName>
+                <default>false</default>
+                <label>תחום מחלות אנדוקרינולוגיות:</label>
+            </value>
+            <value>
+                <fullName>תחום מחלות המוטולוגיות:</fullName>
+                <default>false</default>
+                <label>תחום מחלות המוטולוגיות:</label>
+            </value>
+            <value>
+                <fullName>תחום שינה:</fullName>
+                <default>false</default>
+                <label>תחום שינה:</label>
+            </value>
+            <value>
+                <fullName>רגישויות, תרופות והרגלי צריכה:</fullName>
+                <default>false</default>
+                <label>רגישויות, תרופות והרגלי צריכה:</label>
+            </value>
+            <value>
+                <fullName>הרדמה בעבר:</fullName>
+                <default>false</default>
+                <label>הרדמה בעבר:</label>
+            </value>
+            <value>
+                <fullName>מצב תפקודי:</fullName>
+                <default>false</default>
+                <label>מצב תפקודי:</label>
+            </value>
+            <value>
+                <fullName>בדיקות וייעוצים:</fullName>
+                <default>false</default>
+                <label>בדיקות וייעוצים:</label>
+            </value>
+            <value>
+                <fullName>מוצא</fullName>
+                <default>false</default>
+                <label>מוצא</label>
+            </value>
+            <value>
+                <fullName>מצב משפחתי</fullName>
+                <default>false</default>
+                <label>מצב משפחתי</label>
+            </value>
+            <value>
+                <fullName>גובה ומשקל</fullName>
+                <default>false</default>
+                <label>גובה ומשקל</label>
+            </value>
+            <value>
+                <fullName>היסטוריה רפואית</fullName>
+                <default>false</default>
+                <label>היסטוריה רפואית</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

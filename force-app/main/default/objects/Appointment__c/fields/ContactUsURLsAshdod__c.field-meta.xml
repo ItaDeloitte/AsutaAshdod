@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactUsURLsAshdod__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;מהיום ניתן לפנות אלינו גם ב- &quot; &amp; HYPERLINK(&quot;https://api.whatsapp.com/send/?phone=972723399980&amp;text&amp;type=phone_number&amp;app_absent=0&quot;, &quot;Whatsapp&quot;)
+&amp; &quot; או &quot; &amp; HYPERLINK(&quot;https://www.assutaashdod.co.il/&quot;,&quot;בצ&apos;אט באתר&quot;)&amp;&quot;!&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contact Us URLs - Ashdod</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

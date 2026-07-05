@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medical_Info_Management_Source__c</fullName>
+    <label>Medical Info Management Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>אסותא</fullName>
+                <default>false</default>
+                <label>אסותא</label>
+            </value>
+            <value>
+                <fullName>מטופל</fullName>
+                <default>false</default>
+                <label>מטופל</label>
+            </value>
+            <value>
+                <fullName>אפוטרופוס</fullName>
+                <default>false</default>
+                <label>אפוטרופוס</label>
+            </value>
+            <value>
+                <fullName>צד שלישי</fullName>
+                <default>false</default>
+                <label>צד שלישי</label>
+            </value>
+            <value>
+                <fullName>בית חולים</fullName>
+                <default>false</default>
+                <label>בית חולים</label>
+            </value>
+            <value>
+                <fullName>רופא בקהילה</fullName>
+                <default>false</default>
+                <label>רופא בקהילה</label>
+            </value>
+            <value>
+                <fullName>חברה לאיסוף מידע- רפואון</fullName>
+                <default>false</default>
+                <label>חברה לאיסוף מידע- רפואון</label>
+            </value>
+            <value>
+                <fullName>חברה לאיסוף מידע- תיקל</fullName>
+                <default>false</default>
+                <label>חברה לאיסוף מידע- תיקל</label>
+            </value>
+            <value>
+                <fullName>חברה לאיסוף מידע- ערן מור</fullName>
+                <default>false</default>
+                <label>חברה לאיסוף מידע- ערן מור</label>
+            </value>
+            <value>
+                <fullName>חברה לאיסוף מידע- צ.ר מידע רפואי בע&quot;מ</fullName>
+                <default>false</default>
+                <label>חברה לאיסוף מידע- צ.ר מידע רפואי בע&quot;מ</label>
+            </value>
+            <value>
+                <fullName>חברה לאיסוף מידע- בזק</fullName>
+                <default>false</default>
+                <label>חברה לאיסוף מידע- בזק</label>
+            </value>
+            <value>
+                <fullName>בית דין לעבודה</fullName>
+                <default>false</default>
+                <label>בית דין לעבודה</label>
+            </value>
+            <value>
+                <fullName>משרד עורכי דין</fullName>
+                <default>false</default>
+                <label>משרד עורכי דין</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>רשם בריאטרי</fullName>
+                <default>false</default>
+                <label>רשם בריאטרי</label>
+            </value>
+            <value>
+                <fullName>אימג&apos;סטור</fullName>
+                <default>false</default>
+                <label>אימג&apos;סטור</label>
+            </value>
+            <value>
+                <fullName>חברה לאיסוף מידע- פתרונות</fullName>
+                <default>false</default>
+                <label>חברה לאיסוף מידע- פתרונות</label>
+            </value>
+            <value>
+                <fullName>ביטוח לאומי</fullName>
+                <default>false</default>
+                <label>ביטוח לאומי</label>
+            </value>
+            <value>
+                <fullName>ארכיברים</fullName>
+                <default>false</default>
+                <label>ארכיברים</label>
+            </value>
+            <value>
+                <fullName>DATABANK</fullName>
+                <default>false</default>
+                <label>DATABANK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

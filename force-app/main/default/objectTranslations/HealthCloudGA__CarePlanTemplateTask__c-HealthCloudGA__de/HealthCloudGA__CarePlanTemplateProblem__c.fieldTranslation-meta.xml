@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Problem der Versorgungsplanvorlage</label>
+    <name>HealthCloudGA__CarePlanTemplateProblem__c</name>
+    <relationshipLabel>Versorgungsplanvorlagen-Aufgaben</relationshipLabel>
+</CustomFieldTranslation>

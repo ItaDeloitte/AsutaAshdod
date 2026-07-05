@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Patient_Account__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>.שם המטופל
+ניתן לבחור רק חשבון מסוג Person account</description>
+    <inlineHelpText>שם המטופל</inlineHelpText>
+    <label>Patient Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>יש להזין חשבון מטופל בלבד</errorMessage>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Person Account, Person Account Not Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Appointments</relationshipLabel>
+    <relationshipName>Appointments</relationshipName>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

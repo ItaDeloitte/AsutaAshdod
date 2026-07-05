@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>help_field_experts_360__c</fullName>
+    <description>שדה עזר לייעוץ שנכנס למטופל 360- לשימוש בפרוסס בילדר</description>
+    <formula>ISPICKVAL( Status , &quot;ממתין לקביעת פגישה לרופא&quot;) || ISPICKVAL( Status , &quot;ממתין לתיאום פגישה לייעוץ לאחר ביופסיה&quot;) ||
+ISPICKVAL( Status , &quot;ממתין לתיאום פגישה לייעוץ לאחר ניתוח&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Help Field Experts 360</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

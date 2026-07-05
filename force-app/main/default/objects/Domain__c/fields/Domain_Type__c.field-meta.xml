@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Domain_Type__c</fullName>
+    <description>סוג התחום הרפואי</description>
+    <label>Domain Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ambulatory</fullName>
+                <default>false</default>
+                <label>אמבולטורי</label>
+            </value>
+            <value>
+                <fullName>Surgical</fullName>
+                <default>false</default>
+                <label>ניתוחי</label>
+            </value>
+            <value>
+                <fullName>Ambulatory And Surgical</fullName>
+                <default>false</default>
+                <label>גם וגם</label>
+            </value>
+            <value>
+                <fullName>Not Relevant</fullName>
+                <default>false</default>
+                <label>לא רלוונטי</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

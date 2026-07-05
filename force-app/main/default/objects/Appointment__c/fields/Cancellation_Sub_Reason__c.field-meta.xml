@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Sub_Reason__c</fullName>
+    <label>Cancellation Sub Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Surgery_Canacel_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ECG</fullName>
+                <default>false</default>
+                <label>ECG</label>
+            </value>
+            <value>
+                <fullName>חום</fullName>
+                <default>false</default>
+                <label>חום</label>
+            </value>
+            <value>
+                <fullName>צינון</fullName>
+                <default>false</default>
+                <label>צינון</label>
+            </value>
+            <value>
+                <fullName>שיעול</fullName>
+                <default>false</default>
+                <label>שיעול</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>שינוי במצב הרפואי</controllingFieldValue>
+            <controllingFieldValue>מדדים לא תקינים</controllingFieldValue>
+            <controllingFieldValue>מטופל מדווח על חולי</controllingFieldValue>
+            <controllingFieldValue>סוכר גבוה</controllingFieldValue>
+            <controllingFieldValue>BMI</controllingFieldValue>
+            <controllingFieldValue>נדרש יעוץ מומחה</controllingFieldValue>
+            <controllingFieldValue>זיהום</controllingFieldValue>
+            <controllingFieldValue>אין צורך בניתוח</controllingFieldValue>
+            <controllingFieldValue>קורונה</controllingFieldValue>
+            <valueName>ECG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שינוי במצב הרפואי</controllingFieldValue>
+            <controllingFieldValue>מדדים לא תקינים</controllingFieldValue>
+            <controllingFieldValue>מטופל מדווח על חולי</controllingFieldValue>
+            <controllingFieldValue>סוכר גבוה</controllingFieldValue>
+            <controllingFieldValue>BMI</controllingFieldValue>
+            <controllingFieldValue>נדרש יעוץ מומחה</controllingFieldValue>
+            <controllingFieldValue>זיהום</controllingFieldValue>
+            <controllingFieldValue>אין צורך בניתוח</controllingFieldValue>
+            <controllingFieldValue>קורונה</controllingFieldValue>
+            <valueName>חום</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שינוי במצב הרפואי</controllingFieldValue>
+            <controllingFieldValue>מדדים לא תקינים</controllingFieldValue>
+            <controllingFieldValue>מטופל מדווח על חולי</controllingFieldValue>
+            <controllingFieldValue>סוכר גבוה</controllingFieldValue>
+            <controllingFieldValue>BMI</controllingFieldValue>
+            <controllingFieldValue>נדרש יעוץ מומחה</controllingFieldValue>
+            <controllingFieldValue>זיהום</controllingFieldValue>
+            <controllingFieldValue>אין צורך בניתוח</controllingFieldValue>
+            <controllingFieldValue>קורונה</controllingFieldValue>
+            <valueName>צינון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שינוי במצב הרפואי</controllingFieldValue>
+            <controllingFieldValue>מדדים לא תקינים</controllingFieldValue>
+            <controllingFieldValue>מטופל מדווח על חולי</controllingFieldValue>
+            <controllingFieldValue>סוכר גבוה</controllingFieldValue>
+            <controllingFieldValue>BMI</controllingFieldValue>
+            <controllingFieldValue>נדרש יעוץ מומחה</controllingFieldValue>
+            <controllingFieldValue>זיהום</controllingFieldValue>
+            <controllingFieldValue>אין צורך בניתוח</controllingFieldValue>
+            <controllingFieldValue>קורונה</controllingFieldValue>
+            <valueName>שיעול</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

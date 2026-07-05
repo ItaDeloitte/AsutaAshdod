@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sensitive_guidelines_form_is_required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>נדרש טופס הנחיות רגישות - כן / לא (צ&apos;קבוקס) יסומן בפעולות רפואוית הקשורות לרגישויות המטופל (למשל רגיש ליוד, אסמטי וכדומה). -&gt; --&gt; ההנחיות יבוצעו במסגרת הקיט הדיגיטלי. בהתאם לתסריט שיחה יישלח הקיט הרלוונטי עם טופס ההנחיות הספציפיות למטופל (שולחים את התשובות ל KMS ומקבלים את טופס ההנחיות המתאים) --&gt; לאור השורה מטה לא בטוח שנצטרך השדה.</description>
+    <label>Sensitive guidelines form is required</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

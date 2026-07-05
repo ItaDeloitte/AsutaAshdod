@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AvailabilityExceptions</fullName>
+    <inlineHelpText>הימים הלא-סטנדרטיים שבהם מוסד זה אינו פעיל, כגון ימי חופש אזרחיים וימי חופש במקרה חירום. לדוגמה, אם המוסד שלך לא פועל בימי בחירות, תוכל לציין זאת כאן, אך אין צורך לציין סופי שבוע.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View26</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 AND 6)</booleanFilter>
+    <columns>Patient_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>formtitan_experts_survey_link__c</columns>
+    <columns>doc_survey_expert_send__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Appointment_Date__c</columns>
+    <columns>appointment_hour__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>patient_been_in_meeting__c</columns>
+    <columns>reason__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Experts</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>WaitingForAppointment,ממתין לאישור,ממתין לאישור המטופל על קיום הפגישה</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>מילר אהוד,ולד אוריאל,פפו יצחק,מחאג&apos;נה אחמד,חן דוד,חוסאם מאדי,גינדין יעקב,רמון יעקב</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>contains</operation>
+        <value>ייעוץ רופא-מרכז מומחים,ייעוץ רופא SAME DAY-מרכז מומחים</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/1/2022</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>YESTERDAY</value>
+    </filters>
+    <label>עותק של הסקרים על היעוצים כולם - סימיי</label>
+</ListView>

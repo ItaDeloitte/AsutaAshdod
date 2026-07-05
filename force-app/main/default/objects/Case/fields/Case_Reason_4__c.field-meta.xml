@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason_4__c</fullName>
+    <label>Case Reason 4</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>צד שגוי</fullName>
+                <default>false</default>
+                <label>צד שגוי</label>
+            </value>
+            <value>
+                <fullName>עדכון ידני ללא עדכון בתיק קליני</fullName>
+                <default>false</default>
+                <label>עדכון ידני ללא עדכון בתיק קליני</label>
+            </value>
+            <value>
+                <fullName>תיעוד אבחנות לא מלא/לא תקין</fullName>
+                <default>false</default>
+                <label>תיעוד אבחנות לא מלא/לא תקין</label>
+            </value>
+            <value>
+                <fullName>תיעוד פעולה לא מלא/לא תקין</fullName>
+                <default>false</default>
+                <label>תיעוד פעולה לא מלא/לא תקין</label>
+            </value>
+            <value>
+                <fullName>תאריך שחרור לא תקין</fullName>
+                <default>false</default>
+                <label>תאריך שחרור לא תקין</label>
+            </value>
+            <value>
+                <fullName>חסר טופס</fullName>
+                <default>false</default>
+                <label>חסר טופס</label>
+            </value>
+            <value>
+                <fullName>תאריך שחרור ידני</fullName>
+                <default>false</default>
+                <label>תאריך שחרור ידני</label>
+            </value>
+            <value>
+                <fullName>חסר תאריך קבלה/ ניתוח/ שחרור</fullName>
+                <default>false</default>
+                <label>חסר תאריך קבלה/ ניתוח/ שחרור</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד מקרים מיוחדים באשפוז</fullName>
+                <default>false</default>
+                <label>פער בתיעוד מקרים מיוחדים באשפוז</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד מהלך האשפוז</fullName>
+                <default>false</default>
+                <label>פער בתיעוד מהלך האשפוז</label>
+            </value>
+            <value>
+                <fullName>חסר צד</fullName>
+                <default>false</default>
+                <label>חסר צד</label>
+            </value>
+            <value>
+                <fullName>תן המלצות בשחרור לתרופה עבורה רשומה רגישות בתיק המטופל</fullName>
+                <default>false</default>
+                <label>תן המלצות בשחרור לתרופה עבורה רשומה רגישות בתיק המטופל</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

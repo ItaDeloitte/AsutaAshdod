@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>appointments_surg</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>IDNumber__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Site__c</columns>
+    <columns>Courses_Icon__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Doctor_Account__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>Administrative_Status__c</columns>
+    <columns>processing_status__c</columns>
+    <columns>status_from_referral_website__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>בטיפול אדמיניסטרטיבי,וידוא הגעה לפגישה,ממתין להתחייבות</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>processing_status__c</field>
+        <operation>equals</operation>
+        <value>ממתין לטיפול נציג,בטיפול נציג</value>
+    </filters>
+    <label>עותק של הפגישות הניתוחיות בבעלותי</label>
+</ListView>

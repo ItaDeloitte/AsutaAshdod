@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TASKS</fullName>
+    <active>true</active>
+    <description>משימות</description>
+    <label>TASKS</label>
+    <picklistValues>
+        <picklist>CALLBACK_status__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CallResult__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Type__c</picklist>
+        <values>
+            <fullName>Incoming call %28Inside%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incoming call %28OutSide%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outcoming call %28Inside%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outcoming call %28Outside%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_status__c</picklist>
+        <values>
+            <fullName>No_Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reply</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Caller_Language__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_360_Status__c</picklist>
+        <values>
+            <fullName>הועבר למחלקה אונקולוגית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התקבלו תוצאות ביופסיה חיובית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התקבלו תוצאות ביופסיה לא רלוונטי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התקבלו תוצאות ביופסיה שלילית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התקשרות מול רופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממתין למועד בדיקת MRI%2FPET CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממתין למועד ביופסיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממתין לקביעת ביופסיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממתין לקביעת תור ל-MRI%2FPET CT%2Fמחלקה אונקולוגית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממתין לתוצאות ביופסיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממתין לתוצאת בדיקת MRI%2FPET CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נדרשת המלצה%2Fקביעת תור לכירורג שד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נקבע תור לניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סגירת אירוע אוטומטית</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Field2__c</picklist>
+        <values>
+            <fullName>זימון תורים למכונים רופאים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מידע כללי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ניתוחים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופאים מומחים</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Field4__c</picklist>
+        <values>
+            <fullName>בירור אודות תור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בירור תוצאות בדיקה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בקשה להפקת התחייבות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הסכמים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון תור חדש</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זימון תור לרופא מומחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול אנדמניסטרטיבי טרום הניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול אנדמניסטרטיבי לאחר הניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כתובות ודרכי הגעה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מטופלים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון תור לרופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עדכון תור קיים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שעות פעילות מכונים ומרפאות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תשלומים שטרם שולמו</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HealthCloudGA__Category__c</picklist>
+        <values>
+            <fullName>Counselling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagnosis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exercise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vaccination</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HealthCloudGA__Conditions_Status__c</picklist>
+        <values>
+            <fullName>Asymptomatic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asymptomatic - Declined to Participate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluated - No Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Symptomatic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Symptomatic - Declined to Participate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HealthCloudGA__Contract_Tracing_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incoming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HealthCloudGA__Gender__c</picklist>
+        <values>
+            <fullName>Decline to Specify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HealthCloudGA__Monitored_at_Home__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HealthCloudGA__TaskType__c</picklist>
+        <values>
+            <fullName>Administrative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncategorized</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HealthCloudGA__Testing_Status__c</picklist>
+        <values>
+            <fullName>Negative Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Results Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Testing Recommended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Waiting on someone else</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>call_decision__c</picklist>
+        <values>
+            <fullName>טיפול המשך - אונקולוגי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול המשך - ניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טיפול המשך אחרי ניתוח - ייעוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יש למטופלת רופא כירורג</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מטופלת לא מעוניינת בהמשך תהליך</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מטופלת מעוניינת בהמלצה על כירורג</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מטופלת מעוניינת לחשוב%2Fלהמתין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סיום טיפול</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא לא מעוניין בהמשך תהליך</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא מבקש לתאם פגישה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא מודיע עצמאית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא מעוניין בהמשך תהליך</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>call_target__c</picklist>
+        <values>
+            <fullName>אישור הגעה לפגישה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>המלצה על כירורג שד</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נדרש המשך טיפול</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קביעת תור ל-MRI%2FPET CT%2Fמחלקה אונקולוגית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קביעת תור למחלקה אונקולוגית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קביעת תור לניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא ממתין לתוצאת ביופסיה מלאה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא קיבל תוצאת ביופסיה חיובית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>רופא קיבל תוצאת תוצאת ביופסיה שלילית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה למטופלת לאחר ביופסיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה למטופלת לקביעת תור לביופסיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה למטופלת לקביעת תור לייעוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה למטופלת על ביופסיה חיובית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה למטופלת על ביופסיה שלילית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה לרופא לאחר ייעוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה לרופא לאחר שחרור מניתוח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה לרופא לאחר תוצאות ביופסיה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחה ראשונית לרופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שיחת מעקב למטופלת באונקולוגיה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

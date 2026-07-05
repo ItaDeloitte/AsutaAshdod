@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accession_Number__c</fullName>
+    <description>שדה אשר יתמלא במזהה זימון התור במערכת המקור. במידה ותואם תור ואין ערך בשדה - מעיד על בעיה בממשק./מערכת הזימון</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>מזהה ייחודי עבור התור במערכת הזימון</inlineHelpText>
+    <label>Accession Number</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

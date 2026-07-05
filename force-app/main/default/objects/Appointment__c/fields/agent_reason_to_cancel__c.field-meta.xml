@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agent_reason_to_cancel__c</fullName>
+    <label>Agent Reason To Cancel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מטופל חולה</fullName>
+                <default>false</default>
+                <label>מטופל חולה</label>
+            </value>
+            <value>
+                <fullName>מכשיר לא תקין</fullName>
+                <default>false</default>
+                <label>מכשיר לא תקין</label>
+            </value>
+            <value>
+                <fullName>רופא\טכנאי לא הגיע</fullName>
+                <default>false</default>
+                <label>רופא\טכנאי לא הגיע</label>
+            </value>
+            <value>
+                <fullName>חסרה התחייבות</fullName>
+                <default>false</default>
+                <label>חסרה התחייבות</label>
+            </value>
+            <value>
+                <fullName>בוצע במקום אחר</fullName>
+                <default>false</default>
+                <label>בוצע במקום אחר</label>
+            </value>
+            <value>
+                <fullName>בוטל ע&quot;י נציג</fullName>
+                <default>false</default>
+                <label>בוטל ע&quot;י נציג</label>
+            </value>
+            <value>
+                <fullName>בוטל ע&quot;י רופא</fullName>
+                <default>false</default>
+                <label>בוטל ע&quot;י רופא</label>
+            </value>
+            <value>
+                <fullName>בוטל ע&quot;י חדר ניתוח</fullName>
+                <default>false</default>
+                <label>בוטל ע&quot;י חדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>תור נדחה</fullName>
+                <default>false</default>
+                <label>תור נדחה</label>
+            </value>
+            <value>
+                <fullName>ביטול המטופל</fullName>
+                <default>false</default>
+                <label>ביטול המטופל</label>
+            </value>
+            <value>
+                <fullName>לא ביצע הכנה לבדיקה</fullName>
+                <default>false</default>
+                <label>לא ביצע הכנה לבדיקה</label>
+            </value>
+            <value>
+                <fullName>נבדק לא הגיע</fullName>
+                <default>false</default>
+                <label>נבדק לא הגיע</label>
+            </value>
+            <value>
+                <fullName>אין הפניה לבדיקה</fullName>
+                <default>false</default>
+                <label>אין הפניה לבדיקה</label>
+            </value>
+            <value>
+                <fullName>ללא אפוטרופוס</fullName>
+                <default>false</default>
+                <label>ללא אפוטרופוס</label>
+            </value>
+            <value>
+                <fullName>מטופל/ת מסרב/ת לעשות את הבדיקה</fullName>
+                <default>false</default>
+                <label>מטופל/ת מסרב/ת לעשות את הבדיקה</label>
+            </value>
+            <value>
+                <fullName>בדיקה לא אושרה</fullName>
+                <default>false</default>
+                <label>בדיקה לא אושרה</label>
+            </value>
+            <value>
+                <fullName>מטופל נפטר</fullName>
+                <default>false</default>
+                <label>מטופל נפטר</label>
+            </value>
+            <value>
+                <fullName>נציג לא קבע תור בצורה תקינה</fullName>
+                <default>false</default>
+                <label>נציג לא קבע תור בצורה תקינה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprovingUser__c</fullName>
+    <description>שדה המשמש פניות מסוג נרמ&quot;ר שנושא הפנייה הוא בקשה לביעור</description>
+    <label>Approving User</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ליאורה יונה</fullName>
+                <default>false</default>
+                <label>ליאורה יונה</label>
+            </value>
+            <value>
+                <fullName>יקטרינה רביאקין</fullName>
+                <default>false</default>
+                <label>יקטרינה רביאקין</label>
+            </value>
+            <value>
+                <fullName>אורטל סולומון</fullName>
+                <default>false</default>
+                <label>אורטל סולומון</label>
+            </value>
+            <value>
+                <fullName>דוד דולב</fullName>
+                <default>false</default>
+                <label>דוד דולב</label>
+            </value>
+            <value>
+                <fullName>רוול בלורי</fullName>
+                <default>false</default>
+                <label>רוול בלורי</label>
+            </value>
+            <value>
+                <fullName>טטיאנה דוביז&apos;נסקי</fullName>
+                <default>false</default>
+                <label>טטיאנה דוביז&apos;נסקי</label>
+            </value>
+            <value>
+                <fullName>יקטרינה סומוב</fullName>
+                <default>false</default>
+                <label>יקטרינה סומוב</label>
+            </value>
+            <value>
+                <fullName>חופית בר יוסף</fullName>
+                <default>false</default>
+                <label>חופית בר יוסף</label>
+            </value>
+            <value>
+                <fullName>רגינה פיינליייב פודגור</fullName>
+                <default>false</default>
+                <label>רגינה פיינליייב פודגור</label>
+            </value>
+            <value>
+                <fullName>רינת זינזיח דדון</fullName>
+                <default>false</default>
+                <label>רינת זינזיח דדון</label>
+            </value>
+            <value>
+                <fullName>ילנה לויצקי</fullName>
+                <default>false</default>
+                <label>ילנה לויצקי</label>
+            </value>
+            <value>
+                <fullName>רגינה רבקה ויטנר</fullName>
+                <default>false</default>
+                <label>רגינה רבקה ויטנר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

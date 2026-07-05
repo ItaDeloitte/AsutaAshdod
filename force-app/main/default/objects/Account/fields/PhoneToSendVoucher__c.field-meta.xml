@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhoneToSendVoucher__c</fullName>
+    <description>לצורך שליחת וואוצ&apos;רים גם בווצאפ</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Phone Number To Send Voucher</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Phone</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>OBJECT_ID</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Survey__c</columns>
+    <columns>Fill_Percentage__c</columns>
+    <columns>IsSent__c</columns>
+    <columns>SendTime__c</columns>
+    <columns>visit_date__c</columns>
+    <columns>is_sms_sent__c</columns>
+    <columns>Site__c</columns>
+    <columns>Survey_link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Survey__c</field>
+        <operation>equals</operation>
+        <value>קבלה ויעוץ לנבדקת לפני דיקור מי שפיר</value>
+    </filters>
+    <label>All</label>
+</ListView>

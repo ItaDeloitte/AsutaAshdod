@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountMailingIsDifferent__c</fullName>
+    <description>יסומן במידה ומייל טלפון או אישור דיוור המטופל לא זהה להזדמנות. לצורך הצגת טקסט בעמוד</description>
+    <formula>NOT(
+ Account.Phone =  Phone__c ||
+ TEXT(Account.Mailing_approval__c) =  TEXT(ApprovesMailing__c) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>AccountMailingIsDifferent</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

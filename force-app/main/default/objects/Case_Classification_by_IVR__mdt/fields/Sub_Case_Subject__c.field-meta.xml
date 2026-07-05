@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Case_Subject__c</fullName>
+    <description>תת נושא ה-CASE.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Sub Case Subject</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>זימון תור חדש</fullName>
+                <default>true</default>
+                <label>זימון תור חדש</label>
+            </value>
+            <value>
+                <fullName>שינוי תור קיים</fullName>
+                <default>false</default>
+                <label>שינוי תור קיים</label>
+            </value>
+            <value>
+                <fullName>ביטול תור קיים</fullName>
+                <default>false</default>
+                <label>ביטול תור קיים</label>
+            </value>
+            <value>
+                <fullName>בירור מועד ושעת התור</fullName>
+                <default>false</default>
+                <label>בירור מועד ושעת התור</label>
+            </value>
+            <value>
+                <fullName>בירור לגבי הנחיות לבדיקה</fullName>
+                <default>false</default>
+                <label>בירור לגבי הנחיות לבדיקה</label>
+            </value>
+            <value>
+                <fullName>כתובות ודרכי הגעה</fullName>
+                <default>false</default>
+                <label>כתובות ודרכי הגעה</label>
+            </value>
+            <value>
+                <fullName>ברור סטטוס תוצאות בדיקה</fullName>
+                <default>false</default>
+                <label>ברור סטטוס תוצאות בדיקה</label>
+            </value>
+            <value>
+                <fullName>תוצאות לא מופיעות באתר</fullName>
+                <default>false</default>
+                <label>תוצאות לא מופיעות באתר</label>
+            </value>
+            <value>
+                <fullName>זימון תור לרופא מומחה</fullName>
+                <default>false</default>
+                <label>זימון תור לרופא מומחה</label>
+            </value>
+            <value>
+                <fullName>המלצה על רופא מומחה</fullName>
+                <default>false</default>
+                <label>המלצה על רופא מומחה</label>
+            </value>
+            <value>
+                <fullName>שינוי מועד התור</fullName>
+                <default>false</default>
+                <label>שינוי מועד התור</label>
+            </value>
+            <value>
+                <fullName>הפקת התחייבות</fullName>
+                <default>false</default>
+                <label>הפקת התחייבות</label>
+            </value>
+            <value>
+                <fullName>בירור השתתפות עצמית</fullName>
+                <default>false</default>
+                <label>בירור השתתפות עצמית</label>
+            </value>
+            <value>
+                <fullName>הנחיות לקראת ניתוח</fullName>
+                <default>false</default>
+                <label>הנחיות לקראת ניתוח</label>
+            </value>
+            <value>
+                <fullName>דרכי הגעה</fullName>
+                <default>false</default>
+                <label>דרכי הגעה</label>
+            </value>
+            <value>
+                <fullName>מידע על הניתוח</fullName>
+                <default>false</default>
+                <label>מידע על הניתוח</label>
+            </value>
+            <value>
+                <fullName>Surgery_Report</fullName>
+                <default>false</default>
+                <label>בקשה לדו&quot;ח ניתוח</label>
+            </value>
+            <value>
+                <fullName>בקשה להתחשבנות לאחר ניתוח</fullName>
+                <default>false</default>
+                <label>בקשה להתחשבנות לאחר ניתוח</label>
+            </value>
+            <value>
+                <fullName>ניידת MRI</fullName>
+                <default>false</default>
+                <label>ניידת MRI</label>
+            </value>
+            <value>
+                <fullName>אסותא באר שבע</fullName>
+                <default>false</default>
+                <label>אסותא באר שבע</label>
+            </value>
+            <value>
+                <fullName>אסותא השלום</fullName>
+                <default>false</default>
+                <label>אסותא השלום</label>
+            </value>
+            <value>
+                <fullName>אסותא חיפה</fullName>
+                <default>false</default>
+                <label>אסותא חיפה</label>
+            </value>
+            <value>
+                <fullName>אסותא אשדוד כלניות</fullName>
+                <default>false</default>
+                <label>אסותא אשדוד כלניות</label>
+            </value>
+            <value>
+                <fullName>אסותא רמת החייל</fullName>
+                <default>false</default>
+                <label>אסותא רמת החייל</label>
+            </value>
+            <value>
+                <fullName>אסותא רעננה</fullName>
+                <default>false</default>
+                <label>אסותא רעננה</label>
+            </value>
+            <value>
+                <fullName>University_Hospital</fullName>
+                <default>false</default>
+                <label>בית החולים האוניברסיטאי אסותא אשדוד ע&quot;ש סמסון</label>
+            </value>
+            <value>
+                <fullName>Ogen_Tlv</fullName>
+                <default>false</default>
+                <label>בניין העוגן - ת&quot;א</label>
+            </value>
+            <value>
+                <fullName>בקשה לזירוז פענוח</fullName>
+                <default>false</default>
+                <label>בקשה לזירוז פענוח</label>
+            </value>
+            <value>
+                <fullName>בקשה לתיקון פיענוח</fullName>
+                <default>false</default>
+                <label>בקשה לתיקון פיענוח</label>
+            </value>
+            <value>
+                <fullName>ביטול ניתוח</fullName>
+                <default>false</default>
+                <label>ביטול ניתוח</label>
+            </value>
+            <value>
+                <fullName>Assuta_Rishon</fullName>
+                <default>false</default>
+                <label>אסותא ראשל&quot;צ</label>
+            </value>
+            <value>
+                <fullName>מערכת קודמת</fullName>
+                <default>false</default>
+                <label>מערכת קודמת</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

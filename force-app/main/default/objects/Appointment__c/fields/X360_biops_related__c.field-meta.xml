@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X360_biops_related__c</fullName>
+    <description>שדה עזר לפרוסס בילדר</description>
+    <formula>OR( Medical_Procedure__r.Procedure_Code__c = &quot;760922&quot;, Medical_Procedure__r.Procedure_Code__c = &quot;191055&quot;, Medical_Procedure__r.Procedure_Code__c = &quot;76097&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>X360 Biops Related?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

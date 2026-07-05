@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Minor__c</fullName>
+    <description>בודק האם המטופל/ת מתחת לגיל 18, משמש לתהליך זיהוי של אסותא</description>
+    <formula>IF((TODAY()- PersonBirthdate )/365&lt;18, TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Minor?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

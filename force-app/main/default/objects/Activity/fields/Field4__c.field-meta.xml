@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field4__c</fullName>
+    <inlineHelpText>בחר את נושא הפנייה</inlineHelpText>
+    <label>Case Subject</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Field2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>case_subject</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>זימון תורים למכונים רופאים</controllingFieldValue>
+            <valueName>זימון תור חדש</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>זימון תורים למכונים רופאים</controllingFieldValue>
+            <valueName>בירור אודות תור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>זימון תורים למכונים רופאים</controllingFieldValue>
+            <valueName>בירור תוצאות בדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>רופאים מומחים</controllingFieldValue>
+            <valueName>זימון תור לרופא מומחה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ניתוחים</controllingFieldValue>
+            <valueName>בקשה להפקת התחייבות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע כללי</controllingFieldValue>
+            <valueName>כתובות ודרכי הגעה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מידע כללי</controllingFieldValue>
+            <valueName>שעות פעילות מכונים ומרפאות</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

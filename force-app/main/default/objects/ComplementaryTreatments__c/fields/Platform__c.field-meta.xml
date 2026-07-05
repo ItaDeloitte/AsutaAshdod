@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Platform__c</fullName>
+    <label>Platform</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lobby – Pre Surgery</fullName>
+                <default>false</default>
+                <label>Lobby – Pre Surgery</label>
+            </value>
+            <value>
+                <fullName>Lobby – Post Surgery</fullName>
+                <default>false</default>
+                <label>Lobby – Post Surgery</label>
+            </value>
+            <value>
+                <fullName>Order Summary Screen</fullName>
+                <default>false</default>
+                <label>Order Summary Screen</label>
+            </value>
+            <value>
+                <fullName>Personal Area: Dashboard</fullName>
+                <default>false</default>
+                <label>Personal Area: Dashboard</label>
+            </value>
+            <value>
+                <fullName>Personal Area: Results &amp; Summaries</fullName>
+                <default>false</default>
+                <label>Personal Area: Results &amp; Summaries</label>
+            </value>
+            <value>
+                <fullName>Personal Area: Upcoming Surgery</fullName>
+                <default>false</default>
+                <label>Personal Area: Upcoming Surgery</label>
+            </value>
+            <value>
+                <fullName>Secretary Dashboard</fullName>
+                <default>false</default>
+                <label>Secretary Dashboard</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

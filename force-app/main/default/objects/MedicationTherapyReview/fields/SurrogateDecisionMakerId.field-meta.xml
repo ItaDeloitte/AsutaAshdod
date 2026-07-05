@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SurrogateDecisionMakerId</fullName>
+    <inlineHelpText>הנציג המורשה שמשתתף בבדיקת הטיפול התרופתי ומקבל החלטות הקשורות לטיפול מטעם מטופל עם ליקוי קוגניטיבי.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

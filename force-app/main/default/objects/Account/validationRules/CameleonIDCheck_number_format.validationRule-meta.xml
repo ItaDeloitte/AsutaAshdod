@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CameleonIDCheck_number_format</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISNUMBER( CameleonID__c) &amp;&amp;
+!ISBLANK(CameleonID__c)&amp;&amp;
+RecordType.DeveloperName == &apos;PersonAccount&apos;</errorConditionFormula>
+    <errorDisplayField>CameleonID__c</errorDisplayField>
+    <errorMessage>נא לוודא שמספר זיהוי של קמיליון מכיל מספרים בלבד!</errorMessage>
+</ValidationRule>

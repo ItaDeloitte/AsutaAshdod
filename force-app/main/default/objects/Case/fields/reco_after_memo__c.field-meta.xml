@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>reco_after_memo__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>לא בשימוש</description>
+    <label>Reco After Memo</label>
+    <referenceTo>Recommendations_after_exam__c</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

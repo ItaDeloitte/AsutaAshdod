@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Urgency_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+AND(IsUrgent__c = TRUE ,TEXT( UrgentReason__c)= NULL,  NOT(CreatedBy.Alias = &apos;ssis&apos;))</errorConditionFormula>
+    <errorMessage>נא לציין את סיבת הדחיפות של הפגישה</errorMessage>
+</ValidationRule>

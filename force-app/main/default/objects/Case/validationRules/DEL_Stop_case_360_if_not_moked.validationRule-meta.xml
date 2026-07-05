@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEL_Stop_case_360_if_not_moked</fullName>
+    <active>false</active>
+    <description>לא ניתן לפתוח פניית 360 עבור מטופלות שלא מטופלות במוקד</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Assuta_360&quot; &amp;&amp; 
+CreatedBy.LastName = &quot;Ensemble&quot; &amp;&amp;
+rec_to_modify_case__r.who_treat__c &lt;&gt; &quot;מוקד&quot; &amp;&amp;
+$User.LastName = &quot;Ensemble&quot;</errorConditionFormula>
+    <errorMessage>לא ניתן לפתוח פניית 360 עבור מטופלות שלא מטופלות במוקד</errorMessage>
+</ValidationRule>

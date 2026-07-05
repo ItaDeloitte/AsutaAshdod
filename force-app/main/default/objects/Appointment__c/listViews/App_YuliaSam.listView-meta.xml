@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>App_YuliaSam</fullName>
+    <columns>NAME</columns>
+    <columns>Courses_Icon__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Icon_payer__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Referral_Status_Maccabi__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Agreement_with_assuta__c</columns>
+    <columns>Case__c</columns>
+    <columns>domain2__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>WaitingForAppointment</value>
+    </filters>
+    <filters>
+        <field>LAST_UPDATE</field>
+        <operation>equals</operation>
+        <value>12/10/2020 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>UPDATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>יוליה סמניחין</value>
+    </filters>
+    <label>ניתוחים - עודכן ע&quot;י יוליה סמיחין</label>
+</ListView>

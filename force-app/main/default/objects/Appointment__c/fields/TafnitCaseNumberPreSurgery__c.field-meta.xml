@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TafnitCaseNumberPreSurgery__c</fullName>
+    <description>במסגרת תהליך שקיים היום מול תפנית שבו נפתח תיק טרום טרום על פי השאלון מופק מספר תיק – התוספת היא ש-ENSAMBLE יחזיר את מספר התיק שהוא פתח. וצריך שדה בשביל זה. השדה הזה שונה ממספר התיק שקיים היום.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Tafnit case number Pre surgery</label>
+    <length>30</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

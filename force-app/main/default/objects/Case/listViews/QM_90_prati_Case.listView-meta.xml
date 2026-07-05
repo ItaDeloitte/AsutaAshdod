@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QM_90_prati_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>זיכויים שירותים פרטיים</label>
+    <queue>QM_90_prati</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

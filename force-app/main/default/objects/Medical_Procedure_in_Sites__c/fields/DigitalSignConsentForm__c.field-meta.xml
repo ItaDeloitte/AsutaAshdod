@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DigitalSignConsentForm__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>שדה זה מצביע על טופס לחתימה דיגיטלית מאובייקט &quot;טופס הסכמה&quot; עבור הפרוצדורה הרפואית באתר
+הערה - טופס הרדמה לפרוצדורות ניתוחיות נוצר כבר אוטומטית באפקס לפי הרקורד טייפ</description>
+    <inlineHelpText>שדה זה מצביע על טופס לחתימה דיגיטלית מאובייקט &quot;טופס הסכמה&quot; עבור הפרוצדורה הרפואית באתר
+הערה - טופס הרדמה לפרוצדורות ניתוחיות נוצר כבר אוטומטית באפקס לפי הרקורד טייפ</inlineHelpText>
+    <label>DigitalSignConsentForm</label>
+    <referenceTo>ConsentForm__c</referenceTo>
+    <relationshipLabel>Medical Procedures in Sites</relationshipLabel>
+    <relationshipName>Medical_Procedures_in_Sites</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

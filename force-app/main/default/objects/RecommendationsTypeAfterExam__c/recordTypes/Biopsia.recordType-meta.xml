@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Biopsia</fullName>
+    <active>true</active>
+    <label>ביופסיה</label>
+    <picklistValues>
+        <picklist>BusinessProcess__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>action_type__c</picklist>
+        <values>
+            <fullName>אוטומציה סגירת המלצה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התערבות נציג</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא מתקבל - לא רלוונטי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

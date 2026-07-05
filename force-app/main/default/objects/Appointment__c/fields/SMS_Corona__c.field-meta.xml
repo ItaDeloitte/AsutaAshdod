@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Corona__c</fullName>
+    <description>שדה לנוסח SMS קורונה עבור ציבורי ומרכזים</description>
+    <externalId>false</externalId>
+    <formula>IF( Site__r.Site_Code__c = &apos;33&apos;, &apos;מטופלים יקרים, בית החולים אסותא אשדוד ממשיך להעניק לכם טיפול רפואי בסביבה בטוחה. על מנת למנוע הידבקות ו/או הדבקה בווירוס קורונה, כל אדם המגיע לבית החולים חייב לעטות מסיכה במשך כל שהותו בבית החולים. ניתן להגיע עם מלווה אחד לכל היותר אך מומלץ להגיע ללא מלווים. כמו כן, כניסת ילדים לבית החולים הינה לצורך קבלת טיפול רפואי בלבד. בברכת בריאות איתנה, בית חולים אסותא אשדוד&apos;,&apos;מטופלים יקרים, גם בימים אלו פועלת אסותא להעניק לכם טיפול רפואי הכי בטוח שיש ופועלת בהתאם להנחיות משרד הבריאות. כל אדם המגיע לבית החולים חייב לעטות מסיכה (ללא פילטר) ולא להסירה במהלך כל שהותו בבית החולים. ניתן להגיע עם מלווה אחד לכל היותר, אך מומלץ להגיע ללא מלווים ככל הניתן על מנת לשמור על מרחק 2 המטרים הנדרש. בברכת בריאות איתנה, בית חולים אסותא&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SMS Corona</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

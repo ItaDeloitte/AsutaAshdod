@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Type__c</fullName>
+    <label>Call Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incoming call (Inside)</fullName>
+                <default>false</default>
+                <label>שיחה נכנסת (פנימית)</label>
+            </value>
+            <value>
+                <fullName>Incoming call (OutSide)</fullName>
+                <default>false</default>
+                <label>שיחה נכנסת (חיצונית)</label>
+            </value>
+            <value>
+                <fullName>Outcoming call (Inside)</fullName>
+                <default>false</default>
+                <label>שיחה יוצאת (פנימית)</label>
+            </value>
+            <value>
+                <fullName>Outcoming call (Outside)</fullName>
+                <default>false</default>
+                <label>שיחה יוצאת (חיצונית)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

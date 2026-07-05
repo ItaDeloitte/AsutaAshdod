@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Reminder</fullName>
+    <columns>NAME</columns>
+    <columns>apiNames__c</columns>
+    <columns>DeveloperName__c</columns>
+    <columns>FromPhone__c</columns>
+    <columns>ObjectName__c</columns>
+    <columns>Sms_content__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DeveloperName__c</field>
+        <operation>contains</operation>
+        <value>Colonoscopy</value>
+    </filters>
+    <label>SMS Reminder</label>
+</ListView>

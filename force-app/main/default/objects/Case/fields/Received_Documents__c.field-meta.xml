@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Received_Documents__c</fullName>
+    <label>Received Documents</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Case_Route__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Female_Decision</fullName>
+                <default>false</default>
+                <label>החלטה אישה</label>
+            </value>
+            <value>
+                <fullName>Partner_Decision</fullName>
+                <default>false</default>
+                <label>החלטה בן זוג</label>
+            </value>
+            <value>
+                <fullName>Couple_Decision</fullName>
+                <default>false</default>
+                <label>החלטה זוג</label>
+            </value>
+            <value>
+                <fullName>ID_Photo_Female</fullName>
+                <default>false</default>
+                <label>צילום ת&quot;ז- אישה</label>
+            </value>
+            <value>
+                <fullName>ID_Photo_Partner</fullName>
+                <default>false</default>
+                <label>צילום ת&quot;ז-  בן זוג</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Donation_Route</controllingFieldValue>
+            <controllingFieldValue>Seperate_Route</controllingFieldValue>
+            <valueName>Female_Decision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Donation_Route</controllingFieldValue>
+            <controllingFieldValue>Double_Route</controllingFieldValue>
+            <controllingFieldValue>Seperate_Route</controllingFieldValue>
+            <valueName>ID_Photo_Female</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Double_Route</controllingFieldValue>
+            <valueName>Couple_Decision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Double_Route</controllingFieldValue>
+            <controllingFieldValue>Seperate_Route</controllingFieldValue>
+            <valueName>ID_Photo_Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seperate_Route</controllingFieldValue>
+            <valueName>Partner_Decision</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

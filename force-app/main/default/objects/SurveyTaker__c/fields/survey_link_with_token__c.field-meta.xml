@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>survey_link_with_token__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://&quot; &amp; $Setup.Form_Titan_Domain__c.Domain__c &amp; Survey__r.Url_With_Token__c&amp;
+IF(
+CONTAINS(Survey__r.Url_With_Token__c, &quot;uuid&quot;),
+UUID__c,
+Id
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>survey link with token</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

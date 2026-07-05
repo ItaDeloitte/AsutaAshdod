@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Survey__c</columns>
+    <columns>NAME</columns>
+    <columns>Question__c</columns>
+    <columns>page__c</columns>
+    <columns>OrderNumber__c</columns>
+    <columns>Required__c</columns>
+    <columns>Type__c</columns>
+    <columns>TrigerAnswer2__c</columns>
+    <columns>Question2__c</columns>
+    <columns>Type_2__c</columns>
+    <columns>Question3__c</columns>
+    <columns>Type_3__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Survey__c</field>
+        <operation>contains</operation>
+        <value>שפיר</value>
+    </filters>
+    <label>All</label>
+</ListView>

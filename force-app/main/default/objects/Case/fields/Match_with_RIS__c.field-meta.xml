@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Match_with_RIS__c</fullName>
+    <description>סטורי 20082</description>
+    <label>Match with RIS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Yet checked</fullName>
+                <default>false</default>
+                <label>Not Yet checked</label>
+            </value>
+            <value>
+                <fullName>recommendations match</fullName>
+                <default>false</default>
+                <label>recommendations match</label>
+            </value>
+            <value>
+                <fullName>recommendations mismatch</fullName>
+                <default>false</default>
+                <label>recommendations mismatch</label>
+            </value>
+            <value>
+                <fullName>Not_required</fullName>
+                <default>false</default>
+                <label>Not required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

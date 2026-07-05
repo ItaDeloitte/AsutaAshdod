@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>close_case</fullName>
+    <active>true</active>
+    <description>בסגירת פניה מחייב להזין תיעוד</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos;) 
+&amp;&amp;(
+RecordType.DeveloperName = &quot;transfer_to_secretaries&quot; &amp;&amp;   
+ISPICKVAL(Status, &quot;Closed&quot;) &amp;&amp; 
+ISPICKVAL( Treat_status__c, &quot;&quot; )
+)</errorConditionFormula>
+    <errorMessage>בפניות מסוג &apos;העברה למחלקה&apos; יש למלא סטטוס טיפול</errorMessage>
+</ValidationRule>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Process_Status_From_Site__c</fullName>
+    <description>סטאטוס תהליך באתר - קבלה מהבית</description>
+    <label>Process Status From Site</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>true</default>
+                <label>טרם החל</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>בוצע עד שלב 1 &quot;פרטי הניתוח&quot;</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>בוצע עד שלב 2 &quot;פרטים אישיים&quot;</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>בוצע עד שלב 3 &quot;חשוב לדעת&quot;</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>בוצע עד שלב 4 &quot;שירותים משלימים&quot;</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>בוצע עד שלב 5  ואחרון &quot;תשלום ואישור&quot;</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

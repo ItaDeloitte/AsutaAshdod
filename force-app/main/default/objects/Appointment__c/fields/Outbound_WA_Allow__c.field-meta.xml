@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_WA_Allow__c</fullName>
+    <formula>and(
+ not( Medical_Procedure__r.Confidentiality__c ),
+ not( ispickval(Patient_Account__r.Mailing_approval__c, &apos;לא מאשר דיוור - הכל&apos;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Outbound WA Allow</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

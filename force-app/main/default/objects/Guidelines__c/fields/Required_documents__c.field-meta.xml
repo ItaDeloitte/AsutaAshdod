@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_documents__c</fullName>
+    <label>Required documents</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>טופס התחייבות</label>
+            </value>
+            <value>
+                <fullName>14</fullName>
+                <default>false</default>
+                <label>הפניה</label>
+            </value>
+            <value>
+                <fullName>137</fullName>
+                <default>false</default>
+                <label>תוצאות מעבדה</label>
+            </value>
+            <value>
+                <fullName>319</fullName>
+                <default>false</default>
+                <label>פענוח קודם</label>
+            </value>
+            <value>
+                <fullName>270</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקת שקיפות עורפית (שבוע 11-13 להריון)</label>
+            </value>
+            <value>
+                <fullName>271</fullName>
+                <default>false</default>
+                <label>תוצאות בדיקת סקר ביוכימי שליש ראשון (Papp-A)</label>
+            </value>
+            <value>
+                <fullName>272</fullName>
+                <default>false</default>
+                <label>תוצאות סקירת מערכות מוקדמת (אולטרסאונד שבוע 14-16 להריון)</label>
+            </value>
+            <value>
+                <fullName>273</fullName>
+                <default>false</default>
+                <label>תוצאות סקר ביוכימי שליש שני (חלבון עוברי)</label>
+            </value>
+            <value>
+                <fullName>274</fullName>
+                <default>false</default>
+                <label>בדיקות סקר נשאות גנטית מההיריון הנוכחי והריונות קודמים</label>
+            </value>
+            <value>
+                <fullName>275</fullName>
+                <default>false</default>
+                <label>ייעוציים גנטיים שבוצעו בעבר</label>
+            </value>
+            <value>
+                <fullName>276</fullName>
+                <default>false</default>
+                <label>מסמכים אחרים רלוונטיים לייעוץ גנטי</label>
+            </value>
+            <value>
+                <fullName>923</fullName>
+                <default>false</default>
+                <label>תוצאות PSA</label>
+            </value>
+            <value>
+                <fullName>865</fullName>
+                <default>false</default>
+                <label>סיכום מרפאת מומחים (סיכום יעוץ) SF</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>מסמכים רפואיים</label>
+            </value>
+            <value>
+                <fullName>643</fullName>
+                <default>false</default>
+                <label>פענוח MRI</label>
+            </value>
+            <value>
+                <fullName>629</fullName>
+                <default>false</default>
+                <label>סיכום רפואי מרופא משפחה או מומחה</label>
+            </value>
+            <value>
+                <fullName>63</fullName>
+                <default>false</default>
+                <label>תשובות פתולוגיה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

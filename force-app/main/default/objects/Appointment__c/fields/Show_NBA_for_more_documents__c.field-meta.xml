@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Show_NBA_for_more_documents__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>יצ&apos;וקבק ע&quot;י וורקפלואו - במידה ונרצה שיציג NBA עבור דרישה של מסמכים נוספים עבור מכבי</description>
+    <label>Show NBA for more documents</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

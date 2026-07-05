@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MedicalInfo_InvoiceNum_TotalForPayment</fullName>
+    <active>true</active>
+    <description>בעת סגירת פנייה של נרמ&quot;ר מסוג חשבונית, חובה למלא את השדות &quot;מספר חשבונית&quot; ו&quot;סהכ לתשלום&quot; ו&quot;תת נושא הפניה&quot;</description>
+    <errorConditionFormula>ISPICKVAL( Status , &apos;Closed&apos;) &amp;&amp; RecordType.DeveloperName == &apos;Medical_Info_Management&apos;
+&amp;&amp;  (ISBLANK(TotalForPayment__c)  || ISPICKVAL( sub_case_subject__c, &quot;&quot;)   || ISBLANK(InvoiceNum__c)) &amp;&amp;  ISPICKVAL( Case_subject__c , &apos;חשבונית&apos;)</errorConditionFormula>
+    <errorMessage>בעת סגירת פנייה של נרמ&quot;ר, אם נושא הפניה הוא &quot;חשבונית&quot;, חובה למלא את השדות &quot;מספר חשבונית&quot;, &quot;סה&quot;כ לתשלום&quot;, ו&quot;תת נושא הפנייה&quot;</errorMessage>
+</ValidationRule>

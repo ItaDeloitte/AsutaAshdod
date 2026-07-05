@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>IsProtected</columns>
+    <columns>ModalityCode__c</columns>
+    <columns>ProcedureCode1__c</columns>
+    <columns>ProcedureCode2__c</columns>
+    <columns>ProcedurePlanCode__c</columns>
+    <columns>ProceduresBreak__c</columns>
+    <columns>SiteCode__c</columns>
+    <columns>SendMessageMP1__c</columns>
+    <columns>SendMessageMP2__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

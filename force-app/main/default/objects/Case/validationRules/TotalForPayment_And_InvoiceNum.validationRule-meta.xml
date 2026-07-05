@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalForPayment_And_InvoiceNum</fullName>
+    <active>true</active>
+    <description>אם השדה Reason בפניות מסוג נרמ&quot;ר נבחר ערך &quot;טופל ושולם&quot; יש לחייב את המשתמש להזין ערכים בשדות &quot;סהכ לתשלום&quot; ו&quot;מספר חשבונית&quot;</description>
+    <errorConditionFormula>(ISBLANK(InvoiceNum__c ) ||  ISBLANK( TotalForPayment__c )) &amp;&amp;    ISPICKVAL(Reason, &apos;טופל ושולם&apos;)  &amp;&amp; RecordType.DeveloperName == &apos;Medical_Info_Management&apos;
+ &amp;&amp; ISPICKVAL(Case_subject__c, &apos;אחזור מידע רפואי&apos;)</errorConditionFormula>
+    <errorMessage>אם בפניות מסוג אחזור מידע רפואי ונבחר ערך &quot;טופל ושולם&quot; בסיבת הפנייה, יש להזין ערכים בשדות סה&quot;כ לתשלום ומספר חשבונית</errorMessage>
+</ValidationRule>

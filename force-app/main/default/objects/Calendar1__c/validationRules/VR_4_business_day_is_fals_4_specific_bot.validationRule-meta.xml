@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_4_business_day_is_fals_4_specific_bot</fullName>
+    <active>true</active>
+    <errorConditionFormula>((not(Selected_business_day__c))&amp;&amp;( not(ISBLANK( Selected_Start_Time__c )) || not(ISBLANK( Selected_End_time__c )) ) )</errorConditionFormula>
+    <errorMessage>אם זה לא יום עסקים שדות שעה חייבים להיות רקים</errorMessage>
+</ValidationRule>

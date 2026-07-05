@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Public_Inquiries</fullName>
+    <fields>AccountId</fields>
+    <fields>Subject_Public_Inquiry__c</fields>
+    <fields>Origin</fields>
+    <fields>RecordTypeId</fields>
+    <fields>Identification_needed__c</fields>
+    <fields>Anonymous_Case_Logo__c</fields>
+    <label>פניות הציבור</label>
+</CompactLayout>

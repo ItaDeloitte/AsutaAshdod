@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Problema do modelo</label>
+    <name>HealthCloudGA__CarePlanTemplateProblem__c</name>
+    <relationshipLabel>Metas do modelo de plano de saúde</relationshipLabel>
+</CustomFieldTranslation>

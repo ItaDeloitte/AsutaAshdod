@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Appointment__c</columns>
+    <columns>Survey_patient__c</columns>
+    <columns>status__c</columns>
+    <columns>SMS__c</columns>
+    <columns>SURVEY_NAME__c</columns>
+    <columns>OBJECT_ID</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SURVEY_NAME__c</field>
+        <operation>contains</operation>
+        <value>שאלון לקראת הגעתך לבדיקת CT</value>
+    </filters>
+    <filters>
+        <field>Survey_patient__c</field>
+        <operation>contains</operation>
+        <value>6364337</value>
+    </filters>
+    <label>All</label>
+</ListView>

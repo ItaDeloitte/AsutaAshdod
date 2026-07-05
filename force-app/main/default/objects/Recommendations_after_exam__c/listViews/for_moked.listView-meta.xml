@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>for_moked</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>Related_Appointment__c</columns>
+    <columns>Patient__c</columns>
+    <columns>Status_recommendation__c</columns>
+    <columns>Case360__c</columns>
+    <columns>RecommendationsType__c</columns>
+    <columns>ETL_Unique_Identifier__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>who_treat__c</field>
+        <operation>equals</operation>
+        <value>מוקד</value>
+    </filters>
+    <filters>
+        <field>RecommendationsType__c</field>
+        <operation>notEqual</operation>
+        <value>תקין</value>
+    </filters>
+    <label>בטיפול המוקד</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Doc_update_payment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>שכר טרחה התעדכן בהפניה מאתר רופאים</description>
+    <label>Referral Doc update payment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

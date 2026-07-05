@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Date_Time__c</fullName>
+    <defaultValue>NULL</defaultValue>
+    <description>תאריך ושעת התור</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Date Time of the appointment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

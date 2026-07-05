@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doctor_In_Clinic__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>רופא במרפאה</label>
+    <referenceTo>Doctor_in_Clinic__c</referenceTo>
+    <relationshipLabel>מעקב בקשות אישורים</relationshipLabel>
+    <relationshipName>Approval_Request_Tracking</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

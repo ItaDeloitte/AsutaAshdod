@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_is_not_kosher_if_its_also_for_SMS</fullName>
+    <active>false</active>
+    <description>מוודא כי הטלפון הראשי הוא לא כשר, אם הוא משמש גם לSMS</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+(((ISNEW() &amp;&amp; DisableValidation__c = false) 
+|| 
+(NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(DisableValidation__c))))
+&amp;&amp; 
+Use_for_SMS__c = TRUE
+&amp;&amp;
+ISPICKVAL( ID_Type__c , &quot;1&quot;) 
+&amp;&amp; 
+NOT( ISBLANK( Phone )) 
+&amp;&amp; 
+(
+(LEFT( Phone, 5) = &quot;05041&quot;)
+|| 
+(LEFT( Phone, 5) = &quot;05271&quot;)
+|| 
+(LEFT( Phone, 5) = &quot;05276&quot;)
+|| 
+(LEFT( Phone, 5) = &quot;05484&quot;)
+|| 
+(LEFT( Phone, 5) = &quot;05485&quot;)
+|| 
+(LEFT( Phone, 5) = &quot;05832&quot;)
+|| 
+(LEFT( Phone, 5) = &quot;05567&quot;)
+|| 
+(LEFT( Phone, 5) = &quot;05331&quot;)
+|| 
+(LEFT( Phone, 5) = &quot;05341&quot;)
+))
+||
+(((ISNEW() &amp;&amp; DisableValidation__c = false) 
+||
+NOT(ISCHANGED(DisableValidation__c))) 
+&amp;&amp;
+ISPICKVAL( ID_Type__c , &quot;1&quot;) 
+&amp;&amp; 
+NOT( ISBLANK(  SMS_Phone_Number__c  )) 
+&amp;&amp; 
+(
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05041&quot;)
+|| 
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05271&quot;)
+|| 
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05276&quot;)
+|| 
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05484&quot;)
+|| 
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05485&quot;)
+|| 
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05832&quot;)
+|| 
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05567&quot;)
+|| 
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05331&quot;)
+|| 
+(LEFT( SMS_Phone_Number__c  , 5) = &quot;05341&quot;)
+))</errorConditionFormula>
+    <errorMessage>מספר הטלפון שהוקלד לקבלת מסרונים נכלל ברשימת הקומות הכשרות</errorMessage>
+</ValidationRule>

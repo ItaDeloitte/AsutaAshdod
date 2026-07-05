@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_score_text__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Survey_score__c = 0, &quot;&quot;, IF( Survey_score__c &lt;= 4 , &quot;גרוע&quot;,IF( Survey_score__c &lt;= 6 , &quot;לא טוב&quot;,IF( Survey_score__c &lt;= 8 , &quot;טוב&quot;,IF( Survey_score__c &lt;= 10 , &quot;מצוין&quot;,&quot;&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Survey Score Text</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

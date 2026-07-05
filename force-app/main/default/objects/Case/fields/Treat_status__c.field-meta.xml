@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Treat_status__c</fullName>
+    <label>Treat Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>תואם תור</fullName>
+                <default>false</default>
+                <label>תואם תור</label>
+            </value>
+            <value>
+                <fullName>נעשו מספר ניסיונות להשגת המטופל ללא הצלחה</fullName>
+                <default>false</default>
+                <label>נעשו מספר ניסיונות להשגת המטופל ללא הצלחה</label>
+            </value>
+            <value>
+                <fullName>המטופל ביקש שיחזרו אליו ממוקד הזימון</fullName>
+                <default>false</default>
+                <label>המטופל ביקש שיחזרו אליו ממוקד הזימון</label>
+            </value>
+            <value>
+                <fullName>פניה טופלה ללא שיחה</fullName>
+                <default>false</default>
+                <label>פניה טופלה ללא שיחה</label>
+            </value>
+            <value>
+                <fullName>פניה הועברה לטיפול</fullName>
+                <default>false</default>
+                <label>פניה הועברה לטיפול</label>
+            </value>
+            <value>
+                <fullName>טופל עי מנהל</fullName>
+                <default>false</default>
+                <label>טופל עי מנהל</label>
+            </value>
+            <value>
+                <fullName>נעשה ניסיון התקשרות למטופל- ללא מענה</fullName>
+                <default>false</default>
+                <label>נעשה ניסיון התקשרות למטופל- ללא מענה</label>
+            </value>
+            <value>
+                <fullName>בוצעה חזרה למטופל ונסגר מעגל טיפול</fullName>
+                <default>false</default>
+                <label>בוצעה חזרה למטופל ונסגר מעגל טיפול</label>
+            </value>
+            <value>
+                <fullName>פניה הוחזרה לבעלים הקודמים להמשך טיפול</fullName>
+                <default>false</default>
+                <label>פניה הוחזרה לבעלים הקודמים להמשך טיפול</label>
+            </value>
+            <value>
+                <fullName>הוצעו מספר פתרונות למטופל</fullName>
+                <default>false</default>
+                <label>הוצעו מספר פתרונות למטופל</label>
+            </value>
+            <value>
+                <fullName>General_Information</fullName>
+                <default>false</default>
+                <label>General Information</label>
+            </value>
+            <value>
+                <fullName></fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label></label>
+            </value>
+            <value>
+                <fullName>פניה הוחזרה לבעלים הקודמים להמשך טיפול וביצוע סמ&quot;ט</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פניה הוחזרה לבעלים הקודמים להמשך טיפול וביצוע סמ&quot;ט</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

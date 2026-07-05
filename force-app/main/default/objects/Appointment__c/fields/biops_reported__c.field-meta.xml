@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>biops_reported__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>עבור פרוסס בילדר, לוודא שיופעל רק כשיעודכנו התוצאות של הביופסיה בפעם הראשונה</description>
+    <label>X360 Biops Related?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

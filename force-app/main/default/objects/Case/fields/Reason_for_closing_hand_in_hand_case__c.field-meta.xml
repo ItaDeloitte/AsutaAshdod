@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_closing_hand_in_hand_case__c</fullName>
+    <label>Reason for closing hand-in-hand case</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No response more than 3 times</fullName>
+                <default>false</default>
+                <label>No response more than 3 times</label>
+            </value>
+            <value>
+                <fullName>Negative biopsy result</fullName>
+                <default>false</default>
+                <label>Negative biopsy result</label>
+            </value>
+            <value>
+                <fullName>Patient does not wish to continue the process</fullName>
+                <default>false</default>
+                <label>Patient does not wish to continue the process</label>
+            </value>
+            <value>
+                <fullName>Change in radiologist&apos;s recommendation by treating doctor</fullName>
+                <default>false</default>
+                <label>Change in radiologist&apos;s recommendation by treating doctor</label>
+            </value>
+            <value>
+                <fullName>Doctor&apos;s decision</fullName>
+                <default>false</default>
+                <label>Doctor&apos;s decision</label>
+            </value>
+            <value>
+                <fullName>Continuation at another medical center</fullName>
+                <default>false</default>
+                <label>Continuation at another medical center</label>
+            </value>
+            <value>
+                <fullName>End of hand-in-hand process</fullName>
+                <default>false</default>
+                <label>End of hand-in-hand process</label>
+            </value>
+            <value>
+                <fullName>Wrong Recommendation</fullName>
+                <default>false</default>
+                <label>Wrong Recommendation</label>
+            </value>
+            <value>
+                <fullName>Double Referral</fullName>
+                <default>false</default>
+                <label>Double Referral</label>
+            </value>
+            <value>
+                <fullName>No Further Treatment Required</fullName>
+                <default>false</default>
+                <label>No Further Treatment Required</label>
+            </value>
+            <value>
+                <fullName>Redirected to digital</fullName>
+                <default>false</default>
+                <label>Redirected to digital</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>No response more than 3 times</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Negative biopsy result</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Patient does not wish to continue the process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Change in radiologist&apos;s recommendation by treating doctor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Doctor&apos;s decision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Continuation at another medical center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>End of hand-in-hand process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Wrong Recommendation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Double Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>No Further Treatment Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Redirected to digital</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

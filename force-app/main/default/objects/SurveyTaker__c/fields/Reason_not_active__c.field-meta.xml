@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_not_active__c</fullName>
+    <label>Reason Not Active</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>לבקשת הרופא</fullName>
+                <default>false</default>
+                <label>לבקשת הרופא</label>
+            </value>
+            <value>
+                <fullName>לבקשת המטופל</fullName>
+                <default>false</default>
+                <label>לבקשת המטופל</label>
+            </value>
+            <value>
+                <fullName>מילים לא ראויות</fullName>
+                <default>false</default>
+                <label>מילים לא ראויות</label>
+            </value>
+            <value>
+                <fullName>ציון סקר נמוך</fullName>
+                <default>false</default>
+                <label>ציון סקר נמוך</label>
+            </value>
+            <value>
+                <fullName>שליחת סקר פעם נוספת</fullName>
+                <default>false</default>
+                <label>שליחת סקר פעם נוספת</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

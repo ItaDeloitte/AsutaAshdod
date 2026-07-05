@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelingPolicyForInstKit__c</fullName>
+    <externalId>false</externalId>
+    <formula>Patient_Account__r.patient_full_name__c &amp; &quot; שלום רב,&quot; 
+&amp; BR() &amp; 
+&quot;אנו מודים לך על שבחרת לקבל טיפול רפואי, מאת אסותא מרכזים רפואיים. במסגרת השירות, נקבע עבורך תור ל&quot; &amp;  Medical_Procedure__r.Marketing_Procedure_Name__c &amp; &quot;.&quot; 
+&amp; BR() &amp; 
+&quot;לפניך מדיניות אסותא לעניין ביטול תור לטיפול/ייעוץ/בדיקה שנקבע לך –&quot; 
+&amp; BR() &amp;  BR() &amp; 
+&quot;א. ניתן לבטל את התור, ללא דמי ביטול, עד 24 שעות לפני מועד התור שנקבע.&quot;
+&amp; BR() &amp; 
+&quot;ב. בין 24 שעות ל-12 שעות לפני מועד התור שנקבע, ניתן לבטל את התור בכפוף לדמי ביטול בשיעור של 50% מעלות התור.&quot;
+&amp; BR() &amp; 
+&quot;ג. פחות מ-12 שעות לפני המועד  התור שנקבע, לא ניתן יהיה לבטל עוד את התור, ובמקרה של אי הגעה תחוייב/י בתשלום מלא.&quot;
+&amp; BR() &amp;  BR() &amp; 
+&quot;ניתן לבטל את התור בכל עת דרך האזור האישי באתר האינטרנט של אסותא  בלחיצה &quot; &amp; HYPERLINK(&quot;https://online.assuta.co.il/&quot;, &quot;כאן&quot;) 
+&amp; BR() &amp; BR() &amp;
+&quot;שירות הלקוחות שלנו בוואטסאפ &quot; &amp; HYPERLINK(&quot;https://wa.me/972037645100&quot;, &quot;03-7645100&quot;) 
+&amp; &quot;, באמצעות פניה בדואר האלקטרוני &quot; &amp; HYPERLINK(&quot;mailto:digital@assuta.co.il&quot;,&quot;digital@assuta.co.il&quot;)&amp; 
+&quot;, או באמצעות שיחה טלפונית למערך קשרי הלקוחות שלנו בשעות הפעילות: &quot; &amp;  HYPERLINK(&quot;tel:&quot; + &quot;03-7644777&quot;,  &quot;03-7644777&quot;) &amp;&quot;.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CancelingPolicyForInstKit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

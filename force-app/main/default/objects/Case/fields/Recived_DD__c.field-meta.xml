@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recived_DD__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>סימון שהתקבל טופס דיגיטלי</description>
+    <label>Recived Dd</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

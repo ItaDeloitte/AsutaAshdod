@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NOT</fullName>
+    <columns>NAME</columns>
+    <columns>code__c</columns>
+    <columns>BranchName__c</columns>
+    <columns>Domain_Only__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Domain_Only__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>BranchName__c</field>
+        <operation>contains</operation>
+        <value>סמסון</value>
+    </filters>
+    <label>לא למכון בלבד</label>
+</ListView>

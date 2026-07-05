@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseClosed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>updates checkbox before save in flow for use in the entitlement process- to update the case milestone before exiting the entitlement process</description>
+    <label>CaseClosed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

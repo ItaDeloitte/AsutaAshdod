@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>call_target__c</fullName>
+    <label>Call Target</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>המלצה על כירורג שד</fullName>
+                <default>false</default>
+                <label>המלצה על כירורג שד</label>
+            </value>
+            <value>
+                <fullName>שיחה לרופא לאחר ייעוץ</fullName>
+                <default>false</default>
+                <label>שיחה לרופא לאחר ייעוץ</label>
+            </value>
+            <value>
+                <fullName>שיחה ראשונית לרופא</fullName>
+                <default>false</default>
+                <label>שיחה ראשונית לרופא</label>
+            </value>
+            <value>
+                <fullName>שיחה למטופלת לקביעת תור לייעוץ</fullName>
+                <default>false</default>
+                <label>שיחה למטופלת לקביעת תור לייעוץ</label>
+            </value>
+            <value>
+                <fullName>שיחה למטופלת לקביעת תור לביופסיה</fullName>
+                <default>false</default>
+                <label>שיחה למטופלת לקביעת תור לביופסיה</label>
+            </value>
+            <value>
+                <fullName>שיחה לרופא לאחר תוצאות ביופסיה</fullName>
+                <default>false</default>
+                <label>שיחה לרופא לאחר תוצאות ביופסיה</label>
+            </value>
+            <value>
+                <fullName>לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה</fullName>
+                <default>false</default>
+                <label>לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה</label>
+            </value>
+            <value>
+                <fullName>שיחת מעקב למטופלת באונקולוגיה</fullName>
+                <default>false</default>
+                <label>שיחת מעקב למטופלת באונקולוגיה</label>
+            </value>
+            <value>
+                <fullName>שיחה לרופא לאחר שחרור מניתוח</fullName>
+                <default>false</default>
+                <label>שיחה לרופא לאחר שחרור מניתוח</label>
+            </value>
+            <value>
+                <fullName>התקשרות מול רופא מפנה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>התקשרות מול רופא</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

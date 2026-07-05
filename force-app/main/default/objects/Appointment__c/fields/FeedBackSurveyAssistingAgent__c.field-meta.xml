@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FeedBackSurveyAssistingAgent__c</fullName>
+    <description>text field that receives its value from flow &quot;Send_SMS_After_Experts_Appointment - RT&quot;,
+the value is extracted based on the agent reported in  the field &quot;LastModifiedById&quot;</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>FeedBackSurveyAssistingAgent</label>
+    <length>55</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

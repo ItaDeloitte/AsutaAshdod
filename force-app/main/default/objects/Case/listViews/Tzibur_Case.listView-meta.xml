@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tzibur_Case</fullName>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>ReferralContent__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Site_Public_Inquiry__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>DeadlineHandlingDatePassed__c</columns>
+    <columns>Subject_Public_Inquiry__c</columns>
+    <columns>DeadlineHandlingDate__c</columns>
+    <columns>CaseCreationDate__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>DeadlineDateForResponse__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner_Queue_wf__c</field>
+        <operation>equals</operation>
+        <value>פניות הציבור - מרכזים</value>
+    </filters>
+    <filters>
+        <field>Site_Public_Inquiry__c</field>
+        <operation>notContain</operation>
+        <value>סמסון</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.PublicInquiries</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,חדש,In_Progress,בטיפול</value>
+    </filters>
+    <label>פניות הציבור - מרכזים</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

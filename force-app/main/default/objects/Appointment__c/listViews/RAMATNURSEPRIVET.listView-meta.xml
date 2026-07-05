@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAMATNURSEPRIVET</fullName>
+    <columns>NAME</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Status_private_room__c</columns>
+    <columns>Private_room_code__c</columns>
+    <columns>paid_amount__c</columns>
+    <columns>ReceiptNum__c</columns>
+    <columns>requires__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>ReceiptNum__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>אסותא רמת החייל</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled,2,WaitingForCanceled,CanceledFailed</value>
+    </filters>
+    <label>רמת החייל -חדרים פרטיים לשיבוץ עי אחיות</label>
+</ListView>

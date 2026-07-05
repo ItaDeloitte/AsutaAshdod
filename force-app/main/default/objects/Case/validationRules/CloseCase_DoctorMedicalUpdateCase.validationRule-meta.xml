@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CloseCase_DoctorMedicalUpdateCase</fullName>
+    <active>true</active>
+    <description>Validation for closing a case-&quot;סגירת פניה כאשר הנושא הפנייה &quot;פניה לרופא עדכון רשומה רפואית record type medical info management (ניהול רישום ומידע רופאי)</description>
+    <errorConditionFormula>RecordType.DeveloperName == &apos;Medical_Info_Management&apos; 
+
+&amp;&amp; ISPICKVAL(Case_subject__c , &apos;פניה לרופא לעדכון רשומה רפואית&apos;)   
+&amp;&amp;   ISPICKVAL( Status , &apos;Closed&apos;) 
+&amp;&amp;   ISBLANK(TEXT((Reason )))</errorConditionFormula>
+    <errorDisplayField>Reason</errorDisplayField>
+    <errorMessage>!נא להזין ערך בשדה &quot;סיבת סגירת הפנייה&quot; על מנת שסגירת הפנייה תתאפשר</errorMessage>
+</ValidationRule>

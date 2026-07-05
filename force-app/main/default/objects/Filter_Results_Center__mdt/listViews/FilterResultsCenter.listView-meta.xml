@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FilterResultsCenter</fullName>
+    <columns>MasterLabel</columns>
+    <columns>MedicalProcedureCode__c</columns>
+    <columns>SiteCode__c</columns>
+    <columns>PayarFactor__c</columns>
+    <columns>CalendarService__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>FilterResultsCenter</label>
+    <language>en_US</language>
+</ListView>

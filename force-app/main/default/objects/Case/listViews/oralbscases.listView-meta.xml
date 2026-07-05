@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oralbscases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Case_Time__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Treat_status__c</columns>
+    <columns>description_history__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner_Queue_wf__c</field>
+        <operation>equals</operation>
+        <value>מרכז אורולוגי אסותא באר שבע</value>
+    </filters>
+    <label>מרכז אורולוגיה- באר שבע</label>
+</ListView>

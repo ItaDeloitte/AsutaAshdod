@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doctor_Expert_Center</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Doctor_Code__c</columns>
+    <columns>Status__c</columns>
+    <columns>ID_Number__pc</columns>
+    <columns>Expertise_1__c</columns>
+    <columns>Expertise_2__c</columns>
+    <columns>Sub_Expertise__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Experts_center__c</columns>
+    <columns>Doc_role_in_hospital__c</columns>
+    <columns>Picture__c</columns>
+    <columns>PC_FIRST_NAME</columns>
+    <columns>PC_LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Doctor_Account</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>פ</value>
+    </filters>
+    <filters>
+        <field>Doctor_Code__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Experts_center__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>רופא מרכז מומחים</label>
+</ListView>

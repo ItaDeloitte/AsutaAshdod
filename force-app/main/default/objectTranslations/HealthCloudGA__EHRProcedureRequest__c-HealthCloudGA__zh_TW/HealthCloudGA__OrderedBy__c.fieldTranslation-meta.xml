@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>排序依據</label>
+    <name>HealthCloudGA__OrderedBy__c</name>
+    <relationshipLabel>EHR 程序要求</relationshipLabel>
+</CustomFieldTranslation>

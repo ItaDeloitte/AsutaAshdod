@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_status__c</fullName>
+    <label>Call Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reply</fullName>
+                <default>false</default>
+                <label>מענה</label>
+            </value>
+            <value>
+                <fullName>No_Reply</fullName>
+                <default>false</default>
+                <label>אין מענה</label>
+            </value>
+            <value>
+                <fullName>אין מענה - נשלח SMS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אין מענה - נשלח SMS</label>
+            </value>
+            <value>
+                <fullName>אין מענה 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אין מענה 1</label>
+            </value>
+            <value>
+                <fullName>אין מענה 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אין מענה 2</label>
+            </value>
+            <value>
+                <fullName>אין מענה 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אין מענה 3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_a_kit_been_sent__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( Medical_Procedure__r.Confidentiality__c =true,&apos;לא נשלח קיט - פעולה חסויה&apos;,  if(ISBLANK(Case__r.SMS_Phone_Number__c )=true,&apos;חסר טלפון בפניה&apos;,if( ISPICKVAL( Patient_Account__r.Mailing_approval__c , &apos;לא מאשר דיוור - הכל&apos;)=true ,&apos;מטופל לא מאשר דיוור&apos;,if( ISBLANK( Accession_Number__c )=true,&apos;חסר מזהה מערכת&apos;,&apos;תקין,ניתן לשלוח קיט&apos; ))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is It Possible To Send A Kit?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

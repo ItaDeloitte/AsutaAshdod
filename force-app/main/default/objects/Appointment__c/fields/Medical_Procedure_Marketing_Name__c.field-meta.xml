@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medical_Procedure_Marketing_Name__c</fullName>
+    <description>השם השיווקי של הפעולה הרפואית 1 לצורך הקיט הניתוחי</description>
+    <externalId>false</externalId>
+    <formula>Medical_Procedure__r.Marketing_Procedure_Name__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Medical Procedure Marketing Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IVF_Case_By_Route</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Partner_Name__c</columns>
+    <columns>Case_Route__c</columns>
+    <columns>Case_Status__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>First_Call_Made_Partner__c</columns>
+    <columns>First_Call_Made_Female__c</columns>
+    <columns>Contact_Future_Date_Partner__c</columns>
+    <columns>Contact_Future_Date_Female__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Case_Route__c</field>
+        <operation>equals</operation>
+        <value>Donation_Route,Double_Route,Seperate_Route,Yet_Determined</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.IVF_Freezing_Eggs</value>
+    </filters>
+    <label>פניית IVF - לפי מסלול</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

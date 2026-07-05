@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_valid_record</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+(ISBLANK(Accession_Number__c)),
+(ISBLANK( Appointment__c )), 
+(ISBLANK( Appointment_Date__c )), 
+(ISBLANK( Appointment_Time__c )), 
+(ISBLANK( Calendar_Code__c )),  
+(ISBLANK( Domain_Code__c )),  
+(ISBLANK( Patient_Name__c )),  
+(ISBLANK( Payer_Factor__c )),  
+(ISBLANK( Procedure_Code__c )), 
+(ISBLANK( Reminder_Time__c )),
+(ISBLANK(  Site_Code__c  )),
+(ISBLANK(  Reminder_Date__c )),
+And(
+(ISBLANK( Phone__c )),
+(ISBLANK(  Other_Phone__c  ))
+)
+)</errorConditionFormula>
+    <errorMessage>אחד משדות החובה חסר</errorMessage>
+</ValidationRule>

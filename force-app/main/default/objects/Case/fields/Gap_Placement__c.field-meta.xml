@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gap_Placement__c</fullName>
+    <description>שדה המשמש לנרמ&quot;ר לנושא הפניה &quot;בקשה לביעור&quot;</description>
+    <label>Gap Placement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>איכות סריקה ירודה</fullName>
+                <default>false</default>
+                <label>איכות סריקה ירודה</label>
+            </value>
+            <value>
+                <fullName>חסר קובץ PDF בפורטל מסמכים</fullName>
+                <default>false</default>
+                <label>חסר קובץ PDF בפורטל מסמכים</label>
+            </value>
+            <value>
+                <fullName>חסר קובץ PDF בתפנית</fullName>
+                <default>false</default>
+                <label>חסר קובץ PDF בתפנית</label>
+            </value>
+            <value>
+                <fullName>אישור ממזער מוסמך פג תוקף</fullName>
+                <default>false</default>
+                <label>אישור ממזער מוסמך פג תוקף</label>
+            </value>
+            <value>
+                <fullName>תוספת שנייה של בית חולים אחר</fullName>
+                <default>false</default>
+                <label>תוספת שנייה של בית חולים אחר</label>
+            </value>
+            <value>
+                <fullName>בעיות בהעברת ממשק</fullName>
+                <default>false</default>
+                <label>בעיות בהעברת ממשק</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

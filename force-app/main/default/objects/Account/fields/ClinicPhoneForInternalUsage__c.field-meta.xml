@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClinicPhoneForInternalUsage__c</fullName>
+    <description>מספר טלפון של המרפאה לשימוש פנימי</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Clinic phone for internal usage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Phone</type>
+</CustomField>

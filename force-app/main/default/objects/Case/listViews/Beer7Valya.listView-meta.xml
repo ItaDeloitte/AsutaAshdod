@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Beer7Valya</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Owner_Queue_wf__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner_Queue_wf__c</field>
+        <operation>contains</operation>
+        <value>באר שבע</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>סגירת אירוע אוטומטית,Closed,סגור,Caneclled,Closing,Not_Active</value>
+    </filters>
+    <label>באר שבע - ולה</label>
+</ListView>

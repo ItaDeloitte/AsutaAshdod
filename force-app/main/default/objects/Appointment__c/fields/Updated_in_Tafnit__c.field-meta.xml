@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Updated_in_Tafnit__c</fullName>
+    <description>שדה זה יעודכן בחזרה מתפנית לאחר שליחת נתוני ניתוח לממשק מקדים. יהווה אינדיקציה לכך שהתור עודכן במספר התיק בתפנית</description>
+    <label>Updated in Tafnit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>נקלט בהצלחה</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>לא נקלט</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

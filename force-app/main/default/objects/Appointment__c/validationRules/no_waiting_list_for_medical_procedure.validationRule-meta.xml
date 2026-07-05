@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>no_waiting_list_for_medical_procedure</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+( Medical_Procedure__r.Waiting_List__c =false) &amp;&amp;
+( IsUrgent__c  =true)&amp;&amp;
+NOT(ISPICKVAL( UrgentReason__c , &quot;11&quot; ))</errorConditionFormula>
+    <errorMessage>אין רשימת המתנה עבור הפעולה הרפואית המבוקשת</errorMessage>
+</ValidationRule>

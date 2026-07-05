@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Makabi_Moked</fullName>
+    <columns>NAME</columns>
+    <columns>DomainCode__c</columns>
+    <columns>MaccabiRefferal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MaccabiRefferal__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>תחומים למשיכת הפנייה מול מכבי</label>
+</ListView>

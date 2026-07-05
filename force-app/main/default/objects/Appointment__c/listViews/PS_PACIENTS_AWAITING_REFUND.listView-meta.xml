@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PS_PACIENTS_AWAITING_REFUND</fullName>
+    <columns>Patient_Account__c</columns>
+    <columns>IDNumber__c</columns>
+    <columns>PHONE__c</columns>
+    <columns>NAME</columns>
+    <columns>PaymentSource__c</columns>
+    <columns>PaymentStatus__c</columns>
+    <columns>paid_amount__c</columns>
+    <columns>Refund_Amount__c</columns>
+    <columns>ReceiptNum__c</columns>
+    <columns>Refund_Eligibility__c</columns>
+    <columns>Creditwasmade__c</columns>
+    <columns>Tafnit_Case_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Creditwasmade__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>applicationforcredit__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PaymentStatus__c</field>
+        <operation>equals</operation>
+        <value>Valid</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes,Appointment__c.Experts</value>
+    </filters>
+    <filters>
+        <field>Refund_Eligibility__c</field>
+        <operation>notEqual</operation>
+        <value>,🔴 לא זכאי</value>
+    </filters>
+    <label>מטופלים לזיכוי - שירותים פרטיים בלבד</label>
+</ListView>

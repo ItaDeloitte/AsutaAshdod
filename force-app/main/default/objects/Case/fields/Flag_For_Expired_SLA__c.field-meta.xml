@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flag_For_Expired_SLA__c</fullName>
+    <description>Monday 2904270599</description>
+    <externalId>false</externalId>
+    <formula>if( SLA_Breached_Ashdod__c = true, 
+   if ( $Organization.Id = &apos;00D7E000000FWtK&apos;, 
+        IMAGE(&quot;https://assuta--uat--c.sandbox.vf.force.com/resource/1731584444000/HighImportanceImage&quot;, &quot;High Importance&quot;, 50, 50),
+        IMAGE(&quot;https://assuta--c.vf.force.com/resource/1731849084000/HighImportanceImage&quot;, &quot;High Importance&quot;, 50, 50)
+     ),
+  &apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Flag For Expired SLA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

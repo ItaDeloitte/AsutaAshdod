@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LostReason__c</fullName>
+    <description>סיבת הפסד</description>
+    <label>LostReason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IrrelevantMedical</fullName>
+                <default>false</default>
+                <label>לא רלוונטי לא מתאים רפואית</label>
+            </value>
+            <value>
+                <fullName>לא מתאים רפואית</fullName>
+                <default>false</default>
+                <label>לא מתאים רפואית</label>
+            </value>
+            <value>
+                <fullName>Unanswered</fullName>
+                <default>false</default>
+                <label>ליד ללא מענה</label>
+            </value>
+            <value>
+                <fullName>מעוניין לבצע סקר שוק</fullName>
+                <default>false</default>
+                <label>מעוניין לבצע סקר שוק</label>
+            </value>
+            <value>
+                <fullName>IrrelevantErroneous</fullName>
+                <default>false</default>
+                <label>לא רלוונטי שגוי</label>
+            </value>
+            <value>
+                <fullName>IrrelevantNotInterested</fullName>
+                <default>false</default>
+                <label>לא רלוונטי לקוח לא מעוניין</label>
+            </value>
+            <value>
+                <fullName>Transfer_to_Private</fullName>
+                <default>false</default>
+                <label>הועבר לפרטי</label>
+            </value>
+            <value>
+                <fullName>Transfer_to_Harel</fullName>
+                <default>false</default>
+                <label>הועבר להראל</label>
+            </value>
+            <value>
+                <fullName>RefundsFromInsurance</fullName>
+                <default>false</default>
+                <label>מבקש לברר על החזרים מול הביטוח</label>
+            </value>
+            <value>
+                <fullName>NoSuitableDoctorNearby</fullName>
+                <default>false</default>
+                <label>לא נמצא רופא מתאים בקרבת מקום מגוריו</label>
+            </value>
+            <value>
+                <fullName>NoInsuranceArrangementForSurgery</fullName>
+                <default>false</default>
+                <label>אין הסדר ביטוחי לניתוח</label>
+            </value>
+            <value>
+                <fullName>NoAppointmentBook</fullName>
+                <default>false</default>
+                <label>אין יומן פתוח לרופא</label>
+            </value>
+            <value>
+                <fullName>NoCoordinatedDoctor</fullName>
+                <default>false</default>
+                <label>רופא שלא מתואם דרכינו</label>
+            </value>
+            <value>
+                <fullName>MailingApprovalCampaign</fullName>
+                <default>false</default>
+                <label>קמפיין הצטרפות לדיוור שיווקי</label>
+            </value>
+            <value>
+                <fullName>HadSurgeryPreviously</fullName>
+                <default>false</default>
+                <label>נותח בעבר</label>
+            </value>
+            <value>
+                <fullName>ChronicDisease</fullName>
+                <default>false</default>
+                <label>מחלות כרוניות</label>
+            </value>
+            <value>
+                <fullName>מחיר</fullName>
+                <default>false</default>
+                <label>מחיר</label>
+            </value>
+            <value>
+                <fullName>EyeDiseases</fullName>
+                <default>false</default>
+                <label>מחלות עיניים</label>
+            </value>
+            <value>
+                <fullName>TransferredToDepartment</fullName>
+                <default>false</default>
+                <label>הועבר לטיפול מחלקה</label>
+            </value>
+            <value>
+                <fullName>Maccabi_Patient</fullName>
+                <default>false</default>
+                <label>מטופל מכבי</label>
+            </value>
+            <value>
+                <fullName>Service_Isnt_provided_privately</fullName>
+                <default>false</default>
+                <label>לא קיים שירות בפרטי</label>
+            </value>
+            <value>
+                <fullName>Referred_to_schedule_with_another_private_doctor</fullName>
+                <default>false</default>
+                <label>הופנה לזימון מול רופא פרטי אחר</label>
+            </value>
+            <value>
+                <fullName>Service_doesn&apos;t_exist</fullName>
+                <default>false</default>
+                <label>שירות לא קיים באסותא</label>
+            </value>
+            <value>
+                <fullName>Wrong_Transfer</fullName>
+                <default>false</default>
+                <label>העברה שגויה ממוקד אחר</label>
+            </value>
+            <value>
+                <fullName>Wrong_Number</fullName>
+                <default>false</default>
+                <label>טעות במספר</label>
+            </value>
+            <value>
+                <fullName>A Patient Contacted To Update An appointment.</fullName>
+                <default>false</default>
+                <label>מטופל פנה לעדכון תור</label>
+            </value>
+            <value>
+                <fullName>A Doctor Who Is Not Coordinated Through Us</fullName>
+                <default>false</default>
+                <label>רופא שלא מתואם דרכנו</label>
+            </value>
+            <value>
+                <fullName>Wrong Call</fullName>
+                <default>false</default>
+                <label>שיחה טועה (זימון)</label>
+            </value>
+            <value>
+                <fullName>General Service Information</fullName>
+                <default>false</default>
+                <label>מידע על שירות כללי</label>
+            </value>
+            <value>
+                <fullName>Repeating Case</fullName>
+                <default>false</default>
+                <label>פנייה חוזרת</label>
+            </value>
+            <value>
+                <fullName>Additional Health Services Call / Maccabi</fullName>
+                <default>false</default>
+                <label>שיחת שב&quot;ן/ מכבי</label>
+            </value>
+            <value>
+                <fullName>other</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>Patient_With_Refferal</fullName>
+                <default>false</default>
+                <label>אוחז בהפניה</label>
+            </value>
+            <value>
+                <fullName>Harel</fullName>
+                <default>false</default>
+                <label>מטופל הראל</label>
+            </value>
+            <value>
+                <fullName>Referred to another service</fullName>
+                <default>false</default>
+                <label>פנה לשירות אחר</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>כפול</label>
+            </value>
+            <value>
+                <fullName>Referred to consultant/secretary</fullName>
+                <default>false</default>
+                <label>פניה ליועץ/מזכירה</label>
+            </value>
+            <value>
+                <fullName>Age</fullName>
+                <default>false</default>
+                <label>גיל</label>
+            </value>
+            <value>
+                <fullName>Distance</fullName>
+                <default>false</default>
+                <label>מרחק</label>
+            </value>
+            <value>
+                <fullName>Not in the eligible age range</fullName>
+                <default>false</default>
+                <label>Not in the eligible age range</label>
+            </value>
+            <value>
+                <fullName>No Private Insurance (Price)</fullName>
+                <default>false</default>
+                <label>No Private Insurance (Price)</label>
+            </value>
+            <value>
+                <fullName>זמינות תורים רחוקה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>זמינות תורים רחוקה</label>
+            </value>
+            <value>
+                <fullName>מעוניין לחשוב</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>מעוניין לחשוב</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>IrrelevantMedical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>לא מתאים רפואית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>Unanswered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>מעוניין לבצע סקר שוק</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>IrrelevantErroneous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>IrrelevantNotInterested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>Transfer_to_Private</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>Transfer_to_Harel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>RefundsFromInsurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>NoSuitableDoctorNearby</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>NoInsuranceArrangementForSurgery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>NoAppointmentBook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>NoCoordinatedDoctor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>MailingApprovalCampaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>HadSurgeryPreviously</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>ChronicDisease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>מחיר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>EyeDiseases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>TransferredToDepartment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>Maccabi_Patient</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>Service_Isnt_provided_privately</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>Referred_to_schedule_with_another_private_doctor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Wrong_Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>A Doctor Who Is Not Coordinated Through Us</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Repeating Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Additional Health Services Call / Maccabi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>Age</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>Distance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>lost</controllingFieldValue>
+            <valueName>No Private Insurance (Price)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Service_doesn&apos;t_exist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Wrong_Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>A Patient Contacted To Update An appointment.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Wrong Call</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>General Service Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Patient_With_Refferal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Harel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>false</controllingFieldValue>
+            <valueName>Duplicate</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hours</fullName>
+    <active>true</active>
+    <errorConditionFormula>VALUE(TEXT(FromHour__c)) &gt;  VALUE(TEXT(ToHour__c))</errorConditionFormula>
+    <errorMessage>שעת התחלה חייבת להיות קטנה משעת סיום</errorMessage>
+</ValidationRule>

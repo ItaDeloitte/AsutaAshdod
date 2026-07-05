@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_Forms</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>app_st</compactLayoutAssignment>
+    <description>פרוייקט שאלונים דיגיטלים</description>
+    <label>Digital Forms</label>
+    <picklistValues>
+        <picklist>Reason_not_active__c</picklist>
+        <values>
+            <fullName>לבקשת המטופל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לבקשת הרופא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מילים לא ראויות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ציון סקר נמוך</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שליחת סקר פעם נוספת</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>non_active</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

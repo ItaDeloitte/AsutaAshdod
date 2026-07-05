@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View49</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Site__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Digital_FollowUp__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Date_Appointment__c</field>
+        <operation>greaterThan</operation>
+        <value>12/1/2025</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>TookPlace,RescheduleByClient,RescheduleByAssuta,Canceled,CanceledFailed</value>
+    </filters>
+    <label>המשכי טיפול - זימון אינטרנטי</label>
+</ListView>

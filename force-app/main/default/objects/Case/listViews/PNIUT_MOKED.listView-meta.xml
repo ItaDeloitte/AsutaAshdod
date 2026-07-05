@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PNIUT_MOKED</fullName>
+    <columns>CaseCreationDate__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Subject_Public_Inquiry__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Treating_Employee__c</columns>
+    <columns>Responsible_Employee__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Caneclled,Closing,טופל,התקבלה תשובה</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.PublicInquiries,Case.PublicInquiriesItem</value>
+    </filters>
+    <filters>
+        <field>CASES.CREATED_DATE_DATE_ONLY</field>
+        <operation>greaterThan</operation>
+        <value>6/1/2022 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Treating_Employee__c</field>
+        <operation>equals</operation>
+        <value>מוקד קשרי לקוחות</value>
+    </filters>
+    <label>פניות הציבור מוקד - פתוח</label>
+</ListView>

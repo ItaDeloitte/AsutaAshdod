@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>promoted_doc_must_have_opinion</fullName>
+    <active>true</active>
+    <description>רופא_מקודם_מחייב_חוות_דעת</description>
+    <errorConditionFormula>IF(  AND(Promoted_doctor_DA__c, ISBLANK( Promotion_opinion__c ))  , true, false)</errorConditionFormula>
+    <errorMessage>סימון רופא עבור קידום באתר מחייב למלא חוות דעת</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>DomainCode__c</columns>
+    <columns>Hide_From_Appointment_Screen__c</columns>
+    <columns>Domain_Type__c</columns>
+    <columns>Appointment_Coordination_System__c</columns>
+    <columns>Status__c</columns>
+    <columns>DomainReminderCode__c</columns>
+    <columns>VDN__c</columns>
+    <columns>view_calendar__c</columns>
+    <columns>Maccabi_Domain_Code__c</columns>
+    <columns>ReferenceDigitalLobby__c</columns>
+    <columns>sendingByWhatsApp__c</columns>
+    <columns>Domain_Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

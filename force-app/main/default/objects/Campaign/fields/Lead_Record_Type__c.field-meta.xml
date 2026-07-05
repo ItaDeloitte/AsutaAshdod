@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Record_Type__c</fullName>
+    <description>למטרת בחירת RT דרך זאפייר במקרים שבהם הפרמטר אינו מועבר דרך JSON, זאפייר יעשה חיפוש לפי הערך שנקבע על הקמפיין וישייך את הליד ל-RT הרלוונטי.</description>
+    <label>Lead Record Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Patient</fullName>
+                <default>true</default>
+                <label>Patient</label>
+            </value>
+            <value>
+                <fullName>Secretary_Leads</fullName>
+                <default>false</default>
+                <label>Secretary Leads</label>
+            </value>
+            <value>
+                <fullName>Assuta_Optic</fullName>
+                <default>false</default>
+                <label>Assuta Optic</label>
+            </value>
+            <value>
+                <fullName>Assuta_Family</fullName>
+                <default>false</default>
+                <label>Assuta Family</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

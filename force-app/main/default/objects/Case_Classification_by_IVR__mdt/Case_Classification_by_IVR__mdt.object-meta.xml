@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>מיפוי שלשות ל-CASE בהתאם לבחירת לקוח בתפריט 5030 ב-IVR.
+סיווג ה-CASE נקבע על ידי מיפוי VDN לסיווג ובמצב שלא ניתן (Callback) הסיווג נלקח מכאן.</description>
+    <label>Case Classification by IVR</label>
+    <pluralLabel>Case Classifications by IVR</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

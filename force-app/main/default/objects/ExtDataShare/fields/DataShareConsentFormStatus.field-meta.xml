@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataShareConsentFormStatus</fullName>
+    <inlineHelpText>מנהלי מערכת או משתמשים מורשים בארגון המקבל שאינו Salesforce Data Cloud יכולים להציג ולתשאל את כל הרשומות של אובייקטי אגם הנתונים (DLOs) הממופים אל אובייקטי מודל הנתונים (DMOs) שבשיתוף הנתונים.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X360_surgery_related__c</fullName>
+    <description>שדה עזר לפרוסס בילדר אם הפעולה הרפואית היא אחת מהמוגדרות לניתוח של 360</description>
+    <formula>RecordType.DeveloperName = &quot;Surgeries&quot; &amp;&amp; NOT(ISNULL(Medical_Procedure__c)) &amp;&amp; OR(
+( Medical_Procedure__r.Procedure_Code__c = &quot;85.23&quot;) 
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.20&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.22&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.71&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.7&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.4&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.81&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.4322&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.61&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.82&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.83&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.9&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;86.9&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.002&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.1201&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;19125&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;191252&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;191253&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;76097&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;76098&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;76099&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;760904&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;19102&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;191055&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;19500&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;72144&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;72145&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.85&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.45&quot;)
+,( Medical_Procedure__r.Procedure_Code__c = &quot;85.432&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>X360 Surgery Related?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>survey_to_ris</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Fill_Percentage__c</columns>
+    <columns>IsSent__c</columns>
+    <columns>SendTime__c</columns>
+    <columns>visit_date__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SurveyTaker__c.Digital_Forms</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>5/2/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Fill_Percentage__c</field>
+        <operation>greaterThan</operation>
+        <value>0.0</value>
+    </filters>
+    <filters>
+        <field>IsSent__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>is_sms_sent__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>visit_date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>7/4/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Survey__c</field>
+        <operation>contains</operation>
+        <value>CT</value>
+    </filters>
+    <label>שאלונים שצריך לשלוח לריס</label>
+</ListView>

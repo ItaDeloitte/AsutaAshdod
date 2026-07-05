@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doc_not_allowed_to_do_medical_procedure__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>הרופא לא רשאי לבצע את הפעולה הרפואית</description>
+    <inlineHelpText>הרופא לא רשאי לבצע את הפעולה הרפואית</inlineHelpText>
+    <label>Doc not allowed to do medical procedure</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

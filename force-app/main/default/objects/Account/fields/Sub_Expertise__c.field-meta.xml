@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Expertise__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>תלויה בהתמחות של הרופא. ניתן לבחור תת-התמחויות נוספות לרופא ברשימה מקושרת דרך אובייקט ביניים</description>
+    <label>Doctor Major Sub Expertise</label>
+    <referenceTo>Sub_Expertise__c</referenceTo>
+    <relationshipLabel>רופאים בעלי תת-התמחות עיקרית</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

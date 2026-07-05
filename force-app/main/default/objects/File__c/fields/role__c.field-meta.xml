@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>role__c</fullName>
+    <description>עבור מסמך מינוי איש קשר למטופל</description>
+    <label>Role</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>file_type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>קבלת מידע</fullName>
+                <default>false</default>
+                <label>קבלת מידע</label>
+            </value>
+            <value>
+                <fullName>ביצוע פעולות</fullName>
+                <default>false</default>
+                <label>ביצוע פעולות</label>
+            </value>
+            <value>
+                <fullName>ייפוי כח</fullName>
+                <default>false</default>
+                <label>ייפוי כח</label>
+            </value>
+            <value>
+                <fullName>אפוטרופוס</fullName>
+                <default>false</default>
+                <label>אפוטרופוס</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>מינוי איש קשר</controllingFieldValue>
+            <valueName>קבלת מידע</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מינוי איש קשר</controllingFieldValue>
+            <valueName>ביצוע פעולות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מינוי איש קשר</controllingFieldValue>
+            <valueName>ייפוי כח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מינוי איש קשר</controllingFieldValue>
+            <valueName>אפוטרופוס</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

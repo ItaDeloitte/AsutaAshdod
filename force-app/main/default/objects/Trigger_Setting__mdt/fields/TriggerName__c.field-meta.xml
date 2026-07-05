@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TriggerName__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>שם טריגר</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>TriggerName</label>
+    <length>50</length>
+    <required>true</required>
+    <securityClassification>Public</securityClassification>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DOCTATI</fullName>
+    <columns>Expertise__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Sub_expertise_code__c</columns>
+    <columns>Expertise_Sub_Expertise_Unic_Code__c</columns>
+    <columns>Description__c</columns>
+    <columns>Show_on_website__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>1,2</value>
+    </filters>
+    <filters>
+        <field>Show_on_website__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>תתי התמחויות להצגה באתר</label>
+</ListView>

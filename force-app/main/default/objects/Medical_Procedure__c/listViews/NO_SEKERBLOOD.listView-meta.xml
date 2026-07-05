@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NO_SEKERBLOOD</fullName>
+    <columns>Domain__c</columns>
+    <columns>NAME</columns>
+    <columns>Procedure_Code__c</columns>
+    <columns>Medical_Procedure_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Survey__c</columns>
+    <columns>taking_blood__c</columns>
+    <columns>Is_there_a_need_for_pre_surgery__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>1,פעיל</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure_Type__c</field>
+        <operation>equals</operation>
+        <value>Surgical</value>
+    </filters>
+    <filters>
+        <field>Is_there_a_need_for_pre_surgery__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>taking_blood__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Survey__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>פעולות לטיוב - נדרש טרום ללא סקר ודם</label>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TROMN</fullName>
+    <columns>Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Fill_Percentage__c</columns>
+    <columns>Site__c</columns>
+    <columns>Doc_Signed__c</columns>
+    <columns>Appointment__c</columns>
+    <columns>attemptsLeft__c</columns>
+    <columns>Medical_Procedure_1__c</columns>
+    <columns>Survey_score__c</columns>
+    <columns>Survey_link__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>sms_send_time__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>12/18/2023 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Survey__c</field>
+        <operation>contains</operation>
+        <value>הערכת טרום ניתוח</value>
+    </filters>
+    <label>שאלון טרום ניתוח</label>
+</ListView>

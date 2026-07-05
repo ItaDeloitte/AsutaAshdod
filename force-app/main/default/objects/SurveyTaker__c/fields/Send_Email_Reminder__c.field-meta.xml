@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Email_Reminder__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>ברגע שהשדה = True
+מתריג פרוסס לשליחת תזכורת למטופל</description>
+    <label>Send Email Reminder</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

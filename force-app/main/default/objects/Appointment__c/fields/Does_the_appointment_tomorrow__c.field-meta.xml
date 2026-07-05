@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Does_the_appointment_tomorrow__c</fullName>
+    <description>האם הפגישה מחר?
+עבור ליסט וויו למזכירות רפואית</description>
+    <formula>Date_of_appointment__c = TODAY() + 1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Does the appointment tomorrow?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

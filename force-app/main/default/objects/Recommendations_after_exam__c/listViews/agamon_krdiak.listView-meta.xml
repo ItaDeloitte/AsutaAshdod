@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agamon_krdiak</fullName>
+    <columns>NAME</columns>
+    <columns>Patient__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Related_Appointment__c</columns>
+    <columns>Status_recommendation__c</columns>
+    <columns>Site_Appointment__c</columns>
+    <columns>Referral_Doctor__c</columns>
+    <columns>pathologic_found__c</columns>
+    <columns>Score__c</columns>
+    <columns>Recommendation_Type_Agamon__c</columns>
+    <columns>Recommendation_Description_Agamon__c</columns>
+    <columns>Recommendation_Sub_Type_Agamon__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Agamon_Record__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Site_Appointment__c</field>
+        <operation>notContain</operation>
+        <value>סמסון</value>
+    </filters>
+    <filters>
+        <field>Appointment_Time__c</field>
+        <operation>greaterThan</operation>
+        <value>6/1/2026 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Related_Appointment__c</field>
+        <operation>contains</operation>
+        <value>קרדיאק</value>
+    </filters>
+    <filters>
+        <field>Status_recommendation__c</field>
+        <operation>equals</operation>
+        <value>חדש</value>
+    </filters>
+    <filters>
+        <field>Related_Appointment__c</field>
+        <operation>notEqual</operation>
+        <value>אין המלצה</value>
+    </filters>
+    <filters>
+        <field>Recommendation_Type_Agamon__c</field>
+        <operation>notContain</operation>
+        <value>אין</value>
+    </filters>
+    <label>אגמון-קארדיאק</label>
+</ListView>

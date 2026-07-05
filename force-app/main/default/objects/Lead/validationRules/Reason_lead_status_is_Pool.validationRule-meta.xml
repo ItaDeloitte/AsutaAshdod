@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_lead_status_is_Pool</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &quot;Pool&quot;),
+    ISBLANK(LostReasonExplanation__c),
+    $RecordType.DeveloperName = &quot;Assuta_Optic&quot;
+)</errorConditionFormula>
+    <errorDisplayField>LostReasonExplanation__c</errorDisplayField>
+    <errorMessage>Lead-002: Please write reason</errorMessage>
+</ValidationRule>

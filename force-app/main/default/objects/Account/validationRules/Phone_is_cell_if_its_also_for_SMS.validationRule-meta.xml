@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_is_cell_if_its_also_for_SMS</fullName>
+    <active>true</active>
+    <description>מוודא כי הטלפון הראשי הוא נייד, אם הוא משמש גם לSMS</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000000Qzot&apos; || $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || 
+				$User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos; || $User.Id = &apos;0054J000006CvC3QAK&apos; || 
+				$User.Id = &apos;0054J000006CvC3QAK&apos; || $User.Id = &apos;0054J000004RXaRQAW&apos;) &amp;&amp;
+
+((ISNEW() &amp;&amp; DisableValidation__c = false) 
+|| 
+(NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(DisableValidation__c))))  
+&amp;&amp; 
+Use_for_SMS__c = TRUE
+&amp;&amp;
+(
+( CONTAINS(PersonMailingCountry , &quot;ישראל&quot;)
+||
+ISBLANK(PersonMailingCountry) )
+&amp;&amp; 
+NOT( ISBLANK(Phone )) 
+&amp;&amp; 
+(LEN( Phone ) &lt;&gt; 10 
+|| 
+LEFT( Phone, 1) &lt;&gt; &quot;0&quot;)
+)
+&amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>מספר הטלפון אינו נייד</errorMessage>
+</ValidationRule>

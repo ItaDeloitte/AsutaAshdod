@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_subject__c</fullName>
+    <label>Case Subject</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>העברת פנייה למחלקה</fullName>
+                <default>false</default>
+                <label>העברת פנייה למחלקה</label>
+            </value>
+            <value>
+                <fullName>זימון תור חדש</fullName>
+                <default>false</default>
+                <label>זימון תור חדש</label>
+            </value>
+            <value>
+                <fullName>זימון תור חדש - קורונה</fullName>
+                <default>false</default>
+                <label>זימון תור חדש - קורונה</label>
+            </value>
+            <value>
+                <fullName>עדכון תור קיים</fullName>
+                <default>false</default>
+                <label>עדכון תור קיים</label>
+            </value>
+            <value>
+                <fullName>בירור אודות תור</fullName>
+                <default>false</default>
+                <label>בירור אודות תור</label>
+            </value>
+            <value>
+                <fullName>בירור תוצאות בדיקה</fullName>
+                <default>false</default>
+                <label>בירור תוצאות בדיקה</label>
+            </value>
+            <value>
+                <fullName>זימון רופא מומחה</fullName>
+                <default>false</default>
+                <label>זימון רופא מומחה</label>
+            </value>
+            <value>
+                <fullName>עדכון תור לרופא</fullName>
+                <default>false</default>
+                <label>עדכון תור לרופא</label>
+            </value>
+            <value>
+                <fullName>טיפול אדמיניסטרטיבי טרום הניתוח</fullName>
+                <default>false</default>
+                <label>טיפול אדמיניסטרטיבי טרום הניתוח</label>
+            </value>
+            <value>
+                <fullName>טיפול אדמיניסטרטיבי לאחר הניתוח</fullName>
+                <default>false</default>
+                <label>טיפול אדמיניסטרטיבי לאחר הניתוח</label>
+            </value>
+            <value>
+                <fullName>כתובות ודרכי הגעה</fullName>
+                <default>false</default>
+                <label>כתובות ודרכי הגעה</label>
+            </value>
+            <value>
+                <fullName>שעות פעילות מכונים ומרפאות</fullName>
+                <default>false</default>
+                <label>שעות פעילות מכונים ומרפאות</label>
+            </value>
+            <value>
+                <fullName>Info_about_patient</fullName>
+                <default>false</default>
+                <label>מידע אודות מטופלים</label>
+            </value>
+            <value>
+                <fullName>הסכמים</fullName>
+                <default>false</default>
+                <label>הסכמים</label>
+            </value>
+            <value>
+                <fullName>תשלומים שטרם שולמו</fullName>
+                <default>false</default>
+                <label>תשלומים שטרם שולמו</label>
+            </value>
+            <value>
+                <fullName>פעולות בגין מטופלים</fullName>
+                <default>false</default>
+                <label>פעולות בגין מטופלים</label>
+            </value>
+            <value>
+                <fullName>ממוגרפיה</fullName>
+                <default>false</default>
+                <label>שד</label>
+            </value>
+            <value>
+                <fullName>Yad_Beyad_Candidate</fullName>
+                <default>false</default>
+                <label>מועמד ליד ביד</label>
+            </value>
+            <value>
+                <fullName>עדכון פרטים אישיים</fullName>
+                <default>false</default>
+                <label>עדכון פרטים אישיים</label>
+            </value>
+            <value>
+                <fullName>שעות פעילות מוקדי השירות של אסותא</fullName>
+                <default>false</default>
+                <label>שעות פעילות מוקדי השירות של אסותא</label>
+            </value>
+            <value>
+                <fullName>נגישות</fullName>
+                <default>false</default>
+                <label>נגישות</label>
+            </value>
+            <value>
+                <fullName>דרושים/דרושות</fullName>
+                <default>false</default>
+                <label>דרושים/דרושות</label>
+            </value>
+            <value>
+                <fullName>מסמכים נלווים</fullName>
+                <default>false</default>
+                <label>מסמכים נלווים</label>
+            </value>
+            <value>
+                <fullName>קבלת מידע</fullName>
+                <default>false</default>
+                <label>קבלת מידע</label>
+            </value>
+            <value>
+                <fullName>חניה</fullName>
+                <default>false</default>
+                <label>חניה</label>
+            </value>
+            <value>
+                <fullName>ביגוד חדר ניתוח</fullName>
+                <default>false</default>
+                <label>ביגוד חדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>ציוד חדר ניתוח</fullName>
+                <default>false</default>
+                <label>ציוד חדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>זימון חדר ניתוח</fullName>
+                <default>false</default>
+                <label>זימון חדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>הקצאות חדר ניתוח</fullName>
+                <default>false</default>
+                <label>הקצאות חדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>עיכוב בחדר ניתוח</fullName>
+                <default>false</default>
+                <label>עיכוב בחדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>מידע שגוי למטופלים</fullName>
+                <default>false</default>
+                <label>מידע שגוי למטופלים</label>
+            </value>
+            <value>
+                <fullName>פרטי קשר של גורמים בארגון</fullName>
+                <default>false</default>
+                <label>פרטי קשר של גורמים בארגון</label>
+            </value>
+            <value>
+                <fullName>התחייבויות והצעות מחיר</fullName>
+                <default>false</default>
+                <label>התחייבויות והצעות מחיר</label>
+            </value>
+            <value>
+                <fullName>תורים לבדיקות</fullName>
+                <default>false</default>
+                <label>תורים לבדיקות</label>
+            </value>
+            <value>
+                <fullName>תשובות פתלוגיות</fullName>
+                <default>false</default>
+                <label>תשובות פתלוגיות</label>
+            </value>
+            <value>
+                <fullName>מרפאות</fullName>
+                <default>false</default>
+                <label>מרפאות</label>
+            </value>
+            <value>
+                <fullName>השכרת מרפאה</fullName>
+                <default>false</default>
+                <label>השכרת מרפאה</label>
+            </value>
+            <value>
+                <fullName>טרום ניתוח</fullName>
+                <default>false</default>
+                <label>טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>קבלה ראשית</fullName>
+                <default>false</default>
+                <label>קבלה ראשית</label>
+            </value>
+            <value>
+                <fullName>תמיכה טכנית</fullName>
+                <default>false</default>
+                <label>תמיכה טכנית</label>
+            </value>
+            <value>
+                <fullName>כספים</fullName>
+                <default>false</default>
+                <label>כספים</label>
+            </value>
+            <value>
+                <fullName>יחס צוות</fullName>
+                <default>false</default>
+                <label>יחס צוות</label>
+            </value>
+            <value>
+                <fullName>תנאים סביבתיים</fullName>
+                <default>false</default>
+                <label>תנאים סביבתיים</label>
+            </value>
+            <value>
+                <fullName>רשומות רפואיות</fullName>
+                <default>false</default>
+                <label>רשומות רפואיות</label>
+            </value>
+            <value>
+                <fullName>הדרכות</fullName>
+                <default>false</default>
+                <label>הדרכות</label>
+            </value>
+            <value>
+                <fullName>משאבי אנוש</fullName>
+                <default>false</default>
+                <label>משאבי אנוש</label>
+            </value>
+            <value>
+                <fullName>רפואי / ניהול סיכונים</fullName>
+                <default>false</default>
+                <label>רפואי / ניהול סיכונים</label>
+            </value>
+            <value>
+                <fullName>אתר אינטרנט</fullName>
+                <default>false</default>
+                <label>אתר אינטרנט</label>
+            </value>
+            <value>
+                <fullName>פעולה שלא מבוצעת באסותא</fullName>
+                <default>false</default>
+                <label>פעולה שלא מבוצעת באסותא</label>
+            </value>
+            <value>
+                <fullName>לא נמצאו רופאים להתמחות</fullName>
+                <default>false</default>
+                <label>לא נמצאו רופאים להתמחות</label>
+            </value>
+            <value>
+                <fullName>מידע על בתי חולים/קופות חולים</fullName>
+                <default>false</default>
+                <label>מידע על בתי חולים/קופות חולים</label>
+            </value>
+            <value>
+                <fullName>העברת שיחה למוקד אחר</fullName>
+                <default>false</default>
+                <label>העברת שיחה למוקד אחר</label>
+            </value>
+            <value>
+                <fullName>קמפיין בירור מהיר עיניים</fullName>
+                <default>false</default>
+                <label>קמפיין בירור מהיר עיניים</label>
+            </value>
+            <value>
+                <fullName>קמפיין הזעת יתר</fullName>
+                <default>false</default>
+                <label>קמפיין הזעת יתר</label>
+            </value>
+            <value>
+                <fullName>קמפיין שימור ביציות</fullName>
+                <default>false</default>
+                <label>קמפיין שימור ביציות</label>
+            </value>
+            <value>
+                <fullName>קמפיין לייזר קטרקט</fullName>
+                <default>false</default>
+                <label>קמפיין לייזר קטרקט</label>
+            </value>
+            <value>
+                <fullName>קמפיין REZOM</fullName>
+                <default>false</default>
+                <label>קמפיין REZOM</label>
+            </value>
+            <value>
+                <fullName>קמפיין אנדרולוגיה</fullName>
+                <default>false</default>
+                <label>קמפיין אנדרולוגיה</label>
+            </value>
+            <value>
+                <fullName>קמפיין נוירוכירורגיה</fullName>
+                <default>false</default>
+                <label>קמפיין נוירוכירורגיה</label>
+            </value>
+            <value>
+                <fullName>קמפיין כאב</fullName>
+                <default>false</default>
+                <label>קמפיין כאב</label>
+            </value>
+            <value>
+                <fullName>קמפיין ביופסיית פיוז&apos;ן</fullName>
+                <default>false</default>
+                <label>קמפיין ביופסיית פיוז&apos;ן</label>
+            </value>
+            <value>
+                <fullName>אגמון דימות</fullName>
+                <default>false</default>
+                <label>ייעוצים</label>
+            </value>
+            <value>
+                <fullName>תשלומים</fullName>
+                <default>false</default>
+                <label>תשלומים</label>
+            </value>
+            <value>
+                <fullName>Administration</fullName>
+                <default>false</default>
+                <label>אדמיניסטרציה</label>
+            </value>
+            <value>
+                <fullName>לוגיסטיקה</fullName>
+                <default>false</default>
+                <label>לוגיסטיקה</label>
+            </value>
+            <value>
+                <fullName>רווחה</fullName>
+                <default>false</default>
+                <label>רווחה</label>
+            </value>
+            <value>
+                <fullName>תקלות</fullName>
+                <default>false</default>
+                <label>תקלות</label>
+            </value>
+            <value>
+                <fullName>ExpertsCenter</fullName>
+                <default>false</default>
+                <label>מרכז מומחים</label>
+            </value>
+            <value>
+                <fullName>ExpertsAccounting</fullName>
+                <default>false</default>
+                <label>התחשבנות מומחים</label>
+            </value>
+            <value>
+                <fullName>Gastro</fullName>
+                <default>false</default>
+                <label>גסטרו</label>
+            </value>
+            <value>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+                <label>קרדיולוגיה</label>
+            </value>
+            <value>
+                <fullName>Lungs</fullName>
+                <default>false</default>
+                <label>ריאות</label>
+            </value>
+            <value>
+                <fullName>prostate</fullName>
+                <default>false</default>
+                <label>ערמונית</label>
+            </value>
+            <value>
+                <fullName>אבחון ביתי</fullName>
+                <default>false</default>
+                <label>אבחון ביתי</label>
+            </value>
+            <value>
+                <fullName>שליחת דוחות</fullName>
+                <default>false</default>
+                <label>שליחת דוחות</label>
+            </value>
+            <value>
+                <fullName>בירורים בנוגע לתשלום</fullName>
+                <default>false</default>
+                <label>בירורים בנוגע לתשלום</label>
+            </value>
+            <value>
+                <fullName>דרישות תשלום</fullName>
+                <default>false</default>
+                <label>דרישות תשלום</label>
+            </value>
+            <value>
+                <fullName>חוסרים בתשלום</fullName>
+                <default>false</default>
+                <label>חוסרים בתשלום</label>
+            </value>
+            <value>
+                <fullName>בירורים כללים</fullName>
+                <default>false</default>
+                <label>בירורים כללים</label>
+            </value>
+            <value>
+                <fullName>סטורנקסט</fullName>
+                <default>false</default>
+                <label>סטורנקסט</label>
+            </value>
+            <value>
+                <fullName>חשבוניות</fullName>
+                <default>false</default>
+                <label>חשבוניות</label>
+            </value>
+            <value>
+                <fullName>מערכת קליטה</fullName>
+                <default>false</default>
+                <label>מערכת קליטה</label>
+            </value>
+            <value>
+                <fullName>Kidneys</fullName>
+                <default>false</default>
+                <label>כליות</label>
+            </value>
+            <value>
+                <fullName>abandonment_signal1</fullName>
+                <default>false</default>
+                <label>איתות נטישה</label>
+            </value>
+            <value>
+                <fullName>אחזור מידע רפואי</fullName>
+                <default>false</default>
+                <label>אחזור מידע רפואי</label>
+            </value>
+            <value>
+                <fullName>פניה לרופא לעדכון רשומה רפואית</fullName>
+                <default>false</default>
+                <label>פניה לרופא לעדכון רשומה רפואית</label>
+            </value>
+            <value>
+                <fullName>טיפול בממשק ארכיון</fullName>
+                <default>false</default>
+                <label>טיפול בממשק ארכיון</label>
+            </value>
+            <value>
+                <fullName>רשם בריאטרי</fullName>
+                <default>false</default>
+                <label>רשם בריאטרי</label>
+            </value>
+            <value>
+                <fullName>ועדות ה.ה</fullName>
+                <default>false</default>
+                <label>ועדות ה.ה</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>שיחת מנהל</fullName>
+                <default>false</default>
+                <label>שיחת מנהל</label>
+            </value>
+            <value>
+                <fullName>בקשה לביעור</fullName>
+                <default>false</default>
+                <label>בקשה לביעור</label>
+            </value>
+            <value>
+                <fullName>מידע לגבי פתיחת תיק</fullName>
+                <default>false</default>
+                <label>מידע לגבי פתיחת תיק</label>
+            </value>
+            <value>
+                <fullName>אישור קבלת מסמכים</fullName>
+                <default>false</default>
+                <label>אישור קבלת מסמכים</label>
+            </value>
+            <value>
+                <fullName>בקשה לתיק לרפואי</fullName>
+                <default>false</default>
+                <label>בקשה לתיק לרפואי</label>
+            </value>
+            <value>
+                <fullName>בירור לגבי טופס התחייבות</fullName>
+                <default>false</default>
+                <label>בירור לגבי טופס התחייבות</label>
+            </value>
+            <value>
+                <fullName>מידע על עלויות</fullName>
+                <default>false</default>
+                <label>מידע על עלויות</label>
+            </value>
+            <value>
+                <fullName>אישור ביקור</fullName>
+                <default>false</default>
+                <label>אישור ביקור</label>
+            </value>
+            <value>
+                <fullName>תיאום הזמנת מיכל</fullName>
+                <default>false</default>
+                <label>תיאום הזמנת מיכל</label>
+            </value>
+            <value>
+                <fullName>בקשות להוצאה והחזרה של ביציות מוקפאות/מופרות/זרע</fullName>
+                <default>false</default>
+                <label>בקשות להוצאה והחזרה של ביציות מוקפאות/מופרות/זרע</label>
+            </value>
+            <value>
+                <fullName>הדרכה עם אחות</fullName>
+                <default>false</default>
+                <label>הדרכה עם אחות</label>
+            </value>
+            <value>
+                <fullName>מידע על ביצוע ההזרקה</fullName>
+                <default>false</default>
+                <label>מידע על ביצוע ההזרקה</label>
+            </value>
+            <value>
+                <fullName>הדרכה על הפרוטוקול</fullName>
+                <default>false</default>
+                <label>הדרכה על הפרוטוקול</label>
+            </value>
+            <value>
+                <fullName>מסמכי טיפול</fullName>
+                <default>false</default>
+                <label>מסמכי טיפול</label>
+            </value>
+            <value>
+                <fullName>חשבונית</fullName>
+                <default>false</default>
+                <label>חשבונית</label>
+            </value>
+            <value>
+                <fullName>Sticker_Sheet</fullName>
+                <default>false</default>
+                <label>דפי מדבקות</label>
+            </value>
+            <value>
+                <fullName>פניה לנציג מיצוי זכויות ע&quot;י רופא</fullName>
+                <default>false</default>
+                <label>פניה לנציג מיצוי זכויות ע&quot;י רופא</label>
+            </value>
+            <value>
+                <fullName>מידע כללי</fullName>
+                <default>false</default>
+                <label>מידע כללי</label>
+            </value>
+            <value>
+                <fullName>InformationPosition</fullName>
+                <default>false</default>
+                <label>Information Position</label>
+            </value>
+            <value>
+                <fullName>private_service</fullName>
+                <default>false</default>
+                <label>שירות פרטי</label>
+            </value>
+            <value>
+                <fullName>Contact_outside_of_business_hours</fullName>
+                <default>false</default>
+                <label>פנייה מחוץ לשעות פעילות</label>
+            </value>
+            <value>
+                <fullName>ContinueTreatment</fullName>
+                <default>false</default>
+                <label>המשכי טיפול</label>
+            </value>
+            <value>
+                <fullName>Request_to_coordinate_amniocentesis_Digital</fullName>
+                <default>false</default>
+                <label>בקשה לתיאום מי שפיר – דיגיטל</label>
+            </value>
+            <value>
+                <fullName>ONE</fullName>
+                <default>false</default>
+                <label>אסותא ONE</label>
+            </value>
+            <value>
+                <fullName>DocAdvisor</fullName>
+                <default>false</default>
+                <label>דוק אדוויזר</label>
+            </value>
+            <value>
+                <fullName>note_of_appreciation</fullName>
+                <default>false</default>
+                <label>תו למחווה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

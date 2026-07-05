@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Doctor__c</columns>
+    <columns>Medical_Procedure__c</columns>
+    <columns>ShowInInternetSite__c</columns>
+    <columns>InternetSiteName__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>medical_p_c__c</columns>
+    <columns>Doctor_Id__c</columns>
+    <columns>Doctor_Code__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MPDomain__c</field>
+        <operation>contains</operation>
+        <value>לב,קוצב,מעקפים,TEE,מסתמים,מסתם,אורטה</value>
+    </filters>
+    <filters>
+        <field>Doctor__c</field>
+        <operation>contains</operation>
+        <value>משאלי,בלינקי אלכסנדר,בן אסא איל בנימין,חורי זאהי,גולדברג אלכסנדר,בן גל,סטרניק,רענני,אורלוב,ירון,ויקטור,חגית,שרוני,בולוטין,ערבות</value>
+    </filters>
+    <filters>
+        <field>MPMedicalProcedureType__c</field>
+        <operation>contains</operation>
+        <value>ניתוחית</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>לא פעיל</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>notContain</operation>
+        <value>פיסטולה,שפה,לסת,עצם,ורטברופלסטיקה,אאג,פרסטטה,ברית מילה,ארתרוסקופיה,עיניים,א.א.ג,ניתוח דחוף,IVF,עוזר,בתפנית,מנתח,היסטרוסקופיה,גסטרו</value>
+    </filters>
+    <label>All</label>
+</ListView>

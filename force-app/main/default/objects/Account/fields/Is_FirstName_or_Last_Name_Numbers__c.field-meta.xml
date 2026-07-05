@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_FirstName_or_Last_Name_Numbers__c</fullName>
+    <formula>NOT(ISBLANK( FirstName )) &amp;&amp; 
+NOT(ISBLANK(  LastName )) &amp;&amp; 
+(  ISNUMBER(FirstName )  || ISNUMBER(FirstName ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is FirstName or Last Name Numbers</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>text_for_agent__c</fullName>
+    <externalId>false</externalId>
+    <formula>LPAD(TEXT(DAY( DATEVALUE(date_of_appointment222__c)  )),2,&quot;0&quot;)&amp;&quot;/&quot;&amp;LPAD(TEXT(MONTH (DATEVALUE(date_of_appointment222__c))),2,&quot;0&quot;)&amp;&quot;/&quot;&amp; 
+TEXT(YEAR(DATEVALUE(date_of_appointment222__c)))
+ &amp;&quot; &quot;&amp; &quot;ביום&quot;&amp;&quot; &quot;&amp;
+
+ (CASE(WEEKDAY(DATEVALUE(date_of_appointment222__c)), 
+1,&quot;ראשון&quot;, 
+2,&quot;שני&quot;, 
+3,&quot;שלישי&quot;, 
+4,&quot;רביעי&quot;, 
+5,&quot;חמישי&quot;, 
+6,&quot;שישי&quot;, 
+7,&quot;שבת&quot;, 
+&quot;&quot;)) &amp;&quot; &quot;&amp; &quot;בשעה&quot; &amp;&quot; &quot;&amp;
+
+LEFT((TEXT(TIMEVALUE(date_of_appointment222__c + ($User.TimeZoneOffset__c /24)))),5) &amp;&quot; &quot;&amp; &quot;ב&quot; &amp;&quot; &quot;&amp;
+
+   site_of_appointment__c &amp;&quot; &quot;&amp; &quot;בכתובת&quot; &amp;&quot; &quot;&amp;
+
+ Adress_for_app__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Text For Agent</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>doc_from_try__c</fullName>
+    <externalId>false</externalId>
+    <formula>&apos;ל&apos; &amp; IF( NOT(ISBLANK(Doctor_Account__c)),  Doctor_Account__r.Name  ,Calendar__r.Doc_Name__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Doctor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

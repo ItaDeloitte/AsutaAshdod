@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>doc_guidlines_per_med_proc__c</fullName>
+    <description>הנחיות ספציפיות שמעביר הרופא המבצע את הפעולה הרפואית</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Physician Guidelines For Medical Procedu</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsMaccabiFile__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If it is maccabi file,doesn&apos;t scan it and doesn&apos;t save to portal...it will be done once a day by scheduled job</description>
+    <label>IsMaccabiFile</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

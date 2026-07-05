@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MY_APPOINT</fullName>
+    <columns>NAME</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled</value>
+    </filters>
+    <filters>
+        <field>Date_Appointment__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <label>פגישות שקבעתי</label>
+</ListView>

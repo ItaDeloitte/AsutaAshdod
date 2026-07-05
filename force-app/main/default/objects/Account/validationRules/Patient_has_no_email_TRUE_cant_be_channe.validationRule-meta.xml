@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Patient_has_no_email_TRUE_cant_be_channe</fullName>
+    <active>true</active>
+    <description>במידה והצ&apos;קבוקס - למטופל אין דוא&quot;ל מסומן, ערוץ התקשורת המועדף לא יכול להיות דוא&quot;ל</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+((ISNEW() &amp;&amp; DisableValidation__c = false) 
+|| 
+(NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(DisableValidation__c))))
+&amp;&amp;
+ISPICKVAL( Email_status__c , &quot;NoEmail&quot;) &amp;&amp;
+ISPICKVAL(Preferred_Channel__c ,&quot;Email&quot;)&amp;&amp;
+(  CreatedBy.ProfileId  &lt;&gt;  $Label.Integration_ProfileId  ||  LastModifiedBy.ProfileId &lt;&gt; $Label.Integration_ProfileId )
+&amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;</errorConditionFormula>
+    <errorDisplayField>Email_status__c</errorDisplayField>
+    <errorMessage>במידה ולמטופל אין כתובת דוא&quot;ל, ערוץ זה אינו יכול להיות הערוץ המועדף</errorMessage>
+</ValidationRule>

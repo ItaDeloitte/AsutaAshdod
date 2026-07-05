@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Empty_SubCaseSubject_MedicalInfo</fullName>
+    <active>true</active>
+    <description>בפניות מסוג נרמ&quot;ר שנושא הפניה הוא &quot;פניה לרופא לעדכון רשומה רפואית&quot; או &quot;חשבונית&quot; יש להפוך את השדה &quot;תת נושא הפנייה&quot; לשדה חובה</description>
+    <errorConditionFormula>ISPICKVAL(sub_case_subject__c, &quot;&quot;) &amp;&amp; RecordType.DeveloperName == &apos;Medical_Info_Management&apos;
+ &amp;&amp; (ISPICKVAL(Case_subject__c, &apos;פניה לרופא לעדכון רשומה רפואית&apos;) || ISPICKVAL(Case_subject__c, &apos;חשבונית&apos;))</errorConditionFormula>
+    <errorDisplayField>sub_case_subject__c</errorDisplayField>
+    <errorMessage>בפניות מסוג נרמ&quot;ר שנושא הפניה הוא &quot;פניה לרופא לעדכון רשומה רפואית&quot;  או &quot;חשבונית&quot;, יש להזין ערך בשדה &quot;תת נושא הפנייה&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Need_to_send_sms_before_surgery__c</fullName>
+    <formula>and(
+ RecordType.DeveloperName = &apos;Surgeries&apos;,
+ ispickval( Appointment_Status__c, &apos;WaitingForAppointment&apos;),
+ not(isblank( Spincal__c )),
+ not(Message_24h_before_surgery__c ),
+ if( WEEKDAY( Appointment_Date__c ) = 1 &amp;&amp; Appointment_Date__c - 3 = today(), true, if( WEEKDAY( Appointment_Date__c ) &lt;&gt; 1 &amp;&amp; Appointment_Date__c - 1 = today(), true, false )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Need to send sms before surgery</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

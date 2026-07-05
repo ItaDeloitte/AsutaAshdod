@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YANA</fullName>
+    <columns>NAME</columns>
+    <columns>Domain__c</columns>
+    <columns>Procedure_Code__c</columns>
+    <columns>Confidentiality__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Domain__c</field>
+        <operation>contains</operation>
+        <value>פיזיותרפיה</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>1,פעיל</value>
+    </filters>
+    <label>פיזיותרפיה</label>
+</ListView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_for_scheduling_cancelation__c</fullName>
+    <label>Reasons for scheduling cancelation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Patient&apos;s_Decision</fullName>
+                <default>false</default>
+                <label>החלטת מטופלת</label>
+            </value>
+            <value>
+                <fullName>Doctor&apos;s_Decision</fullName>
+                <default>false</default>
+                <label>החלטת רופא</label>
+            </value>
+            <value>
+                <fullName>Biopsy_Performed_Elsewhere</fullName>
+                <default>false</default>
+                <label>בוצע במקום אחר</label>
+            </value>
+            <value>
+                <fullName>Waiting_for_Doctor&apos;s_Referral</fullName>
+                <default>false</default>
+                <label>ממתינה להפניית רופא</label>
+            </value>
+            <value>
+                <fullName>Waiting_for_Appointment_with_Doctor</fullName>
+                <default>false</default>
+                <label>ממתינה לפגישה עם רופא</label>
+            </value>
+            <value>
+                <fullName>Converted_to_US_breast_by_a_doctor</fullName>
+                <default>false</default>
+                <label>הומר ל US שד ע&quot;י רופא</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

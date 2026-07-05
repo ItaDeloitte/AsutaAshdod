@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RefundNotApproved_is_not_empty</fullName>
+    <active>true</active>
+    <errorConditionFormula>(
+  NOT(ISBLANK( TEXT( Refund_NotApproved__c) ) ) &amp;&amp;
+  RecordType.DeveloperName = &quot;PublicInquiries&quot; &amp;&amp;
+  (
+  ISBLANK( Amount__c ) ||
+  ISBLANK( Factor_confirms__c )
+  )
+)
+
+||
+
+(
+  ISBLANK( TEXT( Refund_NotApproved__c) ) ) &amp;&amp;
+  RecordType.DeveloperName = &quot;PublicInquiries&quot; &amp;&amp;
+  (
+  NOT(ISBLANK( Amount__c )) ||
+  NOT(ISBLANK( Factor_confirms__c ))
+)</errorConditionFormula>
+    <errorMessage>&quot;יש למלא את השדה &quot;סכום&quot; ואת השדה &quot;גורם מאשר לפיצוי/החזר/אי חיוב</errorMessage>
+</ValidationRule>

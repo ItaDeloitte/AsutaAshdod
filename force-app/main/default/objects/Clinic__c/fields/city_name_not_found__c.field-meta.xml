@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>city_name_not_found__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>היישוב המוקלד בשדה עיר צריך להיות קיים במערכת. אם לא, הצ&apos;קבוקס יסומן ותופיע ולידציה</description>
+    <label>שם עיר לא תקין</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

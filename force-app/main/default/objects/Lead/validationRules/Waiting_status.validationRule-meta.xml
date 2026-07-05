@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waiting_status</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( Status ,&apos;waiting&apos;) &amp;&amp;
+ISBLANK( CallBack__c )</errorConditionFormula>
+    <errorMessage>יש להזין תאריך יעד לחזרה בעת בחירת סטטוס ממתין לחזרה</errorMessage>
+</ValidationRule>

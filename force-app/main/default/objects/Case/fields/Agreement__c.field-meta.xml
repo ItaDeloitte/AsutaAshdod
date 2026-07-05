@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Agreement</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <filterItems>
+            <field>Agreement__c.Doctor_Account__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Recommended_doc__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Agreement__c.PayerFactor__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.PayerFactor__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Agreement__c.PayerFactor__r.InsuranceCode__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Agreement__c</referenceTo>
+    <relationshipLabel>פניות</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

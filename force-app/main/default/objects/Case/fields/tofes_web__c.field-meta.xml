@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tofes_web__c</fullName>
+    <description>על מנת לדעת את סוג הטופס האינטרנטי ממנו הגיעה הפנייה</description>
+    <label>Web File</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Origin</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>טופס 1</fullName>
+                <default>false</default>
+                <label>טופס 1</label>
+            </value>
+            <value>
+                <fullName>טופס 2</fullName>
+                <default>false</default>
+                <label>טופס 2</label>
+            </value>
+            <value>
+                <fullName>טופס 3</fullName>
+                <default>false</default>
+                <label>טופס 3</label>
+            </value>
+            <value>
+                <fullName>טופס 4</fullName>
+                <default>false</default>
+                <label>טופס 4</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Web_Site</controllingFieldValue>
+            <valueName>טופס 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web_Site</controllingFieldValue>
+            <valueName>טופס 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web_Site</controllingFieldValue>
+            <valueName>טופס 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web_Site</controllingFieldValue>
+            <valueName>טופס 4</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

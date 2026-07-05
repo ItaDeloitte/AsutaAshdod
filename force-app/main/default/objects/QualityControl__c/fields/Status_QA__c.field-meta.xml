@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_QA__c</fullName>
+    <label>QA Source</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>בטיפול מנהל השירות</fullName>
+                <default>true</default>
+                <label>בטיפול מנהל השירות</label>
+            </value>
+            <value>
+                <fullName>בטיפול מנהל ישיר</fullName>
+                <default>false</default>
+                <label>בטיפול מנהל ישיר</label>
+            </value>
+            <value>
+                <fullName>בוצע משוב</fullName>
+                <default>false</default>
+                <label>בוצע משוב</label>
+            </value>
+            <value>
+                <fullName>לא נמצא כטעות</fullName>
+                <default>false</default>
+                <label>לא נמצא כטעות</label>
+            </value>
+            <value>
+                <fullName>לא רלוונטי</fullName>
+                <default>false</default>
+                <label>לא רלוונטי</label>
+            </value>
+            <value>
+                <fullName>חדש</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חדש</label>
+            </value>
+            <value>
+                <fullName>מקרה טופל על ידי המחלקה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>מקרה טופל על ידי המחלקה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

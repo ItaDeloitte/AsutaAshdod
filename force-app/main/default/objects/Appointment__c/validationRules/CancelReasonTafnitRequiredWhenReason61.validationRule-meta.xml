@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelReasonTafnitRequiredWhenReason61</fullName>
+    <active>true</active>
+    <description>אם סיבת ביטול = 61, חובה למלא סיבת ביטול תיק</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Canceled_Reason__c, &quot;61&quot;),
+    ISBLANK(CancelReasonTafnit__c)
+)</errorConditionFormula>
+    <errorDisplayField>CancelReasonTafnit__c</errorDisplayField>
+    <errorMessage>Case Cancel Reason is required when Cancel Reason is 61</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surgery_Connected__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The surgery that was created after this appointment</description>
+    <label>Surgery Connected</label>
+    <referenceTo>Appointment__c</referenceTo>
+    <relationshipLabel>Appointments (Surgery Connected)</relationshipLabel>
+    <relationshipName>Appointments1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
