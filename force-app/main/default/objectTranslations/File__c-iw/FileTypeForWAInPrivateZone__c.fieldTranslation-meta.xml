@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג מסמך עבור וואטסאפ באזור האישי</label>
+    <name>FileTypeForWAInPrivateZone__c</name>
+    <picklistValues>
+        <masterLabel>Appointment Summary</masterLabel>
+        <translation>סיכום ביקור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Document</masterLabel>
+        <translation>מסמך כללי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Results</masterLabel>
+        <translation>תוצאות</translation>
+    </picklistValues>
+</CustomFieldTranslation>

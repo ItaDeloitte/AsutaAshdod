@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מסמכים נדרשים</label>
+    <name>Required_documents__c</name>
+    <picklistValues>
+        <masterLabel>בדיקות סקר נשאות גנטית מההיריון הנוכחי והריונות קודמים</masterLabel>
+        <translation><!-- בדיקות סקר נשאות גנטית מההיריון הנוכחי והריונות קודמים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפניה</masterLabel>
+        <translation><!-- הפניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס התחייבות</masterLabel>
+        <translation><!-- טופס התחייבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ייעוציים גנטיים שבוצעו בעבר</masterLabel>
+        <translation><!-- ייעוציים גנטיים שבוצעו בעבר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים אחרים רלוונטיים לייעוץ גנטי</masterLabel>
+        <translation><!-- מסמכים אחרים רלוונטיים לייעוץ גנטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים רפואיים</masterLabel>
+        <translation><!-- מסמכים רפואיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום מרפאת מומחים (סיכום יעוץ) SF</masterLabel>
+        <translation><!-- סיכום מרפאת מומחים (סיכום יעוץ) SF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום רפואי מרופא משפחה או מומחה</masterLabel>
+        <translation><!-- סיכום רפואי מרופא משפחה או מומחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח MRI</masterLabel>
+        <translation><!-- פענוח MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח קודם</masterLabel>
+        <translation><!-- פענוח קודם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות PSA</masterLabel>
+        <translation><!-- תוצאות PSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקת סקר ביוכימי שליש ראשון (Papp-A)</masterLabel>
+        <translation><!-- תוצאות בדיקת סקר ביוכימי שליש ראשון (Papp-A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקת שקיפות עורפית (שבוע 11-13 להריון)</masterLabel>
+        <translation><!-- תוצאות בדיקת שקיפות עורפית (שבוע 11-13 להריון) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות מעבדה</masterLabel>
+        <translation><!-- תוצאות מעבדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות סקירת מערכות מוקדמת (אולטרסאונד שבוע 14-16 להריון)</masterLabel>
+        <translation><!-- תוצאות סקירת מערכות מוקדמת (אולטרסאונד שבוע 14-16 להריון) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות סקר ביוכימי שליש שני (חלבון עוברי)</masterLabel>
+        <translation><!-- תוצאות סקר ביוכימי שליש שני (חלבון עוברי) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובות פתולוגיה</masterLabel>
+        <translation><!-- תשובות פתולוגיה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

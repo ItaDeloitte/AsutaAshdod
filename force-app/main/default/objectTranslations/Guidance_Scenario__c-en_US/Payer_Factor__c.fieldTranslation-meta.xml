@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- גורם משלם --></label>
+    <name>Payer_Factor__c</name>
+    <picklistValues>
+        <masterLabel>ביטוח איילון</masterLabel>
+        <translation><!-- ביטוח איילון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטוח דיקלה</masterLabel>
+        <translation><!-- ביטוח דיקלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטוח הפניקס</masterLabel>
+        <translation><!-- ביטוח הפניקס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטוח הראל</masterLabel>
+        <translation><!-- ביטוח הראל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטוח ישיר</masterLabel>
+        <translation><!-- ביטוח ישיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטוח כלל</masterLabel>
+        <translation><!-- ביטוח כלל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטוח מגדל</masterLabel>
+        <translation><!-- ביטוח מגדל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטוח מנורה</masterLabel>
+        <translation><!-- ביטוח מנורה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בירור מהיר</masterLabel>
+        <translation><!-- בירור מהיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דיוויד שילדס</masterLabel>
+        <translation><!-- דיוויד שילדס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הכשרה</masterLabel>
+        <translation><!-- הכשרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הקריה למחקר גרעיני - (קמג)</masterLabel>
+        <translation><!-- הקריה למחקר גרעיני - (קמג) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כללית</masterLabel>
+        <translation><!-- כללית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כללית מושלם</masterLabel>
+        <translation><!-- כללית מושלם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כללית פלטינום</masterLabel>
+        <translation><!-- כללית פלטינום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לאומית</masterLabel>
+        <translation><!-- לאומית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לאומית זהב</masterLabel>
+        <translation><!-- לאומית זהב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאוחדת</masterLabel>
+        <translation><!-- מאוחדת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי</masterLabel>
+        <translation><!-- מכבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי זהב</masterLabel>
+        <translation><!-- מכבי זהב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי כסף</masterLabel>
+        <translation><!-- מכבי כסף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי מרפאות חוץ</masterLabel>
+        <translation><!-- מכבי מרפאות חוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי שב&quot;ן</masterLabel>
+        <translation><!-- מכבי שב&quot;ן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי שלי</masterLabel>
+        <translation><!-- מכבי שלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משרד הבטחון</masterLabel>
+        <translation><!-- משרד הבטחון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משרד הבריאות - מי שפיר</masterLabel>
+        <translation><!-- משרד הבריאות - מי שפיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ענף תקציבים</masterLabel>
+        <translation><!-- ענף תקציבים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי</masterLabel>
+        <translation><!-- פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי חבילה</masterLabel>
+        <translation><!-- פרטי חבילה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי – תיירות מרפא</masterLabel>
+        <translation><!-- פרטי – תיירות מרפא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרסונל משפחה</masterLabel>
+        <translation><!-- פרסונל משפחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קופח לאומית שבן</masterLabel>
+        <translation><!-- קופח לאומית שבן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קופח מאוחדת שבן</masterLabel>
+        <translation><!-- קופח מאוחדת שבן --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

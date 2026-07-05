@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Scanning failed</masterLabel>
+        <translation><!-- Scanning failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scanning passed</masterLabel>
+        <translation><!-- Scanning passed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unscanned</masterLabel>
+        <translation><!-- Unscanned --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

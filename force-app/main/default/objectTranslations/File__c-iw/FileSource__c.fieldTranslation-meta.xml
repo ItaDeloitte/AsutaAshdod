@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- FileSource --></label>
+    <name>FileSource__c</name>
+    <picklistValues>
+        <masterLabel>Account</masterLabel>
+        <translation><!-- Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case</masterLabel>
+        <translation><!-- Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EmailMessage</masterLabel>
+        <translation><!-- EmailMessage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FilesRouter</masterLabel>
+        <translation><!-- FilesRouter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MessagingSession</masterLabel>
+        <translation><!-- MessagingSession --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PDFConverter</masterLabel>
+        <translation><!-- PDFConverter --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

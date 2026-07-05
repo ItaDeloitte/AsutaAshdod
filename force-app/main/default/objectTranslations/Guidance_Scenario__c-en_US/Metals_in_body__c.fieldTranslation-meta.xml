@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- מתכות בגוף --></label>
+    <name>Metals_in_body__c</name>
+    <picklistValues>
+        <masterLabel>גשר שיניים</masterLabel>
+        <translation><!-- גשר שיניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כן</masterLabel>
+        <translation><!-- כן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתכות</masterLabel>
+        <translation><!-- מתכות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סטנט</masterLabel>
+        <translation><!-- סטנט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קוצב לב</masterLabel>
+        <translation><!-- קוצב לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רסיסים</masterLabel>
+        <translation><!-- רסיסים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

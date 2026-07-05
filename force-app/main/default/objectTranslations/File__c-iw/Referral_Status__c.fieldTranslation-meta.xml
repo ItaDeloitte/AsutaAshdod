@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס הפניה</label>
+    <name>Referral_Status__c</name>
+    <picklistValues>
+        <masterLabel>בקשה אושרה</masterLabel>
+        <translation><!-- בקשה אושרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה אושרה ללא צורך בהתחייבות</masterLabel>
+        <translation><!-- בקשה אושרה ללא צורך בהתחייבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה לא נמצאה</masterLabel>
+        <translation><!-- בקשה לא נמצאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה ממתינה לאישור</masterLabel>
+        <translation><!-- בקשה ממתינה לאישור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה ממתינה לאישור התחייבות נוסף</masterLabel>
+        <translation><!-- בקשה ממתינה לאישור התחייבות נוסף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה ממתינה לקובץ ההפניה מהלקוח</masterLabel>
+        <translation><!-- בקשה ממתינה לקובץ ההפניה מהלקוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה נדחתה</masterLabel>
+        <translation><!-- בקשה נדחתה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוחזרה שגיאה</masterLabel>
+        <translation><!-- הוחזרה שגיאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפניה ממתינה לשיוך לתור</masterLabel>
+        <translation><!-- הפניה ממתינה לשיוך לתור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפניה שויכה לתור</masterLabel>
+        <translation><!-- הפניה שויכה לתור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדש</masterLabel>
+        <translation><!-- חדש --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

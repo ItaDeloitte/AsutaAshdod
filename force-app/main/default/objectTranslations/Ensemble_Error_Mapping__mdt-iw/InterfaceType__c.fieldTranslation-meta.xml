@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- InterfaceType --></label>
+    <name>InterfaceType__c</name>
+    <picklistValues>
+        <masterLabel>AppointmentSearch: Prices and Agreements</masterLabel>
+        <translation><!-- AppointmentSearch: Prices and Agreements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AppointmentSearch: Search Result</masterLabel>
+        <translation><!-- AppointmentSearch: Search Result --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CancelAppointment</masterLabel>
+        <translation><!-- CancelAppointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LockSlot</masterLabel>
+        <translation><!-- LockSlot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RefreshLockSlot</masterLabel>
+        <translation><!-- RefreshLockSlot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RescheduleAppointment</masterLabel>
+        <translation><!-- RescheduleAppointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SetAppointment</masterLabel>
+        <translation><!-- SetAppointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UnLockSlot</masterLabel>
+        <translation><!-- UnLockSlot --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

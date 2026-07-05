@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target System --></label>
+    <name>TargetSystem__c</name>
+    <picklistValues>
+        <masterLabel>Clalit</masterLabel>
+        <translation><!-- Clalit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kamag</masterLabel>
+        <translation><!-- Kamag --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leumit</masterLabel>
+        <translation><!-- Leumit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maccabi</masterLabel>
+        <translation><!-- Maccabi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meuchedet</masterLabel>
+        <translation><!-- Meuchedet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private</masterLabel>
+        <translation><!-- Private --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>בקרה אדמיניסטרטיבית</label>
+    <name>Administrative_Control__c</name>
+    <picklistValues>
+        <masterLabel>לא תקין</masterLabel>
+        <translation><!-- לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאושר</masterLabel>
+        <translation><!-- מאושר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

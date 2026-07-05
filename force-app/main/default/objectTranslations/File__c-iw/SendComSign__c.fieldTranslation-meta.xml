@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- מקבל ערך TRUE כאשר טופס הסכמה מדעת נחתם/חוזר מהשרת של ComSign
+קבלת הערך הבוליאני החיובי מזניקה ממשק לאנסמבל לשליחה לנתב מסמכים והחזרת 
+URL לקובץ בשרת המסמכים -->
+    </help>
+    <label><!-- SendComSign --></label>
+    <name>SendComSign__c</name>
+</CustomFieldTranslation>

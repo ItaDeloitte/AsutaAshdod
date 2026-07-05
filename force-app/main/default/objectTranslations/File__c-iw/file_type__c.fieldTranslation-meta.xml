@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג מסמך</label>
+    <name>file_type__c</name>
+    <picklistValues>
+        <masterLabel>CT בטן/אגן – חיצוניות</masterLabel>
+        <translation><!-- CT בטן/אגן – חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECG</masterLabel>
+        <translation><!-- ECG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IVF</masterLabel>
+        <translation><!-- IVF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Survey</masterLabel>
+        <translation><!-- Internal Survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRCP- חיצוניות</masterLabel>
+        <translation><!-- MRCP- חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI בטן/אגן/ערמונית- חיצוניות</masterLabel>
+        <translation><!-- MRI בטן/אגן/ערמונית- חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mammography</masterLabel>
+        <translation><!-- Mammography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nurse Documentation</masterLabel>
+        <translation><!-- Nurse Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAP</masterLabel>
+        <translation><!-- PAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PETMR</masterLabel>
+        <translation><!-- PETMR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אולטרהסאונד בטן/דרכי שתן/ערמונית/אשכים- חיצוניות</masterLabel>
+        <translation><!-- אולטרהסאונד בטן/דרכי שתן/ערמונית/אשכים- חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אונקולוגיה: גיליון אומדן סיעודי</masterLabel>
+        <translation><!-- אונקולוגיה: גיליון אומדן סיעודי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אונקולוגיה: גיליון אנמנזה סיעודית</masterLabel>
+        <translation><!-- אונקולוגיה: גיליון אנמנזה סיעודית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אונקולוגיה: גיליון ביקור במרפאה</masterLabel>
+        <translation><!-- אונקולוגיה: גיליון ביקור במרפאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אונקולוגיה: הוראות רפואיות לטיפול</masterLabel>
+        <translation><!-- אונקולוגיה: הוראות רפואיות לטיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור אפוטרופוסיות</masterLabel>
+        <translation><!-- אישור אפוטרופוסיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור ביקור</masterLabel>
+        <translation><!-- אישור ביקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור ועדה</masterLabel>
+        <translation><!-- אישור ועדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור לקיחת דיסק/פענוח בדיקה</masterLabel>
+        <translation><!-- אישור לקיחת דיסק/פענוח בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור מחלה</masterLabel>
+        <translation><!-- אישור מחלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור רפואי אסותא אופטיק</masterLabel>
+        <translation><!-- אישור רפואי אסותא אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישורים</masterLabel>
+        <translation><!-- אישורים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסמכתא לביצוע טיפול קרינתי</masterLabel>
+        <translation><!-- אסמכתא לביצוע טיפול קרינתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסמכתא לביצוע סימולציה</masterLabel>
+        <translation><!-- אסמכתא לביצוע סימולציה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ארכיון</masterLabel>
+        <translation><!-- ארכיון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות דם (מעקב שוטף) – בדיקות חיצוניות</masterLabel>
+        <translation><!-- בדיקות דם (מעקב שוטף) – בדיקות חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות חובה שנתיות</masterLabel>
+        <translation><!-- בדיקות חובה שנתיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות מעקב U.S זקיקים</masterLabel>
+        <translation><!-- בדיקות מעקב U.S זקיקים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות סקר נשאות גנטית מההיריון הנוכחי והריונות קודמים</masterLabel>
+        <translation><!-- בדיקות סקר נשאות גנטית מההיריון הנוכחי והריונות קודמים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקת קוצב</masterLabel>
+        <translation><!-- בדיקת קוצב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקת קפסולה- חיצוניות</masterLabel>
+        <translation><!-- בדיקת קפסולה- חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקת שד ידנית</masterLabel>
+        <translation><!-- בדיקת שד ידנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקת שמיעה</masterLabel>
+        <translation><!-- בדיקת שמיעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביופסיה צוואר הרחם- תשובה תקינה</masterLabel>
+        <translation><!-- ביופסיה צוואר הרחם- תשובה תקינה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביקור הקפצה</masterLabel>
+        <translation><!-- ביקור הקפצה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביקור עובדת סוציאלית וירטואלי</masterLabel>
+        <translation><!-- ביקור עובדת סוציאלית וירטואלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בל 250 או 283</masterLabel>
+        <translation><!-- בל 250 או 283 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה ליעוץ/טיפול בית</masterLabel>
+        <translation><!-- בקשה ליעוץ/טיפול בית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה לציוד רפואי</masterLabel>
+        <translation><!-- בקשה לציוד רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה לרשומה רפואית</masterLabel>
+        <translation><!-- בקשה לרשומה רפואית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גסטרוסקופיה- בדיקות חיצוניות</masterLabel>
+        <translation><!-- גסטרוסקופיה- בדיקות חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח ביצוע דיקור מי שפיר</masterLabel>
+        <translation><!-- דוח ביצוע דיקור מי שפיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח ביציות</masterLabel>
+        <translation><!-- דוח ביציות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח החזרה - מוקפאים</masterLabel>
+        <translation><!-- דוח החזרה - מוקפאים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח מעבדה</masterLabel>
+        <translation><!-- דוח מעבדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח ניתוח</masterLabel>
+        <translation><!-- דוח ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח ניתוח במרכז מעין</masterLabel>
+        <translation><!-- דוח ניתוח במרכז מעין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח ניתוח ושחרור</masterLabel>
+        <translation><!-- דוח ניתוח ושחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח פינוי אמבולנס</masterLabel>
+        <translation><!-- דוח פינוי אמבולנס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוח פתולוגיה</masterLabel>
+        <translation><!-- דוח פתולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוחות ניתוח רלוונטים לייעוץ - חיצוניות</masterLabel>
+        <translation><!-- דוחות ניתוח רלוונטים לייעוץ - חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דיון צוות</masterLabel>
+        <translation><!-- דיון צוות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הדמיה תפקודית של המוח</masterLabel>
+        <translation><!-- הדמיה תפקודית של המוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הדרכה סיעודית לשחרור</masterLabel>
+        <translation><!-- הדרכה סיעודית לשחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הדרכת אחות בתחילת הקרנות</masterLabel>
+        <translation><!-- הדרכת אחות בתחילת הקרנות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הדרכת אחות לטיפול בית</masterLabel>
+        <translation><!-- הדרכת אחות לטיפול בית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הודעה למטופל על תוצאות בדיקות</masterLabel>
+        <translation><!-- הודעה למטופל על תוצאות בדיקות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הודעת לידה</masterLabel>
+        <translation><!-- הודעת לידה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הודעת רופא למטופל</masterLabel>
+        <translation><!-- הודעת רופא למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החזר כספי</masterLabel>
+        <translation><!-- החזר כספי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסכמה לגביית היטל מכבי</masterLabel>
+        <translation><!-- הסכמה לגביית היטל מכבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסכמה להשתתפות במחקר</masterLabel>
+        <translation><!-- הסכמה להשתתפות במחקר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסכמה לטיפול</masterLabel>
+        <translation><!-- הסכמה לטיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסכמה מדעת</masterLabel>
+        <translation><!-- הסכמה מדעת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפניה</masterLabel>
+        <translation><!-- הפניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפניה לפתולוגיה</masterLabel>
+        <translation><!-- הפניה לפתולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפניה מאומתת</masterLabel>
+        <translation><!-- הפניה מאומתת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפנייה</masterLabel>
+        <translation><!-- הפנייה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפנייה לבדיקות הדמיה</masterLabel>
+        <translation><!-- הפנייה לבדיקות הדמיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפנייה למחלקה לרפואה דחופה</masterLabel>
+        <translation><!-- הפנייה למחלקה לרפואה דחופה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הצעת מחיר</masterLabel>
+        <translation><!-- הצעת מחיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הצעת מחיר פרטית</masterLabel>
+        <translation><!-- הצעת מחיר פרטית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הרשאות לרופא</masterLabel>
+        <translation><!-- הרשאות לרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השלמת בדיקות טרום ניתוח</masterLabel>
+        <translation><!-- השלמת בדיקות טרום ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השלמת תיק סרוק</masterLabel>
+        <translation><!-- השלמת תיק סרוק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ויתור סודיות</masterLabel>
+        <translation><!-- ויתור סודיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זימון רופא מאסותא דוק</masterLabel>
+        <translation><!-- זימון רופא מאסותא דוק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הדרכה בשחרור</masterLabel>
+        <translation><!-- טופס הדרכה בשחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הזמנת מחולל חמצן</masterLabel>
+        <translation><!-- טופס הזמנת מחולל חמצן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הנחיות</masterLabel>
+        <translation><!-- טופס הנחיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הסכמה לבדיקות גנומיות</masterLabel>
+        <translation><!-- טופס הסכמה לבדיקות גנומיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הסכמה לטיפול ביולוגי/אימונולוגי</masterLabel>
+        <translation><!-- טופס הסכמה לטיפול ביולוגי/אימונולוגי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הסכמה לטיפול ציטוטוקסי</masterLabel>
+        <translation><!-- טופס הסכמה לטיפול ציטוטוקסי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הסכמה למתן מוצרי דם</masterLabel>
+        <translation><!-- טופס הסכמה למתן מוצרי דם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הסכמה לניתוח</masterLabel>
+        <translation><!-- טופס הסכמה לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הסכמה לשיקום בית</masterLabel>
+        <translation><!-- טופס הסכמה לשיקום בית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הפניה למצפן או לקהילה</masterLabel>
+        <translation><!-- טופס הפניה למצפן או לקהילה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס הפנייה לבדיקות מעבדה</masterLabel>
+        <translation><!-- טופס הפנייה לבדיקות מעבדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס התחייבות</masterLabel>
+        <translation><!-- טופס התחייבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס מרדים פרטי</masterLabel>
+        <translation><!-- טופס מרדים פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול/ייעוץ במרפאת כאב</masterLabel>
+        <translation><!-- טיפול/ייעוץ במרפאת כאב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ייעוציים גנטיים שבוצעו בעבר</masterLabel>
+        <translation><!-- ייעוציים גנטיים שבוצעו בעבר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כללי</masterLabel>
+        <translation><!-- כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדידת לחץ תוך עיני-מכשיר ביתי</masterLabel>
+        <translation><!-- מדידת לחץ תוך עיני-מכשיר ביתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדידת עדשה – ביומטריה</masterLabel>
+        <translation><!-- מדידת עדשה – ביומטריה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע רפואי מאוחזר</masterLabel>
+        <translation><!-- מידע רפואי מאוחזר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מינוי איש קשר</masterLabel>
+        <translation><!-- מינוי איש קשר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיפוי PET CT, PSMA- חיצוניות</masterLabel>
+        <translation><!-- מיפוי PET CT, PSMA- חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיפוי כבד- חיצוניות</masterLabel>
+        <translation><!-- מיפוי כבד- חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיפוי כליות- חיצוניות</masterLabel>
+        <translation><!-- מיפוי כליות- חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכתב דחייה</masterLabel>
+        <translation><!-- מכתב דחייה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכתב הרכבה ופענוח</masterLabel>
+        <translation><!-- מכתב הרכבה ופענוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכתב קבלה עוס</masterLabel>
+        <translation><!-- מכתב קבלה עוס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכתב שחרור</masterLabel>
+        <translation><!-- מכתב שחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכתב שחרור מתוכנן לשיקום בית</masterLabel>
+        <translation><!-- מכתב שחרור מתוכנן לשיקום בית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכתב תזונאית</masterLabel>
+        <translation><!-- מכתב תזונאית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכתבי סיכום - אופטיק</masterLabel>
+        <translation><!-- מכתבי סיכום - אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמך הכנה לניתוח</masterLabel>
+        <translation><!-- מסמך הכנה לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמך לביטוח לאומי</masterLabel>
+        <translation><!-- מסמך לביטוח לאומי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמך סרוק בתפנית</masterLabel>
+        <translation><!-- מסמך סרוק בתפנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכי אנגיו</masterLabel>
+        <translation><!-- מסמכי אנגיו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכי בירור מהיר</masterLabel>
+        <translation><!-- מסמכי בירור מהיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים אדמיניסטרטיביים</masterLabel>
+        <translation><!-- מסמכים אדמיניסטרטיביים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים אחרים רלוונטיים לייעוץ גנטי</masterLabel>
+        <translation><!-- מסמכים אחרים רלוונטיים לייעוץ גנטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים בריאטריים</masterLabel>
+        <translation><!-- מסמכים בריאטריים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים בריאטריים שלא להעברה למטופל</masterLabel>
+        <translation><!-- מסמכים בריאטריים שלא להעברה למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים רפואיים</masterLabel>
+        <translation><!-- מסמכים רפואיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעבדה</masterLabel>
+        <translation><!-- מעבדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעקב אסותא אופטיק</masterLabel>
+        <translation><!-- מעקב אסותא אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרשם</masterLabel>
+        <translation><!-- מרשם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרשם אסותא מומחים</masterLabel>
+        <translation><!-- מרשם אסותא מומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניטור חומציות באמצעות BRAVO</masterLabel>
+        <translation><!-- ניטור חומציות באמצעות BRAVO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נספח למכתב שחרור</masterLabel>
+        <translation><!-- נספח למכתב שחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום TILT TEST</masterLabel>
+        <translation><!-- סיכום TILT TEST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום אבחון נוירופסיכולוגי</masterLabel>
+        <translation><!-- סיכום אבחון נוירופסיכולוגי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום אופטומטריסט אסותא אופטיק</masterLabel>
+        <translation><!-- סיכום אופטומטריסט אסותא אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום אורודינמיקה</masterLabel>
+        <translation><!-- סיכום אורודינמיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום אנדרולוגיה</masterLabel>
+        <translation><!-- סיכום אנדרולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום אשפוז ביניים</masterLabel>
+        <translation><!-- סיכום אשפוז ביניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום אשפוז- העברה</masterLabel>
+        <translation><!-- סיכום אשפוז- העברה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום בדיקה ביחידה לנוירוכירורגיה תפקודית</masterLabel>
+        <translation><!-- סיכום בדיקה ביחידה לנוירוכירורגיה תפקודית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום בדיקה/ביקור במכון לב</masterLabel>
+        <translation><!-- סיכום בדיקה/ביקור במכון לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום בדיקה/ביקור במכון עיניים</masterLabel>
+        <translation><!-- סיכום בדיקה/ביקור במכון עיניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום בדיקה/ביקור במכון שינה</masterLabel>
+        <translation><!-- סיכום בדיקה/ביקור במכון שינה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום בדיקת מכון שמיעה</masterLabel>
+        <translation><!-- סיכום בדיקת מכון שמיעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום בדיקת צפיפות עצם</masterLabel>
+        <translation><!-- סיכום בדיקת צפיפות עצם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור אחות</masterLabel>
+        <translation><!-- סיכום ביקור אחות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור אחות וירטואלי</masterLabel>
+        <translation><!-- סיכום ביקור אחות וירטואלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור אחות פרונטלי</masterLabel>
+        <translation><!-- סיכום ביקור אחות פרונטלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור במיון</masterLabel>
+        <translation><!-- סיכום ביקור במיון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור במרפאת חוץ</masterLabel>
+        <translation><!-- סיכום ביקור במרפאת חוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור במרפאת קוצבים</masterLabel>
+        <translation><!-- סיכום ביקור במרפאת קוצבים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור גינקולוגיה ומיילדות</masterLabel>
+        <translation><!-- סיכום ביקור גינקולוגיה ומיילדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור דיאטנית/תזונאית</masterLabel>
+        <translation><!-- סיכום ביקור דיאטנית/תזונאית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור טרום ניתוח</masterLabel>
+        <translation><!-- סיכום ביקור טרום ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור יעוץ אונקולוגי</masterLabel>
+        <translation><!-- סיכום ביקור יעוץ אונקולוגי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור קלינאי תקשורת</masterLabel>
+        <translation><!-- סיכום ביקור קלינאי תקשורת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור קרינה</masterLabel>
+        <translation><!-- סיכום ביקור קרינה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור רדיותרפיה</masterLabel>
+        <translation><!-- סיכום ביקור רדיותרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ביקור ריפוי בעיסוק</masterLabel>
+        <translation><!-- סיכום ביקור ריפוי בעיסוק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום התאוששות</masterLabel>
+        <translation><!-- סיכום התאוששות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום טיפול אסותא אופטיק</masterLabel>
+        <translation><!-- סיכום טיפול אסותא אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום טיפול בפוטותרפיה</masterLabel>
+        <translation><!-- סיכום טיפול בפוטותרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום טיפול מכון שינה</masterLabel>
+        <translation><!-- סיכום טיפול מכון שינה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום טיפול פוטוטרפי</masterLabel>
+        <translation><!-- סיכום טיפול פוטוטרפי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום טיפול קרינתי</masterLabel>
+        <translation><!-- סיכום טיפול קרינתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום טיפול/ייעוץ במכון גסטרו</masterLabel>
+        <translation><!-- סיכום טיפול/ייעוץ במכון גסטרו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ייעוץ</masterLabel>
+        <translation><!-- סיכום ייעוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ייעוץ קרדיולוגי</masterLabel>
+        <translation><!-- סיכום ייעוץ קרדיולוגי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ייעוץ רופא ריאות</masterLabel>
+        <translation><!-- סיכום ייעוץ רופא ריאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום יעוץ אונקוגנטי</masterLabel>
+        <translation><!-- סיכום יעוץ אונקוגנטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום יעוץ גנטי מרחוק - לפני דיקור</masterLabel>
+        <translation><!-- סיכום יעוץ גנטי מרחוק - לפני דיקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום לידה</masterLabel>
+        <translation><!-- סיכום לידה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום מחזור הפריה חוץ גופית</masterLabel>
+        <translation><!-- סיכום מחזור הפריה חוץ גופית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום מחקר CONNECARE</masterLabel>
+        <translation><!-- סיכום מחקר CONNECARE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום מעבדה IVF</masterLabel>
+        <translation><!-- סיכום מעבדה IVF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום מרפאת ליפידים</masterLabel>
+        <translation><!-- סיכום מרפאת ליפידים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום סיעודי</masterLabel>
+        <translation><!-- סיכום סיעודי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום סיעודי- העברה</masterLabel>
+        <translation><!-- סיכום סיעודי- העברה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום פיענוח הולטר</masterLabel>
+        <translation><!-- סיכום פיענוח הולטר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום פעולה רדיולוגיה פולשנית</masterLabel>
+        <translation><!-- סיכום פעולה רדיולוגיה פולשנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום פעולה – צנתור/אבלציה/ניתוח</masterLabel>
+        <translation><!-- סיכום פעולה – צנתור/אבלציה/ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום פעולה – צנתור/אבלציה/ניתוח לב- מסמך חיצוני</masterLabel>
+        <translation><!-- סיכום פעולה – צנתור/אבלציה/ניתוח לב- מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום פענוח הולטר</masterLabel>
+        <translation><!-- סיכום פענוח הולטר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום פרוצדורה במכון גסטרו</masterLabel>
+        <translation><!-- סיכום פרוצדורה במכון גסטרו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום ציטולוגיה</masterLabel>
+        <translation><!-- סיכום ציטולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום רפואי - העברה לקהילה</masterLabel>
+        <translation><!-- סיכום רפואי - העברה לקהילה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום רפואי מרופא משפחה או מומחה - חיצוניות</masterLabel>
+        <translation><!-- סיכום רפואי מרופא משפחה או מומחה - חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום רפואי מרופא משפחה/מנתח</masterLabel>
+        <translation><!-- סיכום רפואי מרופא משפחה/מנתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכום שאיבת ביציות</masterLabel>
+        <translation><!-- סיכום שאיבת ביציות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיכומי מרפאת אונקולוגיה להעברה לאינטרנט</masterLabel>
+        <translation><!-- סיכומי מרפאת אונקולוגיה להעברה לאינטרנט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ספח לתעודת זהות</masterLabel>
+        <translation><!-- ספח לתעודת זהות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ספירת תאי אנתודל</masterLabel>
+        <translation><!-- ספירת תאי אנתודל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סקר גנטי בפתיחת תיק</masterLabel>
+        <translation><!-- סקר גנטי בפתיחת תיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סריקת מסמכים לאחר השבתה</masterLabel>
+        <translation><!-- סריקת מסמכים לאחר השבתה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עובדת סוציאלית</masterLabel>
+        <translation><!-- עובדת סוציאלית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פיענוח CT- חיצוניות</masterLabel>
+        <translation><!-- פיענוח CT- חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח אקו לב במאמץ</masterLabel>
+        <translation><!-- פענוח אקו לב במאמץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח אקו לב במאמץ- מסמך חיצוני</masterLabel>
+        <translation><!-- פענוח אקו לב במאמץ- מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח אקו לב דופלר ECHO</masterLabel>
+        <translation><!-- פענוח אקו לב דופלר ECHO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח אקו לב – מסמך חיצוני</masterLabel>
+        <translation><!-- פענוח אקו לב – מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח בדיקת MRI – מסמך חיצוני</masterLabel>
+        <translation><!-- פענוח בדיקת MRI – מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח בדיקת הולטר</masterLabel>
+        <translation><!-- פענוח בדיקת הולטר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח בדיקת הולטר- מסמך חיצוני</masterLabel>
+        <translation><!-- פענוח בדיקת הולטר- מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח בדיקת מאמץ</masterLabel>
+        <translation><!-- פענוח בדיקת מאמץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח בדיקת מאמץ- מסמך חיצוני</masterLabel>
+        <translation><!-- פענוח בדיקת מאמץ- מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח מיפוי לב</masterLabel>
+        <translation><!-- פענוח מיפוי לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח מיפוי לב- מסמך חיצוני</masterLabel>
+        <translation><!-- פענוח מיפוי לב- מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח מתמחים לא סופי</masterLabel>
+        <translation><!-- פענוח מתמחים לא סופי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח צילום חזה – מסמך חיצוני</masterLabel>
+        <translation><!-- פענוח צילום חזה – מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פענוח קודם</masterLabel>
+        <translation><!-- פענוח קודם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בניהול רשומה באחריות רופא</masterLabel>
+        <translation><!-- פער בניהול רשומה באחריות רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צילום של האזור</masterLabel>
+        <translation><!-- צילום של האזור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צילומי פה ולסת</masterLabel>
+        <translation><!-- צילומי פה ולסת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קבלה ויעוץ לפני דיקור מי שפיר</masterLabel>
+        <translation><!-- קבלה ויעוץ לפני דיקור מי שפיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קבלה רפואית – אשפוז בית</masterLabel>
+        <translation><!-- קבלה רפואית – אשפוז בית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קולונוסקופיה (רגילה או וירטואלית) בדיקות חיצוניות</masterLabel>
+        <translation><!-- קולונוסקופיה (רגילה או וירטואלית) בדיקות חיצוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קורסי החיאה</masterLabel>
+        <translation><!-- קורסי החיאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קיט ניתוחי</masterLabel>
+        <translation><!-- קיט ניתוחי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רישיון קבורה</masterLabel>
+        <translation><!-- רישיון קבורה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רשימת תרופות קבועות</masterLabel>
+        <translation><!-- רשימת תרופות קבועות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רשימת תרופות קבועות- מסמך חיצוני</masterLabel>
+        <translation><!-- רשימת תרופות קבועות- מסמך חיצוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שאלון בריאטריה א&apos;</masterLabel>
+        <translation><!-- שאלון בריאטריה א&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שאלון טרום ניתוח</masterLabel>
+        <translation><!-- שאלון טרום ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שאלון לאיתור מטופלים החשודים כחולים בקורונה</masterLabel>
+        <translation><!-- שאלון לאיתור מטופלים החשודים כחולים בקורונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שאלון מטופל</masterLabel>
+        <translation><!-- שאלון מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שאלון מטופל אסותא מומחים</masterLabel>
+        <translation><!-- שאלון מטופל אסותא מומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שאלון סרוק</masterLabel>
+        <translation><!-- שאלון סרוק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שחרור יילוד</masterLabel>
+        <translation><!-- שחרור יילוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שחרור משירותי פיזיותרפיה</masterLabel>
+        <translation><!-- שחרור משירותי פיזיותרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שחרור סיעודי</masterLabel>
+        <translation><!-- שחרור סיעודי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שטר חוב</masterLabel>
+        <translation><!-- שטר חוב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שתן</masterLabel>
+        <translation><!-- שתן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוכנית טיפול IVF</masterLabel>
+        <translation><!-- תוכנית טיפול IVF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות PSA</masterLabel>
+        <translation><!-- תוצאות PSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקה לבדיקות חוץ</masterLabel>
+        <translation><!-- תוצאות בדיקה לבדיקות חוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקות סרולוגיות-בנק הזרע</masterLabel>
+        <translation><!-- תוצאות בדיקות סרולוגיות-בנק הזרע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקת מעבדה</masterLabel>
+        <translation><!-- תוצאות בדיקת מעבדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקת סקר ביוכימי שליש ראשון (Papp-A)</masterLabel>
+        <translation><!-- תוצאות בדיקת סקר ביוכימי שליש ראשון (Papp-A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקת שקיפות עורפית (שבוע 11-13 להריון)</masterLabel>
+        <translation><!-- תוצאות בדיקת שקיפות עורפית (שבוע 11-13 להריון) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות מיקרוביולוגיה</masterLabel>
+        <translation><!-- תוצאות מיקרוביולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות מעבדה</masterLabel>
+        <translation><!-- תוצאות מעבדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות סקירת מערכות מוקדמת (אולטרסאונד שבוע 14-16 להריון)</masterLabel>
+        <translation><!-- תוצאות סקירת מערכות מוקדמת (אולטרסאונד שבוע 14-16 להריון) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות סקר ביוכימי שליש שני (חלבון עוברי)</masterLabel>
+        <translation><!-- תוצאות סקר ביוכימי שליש שני (חלבון עוברי) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאת בדיקת זרע</masterLabel>
+        <translation><!-- תוצאת בדיקת זרע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיעוד טיפול תרופתי (רפואה גרעינית)</masterLabel>
+        <translation><!-- תיעוד טיפול תרופתי (רפואה גרעינית) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיק סרוק ה&quot;ה</masterLabel>
+        <translation><!-- תיק סרוק ה&quot;ה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תעודת החזרה חתומה</masterLabel>
+        <translation><!-- תעודת החזרה חתומה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תעודת זהות</masterLabel>
+        <translation><!-- תעודת זהות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תפקודי ריאות</masterLabel>
+        <translation><!-- תפקודי ריאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקצירים אסותא אופטיק</masterLabel>
+        <translation><!-- תקצירים אסותא אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תרשים א.ק.ג</masterLabel>
+        <translation><!-- תרשים א.ק.ג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובה לא תקינה- מי שפיר</masterLabel>
+        <translation><!-- תשובה לא תקינה- מי שפיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובה לבדיקת פיברוסקאן</masterLabel>
+        <translation><!-- תשובה לבדיקת פיברוסקאן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובה ממכון עיניים</masterLabel>
+        <translation><!-- תשובה ממכון עיניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובות ביופסיה עורית</masterLabel>
+        <translation><!-- תשובות ביופסיה עורית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובות פתולוגיה</masterLabel>
+        <translation><!-- תשובות פתולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת CT</masterLabel>
+        <translation><!-- תשובת CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת FMRI</masterLabel>
+        <translation><!-- תשובת FMRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת MRI</masterLabel>
+        <translation><!-- תשובת MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת PET CT</masterLabel>
+        <translation><!-- תשובת PET CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת Tumor Board</masterLabel>
+        <translation><!-- תשובת Tumor Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת אולטראסאונד גינקולוגי</masterLabel>
+        <translation><!-- תשובת אולטראסאונד גינקולוגי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת אולטראסאונד כללי</masterLabel>
+        <translation><!-- תשובת אולטראסאונד כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת אולטראסאונד מפרקי ירך</masterLabel>
+        <translation><!-- תשובת אולטראסאונד מפרקי ירך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת אולטראסאונד רקטאלי</masterLabel>
+        <translation><!-- תשובת אולטראסאונד רקטאלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת בדיקת ממוגרפיה</masterLabel>
+        <translation><!-- תשובת בדיקת ממוגרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת גנטיקה</masterLabel>
+        <translation><!-- תשובת גנטיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת מי שפיר</masterLabel>
+        <translation><!-- תשובת מי שפיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת מיפוי כללי</masterLabel>
+        <translation><!-- תשובת מיפוי כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת מיפוי לב</masterLabel>
+        <translation><!-- תשובת מיפוי לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת מנומטריה</masterLabel>
+        <translation><!-- תשובת מנומטריה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת פתולוגיה לא פעיל</masterLabel>
+        <translation><!-- תשובת פתולוגיה לא פעיל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת ציטוגנטיקה</masterLabel>
+        <translation><!-- תשובת ציטוגנטיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובת רנטגן</masterLabel>
+        <translation><!-- תשובת רנטגן --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
