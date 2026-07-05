@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Practitioner who performed this observation --></help>
+    <label>Médico em atividade</label>
+    <name>HealthCloudGA__PerformingPractitioner__c</name>
+    <relationshipLabel>Observações do RES (Médico em atividade)</relationshipLabel>
+</CustomFieldTranslation>

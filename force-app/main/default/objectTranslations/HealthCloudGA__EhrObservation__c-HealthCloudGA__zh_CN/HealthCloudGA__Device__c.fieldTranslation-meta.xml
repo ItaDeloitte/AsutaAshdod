@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>设备</label>
+    <name>HealthCloudGA__Device__c</name>
+    <relationshipLabel>EHR 观察</relationshipLabel>
+</CustomFieldTranslation>
