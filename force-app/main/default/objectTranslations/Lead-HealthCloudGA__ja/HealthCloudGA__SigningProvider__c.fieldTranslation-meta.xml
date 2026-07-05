@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>署名プロバイダー</label>
+    <name>HealthCloudGA__SigningProvider__c</name>
+    <relationshipLabel>リード (署名プロバイダー)</relationshipLabel>
+</CustomFieldTranslation>

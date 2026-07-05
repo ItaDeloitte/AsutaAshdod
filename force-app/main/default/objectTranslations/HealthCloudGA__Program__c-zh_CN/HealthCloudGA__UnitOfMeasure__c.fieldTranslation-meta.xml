@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>每个患者在评测期内完成时间的计量单位（与“目标”字段同时使用）。</help>
+    <label><!-- Unit of Measure --></label>
+    <name>HealthCloudGA__UnitOfMeasure__c</name>
+    <picklistValues>
+        <masterLabel>Minutes</masterLabel>
+        <translation>分钟</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seconds</masterLabel>
+        <translation>秒</translation>
+    </picklistValues>
+</CustomFieldTranslation>

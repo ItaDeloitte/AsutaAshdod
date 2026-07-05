@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- משתל לפעולה רפואית --></label>
+    <name>Implants_mp__c</name>
+    <relationshipLabel><!-- משתלים פעולות רפואיות לפגישה --></relationshipLabel>
+</CustomFieldTranslation>

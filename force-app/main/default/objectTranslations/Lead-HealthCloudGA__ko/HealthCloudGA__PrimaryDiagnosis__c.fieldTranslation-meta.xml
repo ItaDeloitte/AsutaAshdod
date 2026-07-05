@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>1차 진단</label>
+    <name>HealthCloudGA__PrimaryDiagnosis__c</name>
+    <relationshipLabel>리드(PrimaryDiagnosis)</relationshipLabel>
+</CustomFieldTranslation>

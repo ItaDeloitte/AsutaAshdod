@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>表示患者是新加入医疗保险的患者，或长期注册的患者。</help>
+    <label><!-- New Patient --></label>
+    <name>HealthCloudGA__NewPatient__c</name>
+</CustomFieldTranslation>

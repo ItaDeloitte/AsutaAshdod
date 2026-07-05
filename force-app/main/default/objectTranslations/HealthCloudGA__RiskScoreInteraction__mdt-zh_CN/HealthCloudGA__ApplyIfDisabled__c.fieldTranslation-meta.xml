@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>如果患者是残障人士且患有其他疾病，将在应用该加性分数时为真。</help>
+    <label><!-- Apply If Disabled --></label>
+    <name>HealthCloudGA__ApplyIfDisabled__c</name>
+</CustomFieldTranslation>

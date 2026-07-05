@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>每个患者在评测期内要完成的目标时间。</help>
+    <label><!-- Target --></label>
+    <name>HealthCloudGA__Target__c</name>
+</CustomFieldTranslation>

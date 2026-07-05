@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Doporučující praktický lékař</label>
+    <name>HealthCloudGA__ReferringPractitioner__c</name>
+    <relationshipLabel>Tipy (Doporučující praktický lékař)</relationshipLabel>
+</CustomFieldTranslation>
