@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Criterio di filtro</label>
+    <name>HealthCloudGA__FilterCriterion__c</name>
+    <relationshipLabel>Condizioni di filtro</relationshipLabel>
+</CustomFieldTranslation>
