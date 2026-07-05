@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- שימ/י לב! מדובר בטלפון האישי של הרופא --></help>
+    <label>טלפון אישי של הרופא</label>
+    <name>Doctor_personal_phone__c</name>
+</CustomFieldTranslation>

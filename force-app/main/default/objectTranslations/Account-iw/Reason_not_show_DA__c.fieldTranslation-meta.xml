@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>docadvisor-סיבת אי הצגה ב</label>
+    <name>Reason_not_show_DA__c</name>
+    <picklistValues>
+        <masterLabel>הנהלה</masterLabel>
+        <translation><!-- הנהלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסכמים</masterLabel>
+        <translation><!-- הסכמים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפסיק פעילות</masterLabel>
+        <translation><!-- הפסיק פעילות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לבקשת הרופא</masterLabel>
+        <translation><!-- לבקשת הרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סחר</masterLabel>
+        <translation><!-- סחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ציון רופא נמוך</masterLabel>
+        <translation><!-- ציון רופא נמוך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא מייעץ</masterLabel>
+        <translation><!-- רופא מייעץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיווק</masterLabel>
+        <translation><!-- שיווק --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אמייל</label>
+    <name>Email_status__c</name>
+    <picklistValues>
+        <masterLabel>אין מייל</masterLabel>
+        <translation><!-- אין מייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סירב לתת כתובת</masterLabel>
+        <translation><!-- סירב לתת כתובת --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

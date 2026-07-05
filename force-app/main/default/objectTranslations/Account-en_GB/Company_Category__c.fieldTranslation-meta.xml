@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Company Category --></label>
+    <name>Company_Category__c</name>
+    <picklistValues>
+        <masterLabel>דיור מוגן</masterLabel>
+        <translation><!-- דיור מוגן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברות הייטק</masterLabel>
+        <translation><!-- חברות הייטק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברות ממשלתיות</masterLabel>
+        <translation><!-- חברות ממשלתיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרפאות</masterLabel>
+        <translation><!-- מרפאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סוכני ביטוח</masterLabel>
+        <translation><!-- סוכני ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיסקי</masterLabel>
+        <translation><!-- עיסקי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

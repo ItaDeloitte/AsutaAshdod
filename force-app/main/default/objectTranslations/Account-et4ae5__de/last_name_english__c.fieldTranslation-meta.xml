@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- השם כפי שמופיע בדרכון --></help>
+    <label><!-- Last Name In English --></label>
+    <name>last_name_english__c</name>
+</CustomFieldTranslation>

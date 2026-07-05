@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- גובה בס&quot;מ, לדוג&apos; 1.70 מ&apos; שווה ל-170 ס&quot;מ --></help>
+    <label><!-- Height --></label>
+    <name>Height__c</name>
+</CustomFieldTranslation>

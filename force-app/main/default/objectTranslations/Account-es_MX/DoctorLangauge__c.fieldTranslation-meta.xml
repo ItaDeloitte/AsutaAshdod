@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Doctor Language --></label>
+    <name>DoctorLangauge__c</name>
+    <picklistValues>
+        <masterLabel>אמהרית</masterLabel>
+        <translation><!-- אמהרית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אנגלית</masterLabel>
+        <translation><!-- אנגלית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ספרדית</masterLabel>
+        <translation><!-- ספרדית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עברית</masterLabel>
+        <translation><!-- עברית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ערבית</masterLabel>
+        <translation><!-- ערבית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צרפתית</masterLabel>
+        <translation><!-- צרפתית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רוסית</masterLabel>
+        <translation><!-- רוסית --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

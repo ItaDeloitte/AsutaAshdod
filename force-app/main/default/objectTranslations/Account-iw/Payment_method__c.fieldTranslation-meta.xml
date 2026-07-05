@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אמצעי תשלום</label>
+    <name>Payment_method__c</name>
+    <picklistValues>
+        <masterLabel>ביט</masterLabel>
+        <translation><!-- ביט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כרטיס אשראי</masterLabel>
+        <translation><!-- כרטיס אשראי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מזומן</masterLabel>
+        <translation><!-- מזומן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צ&apos;ק</masterLabel>
+        <translation><!-- צ&apos;ק --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

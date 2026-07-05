@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Promoted doctor --></label>
+    <name>Promoted_doctor__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסדר</masterLabel>
+        <translation><!-- הסדר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסכם</masterLabel>
+        <translation><!-- הסכם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרפאה</masterLabel>
+        <translation><!-- מרפאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סחר</masterLabel>
+        <translation><!-- סחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא חדש</masterLabel>
+        <translation><!-- רופא חדש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא מומלץ</masterLabel>
+        <translation><!-- רופא מומלץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיווק</masterLabel>
+        <translation><!-- שיווק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירות חדש</masterLabel>
+        <translation><!-- שירות חדש --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

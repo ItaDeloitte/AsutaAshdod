@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>表示患者是否有资格参加医疗补助计划。</help>
+    <label><!-- Medicaid Eligibility Status --></label>
+    <name>HealthCloudGA__MedicaidEligibilityStatus__c</name>
+</CustomFieldTranslation>

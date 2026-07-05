@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>ישובים שרופא עובד בהם</label>
+    <name>doctor_settlements__c</name>
+    <picklistValues>
+        <masterLabel>בת ים</masterLabel>
+        <translation><!-- בת ים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חולון</masterLabel>
+        <translation><!-- חולון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ראשון לציון</masterLabel>
+        <translation><!-- ראשון לציון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תל אביב</masterLabel>
+        <translation><!-- תל אביב --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
