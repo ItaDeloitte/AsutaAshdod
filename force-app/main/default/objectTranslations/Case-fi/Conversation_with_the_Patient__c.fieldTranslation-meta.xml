@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Conversation with the Patient --></label>
+    <name>Conversation_with_the_Patient__c</name>
+    <picklistValues>
+        <masterLabel>Call Made</masterLabel>
+        <translation><!-- Call Made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Future Call Scheduled</masterLabel>
+        <translation><!-- Future Call Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response</masterLabel>
+        <translation><!-- No Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient under department&apos;s care</masterLabel>
+        <translation><!-- Patient under department&apos;s care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Call</masterLabel>
+        <translation><!-- Waiting for Call --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

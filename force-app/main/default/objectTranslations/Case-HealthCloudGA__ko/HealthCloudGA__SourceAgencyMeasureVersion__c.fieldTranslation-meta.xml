@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Version of the source agency&apos;s ID measure for this care gap. --></help>
+    <label>소스 에이전시 측정 버전</label>
+    <name>HealthCloudGA__SourceAgencyMeasureVersion__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Special Requirements --></label>
+    <name>Special_demands__c</name>
+    <picklistValues>
+        <masterLabel>אחות פרטית</masterLabel>
+        <translation><!-- אחות פרטית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ארוחות-גלאט</masterLabel>
+        <translation><!-- ארוחות-גלאט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ארוחות-צמחוני</masterLabel>
+        <translation><!-- ארוחות-צמחוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הלנת מלווים</masterLabel>
+        <translation><!-- הלנת מלווים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדר דה לוקס</masterLabel>
+        <translation><!-- חדר דה לוקס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדר פרטי</masterLabel>
+        <translation><!-- חדר פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחשב אישי</masterLabel>
+        <translation><!-- מחשב אישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרדים פרטי</masterLabel>
+        <translation><!-- מרדים פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירותי ליווי צמודים</masterLabel>
+        <translation><!-- שירותי ליווי צמודים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

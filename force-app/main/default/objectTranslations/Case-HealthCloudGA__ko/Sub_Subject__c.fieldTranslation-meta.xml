@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subject Public Inquiry --></label>
+    <name>Sub_Subject__c</name>
+    <picklistValues>
+        <masterLabel>SLA קבלת פיענוח</masterLabel>
+        <translation><!-- SLA קבלת פיענוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אבזור / תקלות בחדר</masterLabel>
+        <translation><!-- אבזור / תקלות בחדר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אבזור / תקלות בחדר פרטי</masterLabel>
+        <translation><!-- אבזור / תקלות בחדר פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אבחון שגוי</masterLabel>
+        <translation><!-- אבחון שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אובדן / נזק לחפצים אישיים</masterLabel>
+        <translation><!-- אובדן / נזק לחפצים אישיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחריות לאבדן \ נזק לחפצים אישיים - אשפוז</masterLabel>
+        <translation><!-- אחריות לאבדן \ נזק לחפצים אישיים - אשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי מסירת מידע רפואי</masterLabel>
+        <translation><!-- אי מסירת מידע רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי מסירת מידע רפואי בטלפון</masterLabel>
+        <translation><!-- אי מסירת מידע רפואי בטלפון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי מציאת וריד</masterLabel>
+        <translation><!-- אי מציאת וריד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי מתן תרופה ללא הוראת רופא</masterLabel>
+        <translation><!-- אי מתן תרופה ללא הוראת רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי עמידה בSLA</masterLabel>
+        <translation><!-- אי עמידה בSLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי עמידה בתאום ציפיות</masterLabel>
+        <translation><!-- אי עמידה בתאום ציפיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי שמירה על נהלי מיגון- קורונה</masterLabel>
+        <translation><!-- אי שמירה על נהלי מיגון- קורונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אי שמירה על פרטיות</masterLabel>
+        <translation><!-- אי שמירה על פרטיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>איכות המזון</masterLabel>
+        <translation><!-- איכות המזון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור למעסיק</masterLabel>
+        <translation><!-- אישור למעסיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור למעסיק- ביקור במכון/אשפוז</masterLabel>
+        <translation><!-- אישור למעסיק- ביקור במכון/אשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור על ימי אשפוז</masterLabel>
+        <translation><!-- אישור על ימי אשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטחון</masterLabel>
+        <translation><!-- בטחון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביצוע פעולות בהרדמה \ אשפוז</masterLabel>
+        <translation><!-- ביצוע פעולות בהרדמה \ אשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בעיות התחשבנות וכספים</masterLabel>
+        <translation><!-- בעיות התחשבנות וכספים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בעיות מחשוב</masterLabel>
+        <translation><!-- בעיות מחשוב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בעיות תהליכיות</masterLabel>
+        <translation><!-- בעיות תהליכיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה להנחה</masterLabel>
+        <translation><!-- בקשה להנחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה לחידוש סיסמא שפג תוקפה</masterLabel>
+        <translation><!-- בקשה לחידוש סיסמא שפג תוקפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה לשליחת מסמכים רפואיים/דיסק בדיקה</masterLabel>
+        <translation><!-- בקשה לשליחת מסמכים רפואיים/דיסק בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דחיית חיוב</masterLabel>
+        <translation><!-- דחיית חיוב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הטרדה מינית</masterLabel>
+        <translation><!-- הטרדה מינית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>היגיינת ידיים</masterLabel>
+        <translation><!-- היגיינת ידיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>היצע שירותים/ טיפולים</masterLabel>
+        <translation><!-- היצע שירותים/ טיפולים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>היצע שרותים</masterLabel>
+        <translation><!-- היצע שרותים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הנחיות לבדיקה</masterLabel>
+        <translation><!-- הנחיות לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הנחיות לניתוח</masterLabel>
+        <translation><!-- הנחיות לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסדרי נגישות</masterLabel>
+        <translation><!-- הסדרי נגישות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסכמה מדעת</masterLabel>
+        <translation><!-- הסכמה מדעת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הערכת עלות לבדיקה</masterLabel>
+        <translation><!-- הערכת עלות לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הערכת עלות לפני ניתוח</masterLabel>
+        <translation><!-- הערכת עלות לפני ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הערכת עלות לפני ניתוח - מוקד</masterLabel>
+        <translation><!-- הערכת עלות לפני ניתוח - מוקד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הערכת עלות לפני ניתוח - קבלה</masterLabel>
+        <translation><!-- הערכת עלות לפני ניתוח - קבלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>העתק חשבונית קבלה/ אישור תשלום</masterLabel>
+        <translation><!-- העתק חשבונית קבלה/ אישור תשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפקת סיסמה</masterLabel>
+        <translation><!-- הפקת סיסמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הצלבות בין תיקי מטופלים</masterLabel>
+        <translation><!-- הצלבות בין תיקי מטופלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הצלבות פענוח בין נבדקים</masterLabel>
+        <translation><!-- הצלבות פענוח בין נבדקים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הקדמת / דחיית תור</masterLabel>
+        <translation><!-- הקדמת / דחיית תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות לגבי טיפול רפואי</masterLabel>
+        <translation><!-- השגות לגבי טיפול רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות על החלטת ועדה</masterLabel>
+        <translation><!-- השגות על החלטת ועדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות על הערכה גריאטרית</masterLabel>
+        <translation><!-- השגות על הערכה גריאטרית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות על מועד שחרור</masterLabel>
+        <translation><!-- השגות על מועד שחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות על פענוח</masterLabel>
+        <translation><!-- השגות על פענוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות על תוכן ברשומה רפואית</masterLabel>
+        <translation><!-- השגות על תוכן ברשומה רפואית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות על תוצאות בדיקה סרולוגית</masterLabel>
+        <translation><!-- השגות על תוצאות בדיקה סרולוגית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התמצאות באתר האינטרנט</masterLabel>
+        <translation><!-- התמצאות באתר האינטרנט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התעניינות תיירים</masterLabel>
+        <translation><!-- התעניינות תיירים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זהות גורם מטפל</masterLabel>
+        <translation><!-- זהות גורם מטפל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זיהוי מטופל</masterLabel>
+        <translation><!-- זיהוי מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זירוז פענוח</masterLabel>
+        <translation><!-- זירוז פענוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זירור פענוח</masterLabel>
+        <translation><!-- זירור פענוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמינות חדר ניתוח לרופאים</masterLabel>
+        <translation><!-- זמינות חדר ניתוח לרופאים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמינות טלפונית לקויה</masterLabel>
+        <translation><!-- זמינות טלפונית לקויה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמינות תור לבדיקה</masterLabel>
+        <translation><!-- זמינות תור לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמינות תורים</masterLabel>
+        <translation><!-- זמינות תורים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמן המתנה ממושך לבדיקה / לניתוח</masterLabel>
+        <translation><!-- זמן המתנה ממושך לבדיקה / לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמן המתנה ממושך לדיסק בדיקה במכון</masterLabel>
+        <translation><!-- זמן המתנה ממושך לדיסק בדיקה במכון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמן המתנה ממושך לשחרור</masterLabel>
+        <translation><!-- זמן המתנה ממושך לשחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמן המתנה ממושך- העברה מהמיון למחלקה</masterLabel>
+        <translation><!-- זמן המתנה ממושך- העברה מהמיון למחלקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חוסר מידע / הדרכה בשחרור</masterLabel>
+        <translation><!-- חוסר מידע / הדרכה בשחרור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיטוי מכשור רפואי</masterLabel>
+        <translation><!-- חיטוי מכשור רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חשד להונאה</masterLabel>
+        <translation><!-- חשד להונאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופס התחייבות</masterLabel>
+        <translation><!-- טופס התחייבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול רפואי לקוי</masterLabel>
+        <translation><!-- טיפול רפואי לקוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול רפואי לקוי- אחר</masterLabel>
+        <translation><!-- טיפול רפואי לקוי- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טעות בזימון התור - מקום/ מועד / סוג בדיקה</masterLabel>
+        <translation><!-- טעות בזימון התור - מקום/ מועד / סוג בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טעות במתן הנחיות לפני בדיקה</masterLabel>
+        <translation><!-- טעות במתן הנחיות לפני בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טעות במתן הנחיות לפני ניתוח</masterLabel>
+        <translation><!-- טעות במתן הנחיות לפני ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס אחות</masterLabel>
+        <translation><!-- יחס אחות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס במרפאות חוץ</masterLabel>
+        <translation><!-- יחס במרפאות חוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס טכנאי</masterLabel>
+        <translation><!-- יחס טכנאי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס כח עזר</masterLabel>
+        <translation><!-- יחס כח עזר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס לקוי</masterLabel>
+        <translation><!-- יחס לקוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס מאבטח</masterLabel>
+        <translation><!-- יחס מאבטח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס מזכירה</masterLabel>
+        <translation><!-- יחס מזכירה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס מרדים / רופא מחלקה- לא לשימוש</masterLabel>
+        <translation><!-- יחס מרדים / רופא מחלקה- לא לשימוש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס מתנדב/שירות לאומי</masterLabel>
+        <translation><!-- יחס מתנדב/שירות לאומי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס נציג מוקד</masterLabel>
+        <translation><!-- יחס נציג מוקד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס סניטר</masterLabel>
+        <translation><!-- יחס סניטר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס עובד מיקור חוץ</masterLabel>
+        <translation><!-- יחס עובד מיקור חוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס פרא רפואי</masterLabel>
+        <translation><!-- יחס פרא רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס פרסונל אחר</masterLabel>
+        <translation><!-- יחס פרסונל אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס צוות מטפל</masterLabel>
+        <translation><!-- יחס צוות מטפל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס רופא מחלקה</masterLabel>
+        <translation><!-- יחס רופא מחלקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס רופא מנתח</masterLabel>
+        <translation><!-- יחס רופא מנתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס רופא מרדים</masterLabel>
+        <translation><!-- יחס רופא מרדים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס רופא מרפאה/מכון</masterLabel>
+        <translation><!-- יחס רופא מרפאה/מכון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כניסת מבקרים לבית החולים</masterLabel>
+        <translation><!-- כניסת מבקרים לבית החולים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כניסת מבקרים למחלקות אשפוז</masterLabel>
+        <translation><!-- כניסת מבקרים למחלקות אשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כשירות תרבותית</masterLabel>
+        <translation><!-- כשירות תרבותית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כשרות ודת</masterLabel>
+        <translation><!-- כשרות ודת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מבנה ותשתיות</masterLabel>
+        <translation><!-- מבנה ותשתיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדיניות חברה</masterLabel>
+        <translation><!-- מדיניות חברה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדיניות מלווה לבדיקה</masterLabel>
+        <translation><!-- מדיניות מלווה לבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדיניות מלווה לניתוח</masterLabel>
+        <translation><!-- מדיניות מלווה לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מהירות תגובה אחיות</masterLabel>
+        <translation><!-- מהירות תגובה אחיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מועד בדיקה/ ניתוח</masterLabel>
+        <translation><!-- מועד בדיקה/ ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מזון - איכות/ מגוון/ התאמה</masterLabel>
+        <translation><!-- מזון - איכות/ מגוון/ התאמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחסור בציוד</masterLabel>
+        <translation><!-- מחסור בציוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע למטופל</masterLabel>
+        <translation><!-- מידע למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע מרשומה רפואית</masterLabel>
+        <translation><!-- מידע מרשומה רפואית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע על תורים</masterLabel>
+        <translation><!-- מידע על תורים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע על תנאי אשפוז</masterLabel>
+        <translation><!-- מידע על תנאי אשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע על תשלומים</masterLabel>
+        <translation><!-- מידע על תשלומים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע רפואי- כללי</masterLabel>
+        <translation><!-- מידע רפואי- כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע שגוי - אחר</masterLabel>
+        <translation><!-- מידע שגוי - אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע שגוי אודות שירותים קיימים באסותא</masterLabel>
+        <translation><!-- מידע שגוי אודות שירותים קיימים באסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע שגוי- כיסוי ביטוחי</masterLabel>
+        <translation><!-- מידע שגוי- כיסוי ביטוחי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מענה טלפוני</masterLabel>
+        <translation><!-- מענה טלפוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מקצועיות אחיות</masterLabel>
+        <translation><!-- מקצועיות אחיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מקצועיות נציג שירות</masterLabel>
+        <translation><!-- מקצועיות נציג שירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מקצועיות צוות  מטפל</masterLabel>
+        <translation><!-- מקצועיות צוות  מטפל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מקצועיות רופא</masterLabel>
+        <translation><!-- מקצועיות רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משאבי אנוש</masterLabel>
+        <translation><!-- משאבי אנוש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נגישות</masterLabel>
+        <translation><!-- נגישות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נזקי שיניים</masterLabel>
+        <translation><!-- נזקי שיניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניהול תור לקוי</masterLabel>
+        <translation><!-- ניהול תור לקוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוח שלא הצליח</masterLabel>
+        <translation><!-- ניתוח שלא הצליח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נפילה/חבלה בשטח בית החולים</masterLabel>
+        <translation><!-- נפילה/חבלה בשטח בית החולים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נקיון</masterLabel>
+        <translation><!-- נקיון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיסמא לא תקפה לאחר חודש</masterLabel>
+        <translation><!-- סיסמא לא תקפה לאחר חודש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סקר מטופלים</masterLabel>
+        <translation><!-- סקר מטופלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדכון פרטים אישיים</masterLabel>
+        <translation><!-- עדכון פרטים אישיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיכוב בקבלת טיפול רפואי</masterLabel>
+        <translation><!-- עיכוב בקבלת טיפול רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיכוב בקבלת ייעוץ רפואי - אשפוז</masterLabel>
+        <translation><!-- עיכוב בקבלת ייעוץ רפואי - אשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עישון במקום אסור</masterLabel>
+        <translation><!-- עישון במקום אסור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עלויות שירותים</masterLabel>
+        <translation><!-- עלויות שירותים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פגיעה באוטונומיה</masterLabel>
+        <translation><!-- פגיעה באוטונומיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פגיעה בחיסיון מטופל</masterLabel>
+        <translation><!-- פגיעה בחיסיון מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פגיעה בפרטיות</masterLabel>
+        <translation><!-- פגיעה בפרטיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה ממשרד הבריאות</masterLabel>
+        <translation><!-- פניה ממשרד הבריאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה משפטית</masterLabel>
+        <translation><!-- פניה משפטית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניית מטופל</masterLabel>
+        <translation><!-- פניית מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניית ספק</masterLabel>
+        <translation><!-- פניית ספק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניית עובד</masterLabel>
+        <translation><!-- פניית עובד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניית רופא</masterLabel>
+        <translation><!-- פניית רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי התקשרות עם מכונים/ מרפאות/ מחלקות</masterLabel>
+        <translation><!-- פרטי התקשרות עם מכונים/ מרפאות/ מחלקות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי התקשרות- רופאים</masterLabel>
+        <translation><!-- פרטי התקשרות- רופאים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קביעת תור</masterLabel>
+        <translation><!-- קביעת תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רשומות רפואיות</masterLabel>
+        <translation><!-- רשומות רפואיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שגיאה בפרטי מטופל</masterLabel>
+        <translation><!-- שגיאה בפרטי מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שגיאה בפרטי רופא</masterLabel>
+        <translation><!-- שגיאה בפרטי רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיח צוות בשפה זרה</masterLabel>
+        <translation><!-- שיח צוות בשפה זרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיקום</masterLabel>
+        <translation><!-- שיקום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שליחת תוצאות למטופל</masterLabel>
+        <translation><!-- שליחת תוצאות למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שמירת חפצים</masterLabel>
+        <translation><!-- שמירת חפצים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שעות ביקור</masterLabel>
+        <translation><!-- שעות ביקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תאום ציפיות לקוי</masterLabel>
+        <translation><!-- תאום ציפיות לקוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תודה</masterLabel>
+        <translation><!-- תודה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקה</masterLabel>
+        <translation><!-- תוצאות בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוקף סיסמא</masterLabel>
+        <translation><!-- תוקף סיסמא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תחזוקה</masterLabel>
+        <translation><!-- תחזוקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תנאים סביבתיים</masterLabel>
+        <translation><!-- תנאים סביבתיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תעריפי חניה</masterLabel>
+        <translation><!-- תעריפי חניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תעריפי שירותים</masterLabel>
+        <translation><!-- תעריפי שירותים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקלה בציוד רפואי</masterLabel>
+        <translation><!-- תקלה בציוד רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקלות דיגיטל / אזור אישי</masterLabel>
+        <translation><!-- תקלות דיגיטל / אזור אישי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

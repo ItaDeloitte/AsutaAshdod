@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Selected Services --></label>
+    <name>Selected_services__c</name>
+    <picklistValues>
+        <masterLabel>אולטרסאונד</masterLabel>
+        <translation><!-- אולטרסאונד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחות עד הבית</masterLabel>
+        <translation><!-- אחות עד הבית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות דם</masterLabel>
+        <translation><!-- בדיקות דם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות שתן</masterLabel>
+        <translation><!-- בדיקות שתן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקת US</masterLabel>
+        <translation><!-- בדיקת US --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקת אק&quot;ג</masterLabel>
+        <translation><!-- בדיקת אק&quot;ג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביקור אחות</masterLabel>
+        <translation><!-- ביקור אחות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביקור רופא</masterLabel>
+        <translation><!-- ביקור רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביקור רופא מקוון</masterLabel>
+        <translation><!-- ביקור רופא מקוון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביקור רופא פרונטלי</masterLabel>
+        <translation><!-- ביקור רופא פרונטלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החלמה מניתוחי לב</masterLabel>
+        <translation><!-- החלמה מניתוחי לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפולי פיזותרפיה</masterLabel>
+        <translation><!-- טיפולי פיזותרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עירוי ברזל</masterLabel>
+        <translation><!-- עירוי ברזל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צילום רנטגן</masterLabel>
+        <translation><!-- צילום רנטגן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רנטגן</masterLabel>
+        <translation><!-- רנטגן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיקום אורתופדי</masterLabel>
+        <translation><!-- שיקום אורתופדי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירותי שינה</masterLabel>
+        <translation><!-- שירותי שינה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

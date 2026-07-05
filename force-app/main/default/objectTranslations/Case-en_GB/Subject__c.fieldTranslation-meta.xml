@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subject --></label>
+    <name>Subject__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשות חריגות</masterLabel>
+        <translation><!-- בקשות חריגות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הטבת אחות למנותחים</masterLabel>
+        <translation><!-- הטבת אחות למנותחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול משלים</masterLabel>
+        <translation><!-- טיפול משלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע למטופל</masterLabel>
+        <translation><!-- מידע למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה למנכ&quot;ל</masterLabel>
+        <translation><!-- פניה למנכ&quot;ל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רפואי/ניהול סיכונים</masterLabel>
+        <translation><!-- רפואי/ניהול סיכונים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירות פרטי</masterLabel>
+        <translation><!-- שירות פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תודה</masterLabel>
+        <translation><!-- תודה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תלונה</masterLabel>
+        <translation><!-- תלונה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

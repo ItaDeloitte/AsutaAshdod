@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Topic --></label>
+    <name>Approval_Topic__c</name>
+    <picklistValues>
+        <masterLabel>קורס סדציה</masterLabel>
+        <translation><!-- קורס סדציה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קורסי החייאה</masterLabel>
+        <translation><!-- קורסי החייאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קורסים/ לומדות</masterLabel>
+        <translation><!-- קורסים/ לומדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחות הערכה</masterLabel>
+        <translation><!-- שיחות הערכה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

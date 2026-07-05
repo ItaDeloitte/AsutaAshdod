@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DEL-Sub-Expertise --></label>
+    <name>Sub_Expertise__c</name>
+    <relationshipLabel><!-- Cases --></relationshipLabel>
+</CustomFieldTranslation>

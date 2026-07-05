@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Reason 2 --></label>
+    <name>Case_Reason_2__c</name>
+    <picklistValues>
+        <masterLabel>שימוש בטופס הסכמה כללי ללא תיעוד הסבר לגבי סיכונים וסיבוכים האפשריים.</masterLabel>
+        <translation><!-- שימוש בטופס הסכמה כללי ללא תיעוד הסבר לגבי סיכונים וסיבוכים האפשריים. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שימוש בטופס כללי ללא רישום שם הניתוח</masterLabel>
+        <translation><!-- שימוש בטופס כללי ללא רישום שם הניתוח --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
