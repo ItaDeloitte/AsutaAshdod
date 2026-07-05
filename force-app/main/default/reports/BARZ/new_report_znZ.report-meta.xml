@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>calendar_medp__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>calendar_medp__c$save_slot__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>האם לשמור תור מבוטל אמת</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>calender_med__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>calendar_medp__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

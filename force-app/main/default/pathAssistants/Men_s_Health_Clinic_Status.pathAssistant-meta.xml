@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Account</entityName>
+    <fieldName>Men_s_Health_Clinic_Status__c</fieldName>
+    <masterLabel>Men&apos;s Health Clinic Status</masterLabel>
+    <recordTypeName>PersonAccount</recordTypeName>
+</PathAssistant>

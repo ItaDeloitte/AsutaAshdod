@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>memora@assuta.co.il</email>
+    <name>רעננה - צפיפות</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>assuta_raanana_machon_chpipot_ezem</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Medical_Aid_Appointment__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>שיחות live פתוחות</name>
+    <queueMembers>
+        <users>
+            <user>zzz_8a0cea8a-3c93-49bd-9f33-a12c9558db72@deleted.com</user>
+            <user>zzz_7484db23-ad09-402d-9e0e-4a5498e8f8aa@deleted.com</user>
+            <user>einavo@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>זימון חדר ניתוח - באר שבע</name>
+    <queueMembers>
+        <users>
+            <user>oraa@assuta.co.il</user>
+            <user>ranbe@assuta.co.il</user>
+            <user>annabad@assuta.co.il</user>
+            <user>dianan@assuta.co.il</user>
+            <user>dianayo@assuta.co.il</user>
+            <user>dmitryran@assuta.co.il</user>
+            <user>yuliar@assuta.co.il</user>
+            <user>yifan@assuta.co.il</user>
+            <user>nivl@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Operating_Room</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Case$OwnerId$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>User.Case$OwnerId$CaseCreationDate__c</field>
+    </columns>
+    <columns>
+        <field>User.Case$OwnerId$Status</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User*User$Group__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>נרקיס,סחלב,יסמין,סביון,לילך,דיגיטל,בכירים,אסותא אישי,פרימיום,טלאול,דפנה,חממה,חיפה – עמית,חיפה – נאג&apos;יה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Case$OwnerId$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>סגירת אירוע אוטומטית,Closed,סגור,Caneclled,Closing</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User*User$Group__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>פניות פתוחות במוקד זימון תורים</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_AND_Users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User$LastLoginDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

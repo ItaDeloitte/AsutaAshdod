@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Guidance_Scenario__c.Site__c</field>
+    </columns>
+    <columns>
+        <field>Guidance_Scenario__c.Protocol__c</field>
+    </columns>
+    <columns>
+        <field>Guidance_Scenario__c.Medical_Procedure__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Guidance_Scenario__c.Medical_Procedure__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>US בטן,US כליות ודרכי שתן</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>הנחיות לתרחישים לערן</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Guidance_Scenario__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

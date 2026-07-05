@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abandoning WhatsApp</masterLabel>
+        <translation>נוטשות-וואטסאפ</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Docadvisor</masterLabel>
+        <translation><!-- Docadvisor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gur Yad Ahat</masterLabel>
+        <translation>גור יד אחת</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pmax</masterLabel>
+        <translation><!-- Pmax --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Taboola</masterLabel>
+        <translation><!-- Taboola --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vulva</masterLabel>
+        <translation>ולווה</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>chatbot</masterLabel>
+        <translation><!-- chatbot --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>אתר אינטרנט</masterLabel>
+        <translation><!-- אתר אינטרנט --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>אתר אסותא</masterLabel>
+        <translation><!-- אתר אסותא --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>גוגל באנרים</masterLabel>
+        <translation><!-- גוגל באנרים --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>גוגל חיפוש</masterLabel>
+        <translation><!-- גוגל חיפוש --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>יוטי בית שמש</masterLabel>
+        <translation><!-- יוטי בית שמש --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>לובי ניתוחים</masterLabel>
+        <translation><!-- לובי ניתוחים --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>מאגר מידע פנימי</masterLabel>
+        <translation><!-- מאגר מידע פנימי --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>מדיקו</masterLabel>
+        <translation><!-- מדיקו --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>מוקד אסותא</masterLabel>
+        <translation><!-- מוקד אסותא --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>מיילים שיווקיים</masterLabel>
+        <translation><!-- מיילים שיווקיים --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>פולסים</masterLabel>
+        <translation><!-- פולסים --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>פייסבוק</masterLabel>
+        <translation><!-- פייסבוק --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>פניות ממוקדים אחרים/מכונים</masterLabel>
+        <translation><!-- פניות ממוקדים אחרים/מכונים --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>רופאים</masterLabel>
+        <translation><!-- רופאים --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>שיחה נכנסת</masterLabel>
+        <translation><!-- שיחה נכנסת --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>שיחות למספר ייעודי</masterLabel>
+        <translation><!-- שיחות למספר ייעודי --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

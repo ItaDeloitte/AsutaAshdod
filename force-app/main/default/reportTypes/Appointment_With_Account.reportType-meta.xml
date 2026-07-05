@@ -1,0 +1,2708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Account</baseObject>
+    <category>accounts</category>
+    <deployed>true</deployed>
+    <description>For Tizkurit</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>Appointments__r</relationship>
+    </join>
+    <label>Appointment With Account</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account ID</displayNameOverride>
+            <field>Id</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>Name</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>TextName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Number</displayNameOverride>
+            <field>AccountNumber</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Site</displayNameOverride>
+            <field>Site</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Source</displayNameOverride>
+            <field>AccountSource</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Annual Revenue</displayNameOverride>
+            <field>AnnualRevenue</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Area</displayNameOverride>
+            <field>Area__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אסטמה</displayNameOverride>
+            <field>Asthma__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Begin Insurance</displayNameOverride>
+            <field>Begin_Insurance__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Address</displayNameOverride>
+            <field>BillingAddress</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing City</displayNameOverride>
+            <field>BillingCity</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Country</displayNameOverride>
+            <field>BillingCountry</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Geocode Accuracy</displayNameOverride>
+            <field>BillingGeocodeAccuracy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Latitude</displayNameOverride>
+            <field>BillingLatitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Longitude</displayNameOverride>
+            <field>BillingLongitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing State/Province</displayNameOverride>
+            <field>BillingState</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Street</displayNameOverride>
+            <field>BillingStreet</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Zip/Postal Code</displayNameOverride>
+            <field>BillingPostalCode</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comments Ordering Queue</displayNameOverride>
+            <field>Comments_Ordering_Queue__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Create Source System</displayNameOverride>
+            <field>Create_Source_System__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Create Tafnit AC</displayNameOverride>
+            <field>Create_Tafnit_AC__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Data.com Key</displayNameOverride>
+            <field>Jigsaw</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Description</displayNameOverride>
+            <field>Description</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סכרת</displayNameOverride>
+            <field>Diabetic__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Disable if not exist in DWH</displayNameOverride>
+            <field>Disable_if_not_exist_in_DWH__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס 360</displayNameOverride>
+            <field>X360_status__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Disable Validation</displayNameOverride>
+            <field>DisableValidation__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Disease Management Specialization</displayNameOverride>
+            <field>Disease_Management_Specialization__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>districts</displayNameOverride>
+            <field>districts__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor&apos;s Email</displayNameOverride>
+            <field>Email__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor Code</displayNameOverride>
+            <field>Doctor_Code__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Employees</displayNameOverride>
+            <field>NumberOfEmployees</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Power the 1</displayNameOverride>
+            <field>Power_the_1__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>End Date shaban maccabi</displayNameOverride>
+            <field>End_Date_shaban_maccabi__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות להזמנה</displayNameOverride>
+            <field>Order_Notes__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ErrorCode</displayNameOverride>
+            <field>ErrorCode__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מטופל 360? צקבוקס</displayNameOverride>
+            <field>X360_patient_checkbox__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ErrorMessage</displayNameOverride>
+            <field>ErrorMessage__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Expertise #1</displayNameOverride>
+            <field>Expertise_1__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Expertise #2</displayNameOverride>
+            <field>Expertise_2__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Facebook</displayNameOverride>
+            <field>Facebook__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fax</displayNameOverride>
+            <field>Fax</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>First Name</displayNameOverride>
+            <field>FirstName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>fullname2</displayNameOverride>
+            <field>fullname2__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מגדר</displayNameOverride>
+            <field>Gender__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ID Type</displayNameOverride>
+            <field>ID_Type__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Industry</displayNameOverride>
+            <field>Industry</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurance Company</displayNameOverride>
+            <field>Insurance_Company__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurance is valid</displayNameOverride>
+            <field>Insurance_is_valid__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurance seniority</displayNameOverride>
+            <field>Insurance_seniority1__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurance Seniority</displayNameOverride>
+            <field>Insurance_Seniority__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurer factor</displayNameOverride>
+            <field>Insurer_factor__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רגישות ליוד</displayNameOverride>
+            <field>Iodine_sensitivity__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Name</displayNameOverride>
+            <field>LastName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last sync datetime</displayNameOverride>
+            <field>Last_sync_datetime__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Maccabi Arrangement</displayNameOverride>
+            <field>Maccabi_Arrangement__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Maccabi Member</displayNameOverride>
+            <field>Maccabi_Member__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Mailing approval</displayNameOverride>
+            <field>Mailing_approval__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מתכות בגוף</displayNameOverride>
+            <field>Metals_in_body__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>No Email</displayNameOverride>
+            <field>No_Email__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification Open Case</displayNameOverride>
+            <field>Notification_Open_Case__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Other Health Services</displayNameOverride>
+            <field>Other_Health_Services__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ownership</displayNameOverride>
+            <field>Ownership</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Parent Account</displayNameOverride>
+            <field>Parent</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Passport Num List</displayNameOverride>
+            <field>PassportNumList__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Patient Age</displayNameOverride>
+            <field>Patient_Age__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Patient has open case</displayNameOverride>
+            <field>Patient_has_open_case__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Patient/Account ID Number</displayNameOverride>
+            <field>ID_Number__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Person Account</displayNameOverride>
+            <field>PersonContact</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Phone</displayNameOverride>
+            <field>Phone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DEL_Picture</displayNameOverride>
+            <field>Picture__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Preferred Channel</displayNameOverride>
+            <field>Preferred_Channel__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Preferred Language - Service</displayNameOverride>
+            <field>Preferred_Language_Service__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>איננו דורש טרום ניתוח?</displayNameOverride>
+            <field>Pre_surgury_needed__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>QueryStatus</displayNameOverride>
+            <field>QueryStatus__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rating</displayNameOverride>
+            <field>Rating</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refuse to give email</displayNameOverride>
+            <field>Refuse_to_give_email__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sabbath keeping</displayNameOverride>
+            <field>Sabbath_keeping__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Salutation</displayNameOverride>
+            <field>Salutation</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduling Queue By Moked</displayNameOverride>
+            <field>Scheduling_Queue_By_Moked__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sending Survey?</displayNameOverride>
+            <field>Sending_Survey__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Address</displayNameOverride>
+            <field>ShippingAddress</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping City</displayNameOverride>
+            <field>ShippingCity</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Country</displayNameOverride>
+            <field>ShippingCountry</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Geocode Accuracy</displayNameOverride>
+            <field>ShippingGeocodeAccuracy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Latitude</displayNameOverride>
+            <field>ShippingLatitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Longitude</displayNameOverride>
+            <field>ShippingLongitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping State/Province</displayNameOverride>
+            <field>ShippingState</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Street</displayNameOverride>
+            <field>ShippingStreet</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Shipping Zip/Postal Code</displayNameOverride>
+            <field>ShippingPostalCode</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SIC Code</displayNameOverride>
+            <field>Sic</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SIC Description</displayNameOverride>
+            <field>SicDesc</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS Phone Number</displayNameOverride>
+            <field>SMS_Phone_Number__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SorceSysCode</displayNameOverride>
+            <field>SorceSysCode__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Start Date shaban maccabi</displayNameOverride>
+            <field>Start_Date_shaban_maccabi__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>Status__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ticker Symbol</displayNameOverride>
+            <field>TickerSymbol</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tourist</displayNameOverride>
+            <field>Tourist__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>Type</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Update Tafnit AC</displayNameOverride>
+            <field>Update_Tafnit_AC__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Use for SMS</displayNameOverride>
+            <field>Use_for_SMS__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Website</displayNameOverride>
+            <field>Website</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>משקל</displayNameOverride>
+            <field>Weight__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work1 Place</displayNameOverride>
+            <field>Work1_Place__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם מבטח</displayNameOverride>
+            <field>Icon_insurgence__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ארץ לידה</displayNameOverride>
+            <field>Birth_country__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הנחיות רופא</displayNameOverride>
+            <field>doc_ins__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות כלליות</displayNameOverride>
+            <field>General_Comments__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טלפון אישי של הרופא</displayNameOverride>
+            <field>Doctor_personal_phone__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טלפון נוסף לרופא</displayNameOverride>
+            <field>add_phone_doc__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טלפון ראשי לקבוצת מנתחים</displayNameOverride>
+            <field>Surgeon_Group_Phone__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>יש לרופא אתרים</displayNameOverride>
+            <field>sites_for_doctor__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>יש לרופא מרפאות</displayNameOverride>
+            <field>clinics_for_doctor__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מספר מומחה 1</displayNameOverride>
+            <field>expert_num1__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מספר מומחה 2</displayNameOverride>
+            <field>expert_num2__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מספר שנים בארץ</displayNameOverride>
+            <field>Years_in_country__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג</displayNameOverride>
+            <field>Type__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג חשבון</displayNameOverride>
+            <field>Record_type_account__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קישור לאתר דירוג רופאים</displayNameOverride>
+            <field>docadvisor_link__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא מרכז מומחים?</displayNameOverride>
+            <field>Experts_center__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DEL-אודות</displayNameOverride>
+            <field>background__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם קודם</displayNameOverride>
+            <field>prev_name__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שנת התמחות 1</displayNameOverride>
+            <field>year_exp1__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שנת התמחות 2</displayNameOverride>
+            <field>year_exp2__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך לידה של הרופא</displayNameOverride>
+            <field>Doctor_birthdate__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך סיום לימודים</displayNameOverride>
+            <field>Graduation_Date__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תואר רופא</displayNameOverride>
+            <field>doctor_degree__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תפקיד הרופא בבית חולים</displayNameOverride>
+            <field>Doc_role_in_hospital__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תת-התמחות עיקרית לרופא</displayNameOverride>
+            <field>Sub_Expertise__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account : Parent Account : Phone</displayNameOverride>
+            <field>Parent.Phone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account : Person Account : Birthdate</displayNameOverride>
+            <field>PersonContact.Birthdate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account : Person Account : Home Phone</displayNameOverride>
+            <field>PersonContact.HomePhone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account : Person Account : Phone</displayNameOverride>
+            <field>PersonContact.Phone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account : Person Account : Other Phone</displayNameOverride>
+            <field>PersonContact.OtherPhone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא אסותא?</displayNameOverride>
+            <field>Assuta_doctor__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אתר ראשי</displayNameOverride>
+            <field>Primary_Site__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טלפון נוסף</displayNameOverride>
+            <field>OtherPhone__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לא לשלוח סיכום חודשי</displayNameOverride>
+            <field>Dont_Send_Monthly_Summary__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שליחת הדוח החודשי</displayNameOverride>
+            <field>Date_Of_Sending_Monthly_Report__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם להציג בdocadvisor</displayNameOverride>
+            <field>Show_In_Docadvisor__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם להציג באתר</displayNameOverride>
+            <field>Show_In_Website__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סרט היכרות</displayNameOverride>
+            <field>Introducing_Video__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Promoted doctor</displayNameOverride>
+            <field>Promoted_doctor__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Counting Promoted doctor values</displayNameOverride>
+            <field>Counting_Promoted_doctor_values__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם האב</displayNameOverride>
+            <field>Father_Name__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>has_QFLOW_calendar</displayNameOverride>
+            <field>has_QFLOW_calendar__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OnlineSummon</displayNameOverride>
+            <field>OnlineSummon__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Web Comments</displayNameOverride>
+            <field>Web_Comments__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor marketing email</displayNameOverride>
+            <field>Doctor_marketing_email__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פקס</displayNameOverride>
+            <field>Fax__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact Phone Number</displayNameOverride>
+            <field>Contact_Phone_Number__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הקפצת הודעה בחשבון</displayNameOverride>
+            <field>Message_popup__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ספק משתלים</displayNameOverride>
+            <field>Mishtalim_Supplier__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Patient not entitled for ambulatory</displayNameOverride>
+            <field>Patient_not_entitled_for_ambulatory__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Asuta service for you</displayNameOverride>
+            <field>Asuta_service_for_you__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>List of Prohibitions</displayNameOverride>
+            <field>List_of_Prohibitions__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא טלמדיסין</displayNameOverride>
+            <field>TelemedicineDoctor__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Terms of Use Approval Date</displayNameOverride>
+            <field>Terms_of_Use_Approval_Date__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Data Fix</displayNameOverride>
+            <field>Data_Fix__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ScheduleAppMailingApprovalDate</displayNameOverride>
+            <field>ScheduleAppMailingApprovalDate__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Accessible Documents</displayNameOverride>
+            <field>Accessible_Documents__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Psych Documents</displayNameOverride>
+            <field>Psych_Documents__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor Phone Number</displayNameOverride>
+            <field>Doctor_Phone_Number__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Phone Missing Ashdod</displayNameOverride>
+            <field>Phone_Missing_Ashdod__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email Missing Ashdod</displayNameOverride>
+            <field>Email_Missing_Ashdod__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Age Limit</displayNameOverride>
+            <field>Age_Limit__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Men&apos;s Health Clinic Patient</displayNameOverride>
+            <field>Men_s_Health_Clinic_Patient__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Men&apos;s Health Clinic Status</displayNameOverride>
+            <field>Men_s_Health_Clinic_Status__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsTestAccount__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AshdodPreferredChannel__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Assuta_at_home_Doctor__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Deep_Link_For_Appointment__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ID_Leader__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Automation_Name__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Name_as_Number__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Service_Line__c</field>
+            <table>Account</table>
+        </columns>
+        <masterLabel>Accounts</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Admission Date</displayNameOverride>
+            <field>Admission_Date__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Agreement with assuta</displayNameOverride>
+            <field>Agreement_with_assuta__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Anamaneza</displayNameOverride>
+            <field>Anamaneza__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Anesthesia Type</displayNameOverride>
+            <field>Anesthesia_Type__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment ID</displayNameOverride>
+            <field>Id</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Appointment Name</displayNameOverride>
+            <field>Name</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Approved Amount Anesthetist</displayNameOverride>
+            <field>Approved_Amount_Anesthetist__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>B:</displayNameOverride>
+            <field>Birad__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Background Disease</displayNameOverride>
+            <field>Background_Disease__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Check Trigger Agreement to Doctor</displayNameOverride>
+            <field>Check_Trigger_Agreement_to_Doctor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Classification</displayNameOverride>
+            <field>Classification__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Clinic</displayNameOverride>
+            <field>Clinic__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Commitment Status</displayNameOverride>
+            <field>Commitment_Status__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of appointment</displayNameOverride>
+            <field>Date_of_appointment__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of commitment</displayNameOverride>
+            <field>Date_of_commitment__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of referral</displayNameOverride>
+            <field>Date_of_referral__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Time of the appointment</displayNameOverride>
+            <field>Appointment_Date_Time__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deductibles</displayNameOverride>
+            <field>Deductibles__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deductibles Hospitalization</displayNameOverride>
+            <field>Deductibles_Hospitalization__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor License From Referral</displayNameOverride>
+            <field>Doctor_License_From_Referral__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor License Number</displayNameOverride>
+            <field>Doctor_License_Number__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Expiration date commitment</displayNameOverride>
+            <field>Expiration_date_commitment__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Findings</displayNameOverride>
+            <field>Findings__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>First Name</displayNameOverride>
+            <field>First_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Food type</displayNameOverride>
+            <field>Food_type__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Hospitalization</displayNameOverride>
+            <field>Hospitalization__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ICU</displayNameOverride>
+            <field>ICU__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ID Type</displayNameOverride>
+            <field>ID_Type__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Implants Deductible Range</displayNameOverride>
+            <field>Implants_Deductible_Range__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurance Company</displayNameOverride>
+            <field>Insurance_Company__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurer factor</displayNameOverride>
+            <field>Insurer_factor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity Date</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure</displayNameOverride>
+            <field>Medical_Procedure__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure1</displayNameOverride>
+            <field>Medical_Procedure1__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure2</displayNameOverride>
+            <field>Medical_Procedure2__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure3</displayNameOverride>
+            <field>Medical_Procedure3__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure4</displayNameOverride>
+            <field>Medical_Procedure4__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure Marketing Name</displayNameOverride>
+            <field>Medical_Procedure_Marketing_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medication</displayNameOverride>
+            <field>Medication__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>more than 14 days</displayNameOverride>
+            <field>more_than_14_days__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>No agreement between doc and payer</displayNameOverride>
+            <field>No_agreement_between_doc_and_payer__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notes from spincal</displayNameOverride>
+            <field>Notes_from_spincal__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - 14 working days</displayNameOverride>
+            <field>Notification_14_working_days__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - agreement doctor</displayNameOverride>
+            <field>Notification_agreement_doctor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Account Name</displayNameOverride>
+            <field>Notification_Mismatching_Account_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Doctor Name</displayNameOverride>
+            <field>Notification_Mismatching_Doctor_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Medical1 Name</displayNameOverride>
+            <field>Notification_Mismatching_Medical1_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Medical2 Name</displayNameOverride>
+            <field>Notification_Mismatching_Medical2_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Medical3 Name</displayNameOverride>
+            <field>Notification_Mismatching_Medical3_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Medical4 Name</displayNameOverride>
+            <field>Notification_Mismatching_Medical4_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification Missmatch SpinCal Refferal</displayNameOverride>
+            <field>Notification_Missmatch_SpinCal_Refferal__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Number of commitment</displayNameOverride>
+            <field>Number_of_commitment__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Number of referral</displayNameOverride>
+            <field>Number_of_referral__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pathologist</displayNameOverride>
+            <field>Pathologist__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment for private surgeon</displayNameOverride>
+            <field>Payment_for_private_surgeon__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment for surgeon</displayNameOverride>
+            <field>Payment_for_surgeon__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment needed?</displayNameOverride>
+            <field>Payment_needed__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment to Doctor</displayNameOverride>
+            <field>Payment_to_Doctor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Physical Check</displayNameOverride>
+            <field>Physical_Check__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Portal File URL</displayNameOverride>
+            <field>Portal_File_URL__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Private anesthetist</displayNameOverride>
+            <field>Private_anesthetist__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Private nurse</displayNameOverride>
+            <field>Private_nurse__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Private room code</displayNameOverride>
+            <field>Private_room_code__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Procedure Plan Text</displayNameOverride>
+            <field>Procedure_Plan_Text__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Procedure Price</displayNameOverride>
+            <field>Procedure_Price__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Procedure requires documents</displayNameOverride>
+            <field>Procedure_requires_documents__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Process Id</displayNameOverride>
+            <field>Process_Id__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Radiologist</displayNameOverride>
+            <field>Radiologist__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral from doctor website</displayNameOverride>
+            <field>Referral_from_doctor_website__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Status Maccabi</displayNameOverride>
+            <field>Referral_Status_Maccabi__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ref status update date</displayNameOverride>
+            <field>Ref_status_update_date__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refund for Doctor</displayNameOverride>
+            <field>Refund_for_Doctor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refund from HMO on surgery</displayNameOverride>
+            <field>Refund_from_HMO_on_surgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Release Date</displayNameOverride>
+            <field>Release_Date__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Resources for surgery</displayNameOverride>
+            <field>Resources_for_surgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Send form to upload files</displayNameOverride>
+            <field>Send_form_to_upload_files__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Send pre appointement form</displayNameOverride>
+            <field>Send_pre_appointement_form__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sensitivities \ Allergies</displayNameOverride>
+            <field>Sensitivities_Allergies__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Site</displayNameOverride>
+            <field>Site__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Site Email</displayNameOverride>
+            <field>Site_Email__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Spincal</displayNameOverride>
+            <field>Spincal__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SpinCal ID</displayNameOverride>
+            <field>SpinCal_ID__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>StatusSurgeryRoom</displayNameOverride>
+            <field>StatusSurgeryRoom__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tafnit Case Number</displayNameOverride>
+            <field>Tafnit_Case_Number__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>time to remind</displayNameOverride>
+            <field>temp__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Updated in Tafnit</displayNameOverride>
+            <field>Updated_in_Tafnit__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אופן דיווח התוצאות</displayNameOverride>
+            <field>way_of_results_deliver__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בפעולה הרפואית</displayNameOverride>
+            <field>not_equal_medp_name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בפעולה הרפואית 2</displayNameOverride>
+            <field>not_equal_medp2_name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בפעולה הרפואית 3</displayNameOverride>
+            <field>not_equal_medp3_name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בפעולה הרפואית 4</displayNameOverride>
+            <field>not_equal_medp4_name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בשם המטופל</displayNameOverride>
+            <field>not_equal_acc_name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בשם הרופא</displayNameOverride>
+            <field>not_equal_doc_name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אייקון גורם מבטח</displayNameOverride>
+            <field>Payer_Factor_Icon__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שבן</displayNameOverride>
+            <field>Shaban_icon__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אתר - טקסט</displayNameOverride>
+            <field>Site_Text__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אתר לבחירה</displayNameOverride>
+            <field>site_for_choose__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצע טרום ניתוח</displayNameOverride>
+            <field>Pre_surgery_DONE__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DEL גורם משלם</displayNameOverride>
+            <field>Payer_factor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם משלם</displayNameOverride>
+            <field>PayerFactor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם משלם אייקון</displayNameOverride>
+            <field>Payer_Factor_icon2__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג גורם משלם</displayNameOverride>
+            <field>Icon_payer__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם המטופל קרא/שמע את ההנחיות?</displayNameOverride>
+            <field>Have_you_read_medical_instructors__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם נדרש טרום ניתוח?</displayNameOverride>
+            <field>Presurgery_needed1__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הוקלד ע&quot;י</displayNameOverride>
+            <field>TypedBy__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>המטופל אישר שנכח בפגישה?</displayNameOverride>
+            <field>patient_been_in_meeting__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערה כללית</displayNameOverride>
+            <field>GeneralNotes__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערה לתיק</displayNameOverride>
+            <field>TafnitAppointmentNotes__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות טכנאי</displayNameOverride>
+            <field>TechnicianNotes__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות לפגישה</displayNameOverride>
+            <field>Notes__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות קבלה</displayNameOverride>
+            <field>AcceptanceNotes__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות רדיולוג</displayNameOverride>
+            <field>RadiologistNotes__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות לתור</displayNameOverride>
+            <field>RisAppointmentNotes__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הרופא עמד בתנאי המרכז?</displayNameOverride>
+            <field>doc_stood_in_center_con__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>זמן שליחת התזכורת</displayNameOverride>
+            <field>Remainder_time1__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>חריגה בהחזרת התוצאות?</displayNameOverride>
+            <field>overdue_with_results__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טיפול המשך לפי המטופל</displayNameOverride>
+            <field>further_treatment_from_patient__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טרום ניתוח</displayNameOverride>
+            <field>PreSurgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>יום בשבוע</displayNameOverride>
+            <field>day__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>יומן</displayNameOverride>
+            <field>Calendar__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>יומן - טקסט</displayNameOverride>
+            <field>Calendar_Text__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לוח שנה</displayNameOverride>
+            <field>Costume_Calender__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד טרום הניתוח</displayNameOverride>
+            <field>PreSurgery_date_time__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מזהה הזמנה ב-RIS</displayNameOverride>
+            <field>OrderKey__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מזהה מערכת מקור</displayNameOverride>
+            <field>Accession_Number__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מטופל אישר הגעה</displayNameOverride>
+            <field>Arrival_Confirmation__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מייל מטופל</displayNameOverride>
+            <field>Patient_Mail__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מייל מרפאה</displayNameOverride>
+            <field>clinic_Email__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מייל רופא</displayNameOverride>
+            <field>Doctor_Mail__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ממצא</displayNameOverride>
+            <field>Finding__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מסלול</displayNameOverride>
+            <field>Courses_Icon__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מספר זיהוי</displayNameOverride>
+            <field>IDNumber__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מערכת זימון הפגישה</displayNameOverride>
+            <field>SourceSystemExperts__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מערכת מקור זימון הפגישה</displayNameOverride>
+            <field>SourceSystem__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>משך הפגישה</displayNameOverride>
+            <field>Duration__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נחתם ע&quot;י - מוסתר</displayNameOverride>
+            <field>SignedBy__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח לתזכורית?</displayNameOverride>
+            <field>sent_to_tizkurit__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח מסרון לתזכור</displayNameOverride>
+            <field>sms_reminder_sent__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח סקר לאחר הפגישה?</displayNameOverride>
+            <field>doc_survey_expert_send__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג התזכורית</displayNameOverride>
+            <field>Remainder_type__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג ייעוץ</displayNameOverride>
+            <field>type_of_consult__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטאטוס הפגישה</displayNameOverride>
+            <field>Appointment_Status__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס זימון חדר ניתוח</displayNameOverride>
+            <field>status_surgery_room__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תוצאות בדיקה מ-RIS</displayNameOverride>
+            <field>RisAnswerStatus__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תיזכורים</displayNameOverride>
+            <field>Remainder_status__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת דחיפות הפגישה</displayNameOverride>
+            <field>UrgentReason__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת דחיפות הפגישת האחרת</displayNameOverride>
+            <field>other_app_reason__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת הביטול</displayNameOverride>
+            <field>Canceled_Reason__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פגישה דחופה?</displayNameOverride>
+            <field>IsUrgent__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פירוט</displayNameOverride>
+            <field>reason__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פלטפורמת זימון הפגישה</displayNameOverride>
+            <field>Appointment_Booking_Platform__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פניית מקור</displayNameOverride>
+            <field>Case__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית - טקסט</displayNameOverride>
+            <field>Medical_Procedure_Text__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פתח את המסמך?</displayNameOverride>
+            <field>Open_doc__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קוד הערה לתיק</displayNameOverride>
+            <field>TafnitAppointmentNoteCode__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קישור לשאלון בדיקה</displayNameOverride>
+            <field>FormLink__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שדה עזר לשליחת הודעה</displayNameOverride>
+            <field>Help_Field1_sms__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שדה עזר לתאריך שיחת נציג</displayNameOverride>
+            <field>Help_Agent_call_date__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שדה עזר לתאריך שיחת תזכורית</displayNameOverride>
+            <field>Help_Date_for_tizkorit_reminder__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שלח למטופל קישור לאתר דירוג רופאים</displayNameOverride>
+            <field>Send_DocAdvisor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שליחת אישור על פגישה</displayNameOverride>
+            <field>need_approval__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם באקטיב דירקטורי</displayNameOverride>
+            <field>ADName__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם הרופא</displayNameOverride>
+            <field>Doctor_Account__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם מלא באקטיב דירקטורי</displayNameOverride>
+            <field>AD_Full_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת הפגישה</displayNameOverride>
+            <field>AppointmentTime__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת עדכון סטטוס</displayNameOverride>
+            <field>RISStatusChangeTime__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת שיחת נציג לתזכורת</displayNameOverride>
+            <field>Time_of_human_reminder__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת שיחת תזכורית</displayNameOverride>
+            <field>Time_of_Tizkorit__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת שליחת תזכורת SMS</displayNameOverride>
+            <field>SMS_reminder__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת תזכורים</displayNameOverride>
+            <field>Time_remider__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך הקראת ההנחיות</displayNameOverride>
+            <field>Date_Instuction_Read__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך עדכון סטטוס</displayNameOverride>
+            <field>RISStatusChangeDate__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שיחת נציג לתזכורת</displayNameOverride>
+            <field>Date_for_human_reminder__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שיחת תזכורית</displayNameOverride>
+            <field>Date_for_tizkorit_reminder__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שליחת תזכורת SMS</displayNameOverride>
+            <field>Remainder_time__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תוכנית רפואית</displayNameOverride>
+            <field>Procedure_Plan__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תז של המטופל</displayNameOverride>
+            <field>Id_Patient__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תחום</displayNameOverride>
+            <field>Domain__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תחום לזימון תור</displayNameOverride>
+            <field>Domain_for_appoitment__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיאום טלפוני מרכז מומחים?</displayNameOverride>
+            <field>Phone_coordination_expert__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : גורם משלם : קוד גורם משלם</displayNameOverride>
+            <field>PayerFactor__c.InsuranceCode__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : גורם משלם : שם לקוח גג</displayNameOverride>
+            <field>PayerFactor__c.Insurer_Name__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : גורם משלם : שם גורם משלם</displayNameOverride>
+            <field>PayerFactor__c.Name</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : גורם משלם : סוג לקוח גג</displayNameOverride>
+            <field>PayerFactor__c.InsurerType__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Site : Site Code</displayNameOverride>
+            <field>Site__c.Site_Code__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : יומן : קוד תזכורית</displayNameOverride>
+            <field>Calendar__c.code_tizkurit__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : יומן : קוד</displayNameOverride>
+            <field>Calendar__c.code__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תזכור נציג</displayNameOverride>
+            <field>Rep_Reminder_Status__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס חדר פרטי</displayNameOverride>
+            <field>Status_private_room__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>min surgery</displayNameOverride>
+            <field>min_surgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>max surgery</displayNameOverride>
+            <field>max_surgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצע אימות מול הפניה</displayNameOverride>
+            <field>Verification_Done_With_Case__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מיקום מדויק במכון</displayNameOverride>
+            <field>Exact_Location_In_Domain__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצעה גביה טלפונית?</displayNameOverride>
+            <field>Phone_Collection_Done__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך יצירת ניתוח מקושר לייעוץ</displayNameOverride>
+            <field>surg_date_related__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גיל המטופל</displayNameOverride>
+            <field>Patient_Age__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת יצירה</displayNameOverride>
+            <field>Appointment_Time__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך יצירה</displayNameOverride>
+            <field>Date_Appointment__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קוד פעולה רפואית</displayNameOverride>
+            <field>Medical_Procedure_code__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>TimeOfCreation</displayNameOverride>
+            <field>TimeOfCreation__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Consultancy summary document status</displayNameOverride>
+            <field>ConsultancySummaryDocumentStatus__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Reminders status- Consultancy summary</displayNameOverride>
+            <field>RemindersStatusConsultancySummary__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>referralAgency</displayNameOverride>
+            <field>referralAgency__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>המלצת רופא לשיקום בית</displayNameOverride>
+            <field>Shikum_Bait_Doctor_Rec__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך ההמלצה</displayNameOverride>
+            <field>Recommendation_Time__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התקבל מסמך רפואי</displayNameOverride>
+            <field>MedicalDocumentReceived__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תור אושר ע&quot;י יועצת</displayNameOverride>
+            <field>AppointmentConfirmedByConsultant__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Site Code</displayNameOverride>
+            <field>Site_Code__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחה לבדיקת לילה לקיט</displayNameOverride>
+            <field>Formula_Night_test__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טלפון מטופל</displayNameOverride>
+            <field>PHONE__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תשלום</displayNameOverride>
+            <field>PaymentStatus__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מקור התשלום</displayNameOverride>
+            <field>PaymentSource__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אישור הגעה לניתוח ע&quot;י נציג</displayNameOverride>
+            <field>ConfirmationSurgeryAgent__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Message 24h before surgery</displayNameOverride>
+            <field>Message_24h_before_surgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Need to send sms before surgery</displayNameOverride>
+            <field>Need_to_send_sms_before_surgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Datos Meeting Duration</displayNameOverride>
+            <field>datosMeetingDuration__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Message 2h after surgery</displayNameOverride>
+            <field>Message_2h_after_surgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פגישה של טרום ניתוח</displayNameOverride>
+            <field>Appointment_of_Pre_Surgery__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to upload documents for TA</displayNameOverride>
+            <field>Link_to_upload_documents_for_TA__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Phone</displayNameOverride>
+            <field>appointmentphone__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטאטוס תשלום באתר</displayNameOverride>
+            <field>Payment_Status_From_Site__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לינק להעלאת התחייבות והפניה</displayNameOverride>
+            <field>Upload_Hitchayvut_Afnaya__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שליחת הודעה באמצעות WhatsApp</displayNameOverride>
+            <field>sendingByWhatsApp__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>isChecked</displayNameOverride>
+            <field>isChecked__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>isReception</displayNameOverride>
+            <field>isReception__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sent2ClinicApp</displayNameOverride>
+            <field>Sent2ClinicApp__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>manualRunWAR</displayNameOverride>
+            <field>manualRunWAR__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Taking Blood</displayNameOverride>
+            <field>Taking_Blood__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Survey</displayNameOverride>
+            <field>Survey__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אישור קריאת הנחיות</displayNameOverride>
+            <field>InstructionsRead__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אישור קריאת עלויות</displayNameOverride>
+            <field>PaymentsRead__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Days in between</displayNameOverride>
+            <field>Days_in_between__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Operating room plastic integer formula</displayNameOverride>
+            <field>Operating_room_plastic_integer_formula__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Operating room cost integer formula</displayNameOverride>
+            <field>Operating_room_cost_integer_formula__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Kit Date Plus 3 Months</displayNameOverride>
+            <field>Kit_Date_Plus_3_Months__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Kit Date Time Last Sent in Date</displayNameOverride>
+            <field>Kit_Date_Time_Last_Sent_in_Date__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SendingMessage</displayNameOverride>
+            <field>SendingMessage__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure Price</displayNameOverride>
+            <field>Medical_Procedure_Price__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact Us URLs - Ashdod</displayNameOverride>
+            <field>ContactUsURLsAshdod__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>isPreReminderWASent</displayNameOverride>
+            <field>isPreReminderWASent__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>preDateReminderWA</displayNameOverride>
+            <field>preDateReminderWA__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Medical Procedure : Domain : Domain Code</displayNameOverride>
+            <field>Medical_Procedure__c.Domain__c.DomainCode__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : יומן : רופא</displayNameOverride>
+            <field>Calendar__c.Doctor__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Medical_Procedure__c.Procedure_Code__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Create_Appointment_Ashdod__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Appointment_Ashdod__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RelevantInformedConsent__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Results_Received__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Is_Urgent__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ashdod__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Transaction_ID__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Department__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Digital_Followup_Status__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Digital_description_of_follow_up__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <masterLabel>Appointments</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Quick reception for Expers</displayNameOverride>
+            <field>QuickReceptionForExpers__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס התחייבות עבור קבלה מהירה</displayNameOverride>
+            <field>Status_quick_reception__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PresurgeryNeededMoked</displayNameOverride>
+            <field>PresurgeryNeededMoked__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FutureCaseError</displayNameOverride>
+            <field>FutureCaseError__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>LastUpdateMaccabiStatus</displayNameOverride>
+            <field>LastUpdateMaccabiStatus__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ImplantComments</displayNameOverride>
+            <field>ImplantComments__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ClinicalInstructionsGiven</displayNameOverride>
+            <field>ClinicalInstructionsGiven__c</field>
+            <table>Account.Appointments__r</table>
+        </columns>
+        <masterLabel>פגישות</masterLabel>
+    </sections>
+</ReportType>

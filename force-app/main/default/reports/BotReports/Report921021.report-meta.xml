@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AgentWork$Name</field>
+    </columns>
+    <columns>
+        <field>AgentWork$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$AssignedDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$User</field>
+    </columns>
+    <columns>
+        <field>AgentWork$WorkItem</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>AgentWork$CloseDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$OriginalQueue</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>(UNIXTIMESTAMP(AgentWork.AssignedDateTime) - UNIXTIMESTAMP(AgentWork.RequestDateTime))/60</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Wait time2</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>CDF1</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>1000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork$OriginalQueue</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>וואטסאפ יד ביד,יד ביד בוט,המשכי טיפול</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>עותק של דיגיטל יד ביד זמני המתנה - חודשי</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Omni_Channel__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CDF1</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

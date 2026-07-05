@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_13442804</developerName>
+        <masterLabel>ערוץ מקור</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>AgentWork.MessagingSession$MessagingChannel</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>+972 72-339-9980</sourceValue>
+            </sourceValues>
+            <value>וואטסאפ</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Assuta Ashdod Chat for Bot</sourceValue>
+            </sourceValues>
+            <value>צ&apos;אט באתר</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>AgentWork.MessagingSession$Name</field>
+    </columns>
+    <columns>
+        <field>AgentWork$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork.MessagingSession$AssignedDateTime</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork.MessagingSession$MessagingChannel</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Assuta Ashdod Chat for Bot,72-339-9980</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork.MessagingSession$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork.MessagingSession*MessagingSession$Session_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Assuta Ashdod Bot Whatsapp</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_13442804</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>שיחות בהמתנה לנציג</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Omni_Channel_and_Messaging_Session__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$CreatedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

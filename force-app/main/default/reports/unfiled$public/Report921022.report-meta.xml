@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SurveyTaker__c.Fill_Percentage__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>SurveyTaker__c.Account__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SurveyTaker__c.is_sms_sent__c</field>
+    </columns>
+    <columns>
+        <field>SurveyTaker__c.sms_send_time__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>SurveyTaker__c.Survey__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>מי שפיר</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Appointment__c.accurate_site__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>רמה&quot;ח</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>שאלוני מי שפיר לתורים של מחר</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SurveyTaker__c@SurveyTaker__c.Appointment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SurveyTaker__c.visit_date__c</dateColumn>
+        <interval>INTERVAL_TOMORROW</interval>
+    </timeFrameFilter>
+</Report>

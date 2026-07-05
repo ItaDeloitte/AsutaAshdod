@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>como@assuta.co.il</email>
+    <name>רמת החייל - כימותרפיה</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>assuta_Ramat_Hayal_machon_onkologya</publicGroup>
+        </publicGroups>
+        <users>
+            <user>orlipa@assuta.co.il</user>
+            <user>orlyke@assuta.co.il</user>
+            <user>eleonorakh@assuta.co.il</user>
+            <user>dinabo@assuta.co.il</user>
+            <user>zzz_26481caa-79c7-4bf6-a59c-1a9673308d02@deleted.com</user>
+            <user>yafae@assuta.co.il</user>
+            <user>zzz_1b4d2ac7-4a33-4430-9b89-5e8e9489581b@deleted.com</user>
+            <user>marek@assuta.co.il</user>
+            <user>noacost@assuta.co.il</user>
+            <user>zzz_277fbd5b-0f57-4175-8563-78be157c0f49@deleted.com</user>
+            <user>zzz_9cfbfb09-5c84-47d2-b678-2e6e646a7534@deleted.com</user>
+            <user>rinatk@assuta.co.il</user>
+            <user>zzz_4ded08ab-e004-4372-9349-68651e0e253b@deleted.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Medical_Aid_Appointment__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

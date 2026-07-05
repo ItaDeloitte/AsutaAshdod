@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Case Path - Genral</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Treat_status__c</fieldNames>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reason</fieldNames>
+        <fieldNames>Treat_status__c</fieldNames>
+        <picklistValueName>In_Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reason</fieldNames>
+        <fieldNames>Treat_status__c</fieldNames>
+        <picklistValueName>Third Party</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>General_Info</recordTypeName>
+</PathAssistant>

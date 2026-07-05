@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Medical_Procedure__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Expertise_1__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Date_Appointment__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.IDNumber__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Patient_Account__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.PHONE__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.reason__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Canceled_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.PayerFactor__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.further_treatment_from_patient__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.rec_extra_treat__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.formtitan_experts_survey_link__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Date_of_appointment__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Appointment_Status__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>CASE( CUST_CREATED_NAME,
+&quot;SSIS&quot;,&quot;הסבות&quot;,
+&quot;Ensemble&quot;,&quot;חיצוני&quot;,
+&quot;מוקד&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <description>חיצוני(ensemble),הסבות(SSISׂׂ) , או מוקד</description>
+        <developerName>CDF1</developerName>
+        <label>נוצר על ידי</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>דוח הכנסות לאתר וגורם משלם</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment__c.Experts,Appointment__c.ClosedExperts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Medical_Procedure__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ייעוץ רופא-מרכז מומחים,ייעוץ רופא SAME DAY-מרכז מומחים</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,NewAppointment,בטיפול אדמיניסטרטיבי,וידוא הגעה לפגישה,WaitingForAppointment,Urgent_WaitingList,ממתין להתחייבות,ממתין לאישור,בתהליך אישור מנהל,ממתין לאישור המטופל על קיום הפגישה,Recording,Typing,StoppedDuringAppointment,TookPlace,Signature,מטופל אישר שלא נכח בפגישה,RescheduleByClient,RescheduleByAssuta,נדחה על ידי המנהל,Canceled,1,3,2,4,5,WaitingForCanceled,CanceledFailed,not_arrived</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.PayerFactor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>כללית מושלם,קופח מכבי סל</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>דוח סקרים - עדיאל</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Appointment__c@Appointment__c.Doctor_Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Appointment__c.rec_extra_treat__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Appointment__c.Appointment_Date_Time__c</dateColumn>
+        <interval>INTERVAL_LASTWEEK</interval>
+    </timeFrameFilter>
+</Report>

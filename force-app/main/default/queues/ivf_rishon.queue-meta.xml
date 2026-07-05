@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>rishon_info@assuta.co.il</email>
+    <name>מאגר פניות חדש - ראשון לציון</name>
+    <queueMembers>
+        <users>
+            <user>matanv@assuta.co.il</user>
+            <user>zzz_07b3f598-ec8e-4c72-9165-5ab9775a5bec@deleted.com</user>
+            <user>ronitc@assuta.co.il</user>
+            <user>zzz_5b28de08-a1c2-4e43-86c6-ef7b9a9c87a8@deleted.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

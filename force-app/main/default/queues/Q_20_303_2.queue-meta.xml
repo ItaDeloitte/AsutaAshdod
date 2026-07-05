@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>dimutcenter@assuta.co.il</email>
+    <name>רמת החייל - מכון דימות</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Ramat_Hayal_Dimot</publicGroup>
+        </publicGroups>
+        <users>
+            <user>natalieco@assuta.co.il.prod</user>
+            <user>zzz_9e189691-e476-49e4-846b-773df61936e5@deleted.com</user>
+            <user>zzz_86fa8ea0-1189-4af6-8c4b-6ce2624c9ab0@deleted.com</user>
+            <user>shiransh@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Medical_Aid_Appointment__c</sobjectType>
+    </queueSobject>
+</Queue>

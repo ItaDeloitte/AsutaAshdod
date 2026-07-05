@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Appointment__c$Name</field>
+    </columns>
+    <columns>
+        <field>Appointment__c$Patient_Account__c.SMS_Phone_Number__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c$IDNumber__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c$Appointment_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c$Medical_Procedure__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c$Accession_Number__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Appointment__c$Site__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ראשל&quot;צ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c$Appointment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>וידוא הגעה לפגישה,WaitingForAppointment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment__c.Institutes,Appointment__c.Closedins</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c$Domain__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ממוגרפיה,מכון שינה,אסותא אופטיק,צפיפות עצם,מרפאת בריאטריה - השמנת יתר,אורודינמיקה,טרום ניתוח</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c$Medical_Procedure__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>אולטראסאונד שד ממוגרפיה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>9/16/2020 12:00 AM</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>תורים עתידיים של מטופלים בראשל&quot;צ חדש</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Appointment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Appointment__c$Appointment_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-09-17</startDate>
+    </timeFrameFilter>
+</Report>

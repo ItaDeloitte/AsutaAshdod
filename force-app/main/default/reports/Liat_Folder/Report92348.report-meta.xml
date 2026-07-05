@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Appointments__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$FirstName</field>
+    </columns>
+    <columns>
+        <field>Account$LastName</field>
+    </columns>
+    <columns>
+        <field>Account$ID_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account$PersonContact.Birthdate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Appointments__r$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>אנדוקרינולוגיה מבוגרים</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Appointments__r$Date_of_appointment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>אנדוקרינולוגיה מבוגרים</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Appointment_With_Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Begin_Insurance__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

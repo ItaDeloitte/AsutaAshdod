@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>case sales</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>subStatus__c</fieldNames>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>subStatus__c</fieldNames>
+        <picklistValueName>ממתין למימוש</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>subStatus__c</fieldNames>
+        <picklistValueName>ממתין לסקר על ידי נציג</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>subStatus__c</fieldNames>
+        <picklistValueName>ממתין לתזכור על ידי נציג</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>subStatus__c</fieldNames>
+        <picklistValueName>נדרש המשך טיפול</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>CaseAfterSale</recordTypeName>
+</PathAssistant>

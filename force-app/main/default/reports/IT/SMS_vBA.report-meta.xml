@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>EntityDefinition$Description</field>
+    </columns>
+    <columns>
+        <field>EntityDefinition$MasterLabel</field>
+    </columns>
+    <columns>
+        <field>EntityDefinition$Label</field>
+    </columns>
+    <columns>
+        <field>EntityDefinition.FieldDefinitions$Description</field>
+    </columns>
+    <columns>
+        <field>EntityDefinition.FieldDefinitions$DeveloperName</field>
+    </columns>
+    <columns>
+        <field>EntityDefinition$DeveloperName</field>
+    </columns>
+    <columns>
+        <field>EntityDefinition.FieldDefinitions$Label</field>
+    </columns>
+    <columns>
+        <field>EntityDefinition.FieldDefinitions$MasterLabel</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>EntityDefinition$Label</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>SMS Message</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>נוסחי SMS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SMS_Metadata__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>EntityDefinition$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

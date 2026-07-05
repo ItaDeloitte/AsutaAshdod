@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Case$OwnerId$Created_Date_no_time__c</field>
+    </columns>
+    <columns>
+        <field>User.Case$OwnerId$ClosedDate</field>
+    </columns>
+    <columns>
+        <field>User.Case$OwnerId$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>User.Case$OwnerId$Origin</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User*User$Group__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>דיגיטל</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Case$OwnerId$Origin</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>דואר אלקטרוני,SMS,פייסבוק מסנג&apos;ר,WhatsApp,Chat</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Case$OwnerId$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>חודשי  כמות סגירות ליום לנציג</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_AND_Users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Case$OwnerId$ClosedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>משימות יד ביד בוט</name>
+    <queueMembers>
+        <users>
+            <user>einsteinbotuser@assuta.co.il</user>
+            <user>osnatrah@assuta.co.il</user>
+            <user>elenasem@assuta.co.il</user>
+            <user>hadarh@assuta.co.il</user>
+            <user>hagitbu@assuta.co.il</user>
+            <user>yuliyago@assuta.co.il</user>
+            <user>yifatsh@assuta.co.il</user>
+            <user>moranfrid@assuta.co.il</user>
+            <user>edenman@assuta.co.il</user>
+            <user>ravits@assuta.co.il</user>
+            <user>natalibl@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

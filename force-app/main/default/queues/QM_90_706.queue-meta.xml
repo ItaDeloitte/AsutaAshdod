@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>assutademo@gmail.com</email>
+    <name>מוקד מידע וזימון תורים - משימות מהמכונים</name>
+    <queueMembers>
+        <users>
+            <user>einsteinbotuser@assuta.co.il</user>
+            <user>zzz_b971e0d5-737b-43e5-abeb-55d9fad1cd90@deleted.com</user>
+            <user>bardo@assuta.co.il</user>
+            <user>henl@assuta.co.il.prod</user>
+            <user>edenman@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LiveAgentSession</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Phone_Call_Log__c</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case.Opportunities__r$Name</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <column>Case$Owner_Queue_wf__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>מדנס,מבטח סיימון,סוכנויות ביטוח,גיל ורדי,כנען,FRESHCONSEPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$toaddressemail__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>freshconcepts@assuta.co.il</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Owner_Queue_wf__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>בכירי מוקד,פרסונל בכירים,אסותא 4 מי</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>דוח פניות דחופות עם פגישות SF</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CASES_WITH_OPPORTUNITIES__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$CreatedDate</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>פניות - בדיקה</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Treat_status__c</fieldNames>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reason</fieldNames>
+        <fieldNames>Treat_status__c</fieldNames>
+        <picklistValueName>In_Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>Treat_status__c</fieldNames>
+        <info>&lt;p&gt;פנייתך הועברה,מועד לחזרה עד 24 שעות לחזרה &lt;/p&gt;</info>
+        <picklistValueName>Third Party</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Appointments</recordTypeName>
+</PathAssistant>

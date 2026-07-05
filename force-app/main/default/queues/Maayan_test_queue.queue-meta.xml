@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>assutademo@gmail.com</email>
+    <name>Maayan test queue</name>
+    <queueMembers>
+        <users>
+            <user>zzz_67faaa74-b33b-42ce-b758-7b0c884c4186@deleted.com</user>
+            <user>zzz_d993771a-090a-4449-8c8d-e8a7f0b8c0d3@deleted.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Live_Agent</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LiveAgentSession</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

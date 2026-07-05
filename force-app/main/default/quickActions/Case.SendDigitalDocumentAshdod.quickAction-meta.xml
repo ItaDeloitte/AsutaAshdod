@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>2117312470</description>
+    <flowDefinition>Send_Digital_Document_Ashdod</flowDefinition>
+    <label>שליחת קישור להעלאת מסמכים</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

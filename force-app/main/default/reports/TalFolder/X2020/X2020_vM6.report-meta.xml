@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Patient_Account__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Kit_Date_Time_Last_Sent__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Medical_Procedure__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.PayerFactor__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment__c.Surgeries</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,NewAppointment,בטיפול אדמיניסטרטיבי,וידוא הגעה לפגישה,WaitingForAppointment,Urgent_WaitingList,ממתין להתחייבות,ממתין לאישור,בתהליך אישור מנהל,ממתין לאישור המטופל על קיום הפגישה,Recording,Typing,StoppedDuringAppointment,TookPlace,Signature,מטופל אישר שנכח בפגישה,מטופל אישר שלא נכח בפגישה,RescheduleByClient,RescheduleByAssuta,נדחה על ידי המנהל,Canceled,1,3,2,4,5,WaitingForCanceled,CanceledFailed,not_arrived</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>7/14/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Ensemble</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>כמות קיטים (לשימוש) - תחרות דצמבר 2020</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Appointment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Appointment__c.Kit_Date_Time_Last_Sent__c</dateColumn>
+        <endDate>2020-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-12-01</startDate>
+    </timeFrameFilter>
+</Report>

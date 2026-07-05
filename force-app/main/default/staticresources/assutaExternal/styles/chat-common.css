@@ -1,0 +1,113 @@
+.embeddedServiceHelpButton {
+}
+
+.embeddedServiceHelpButton .helpButton {
+  height: auto !important;
+  width: auto !important;
+}
+
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled.uiButton {
+  height: auto;
+  padding: 8px 12px;
+  min-width: 100px;
+  max-width: 200px;
+  background-color: #005290;
+}
+
+.embeddedServiceHelpButton
+  .helpButton
+  .helpButtonEnabled.uiButton
+  .embeddedServiceIcon {
+}
+
+.embeddedServiceHelpButton
+  .helpButton
+  .helpButtonEnabled.uiButton
+  .helpButtonLabel {
+}
+
+.embeddedServiceHelpButton
+  .helpButton
+  .helpButtonEnabled.uiButton
+  .helpButtonLabel
+  .message {
+}
+
+/*  */
+.embeddedServiceSidebar {
+}
+.embeddedServiceSidebar.modalContainer {
+}
+
+/*  */
+.embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI.helpButton {
+  border-style: solid;
+  padding: 8px 8px;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  min-width: 100px;
+}
+
+.embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI .content {
+  padding: 0;
+}
+.embeddedServiceSidebar
+  .embeddedServiceSidebarMinimizedDefaultUI.helpButton
+  .messageContent {
+}
+.embeddedServiceSidebar
+  .embeddedServiceSidebarMinimizedDefaultUI
+  .embeddedServiceIcon {
+}
+.embeddedServiceSidebar
+  .embeddedServiceSidebarMinimizedDefaultUI
+  .minimizedText {
+}
+
+.embeddedServiceSidebar
+  .minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI {
+  background-color: #005290;
+  border-color: #005290;
+}
+
+.embeddedServiceSidebar
+  .minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI:hover,
+.embeddedServiceSidebar
+  .minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI:focus {
+  background-color: #003156;
+}
+
+/*  */
+.embeddedServiceSidebar.layout-docked .dockableContainer {
+}
+.embeddedServiceSidebar embeddedservice-chat-header {
+  /* background: orange; */
+  background: #005290;
+}
+
+.embeddedServiceSidebar embeddedservice-chat-header .sidebarHeader {
+}
+
+.embeddedServiceSidebar embeddedservice-chat-header .sidebarHeader h2 {
+}
+
+.embeddedServiceSidebar
+  embeddedservice-chat-header
+  .sidebarHeader
+  button:focus {
+  outline: 1px dotted #fff;
+}
+
+.embeddedServiceSidebar .sidebarBody {
+}
+.embeddedServiceSidebar .embeddedServiceSidebarState.stateBody {
+}
+
+.embeddedServiceSidebar .embeddedServiceSidebarButton {
+  background-color: #005290;
+}
+.embeddedServiceSidebar .embeddedServiceSidebarButton:not(:disabled):hover,
+.embeddedServiceSidebar .embeddedServiceSidebarButton:not(:disabled):focus {
+  background-color: #003156;
+}

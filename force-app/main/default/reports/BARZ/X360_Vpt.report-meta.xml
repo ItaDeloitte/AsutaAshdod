@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Recommendations_after_exam__c$Name</field>
+    </columns>
+    <columns>
+        <field>Recommendations_after_exam__c$domain_app__c</field>
+    </columns>
+    <columns>
+        <field>Recommendations_after_exam__c$Related_Appointment__c</field>
+    </columns>
+    <columns>
+        <field>Recommendations_after_exam__c$Type_of_recommendation__c</field>
+    </columns>
+    <columns>
+        <field>Recommendations_after_exam__c$RecommendationsType__c</field>
+    </columns>
+    <columns>
+        <field>Recommendations_after_exam__c$Recommend_Desc__c</field>
+    </columns>
+    <columns>
+        <field>Recommendations_after_exam__c$Recommendation_Type_Agamon__c</field>
+    </columns>
+    <columns>
+        <field>Recommendations_after_exam__c.Cases__r$Domain__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Recommendations_after_exam__c$Recommendation_Type_Agamon__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>אין המלצה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Recommendations_after_exam__c$RecommendationsType__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>תקין,לא רלוונטי</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>דוח המלצות ופניות 360 חדש</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>rec_case_360__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Recommendations_after_exam__c$CreatedDate</dateColumn>
+        <endDate>2025-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2025-05-01</startDate>
+    </timeFrameFilter>
+</Report>

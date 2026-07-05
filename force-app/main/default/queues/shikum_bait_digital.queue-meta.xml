@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>דיגיטל שיקום בית</name>
+    <queueMembers>
+        <users>
+            <user>orlytu@assuta.co.il</user>
+            <user>zzz_5e85db91-eeb5-4254-a394-60aa23c57443@deleted.com</user>
+            <user>zzz_1c157724-5807-4f07-892e-4600c7be1514@deleted.com</user>
+            <user>tomre@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

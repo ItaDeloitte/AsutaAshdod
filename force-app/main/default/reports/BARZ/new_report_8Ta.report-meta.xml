@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Survey__c$Name</field>
+    </columns>
+    <columns>
+        <field>Survey__c.SurveyQuestions__r.Survey_Question_Answers__r$Response__c</field>
+    </columns>
+    <columns>
+        <field>Survey__c.SurveyQuestions__r.Survey_Question_Answers__r$Name</field>
+    </columns>
+    <columns>
+        <field>Survey__c.SurveyQuestions__r.Survey_Question_Answers__r$SurveyTaker__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Survey__c$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>סקר מנהלים</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Survey__c.SurveyQuestions__r.Survey_Question_Answers__r$Response__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>תשובות לסקר מנהלים</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Survey_w_Questions_and_Answers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Survey__c.SurveyQuestions__r.Survey_Question_Answers__r$Response__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Survey__c.SurveyQuestions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

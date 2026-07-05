@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Assuta Ashdod Bot Whatsapp</name>
+    <queueMembers>
+        <users>
+            <user>olgaav@assuta.co.il</user>
+            <user>oritzaf@assuta.co.il</user>
+            <user>innashe@assuta.co.il</user>
+            <user>irisza@assuta.co.il</user>
+            <user>zzz_3335c144-2458-4b97-838f-5cc9501bdee3@deleted.com</user>
+            <user>zzz_82858bfb-04f5-4114-adbb-ca425b123dc3@deleted.com</user>
+            <user>danielj@assuta.co.il</user>
+            <user>vikaka@assuta.co.il</user>
+            <user>zzz_e8032568-b588-4455-9cec-42e674f408b0@deleted.com</user>
+            <user>vikit@assuta.co.il</user>
+            <user>yaffag@assuta.co.il</user>
+            <user>yaffan@assuta.co.il</user>
+            <user>lianp@assuta.co.il</user>
+            <user>liatha@assuta.co.il</user>
+            <user>lidart@assuta.co.il</user>
+            <user>mazya@assuta.co.il</user>
+            <user>miril@assuta.co.il</user>
+            <user>maryas@assuta.co.il</user>
+            <user>miriamo@assuta.co.il</user>
+            <user>marinamari@assuta.co.il</user>
+            <user>meshile@assuta.co.il</user>
+            <user>ninavo@assuta.co.il</user>
+            <user>nikolp@assuta.co.il</user>
+            <user>einavmi@assuta.co.il</user>
+            <user>zzz_8134d2cc-d517-4435-b721-5999df2c3560@deleted.com</user>
+            <user>zzz_d6e39896-a30b-4f7d-be4a-8709b084e926@deleted.com</user>
+            <user>shaniaz@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Assuta_Ashdod_Bot</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

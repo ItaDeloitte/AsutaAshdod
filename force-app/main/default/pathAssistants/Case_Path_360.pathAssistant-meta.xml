@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Case Path - 360</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;שיחה אחת לחודש לשאול האם צריכה עזרה או המשך תאום תורים - סך הכל שיחה שרותית . &lt;/p&gt;</info>
+        <picklistValueName>הועבר למחלקה אונקולוגית</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;שלילי:| שיחה למטופלת ולידע שתוצאות הועברו לרופא - לבירור יש לפנות אליו ישירות .&lt;/p&gt;&lt;p&gt;חיובי: שיחה לרופא לידע על תוצאה חריגה ושאלה האן יש צורך לקבוע בדיקות המשך .&lt;/p&gt;&lt;p&gt;חיובי: שיחה למטופלת לידעת שתוצאות מוכנות ולפנות לרופא לבירו&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>התקבלו תוצאות ביופסיה</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;1.שיחה לרופא לידעת בדבר בדיקות אולטרסאונד וממוגרפיה חריגות + שליחת תוצאות במידת הצורך בפקס או מייל &lt;/p&gt;&lt;p&gt;2. תאום ביופסיות דחופות &lt;/p&gt;&lt;p&gt;3. שיחה לרופא ולידע בתוצאות ביופסיה חריגות+ שליחת התוצאות במידת הצורך בפקס/ מייל.  &lt;/p&gt;&lt;p&gt;4.  במידת הצורך תאום תור לMRI שד   &lt;/p&gt;&lt;p&gt;5. ,במידת הצורך תאום תור דחוף ל פט סיטי &lt;/p&gt;&lt;p&gt;6. העברת נתוני המטופלת למחלקה האונקולוגית לצורך תאום תור ראוני במחלקה או תור המשך . &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>התקשרות מול רופא</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;זימון תור על פי ההנחיות &lt;/p&gt;</info>
+        <picklistValueName>ממתין למועד בדיקת MRI/PET CT</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;בדיקה באם בצע הבדיקה וטלפון לשאול לשלומה יומיים אחרי. &lt;/p&gt;&lt;p&gt;להזכיר תוך כמה זמן הבדיקות יהיו מוכנות. &lt;/p&gt;</info>
+        <picklistValueName>ממתין למועד ביופסיה</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ol&gt;&lt;li&gt;לשאול על מדללי דם &lt;/li&gt;&lt;li&gt;קביעת תור על פי זמינות או דחיפות &lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>ממתין לקביעת ביופסיה</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;MRI - זימות תור &lt;/p&gt;&lt;p&gt;PET CT - זימון תור &lt;/p&gt;&lt;p&gt;מחלקה אונקולוגית - מייל למחלקה + משימה . תוך כדי כתיבת מהות הפניה .&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;טעינת התוצאות ע&amp;quot;י המנהל, .&lt;/p&gt;</info>
+        <picklistValueName>ממתין לתוצאות ביופסיה</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;כאשר תוצאות מוכנות - לידע את המטופלת + הרופא ולשאול מה המשך הטיפול בהתאם להנחיות הרופא . &lt;/p&gt;</info>
+        <picklistValueName>ממתין לתוצאת בדיקת MRI/PET CT</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;1- תשאול המטופל: האם קיבל המלצה לתיאום תור לאחר בדיקת US או ממוגרפיה ?&lt;/p&gt;&lt;p&gt;באת קביעת תור לביופסיה לשד או לאחר בדיקת ביופסיה בהתאם לתוצאות  , יש לתשאל האם ההפניה שקיבלה היא מכירורג או רופא משפחה, באם זה מרופא .משפחה יש לידע שחשוב לקבל חוות דעת מקצועית מכירורג לפני ביופסיה או אחרי הבדיקה לצורך מעקב מקצועי בתחום . &lt;/p&gt;</info>
+        <picklistValueName>נדרשת המלצה/קביעת תור לכירורג שד</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;הפקת התחייבות + שיחת פריסה .&lt;/p&gt;</info>
+        <picklistValueName>נקבע תור לניתוח</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ol&gt;&lt;li&gt;אם מטופלת החליטה להמשיך במקום אחר&lt;/li&gt;&lt;li&gt;אם הממצע בביופסיה הוא שלילי ואין המשך לניתוח .&lt;/li&gt;&lt;li&gt;סיום תהליך לאחר ניתוח&lt;/li&gt;&lt;li&gt;סיום תהליך אונקולוגי הקשור לנושא השד .&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>סגירת אירוע אוטומטית</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Assuta_360</recordTypeName>
+</PathAssistant>

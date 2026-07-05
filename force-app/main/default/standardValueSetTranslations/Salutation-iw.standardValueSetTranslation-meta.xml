@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Dr.</masterLabel>
+        <translation>ד&quot;ר</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mr.</masterLabel>
+        <translation>מר</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mrs.</masterLabel>
+        <translation>גברת (נשואה)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ms.</masterLabel>
+        <translation>גברת</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prof.</masterLabel>
+        <translation>פרופ&apos;</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

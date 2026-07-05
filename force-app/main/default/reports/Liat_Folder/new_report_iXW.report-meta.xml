@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AgentWork.MessagingSession$Name</field>
+    </columns>
+    <columns>
+        <field>AgentWork$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$AssignedDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork.MessagingSession*MessagingSession$First_Assign_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <aggregateTypes>Maximum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF((UNIXTIMESTAMP(AgentWork.AssignedDateTime) - UNIXTIMESTAMP(AgentWork.RequestDateTime))&lt;60, (UNIXTIMESTAMP(AgentWork.AssignedDateTime) - UNIXTIMESTAMP(AgentWork.RequestDateTime))/100,
+FLOOR((UNIXTIMESTAMP(AgentWork.AssignedDateTime) - UNIXTIMESTAMP(AgentWork.RequestDateTime))/60)+ 
+((((UNIXTIMESTAMP(AgentWork.AssignedDateTime) - UNIXTIMESTAMP(AgentWork.RequestDateTime))/60)-FLOOR((UNIXTIMESTAMP(AgentWork.AssignedDateTime) - UNIXTIMESTAMP(AgentWork.RequestDateTime))/60))*60)/100)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>זמן המתנה</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork.MessagingSession$MessagingChannel</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Assuta Ashdod Chat for Bot,72-339-9980</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Automated Process</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$User</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>זמן המתנה מקסימלי</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Omni_Channel_and_Messaging_Session__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$CreatedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

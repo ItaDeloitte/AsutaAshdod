@@ -1,0 +1,7 @@
+<apex:page standardController="Doctor_in_site__c">
+ <script type="text/javascript">
+ var check = {!Doctor_in_site__c.Main_Site__c};
+ if(check == 0 || check == 1)
+    { window.alert("{!$Label.PayAttantionForMainSiteField}");}
+ </script>
+</apex:page>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Patient_Account__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.IDNumber__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Expertise_1__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Sub_Expertise__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Appointment_Status__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Date_Appointment__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Appointment_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Date_of_appointment__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.satisication_from_service__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.rec_extra_treat__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.further_treatment_from_patient__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.extra_treat_other__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.PayerFactor__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>CASE( CUST_CREATED_NAME,
+&quot;SSIS&quot;,&quot;הסבות&quot;,
+&quot;Ensemble&quot;,&quot;חיצוני&quot;,
+&quot;מוקד&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <description>חיצוני(ensemble),הסבות(SSISׂׂ) , או מוקד</description>
+        <developerName>CDF1</developerName>
+        <label>נוצר על ידי</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>דוח הכנסות לאתר וגורם משלם</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment__c.Experts,Appointment__c.ClosedExperts</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.domain2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>מרכז מומחים</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>נחשון שזר,אלכסנדר ברוסקין,לימור בנימיני,דפנה לנדאו פרט,פיליפ רוזינסקי,אייל מרגלית,דיב דאוד,טל אנגל,אוריאל כץ,דרור לקשטיין,איליה קקיאשוילי,אלכסנדר קאבאן,אפרת מזור דריי,דוד בר-לב,ליאנה עדני בני,יורם דקל,אמיר בן טוב,איבגני גרשמן,אברהם רובינוב,אלכסנדר חייפץ,אלון רוד,קיריל בוטורלין,גרייגורי גולובצ&apos;ינר,ערן אביבי,איגור מרקוביץ&apos;,מאוריסיו כהן וייזר,איל צבי גנסין,מילטון סאוטה,יאיר ברז,ניזאר אנדריא,מרק גלרמן,נטליה קובליוק,יובל פריפלד,אור פרידמן,אורן צביאלי,ערן צונץ,דין קרן,דין לוטרין,יואב אברהמי,מיכאל מילגרם,יאיר שחר,דמיטרי ירובינסקי,סמואל טוביאס,איסמעיל מסארוה,ליאור בן צבי,איליה פרוסו,אושרי בר אל,סקר מסעוד,יונתן סטנלי,אלכסנדר רבינוביץ,ראוי חזאן,שלווה בנימין,אנה סלצר,מיכאל מיקי פקר,ולנטין שבתייב,נעים אבו פריחה,ולרי בילנקו,מוחמד קרינאוי,מרדכי שמעונוב,אברהם צצשוילי,שי קרן,ברוך ירושלמי,אליזה טיומני,ריאד חדאד,דניאל הלסטוך,דרור לוינר,סימון פייר,אניס כלדאוי,חני פל,מיכאל ברקגן,יקיר שגב,נדב שאשה,מומחה רופא,מירב ברוורמן,מיכאל קורץ,אליעזר רוזנבאום,אבראהים מרעי</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>סקרי מומחים לאחר הפגישה - בקרה</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Appointment__c@Appointment__c.Doctor_Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Appointment__c.Appointment_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

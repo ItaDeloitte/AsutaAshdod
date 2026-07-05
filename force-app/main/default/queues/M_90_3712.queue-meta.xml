@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>assutademo@gmail.com</email>
+    <name>אסותא 360-כללי</name>
+    <queueMembers>
+        <users>
+            <user>orlytu@assuta.co.il</user>
+            <user>zzz_c4421568-9a9b-4141-98ad-dc5097e5c0b2@deleted.com</user>
+            <user>hagits@assuta.co.il</user>
+            <user>shulin@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Medical_Aid_Appointment__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Recommendations_after_exam__c</sobjectType>
+    </queueSobject>
+</Queue>

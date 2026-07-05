@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AgentWork.MessagingSession$Name</field>
+    </columns>
+    <columns>
+        <field>AgentWork$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$AssignedDateTime</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>(UNIXTIMESTAMP(AgentWork.AssignedDateTime) - UNIXTIMESTAMP(AgentWork.RequestDateTime))/60</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>זמן המתנה ממוצע</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork.MessagingSession$MessagingChannel</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Assuta Ashdod Chat for Bot,72-339-9980</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>New Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Omni_Channel_and_Messaging_Session__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$CreatedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

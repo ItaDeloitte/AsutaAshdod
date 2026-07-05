@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_71209619</developerName>
+        <masterLabel>גורם משלם</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Appointment__c.PayerFactor__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח מכבי - מגן זהב</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופח מכבי שלי</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופח מכבי שבן</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופח מכבי סל</sourceValue>
+            </sourceValues>
+            <value>מכבי</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ביטוח איילון</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ביטוח הפניקס</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ביטוח הראל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ביטוח לאומי</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ביטוח ישיר</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ביטוח מגדל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ביטוח מנורה</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>פרטי</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>פרטי - חבילה</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>פרטי הסכמים</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>פרטי פרסונל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>מטופל פרטי</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>דיוויד שילד</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>המרכז לעמוד שדרה</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>כלל חברה לביטוח בעמ</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>כללית-דקלה סוכנות לביטוח בעמ</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>צה&quot;ל - ענף תקציבים</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>הכשרה חברה לביטוח בעמ</sourceValue>
+            </sourceValues>
+            <value>פרטי וביטוח</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח כללית - מחוז אילת</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח כללית</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח כללית - מחוז דן / פ&quot;ת</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח כללית - מחוז דרום</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח כללית - מחוז חיפה</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח כללית - מחוז מרכז</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח כללית - מחוז צפון</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופ&quot;ח לאומית זהב</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופח לאומית-חסרי שבן</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופח לאומית שבן</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופח לאומית סל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופח מאוחדת סל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>קופח מאוחדת שבן</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>כללית מושלם</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>כללית מושלם סל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>כללית פלטינום</sourceValue>
+            </sourceValues>
+            <value>כללית וקופות</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Appointment__c.PayerFactor__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Patient_Account__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Appointment_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Site__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment__c.Surgeries</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>בטיפול אדמיניסטרטיבי</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.PayerFactor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>תייר</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Site__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>סמסון</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.PayerFactor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value></value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Appointment__c.PayerFactor__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>ניתוחים בטיפול לפי גורם משלם - גסיקה</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Appointment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Appointment__c.Date_of_appointment__c</dateColumn>
+        <interval>INTERVAL_NEXT120</interval>
+    </timeFrameFilter>
+</Report>

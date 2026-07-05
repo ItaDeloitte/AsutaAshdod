@@ -1,0 +1,4116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Appointment__c</baseObject>
+    <category>accounts</category>
+    <deployed>false</deployed>
+    <description>Appointments General</description>
+    <label>Appointments General</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment ID</displayNameOverride>
+            <field>Id</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Appointment Name</displayNameOverride>
+            <field>Name</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity Date</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם באקטיב דירקטורי</displayNameOverride>
+            <field>ADName__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם מלא באקטיב דירקטורי</displayNameOverride>
+            <field>AD_Full_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות קבלה</displayNameOverride>
+            <field>AcceptanceNotes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מזהה מערכת מקור</displayNameOverride>
+            <field>Accession_Number__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Administrative Status</displayNameOverride>
+            <field>Administrative_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Admission Date</displayNameOverride>
+            <field>Admission_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Agreement with assuta</displayNameOverride>
+            <field>Agreement_with_assuta__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Anamaneza</displayNameOverride>
+            <field>Anamaneza__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Anesthesia Type</displayNameOverride>
+            <field>Anesthesia_Type__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת הפגישה</displayNameOverride>
+            <field>AppointmentTime__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פלטפורמת זימון הפגישה</displayNameOverride>
+            <field>Appointment_Booking_Platform__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Time of the appointment</displayNameOverride>
+            <field>Appointment_Date_Time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטאטוס הפגישה</displayNameOverride>
+            <field>Appointment_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointments Today</displayNameOverride>
+            <field>Appointments_Today__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Approved Amount Anesthetist</displayNameOverride>
+            <field>Approved_Amount_Anesthetist__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מטופל אישר הגעה</displayNameOverride>
+            <field>Arrival_Confirmation__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>BIRAD</displayNameOverride>
+            <field>BIRAD_apt__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Background Disease</displayNameOverride>
+            <field>Background_Disease__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>B:</displayNameOverride>
+            <field>Birad__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>יומן - טקסט</displayNameOverride>
+            <field>Calendar_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>יומן</displayNameOverride>
+            <field>Calendar__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת הביטול</displayNameOverride>
+            <field>Canceled_Reason__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case 360</displayNameOverride>
+            <field>Case_360__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Hidden</displayNameOverride>
+            <field>Case_Hidden__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פניית מקור</displayNameOverride>
+            <field>Case__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Check Trigger Agreement to Doctor</displayNameOverride>
+            <field>Check_Trigger_Agreement_to_Doctor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Check if after specific time</displayNameOverride>
+            <field>Check_if_after_specific_time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Classification</displayNameOverride>
+            <field>Classification__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Clinic</displayNameOverride>
+            <field>Clinic__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Commitment File URL</displayNameOverride>
+            <field>Commitment_File_URL__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Commitment Status</displayNameOverride>
+            <field>Commitment_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cost of frozen cut</displayNameOverride>
+            <field>Cost_of_frozen_cut__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cost of medical operation1</displayNameOverride>
+            <field>Cost_of_medical_operation1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cost of medical operation2</displayNameOverride>
+            <field>Cost_of_medical_operation2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cost of medical operation3</displayNameOverride>
+            <field>Cost_of_medical_operation3__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cost of medical operation4</displayNameOverride>
+            <field>Cost_of_medical_operation4__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cost of private anesthetist</displayNameOverride>
+            <field>Cost_of_private_anesthetist__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cost of private room</displayNameOverride>
+            <field>Cost_of_private_room__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לוח שנה</displayNameOverride>
+            <field>Costume_Calender__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מסלול</displayNameOverride>
+            <field>Courses_Icon__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created from appointment screen</displayNameOverride>
+            <field>Created_from_appointment_screen__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך הקראת ההנחיות</displayNameOverride>
+            <field>Date_Instuction_Read__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שיחת נציג לתזכורת</displayNameOverride>
+            <field>Date_for_human_reminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שיחת תזכורית</displayNameOverride>
+            <field>Date_for_tizkorit_reminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of appointment</displayNameOverride>
+            <field>Date_of_appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of commitment</displayNameOverride>
+            <field>Date_of_commitment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of referral</displayNameOverride>
+            <field>Date_of_referral__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deductibles Hospitalization</displayNameOverride>
+            <field>Deductibles_Hospitalization__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deductibles</displayNameOverride>
+            <field>Deductibles__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיאור ההמלצה</displayNameOverride>
+            <field>Description__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>עלות הניתוח</displayNameOverride>
+            <field>Cost_of_appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doc not allowed to do medical procedure</displayNameOverride>
+            <field>Doc_not_allowed_to_do_medical_procedure__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם הרופא</displayNameOverride>
+            <field>Doctor_Account__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor License From Referral</displayNameOverride>
+            <field>Doctor_License_From_Referral__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor License Number</displayNameOverride>
+            <field>Doctor_License_Number__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מייל רופא</displayNameOverride>
+            <field>Doctor_Mail__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Does the appointment tomorrow?</displayNameOverride>
+            <field>Does_the_appointment_tomorrow__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תחום</displayNameOverride>
+            <field>Domain__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תחום לזימון תור</displayNameOverride>
+            <field>Domain_for_appoitment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך יעד</displayNameOverride>
+            <field>Due_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>משך הפגישה</displayNameOverride>
+            <field>Duration__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DEL Email of institute in site</displayNameOverride>
+            <field>Email_of_institute_in_site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Expiration date commitment</displayNameOverride>
+            <field>Expiration_date_commitment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התקבלה התחייבות?</displayNameOverride>
+            <field>Received_Commitment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ממצא</displayNameOverride>
+            <field>Finding__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Findings</displayNameOverride>
+            <field>Findings__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>First Name</displayNameOverride>
+            <field>First_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>First Update Caught?</displayNameOverride>
+            <field>First_Update_Caught__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Food type</displayNameOverride>
+            <field>Food_type__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קישור לשאלון בדיקה</displayNameOverride>
+            <field>FormLink__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחה לתאריך ויום בשבוע לקיט</displayNameOverride>
+            <field>Formula_for_weekday_kit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערה כללית</displayNameOverride>
+            <field>GeneralNotes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פירוט הנחיות</displayNameOverride>
+            <field>GuidanceKMS__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם המטופל קרא/שמע את ההנחיות?</displayNameOverride>
+            <field>Have_you_read_medical_instructors__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שדה עזר לתאריך שיחת נציג</displayNameOverride>
+            <field>Help_Agent_call_date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שדה עזר לתאריך שיחת תזכורית</displayNameOverride>
+            <field>Help_Date_for_tizkorit_reminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שדה עזר לשליחת הודעה</displayNameOverride>
+            <field>Help_Field1_sms__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Hospitalization</displayNameOverride>
+            <field>Hospitalization__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ICU</displayNameOverride>
+            <field>ICU__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מספר זיהוי</displayNameOverride>
+            <field>IDNumber__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ID Type</displayNameOverride>
+            <field>ID_Type__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג גורם משלם</displayNameOverride>
+            <field>Icon_payer__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תז של המטופל</displayNameOverride>
+            <field>Id_Patient__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Implants Deductible Range</displayNameOverride>
+            <field>Implants_Deductible_Range__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurance Company</displayNameOverride>
+            <field>Insurance_Company__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Insurer factor</displayNameOverride>
+            <field>Insurer_factor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Integration Message</displayNameOverride>
+            <field>Integration_Message__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Integration Status</displayNameOverride>
+            <field>Integration_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פגישה דחופה?</displayNameOverride>
+            <field>IsUrgent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Hidden Appointment</displayNameOverride>
+            <field>Is_Hidden_Appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחה לצורך הצגת משפט בקיט</displayNameOverride>
+            <field>Kit_text_mum_med__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קיט אושר ונחתם</displayNameOverride>
+            <field>Kit_approved_signed__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure1</displayNameOverride>
+            <field>Medical_Procedure1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure2</displayNameOverride>
+            <field>Medical_Procedure2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure3</displayNameOverride>
+            <field>Medical_Procedure3__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure4</displayNameOverride>
+            <field>Medical_Procedure4__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure Marketing Name</displayNameOverride>
+            <field>Medical_Procedure_Marketing_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית - טקסט</displayNameOverride>
+            <field>Medical_Procedure_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure</displayNameOverride>
+            <field>Medical_Procedure__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medication</displayNameOverride>
+            <field>Medication__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Miss match medical pro 1</displayNameOverride>
+            <field>Miss_match_medical_pro_1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Miss match medical pro 2</displayNameOverride>
+            <field>Miss_match_medical_pro_2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Miss match medical pro 3</displayNameOverride>
+            <field>Miss_match_medical_pro_3__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Miss match medical pro 4</displayNameOverride>
+            <field>Miss_match_medical_pro_4__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>No agreement between doc and payer</displayNameOverride>
+            <field>No_agreement_between_doc_and_payer__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות לפגישה</displayNameOverride>
+            <field>Notes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notes from spincal</displayNameOverride>
+            <field>Notes_from_spincal__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - 14 working days</displayNameOverride>
+            <field>Notification_14_working_days__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Does the appointment tomo</displayNameOverride>
+            <field>Notification_Does_the_appointment_tomo__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Account Name</displayNameOverride>
+            <field>Notification_Mismatching_Account_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Doctor Name</displayNameOverride>
+            <field>Notification_Mismatching_Doctor_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Medical1 Name</displayNameOverride>
+            <field>Notification_Mismatching_Medical1_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Medical2 Name</displayNameOverride>
+            <field>Notification_Mismatching_Medical2_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Medical3 Name</displayNameOverride>
+            <field>Notification_Mismatching_Medical3_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Mismatching Medical4 Name</displayNameOverride>
+            <field>Notification_Mismatching_Medical4_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification Missmatch SpinCal Refferal</displayNameOverride>
+            <field>Notification_Missmatch_SpinCal_Refferal__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - PreSurgery_needed</displayNameOverride>
+            <field>Notification_PreSurgery_needed__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification -Referral Doc update Payer</displayNameOverride>
+            <field>Notification_Referral_Doc_update_Payer__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification -Referral Doc update Procdu</displayNameOverride>
+            <field>Notification_Referral_Doc_update_Procdu__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Referral Doc update Site</displayNameOverride>
+            <field>Notification_Referral_Doc_update_Site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Referral Doc update payme</displayNameOverride>
+            <field>Notification_Referral_Doc_update_payme__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Spincal update Medical Pr</displayNameOverride>
+            <field>Notification_Spincal_update_Medical_Pr__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Spincal update Payer fact</displayNameOverride>
+            <field>Notification_Spincal_update_Payer_fact__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - Spincal update Site</displayNameOverride>
+            <field>Notification_Spincal_update_Site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notification - agreement doctor</displayNameOverride>
+            <field>Notification_agreement_doctor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Number of commitment</displayNameOverride>
+            <field>Number_of_commitment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Number of referral</displayNameOverride>
+            <field>Number_of_referral__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פתח את המסמך?</displayNameOverride>
+            <field>Open_doc__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Operating room cost</displayNameOverride>
+            <field>Operating_room_cost__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מזהה הזמנה ב-RIS</displayNameOverride>
+            <field>OrderKey__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות להזמנה</displayNameOverride>
+            <field>Order_Notes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Organ1</displayNameOverride>
+            <field>Organ1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Organ2</displayNameOverride>
+            <field>Organ2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Organ3</displayNameOverride>
+            <field>Organ3__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Organ4</displayNameOverride>
+            <field>Organ4__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Overbook Reason Code</displayNameOverride>
+            <field>Overbook_Reason_Code__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pathologist</displayNameOverride>
+            <field>Pathologist__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pathology cost</displayNameOverride>
+            <field>Pathology_cost__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Patient Account</displayNameOverride>
+            <field>Patient_Account__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטאטוס אשפוז מתפנית</displayNameOverride>
+            <field>Patient_Hospitalization_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מייל מטופל</displayNameOverride>
+            <field>Patient_Mail__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>המטופל מעוניין בהקדמת התור?</displayNameOverride>
+            <field>Patient_wants_earlier__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם משלם</displayNameOverride>
+            <field>PayerFactor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קוד גורם משלם</displayNameOverride>
+            <field>Payer_Factor_Code__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אייקון גורם מבטח</displayNameOverride>
+            <field>Payer_Factor_Icon__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם משלם אייקון</displayNameOverride>
+            <field>Payer_Factor_icon2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DEL גורם משלם</displayNameOverride>
+            <field>Payer_factor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment for private surgeon</displayNameOverride>
+            <field>Payment_for_private_surgeon__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment for surgeon</displayNameOverride>
+            <field>Payment_for_surgeon__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment needed?</displayNameOverride>
+            <field>Payment_needed__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment to Doctor</displayNameOverride>
+            <field>Payment_to_Doctor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיאום טלפוני מרכז מומחים?</displayNameOverride>
+            <field>Phone_coordination_expert__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Physical Check</displayNameOverride>
+            <field>Physical_Check__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Portal File URL</displayNameOverride>
+            <field>Portal_File_URL__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טרום ניתוח</displayNameOverride>
+            <field>PreSurgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד טרום הניתוח</displayNameOverride>
+            <field>PreSurgery_date_time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצע טרום ניתוח</displayNameOverride>
+            <field>Pre_surgery_DONE__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קוד טרום ניתוח</displayNameOverride>
+            <field>Pre_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם נדרש טרום ניתוח?</displayNameOverride>
+            <field>Presurgery_needed1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ETL Unique Identifier</displayNameOverride>
+            <field>ETL_Unique_Identifier__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Private nurse</displayNameOverride>
+            <field>Private_nurse__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Private room code</displayNameOverride>
+            <field>Private_room_code__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת חריגה</displayNameOverride>
+            <field>Problem_on_appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Procedure Plan Text</displayNameOverride>
+            <field>Procedure_Plan_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תוכנית רפואית</displayNameOverride>
+            <field>Procedure_Plan__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Procedure Price</displayNameOverride>
+            <field>Procedure_Price__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Procedure requires documents</displayNameOverride>
+            <field>Procedure_requires_documents__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Process Id</displayNameOverride>
+            <field>Process_Id__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד טכנאי</displayNameOverride>
+            <field>Technician_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טכנאי</displayNameOverride>
+            <field>Technician__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>RISStatusChangeDateTime</displayNameOverride>
+            <field>RISStatusChangeDateTime__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך עדכון סטטוס</displayNameOverride>
+            <field>RISStatusChangeDate__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת עדכון סטטוס</displayNameOverride>
+            <field>RISStatusChangeTime__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות רדיולוג</displayNameOverride>
+            <field>RadiologistNotes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Radiologist</displayNameOverride>
+            <field>Radiologist__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אתר הפגישה טקסט</displayNameOverride>
+            <field>App_site_text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד הקלדה</displayNameOverride>
+            <field>Typing_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Ref status update date</displayNameOverride>
+            <field>Ref_status_update_date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Doc update Payer factor</displayNameOverride>
+            <field>Referral_Doc_update_Payer_factor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Doc update Procdure</displayNameOverride>
+            <field>Referral_Doc_update_Procdure__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Doc update Site</displayNameOverride>
+            <field>Referral_Doc_update_Site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Doc update payment</displayNameOverride>
+            <field>Referral_Doc_update_payment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא מפנה - טקסט</displayNameOverride>
+            <field>Referral_Doctor_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא מפנה</displayNameOverride>
+            <field>Referral_Doctor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral File URL</displayNameOverride>
+            <field>Referral_File_URL__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Status Maccabi</displayNameOverride>
+            <field>Referral_Status_Maccabi__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם יש הפנייה?</displayNameOverride>
+            <field>Referral__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral from doc was updated</displayNameOverride>
+            <field>Referral_from_doc_was_updated__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral from doctor website</displayNameOverride>
+            <field>Referral_from_doctor_website__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refund for Doctor</displayNameOverride>
+            <field>Refund_for_Doctor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refund from HMO on surgery</displayNameOverride>
+            <field>Refund_from_HMO_on_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Release Date</displayNameOverride>
+            <field>Release_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תיזכורים</displayNameOverride>
+            <field>Remainder_status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>זמן שליחת התזכורת</displayNameOverride>
+            <field>Remainder_time1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שליחת תזכורת SMS</displayNameOverride>
+            <field>Remainder_time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג התזכורית</displayNameOverride>
+            <field>Remainder_type__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות להמלצה</displayNameOverride>
+            <field>Remarks__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Resources for surgery</displayNameOverride>
+            <field>Resources_for_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תוצאות בדיקה מ-RIS</displayNameOverride>
+            <field>RisAnswerStatus__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות לתור</displayNameOverride>
+            <field>RisAppointmentNotes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת שליחת תזכורת SMS</displayNameOverride>
+            <field>SMS_reminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שלח מידע בערוץ מועדף</displayNameOverride>
+            <field>SendPreferredChannel__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שלח למטופל קישור לאתר דירוג רופאים</displayNameOverride>
+            <field>Send_DocAdvisor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Send form to upload files</displayNameOverride>
+            <field>Send_form_to_upload_files__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Send pre appointement form</displayNameOverride>
+            <field>Send_pre_appointement_form__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sensitivities \ Allergies</displayNameOverride>
+            <field>Sensitivities_Allergies__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>להסתיר מהבוט?</displayNameOverride>
+            <field>hide_on_bot__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שבן</displayNameOverride>
+            <field>Shaban_icon__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Show NBA for more documents</displayNameOverride>
+            <field>Show_NBA_for_more_documents__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם מרפאה</displayNameOverride>
+            <field>clinic_name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>more than 14 days status</displayNameOverride>
+            <field>more_than_14_days_status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>text for kit</displayNameOverride>
+            <field>text_for_kit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רצף?</displayNameOverride>
+            <field>Seq_Help__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נחתם ע&quot;י - מוסתר</displayNameOverride>
+            <field>SignedBy__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא שחתם על הבדיקה</displayNameOverride>
+            <field>SignedDoctor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Site Email</displayNameOverride>
+            <field>Site_Email__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אתר - טקסט</displayNameOverride>
+            <field>Site_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Site</displayNameOverride>
+            <field>Site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מערכת זימון הפגישה</displayNameOverride>
+            <field>SourceSystemExperts__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מערכת מקור זימון הפגישה</displayNameOverride>
+            <field>SourceSystem__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Source of appointment</displayNameOverride>
+            <field>Source_of_appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SpinCal ID</displayNameOverride>
+            <field>SpinCal_ID__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SpinCal was updated</displayNameOverride>
+            <field>SpinCal_was_updated__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Spincal</displayNameOverride>
+            <field>Spincal__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Spincal update Medical Procedure</displayNameOverride>
+            <field>Spincal_update_Medical_Procedure__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Spincal update Payer factor</displayNameOverride>
+            <field>Spincal_update_Payer_factor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Spincal update Site</displayNameOverride>
+            <field>Spincal_update_Site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>StatusSurgeryRoom</displayNameOverride>
+            <field>StatusSurgeryRoom__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תחום ID</displayNameOverride>
+            <field>Domain_ID__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Surgery Kit ID</displayNameOverride>
+            <field>Surgery_Kit_ID__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Surgey Reception Email</displayNameOverride>
+            <field>Surgey_Reception_Email__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קוד הערה לתיק</displayNameOverride>
+            <field>TafnitAppointmentNoteCode__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערה לתיק</displayNameOverride>
+            <field>TafnitAppointmentNotes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tafnit Case Number</displayNameOverride>
+            <field>Tafnit_Case_Number__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות טכנאי</displayNameOverride>
+            <field>TechnicianNotes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת שיחת תזכורית</displayNameOverride>
+            <field>Time_of_Tizkorit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time of appointment</displayNameOverride>
+            <field>Time_of_appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת שיחת נציג לתזכורת</displayNameOverride>
+            <field>Time_of_human_reminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת תזכורים</displayNameOverride>
+            <field>Time_remider__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הוקלד ע&quot;י</displayNameOverride>
+            <field>TypedBy__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות קלדנית</displayNameOverride>
+            <field>Typing_Notes__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Updated in Tafnit</displayNameOverride>
+            <field>Updated_in_Tafnit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת דחיפות הפגישה</displayNameOverride>
+            <field>UrgentReason__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Week Day</displayNameOverride>
+            <field>Week_Day__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ביופסיה קשורה ל-360?</displayNameOverride>
+            <field>X360_biops_related__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ניתוח קשור ל-360?</displayNameOverride>
+            <field>X360_surgery_related__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הסכום שנגבה בפועל</displayNameOverride>
+            <field>actual_amount_paid__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הוסף לרשימת המתנה</displayNameOverride>
+            <field>add_to_waiting_list__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בהמשך לתור</displayNameOverride>
+            <field>after_appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא אישר הגעת מטופל</displayNameOverride>
+            <field>arrived__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>דווחו תוצאות ביופסיה?</displayNameOverride>
+            <field>biops_reported__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Number batch maccabi</displayNameOverride>
+            <field>Number_batch_maccabi__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תור דחוף 360 - צקבוקס</displayNameOverride>
+            <field>checkbox_urgent360__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מייל מרפאה</displayNameOverride>
+            <field>clinic_Email__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד הגשת טופס אישור הגעה</displayNameOverride>
+            <field>date_of_sumbission_arrival__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>יום בשבוע</displayNameOverride>
+            <field>day__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הרופא עמד בתנאי המרכז?</displayNameOverride>
+            <field>doc_stood_in_center_con__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח סקר לאחר הפגישה?</displayNameOverride>
+            <field>doc_survey_expert_send__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טיפול המשך - אחר</displayNameOverride>
+            <field>extra_treat_other__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מזהה פורמטייטאן</displayNameOverride>
+            <field>formtitan_external_id__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>formtitan kit experts link</displayNameOverride>
+            <field>formtitan_kit_experts_link__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחה לגובה השתתפות עצמית בקיט</displayNameOverride>
+            <field>formula_kit_amount__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical_impl2</displayNameOverride>
+            <field>Medical_impl2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טיפול המשך לפי המטופל</displayNameOverride>
+            <field>further_treatment_from_patient__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ציון דחיפות</displayNameOverride>
+            <field>grade__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שלום מטופל</displayNameOverride>
+            <field>hello_patient__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הועבר לתזכור של נציג?</displayNameOverride>
+            <field>human_reminder_transferred__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ניתן לפתוח את הטופס?</displayNameOverride>
+            <field>is_form_valid__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת הפגישה - קיט</displayNameOverride>
+            <field>kit_time_of_apt__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שד שמאל</displayNameOverride>
+            <field>left_breast__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sequence?</displayNameOverride>
+            <field>Sequence__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>זמן המגבלה לחדר הניתוח</displayNameOverride>
+            <field>Limitation_Time_Room__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם למנוע אוטומציה?</displayNameOverride>
+            <field>No_Automation__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is there MP 2?</displayNameOverride>
+            <field>Is_there_MP_2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>more than 14 days</displayNameOverride>
+            <field>more_than_14_days__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שליחת אישור על פגישה</displayNameOverride>
+            <field>need_approval__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת אי הגעה לפגישה</displayNameOverride>
+            <field>no_show_reason__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בשם המטופל</displayNameOverride>
+            <field>not_equal_acc_name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בשם הרופא</displayNameOverride>
+            <field>not_equal_doc_name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בפעולה הרפואית 2</displayNameOverride>
+            <field>not_equal_medp2_name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בפעולה הרפואית 3</displayNameOverride>
+            <field>not_equal_medp3_name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בפעולה הרפואית 4</displayNameOverride>
+            <field>not_equal_medp4_name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אי התאמה בפעולה הרפואית</displayNameOverride>
+            <field>not_equal_medp_name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת דחיפות הפגישת האחרת</displayNameOverride>
+            <field>other_app_reason__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>חריגה בהחזרת התוצאות?</displayNameOverride>
+            <field>overdue_with_results__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>המטופל אישר שנכח בפגישה?</displayNameOverride>
+            <field>patient_been_in_meeting__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>עלות ייעוץ בהתאם לואוצ&apos;ר?</displayNameOverride>
+            <field>price_like_voucher__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פירוט</displayNameOverride>
+            <field>reason__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת הפער בעלויות</displayNameOverride>
+            <field>reason_for_gap_costs__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת אי תיאום פגישה חדשה</displayNameOverride>
+            <field>reason_why_not_new_app__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הומלץ המשך טיפול?</displayNameOverride>
+            <field>rec_extra_treat__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>דווח שחרור מניתוח ל-360?</displayNameOverride>
+            <field>reported_release_surgery_360__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>דרישות נוספות</displayNameOverride>
+            <field>requires__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שד ימין</displayNameOverride>
+            <field>right_breast__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת חוסר שביעות רצון</displayNameOverride>
+            <field>satisfication_reason__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שבע רצון מהשירות?</displayNameOverride>
+            <field>satisication_from_service__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לתאם פגישה חדשה?</displayNameOverride>
+            <field>sched_new_app__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח קיט ואישור למטופל?</displayNameOverride>
+            <field>sent_kit_confirmation__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח לתזכורית?</displayNameOverride>
+            <field>sent_to_tizkurit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אתר לבחירה</displayNameOverride>
+            <field>site_for_choose__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח מסרון לתזכור</displayNameOverride>
+            <field>sms_reminder_sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס זימון חדר ניתוח</displayNameOverride>
+            <field>status_surgery_room__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>time to remind</displayNameOverride>
+            <field>temp__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הועבר לטיפול צוות 360?</displayNameOverride>
+            <field>transferfred_to_360_team__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שדה עזר לבדיקת זימון כפול לרופא</displayNameOverride>
+            <field>two_apt_same_time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג ייעוץ</displayNameOverride>
+            <field>type_of_consult__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג הדחיפות</displayNameOverride>
+            <field>urgent_Type__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תור דחוף 360?</displayNameOverride>
+            <field>urgent_apt_360__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ממתין להקדמת התור</displayNameOverride>
+            <field>waiting_for_earlier_app__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רוצה לתאם פגישה חדשה?</displayNameOverride>
+            <field>want_new_app__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אופן דיווח התוצאות</displayNameOverride>
+            <field>way_of_results_deliver__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מדוע לא הומלץ המשך טיפול?</displayNameOverride>
+            <field>why_no_extra_t__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>RT HEBREW NAME</displayNameOverride>
+            <field>RT_HEBREW_NAME__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>has signature date?</displayNameOverride>
+            <field>has_signature_date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Error description Mehironim</displayNameOverride>
+            <field>Error_description_Mehironim__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Number of agreement</displayNameOverride>
+            <field>Number_of_agreement__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Operating room plastic</displayNameOverride>
+            <field>Operating_room_plastic__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is forced</displayNameOverride>
+            <field>IsForced__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת ביטול ע&quot;י נציג</displayNameOverride>
+            <field>agent_reason_to_cancel__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא</displayNameOverride>
+            <field>doc_from_try__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הגעת המטופל לפי הרופא</displayNameOverride>
+            <field>arrived_doc__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Private anesthetist</displayNameOverride>
+            <field>Private_anesthetist__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קוד אב משלם עזר</displayNameOverride>
+            <field>Help_Parent_Code_in__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קישור לקיט הניתוחי</displayNameOverride>
+            <field>Kit_Link__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>עלות הפעולה חישוב</displayNameOverride>
+            <field>calculate_price__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS cancel apt</displayNameOverride>
+            <field>SMS_cancel_apt__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת הפגישה - בוט</displayNameOverride>
+            <field>BOT_time_apt__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Bot Site Name</displayNameOverride>
+            <field>Bot_Site_Name__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פרטי פגישת מכונים - בוט</displayNameOverride>
+            <field>bot_inst_details__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערכת עלות</displayNameOverride>
+            <field>Fee_Value__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>עלות הניתוח למחוק</displayNameOverride>
+            <field>Sum_of_Operation__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תזכור - מסרון</displayNameOverride>
+            <field>Reminder_SMS__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תזכור - תזכורית</displayNameOverride>
+            <field>Reminder_TIZ__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מחיר מינימום לניתוח</displayNameOverride>
+            <field>min_price_sur__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מחיר מקסימום לניתוח</displayNameOverride>
+            <field>max_price_sur__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>formtitan arrival link</displayNameOverride>
+            <field>formtitan_arrival_link__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טקסט - כתובת המרפאה</displayNameOverride>
+            <field>clinic_address__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הנחיות לתרחיש</displayNameOverride>
+            <field>Guidance_Scenario__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך בעוד 30 יום</displayNameOverride>
+            <field>Next30days__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פרוטוקול</displayNameOverride>
+            <field>Protocol__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>formtitan experts survey link</displayNameOverride>
+            <field>formtitan_experts_survey_link__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד חתימה</displayNameOverride>
+            <field>RIS_Signature_date_time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך חתימה</displayNameOverride>
+            <field>RISSignatureDate__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מזהה פורמטייטן 2</displayNameOverride>
+            <field>formtitan_id_2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח קיט ואישור למטופל (איש קשר)</displayNameOverride>
+            <field>sent_kit_contact__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מייל מטופל ואיש קשר</displayNameOverride>
+            <field>Patient_Contact_Mail__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הסכם</displayNameOverride>
+            <field>Agreement__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הסדר רופא</displayNameOverride>
+            <field>Doctor_arrangement__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם נשלח קיט?</displayNameOverride>
+            <field>Didkitsent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחה לתאריך שעה ויום בשבוע לקיט</displayNameOverride>
+            <field>day_date_hour__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם תחום</displayNameOverride>
+            <field>domain2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לא לשלוח תזכורים?</displayNameOverride>
+            <field>Dont_send_reminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נכנסה כבר המלצה פעילה לבדיקה?</displayNameOverride>
+            <field>Already_received_recom__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is there MP 3?</displayNameOverride>
+            <field>Is_there_MP_3__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תשובת מטופל על שאלון</displayNameOverride>
+            <field>presurgery_answer__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח מסמך נלווה?</displayNameOverride>
+            <field>related_file_sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח מסרון תוצאות בדיקה</displayNameOverride>
+            <field>Send_sms_inst__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קיט נשלח ע&quot;י כפתור</displayNameOverride>
+            <field>resend_kit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לוגו למייל</displayNameOverride>
+            <field>email_logo__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>price min equal max</displayNameOverride>
+            <field>price_min_equal_max__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>NoEmail</displayNameOverride>
+            <field>NoEmail__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of submition to clalit website</displayNameOverride>
+            <field>Date_of_submition_to_clalit_website__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סכימה</displayNameOverride>
+            <field>sumofallmeds__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מחיר סופי פעולות בלבד</displayNameOverride>
+            <field>all_med_pr_cost__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד התור טרם עבר?</displayNameOverride>
+            <field>apt_date_time_not_yet__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>grade</displayNameOverride>
+            <field>mhu__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות לקיט הניתוחי</displayNameOverride>
+            <field>remarks_kit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>implants max price</displayNameOverride>
+            <field>implants_max_price__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>implants min price</displayNameOverride>
+            <field>implants_min_price__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is there MP 4?</displayNameOverride>
+            <field>Is_there_MP_4__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית נוספת</displayNameOverride>
+            <field>included_MP__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טכנאי</displayNameOverride>
+            <field>technician1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצעה שיחה</displayNameOverride>
+            <field>Called_patient__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שדה עזר פעולה נוספת</displayNameOverride>
+            <field>help_field_technician__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לא לשלוח קיט</displayNameOverride>
+            <field>Prevent_Automation__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduling timer</displayNameOverride>
+            <field>scheduling__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Final Cost of  Med 1</displayNameOverride>
+            <field>Final_Cost_of_Med_1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Final Cost of Med 2</displayNameOverride>
+            <field>Final_Cost_of_Med_2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Final Cost of Med 3</displayNameOverride>
+            <field>Final_Cost_of_Med_3__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Final Cost of Med 4</displayNameOverride>
+            <field>Final_Cost_of_Med_4__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical_impl3</displayNameOverride>
+            <field>Medical_impl3__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical_impl4</displayNameOverride>
+            <field>Medical_impl4__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הועבר להשמעת הנחיות?</displayNameOverride>
+            <field>transfered_to_guid__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קיט ניתוחי</displayNameOverride>
+            <field>Kit_Link_URL__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>cancelled by bot?</displayNameOverride>
+            <field>cancelled_by_bot__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לינק לשאלון - טקסט</displayNameOverride>
+            <field>link_memo_text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קישור לקיט מכונים</displayNameOverride>
+            <field>kit_for_inst__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אישר הגעה ידנית</displayNameOverride>
+            <field>manual_arrival__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רשימת המתנה</displayNameOverride>
+            <field>waitinglist__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התחייבות לא בתוקף</displayNameOverride>
+            <field>Commitment_OOD__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Date bigger than today</displayNameOverride>
+            <field>Appointment_Date_bigger_than_today__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Same Last modify?</displayNameOverride>
+            <field>Same_Last_modify__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ביטול תור דרך תזכורים</displayNameOverride>
+            <field>cancel_via_reminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מטופל לפני ביטול</displayNameOverride>
+            <field>patient_before_WL__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קוד פעולה רפואית</displayNameOverride>
+            <field>MP_code__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>HomeAdmissionEndSMS</displayNameOverride>
+            <field>HomeAdmissionEndSMS__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>appointment_hour</displayNameOverride>
+            <field>appointment_hour__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notes_Text</displayNameOverride>
+            <field>Notes_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>text for kit Formula</displayNameOverride>
+            <field>text_for_kit_Formula__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>עובד אשדוד</displayNameOverride>
+            <field>ashdod__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח קישור לשאלון בדיקה?</displayNameOverride>
+            <field>memo_link_sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS Corona</displayNameOverride>
+            <field>SMS_Corona__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>missing_tizk_fields</displayNameOverride>
+            <field>missing_tizk_fields__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ריצת תזכורית?</displayNameOverride>
+            <field>Reminder_Is_Runing__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם לפתוח תיק עתידי?</displayNameOverride>
+            <field>open_future_case__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אתר מדויק</displayNameOverride>
+            <field>accurate_site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נציג שסגר את הפגישה</displayNameOverride>
+            <field>Field1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רופא מרכז מומחים?</displayNameOverride>
+            <field>Experts_doc__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פירוט כשלון ממכבי</displayNameOverride>
+            <field>macabi_failure_detail__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס הדרכה לפני ניתוח</displayNameOverride>
+            <field>Appointment_scheduled__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Power the 1</displayNameOverride>
+            <field>Power_the_1__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלחה הודעה על ביטול תור?</displayNameOverride>
+            <field>sent_cancelled__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Date</displayNameOverride>
+            <field>Appointment_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם תור קורונה שבת?</displayNameOverride>
+            <field>corona_weekend__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תור עודכן</displayNameOverride>
+            <field>updated__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס טיפול</displayNameOverride>
+            <field>processing_status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS Reminder Process?</displayNameOverride>
+            <field>SMS_Reminder_Process__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח מייל למרפאה</displayNameOverride>
+            <field>Clinic_email_sent_status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג מטופל</displayNameOverride>
+            <field>PatientType__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לא מעוניין למסור פרטי קרובי משפחה לליווי</displayNameOverride>
+            <field>Don_t_Need_Escort__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצעה עריכה (קבלה מהבית)</displayNameOverride>
+            <field>Edited__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אפוטרופוס לקטין שאינו הורה</displayNameOverride>
+            <field>Guardian_Not_Parent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך החתמה להצהרה משפטית 2 – ויתור סודי</displayNameOverride>
+            <field>Legal_Disclaimer_Signed_Date2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך החתמה להצהרה משפטית</displayNameOverride>
+            <field>Legal_Disclaimer_Signed_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>חודש</displayNameOverride>
+            <field>Month_App_c__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם מבטח אושר ע&quot;י המטופל באתר</displayNameOverride>
+            <field>Payer_Factor_Confirmed__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטאטוס תשלום באתר</displayNameOverride>
+            <field>Payment_Status_From_Site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיים קבלה מהבית בהצלחה!</displayNameOverride>
+            <field>Process_Finished__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטאטוס תהליך באתר</displayNameOverride>
+            <field>Process_Status_From_Site__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח SMS עבור קבלה מהבית</displayNameOverride>
+            <field>SMS_HomeAdmission_Sended__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטאטוס תיק עתידי</displayNameOverride>
+            <field>TAF_Future_Case_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תפנית תיק עתידי</displayNameOverride>
+            <field>TAF_Future_Case__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>UNICORN</displayNameOverride>
+            <field>UNICORN__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קישור לקובץ תעודת זהות</displayNameOverride>
+            <field>URL_To_ID_File__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שנה</displayNameOverride>
+            <field>Year_App__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד התחלת הטיפול</displayNameOverride>
+            <field>start_processing_date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שליחת קיט</displayNameOverride>
+            <field>Kit_Date_Time_Last_Sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>עלות משתלים כוללת</displayNameOverride>
+            <field>total_implants_cost__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מחיר מקסימום למשתלים</displayNameOverride>
+            <field>max_price__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מחיר מינימום למשתלים</displayNameOverride>
+            <field>min_price__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס פנייה מאתר רופאים</displayNameOverride>
+            <field>status_from_referral_website__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצעה עריכה ניתוחים</displayNameOverride>
+            <field>was_updated_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email Home Addmission Was Sent</displayNameOverride>
+            <field>Email_Home_Addmission_Was_Sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הוחרג מיציאה למכבי</displayNameOverride>
+            <field>excluded_from_maccabi__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התקבלה התחייבות באמצעות טופס דיגיטלי</displayNameOverride>
+            <field>hitchayvut_was_recieved__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח טופס למטופל/ת לשליחת התחייבות</displayNameOverride>
+            <field>hitchayvut_was_sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לינק להעלאת התחייבות</displayNameOverride>
+            <field>link_to_upload_hitchayvut__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תזכור נציג</displayNameOverride>
+            <field>Rep_Reminder_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס חדר פרטי</displayNameOverride>
+            <field>Status_private_room__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>min surgery</displayNameOverride>
+            <field>min_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>max surgery</displayNameOverride>
+            <field>max_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצע אימות מול הפניה</displayNameOverride>
+            <field>Verification_Done_With_Case__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Surgery Connected</displayNameOverride>
+            <field>Surgery_Connected__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מיקום מדויק במכון</displayNameOverride>
+            <field>Exact_Location_In_Domain__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אישור רופא לשיקום ביתי</displayNameOverride>
+            <field>Shikum_Bait_Approval__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד אישור רופא לשיקום בית</displayNameOverride>
+            <field>Time_Approval_Shikum_Bait__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ניתוח בהמשך לפגישת טלמדיסין שהתקיימה</displayNameOverride>
+            <field>FollowingTheTelemedicineSession__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצעה גביה טלפונית?</displayNameOverride>
+            <field>Phone_Collection_Done__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך יצירת ניתוח מקושר לייעוץ</displayNameOverride>
+            <field>surg_date_related__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Guid For Maccabi</displayNameOverride>
+            <field>GuidForMaccabi__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גיל המטופל</displayNameOverride>
+            <field>Patient_Age__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שעת יצירה</displayNameOverride>
+            <field>Appointment_Time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך יצירה</displayNameOverride>
+            <field>Date_Appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קוד פעולה רפואית</displayNameOverride>
+            <field>Medical_Procedure_code__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>TimeOfCreation</displayNameOverride>
+            <field>TimeOfCreation__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Consultancy summary document status</displayNameOverride>
+            <field>ConsultancySummaryDocumentStatus__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Reminders status- Consultancy summary</displayNameOverride>
+            <field>RemindersStatusConsultancySummary__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>referralAgency</displayNameOverride>
+            <field>referralAgency__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>isChecked</displayNameOverride>
+            <field>isChecked__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>המלצת רופא לשיקום בית</displayNameOverride>
+            <field>Shikum_Bait_Doctor_Rec__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך ההמלצה</displayNameOverride>
+            <field>Recommendation_Time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התקבלו כל המסמכים הרפואיים הנדרשים</displayNameOverride>
+            <field>All_Medical_Documents_Received__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לא רלוונטי קבלה מהבית</displayNameOverride>
+            <field>Irrelevant_receipt_from_home__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התקבל מסמך רפואי</displayNameOverride>
+            <field>MedicalDocumentReceived__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תור אושר ע&quot;י יועצת</displayNameOverride>
+            <field>AppointmentConfirmedByConsultant__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Site Code</displayNameOverride>
+            <field>Site_Code__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחה לבדיקת לילה לקיט</displayNameOverride>
+            <field>Formula_Night_test__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טלפון מטופל</displayNameOverride>
+            <field>PHONE__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תשלום</displayNameOverride>
+            <field>PaymentStatus__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מקור התשלום</displayNameOverride>
+            <field>PaymentSource__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוצר סקר לאחר ניתוח?</displayNameOverride>
+            <field>IsSurveyCreatedAfterSurgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד שליחת סקר לאחר ניתוח</displayNameOverride>
+            <field>SendSurveyAfterSurgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>עלות הביקור</displayNameOverride>
+            <field>AppointmentCost__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תשלום קודם</displayNameOverride>
+            <field>FormerPaymentStatus__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיאור שגיאת התשלום</displayNameOverride>
+            <field>PaymentErrorMessage__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס תשלום קודם-עזר</displayNameOverride>
+            <field>PriorPaymentStatus__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Quick reception for Expers</displayNameOverride>
+            <field>QuickReceptionForExpers__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מס&apos; קבלה</displayNameOverride>
+            <field>ReceiptNum__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סכום ששולם</displayNameOverride>
+            <field>paid_amount__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיק תפנית בוטל</displayNameOverride>
+            <field>closedcase__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שאלונים תקינים</displayNameOverride>
+            <field>Correct_questionnaires__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רלוונטי לקבלה מהירה</displayNameOverride>
+            <field>relevant_quick_reception__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס התחייבות עבור קבלה מהירה</displayNameOverride>
+            <field>Status_quick_reception__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Attended</displayNameOverride>
+            <field>Attended__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>NeedNextAppointment</displayNameOverride>
+            <field>NeedNextAppointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity</displayNameOverride>
+            <field>Opportunity__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SurveySentToDoctor</displayNameOverride>
+            <field>SurveySentToDoctor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>nextAppointmetType</displayNameOverride>
+            <field>nextAppointmetType__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>othernextAppointmetTypeExplanation</displayNameOverride>
+            <field>othernextAppointmetTypeExplanation__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>theLatestAppointment</displayNameOverride>
+            <field>theLatestAppointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קיימים שאלונים</displayNameOverride>
+            <field>exists_questionnaires__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Related document</displayNameOverride>
+            <field>Related_document__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצע זיכוי</displayNameOverride>
+            <field>Creditwasmade__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך העברת בקשה לזיכוי</displayNameOverride>
+            <field>Dateofarequestforcredit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך ביצוע הזיכוי</displayNameOverride>
+            <field>Dateofcredit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הועברה בקשה לזיכוי</displayNameOverride>
+            <field>applicationforcredit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>implantsMaxPrice</displayNameOverride>
+            <field>implantsMaxPrice__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>implantsMinPrice</displayNameOverride>
+            <field>implantsMinPrice__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>formtitan kit experts center to patient</displayNameOverride>
+            <field>formtitan_kit_experts_center_to_patient__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תהליך תזכורות לייעוץ גנטי</displayNameOverride>
+            <field>genetic_reminder_flow__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התקבלו כל מסמכי החובה ביעוץ גנטי</displayNameOverride>
+            <field>All_Mandatory_Genetic_Files_Received__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מסמכי ייעוץ גנטי</displayNameOverride>
+            <field>Genetic_upload_files__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Date In Text</displayNameOverride>
+            <field>Appointment_Date_In_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>זיהוי כשל בתהליכים</displayNameOverride>
+            <field>Field2__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם ניתן לשלוח קיט</displayNameOverride>
+            <field>Has_a_kit_been_sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PresurgeryNeededMoked</displayNameOverride>
+            <field>PresurgeryNeededMoked__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FutureCaseError</displayNameOverride>
+            <field>FutureCaseError__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FT PreSurgery Upload Files</displayNameOverride>
+            <field>FT_PreSurgery_Upload_Files__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Form SMS</displayNameOverride>
+            <field>Referral_Form_SMS__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לינק להעלאת הפניה</displayNameOverride>
+            <field>Surgery_Upload_Files__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Unicorn Treated</displayNameOverride>
+            <field>Unicorn_Treated__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Value Unicorn</displayNameOverride>
+            <field>Value_Unicorn__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>test</displayNameOverride>
+            <field>test__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>IdNumberForMaccabi</displayNameOverride>
+            <field>IdNumberForMaccabi__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Night Appointment</displayNameOverride>
+            <field>Is_Night_Appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחא קיט מכונים לילה</displayNameOverride>
+            <field>NightInstituteKitFormula__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedures Number</displayNameOverride>
+            <field>Medical_Procedures_Number__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחה לשעה ופעולה רפואית נוספת</displayNameOverride>
+            <field>apnt_time_secondprocedure__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נוסחה לשעה ופעולה רפואית</displayNameOverride>
+            <field>appointmenttime_medicalprocedure__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אישור הגעה לניתוח ע&quot;י נציג</displayNameOverride>
+            <field>ConfirmationSurgeryAgent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>LastUpdateMaccabiStatus</displayNameOverride>
+            <field>LastUpdateMaccabiStatus__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Amniocentesis Reminder Date</displayNameOverride>
+            <field>Amniocentesis_Reminder_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Amniocentesis Reminder SMS Sent?</displayNameOverride>
+            <field>Amniocentesis_Reminder_SMS_Sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אחוז מילוי</displayNameOverride>
+            <field>PercentageOfCompletion__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית מצריכה טרום ניתוח</displayNameOverride>
+            <field>PreSurgMedProcedure__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לינק לשאלון טרום ניתוח</displayNameOverride>
+            <field>preSurgeryLink__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ImplantComments</displayNameOverride>
+            <field>ImplantComments__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיעוד אחות</displayNameOverride>
+            <field>NurseDescription__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>היסטוריית תיעוד אחות</displayNameOverride>
+            <field>Nurse_Field_History__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SurveyTakenConnect</displayNameOverride>
+            <field>SurveyTakenConnect__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PreSurgery Survey SMS Sent</displayNameOverride>
+            <field>PreSurgery_Survey_SMS_Sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PreSurgery Survey SMS_TimeStamp</displayNameOverride>
+            <field>PreSurgery_Survey_SMS_TimeStamp__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שאלון הסתיים</displayNameOverride>
+            <field>SurveyCompleted__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>החלטת אחות</displayNameOverride>
+            <field>NurseStatus__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התאמה לטריאג אחות</displayNameOverride>
+            <field>NurseTriageMatch__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בוצע טרום מרחוק ?</displayNameOverride>
+            <field>RemotePreSurgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיאור</displayNameOverride>
+            <field>SurveyDescription__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תוצאת שאלון</displayNameOverride>
+            <field>SurveyResults__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קישור להעלאת מסמכים חסרים</displayNameOverride>
+            <field>NurseRequiredDocuments__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התקבלו מסמכים חסרים</displayNameOverride>
+            <field>Received_Nurse_Medical_Docs__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מסמכים חסרים</displayNameOverride>
+            <field>RequiredDocuments__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלח סמס לאחר תוצאות שאלון</displayNameOverride>
+            <field>PreSurgSurveyResultsSMS_Sent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Message 24h before surgery</displayNameOverride>
+            <field>Message_24h_before_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Need to send sms before surgery</displayNameOverride>
+            <field>Need_to_send_sms_before_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment DateTime in Text</displayNameOverride>
+            <field>Appointment_DateTime_in_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ClinicalInstructionsGiven</displayNameOverride>
+            <field>ClinicalInstructionsGiven__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Datos Meeting Duration</displayNameOverride>
+            <field>datosMeetingDuration__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Message 2h after surgery</displayNameOverride>
+            <field>Message_2h_after_surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פגישה של טרום ניתוח</displayNameOverride>
+            <field>Appointment_of_Pre_Surgery__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Days Until Appointment</displayNameOverride>
+            <field>Days_Until_Appointment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is App Before 14</displayNameOverride>
+            <field>IsAppBefore14__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS 1 Day</displayNameOverride>
+            <field>SMS1Day__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS 2 Days</displayNameOverride>
+            <field>SMS2Days__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS 3 Days</displayNameOverride>
+            <field>SMS3Days__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS 4 Days</displayNameOverride>
+            <field>SMS4Days__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Send Date 1 Day Before</displayNameOverride>
+            <field>SendDate1DayBefore__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Send Date 2 Days Before</displayNameOverride>
+            <field>SendDate2DaysBefore__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Send Date 3 Days Before</displayNameOverride>
+            <field>SendDate3DaysBefore__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Send Date 4 Days Before</displayNameOverride>
+            <field>SendDate4DaysBefore__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Link to upload documents for TA</displayNameOverride>
+            <field>Link_to_upload_documents_for_TA__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Phone</displayNameOverride>
+            <field>appointmentphone__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SMS Address</displayNameOverride>
+            <field>SMS_Address__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>לינק להעלאת התחייבות והפניה</displayNameOverride>
+            <field>Upload_Hitchayvut_Afnaya__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment in 2 days</displayNameOverride>
+            <field>Appointment_in_2_days__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Exact Location In Domain Text</displayNameOverride>
+            <field>Exact_Location_In_Domain_Text__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outbound WA Allow</displayNameOverride>
+            <field>Outbound_WA_Allow__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שליחת תזכורת ראשונה WhatsApp</displayNameOverride>
+            <field>dateRemainder1WA__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך שליחת תזכורת שנייה WhatsApp</displayNameOverride>
+            <field>dateRemainder2WA__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלחה תזכורת ראשונה WhatsApp</displayNameOverride>
+            <field>isRemainder1WAsent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>נשלחה תזכורת שנייה WhatsApp</displayNameOverride>
+            <field>isRemainder2WAsent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הסדר ניתוחי בהתאמה לניתוח</displayNameOverride>
+            <field>surgeryMatchedArrangement__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FeedBackSurveyAssistingAgent</displayNameOverride>
+            <field>FeedBackSurveyAssistingAgent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FeedBack Survey With Agent</displayNameOverride>
+            <field>FeedBack_Survey_With_Agent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שליחת הודעה באמצעות WhatsApp</displayNameOverride>
+            <field>sendingByWhatsApp__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PreSurgery Additional Documents</displayNameOverride>
+            <field>PreSurgery_Additional_Documents__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>isReception</displayNameOverride>
+            <field>isReception__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sent2ClinicApp</displayNameOverride>
+            <field>Sent2ClinicApp__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>manualRunWAR</displayNameOverride>
+            <field>manualRunWAR__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AppointmentInsurance Company</displayNameOverride>
+            <field>AppointmentInsurance_Company__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Taking Blood</displayNameOverride>
+            <field>Taking_Blood__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Survey</displayNameOverride>
+            <field>Survey__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CancelingPolicyForInstKit</displayNameOverride>
+            <field>CancelingPolicyForInstKit__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>המטופל אישר את מדיניות הטיפולים</displayNameOverride>
+            <field>PatientApprovedCancellationPolicy__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>דיווח הביטול</displayNameOverride>
+            <field>Cancellation_Report__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיאור מקרה</displayNameOverride>
+            <field>Case_Description__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סגירת הטיפול</displayNameOverride>
+            <field>Closing_Treartment__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם מאשר</displayNameOverride>
+            <field>Confirming_Factor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת ביטול הניתוח</displayNameOverride>
+            <field>MAIN_CANCELATION_CAUSE_SURGERY__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיעוד טיפול מנהל רפואי</displayNameOverride>
+            <field>Medical_Director_Documentation__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם מדווח</displayNameOverride>
+            <field>Reporting_Factor__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תגובת המנתח</displayNameOverride>
+            <field>Surgeon_Response__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיאור ביטול ניתוח</displayNameOverride>
+            <field>Surgery_Canacel_Description__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ביטול ניתוח תוחקר</displayNameOverride>
+            <field>Surgery_Canacel_Investigated__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הועבר למנהל הרפואי</displayNameOverride>
+            <field>Transferred_To_Medical_Director__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טיפול הסתיים</displayNameOverride>
+            <field>Treatment_Over__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>היה ניתן למניעה?</displayNameOverride>
+            <field>Was_it_Preventable__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תיאור</displayNameOverride>
+            <field>Cancellation_Sub_Reason__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תת סיבת ביטול הניתוח</displayNameOverride>
+            <field>Surgery_Canacel_Reason__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אישור קריאת הנחיות</displayNameOverride>
+            <field>InstructionsRead__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>אישור קריאת עלויות</displayNameOverride>
+            <field>PaymentsRead__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment via bank transfer</displayNameOverride>
+            <field>Payment_via_bank_transfer__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refund Amount</displayNameOverride>
+            <field>Refund_Amount__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refund Eligibility</displayNameOverride>
+            <field>Refund_Eligibility__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Aid Appointment Indication</displayNameOverride>
+            <field>MedicalAidAppointmentIndication__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Purchase Status</displayNameOverride>
+            <field>Purchase_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Days in between</displayNameOverride>
+            <field>Days_in_between__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Operating room plastic integer formula</displayNameOverride>
+            <field>Operating_room_plastic_integer_formula__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Operating room cost integer formula</displayNameOverride>
+            <field>Operating_room_cost_integer_formula__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Informed patient he is not eligible</displayNameOverride>
+            <field>Informed_patient_he_is_not_eligible__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Comments</displayNameOverride>
+            <field>Comments__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Anesthesiologist Status</displayNameOverride>
+            <field>Anesthesiologist__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Approved by anesthesiologist</displayNameOverride>
+            <field>Approved_by_anesthesiologist__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Kit Date Plus 3 Months</displayNameOverride>
+            <field>Kit_Date_Plus_3_Months__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Kit Date Time Last Sent in Date</displayNameOverride>
+            <field>Kit_Date_Time_Last_Sent_in_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Call center treatment status</displayNameOverride>
+            <field>Call_center_treatment_status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Have all the documents been received?</displayNameOverride>
+            <field>Have_all_the_documents_been_received__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Titan Sign MRI URL</displayNameOverride>
+            <field>Titan_Sign_MRI_URL__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Means of transmitting information</displayNameOverride>
+            <field>Means_of_transmitting_information__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Surgeon informed</displayNameOverride>
+            <field>Surgeon_informed__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Surgery status</displayNameOverride>
+            <field>Surgery_status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Details</displayNameOverride>
+            <field>Details__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Missing documents</displayNameOverride>
+            <field>Missing_documents__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refusal reason details</displayNameOverride>
+            <field>Refusal_reason_details__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cancellation Date/Time</displayNameOverride>
+            <field>Cancellation_date_time__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notes</displayNameOverride>
+            <field>Notes_Sperm_Bank__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Purchase Execution Date</displayNameOverride>
+            <field>Purchase_Execution_Date__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SendingMessage</displayNameOverride>
+            <field>SendingMessage__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Aid Appointment Exists</displayNameOverride>
+            <field>MedicalAidAppointmentExists__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medical Procedure Price</displayNameOverride>
+            <field>Medical_Procedure_Price__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>10DayReminderSent</displayNameOverride>
+            <field>X10DayReminderSent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>20DayReminderSent</displayNameOverride>
+            <field>X20DayReminderSent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>20 Days Reminder</displayNameOverride>
+            <field>X20DayReminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>30DayReminderSent</displayNameOverride>
+            <field>X30DayReminderSent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>10 Days Reminder</displayNameOverride>
+            <field>x10DayReminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>30 Days Reminder</displayNameOverride>
+            <field>x30DayReminder__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Private room code changed by</displayNameOverride>
+            <field>Private_room_code_changed_by__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status private room changed by</displayNameOverride>
+            <field>Status_private_room_changed_by__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is COVID 19</displayNameOverride>
+            <field>IsCovid19__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Credit Status</displayNameOverride>
+            <field>Credit_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Detail Of Reason For Refusal</displayNameOverride>
+            <field>Detail_Of_Reason_For_Refusal__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact Us URLs - Ashdod</displayNameOverride>
+            <field>ContactUsURLsAshdod__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>UrgentAppointmentStatus</displayNameOverride>
+            <field>UrgentAppointmentStatus__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>UrgentAppointmentMessageDate</displayNameOverride>
+            <field>UrgentAppointmentMessageDate__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>isPreReminderWASent</displayNameOverride>
+            <field>isPreReminderWASent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>preDateReminderWA</displayNameOverride>
+            <field>preDateReminderWA__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PrePreSurgery 2 Clinic App</displayNameOverride>
+            <field>PrePreSurgery2ClinicApp__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Survey Completed Timestamp</displayNameOverride>
+            <field>SurveyCompletedTimestamp__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PreSent2ClinicApp</displayNameOverride>
+            <field>PreSent2ClinicApp__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Create_Appointment_Ashdod__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Cancel_Appointment_Ashdod__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RelevantInformedConsent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Is_Urgent__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Transaction_ID__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Department__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Digital_Followup_Status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Digital_description_of_follow_up__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <masterLabel>Appointments</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Patient Account : Mailing approval</displayNameOverride>
+            <field>Patient_Account__c.Mailing_approval__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Patient Account : SMS Phone Number</displayNameOverride>
+            <field>Patient_Account__c.SMS_Phone_Number__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Patient Account : אמייל</displayNameOverride>
+            <field>Patient_Account__c.Email_status__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email</displayNameOverride>
+            <field>Patient_Account__c.Email_Patient__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Patient Account : First Name</displayNameOverride>
+            <field>Patient_Account__c.FirstName</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Patient Account : Last Name</displayNameOverride>
+            <field>Patient_Account__c.LastName</field>
+            <table>Appointment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Medical Procedure : נדרש חיסיון</displayNameOverride>
+            <field>Medical_Procedure__c.Confidentiality__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <masterLabel>Patients</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : Referral from doctor website : Hospitalization</displayNameOverride>
+            <field>Referral_from_doctor_website__c.Hospitalization__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <masterLabel>referral from doctor website</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment : תחום : Domain Code</displayNameOverride>
+            <field>Domain__c.DomainCode__c</field>
+            <table>Appointment__c</table>
+        </columns>
+        <masterLabel>Domain</masterLabel>
+    </sections>
+</ReportType>

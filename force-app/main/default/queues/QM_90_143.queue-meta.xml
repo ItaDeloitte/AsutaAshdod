@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>experts@assuta.co.il</email>
+    <name>מרכז מומחים</name>
+    <queueMembers>
+        <users>
+            <user>zzz_c2ca5b8b-fb48-4a84-aae4-779f6afa0a5f@deleted.com</user>
+            <user>aidago@assuta.co.il</user>
+            <user>orlyda@assuta.co.il</user>
+            <user>orianam@assuta.co.il</user>
+            <user>oritavr@assuta.co.il</user>
+            <user>zzz_25b6a803-c869-451b-9be3-1aeb9abe596a@deleted.com</user>
+            <user>bardo@assuta.co.il</user>
+            <user>zzz_2a78b27c-6d00-435f-bbfd-5f615926c07e@deleted.com</user>
+            <user>zzz_09d807c4-bf68-4912-a2c6-565549b13db9@deleted.com</user>
+            <user>danielsov@assuta.co.il</user>
+            <user>helenagr@assuta.co.il</user>
+            <user>zzz_bc18f707-ea72-4036-9e25-d98bbd64ae65@deleted.com</user>
+            <user>zzz_59126a69-98db-4a12-98e8-7bf2b05adb3b@deleted.com</user>
+            <user>henl@assuta.co.il.prod</user>
+            <user>zzz_d02d2911-c064-4822-bb32-e5c3c4b790a7@deleted.com</user>
+            <user>zzz_15b6104f-1814-4a93-94e8-1d220ae1e0eb@deleted.com</user>
+            <user>yanivav@assuta.co.il</user>
+            <user>zzz_0265c502-dfbc-41ea-a4d9-ce53516ee832@deleted.com</user>
+            <user>zzz_fe2a8552-d3ea-4d2b-b529-4be638027b49@deleted.com</user>
+            <user>linorso@assuta.co.il</user>
+            <user>liraze@assuta.co.il</user>
+            <user>michalbenh@assuta.co.il</user>
+            <user>menohab@assuta.co.il</user>
+            <user>zzz_9d34ebaf-7917-48de-b533-babfa4befbce@deleted.com</user>
+            <user>nadimas@assuta.co.il</user>
+            <user>edeneli@assuta.co.il</user>
+            <user>anatdj@assuta.co.il</user>
+            <user>coralb@assuta.co.il</user>
+            <user>e50fd99a9cf64120a6532b085ff98226rafin@assuta.co.il</user>
+            <user>shoshannahf@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Phone_Call_Log__c</sobjectType>
+    </queueSobject>
+</Queue>

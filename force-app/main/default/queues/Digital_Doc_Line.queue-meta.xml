@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>torim@assuta.co.il</email>
+    <name>דיגיטל קו לרופא</name>
+    <queueMembers>
+        <users>
+            <user>einsteinbotuser@assuta.co.il</user>
+            <user>aviadbu@assuta.co.il</user>
+            <user>oraharonm@assuta.co.il</user>
+            <user>bardo@assuta.co.il</user>
+            <user>batelhai@assuta.co.il</user>
+            <user>zzz_8748a4e0-d6d2-419b-a52d-d3c2e4ccab0f@deleted.com</user>
+            <user>daniellas@assuta.co.il</user>
+            <user>harell@assuta.co.il</user>
+            <user>mikaelag@assuta.co.il</user>
+            <user>d1ba4cfe3a88449bb3535926a4ec2887maramk@assuta.co.il</user>
+            <user>zzz_e865c7d3-e21f-4c6c-bc3b-9010ac8b267c@deleted.com</user>
+            <user>miriam@assuta.co.il</user>
+            <user>zzz_ee226e80-a45a-49ba-b400-b82a2732f25e@deleted.com</user>
+            <user>nadimas@assuta.co.il</user>
+            <user>zzz_3020687e-7626-4dbd-ab24-c1fd050627e4@deleted.com</user>
+            <user>zzz_f3a6a091-35dd-4e06-80c3-3e0e181c185c@deleted.com</user>
+            <user>edeneli@assuta.co.il</user>
+            <user>edenman@assuta.co.il</user>
+            <user>zzz_95f75a12-7aab-4266-bd3b-29b7619c1295@deleted.com</user>
+            <user>rachelmah@assuta.co.il</user>
+            <user>rinai@assuta.co.il</user>
+            <user>shoshannahf@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Doctor_Account__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Medical_Procedure_1__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Medical_Procedure_2__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Insurer_factor__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Mobile_Phone__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Patient_Account__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Referral_from_doctor_website__c.Medical_Procedure_1__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>צנתור,אבלציה,השתלת קוצב,דפליבי,אנגיו</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Referral_from_doctor_website__c.Medical_Procedure_2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>צנתור,אבלציה,השתלת קוצב,דפליבי,אנגיו</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Referral_from_doctor_website__c.Medical_Procedure_3__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>צנתור,אבלציה,השתלת קוצב,דפליבי,אנגיו</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Referral_from_doctor_website__c.Medical_Procedure_4__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>צנתור,אבלציה,השתלת קוצב,דפליבי,אנגיו</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Referral_from_doctor_website__c.Date_Time_Surgery__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Referral_from_doctor_website__c.Date_Time_Surgery__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>8/6/2020 12:00 AM</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>Referral_from_doctor_website__c.Date_Time_Surgery__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>הפניות מאתר רופאים לאלינה (3 שבועות)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Referral_from_doctor_website__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Referral_from_doctor_website__c.Date_Time_Surgery__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

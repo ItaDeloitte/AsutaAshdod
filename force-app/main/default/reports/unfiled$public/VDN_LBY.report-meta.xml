@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>VDN__c.CodeVDN__c</field>
+    </columns>
+    <columns>
+        <field>VDN__c.VDN__c</field>
+    </columns>
+    <columns>
+        <field>VDN__c.CallCenter__c</field>
+    </columns>
+    <columns>
+        <field>VDN__c.CallCenter_c__c</field>
+    </columns>
+    <columns>
+        <field>VDN__c.Domain_Code__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>דו&quot;ח VDN</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$VDN__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>VDN__c.CodeVDN__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

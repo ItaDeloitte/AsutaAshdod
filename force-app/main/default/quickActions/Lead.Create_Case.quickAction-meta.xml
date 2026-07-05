@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>יצירת פנייה מתוך רשומת ליד.</description>
+    <flowDefinition>Screen_Lead_Create_Case</flowDefinition>
+    <label>Create Case</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

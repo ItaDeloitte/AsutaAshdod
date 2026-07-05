@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_61903856</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>ניהול סיכונים</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Third Party</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Escalated</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In_Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>התקבלו תוצאות ביופסיה</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ממתין</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ממתין למועד בדיקת MRI/PET CT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ממתין לתוצאת בדיקת MRI/PET CT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>נקבע תור לניתוח</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>הועבר למחלקה אונקולוגית</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>סגירת אירוע אוטומטית</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Caneclled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ממתין לרופא</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ממתין למטופל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>בבדיקה מול גורם נוסף</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>העברה לטיפול מנהל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>אין מענה</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>העברה חזרה למוקד</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <value>בטיפול/סגור</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>חדש</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_95955962</developerName>
+        <masterLabel>Test</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>In_Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <value>בטיפול או סגור</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_58832280</developerName>
+        <masterLabel>סטאטוס</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <value>סגור</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In_Progress</sourceValue>
+            </sourceValues>
+            <value>חדש/בטיפול</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ממתין לרופא</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ממתין למטופל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>בבדיקה מול גורם נוסף</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>העברה לטיפול מנהל</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>אין מענה</sourceValue>
+            </sourceValues>
+            <value>צד שלישי</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Case.Owner_Queue_wf__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>כל הפניות</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Case.description_history__c</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <filter>
+        <booleanFilter>3 AND ((4 AND 5) OR (1 AND 2)) AND 6 AND 7</booleanFilter>
+        <criteriaItems>
+            <column>Case.Case_Time__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>24hto48h,above48h</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.transfer_to_secretaries</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Field1__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>השלום</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>WEBEMAIL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.ClosedGen,Case.General_Info</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed,סגור</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Owner_Queue_wf__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>ניהול ורישום מידע רפואי,השלום - מכון שינה CPAP</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Field1__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Case_Time__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Owner_Queue_wf__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>עותק של דוח מנכ&quot;ל - גרסה ד  אניה</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

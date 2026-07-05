@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Appointment__c.Patient_Account__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Appointment_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Appointment_Status__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Doctor_Account__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.PayerFactor__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Medical_Procedure__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Site__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Appointment__c.hitchayvut_was_recieved__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment__c.Surgeries</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>בטיפול אדמיניסטרטיבי,WaitingForAppointment,Canceled,2,not_arrived</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Date_Time__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>4/1/2022 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Date_Time__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>4/30/2022 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Site__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>בי&quot;ח אסותא אשדוד ע&quot;ש סמסון</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.PayerFactor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>מכבי,כללית,לאומית,מאוחדת,פרטי,תייר,קריה,בירור,אסותא</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>ניתוחים - ביטוחים שליחת מסמכים</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Appointment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_LAST_UPDATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

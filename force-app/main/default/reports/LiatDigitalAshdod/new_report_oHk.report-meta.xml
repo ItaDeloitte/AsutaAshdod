@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>
+if(((CDF1:SUM)-floor(CDF1:SUM))&lt;0.6, AVG(CDF1:SUM),
+Avg( FLOOR(CDF1:SUM) +  FLOOR((((CDF1:SUM)-FLOOR(CDF1:SUM))*100)/60)) + (((((CDF1:SUM)-FLOOR(CDF1:SUM))*100)-60)/100)
+)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>זמן שיחה כולל</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>
+if(((CDF1:AVG)-floor(CDF1:AVG))&lt;0.6, (CDF1:AVG),
+( FLOOR(CDF1:AVG) +  FLOOR((((CDF1:AVG)-FLOOR(CDF1:AVG))*100)/60)) + (((((CDF1:AVG)-FLOOR(CDF1:AVG))*100)-60)/100)
+)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>זמן שיחה ממוצע</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>if(((CDF1:SUM)-floor(CDF1:SUM))&lt;0.6, AVG(CDF1:SUM),
+Avg( FLOOR(CDF1:SUM) +  FLOOR((((CDF1:SUM)-FLOOR(CDF1:SUM))*100)/60)) + (((((CDF1:SUM)-FLOOR(CDF1:SUM))*100)-60)/100)
+)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>זמן שיחה כולל של השיחות</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>if(((CDF1:AVG)-floor(CDF1:AVG))&lt;0.6, (CDF1:AVG),
+( FLOOR(CDF1:AVG) +  FLOOR((((CDF1:AVG)-FLOOR(CDF1:AVG))*100)/60)) + (((((CDF1:AVG)-FLOOR(CDF1:AVG))*100)-60)/100)
+)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>זמן שיחה ממוצע של השיחות</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_55748603</developerName>
+        <masterLabel>ערוץ מקור</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>AgentWork.MessagingSession$MessagingChannel</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>+972 72-339-9980</sourceValue>
+            </sourceValues>
+            <value>Whatsapp</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Assuta Ashdod Chat for Bot</sourceValue>
+            </sourceValues>
+            <value>Chat</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>AgentWork$WorkItem-MessagingSession</field>
+    </columns>
+    <columns>
+        <field>AgentWork$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$AcceptDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$CloseDateTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <aggregateTypes>Maximum</aggregateTypes>
+        <field>AgentWork$Waiting_Time_Minutes__c</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>
+IF((UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))&lt;60, (UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))/100,
+FLOOR((UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))/60)+ 
+((((UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))/60)-FLOOR((UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))/60))*60)/100)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>זמן שיחה</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>מריה שפרגל,אורית חוה זפרני,נועם רואס,ויקטוריה טבל  בנט,יפה גולן,גלית פזרקר,שני עזרן,מרינה מרילי,אינה שרשוב,נופר מתתיהו,עינב מכלוף,מירי ליזרוביץ,לידר טטרואשוילי,דניאל יוסף,נינה וולקוב פרידמן,איריס ירוס זמנה,שני ואקנין,משי לביאב,ליאן פאר,יפה נידני,אולגה אבזבקייב,ליאת  חנונה,לאה אללי,יפה טרונש מלסה,ניקול פפיסמדוב,מרים אושרי</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>AgentWork$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_55748603</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>תקשורת כתובה זמן שיחה אשדוד - סיכום</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Omni_Channel_and_Messaging_Session__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$AcceptDateTime</dateColumn>
+        <endDate>2026-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2026-05-01</startDate>
+    </timeFrameFilter>
+</Report>

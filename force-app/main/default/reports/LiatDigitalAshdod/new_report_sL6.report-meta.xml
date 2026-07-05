@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CDF1:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>זמן שיחה ממוצע</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>כמות שיחות</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_55748603</developerName>
+        <masterLabel>ערוץ מקור</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>AgentWork.MessagingSession$MessagingChannel</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>+972 72-339-9980</sourceValue>
+            </sourceValues>
+            <value>Whatsapp</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Assuta Ashdod Chat for Bot</sourceValue>
+            </sourceValues>
+            <value>Chat</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Average</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>CDF1</column>
+        </chartSummaries>
+        <chartSummaries>
+            <aggregate>Average</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>AgentWork$Waiting_Time_Minutes__c</column>
+        </chartSummaries>
+        <chartSummaries>
+            <aggregate>Maximum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>AgentWork$Waiting_Time_Minutes__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>AgentWork$User</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>AgentWork$WorkItem-MessagingSession</field>
+    </columns>
+    <columns>
+        <field>AgentWork$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$AcceptDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$CloseDateTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <aggregateTypes>Maximum</aggregateTypes>
+        <field>AgentWork$Waiting_Time_Minutes__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>
+IF((UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))&lt;60, (UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))/100,
+FLOOR((UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))/60)+ 
+((((UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))/60)-FLOOR((UNIXTIMESTAMP(AgentWork.CloseDateTime) - UNIXTIMESTAMP(AgentWork.AssignedDateTime))/60))*60)/100)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>זמן שיחה</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>מריה שפרגל,אורית חוה זפרני,נועם רואס,ויקטוריה טבל  בנט,יפה גולן,גלית פזרקר,שני עזרן,מרינה מרילי,אינה שרשוב,נופר מתתיהו,עינב מכלוף,מירי ליזרוביץ,לידר טטרואשוילי,דניאל יוסף,נינה וולקוב פרידמן,איריס ירוס זמנה,שני ואקנין,משי לביאב,ליאן פאר,יפה נידני,אולגה אבזבקייב,ליאת  חנונה,לאה אללי,יפה טרונש מלסה,ניקול פפיסמדוב,מרים אושרי</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$User</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_55748603</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>תקשורת כתובה אשדוד- נציגים</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Omni_Channel_and_Messaging_Session__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$AcceptDateTime</dateColumn>
+        <endDate>2026-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2026-05-01</startDate>
+    </timeFrameFilter>
+</Report>

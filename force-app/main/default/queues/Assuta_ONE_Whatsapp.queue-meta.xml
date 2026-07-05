@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>אסותא ONE Whatsapp</name>
+    <queueMembers>
+        <users>
+            <user>olgabo@assuta.co.il</user>
+            <user>ariellaam@assuta.co.il</user>
+            <user>danielham@assuta.co.il</user>
+            <user>nuritz@assuta.co.il</user>
+            <user>miray@assuta.co.il</user>
+            <user>maayanf@assuta.co.il</user>
+            <user>rashae@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

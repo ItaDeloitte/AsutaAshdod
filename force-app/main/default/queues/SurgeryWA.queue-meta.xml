@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>דיגיטל - ניתוחים</name>
+    <queueMembers>
+        <users>
+            <user>orenma@assuta.co.il</user>
+            <user>elinoyz@assuta.co.il</user>
+            <user>barbu@assuta.co.il</user>
+            <user>zzz_c0b750d3-8351-4898-877b-f7a711a0a2f6@deleted.com</user>
+            <user>zzz_0cb21ddf-ea09-4414-87a1-2dcf24925cd3@deleted.com</user>
+            <user>havazelets@assuta.co.il</user>
+            <user>yehonatana@assuta.co.il</user>
+            <user>malfiyam@assuta.co.il</user>
+            <user>natail@assuta.co.il</user>
+            <user>nikitakr@assuta.co.il</user>
+            <user>adido@assuta.co.il</user>
+            <user>aterety@assuta.co.il</user>
+            <user>einavo@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Whatsapps_routing</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Completed</masterLabel>
+        <translation>הושלם</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Deferred</masterLabel>
+        <translation>נדחה</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In Progress</masterLabel>
+        <translation>בתהליך</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Not Started</masterLabel>
+        <translation>טרם החל</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting on someone else</masterLabel>
+        <translation>ממתין למישהו אחר</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

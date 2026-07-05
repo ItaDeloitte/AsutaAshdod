@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>assutademo@gmail.com</email>
+    <name>רמת החייל - מכון רדיותרפיה</name>
+    <queueMembers>
+        <users>
+            <user>zzz_4caf2538-347c-4bf6-b3ab-c9b39b667846@deleted.com</user>
+            <user>estermal@assuta.co.il</user>
+            <user>talhas@assuta.co.il</user>
+            <user>lubaa@assuta.co.il</user>
+            <user>zzz_1b4d2ac7-4a33-4430-9b89-5e8e9489581b@deleted.com</user>
+            <user>nelyak@assuta.co.il</user>
+            <user>zviaku@assuta.co.il</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Medical_Aid_Appointment__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

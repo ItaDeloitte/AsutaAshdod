@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>QualityControl__c.Related_case__c</field>
+    </columns>
+    <columns>
+        <field>QualityControl__c.Feedback_Desc__c</field>
+    </columns>
+    <columns>
+        <field>QualityControl__c.Related_Account__c</field>
+    </columns>
+    <columns>
+        <field>QualityControl__c.SLA_Icon__c</field>
+    </columns>
+    <columns>
+        <field>QualityControl__c.close_reason__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>QualityControl__c.Feedback_Desc__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>התקבל ציון נמוך מ80 בסקר</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>QualityControl__c.manager1__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>מיאר,נג&apos;ייה,מוריה</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>QualityControl__c.Related_User__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Automated Process,אורן בן שושן,Ensemble</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>QualityControl__c.Status_QA__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,בטיפול מנהל השירות,בטיפול מנהל ישיר,בוצע משוב</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>מעקב בקרות איכות חיפה לפי חודש</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$QualityControl__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CUST_CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <endDate>2023-07-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2023-07-03</startDate>
+    </timeFrameFilter>
+</Report>

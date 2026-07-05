@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Survey__c.SurveyQuestions__r$Question__c</field>
+    </columns>
+    <columns>
+        <field>Survey__c.SurveyQuestions__r.Survey_Question_Answers__r$Response__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 3 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>Survey__c$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>קבלה ויעוץ לנבדקת לפני דיקור מי שפיר</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Survey__c.SurveyQuestions__r.Survey_Question_Answers__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2025 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Survey__c.SurveyQuestions__r$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pregnant_Age</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Survey__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>שאלת שבועות שקיפות עורפית לשאלון מי שפיר</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Survey_w_Questions_and_Answers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Survey__c.SurveyQuestions__r.Survey_Question_Answers__r$Response__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Survey__c.SurveyQuestions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

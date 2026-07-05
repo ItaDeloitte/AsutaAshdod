@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>assutahome@assuta.co.il</email>
+    <name>שיקום בית</name>
+    <queueMembers>
+        <users>
+            <user>daniellas@assuta.co.il</user>
+            <user>zzz_5e85db91-eeb5-4254-a394-60aa23c57443@deleted.com</user>
+            <user>zzz_ff3bb331-ab3c-4e1d-a125-9bed7d04a3e2@deleted.com</user>
+            <user>yanar@assuta.co.il</user>
+            <user>zzz_e97c854b-ca3e-4103-b140-c9010d84adae@deleted.com</user>
+            <user>zzz_eae0c1ea-6ffe-437d-92bf-94818e1932e3@deleted.com</user>
+            <user>zzz_1c157724-5807-4f07-892e-4600c7be1514@deleted.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>MessagingSession</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Medical_Procedure__c$Name</field>
+    </columns>
+    <columns>
+        <field>Medical_Procedure__c$Procedure_Code__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Medical_Procedure__c$Confidentiality__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Medical_Procedure__c$Medical_Procedure_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Surgical</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Medical_Procedure__c$Domain__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>פעולה רפואית לפי תחום</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>medical_procedures__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Medical_Procedure__c$Confidentiality__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Medical_Procedure__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

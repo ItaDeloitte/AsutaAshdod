@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account$ID_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Account</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Description</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$description_history__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Cases$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>מוקד מידע וזימון תורים – מעקב זיכוי קור</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>עותק של דוח חיובי קורונה</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Cases$CreatedDate</dateColumn>
+        <endDate>2020-11-23</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2020-11-09</startDate>
+    </timeFrameFilter>
+</Report>

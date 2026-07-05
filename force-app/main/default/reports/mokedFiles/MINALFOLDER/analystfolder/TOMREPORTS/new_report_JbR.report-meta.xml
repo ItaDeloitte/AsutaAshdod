@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Medical_Procedure__c.Medical_Procedure_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Ambulatory</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Medical_Procedure_in_Sites__c.domain__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>כאב,מעבדה,שונות רפואי,פוטותרפיה,אורולוגיה,נוירוכירורגיה,אונקולוגיה,בריאטריה,הפסקת הריון</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>ביקור,בדיקת רופא,אימון,בדיקת אחות,יעוץ,בדיקה,טיפול,החזרת,אסתטיקה,פגישת,פגישה,תזונאי,קורונה,מעקב,שיקום בית,TUMOR BOARD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Medical_Procedure__c.Hide_From_Appointment_Screen__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>דוח פעולות רפואית לפי אתר-תום</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Site__c$Medical_Procedure_in_Sites__c@Medical_Procedure_in_Sites__c.Medical_Procedure__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

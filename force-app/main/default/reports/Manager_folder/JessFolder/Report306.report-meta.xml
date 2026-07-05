@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Appointment__c.Patient_Account__c</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Appointment_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Site__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Date_of_commitment__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Kit_Date_Time_Last_Sent__c</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Date_Appointment__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment__c.Surgeries</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,NewAppointment,בטיפול אדמיניסטרטיבי,וידוא הגעה לפגישה,WaitingForAppointment,Urgent_WaitingList,ממתין להתחייבות,ממתין לאישור,בתהליך אישור מנהל,ממתין לאישור המטופל על קיום הפגישה,Recording,Typing,StoppedDuringAppointment,TookPlace,Signature,מטופל אישר שנכח בפגישה,מטופל אישר שלא נכח בפגישה,RescheduleByClient,RescheduleByAssuta,נדחה על ידי המנהל,Canceled,1,3,2,4,5,WaitingForCanceled,CanceledFailed,not_arrived</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>7/14/2020 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Ensemble,ארז דיין,לי גרצ,אורית דמתי,אנה לוין,מירב רואש,נטשה וסנו,אלינה ז,ג&apos;סיקה</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Appointment__c.PayerFactor__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>תאריך יצירה ניתוחים</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Appointment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Appointment__c.Date_Appointment__c</dateColumn>
+        <endDate>2022-06-21</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-05-01</startDate>
+    </timeFrameFilter>
+</Report>

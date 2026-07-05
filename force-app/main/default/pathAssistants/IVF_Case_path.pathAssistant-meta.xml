@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>IVF Case path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p style=&quot;&quot;&gt;פנייה שנסגרה עקב פתיחת פנייה חדשה לקראת סיום הקפאה &lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p style=&quot;&quot;&gt;פנייה שנוצרה עבורה לפחות שיחה אחת&lt;/p&gt;</info>
+        <picklistValueName>In_Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p style=&quot;&quot;&gt;פנייה חדשה שלא טופלה עדין&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>IVF_Freezing_Eggs</recordTypeName>
+</PathAssistant>

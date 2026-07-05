@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Expertise_1_ETL__c</field>
+    </columns>
+    <columns>
+        <field>Account.Expertise_2__c</field>
+    </columns>
+    <columns>
+        <field>Account.Expertise_2_ETL__c</field>
+    </columns>
+    <columns>
+        <field>Account.Sub_Expertise__c</field>
+    </columns>
+    <description>דוח התמחות ראשונה + שניה כולל התמחות אסותא ראשונה ושניה</description>
+    <format>Tabular</format>
+    <name>דוח חשבונות ו: התמחות1 /התמחות 2 + אסותא</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList@Account.Expertise_1__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

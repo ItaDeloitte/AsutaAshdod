@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Appointment__c$CreatedById$Medical_Procedure_Marketing_Name__c</field>
+    </columns>
+    <columns>
+        <field>User.Appointment__c$CreatedById$Medical_Procedure_code__c</field>
+    </columns>
+    <columns>
+        <field>User.Appointment__c$CreatedById$Domain__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User.Appointment__c$CreatedById$Site__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>באר שבע,ב&quot;ש,ניידת</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Appointment__c$CreatedById$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment__c.Institutes,Appointment__c.Closedins</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Appointment__c$CreatedById$Site__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>ממו,עכו</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>בדיקות לפי תחום- באר שבע</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_and_Appointments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Appointment__c$CreatedById$CreatedDate</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AgentWork.MessagingSession$Name</field>
+    </columns>
+    <columns>
+        <field>AgentWork.MessagingSession$RequestDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$AcceptDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork.MessagingSession$CloseDateTime</field>
+    </columns>
+    <columns>
+        <field>AgentWork$User</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>מריה שפרגל,אורית חוה זפרני,ראיסה קוקולייב,ויקטוריה טבל  בנט,יפה גולן,אסתר גנץ,שני עזרן,מרינה מרילי,ציפי ליכטנשטיין-מרגלית,מזל מזי ענידגר,עינב מירילשוילי,מירי ליזרוביץ,לידר טטרואשוילי,דניאל יוסף,נינה וולקוב פרידמן,איריס ירוס זמנה,ויקה קפלן,אלכסנדרה אילקנייב,ליאן פאר,יפה נידני,אולגה אבזבקייב,ליאת חנונה,ויקטוריה אברמוביץ</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>דוח שיחות תקשורת דיגיטלי ספטמבר</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Omni_Channel_and_Messaging_Session__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$CreatedDate</dateColumn>
+        <endDate>2024-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2024-09-01</startDate>
+    </timeFrameFilter>
+</Report>

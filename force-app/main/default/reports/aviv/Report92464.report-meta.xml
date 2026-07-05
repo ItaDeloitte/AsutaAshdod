@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Guidelines__c.Guideline_Desc__c</field>
+    </columns>
+    <columns>
+        <field>Guidelines__c.Remarks__c</field>
+    </columns>
+    <columns>
+        <field>Guidelines__c.Guideline_Type__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>Guidelines__c.Status__c</field>
+    </columns>
+    <description>מיפוי הנחיות אדמיניסטרטיביות כפולות
+לא כולל אשדוד ציבורי</description>
+    <filter>
+        <criteriaItems>
+            <column>Guidelines__c.Remarks__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>אשדוד</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>תמר שוקתי,איריס ירוס זמנה,ליאת חנונה,יעל אלוש</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Guidelines__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>active</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Tabular</format>
+    <name>דוח הנחיות חדש - אביב</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Guidelines__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

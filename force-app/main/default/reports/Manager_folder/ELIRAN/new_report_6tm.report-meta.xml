@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Site__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Appointment__c.Medical_Procedure__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Insurer_factor__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Appointment__c.Site__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>בי&quot;ח אסותא אשדוד ע&quot;ש סמסון</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Date_Time__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>7/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Appointment__c.Appointment_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>וידוא הגעה לפגישה,WaitingForAppointment</value>
+        </criteriaItems>
+        <language>iw</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>Appointment__c.Appointment_Date_Time__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Appointment__c.IDNumber__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>אשדוד ציבורי-בקרת תורים</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Appointment__c@Appointment__c.Patient_Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Appointment__c.Appointment_Date__c</dateColumn>
+        <endDate>2021-07-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-07-01</startDate>
+    </timeFrameFilter>
+</Report>
