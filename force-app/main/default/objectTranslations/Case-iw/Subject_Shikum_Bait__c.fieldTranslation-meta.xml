@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>נושא</label>
+    <name>Subject_Shikum_Bait__c</name>
+    <picklistValues>
+        <masterLabel>מועמד לאחר ניתוח</masterLabel>
+        <translation><!-- מועמד לאחר ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מועמד לפני ניתוח</masterLabel>
+        <translation><!-- מועמד לפני ניתוח --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

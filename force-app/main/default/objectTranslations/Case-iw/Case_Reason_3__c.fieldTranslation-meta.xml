@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>טופס הסכמה להרדמה ומתן דם</label>
+    <name>Case_Reason_3__c</name>
+    <picklistValues>
+        <masterLabel>חסר טופס</masterLabel>
+        <translation><!-- חסר טופס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה חותמת מרדים</masterLabel>
+        <translation><!-- חסרה חותמת מרדים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה חתימת מטופל/ אפוטרופוס</masterLabel>
+        <translation><!-- חסרה חתימת מטופל/ אפוטרופוס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה חתימת מרדים</masterLabel>
+        <translation><!-- חסרה חתימת מרדים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

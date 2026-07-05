@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>נפטר</label>
+    <name>passed__c</name>
+    <picklistValues>
+        <masterLabel>בן זוג</masterLabel>
+        <translation><!-- בן זוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופלת</masterLabel>
+        <translation><!-- מטופלת --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

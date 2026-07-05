@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- אחרון - לא נפתחה פנייה חוזרת לפנייה זו
+נפתחה עוד פנייה - נוצרה פנייה חוזרת לפנייה זו -->
+    </help>
+    <label>סוג פנייה חוזרת</label>
+    <name>return_case_type__c</name>
+    <picklistValues>
+        <masterLabel>אחרון</masterLabel>
+        <translation><!-- אחרון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא</masterLabel>
+        <translation><!-- ללא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נפתחה עוד פנייה לפנייה זו</masterLabel>
+        <translation><!-- נפתחה עוד פנייה לפנייה זו --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

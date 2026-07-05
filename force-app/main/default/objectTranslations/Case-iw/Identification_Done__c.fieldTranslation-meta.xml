@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>בוצע זיהוי?</label>
+    <name>Identification_Done__c</name>
+    <picklistValues>
+        <masterLabel>זיהוי בני הזוג</masterLabel>
+        <translation><!-- זיהוי בני הזוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרם זוהו</masterLabel>
+        <translation><!-- טרם זוהו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רק לאישה</masterLabel>
+        <translation><!-- רק לאישה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רק לבן הזוג</masterLabel>
+        <translation><!-- רק לבן הזוג --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

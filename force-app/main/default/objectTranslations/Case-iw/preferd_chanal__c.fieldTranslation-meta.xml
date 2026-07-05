@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- על מנת לשנות שדה זה, יש להשתמש בפרטי המטופל --></help>
+    <label>ערוץ מועדף לתקשורת</label>
+    <name>preferd_chanal__c</name>
+</CustomFieldTranslation>

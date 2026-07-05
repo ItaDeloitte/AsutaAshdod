@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>שלב</label>
+    <name>Patient_Stage__c</name>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation>סגור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow-up</masterLabel>
+        <translation>במעקב</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Treatment Required</masterLabel>
+        <translation>נדרש המשך טיפול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation>חדש</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Biopsy</masterLabel>
+        <translation>ממתין לתיאום ביופסיה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Biopsy Results</masterLabel>
+        <translation>ממתין לתוצאות ביופסיה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Initial Call</masterLabel>
+        <translation>ממתין לשיחה ראשונית</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>איזור מנותח</label>
+    <name>Operated_Area__c</name>
+    <picklistValues>
+        <masterLabel>ברך</masterLabel>
+        <translation><!-- ברך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ירך</masterLabel>
+        <translation><!-- ירך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוחי לב / בית חזה</masterLabel>
+        <translation><!-- ניתוחי לב / בית חזה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עמוד שדרה</masterLabel>
+        <translation><!-- עמוד שדרה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

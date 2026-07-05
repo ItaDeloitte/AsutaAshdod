@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- נשוא הפניה עובד אסותא --></help>
+    <label>נשוא הפניה - עובד אסותא</label>
+    <name>Subject_Reference__c</name>
+    <relationshipLabel><!-- Cases (Assuta Employee_1) --></relationshipLabel>
+</CustomFieldTranslation>

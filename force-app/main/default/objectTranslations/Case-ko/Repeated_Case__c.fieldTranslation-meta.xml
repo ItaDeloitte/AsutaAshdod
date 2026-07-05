@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- בדיקה האם מדובר בפנייה חוזרת בטווח של 3 ימים --></help>
+    <label><!-- Repeated Case --></label>
+    <name>Repeated_Case__c</name>
+</CustomFieldTranslation>

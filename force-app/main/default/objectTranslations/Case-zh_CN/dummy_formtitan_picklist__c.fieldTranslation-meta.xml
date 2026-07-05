@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dummy Formtitan Picklist --></label>
+    <name>dummy_formtitan_picklist__c</name>
+    <picklistValues>
+        <masterLabel>דרכון</masterLabel>
+        <translation><!-- דרכון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זימון תורים למכונים ומרפאות</masterLabel>
+        <translation><!-- זימון תורים למכונים ומרפאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע כללי</masterLabel>
+        <translation><!-- מידע כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוחים</masterLabel>
+        <translation><!-- ניתוחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופאים מומחים</masterLabel>
+        <translation><!-- רופאים מומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תעודת זהות</masterLabel>
+        <translation><!-- תעודת זהות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

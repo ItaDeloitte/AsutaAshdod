@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>רשימת פערים</label>
+    <name>Gap_Placement__c</name>
+    <picklistValues>
+        <masterLabel>איכות סריקה ירודה</masterLabel>
+        <translation><!-- איכות סריקה ירודה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור ממזער מוסמך פג תוקף</masterLabel>
+        <translation><!-- אישור ממזער מוסמך פג תוקף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בעיות בהעברת ממשק</masterLabel>
+        <translation><!-- בעיות בהעברת ממשק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר קובץ PDF בפורטל מסמכים</masterLabel>
+        <translation><!-- חסר קובץ PDF בפורטל מסמכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר קובץ PDF בתפנית</masterLabel>
+        <translation><!-- חסר קובץ PDF בתפנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוספת שנייה של בית חולים אחר</masterLabel>
+        <translation><!-- תוספת שנייה של בית חולים אחר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

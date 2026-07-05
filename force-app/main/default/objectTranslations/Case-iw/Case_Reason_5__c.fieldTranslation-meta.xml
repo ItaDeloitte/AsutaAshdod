@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>דוח ניתוח</label>
+    <name>Case_Reason_5__c</name>
+    <picklistValues>
+        <masterLabel>חסר טופס</masterLabel>
+        <translation><!-- חסר טופס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר צד</masterLabel>
+        <translation><!-- חסר צד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר שם רופא מרדים/ מנתח</masterLabel>
+        <translation><!-- חסר שם רופא מרדים/ מנתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר תאריך</masterLabel>
+        <translation><!-- חסר תאריך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר תיעוד מתן דם</masterLabel>
+        <translation><!-- חסר תיעוד מתן דם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדכון ידני ללא עדכון בתיק קליני</masterLabel>
+        <translation><!-- עדכון ידני ללא עדכון בתיק קליני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בתיעוד אובדן דם</masterLabel>
+        <translation><!-- פער בתיעוד אובדן דם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בתיעוד מהלך ניתוח</masterLabel>
+        <translation><!-- פער בתיעוד מהלך ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בתיעוד מצב המטופל בסיום הניתוח</masterLabel>
+        <translation><!-- פער בתיעוד מצב המטופל בסיום הניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בתיעוד סיבוכים בניתוח</masterLabel>
+        <translation><!-- פער בתיעוד סיבוכים בניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צד שגוי</masterLabel>
+        <translation><!-- צד שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שם ניתוח לא תואם את מהלך הניתוח</masterLabel>
+        <translation><!-- שם ניתוח לא תואם את מהלך הניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיעוד אבחנות לא מלא/לא תקין</masterLabel>
+        <translation><!-- תיעוד אבחנות לא מלא/לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיעוד מכלי פתולוגיה לא תקין</masterLabel>
+        <translation><!-- תיעוד מכלי פתולוגיה לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיעוד פעולה לא מלא/לא תקין</masterLabel>
+        <translation><!-- תיעוד פעולה לא מלא/לא תקין --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

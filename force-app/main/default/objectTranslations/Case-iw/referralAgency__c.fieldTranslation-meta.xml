@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוכנות מפנה</label>
+    <name>referralAgency__c</name>
+    <picklistValues>
+        <masterLabel>PRO ביטוח</masterLabel>
+        <translation><!-- PRO ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אביבית אורן</masterLabel>
+        <translation><!-- אביבית אורן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אורור</masterLabel>
+        <translation><!-- אורור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אילנה גלבוע</masterLabel>
+        <translation><!-- אילנה גלבוע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אלה מאיר</masterLabel>
+        <translation><!-- אלה מאיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אלומה</masterLabel>
+        <translation><!-- אלומה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אלינור כבירי</masterLabel>
+        <translation><!-- אלינור כבירי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסיה מדיקל</masterLabel>
+        <translation><!-- אסיה מדיקל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסף לוי</masterLabel>
+        <translation><!-- אסף לוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אקספנסיה</masterLabel>
+        <translation><!-- אקספנסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ג&apos;ינג&apos;ר</masterLabel>
+        <translation><!-- ג&apos;ינג&apos;ר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גולדווסר</masterLabel>
+        <translation><!-- גולדווסר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גור</masterLabel>
+        <translation><!-- גור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גיל ורדי</masterLabel>
+        <translation><!-- גיל ורדי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גילי מלמן</masterLabel>
+        <translation><!-- גילי מלמן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דורון סינמון</masterLabel>
+        <translation><!-- דורון סינמון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דני סיני</masterLabel>
+        <translation><!-- דני סיני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הילסון</masterLabel>
+        <translation><!-- הילסון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ואסים פארג&apos;</masterLabel>
+        <translation><!-- ואסים פארג&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ורד וילדר</masterLabel>
+        <translation><!-- ורד וילדר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ורדה לבקוביץ&apos;</masterLabel>
+        <translation><!-- ורדה לבקוביץ&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זיו ברק</masterLabel>
+        <translation><!-- זיו ברק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חברת חשמל</masterLabel>
+        <translation><!-- חברת חשמל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חגי לנצט</masterLabel>
+        <translation><!-- חגי לנצט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יהושע קליין</masterLabel>
+        <translation><!-- יהושע קליין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יהלומית</masterLabel>
+        <translation><!-- יהלומית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יוסי כבירי</masterLabel>
+        <translation><!-- יוסי כבירי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יניב ברוך</masterLabel>
+        <translation><!-- יניב ברוך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יניב מוסקוביץ&apos;</masterLabel>
+        <translation><!-- יניב מוסקוביץ&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יעל אדרי</masterLabel>
+        <translation><!-- יעל אדרי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יעקב סמוטריצקי</masterLabel>
+        <translation><!-- יעקב סמוטריצקי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יפית תמיר</masterLabel>
+        <translation><!-- יפית תמיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יפעת צורי</masterLabel>
+        <translation><!-- יפעת צורי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יצחק יעקב</masterLabel>
+        <translation><!-- יצחק יעקב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כהן אדלסברג פסטמן</masterLabel>
+        <translation><!-- כהן אדלסברג פסטמן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כנען</masterLabel>
+        <translation><!-- כנען --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא לבד</masterLabel>
+        <translation><!-- לא לבד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ליאת לנץ-ניב</masterLabel>
+        <translation><!-- ליאת לנץ-ניב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ליטל מארק</masterLabel>
+        <translation><!-- ליטל מארק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מבטח סיימון</masterLabel>
+        <translation><!-- מבטח סיימון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדנס</masterLabel>
+        <translation><!-- מדנס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיי אינווסט</masterLabel>
+        <translation><!-- מיי אינווסט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מל סוכנות לביטוח 2015 בע&quot;מ</masterLabel>
+        <translation><!-- מל סוכנות לביטוח 2015 בע&quot;מ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מנורה hug</masterLabel>
+        <translation><!-- מנורה hug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרוז</masterLabel>
+        <translation><!-- מרוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרש אנד מקלנן</masterLabel>
+        <translation><!-- מרש אנד מקלנן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נחמה גולדווסר</masterLabel>
+        <translation><!-- נחמה גולדווסר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נחמה כלל</masterLabel>
+        <translation><!-- נחמה כלל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נטו</masterLabel>
+        <translation><!-- נטו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נעם קלט</masterLabel>
+        <translation><!-- נעם קלט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סטאס צביליכובוסקי</masterLabel>
+        <translation><!-- סטאס צביליכובוסקי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עוז פסטמן</masterLabel>
+        <translation><!-- עוז פסטמן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עמותת ידידים</masterLabel>
+        <translation><!-- עמותת ידידים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עתידים סוכנות לביטוח</masterLabel>
+        <translation><!-- עתידים סוכנות לביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פמי פרימיום</masterLabel>
+        <translation><!-- פמי פרימיום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרש קונספט</masterLabel>
+        <translation><!-- פרש קונספט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרשקונספט</masterLabel>
+        <translation><!-- פרשקונספט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פתרונות סוכנות לביטוח</masterLabel>
+        <translation><!-- פתרונות סוכנות לביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צביה טבע</masterLabel>
+        <translation><!-- צביה טבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צמרת</masterLabel>
+        <translation><!-- צמרת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קדנס -דובי פרייס</masterLabel>
+        <translation><!-- קדנס -דובי פרייס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קובי דורון</masterLabel>
+        <translation><!-- קובי דורון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קורל לבקוביץ</masterLabel>
+        <translation><!-- קורל לבקוביץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קלט פתרונות ביטוח</masterLabel>
+        <translation><!-- קלט פתרונות ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קרן נוביק</masterLabel>
+        <translation><!-- קרן נוביק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רוגומד (מרפאה )</masterLabel>
+        <translation><!-- רוגומד (מרפאה ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רוני בר יהודה</masterLabel>
+        <translation><!-- רוני בר יהודה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רפאל</masterLabel>
+        <translation><!-- רפאל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תמורה</masterLabel>
+        <translation><!-- תמורה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תמר אביזמר</masterLabel>
+        <translation><!-- תמר אביזמר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

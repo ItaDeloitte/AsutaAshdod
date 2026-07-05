@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>来源专职机构对此护理差距进行 ID 评测的版本。</help>
+    <label><!-- Source Agency Measure Version --></label>
+    <name>HealthCloudGA__SourceAgencyMeasureVersion__c</name>
+</CustomFieldTranslation>

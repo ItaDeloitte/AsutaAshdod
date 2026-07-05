@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>תת נושא הפניה</label>
+    <name>Request_Subtopic__c</name>
+    <picklistValues>
+        <masterLabel>הקמת ספק</masterLabel>
+        <translation><!-- הקמת ספק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדכון פרטי ספק</masterLabel>
+        <translation><!-- עדכון פרטי ספק --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

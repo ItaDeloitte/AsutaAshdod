@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>פירוט בית חולים מתחרה</label>
+    <name>Competitors_Name__c</name>
+    <picklistValues>
+        <masterLabel>Ashdod Public Hospital</masterLabel>
+        <translation>בית חולים אשדוד ציבורי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assaf Harofeh Hospital</masterLabel>
+        <translation>בית חולים אסף הרופא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barzilai Hospital</masterLabel>
+        <translation>בית חולים ברזילי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blinson Hospital</masterLabel>
+        <translation>בית חולים בלינסון</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bnei Zion Hospital</masterLabel>
+        <translation>בית חולים בני ציון</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hadassah Hospital</masterLabel>
+        <translation>בית חולים הדסה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hillel Yaffe Hospital</masterLabel>
+        <translation>בית חולים הלל יפה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ichilov Hospital</masterLabel>
+        <translation>בית חולים איכלוב</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kaplan Hospital</masterLabel>
+        <translation>בית חולים קפלן</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laniado Hospital</masterLabel>
+        <translation>בית חולים לניאדו</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rambam Hospital</masterLabel>
+        <translation>בית חולים רמב&quot;ם</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shaare Zedek Hospital</masterLabel>
+        <translation>בית חולים שערי צדק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soroka Hospital</masterLabel>
+        <translation>בית חולים סורוקה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tel Hashomer Hospital</masterLabel>
+        <translation>בית חולים תל השומר</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wolfson Hospital</masterLabel>
+        <translation>בית חולים וולפסון</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>קבלה רפואית</label>
+    <name>Case_Reason_8__c</name>
+    <picklistValues>
+        <masterLabel>אבחנה לא תקינה</masterLabel>
+        <translation><!-- אבחנה לא תקינה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר שם ניתוח/אבחנה</masterLabel>
+        <translation><!-- חסר שם ניתוח/אבחנה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה</masterLabel>
+        <translation><!-- חסרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בתיעוד בדיקה גופנית בקבלה</masterLabel>
+        <translation><!-- פער בתיעוד בדיקה גופנית בקבלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פער בתיעוד תולדות המחלה</masterLabel>
+        <translation><!-- פער בתיעוד תולדות המחלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צד שגוי</masterLabel>
+        <translation><!-- צד שגוי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

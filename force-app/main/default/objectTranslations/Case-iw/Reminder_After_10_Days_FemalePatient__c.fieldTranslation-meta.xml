@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>נשלחה תזכורת ראשונה מטופלת</label>
+    <name>Reminder_After_10_Days_FemalePatient__c</name>
+</CustomFieldTranslation>

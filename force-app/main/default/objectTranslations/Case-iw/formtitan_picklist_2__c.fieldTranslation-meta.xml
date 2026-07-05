@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>שדה זבל לפורמטייטן - פיקליסט2</label>
+    <name>formtitan_picklist_2__c</name>
+    <picklistValues>
+        <masterLabel>דרכון</masterLabel>
+        <translation><!-- דרכון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תעודת זהות</masterLabel>
+        <translation><!-- תעודת זהות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

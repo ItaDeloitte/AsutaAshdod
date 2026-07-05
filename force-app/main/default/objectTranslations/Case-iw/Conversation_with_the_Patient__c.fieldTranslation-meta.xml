@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מצב שיחה עם מטופל/ת</label>
+    <name>Conversation_with_the_Patient__c</name>
+    <picklistValues>
+        <masterLabel>Call Made</masterLabel>
+        <translation>בוצעה שיחה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Future Call Scheduled</masterLabel>
+        <translation>תואמה שיחה עתידית</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response</masterLabel>
+        <translation>אין מענה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient under department&apos;s care</masterLabel>
+        <translation>מטופל/ת בטיפול המחלקה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Call</masterLabel>
+        <translation>ממתינה לחזרה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבת סגירה לתיק יד-ביד</label>
+    <name>Reason_for_closing_hand_in_hand_case__c</name>
+    <picklistValues>
+        <masterLabel>Change in radiologist&apos;s recommendation by treating doctor</masterLabel>
+        <translation>שינוי המלצת הרדיולוג ע&quot;י רופא מטפל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuation at another medical center</masterLabel>
+        <translation>המשיכה במרכז רפואי אחר</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doctor&apos;s decision</masterLabel>
+        <translation>החלטת רופא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Double Referral</masterLabel>
+        <translation>פנייה כפולה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End of hand-in-hand process</masterLabel>
+        <translation>סיום תהליך יד ביד</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negative biopsy result</masterLabel>
+        <translation>תשובה שלילית של ביופסיה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Further Treatment Required</masterLabel>
+        <translation>לא נדרש המשך טיפול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No response more than 3 times</masterLabel>
+        <translation>אין מענה יותר מ-3 פעמים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient does not wish to continue the process</masterLabel>
+        <translation>מטופלת לא מעוניינת בהמשך התהליך</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redirected to digital</masterLabel>
+        <translation>הוסט לדיגיטל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Recommendation</masterLabel>
+        <translation>המלצה שגויה</translation>
+    </picklistValues>
+</CustomFieldTranslation>
