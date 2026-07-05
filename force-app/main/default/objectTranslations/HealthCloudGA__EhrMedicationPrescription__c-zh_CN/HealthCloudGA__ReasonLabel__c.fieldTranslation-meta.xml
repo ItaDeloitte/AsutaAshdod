@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>开处方的原因代码或指示的友好名称</help>
+    <label><!-- Reason Label --></label>
+    <name>HealthCloudGA__ReasonLabel__c</name>
+</CustomFieldTranslation>

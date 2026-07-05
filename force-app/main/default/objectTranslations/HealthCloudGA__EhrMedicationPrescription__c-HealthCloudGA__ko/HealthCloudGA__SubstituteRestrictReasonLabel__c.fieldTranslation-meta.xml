@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Any restrictions on medication substitution, generic / formulary + friendly name --></help>
+    <label>대체 제한 이유 레이블</label>
+    <name>HealthCloudGA__SubstituteRestrictReasonLabel__c</name>
+</CustomFieldTranslation>

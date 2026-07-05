@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Patient who performed this observation --></help>
+    <label>Registrerende patient</label>
+    <name>HealthCloudGA__PerformingPatient__c</name>
+    <relationshipLabel>Observationer i EPJ (registrerende patient)</relationshipLabel>
+</CustomFieldTranslation>
