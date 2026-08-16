@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone Inquiry</fullName>
+        <default>false</default>
+        <label>Phone Inquiry</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchased List</fullName>
+        <default>false</default>
+        <label>Purchased List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AbandoningWhatsApp</fullName>
+        <default>false</default>
+        <label>AbandoningWhatsApp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>assutaWebsite</fullName>
+        <default>false</default>
+        <label>assutaWebsite</label>
+    </standardValue>
+    <standardValue>
+        <fullName>calls</fullName>
+        <default>false</default>
+        <label>calls</label>
+    </standardValue>
+    <standardValue>
+        <fullName>chatbot</fullName>
+        <default>false</default>
+        <label>chatbot</label>
+    </standardValue>
+    <standardValue>
+        <fullName>commercialMails</fullName>
+        <default>false</default>
+        <label>commercialMails</label>
+    </standardValue>
+    <standardValue>
+        <fullName>dataBase</fullName>
+        <default>false</default>
+        <label>dataBase</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Docadvisor</fullName>
+        <default>false</default>
+        <label>Docadvisor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>doctors</fullName>
+        <default>false</default>
+        <label>doctors</label>
+    </standardValue>
+    <standardValue>
+        <fullName>facebook</fullName>
+        <default>false</default>
+        <label>facebook</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Google DV</fullName>
+        <default>false</default>
+        <label>Google DV</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Google Search</fullName>
+        <default>false</default>
+        <label>Google Search</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound_Call</fullName>
+        <default>false</default>
+        <label>Inbound_Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>otherApplications</fullName>
+        <default>false</default>
+        <label>otherApplications</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Surgery Lobby</fullName>
+        <default>false</default>
+        <label>Surgery Lobby</label>
+    </standardValue>
+</StandardValueSet>

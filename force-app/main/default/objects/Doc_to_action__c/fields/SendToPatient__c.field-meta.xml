@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendToPatient__c</fullName>
+    <defaultValue>true</defaultValue>
+    <inlineHelpText>במידה ושדה זה מסומן יתעדכן ערך בשדה תאריך שליחה למטופל בשאלון למטופל שיווצר לפי הפרמטר שמוגדר בשאלון</inlineHelpText>
+    <label>Send To Patient</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

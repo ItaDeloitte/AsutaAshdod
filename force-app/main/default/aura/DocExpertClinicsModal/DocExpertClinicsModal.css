@@ -1,0 +1,14 @@
+.THIS.clinics-modal .modal-container,
+.THIS.clinics-modal .slds-modal__container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-width: 20rem;
+}
+
+.THIS.clinics-modal .modal-body,
+.THIS.clinics-modal .slds-modal__content {
+  position: relative;
+  height: auto;
+  padding: 0;
+}

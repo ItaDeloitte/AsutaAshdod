@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rank_type__c</fullName>
+    <label>Rank Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>כללי</fullName>
+                <default>false</default>
+                <label>כללי</label>
+            </value>
+            <value>
+                <fullName>מקצועיות</fullName>
+                <default>false</default>
+                <label>מקצועיות</label>
+            </value>
+            <value>
+                <fullName>הוגנות מחיר</fullName>
+                <default>false</default>
+                <label>הוגנות מחיר</label>
+            </value>
+            <value>
+                <fullName>אדיבות</fullName>
+                <default>false</default>
+                <label>אדיבות</label>
+            </value>
+            <value>
+                <fullName>זמינות</fullName>
+                <default>false</default>
+                <label>זמינות</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

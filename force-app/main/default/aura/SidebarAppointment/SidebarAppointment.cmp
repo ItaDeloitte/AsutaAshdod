@@ -1,0 +1,61 @@
+<aura:component extends="c:AppointmentsBase">
+  <!-- attrs -->
+  <aura:attribute name="appointment" type="Map" />
+  <aura:attribute name="number" type="Integer" />
+  <aura:attribute name="class" type="String" default="" />
+  <aura:attribute name="isHistory" type="Boolean" default="false" />
+  <aura:attribute name="isDocExpert" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="selected" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onset" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="{!join(' ',
+    'py-2',
+    v.class
+  )}">
+    <div class="">
+      <!-- <div class="d-flex justify-content-between align-items-center">
+        <div class="font-weight-bold">{!$Label.c.Appointment}: {!v.number}</div>
+        <lightning:buttonIcon iconName="utility:edit" alternativeText="edit" size="small"
+          onclick="{!c.onEditAppointment}" />
+      </div> -->
+      <div class="appoint-number">
+        <span class="font-weight-bold">{!$Label.c.Appointment}: </span>
+        {!v.number}
+      </div>
+      <div class="procedure">
+        <span class="font-weight-bold">{!$Label.c.Medical_Procedure}: </span>
+        {!v.appointment.procedureName}
+      </div>
+      <div class="date">
+        <span class="font-weight-bold">{!$Label.c.Start_time}: </span>
+        <aura:if isTrue="{!v.appointment.dateTime}">
+          <c:FormattedDateTime date="{!v.appointment.dateTime}" format="dd/MM, EEE, HH:mm"
+                               locale="{!$Locale.langLocale}" />
+        </aura:if>
+      </div>
+      <div class="site">
+        <span class="font-weight-bold">{!$Label.c.Site}: </span>
+        {!v.appointment.siteName}
+      </div>
+      <aura:if isTrue="{!!v.isDocExpert}">
+        <aura:if isTrue="{!v.appointment.calendarName}">
+          <div class="calendar">
+            <span class="font-weight-bold">{!$Label.c.ClinicCalendar}: </span>
+            {!v.appointment.calendarName}
+          </div>
+        </aura:if>
+      </aura:if>
+
+
+    </div>
+    <!-- <div class="d-flex justify-content-end">
+      <lightning:button variant="bare" label="Renew queue" type="button" />
+    </div> -->
+  </div>
+
+</aura:component>

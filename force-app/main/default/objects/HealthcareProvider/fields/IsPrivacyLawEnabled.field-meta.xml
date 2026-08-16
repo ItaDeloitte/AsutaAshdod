@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPrivacyLawEnabled</fullName>
+    <inlineHelpText>אם מסומן, חשבון זה מסומן לצורך תקנות רגולציה של חוקי פרטיות.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

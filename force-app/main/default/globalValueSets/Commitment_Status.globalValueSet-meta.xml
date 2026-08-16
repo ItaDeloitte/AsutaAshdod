@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0</fullName>
+        <default>false</default>
+        <label>תקין</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>ת.ז. לא חבר מכבי</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>חבר לא זכאי</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>בי&quot;ח לא מורשה לטיפול</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>רופא לא מורשה</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>התחייבות בסטטוס המתנת  אישור</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>הפנייה סגורה + אין קשר עם התחייבות</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>הפנייה בלי קודי ניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>כפילות</label>
+    </customValue>
+    <customValue>
+        <fullName>1b</fullName>
+        <default>false</default>
+        <label>בקשה להקמת בקשה בניהול בקשות</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>תקלה טכנית</label>
+    </customValue>
+    <customValue>
+        <fullName>9b</fullName>
+        <default>false</default>
+        <label>לא התקבלה תשובה ממכבי</label>
+    </customValue>
+    <customValue>
+        <fullName>E</fullName>
+        <default>false</default>
+        <label>אין התחייבות</label>
+    </customValue>
+    <customValue>
+        <fullName>22</fullName>
+        <default>false</default>
+        <label>התחייבות בסטטוס הדפסה</label>
+    </customValue>
+    <masterLabel>Commitment Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

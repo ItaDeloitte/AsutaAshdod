@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Change Owner Rt --></label>
+    <name>change_owner_rt__c</name>
+    <picklistValues>
+        <masterLabel>IVF</masterLabel>
+        <translation><!-- IVF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הצעות מחיר פרטיות</masterLabel>
+        <translation><!-- הצעות מחיר פרטיות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדר פרטי</masterLabel>
+        <translation><!-- חדר פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מומחים</masterLabel>
+        <translation><!-- מומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכירות</masterLabel>
+        <translation><!-- מכירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוחים</masterLabel>
+        <translation><!-- ניתוחים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

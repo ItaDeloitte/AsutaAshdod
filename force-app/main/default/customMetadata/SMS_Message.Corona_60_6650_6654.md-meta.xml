@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Corona 60-6650-6654</label>
+    <protected>false</protected>
+    <values>
+        <field>SMS_Content__c</field>
+        <value xsi:type="xsd:string">שלום רב, נקבע לך תור לבדיקה סרולוגית לקורונה, שתתקיים באסותא חיפה בשדרות ההסתדרות 55 חיפה- הבדיקה תתבצע בקומה 3 בקניון לב המפרץ , מתחם A קבלה ראשית. בתאריך {0}. יש להצטייד בת.ז. למידע נוסף : https://www.assuta.co.il/services/serology/ . בברכת בריאות איתנה, אסותא מרכזים רפואיים. *לתמיכה בתוצאות בדיקה באתר אסותא ניתן לפנות לטלפון: 03-7643690</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">ASSUTA</value>
+    </values>
+    <values>
+        <field>SMS_Note__c</field>
+        <value xsi:type="xsd:string">תאריך הפגישה = {0}</value>
+    </values>
+</CustomMetadata>

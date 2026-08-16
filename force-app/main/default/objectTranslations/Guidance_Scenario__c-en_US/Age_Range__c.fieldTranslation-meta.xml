@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- טווח גילאים --></label>
+    <name>Age_Range__c</name>
+    <picklistValues>
+        <masterLabel>18-39 בין</masterLabel>
+        <translation><!-- 18-39 בין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 עד 18</masterLabel>
+        <translation><!-- 8 עד 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בין 17 ל-16</masterLabel>
+        <translation><!-- בין 17 ל-16 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בין 17 ל-35</masterLabel>
+        <translation><!-- בין 17 ל-35 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בין 3 ל-13</masterLabel>
+        <translation><!-- בין 3 ל-13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בין 3 ל-15</masterLabel>
+        <translation><!-- בין 3 ל-15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בין 3-6</masterLabel>
+        <translation><!-- בין 3-6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בין 40 ל-59</masterLabel>
+        <translation><!-- בין 40 ל-59 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בין 6 ל-18</masterLabel>
+        <translation><!-- בין 6 ל-18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חצי שנה עד 8</masterLabel>
+        <translation><!-- חצי שנה עד 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 10</masterLabel>
+        <translation><!-- מעל 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 16</masterLabel>
+        <translation><!-- מעל 16 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 17</masterLabel>
+        <translation><!-- מעל 17 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 18</masterLabel>
+        <translation><!-- מעל 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 4</masterLabel>
+        <translation><!-- מעל 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 40</masterLabel>
+        <translation><!-- מעל 40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 5</masterLabel>
+        <translation><!-- מעל 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 50</masterLabel>
+        <translation><!-- מעל 50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 6</masterLabel>
+        <translation><!-- מעל 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 60</masterLabel>
+        <translation><!-- מעל 60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 70</masterLabel>
+        <translation><!-- מעל 70 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעל 8</masterLabel>
+        <translation><!-- מעל 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 16</masterLabel>
+        <translation><!-- עד 16 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 18</masterLabel>
+        <translation><!-- עד 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 2</masterLabel>
+        <translation><!-- עד 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 21</masterLabel>
+        <translation><!-- עד 21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 3</masterLabel>
+        <translation><!-- עד 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 4</masterLabel>
+        <translation><!-- עד 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 50</masterLabel>
+        <translation><!-- עד 50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 6</masterLabel>
+        <translation><!-- עד 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 6 חודשים</masterLabel>
+        <translation><!-- עד 6 חודשים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד 8</masterLabel>
+        <translation><!-- עד 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד גיל 40</masterLabel>
+        <translation><!-- עד גיל 40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד שנה</masterLabel>
+        <translation><!-- עד שנה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

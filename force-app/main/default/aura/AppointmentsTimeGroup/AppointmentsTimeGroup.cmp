@@ -1,0 +1,37 @@
+<aura:component extends="c:AppointmentsBase">
+  <!-- attrs -->
+  <aura:attribute name="class" type="String" default="" />
+  <aura:attribute name="day" type="Map" />
+  <aura:attribute name="slotRows" type="List" />
+  <aura:attribute name="slotsMap" type="Map" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="lockedData" type="Map" />
+  <aura:attribute name="selectedRow" type="Integer" />
+  <aura:attribute name="timeSlots" type="List" default="[]" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="">
+    <div class="pt-2 d-flex flex-column times">
+      <div class="text-center d-flex flex-wrap flex-grow-1 times-list">
+        <aura:iteration items="{!v.day.slots}" var="slotKey" indexVar="_index">
+          <aura:if isTrue="{!
+            and(
+              greaterthan(_index,0),
+              mod(_index,3)==0
+              )
+          }">
+            <div class="bs-col-12 mt-2 mb-1 row-line"></div>
+          </aura:if>
+          <div class="bs-col-4 time-col">
+            <c:AppointmentsTimeSlot slotKey="{!slotKey}" slotsMap="{!v.slotsMap}" lockedData="{!v.lockedData}"
+                                    selectedRow="{!v.selectedRow}" />
+          </div>
+        </aura:iteration>
+      </div>
+    </div>
+  </div>
+</aura:component>

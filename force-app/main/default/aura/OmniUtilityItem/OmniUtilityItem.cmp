@@ -1,0 +1,17 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:backgroundUtilityItem,forceCommunity:availableForAllPageTypes"
+                access="global" extends="c:BaseComponent">
+
+  <!-- attrs -->
+  <aura:attribute name="isDisabled" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler event="lightning:omniChannelStatusChanged" action="{!c.onStatusChanged }" />
+  <aura:handler event="lightning:omniChannelLoginSuccess" action="{!c.onLoginSuccess }" />
+  <aura:handler event="lightning:omniChannelWorkAccepted" action="{!c.onWorkAccepted}" />
+  <!-- events -->
+  <!-- methods -->
+  <lightning:utilityBarAPI aura:id="utilityBarAPI" />
+  <lightning:omniToolkitAPI aura:id="omniToolkit" />
+
+</aura:component>

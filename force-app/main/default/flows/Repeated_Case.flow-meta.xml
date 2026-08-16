@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>set_Previous_Case_Agent</name>
+        <label>set Previous Case Agent</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Previous_Case_Agent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Other_Case.Owner:User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Repeated_to_FALSE</name>
+        <label>Set Repeated to FALSE</label>
+        <locationX>490</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Repeated_Case__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Repeated_to_TRUE</name>
+        <label>Set Repeated to TRUE</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Repeated_Case__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_RecordType_Appointment</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_If_Found_Cases</name>
+        <label>Check If Found Cases</label>
+        <locationX>336</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Set_Repeated_to_FALSE</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Other_Case</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Repeated_to_TRUE</targetReference>
+            </connector>
+            <label>Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_RecordType_Appointment</name>
+        <label>Is RecordType Appointment</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Update_Case</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>RecordtType_Appointment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Appointments</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>set_Previous_Case_Agent</targetReference>
+            </connector>
+            <label>RecordtType Appointment</label>
+        </rules>
+    </decisions>
+    <description>בדיקה אם קיימת פניה חוזרת עם אותו מספר חשבון בטווח של 3 ימים
+דרישה תוספת : נציג פנייה קודמת LA 04 01 2026 Monday 2589160578
+דרישה תוספת: להוסיף נושה ותת נושה LA 04 01 2026  Monday 2589160578
+באג monday 2657348485 : עברתי ל AFTER SAVE</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>NOWminus3</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW() - 3</expression>
+    </formulas>
+    <interviewLabel>Repeated Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Repeated Case</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Other_Case</name>
+        <label>Get Other Case</label>
+        <locationX>336</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_If_Found_Cases</targetReference>
+        </connector>
+        <filterLogic>(1 AND 2 AND 3 AND (4 OR 5) AND 6)</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>CreatedDate</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>NOWminus3</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.RecordTypeId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>record_type_wf_id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.RecordTypeId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Origin</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Origin</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>336</locationX>
+        <locationY>1031</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Other_Case</targetReference>
+        </connector>
+        <filterFormula>({!$Record.RecordType.DeveloperName} = &apos;DOC_expert&apos;
+||
+{!$Record.RecordType.DeveloperName} = &apos;Appointments&apos;
+||
+{!$Record.RecordType.DeveloperName} = &apos;ClosedInstitutes&apos;
+||
+{!$Record.RecordType.DeveloperName} = &apos;ClosedExp&apos;)
+&amp;&amp;
+ISPICKVAL({!$Record.Origin}, &apos;שיחה נכנסת חיצונית&apos;)
+&amp;&amp;
+ISPICKVAL({!$Record.Case_subject__c}, &apos;זימון תור חדש&apos;)
+&amp;&amp;
+ISPICKVAL({!$Record.sub_case_subject__c}, &apos;זימון תור חדש&apos;)</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

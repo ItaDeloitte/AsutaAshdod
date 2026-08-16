@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unicorn_Kit</fullName>
+    <columns>Patient_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>UNICORN__c</columns>
+    <columns>Unicorn_Treated__c</columns>
+    <columns>Value_Unicorn__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Appointment_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>TookPlace,Canceled</value>
+    </filters>
+    <filters>
+        <field>Unicorn_Treated__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Value_Unicorn__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Date_of_appointment__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <label>Unicorn קיט מכונים</label>
+</ListView>

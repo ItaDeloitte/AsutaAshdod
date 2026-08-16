@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LocationId</fullName>
+    <inlineHelpText>החנות, בית המלון או חלל פיזי אחר שבו העסק שלך פועל. כל מדד אמון נמצא במיקום יחיד. אם אין הפניה חיצונית אל המיקום, כרטיס האמון לא יוצג. אם תקבל שגיאה, ערוך את המיקום כדי להוסיף הפניה חיצונית.</inlineHelpText>
+    <type>Lookup</type>
+</CustomField>

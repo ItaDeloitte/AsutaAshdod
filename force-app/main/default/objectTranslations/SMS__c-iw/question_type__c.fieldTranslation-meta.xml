@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג שאלה</label>
+    <name>question_type__c</name>
+    <picklistValues>
+        <masterLabel>OTP</masterLabel>
+        <translation><!-- OTP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישור תור</masterLabel>
+        <translation><!-- אישור תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול תור</masterLabel>
+        <translation><!-- ביטול תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>האם שבע רצון מהשירות?</masterLabel>
+        <translation><!-- האם שבע רצון מהשירות? --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הומלץ טיפול המשך?</masterLabel>
+        <translation><!-- הומלץ טיפול המשך? --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול המשך - אחר</masterLabel>
+        <translation><!-- טיפול המשך - אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול המשך - רשימה</masterLabel>
+        <translation><!-- טיפול המשך - רשימה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרום ניתוח</masterLabel>
+        <translation><!-- טרום ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יש לתאם תור חדש?</masterLabel>
+        <translation><!-- יש לתאם תור חדש? --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדוע אין לתאם תור חדש?</masterLabel>
+        <translation><!-- מדוע אין לתאם תור חדש? --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדוע לא הומלץ המשך טיפול?</masterLabel>
+        <translation><!-- מדוע לא הומלץ המשך טיפול? --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעוניין בתור ממוחזר</masterLabel>
+        <translation><!-- מעוניין בתור ממוחזר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיבת אי הגעה</masterLabel>
+        <translation><!-- סיבת אי הגעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיבת הפער</masterLabel>
+        <translation><!-- סיבת הפער --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיבת חוסר שביעות רצון</masterLabel>
+        <translation><!-- סיבת חוסר שביעות רצון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סכום שנגבה בפועל</masterLabel>
+        <translation><!-- סכום שנגבה בפועל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סקר לאחר תור</masterLabel>
+        <translation><!-- סקר לאחר תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עלות הייעוץ בהתאם לואוצר?</masterLabel>
+        <translation><!-- עלות הייעוץ בהתאם לואוצר? --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פנייתך התקבלה</masterLabel>
+        <translation><!-- פנייתך התקבלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשובתך נקלטה</masterLabel>
+        <translation><!-- תשובתך נקלטה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

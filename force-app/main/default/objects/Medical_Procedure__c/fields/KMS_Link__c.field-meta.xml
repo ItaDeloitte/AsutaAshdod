@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KMS_Link__c</fullName>
+    <description>קישור לניהול ידע - אם יש לינק - יפתח את המסמך ב KMS</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>KMS Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

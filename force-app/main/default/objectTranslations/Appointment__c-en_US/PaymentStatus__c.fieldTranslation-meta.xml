@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Status --></label>
+    <name>PaymentStatus__c</name>
+    <picklistValues>
+        <masterLabel>בוטל</masterLabel>
+        <translation><!-- בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרם בוצע</masterLabel>
+        <translation><!-- טרם בוצע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נדרש</masterLabel>
+        <translation><!-- לא נדרש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שגוי</masterLabel>
+        <translation><!-- שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקין</masterLabel>
+        <translation><!-- תקין --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

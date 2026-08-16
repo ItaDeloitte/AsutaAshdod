@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>esp2p__Permission_Set_Group_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>To store the permission set group</description>
+    <label>Permission Set Group Name</label>
+    <referenceTo>esp2p__Permission_Set_Assignment_Log__c</referenceTo>
+    <relationshipLabel>Permission Set Assignment Logs</relationshipLabel>
+    <relationshipName>Permission_Set_Assignment_Logs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_end_hire__c</fullName>
+    <label>Reason For End Hire</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>התפטרות</fullName>
+                <default>false</default>
+                <label>התפטרות</label>
+            </value>
+            <value>
+                <fullName>פיטורין</fullName>
+                <default>false</default>
+                <label>פיטורין</label>
+            </value>
+            <value>
+                <fullName>ניוד</fullName>
+                <default>false</default>
+                <label>ניוד</label>
+            </value>
+            <value>
+                <fullName>חל&quot;ת</fullName>
+                <default>false</default>
+                <label>חל&quot;ת</label>
+            </value>
+            <value>
+                <fullName>חל&quot;ד</fullName>
+                <default>false</default>
+                <label>חל&quot;ד</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- שדה זה מצביע על טופס לחתימה דיגיטלית מאובייקט &quot;טופס הסכמה&quot; עבור הפרוצדורה הרפואית באתר
+הערה - טופס הרדמה לפרוצדורות ניתוחיות נוצר כבר אוטומטית באפקס לפי הרקורד טייפ -->
+    </help>
+    <label><!-- DigitalSignConsentForm --></label>
+    <name>DigitalSignConsentForm__c</name>
+    <relationshipLabel><!-- Medical Procedures in Sites --></relationshipLabel>
+</CustomFieldTranslation>

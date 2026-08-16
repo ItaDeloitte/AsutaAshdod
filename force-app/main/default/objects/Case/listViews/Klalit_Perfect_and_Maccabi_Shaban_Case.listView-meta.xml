@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Klalit_Perfect_and_Maccabi_Shaban_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>כלניות - כללית מושלם ומכבי שב&quot;ן</label>
+    <queue>Q_Klalit_Perfect_and_Maccabi_Shaban</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

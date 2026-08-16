@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS</fullName>
+    <columns>Name</columns>
+    <columns>Account__c</columns>
+    <columns>SMS_Phone__c</columns>
+    <columns>StartTime</columns>
+    <columns>EndTime</columns>
+    <columns>LiveChatButton</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LiveChatButton</field>
+        <operation>contains</operation>
+        <value>sms</value>
+    </filters>
+    <label>SMS</label>
+</ListView>

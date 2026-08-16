@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_document_integrity__c</fullName>
+    <label>Required document integrity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NotChecked</fullName>
+                <default>true</default>
+                <label>Not yet checked</label>
+            </value>
+            <value>
+                <fullName>Invalid</fullName>
+                <default>false</default>
+                <label>Invalid documents</label>
+            </value>
+            <value>
+                <fullName>PartiallyValid</fullName>
+                <default>false</default>
+                <label>Partially sent documents – valid</label>
+            </value>
+            <value>
+                <fullName>AllValid</fullName>
+                <default>false</default>
+                <label>All documents valid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

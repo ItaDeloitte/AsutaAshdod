@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selected_services__c</fullName>
+    <label>Selected Services</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>בדיקות דם</fullName>
+                <default>false</default>
+                <label>בדיקות דם</label>
+            </value>
+            <value>
+                <fullName>בדיקות שתן</fullName>
+                <default>false</default>
+                <label>בדיקות שתן</label>
+            </value>
+            <value>
+                <fullName>ביקור אחות</fullName>
+                <default>false</default>
+                <label>ביקור אחות</label>
+            </value>
+            <value>
+                <fullName>צילום רנטגן</fullName>
+                <default>false</default>
+                <label>צילום רנטגן</label>
+            </value>
+            <value>
+                <fullName>בדיקת US</fullName>
+                <default>false</default>
+                <label>בדיקת US</label>
+            </value>
+            <value>
+                <fullName>ביקור רופא מקוון</fullName>
+                <default>false</default>
+                <label>ביקור רופא מקוון</label>
+            </value>
+            <value>
+                <fullName>ביקור רופא פרונטלי</fullName>
+                <default>false</default>
+                <label>ביקור רופא פרונטלי</label>
+            </value>
+            <value>
+                <fullName>sleep test</fullName>
+                <default>false</default>
+                <label>שירותי שינה</label>
+            </value>
+            <value>
+                <fullName>Physiotherapy treatments</fullName>
+                <default>false</default>
+                <label>טיפולי פיזותרפיה</label>
+            </value>
+            <value>
+                <fullName>home nurse</fullName>
+                <default>false</default>
+                <label>אחות עד הבית</label>
+            </value>
+            <value>
+                <fullName>ultrasound</fullName>
+                <default>false</default>
+                <label>אולטרסאונד</label>
+            </value>
+            <value>
+                <fullName>rentgen</fullName>
+                <default>false</default>
+                <label>רנטגן</label>
+            </value>
+            <value>
+                <fullName>intravenous iron infusion</fullName>
+                <default>false</default>
+                <label>עירוי ברזל</label>
+            </value>
+            <value>
+                <fullName>ECG test</fullName>
+                <default>false</default>
+                <label>בדיקת אק&quot;ג</label>
+            </value>
+            <value>
+                <fullName>home doctor</fullName>
+                <default>false</default>
+                <label>ביקור רופא</label>
+            </value>
+            <value>
+                <fullName>orthopedic rehabilitation</fullName>
+                <default>false</default>
+                <label>שיקום אורתופדי</label>
+            </value>
+            <value>
+                <fullName>recovering from heart surgery</fullName>
+                <default>false</default>
+                <label>החלמה מניתוחי לב</label>
+            </value>
+            <value>
+                <fullName>בדיקת שינה DO NOT USE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>בדיקת שינה DO NOT USE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

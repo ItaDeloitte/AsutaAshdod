@@ -1,0 +1,221 @@
+<aura:component extends="c:DocExpertBase">
+  <!-- attrs -->
+  <aura:attribute name="doctor" type="Map" />
+  <aura:attribute name="selectedDoctor" type="Map" />
+  <aura:attribute name="recommendedDoctors" type="List" default="[]" />
+  <aura:attribute name="isSelected" type="Boolean" default="false" />
+  <aura:attribute name="isRecommended" type="Boolean" default="false" />
+  <aura:attribute name="defaultMailImg" type="String" default="{!$Resource.appointments+'/assets/doctor-male.svg'}" />
+  <aura:attribute name="defaultFemailImg" type="String"
+                  default="{!$Resource.appointments+'/assets/doctor-female.svg'}" />
+  <aura:attribute name="isFallbackImageVisible" type="Boolean" default="false" />
+  <aura:attribute name="currentInfo" type="String" default="" description="clinics,procedures,insuranceFactors" />
+  <aura:attribute name="clinics" type="List" />
+  <aura:attribute name="isInfoLoading" type="Boolean" default="false" />
+  <aura:attribute name="recordId" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="change" value="{!v.recommendedDoctors}" action="{!c.onChangeRecommendedDoctors}" />
+  <!-- events -->
+  <aura:registerEvent name="ondocaction" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="{!join(' ',
+  'd-flex flex-column position-relative doctor-card',
+  v.isRecommended?'is-recommended':'',
+  v.isSelected?'is-selected':''
+  )}">
+    <div class="position-relative doctor-header">
+      <div class="d-flex align-items-center justify-content-center doctor-pic-wrapper">
+        <img class="{!join(' ',
+                'doctor-pic',
+                v.isFallbackImageVisible?'invisible':'visible'
+              )}" src="{!v.doctor.img}" alt="pic" onerror="{!c.onPictureError}" />
+        <img class="{!join(' ',
+              'doctor-pic doctor-pic__fallback',
+              v.isFallbackImageVisible?'visible':'invisible'
+            )}" src="{!v.doctor.gender=='נ'?v.defaultFemailImg:v.defaultMailImg}" alt="pic" />
+        <aura:if isTrue="{!v.doctor.isExpert}">
+          <div class="expert-logo">
+            <img class="expert-logo__pic" src="{!$Resource.appointments + '/assets/expert-doc-logo.png'}"
+                 alt="expert" />
+          </div>
+
+        </aura:if>
+      </div>
+
+      <button class="recommend-btn" type="button" onclick="{!c.onRecommendClick}" name="recommend"
+              title="{!$Label.c.RecommendDoctor}">
+        <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-check-circle'}" />
+      </button>
+
+    </div>
+    <div class="flex-grow-1 doctor-content p-3">
+      <div>
+        <span class="font-weight-bold">{!$Label.c.DocName}&nbsp;</span>
+        <a href="{!'/'+v.doctor.doctorId}" target="_blank">{!v.doctor.name}</a>
+      </div>
+      <div>
+        <span class="font-weight-bold">{!$Label.c.DocGender}&nbsp;</span>{!v.doctor.genderName}
+      </div>
+      <div>
+        <span class="font-weight-bold">{!$Label.c.DocClinics}&nbsp;</span>
+        <a onclick="{!c.onShowInfo}" data-info="clinics">{!$Label.c.Show}</a>
+      </div>
+      <!-- <div><span class="font-weight-bold">{!$Label.c.DocDegree}: </span>{!v.doctor.degreeName}</div> -->
+      <!-- <div>
+        <span class="font-weight-bold">{!$Label.c.DocRank}&nbsp;</span>{!v.doctor.rank}
+      </div> -->
+      <div>
+        <span class="font-weight-bold">{!$Label.c.Arrangments}&nbsp;</span>
+        <a onclick="{!c.onShowInfo}" data-info="arrangments">{!$Label.c.Show}</a>
+      </div>
+      <div>
+        <span class="font-weight-bold">{!$Label.c.Agreements}&nbsp;</span>
+        <a onclick="{!c.onShowInfo}" data-info="agreements">{!$Label.c.Show}</a>
+      </div>
+      <div>
+        <span class="font-weight-bold">{!$Label.c.Procedures}&nbsp;</span>
+        <a onclick="{!c.onShowInfo}" data-info="procedures">{!$Label.c.Show}</a>
+      </div>
+      <div>
+        <span class="font-weight-bold">{!$Label.c.Sites}&nbsp;</span>
+        <a onclick="{!c.onShowInfo}" data-info="sites">{!$Label.c.Show}</a>
+      </div>
+      <div>
+        <span class="font-weight-bold">{!$Label.c.DocQuantity}&nbsp;</span>{!v.doctor.quantity}
+      </div>
+    </div>
+    <div class="mb-2 px-3 doctor-actions">
+      <div class="bs-row justify-content-center">
+        <div class="bs-col bs-col-6">
+          <aura:if isTrue="{!v.isRecommended}">
+            <aura:if isTrue="{!v.isSelected}">
+              <lightning:button label="{!$Label.c.DocScheduleAppointment}" variant="neutral" class="{!join(' ',
+              'doc-btn doc-btn_select'
+              )}" onclick="{!c.onActionClick}" name="schedule" />
+            </aura:if>
+            <aura:if isTrue="{!!v.isSelected}">
+              <lightning:button label="{!$Label.c.DocSelect}" variant="neutral" class="{!join(' ',
+              'doc-btn doc-btn_select'
+              )}" onclick="{!c.onActionClick}" name="select" />
+            </aura:if>
+
+          </aura:if>
+
+        </div>
+      </div>
+    </div>
+    <div class="{!join(' ',
+    'info-container',
+    v.currentInfo?'is-visible':''
+    )}">
+      <div class="{!join(' ',
+        'info-container__inner',
+          v.currentInfo=='clinics'?'visible':'invisible'
+        )}">
+        <div class="text-center font-weight-bold info-container__title">{!$Label.c.DocClinics}:</div>
+        <ul class="info-list">
+          <aura:iteration items="{!v.clinics}" var="clinic">
+            <li class="info-item">
+              <div><span class="info-item__label">{!$Label.c.ClinicName}&nbsp;</span>
+                <a href="{!'/'+clinic.Clinic__c}" target="_blank">
+                  <lightning:formattedText value="{!clinic.Clinic__r.Name}" />
+                </a>
+              </div>
+              <div><span class="info-item__label">{!$Label.c.ClinicAddress}&nbsp;</span>
+                <lightning:formattedText value="{!clinic.Address}" />
+              </div>
+              <div><span class="info-item__label">{!$Label.c.ClinicCalendar_Doc_expert}&nbsp;</span>
+                <lightning:formattedText value="{!clinic.Schedule_System__c}" />
+              </div>
+              <div><span class="info-item__label">{!$Label.c.ClinicPhone}&nbsp;</span>
+                <lightning:formattedText value="{!clinic.Phone__c}" />
+              </div>
+              <div><span class="info-item__label">{!$Label.c.ClinicWorkingHours}&nbsp;</span>
+                <lightning:formattedText value="{!clinic.Working_Hours__c}" />
+              </div>
+              <div><span class="info-item__label">{!$Label.c.DocInsuranceFactor}&nbsp;</span>
+                <lightning:formattedText value="{!clinic.payerFactorName}" />
+              </div>
+            </li>
+          </aura:iteration>
+        </ul>
+      </div>
+      <div class="{!join(' ',
+         'info-container__inner',
+          v.currentInfo=='procedures'?'visible':'invisible'
+        )}">
+        <div class="text-center font-weight-bold info-container__title">{!$Label.c.Procedures}</div>
+        <ul class="info-list">
+          <aura:iteration items="{!v.doctor.procedures}" var="procedure">
+            <li class="info-item">
+              <div><span class="info-item__label"></span>
+                <a href="{!'/'+procedure.value}" target="_blank">
+                  {!procedure.label}
+                </a>
+              </div>
+            </li>
+          </aura:iteration>
+        </ul>
+      </div>
+      <div class="{!join(' ',
+         'info-container__inner',
+          v.currentInfo=='arrangments'?'visible':'invisible'
+        )}">
+        <div class="text-center font-weight-bold info-container__title">{!$Label.c.Arrangments}</div>
+        <ul class="info-list">
+          <aura:iteration items="{!v.doctor.arrangments}" var="arrangment">
+            <li class="info-item">
+              <div><span class="info-item__label"></span>
+                <a href="{!'/'+arrangment.value}" target="_blank">
+                  {!arrangment.label}
+                </a>
+              </div>
+            </li>
+          </aura:iteration>
+        </ul>
+      </div>
+      <div class="{!join(' ',
+         'info-container__inner',
+          v.currentInfo=='agreements'?'visible':'invisible'
+        )}">
+        <div class="text-center font-weight-bold info-container__title">{!$Label.c.Agreements}</div>
+        <ul class="info-list">
+          <aura:iteration items="{!v.doctor.agreements}" var="agreement">
+            <li class="info-item">
+              <div><span class="info-item__label"></span>
+                <a href="{!'/'+agreement.value}" target="_blank">
+                  {!agreement.label}
+                </a>
+              </div>
+            </li>
+          </aura:iteration>
+        </ul>
+      </div>
+      <div class="{!join(' ',
+         'info-container__inner',
+          v.currentInfo=='sites'?'visible':'invisible'
+        )}">
+        <div class="text-center font-weight-bold info-container__title">{!$Label.c.Sites}</div>
+        <ul class="info-list">
+          <aura:iteration items="{!v.doctor.sites}" var="site">
+            <li class="info-item">
+              <div><span class="info-item__label"></span>
+                <a href="{!'/'+site.value}" target="_blank">
+                  {!site.label}
+                </a>
+              </div>
+            </li>
+          </aura:iteration>
+        </ul>
+      </div>
+
+      <button class="close-btn" type="button" onclick="{!c.onHideInfo}">
+        <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-close'}" />
+      </button>
+      <c:Spinner isLoading="{!v.isInfoLoading}" />
+    </div>
+  </div>
+</aura:component>

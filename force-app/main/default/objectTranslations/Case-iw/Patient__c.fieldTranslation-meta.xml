@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- נא בחר את המטופל שבגינו פנה הרופא --></help>
+    <label>מטופל</label>
+    <name>Patient__c</name>
+    <relationshipLabel>פניות</relationshipLabel>
+</CustomFieldTranslation>

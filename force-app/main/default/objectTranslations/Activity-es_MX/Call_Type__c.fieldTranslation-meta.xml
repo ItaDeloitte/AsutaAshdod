@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Type --></label>
+    <name>Call_Type__c</name>
+    <picklistValues>
+        <masterLabel>שיחה יוצאת (חיצונית)</masterLabel>
+        <translation><!-- שיחה יוצאת (חיצונית) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה יוצאת (פנימית)</masterLabel>
+        <translation><!-- שיחה יוצאת (פנימית) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה נכנסת (חיצונית)</masterLabel>
+        <translation><!-- שיחה נכנסת (חיצונית) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה נכנסת (פנימית)</masterLabel>
+        <translation><!-- שיחה נכנסת (פנימית) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

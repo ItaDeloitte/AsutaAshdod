@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelationReasonPrivateRoom__c</fullName>
+    <description>שדה בחירה שתמאר סיבה עבור ביטול הזמנה של חדר פרטי</description>
+    <inlineHelpText>שדה בחירה שתמאר סיבה עבור ביטול הזמנה של חדר פרטי</inlineHelpText>
+    <label>Cancelation Reason Private Room</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High price</fullName>
+                <default>false</default>
+                <label>Not interested – high price</label>
+            </value>
+            <value>
+                <fullName>Few days of hospitalization</fullName>
+                <default>false</default>
+                <label>Not interested – few days of hospitalization</label>
+            </value>
+            <value>
+                <fullName>Alone in the room</fullName>
+                <default>false</default>
+                <label>Not interested - in being alone in the room</label>
+            </value>
+            <value>
+                <fullName>Will get back to us</fullName>
+                <default>false</default>
+                <label>Not interested – will get back to us if relevant</label>
+            </value>
+            <value>
+                <fullName>Site does not reserve rooms</fullName>
+                <default>false</default>
+                <label>The surgery is performed at a site where the call center does not reserve rooms (Haifa, Ashdod, Be&apos;er Sheva).</label>
+            </value>
+            <value>
+                <fullName>The day of surgery</fullName>
+                <default>false</default>
+                <label>Patients called on the day of surgery to reserve a private room</label>
+            </value>
+            <value>
+                <fullName>Not interested - No hospitalization for surgery</fullName>
+                <default>false</default>
+                <label>Not interested - No hospitalization for surgery</label>
+            </value>
+            <value>
+                <fullName>Not interested - Patient does not know if he will stay</fullName>
+                <default>false</default>
+                <label>Not interested - Patient does not know if he will stay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

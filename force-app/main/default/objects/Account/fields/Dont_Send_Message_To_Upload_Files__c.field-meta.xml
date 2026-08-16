@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dont_Send_Message_To_Upload_Files__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>לא לשלוח מסרון/מייל להעלאת מסמכים</description>
+    <label>Dont Send Message To Upload Files</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

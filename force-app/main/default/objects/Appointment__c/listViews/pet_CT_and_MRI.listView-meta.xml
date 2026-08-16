@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pet_CT_and_MRI</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Icon_payer__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Referral_Status_Maccabi__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>Number_of_commitment__c</columns>
+    <columns>Expiration_date_commitment__c</columns>
+    <columns>Agreement_with_assuta__c</columns>
+    <columns>Case__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Site__c</columns>
+    <columns>domain2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>notContain</operation>
+        <value>בי&quot;ח אסותא אשדוד ע&quot;ש סמסון</value>
+    </filters>
+    <filters>
+        <field>Date_of_appointment__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>4/1/2021</value>
+    </filters>
+    <filters>
+        <field>Commitment_Status__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>וידוא הגעה pet CT and MRI</label>
+</ListView>

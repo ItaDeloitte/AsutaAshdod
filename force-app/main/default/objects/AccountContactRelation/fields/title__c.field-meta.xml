@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>title__c</fullName>
+    <label>Title</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>בסיסי</fullName>
+                <color>#FFFF66</color>
+                <default>true</default>
+                <label>בסיסי</label>
+            </value>
+            <value>
+                <fullName>רגיל</fullName>
+                <color>#FF6600</color>
+                <default>false</default>
+                <label>רגיל</label>
+            </value>
+            <value>
+                <fullName>מחמיר</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>מחמיר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<aura:component extends="c:BaseComponent"
+  implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:backgroundUtilityItem,forceCommunity:availableForAllPageTypes"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="isDisabled" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+  <lightning:utilityBarAPI aura:id="utilitybar" />
+</aura:component>

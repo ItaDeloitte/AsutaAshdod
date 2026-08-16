@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MistakeType2__c</fullName>
+    <label>Mistake Type2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ביטול תור שגוי</fullName>
+                <default>false</default>
+                <label>ביטול תור שגוי</label>
+            </value>
+            <value>
+                <fullName>הגשה לא נכונה</fullName>
+                <default>false</default>
+                <label>הגשה לא נכונה</label>
+            </value>
+            <value>
+                <fullName>המלצת רופא לא נכונה</fullName>
+                <default>false</default>
+                <label>המלצת רופא לא נכונה</label>
+            </value>
+            <value>
+                <fullName>הצעת מחיר שגויה</fullName>
+                <default>false</default>
+                <label>הצעת מחיר שגויה</label>
+            </value>
+            <value>
+                <fullName>הקצאה שגויה</fullName>
+                <default>false</default>
+                <label>הקצאה שגויה</label>
+            </value>
+            <value>
+                <fullName>כפילות תורים</fullName>
+                <default>false</default>
+                <label>כפילות תורים</label>
+            </value>
+            <value>
+                <fullName>לא נמצא כטעות מוקד</fullName>
+                <default>false</default>
+                <label>לא נמצא כטעות מוקד</label>
+            </value>
+            <value>
+                <fullName>לא נפתחה משימה</fullName>
+                <default>false</default>
+                <label>לא נפתחה משימה</label>
+            </value>
+            <value>
+                <fullName>לא נשמר איש קשר</fullName>
+                <default>false</default>
+                <label>לא נשמר איש קשר</label>
+            </value>
+            <value>
+                <fullName>לא תואם תור לטרום ניתוח</fullName>
+                <default>false</default>
+                <label>לא תואם תור לטרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>מידע שגוי / חסר</fullName>
+                <default>false</default>
+                <label>מידע שגוי / חסר</label>
+            </value>
+            <value>
+                <fullName>מסירת עלויות שגויה</fullName>
+                <default>false</default>
+                <label>מסירת עלויות שגויה</label>
+            </value>
+            <value>
+                <fullName>נשלח קיט למערכת, קביעה שגויה</fullName>
+                <default>false</default>
+                <label>נשלח קיט למערכת, קביעה שגויה</label>
+            </value>
+            <value>
+                <fullName>פניית שירות</fullName>
+                <default>false</default>
+                <label>פניית שירות</label>
+            </value>
+            <value>
+                <fullName>אי עמידה בזמן טיפול</fullName>
+                <default>false</default>
+                <label>אי עמידה בזמן טיפול</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

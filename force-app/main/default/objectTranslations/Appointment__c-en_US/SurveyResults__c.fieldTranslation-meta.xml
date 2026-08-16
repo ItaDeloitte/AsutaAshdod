@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Survey Results --></label>
+    <name>SurveyResults__c</name>
+    <picklistValues>
+        <masterLabel>לא נדרש טרום ניתוח</masterLabel>
+        <translation><!-- לא נדרש טרום ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לבדיקת אחות טרום ניתוח – החלטה והמלצות</masterLabel>
+        <translation><!-- לבדיקת אחות טרום ניתוח – החלטה והמלצות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדרשת הערכה במרפאת טרום ניתוח</masterLabel>
+        <translation><!-- נדרשת הערכה במרפאת טרום ניתוח --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_File_Type</name>
+        <label>Assign File Type</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.file_type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>IVF</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Is_Case_Record_Type_IVF_Freezing_Eggs</name>
+        <label>Is Case Record Type = &apos;IVF_Freezing_Eggs&apos;</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_The_Case_Record_Type_IVF_Freezing_Eggs</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IVF_Freezing_Eggs</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_File_Type</targetReference>
+            </connector>
+            <label>Yes, The  Case Record Type = &apos;IVF_Freezing_Eggs&apos;</label>
+        </rules>
+    </decisions>
+    <description>MB - 2845184883 - 21.04.2026- WF TO FLOW - Assuta Files</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Orchestrator- Assuta File - Create Or Update- Before Save&apos; + &apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <interviewLabel>Orchestrator- Assuta File - Create Or Update- Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Orchestrator- Assuta File - Create Or Update- Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Case_Record_Type_IVF_Freezing_Eggs</targetReference>
+        </connector>
+        <object>File__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

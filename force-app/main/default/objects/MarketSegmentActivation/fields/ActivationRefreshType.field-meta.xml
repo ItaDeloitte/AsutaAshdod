@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActivationRefreshType</fullName>
+    <inlineHelpText>בחר באיזו תדירות לעדכן את הנתונים שלך. רענון במרווחים מעדכן נתונים חדשים או נתונים שהשתנו מאז הפרסום האחרון. רענון מלא מעדכן את כל הנתונים שלך וניתן לבחירה אחת ל-24 שעות.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

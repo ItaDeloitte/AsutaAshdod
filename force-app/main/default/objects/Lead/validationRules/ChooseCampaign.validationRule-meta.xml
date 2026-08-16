@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChooseCampaign</fullName>
+    <active>true</active>
+    <description>חובת בחירת קמפיין לפני סגירת הליד</description>
+    <errorConditionFormula>AND(
+OR(
+TEXT(Status) = &quot;Lost&quot;,
+TEXT(Status) = &quot;Win&quot;
+),
+ISBLANK(Campaign__c)
+)</errorConditionFormula>
+    <errorDisplayField>Campaign__c</errorDisplayField>
+    <errorMessage>יש לשייך קמפיין לפני סגירת הליד</errorMessage>
+</ValidationRule>

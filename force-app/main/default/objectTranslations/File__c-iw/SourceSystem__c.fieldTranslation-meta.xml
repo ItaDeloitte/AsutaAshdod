@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source System --></label>
+    <name>SourceSystem__c</name>
+    <picklistValues>
+        <masterLabel>AssutaDoc</masterLabel>
+        <translation><!-- AssutaDoc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AssutaDoctors</masterLabel>
+        <translation><!-- AssutaDoctors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCW</masterLabel>
+        <translation><!-- CCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chameleon</masterLabel>
+        <translation><!-- Chameleon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chameleon Ashdod</masterLabel>
+        <translation><!-- Chameleon Ashdod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chameleon Guidance Files</masterLabel>
+        <translation><!-- Chameleon Guidance Files --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clicks</masterLabel>
+        <translation><!-- Clicks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Covid English</masterLabel>
+        <translation><!-- Covid English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECG</masterLabel>
+        <translation><!-- ECG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ExternalSystems</masterLabel>
+        <translation><!-- ExternalSystems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Holters</masterLabel>
+        <translation><!-- Holters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IVF</masterLabel>
+        <translation><!-- IVF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ImageStore</masterLabel>
+        <translation><!-- ImageStore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ImageStore Ashdod</masterLabel>
+        <translation><!-- ImageStore Ashdod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Menerva</masterLabel>
+        <translation><!-- Menerva --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Menometry</masterLabel>
+        <translation><!-- Menometry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metavision</masterLabel>
+        <translation><!-- Metavision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onco Pro</masterLabel>
+        <translation><!-- Onco Pro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Area</masterLabel>
+        <translation><!-- Personal Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PillCam</masterLabel>
+        <translation><!-- PillCam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RIS</masterLabel>
+        <translation><!-- RIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RR</masterLabel>
+        <translation><!-- RR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce</masterLabel>
+        <translation><!-- Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Softov</masterLabel>
+        <translation><!-- Softov --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SoftovAshdod</masterLabel>
+        <translation><!-- SoftovAshdod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tafnit</masterLabel>
+        <translation><!-- Tafnit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tafnit Ashdod</masterLabel>
+        <translation><!-- Tafnit Ashdod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Website</masterLabel>
+        <translation><!-- Website --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eRAD</masterLabel>
+        <translation><!-- eRAD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

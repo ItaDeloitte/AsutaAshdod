@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>QualityControl__c</entityName>
+    <fieldName>Status_QA__c</fieldName>
+    <masterLabel>בקרת איכות</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>close_reason__c</fieldNames>
+        <fieldNames>Manager_Remark__c</fieldNames>
+        <picklistValueName>בוצע משוב</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>close_reason__c</fieldNames>
+        <fieldNames>Manager_Remark__c</fieldNames>
+        <picklistValueName>לא נמצא כטעות</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>close_reason__c</fieldNames>
+        <fieldNames>Manager_Remark__c</fieldNames>
+        <picklistValueName>לא רלוונטי</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>open_qa</recordTypeName>
+</PathAssistant>

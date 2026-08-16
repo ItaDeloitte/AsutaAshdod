@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>AssignPreMedForAppName</name>
+        <label>AssignPreMedForAppName</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fPreMedicalForAppName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>AD: 10032025 - 1819157652 - Set the name of the record in accordance with the related Pre Medical Procedure
+Yulia 06.04 LIMIT length name to 80</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fPreMedicalForAppName</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.PreMedicalProcedure__r.PreMedicalProcedure__r.Name}&amp; &quot; - &quot; &amp; {!$Record.Appointment__r.Name}, 80)</expression>
+    </formulas>
+    <interviewLabel>PreMediclForAppointment Name {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PreMediclForAppointment Name - Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>AssignPreMedForAppName</targetReference>
+        </connector>
+        <filterFormula>OR(
+ISNEW(), ISCHANGED({!$Record.Appointment__r.Id}), ISCHANGED({!$Record.PreMedicalProcedure__r.Id})
+)</filterFormula>
+        <object>PreMedicalForAppointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

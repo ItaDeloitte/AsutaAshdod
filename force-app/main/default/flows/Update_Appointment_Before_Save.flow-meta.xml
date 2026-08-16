@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Check_Arrival_Confirmation</name>
+        <label>Check Arrival Confirmation</label>
+        <locationX>182</locationX>
+        <locationY>3695</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Arrival_Confirmation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_status_of_mehironim_if_failed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Check_pre_surgery_needed</name>
+        <label>Check pre surgery needed</label>
+        <locationX>182</locationX>
+        <locationY>2795</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Presurgery_needed1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Kit_was_sent</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Check_UNICORN</name>
+        <label>Check UNICORN</label>
+        <locationX>182</locationX>
+        <locationY>3395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Value_Unicorn__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Arrival_confirmation</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Domain_Update</name>
+        <label>Domain Update</label>
+        <locationX>182</locationX>
+        <locationY>1895</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Domain_ID__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Medical_Procedure__r.Domain__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_email_from_case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_administrative_and_appointment_status</name>
+        <label>Update administrative and appointment status</label>
+        <locationX>182</locationX>
+        <locationY>5495</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Administrative_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ממתין להתחייבות</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Appointment_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ממתין להתחייבות</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Update_Agreement_with_Assuta</name>
+        <label>Update Agreement with Assuta</label>
+        <locationX>182</locationX>
+        <locationY>3995</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Agreement_with_assuta__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>התקבלה שגיאה מתפנית</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_reading_and_confirming_the_guidelines</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>במידה ולא הגיעה הפניה מסוג HOSPITALIZATION או ביצוע פעולה, אך הרופא הינו רופא קופה, הפגישה תסווג למסלול ירוק</description>
+        <name>Update_app_Classification_to_Green</name>
+        <label>Update app Classification to Green</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Classification__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ירוק</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_type_of_consult</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>במידה ולא הגיעה הפניה מסוג חיוב ישיר, אך הרופא הינו רופא רשת, הפגישה תסווג למסלול כתום</description>
+        <name>Update_app_Classification_to_Orange</name>
+        <label>Update app Classification to Orange</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Classification__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>כתום</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_type_of_consult</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_appointment_status_arriving</name>
+        <label>Update appointment status arriving</label>
+        <locationX>50</locationX>
+        <locationY>4895</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Appointment_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>וידוא הגעה לפגישה</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_30_days</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_appointment_status_waiting</name>
+        <label>Update appointment status waiting</label>
+        <locationX>314</locationX>
+        <locationY>4895</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Appointment_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>WaitingForAppointment</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_30_days</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>WorkFlow - עדכן סוג פגישת ייעוץ2</description>
+        <name>Update_Appointment_with_a_specialist</name>
+        <label>Update Appointment with a specialist</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.type_of_consult__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>זימון תור לרופא מומחה</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>PayerFactor_require_a_consultation_doc</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>עדכון תאריך התחייבות
+עדכון תוקף התחייבות</description>
+        <name>Update_Commitment</name>
+        <label>Update Commitment</label>
+        <locationX>182</locationX>
+        <locationY>1295</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Date_of_commitment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TodayDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Expiration_date_commitment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TodayPlus90</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Site_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>עדכן את תאריך הסכמת קריאת ההנחיות</description>
+        <name>Update_Date_Instuction_Read</name>
+        <label>Update Date Instuction Read</label>
+        <locationX>182</locationX>
+        <locationY>4295</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Date_Instuction_Read__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DateTimeNow</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Sign_date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Next30days</name>
+        <label>Update Next30days</label>
+        <locationX>182</locationX>
+        <locationY>5195</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Next30days__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TodayPlus30</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_status_of_app_from_commitment_status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>WorkFlow - גורם משלם אינו מצריך מסמך סיכום ייעוץ</description>
+        <name>Update_not_requre</name>
+        <label>Update not requre</label>
+        <locationX>314</locationX>
+        <locationY>995</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ConsultancySummaryDocumentStatus__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Unrequired</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_commitment_dates_for_surgeries</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>איכלוס המייל של המטופל בפנייה לצורך שליחת מייל</description>
+        <name>Update_patient_email</name>
+        <label>Update patient email</label>
+        <locationX>182</locationX>
+        <locationY>2195</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Patient_Mail__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Case__r.email_from_patient__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_email_from_patient</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_person_email</name>
+        <label>Update person email</label>
+        <locationX>182</locationX>
+        <locationY>2495</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Patient_Contact_Mail__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Patient_Account__r.PersonContact.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_surgery_date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>WorkFlow - עדכן סוג פגישת ייעוץ2</description>
+        <name>Update_Recommendation_for_a_specialist</name>
+        <label>Update Recommendation for a specialist</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.type_of_consult__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>המלצה על רופא מומחה</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>PayerFactor_require_a_consultation_doc</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>WorkFlow - גורם משלם מצריך מסמך סיכום ייעוץ</description>
+        <name>Update_requre</name>
+        <label>Update requre</label>
+        <locationX>50</locationX>
+        <locationY>995</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ConsultancySummaryDocumentStatus__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>YetUploaded</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_commitment_dates_for_surgeries</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_RIS_signature_Date_Time</name>
+        <label>Update RIS signature Date/Time</label>
+        <locationX>182</locationX>
+        <locationY>4595</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.RIS_Signature_date_time__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.RISStatusChangeDateTime__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Arrival_confirmation_reminders</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Site_text</name>
+        <label>Update Site text</label>
+        <locationX>182</locationX>
+        <locationY>1595</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.App_site_text__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Site__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Site_Email__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Site__r.Site_Email__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Domain</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Updates the last time the kit was sent</description>
+        <name>Update_Time_Kit_Was_Sent</name>
+        <label>Update Time Kit Was Sent</label>
+        <locationX>182</locationX>
+        <locationY>3095</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Kit_Date_Time_Last_Sent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DateTimeNow</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Value_Unicorn_Checkbox</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>WorkFlow - Arrival confirmation</description>
+        <name>Arrival_confirmation</name>
+        <label>Arrival confirmation</label>
+        <locationX>314</locationX>
+        <locationY>3587</locationY>
+        <defaultConnector>
+            <targetReference>Update_status_of_mehironim_if_failed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Arrival_confirmation</name>
+            <conditionLogic>(1 AND 2) OR (1 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Rep_Reminder_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>אישור הגעה</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Rep_Reminder_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Arrival_Confirmation</targetReference>
+            </connector>
+            <label>Is Arrival confirmation</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - תזכורות אישור הגעה</description>
+        <name>Arrival_confirmation_reminders</name>
+        <label>Arrival confirmation reminders</label>
+        <locationX>314</locationX>
+        <locationY>4787</locationY>
+        <defaultConnector>
+            <targetReference>Update_30_days</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Reminder</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4) AND 5</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NewAppointment</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Date_for_tizkorit_reminder__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Date_for_human_reminder__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Remainder_time__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.more_than_14_days__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_appointment_status_arriving</targetReference>
+            </connector>
+            <label>Reminder</label>
+        </rules>
+        <rules>
+            <name>No_reminder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NewAppointment</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Date_for_tizkorit_reminder__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Date_for_human_reminder__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Remainder_time__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.more_than_14_days__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_appointment_status_waiting</targetReference>
+            </connector>
+            <label>No reminder</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - Change app to Green if no referral
+WorkFlow -  Change app to Orange if no referral</description>
+        <name>Change_classification_if_no_referral</name>
+        <label>Change classification if no referral</label>
+        <locationX>314</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Update_type_of_consult</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Change_To_Green</name>
+            <conditionLogic>1 AND 2 AND 3 AND (4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Doctor_Account__r.Maccabi_Arrangement__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>cash_doc</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Classification__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Referral_Status_Maccabi__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.InsuranceCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>3</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.InsuranceCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>89</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_app_Classification_to_Green</targetReference>
+            </connector>
+            <label>Change To Green</label>
+        </rules>
+        <rules>
+            <name>Change_To_Orange</name>
+            <conditionLogic>1 AND 2 AND 3 AND (4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Doctor_Account__r.Maccabi_Arrangement__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>רופא בהסדר</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Classification__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Referral_Status_Maccabi__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.InsuranceCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>3</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.InsuranceCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>89</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_app_Classification_to_Orange</targetReference>
+            </connector>
+            <label>Change To Orange</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - Copy email to appointment</description>
+        <name>Copy_email_from_case</name>
+        <label>Copy email from case</label>
+        <locationX>314</locationX>
+        <locationY>2087</locationY>
+        <defaultConnector>
+            <targetReference>Copy_email_from_patient</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Email_from_Case</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case__r.email_from_patient__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Update_patient_email</targetReference>
+            </connector>
+            <label>Email from Case</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - Copy email to appointment 2</description>
+        <name>Copy_email_from_patient</name>
+        <label>Copy email from patient</label>
+        <locationX>314</locationX>
+        <locationY>2387</locationY>
+        <defaultConnector>
+            <targetReference>Update_surgery_date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Email_from_patient</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Patient_Account__r.PersonContact.Email</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Patient_Account__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_person_email</targetReference>
+            </connector>
+            <label>Email from patient</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - Kit was sent? - Checks If a Kit Was Sent Manually</description>
+        <name>Kit_was_sent</name>
+        <label>Kit was sent</label>
+        <locationX>314</locationX>
+        <locationY>2987</locationY>
+        <defaultConnector>
+            <targetReference>Update_Value_Unicorn_Checkbox</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_was_sent</name>
+            <conditionLogic>(1 AND 2) OR ((2 AND 3) OR (4 AND 5) OR (6 AND 7) OR (8 AND 9))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.sent_kit_confirmation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.sent_kit_confirmation__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Didkitsent__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Didkitsent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.sent_kit_contact__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.sent_kit_contact__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.resend_kit__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.resend_kit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Time_Kit_Was_Sent</targetReference>
+            </connector>
+            <label>Is was sent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - גורם משלם מצריך מסמך סיכום ייעוץ	
+WorkFlow - גורם משלם אינו מצריך מסמך סיכום ייעוץ</description>
+        <name>PayerFactor_require_a_consultation_doc</name>
+        <label>PayerFactor require a consultation doc</label>
+        <locationX>314</locationX>
+        <locationY>887</locationY>
+        <defaultConnector>
+            <targetReference>Update_commitment_dates_for_surgeries</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Requre</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.Consultancy_summary_document_required__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ConsultancySummaryDocumentStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Update_requre</targetReference>
+            </connector>
+            <label>Requre</label>
+        </rules>
+        <rules>
+            <name>Not_Requre</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.Consultancy_summary_document_required__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ConsultancySummaryDocumentStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_not_requre</targetReference>
+            </connector>
+            <label>Not Requre</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow -Sign_date</description>
+        <name>Sign_date</name>
+        <label>Sign date</label>
+        <locationX>314</locationX>
+        <locationY>4487</locationY>
+        <defaultConnector>
+            <targetReference>Arrival_confirmation_reminders</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_sign_status</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RisAnswerStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>6</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RIS_Signature_date_time__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RisAnswerStatus__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_RIS_signature_Date_Time</targetReference>
+            </connector>
+            <label>Check sign status</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow -Site_Update
+WorkFlow - Update Site email address to appointment</description>
+        <name>Site_Update</name>
+        <label>Site Update</label>
+        <locationX>314</locationX>
+        <locationY>1487</locationY>
+        <defaultConnector>
+            <targetReference>Update_Domain</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Site</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Site_text</targetReference>
+            </connector>
+            <label>Update Site</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - update30days</description>
+        <name>Update_30_days</name>
+        <label>Update 30 days</label>
+        <locationX>314</locationX>
+        <locationY>5087</locationY>
+        <defaultConnector>
+            <targetReference>Update_status_of_app_from_commitment_status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ISWaitingForAppointment</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>WaitingForAppointment</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Next30days</targetReference>
+            </connector>
+            <label>ISWaitingForAppointment</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - עדכון תאריכי התחייבות לניתוחים</description>
+        <name>Update_commitment_dates_for_surgeries</name>
+        <label>Update commitment dates for surgeries</label>
+        <locationX>314</locationX>
+        <locationY>1187</locationY>
+        <defaultConnector>
+            <targetReference>Site_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Update</name>
+            <conditionLogic>1 AND (NOT 2) AND (3 OR (4 AND 5))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>מכבי</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Number_of_commitment__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Number_of_commitment__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Commitment</targetReference>
+            </connector>
+            <label>Is Update</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - Update site and domain Id</description>
+        <name>Update_Domain</name>
+        <label>Update Domain</label>
+        <locationX>314</locationX>
+        <locationY>1787</locationY>
+        <defaultConnector>
+            <targetReference>Copy_email_from_case</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_needed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Domain_Update</targetReference>
+            </connector>
+            <label>Update needed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - עדכן את תאריך הקראת ואישור ההנחיות</description>
+        <name>Update_reading_and_confirming_the_guidelines</name>
+        <label>Update reading and confirming the guidelines</label>
+        <locationX>314</locationX>
+        <locationY>4187</locationY>
+        <defaultConnector>
+            <targetReference>Sign_date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_instructions_read</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Have_you_read_medical_instructors__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Date_Instuction_Read</targetReference>
+            </connector>
+            <label>Is instructions read</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - Update status of app from commitment status
+במידה וסטאטוס ההתחייבות = ממתין לאישור נעדכן את
+סטאטוס הפגישה = ממתין להתחייבות</description>
+        <name>Update_status_of_app_from_commitment_status</name>
+        <label>Update status of app from commitment status</label>
+        <locationX>314</locationX>
+        <locationY>5387</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_commitment_status_changed</name>
+            <conditionLogic>1 AND (2 OR 3) AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Commitment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>6</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Commitment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>1b</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Commitment_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_administrative_and_appointment_status</targetReference>
+            </connector>
+            <label>Is commitment status changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - Update status of mehironim if faield</description>
+        <name>Update_status_of_mehironim_if_failed</name>
+        <label>Update status of mehironim if failed</label>
+        <locationX>314</locationX>
+        <locationY>3887</locationY>
+        <defaultConnector>
+            <targetReference>Update_reading_and_confirming_the_guidelines</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Failed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Error_description_Mehironim__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Error_description_Mehironim__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Agreement_with_Assuta</targetReference>
+            </connector>
+            <label>Is Failed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - עדכון ט.ניתוח לתור</description>
+        <name>Update_surgery_date</name>
+        <label>Update surgery date</label>
+        <locationX>314</locationX>
+        <locationY>2687</locationY>
+        <defaultConnector>
+            <targetReference>Kit_was_sent</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_there_a_need_for_pre_surgery</name>
+            <conditionLogic>1 AND (2 OR 3) AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Medical_Procedure__r.Is_there_a_need_for_pre_surgery__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Medical_Procedure__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Presurgery_needed1__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_pre_surgery_needed</targetReference>
+            </connector>
+            <label>Is there a need for pre surgery</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow - עדכן סוג פגישת ייעוץ	
+WorkFlow -  עדכן סוג פגישת ייעוץ2</description>
+        <name>Update_type_of_consult</name>
+        <label>Update type of consult</label>
+        <locationX>314</locationX>
+        <locationY>587</locationY>
+        <defaultConnector>
+            <targetReference>PayerFactor_require_a_consultation_doc</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Appointment_to_specialist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case__r.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>זימון תור לרופא מומחה</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Appointment_with_a_specialist</targetReference>
+            </connector>
+            <label>Appointment to specialist</label>
+        </rules>
+        <rules>
+            <name>Recommendation_for_a_specialist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Case__r.sub_case_subject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>המלצה על רופא מומחה</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Recommendation_for_a_specialist</targetReference>
+            </connector>
+            <label>Recommendation for a specialist</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>WorkFlow -Update Value Unicorn Checkbox</description>
+        <name>Update_Value_Unicorn_Checkbox</name>
+        <label>Update Value Unicorn Checkbox</label>
+        <locationX>314</locationX>
+        <locationY>3287</locationY>
+        <defaultConnector>
+            <targetReference>Arrival_confirmation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Unicorn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.UNICORN__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Value_Unicorn__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_UNICORN</targetReference>
+            </connector>
+            <label>Is Unicorn</label>
+        </rules>
+    </decisions>
+    <description>דכון תאריכי התחייבות לניתוחים
+WorkFlow - Change app to Green if no referral
+WorkFlow - Change app to Orange if no referral
+WorkFlow - Copy email to appointment
+WorkFlow - Update Site email address to appointment
+WorkFlow - Update status of app from commitment status
+WorkFlow - עדכון ט.ניתוח לתור
+WorkFlow - עדכן את תאריך הקראת ואישור ההנחיות
+WorkFlow - עדכן סוג פגישת ייעוץ
+עדכן סוג פגישת ייעוץWorkFlow - 2
+WorkFlow - תזכורות אישור הגעה
+WorkFlow - תזכורות אישור הגעה - אין
+WorkFlow - update30days
+WorkFlow - Copy email to appointment 2
+WorkFlow - Update site and domain Id
+WorkFlow - Update status of mehironim if faield
+WorkFlow - Site_Update
+WorkFlow - Sign date
+WorkFlow - Kit was sent?
+WorkFlow - Arrival confirmation - BUG FIXED
+WorkFlow - עדכון תאריכי התחייבות לניתוחים
+WorkFlow - גורם משלם אינו מצריך מסמך סיכום ייעוץ
+WorkFlow - גורם משלם מצריך מסמך סיכום ייעוץ
+WorkFlow - Update Value Unicorn Checkbox</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>DateTimeNow</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <name>TodayDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <name>TodayPlus30</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()+30</expression>
+    </formulas>
+    <formulas>
+        <name>TodayPlus90</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()+90</expression>
+    </formulas>
+    <interviewLabel>Update Appointment - Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Appointment - Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Change_classification_if_no_referral</targetReference>
+        </connector>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

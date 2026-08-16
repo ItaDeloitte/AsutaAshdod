@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_Center_Department__c</fullName>
+    <description>מרפאה/מכון/מחלקה פניות הציבור</description>
+    <label>Site/Center/Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>IVF</fullName>
+                <default>false</default>
+                <label>IVF</label>
+            </value>
+            <value>
+                <fullName>PGD</fullName>
+                <default>false</default>
+                <label>PGD</label>
+            </value>
+            <value>
+                <fullName>אגר + נוף, אורטוקליניק</fullName>
+                <default>false</default>
+                <label>אגר + נוף, אורטוקליניק</label>
+            </value>
+            <value>
+                <fullName>אונקולוגיה</fullName>
+                <default>false</default>
+                <label>אונקולוגיה</label>
+            </value>
+            <value>
+                <fullName>אורודינמיקה</fullName>
+                <default>false</default>
+                <label>אורודינמיקה</label>
+            </value>
+            <value>
+                <fullName>אורולוגיה</fullName>
+                <default>false</default>
+                <label>אורולוגיה</label>
+            </value>
+            <value>
+                <fullName>אורולוגיה- רמון</fullName>
+                <default>false</default>
+                <label>אורולוגיה- רמון</label>
+            </value>
+            <value>
+                <fullName>אורומדיק</fullName>
+                <default>false</default>
+                <label>אורומדיק</label>
+            </value>
+            <value>
+                <fullName>אורתופדיה</fullName>
+                <default>false</default>
+                <label>אורתופדיה</label>
+            </value>
+            <value>
+                <fullName>אורתופדית ילדים</fullName>
+                <default>false</default>
+                <label>אורתופדית ילדים</label>
+            </value>
+            <value>
+                <fullName>אייקו</fullName>
+                <default>false</default>
+                <label>אייקו</label>
+            </value>
+            <value>
+                <fullName>אלטיאה פרופ אבי ניסן</fullName>
+                <default>false</default>
+                <label>אלטיאה פרופ אבי ניסן</label>
+            </value>
+            <value>
+                <fullName>אם ועובר</fullName>
+                <default>false</default>
+                <label>אם ועובר</label>
+            </value>
+            <value>
+                <fullName>אנדרולוגיה</fullName>
+                <default>false</default>
+                <label>אנדרולוגיה</label>
+            </value>
+            <value>
+                <fullName>אסותא אופטיק</fullName>
+                <default>false</default>
+                <label>אסותא אופטיק</label>
+            </value>
+            <value>
+                <fullName>אסותא אופטיק- השלום</fullName>
+                <default>false</default>
+                <label>אסותא אופטיק- השלום</label>
+            </value>
+            <value>
+                <fullName>אסותא אופטיק- חיפה</fullName>
+                <default>false</default>
+                <label>אסותא אופטיק- חיפה</label>
+            </value>
+            <value>
+                <fullName>אסותא לייט - המרכז לטיפול בהשמנת יתר</fullName>
+                <default>false</default>
+                <label>אסותא לייט - המרכז לטיפול בהשמנת יתר</label>
+            </value>
+            <value>
+                <fullName>אסותא עד הבית</fullName>
+                <default>false</default>
+                <label>אסותא עד הבית</label>
+            </value>
+            <value>
+                <fullName>אסיא מדיקל</fullName>
+                <default>false</default>
+                <label>אסיא מדיקל</label>
+            </value>
+            <value>
+                <fullName>אף אוזן גרון</fullName>
+                <default>false</default>
+                <label>אף אוזן גרון</label>
+            </value>
+            <value>
+                <fullName>אר&quot;ם</fullName>
+                <default>false</default>
+                <label>אר&quot;ם</label>
+            </value>
+            <value>
+                <fullName>אשפוז</fullName>
+                <default>false</default>
+                <label>אשפוז</label>
+            </value>
+            <value>
+                <fullName>אשפוז אשדוד</fullName>
+                <default>false</default>
+                <label>אשפוז אשדוד</label>
+            </value>
+            <value>
+                <fullName>אשפוז אשדוד כלניות</fullName>
+                <default>false</default>
+                <label>אשפוז אשדוד כלניות</label>
+            </value>
+            <value>
+                <fullName>אשפוז באר שבע</fullName>
+                <default>false</default>
+                <label>אשפוז באר שבע</label>
+            </value>
+            <value>
+                <fullName>אשפוז חיפה</fullName>
+                <default>false</default>
+                <label>אשפוז חיפה</label>
+            </value>
+            <value>
+                <fullName>אשפוז יום כירורגי</fullName>
+                <default>false</default>
+                <label>אשפוז יום כירורגי</label>
+            </value>
+            <value>
+                <fullName>אשפוז יום כירורגי ילדים</fullName>
+                <default>false</default>
+                <label>אשפוז יום כירורגי ילדים</label>
+            </value>
+            <value>
+                <fullName>אשפוז ראשל&quot;צ</fullName>
+                <default>false</default>
+                <label>אשפוז ראשל&quot;צ</label>
+            </value>
+            <value>
+                <fullName>בטחון</fullName>
+                <default>false</default>
+                <label>בטחון</label>
+            </value>
+            <value>
+                <fullName>ביניים- לב</fullName>
+                <default>false</default>
+                <label>ביניים- לב</label>
+            </value>
+            <value>
+                <fullName>בירור מהיר</fullName>
+                <default>false</default>
+                <label>בירור מהיר</label>
+            </value>
+            <value>
+                <fullName>בית כנסת</fullName>
+                <default>false</default>
+                <label>בית כנסת</label>
+            </value>
+            <value>
+                <fullName>בית מרקחת</fullName>
+                <default>false</default>
+                <label>בית מרקחת</label>
+            </value>
+            <value>
+                <fullName>בנק הדם</fullName>
+                <default>false</default>
+                <label>בנק הדם</label>
+            </value>
+            <value>
+                <fullName>בנק הזרע</fullName>
+                <default>false</default>
+                <label>בנק הזרע</label>
+            </value>
+            <value>
+                <fullName>בנקוביץ</fullName>
+                <default>false</default>
+                <label>בנקוביץ</label>
+            </value>
+            <value>
+                <fullName>ברונכוסקופיה</fullName>
+                <default>false</default>
+                <label>ברונכוסקופיה</label>
+            </value>
+            <value>
+                <fullName>בריאות האישה</fullName>
+                <default>false</default>
+                <label>בריאות האישה</label>
+            </value>
+            <value>
+                <fullName>בריאטריה</fullName>
+                <default>false</default>
+                <label>בריאטריה</label>
+            </value>
+            <value>
+                <fullName>גסטרו</fullName>
+                <default>false</default>
+                <label>גסטרו</label>
+            </value>
+            <value>
+                <fullName>דבי רונן/דקל</fullName>
+                <default>false</default>
+                <label>דבי רונן/דקל</label>
+            </value>
+            <value>
+                <fullName>דיאליזה</fullName>
+                <default>false</default>
+                <label>דיאליזה</label>
+            </value>
+            <value>
+                <fullName>דיגיטל</fullName>
+                <default>false</default>
+                <label>דיגיטל</label>
+            </value>
+            <value>
+                <fullName>דימות</fullName>
+                <default>false</default>
+                <label>דימות</label>
+            </value>
+            <value>
+                <fullName>הילה  - קרדיוטים</fullName>
+                <default>false</default>
+                <label>הילה  - קרדיוטים</label>
+            </value>
+            <value>
+                <fullName>המטולוגיה</fullName>
+                <default>false</default>
+                <label>המטולוגיה</label>
+            </value>
+            <value>
+                <fullName>המתנת משפחות</fullName>
+                <default>false</default>
+                <label>המתנת משפחות</label>
+            </value>
+            <value>
+                <fullName>הנהלה</fullName>
+                <default>false</default>
+                <label>הנהלה</label>
+            </value>
+            <value>
+                <fullName>הפסקת הריון</fullName>
+                <default>false</default>
+                <label>הפסקת הריון</label>
+            </value>
+            <value>
+                <fullName>הריון בסיכון גבוה</fullName>
+                <default>false</default>
+                <label>הריון בסיכון גבוה</label>
+            </value>
+            <value>
+                <fullName>התאוששות</fullName>
+                <default>false</default>
+                <label>התאוששות</label>
+            </value>
+            <value>
+                <fullName>התאוששות אמבולטורית</fullName>
+                <default>false</default>
+                <label>התאוששות אמבולטורית</label>
+            </value>
+            <value>
+                <fullName>חדר אוכל</fullName>
+                <default>false</default>
+                <label>חדר אוכל</label>
+            </value>
+            <value>
+                <fullName>חדרי לידה</fullName>
+                <default>false</default>
+                <label>חדרי לידה</label>
+            </value>
+            <value>
+                <fullName>חדר ניתוח</fullName>
+                <default>false</default>
+                <label>חדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>חדר ניתוח אשדוד</fullName>
+                <default>false</default>
+                <label>חדר ניתוח אשדוד</label>
+            </value>
+            <value>
+                <fullName>חדר ניתוח ב&quot;ש</fullName>
+                <default>false</default>
+                <label>חדר ניתוח ב&quot;ש</label>
+            </value>
+            <value>
+                <fullName>חדר ניתוח חיפה</fullName>
+                <default>false</default>
+                <label>חדר ניתוח חיפה</label>
+            </value>
+            <value>
+                <fullName>חדר ניתוח ראשל&quot;צ</fullName>
+                <default>false</default>
+                <label>חדר ניתוח ראשל&quot;צ</label>
+            </value>
+            <value>
+                <fullName>חדר נפטרים</fullName>
+                <default>false</default>
+                <label>חדר נפטרים</label>
+            </value>
+            <value>
+                <fullName>חנויות ושירותי הסעדה</fullName>
+                <default>false</default>
+                <label>חנויות ושירותי הסעדה</label>
+            </value>
+            <value>
+                <fullName>חניון</fullName>
+                <default>false</default>
+                <label>חניון</label>
+            </value>
+            <value>
+                <fullName>טיפול נמרץ ביילוד</fullName>
+                <default>false</default>
+                <label>טיפול נמרץ ביילוד</label>
+            </value>
+            <value>
+                <fullName>טיפול נמרץ ילדים</fullName>
+                <default>false</default>
+                <label>טיפול נמרץ ילדים</label>
+            </value>
+            <value>
+                <fullName>טיפול נמרץ כללי</fullName>
+                <default>false</default>
+                <label>טיפול נמרץ כללי</label>
+            </value>
+            <value>
+                <fullName>טיפול נמרץ לב</fullName>
+                <default>false</default>
+                <label>טיפול נמרץ לב</label>
+            </value>
+            <value>
+                <fullName>טראומה</fullName>
+                <default>false</default>
+                <label>טראומה</label>
+            </value>
+            <value>
+                <fullName>טרום ניתוח</fullName>
+                <default>false</default>
+                <label>טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>טריאז&apos;</fullName>
+                <default>false</default>
+                <label>טריאז&apos;</label>
+            </value>
+            <value>
+                <fullName>יד שרה</fullName>
+                <default>false</default>
+                <label>יד שרה</label>
+            </value>
+            <value>
+                <fullName>יולדות</fullName>
+                <default>false</default>
+                <label>יולדות</label>
+            </value>
+            <value>
+                <fullName>יוסיפוביץ</fullName>
+                <default>false</default>
+                <label>יוסיפוביץ</label>
+            </value>
+            <value>
+                <fullName>ילדים - הכנה לניתוח</fullName>
+                <default>false</default>
+                <label>ילדים - הכנה לניתוח</label>
+            </value>
+            <value>
+                <fullName>ילדים - התאוששות</fullName>
+                <default>false</default>
+                <label>ילדים - התאוששות</label>
+            </value>
+            <value>
+                <fullName>ילודים</fullName>
+                <default>false</default>
+                <label>ילודים</label>
+            </value>
+            <value>
+                <fullName>יקר (ר&quot;מ 2)</fullName>
+                <default>false</default>
+                <label>יקר (ר&quot;מ 2)</label>
+            </value>
+            <value>
+                <fullName>כאב</fullName>
+                <default>false</default>
+                <label>כאב</label>
+            </value>
+            <value>
+                <fullName>כאב מתקדם</fullName>
+                <default>false</default>
+                <label>כאב מתקדם</label>
+            </value>
+            <value>
+                <fullName>כירורגיה כללית</fullName>
+                <default>false</default>
+                <label>כירורגיה כללית</label>
+            </value>
+            <value>
+                <fullName>כירורגיה מתקדמת</fullName>
+                <default>false</default>
+                <label>כירורגיה מתקדמת</label>
+            </value>
+            <value>
+                <fullName>כירורגיה פלסטית</fullName>
+                <default>false</default>
+                <label>כירורגיה פלסטית</label>
+            </value>
+            <value>
+                <fullName>כירורגיית ילדים</fullName>
+                <default>false</default>
+                <label>כירורגיית ילדים</label>
+            </value>
+            <value>
+                <fullName>כירורגיית כלי דם</fullName>
+                <default>false</default>
+                <label>כירורגיית כלי דם</label>
+            </value>
+            <value>
+                <fullName>כירורגית שד</fullName>
+                <default>false</default>
+                <label>כירורגית שד</label>
+            </value>
+            <value>
+                <fullName>כללי</fullName>
+                <default>false</default>
+                <label>כללי</label>
+            </value>
+            <value>
+                <fullName>כספים</fullName>
+                <default>false</default>
+                <label>כספים</label>
+            </value>
+            <value>
+                <fullName>לב ביניים</fullName>
+                <default>false</default>
+                <label>לב ביניים</label>
+            </value>
+            <value>
+                <fullName>לב חזה</fullName>
+                <default>false</default>
+                <label>לב חזה</label>
+            </value>
+            <value>
+                <fullName>לשכת מנכל</fullName>
+                <default>false</default>
+                <label>לשכת מנכל</label>
+            </value>
+            <value>
+                <fullName>מודיעין</fullName>
+                <default>false</default>
+                <label>מודיעין</label>
+            </value>
+            <value>
+                <fullName>מוז</fullName>
+                <default>false</default>
+                <label>מוז</label>
+            </value>
+            <value>
+                <fullName>מוזס</fullName>
+                <default>false</default>
+                <label>מוזס</label>
+            </value>
+            <value>
+                <fullName>מומחים</fullName>
+                <default>false</default>
+                <label>מומחים</label>
+            </value>
+            <value>
+                <fullName>מוניטור</fullName>
+                <default>false</default>
+                <label>מוניטור</label>
+            </value>
+            <value>
+                <fullName>מוקד 360 (יד ביד)</fullName>
+                <default>false</default>
+                <label>מוקד 360 (יד ביד)</label>
+            </value>
+            <value>
+                <fullName>מוקד זימון תורים</fullName>
+                <default>false</default>
+                <label>מוקד זימון תורים</label>
+            </value>
+            <value>
+                <fullName>מוקד מומחים</fullName>
+                <default>false</default>
+                <label>מוקד מומחים</label>
+            </value>
+            <value>
+                <fullName>מוקד ניתוחים</fullName>
+                <default>false</default>
+                <label>מוקד ניתוחים</label>
+            </value>
+            <value>
+                <fullName>מחלקה משפטית</fullName>
+                <default>false</default>
+                <label>מחלקה משפטית</label>
+            </value>
+            <value>
+                <fullName>מחלקת הרדמה</fullName>
+                <default>false</default>
+                <label>מחלקת הרדמה</label>
+            </value>
+            <value>
+                <fullName>מחלקת ילדים</fullName>
+                <default>false</default>
+                <label>מחלקת ילדים</label>
+            </value>
+            <value>
+                <fullName>מיון א.א.ג.</fullName>
+                <default>false</default>
+                <label>מיון א.א.ג.</label>
+            </value>
+            <value>
+                <fullName>מיון אורתופדי</fullName>
+                <default>false</default>
+                <label>מיון אורתופדי</label>
+            </value>
+            <value>
+                <fullName>מיון אף אוזן גרון</fullName>
+                <default>false</default>
+                <label>מיון אף אוזן גרון</label>
+            </value>
+            <value>
+                <fullName>מיון יולדות</fullName>
+                <default>false</default>
+                <label>מיון יולדות</label>
+            </value>
+            <value>
+                <fullName>מיון ילדים</fullName>
+                <default>false</default>
+                <label>מיון ילדים</label>
+            </value>
+            <value>
+                <fullName>מיון מהלכים</fullName>
+                <default>false</default>
+                <label>מיון מהלכים</label>
+            </value>
+            <value>
+                <fullName>מיון נשים</fullName>
+                <default>false</default>
+                <label>מיון נשים</label>
+            </value>
+            <value>
+                <fullName>מיון עיניים</fullName>
+                <default>false</default>
+                <label>מיון עיניים</label>
+            </value>
+            <value>
+                <fullName>מיון שוכבים</fullName>
+                <default>false</default>
+                <label>מיון שוכבים</label>
+            </value>
+            <value>
+                <fullName>מי שפיר</fullName>
+                <default>false</default>
+                <label>מי שפיר</label>
+            </value>
+            <value>
+                <fullName>מכבידנט</fullName>
+                <default>false</default>
+                <label>מכבידנט</label>
+            </value>
+            <value>
+                <fullName>מכבידנט חיפה</fullName>
+                <default>false</default>
+                <label>מכבידנט חיפה</label>
+            </value>
+            <value>
+                <fullName>מכבידנט רמת החייל</fullName>
+                <default>false</default>
+                <label>מכבידנט רמת החייל</label>
+            </value>
+            <value>
+                <fullName>מכון אונקולוגיה</fullName>
+                <default>false</default>
+                <label>מכון אונקולוגיה</label>
+            </value>
+            <value>
+                <fullName>מכון בריאות האישה</fullName>
+                <default>false</default>
+                <label>מכון בריאות האישה</label>
+            </value>
+            <value>
+                <fullName>מכון בריאות השד</fullName>
+                <default>false</default>
+                <label>מכון בריאות השד</label>
+            </value>
+            <value>
+                <fullName>מכון גסטרואנטרולוגיה</fullName>
+                <default>false</default>
+                <label>מכון גסטרואנטרולוגיה</label>
+            </value>
+            <value>
+                <fullName>מכון דימות</fullName>
+                <default>false</default>
+                <label>מכון דימות</label>
+            </value>
+            <value>
+                <fullName>מכון הלב</fullName>
+                <default>false</default>
+                <label>מכון הלב</label>
+            </value>
+            <value>
+                <fullName>מכון נפרולוגיה</fullName>
+                <default>false</default>
+                <label>מכון נפרולוגיה</label>
+            </value>
+            <value>
+                <fullName>מכון עיניים</fullName>
+                <default>false</default>
+                <label>מכון עיניים</label>
+            </value>
+            <value>
+                <fullName>מכון פתולוגיה</fullName>
+                <default>false</default>
+                <label>מכון פתולוגיה</label>
+            </value>
+            <value>
+                <fullName>מכון ריאות</fullName>
+                <default>false</default>
+                <label>מכון ריאות</label>
+            </value>
+            <value>
+                <fullName>מכון שמיעה</fullName>
+                <default>false</default>
+                <label>מכון שמיעה</label>
+            </value>
+            <value>
+                <fullName>מלנומה - דניאל זלובינסקי</fullName>
+                <default>false</default>
+                <label>מלנומה - דניאל זלובינסקי</label>
+            </value>
+            <value>
+                <fullName>מעבדה</fullName>
+                <default>false</default>
+                <label>מעבדה</label>
+            </value>
+            <value>
+                <fullName>מעבדת זרע</fullName>
+                <default>false</default>
+                <label>מעבדת זרע</label>
+            </value>
+            <value>
+                <fullName>מערכות מידע</fullName>
+                <default>false</default>
+                <label>מערכות מידע</label>
+            </value>
+            <value>
+                <fullName>מרפאה אורולוגית</fullName>
+                <default>false</default>
+                <label>מרפאה אורולוגית</label>
+            </value>
+            <value>
+                <fullName>מרפאה אורתופדית</fullName>
+                <default>false</default>
+                <label>מרפאה אורתופדית</label>
+            </value>
+            <value>
+                <fullName>מרפאה- בריאות האישה</fullName>
+                <default>false</default>
+                <label>מרפאה- בריאות האישה</label>
+            </value>
+            <value>
+                <fullName>מרפאה כירורגית</fullName>
+                <default>false</default>
+                <label>מרפאה כירורגית</label>
+            </value>
+            <value>
+                <fullName>מרפאות חוץ</fullName>
+                <default>false</default>
+                <label>מרפאות חוץ</label>
+            </value>
+            <value>
+                <fullName>מרפאות פנימיות</fullName>
+                <default>false</default>
+                <label>מרפאות פנימיות</label>
+            </value>
+            <value>
+                <fullName>מרפאות רופאים באר שבע</fullName>
+                <default>false</default>
+                <label>מרפאות רופאים באר שבע</label>
+            </value>
+            <value>
+                <fullName>מרפאות רופאים חיפה</fullName>
+                <default>false</default>
+                <label>מרפאות רופאים חיפה</label>
+            </value>
+            <value>
+                <fullName>מרפאות רופאים כלניות</fullName>
+                <default>false</default>
+                <label>מרפאות רופאים כלניות</label>
+            </value>
+            <value>
+                <fullName>מרפאות רופאים ראשון</fullName>
+                <default>false</default>
+                <label>מרפאות רופאים ראשון</label>
+            </value>
+            <value>
+                <fullName>מרפאות רופאים רמת החייל</fullName>
+                <default>false</default>
+                <label>מרפאות רופאים רמת החייל</label>
+            </value>
+            <value>
+                <fullName>מרפאת אף אוזן גרון</fullName>
+                <default>false</default>
+                <label>מרפאת אף אוזן גרון</label>
+            </value>
+            <value>
+                <fullName>מרפאת טרום ניתוח</fullName>
+                <default>false</default>
+                <label>מרפאת טרום ניתוח</label>
+            </value>
+            <value>
+                <fullName>מרפאת ילדים</fullName>
+                <default>false</default>
+                <label>מרפאת ילדים</label>
+            </value>
+            <value>
+                <fullName>מרפאת כאב</fullName>
+                <default>false</default>
+                <label>מרפאת כאב</label>
+            </value>
+            <value>
+                <fullName>משאבי אנוש</fullName>
+                <default>false</default>
+                <label>משאבי אנוש</label>
+            </value>
+            <value>
+                <fullName>משרדי קופות חולים</fullName>
+                <default>false</default>
+                <label>משרדי קופות חולים</label>
+            </value>
+            <value>
+                <fullName>נוירוגרף</fullName>
+                <default>false</default>
+                <label>נוירוגרף</label>
+            </value>
+            <value>
+                <fullName>נוירולוגיה</fullName>
+                <default>false</default>
+                <label>נוירולוגיה</label>
+            </value>
+            <value>
+                <fullName>ניהול סיכונים</fullName>
+                <default>false</default>
+                <label>ניהול סיכונים</label>
+            </value>
+            <value>
+                <fullName>ניקיון</fullName>
+                <default>false</default>
+                <label>ניקיון</label>
+            </value>
+            <value>
+                <fullName>נשים</fullName>
+                <default>false</default>
+                <label>נשים</label>
+            </value>
+            <value>
+                <fullName>סרגי&apos;קר - פרופ קשטן</fullName>
+                <default>false</default>
+                <label>סרגי&apos;קר - פרופ קשטן</label>
+            </value>
+            <value>
+                <fullName>עיניים</fullName>
+                <default>false</default>
+                <label>עיניים</label>
+            </value>
+            <value>
+                <fullName>עיניים ילדים</fullName>
+                <default>false</default>
+                <label>עיניים ילדים</label>
+            </value>
+            <value>
+                <fullName>עמדת משטרה</fullName>
+                <default>false</default>
+                <label>עמדת משטרה</label>
+            </value>
+            <value>
+                <fullName>פגיה</fullName>
+                <default>false</default>
+                <label>פגיה</label>
+            </value>
+            <value>
+                <fullName>פוטותרפיה</fullName>
+                <default>false</default>
+                <label>פוטותרפיה</label>
+            </value>
+            <value>
+                <fullName>פיזיותרפיה</fullName>
+                <default>false</default>
+                <label>פיזיותרפיה</label>
+            </value>
+            <value>
+                <fullName>פלומן - מרכז לניתוח עמוד שידרה</fullName>
+                <default>false</default>
+                <label>פלומן - מרכז לניתוח עמוד שידרה</label>
+            </value>
+            <value>
+                <fullName>פניות הציבור</fullName>
+                <default>false</default>
+                <label>פניות הציבור</label>
+            </value>
+            <value>
+                <fullName>פנימית/ המטולוגית</fullName>
+                <default>false</default>
+                <label>פנימית/ המטולוגית</label>
+            </value>
+            <value>
+                <fullName>פנימית א&apos;</fullName>
+                <default>false</default>
+                <label>פנימית א&apos;</label>
+            </value>
+            <value>
+                <fullName>פנימית א&apos;-2</fullName>
+                <default>false</default>
+                <label>פנימית א&apos;-2</label>
+            </value>
+            <value>
+                <fullName>פנימית ב&apos;</fullName>
+                <default>false</default>
+                <label>פנימית ב&apos;</label>
+            </value>
+            <value>
+                <fullName>פנימית ה</fullName>
+                <default>false</default>
+                <label>פנימית ה</label>
+            </value>
+            <value>
+                <fullName>פתולוגיה</fullName>
+                <default>false</default>
+                <label>פתולוגיה</label>
+            </value>
+            <value>
+                <fullName>צוואר רחם</fullName>
+                <default>false</default>
+                <label>צוואר רחם</label>
+            </value>
+            <value>
+                <fullName>ציטולוגיה</fullName>
+                <default>false</default>
+                <label>ציטולוגיה</label>
+            </value>
+            <value>
+                <fullName>ציסטוסקופיה</fullName>
+                <default>false</default>
+                <label>ציסטוסקופיה</label>
+            </value>
+            <value>
+                <fullName>צנתורים</fullName>
+                <default>false</default>
+                <label>צנתורים</label>
+            </value>
+            <value>
+                <fullName>קבלה אדמיניסטרטיבית</fullName>
+                <default>false</default>
+                <label>קבלה אדמיניסטרטיבית</label>
+            </value>
+            <value>
+                <fullName>קבלה- אשפוז יום</fullName>
+                <default>false</default>
+                <label>קבלה- אשפוז יום</label>
+            </value>
+            <value>
+                <fullName>קבלה לחדר ניתוח</fullName>
+                <default>false</default>
+                <label>קבלה לחדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>קרדיוהיל- פרופ רענני</fullName>
+                <default>false</default>
+                <label>קרדיוהיל- פרופ רענני</label>
+            </value>
+            <value>
+                <fullName>קרדיו- טים</fullName>
+                <default>false</default>
+                <label>קרדיו- טים</label>
+            </value>
+            <value>
+                <fullName>קרדיולוגיה</fullName>
+                <default>false</default>
+                <label>קרדיולוגיה</label>
+            </value>
+            <value>
+                <fullName>רדיותרפיה</fullName>
+                <default>false</default>
+                <label>רדיותרפיה</label>
+            </value>
+            <value>
+                <fullName>רופא מנתח</fullName>
+                <default>false</default>
+                <label>רופא מנתח</label>
+            </value>
+            <value>
+                <fullName>ריפוי בעיסוק</fullName>
+                <default>false</default>
+                <label>ריפוי בעיסוק</label>
+            </value>
+            <value>
+                <fullName>רפואה דחופה (מיון)</fullName>
+                <default>false</default>
+                <label>רפואה דחופה (מיון)</label>
+            </value>
+            <value>
+                <fullName>רשומות רפואיות</fullName>
+                <default>false</default>
+                <label>רשומות רפואיות</label>
+            </value>
+            <value>
+                <fullName>שטחים ציבוריים</fullName>
+                <default>false</default>
+                <label>שטחים ציבוריים</label>
+            </value>
+            <value>
+                <fullName>שיווק</fullName>
+                <default>false</default>
+                <label>שיווק</label>
+            </value>
+            <value>
+                <fullName>שינה</fullName>
+                <default>false</default>
+                <label>שינה</label>
+            </value>
+            <value>
+                <fullName>תיירות מרפא</fullName>
+                <default>false</default>
+                <label>תיירות מרפא</label>
+            </value>
+            <value>
+                <fullName>תפעול/לוגיסטיקה</fullName>
+                <default>false</default>
+                <label>תפעול/לוגיסטיקה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

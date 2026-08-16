@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assuta_doctor__c</fullName>
+    <description>Return true if the record created by SSIS or Ensemble user</description>
+    <formula>OR(CreatedBy.Id = &quot;0054J000002Q8am&quot;, CreatedBy.Id = &quot;0054J000004QaYN&quot;)</formula>
+    <label>Assuta Doctor</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

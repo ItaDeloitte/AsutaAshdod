@@ -1,0 +1,159 @@
+<!--
+ - Created by daniilvinnik on 28.09.2022.
+ -->
+
+<aura:component description="RecordActionButton"
+                extends="c:BaseComponent"
+                implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                access="global">
+
+    <aura:attribute name="obtainData" type="List"/>
+    <aura:attribute name="sObjectType" type="String"/>
+    <aura:attribute name="isPaymentButtonEnabled" type="Boolean" default="true"/>
+    <aura:attribute name="recordId" type="String" default=""/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler event="force:refreshView" action="{!c.onRefresh}" />
+    <div>
+        <div class="">
+            <lightning:overlayLibrary aura:id="overlayLib"/>
+            <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+            <c:globalService aura:id="globalServiceNew"></c:globalService>
+            <div class="buttons-wrapper">
+                <aura:iteration items="{!v.obtainData}" var="item">
+                    <aura:if isTrue="{!item.value == 'linkToCaseAction'}">
+                        <span class="single-btn-wrapper">
+                            <lightning:button label="{!item.label}" variant="neutral" onclick="{!c.onShowLinkToCaseActionModal}"/>
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'sendOTPMethod'}">
+                        <span class="single-btn-wrapper">
+                            <lightning:button label="{!item.label}" variant="neutral" onclick="{!c.onSendOTP}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'sendLinkForReferral'}">
+                        <span class="single-btn-wrapper">
+                            <c:sendLinkForReferral caseId="{!v.recordId}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'transferToManagerMethod'}">
+                        <span class="single-btn-wrapper">
+                            <c:GetCaseApproval recordId="{!v.recordId}" label="{!item.label}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'DocExpertShowButton'}">
+                        <span class="single-btn-wrapper">
+                            <c:DocExpertShowButton recordId="{!v.recordId}"
+                                                   mode="{!item.mode}"
+                                                   nextLabel="{!item.label}"
+                                                   updateLabel="{!item.label}"
+                                                   cancelLabel="{!item.label}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'AppoitmentsShowButton'}">
+                        <span class="single-btn-wrapper">
+                            <c:AppoitmentsShowButton recordId="{!v.recordId}" mode="{!item.mode}"
+                                                     sobjectType="{!v.sObjectType}"
+                                                     screenMode="{!item.screenMode}"
+                                                     nextLabel="{!item.label}"
+                                                     updateLabel="{!item.label}"
+                                                     cancelLabel="{!item.label}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'AppointmentDisabilitiesModal'}">
+                        <span class="single-btn-wrapper">
+                            <lightning:button variant="neutral" onclick="{!c.onShowDisabilityModal}">{!item.label}
+                            </lightning:button>
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'AutoCreateAppointmentButton'}">
+                        <c:AutoCreateAppointmentButton recordId="{!v.recordId}"
+                                                       nextLabel="{!item.label}" />
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'uploadFilesToClinicMethod'}">
+                        <span class="single-btn-wrapper">
+                            <lightning:button label="{!item.label}" variant="neutral"
+                                              onclick="{!c.onUploadFilesToClinic}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'convertMethod'}">
+                        <span class="single-btn-wrapper">
+                            <lightning:button label="{!item.label}" variant="neutral"
+                                              onclick="{!c.onConverClick}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'ivfCaseModal'}">
+                        <span class="single-btn-wrapper">
+                            <c:ivfCaseModal aura:id="modal" recordId="{!v.recordId}"></c:ivfCaseModal>
+                            <lightning:button variant="neutral" onclick="{!c.onShowIVFModal}">{!item.label}
+                            </lightning:button>
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'portalMaccabiButton'}">
+                        <span class="single-btn-wrapper">
+                            <c:portalMaccabiButton recordId="{!v.recordId}"/>
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'checkAccountFutureAppointmentButton'}">
+                        <span class="single-btn-wrapper">
+                            <c:checkAccountFutureAppointmentButton recordId="{!v.recordId}">
+                            </c:checkAccountFutureAppointmentButton>
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'hithaivuyotMaccabi'}">
+                        <span class="single-btn-wrapper">
+                            <c:hithaivuyotMaccabi appointmentId="{!v.recordId}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'getAmbulatoryCommitment'}">
+                        <span class="single-btn-wrapper">
+                            <c:getAmbulatoryCommitment appointmentId="{!v.recordId}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'createReferralManually'}">
+                        <span class="single-btn-wrapper">
+                            <c:createReferralManually appointmentId="{!v.recordId}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'urgentAppointmentButton'}">
+                        <span class="single-btn-wrapper">
+                            <c:urgentAppointmentButton appointmentId="{!v.recordId}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'getPricesFromAppointment'}">
+                        <span class="single-btn-wrapper">
+                            <c:getPricesFromAppointment appointmentId="{!v.recordId}" />
+                        </span>
+                    </aura:if>
+
+                    <aura:if isTrue="{!item.value == 'paymentValidationModal'}">
+                        <span class="single-btn-wrapper">
+                            <c:paymentValidationModal aura:id="modal" appointmentId="{!v.recordId}"></c:paymentValidationModal>
+                            <lightning:button variant="neutral" disabled="{!!v.isPaymentButtonEnabled}" onclick="{!c.onShowIVFModal}">
+                                {!item.label}
+                            </lightning:button>
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'UpdateAppointmentButton'}">
+                        <span class="single-btn-wrapper">
+                            <c:UpdateAppointmentButton updateLabel="{!item.label}" recordId="{!v.recordId}"
+                                                       sobjectType="{!v.sObjectType}"
+                                                       screenMode="{!item.screenMode}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'sendQuestionnaireLinkModal'}">
+                        <span class="single-btn-wrapper">
+                            <lightning:button label="{!item.label}" variant="neutral"
+                                              onclick="{!c.onShowSendQuestionnaireLinkModal}" />
+                        </span>
+                    </aura:if>
+                    <aura:if isTrue="{!item.value == 'C30_SubmitForcedAppointmentModal'}">
+                        <span class="single-btn-wrapper">
+                            <lightning:button label="{!item.label}" variant="neutral" onclick="{!c.onShowForcedAppointment}" />
+                        </span>
+                    </aura:if>
+                </aura:iteration>
+            </div>
+        </div>
+    </div>
+</aura:component>

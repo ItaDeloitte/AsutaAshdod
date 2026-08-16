@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>choose_calendar_or_doctor_for_experts</fullName>
+    <active>true</active>
+    <description>בפגישת ייעוץ יש לבחור רופא או יומן רופא</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+RecordType.DeveloperName = &quot;Experts&quot; &amp;&amp;
+ ISBLANK(Calendar__c ) &amp;&amp;
+ ISBLANK( Doctor_Account__c )</errorConditionFormula>
+    <errorMessage>עבור פגישת ייעוץ יש למלא רופא או יומן רופא</errorMessage>
+</ValidationRule>

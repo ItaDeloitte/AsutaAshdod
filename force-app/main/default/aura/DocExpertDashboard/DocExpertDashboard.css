@@ -1,0 +1,96 @@
+.THIS.dashboard-modal .modal-container,
+.THIS.dashboard-modal .slds-modal__container {
+  margin: 0 auto;
+  width: 98%;
+  max-width: none;
+  min-width: 20rem;
+  padding: 2.5rem 0 3.5rem 0;
+}
+
+.THIS.dashboard-modal .modal-body,
+.THIS.dashboard-modal .slds-modal__content {
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.THIS:not(.dashboard-modal) {
+  height: 100%;
+}
+
+.THIS .main-wrapper {
+  height: 100%;
+  padding: 10px;
+}
+
+.THIS .sidebar-col {
+  width: 250px;
+  background-color: #f3f5f7;
+  height: 100%;
+  min-height: 1px;
+}
+
+.THIS .content-col {
+  min-width: 1px;
+}
+
+.THIS .sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f5f7;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.THIS .error-alert {
+  max-height: 125px;
+  overflow: auto;
+}
+
+.THIS .slds-form-element__label {
+  font-weight: 700;
+}
+
+.THIS .edit-autocomplete .slds-listbox__item {
+  border-bottom: 1px solid #ccc;
+}
+
+.THIS .edit-autocomplete .slds-listbox__item:last-of-type {
+  border-bottom: none;
+}
+
+.THIS .docs-content {
+  height: 100%;
+}
+
+.THIS .docs-content__inner {
+  min-height: 100%;
+}
+
+.THIS .doctor-slide {
+  padding: 5px;
+}
+
+.THIS .submit-btn {
+  min-width: 150px;
+  margin-bottom: 5px;
+}
+
+.THIS c-lookup-input .slds-listbox {
+  max-width: 100%;
+}
+
+.THIS c-lookup-input .slds-pill .slds-pill__label {
+  white-space: normal;
+  word-break: break-all;
+}
+
+.THIS c-lookup-input .lookup-help {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.THIS c-lookup-input .lookup-help .slds-form-element__icon {
+  padding: 0;
+}

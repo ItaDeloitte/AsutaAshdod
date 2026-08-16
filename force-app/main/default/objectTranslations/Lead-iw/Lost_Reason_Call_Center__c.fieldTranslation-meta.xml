@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבת הפסד</label>
+    <name>Lost_Reason_Call_Center__c</name>
+    <picklistValues>
+        <masterLabel>Doctor not coordinated through assuta</masterLabel>
+        <translation>רופא שלא מתואם דרכנו</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate</masterLabel>
+        <translation>כפילות</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General service information</masterLabel>
+        <translation>מידע על שירות כללי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inquiry forwarded to department</masterLabel>
+        <translation>הועברה פנייה למחלקה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Answer</masterLabel>
+        <translation>ללא תשובה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Interested</masterLabel>
+        <translation>לא מעוניין</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient contacted HMO</masterLabel>
+        <translation>פנה לקופה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service not available</masterLabel>
+        <translation>שירות לא קיים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Update existing appointment</masterLabel>
+        <translation>עדכון תור קיים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Call</masterLabel>
+        <translation>שיחה טועה (זימון)</translation>
+    </picklistValues>
+</CustomFieldTranslation>

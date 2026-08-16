@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Age Limit --></label>
+    <name>Age_Limit__c</name>
+    <picklistValues>
+        <masterLabel>18 Or More</masterLabel>
+        <translation><!-- 18 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 10 Or More</masterLabel>
+        <translation><!-- Age 10 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 12 Or More</masterLabel>
+        <translation><!-- Age 12 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 14 Or More</masterLabel>
+        <translation><!-- Age 14 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 15 Or More</masterLabel>
+        <translation><!-- Age 15 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 16 Or More</masterLabel>
+        <translation><!-- Age 16 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 17 Or More</masterLabel>
+        <translation><!-- Age 17 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 2 Or More</masterLabel>
+        <translation><!-- Age 2 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 20 Or More</masterLabel>
+        <translation><!-- Age 20 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 3 Or More</masterLabel>
+        <translation><!-- Age 3 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 30 Or More</masterLabel>
+        <translation><!-- Age 30 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 4 Or More</masterLabel>
+        <translation><!-- Age 4 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 40 Or More</masterLabel>
+        <translation><!-- Age 40 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 45 Or More</masterLabel>
+        <translation><!-- Age 45 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 5 Or More</masterLabel>
+        <translation><!-- Age 5 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 50 Or More</masterLabel>
+        <translation><!-- Age 50 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 6 Or More</masterLabel>
+        <translation><!-- Age 6 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 7 Or More</masterLabel>
+        <translation><!-- Age 7 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 8 Or More</masterLabel>
+        <translation><!-- Age 8 Or More --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Limit</masterLabel>
+        <translation><!-- No Limit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Up To 18</masterLabel>
+        <translation><!-- Up To 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Up To 19</masterLabel>
+        <translation><!-- Up To 19 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

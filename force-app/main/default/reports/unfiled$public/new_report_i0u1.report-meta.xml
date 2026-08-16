@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>u2</joinTable>
+        </blockInfo>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <columns>
+            <field>Appointment__c.IDNumber__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>CUST_NAME</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>contains</operator>
+                <value>אנדוקרינולוגיה מבוגרים</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Appointment__c.Appointment_Date_Time__c</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>greaterOrEqual</operator>
+                <value>11/4/2025 12:00 AM</value>
+            </criteriaItems>
+        </filter>
+        <format>Tabular</format>
+        <name>פגישות בלוק 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntity$Appointment__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>Appointment__c.x10DayReminder__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>u2</joinTable>
+        </blockInfo>
+        <columns>
+            <field>FIRST_NAME</field>
+        </columns>
+        <columns>
+            <field>LAST_NAME</field>
+        </columns>
+        <columns>
+            <field>BIRTHDATE</field>
+        </columns>
+        <format>Tabular</format>
+        <name>אנשי קשר חשבונות בלוק 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>ContactList</reportType>
+        <scope>my</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+            <startDate>2025-10-28</startDate>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>u2</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <name>עותק של אנדוקרינולוג מבוגרים</name>
+    <params>
+        <name>lsk</name>
+        <value>51</value>
+    </params>
+    <reportType>CustomEntity$Appointment__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

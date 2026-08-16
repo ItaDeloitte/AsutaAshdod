@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>חדש</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>עדכון</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>ביטול</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>ש.סדר</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>המתנה</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>אושר</label>
+    </customValue>
+    <customValue>
+        <fullName>טרם זומן</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>טרם זומן</label>
+    </customValue>
+    <masterLabel>Status spincal &amp; website</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>האם יש התחייבות פיקטיבית</label>
+    <name>Status_quick_reception__c</name>
+    <picklistValues>
+        <masterLabel>אין</masterLabel>
+        <translation><!-- אין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יש</masterLabel>
+        <translation><!-- יש --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

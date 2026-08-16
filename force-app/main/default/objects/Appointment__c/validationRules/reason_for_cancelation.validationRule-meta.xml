@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>reason_for_cancelation</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+ispickval( Canceled_Reason__c ,&quot;18&quot;) &amp;&amp; ( ISBLANK( reason__c ))&amp;&amp; (RecordType.DeveloperName &lt;&gt;&apos;Surgeries&apos;)</errorConditionFormula>
+    <errorMessage>אנא פרט מהי סיבת הביטול</errorMessage>
+</ValidationRule>

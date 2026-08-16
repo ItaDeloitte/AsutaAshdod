@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>מצא את הסוכן האחרון שטיפל בשיחה</description>
+    <environments>Default</environments>
+    <interviewLabel>Get the last owner {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Get the last owner</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Get_the_last_owner</name>
+        <label>Get the last owner</label>
+        <locationX>505</locationX>
+        <locationY>462</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.New_Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Last_Agent__c</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_the_last_owner</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>ISPICKVAL({!$Record.Status}, &quot;Active&quot;) &amp;&amp; 
+{!$Record.MessagingChannel.DeveloperName} &lt;&gt; &quot;Assuta_Ashdod_Enhanced_Bot&quot; &amp;&amp;
+{!$Record.MessagingChannel.DeveloperName} &lt;&gt; &quot;Assuta_Ashdod_Chat_for_Bot&quot;</filterFormula>
+        <object>MessagingSession</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

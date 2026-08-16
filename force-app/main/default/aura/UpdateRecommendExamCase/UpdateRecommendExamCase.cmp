@@ -1,0 +1,47 @@
+<aura:component extends="c:BaseComponent" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="selectedCaseId" type="String" default="" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-card">
+    <header class="slds-card__header slds-grid">
+      <div class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <lightning:icon iconName="standard:case" size="small" />
+        </div>
+        <div class="slds-media__body slds-truncate">
+          <span class="slds-text-heading_small card-title" title="Change Recommend Exam Case">
+            {!$Label.c.ChangeRecommendExamCase}
+          </span>
+        </div>
+      </div>
+    </header>
+    <div class="slds-card__body">
+      <div class="slds-card__body_inner">
+        <div class="">
+          <c:BaseAutocomplete aura:id="formField" label="{!$Label.c.SelectCase}" value="{!v.selectedCaseId}"
+            onsearch="{!c.onSearch}" oninitsearch="{!c.onSearch}" onchange="{!c.onSubmit}" required="false"
+            placeholder="{!$Label.c.Search}" />
+        </div>
+        <div class="slds-p-top_medium">
+          <aura:if isTrue="{!v.serverError}">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </aura:if>
+        </div>
+      </div>
+      <c:Spinner isLoading="{!v.isLoading}" size="small" />
+    </div>
+  </div>
+</aura:component>

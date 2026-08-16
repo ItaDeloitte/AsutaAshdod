@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Doctor Degree --></label>
+    <name>doctor_degree__c</name>
+    <picklistValues>
+        <masterLabel>גב&apos;</masterLabel>
+        <translation><!-- גב&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ד&quot;ר</masterLabel>
+        <translation><!-- ד&quot;ר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מר</masterLabel>
+        <translation><!-- מר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרופ&apos;</masterLabel>
+        <translation><!-- פרופ&apos; --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

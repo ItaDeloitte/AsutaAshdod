@@ -1,0 +1,40 @@
+<aura:component extensible="true" extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="isOpen" type="Boolean" />
+  <aura:attribute name="class" type="String" />
+  <aura:attribute name="backdropClose" type="Boolean" default="false" />
+  <aura:attribute name="animationClass" type="String" default="slds-fade-in-open" />
+  <aura:attribute name="showCloseButton" type="Boolean" default="true" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="change" value="{!v.isOpen}" action="{!c.onOpenChange}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="onclose" type="c:GenericComponentEvent" />
+
+  <div>
+    <section role="dialog" tabindex="-1" aria-modal="true" class="{!join(' ',
+      'slds-modal',
+      v.class,
+      v.isOpen?v.animationClass:''
+      )}" onclick="{!c.onBackClick}">
+      <div class="slds-modal__container">
+        <div class="modal-dialog">
+          <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+            onclick="{!c.onClose}">
+            <lightning:icon iconName="utility:close" variant="inverse" />
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <div class="focus-input-wrapper">
+            <input type="text" aura:id="focusInput" />
+          </div>
+          <div class=""> {!v.body} </div>
+        </div>
+      </div>
+    </section>
+    <div class="{!join(' ',
+    'slds-backdrop',
+    v.isOpen?'slds-backdrop_open':''
+    )}"></div>
+  </div>
+</aura:component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>included_MP__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>פעולה רפואית זו נכללת באותה הפגישה</inlineHelpText>
+    <label>Included MP</label>
+    <referenceTo>Medical_Procedure__c</referenceTo>
+    <relationshipLabel>Appointments (פעולה רפואית נוספת)</relationshipLabel>
+    <relationshipName>Appointments5</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

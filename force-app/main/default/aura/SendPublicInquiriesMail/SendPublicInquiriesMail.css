@@ -1,0 +1,61 @@
+.THIS {
+}
+
+.THIS .wrapperContainer {
+    padding-top: 20px;
+    border-bottom: 1px solid; 
+    border-color: darkgray;
+}
+
+.THIS .additionalCheckboxes {
+    text-align: right;
+    max-width: 66%;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.THIS .additionalCheckboxes .slds-form-element__label {
+    float: left;
+}
+
+.THIS .labelFont {
+    font-size: 12px;
+}
+
+.THIS .marginLeftFive {
+    margin-left: 5px;
+}
+
+.THIS .cutText {
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.THIS .gridContainer {
+    display: grid;
+    grid-template-columns: 26% 26% 14% 14% 16% 4%;
+}
+
+.THIS .gridItem {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: right;
+} 
+
+.THIS .gridContainer2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.THIS .gridContainer3 {
+    display: grid;
+    grid-template-columns: auto 16%;
+}
+
+.THIS .gridContainer4 {
+    display: grid;
+    grid-template-columns: auto 5%;    
+}

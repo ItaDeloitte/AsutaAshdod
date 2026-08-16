@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <custom>false</custom>
+    <layoutAssignments>
+        <layout>ActionPlanItemDependency-תלות של פריט בתוכנית פעולה Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlnTmplItmDependency-תלות של פריט בתבנית תוכנית פעולה Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AgeBandHlthRskAdjFctr-פריסת פקטור התאמה לסיכון בריאותי לטווח גילאים</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AlternativePaymentMethod-שיטת תשלום חלופית Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Appointment_Manager__c-Appointment Manager Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssutaFileLog__c-Assuta File Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssutaOne_Procedures__mdt-AssutaOne Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Bot_Business_Hours__c-Bot Business Hours Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BriefUpdate__c-Brief Update Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Brief__c-Brief Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Calendar_Ashdod__c-Calendar Ashdod Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CardPaymentMethod-שיטת תשלום בכרטיס Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestExchangeInfo-פרטי החלפה בבקשת טיפול Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestSupportingCntnt-פריסת תוכן תומך בבקשת טיפול</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareTask-%5F%5FMISSING LABEL%5F%5F PropertyFile - val CareTask not found in section StandardLayouts</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareTaskDetail-%5F%5FMISSING LABEL%5F%5F PropertyFile - val CareTaskDetail not found in section StandardLayouts</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CodeBuilder__CodeBuilderSetting__mdt-CodeBuilder__CodeBuilderSetting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Collective_Eligibility__c-Collective Eligibility Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CommunityMemberLayout-Community Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CondIntrctnHlthRskAdjFctr-פריסת פקטור התאמה לסיכון בריאותי באינטראקציית מצבים</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ConsentFormTakenParam__c-ConsentFormTakenParam Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ConsentFormTaken__c-ConsentFormTaken Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ConsentFormToSite__c-ConsentFormToSite Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ConsentForm__c-ConsentForm Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactProfile-פרופיל איש קשר Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Conversation-Conversation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CreditMemo-תזכיר אשראי Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CreditMemoLine-שורה בתזכיר אשראי Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CspTrustedSite-Trusted URL Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataAction-Data Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataLakeObjectInstance-Data Lake Object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataQueryWorkspace-Query Editor Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataSemanticSearch-Search Index Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataSpace-Data Space Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataStream-Data Stream Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataStreamDefinition-Data Stream Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Department__c-Department Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DigitalWallet-Digital Wallet Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Doctor_Secretary__c-Doctor Secretary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Doctor_Sub_Expertise__c-תת התמחות לרופא Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>File_Type_For_WA_In_Private_Zone__mdt-File Type For WA In Private Zone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FlowRecord-Flow Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthScore-פריסת ציון בריאות</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthScoreActionLog-פריסת יומן פעולות ציון בריאות</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HierCondHlthCodeMapping-פריסת מיפוי תקנות בריאותיות לפי היררכיית מצבים</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HierCondHlthRskAdjFctr-פריסת פקטור התאמה לסיכון בריאותי לפי היררכיית מצבים</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>IdentityResolution-Identity Resolution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InterestTag-תג תחום עניין Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Invoice-חשבונית Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InvoiceLine-שורה בחשבונית Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedReconRecommendation-פריסת המלצה לפיוס תרופתי</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedReconStmtRecommendation-פריסת המלצה לפיוס תרופתי בהצהרה</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Medical_Procedure_Link__mdt-Medical Procedure Link Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Medical_Procedure_URL_Ashdod__mdt-Medical_Procedure_URL_Ashdod Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationReconciliation-פריסת פיוס תרופתי</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationTherapyReview-פריסת בדיקת טיפול תרופתי</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MktCalculatedInsight-Calculated Insight Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MktDataTransform-Data Transform Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OmniInteractionConfig-Omni Interaction Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Payment-תשלום Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentAuthAdjustment-התאמת הרשאת תשלום Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentAuthorization-אישור תשלום Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentGateway-שער תשלום Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentGatewayLog-יומן שער תשלומים Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentGroup-קבוצת תשלום Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentLineInvoice-חשבונית על שורת תשלום Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Secretary Layout</layout>
+        <recordType>PersonAccount.Secretary_Contact</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PgmBasedHlthRskAdjFctr-פריסת פקטור התאמה לסיכון בריאותי על בסיס התוכנית</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PreMedicalForAppointment__c-PreMedicalForAppointment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PreMedicalProcedure__c-Pre Medical Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProblemDefRelationship-%5F%5FMISSING LABEL%5F%5F PropertyFile - val ProblemDefRelationship not found in section StandardLayouts</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Refund-החזר Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>RefundLinePayment-תשלום שורת החזר Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SalesforceInvoice-Salesforce Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scenario__c-Scenario Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SecondReminderDomainWA__mdt-SecondReminderDomainWA Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Line__c-Service Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SignatureTask-Signature Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SiteIframeWhiteListUrl-Trusted Domains for Inline Frames Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TagCategory-קטגוריית תיוג Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TagCategoryAssignment-הקצאת קטגוריית תיוג Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Titan_API__mdt-Titan_API Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WATemplate__c-WA Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WhatsApp__c-WhatsApp Layout</layout>
+    </layoutAssignments>
+    <tabVisibilities>
+        <tab>Acc_Lng__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>AgentShiftInfo__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Agent_survey__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Agreement__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Appointment_Dashboard</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Appointment_Manager__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Appointment_To_Survey__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Appointment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Arrangements__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>AssutaFileLog__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Assuta_Employee__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Bank__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Bot_Business_Hours__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>BriefUpdate__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Brief__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Calendar1__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Calendar_Ashdod__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Calendar__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Case_Recommended_Doctor__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>City__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Clinic__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Collective_Eligibility__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ComplementaryTreatments__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ConsentFormTaken__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ConsentFormToSite__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ConsentForm__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Country__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Daily_Tasks_Log_IVF__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Department__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Disabilities__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Doc_to_action__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Doctor_Medical_Procedure__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Doctor_Secretary__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Doctor_Sub_Expertise__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Doctor_arrangement__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Doctor_in_Clinic__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Doctor_in_site__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Doctors_Statistics__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Domain__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Email__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Event_Inquiry__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>ExcludedParameters__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Expertise__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>File__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Getting_Started</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Getting_Started_With_Survey_Force</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Guidance_Scenario__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Guidelines__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>IVR_Recording__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Implants_mp_apt__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Implants_to_med_prod__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Knowledge__kav</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Language_new__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>MP_combinations_for_technicians__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Medical_Aid_Appointment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Medical_Procedure__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Medical_Procedure_in_Sites__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Nursery__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Payer_Factor__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Payment__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>PreMedicalForAppointment__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>PreMedicalProcedure__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Procedure_Plan__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>QualityControl__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>RecommendationsTypeAfterExam__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Recommendations_after_exam__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Referral_Agents__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Referral_from_doctor_website__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Related_document__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Reminder__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SMSReminder__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SMS__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Scheduler_parameters__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Sequence__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Service_Line__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Site_Domain__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Site__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SmsJunction__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SmsTemplate__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SpinCal__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Sub_Expertise__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SurveyQuestionResponse__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>SurveyTaker__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Survey_Assuta__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Survey_Question__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Survey__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>System__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tab</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tab1</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tab2</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>VDN__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>WATemplate__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>calendar_medp__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>cases_and_appoitments__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>dbo_CONV_SF_Activity_Fields_c__x</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__Business_Unit__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>et4ae5__Configuration__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>settlement__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>survey_to_site__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>waiting_list__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <userLicense>Salesforce Integration</userLicense>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiUserOnly</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ChatterInternalUser</name>
+    </userPermissions>
+</Profile>

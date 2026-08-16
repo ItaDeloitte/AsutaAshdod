@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>שלח מסרון צרו קשר</description>
+    <flowDefinition>Lead_Send_WA_Contact_Us</flowDefinition>
+    <label>Send WA Contact Us</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Doctor payments</label>
+    <permissionSets>Cases_Permission_Set</permissionSets>
+    <permissionSets>Doctors_Payments_Permission_Set</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

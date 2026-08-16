@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- שם הפעולה הרפואית (או שם הניתוח) שעבורה נדרשת פעולה מקדמית --></help>
+    <label><!-- Medical Procedure --></label>
+    <name>MedicalProcedure__c</name>
+    <relationshipLabel><!-- Medical Procedure --></relationshipLabel>
+</CustomFieldTranslation>

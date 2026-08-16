@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Recommendations_after_exam__c</entityName>
+    <fieldName>Status_recommendation__c</fieldName>
+    <masterLabel>המלצה לאחר בדיקה - ממוגרפיה</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Close_Reason_Memo__c</fieldNames>
+        <picklistValueName>הומר לאירוע חדש</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Close_Reason_Memo__c</fieldNames>
+        <picklistValueName>נסגר ללא טיפול המשך</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Memo</recordTypeName>
+</PathAssistant>

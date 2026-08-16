@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Treating_Employee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>גורם מטפל עובד אסותא</description>
+    <inlineHelpText>גורם מטפל עובד אסותא</inlineHelpText>
+    <label>Treating Employee</label>
+    <referenceTo>Assuta_Employee__c</referenceTo>
+    <relationshipLabel>Cases (Assuta Employee 2)</relationshipLabel>
+    <relationshipName>Cases3_del</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

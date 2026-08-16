@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- StageStatus --></label>
+    <name>StageStatus__c</name>
+    <picklistValues>
+        <masterLabel>Assuta doctor recommended</masterLabel>
+        <translation><!-- Assuta doctor recommended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compatibility meeting was scheduled</masterLabel>
+        <translation><!-- Compatibility meeting was scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concerned</masterLabel>
+        <translation><!-- Concerned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consulting</masterLabel>
+        <translation><!-- Consulting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Signed In Unit</masterLabel>
+        <translation><!-- Contract Signed In Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disappeared</masterLabel>
+        <translation><!-- Disappeared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doctor not at Assuta</masterLabel>
+        <translation><!-- Doctor not at Assuta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate Opportunity</masterLabel>
+        <translation><!-- Duplicate Opportunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In process of medical tests</masterLabel>
+        <translation><!-- In process of medical tests --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information sheets have been sent</masterLabel>
+        <translation><!-- Information sheets have been sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Market survey</masterLabel>
+        <translation><!-- Market survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Insurance Eligibility</masterLabel>
+        <translation><!-- No Insurance Eligibility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient performs a market research</masterLabel>
+        <translation><!-- Patient performs a market research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient undergoing medical tests</masterLabel>
+        <translation><!-- Patient undergoing medical tests --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Opertation Instruction Review</masterLabel>
+        <translation><!-- Pre-Opertation Instruction Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Assuta HaShalom</masterLabel>
+        <translation><!-- Referred to Assuta HaShalom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Coordinators</masterLabel>
+        <translation><!-- Referred to Coordinators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regretted</masterLabel>
+        <translation><!-- Regretted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Consultation</masterLabel>
+        <translation><!-- Waiting for Consultation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Shaban eligibility</masterLabel>
+        <translation><!-- Waiting for Shaban eligibility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Surgery</masterLabel>
+        <translation><!-- Waiting for Surgery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for a convenient time</masterLabel>
+        <translation><!-- Waiting for a convenient time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for doctor&apos;s response</masterLabel>
+        <translation><!-- Waiting for doctor&apos;s response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for experts approval</masterLabel>
+        <translation><!-- Waiting for experts approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for response from Optic</masterLabel>
+        <translation><!-- Waiting for response from Optic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>availability</masterLabel>
+        <translation><!-- availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>checkDepartment</masterLabel>
+        <translation><!-- checkDepartment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>checkDoctor</masterLabel>
+        <translation><!-- checkDoctor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>checkMoked</masterLabel>
+        <translation><!-- checkMoked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>competitors</masterLabel>
+        <translation><!-- competitors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>distance</masterLabel>
+        <translation><!-- distance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>doctorsSuggested</masterLabel>
+        <translation><!-- doctorsSuggested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>doesntMatch</masterLabel>
+        <translation><!-- doesntMatch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>expert</masterLabel>
+        <translation><!-- expert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>institute</masterLabel>
+        <translation><!-- institute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>materialSent</masterLabel>
+        <translation><!-- materialSent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>noAnswer</masterLabel>
+        <translation><!-- noAnswer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>other</masterLabel>
+        <translation><!-- other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>price</masterLabel>
+        <translation><!-- price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>questioning</masterLabel>
+        <translation><!-- questioning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>surgery</masterLabel>
+        <translation><!-- surgery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>transferToDepartment</masterLabel>
+        <translation><!-- transferToDepartment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין הסדר ביטוחי לניתוח</masterLabel>
+        <translation><!-- אין הסדר ביטוחי לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין יומן פתוח לרופא</masterLabel>
+        <translation><!-- אין יומן פתוח לרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בבדיקה מול סוכן ביטוח</masterLabel>
+        <translation><!-- בבדיקה מול סוכן ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה\תחום לא קיים כרגע בשירות</masterLabel>
+        <translation><!-- בדיקה\תחום לא קיים כרגע בשירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביצע ניתוח אופטיק</masterLabel>
+        <translation><!-- ביצע ניתוח אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גיל</masterLabel>
+        <translation><!-- גיל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הגיע לבדיקת התאמה</masterLabel>
+        <translation><!-- הגיע לבדיקת התאמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוזמן חדר פרטי</masterLabel>
+        <translation><!-- הוזמן חדר פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניין בחדר פרטי</masterLabel>
+        <translation><!-- לא מעוניין בחדר פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניין בשירות</masterLabel>
+        <translation><!-- לא מעוניין בשירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נמצא רופא מתאים בקרבת מקום מגוריו</masterLabel>
+        <translation><!-- לא נמצא רופא מתאים בקרבת מקום מגוריו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאגר</masterLabel>
+        <translation><!-- מאגר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מבקש לברר על החזרים מול הביטוח</masterLabel>
+        <translation><!-- מבקש לברר על החזרים מול הביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחלות כרוניות</masterLabel>
+        <translation><!-- מחלות כרוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחלות עיניים</masterLabel>
+        <translation><!-- מחלות עיניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נותח בעבר</masterLabel>
+        <translation><!-- נותח בעבר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פונה לקופה</masterLabel>
+        <translation><!-- פונה לקופה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פנה בנוגע לשירות אחר</masterLabel>
+        <translation><!-- פנה בנוגע לשירות אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא שלא מתואם דרכינו</masterLabel>
+        <translation><!-- רופא שלא מתואם דרכינו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם הראל</masterLabel>
+        <translation><!-- תואם הראל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם ייעוץ בעזרת סוכן ביטוח</masterLabel>
+        <translation><!-- תואם ייעוץ בעזרת סוכן ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם תור בעזרת סוכן ביטוח</masterLabel>
+        <translation><!-- תואם תור בעזרת סוכן ביטוח --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

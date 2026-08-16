@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lost Reason - Call Center --></label>
+    <name>Lost_Reason_Call_Center__c</name>
+    <picklistValues>
+        <masterLabel>Doctor not coordinated through assuta</masterLabel>
+        <translation><!-- Doctor not coordinated through assuta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate</masterLabel>
+        <translation><!-- Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General service information</masterLabel>
+        <translation><!-- General service information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inquiry forwarded to department</masterLabel>
+        <translation><!-- Inquiry forwarded to department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Answer</masterLabel>
+        <translation><!-- No Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Interested</masterLabel>
+        <translation><!-- Not Interested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient contacted HMO</masterLabel>
+        <translation><!-- Patient contacted HMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service not available</masterLabel>
+        <translation><!-- Service not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Update existing appointment</masterLabel>
+        <translation><!-- Update existing appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Call</masterLabel>
+        <translation><!-- Wrong Call --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>faxash@assuta.co.il</email>
+    <name>אשדוד - ממוגרפיה</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>ashdod_kalaniyot_machon_briut_hesha</publicGroup>
+            <publicGroup>ashdod_zibori_machon_briut_hesha</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Medical_Aid_Appointment__c</sobjectType>
+    </queueSobject>
+</Queue>

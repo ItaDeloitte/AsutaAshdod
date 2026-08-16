@@ -1,0 +1,21 @@
+<aura:component extends="c:BaseComponent"
+  implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="recordId" type="String" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:navigation aura:id="navigation" />
+    <c:UpdateAccountApi aura:id="updateAccountApi" isAutoUpdate="false" />
+    <c:OneClickActionModal title="Update Account" serverError="{!v.serverError}" isLoading="{!v.isLoading}"
+      actionClicked="{!c.onActionClicked}">
+    </c:OneClickActionModal>
+  </div>
+</aura:component>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Public Hospital --></label>
+    <name>Publick_Hospital__c</name>
+    <picklistValues>
+        <masterLabel>המרכז הרפואי האוניברסיטאי סורוקה</masterLabel>
+        <translation><!--   המרכז הרפואי האוניברסיטאי סורוקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא אשדוד ציבורי</masterLabel>
+        <translation><!-- אסותא אשדוד ציבורי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים אסותא חיפה</masterLabel>
+        <translation><!-- בית החולים אסותא חיפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים אסותא ראשון לציון</masterLabel>
+        <translation><!-- בית החולים אסותא ראשון לציון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים בית רבקה</masterLabel>
+        <translation><!-- בית החולים בית רבקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים האיטלקי</masterLabel>
+        <translation><!-- בית החולים האיטלקי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים הלל יפה</masterLabel>
+        <translation><!-- בית החולים הלל יפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים יוספטל</masterLabel>
+        <translation><!-- בית החולים יוספטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים מאיר</masterLabel>
+        <translation><!-- בית החולים מאיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים סנט ג’וזף</masterLabel>
+        <translation><!-- בית החולים סנט ג’וזף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים שערי צדק</masterLabel>
+        <translation><!-- בית החולים שערי צדק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים אוגוסטה ויקטוריה</masterLabel>
+        <translation><!-- בית חולים אוגוסטה ויקטוריה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים אי.מ.מ.ס הסקוטי</masterLabel>
+        <translation><!-- בית חולים אי.מ.מ.ס הסקוטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים אסותא באר-שבע</masterLabel>
+        <translation><!-- בית חולים אסותא באר-שבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים אסותא השלום תל אביב</masterLabel>
+        <translation><!-- בית חולים אסותא השלום תל אביב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים ביקור חולים</masterLabel>
+        <translation><!-- בית חולים ביקור חולים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים בלינסון</masterLabel>
+        <translation><!-- בית חולים בלינסון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים בני ציון</masterLabel>
+        <translation><!-- בית חולים בני ציון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים ברזילי</masterLabel>
+        <translation><!-- בית חולים ברזילי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים הדסה</masterLabel>
+        <translation><!-- בית חולים הדסה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים המשפחה הקדושה</masterLabel>
+        <translation><!-- בית חולים המשפחה הקדושה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים הסהר האדום ליולדות</masterLabel>
+        <translation><!-- בית חולים הסהר האדום ליולדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים הרצוג</masterLabel>
+        <translation><!-- בית חולים הרצוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים השרון</masterLabel>
+        <translation><!-- בית חולים השרון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים וולפסון</masterLabel>
+        <translation><!-- בית חולים וולפסון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים לניאדו</masterLabel>
+        <translation><!-- בית חולים לניאדו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים לעיניים סנט ג’והן</masterLabel>
+        <translation><!-- בית חולים לעיניים סנט ג’והן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים נווה שלווה</masterLabel>
+        <translation><!-- בית חולים נווה שלווה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים פוריה</masterLabel>
+        <translation><!-- בית חולים פוריה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים רמב”ם</masterLabel>
+        <translation><!-- בית חולים רמב”ם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים שיקומי אלין</masterLabel>
+        <translation><!-- בית חולים שיקומי אלין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית לוינשטיין</masterLabel>
+        <translation><!-- בית לוינשטיין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הגריאטרי המשולב ע”ש שהם</masterLabel>
+        <translation><!-- המרכז הגריאטרי המשולב ע”ש שהם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הגריאטרי נתניה</masterLabel>
+        <translation><!-- המרכז הגריאטרי נתניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הגריאטרי ראשון לציון</masterLabel>
+        <translation><!-- המרכז הגריאטרי ראשון לציון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הרפואי בית גדי נתניה</masterLabel>
+        <translation><!-- המרכז הרפואי בית גדי נתניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הרפואי הגריאטרי הרצפלד בגדרה</masterLabel>
+        <translation><!-- המרכז הרפואי הגריאטרי הרצפלד בגדרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הרפואי מעייני הישועה</masterLabel>
+        <translation><!-- המרכז הרפואי מעייני הישועה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הרפואי שיבא – תל-השומר</masterLabel>
+        <translation><!-- המרכז הרפואי שיבא – תל-השומר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הרפואלי לגליל (לשעבר בית החולים לגליל מערבי)</masterLabel>
+        <translation><!-- המרכז הרפואלי לגליל (לשעבר בית החולים לגליל מערבי) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז לבריאות הנפש באר יעקוב</masterLabel>
+        <translation><!-- המרכז לבריאות הנפש באר יעקוב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז לבריאות הנפש ירושלים</masterLabel>
+        <translation><!-- המרכז לבריאות הנפש ירושלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז לבריאות הנפש לב השרון</masterLabel>
+        <translation><!-- המרכז לבריאות הנפש לב השרון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז לבריאות הנפש שלוותה</masterLabel>
+        <translation><!-- המרכז לבריאות הנפש שלוותה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז גריאטרי פלימן</masterLabel>
+        <translation><!-- מרכז גריאטרי פלימן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז הרפואי ע”ש סוראסקי (איכילוב)</masterLabel>
+        <translation><!-- מרכז הרפואי ע”ש סוראסקי (איכילוב) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז לבריאות הנפש גהה</masterLabel>
+        <translation><!-- מרכז לבריאות הנפש גהה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז לבריאות הנפש טירת הכרמל</masterLabel>
+        <translation><!-- מרכז לבריאות הנפש טירת הכרמל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז לבריאות הנפש מזרע</masterLabel>
+        <translation><!-- מרכז לבריאות הנפש מזרע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז לבריאות הנפש שער מנשה</masterLabel>
+        <translation><!-- מרכז לבריאות הנפש שער מנשה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי אסף הרופא</masterLabel>
+        <translation><!-- מרכז רפואי אסף הרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי העמק</masterLabel>
+        <translation><!-- מרכז רפואי העמק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי כרמל</masterLabel>
+        <translation><!-- מרכז רפואי כרמל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי לבריאות הנפש באר-שבע</masterLabel>
+        <translation><!-- מרכז רפואי לבריאות הנפש באר-שבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי לבריאות הנפש ע”ש יהודה אברבנאל</masterLabel>
+        <translation><!-- מרכז רפואי לבריאות הנפש ע”ש יהודה אברבנאל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי קפלן</masterLabel>
+        <translation><!-- מרכז רפואי קפלן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי רבקה זיו צפת</masterLabel>
+        <translation><!-- מרכז רפואי רבקה זיו צפת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז שניידר לרפואת ילדים בישראל</masterLabel>
+        <translation><!-- מרכז שניידר לרפואת ילדים בישראל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שמואל הרופא מרכז גריאטרי</masterLabel>
+        <translation><!-- שמואל הרופא מרכז גריאטרי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

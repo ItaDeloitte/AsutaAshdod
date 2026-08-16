@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>dont_allow_sms</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos;) &amp;&amp;
+NOT(ISBLANK(SMS_Phone_Number__c)) &amp;&amp;  ISPICKVAL( Account.Mailing_approval__c ,&quot;לא מאשר דיוור - הכל&quot;)
+  &amp;&amp;  NOT(ISPICKVAL(Origin,&quot;טופס מקוון&quot;)) &amp;&amp;  NOT(ISPICKVAL(Origin,&quot;Web_Site&quot;))</errorConditionFormula>
+    <errorMessage>בחשבון המטופל רשום שהוא לא מאשר דיוור. יש לבטל את האיסור או למחוק את המספר לקבלת מסרונים שעודכן בפנייה</errorMessage>
+</ValidationRule>

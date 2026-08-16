@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_demands__c</fullName>
+    <label>Special Requirements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>אחות</fullName>
+                <default>false</default>
+                <label>אחות פרטית</label>
+            </value>
+            <value>
+                <fullName>מרדים פרטי</fullName>
+                <default>false</default>
+                <label>מרדים פרטי</label>
+            </value>
+            <value>
+                <fullName>חדר פרטי</fullName>
+                <default>false</default>
+                <label>חדר פרטי</label>
+            </value>
+            <value>
+                <fullName>חדר דה לוקס</fullName>
+                <default>false</default>
+                <label>חדר דה לוקס</label>
+            </value>
+            <value>
+                <fullName>ארוחות-גלאט</fullName>
+                <default>false</default>
+                <label>ארוחות-גלאט</label>
+            </value>
+            <value>
+                <fullName>ארוחות-צמחוני</fullName>
+                <default>false</default>
+                <label>ארוחות-צמחוני</label>
+            </value>
+            <value>
+                <fullName>מחשב אישי</fullName>
+                <default>false</default>
+                <label>מחשב אישי</label>
+            </value>
+            <value>
+                <fullName>שירותי ליווי צמודים</fullName>
+                <default>false</default>
+                <label>שירותי ליווי צמודים</label>
+            </value>
+            <value>
+                <fullName>הלנת מלווים</fullName>
+                <default>false</default>
+                <label>הלנת מלווים</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

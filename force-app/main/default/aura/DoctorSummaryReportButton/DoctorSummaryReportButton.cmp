@@ -1,0 +1,31 @@
+<aura:component extends="c:BaseComponent"
+                implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="buttonAvailable" type="Boolean" />
+  <!-- design -->
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler event="force:refreshView" action="{!c.onRefresh}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+
+    <aura:if isTrue="{!v.buttonAvailable}">
+      <div class="">
+        <div class="buttons-wrapper">
+          <span class="single-btn-wrapper">
+            <lightning:button label="{!$Label.c.Send_Summary_Report}" variant="neutral" onclick="{!c.onSendReportClick}" />
+          </span>
+        </div>
+      </div>
+    </aura:if>
+
+  </div>
+</aura:component>

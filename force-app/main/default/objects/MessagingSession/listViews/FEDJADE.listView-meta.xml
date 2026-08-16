@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FEDJADE</fullName>
+    <columns>Name</columns>
+    <columns>AF_Feadback__c</columns>
+    <columns>AF_Feadback_Type__c</columns>
+    <columns>AF_Feadback_Solution__c</columns>
+    <columns>MessagingChannel</columns>
+    <columns>MessagingEndUser</columns>
+    <columns>Status</columns>
+    <columns>StartTime</columns>
+    <columns>EndTime</columns>
+    <columns>AccountId__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CreatedDate</field>
+        <operation>greaterOrEqual</operation>
+        <value>4/1/2026 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>AF_Feadback__c</field>
+        <operation>notContain</operation>
+    </filters>
+    <label>FED JADE</label>
+</ListView>

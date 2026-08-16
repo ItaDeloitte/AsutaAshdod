@@ -1,0 +1,20 @@
+.THIS.cancel-modal .modal-container,
+.THIS.cancel-modal .slds-modal__container {
+  margin: 0 auto;
+  min-width: 20rem;
+}
+
+.THIS.cancel-modal .modal-body,
+.THIS.cancel-modal .slds-modal__content {
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+
+.THIS .cActionModalInner {
+  max-height: 580px;
+}
+
+.THIS .underline {
+  text-decoration: underline;
+}

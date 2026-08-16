@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Shikum Bait Approval --></label>
+    <name>Shikum_Bait_Approval__c</name>
+    <picklistValues>
+        <masterLabel>לא מאשר שיקום בית</masterLabel>
+        <translation><!-- לא מאשר שיקום בית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאשר שיקום בית</masterLabel>
+        <translation><!-- מאשר שיקום בית --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

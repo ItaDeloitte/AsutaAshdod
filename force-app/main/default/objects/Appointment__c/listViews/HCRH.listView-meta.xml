@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCRH</fullName>
+    <columns>NAME</columns>
+    <columns>Rep_Reminder_Status__c</columns>
+    <columns>Remainder_status__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>PHONE__c</columns>
+    <columns>Id_Patient__c</columns>
+    <columns>dateRemainder1WA__c</columns>
+    <columns>dateRemainder2WA__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Domain__c</field>
+        <operation>contains</operation>
+        <value>קרדיולוגיה-לב</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>מגדל,רמת החייל</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date_Time__c</field>
+        <operation>equals</operation>
+        <value>3/22/2026 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <label>מכון הלב רמת החייל - וידוא הגעה</label>
+</ListView>

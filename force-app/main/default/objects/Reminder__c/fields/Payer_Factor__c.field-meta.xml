@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payer_Factor__c</fullName>
+    <description>קוד גורם משלם</description>
+    <externalId>false</externalId>
+    <formula>Appointment__r.PayerFactor__r.Code_Payer_Tizkurit__c</formula>
+    <label>Payer Factor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

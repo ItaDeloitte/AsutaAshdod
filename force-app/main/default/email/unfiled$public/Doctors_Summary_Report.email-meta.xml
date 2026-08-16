@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>דוח הסיכום החודשי</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>דוח סיכום לרופאים</name>
+    <style>none</style>
+    <subject>אסותא - דוח סיכום חודש</subject>
+    <textOnly>שלום רב {!Account.Name} ,
+אנא היכנס לקישור הבא על מנת לצפות בדוח הסיכום החודשי שלך:  https://myassuta.formtitan.com/SummaryReport</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

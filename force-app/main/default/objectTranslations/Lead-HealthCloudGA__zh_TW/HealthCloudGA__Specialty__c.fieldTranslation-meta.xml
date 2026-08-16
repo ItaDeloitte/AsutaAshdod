@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>專業</label>
+    <name>HealthCloudGA__Specialty__c</name>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation><!-- Cardiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certified Home Health</masterLabel>
+        <translation><!-- Certified Home Health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatology</masterLabel>
+        <translation><!-- Dermatology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENT</masterLabel>
+        <translation><!-- ENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Practice</masterLabel>
+        <translation><!-- Family Practice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GI</masterLabel>
+        <translation><!-- GI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gynecology</masterLabel>
+        <translation><!-- Gynecology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Medicine</masterLabel>
+        <translation><!-- Internal Medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mental Health</masterLabel>
+        <translation><!-- Mental Health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurology</masterLabel>
+        <translation><!-- Neurology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurosurgery</masterLabel>
+        <translation><!-- Neurosurgery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oncology</masterLabel>
+        <translation><!-- Oncology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orthopedics</masterLabel>
+        <translation><!-- Orthopedics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical therapy</masterLabel>
+        <translation><!-- Physical therapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation><!-- Surgery --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

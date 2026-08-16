@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Path_to_local_file__c</fullName>
+    <description>will copy and reformat the macabbi files and make them clickable</description>
+    <externalId>false</externalId>
+    <formula>If(
+	BEGINS(Referral_File__c , &quot;http:&quot; ),
+	RIGHT(Referral_File__c , (LEN(Referral_File__c )-  7 ) ), 
+	If(
+		BEGINS(Commitment_File__c , &quot;http:&quot;),
+		RIGHT(Commitment_File__c , (LEN(Commitment_File__c  )-  7 ) ), 
+		Commitment_File__c + Referral_File__c
+		)
+ 
+)</formula>
+    <inlineHelpText>יש להעתיק את כל הנתיב ולהדביק בשורת הכתובת בדפדפן כדי לפתוח את הקובץ</inlineHelpText>
+    <label>Path to local file</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

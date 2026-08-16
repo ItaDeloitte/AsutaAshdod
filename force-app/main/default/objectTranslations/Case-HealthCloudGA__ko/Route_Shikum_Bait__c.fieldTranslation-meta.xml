@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Route Shikum Bait --></label>
+    <name>Route_Shikum_Bait__c</name>
+    <picklistValues>
+        <masterLabel>מטופל מחוץ לאסותא</masterLabel>
+        <translation><!-- מטופל מחוץ לאסותא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל מתוך אסותא</masterLabel>
+        <translation><!-- מטופל מתוך אסותא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס הפנייה מכבי</label>
+    <name>ReferralsExistErrorCode__c</name>
+    <picklistValues>
+        <masterLabel>אין הפניות</masterLabel>
+        <translation><!-- אין הפניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יש הפניות</masterLabel>
+        <translation><!-- יש הפניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נכשל</masterLabel>
+        <translation><!-- נכשל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ת.ז לא חבר מכבי</masterLabel>
+        <translation><!-- ת.ז לא חבר מכבי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

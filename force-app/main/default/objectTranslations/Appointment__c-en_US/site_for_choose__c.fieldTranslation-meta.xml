@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- בחר אם קיים אתר/אתרים מועדפים --></help>
+    <label><!-- Site for Choose --></label>
+    <name>site_for_choose__c</name>
+    <picklistValues>
+        <masterLabel>אסותא אשדוד כלניות</masterLabel>
+        <translation><!-- אסותא אשדוד כלניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא באר שבע</masterLabel>
+        <translation><!-- אסותא באר שבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא השלום</masterLabel>
+        <translation><!-- אסותא השלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא חיפה</masterLabel>
+        <translation><!-- אסותא חיפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא ראשל&quot;צ</masterLabel>
+        <translation><!-- אסותא ראשל&quot;צ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא רמת החייל</masterLabel>
+        <translation><!-- אסותא רמת החייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא רעננה</masterLabel>
+        <translation><!-- אסותא רעננה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית החולים האוניברסיטאי אסותא אשדוד ע&quot;ש סמסון</masterLabel>
+        <translation><!-- בית החולים האוניברסיטאי אסותא אשדוד ע&quot;ש סמסון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בניין העוגן - ת&quot;א</masterLabel>
+        <translation><!-- בניין העוגן - ת&quot;א --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניידת MRI</masterLabel>
+        <translation><!-- ניידת MRI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

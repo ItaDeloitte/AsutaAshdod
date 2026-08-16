@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Formula_to_page_note_exp__c</fullName>
+    <formula>OR(
+ISBLANK(Doctor_Arrangement__c) &amp;&amp;  ISPICKVAL(Channel__c, &quot;פרטי&quot;) ,
+ISBLANK( Agreement__c ) &amp;&amp;  ISPICKVAL(Channel__c, &quot;קופה&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Formula to page note - exp</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

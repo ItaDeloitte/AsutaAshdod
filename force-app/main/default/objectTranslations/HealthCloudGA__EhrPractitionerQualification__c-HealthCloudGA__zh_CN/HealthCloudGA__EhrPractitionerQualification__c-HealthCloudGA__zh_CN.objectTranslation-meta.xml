@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EHR 执业医师资格</value>
+    </caseValues>
+    <nameFieldLabel>EHR 执业医师就业资质 ID</nameFieldLabel>
+</CustomObjectTranslation>

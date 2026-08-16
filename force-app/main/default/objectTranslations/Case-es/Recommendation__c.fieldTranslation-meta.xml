@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Recommendation --></label>
+    <name>Recommendation__c</name>
+    <picklistValues>
+        <masterLabel>הפשרה</masterLabel>
+        <translation><!-- הפשרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הקפאה בתשלום</masterLabel>
+        <translation><!-- הקפאה בתשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יועבר למחקר</masterLabel>
+        <translation><!-- יועבר למחקר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נסיונות חוזרים</masterLabel>
+        <translation><!-- נסיונות חוזרים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פנייה למשרד הבריאות- בקשת אישור להפשרה</masterLabel>
+        <translation><!-- פנייה למשרד הבריאות- בקשת אישור להפשרה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

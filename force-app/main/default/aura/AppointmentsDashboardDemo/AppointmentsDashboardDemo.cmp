@@ -1,0 +1,83 @@
+<aura:component extends="c:BaseComponent" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="inputData" type="Map"
+    default="{siteId:'84',patientId:'000001156',procedureCode:'76700',idType:'1'}" />
+  <aura:attribute name="slots" type="List" default="[]" />
+  <aura:attribute name="lockedSlots" type="Map" default="{}" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-card">
+    <header class="slds-card__header slds-grid">
+      <div class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+          <lightning:icon iconName="standard:case" size="small" />
+        </div>
+        <div class="slds-media__body slds-truncate">
+          <span class="slds-text-heading_small card-title">
+            Appointments Dashboard Demo
+          </span>
+        </div>
+      </div>
+    </header>
+    <div class="slds-card__body">
+      <div class="slds-card__body_inner">
+        <div class="slds-grid slds-wrap slds-gutters">
+          <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+            <lightning:input label="Site ID" value="{!v.inputData.siteId}" />
+          </div>
+          <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+            <lightning:input label="Patient ID" value="{!v.inputData.patientId}" />
+          </div>
+          <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+            <lightning:input label="Procedure Code" value="{!v.inputData.procedureCode}" />
+          </div>
+          <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+            <lightning:input label="ID Type" value="{!v.inputData.idType}" />
+          </div>
+        </div>
+        <div class="slds-p-vertical_medium slds-text-align_right">
+          <lightning:button variant="brand" type="button" label="Get Slots" onclick="{!c.onSubmit}"
+            disabled="{!v.isLoading}" />
+        </div>
+        <div class="slots slds-p-vertical_medium">
+          <ul class="slds-grid slds-wrap slds-gutters slots-list">
+            <aura:iteration items="{!v.slots}" var="slot" indexVar="_index">
+              <li
+                class="slds-col slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-4 slds-m-bottom_medium slds-item">
+                <div class="slds-p-around_medium slot">
+                  <div class="slot__id">ID:&nbsp; <span class="font-bold">{!slot.SlotId}</span></div>
+                  <div class="slot__time">
+                    Start Time:&nbsp;
+                    <span class="font-bold">
+                      <lightning:formattedDateTime value="{!slot.StartTime}" year="2-digit" month="2-digit"
+                        day="2-digit" hour="2-digit" minute="2-digit" />
+                    </span>
+                  </div>
+                  <div class="slot__duration">
+                    Duration:&nbsp;<span class="font-bold">{!slot.Duration}</span>
+                  </div>
+                  <div class="slds-p-top_medium slds-text-align_center">
+                    <aura:if isTrue="{!empty(slot.SlotLockId)}">
+                      <lightning:button label="Lock" name="{!slot}" onclick="{!c.onLockSlot}" />
+                    </aura:if>
+                    <aura:if isTrue="{!!empty(slot.SlotLockId)}">
+                      <lightning:button label="Unlock" name="{!slot}" onclick="{!c.onUnlockSlot}" />
+                      <lightning:button label="Refresh" name="{!slot}" onclick="{!c.onRefreshSlot}" />
+                      <lightning:button label="Set appointment" name="{!slot}" onclick="{!c.onSetAppointment}" />
+                    </aura:if>
+                  </div>
+                </div>
+              </li>
+            </aura:iteration>
+          </ul>
+        </div>
+      </div>
+      <c:Spinner isLoading="{!v.isLoading}" size="small" />
+    </div>
+  </div>
+</aura:component>

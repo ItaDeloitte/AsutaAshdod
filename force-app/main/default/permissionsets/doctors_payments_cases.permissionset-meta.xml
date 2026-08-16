@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>הרשאה לצפייה בפניות מסוג תשלומי רופאים</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>doctors payments cases</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Case</object>
+        <viewAllFields>false</viewAllFields>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Case.Doctors_Payments_RT</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

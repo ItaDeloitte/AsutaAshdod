@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>נשלח מייל למרפאה</label>
+    <name>Clinic_email_sent_status__c</name>
+    <picklistValues>
+        <masterLabel>ביטול</masterLabel>
+        <translation><!-- ביטול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זימון</masterLabel>
+        <translation><!-- זימון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדכון</masterLabel>
+        <translation><!-- עדכון --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

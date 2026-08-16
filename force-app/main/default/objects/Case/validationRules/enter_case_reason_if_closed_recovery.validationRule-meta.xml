@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>enter_case_reason_if_closed_recovery</fullName>
+    <active>true</active>
+    <description>בסדירת פנייה מסוג אחזור מידע רפואי (פניות מסוג ניהול ורישום מידע רפואי) - הכנס סיבת ביטול</description>
+    <errorConditionFormula>ISPICKVAL(Status,&apos;Closed&apos;) &amp;&amp;   ISBLANK(text(Reason)) &amp;&amp; RecordType.DeveloperName == &apos;Medical_Info_Management&apos;
+ &amp;&amp; ISPICKVAL(Case_subject__c, &apos;אחזור מידע רפואי&apos;)</errorConditionFormula>
+    <errorDisplayField>Reason</errorDisplayField>
+    <errorMessage>בסגירת פנייה מסוג אחזור מידע רפואי - יש לבחור סיבה בשדה המתאים</errorMessage>
+</ValidationRule>

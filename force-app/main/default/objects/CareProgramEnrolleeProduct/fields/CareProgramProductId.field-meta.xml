@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareProgramProductId</fullName>
+    <inlineHelpText>המוצר בתוכנית הטיפול המשויך לנרשם בתוכנית טיפול זו ולנותן שירות של תוכנית הטיפול.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

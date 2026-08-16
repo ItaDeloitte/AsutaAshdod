@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PayerFactor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>לוקאפ לגורם המשלם</description>
+    <label>Payer Factor</label>
+    <referenceTo>Payer_Factor__c</referenceTo>
+    <relationshipLabel>פניות</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

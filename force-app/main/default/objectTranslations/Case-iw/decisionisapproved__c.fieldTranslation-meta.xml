@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>החלטה מאושרת ע&quot;י משפטית/רפואה</label>
+    <name>decisionisapproved__c</name>
+</CustomFieldTranslation>

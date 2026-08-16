@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>subStatus__c</fullName>
+    <label>subStatus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waiting for appointment</fullName>
+                <default>false</default>
+                <label>Waiting for appointment</label>
+            </value>
+            <value>
+                <fullName>Waiting for reminder</fullName>
+                <default>false</default>
+                <label>Waiting for reminder</label>
+            </value>
+            <value>
+                <fullName>Survey sent</fullName>
+                <default>false</default>
+                <label>Survey sent</label>
+            </value>
+            <value>
+                <fullName>No answer</fullName>
+                <default>false</default>
+                <label>No answer</label>
+            </value>
+            <value>
+                <fullName>Waiting for agent</fullName>
+                <default>false</default>
+                <label>Waiting for agent</label>
+            </value>
+            <value>
+                <fullName>Didn&apos;t execute</fullName>
+                <default>false</default>
+                <label>Didn&apos;t execute</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t need next appointment</fullName>
+                <default>false</default>
+                <label>Don&apos;t need next appointment</label>
+            </value>
+            <value>
+                <fullName>Not interested in next appointment</fullName>
+                <default>false</default>
+                <label>Not interested in next appointment</label>
+            </value>
+            <value>
+                <fullName>Next appointment scheduled</fullName>
+                <default>false</default>
+                <label>Next appointment scheduled</label>
+            </value>
+            <value>
+                <fullName>appointment was not summoned</fullName>
+                <default>false</default>
+                <label>appointment was not summoned</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
+            <valueName>Waiting for appointment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
+            <valueName>Waiting for reminder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
+            <valueName>Survey sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ממתין לתזכור על ידי נציג</controllingFieldValue>
+            <controllingFieldValue>ממתין לסקר על ידי נציג</controllingFieldValue>
+            <controllingFieldValue>נדרש המשך טיפול</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>No answer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ממתין לתזכור על ידי נציג</controllingFieldValue>
+            <controllingFieldValue>ממתין לסקר על ידי נציג</controllingFieldValue>
+            <controllingFieldValue>נדרש המשך טיפול</controllingFieldValue>
+            <valueName>Waiting for agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Didn&apos;t execute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Don&apos;t need next appointment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Not interested in next appointment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Next appointment scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>appointment was not summoned</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

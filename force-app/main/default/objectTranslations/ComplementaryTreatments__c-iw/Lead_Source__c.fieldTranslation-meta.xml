@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מקור הליד</label>
+    <name>Lead_Source__c</name>
+    <picklistValues>
+        <masterLabel>Lobby – Post Surgery</masterLabel>
+        <translation>לובי - אחרי ניתוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lobby – Pre Surgery</masterLabel>
+        <translation>לובי – לפני ניתוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Summary Screen</masterLabel>
+        <translation>מסך סיכום הזמנה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Area: Dashboard</masterLabel>
+        <translation>איזור אישי: דשבורד</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Area: Results &amp; Summaries</masterLabel>
+        <translation>איזור אישי: תוצאות וסיכומים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary Dashboard</masterLabel>
+        <translation>דשבורד מזכירות</translation>
+    </picklistValues>
+</CustomFieldTranslation>

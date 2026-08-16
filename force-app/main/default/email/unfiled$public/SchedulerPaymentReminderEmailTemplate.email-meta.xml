@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תבנית דואר אלקטרוני המיועד להזכיר ללקוחות לשלם עבור פעילות שירות.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>תשלומים בכלי התזמון: דוא&quot;ל תזכורת תשלום עבור פעילות שירות</name>
+    <style>none</style>
+    <subject>עליך להשלים את התשלום</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 1 — Foundation
+    =====================================
+    Types: CustomLabels, GlobalValueSet, CustomPermission, StaticResource, Letterhead, StandardValueSet
+    Test level: NoTestRun (no Apex)
+    Estimated time: ~15-20 min
+    Dependencies: none (first phase)
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase1_foundation.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase1_result.json
+
+    Validate first (dry run):
+    sf project deploy validate --manifest manifest/production/prod_phase1_foundation.xml ^
+      --target-org AsutaProd --test-level NoTestRun
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- 699 labels -->
+    <types>
+        <members>*</members>
+        <name>CustomLabels</name>
+    </types>
+
+    <!-- 33 global value sets -->
+    <types>
+        <members>Active_Sites</members>
+        <members>Anesthesia_Type</members>
+        <members>Appointment_Status</members>
+        <members>Appointment_System</members>
+        <members>Appointment_urgency</members>
+        <members>case_subject</members>
+        <members>Case_Sub_Subject</members>
+        <members>Commitment_Status</members>
+        <members>For_Telemedicine_Appointment</members>
+        <members>Gender</members>
+        <members>HMO</members>
+        <members>Hospitalization</members>
+        <members>ID_Type</members>
+        <members>Insurance_Company</members>
+        <members>Language</members>
+        <members>LensType</members>
+        <members>Mailing_Approval</members>
+        <members>Payer_Factor</members>
+        <members>Portal_Status</members>
+        <members>Preferred_Channel</members>
+        <members>Pre_Surgery</members>
+        <members>Protocols</members>
+        <members>Protocols_for_medical_procedure</members>
+        <members>Reminder_Status</members>
+        <members>Resources_for_surgery</members>
+        <members>Side_Disabilities</members>
+        <members>Side_Suregeries</members>
+        <members>Status</members>
+        <members>Status_spincal_website</members>
+        <members>TafnitNotesCodes</members>
+        <members>Type_of_assist</members>
+        <members>Type_of_disability</members>
+        <members>YesNoUnknown</members>
+        <name>GlobalValueSet</name>
+    </types>
+
+    <!-- 3 custom permissions -->
+    <types>
+        <members>Change_Queues</members>
+        <members>Change_Queues_Main_Manager</members>
+        <members>Scenario_Management</members>
+        <name>CustomPermission</name>
+    </types>
+
+    <!-- 53 static resources -->
+    <types>
+        <members>app</members>
+        <members>appointments</members>
+        <members>bootstrap</members>
+        <members>Bot_avatar</members>
+        <members>demoAdapterLogo</members>
+        <members>jquery</members>
+        <members>multipleSelect</members>
+        <members>offline</members>
+        <members>online</members>
+        <members>slds</members>
+        <members>AppointmentSnippetSettings</members>
+        <members>assutaExternal</members>
+        <members>docExpertDashboardModal</members>
+        <members>jss</members>
+        <members>SiteSamples</members>
+        <members>SNA_TKC95_sf_default_cdn_ESW_FB_assuta_17440290358121</members>
+        <members>SNA_Y5iRI_sf_default_cdn_ESW_FB_Assuta_17441062863451</members>
+        <members>svgxuse</members>
+        <members>swiper</members>
+        <members>testyuliaortal</members>
+        <members>tether</members>
+        <members>tippy</members>
+        <members>Disability</members>
+        <members>NewCaseCelebration</members>
+        <members>SF_einstein</members>
+        <members>SNA_2osFZ_sf_default_cdn_ESW_FB_Assuta_17441061988301</members>
+        <members>SNA_4IeI3_sf_default_cdn_ESW_FB_assuta_17440289560051</members>
+        <members>SNA_4o32Y_sf_default_cdn_ESW_Assuta_Personal_17440282561921</members>
+        <members>SNA_IZHzC_sf_default_cdn_ESW_FB_Assuta_17440198768301</members>
+        <members>SNA_jnTzZ_sf_default_cdn_ESW_FB_Assuta_17440199439661</members>
+        <members>SNA_OoWJD_sf_default_cdn_ESW_FB_Assuta_17440321314641</members>
+        <members>SNA_SWZwE_sf_default_cdn_ESW_FB_Assuta_17440200508631</members>
+        <members>SNA_ydAnK_sf_default_cdn_ESW_Assuta_Site_Portal_17440283922841</members>
+        <members>SurveyForce_jquery</members>
+        <members>SurveyForce_jquery_ui</members>
+        <members>SurveyForce_SLDS</members>
+        <members>SurveyForce_svg4everybody</members>
+        <members>SurveyForce_UserGuide</members>
+        <members>AppointmentICON</members>
+        <members>Assuta_Logo</members>
+        <members>BlueCircle</members>
+        <members>Chosen_logo</members>
+        <members>EinsteinSearch</members>
+        <members>HighImportanceImage</members>
+        <members>NewCaseEI</members>
+        <members>nrmar_RH</members>
+        <members>SNA_9dyv8_sf_default_cdn_ESW_FB_Assuta_17440197092701</members>
+        <members>SNA_EqGDb_sf_default_cdn_ESW_Agentforce_JADE_Chat_17683169752531</members>
+        <members>SNA_j52bh_sf_default_cdn_ESW_FB_Assuta_17440197747071</members>
+        <members>SNA_s9Bez_sf_default_cdn_ESW_FB_Assuta_17440320557891</members>
+        <members>SNA_XRxMp_sf_default_cdn_ESW_Assuta_Ashdod_Chat_for_17157650758731</members>
+        <members>Surgery_indicator</members>
+        <members>SurveyForce</members>
+        <name>StaticResource</name>
+    </types>
+
+    <!-- 1 letterhead -->
+    <types>
+        <members>Assuta_Letterhead</members>
+        <name>Letterhead</name>
+    </types>
+
+    <!-- 7 standard value sets (created/modified for this org) -->
+    <types>
+        <members>CaseOrigin</members>
+        <members>CaseReason</members>
+        <members>CaseStatus</members>
+        <members>LeadStatus</members>
+        <members>LeadSource</members>
+        <members>OpportunityStage</members>
+        <members>TaskStatus</members>
+        <name>StandardValueSet</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

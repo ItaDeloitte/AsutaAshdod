@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Corona 59</label>
+    <protected>false</protected>
+    <values>
+        <field>SMS_Content__c</field>
+        <value xsi:type="xsd:string">שלום רב, נקבע לך תור לבדיקת קורונה שתתקיים באסותא רעננה בכתובת החרושת 14, קומה 2, רעננה  בתאריך {0} .  יש להצטייד בתעודת זהות, במידה והבדיקה היא לצורך טיסה לחו&quot;ל יש להגיע עם דרכון. עליך להציג את אישור התשלום ביום הבדיקה, במידה והתשלום אינו הוסדר, יש להסדירו במעמד קבלתך לבדיקה. 
+ביטול תור או שינוי מועד התור ניתן לבצע באמצעות האזור האישי באתר אסותא: https://www.assuta.co.il/testresult=true  כמו כן, לתמיכה בתוצאות הבדיקה באיזור האישי, ניתן לפנות לטלפון: 03-7643690
+בברכת בריאות איתנה בי&quot;ח אסותא</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">ASSUTA</value>
+    </values>
+    <values>
+        <field>SMS_Note__c</field>
+        <value xsi:type="xsd:string">תאריך הפגישה = {0}, קישור לתשלום ={1}</value>
+    </values>
+</CustomMetadata>

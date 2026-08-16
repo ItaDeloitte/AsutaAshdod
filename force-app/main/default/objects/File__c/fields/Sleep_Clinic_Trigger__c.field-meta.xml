@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sleep_Clinic_Trigger__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>User Story 19905 used by Titan Web פנייה למכון שינה</description>
+    <label>Sleep Clinic Trigger</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

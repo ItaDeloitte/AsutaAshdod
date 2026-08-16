@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס האירוע</label>
+    <name>EventStatus__c</name>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation>בוטל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Failed</masterLabel>
+        <translation>הפצה נכשלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Succeeded</masterLabel>
+        <translation>הפצה הצליחה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Answer</masterLabel>
+        <translation>אין מענה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Updated</masterLabel>
+        <translation>מטופל עודכן</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred to Risk Management</masterLabel>
+        <translation>הועבר לניהול סיכונים</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סניף</label>
+    <name>Branch__c</name>
+    <picklistValues>
+        <masterLabel>Ashdod</masterLabel>
+        <translation>אשדוד</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beer Sheva</masterLabel>
+        <translation>באר שבע</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beit Shemesh</masterLabel>
+        <translation>בית שמש</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bnei Brak</masterLabel>
+        <translation>בני ברק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haifa</masterLabel>
+        <translation>חיפה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hashalom</masterLabel>
+        <translation>השלום</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jerusalem</masterLabel>
+        <translation>ירושלים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ra&apos;anana</masterLabel>
+        <translation>רעננה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rishon LeZion</masterLabel>
+        <translation>ראשון לציון</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Patient Arrival From Doctor --></label>
+    <name>arrived_doc__c</name>
+    <picklistValues>
+        <masterLabel>הגיע</masterLabel>
+        <translation><!-- הגיע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא הגיע</masterLabel>
+        <translation><!-- לא הגיע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא ניתן לדעת</masterLabel>
+        <translation><!-- לא ניתן לדעת --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

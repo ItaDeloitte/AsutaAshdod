@@ -1,0 +1,310 @@
+.embeddedServiceHelpButton {
+  position: static !important;
+}
+
+.embeddedServiceHelpButton::before {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  background: url('../assets/asuta2/da_logo.png') no-repeat center center;
+  background-size: contain;
+}
+
+.embeddedServiceHelpButton .helpButton {
+  position: static !important;
+  display: flex;
+  justify-content: center;
+  height: auto !important;
+  width: auto !important;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton {
+  height: auto;
+  padding: 8px 12px;
+  min-width: 100px;
+  max-width: 200px;
+  border-radius: 20px !important;
+}
+
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled.uiButton {
+  background-color: #005290;
+}
+
+.embeddedServiceHelpButton
+  .helpButton
+  .helpButtonEnabled.uiButton:hover::before,
+.embeddedServiceHelpButton
+  .helpButton
+  .helpButtonEnabled.uiButton:focus::before {
+  border-radius: 20px;
+}
+
+.embeddedServiceHelpButton
+  .helpButton
+  .helpButtonEnabled.uiButton
+  .embeddedServiceIcon {
+}
+
+.embeddedServiceHelpButton
+  .helpButton
+  .helpButtonEnabled.uiButton
+  .helpButtonLabel {
+}
+
+.embeddedServiceHelpButton
+  .helpButton
+  .helpButtonEnabled.uiButton
+  .helpButtonLabel
+  .message {
+}
+
+/*  */
+.embeddedServiceSidebar {
+}
+.embeddedServiceSidebar.modalContainer {
+}
+.embeddedServiceSidebar.modalContainer.sidebarMaximized {
+  background: transparent;
+  z-index: 3;
+  right: 20px;
+  width: auto;
+  position: static;
+}
+
+/*  */
+.embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI.helpButton {
+  border-style: solid;
+  padding: 8px 8px;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  min-width: 100px;
+}
+
+.embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI .content {
+  padding: 0;
+}
+.embeddedServiceSidebar
+  .embeddedServiceSidebarMinimizedDefaultUI.helpButton
+  .messageContent {
+}
+.embeddedServiceSidebar
+  .embeddedServiceSidebarMinimizedDefaultUI
+  .embeddedServiceIcon {
+}
+.embeddedServiceSidebar
+  .embeddedServiceSidebarMinimizedDefaultUI
+  .minimizedText {
+}
+
+.embeddedServiceSidebar
+  .minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI {
+  background-color: #005290;
+  border-color: #005290;
+}
+
+.embeddedServiceSidebar
+  .minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI:hover,
+.embeddedServiceSidebar
+  .minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI:focus {
+  background-color: #003156;
+}
+
+.emb-chat-sidebar button {
+  min-width: auto !important;
+}
+
+.emb-chat-sidebar .uiButton .label {
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  border-radius: 0 !important;
+  float: none !important;
+}
+
+/*  */
+.emb-chat-sidebar .embeddedServiceSidebar.layout-docked .dockableContainer {
+  position: absolute;
+  box-shadow: none !important;
+  top: 0;
+  max-height: none;
+  left: 5px;
+  right: 5px;
+  width: auto;
+  max-width: none;
+  height: 100%;
+}
+.embeddedServiceSidebar embeddedservice-chat-header {
+  /* background: orange; */
+  background: transparent;
+}
+
+.embeddedServiceSidebar embeddedservice-chat-header .sidebarHeader {
+  color: #072564;
+  padding: 0 2px;
+}
+
+.embeddedServiceSidebar
+  embeddedservice-chat-header
+  .sidebarHeader
+  lightning-icon,
+.embeddedServiceSidebar
+  embeddedservice-chat-header
+  .sidebarHeader
+  svg.slds-icon-text-default {
+  fill: #072564;
+}
+/* svg.slds-icon-text-default */
+.embeddedServiceSidebar embeddedservice-chat-header .sidebarHeader h2 {
+}
+
+.embeddedServiceSidebar
+  embeddedservice-chat-header
+  .sidebarHeader
+  button:focus {
+  outline: 1px dotted #072564;
+}
+.embeddedServiceSidebar
+  embeddedservice-chat-header
+  .sidebarHeader
+  .minimizeButton {
+  display: none;
+}
+
+.embeddedServiceSidebar .sidebarBody {
+}
+.embeddedServiceSidebar .embeddedServiceSidebarState.stateBody {
+}
+
+.embeddedServiceSidebar .embeddedServiceSidebarButton {
+  background-color: #005290;
+}
+.embeddedServiceSidebar .embeddedServiceSidebarButton:not(:disabled):hover,
+.embeddedServiceSidebar .embeddedServiceSidebarButton:not(:disabled):focus {
+  background-color: #003156;
+}
+
+.embeddedServiceSidebar
+  .embeddedServiceSidebarDialogState
+  .dialogTextContainer {
+  padding: 0;
+}
+
+.emb-chat-sidebar {
+  position: fixed;
+  direction: rtl;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  padding: 5px;
+  /* font-size: 12px; */
+  /* line-height: 1.3; */
+  z-index: 100;
+  border-right: 3px solid #71c03a;
+  min-width: 280px;
+  max-width: 100%;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.emb-chat-sidebar,
+.emb-chat-sidebar *,
+.emb-chat-sidebar *::before,
+.emb-chat-sidebar *::after {
+  box-sizing: border-box;
+}
+
+.emb-chat-sidebar.is-open {
+  transform: translateX(0);
+}
+
+.emb-chat-sidebar__chat-iframe {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.emb-chat-sidebar__toggle-btn {
+  position: absolute;
+  z-index: 10;
+  left: 100%;
+  top: 50%;
+  width: 110px;
+  height: 200px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  transform: translate(0, -50%);
+  background: url('../assets/asuta2/da_chatbot_Small.png') no-repeat center
+    center;
+  transform: translateX(3px);
+  background-size: contain;
+  cursor: pointer;
+}
+
+.emb-chat-sidebar__toggle-btn:hover,
+.emb-chat-sidebar__toggle-btn:focus {
+  background-color: transparent !important;
+}
+
+.emb-chat-sidebar .messageArea {
+  border: 1px solid transparent;
+}
+
+.emb-chat-sidebar .messageArea .chatMessage .chatContent * {
+  direction: rtl !important;
+}
+
+.emb-chat-sidebar .embeddedServiceLiveAgentStateChatUnreadMessageBanner {
+  display: none !important;
+}
+
+.chat-iframe .emb-chat-sidebar {
+  transform: translateX(0) !important;
+}
+.chat-iframe .emb-chat-sidebar__toggle-btn {
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .emb-chat-sidebar {
+    width: 100%;
+    padding-right: 30px;
+    border-right: 0;
+  }
+
+  .chat-iframe .emb-chat-sidebar {
+    padding-right: 5px;
+  }
+
+  .emb-chat-sidebar__chat-iframe {
+    /* right: 30px; */
+  }
+
+  .emb-chat-sidebar__toggle-btn {
+    width: 45px;
+    height: 100px;
+  }
+
+  .emb-chat-sidebar.is-open .emb-chat-sidebar__toggle-btn {
+    left: auto;
+    right: 0;
+    width: 32px;
+    height: 89px;
+    background-image: url('../assets/asuta2/back_icon.png');
+  }
+
+  .emb-chat-sidebar .embeddedServiceSidebar.layout-docked .dockableContainer {
+    right: 30px;
+  }
+}

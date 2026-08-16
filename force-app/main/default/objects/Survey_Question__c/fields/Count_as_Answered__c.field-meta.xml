@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_as_Answered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>some fields in the survey are populated automatically and need to be consider as answered even if they are still empty (e.g. medical procedure 2 in PreSurgery survey). when checking this field as true in a record the &quot;Survey Question Response Answered&quot; automation will detect it as if it was answered and check the IsAnswered_c field as true</description>
+    <label>Count_as_Answered</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

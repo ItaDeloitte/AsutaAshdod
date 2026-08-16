@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Digital Followup Status --></label>
+    <name>Digital_Followup_Status__c</name>
+    <picklistValues>
+        <masterLabel>Compatible with follow-up treatment</masterLabel>
+        <translation><!-- Compatible with follow-up treatment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In treatment</masterLabel>
+        <translation><!-- In treatment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No follow-up treatment</masterLabel>
+        <translation><!-- No follow-up treatment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No response</masterLabel>
+        <translation><!-- No response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested</masterLabel>
+        <translation><!-- Not interested --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

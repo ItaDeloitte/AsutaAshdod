@@ -1,0 +1,166 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="modalParams" type="Map" default="{}" />
+  <aura:attribute name="formConfig" type="Map" />
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="labels" type="Map" default="{}" />
+  <!--<aura:attribute name="formOptions" type="Map" />-->
+  <aura:attribute name="editData" type="Map" default="{
+    firstName: null,
+    lastName: null,
+    idNumber: null,
+    idType: null,
+    phone: null,
+    gender: null,
+    birthDay: null,
+    mailingApproval: null
+    }" />
+  <aura:attribute name="isReady" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+
+    <c:ActionModalInner applyStyles="false">
+      <aura:set attribute="title">
+        <span class="font-weight-bold">{!v.labels.FillAccountTitle}</span>
+      </aura:set>
+
+      <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.serverError}">
+          <div class="">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+        <div class="slds-p-top_medium slds-p-horizontal_medium">
+
+          <aura:if isTrue="{!v.isReady}">
+            <div class="slds-grid slds-wrap slds-gutters slds-gutters_large ">
+              <!-- row1 -->
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:input aura:id="editField" label="{!v.labels.FirstName}" required="true"
+                                 value="{!v.editData.firstName}" type="text" name="firstName"
+                                 messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                </lightning:input>
+              </div>
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:input aura:id="editField" label="{!v.labels.LastName}" required="true"
+                                 value="{!v.editData.lastName}" type="text" name="lastName"
+                                 messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                </lightning:input>
+              </div>
+
+              <!-- row2 -->
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:input aura:id="editField" label="{!v.labels.IdNumber}" required="true"
+                                 value="{!v.editData.idNumber}" maxlength="10" type="text" name="idNumber"
+                                 messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                </lightning:input>
+              </div>
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:select aura:id="editField" label="{!v.labels.IdType}" required="true"
+                                  value="{!v.editData.idType}" class="edit-input" name="idType"
+                                  messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                  <option value=""></option>
+                  <aura:iteration items="{!v.formConfig.idTypeOptions}" var="option" indexVar="_index">
+                    <option value="{!option.value}">{!option.label}
+                    </option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+
+              <!-- row3 -->
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <!--pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"-->
+                <lightning:input aura:id="editField" label="{!v.labels.Phone}" required="true"
+                                 value="{!v.editData.phone}" maxlength="10" type="tel" name="phone"
+                                 messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                </lightning:input>
+              </div>
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:select aura:id="editField" label="{!v.labels.Gender}" required="true"
+                                  value="{!v.editData.gender}" class="edit-input" name="gender"
+                                  messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                  <option value=""></option>
+                  <aura:iteration items="{!v.formConfig.genderOptions}" var="option" indexVar="_index">
+                    <option value="{!option.value}">{!option.label}
+                    </option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+
+              <!-- row4 -->
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:input aura:id="editField" label="{!v.labels.BirthDay}" required="true"
+                                 value="{!v.editData.birthDay}" class="start-date" type="date"
+                                 max="{!v.formConfig.maxDate}" name="birthDay"
+                                 messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                </lightning:input>
+              </div>
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:select aura:id="editField" label="{!v.labels.MailingApproval}" required="true"
+                                  value="{!v.editData.mailingApproval}" class="edit-input" name="mailingApproval"
+                                  messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                  <option value=""></option>
+                  <aura:iteration items="{!v.formConfig.mailingApprovalOptions}" var="option" indexVar="_index">
+                    <option value="{!option.value}">
+                      {!option.label}</option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:select aura:id="editField" label="{!v.labels.InsurerFactor}" required="true"
+                                  value="{!v.editData.insurerFactor}" class="edit-input" name="insurerFactor"
+                                  messageWhenValueMissing="{!v.labels.CompleteThisField}"
+                                  onchange="{!c.onEditFieldChange}">
+                  <option value=""></option>
+                  <aura:iteration items="{!v.formConfig.insurerFactorOptions}" var="option" indexVar="_index">
+                    <option value="{!option.value}">
+                      {!option.label}</option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+              <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-bottom_medium">
+                <lightning:select aura:id="editField" label="{!v.labels.OtherHealthServices}" required="true"
+                                  value="{!v.editData.otherHealthServices}" class="edit-input"
+                                  name="otherHealthServices" messageWhenValueMissing="{!v.labels.CompleteThisField}">
+                  <option value=""></option>
+                  <aura:iteration items="{!v.formConfig.otherHealthServicesOptions}" var="option" indexVar="_index">
+                    <option value="{!option.value}">
+                      {!option.label}</option>
+                  </aura:iteration>
+                </lightning:select>
+              </div>
+
+            </div>
+          </aura:if>
+
+
+
+        </div>
+      </div>
+      <aura:set attribute="footer">
+        <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+                          label="{!v.labels.Cancel}" />
+        <aura:if isTrue="{!v.isReady}">
+          <lightning:button variant="brand" type="button" onclick="{!c.onSubmit}" disabled="{!v.isLoading}"
+                            label="{!v.labels.Submit}" />
+        </aura:if>
+      </aura:set>
+    </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+</aura:component>

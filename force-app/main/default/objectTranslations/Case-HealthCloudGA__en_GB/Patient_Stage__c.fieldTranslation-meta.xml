@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Patient Stage --></label>
+    <name>Patient_Stage__c</name>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow-up</masterLabel>
+        <translation><!-- Follow-up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Treatment Required</masterLabel>
+        <translation><!-- Further Treatment Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Biopsy</masterLabel>
+        <translation><!-- Waiting for Biopsy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Biopsy Results</masterLabel>
+        <translation><!-- Waiting for Biopsy Results --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Initial Call</masterLabel>
+        <translation><!-- Waiting for Initial Call --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

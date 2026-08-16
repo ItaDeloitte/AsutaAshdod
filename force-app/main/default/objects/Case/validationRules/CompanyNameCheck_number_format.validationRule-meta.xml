@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompanyNameCheck_number_format</fullName>
+    <active>true</active>
+    <description>Checks that the company name is in text format</description>
+    <errorConditionFormula>NOT(
+REGEX(  Company_Name__c ,&quot;([a-zA-Z-א-ת&apos; ])*&quot;))
+&amp;&amp; RecordType.DeveloperName  == &apos;Supplier&apos;
+&amp;&amp;!ISBLANK(Company_Name__c )</errorConditionFormula>
+    <errorDisplayField>Company_Name__c</errorDisplayField>
+    <errorMessage>!נא לוודא שהזנת בשם החברה אותיות בלבד</errorMessage>
+</ValidationRule>

@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Status_Reminders_and_Triggers</name>
+        <label>Update Status Reminders and Triggers</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.X10DayReminderSent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.x10DayReminder__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>For10DaysReminderDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.X20DayReminderSent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.X20DayReminder__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>For20DaysReminderDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.X30DayReminderSent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.x30DayReminder__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>For30DaysReminderDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Questionary_Fulfilled</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Triggers_Sent</name>
+        <label>Update Triggers Sent</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.X10DayReminderSent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.X20DayReminderSent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.X30DayReminderSent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Appointment</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_Questionary_Fulfilled</name>
+        <label>Is Questionary Fulfilled</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Appointment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Fulfilled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PercentageOfCompletion__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>100</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Triggers_Sent</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Fulfilled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Questionary_Not_Completed_And_Found_Survey_10</name>
+        <label>Questionary Not Completed And Found Survey 10?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Completed</defaultConnectorLabel>
+        <rules>
+            <name>Not_Completed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PercentageOfCompletion__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>100</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.X10DayReminderSent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.x10DayReminder__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey_Taken_For_10_Days_Reminder</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SMS_10_Days_Not_Starded_or_Finished</targetReference>
+            </connector>
+            <label>Not Completed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Questionary_Not_Completed_And_Found_Survey_20</name>
+        <label>Questionary Not Completed And Found Survey 20?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Completed2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PercentageOfCompletion__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>100</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.X20DayReminderSent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.X20DayReminder__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey_Taken_For_20_Days_Reminder</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SMS_20_Days_Not_Starded_or_Finished</targetReference>
+            </connector>
+            <label>Not Completed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Questionary_Not_Completed_And_Found_Survey_30</name>
+        <label>Questionary Not Completed And Found Survey 30?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Completed1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PercentageOfCompletion__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>100</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.X30DayReminderSent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.x30DayReminder__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Survey_Taken_For_30_Days_Reminder</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SMS_30_Days_Not_Starded</targetReference>
+            </connector>
+            <label>Not Completed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Send_PreSurgery_Survey_To_Patient</name>
+        <label>Send PreSurgery Survey To Patient?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Send_PreSurgery_Survey</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Survey_Taken</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_10_20and_30_reminders_and_reset_triggers</targetReference>
+            </connector>
+            <label>Yes-  Send  PreSurgery Survey</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Set_10_20and_30_reminders_and_reset_triggers</name>
+        <label>New: Set 10,20 and 30 reminders and reset triggers</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Questionary_Fulfilled</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Set_Reminders</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status_Reminders_and_Triggers</targetReference>
+            </connector>
+            <label>Set Reminders</label>
+        </rules>
+    </decisions>
+    <description>User Story 18620
+AM: 30112025-2544091877-  BUG FIX in sending sms when survey taken is not present. now i check before sending.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>ContentSMS10Days</name>
+        <dataType>String</dataType>
+        <expression>&quot;לתשומת ליבך, טרם השלמת את מילוי שאלון ההערכה הטרום ניתוחית. &quot; &amp; BR() &amp;
+&quot;השאלון חשוב ומשמעותי להמשך תהליך קליטתך בבית החולים. &quot; &amp; BR() &amp;
+&quot;לקראת הגעתך לניתוח, &quot; &amp; BR() &amp;
+&quot;אנא הקדיש/י מס&apos; דקות מזמנך למילוי שאלון זה בהקדם ולא יאוחר &quot; &amp; BR() &amp;
+&quot;ממועד קבלת הודעה זו. &quot; &amp; BR() &amp;
+ &quot;לינק : &quot; &amp; &quot; &quot; &amp; {!LinktoQuestionary}</expression>
+    </formulas>
+    <formulas>
+        <name>ContentSMSNotStarted</name>
+        <dataType>String</dataType>
+        <expression>&quot;חשוב לנו לעדכנך כי טרם מילית את שאלון ההערכה הטרום ניתוחית &quot; &amp; BR() &amp;
+&quot;השאלון חשוב ומשמעותי להמשך תהליך קליטתך בבית החולים&quot; &amp; BR() &amp;
+&quot;לקראת הגעתך לניתוח,&quot; &amp; BR() &amp;
+&quot;נודה אם תקדיש/י מספר דקות מזמנך למילוי השאלון. &quot; &amp; BR() &amp;
+&quot;לינק : &quot; &amp; &quot; &quot; &amp; {!LinktoQuestionary}</expression>
+    </formulas>
+    <formulas>
+        <name>ContentSMSStartedNotCompleted</name>
+        <dataType>String</dataType>
+        <expression>&quot;חשוב לנו לעדכנך כי טרם השלמת את מילוי שאלון ההערכה הטרום ניתוחית&quot; &amp; BR() &amp;
+&quot;השאלון חשוב ומשמעותי להמשך תהליך קליטתך בבית החולים&quot; &amp; BR() &amp;
+&quot;לקראת הגעתך לניתוח,&quot; &amp; BR() &amp;
+&quot;נודה אם תקדיש/י מס דקות מזמנך למילוי שאלון זה.&quot; &amp; BR() &amp;
+&quot;לינק : &quot; &amp; &quot; &quot; &amp; {!LinktoQuestionary}</expression>
+    </formulas>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Trigger Flow - Appointment - RT Surgeries- Reminder-Questionary&apos;+ &apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <formulas>
+        <name>For10DaysReminderDate</name>
+        <dataType>Date</dataType>
+        <expression>IF  (  WEEKDAY( {!$Record.Appointment_Date__c}-10)  &lt;= 5, 
+        {!$Record.Appointment_Date__c}-10 ,
+      IF(  WEEKDAY({!$Record.Appointment_Date__c}-10)  = 6 ,
+        {!$Record.Appointment_Date__c} -11,
+        {!$Record.Appointment_Date__c} -9)
+    )</expression>
+    </formulas>
+    <formulas>
+        <name>For20DaysReminderDate</name>
+        <dataType>Date</dataType>
+        <expression>IF  (  WEEKDAY( {!$Record.Appointment_Date__c}-20)  &lt;= 5, 
+        {!$Record.Appointment_Date__c}-20 ,
+      IF(  WEEKDAY({!$Record.Appointment_Date__c}-20)  = 6 ,
+        {!$Record.Appointment_Date__c} -21,
+        {!$Record.Appointment_Date__c} -19)
+    )</expression>
+    </formulas>
+    <formulas>
+        <name>For30DaysReminderDate</name>
+        <dataType>Date</dataType>
+        <expression>IF  (  WEEKDAY( {!$Record.Appointment_Date__c}-30)  &lt;= 5, 
+        {!$Record.Appointment_Date__c}-30 ,
+      IF(  WEEKDAY({!$Record.Appointment_Date__c}-30)  = 6 ,
+        {!$Record.Appointment_Date__c} -31,
+        {!$Record.Appointment_Date__c} -29)
+    )</expression>
+    </formulas>
+    <interviewLabel>Trigger Flow - Appointment - RT Surgeries- Reminder-Questionary {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Trigger Flow - Appointment - RT Surgeries- Reminder-Questionary</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>SMS_10_Days_Not_Starded_or_Finished</name>
+        <label>SMS 10 Days Not Finished</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Trigger_10_Sent</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>$Record.Patient_Account__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Appointment__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Automation_name__c</field>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case__c</field>
+            <value>
+                <elementReference>$Record.Case__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ExpectedSendingDateTime__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone_Number__c</field>
+            <value>
+                <elementReference>$Record.Case__r.SMS_Phone_Number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SmsTemplate__c</field>
+            <value>
+                <stringValue>PreSurgery_SMS_Ten_Days</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SurveyTaker__c</field>
+            <value>
+                <elementReference>Get_Survey_Taken_For_10_Days_Reminder.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <stringValue>Outgoing</stringValue>
+            </value>
+        </inputAssignments>
+        <object>SMS__c</object>
+    </recordCreates>
+    <recordCreates>
+        <name>SMS_20_Days_Not_Starded_or_Finished</name>
+        <label>SMS 20 Days Not Finished</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Trigger_20_Sent</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>$Record.Patient_Account__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Appointment__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Automation_name__c</field>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case__c</field>
+            <value>
+                <elementReference>$Record.Case__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ExpectedSendingDateTime__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone_Number__c</field>
+            <value>
+                <elementReference>$Record.Case__r.SMS_Phone_Number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SmsTemplate__c</field>
+            <value>
+                <stringValue>PreSurgery_SMS_Twenty_Thirty_Days</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SurveyTaker__c</field>
+            <value>
+                <elementReference>Get_Survey_Taken_For_20_Days_Reminder.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <stringValue>Outgoing</stringValue>
+            </value>
+        </inputAssignments>
+        <object>SMS__c</object>
+    </recordCreates>
+    <recordCreates>
+        <name>SMS_30_Days_Not_Starded</name>
+        <label>SMS 30 Days Not Finished</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Trigger_30_Sent</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>$Record.Patient_Account__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Appointment__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Automation_name__c</field>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case__c</field>
+            <value>
+                <elementReference>$Record.Case__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ExpectedSendingDateTime__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone_Number__c</field>
+            <value>
+                <elementReference>$Record.Case__r.SMS_Phone_Number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SmsTemplate__c</field>
+            <value>
+                <stringValue>PreSurgery_SMS_Twenty_Thirty_Days</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SurveyTaker__c</field>
+            <value>
+                <elementReference>Get_Survey_Taken_For_30_Days_Reminder.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <stringValue>Outgoing</stringValue>
+            </value>
+        </inputAssignments>
+        <object>SMS__c</object>
+    </recordCreates>
+    <recordLookups>
+        <description>סקר הערכת טרום ניתוח</description>
+        <name>Get_Survey_Taken</name>
+        <label>Get Survey Taken</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_PreSurgery_Survey_To_Patient</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SurveyCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PreSurgery</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Appointment__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SurveyTaker__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>סקר הערכת טרום ניתוח</description>
+        <name>Get_Survey_Taken_For_10_Days_Reminder</name>
+        <label>Get Survey Taken - For 10 Days Reminder</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Questionary_Not_Completed_And_Found_Survey_10</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SurveyCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PreSurgery</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Appointment__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SurveyTaker__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>סקר הערכת טרום ניתוח</description>
+        <name>Get_Survey_Taken_For_20_Days_Reminder</name>
+        <label>Get Survey Taken - For 20 Days Reminder</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Questionary_Not_Completed_And_Found_Survey_20</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SurveyCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PreSurgery</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Appointment__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SurveyTaker__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>סקר הערכת טרום ניתוח</description>
+        <name>Get_Survey_Taken_For_30_Days_Reminder</name>
+        <label>Get Survey Taken - For 30 Days Reminder</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Questionary_Not_Completed_And_Found_Survey_30</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SurveyCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PreSurgery</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Appointment__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SurveyTaker__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Appointment</name>
+        <label>Update Appointment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Trigger_10_Sent</name>
+        <label>Update Trigger 10 Sent</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>X10DayReminderSent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Trigger_20_Sent</name>
+        <label>Update Trigger 20 Sent</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>X20DayReminderSent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Trigger_30_Sent</name>
+        <label>Update Trigger 30 Sent</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>X30DayReminderSent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Survey_Taken</targetReference>
+        </connector>
+        <filterFormula>{!$Record.RecordType.Name} = &apos;ניתוח&apos; &amp;&amp; 
+(NOT({!$Record.X10DayReminderSent__c}) || NOT({!$Record.X20DayReminderSent__c})  || NOT({!$Record.X30DayReminderSent__c})) &amp;&amp;
+(
+      ISNEW() || 
+    ( ISCHANGED({!$Record.PercentageOfCompletion__c}) &amp;&amp; {!$Record.PercentageOfCompletion__c} = &apos;100&apos;) ||
+     {!$Record.x10DayReminder__c} = TODAY() ||
+    {!$Record.X20DayReminder__c} =  TODAY() ||
+    {!$Record.x30DayReminder__c}  = TODAY() 
+ )</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>X30_Days_before_Appointment_Date</name>
+            <connector>
+                <targetReference>Get_Survey_Taken_For_30_Days_Reminder</targetReference>
+            </connector>
+            <label>30 Days before Appointment Date</label>
+            <offsetNumber>8</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>x30DayReminder__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>X20_Days_before_Appointment_Date</name>
+            <connector>
+                <targetReference>Get_Survey_Taken_For_20_Days_Reminder</targetReference>
+            </connector>
+            <label>20 Days before Appointment Date</label>
+            <offsetNumber>8</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>X20DayReminder__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>X10_Days_before_Appointment_Date</name>
+            <connector>
+                <targetReference>Get_Survey_Taken_For_10_Days_Reminder</targetReference>
+            </connector>
+            <label>10  Days before Appointment Date</label>
+            <offsetNumber>8</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>x10DayReminder__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>LinktoQuestionary</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>https://myassuta.formtitan.com/ftproject/ft2bfbe0abfdcc46adb3cc6352c1d452dc?takenid=a1KJ70000017Cui</stringValue>
+        </value>
+    </variables>
+</Flow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Doctor Update Status --></label>
+    <name>Doctor_Update_Status__c</name>
+    <picklistValues>
+        <masterLabel>Doctor Updated</masterLabel>
+        <translation><!-- Doctor Updated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doctor yet Updated</masterLabel>
+        <translation><!-- Doctor yet Updated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

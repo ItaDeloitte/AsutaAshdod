@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site3__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>אתר לקמפיין 3</description>
+    <label>Site3</label>
+    <referenceTo>Site__c</referenceTo>
+    <relationshipLabel>Campaigns (Site3)</relationshipLabel>
+    <relationshipName>Campaigns2</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

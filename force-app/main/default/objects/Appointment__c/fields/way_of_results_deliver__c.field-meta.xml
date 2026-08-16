@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>way_of_results_deliver__c</fullName>
+    <label>How to Report Results</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>אינטרנט</fullName>
+                <default>false</default>
+                <label>אינטרנט</label>
+            </value>
+            <value>
+                <fullName>בדיעבד</fullName>
+                <default>false</default>
+                <label>בדיעבד</label>
+            </value>
+            <value>
+                <fullName>דואר פנימי</fullName>
+                <default>false</default>
+                <label>דואר פנימי</label>
+            </value>
+            <value>
+                <fullName>דואר רגיל</fullName>
+                <default>false</default>
+                <label>דואר רגיל</label>
+            </value>
+            <value>
+                <fullName>דואר רשום</fullName>
+                <default>false</default>
+                <label>דואר רשום</label>
+            </value>
+            <value>
+                <fullName>הגעה עצמית</fullName>
+                <default>false</default>
+                <label>הגעה עצמית</label>
+            </value>
+            <value>
+                <fullName>לקיחה במקום</fullName>
+                <default>false</default>
+                <label>לקיחה במקום</label>
+            </value>
+            <value>
+                <fullName>לקיחת מבחנה</fullName>
+                <default>false</default>
+                <label>לקיחת מבחנה</label>
+            </value>
+            <value>
+                <fullName>נמסר לאחות</fullName>
+                <default>false</default>
+                <label>נמסר לאחות</label>
+            </value>
+            <value>
+                <fullName>שליחה בפקס</fullName>
+                <default>false</default>
+                <label>שליחה בפקס</label>
+            </value>
+            <value>
+                <fullName>שליחה לרופא</fullName>
+                <default>false</default>
+                <label>שליחה לרופא</label>
+            </value>
+            <value>
+                <fullName>שליחות פרטית</fullName>
+                <default>false</default>
+                <label>שליחות פרטית</label>
+            </value>
+            <value>
+                <fullName>תשובה נשלחה בדואר</fullName>
+                <default>false</default>
+                <label>תשובה נשלחה בדואר</label>
+            </value>
+            <value>
+                <fullName>תשובה נשלחה בפקס</fullName>
+                <default>false</default>
+                <label>תשובה נשלחה בפקס</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

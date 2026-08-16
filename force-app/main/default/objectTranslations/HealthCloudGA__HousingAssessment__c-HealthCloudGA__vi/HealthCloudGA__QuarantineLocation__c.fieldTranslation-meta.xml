@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Địa Điểm Cách Ly</label>
+    <name>HealthCloudGA__QuarantineLocation__c</name>
+    <relationshipLabel>Đánh Giá Nhà Ở</relationshipLabel>
+</CustomFieldTranslation>

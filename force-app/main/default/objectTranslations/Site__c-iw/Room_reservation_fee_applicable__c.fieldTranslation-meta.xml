@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- האם יש גביה על שריון חדר פרטי --></help>
+    <label><!-- Room reservation fee applicable? --></label>
+    <name>Room_reservation_fee_applicable__c</name>
+</CustomFieldTranslation>

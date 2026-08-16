@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>621</fullName>
+        <default>false</default>
+        <label>בדיקות דם- בדיקות חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>622</fullName>
+        <default>false</default>
+        <label>גסטרוסקופיה- בדיקות חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>623</fullName>
+        <default>false</default>
+        <label>קולונוסקופיה (רגילה או וירטואלית) בדיקות חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>624</fullName>
+        <default>false</default>
+        <label>CT בטן/אגן – חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>625</fullName>
+        <default>false</default>
+        <label>פיענוח CT- חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>626</fullName>
+        <default>false</default>
+        <label>בדיקת קפסולה- חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>627</fullName>
+        <default>false</default>
+        <label>MRCP- חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>628</fullName>
+        <default>false</default>
+        <label>דוחות ניתוח רלוונטים לייעוץ - חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>629</fullName>
+        <default>false</default>
+        <label>סיכום רפואי מרופא משפחה או מומחה - חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>630</fullName>
+        <default>false</default>
+        <label>MRI בטן/אגן/ערמונית- חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>631</fullName>
+        <default>false</default>
+        <label>אולטרהסאונד בטן/דרכי שתן/ערמונית/אשכים- חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>632</fullName>
+        <default>false</default>
+        <label>מיפוי PET CT, PSMA- חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>633</fullName>
+        <default>false</default>
+        <label>מיפוי כליות- חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>634</fullName>
+        <default>false</default>
+        <label>מיפוי כבד- חיצוניות</label>
+    </customValue>
+    <customValue>
+        <fullName>865</fullName>
+        <default>false</default>
+        <label>סיכום ייעוץ רפואי קודם</label>
+    </customValue>
+    <customValue>
+        <fullName>816</fullName>
+        <default>false</default>
+        <label>רשימת תרופות קבועות</label>
+    </customValue>
+    <customValue>
+        <fullName>817</fullName>
+        <default>false</default>
+        <label>תרשים א.ק.ג</label>
+    </customValue>
+    <customValue>
+        <fullName>801</fullName>
+        <default>false</default>
+        <label>פענוח בדיקת מאמץ</label>
+    </customValue>
+    <customValue>
+        <fullName>831</fullName>
+        <default>false</default>
+        <label>פענוח בדיקת הולטר</label>
+    </customValue>
+    <customValue>
+        <fullName>821</fullName>
+        <default>false</default>
+        <label>פענוח מיפוי לב</label>
+    </customValue>
+    <customValue>
+        <fullName>811</fullName>
+        <default>false</default>
+        <label>פענוח אקו לב דופלר ECHO</label>
+    </customValue>
+    <customValue>
+        <fullName>815</fullName>
+        <default>false</default>
+        <label>פענוח אקו לב במאמץ</label>
+    </customValue>
+    <customValue>
+        <fullName>301</fullName>
+        <default>false</default>
+        <label>פענוח צילום חזה – רנטגן</label>
+    </customValue>
+    <customValue>
+        <fullName>304</fullName>
+        <default>false</default>
+        <label>פענוח בדיקת CT לב</label>
+    </customValue>
+    <customValue>
+        <fullName>303</fullName>
+        <default>false</default>
+        <label>פענוח בדיקת MRI לב</label>
+    </customValue>
+    <customValue>
+        <fullName>921</fullName>
+        <default>false</default>
+        <label>סיכום פעולה – צנתור/אבלציה/ניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>958</fullName>
+        <default>false</default>
+        <label>צילום של האזור</label>
+    </customValue>
+    <customValue>
+        <fullName>959</fullName>
+        <default>false</default>
+        <label>תשובות ביופסיה עורית</label>
+    </customValue>
+    <masterLabel>For Telemedicine Appointment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

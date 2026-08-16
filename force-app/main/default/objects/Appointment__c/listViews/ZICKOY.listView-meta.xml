@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZICKOY</fullName>
+    <columns>IDNumber__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>paid_amount__c</columns>
+    <columns>ReceiptNum__c</columns>
+    <columns>Dateofarequestforcredit__c</columns>
+    <columns>Creditwasmade__c</columns>
+    <columns>Dateofcredit__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>applicationforcredit__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Creditwasmade__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Date_of_appointment__c</field>
+        <operation>equals</operation>
+        <value>9/1/2024</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <label>שירותים פרטיים - רשימת מטופלים לזיכוי</label>
+</ListView>

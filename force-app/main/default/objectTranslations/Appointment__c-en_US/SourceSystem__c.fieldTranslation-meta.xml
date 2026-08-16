@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- המערכת בה זומן התור --></help>
+    <label><!-- Source System --></label>
+    <name>SourceSystem__c</name>
+    <picklistValues>
+        <masterLabel>Odoro</masterLabel>
+        <translation><!-- Odoro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QFlow</masterLabel>
+        <translation><!-- QFlow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RIS</masterLabel>
+        <translation><!-- RIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rapid</masterLabel>
+        <translation><!-- Rapid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>test</masterLabel>
+        <translation><!-- test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דרך פנייה ידנית</masterLabel>
+        <translation><!-- דרך פנייה ידנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ספינקל</masterLabel>
+        <translation><!-- ספינקל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיאום דרך אתר האינטרנט של הרופא</masterLabel>
+        <translation><!-- תיאום דרך אתר האינטרנט של הרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיאום טלפוני דרך המזכירה</masterLabel>
+        <translation><!-- תיאום טלפוני דרך המזכירה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

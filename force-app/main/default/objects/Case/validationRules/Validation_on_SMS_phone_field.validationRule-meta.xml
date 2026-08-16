@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_on_SMS_phone_field</fullName>
+    <active>false</active>
+    <description>מוודא כי מספר הטלפון יכיל 10 תווים, ויתחיל ב-0 במידה והמטופל ישראלי.</description>
+    <errorConditionFormula>(NOT(RecordType.DeveloperName = &apos;Surgery&apos;)||NOT(RecordType.DeveloperName =&apos;ClosedSurgeries&apos;))  &amp;&amp;
+
+NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp; 
+
+( CONTAINS(Account_Country__c , &quot;ישראל&quot;)
+||
+ISBLANK(Account_Country__c ) )
+&amp;&amp;
+NOT( ISBLANK(SMS_Phone_Number__c ))
+&amp;&amp;
+(LEN( SMS_Phone_Number__c ) &lt;&gt; 10
+||
+LEFT( SMS_Phone_Number__c , 1) &lt;&gt; &quot;0&quot;)</errorConditionFormula>
+    <errorDisplayField>SMS_Phone_Number__c</errorDisplayField>
+    <errorMessage>מספר הנייד אינו תקין</errorMessage>
+</ValidationRule>

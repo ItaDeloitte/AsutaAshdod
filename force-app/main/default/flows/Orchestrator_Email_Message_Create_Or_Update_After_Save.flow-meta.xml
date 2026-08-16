@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Case_Exists</name>
+        <label>Case Exists?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Email_Message</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Update_Case</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ParentId</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Auto_Update_Case_Fields</targetReference>
+            </connector>
+            <label>Yes- Update Case</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_New_or_Updated</name>
+        <label>Is New or Updated?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Email_Message</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Updated</defaultConnectorLabel>
+        <rules>
+            <name>New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Related_to_Case_Record_Type_IVF_Freezing_Eggs</targetReference>
+            </connector>
+            <label>New</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Related_to_Case_Record_Type_IVF_Freezing_Eggs</name>
+        <label>Is Related to Case Record Type IVF_Freezing_Eggs?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Case_Exists</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Related_to_Case_Record_Type_IVF_Freezing_Eggs</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Parent.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IVF_Freezing_Eggs</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Auto_Update_Email_Message_Change</targetReference>
+            </connector>
+            <label>Related to IVF_Freezing_Eggs</label>
+        </rules>
+    </decisions>
+    <description>LA 06 04 2026 Monday 2822293567 PB  Task creation due to email arrival to Flow
+LA 14 04 2026 Monday 2822298883 PB שינוי סטטוס שיקום בית ל&quot;ממתין לאישור רופא
+AM: 28052026- 2942867836- wf to flow- all workflows + small refactor. (consolidate 2822298883  to subflow Auto_Update_Case_Fields)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Orchestrator- Email Message - Create Or Update- After Save&apos;+&apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <formulas>
+        <name>fISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Orchestrator-Email Message - Create Or Update- After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Orchestrator-Email Message - Create Or Update- After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Email_Message</name>
+        <label>Update Email Message</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>rvEmailMessageUpdate</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_New_or_Updated</targetReference>
+        </connector>
+        <object>EmailMessage</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>AM: 28052026- 2942867836- wf to flow.</description>
+        <name>Auto_Update_Case_Fields</name>
+        <label>Auto- Update Case Fields</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Email_Message</targetReference>
+        </connector>
+        <flowName>Auto_Update_Case_Fields</flowName>
+        <inputAssignments>
+            <name>rvEmailMessageTrig</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>tvAutomationName</name>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Auto_Update_Email_Message_Change</name>
+        <label>Auto Update Email Message Change</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Case_Exists</targetReference>
+        </connector>
+        <flowName>Auto_Update_Email_Message_Change</flowName>
+        <inputAssignments>
+            <name>rvEmailMessageTrig</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>rvEmailMessageUpdate</name>
+            <value>
+                <elementReference>rvEmailMessageUpdate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>TriggeredByAutomationName</name>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>rvEmailMessageUpdate</assignToReference>
+            <name>rvEmailMessageUpdate</name>
+        </outputAssignments>
+    </subflows>
+    <variables>
+        <name>rvEmailMessageUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>EmailMessage</objectType>
+    </variables>
+</Flow>

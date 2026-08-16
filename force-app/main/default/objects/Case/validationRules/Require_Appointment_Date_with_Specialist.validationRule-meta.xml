@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Appointment_Date_with_Specialist</fullName>
+    <active>true</active>
+    <description>אם בשדה &quot;Details of the Conversation&quot; הערך הוא &quot;Waiting for Doctors Appointment&quot;.
+אז השדה &quot;Appointment Date with Specialist&quot; יהיה חובה.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( DetailsoftheConversation__c , &quot;Waiting for Doctors Appointment&quot;),
+ISBLANK( AppointmentDatewithSpecialist__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>AppointmentDatewithSpecialist__c</errorDisplayField>
+    <errorMessage>השדה &quot;מועד תור לרופא מומחה&quot; הינו שדה חובה.</errorMessage>
+</ValidationRule>

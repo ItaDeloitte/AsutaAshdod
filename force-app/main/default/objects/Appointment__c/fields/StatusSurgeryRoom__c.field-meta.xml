@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusSurgeryRoom__c</fullName>
+    <description>שדה שיציג את סטטוס הספינקל והפניה מאתר רופאים</description>
+    <externalId>false</externalId>
+    <formula>CASE(
+Spincal__r.statuscode__c, &quot;3&quot;, &quot;בוטל&quot;,
+&quot;2&quot; , &quot;עודכן&quot;, 
+&quot;1&quot;, &quot;חדש&quot;, 
+&quot;טרם זומן&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>StatusSurgeryRoom</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

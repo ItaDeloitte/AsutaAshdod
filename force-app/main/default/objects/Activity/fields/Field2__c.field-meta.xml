@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field2__c</fullName>
+    <inlineHelpText>בחר את סיווג השיחה</inlineHelpText>
+    <label>Classification</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>זימון תורים למכונים רופאים</fullName>
+                <default>false</default>
+                <label>זימון תורים למכונים רופאים</label>
+            </value>
+            <value>
+                <fullName>רופאים מומחים</fullName>
+                <default>false</default>
+                <label>רופאים מומחים</label>
+            </value>
+            <value>
+                <fullName>ניתוחים</fullName>
+                <default>false</default>
+                <label>ניתוחים</label>
+            </value>
+            <value>
+                <fullName>מידע כללי</fullName>
+                <default>false</default>
+                <label>מידע כללי</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

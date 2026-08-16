@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס טיפול</label>
+    <name>Treat_status__c</name>
+    <picklistValues>
+        <masterLabel>General Information</masterLabel>
+        <translation>מתן מידע כללי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצעה חזרה למטופל ונסגר מעגל טיפול</masterLabel>
+        <translation><!-- בוצעה חזרה למטופל ונסגר מעגל טיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוצעו מספר פתרונות למטופל</masterLabel>
+        <translation><!-- הוצעו מספר פתרונות למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המטופל ביקש שיחזרו אליו ממוקד הזימון</masterLabel>
+        <translation><!-- המטופל ביקש שיחזרו אליו ממוקד הזימון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופל עי מנהל</masterLabel>
+        <translation><!-- טופל עי מנהל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נעשה ניסיון התקשרות למטופל- ללא מענה</masterLabel>
+        <translation><!-- נעשה ניסיון התקשרות למטופל- ללא מענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נעשו מספר ניסיונות להשגת המטופל ללא הצלחה</masterLabel>
+        <translation><!-- נעשו מספר ניסיונות להשגת המטופל ללא הצלחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה הוחזרה לבעלים הקודמים להמשך טיפול</masterLabel>
+        <translation><!-- פניה הוחזרה לבעלים הקודמים להמשך טיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה הועברה לטיפול</masterLabel>
+        <translation><!-- פניה הועברה לטיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה טופלה ללא שיחה</masterLabel>
+        <translation><!-- פניה טופלה ללא שיחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם תור</masterLabel>
+        <translation><!-- תואם תור --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

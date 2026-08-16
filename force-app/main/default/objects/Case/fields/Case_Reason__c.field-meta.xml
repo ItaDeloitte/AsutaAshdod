@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason__c</fullName>
+    <label>Case Reason 1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>חסרה חתימת מטופל/אפוטרופוס</fullName>
+                <default>false</default>
+                <label>חסרה חתימת מטופל/אפוטרופוס</label>
+            </value>
+            <value>
+                <fullName>חסרה חתימת רופא</fullName>
+                <default>false</default>
+                <label>חסרה חתימת רופא</label>
+            </value>
+            <value>
+                <fullName>חסרה חותמת רופא</fullName>
+                <default>false</default>
+                <label>חסרה חותמת רופא</label>
+            </value>
+            <value>
+                <fullName>חסר טופס</fullName>
+                <default>false</default>
+                <label>חסר טופס</label>
+            </value>
+            <value>
+                <fullName>צד שגוי</fullName>
+                <default>false</default>
+                <label>צד שגוי</label>
+            </value>
+            <value>
+                <fullName>חסר ציון צד</fullName>
+                <default>false</default>
+                <label>חסר ציון צד</label>
+            </value>
+            <value>
+                <fullName>שם ניתוח אינו תואם למהלך הניתוח</fullName>
+                <default>false</default>
+                <label>שם ניתוח אינו תואם למהלך הניתוח</label>
+            </value>
+            <value>
+                <fullName>אבחנה לא תקינה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אבחנה לא תקינה</label>
+            </value>
+            <value>
+                <fullName>אבחנות של מחלות הגבר עבור מטופלת אישה ולהפך</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אבחנות של מחלות הגבר עבור מטופלת אישה ולהפך</label>
+            </value>
+            <value>
+                <fullName>דוח ניתוח/מכתב שחרור</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>דוח ניתוח/מכתב שחרור</label>
+            </value>
+            <value>
+                <fullName>חסר צד</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסר צד</label>
+            </value>
+            <value>
+                <fullName>חסר שם ומספר רישיון רופא</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסר שם ומספר רישיון רופא</label>
+            </value>
+            <value>
+                <fullName>חסר שם רופא מרדים/ מנתח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסר שם רופא מרדים/ מנתח</label>
+            </value>
+            <value>
+                <fullName>חסר תאריך</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסר תאריך</label>
+            </value>
+            <value>
+                <fullName>חסר תאריך קבלה/ ניתוח/ שחרור</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסר תאריך קבלה/ ניתוח/ שחרור</label>
+            </value>
+            <value>
+                <fullName>חסר תיעוד מתן דם</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסר תיעוד מתן דם</label>
+            </value>
+            <value>
+                <fullName>חסרה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסרה</label>
+            </value>
+            <value>
+                <fullName>חסרה חותמת מרדים</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסרה חותמת מרדים</label>
+            </value>
+            <value>
+                <fullName>חסרה חתימת מטופל/ אפוטרופוס</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסרה חתימת מטופל/ אפוטרופוס</label>
+            </value>
+            <value>
+                <fullName>חסרה חתימת מרדים</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חסרה חתימת מרדים</label>
+            </value>
+            <value>
+                <fullName>מתן המלצות בשחרור לתרופה עבורה רשומה רגישות בתיק המטופל</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>מתן המלצות בשחרור לתרופה עבורה רשומה רגישות בתיק המטופל</label>
+            </value>
+            <value>
+                <fullName>עדכון ידני ללא עדכון בתיק קליני</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>עדכון ידני ללא עדכון בתיק קליני</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד אובדן דם</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פער בתיעוד אובדן דם</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד בדיקה גופנית בקבלה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פער בתיעוד בדיקה גופנית בקבלה</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד מהלך האשפוז</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פער בתיעוד מהלך האשפוז</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד מהלך ניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פער בתיעוד מהלך ניתוח</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד מצב המטופל בסיום הניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פער בתיעוד מצב המטופל בסיום הניתוח</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד מקרים מיוחדים באשפוז</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פער בתיעוד מקרים מיוחדים באשפוז</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד סיבוכים בניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פער בתיעוד סיבוכים בניתוח</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד תולדות המחלה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פער בתיעוד תולדות המחלה</label>
+            </value>
+            <value>
+                <fullName>שימוש בטופס הסכמה כללי ללא תיעוד הסבר לגבי סיכונים וסיבוכים האפשריים.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>שימוש בטופס הסכמה כללי ללא תיעוד הסבר לגבי סיכונים וסיבוכים האפשריים.</label>
+            </value>
+            <value>
+                <fullName>שימוש בטופס כללי ללא רישום שם הניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>שימוש בטופס כללי ללא רישום שם הניתוח</label>
+            </value>
+            <value>
+                <fullName>שם ניתוח לא תואם את מהלך הניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>שם ניתוח לא תואם את מהלך הניתוח</label>
+            </value>
+            <value>
+                <fullName>תאריך שחרור ידני</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תאריך שחרור ידני</label>
+            </value>
+            <value>
+                <fullName>תאריך שחרור לא תקין</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תאריך שחרור לא תקין</label>
+            </value>
+            <value>
+                <fullName>תיעוד אבחנות לא מלא/לא תקין</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תיעוד אבחנות לא מלא/לא תקין</label>
+            </value>
+            <value>
+                <fullName>תיעוד מכלי פתולוגיה לא תקין</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תיעוד מכלי פתולוגיה לא תקין</label>
+            </value>
+            <value>
+                <fullName>תיעוד פעולה לא מלא/לא תקין</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תיעוד פעולה לא מלא/לא תקין</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

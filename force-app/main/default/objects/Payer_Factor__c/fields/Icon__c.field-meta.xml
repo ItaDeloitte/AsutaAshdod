@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(InsuranceCode__c=&quot;3&quot;,(  InsuranceCode__c=&quot;43&quot;),( InsuranceCode__c=&quot;44&quot;),( InsuranceCode__c=&quot;89&quot;)), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXPm&amp;oid=00DKI000000MTJU&amp;lastMod=1560677509000&quot;, &quot;&quot; , 30, 30),
+IF( InsuranceCode__c=&quot;4&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXPr&amp;oid=00DKI000000MTJU&amp;lastMod=1560677722000&quot;, &quot;&quot; , 30, 30),
+IF( InsuranceCode__c=&quot;5&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQ1&amp;oid=00DKI000000MTJU&amp;lastMod=1560677837000&quot;, &quot;&quot; , 30, 30), 
+IF(OR(InsuranceCode__c=&quot;6&quot;,InsuranceCode__c=&quot;7&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXPw&amp;oid=00DKI000000MTJU&amp;lastMod=1560677600000&quot;, &quot;&quot; , 30, 30), 
+IF(InsuranceCode__c =&quot;8&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlk&amp;oid=00DKI000000MTJU&amp;lastMod=1559561010000&quot;, &quot;&quot; , 30, 30), 
+IF( InsuranceCode__c=&quot;9&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlp&amp;oid=00DKI000000MTJU&amp;lastMod=1559561048000&quot;, &quot;&quot; , 30, 30), 
+IF( InsuranceCode__c=&quot;10&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlu&amp;oid=00DKI000000MTJU&amp;lastMod=1559561094000&quot;, &quot;&quot; , 30, 30), 
+IF( InsuranceCode__c=&quot;11&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlz&amp;oid=00DKI000000MTJU&amp;lastMod=1559561134000&quot;, &quot;&quot; , 30, 30), 
+IF(OR(InsuranceCode__c=&quot;22&quot;,InsuranceCode__c=&quot;166&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQB&amp;oid=00DKI000000MTJU&amp;lastMod=1559476681000&quot;, &quot;&quot; , 30, 30),
+IF( InsuranceCode__c=&quot;24&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXm9&amp;oid=00DKI000000MTJU&amp;lastMod=1560328908000&quot;, &quot;&quot; , 30, 30), 
+IF(InsuranceCode__c=&quot;25&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmE&amp;oid=00DKI000000MTJU&amp;lastMod=1561301745000&quot;, &quot;&quot; , 35, 35), 
+IF( InsuranceCode__c=&quot;36&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQ6&amp;oid=00DKI000000MTJU&amp;lastMod=1559476346000&quot;, &quot;&quot; , 30, 30), 
+IF( InsuranceCode__c=&quot;39&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmJ&amp;oid=00DKI000000MTJU&amp;lastMod=1559561465000&quot;, &quot;&quot; , 30, 30), 
+IF( InsuranceCode__c=&quot;40&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmO&amp;oid=00DKI000000MTJU&amp;lastMod=1560329356000&quot;, &quot;&quot; , 30, 30), 
+IF( InsuranceCode__c=&quot;42&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmT&amp;oid=00DKI000000MTJU&amp;lastMod=1559561519000&quot;, &quot;&quot; , 30, 30), 
+IF(InsuranceCode__c=&quot;1317&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmd&amp;oid=00DKI000000MTJU&amp;lastMod=1559561611000&quot;, &quot;&quot; , 30, 30),
+IF(OR(InsuranceCode__c=&quot;110&quot;,InsuranceCode__c=&quot;1111&quot;,InsuranceCode__c=&quot;37&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQB&amp;oid=00DKI000000MTJU&amp;lastMod=1559476681000&quot;, &quot;&quot; , 30, 30),
+IF( InsuranceCode__c=&quot;13&quot;, IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000JtZL&amp;oid=00DKI000000MTJU&amp;lastMod=1589809628000&quot;, &quot;&quot; , 30, 30), 
+IF(OR(InsuranceCode__c=&quot;0&quot;,InsuranceCode__c=&quot;133&quot;,InsuranceCode__c=&quot;1&quot;, Name_of_parent__r.InsuranceCode__c=&quot;1&quot;,Name_of_parent__r.InsuranceCode__c=&quot;0&quot; ), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmY&amp;oid=00DKI000000MTJU&amp;lastMod=1565102370000&quot;, &quot;&quot; , 30, 30),
+IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXmY&amp;oid=00DKI000000MTJU&amp;lastMod=1565102370000&quot;, &quot;&quot; , 30, 30))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

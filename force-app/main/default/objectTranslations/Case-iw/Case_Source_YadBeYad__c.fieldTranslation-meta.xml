@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מקור פנייה</label>
+    <name>Case_Source_YadBeYad__c</name>
+    <picklistValues>
+        <masterLabel>Outpatient</masterLabel>
+        <translation>מטופלת חיצונית</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recommendation After Examination</masterLabel>
+        <translation>המלצה לאחר בדיקה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

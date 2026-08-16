@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moked_Russian_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>description_history__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>סגירת אירוע אוטומטית,Closed,סגור,Caneclled,Closing</value>
+    </filters>
+    <filters>
+        <field>Owner_Queue_wf__c</field>
+        <operation>contains</operation>
+        <value>פניות מוקד ברוסית</value>
+    </filters>
+    <filters>
+        <field>CaseCreationDate__c</field>
+        <operation>greaterThan</operation>
+        <value>6/1/2023</value>
+    </filters>
+    <label>פניות מוקד ברוסית</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

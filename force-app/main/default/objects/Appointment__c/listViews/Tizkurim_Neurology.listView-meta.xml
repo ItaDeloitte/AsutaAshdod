@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tizkurim_Neurology</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>domain2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Remainder_status__c</field>
+        <operation>equals</operation>
+        <value>אין מענה</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>סמסון</value>
+    </filters>
+    <filters>
+        <field>domain2__c</field>
+        <operation>equals</operation>
+        <value>מרפאה נוירולוגית - אשדוד ציבורי</value>
+    </filters>
+    <filters>
+        <field>Date_of_appointment__c</field>
+        <operation>equals</operation>
+        <value>TOMORROW</value>
+    </filters>
+    <label>תזכורים נוירולוגיה</label>
+    <sharedTo>
+        <group>assuta_ashdod_zibori_Secretary</group>
+    </sharedTo>
+</ListView>

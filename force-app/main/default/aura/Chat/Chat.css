@@ -1,0 +1,57 @@
+.THIS .status-icon_success svg, .THIS .status-item_icon-success svg {
+  fill: var(--lwc-colorTextSuccessInverse, #4bca81);
+}
+
+.THIS .status-icon_warning svg, .THIS .status-item_icon-warning svg {
+  fill: var(--lwc-colorTextWarning, #ffb75d);
+}
+
+.THIS .status-icon_offline svg, .THIS .status-item_icon-offline svg {
+  fill: var(--lwc-colorStrokeHeaderButton, #b0adab);
+}
+
+.THIS .chat-header {
+  border-bottom: var(--lwc-borderWidthThick, 2px) solid var(--lwc-colorBorder, #dddbda);
+  height: var(--lwc-heightContextBar, 2.5rem);
+}
+
+.THIS .status-icon {
+  background-color: var(--lwc-colorBackgroundAlt, white);
+  margin-left: var(--lwc-spacingMedium, 1rem);
+  color: var(--lwc-colorTextInverse, white);
+}
+
+.THIS .status-label {
+  color: var(--lwc-colorTextDefault, #080707);
+  font-size: var(--lwc-fontSizeTextSmall, 0.8125rem);
+  width: 80%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: var(--lwc-spacingXSmall, 0.5rem);
+  line-height: var(--lwc-heightContextBar, 2.5rem);
+}
+
+.THIS .trancatedText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.THIS .slds-icon-text-default[data-key='routing_offline'] {
+  width: var(--lwc-squareIconXxSmallContent, 0.875rem);
+  height: var(--lwc-squareIconXxSmallContent, 0.875rem);
+  line-height: var(--lwc-lineHeightReset, 1);
+}
+
+.THIS .notification-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.THIS .notification-container > * {
+  display: block;
+}

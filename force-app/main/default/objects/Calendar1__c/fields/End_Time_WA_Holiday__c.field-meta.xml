@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Time_WA_Holiday__c</fullName>
+    <formula>DATETIMEVALUE( TEXT( Gregorian_Date__c )&amp;&apos; &apos;&amp; LEFT(TEXT(   End_time_for_WA_holiday_eve_fri__c ), 8) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>End Time WA Holiday</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

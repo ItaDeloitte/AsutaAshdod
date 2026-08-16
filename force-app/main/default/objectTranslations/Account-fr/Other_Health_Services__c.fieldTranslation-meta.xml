@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Other Health Services --></label>
+    <name>Other_Health_Services__c</name>
+    <picklistValues>
+        <masterLabel>כללית מושלם</masterLabel>
+        <translation><!-- כללית מושלם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כללית פלטינום</masterLabel>
+        <translation><!-- כללית פלטינום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לאומית זהב</masterLabel>
+        <translation><!-- לאומית זהב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לאומית כסף</masterLabel>
+        <translation><!-- לאומית כסף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא</masterLabel>
+        <translation><!-- ללא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאוחדת עדיף</masterLabel>
+        <translation><!-- מאוחדת עדיף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאוחדת שיא</masterLabel>
+        <translation><!-- מאוחדת שיא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי זהב</masterLabel>
+        <translation><!-- מכבי זהב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי כסף</masterLabel>
+        <translation><!-- מכבי כסף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי שלי</masterLabel>
+        <translation><!-- מכבי שלי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

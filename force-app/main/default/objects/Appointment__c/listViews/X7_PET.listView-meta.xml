@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X7_PET</fullName>
+    <columns>NAME</columns>
+    <columns>Remainder_status__c</columns>
+    <columns>Site__c</columns>
+    <columns>manual_arrival__c</columns>
+    <columns>Arrival_Confirmation__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Case__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Appointment_Date_Time__c</field>
+        <operation>equals</operation>
+        <value>NEXT_N_DAYS:7</value>
+    </filters>
+    <filters>
+        <field>domain2__c</field>
+        <operation>contains</operation>
+        <value>PET</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>החייל</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>equals</operation>
+        <value>PET-CT בדיקת</value>
+    </filters>
+    <filters>
+        <field>manual_arrival__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>וודא הגעה 7 PET ימים</label>
+</ListView>

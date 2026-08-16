@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DEL-יומן המרפאה מנוהל ב --></label>
+    <name>CalendarClinic__c</name>
+    <picklistValues>
+        <masterLabel>Odoro</masterLabel>
+        <translation><!-- Odoro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QFlow</masterLabel>
+        <translation><!-- QFlow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rapid</masterLabel>
+        <translation><!-- Rapid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיאום טלפוני דרך המזכירה</masterLabel>
+        <translation><!-- תיאום טלפוני דרך המזכירה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

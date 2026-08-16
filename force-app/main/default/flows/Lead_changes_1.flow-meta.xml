@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Email_To_Opportunity</name>
+        <label>Assign Email To Opportunity</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.EmailToOpportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Phone_Changed_Or_New</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Phone</name>
+        <label>Assign Phone</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PhoneToOpportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Phone</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Owner_Is_Changed_To_User</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Status</name>
+        <label>Assign Status</label>
+        <locationX>50</locationX>
+        <locationY>995</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FormerAgent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Working</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Status_Changed_To_Working</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Lead_Status_and_Lost_Reason</name>
+        <label>Update Lead Status and Lost Reason</label>
+        <locationX>50</locationX>
+        <locationY>1595</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>lost</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.LostReason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>MailingApprovalCampaign</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Campaign_HebName_Marketing_Site</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Lead_Status_and_Lost_Reason1</name>
+        <label>Update Lead Status and Lost Reason</label>
+        <locationX>50</locationX>
+        <locationY>1895</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>lost</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.LostReason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>MailingApprovalCampaign</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Lead_Closed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Owner</name>
+        <label>Update Owner</label>
+        <locationX>50</locationX>
+        <locationY>1295</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.FormerAgent__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Campaign</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>UpdateCloseDate</name>
+        <label>Update Close Date</label>
+        <locationX>50</locationX>
+        <locationY>2195</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.closedDate__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fNOW</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Email_Changed_Or_New</name>
+        <label>Email Changed Or New?</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Phone_Changed_Or_New</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Email_Changed_Or_New</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>fISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Email</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Email_To_Opportunity</targetReference>
+            </connector>
+            <label>Yes- Email Changed Or New</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Campaign</name>
+        <label>Is Campaign רישום לדיוור - טופס באתר אסותא החדש?</label>
+        <locationX>182</locationX>
+        <locationY>1487</locationY>
+        <defaultConnector>
+            <targetReference>Is_Campaign_HebName_Marketing_Site</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SignUpForMailLeadCampaign</name>
+            <conditionLogic>(1 AND 2) OR (1 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>טופס באתר אסותא החדש</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Campaign__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Lead_Status_and_Lost_Reason</targetReference>
+            </connector>
+            <label>Yes- Campaign of Lead רישום לדיוור - טופס באתר אסותא החדש</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>API: Is_Campaign_HebName_Marketing_Site</description>
+        <name>Is_Campaign_HebName_Marketing_Site</name>
+        <label>Is Campaign טופס הרשמה לדיוור אסותאישי - אתר שיווקי?</label>
+        <locationX>182</locationX>
+        <locationY>1787</locationY>
+        <defaultConnector>
+            <targetReference>Lead_Closed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Campaign_of_Lead</name>
+            <conditionLogic>(1 AND 2) OR (1 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>טופס הרשמה לדיוור אסותאישי - אתר שיווקי</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Campaign__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Lead_Status_and_Lost_Reason1</targetReference>
+            </connector>
+            <label>Campaign of Lead טופס הרשמה לדיוור אסותאישי - אתר שיווקי</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Lead_Closed</name>
+        <label>Lead Closed?</label>
+        <locationX>182</locationX>
+        <locationY>2087</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Lead_Closed</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>lost</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>win</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateCloseDate</targetReference>
+            </connector>
+            <label>Yes- Lead Closed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>and not group or queue</description>
+        <name>Owner_Is_Changed_To_User</name>
+        <label>Owner Is Changed To User?</label>
+        <locationX>182</locationX>
+        <locationY>887</locationY>
+        <defaultConnector>
+            <targetReference>Status_Changed_To_Working</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Owner_Is_Changed_To_User</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fOwnerIsUserAndNotConverted</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Status</targetReference>
+            </connector>
+            <label>Yes- Owner Is Changed To User</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Phone_Changed_Or_New</name>
+        <label>Phone Changed Or New?</label>
+        <locationX>182</locationX>
+        <locationY>587</locationY>
+        <defaultConnector>
+            <targetReference>Owner_Is_Changed_To_User</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Phone_Changed_Or_New</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>fISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Phone</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Phone</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Phone</targetReference>
+            </connector>
+            <label>Yes- Phone Changed Or New</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status_Changed_To_Working</name>
+        <label>Status Changed To Working?</label>
+        <locationX>182</locationX>
+        <locationY>1187</locationY>
+        <defaultConnector>
+            <targetReference>Is_Campaign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Status_Changed_To_Working</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Working</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.OwnerId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner</targetReference>
+            </connector>
+            <label>Yes- Status Changed To Working</label>
+        </rules>
+    </decisions>
+    <description>Migrated from the Lead changes process using multiple criteria.
+New Version (v3) includes condition that prevents changing the owner for leads that their owner was previously changed, causing the status to change which then triggers an additional owner change.
+New Version (v5) includes runtime improvement using assign vs update records + new task 16955- if lead is part of approves mailing campaign, the lead will be updated to lost with the lost reason: קמפיין הצטרפות לדיוור שיווקי
+
+AM: 25032025- 1885669268- refactor</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>fNOW</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <name>fOwnerIsUserAndNotConverted</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(NOT(BEGINS(PRIORVALUE({!$Record.OwnerId} ) , &apos;005&apos;))
+                ,BEGINS({!$Record.OwnerId}, &apos;005&apos;),
+                 {!$Record.IsConverted}
+         )</expression>
+    </formulas>
+    <interviewLabel>Lead changes PB To Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead changes PB To Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Email_Changed_Or_New</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

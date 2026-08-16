@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Change_File_type_IVF</fullName>
+        <field>file_type__c</field>
+        <literalValue>IVF</literalValue>
+        <name>שינוי סוג מסמך לIVF</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Referral_Type_Surgery</fullName>
+        <field>Related_Process__c</field>
+        <literalValue>0</literalValue>
+        <name>Referral Type Surgery</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Deductibles_in_Appointment</fullName>
+        <description>עדכון שדה השתתפות עצמית בתור לניתוח מתוך מסמך ההתחייבות</description>
+        <field>Deductibles__c</field>
+        <formula>Deductibles__c</formula>
+        <name>Update Deductibles in Appointment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_commitment_name</fullName>
+        <description>עדכון שם ההתחייבות ל-&quot;התחייבות - מספר ההתחייבות&quot;</description>
+        <field>Name</field>
+        <formula>&quot;התחייבות - &quot; &amp; Number_of_commitment__c</formula>
+        <name>Update commitment name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_field_Related_Process_c</fullName>
+        <description>עדכון סוג ההפניה לניתוחי</description>
+        <field>Related_Process__c</field>
+        <literalValue>0</literalValue>
+        <name>Update field Related_Process__c</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_file_name_general</fullName>
+        <field>Name</field>
+        <formula>RecordType.Name</formula>
+        <name>עדכן שם מסמך</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_name_to_manual_referral</fullName>
+        <description>במידה וההפניה היא הגשה ידנית למכבי - השם שלה יהיה &quot;הפניה בהגשה ידנית&quot;</description>
+        <field>Name</field>
+        <formula>&quot;הפניה בהגשה ידנית&quot;</formula>
+        <name>Update name to manual referral</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_referral_name</fullName>
+        <description>עדכון שם הפניה ל - &quot;הפניה לביצוע פעולה + תאריך הפניה&quot;</description>
+        <field>Name</field>
+        <formula>&quot;הפניה - &quot; &amp; ReferralNumber__c</formula>
+        <name>Update referral name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_file_name</fullName>
+        <field>Name</field>
+        <formula>Case__r.Account.Name +&apos; &apos;+ text(CreatedDate)</formula>
+        <name>update file name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Type of Referral</fullName>
+        <actions>
+            <name>Update_field_Related_Process_c</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>אם מתקבלת הפניה ממכבי עבור ניתוח (ביצוע פעולה, Hospitalization, חיוב ישיר) 
+אז סוג ההפניה יהיה &apos;ניתוחי&apos;</description>
+        <formula>ISNEW() &amp;&amp; ( ISPICKVAL( Referral_Type__c , &quot;Hospitalization&quot; ) || ISPICKVAL( Referral_Type__c , &quot;ביצוע פעולה&quot; ) || ISPICKVAL( Referral_Type__c , &quot;חיוב ישיר&quot; ) ) &amp;&amp; NOT(ISPICKVAL(Referral_Type__c , &quot;&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update name to manual referral</fullName>
+        <actions>
+            <name>Update_name_to_manual_referral</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISNEW() &amp;&amp;
+RecordType.DeveloperName = &quot;Referral&quot;
+&amp;&amp;
+ Request_Manually__c = TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>שינוי סוג מסמך לIVF</fullName>
+        <actions>
+            <name>Change_File_type_IVF</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>Case__r.RecordType.DeveloperName= &apos;IVF_Freezing_Eggs&apos;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מאשר דיוור</label>
+    <name>ApprovesMailing__c</name>
+    <picklistValues>
+        <masterLabel>לא מאשר דיוור - הכל</masterLabel>
+        <translation><!-- לא מאשר דיוור - הכל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאשר דיוור - הכל</masterLabel>
+        <translation><!-- מאשר דיוור - הכל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאשר דיוור - שיווקי</masterLabel>
+        <translation><!-- מאשר דיוור - שיווקי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאשר דיוור - שירותי</masterLabel>
+        <translation><!-- מאשר דיוור - שירותי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

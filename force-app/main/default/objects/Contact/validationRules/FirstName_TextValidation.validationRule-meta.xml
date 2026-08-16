@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FirstName_TextValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(
+REGEX(FirstName ,&quot;([a-zA-Z-א-ת ])*&quot;))
+&amp;&amp; RecordType.DeveloperName == &apos;Supplier_Contact&apos;</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>נא להזין אותיות בלבד בשדה זה!</errorMessage>
+</ValidationRule>

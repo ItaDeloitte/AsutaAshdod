@@ -1,0 +1,21 @@
+<design:component>
+    <design:attribute name="SurgeryAppointmentCreation" label="Surgery Appointment Creation Label" />
+    <design:attribute name="DocExpert_Next" label="DocExpert Next Label" />
+    <design:attribute name="DocExpert_Update" label="DocExpert Update Label" />
+    <design:attribute name="DocExpert_Cancel" label="DocExpert Cancel Label" />
+    <design:attribute name="DocExpertAppointmentCreation" label="DocExpert Appointment Creation Label" />
+    <design:attribute name="AppoitmentsShow_Next" label="Appoitments Show Next Label" />
+    <design:attribute name="AppoitmentsShow_Update" label="Appoitments Show Update Label" />
+    <design:attribute name="AppoitmentsShow_Cancel" label="Appoitments Show Cancel Label" />
+    <design:attribute name="TransferToManager_Label" label="Transfer To Manager Label" />
+    <design:attribute name="InstitutesAppointment_Update" label="Institutes Appointment Update Label" />
+    <design:attribute name="SurgeryAppointment_Cancel" label="Surgery Appointment Cancel Label" />
+    <design:attribute name="Appointment_Convert" label="Institutes Appointment Convert Label" />
+    <design:attribute name="Appointment_Link" label="Institutes Appointment Link Label" />
+    <design:attribute name="Appointment_Close" label="Institutes Appointment Close Label" />
+    <design:attribute name="sendOtpLabel" label="Send OTP Label" />
+    <design:attribute name="contactLabel" label="Contact Label" />
+    <design:attribute name="medicalAidLabel" label="Medical Aid Label" />
+    <design:attribute name="UrgentAppointmentLabel" label="Update Urgent Appointment Label" />
+
+</design:component>

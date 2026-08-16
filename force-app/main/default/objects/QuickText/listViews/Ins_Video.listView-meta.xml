@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ins_Video</fullName>
+    <columns>Name</columns>
+    <columns>Message</columns>
+    <columns>Category</columns>
+    <columns>Channel</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_of_quicktext__c</field>
+        <operation>equals</operation>
+        <value>סרטוני הדרכה</value>
+    </filters>
+    <label>סרטוני הדרכה</label>
+</ListView>

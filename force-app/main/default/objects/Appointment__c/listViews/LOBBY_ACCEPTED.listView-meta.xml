@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LOBBY_ACCEPTED</fullName>
+    <columns>Patient_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>PaymentsRead__c</columns>
+    <columns>InstructionsRead__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PaymentsRead__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>מטופלים שאישרו עלויות/ הנחיות - לובי</label>
+</ListView>

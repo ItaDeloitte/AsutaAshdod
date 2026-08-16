@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Process Status From Site --></label>
+    <name>Process_Status_From_Site__c</name>
+    <picklistValues>
+        <masterLabel>בוצע עד שלב 1 &quot;פרטי הניתוח&quot;</masterLabel>
+        <translation><!-- בוצע עד שלב 1 &quot;פרטי הניתוח&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצע עד שלב 2 &quot;פרטים אישיים&quot;</masterLabel>
+        <translation><!-- בוצע עד שלב 2 &quot;פרטים אישיים&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצע עד שלב 3 &quot;חשוב לדעת&quot;</masterLabel>
+        <translation><!-- בוצע עד שלב 3 &quot;חשוב לדעת&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצע עד שלב 4 &quot;שירותים משלימים&quot;</masterLabel>
+        <translation><!-- בוצע עד שלב 4 &quot;שירותים משלימים&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצע עד שלב 5  ואחרון &quot;תשלום ואישור&quot;</masterLabel>
+        <translation><!-- בוצע עד שלב 5  ואחרון &quot;תשלום ואישור&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרם החל</masterLabel>
+        <translation><!-- טרם החל --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

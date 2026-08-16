@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>רופא מבוקש</label>
+    <name>Recommended_doc__c</name>
+    <relationshipLabel><!-- Opportunities (Recommended_doc) --></relationshipLabel>
+</CustomFieldTranslation>

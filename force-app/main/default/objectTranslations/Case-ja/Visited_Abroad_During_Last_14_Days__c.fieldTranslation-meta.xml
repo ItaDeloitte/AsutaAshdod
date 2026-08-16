@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- שדה זה הינו חלק מתהליך זימון תור לבדיקת קורונה. 
+במידה והמטופל חזר מחו&quot;ל יש לפעול בהתאם לנהלים -->
+    </help>
+    <label><!-- Returned From Abroad in Last 14 Days? --></label>
+    <name>Visited_Abroad_During_Last_14_Days__c</name>
+    <picklistValues>
+        <masterLabel>כן</masterLabel>
+        <translation><!-- כן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא</masterLabel>
+        <translation><!-- לא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

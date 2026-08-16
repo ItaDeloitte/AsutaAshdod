@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_Center_of_Expert_MessagingSession</fullName>
+    <filterScope>Queue</filterScope>
+    <label>דיגיטל- מרכז מומחים</label>
+    <queue>Digital_Center_of_Expert</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>max_price__c</fullName>
+    <label>Transplants Maximum Price</label>
+    <summarizedField>Implants_mp_apt__c.max_price__c</summarizedField>
+    <summaryFilterItems>
+        <field>Implants_mp_apt__c.status__c</field>
+        <operation>notEqual</operation>
+        <value>לא פעיל</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Implants_mp_apt__c.needs_to_be_calculated__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Implants_mp_apt__c.Appointment__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

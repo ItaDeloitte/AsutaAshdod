@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Recommendations After Exam --></label>
+    <name>RecommendationsAfterExam__c</name>
+    <relationshipLabel><!-- סוגי המלצות לאחר בדיקה --></relationshipLabel>
+</CustomFieldTranslation>

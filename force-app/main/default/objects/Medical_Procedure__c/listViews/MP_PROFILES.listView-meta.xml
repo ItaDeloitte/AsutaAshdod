@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MP_PROFILES</fullName>
+    <columns>NAME</columns>
+    <columns>Profile_upd_cncl__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Profile_upd_cncl__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>פרופיל רשאי לעדכן ולבטל - פעולות</label>
+</ListView>

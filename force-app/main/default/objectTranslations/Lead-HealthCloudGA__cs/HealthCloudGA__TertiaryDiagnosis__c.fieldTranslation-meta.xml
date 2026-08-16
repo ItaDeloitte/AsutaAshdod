@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Terciární diagnóza</label>
+    <name>HealthCloudGA__TertiaryDiagnosis__c</name>
+    <relationshipLabel>Tipy (TertiaryDiagnosis)</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Site --></label>
+    <name>Case_site__c</name>
+    <picklistValues>
+        <masterLabel>ראשון לציון</masterLabel>
+        <translation><!-- ראשון לציון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רמת החייל</masterLabel>
+        <translation><!-- רמת החייל --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

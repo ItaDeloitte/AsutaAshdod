@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>יצירת משתמש  מקומי</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New LOCAL user created not via AzureAD</name>
+    <style>none</style>
+    <subject>New user created locally</subject>
+    <textOnly>Hi Team,
+
+A new user was created locally, not by the provisioning service, Please find details below.
+
+Username:{!User.Username}
+
+First Name:{!User.FirstName}
+
+Last Name: {!User.LastName}
+
+Click here to access the record: user Link
+
+Thank You,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

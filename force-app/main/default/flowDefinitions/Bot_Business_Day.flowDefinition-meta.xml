@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>25</activeVersionNumber>
+    <description>נעשה בflow  2 בדיקות :
+האם כל הימים באותו שבוע (א-ה) הם באותם שעות פעילות, אם כן , תוצג הודעה כללית, אם לא תבוצע בדיקה כל יום מה שעות הפעילות .
+Eden 24.8 - 2051072263 - עבור אסותא ONE בדיקה האם התאריך של היום הוא חמישי והשעה שווה או לפני  15:00 (ביום עסקים)
+YL 261025: Updated parameter now and textnow from day 30 to 26
+Eden 27.3 - תשתית שעות בוטים עלה לייצור, אין צורך לטפל יותר בשעון קיץ \ חורף,.</description>
+    <masterLabel>Bot Business Day</masterLabel>
+</FlowDefinition>

@@ -1,0 +1,21 @@
+<apex:page >
+  <script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'iw'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00DKI000000MTJU',
+                'Assuta_Ashdod_Chat_for_Bot',
+                'https://assuta.my.site.com/ESWAssutaAshdodChatfor1715765075873',
+                {
+                    scrt2URL: 'https://assuta.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://assuta.my.site.com/ESWAssutaAshdodChatfor1715765075873/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</apex:page>

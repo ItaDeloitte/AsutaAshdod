@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_recommendation__c</fullName>
+    <label>סוג המלצה</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Breast</fullName>
+                <default>false</default>
+                <label>שד</label>
+            </value>
+            <value>
+                <fullName>Consultations</fullName>
+                <default>false</default>
+                <label>ייעוצים</label>
+            </value>
+            <value>
+                <fullName>Gastro</fullName>
+                <default>false</default>
+                <label>גסטרו</label>
+            </value>
+            <value>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+                <label>קרדיולוגיה</label>
+            </value>
+            <value>
+                <fullName>Lungs</fullName>
+                <default>false</default>
+                <label>ריאות</label>
+            </value>
+            <value>
+                <fullName>prostate</fullName>
+                <default>false</default>
+                <label>ערמונית</label>
+            </value>
+            <value>
+                <fullName>Cardiac_ct</fullName>
+                <default>false</default>
+                <label>קרדיאק CT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

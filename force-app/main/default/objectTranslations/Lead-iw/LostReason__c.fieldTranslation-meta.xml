@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבת הפסד</label>
+    <name>LostReason__c</name>
+    <picklistValues>
+        <masterLabel>No Private Insurance (Price)</masterLabel>
+        <translation>אין ביטוח פרטי (מחיר)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not in the eligible age range</masterLabel>
+        <translation>לא בגיל המתאים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אוחז בהפניה</masterLabel>
+        <translation><!-- אוחז בהפניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין הסדר ביטוחי לניתוח</masterLabel>
+        <translation><!-- אין הסדר ביטוחי לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין יומן פתוח לרופא</masterLabel>
+        <translation><!-- אין יומן פתוח לרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גיל</masterLabel>
+        <translation><!-- גיל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הועבר להראל</masterLabel>
+        <translation><!-- הועבר להראל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הועבר לטיפול מחלקה</masterLabel>
+        <translation><!-- הועבר לטיפול מחלקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הועבר לפרטי</masterLabel>
+        <translation><!-- הועבר לפרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הופנה לזימון מול רופא פרטי אחר</masterLabel>
+        <translation><!-- הופנה לזימון מול רופא פרטי אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>העברה שגויה ממוקד אחר</masterLabel>
+        <translation><!-- העברה שגויה ממוקד אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טעות במספר</masterLabel>
+        <translation><!-- טעות במספר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כפול</masterLabel>
+        <translation><!-- כפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מתאים רפואית</masterLabel>
+        <translation><!-- לא מתאים רפואית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נמצא רופא מתאים בקרבת מקום מגוריו</masterLabel>
+        <translation><!-- לא נמצא רופא מתאים בקרבת מקום מגוריו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא קיים שירות בפרטי</masterLabel>
+        <translation><!-- לא קיים שירות בפרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא רלוונטי לא מתאים רפואית</masterLabel>
+        <translation><!-- לא רלוונטי לא מתאים רפואית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא רלוונטי לקוח לא מעוניין</masterLabel>
+        <translation><!-- לא רלוונטי לקוח לא מעוניין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא רלוונטי שגוי</masterLabel>
+        <translation><!-- לא רלוונטי שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ליד ללא מענה</masterLabel>
+        <translation><!-- ליד ללא מענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מבקש לברר על החזרים מול הביטוח</masterLabel>
+        <translation><!-- מבקש לברר על החזרים מול הביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחיר</masterLabel>
+        <translation><!-- מחיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחלות כרוניות</masterLabel>
+        <translation><!-- מחלות כרוניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחלות עיניים</masterLabel>
+        <translation><!-- מחלות עיניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל הראל</masterLabel>
+        <translation><!-- מטופל הראל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל מכבי</masterLabel>
+        <translation><!-- מטופל מכבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל פנה לעדכון תור</masterLabel>
+        <translation><!-- מטופל פנה לעדכון תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע על שירות כללי</masterLabel>
+        <translation><!-- מידע על שירות כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעוניין לבצע סקר שוק</masterLabel>
+        <translation><!-- מעוניין לבצע סקר שוק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרחק</masterLabel>
+        <translation><!-- מרחק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נותח בעבר</masterLabel>
+        <translation><!-- נותח בעבר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פנה לשירות אחר</masterLabel>
+        <translation><!-- פנה לשירות אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה ליועץ/מזכירה</masterLabel>
+        <translation><!-- פניה ליועץ/מזכירה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פנייה חוזרת</masterLabel>
+        <translation><!-- פנייה חוזרת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קמפיין הצטרפות לדיוור שיווקי</masterLabel>
+        <translation><!-- קמפיין הצטרפות לדיוור שיווקי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא שלא מתואם דרכינו</masterLabel>
+        <translation><!-- רופא שלא מתואם דרכינו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא שלא מתואם דרכנו</masterLabel>
+        <translation><!-- רופא שלא מתואם דרכנו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה טועה (זימון)</masterLabel>
+        <translation><!-- שיחה טועה (זימון) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחת שב&quot;ן/ מכבי</masterLabel>
+        <translation><!-- שיחת שב&quot;ן/ מכבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירות לא קיים באסותא</masterLabel>
+        <translation><!-- שירות לא קיים באסותא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג ציון</label>
+    <name>rank_type__c</name>
+    <picklistValues>
+        <masterLabel>אדיבות</masterLabel>
+        <translation><!-- אדיבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוגנות מחיר</masterLabel>
+        <translation><!-- הוגנות מחיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמינות</masterLabel>
+        <translation><!-- זמינות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כללי</masterLabel>
+        <translation><!-- כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מקצועיות</masterLabel>
+        <translation><!-- מקצועיות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

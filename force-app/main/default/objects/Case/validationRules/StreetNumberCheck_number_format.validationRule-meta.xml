@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StreetNumberCheck_number_format</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISNUMBER( Street_Number__c ) &amp;&amp;  !ISBLANK(Street_Number__c )&amp;&amp; 
+RecordType.DeveloperName  == &apos;Supplier&apos;</errorConditionFormula>
+    <errorDisplayField>Street_Number__c</errorDisplayField>
+    <errorMessage>נא לוודא שמספר רחוב מכיל רק מספרים בלבד!</errorMessage>
+</ValidationRule>

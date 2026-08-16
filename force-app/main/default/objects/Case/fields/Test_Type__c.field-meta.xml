@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Type__c</fullName>
+    <label>Test Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site_Center_Department__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>CT</fullName>
+                <default>false</default>
+                <label>CT</label>
+            </value>
+            <value>
+                <fullName>EEG</fullName>
+                <default>false</default>
+                <label>EEG</label>
+            </value>
+            <value>
+                <fullName>MRI</fullName>
+                <default>false</default>
+                <label>MRI</label>
+            </value>
+            <value>
+                <fullName>PET</fullName>
+                <default>false</default>
+                <label>PET</label>
+            </value>
+            <value>
+                <fullName>pet ci ti</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>pet ci ti</label>
+            </value>
+            <value>
+                <fullName>PET CT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PET CT</label>
+            </value>
+            <value>
+                <fullName>RELAX</fullName>
+                <default>false</default>
+                <label>RELAX</label>
+            </value>
+            <value>
+                <fullName>TCD</fullName>
+                <default>false</default>
+                <label>TCD</label>
+            </value>
+            <value>
+                <fullName>US</fullName>
+                <default>false</default>
+                <label>US</label>
+            </value>
+            <value>
+                <fullName>US שד</fullName>
+                <default>false</default>
+                <label>US שד</label>
+            </value>
+            <value>
+                <fullName>א.ר.ם</fullName>
+                <default>false</default>
+                <label>א.ר.ם</label>
+            </value>
+            <value>
+                <fullName>אורולוגיה א.א.ג</fullName>
+                <default>false</default>
+                <label>אורולוגיה א.א.ג</label>
+            </value>
+            <value>
+                <fullName>אורומדיק</fullName>
+                <default>false</default>
+                <label>אורומדיק</label>
+            </value>
+            <value>
+                <fullName>אורטוקליניק מרפאת אגר</fullName>
+                <default>false</default>
+                <label>אורטוקליניק מרפאת אגר</label>
+            </value>
+            <value>
+                <fullName>אורתופדיה נוירוכירורגיה</fullName>
+                <default>false</default>
+                <label>אורתופדיה נוירוכירורגיה</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>איה מדיקל</fullName>
+                <default>false</default>
+                <label>איה מדיקל</label>
+            </value>
+            <value>
+                <fullName>אישפוז יום</fullName>
+                <default>false</default>
+                <label>אישפוז יום</label>
+            </value>
+            <value>
+                <fullName>אסותא אופטיק</fullName>
+                <default>false</default>
+                <label>אסותא אופטיק</label>
+            </value>
+            <value>
+                <fullName>אסיה מדיקל</fullName>
+                <default>false</default>
+                <label>אסיה מדיקל</label>
+            </value>
+            <value>
+                <fullName>אקו / אקו במאמץ</fullName>
+                <default>false</default>
+                <label>אקו / אקו במאמץ</label>
+            </value>
+            <value>
+                <fullName>ארגומטריה</fullName>
+                <default>false</default>
+                <label>ארגומטריה</label>
+            </value>
+            <value>
+                <fullName>אשפוז המטולוגי/פנימי</fullName>
+                <default>false</default>
+                <label>אשפוז המטולוגי/פנימי</label>
+            </value>
+            <value>
+                <fullName>אשפוז כללי</fullName>
+                <default>false</default>
+                <label>אשפוז כללי</label>
+            </value>
+            <value>
+                <fullName>בדיקה</fullName>
+                <default>false</default>
+                <label>בדיקה</label>
+            </value>
+            <value>
+                <fullName>בדיקה ביתית</fullName>
+                <default>false</default>
+                <label>בדיקה ביתית</label>
+            </value>
+            <value>
+                <fullName>בדיקה במכון</fullName>
+                <default>false</default>
+                <label>בדיקה במכון</label>
+            </value>
+            <value>
+                <fullName>ביופסיה</fullName>
+                <default>false</default>
+                <label>ביופסיה</label>
+            </value>
+            <value>
+                <fullName>ביופסיות שד</fullName>
+                <default>false</default>
+                <label>ביופסיות שד</label>
+            </value>
+            <value>
+                <fullName>בנק הזרע</fullName>
+                <default>false</default>
+                <label>בנק הזרע</label>
+            </value>
+            <value>
+                <fullName>בריאטריה ראשל&quot;צ</fullName>
+                <default>false</default>
+                <label>בריאטריה ראשל&quot;צ</label>
+            </value>
+            <value>
+                <fullName>גניקולוגיה</fullName>
+                <default>false</default>
+                <label>גניקולוגיה</label>
+            </value>
+            <value>
+                <fullName>גסטרוסקופיה</fullName>
+                <default>false</default>
+                <label>גסטרוסקופיה</label>
+            </value>
+            <value>
+                <fullName>גסטרו סרג&apos;רי</fullName>
+                <default>false</default>
+                <label>גסטרו סרג&apos;רי</label>
+            </value>
+            <value>
+                <fullName>הולטר</fullName>
+                <default>false</default>
+                <label>הולטר</label>
+            </value>
+            <value>
+                <fullName>הלפרין - החלפות מפרק</fullName>
+                <default>false</default>
+                <label>הלפרין - החלפות מפרק</label>
+            </value>
+            <value>
+                <fullName>המרכז הישראלי לבריאות המרפק</fullName>
+                <default>false</default>
+                <label>המרכז הישראלי לבריאות המרפק</label>
+            </value>
+            <value>
+                <fullName>המרכז לאורתופדיה מתקדמת</fullName>
+                <default>false</default>
+                <label>המרכז לאורתופדיה מתקדמת</label>
+            </value>
+            <value>
+                <fullName>המרכז לניתוחי עמוד שדרה</fullName>
+                <default>false</default>
+                <label>המרכז לניתוחי עמוד שדרה</label>
+            </value>
+            <value>
+                <fullName>השגות על תוצאות בדיקה סרולוגית</fullName>
+                <default>false</default>
+                <label>השגות על תוצאות בדיקה סרולוגית</label>
+            </value>
+            <value>
+                <fullName>טיפול נמרץ</fullName>
+                <default>false</default>
+                <label>טיפול נמרץ</label>
+            </value>
+            <value>
+                <fullName>ייעוץ אונקולוגי</fullName>
+                <default>false</default>
+                <label>ייעוץ אונקולוגי</label>
+            </value>
+            <value>
+                <fullName>יעוץ רופא</fullName>
+                <default>false</default>
+                <label>יעוץ רופא</label>
+            </value>
+            <value>
+                <fullName>כימותרפיה</fullName>
+                <default>false</default>
+                <label>כימותרפיה</label>
+            </value>
+            <value>
+                <fullName>כירוגיה כללית</fullName>
+                <default>false</default>
+                <label>כירוגיה כללית</label>
+            </value>
+            <value>
+                <fullName>לב חזה</fullName>
+                <default>false</default>
+                <label>לב חזה</label>
+            </value>
+            <value>
+                <fullName>מחלקת ילדים</fullName>
+                <default>false</default>
+                <label>מחלקת ילדים</label>
+            </value>
+            <value>
+                <fullName>מיפויים</fullName>
+                <default>false</default>
+                <label>מיפויים</label>
+            </value>
+            <value>
+                <fullName>מיפוי לב</fullName>
+                <default>false</default>
+                <label>מיפוי לב</label>
+            </value>
+            <value>
+                <fullName>מכבידנט</fullName>
+                <default>false</default>
+                <label>מכבידנט</label>
+            </value>
+            <value>
+                <fullName>מכון ריפוי בעיסוק</fullName>
+                <default>false</default>
+                <label>מכון ריפוי בעיסוק</label>
+            </value>
+            <value>
+                <fullName>ממוגרפיה</fullName>
+                <default>false</default>
+                <label>ממוגרפיה</label>
+            </value>
+            <value>
+                <fullName>ניתוח עיניים</fullName>
+                <default>false</default>
+                <label>ניתוח עיניים</label>
+            </value>
+            <value>
+                <fullName>נשים/כירורגיה ב&apos;</fullName>
+                <default>false</default>
+                <label>נשים/כירורגיה ב&apos;</label>
+            </value>
+            <value>
+                <fullName>סרג&apos;יקר</fullName>
+                <default>false</default>
+                <label>סרג&apos;יקר</label>
+            </value>
+            <value>
+                <fullName>פנימית/ אורתופדית ב&apos;</fullName>
+                <default>false</default>
+                <label>פנימית/ אורתופדית ב&apos;</label>
+            </value>
+            <value>
+                <fullName>פנימית המטולוגיה/ אונקולוגיה</fullName>
+                <default>false</default>
+                <label>פנימית המטולוגיה/ אונקולוגיה</label>
+            </value>
+            <value>
+                <fullName>צפיפות עצם</fullName>
+                <default>false</default>
+                <label>צפיפות עצם</label>
+            </value>
+            <value>
+                <fullName>קולונוסקופיה</fullName>
+                <default>false</default>
+                <label>קולונוסקופיה</label>
+            </value>
+            <value>
+                <fullName>קולונוסקופיה וירטואלית</fullName>
+                <default>false</default>
+                <label>קולונוסקופיה וירטואלית</label>
+            </value>
+            <value>
+                <fullName>קולפרו סרג&apos;יקל גרופ</fullName>
+                <default>false</default>
+                <label>קולפרו סרג&apos;יקל גרופ</label>
+            </value>
+            <value>
+                <fullName>קרדיוהיל</fullName>
+                <default>false</default>
+                <label>קרדיוהיל</label>
+            </value>
+            <value>
+                <fullName>רדיולוגיה פולשנית</fullName>
+                <default>false</default>
+                <label>רדיולוגיה פולשנית</label>
+            </value>
+            <value>
+                <fullName>רדיותרפיה</fullName>
+                <default>false</default>
+                <label>רדיותרפיה</label>
+            </value>
+            <value>
+                <fullName>רנטגן</fullName>
+                <default>false</default>
+                <label>רנטגן</label>
+            </value>
+            <value>
+                <fullName>שיניים ראשל&quot;צ</fullName>
+                <default>false</default>
+                <label>שיניים ראשל&quot;צ</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>א.ר.ם</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>אורומדיק</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>אורטוקליניק מרפאת אגר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>איה מדיקל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>אסותא אופטיק</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>אסיה מדיקל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>בנק הזרע</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>בריאטריה ראשל&quot;צ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>גסטרו סרג&apos;רי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>הלפרין - החלפות מפרק</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>המרכז הישראלי לבריאות המרפק</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>המרכז לאורתופדיה מתקדמת</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>המרכז לניתוחי עמוד שדרה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>מכבידנט</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>מכון ריפוי בעיסוק</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>סרג&apos;יקר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>קולפרו סרג&apos;יקל גרופ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>קרדיוהיל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
+            <valueName>שיניים ראשל&quot;צ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>RELAX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אורולוגיה א.א.ג</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אורתופדיה נוירוכירורגיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אישפוז יום</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אשפוז המטולוגי/פנימי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אשפוז כללי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>גניקולוגיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <controllingFieldValue>גסטרו</controllingFieldValue>
+            <valueName>גסטרוסקופיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>טיפול נמרץ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>כירוגיה כללית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>לב חזה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>מחלקת ילדים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>נשים/כירורגיה ב&apos;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>פנימית/ אורתופדית ב&apos;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <controllingFieldValue>גסטרו</controllingFieldValue>
+            <valueName>קולונוסקופיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>נוירולוגיה</controllingFieldValue>
+            <valueName>EEG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>נוירולוגיה</controllingFieldValue>
+            <valueName>TCD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <controllingFieldValue>קרדיולוגיה</controllingFieldValue>
+            <valueName>אחר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
+            <valueName>ייעוץ אונקולוגי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
+            <valueName>כימותרפיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
+            <valueName>רדיותרפיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>עיניים</controllingFieldValue>
+            <valueName>בדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>עיניים</controllingFieldValue>
+            <valueName>יעוץ רופא</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>עיניים</controllingFieldValue>
+            <valueName>ניתוח עיניים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>CT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>MRI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>PET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>US</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>US שד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>ביופסיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>ביופסיות שד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>מיפויים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>ממוגרפיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>צפיפות עצם</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>קולונוסקופיה וירטואלית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>רדיולוגיה פולשנית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <valueName>רנטגן</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>קרדיולוגיה</controllingFieldValue>
+            <valueName>אקו / אקו במאמץ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>קרדיולוגיה</controllingFieldValue>
+            <valueName>ארגומטריה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>קרדיולוגיה</controllingFieldValue>
+            <valueName>הולטר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>קרדיולוגיה</controllingFieldValue>
+            <valueName>מיפוי לב</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שינה</controllingFieldValue>
+            <valueName>בדיקה ביתית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שינה</controllingFieldValue>
+            <valueName>בדיקה במכון</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

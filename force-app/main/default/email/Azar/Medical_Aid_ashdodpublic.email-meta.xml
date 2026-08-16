@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>עזרים לאשדוד ציבורי</name>
+    <style>none</style>
+    <subject>פגישה למטופל עם עזרים</subject>
+    <textOnly>Assuta Mail
+
+שלום,
+
+הינך מקבל הודעה זאת כיוון שנקבעה פגישה למטופל בעל צורך בעזרים
+ למעבר לפרטי הפנייה לחץ/י כאן
+
+בברכה,
+אסותא</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

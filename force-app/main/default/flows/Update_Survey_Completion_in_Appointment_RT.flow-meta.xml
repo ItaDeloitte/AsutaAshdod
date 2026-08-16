@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Updates the field PercentageOfCompletion in Appointment object according to the progress of Fill_Percentage__c in Survey Taken object</description>
+    <environments>Default</environments>
+    <interviewLabel>Update Survey Completion in Appointment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Survey Completion in Appointment - RT</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Updates Appointment&apos;s PercentageOfCompletion__c from Fill_Percentage__c (Survey Taken object)</description>
+        <name>Update_Percentage_Of_Completion</name>
+        <label>Update Percentage Of Completion</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <inputAssignments>
+            <field>PercentageOfCompletion__c</field>
+            <value>
+                <elementReference>$Record.Fill_Percentage__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Appointment__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Percentage_Of_Completion</targetReference>
+        </connector>
+        <filterFormula>{!$Record.Survey__r.Name}=&quot;הערכת טרום ניתוח&quot;</filterFormula>
+        <object>SurveyTaker__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Check In From Home Beginning</label>
+    <protected>false</protected>
+    <values>
+        <field>SMS_Content__c</field>
+        <value xsi:type="xsd:string">שלום {0}, רגע לפני הניתוח שהנך צפוי/ה לעבור ב{1} נשמח להציע לך לבצע צ&apos;ק אין דיגיטלי מהבית ולחסוך לך זמן יקר ביום הניתוח. לכניסה לתהליך:
+https://www.assuta.co.il/?action=SurgeryCheckIn
+בהצלחה ובריאות איתנה, אסותא מרכזים רפואיים</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">ASSUTA</value>
+    </values>
+    <values>
+        <field>SMS_Note__c</field>
+        <value xsi:type="xsd:string">שם פרטי של המטופל = {0}, שם האתר ={1}</value>
+    </values>
+</CustomMetadata>

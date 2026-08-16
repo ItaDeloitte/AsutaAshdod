@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>digitalOwmer</fullName>
+    <columns>Name</columns>
+    <columns>LiveChatVisitor</columns>
+    <columns>Status</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>4</value>
+    </filters>
+    <label>דיגיטל ממתין</label>
+    <queue>Digital</queue>
+</ListView>

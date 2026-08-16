@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Inputted_By_Doctor__c</fullName>
+    <description>שדה טלפון מוסתר ונעול לעריכה, לשימוש בממשק אסותא דוק- הוקם במסגרת משימה 16934</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Phone Inputted By Doctor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Phone</type>
+</CustomField>

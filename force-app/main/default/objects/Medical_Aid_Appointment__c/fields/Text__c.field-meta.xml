@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Text__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES(Type_of_Assist__c, &quot;160&quot;), &quot;כלב שירות יכול להיכנס לרוב המקומות. אם לא - נדאג למקום מתאים.&quot;, Disabilities__r.Assistance_notes__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Helpful Notes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

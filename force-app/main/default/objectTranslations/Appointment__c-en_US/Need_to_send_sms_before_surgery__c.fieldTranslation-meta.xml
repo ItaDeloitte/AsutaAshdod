@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Need to send sms before surgery --></label>
+    <name>Need_to_send_sms_before_surgery__c</name>
+</CustomFieldTranslation>

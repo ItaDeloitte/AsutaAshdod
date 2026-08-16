@@ -1,0 +1,164 @@
+<template>
+  <div if:true={initData} class="slds-is-absolute slds-grid dashboard-wrapper">
+    <div class="slds-shrink-none slds-scrollable slds-p-around_small dashboard-sidebar">
+      <div class="slds-m-bottom_x-small">
+
+
+        <lightning-input data-filter-input type="checkbox" label={labels.Filter_OnlyExperts} name="onlyExperts"
+                         checked={filters.onlyExperts} onchange={filterChangeHandler}></lightning-input>
+
+      </div>
+      <div class="slds-m-bottom_x-small">
+
+        <lightning-input data-filter-input type="checkbox" label={labels.Filter_Operated2Times}
+                         name="operationsInLastMonths" checked={filters.operationsInLastMonths}
+                         onchange={filterChangeHandler}></lightning-input>
+      </div>
+      <div class="slds-m-bottom_x-small">
+        <c-picklist-select data-filter-input label={labels.Filter_Gender} name="gender" options={filterOptions.genders}
+                           onchange={filterChangeHandler}>
+        </c-picklist-select>
+      </div>
+      <div class="slds-m-bottom_x-small">
+        <c-picklist-select data-filter-input label={labels.Filter_DoctorDegree} name="degree"
+                           options={filterOptions.degrees} onchange={filterChangeHandler}>
+        </c-picklist-select>
+      </div>
+      <div class="slds-m-bottom_x-small">
+        <c-lookup-input data-filter-input label={labels.MedicalProcedure} name="procedures"
+                        help={labels.Filter_MedicalProcedureHelpText} selection={filters.procedures}
+                        min-search-term-length={lookupConfig.minSearchTermLength}
+                        max-multi-selections={initData.maxProcedureSelection} is-multi-entry init-search open-search
+                        onsearch={filterLookupSearchHandler} onselectionchange={filterLookupChangeHandler}>
+        </c-lookup-input>
+      </div>
+      <div class="slds-m-bottom_x-small">
+        <c-multi-picklist data-form-field label={labels.Arrangements} name="arrangements"
+                          options={filterOptions.arrangements} placeholder={labels.AllPlaceholder}
+                          onchange={filterChangeHandler} disabled={arrangementsCondition}>
+        </c-multi-picklist>
+      </div>
+      <div class="slds-m-bottom_x-small">
+        <c-multi-picklist data-form-field label={labels.Sites} name="sites" options={filterOptions.sites}
+                          placeholder={labels.AllPlaceholder} onchange={filterChangeHandler}>
+        </c-multi-picklist>
+      </div>
+      <div class="slds-m-bottom_x-small">
+
+        <c-picklist-select data-filter-input label={labels.SortBy} name="sortBy" options={initData.sorts} value={sortBy}
+                           onchange={sortChangeHandler}>
+        </c-picklist-select>
+      </div>
+
+      <div class="slds-m-bottom_x-small" if:true={arrangementsCondition}>
+        <c-multi-picklist data-form-field label={labels.Arrangements} name="arrangementsSortFilter"
+                          options={filterOptions.arrangements} placeholder={labels.AllPlaceholder}
+                          select-all-disabled="true" is-ordered-options-picklist="true"
+                          onchange={filterChangeHandler}>
+        </c-multi-picklist>
+      </div>
+    </div>
+    <div class="slds-is-relative dashboard-content-col">
+      <div class="slds-p-around_small slds-scrollable dashboard-content">
+
+        <c-errors-alert tabindex="-1" errors={errors} closeable onclose={closeErrorsHandler}>
+        </c-errors-alert>
+
+        <div class="slds-grid slds-gutters_direct-x-small slds-wrap header-form">
+
+          <div class="slds-col slds-size_1-of-1">
+            <div class="slds-grid slds-gutters_direct-small slds-grid_align-center slds-m-bottom_small">
+              <template for:each={searchTypeFields} for:item="field">
+                <div key={field.value} class="slds-col search-routes">
+                  <lightning-input type="radio" label={field.label} value={field.value} name="searchType"
+                                   checked={field.checked} onchange={searchTypeChangeHandler}>
+                  </lightning-input>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <template if:true={isByDoctorNameSearchType}>
+            <div class="slds-col slds-grow-none header-form__input-wrapper">
+              <lightning-input data-form-field type="text" name="doctorName" label={labels.Doctor}
+                               value={formValues.doctorName} onchange={formFieldChangeHandler}></lightning-input>
+            </div>
+          </template>
+
+          <template if:false={isByDoctorNameSearchType}>
+            <div class="slds-col slds-grow-none header-form__input-wrapper">
+              <c-lookup-input data-form-field label={labels.Expertise} name="expertise" selection={formValues.expertise}
+                              placeholder={labels.SearchPlaceholder}
+                              min-search-term-length={lookupConfig.minSearchTermLength}
+                              max-multi-selections={initData.maxProcedureSelection} init-search open-search
+                              onsearch={formLookupSearchHandler} onselectionchange={formLookupChangeHandler}>
+              </c-lookup-input>
+            </div>
+            <div class="slds-col slds-grow-none header-form__input-wrapper">
+              <c-lookup-input data-form-field label={labels.SubExpertise} name="subExpertise"
+                              selection={formValues.subExpertise} placeholder={labels.SearchPlaceholder}
+                              min-search-term-length={lookupConfig.minSearchTermLength}
+                              max-multi-selections={initData.maxProcedureSelection} required={isSubExpertiseRequired}
+                              init-search open-search onsearch={formLookupSearchHandler}
+                              onselectionchange={formLookupChangeHandler}>
+              </c-lookup-input>
+            </div>
+          </template>
+          <div class="slds-col slds-grow-none header-form__input-wrapper">
+            <c-lookup-input data-form-field label={labels.MedicalProcedure} name="procedure"
+                            selection={formValues.procedure} placeholder={labels.SearchPlaceholder}
+                            min-search-term-length={lookupConfig.minSearchTermLength}
+                            max-multi-selections={initData.maxProcedureSelection} required={isProcedureRequired}
+                            init-search open-search onsearch={formLookupSearchHandler}
+                            onselectionchange={formLookupChangeHandler}>
+            </c-lookup-input>
+          </div>
+          <div class="slds-col slds-grow-none header-form__input-wrapper">
+            <c-multi-picklist data-form-field label={labels.Arrangements} name="arrangements"
+                              options={arrangementsOptions} value={formValues.arrangements} placeholder=" " required
+                              onchange={formFieldChangeHandler}>
+            </c-multi-picklist>
+          </div>
+          <div class="slds-col slds-grow-none header-form__input-wrapper">
+
+            <c-multi-picklist data-form-field label={labels.Area} name="settlements" options={initData.settlements}
+                              value={formValues.settlements} placeholder=" " required onchange={formFieldChangeHandler}>
+            </c-multi-picklist>
+          </div>
+
+          <div class="slds-col slds-grow-none" style="margin-bottom: 5px;">
+            <div class="slds-grid header-form__actions">
+              <lightning-button type="button" label={labels.Search} disabled={isLoading} onclick={searchClickHandler}>
+              </lightning-button>
+              <lightning-button type="button" label={labels.Reset} disabled={isLoading} onclick={resetClickHandler}>
+              </lightning-button>
+            </div>
+
+          </div>
+        </div>
+        <div class="slds-p-around_small">
+          <div class="slds-m-bottom_xx-small slds-text-align_center">{doctorsSearchStatusText}</div>
+
+          <div if:true={hasViewDoctors} class="results-container">
+            <div class="slds-m-bottom_xxx-small">
+
+              <c-doc-expert-dashboard-slider doctors={doctorsViewList} record-id={recordId}
+                                             recommended-map={recommendedMap} ondoctoraction={doctorActionHandler}>
+              </c-doc-expert-dashboard-slider>
+
+            </div>
+            <div class="bottom-actions">
+              <button type="button" class="slds-button slds-button_brand" onclick={saveClickHandler}
+                      disabled={isSaveDisabled}>{labels.Save}</button>
+              <button type="button" class="slds-button slds-button_brand" onclick={sendDocAdvClickHandler}
+                      disabled={isSendDocAdvDisabled}>{labels.SendDocAdv}</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <lightning-spinner if:true={isLoading} variant="brand" size="medium"></lightning-spinner>
+  </div>
+</template>

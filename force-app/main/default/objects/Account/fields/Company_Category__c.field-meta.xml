@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Category__c</fullName>
+    <description>תת קטגוריות עבור ארגונים - אסותא עד הבית</description>
+    <label>Company Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>עיסקי</fullName>
+                <default>true</default>
+                <label>עיסקי</label>
+            </value>
+            <value>
+                <fullName>חברות הייטק</fullName>
+                <default>false</default>
+                <label>חברות הייטק</label>
+            </value>
+            <value>
+                <fullName>חברות ממשלתיות</fullName>
+                <default>false</default>
+                <label>חברות ממשלתיות</label>
+            </value>
+            <value>
+                <fullName>סוכני ביטוח</fullName>
+                <default>false</default>
+                <label>סוכני ביטוח</label>
+            </value>
+            <value>
+                <fullName>דיור מוגן</fullName>
+                <default>false</default>
+                <label>דיור מוגן</label>
+            </value>
+            <value>
+                <fullName>מרפאות</fullName>
+                <default>false</default>
+                <label>מרפאות</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

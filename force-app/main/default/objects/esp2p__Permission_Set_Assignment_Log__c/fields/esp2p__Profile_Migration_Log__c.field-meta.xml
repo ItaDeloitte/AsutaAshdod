@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>esp2p__Profile_Migration_Log__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Profile Migration Log</label>
+    <referenceTo>esp2p__Profile_Migration_Log__c</referenceTo>
+    <relationshipLabel>Permission Set Assignment Logs</relationshipLabel>
+    <relationshipName>Permission_Set_Assignment_Logs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Empty_codes_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(Procedure_Codes__c), ISBLANK(Domain_Codes__c))</errorConditionFormula>
+    <errorMessage>At least Procedure Codes or Domain Codes must be filled</errorMessage>
+</ValidationRule>

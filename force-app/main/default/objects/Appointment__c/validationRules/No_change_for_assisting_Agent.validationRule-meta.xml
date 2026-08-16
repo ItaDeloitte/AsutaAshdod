@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_change_for_assisting_Agent</fullName>
+    <active>true</active>
+    <description>אם נציג עזר למטופל במילוי סקר וסימן שנתן מענה,לא ניתן לסמן או להחליף את שם הנציג שנתן מענה</description>
+    <errorConditionFormula>IF( ISCHANGED( FeedBack_Survey_With_Agent__c )  &amp;&amp; 
+FeedBack_Survey_With_Agent__c   =  FALSE, TRUE,FALSE)</errorConditionFormula>
+    <errorDisplayField>FeedBack_Survey_With_Agent__c</errorDisplayField>
+    <errorMessage>לא ניתן לשנות נציג</errorMessage>
+</ValidationRule>

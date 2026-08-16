@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NightInstituteKitFormula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(AND (HOUR( Time_of_appointment__c )&gt;= 0,HOUR(Time_of_appointment__c ) &lt; 5),AND (MINUTE( Time_of_appointment__c )= 0,HOUR(Time_of_appointment__c ) = 5)) , &quot;בלילה שבין &quot; &amp;
+CASE(MOD( Date_of_appointment__c - DATE(1900, 1, 6), 7), 0, &quot;יום שישי לשבת&quot;, 1, &quot;יום שבת לראשון&quot;, 2,&quot;יום ראשון לשני&quot;, 3, &quot;יום שני לשלישי&quot;, 4, &quot;יום שלישי לרביעי&quot;, 5, &quot;יום רביעי לחמישי&quot;, 6,&quot;יום חמישי לשישי&quot;,&quot;&quot;)
+&amp;&quot; &quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Night Institute Kit Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NeedNextAppointment --></label>
+    <name>NeedNextAppointment__c</name>
+    <picklistValues>
+        <masterLabel>לא נדרש המשך טיפול</masterLabel>
+        <translation><!-- לא נדרש המשך טיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדרש המשך טיפול</masterLabel>
+        <translation><!-- נדרש המשך טיפול --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

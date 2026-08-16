@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>medical_procedure</fullName>
+    <active>false</active>
+    <description>הפעולה הרפואית של פגישה פוטנציאלית צריך להיות זהה לפעולה הרפואית בפגישה המקורית</description>
+    <errorConditionFormula>(Appointment__r.Medical_Procedure__c  &lt;&gt;  potential_appointment__r.Medical_Procedure__c) &amp;&amp;  (not(isblank(potential_appointment__c)))</errorConditionFormula>
+    <errorMessage>לא ניתן להציע למטופל תור לפעולה רפואית שונה מהפעולה הרפואית המבוקשת</errorMessage>
+</ValidationRule>

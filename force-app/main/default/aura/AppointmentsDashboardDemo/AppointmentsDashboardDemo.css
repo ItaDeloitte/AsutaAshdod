@@ -1,0 +1,11 @@
+.THIS {
+  /* ! */
+}
+
+.THIS .slot {
+  border: 1px solid #ccc;
+}
+
+.THIS .font-bold {
+  font-weight: bold;
+}

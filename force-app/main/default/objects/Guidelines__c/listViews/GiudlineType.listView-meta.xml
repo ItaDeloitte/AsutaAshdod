@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GiudlineType</fullName>
+    <columns>NAME</columns>
+    <columns>Remarks__c</columns>
+    <columns>Guideline_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Language__c</columns>
+    <columns>Guideline_Desc__c</columns>
+    <columns>Sort_Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Guideline_Type__c</field>
+        <operation>equals</operation>
+        <value>M</value>
+    </filters>
+    <label>סוגי הנחיות</label>
+</ListView>

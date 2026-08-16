@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Public Inquiry Case --></label>
+    <lookupFilter>
+        <errorMessage><!-- הקייס חייב להיות מסוג פניות הציבור --></errorMessage>
+    </lookupFilter>
+    <name>Public_Inquiry_Case__c</name>
+    <relationshipLabel><!-- הפקת לקחים --></relationshipLabel>
+</CustomFieldTranslation>

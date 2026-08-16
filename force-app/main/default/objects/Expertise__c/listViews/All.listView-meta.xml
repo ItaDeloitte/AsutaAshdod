@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Sort_order_for_doctor_search__c</columns>
+    <columns>Sort_order_for_docadvisor__c</columns>
+    <columns>Expertise_Code__c</columns>
+    <columns>Status__c</columns>
+    <columns>Show_on_website__c</columns>
+    <columns>Description__c</columns>
+    <columns>Image_URL__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Expertise_Code__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>All</label>
+</ListView>

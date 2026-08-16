@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SpecialDomainEmail__c</fullName>
+    <description>תיאור מלא בUS13294
+שדה זה כולל אימייל של מכונים ומרפאות שבברירת המחדל אינם מוצגים (לדוג&apos; כמו במקרה של מרפאת נוירולוגיה ילדים שנמצאת תחת מרפאה נוירולוגית כללית)</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>SpecialDomainEmail</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

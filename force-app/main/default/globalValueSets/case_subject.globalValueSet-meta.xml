@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>זימון תור חדש</fullName>
+        <default>false</default>
+        <label>זימון תור חדש</label>
+    </customValue>
+    <customValue>
+        <fullName>זימון תור לרופא מומחה</fullName>
+        <default>false</default>
+        <label>זימון תור לרופא מומחה</label>
+    </customValue>
+    <customValue>
+        <fullName>בירור אודות תור</fullName>
+        <default>false</default>
+        <label>בירור אודות תור</label>
+    </customValue>
+    <customValue>
+        <fullName>בירור תוצאות בדיקה</fullName>
+        <default>false</default>
+        <label>בירור תוצאות בדיקה</label>
+    </customValue>
+    <customValue>
+        <fullName>בקשה להפקת התחייבות</fullName>
+        <default>false</default>
+        <label>בקשה להפקת התחייבות</label>
+    </customValue>
+    <customValue>
+        <fullName>כתובות ודרכי הגעה</fullName>
+        <default>false</default>
+        <label>כתובות ודרכי הגעה</label>
+    </customValue>
+    <customValue>
+        <fullName>שעות פעילות מכונים ומרפאות</fullName>
+        <default>false</default>
+        <label>שעות פעילות מכונים ומרפאות</label>
+    </customValue>
+    <customValue>
+        <fullName>מטופלים</fullName>
+        <default>false</default>
+        <label>מידע אודות מטופלים</label>
+    </customValue>
+    <customValue>
+        <fullName>הסכמים</fullName>
+        <default>false</default>
+        <label>הסכמים</label>
+    </customValue>
+    <customValue>
+        <fullName>תשלומים שטרם שולמו</fullName>
+        <default>false</default>
+        <label>תשלומים שטרם שולמו</label>
+    </customValue>
+    <customValue>
+        <fullName>עדכון תור לרופא</fullName>
+        <default>false</default>
+        <label>עדכון תור לרופא</label>
+    </customValue>
+    <customValue>
+        <fullName>עדכון תור קיים</fullName>
+        <default>false</default>
+        <label>עדכון תור קיים</label>
+    </customValue>
+    <customValue>
+        <fullName>טיפול אנדמניסטרטיבי טרום הניתוח</fullName>
+        <default>false</default>
+        <label>טיפול אנדמניסטרטיבי טרום הניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>טיפול אנדמניסטרטיבי לאחר הניתוח</fullName>
+        <default>false</default>
+        <label>טיפול אנדמניסטרטיבי לאחר הניתוח</label>
+    </customValue>
+    <customValue>
+        <fullName>ביטול תור קיים</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ביטול תור קיים</label>
+    </customValue>
+    <customValue>
+        <fullName>המלצה על רופא מומחה</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>המלצה על רופא מומחה</label>
+    </customValue>
+    <customValue>
+        <fullName>שינוי תור קיים</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>שינוי תור קיים</label>
+    </customValue>
+    <customValue>
+        <fullName>מידע כספי</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>מידע כספי</label>
+    </customValue>
+    <customValue>
+        <fullName>מידע כללי</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>מידע כללי</label>
+    </customValue>
+    <customValue>
+        <fullName>אחר</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>אחר</label>
+    </customValue>
+    <description>לא בשימוש</description>
+    <masterLabel>נושא הפנייה - לא בשימוש</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

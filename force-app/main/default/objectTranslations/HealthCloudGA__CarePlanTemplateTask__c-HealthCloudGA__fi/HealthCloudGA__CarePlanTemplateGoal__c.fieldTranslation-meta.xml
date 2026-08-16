@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Hoitosuunnitelmamallin tavoite</label>
+    <name>HealthCloudGA__CarePlanTemplateGoal__c</name>
+    <relationshipLabel>Hoitosuunnitelmamallin tehtävät</relationshipLabel>
+</CustomFieldTranslation>

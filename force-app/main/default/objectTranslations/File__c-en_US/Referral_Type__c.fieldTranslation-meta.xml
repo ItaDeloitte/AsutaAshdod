@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Maccabi Case Type --></label>
+    <name>Referral_Type__c</name>
+    <picklistValues>
+        <masterLabel>CONSULT</masterLabel>
+        <translation><!-- CONSULT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CT</masterLabel>
+        <translation><!-- CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CardiacCatheter</masterLabel>
+        <translation><!-- CardiacCatheter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DXA</masterLabel>
+        <translation><!-- DXA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EcoCard</masterLabel>
+        <translation><!-- EcoCard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EmotionalCare</masterLabel>
+        <translation><!-- EmotionalCare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ergometric</masterLabel>
+        <translation><!-- Ergometric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitalization</masterLabel>
+        <translation><!-- Hospitalization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MGASTRO</masterLabel>
+        <translation><!-- MGASTRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI</masterLabel>
+        <translation><!-- MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mammography</masterLabel>
+        <translation><!-- Mammography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NM</masterLabel>
+        <translation><!-- NM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OrganUS</masterLabel>
+        <translation><!-- OrganUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OutPationClinic</masterLabel>
+        <translation><!-- OutPationClinic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SleepLab</masterLabel>
+        <translation><!-- SleepLab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביצוע פעולה</masterLabel>
+        <translation><!-- ביצוע פעולה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיוב ישיר</masterLabel>
+        <translation><!-- חיוב ישיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכון</masterLabel>
+        <translation><!-- מכון --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

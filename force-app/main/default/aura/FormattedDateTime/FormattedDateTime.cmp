@@ -1,0 +1,16 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="formattedDate" type="String" default="" />
+  <aura:attribute name="date" type="Object" />
+  <aura:attribute name="format" type="String" default="" />
+  <aura:attribute name="locale" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="change" value="{!v.date}" action="{!c.onChangeDate}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <span>{!v.formattedDate}</span>
+
+</aura:component>

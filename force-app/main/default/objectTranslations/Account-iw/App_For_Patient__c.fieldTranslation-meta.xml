@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אפליקציה למטופלת</label>
+    <name>App_For_Patient__c</name>
+    <picklistValues>
+        <masterLabel>חסימה על ידי משתמש</masterLabel>
+        <translation><!-- חסימה על ידי משתמש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יש הרשאה</masterLabel>
+        <translation><!-- יש הרשאה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

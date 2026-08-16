@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Taken_not_active</fullName>
+    <active>true</active>
+    <description>בעת הפיכת נשאל ללא פעיל חובה למלא סיבה</description>
+    <errorConditionFormula>ISPICKVAL( Status__c , &quot;non_active&quot;)&amp;&amp; ISPICKVAL(Reason_not_active__c ,&quot;&quot;)</errorConditionFormula>
+    <errorMessage>חובה למלא סיבת הפיכה ללא פעיל</errorMessage>
+</ValidationRule>

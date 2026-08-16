@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>assign_the_record_from_ger_to_a_variable</name>
+        <label>assign the record from get to a variable - check if both inputs are not blank</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvMessagingSession</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_The_Messaging_Session_Record</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvMessagingSession.IsAuthenticated__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>IsAuthenticated_flow_var</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>update_messaging_session_record</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>check if the record is not empty</description>
+        <name>Check_Get_MessagingSessions_Result</name>
+        <label>Check Get MessagingSessions Result</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_if_the_messaging_record_var_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_The_Messaging_Session_Record</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assign_the_record_from_ger_to_a_variable</targetReference>
+            </connector>
+            <label>check if the messaging record var is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Both_Inputs_Are_Not_Blank</name>
+        <label>Check if Both Inputs Are Not Blank</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>both_inputs_are_not_blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsAuthenticated_flow_var</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>RoutableId</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_The_Messaging_Session_Record</targetReference>
+            </connector>
+            <label>both inputs are not blank</label>
+        </rules>
+    </decisions>
+    <description>FB - 2527669829 - 21122025:  Gets 2 inputs from a bot and updates the messaging session IsAuthenticated True</description>
+    <environments>Default</environments>
+    <interviewLabel>v1 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Bots - Mark IsAuthenticated in Messaging Session</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_The_Messaging_Session_Record</name>
+        <label>Get The Messaging Session Record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Get_MessagingSessions_Result</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RoutableId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>MessagingSession</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>update messaging session record</description>
+        <name>update_messaging_session_record</name>
+        <label>update messaging session record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>rvMessagingSession</inputReference>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_Both_Inputs_Are_Not_Blank</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>flow input value</description>
+        <name>IsAuthenticated_flow_var</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Id of the messaging session passed from bot</description>
+        <name>RoutableId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>rvMessagingSession</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MessagingSession</objectType>
+    </variables>
+</Flow>

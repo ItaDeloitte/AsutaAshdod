@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>missing_tizk_fields__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+
+ISBLANK( IF(RecordType.DeveloperName = &quot;Surgeries&quot;, Spincal__r.tafnitID__c , Accession_Number__c) ),&apos;Accession_Number&apos;,
+IF( ISBLANK(Date_of_appointment__c) ,&apos;Date_of_appointment&apos;,
+IF( ISBLANK(Time_of_appointment__c) ,&apos;Time_of_appointment&apos;,
+IF( ISBLANK(Calendar__r.ReminderId__c) ,&apos;Calendar&apos;,
+IF( ISBLANK(Medical_Procedure__r.Domain__r.DomainReminderCode__c) ,&apos;DomainReminderCode&apos;,
+IF( ISBLANK(Patient_Account__r.FirstName) ,&apos;FirstName&apos;,
+IF( ISBLANK(PayerFactor__r.Code_Payer_Tizkurit__c) ,&apos;PayerFactor&apos;,
+IF( ISBLANK(Medical_Procedure__r.Action_code_to_remember__c) ,&apos;Procedure_Action_code_to_remember&apos;,
+IF( ISBLANK(Time_of_Tizkorit__c) ,&apos;Time_of_Tizkorit&apos;,
+IF( ISBLANK(Site__r.Code_Tizkurit__c) ,&apos;Site_Code_Tizkurit&apos;,
+IF( ISBLANK(Date_for_tizkorit_reminder__c) ,&apos;Date_for_tizkorit_reminder&apos;,
+IF( ISBLANK(Patient_Account__r.Phone) &amp;&amp; ISBLANK(Patient_Account__r.SMS_Phone_Number__c) &amp;&amp; ISBLANK(Patient_Account__r.PersonContact.OtherPhone) ,&apos;Phone&apos;,&apos;GOOD&apos;)
+))))))))))
+
+
+
+
+
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>missing_tizk_fields</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

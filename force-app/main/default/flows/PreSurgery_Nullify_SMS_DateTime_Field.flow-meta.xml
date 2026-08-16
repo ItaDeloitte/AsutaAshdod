@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>כאשר סוג ההרדמה היא הרדמה מקומית לא צריך להישלח סמס של טרום ניתוח
+לפי US-13042</description>
+        <name>Anesthesia_type_is_not_local</name>
+        <label>Anesthesia type is not local</label>
+        <locationX>611</locationX>
+        <locationY>1379</locationY>
+        <defaultConnectorLabel>Local Anesthesia OR Null Values</defaultConnectorLabel>
+        <rules>
+            <name>No_Anesthesia_from_Referral_Object</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Appointment.Referral_from_doctor_website__r.Anesthesia_Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>8</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Message</targetReference>
+            </connector>
+            <label>No Anesthesia from Referral Object</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Appointment_Status_Not_Cancelled</name>
+        <label>Appointment Status Not Cancelled</label>
+        <locationX>711</locationX>
+        <locationY>839</locationY>
+        <defaultConnector>
+            <targetReference>Has_PreSurgery_Link</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Cancelled</defaultConnectorLabel>
+        <rules>
+            <name>Appointment_Cancelled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment__r.Appointment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Canceled</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Appointment Cancelled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_already_sent_SMS</name>
+        <label>Check if already sent SMS</label>
+        <locationX>858</locationX>
+        <locationY>1271</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Was_Not_Sent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment__r.PreSurgery_Survey_SMS_Sent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Anesthesia_type_is_not_local</targetReference>
+            </connector>
+            <label>Was Not Sent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Checks_if_field_SMS_Send_Time_has_Value</name>
+        <label>Checks if field SMS Send Time has Value</label>
+        <locationX>711</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Appointment_Status_Not_Cancelled</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Has No Value</defaultConnectorLabel>
+        <rules>
+            <name>Has_Value</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sms_send_time__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Nullify_SMS_Send_Time</targetReference>
+            </connector>
+            <label>Has Value</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Doctor_Website_Referral</name>
+        <label>Doctor Website Referral</label>
+        <locationX>1114</locationX>
+        <locationY>1163</locationY>
+        <defaultConnectorLabel>No Referral</defaultConnectorLabel>
+        <rules>
+            <name>Has_Doctor_Referral</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment__r.Referral_from_doctor_website__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_already_sent_SMS</targetReference>
+            </connector>
+            <label>Has Doctor Referral</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>if exists send link</description>
+        <name>Has_PreSurgery_Link</name>
+        <label>Has PreSurgery Link</label>
+        <locationX>1636</locationX>
+        <locationY>947</locationY>
+        <defaultConnectorLabel>No Link</defaultConnectorLabel>
+        <rules>
+            <name>Link_Available</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Survey_link__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Patient_Above_age_18</targetReference>
+            </connector>
+            <label>Link Available</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Patient_Above_age_18</name>
+        <label>Patient Above age 18</label>
+        <locationX>1374</locationX>
+        <locationY>1055</locationY>
+        <defaultConnectorLabel>Under Aged - Do Not Send</defaultConnectorLabel>
+        <rules>
+            <name>Above_18</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment__r.Patient_Age__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>18.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Doctor_Website_Referral</targetReference>
+            </connector>
+            <label>Above 18</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Send_Message</name>
+        <label>Send Message?</label>
+        <locationX>380</locationX>
+        <locationY>1487</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Send_Message</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Appointment.SendingMessage__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Which_Message_Type_18006</targetReference>
+            </connector>
+            <label>Yes- Send Message</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Which_Message_Type_18006</name>
+        <label>Which Message Type 18006</label>
+        <locationX>182</locationX>
+        <locationY>1595</locationY>
+        <defaultConnector>
+            <targetReference>Send_SMS_to_Patient</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>SMS</defaultConnectorLabel>
+        <rules>
+            <name>WhatsApp_18006</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Appointment.Outbound_WA_Allow__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Appointment.sendingByWhatsApp__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>pre_surgery_sms_v1a</targetReference>
+            </connector>
+            <label>WhatsApp</label>
+        </rules>
+    </decisions>
+    <description>when a PreSurgery appointment is set, a Survey Taken record is created,
+a wide org automation process sends SMS on Survey Taken creation
+we want to prevent this automation from running and send SMS with different terms
+we do this by nullifying the relevant Date/Time field
+
+Then check for conditions to send survey to patient and send SMS using a SMSTemplate
+AM: 23032024- 1863823235 - added decision before sending message based on the appointment.sending message checkbox
+Yulia: 09092025 - in the last sms record creation, template updated to &apos;PreSurgery_SMS&apos; from &apos;pre_surgery_sms&apos;</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Whatsapp_Phone_Number_4_Sent_formula</name>
+        <dataType>String</dataType>
+        <expression>if(mid({!Get_Appointment.Patient_Account__r.SMS_Phone_Number__c}, 4, 1) = &apos;-&apos;,
+&apos;972&apos; + right({!Get_Appointment.Patient_Account__r.SMS_Phone_Number__c},10),
+&apos;972&apos; + right({!Get_Appointment.Patient_Account__r.SMS_Phone_Number__c},9))</expression>
+    </formulas>
+    <interviewLabel>PreSurgery Nullify SMS DateTime Field {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PreSurgery Send Survey SMS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Send_SMS_to_Patient</name>
+        <label>Send SMS to Patient</label>
+        <locationX>314</locationX>
+        <locationY>1703</locationY>
+        <connector>
+            <targetReference>Update_SMS_Sent_Checkbox</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>$Record.Account__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Appointment__c</field>
+            <value>
+                <elementReference>$Record.Appointment__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Automation_name__c</field>
+            <value>
+                <stringValue>PreSurgery Send Survey SMS</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case__c</field>
+            <value>
+                <elementReference>$Record.Case__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ExpectedSendingDateTime__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone_Number__c</field>
+            <value>
+                <elementReference>$Record.Appointment__r.PHONE__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SmsTemplate__c</field>
+            <value>
+                <stringValue>PreSurgery_SMS</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SurveyTaker__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <stringValue>Outgoing</stringValue>
+            </value>
+        </inputAssignments>
+        <object>SMS__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Appointment</name>
+        <label>Get Appointment</label>
+        <locationX>711</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_SMS_Template</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Appointment__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Appointment__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_SMS_Template</name>
+        <label>Get SMS Template</label>
+        <locationX>711</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Checks_if_field_SMS_Send_Time_has_Value</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>DeveloperName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PreSurgery_SMS</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SmsTemplate__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Nullify_SMS_Send_Time</name>
+        <label>Nullify SMS Send Time</label>
+        <locationX>579</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Appointment_Status_Not_Cancelled</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>sms_send_time__c</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_SMS_Sent_Checkbox</name>
+        <label>Update SMS Sent Checkbox</label>
+        <locationX>182</locationX>
+        <locationY>1895</locationY>
+        <inputAssignments>
+            <field>PreSurgery_Survey_SMS_Sent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Appointment__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>585</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Appointment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Survey__c</field>
+            <operator>StartsWith</operator>
+            <value>
+                <stringValue>a1M</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SurveyCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PreSurgery</stringValue>
+            </value>
+        </filters>
+        <object>SurveyTaker__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>pre_surgery_sms_v1a</name>
+        <label>pre_surgery_sms_v1a</label>
+        <locationX>50</locationX>
+        <locationY>1703</locationY>
+        <connector>
+            <targetReference>Update_SMS_Sent_Checkbox</targetReference>
+        </connector>
+        <flowName>Outbound_WA_for_Surgery</flowName>
+        <inputAssignments>
+            <name>AccountId</name>
+            <value>
+                <elementReference>$Record.Account__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>AppId</name>
+            <value>
+                <elementReference>Get_Appointment.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>MessageTemplate</name>
+            <value>
+                <stringValue>pre_surgery_sms_v1a</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>MessageTime</name>
+            <value>
+                <stringValue>wo</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>PhoneNumber</name>
+            <value>
+                <elementReference>Get_Appointment.Patient_Account__r.SMS_Phone_Number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>SurveyLink</name>
+            <value>
+                <elementReference>$Record.Survey_link__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>SurveyTaken</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>WhichChannel</name>
+            <value>
+                <stringValue>surgery</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>MessagingUser</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Survey_Link</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

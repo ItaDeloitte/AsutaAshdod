@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 10 — UI Configuration
+    =====================================
+    Types: ReportType, QuickAction, CustomTab, CustomApplication, Layout, FlexiPage
+    Test level: NoTestRun
+    Estimated time: ~30-45 min
+    Dependencies:
+      - Phase 2 (Objects + Fields) — layouts/flexipages reference fields
+      - Phase 3 (RecordTypes) — layouts assigned to RecordTypes
+      - Phase 7 (LWC/Aura) — FlexiPages embed LWC components
+      - Phase 8 (Apex) — QuickActions may reference Apex controllers
+
+    ⚠️ secretariat CustomApp: retrieve from Drive source after all FlexiPages deploy.
+       Current project version has 277 profileActionOverrides removed (Profiles not yet deployed).
+       After Profile wave (13) → retrieve from Drive → redeploy secretariat.
+
+    ⚠️ 5 FlexiPages excluded (c:RecordActionButton issue):
+       Case_Record_Page, Case_Record_Page_IVF, Case_Record_Page_Shikum_Bait,
+       Opportunity_Record_Page, YadBeYad_Breast
+       → Deploy after resolving c:RecordActionButton OR enable via Admin.
+
+    ⚠️ standard__LightningSales excluded — references 13 RecordTypes + excluded FlexiPages.
+       Deploy after all RecordTypes and FlexiPages are stable.
+
+    NOTE: 115 ReportTypes excluded (reference excluded fields). Deploy after field restoration.
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase10_ui_config.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase10_result.json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Report types (~400+ excluding excluded ones) -->
+    <types>
+        <members>*</members>
+        <name>ReportType</name>
+    </types>
+
+    <!-- Quick actions -->
+    <types>
+        <members>*</members>
+        <name>QuickAction</name>
+    </types>
+
+    <!-- Custom tabs -->
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+
+    <!-- Custom applications (standard__ apps partially fixed — see notes) -->
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+
+    <!-- Page layouts (491 deployed in sandbox) -->
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+
+    <!-- Lightning pages / FlexiPages (5 excluded — see notes) -->
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

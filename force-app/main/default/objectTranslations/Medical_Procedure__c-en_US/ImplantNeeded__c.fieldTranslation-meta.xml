@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- האם יש צורך בשתל - נתון שמגיע מתפנית --></help>
+    <label><!-- ImplantNeeded --></label>
+    <name>ImplantNeeded__c</name>
+</CustomFieldTranslation>

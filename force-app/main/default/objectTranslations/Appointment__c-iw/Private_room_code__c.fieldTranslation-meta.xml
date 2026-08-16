@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>חדר פרטי</label>
+    <name>Private_room_code__c</name>
+    <picklistValues>
+        <masterLabel>1 פרטי סטנדרט</masterLabel>
+        <translation><!-- 1 פרטי סטנדרט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סוויטה</masterLabel>
+        <translation><!-- סוויטה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי סטנדרט 2</masterLabel>
+        <translation><!-- פרטי סטנדרט 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רגיל</masterLabel>
+        <translation><!-- רגיל --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

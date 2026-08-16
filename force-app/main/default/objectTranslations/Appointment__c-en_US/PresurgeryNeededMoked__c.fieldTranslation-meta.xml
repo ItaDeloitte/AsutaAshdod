@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PresurgeryNeededMoked --></label>
+    <name>PresurgeryNeededMoked__c</name>
+    <picklistValues>
+        <masterLabel>לא נדרש טרום ניתוח- בריא</masterLabel>
+        <translation><!-- לא נדרש טרום ניתוח- בריא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדרש טרום ניתוח-רפואי</masterLabel>
+        <translation><!-- נדרש טרום ניתוח-רפואי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

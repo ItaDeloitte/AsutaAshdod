@@ -1,0 +1,15 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="label" type="String" default="Link" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <!-- handlers -->
+  <!-- events -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- methods -->
+
+  <lightning:overlayLibrary aura:id="overlayLib" />
+  <lightning:button variant="neutral" label="{!v.label}" onclick="{!c.onShowModal}" disabled="{!v.isLoading}" />
+
+</aura:component>

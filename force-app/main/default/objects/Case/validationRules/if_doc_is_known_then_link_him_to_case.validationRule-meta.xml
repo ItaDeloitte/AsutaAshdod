@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>if_doc_is_known_then_link_him_to_case</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos;) &amp;&amp;
+RecordType.DeveloperName = &apos;DOC_expert&apos; &amp;&amp;
+ ISPICKVAL( sub_case_subject__c , &quot;זימון תור לרופא מומחה&quot;) &amp;&amp;
+ ISBLANK(Recommended_doc__c )
+&amp;&amp;  NOT(ISPICKVAL(Origin, &quot;Web_Site&quot;))</errorConditionFormula>
+    <errorMessage>אם הרופא ידוע יש למלא את שמו בשדה &quot;רופא מבוקש&quot;</errorMessage>
+</ValidationRule>

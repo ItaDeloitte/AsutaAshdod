@@ -1,0 +1,4 @@
+<p style="text-align: right;">שלום רב {!Appointment__c.Patient_Account__c},</p>
+<p style="text-align: right;">למילוי הטופס לקראת התור <a href="https://einav-dev.formtitan.com/ft17137d601557497284854?fld12={!Appointment__c.Id}#/%20">לחץ כאן</a>.</p>
+<p style="text-align: right;">בברכה,</p>
+<p style="text-align: right;">אסותא</p>

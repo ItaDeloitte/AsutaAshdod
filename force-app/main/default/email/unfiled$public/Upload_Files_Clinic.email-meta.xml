@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>קישור העלאת קבצים למרפאה</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>העלאת קבצים למרפאה</name>
+    <style>freeForm</style>
+    <subject>העלאת הפנייה</subject>
+    <textOnly>Assuta Mail
+
+אסותא - שליחת מסמכים
+
+שלום,
+
+לשליחת מסמכים לחץ על הלינק
+{!Case.link_upload_files__c}
+בברכה,
+אסותא</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

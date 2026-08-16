@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hifa</fullName>
+    <columns>NAME</columns>
+    <columns>Appointment_Date__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Calendar__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SourceSystemExperts__c</columns>
+    <columns>SourceSystem__c</columns>
+    <columns>Canceled_Reason__c</columns>
+    <columns>Accession_Number__c</columns>
+    <columns>Site__c</columns>
+    <columns>domain2__c</columns>
+    <columns>Domain__c</columns>
+    <columns>PayerFactor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Domain__c</field>
+        <operation>contains</operation>
+        <value>שפיר</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>אסותא חיפה</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>TookPlace,Canceled</value>
+    </filters>
+    <label>מי שפיר - חיפה</label>
+</ListView>

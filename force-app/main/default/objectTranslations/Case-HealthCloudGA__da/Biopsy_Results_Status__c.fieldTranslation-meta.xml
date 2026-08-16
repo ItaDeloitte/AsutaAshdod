@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Biopsy Results Status --></label>
+    <name>Biopsy_Results_Status__c</name>
+    <picklistValues>
+        <masterLabel>Results Received</masterLabel>
+        <translation><!-- Results Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Results</masterLabel>
+        <translation><!-- Waiting for Results --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

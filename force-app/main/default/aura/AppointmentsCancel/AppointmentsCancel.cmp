@@ -1,0 +1,161 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="inputData" type="Map" default="{appointment:'',reason:'', reasonFreeText:''}" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="steps" type="List" default="[]" />
+  <aura:attribute name="currentStep" type="Map" />
+  <aura:attribute name="currentStepIndex" type="Integer" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="selectedAppointment" type="Map" />
+  <aura:attribute name="formOptions" type="Map" />
+  <aura:attribute name="sequenceAppointments" type="List" default="[]" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="false">
+      <aura:set attribute="title">
+        {!$Label.c.Cancel_Appointment}
+      </aura:set>
+      <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.serverError}">
+          <div class="">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+        <div class="{!join(' ',
+          v.currentStep.id=='appointment'?'slds-show':'slds-hide'
+        )}">
+          <aura:if isTrue="{!and(v.formOptions,!v.formOptions.appointmentRecord)}">
+
+            <div>
+              <c:BaseAutocomplete aura:id="step1Field" label="{!$Label.c.Appointment}"
+                                  value="{!v.inputData.appointment}" onsearch="{!c.onSearch}"
+                                  oninitsearch="{!c.onInitSearch}" required="true" placeholder="{!$Label.c.Search}"
+                                  isPlainAutoComplete="false" onchange="{!c.onSelectAppointment}" name="appointment" />
+            </div>
+          </aura:if>
+
+          <aura:if isTrue="{!v.selectedAppointment}">
+            <div class="mb-2 py-2">
+              <aura:iteration items="{!v.sequenceAppointments}" var="appointment" indexVar="_index">
+                <div class="mb-2">
+                  <div class="font-weight-bold underline">{!$Label.c.Appointment+' '+(_index+1)}</div>
+                  <div class="slds-grid slds-wrap">
+                    <div class="slds-size--1-of-2">
+                      <div><span class="font-weight-bold">{!$Label.c.Date} </span></div>
+                    </div>
+                    <div class="slds-size--1-of-2">
+                      <c:FormattedDateTime date="{!appointment.Appointment_Date_Time__c}" locale="{!$Locale.langLocale}"
+                                           format="dd/MM, EEE, HH:mm" />
+                    </div>
+                  </div>
+                  <div class="slds-grid slds-wrap">
+                    <div class="slds-size--1-of-2">
+                      <div><span class="font-weight-bold">{!$Label.c.Medical_Procedure}</span></div>
+                    </div>
+                    <div class="slds-size--1-of-2">
+                      <span>{!appointment.Medical_Procedure__r.Name}</span>
+                    </div>
+                  </div>
+                  <div class="slds-grid slds-wrap">
+                    <div class="slds-size--1-of-2">
+                      <div><span class="font-weight-bold">{!$Label.c.Site}</span></div>
+                    </div>
+                    <div class="slds-size--1-of-2">
+                      <span>{!appointment.Site__r.Name}</span>
+                    </div>
+                  </div>
+                </div>
+              </aura:iteration>
+            </div>
+          </aura:if>
+        </div>
+        <div class="{!join(' ',
+        v.currentStep.id=='reason'?'slds-show':'slds-hide'
+      )}">
+          <aura:if isTrue="{!v.selectedAppointment}">
+            <div class="mb-2">
+              <div class="slds-grid slds-wrap">
+                <div class="slds-size--1-of-2">
+                  <span class="font-weight-bold">{!$Label.c.Name}</span>
+                </div>
+                <div class="slds-size--1-of-2">
+                  <span>{!v.selectedAppointment.Name}</span>
+                </div>
+              </div>
+              <aura:iteration items="{!v.sequenceAppointments}" var="appointment" indexVar="_index">
+                <div class="mb-2">
+                  <div class="font-weight-bold underline">{!$Label.c.Appointment+' '+(_index+1)}</div>
+                  <div class="slds-grid slds-wrap">
+                    <div class="slds-size--1-of-2">
+                      <span class="font-weight-bold">{!$Label.c.Date}</span>
+                    </div>
+                    <div class="slds-size--1-of-2">
+                      <c:FormattedDateTime date="{!appointment.Appointment_Date_Time__c}" locale="{!$Locale.langLocale}"
+                                           format="dd/MM, EEE, HH:mm" />
+                    </div>
+                  </div>
+                  <div class="slds-grid slds-wrap">
+                    <div class="slds-size--1-of-2">
+                      <span class="font-weight-bold">{!$Label.c.Medical_Procedure}</span>
+                    </div>
+                    <div class="slds-size--1-of-2">
+                      <span>{!appointment.Medical_Procedure__r.Name}</span>
+                    </div>
+                  </div>
+                  <div class="slds-grid slds-wrap">
+                    <div class="slds-size--1-of-2">
+                      <span class="font-weight-bold">{!$Label.c.Site}</span>
+                    </div>
+                    <div class="slds-size--1-of-2">
+                      <span>{!appointment.Site__r.Name}</span>
+                    </div>
+                  </div>
+                </div>
+              </aura:iteration>
+            </div>
+          </aura:if>
+          <div>
+            <lightning:select aura:id="step2Field" label="{!$Label.c.Reason}" required="true"
+                              value="{!v.inputData.reason}">
+              <option value="" disabled="true" class="slds-hide"></option>
+              <aura:iteration items="{!v.formOptions.reasonOptions}" var="option" indexVar="_index">
+                <option value="{!option.value}">{!option.label}</option>
+              </aura:iteration>
+            </lightning:select>
+          </div>
+          <aura:if isTrue="{!v.inputData.reason == '18'}">
+            <div>
+              <lightning:textarea aura:id="step2Field" value="{!v.inputData.reasonFreeText}"
+                                  label="{!$Label.c.Please_add_your_reason}" maxlength="100" required="true" />
+            </div>
+          </aura:if>
+        </div>
+      </div>
+      <aura:set attribute="footer">
+        <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+                          label="{!$Label.c.Cancel}" />
+        <aura:if isTrue="{!and(v.currentStepIndex>0,!v.formOptions.appointmentRecord)}">
+          <lightning:button variant="neutral" type="button" onclick="{!c.onPrev}" disabled="{!v.isLoading}"
+                            label="{!$Label.c.Back}" />
+        </aura:if>
+        <lightning:button variant="brand" type="button" onclick="{!c.onNext}" disabled="{!v.isLoading}"
+                          label="{!v.currentStepIndex==v.steps.length-1?$Label.c.Submit:$Label.c.Next}" />
+
+      </aura:set>
+    </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+
+</aura:component>

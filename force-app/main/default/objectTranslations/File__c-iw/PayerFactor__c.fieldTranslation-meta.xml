@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- הגורם המשלם עבור התור --></help>
+    <label>גורם משלם</label>
+    <name>PayerFactor__c</name>
+    <relationshipLabel><!-- Assuta Files --></relationshipLabel>
+</CustomFieldTranslation>

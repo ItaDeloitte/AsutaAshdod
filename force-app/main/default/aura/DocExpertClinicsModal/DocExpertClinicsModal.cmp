@@ -1,0 +1,46 @@
+<aura:component extends="c:DocExpertBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="doctorId" type="String" default="" />
+  <aura:attribute name="clinics" type="List" default="[]" />
+  <aura:attribute name="tableData" type="List" default="[]" />
+  <aura:attribute name="tableColumns" type="List" default="[]" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="onCloseModal" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="false">
+      <aura:set attribute="title">
+        {!$Label.c.DocClinics}
+      </aura:set>
+
+      <div class="">
+        <aura:if isTrue="{!v.serverError}">
+          <div class="slds-p-around_medium">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+        <div>
+          <lightning:datatable columns="{!v.tableColumns }" data="{!v.tableData }" keyField="id"
+            showRowNumberColumn="true" onrowaction="{!c.onTableRowAction}" hideCheckboxColumn="true" />
+        </div>
+      </div>
+
+      <aura:set attribute="footer">
+      </aura:set>
+    </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+</aura:component>

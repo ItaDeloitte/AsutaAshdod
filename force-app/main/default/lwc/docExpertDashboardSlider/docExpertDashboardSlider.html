@@ -1,0 +1,41 @@
+<template>
+  <div class="">
+    <div class="slds-is-relative">
+      <div class={sliderWrapperClassNames}>
+        <!-- Slider main container -->
+        <div data-swiper-button-prev class="swiper-button-prev">
+          <lightning-icon icon-name={icons.prev}></lightning-icon>
+        </div>
+        <div data-swiper-button-next class="swiper-button-next">
+          <lightning-icon icon-name={icons.next}></lightning-icon>
+        </div>
+        <div data-swiper-container class="swiper swiper-container">
+          <!-- Additional required wrapper -->
+
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <template for:each={doctors} for:item="doctor">
+              <div key={doctor.id} class="swiper-slide doctor-slide">
+                <c-doc-expert-doctor-item key={doctor.id} record-id={recordId} doctor={doctor}
+                                          recommended-map={recommendedMap}>
+                </c-doc-expert-doctor-item>
+              </div>
+            </template>
+          </div>
+
+
+          <!-- <div data-swiper-button-prev class="swiper-button-prev">
+            <lightning-icon icon-name={icons.prev}></lightning-icon>
+          </div>
+          <div data-swiper-button-next class="swiper-button-next">
+            <lightning-icon icon-name={icons.next}></lightning-icon>
+          </div> -->
+
+        </div>
+      </div>
+
+      <lightning-spinner if:true={isLoading} class="transparent-bg" variant="brand"></lightning-spinner>
+    </div>
+
+  </div>
+</template>

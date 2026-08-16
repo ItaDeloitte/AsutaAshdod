@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Subject_2__c</fullName>
+    <description>תת תת נושא פניות הציבור</description>
+    <label>Sub Subject Public Inquiry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sub_Subject__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>אי ביצוע השוואה</fullName>
+                <default>false</default>
+                <label>אי ביצוע השוואה</label>
+            </value>
+            <value>
+                <fullName>אי חזרה למטופל</fullName>
+                <default>false</default>
+                <label>אי חזרה למטופל</label>
+            </value>
+            <value>
+                <fullName>אי קבלת טופס התחייבות</fullName>
+                <default>false</default>
+                <label>אי קבלת טופס התחייבות</label>
+            </value>
+            <value>
+                <fullName>אישורים תקציביים</fullName>
+                <default>false</default>
+                <label>אישורים תקציביים</label>
+            </value>
+            <value>
+                <fullName>אי שינוי פרטים אישיים לבקשת המטופל/ת</fullName>
+                <default>false</default>
+                <label>אי שינוי פרטים אישיים לבקשת המטופל/ת</label>
+            </value>
+            <value>
+                <fullName>אי שליחת דיסק/מסמכים רפואיים</fullName>
+                <default>false</default>
+                <label>אי שליחת דיסק/מסמכים רפואיים</label>
+            </value>
+            <value>
+                <fullName>אי תמורה על תשלום</fullName>
+                <default>false</default>
+                <label>אי תמורה על תשלום</label>
+            </value>
+            <value>
+                <fullName>ביטול/שינוי  מועד ניתוח</fullName>
+                <default>false</default>
+                <label>ביטול/שינוי  מועד ניתוח</label>
+            </value>
+            <value>
+                <fullName>ביטול בדיקה</fullName>
+                <default>false</default>
+                <label>ביטול בדיקה</label>
+            </value>
+            <value>
+                <fullName>ביטול תור</fullName>
+                <default>false</default>
+                <label>ביטול תור</label>
+            </value>
+            <value>
+                <fullName>בעיות באתר האינטרנט</fullName>
+                <default>false</default>
+                <label>בעיות באתר האינטרנט</label>
+            </value>
+            <value>
+                <fullName>דיסק שלא נפתח</fullName>
+                <default>false</default>
+                <label>דיסק שלא נפתח</label>
+            </value>
+            <value>
+                <fullName>דיסק תקול</fullName>
+                <default>false</default>
+                <label>דיסק תקול</label>
+            </value>
+            <value>
+                <fullName>השגות על חיוב בגין טיפול\בדיקה</fullName>
+                <default>false</default>
+                <label>השגות על חיוב בגין טיפול\בדיקה</label>
+            </value>
+            <value>
+                <fullName>חיוב שגוי(טכני)</fullName>
+                <default>false</default>
+                <label>חיוב שגוי(טכני)</label>
+            </value>
+            <value>
+                <fullName>לא בוטל הפקדון</fullName>
+                <default>false</default>
+                <label>לא בוטל הפקדון</label>
+            </value>
+            <value>
+                <fullName>לא נסגר החשבון עם המטופל</fullName>
+                <default>false</default>
+                <label>לא נסגר החשבון עם המטופל</label>
+            </value>
+            <value>
+                <fullName>לא קיבל חשבונית / קבלה</fullName>
+                <default>false</default>
+                <label>לא קיבל חשבונית / קבלה</label>
+            </value>
+            <value>
+                <fullName>ממתין להחזר כספי</fullName>
+                <default>false</default>
+                <label>ממתין להחזר כספי</label>
+            </value>
+            <value>
+                <fullName>קבלת מידע</fullName>
+                <default>false</default>
+                <label>קבלת מידע</label>
+            </value>
+            <value>
+                <fullName>קובץ זימון לא נפתח</fullName>
+                <default>false</default>
+                <label>קובץ זימון לא נפתח</label>
+            </value>
+            <value>
+                <fullName>קובץ פענוח לא נפתח</fullName>
+                <default>false</default>
+                <label>קובץ פענוח לא נפתח</label>
+            </value>
+            <value>
+                <fullName>שינוי באופן הטיפול/רופא מטפל ללא ידיעת מטופל</fullName>
+                <default>false</default>
+                <label>שינוי באופן הטיפול/רופא מטפל ללא ידיעת מטופל</label>
+            </value>
+            <value>
+                <fullName>שינוי מועד בדיקה ללא עדכון המטופל</fullName>
+                <default>false</default>
+                <label>שינוי מועד בדיקה ללא עדכון המטופל</label>
+            </value>
+            <value>
+                <fullName>ביטול/שינוי מועד ניתוח ללא ידיעת המטופל</fullName>
+                <default>false</default>
+                <label>ביטול/שינוי מועד ניתוח ללא ידיעת המטופל</label>
+            </value>
+            <value>
+                <fullName>שינוי רופא מטפל ללא ידיעת מטופל</fullName>
+                <default>false</default>
+                <label>שינוי רופא מטפל ללא ידיעת מטופל</label>
+            </value>
+            <value>
+                <fullName>תודה</fullName>
+                <default>false</default>
+                <label>תודה</label>
+            </value>
+            <value>
+                <fullName>תיאום פגישה</fullName>
+                <default>false</default>
+                <label>תיאום פגישה</label>
+            </value>
+            <value>
+                <fullName>תלונה</fullName>
+                <default>false</default>
+                <label>תלונה</label>
+            </value>
+            <value>
+                <fullName>תלונת מטופל</fullName>
+                <default>false</default>
+                <label>תלונת מטופל</label>
+            </value>
+            <value>
+                <fullName>תקלה בהודעת SMS לניתוח</fullName>
+                <default>false</default>
+                <label>תקלה בהודעת SMS לניתוח</label>
+            </value>
+            <value>
+                <fullName>תקלה בהודעת SMS לפענוח חתום</fullName>
+                <default>false</default>
+                <label>תקלה בהודעת SMS לפענוח חתום</label>
+            </value>
+            <value>
+                <fullName>תקלה בהודעת SMS לזימון תור</fullName>
+                <default>false</default>
+                <label>תקלה בהודעת SMS לזימון תור</label>
+            </value>
+            <value>
+                <fullName>תקלה בכניסה לאזור האישי</fullName>
+                <default>false</default>
+                <label>תקלה בכניסה לאזור האישי</label>
+            </value>
+            <value>
+                <fullName>שינוי מועד ניתוח ללא ידיעת המטופל</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>שינוי מועד ניתוח ללא ידיעת המטופל</label>
+            </value>
+            <value>
+                <fullName>תקלה בהודעות SMS בניתוחים</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תקלה בהודעות SMS בניתוחים</label>
+            </value>
+            <value>
+                <fullName>תקלה בהודעות SMS לפענוח חתום</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תקלה בהודעות SMS לפענוח חתום</label>
+            </value>
+            <value>
+                <fullName>תקלה בהודעת SMS זימון</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תקלה בהודעת SMS זימון</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>אי ביצוע השוואה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>אי חזרה למטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>אי שינוי פרטים אישיים לבקשת המטופל/ת</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>אי שליחת דיסק/מסמכים רפואיים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>ביטול/שינוי  מועד ניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>ביטול תור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>שינוי באופן הטיפול/רופא מטפל ללא ידיעת מטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>שינוי מועד בדיקה ללא עדכון המטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אי עמידה בתאום ציפיות</controllingFieldValue>
+            <valueName>ביטול/שינוי מועד ניתוח ללא ידיעת המטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות התחשבנות וכספים</controllingFieldValue>
+            <valueName>חיוב שגוי(טכני)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות התחשבנות וכספים</controllingFieldValue>
+            <valueName>לא בוטל הפקדון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות התחשבנות וכספים</controllingFieldValue>
+            <valueName>לא נסגר החשבון עם המטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות התחשבנות וכספים</controllingFieldValue>
+            <valueName>לא קיבל חשבונית / קבלה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות התחשבנות וכספים</controllingFieldValue>
+            <valueName>ממתין להחזר כספי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות מחשוב</controllingFieldValue>
+            <valueName>בעיות באתר האינטרנט</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות מחשוב</controllingFieldValue>
+            <valueName>קובץ זימון לא נפתח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות מחשוב</controllingFieldValue>
+            <valueName>קובץ פענוח לא נפתח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות מחשוב</controllingFieldValue>
+            <valueName>תקלה בהודעת SMS לניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות מחשוב</controllingFieldValue>
+            <valueName>תקלה בהודעת SMS לפענוח חתום</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בעיות מחשוב</controllingFieldValue>
+            <valueName>תקלה בהודעת SMS לזימון תור</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה ממשרד הבריאות</controllingFieldValue>
+            <controllingFieldValue>פניית מטופל</controllingFieldValue>
+            <controllingFieldValue>פניית ספק</controllingFieldValue>
+            <valueName>אחר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה ממשרד הבריאות</controllingFieldValue>
+            <valueName>קבלת מידע</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה ממשרד הבריאות</controllingFieldValue>
+            <controllingFieldValue>פניית מטופל</controllingFieldValue>
+            <controllingFieldValue>פניית ספק</controllingFieldValue>
+            <valueName>תיאום פגישה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניה ממשרד הבריאות</controllingFieldValue>
+            <valueName>תלונת מטופל</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניית מטופל</controllingFieldValue>
+            <valueName>תודה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>פניית מטופל</controllingFieldValue>
+            <valueName>תלונה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>תקלה בציוד רפואי</controllingFieldValue>
+            <valueName>דיסק תקול</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>תקלות דיגיטל / אזור אישי</controllingFieldValue>
+            <valueName>תקלה בכניסה לאזור האישי</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

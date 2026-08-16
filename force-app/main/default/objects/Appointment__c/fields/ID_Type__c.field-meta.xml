@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ID_Type__c</fullName>
+    <description>סוג מספר זיהוי מטופל</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Patient_Account__r.ID_Type__c, &quot;1&quot;) , &quot;תעודת זהות&quot;, (IF(ISPICKVAL(Patient_Account__r.ID_Type__c, &quot;9&quot;) , &quot;דרכון&quot;, &quot;אחר&quot; )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ID Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

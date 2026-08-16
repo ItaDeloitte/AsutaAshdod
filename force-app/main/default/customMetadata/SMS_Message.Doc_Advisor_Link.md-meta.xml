@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Doc_Advisor_Link</label>
+    <protected>false</protected>
+    <values>
+        <field>SMS_Content__c</field>
+        <value xsi:type="xsd:string">אנו מאמינים כי דעתך על הטיפול שקיבלת באסותא תוכל לסייע למטופלים רבים, המתלבטים בבחירת רופאים מומחים. לשיתוף חוות דעתך באמצעות אתר Docadvisor:
+{0}</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SMS_Note__c</field>
+        <value xsi:type="xsd:string">לינק= {0}</value>
+    </values>
+</CustomMetadata>

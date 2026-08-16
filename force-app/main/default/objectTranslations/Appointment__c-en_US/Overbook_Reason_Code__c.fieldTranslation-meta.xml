@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Overbook Reason Code --></label>
+    <name>Overbook_Reason_Code__c</name>
+    <picklistValues>
+        <masterLabel>אונקולוג</masterLabel>
+        <translation><!-- אונקולוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפניה דחופה לבקשת רופא</masterLabel>
+        <translation><!-- הפניה דחופה לבקשת רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חשד לDV</masterLabel>
+        <translation><!-- חשד לDV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חשד לגידול</masterLabel>
+        <translation><!-- חשד לגידול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חשד לדימום</masterLabel>
+        <translation><!-- חשד לדימום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל הבירור מהיר</masterLabel>
+        <translation><!-- מטופל הבירור מהיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל לפני ניתוח</masterLabel>
+        <translation><!-- מטופל לפני ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תור דחוף לאור תלונה</masterLabel>
+        <translation><!-- תור דחוף לאור תלונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תייר</masterLabel>
+        <translation><!-- תייר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

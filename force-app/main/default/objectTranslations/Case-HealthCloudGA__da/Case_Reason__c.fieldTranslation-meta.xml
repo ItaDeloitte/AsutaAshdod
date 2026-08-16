@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Reason 1 --></label>
+    <name>Case_Reason__c</name>
+    <picklistValues>
+        <masterLabel>חסר טופס</masterLabel>
+        <translation><!-- חסר טופס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסר ציון צד</masterLabel>
+        <translation><!-- חסר ציון צד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה חותמת רופא</masterLabel>
+        <translation><!-- חסרה חותמת רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה חתימת מטופל/אפוטרופוס</masterLabel>
+        <translation><!-- חסרה חתימת מטופל/אפוטרופוס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסרה חתימת רופא</masterLabel>
+        <translation><!-- חסרה חתימת רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צד שגוי</masterLabel>
+        <translation><!-- צד שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שם ניתוח אינו תואם למהלך הניתוח</masterLabel>
+        <translation><!-- שם ניתוח אינו תואם למהלך הניתוח --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

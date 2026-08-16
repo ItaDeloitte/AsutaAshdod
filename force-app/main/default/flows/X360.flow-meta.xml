@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>יוצר רשומה לאובייקט פניה ופגישה</description>
+        <name>AssignAppointmentAndCase</name>
+        <label>AssignAppointmentAndCase</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>CaseAndAppointmentRelationship.Appointment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CaseAndAppointmentRelationship.Case__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Patient_Account__r.Case_360__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>X3601</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignCaseFields</name>
+        <label>AssignCaseFields</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>CaseRecord.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Case__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CaseRecord.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ממתין למועד ביופסיה</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CaseRecord.next_date_for_treatment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Date_of_appointment__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AssignAppointmentAndCase</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>עושה שיוך לסטטוס ממתין למועד הביופסיה</description>
+        <name>AssignCaseFieldsBiopsyPassed</name>
+        <label>AssignCaseFieldsBiopsyPassed</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>CaseRecord.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Case__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CaseRecord.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ממתין למועד ביופסיה</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>update_360</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>X360</name>
+        <label>ביופסיה למטופל 360</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ScheduledBiopsyFor360Patient</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Patient_Account__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Patient_Account__r.Case_360__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Patient_Account__r.X360_patient_checkbox__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Date_of_appointment__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.X360_biops_related__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Patient_Account__r.Case_360__r.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ממתין לקביעת ביופסיה</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignCaseFields</targetReference>
+            </connector>
+            <label>נקבעה ביופסיה למטופל 360</label>
+        </rules>
+        <rules>
+            <name>BiopsyDatePassed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Date_Time__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>now</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.X360_biops_related__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Patient_Account__r.Case_360__r.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ממתין למועד ביופסיה</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignCaseFieldsBiopsyPassed</targetReference>
+            </connector>
+            <label>מועד הביופסיה חלף</label>
+        </rules>
+    </decisions>
+    <description>Flow Refactoring - נקבעה פגישה למטופל 360
+US-20576</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>now</name>
+        <dataType>DateTime</dataType>
+        <expression>now()</expression>
+    </formulas>
+    <interviewLabel>נקבעה פגישה למטופל 360 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>נקבעה פגישה למטופל 360</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>X3601</name>
+        <label>קשר את הפגישה לפניית 360</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>update_360</targetReference>
+        </connector>
+        <inputReference>CaseAndAppointmentRelationship</inputReference>
+    </recordCreates>
+    <recordUpdates>
+        <name>update_360</name>
+        <label>update 360</label>
+        <locationX>314</locationX>
+        <locationY>839</locationY>
+        <inputReference>CaseRecord</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>X360</targetReference>
+        </connector>
+        <filterFormula>{!$Record.RecordType.DeveloperName}==&apos;Institutes&apos;
+&amp;&amp;
+not(ischanged({!$Record.isRemainder1WAsent__c}))
+&amp;&amp;
+not(ischanged({!$Record.isRemainder2WAsent__c}))
+&amp;&amp;
+ISNULL({!$Record.Patient_Account__c})=FALSE
+&amp;&amp;
+ISNULL({!$Record.Patient_Account__r.Case_360__c})=FALSE
+&amp;&amp;
+{!$Record.Patient_Account__r.X360_patient_checkbox__c}=TRUE</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>CaseAndAppointmentRelationship</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>cases_and_appoitments__c</objectType>
+    </variables>
+    <variables>
+        <name>CaseRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

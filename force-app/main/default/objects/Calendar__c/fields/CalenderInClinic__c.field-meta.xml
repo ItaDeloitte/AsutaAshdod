@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CalenderInClinic__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Clinic Calendar</label>
+    <referenceTo>Doctor_in_Clinic__c</referenceTo>
+    <relationshipLabel>Calendars</relationshipLabel>
+    <relationshipName>Calendars</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

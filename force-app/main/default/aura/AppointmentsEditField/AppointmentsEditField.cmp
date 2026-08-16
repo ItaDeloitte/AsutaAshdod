@@ -1,0 +1,36 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="isDisabled" type="Boolean" default="false" />
+  <aura:attribute name="isEditable" type="Boolean" default="true" />
+  <aura:attribute name="name" type="String" default="" />
+  <aura:attribute name="label" type="String" default="" />
+  <aura:attribute name="value" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="onedit" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="{!join(' ',
+  v.isDisabled?'is-disabled':''
+  )}">
+    <div class="view-wrapper">
+      <div class="d-flex align-items-center">
+        <div class="px-2 pt-2 text-truncate">
+          <span class="font-weight-bold">{!v.label}: </span>
+          <span title="{!v.value}">{!v.value}</span>
+        </div>
+        <!-- <aura:if isTrue="{!v.isEditable}">
+          <button class="edit-btn" onclick="{!c.onEdit}">
+            <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-edit'}" />
+          </button>
+        </aura:if> -->
+      </div>
+    </div>
+    <div class="edit-wrapper">
+      {!v.body}
+    </div>
+  </div>
+
+</aura:component>

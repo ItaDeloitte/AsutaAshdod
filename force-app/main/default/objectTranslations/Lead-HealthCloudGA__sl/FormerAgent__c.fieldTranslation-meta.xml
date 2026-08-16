@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- FormerAgent --></label>
+    <name>FormerAgent__c</name>
+    <relationshipLabel><!-- לידים (הנציג שטיפל קודם) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Required Procedure Nurse --></label>
+    <name>Required_procedure_Nurse__c</name>
+    <picklistValues>
+        <masterLabel>איזון כאב</masterLabel>
+        <translation><!-- איזון כאב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקות מעבדה</masterLabel>
+        <translation><!-- בדיקות מעבדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הדרכה למתן תרופות/ זריקות/ אומדן כף רגל סוכרתית</masterLabel>
+        <translation><!-- הדרכה למתן תרופות/ זריקות/ אומדן כף רגל סוכרתית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוצאת תפרים</masterLabel>
+        <translation><!-- הוצאת תפרים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הכנסת/ הוצאת זונדה</masterLabel>
+        <translation><!-- הכנסת/ הוצאת זונדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הכנסת/ הוצאת קטטר</masterLabel>
+        <translation><!-- הכנסת/ הוצאת קטטר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול בנקזים</masterLabel>
+        <translation><!-- טיפול בנקזים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עירוי נוזלים/תרופות</masterLabel>
+        <translation><!-- עירוי נוזלים/תרופות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

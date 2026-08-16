@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_on_Phone_field</fullName>
+    <active>true</active>
+    <description>מוודא כי מספר הטלפון יכיל 9 או 10 תווים, ויתחיל ב-0 במידה והמטופל ישראלי.</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos; || $User.Id = &apos;0058d0000015pem&apos;) &amp;&amp;
+(ISNEW() || ISCHANGED(phone__c) || ISCHANGED(Account_Country__c ))
+&amp;&amp;
+NOT(ISBLANK(phone__c))
+&amp;&amp; CONTAINS(Account_Country__c , &quot;ישראל&quot;)
+&amp;&amp;
+(
+NOT(LEN(phone__c) = 9 || LEN(phone__c) = 10)
+||
+(LEN(phone__c) = 9 &amp;&amp; (
+NOT(LEFT(phone__c, 2) = &quot;02&quot; || LEFT(phone__c, 2) = &quot;03&quot; || LEFT(phone__c, 2) = &quot;04&quot; || LEFT(phone__c, 2) = &quot;08&quot; || LEFT(phone__c, 2) = &quot;09&quot; ))
+||
+(LEN(phone__c) = 10 &amp;&amp;(NOT(LEFT(phone__c, 2) = &quot;05&quot; || LEFT(phone__c, 2) = &quot;07&quot;)))
+))</errorConditionFormula>
+    <errorDisplayField>phone__c</errorDisplayField>
+    <errorMessage>מספר הטלפון אינו תקין</errorMessage>
+</ValidationRule>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- סיבת סגירת המלצה --></label>
+    <name>Close_Reason_Memo__c</name>
+    <picklistValues>
+        <masterLabel>אזור גאוגרפי</masterLabel>
+        <translation><!-- אזור גאוגרפי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה לא רלוונטית</masterLabel>
+        <translation><!-- בדיקה לא רלוונטית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל</masterLabel>
+        <translation><!-- בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הושלם</masterLabel>
+        <translation><!-- הושלם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המלצה על בדיקת דימות ולא על מומחה</masterLabel>
+        <translation><!-- המלצה על בדיקת דימות ולא על מומחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא אקטואלי</masterLabel>
+        <translation><!-- לא אקטואלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מטופל/ת מכבי</masterLabel>
+        <translation><!-- לא מטופל/ת מכבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא קיים תחום ברשימת המומחים</masterLabel>
+        <translation><!-- לא קיים תחום ברשימת המומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא המלצה</masterLabel>
+        <translation><!-- ללא המלצה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל אצל מומחה בתחום על פי הפניה</masterLabel>
+        <translation><!-- מטופל אצל מומחה בתחום על פי הפניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופלת מאובחנת</masterLabel>
+        <translation><!-- מטופלת מאובחנת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קדראד נמוך מ3 ללא המלצה קרדיאלית</masterLabel>
+        <translation><!-- קדראד נמוך מ3 ללא המלצה קרדיאלית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רשומה כפולה</masterLabel>
+        <translation><!-- רשומה כפולה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

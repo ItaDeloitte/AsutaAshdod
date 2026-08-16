@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>הטלפון הנוסף</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>טלפון נוסף</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <name>other_phone_contact</name>
+</CustomFieldTranslation>

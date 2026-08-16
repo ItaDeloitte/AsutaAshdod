@@ -1,0 +1,14 @@
+<aura:component extends="c:BaseComponent" implements="flexipage:availableForAllPageTypes,lightning:isUrlAddressable"
+  access="global">
+  <!-- attrs -->
+  <!-- handlers -->
+  <!-- events -->
+  <!-- methods -->
+
+  <div>
+    <c:BaseModal isOpen="true" onclose="{!c.onCancel}">
+      <c:SearchAccount aura:id="searchAccount" showCancelButton="true"></c:SearchAccount>
+    </c:BaseModal>
+  </div>
+
+</aura:component>

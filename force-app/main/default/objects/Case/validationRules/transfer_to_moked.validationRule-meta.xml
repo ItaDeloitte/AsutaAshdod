@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>transfer_to_moked</fullName>
+    <active>true</active>
+    <description>בהעברה למוקד יש לבחור תור עבודה ולמלא תיעוד</description>
+    <errorConditionFormula>(
+RecordType.DeveloperName  = &quot;transfer_to_secretaries&quot; &amp;&amp;   
+ISPICKVAL(Status, &quot;העברה חזרה למוקד&quot;) &amp;&amp; 
+( ISBLANK( moked_queue_id__c )  ||  ISBLANK( reason_for_moked__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Follow_Up_Status_Changed_Date__c</errorDisplayField>
+    <errorMessage>יש לבחור תור עבודה מוקד ולמלא סיבת החזרה למוקד</errorMessage>
+</ValidationRule>

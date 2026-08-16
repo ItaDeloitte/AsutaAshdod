@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Assuta - SEVERE_ACC_CON_ACC</name>
+    <style>none</style>
+    <subject>אסותא - תהליך זיהוי</subject>
+    <textOnly>Assuta Mail
+
+אסותא - תהליך זיהוי
+
+שלום {!AccountContactRelation.Account},
+
+קיבלנו בקשה למנות את {!AccountContactRelation.Contact} כאיש קשר בעל רמת זיהוי מחמיר בחשבונך. על מנת לאשר את הבקשה לחצ/י כאן.
+יש להעלות צילום ת.ז שלך יחד עם טופס ייפוי כוח.
+
+בברכה,
+אסותא</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

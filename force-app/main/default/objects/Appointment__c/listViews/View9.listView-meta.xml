@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View9</fullName>
+    <booleanFilter>(1 AND 2 AND 3 AND 6) OR (1 AND 2 AND 4 AND 6 AND 5)</booleanFilter>
+    <columns>Patient_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>Doctor_Account__c</columns>
+    <columns>Icon_payer__c</columns>
+    <columns>Referral_Status_Maccabi__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>Didkitsent__c</columns>
+    <columns>Agreement_with_assuta__c</columns>
+    <columns>Case__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Deductibles__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>אסותא אשדוד</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>קול,גסטרו,סיג</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>קול</value>
+    </filters>
+    <filters>
+        <field>PayerFactor__c</field>
+        <operation>notContain</operation>
+        <value>לאומית,מאוחדת,מכבי</value>
+    </filters>
+    <filters>
+        <field>apt_date_time_not_yet__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>אשדוד כלניות התחיבויות ניתוחים</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Appointment Scheduling System --></label>
+    <name>Appointment_Coordination_System__c</name>
+    <picklistValues>
+        <masterLabel>QFlow</masterLabel>
+        <translation><!-- QFlow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RIS</masterLabel>
+        <translation><!-- RIS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

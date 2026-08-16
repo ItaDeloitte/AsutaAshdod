@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- רופא מפנה --></label>
+    <name>Referral_Doctor__c</name>
+    <relationshipLabel><!-- המלצות לאחר בדיקה (רופא מפנה) --></relationshipLabel>
+</CustomFieldTranslation>

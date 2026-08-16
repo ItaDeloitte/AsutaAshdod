@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>בעת ביטול תור ע&quot;י נציג יישלח מייל למזכירות האתר</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>DEL Surgery was canceled</name>
+    <style>none</style>
+    <subject>ביטול ניתוח</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

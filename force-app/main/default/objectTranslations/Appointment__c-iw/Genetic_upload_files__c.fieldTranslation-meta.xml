@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מסמכי ייעוץ גנטי</label>
+    <name>Genetic_upload_files__c</name>
+    <picklistValues>
+        <masterLabel>בדיקות סקר נשאות גנטית מההיריון הנוכחי והריונות קודמים</masterLabel>
+        <translation><!-- בדיקות סקר נשאות גנטית מההיריון הנוכחי והריונות קודמים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ייעוציים גנטיים שבוצעו בעבר</masterLabel>
+        <translation><!-- ייעוציים גנטיים שבוצעו בעבר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים אחרים רלוונטיים לייעוץ גנטי</masterLabel>
+        <translation><!-- מסמכים אחרים רלוונטיים לייעוץ גנטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקת סקר ביוכימי שליש ראשון  (Papp-A)</masterLabel>
+        <translation><!-- תוצאות בדיקת סקר ביוכימי שליש ראשון  (Papp-A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות בדיקת שקיפות עורפית (שבוע 11-13 להריון)</masterLabel>
+        <translation><!-- תוצאות בדיקת שקיפות עורפית (שבוע 11-13 להריון) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות סקירת מערכות מוקדמת (אולטרסאונד שבוע 14-16 להריון)</masterLabel>
+        <translation><!-- תוצאות סקירת מערכות מוקדמת (אולטרסאונד שבוע 14-16 להריון) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תוצאות סקר ביוכימי שליש שני (חלבון עוברי)</masterLabel>
+        <translation><!-- תוצאות סקר ביוכימי שליש שני (חלבון עוברי) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

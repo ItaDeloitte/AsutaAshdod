@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New</fullName>
+    <fields>Name</fields>
+    <fields>reachedSlaicon__c</fields>
+    <fields>ExistingAccountIcon__c</fields>
+    <fields>LeadSource</fields>
+    <fields>Status</fields>
+    <fields>Call_attempts__c</fields>
+    <label>New</label>
+</CompactLayout>

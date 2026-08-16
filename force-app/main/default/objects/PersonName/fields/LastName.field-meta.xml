@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LastName</fullName>
+    <inlineHelpText>אם שמך כולל שם אמצעי, הזן את שמך האמצעי ואת שם המשפחה שלך ביחד כאן. לדוגמה, אם שמך ישראל יהודה שלום, הזן &apos;ישראל&apos; בתור השם הפרטי ו&apos;יהודה שלום&apos; בתור שם המשפחה.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q_20_381_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Treat_status__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>description_history__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,חדש,Third Party,הועבר לטיפול מזכירות,Escalated,In_Progress,בטיפול,נדרש המשך טיפול,העברה לטיפול מנהל,אין מענה</value>
+    </filters>
+    <filters>
+        <field>Owner_Queue_wf__c</field>
+        <operation>equals</operation>
+        <value>רמת החייל - מי שפיר</value>
+    </filters>
+    <label>רמת החייל - מי שפיר</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

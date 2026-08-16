@@ -1,0 +1,6 @@
+שלום,
+פניה {!Case.CaseNumber} מסוג {!Case.RecordType} עבור מטופל {!Case.Account} 
+שהופנה מסוכנות {!Case.ReferralAgencyLabel__c}, חורגת מהSLA שהוגדר.
+לינק לפניה: {!Case.Link}
+בברכה,
+אסותא מרכזים רפואיים

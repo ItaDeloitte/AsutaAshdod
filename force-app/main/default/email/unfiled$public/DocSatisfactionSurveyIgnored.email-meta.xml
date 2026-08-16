@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>סקר שביעות רצון לרופא חדש- רופא התעלם מהסקר</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Doc Satisfaction Survey Ignored</name>
+    <style>none</style>
+    <subject>סקר שביעות רצון לא מולא על ידי רופא/ה</subject>
+    <textOnly>שלום רב,
+לתשומת לבך, {!Account.RoleDescription__c}  {!Account.Name} טרם השלים את מילוי סקר שביעות הרצון בנושא תהליך הקליטה שנשלח לפני חודשיים בקירוב.
+נודה ליצירת קשר עם {!Account.Name} לטובת תזכורת למילוי הסקר החשוב.
+
+בתודה מראש
+אגף הרפואה</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,19 @@
+<template>
+  <div class={formElClassNames}>
+    <label if:true={label} class="slds-form-element__label" for="picklist">
+      <abbr if:true={required} class="slds-required" title="required">* </abbr>{label}</label>
+    <div class="slds-form-element__control">
+      <div class="slds-select_container">
+        <select class="slds-select" id="picklist" onchange={handleChange} name={name} required={required}
+                disabled={disabled}>
+          <template for:each={options} for:item="option">
+            <option key={option.value} value={option.value} hidden={option.hidden}>{option.label}</option>
+          </template>
+        </select>
+      </div>
+    </div>
+    <template if:true={error}>
+      <div class="slds-form-element__help">{error}</div>
+    </template>
+  </div>
+</template>

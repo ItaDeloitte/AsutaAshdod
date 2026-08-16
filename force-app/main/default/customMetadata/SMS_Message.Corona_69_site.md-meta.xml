@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Corona-69-site</label>
+    <protected>false</protected>
+    <values>
+        <field>SMS_Content__c</field>
+        <value xsi:type="xsd:string">שלום רב, נקבע לך תור לבדיקת קורונה שתתקיים באסותא אשדוד כלניות ברחוב: שדרות מנחם בגין 126,אשדוד ב {0}.
+יש להצטייד בת.ז. לתשומת ליבך, יש לבצע תשלום עבור הבדיקה טרם הגעתך. כמו כן, יש להציג את אישור התשלום ביום הבדיקה. במידה והבדיקה לצורך טיסה לחול יש להגיע עם דרכון. ביטול תור או שינוי מועד התור ניתן לבצע באמצעות האזור האישי באתר אסותא: https://www.assuta.co.il/testresult=true. בברכת בריאות איתנה, בי&quot;ח אסותא. *לתמיכה בתוצאות בדיקה באתר אסותא ניתן לפנות לטלפון: 03-7643690</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:type="xsd:string">ASSUTA</value>
+    </values>
+    <values>
+        <field>SMS_Note__c</field>
+        <value xsi:type="xsd:string">פעולות רפואיות: 6621+6622+6623+6624+6627+6628+6629+6630+6635+6636. {0} = תאריך הפגישה</value>
+    </values>
+</CustomMetadata>

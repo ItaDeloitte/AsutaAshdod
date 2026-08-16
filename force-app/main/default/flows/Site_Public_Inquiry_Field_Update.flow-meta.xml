@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>site code= 33</description>
+        <name>Assign_Ashdod</name>
+        <label>Assign Ashdod</label>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Site_Public_Inquiry__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Site_Code_33.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>site code= 0000</description>
+        <name>Assign_Null</name>
+        <label>Assign Null</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Site_Public_Inquiry__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Site_Code_0000.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Is_the_Owner_Queue_wf_Ashdod</name>
+        <label>האם תור בעלי הפניה הוא אשדוד?</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Get_Site_Code_0000</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>מרכזים</defaultConnectorLabel>
+        <rules>
+            <name>Ashdod</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner_Queue_wf__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>פניות הציבור- אשדוד</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Site_Code_33</targetReference>
+            </connector>
+            <label>אשדוד</label>
+        </rules>
+    </decisions>
+    <description>מעדכן את השדה Site Public Inquiry אם הוא ריק והשדה &apos;תור בעלי הפניה&apos; לא ריק
+AM:020225- Task 20832- REFACTOR</description>
+    <environments>Default</environments>
+    <interviewLabel>Site Public Inquiry Field Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Site Public Inquiry Field Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>site code - 0000 is a site named &quot;Null&quot;</description>
+        <name>Get_Site_Code_0000</name>
+        <label>Get Site Code 0000</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Null</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Site_Code__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0000</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>site code - 33is a site named &quot;בי&quot;ח אסותא אשדוד ע&quot;ש סמסון&quot;</description>
+        <name>Get_Site_Code_33</name>
+        <label>Get Site Code 33</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Ashdod</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Site_Code__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>33</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_the_Owner_Queue_wf_Ashdod</targetReference>
+        </connector>
+        <filterFormula>AND(NOT(ISBLANK({!$Record.Owner_Queue_wf__c})), ISBLANK({!$Record.Site_Public_Inquiry__c}),{!$Record.RecordType.DeveloperName} = &apos;PublicInquiries&apos;)</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

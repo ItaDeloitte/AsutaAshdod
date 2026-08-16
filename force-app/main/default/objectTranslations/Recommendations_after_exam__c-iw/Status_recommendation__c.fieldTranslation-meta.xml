@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- סטטוס המלצה --></label>
+    <name>Status_recommendation__c</name>
+    <picklistValues>
+        <masterLabel>בוטל</masterLabel>
+        <translation><!-- בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הומר לפנייה חדשה</masterLabel>
+        <translation><!-- הומר לפנייה חדשה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הומר לפנייה קיימת</masterLabel>
+        <translation><!-- הומר לפנייה קיימת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדש</masterLabel>
+        <translation><!-- חדש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא תואם תור (לבקשת המטופל)</masterLabel>
+        <translation><!-- לא תואם תור (לבקשת המטופל) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נסגר ללא טיפול המשך</masterLabel>
+        <translation><!-- נסגר ללא טיפול המשך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם תור</masterLabel>
+        <translation><!-- תואם תור --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

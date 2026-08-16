@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>psychotodayapp</fullName>
+    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+    <columns>Patient_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>domain2__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Calendar__c</columns>
+    <columns>Appointment_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>contains</operation>
+        <value>טיפול רגשי</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>contains</operation>
+        <value>פסיכיאט</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled,2,5</value>
+    </filters>
+    <label>פסיכותרפיה פגישות שנקבעו</label>
+</ListView>

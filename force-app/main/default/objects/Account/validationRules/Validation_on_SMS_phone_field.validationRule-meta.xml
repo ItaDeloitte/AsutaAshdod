@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_on_SMS_phone_field</fullName>
+    <active>false</active>
+    <description>מוודא כי מספר הטלפון יכיל 10 תווים, ויתחיל ב-0 במידה והמטופל ישראלי.</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || 
+				$User.Id = &apos;0054J000002Q8am&apos; ||
+				$User.Id = &apos;0054J000002QSkU&apos; || 
+				$User.Id = &apos;0054J000004QaYN&apos; || 
+				$User.Id = &apos;0054J000004RQEhQAO&apos; || 
+				$User.Id = &apos;0054J000000vlO1QAI&apos; || 
+				$User.Id = &apos;0054J000004RXaRQAW&apos;) &amp;&amp;
+( LastModifiedById&lt;&gt;&apos;0054J000002QSkU&apos; &amp;&amp; CreatedById&lt;&gt;&apos;0054J000002QSkU&apos; ||LastModifiedById&lt;&gt;&apos;0054J000004QaYN&apos;)
+&amp;&amp;
+((ISNEW() &amp;&amp; DisableValidation__c = false) || (NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(DisableValidation__c)))) &amp;&amp;
+
+( CONTAINS(PersonMailingCountry , &quot;ישראל&quot;)
+||
+ISBLANK(PersonMailingCountry) )
+&amp;&amp;
+NOT( ISBLANK(SMS_Phone_Number__c  ))
+&amp;&amp;
+(LEN( SMS_Phone_Number__c  ) &lt;&gt; 10 
+||
+LEFT( SMS_Phone_Number__c , 1) &lt;&gt; &quot;0&quot;)&amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;</errorConditionFormula>
+    <errorDisplayField>SMS_Phone_Number__c</errorDisplayField>
+    <errorMessage>מספר הנייד אינו תקין</errorMessage>
+</ValidationRule>

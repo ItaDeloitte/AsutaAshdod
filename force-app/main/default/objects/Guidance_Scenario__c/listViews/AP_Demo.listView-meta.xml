@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AP_Demo</fullName>
+    <columns>NAME</columns>
+    <columns>Medical_Procedure__c</columns>
+    <columns>Payer_Factor__c</columns>
+    <columns>Site__c</columns>
+    <columns>Guideline1__c</columns>
+    <columns>Guideline2__c</columns>
+    <columns>Guideline3__c</columns>
+    <columns>Guideline4__c</columns>
+    <columns>Guideline5__c</columns>
+    <columns>Guideline6__c</columns>
+    <columns>Guideline7__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>סמסון</value>
+    </filters>
+    <label>הנחיות לתרחיש טעינה לדוגמה אשדוד ציבור</label>
+</ListView>

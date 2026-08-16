@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>בד&apos; עבירות מעי-קפ. מתמוססת</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Russian43233</name>
+    <style>freeForm</style>
+    <subject>מסמכים נלווים לבדיקה שלך</subject>
+    <textOnly>{!Appointment__c.Patient_Account__c} שלום,
+
+מצורפים מסמכים נלווים לבדיקת וידאו קפסולה למעי הדק</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

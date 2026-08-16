@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sla</fullName>
+    <columns>NAME</columns>
+    <columns>Related_Account__c</columns>
+    <columns>Related_User__c</columns>
+    <columns>SLA_Icon__c</columns>
+    <columns>Mistake_type__c</columns>
+    <columns>Consequences__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Status_QA__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Open_or_Closed__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Mistake_type__c</field>
+        <operation>equals</operation>
+        <value>אי עמידה בזמן טיפול</value>
+    </filters>
+    <filters>
+        <field>Status_QA__c</field>
+        <operation>notEqual</operation>
+        <value>בוצע משוב,לא נמצא כטעות,לא רלוונטי</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>QualityControl__c.open_qa</value>
+    </filters>
+    <label>בקרות איכות אי עמידה בsla</label>
+</ListView>

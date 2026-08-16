@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status Ref Manual To Maccabi --></label>
+    <name>StatusRefManualToMaccabi__c</name>
+    <picklistValues>
+        <masterLabel>הוגש למכבי</masterLabel>
+        <translation><!-- הוגש למכבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין להגשה</masterLabel>
+        <translation><!-- ממתין להגשה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לצירוף מסמך</masterLabel>
+        <translation><!-- ממתין לצירוף מסמך --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

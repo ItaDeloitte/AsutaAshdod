@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllowedSubstitutionTypeCodeId</fullName>
+    <inlineHelpText>הקוד בהגדרת המערכת שמייצג את סוג התחליף שהתקיים. אם תבחר קוד בשדה זה, לא תוכל לסמן את התיבה &apos;ניתן להחלפה&apos;.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

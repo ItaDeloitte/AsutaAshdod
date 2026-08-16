@@ -1,0 +1,19 @@
+<template>
+  <c-modal-container class="">
+    <div slot="header">
+      <h2 class="slds-modal__title slds-hyphenate">{modalData.title}</h2>
+    </div>
+    <div class="inner-content slds-p-around_medium">
+      <div class="confirm-text">
+        <lightning-formatted-rich-text value={modalData.text}>
+        </lightning-formatted-rich-text>
+      </div>
+    </div>
+    <div slot="footer">
+      <button class="slds-button slds-button_outline-brand" onclick={declineClickHandler}
+              data-btn-decline>{modalData.declineLabel}</button>
+      <button class="slds-button slds-button_brand" onclick={acceptClickHandler}
+              data-btn-accept>{modalData.acceptLabel}</button>
+    </div>
+  </c-modal-container>
+</template>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INSTITUTES_LASTTWODAYS</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Icon_payer__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Case__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:2</value>
+    </filters>
+    <label>פגישות מכונים שנוצרו ביומיים האחרונים</label>
+</ListView>

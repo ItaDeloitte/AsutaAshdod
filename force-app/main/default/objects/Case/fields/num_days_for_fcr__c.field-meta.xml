@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>num_days_for_fcr__c</fullName>
+    <description>ערך לזיהוי פניות כפולות באותו תת-נושא לחישוב FCR
+ימי עסקים</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(sub_case_subject__c, &quot;זימון תור חדש&quot;), 3,
+IF( ISPICKVAL(sub_case_subject__c, &quot;שינוי תור קיים&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;ביטול תור קיים&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;בירור מועד ושעת התור&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;בירור לגבי הנחיות לבדיקה&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;כתובות ודרכי הגעה&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;ברור סטטוס תוצאות בדיקה&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;תוצאות לא מופיעות באתר&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;זימון תור לרופא מומחה&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;המלצה על רופא מומחה&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;שינוי מועד התור&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;הפקת התחייבות&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;בירור השתתפות עצמית&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;הנחיות לקראת ניתוח&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;דרכי הגעה&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;מידע על הניתוח&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;Surgery_Report&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;בקשה להתחשבנות לאחר ניתוח&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;ניידת MRI&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;אסותא באר שבע&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;אסותא השלום&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;אסותא חיפה&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;אסותא אשדוד כלניות&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;Assuta_Rishon&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;אסותא רמת החייל&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;אסותא רעננה&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;University_Hospital&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;Ogen_Tlv&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;בקשה לזירוז פענוח&quot;), 3, 
+IF( ISPICKVAL(sub_case_subject__c, &quot;בקשה לתיקון פיענוח&quot;), 3, 
+0))))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Num Days For Fcr</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

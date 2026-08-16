@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- בחר בוטים לשינוי זמני פעילות --></help>
+    <label><!-- שינוי זמן פעילות לבוט --></label>
+    <name>Bot_Time_Change__c</name>
+    <picklistValues>
+        <masterLabel>אסותא ONE</masterLabel>
+        <translation><!-- אסותא ONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא אישי</masterLabel>
+        <translation><!-- אסותא אישי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיפה חדרי ניתוח</masterLabel>
+        <translation><!-- חיפה חדרי ניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יד ביד</masterLabel>
+        <translation><!-- יד ביד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מומחים</masterLabel>
+        <translation><!-- מומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוחים</masterLabel>
+        <translation><!-- ניתוחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סוכני ביטוח</masterLabel>
+        <translation><!-- סוכני ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עד הבית</masterLabel>
+        <translation><!-- עד הבית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פייסבוק</masterLabel>
+        <translation><!-- פייסבוק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קו לעובד</masterLabel>
+        <translation><!-- קו לעובד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קו לרופא</masterLabel>
+        <translation><!-- קו לרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שותפים</masterLabel>
+        <translation><!-- שותפים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

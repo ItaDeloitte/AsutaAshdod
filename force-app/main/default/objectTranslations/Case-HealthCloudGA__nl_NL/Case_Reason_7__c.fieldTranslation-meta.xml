@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Reason 7 --></label>
+    <name>Case_Reason_7__c</name>
+    <picklistValues>
+        <masterLabel>אבחנות של מחלות הגבר עבור מטופלת אישה ולהפך</masterLabel>
+        <translation><!-- אבחנות של מחלות הגבר עבור מטופלת אישה ולהפך --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

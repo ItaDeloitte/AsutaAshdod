@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Additional Implications --></label>
+    <name>Implications2__c</name>
+    <picklistValues>
+        <masterLabel>התור הוזז</masterLabel>
+        <translation><!-- התור הוזז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זיכוי כספי</masterLabel>
+        <translation><!-- זיכוי כספי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טעות המטופל</masterLabel>
+        <translation><!-- טעות המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טעות צוות המכון / מרפאה</masterLabel>
+        <translation><!-- טעות צוות המכון / מרפאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרטור המטופל/ת</masterLabel>
+        <translation><!-- טרטור המטופל/ת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נגרם נזק</masterLabel>
+        <translation><!-- לא נגרם נזק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נמצא כטעות מוקד</masterLabel>
+        <translation><!-- לא נמצא כטעות מוקד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל נשלח הביתה ללא ביצוע הבדיקה</masterLabel>
+        <translation><!-- מטופל נשלח הביתה ללא ביצוע הבדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נוצר עיכוב במחלקה</masterLabel>
+        <translation><!-- נוצר עיכוב במחלקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחת התנצלות</masterLabel>
+        <translation><!-- שיחת התנצלות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקלה מערכתית</masterLabel>
+        <translation><!-- תקלה מערכתית --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

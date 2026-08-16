@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- במקרה של ייעוץ/ניתוח, הפגישה תזומן במערכת בה מנוהל יומן הרופא הנבחר לפגישה
+במקרה של בדיקה (מכונים), הפגישה תזומן במערכת של הפעולה הרפואית ואם אין אז של התחום -->
+    </help>
+    <label><!-- Source System Experts --></label>
+    <name>SourceSystemExperts__c</name>
+</CustomFieldTranslation>

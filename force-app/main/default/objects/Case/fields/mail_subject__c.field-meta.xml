@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>mail_subject__c</fullName>
+    <description>במידה והפנייה נשלחה בדואר אלקטרוני</description>
+    <externalId>false</externalId>
+    <formula>Source:EmailMessage.Subject</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>נושא המייל מתוך הפנייה</inlineHelpText>
+    <label>Mail Subject</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

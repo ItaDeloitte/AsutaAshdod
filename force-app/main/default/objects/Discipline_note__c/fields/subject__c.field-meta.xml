@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>subject__c</fullName>
+    <label>נושא</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>אוכל/שתיה בעמדה</fullName>
+                <default>false</default>
+                <label>אוכל/שתיה בעמדה</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>אי התחברות לקו בזמן</fullName>
+                <default>false</default>
+                <label>אי התחברות לקו בזמן</label>
+            </value>
+            <value>
+                <fullName>איחור מהפסקה</fullName>
+                <default>false</default>
+                <label>איחור מהפסקה</label>
+            </value>
+            <value>
+                <fullName>התחצפות למנהל/אחמ&quot;ש</fullName>
+                <default>false</default>
+                <label>התחצפות למנהל/אחמ&quot;ש</label>
+            </value>
+            <value>
+                <fullName>חסימת קו ללא אישור</fullName>
+                <default>false</default>
+                <label>חסימת קו ללא אישור</label>
+            </value>
+            <value>
+                <fullName>יציאה ללא אישור</fullName>
+                <default>false</default>
+                <label>יציאה ללא אישור</label>
+            </value>
+            <value>
+                <fullName>שימוש בנייד במשמרת</fullName>
+                <default>false</default>
+                <label>שימוש בנייד במשמרת</label>
+            </value>
+            <value>
+                <fullName>תיק על העמדה</fullName>
+                <default>false</default>
+                <label>תיק על העמדה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signed</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Signature_Date__c</columns>
+    <columns>Assuta_Files__c</columns>
+    <columns>Account__c</columns>
+    <columns>Appointment__c</columns>
+    <columns>Case__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IsSigned__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Signed</label>
+</ListView>

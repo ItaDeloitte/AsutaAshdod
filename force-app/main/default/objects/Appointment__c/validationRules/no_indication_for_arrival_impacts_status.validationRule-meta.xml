@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>no_indication_for_arrival_impacts_status</fullName>
+    <active>true</active>
+    <description>אם לא מתקבלת אינדיקציה ממערכות המקור על הגעה לתור מומחים (אין יומן בפגישה), אז הסטאטוס של הפגישה לא יכול להיות &quot;התקיים&quot; ויהיה מושפע מסקר מומחים</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+ISPICKVAL(Appointment_Status__c, &quot;TookPlace&quot;) &amp;&amp;  ISBLANK(Calendar__c) &amp;&amp;  (RecordType.DeveloperName = &apos;Experts&apos;)</errorConditionFormula>
+    <errorMessage>אם לא מתקבלת אינדיקציה ממערכות המקור על הגעה לתור מומחים (אין יומן בפגישה), אז הסטאטוס של הפגישה לא יכול להיות &quot;התקיים&quot; ויהיה מושפע מסקר מומחים</errorMessage>
+</ValidationRule>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- תיק לקוח אב --></label>
+    <name>InsurerFactorParent__c</name>
+    <picklistValues>
+        <masterLabel>חברת ביטוח-חו&quot;ל</masterLabel>
+        <translation><!-- חברת ביטוח-חו&quot;ל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כללית</masterLabel>
+        <translation><!-- כללית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לאומית</masterLabel>
+        <translation><!-- לאומית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מאוחדת</masterLabel>
+        <translation><!-- מאוחדת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מטופל פרטי</masterLabel>
+        <translation><!-- מטופל פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבי</masterLabel>
+        <translation><!-- מכבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי</masterLabel>
+        <translation><!-- פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קופת חולים</masterLabel>
+        <translation><!-- קופת חולים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיירות מרפא</masterLabel>
+        <translation><!-- תיירות מרפא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

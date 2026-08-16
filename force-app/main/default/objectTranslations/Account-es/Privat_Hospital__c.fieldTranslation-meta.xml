@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Private Hospital --></label>
+    <name>Privat_Hospital__c</name>
+    <picklistValues>
+        <masterLabel>בית חולים אלישע</masterLabel>
+        <translation><!-- בית חולים אלישע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית חולים משגב לדך</masterLabel>
+        <translation><!-- בית חולים משגב לדך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הרצליה מדיקל סנט</masterLabel>
+        <translation><!-- הרצליה מדיקל סנט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי מדיקה (לשעבר נארא)</masterLabel>
+        <translation><!-- מרכז רפואי מדיקה (לשעבר נארא) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי רמת אביב</masterLabel>
+        <translation><!-- מרכז רפואי רמת אביב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי רפאל (מירב לשעבר)</masterLabel>
+        <translation><!-- מרכז רפואי רפאל (מירב לשעבר) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רכז רפואי חורב</masterLabel>
+        <translation><!-- רכז רפואי חורב --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

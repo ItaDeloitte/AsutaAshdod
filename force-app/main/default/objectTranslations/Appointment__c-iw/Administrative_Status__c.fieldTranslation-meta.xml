@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס אדמיניסטרטיבי</label>
+    <name>Administrative_Status__c</name>
+    <picklistValues>
+        <masterLabel>אין מענה</masterLabel>
+        <translation><!-- אין מענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשה הוגשה לכללית</masterLabel>
+        <translation><!-- בקשה הוגשה לכללית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הושלם</masterLabel>
+        <translation><!-- הושלם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין להפניית רופא</masterLabel>
+        <translation><!-- ממתין להפניית רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין להתחייבות</masterLabel>
+        <translation><!-- ממתין להתחייבות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

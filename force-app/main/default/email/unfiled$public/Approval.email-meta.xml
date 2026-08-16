@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>אישור רפואי עם פרטי התור שהמטופל יוכל להציג במוסדות</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>אישור רפואי</name>
+    <style>freeForm</style>
+    <subject>אישור רפואי</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

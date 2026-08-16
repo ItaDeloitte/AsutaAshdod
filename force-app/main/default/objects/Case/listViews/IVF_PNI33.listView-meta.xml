@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IVF_PNI33</fullName>
+    <columns>IVF_site__c</columns>
+    <columns>IVF_doctor__c</columns>
+    <columns>Treat_status__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Person_Phone__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>description_history__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner_Queue_wf__c</field>
+        <operation>contains</operation>
+        <value>חמ&quot;ל</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,סגור,Caneclled,Closing,טופל,Not_Active</value>
+    </filters>
+    <label>IVF - קו חמ&quot;ל כל הפניות</label>
+</ListView>

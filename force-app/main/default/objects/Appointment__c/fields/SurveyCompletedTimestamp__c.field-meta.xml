@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SurveyCompletedTimestamp__c</fullName>
+    <description>שדה שיראה את תאריך ושעה של רגע סיום מילוי שאלון טרום ניתוח על בסיס הPDF שנוצר בAssuta File</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Survey Completed Timestamp</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

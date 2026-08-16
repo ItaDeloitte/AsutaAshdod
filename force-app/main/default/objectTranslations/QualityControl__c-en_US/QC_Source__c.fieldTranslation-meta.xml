@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- QA Source --></label>
+    <name>QC_Source__c</name>
+    <picklistValues>
+        <masterLabel>Facebook</masterLabel>
+        <translation><!-- Facebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סקרים</masterLabel>
+        <translation><!-- סקרים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה מהמוקד</masterLabel>
+        <translation><!-- פניה מהמוקד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה מהמכון</masterLabel>
+        <translation><!-- פניה מהמכון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניות הציבור</masterLabel>
+        <translation><!-- פניות הציבור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחת מנהל</masterLabel>
+        <translation><!-- שיחת מנהל --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

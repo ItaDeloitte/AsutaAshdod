@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_biopsy_required__c</fullName>
+    <label>Type of biopsy required</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Trucut</fullName>
+                <default>false</default>
+                <label>Trucut</label>
+            </value>
+            <value>
+                <fullName>Mammotome</fullName>
+                <default>false</default>
+                <label>Mammotome</label>
+            </value>
+            <value>
+                <fullName>FNA under ultrasound guidance (breast)</fullName>
+                <default>false</default>
+                <label>FNA under ultrasound guidance (breast)</label>
+            </value>
+            <value>
+                <fullName>Biopsy after MRI</fullName>
+                <default>false</default>
+                <label>Biopsy after MRI</label>
+            </value>
+            <value>
+                <fullName>MRI-guided biopsy</fullName>
+                <default>false</default>
+                <label>MRI-guided biopsy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

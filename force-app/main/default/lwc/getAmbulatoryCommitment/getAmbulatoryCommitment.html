@@ -1,0 +1,15 @@
+<template>
+    <template if:true={isMaccabiAmbuComm}>
+        <lightning-button 
+            label= {label.btnCommitmentTitle}
+            title= {label.btnCommitmentTitle}
+            onclick={getCommitment} 
+            class="slds-m-left_x-small">
+        </lightning-button>
+    </template>
+    <div class="loaderHolder">
+        <template if:false={loaded}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FaxCheck_number_format</fullName>
+    <active>true</active>
+    <description>Checks that the fax number is in number format</description>
+    <errorConditionFormula>!ISNUMBER(  Fax__c ) &amp;&amp;
+!ISBLANK(Fax__c )&amp;&amp;
+RecordType.DeveloperName == &apos;Supplier&apos;</errorConditionFormula>
+    <errorDisplayField>Fax__c</errorDisplayField>
+    <errorMessage>!נא לוודא שהזנת במספר פקס מספרים בלבד</errorMessage>
+</ValidationRule>

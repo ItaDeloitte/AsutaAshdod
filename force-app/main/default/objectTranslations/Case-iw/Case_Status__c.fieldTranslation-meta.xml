@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>החלטה סופית</label>
+    <name>Case_Status__c</name>
+    <picklistValues>
+        <masterLabel>אושרו מסמכים</masterLabel>
+        <translation><!-- אושרו מסמכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין הסכמה - הועבר למשרד הבריאות</masterLabel>
+        <translation><!-- אין הסכמה - הועבר למשרד הבריאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטיפול</masterLabel>
+        <translation><!-- בטיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוזמן תיק מהארכיון</masterLabel>
+        <translation><!-- הוזמן תיק מהארכיון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפשרה לא מבוקרת</masterLabel>
+        <translation><!-- הפשרה לא מבוקרת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הקפאה בתשלום</masterLabel>
+        <translation><!-- הקפאה בתשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקבלו מסמכים</masterLabel>
+        <translation><!-- התקבלו מסמכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חוזרת לטיפול</masterLabel>
+        <translation><!-- חוזרת לטיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חלפו 30 ימים</masterLabel>
+        <translation><!-- חלפו 30 ימים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נמצאו פרטים</masterLabel>
+        <translation><!-- לא נמצאו פרטים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא רלוונטי</masterLabel>
+        <translation><!-- לא רלוונטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא מענה</masterLabel>
+        <translation><!-- ללא מענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לטיפול</masterLabel>
+        <translation><!-- ממתין לטיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לקבלת מסמכים</masterLabel>
+        <translation><!-- ממתין לקבלת מסמכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמך שהתקבל</masterLabel>
+        <translation><!-- מסמך שהתקבל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מצב משפטי</masterLabel>
+        <translation><!-- מצב משפטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניהול סיכונים</masterLabel>
+        <translation><!-- ניהול סיכונים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נפטר</masterLabel>
+        <translation><!-- נפטר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה כפולה</masterLabel>
+        <translation><!-- פניה כפולה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שולם לפני פניה למטופל</masterLabel>
+        <translation><!-- שולם לפני פניה למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שימור 10 שנים</masterLabel>
+        <translation><!-- שימור 10 שנים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שימוש עכשווי</masterLabel>
+        <translation><!-- שימוש עכשווי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תרומה למחקר</masterLabel>
+        <translation><!-- תרומה למחקר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

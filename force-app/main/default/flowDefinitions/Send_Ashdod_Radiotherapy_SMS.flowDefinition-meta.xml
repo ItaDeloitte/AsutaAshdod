@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>4</activeVersionNumber>
+    <description>פלואו מתוזמן שרץ כל יום ב8 בבוקר ושולח סמס לפגישות שפעולה הרפואית שלהם &apos;P980522&apos; יום אחרי הפגישה עם קישור לסרטון הכנה לפגישה
+21.1 - Flow Refactoring -  Change Field &quot;Medical_Procedure_c&quot; to &quot;Medical_Procedure_code_c&quot;.</description>
+    <masterLabel>Send Ashdod Radiotherapy SMS</masterLabel>
+</FlowDefinition>

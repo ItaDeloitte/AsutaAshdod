@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Set_App_Status_to_Wait_for_App</name>
+        <label>Set App Status to Wait for App</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Appointment_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>WaitingForAppointment</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_Conditions_On_Surgeries_App</name>
+        <label>Check Conditions On Surgeries App</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>PayerFactorClalitMushlamOrPlatinum</name>
+            <conditionLogic>1 AND 2 AND( 3 OR 4 )</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Commitment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Number_of_commitment__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.InsuranceCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>7</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PayerFactor__r.InsuranceCode__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>47</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_App_Status_to_Wait_for_App</targetReference>
+            </connector>
+            <label>כללית מושלם \ כללית פלטינום</label>
+        </rules>
+    </decisions>
+    <description>27.11 -  הוספת גורם משלם &quot;כללית פלטינום&quot; לעדכון סטטוס &quot;ממתין למועד הפגישה&quot;</description>
+    <environments>Default</environments>
+    <interviewLabel>Trigger Flow - Appointment - RT s {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Trigger Flow - Appointment - RT Surgeries - Before Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Conditions_On_Surgeries_App</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>{!$Record.RecordType.Name} = &apos;ניתוח&apos; &amp;&amp;
+NOT(ISPICKVAL({!$Record.Appointment_Status__c}, &quot;WaitingForAppointment&quot;)) &amp;&amp;
+ ISPICKVAL({!$Record.Commitment_Status__c} , &quot;0&quot;)  &amp;&amp; 
+NOT(ISBLANK({!$Record.Number_of_commitment__c})) &amp;&amp;
+( {!$Record.PayerFactor__r.InsuranceCode__c} = &quot;7&quot; || {!$Record.PayerFactor__r.InsuranceCode__c} = &quot;47&quot; )</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

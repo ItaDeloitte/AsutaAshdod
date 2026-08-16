@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abandonmentsignal_of_doctors_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>איתות נטישה - לא נמצא בSF</label>
+    <queue>Abandonmentsignal_of_doctors</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

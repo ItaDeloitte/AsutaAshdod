@@ -1,0 +1,30 @@
+<aura:documentation>
+	<aura:description>Documentation
+		<ul>
+			<li>
+				<a target="_blank"
+					href="https://developer.salesforce.com/docs/atlas.en-us.snapins_web_dev.meta/snapins_web_dev/snapins_web_overview.htm">Snap-Ins
+					for Web Developer Guide</a>
+			</li>
+			<li>
+				<a target="_blank"
+					href="https://developer.salesforce.com/docs/component-library/bundle/lightningsnapin:prechatAPI/documentation">Prechat
+					API</a>
+			</li>
+			<li>
+				<a target="_blank"
+					href="https://developer.salesforce.com/docs/component-library/bundle/lightningsnapin:minimizedAPI/documentation">Minimized
+					API</a>
+			</li>
+			<li>
+				<a target="_blank"
+					href="https://developer.salesforce.com/docs/component-library/bundle/lightningsnapin:settingsAPI/documentation">Settings
+					API
+				</a>
+			</li>
+		</ul>
+	</aura:description>
+	<aura:example name="LiveAgentMinimized" ref="c:LiveAgentMinimized" label="LiveAgentMinimized">
+		Example Description
+	</aura:example>
+</aura:documentation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Process --></label>
+    <name>BusinessProcess__c</name>
+    <picklistValues>
+        <masterLabel>Closing the loop</masterLabel>
+        <translation><!-- Closing the loop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Experts Center</masterLabel>
+        <translation><!-- Experts Center --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

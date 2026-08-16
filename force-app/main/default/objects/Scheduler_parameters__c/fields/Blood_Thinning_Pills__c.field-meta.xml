@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blood_Thinning_Pills__c</fullName>
+    <description>האם נוטל כדורים לדילול דם?</description>
+    <label>Blood Thinning Pills</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>לא</fullName>
+                <default>false</default>
+                <label>לא</label>
+            </value>
+            <value>
+                <fullName>כן</fullName>
+                <default>false</default>
+                <label>כן</label>
+            </value>
+            <value>
+                <fullName>לא ידוע</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>לא ידוע</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

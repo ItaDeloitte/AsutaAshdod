@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- האם רופא אסותא עד הבית? --></help>
+    <label>רופא אסותא עד הבית?</label>
+    <name>Assuta_at_home_Doctor__c</name>
+</CustomFieldTranslation>

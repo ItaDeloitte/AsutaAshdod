@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>who_treat__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  (Related_Appointment__r.Site__r.Site_Code__c = &apos;12&apos; || Related_Appointment__r.Site__r.Site_Code__c = &apos;20&apos; || Related_Appointment__r.Site__r.Site_Code__c = &apos;60&apos; || Related_Appointment__r.Site__r.Site_Code__c = &apos;85&apos; || 
+Related_Appointment__r.Site__r.Site_Code__c = &apos;59&apos; || Related_Appointment__r.Site__r.Site_Code__c = &apos;69&apos; || Related_Appointment__r.Site__r.Site_Code__c = &apos;84&apos;) &amp;&amp; ISPICKVAL(Related_Appointment__r.Patient_Account__r.ID_Type__c, &apos;1&apos;)
+&amp;&amp; OR(
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;760902&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;760903&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;760904&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;760908&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;760909&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;760910&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;760913&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;760907&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;77056&apos;,
+ Related_Appointment__r.Medical_Procedure__r.Procedure_Code__c = &apos;7609041&apos;
+)
+,
+&apos;מוקד&apos;,
+&apos;&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>מי מטפל?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Updated in Tafnit --></label>
+    <name>Updated_in_Tafnit__c</name>
+    <picklistValues>
+        <masterLabel>לא נקלט</masterLabel>
+        <translation><!-- לא נקלט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נקלט בהצלחה</masterLabel>
+        <translation><!-- נקלט בהצלחה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

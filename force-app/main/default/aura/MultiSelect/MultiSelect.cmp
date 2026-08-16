@@ -1,0 +1,132 @@
+<aura:component extends="c:BaseComponent">
+  <!-- require -->
+  <ltng:require styles="{!$Resource.multipleSelect+'/multiple-select.min.css'}" scripts="{!join(',',
+  $Resource.jquery+'/jquery.min.js',
+  $Resource.multipleSelect+'/multiple-select.min.js'
+  )}" afterScriptsLoaded="{!c.onScriptsLoaded}" />
+  <!-- attrs -->
+  <aura:attribute name="label" type="String" default="" />
+  <aura:attribute name="value" type="List" default="[]" />
+  <aura:attribute name="options" type="List" default="[]" description="Options for select" />
+  <aura:attribute name="name" type="String" default="" description="The name of select element." />
+  <aura:attribute name="placeholder" type="String" default=""
+    description="A placeholder value can be defined and will be displayed until you select an item." />
+  <aura:attribute name="selectAll" type="Boolean" default="true" description="Show selects all checkbox." />
+  <aura:attribute name="single" type="Boolean" default="false" description="Allows you to select only one option." />
+  <aura:attribute name="multiple" type="Boolean" default="false" description="Show multiple items in a row." />
+  <aura:attribute name="hideOptgroupCheckboxes" type="Boolean" default="false"
+    description="Hide the optgroup checkboxes." />
+  <aura:attribute name="width" type="Object"
+    description="Define the width property of the select, support a percentage setting." />
+  <aura:attribute name="multipleWidth" type="Object" description="Show multiple items width." />
+  <aura:attribute name="dropWidth" type="Object" description="Define the dropdown width." />
+  <aura:attribute name="maxHeight" type="Integer" default="250"
+    description="Define the maximum height property of the dropdown list." />
+  <aura:attribute name="position" type="String" default="bottom"
+    description="Defines the position of the select dropdown, can only be 'bottom' or 'top'." />
+  <aura:attribute name="displayValues" type="Boolean" default="false"
+    description="Display selected values instead text." />
+  <aura:attribute name="displayTitle" type="Boolean" default="false"
+    description="Display the title of selected text." />
+  <aura:attribute name="displayDelimiter" type="String" default="," description="Custom the display delimiter." />
+  <aura:attribute name="minimumCountSelected" type="Integer" default="3"
+    description="formatCountSelected will be shown only if more than minimumCountSelected items where selected." />
+  <aura:attribute name="ellipsis" type="Boolean" default="false"
+    description="Add '...' after selected options if minimumCountSelected is set. Overrides formatCountSelected option." />
+  <aura:attribute name="isOpen" type="Boolean" default="false" description="Open the select dropdown by default." />
+  <aura:attribute name="keepOpen" type="Boolean" default="false" description="Keep the select dropdown always open." />
+  <aura:attribute name="openOnHover" type="Boolean" default="false"
+    description="Open the select dropdown by hover instead of click." />
+  <aura:attribute name="container" type="Object"
+    description="Define custom container to solve the cut off problem for example parent node is overflow: hidden." />
+  <aura:attribute name="filter" type="Boolean" default="false"
+    description="Show a search field to search through checkbox items." />
+  <aura:attribute name="filterGroup" type="Boolean" default="false"
+    description="Filter optgroups only and not options." />
+  <aura:attribute name="filterPlaceholder" type="String" default="" description="Set the filter placeholder." />
+  <aura:attribute name="filterAcceptOnEnter" type="Boolean" default="false"
+    description="Speed up keyboard use. Enter filter text and then hit enter or space will auto click select all and close the dropdown." />
+  <aura:attribute name="animate" type="String"
+    description="Define the animate of open or close the dropdown. Can be undefined, 'fade' and 'slide'." />
+  <aura:attribute name="selectAllLabel" type="String" description="Default: '[Select all]'" />
+  <aura:attribute name="allSelectedLabel" type="String" description="Default: 'All selected'" />
+  <aura:attribute name="noMatchesFoundLabel" type="String" description="Default: 'No matches found'" />
+  <aura:attribute name="formatFns" type="Map" default="{}" />
+  <aura:attribute name="isCreated" type="Boolean" default="false" />
+  <aura:attribute name="disabled" type="Boolean" default="false" />
+  <aura:attribute name="required" type="Boolean" default="false" />
+  <aura:attribute name="isTouched" type="Boolean" default="false" />
+  <aura:attribute name="isOpened" type="Boolean" default="false" />
+  <aura:attribute name="validity" type="Map" default="{valid:true}" />
+  <aura:attribute name="messageWhenValueMissing" type="String" default="Complete this field." />
+
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="change" value="{!v.options}" action="{!c.onChangeOptions}" />
+  <aura:handler name="change" value="{!v.disabled}" action="{!c.onChangeDisabled}" />
+  <!-- events -->
+  <aura:registerEvent name="oncreate" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onchange" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onopen" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onclose" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onfocus" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onblur" type="c:GenericComponentEvent" />
+  <!-- methods -->
+  <aura:method name="refresh" action="{!c.onRefresh}" />
+  <aura:method name="reset" action="{!c.onReset}" />
+  <aura:method name="showHelpMessageIfInvalid" action="{!c.onShowHelpMessageIfInvalid}" />
+  <aura:method name="checkValidity" action="{!c.onCheckValidity}" />
+  <aura:method name="setValue" action="{!c.onSetValue}">
+    <aura:attribute name="value" type="List" />
+  </aura:method>
+  <aura:method name="getValue" action="{!c.onGetValue}" />
+  <aura:method name="focus" action="{!c.onFocus}" />
+  <aura:method name="blur" action="{!c.onBlur}" />
+  <aura:method name="checkAll" action="{!c.onCheckAll}" />
+  <aura:method name="uncheckAll" action="{!c.onUncheckAll}" />
+  <aura:method name="enable" action="{!c.onEnable}" />
+  <aura:method name="disable" action="{!c.onDisable}" />
+  <aura:method name="open" action="{!c.onOpen}" />
+  <aura:method name="close" action="{!c.onClose}" />
+  <aura:method name="rebuild" action="{!c.onRebuild}" />
+
+
+  <div dir="{!$Locale.dir}">
+    <div class="{!join(' ',
+    'slds-form-element',
+    and(v.isTouched,!v.validity.valid)?'slds-has-error':'',
+    v.isCreated?'is-created':'',
+    v.isOpened?'is-opened':''
+    )}">
+      <aura:if isTrue="{!!empty(v.label)}">
+        <label class="slds-form-element__label">
+          <abbr title="required" class="{!join(' ',
+              'slds-required',
+              v.required?'':'slds-hide'
+              )}">*</abbr>
+          {!v.label}</label>
+      </aura:if>
+      <div class="slds-form-element__control">
+        <div class="">
+          <select class="multi-select" aura:id="multiSelect" multiple="multiple" required="{!v.required}"
+            disabled="{!v.disabled}">
+            <aura:iteration items="{!v.options}" var="option">
+              <option value="{!option.value}">{!option.label}</option>
+            </aura:iteration>
+          </select>
+        </div>
+      </div>
+      <aura:if isTrue="{!and(!v.validity.valid,and(v.isTouched,!v.isOpened))}">
+        <div class="slds-form-element__help">
+          <aura:if isTrue="{!v.validity.valueMissing}">
+            {!v.messageWhenValueMissing}
+          </aura:if>
+          <aura:if isTrue="{!v.validity.customMessage}">
+            {!v.validity.customMessage}
+          </aura:if>
+        </div>
+      </aura:if>
+    </div>
+  </div>
+</aura:component>

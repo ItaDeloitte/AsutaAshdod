@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Type__c</fullName>
+    <label>Action Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מניעת זימון</fullName>
+                <default>false</default>
+                <label>מניעת זימון</label>
+            </value>
+            <value>
+                <fullName>הודעת אזהרה</fullName>
+                <default>false</default>
+                <label>הודעת אזהרה</label>
+            </value>
+            <value>
+                <fullName>מניעת זימון ושינוי בעלים</fullName>
+                <default>false</default>
+                <label>מניעת זימון ושינוי בעלים</label>
+            </value>
+            <value>
+                <fullName>מתאריך</fullName>
+                <default>false</default>
+                <label>מתאריך</label>
+            </value>
+            <value>
+                <fullName>חיפוש לפי יומן</fullName>
+                <default>false</default>
+                <label>חיפוש לפי יומן</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

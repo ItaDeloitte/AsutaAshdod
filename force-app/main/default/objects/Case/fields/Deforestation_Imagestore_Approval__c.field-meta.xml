@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deforestation_Imagestore_Approval__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>שדה בימוש בפניות מסוג נרמ&quot;ר בסוג פניה &quot;בקשה לביעור&quot;</description>
+    <label>Deforestation Imagestore Approval</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

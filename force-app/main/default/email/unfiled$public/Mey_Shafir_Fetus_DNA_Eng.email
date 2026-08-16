@@ -1,0 +1,67 @@
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Assuta Mail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<center>
+<!-- Save for Web Slices (General Mail 2 Copy 4.png) -->
+<table id="Table_01" width="1200" height="1953" border="0" cellpadding="0" cellspacing="0" style="color:#555555;">
+    <tr>
+        <td colspan="5">
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000JIXz&oid=00D4J000000D53o&lastMod=1574252767000" width="1200" height="745" alt></td>
+    </tr>
+    <tr>
+        <td colspan="5">
+            <h1 style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 2em; font-size: 2.6em;">
+מסמכים נלווים לבדיקה שלך            </h1>
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 2em; line-height: 1.6em;">
+שלום {!Case.first_name_patient__c},
+<br>
+<br>
+מצורפים מסמכים נלווים לבדיקה שלך<br>
+
+בברכה,
+<br>
+אסותא
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="5">
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000JIYJ&oid=00D4J000000D53o&lastMod=1574253621000" width="1200" height="205" alt></td>
+    </tr>
+    <tr>
+        <td>
+            <a href="#" target="_blank">
+                <img src="https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000JIYO&oid=00D4J000000D53o&lastMod=1574253687000" width="261" height="298" border="0" alt="צ׳ט עם נציג"></a></td>
+        <td>
+            <a href="#" target="_blank">
+                <img src="https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000JIYx&oid=00D4J000000D53o&lastMod=1574253960000" width="275" height="298" border="0" alt="דואר אלקטרוני"></a>
+        </td>
+        <td>
+            <a href="#" target="_blank">
+                <img src="https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000JIZ2&oid=00D4J000000D53o&lastMod=1574254566000" width="356" height="298" border="0" alt="דברו איתנו בפייסבוק"></a></td>
+        <td colspan="2">
+            <a href="#" target="_blank">
+                <img src="https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000JIZ7&oid=00D4J000000D53o&lastMod=1574254650000" width="308" height="298" border="0" alt="WhatsApp"></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="261" height="1" alt></td>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="275" height="1" alt></td>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="356" height="1" alt></td>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="222" height="1" alt></td>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="86" height="1" alt></td>
+    </tr>
+</table>
+<!-- End Save for Web Slices -->
+
+</center></body>
+</html>

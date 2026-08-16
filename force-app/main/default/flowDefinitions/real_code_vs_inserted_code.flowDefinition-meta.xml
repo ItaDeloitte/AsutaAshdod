@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>7</activeVersionNumber>
+    <description>בדוק אם הסיסמא החד פעמית שהוקלדה נכונה</description>
+    <masterLabel>Bot real_code_vs_inserted_code</masterLabel>
+</FlowDefinition>

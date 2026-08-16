@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>ערוץ מועדף לתקשורת בכתב גבר</label>
+    <name>Preferable_Communication_Chanel_Partner__c</name>
+    <picklistValues>
+        <masterLabel>Sms</masterLabel>
+        <translation><!-- Sms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דואר אלקטרוני</masterLabel>
+        <translation><!-- דואר אלקטרוני --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

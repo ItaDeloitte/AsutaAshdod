@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>send_link_for_referral__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>צ&apos;קבוקס מאחורי הכפתור להפעלת שליחת מסמך Form Titan</description>
+    <label>send link for referral</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

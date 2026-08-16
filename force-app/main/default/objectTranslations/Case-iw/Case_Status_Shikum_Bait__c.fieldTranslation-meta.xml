@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס הטיפול</label>
+    <name>Case_Status_Shikum_Bait__c</name>
+    <picklistValues>
+        <masterLabel>Pre surgery Outbound Call</masterLabel>
+        <translation><!-- Pre surgery Outbound Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אושר ע&quot;י גורם מקצועי</masterLabel>
+        <translation><!-- אושר ע&quot;י גורם מקצועי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אין מענה</masterLabel>
+        <translation><!-- אין מענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוצעה גבייה</masterLabel>
+        <translation><!-- בוצעה גבייה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בחר במסלול קופה</masterLabel>
+        <translation><!-- בחר במסלול קופה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בירור מול המחלקה</masterLabel>
+        <translation><!-- בירור מול המחלקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הושלם שיקום בית</masterLabel>
+        <translation><!-- הושלם שיקום בית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הזמין שירות במקום אחר</masterLabel>
+        <translation><!-- הזמין שירות במקום אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השירות הושלם</masterLabel>
+        <translation><!-- השירות הושלם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקבלה תשובה מהרופא</masterLabel>
+        <translation><!-- התקבלה תשובה מהרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זומן ביקור ראשוני</masterLabel>
+        <translation><!-- זומן ביקור ראשוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זמינות</masterLabel>
+        <translation><!-- זמינות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדש</masterLabel>
+        <translation><!-- חדש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כפילות</masterLabel>
+        <translation><!-- כפילות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניין</masterLabel>
+        <translation><!-- לא מעוניין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מתאים לשירות</masterLabel>
+        <translation><!-- לא מתאים לשירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מתאים רפואית</masterLabel>
+        <translation><!-- לא מתאים רפואית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לקוח התחרט</masterLabel>
+        <translation><!-- לקוח התחרט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחיר</masterLabel>
+        <translation><!-- מחיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע כללי</masterLabel>
+        <translation><!-- מידע כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיון</masterLabel>
+        <translation><!-- מיון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיקום גאוגרפי</masterLabel>
+        <translation><!-- מיקום גאוגרפי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לאישור גורם רפואי</masterLabel>
+        <translation><!-- ממתין לאישור גורם רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין למסמכים</masterLabel>
+        <translation><!-- ממתין למסמכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לתיאום תורים</masterLabel>
+        <translation><!-- ממתין לתיאום תורים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לתשובת מטופל</masterLabel>
+        <translation><!-- ממתין לתשובת מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוח נדחה/בוטל</masterLabel>
+        <translation><!-- ניתוח נדחה/בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פונה לקופה</masterLabel>
+        <translation><!-- פונה לקופה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירות לא קיים</masterLabel>
+        <translation><!-- שירות לא קיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם איסוף ציוד</masterLabel>
+        <translation><!-- תואם איסוף ציוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואמו תורים</masterLabel>
+        <translation><!-- תואמו תורים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

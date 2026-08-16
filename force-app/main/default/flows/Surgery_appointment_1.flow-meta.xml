@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>myRule_9_A1</name>
+        <label>change owner</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>chatterPost</nameSegment>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>myRule_1</name>
+        <label>Send disability to site</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myRule_4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Send disability to site</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Appointment_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>WaitingForAppointment</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Site_Email__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>TRUE_Send disability to site</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_4</name>
+        <label>Limitation Room</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myRule_7</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Limitation Room</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_TRUE_myRule_4</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_4_A1</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>TRUE_Limitation Room</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_7</name>
+        <label>שליחת מסרון הפניה</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myRule_9</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_שליחת מסרון הפניה</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_TRUE_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>TRUE_שליחת מסרון הפניה</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_9</name>
+        <label>don&apos;t run on owner changes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>FALSE_don&apos;t run on owner changes</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_myRule_9</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_9_A1</targetReference>
+            </connector>
+            <label>TRUE_don&apos;t run on owner changes</label>
+        </rules>
+    </decisions>
+    <description>Migrated from the Surgery appointment process using multiple criteria.</description>
+    <formulas>
+        <name>formula_1_myRule_4_A1_5044535690</name>
+        <dataType>String</dataType>
+        <expression>IF(NOT(ISBLANK({!$Record.Medical_Procedure__c.Limit_Time__c} )),{!$Record.Medical_Procedure__c.Limit_Time__c} , 
+IF((NOT(ISBLANK({!$Record.Medical_Procedure2__c} ))&amp;&amp; NOT(ISBLANK({!$Record.Medical_Procedure2__c.Limit_Time__c} ))),{!$Record.Medical_Procedure2__c.Limit_Time__c}, 
+IF((NOT(ISBLANK({!$Record.Medical_Procedure3__c}))&amp;&amp; NOT(ISBLANK({!$Record.Medical_Procedure3__c.Limit_Time__c} ))),{!$Record.Medical_Procedure3__c.Limit_Time__c},
+IF((NOT(ISBLANK({!$Record.Medical_Procedure4__c} ))&amp;&amp;NOT(ISBLANK({!$Record.Medical_Procedure4__c.Limit_Time__c} ))),{!$Record.Medical_Procedure4__c.Limit_Time__c}, &quot;&quot;))))</expression>
+    </formulas>
+    <formulas>
+        <name>formula_TRUE_myRule_4</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW() &amp;&amp;
+{!$Record.RecordType.DeveloperName} = &quot;Surgeries&quot; &amp;&amp;
+NOT(ISBLANK({!$Record.Medical_Procedure__c})) &amp;&amp;
+NOT({!$Record.Help_Parent_Code_in__c} =&apos;3&apos; &amp;&amp; {!$Record.Help_Parent_Code_in__c} =&apos;4&apos; &amp;&amp; {!$Record.Help_Parent_Code_in__c} =&apos;5&apos; &amp;&amp; {!$Record.Help_Parent_Code_in__c} =&apos;6&apos; &amp;&amp; {!$Record.Help_Parent_Code_in__c} =&apos;7&apos; )</expression>
+    </formulas>
+    <formulas>
+        <name>formula_TRUE_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName} = &quot;Surgeries&quot; &amp;&amp;
+NOT({!$Record.Referral_Form_SMS__c} ) &amp;&amp;
+NOT( ISPICKVAL({!$Record.Appointment_Status__c}, &quot;Canceled&quot;) )&amp;&amp;
+NOT( ISPICKVAL({!$Record.Appointment_Status__c}, &quot;2&quot;) )&amp;&amp;
+NOT( ISPICKVAL({!$Record.Appointment_Status__c}, &quot;1&quot;) )&amp;&amp;
+NOT( ISPICKVAL({!$Record.Appointment_Status__c}, &quot;3&quot;) )&amp;&amp;
+ISPICKVAL({!$Record.Administrative_Status__c} , &quot;ממתין להפניית רופא&quot;) &amp;&amp;
+({!$Record.PayerFactor__r.InsuranceCode__c} =&quot;3&quot;)&amp;&amp;
+NOT(ISBLANK ({!$Record.Doctor_Account__r.Phone_ETL__c} ))</expression>
+    </formulas>
+    <label>Surgery appointment_1</label>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>myRule_4_A1</name>
+        <label>Update Room Limitation</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>myRule_7</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Limitation_Time_Room__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Limitation_Time_Room__c</field>
+            <value>
+                <elementReference>formula_1_myRule_4_A1_5044535690</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>myRule_7_A1</name>
+        <label>update checkbox</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>myRule_7_A2</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Referral_Form_SMS__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>myRule_1</targetReference>
+        </connector>
+        <object>Appointment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>InvalidDraft</status>
+    <subflows>
+        <name>myRule_1_A1</name>
+        <label>Call flow to send email after disability check</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>myRule_4</targetReference>
+        </connector>
+        <flowName>Send_Disability_to_Site</flowName>
+        <inputAssignments>
+            <name>AppointmentID</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>AccountID</name>
+            <value>
+                <elementReference>$Record.Patient_Account__c</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>myRule_7_A2</name>
+        <label>send sms</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>myRule_9</targetReference>
+        </connector>
+        <flowName>logic_to_send_institute_sms</flowName>
+        <inputAssignments>
+            <name>Record_id</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>Sms_Developer_Name</name>
+            <value>
+                <stringValue>Doctor_referral</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>Specific_Phone</name>
+            <value>
+                <elementReference>$Record.Doctor_Account__r.Phone_ETL__c</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

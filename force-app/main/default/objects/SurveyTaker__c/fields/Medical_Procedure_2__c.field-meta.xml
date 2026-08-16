@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medical_Procedure_2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Medical Procedure 2</label>
+    <referenceTo>Medical_Procedure__c</referenceTo>
+    <relationshipLabel>Surveys Taken (פעולה רפואית 2)</relationshipLabel>
+    <relationshipName>Surveys_Taken1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

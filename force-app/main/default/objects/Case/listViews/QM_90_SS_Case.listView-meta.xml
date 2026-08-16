@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QM_90_SS_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>תורים דחופים של המוקד</label>
+    <queue>QM_90_SS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

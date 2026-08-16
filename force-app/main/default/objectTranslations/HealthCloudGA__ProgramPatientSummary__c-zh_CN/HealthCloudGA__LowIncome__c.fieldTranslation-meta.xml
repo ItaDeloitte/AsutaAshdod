@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>表示患者是否属于低收入范围。</help>
+    <label><!-- Low Income --></label>
+    <name>HealthCloudGA__LowIncome__c</name>
+</CustomFieldTranslation>

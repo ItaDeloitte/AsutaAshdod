@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAMAT</fullName>
+    <columns>NAME</columns>
+    <columns>Doctor_Account__c</columns>
+    <columns>Courses_Icon__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Referral_Status_Maccabi__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>Agreement_with_assuta__c</columns>
+    <columns>domain2__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Site__c</columns>
+    <columns>processing_status__c</columns>
+    <columns>Presurgery_needed1__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>בטיפול אדמיניסטרטיבי,ממתין להתחייבות,ממתין לאישור,not_arrived</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date_bigger_than_today__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>הזרקת תחת שיקוף</value>
+    </filters>
+    <filters>
+        <field>MP_code__c</field>
+        <operation>notEqual</operation>
+        <value>,29.9,88.409,37.7,88.40,37.35,983726,980181,88.55,88.59,37.32,50.93,37.34,37.37,69.0142,69.0143,16.00,69.0,57.44,45300,648352,76874,69.023</value>
+    </filters>
+    <filters>
+        <field>Doctor_License_From_Referral__c</field>
+        <operation>notEqual</operation>
+        <value>,22382,29740,28445,31921,21035,33708,24788,24835,31221,84194,19827,13248,8975,24995,14049,27306,26261,34309,23684,30916,35483,99629,18310,37767,22082,36726,29357,21033,30110,37329,109389,35281,35679,35502,35031,83225,15432,98870</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>רמת הח</value>
+    </filters>
+    <filters>
+        <field>PaymentsRead__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>ניתוחים בטיפול אדמיניסטרטיבי רמת החייל</label>
+</ListView>

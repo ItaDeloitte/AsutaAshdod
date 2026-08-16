@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regular_Identification_For_Patient_Ashd__c</fullName>
+    <description>Monday 1932434318</description>
+    <externalId>false</externalId>
+    <formula>&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/ftproject/AshdodAsutaIdentificationProcess?accountcontacttitan2id=&quot;&amp; formtitan_id_2__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Regular_Identification_For_Patient _Ashd</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maccabi_Arrangement__c</fullName>
+    <description>הסדר מכבי</description>
+    <label>Maccabi Arrangement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>cash_doc</fullName>
+                <default>false</default>
+                <label>רופא קופה</label>
+            </value>
+            <value>
+                <fullName>רופא בהסדר</fullName>
+                <default>false</default>
+                <label>רופא בהסדר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Second Medical Procedure --></label>
+    <name>second_medical_procedure__c</name>
+    <relationshipLabel><!-- רצפים תורים (בדיקה שנייה) --></relationshipLabel>
+</CustomFieldTranslation>

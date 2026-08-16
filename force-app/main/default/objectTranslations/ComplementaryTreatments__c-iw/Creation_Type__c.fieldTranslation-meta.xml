@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Creation Type --></label>
+    <name>Creation_Type__c</name>
+    <picklistValues>
+        <masterLabel>Create Case</masterLabel>
+        <translation><!-- Create Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create Lead</masterLabel>
+        <translation><!-- Create Lead --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

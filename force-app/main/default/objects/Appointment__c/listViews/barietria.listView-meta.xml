@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>barietria</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Icon_payer__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SourceSystemExperts__c</columns>
+    <columns>SourceSystem__c</columns>
+    <columns>Canceled_Reason__c</columns>
+    <columns>Accession_Number__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Site__c</columns>
+    <columns>domain2__c</columns>
+    <columns>Domain__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Domain__c</field>
+        <operation>contains</operation>
+        <value>בריאטריה</value>
+    </filters>
+    <filters>
+        <field>Date_of_appointment__c</field>
+        <operation>equals</operation>
+        <value>9/18/2022</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>רמת</value>
+    </filters>
+    <label>בריאטריה</label>
+</ListView>

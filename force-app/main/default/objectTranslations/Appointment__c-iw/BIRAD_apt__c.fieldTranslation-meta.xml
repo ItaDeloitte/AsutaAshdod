@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- BIRAD --></label>
+    <name>BIRAD_apt__c</name>
+    <picklistValues>
+        <masterLabel>הבדיקה טרם הושלמה</masterLabel>
+        <translation><!-- הבדיקה טרם הושלמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הובחן כשאתי</masterLabel>
+        <translation><!-- הובחן כשאתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חשוד מאוד לשאת</masterLabel>
+        <translation><!-- חשוד מאוד לשאת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא התקבלו תוצאות בדיקה</masterLabel>
+        <translation><!-- לא התקבלו תוצאות בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממצא חריג - דרגת חשד בינוני</masterLabel>
+        <translation><!-- ממצא חריג - דרגת חשד בינוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממצא חריג - דרגת חשד נמוך</masterLabel>
+        <translation><!-- ממצא חריג - דרגת חשד נמוך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממצא חריג, ייתכן שאתי</masterLabel>
+        <translation><!-- ממצא חריג, ייתכן שאתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממצא כנראה שפיר</masterLabel>
+        <translation><!-- ממצא כנראה שפיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממצא שפיר</masterLabel>
+        <translation><!-- ממצא שפיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקין</masterLabel>
+        <translation><!-- תקין --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

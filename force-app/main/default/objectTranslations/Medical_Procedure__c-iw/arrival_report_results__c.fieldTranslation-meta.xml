@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>דיווח הגעה ותוצאות</label>
+    <name>arrival_report_results__c</name>
+    <picklistValues>
+        <masterLabel>דיווח הגעה בלבד</masterLabel>
+        <translation><!-- דיווח הגעה בלבד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא דיווח הגעה</masterLabel>
+        <translation><!-- ללא דיווח הגעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מוחזרות תוצאות</masterLabel>
+        <translation><!-- מוחזרות תוצאות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

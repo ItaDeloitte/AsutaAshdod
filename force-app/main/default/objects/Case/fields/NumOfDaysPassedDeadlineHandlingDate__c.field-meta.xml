@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumOfDaysPassedDeadlineHandlingDate__c</fullName>
+    <description>מספר ימי העסקים שעברו מאז תאריך הטיפול בפניה ועד שהפניה נסגרה (ואם היא עדיין לא נסגרה אז עד היום)</description>
+    <externalId>false</externalId>
+    <label>Num Of Days Passed Deadline Handling Dat</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

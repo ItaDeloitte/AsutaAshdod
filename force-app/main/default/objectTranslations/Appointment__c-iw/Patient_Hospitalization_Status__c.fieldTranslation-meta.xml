@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטאטוס אשפוז מתפנית</label>
+    <name>Patient_Hospitalization_Status__c</name>
+    <picklistValues>
+        <masterLabel>ביטול תיק</masterLabel>
+        <translation><!-- ביטול תיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקבל בביה&quot;ח</masterLabel>
+        <translation><!-- התקבל בביה&quot;ח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שחרור בוטל</masterLabel>
+        <translation><!-- שחרור בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שחרור מטופל</masterLabel>
+        <translation><!-- שחרור מטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תיק הופעל מחדש</masterLabel>
+        <translation><!-- תיק הופעל מחדש --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

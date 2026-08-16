@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מסמכים שהתקבלו</label>
+    <name>Received_Documents__c</name>
+    <picklistValues>
+        <masterLabel>החלטה אישה</masterLabel>
+        <translation><!-- החלטה אישה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החלטה בן זוג</masterLabel>
+        <translation><!-- החלטה בן זוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החלטה זוג</masterLabel>
+        <translation><!-- החלטה זוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צילום ת&quot;ז-  בן זוג</masterLabel>
+        <translation><!-- צילום ת&quot;ז-  בן זוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צילום ת&quot;ז- אישה</masterLabel>
+        <translation><!-- צילום ת&quot;ז- אישה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refusal_details_is_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Anesthesiologist__c  , &quot;6&quot;),
+ISBLANK(Refusal_reason_details__c))</errorConditionFormula>
+    <errorDisplayField>Refusal_reason_details__c</errorDisplayField>
+    <errorMessage>נא להזין את פירוט סיבת הסירוב</errorMessage>
+</ValidationRule>

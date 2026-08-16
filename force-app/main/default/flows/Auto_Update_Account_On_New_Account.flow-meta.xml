@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Account_Birthdate</name>
+        <label>Update Account Birthdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvAccountTrig.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.PersonBirthdate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvAccountTrig.LeadBirthdate__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Update_Mailing_Approval</name>
+        <label>Update Mailing Approval</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvAccountTrig.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Mailing_approval__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>מאשר דיוור - שירותי</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Mailing_approval__pc</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>מאשר דיוור - שירותי</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Lead_Birthdate_Not_Null</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Mailing_Country</name>
+        <label>Update Mailing Country</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvAccountTrig.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.PersonMailingCountry</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ישראל</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Phone_Kosher</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Mailing_Preferred_Channel_to_Telephone</name>
+        <label>Update Mailing Preferred Channel to Telephone</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvAccountTrig.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Preferred_Channel__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Phone</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.preferred_channel__pc</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Phone</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Preferred_Channel_Empty</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Preferred_Channel_to_SMS</name>
+        <label>Update Preferred Channel to SMS</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvAccountTrig.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Preferred_Channel__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>SMS</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Automation_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.Use_for_SMS__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rvAccountUpdate.preferred_channel__pc</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>SMS</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Person_Account_and_Not_Lead_Account</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Workflow Rules : LeadBirthdate</description>
+        <name>Is_Lead_Birthdate_Not_Null</name>
+        <label>Is Lead Birthdate Not Null?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Lead_Birthdate_Not_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>rvAccountTrig.LeadBirthdate__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_Birthdate</targetReference>
+            </connector>
+            <label>Lead Birthdate Not Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Worflow Rules : mailing address israel</description>
+        <name>Is_Mailing_Country_Empty</name>
+        <label>Is Mailing Country Empty?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Phone_Kosher</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Mailing_Country_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>rvAccountTrig.PersonMailingCountry</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>rvAccountTrig.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PersonAccount</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Mailing_Country</targetReference>
+            </connector>
+            <label>Mailing Country Empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Workflow Rules : set mailing approval</description>
+        <name>Is_Person_Account_and_Not_Lead_Account</name>
+        <label>Is Person Account and Not Lead Account?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Lead_Birthdate_Not_Null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Person_Account_and_Not_Lead_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>rvAccountTrig.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PersonAccount</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>rvAccountTrig.LeadAccount__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Mailing_Approval</targetReference>
+            </connector>
+            <label>Person Account and Not Lead Account</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Worflow Rules : Update preferred channel if phone kosher</description>
+        <name>Is_Phone_Kosher</name>
+        <label>Is Phone Kosher?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Preferred_Channel_Empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Phone_Kosher</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fPhoneKosher</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Mailing_Preferred_Channel_to_Telephone</targetReference>
+            </connector>
+            <label>Phone Kosher</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Worflow Rules : Update preferred channel if blank</description>
+        <name>Is_Preferred_Channel_Empty</name>
+        <label>Is Pref Channel Empty?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_Person_Account_and_Not_Lead_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Preferred_Channel_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fPreferredChannelEmpty</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Preferred_Channel_to_SMS</targetReference>
+            </connector>
+            <label>Preferred Channel Empty</label>
+        </rules>
+    </decisions>
+    <description>Monday 2845183443
+Workflow Rules to Flow
+LA 07-05-2026</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Auto Update Account On Account Change&apos;+&apos; ||| &apos;+&apos;Triggered By:&apos;+ {!TriggeredByAutomationName}</expression>
+    </formulas>
+    <formulas>
+        <name>fPhoneKosher</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+OR(
+BEGINS({!rvAccountTrig.Phone},&quot;05271&quot;),
+BEGINS({!rvAccountTrig.Phone},&quot;05276&quot;),
+BEGINS({!rvAccountTrig.Phone},&quot;05484&quot;),
+BEGINS({!rvAccountTrig.Phone},&quot;05485&quot;),
+BEGINS({!rvAccountTrig.Phone},&quot;05832&quot;),
+BEGINS({!rvAccountTrig.Phone},&quot;05567&quot;),
+BEGINS({!rvAccountTrig.Phone},&quot;05331&quot;),
+BEGINS({!rvAccountTrig.Phone},&quot;05341&quot;)
+),
+OR(
+ISPICKVAL({!rvAccountTrig.Preferred_Channel__c}, &quot;&quot;),
+ISPICKVAL({!rvAccountTrig.Preferred_Channel__c},&quot;Unknown&quot;)
+)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fPreferredChannelEmpty</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+/*    part 1    */
+NOT( OR (
+BEGINS({!rvAccountTrig.Phone}, &quot;05271&quot;), BEGINS({!rvAccountTrig.Phone}, &quot;05276&quot;), BEGINS({!rvAccountTrig.Phone}, &quot;05484&quot;), BEGINS({!rvAccountTrig.Phone}, &quot;05485&quot;), BEGINS({!rvAccountTrig.Phone}, &quot;05832&quot;), BEGINS({!rvAccountTrig.Phone}, &quot;05567&quot;), 
+BEGINS({!rvAccountTrig.Phone}, &quot;05331&quot;), BEGINS({!rvAccountTrig.Phone}, &quot;05341&quot;)
+)) ,
+/*    part 2    */
+OR(
+ISPICKVAL({!rvAccountTrig.Preferred_Channel__c}, &quot;&quot;),
+ISPICKVAL({!rvAccountTrig.Preferred_Channel__c}, &quot;Unknown&quot;)
+    ) ,
+/*    part 3    */
+OR( AND (
+                {!rvAccountTrig.Use_for_SMS__c} = TRUE,
+                 ISPICKVAL({!rvAccountTrig.Preferred_Channel__c}, &quot;SMS&quot;) ),
+      AND (
+                 {!rvAccountTrig.Use_for_SMS__c} = TRUE,
+                 {!rvAccountTrig.sms_disability__c} = FALSE
+               )),
+
+/*    part 4    */
+OR(
+      AND(  {!$User.FirstName} = &quot;Integration &quot;, {!$User.LastName} = &quot;User&quot;),
+      AND(  {!$User.FirstName} = &quot;User&quot;, {!$User.LastName} = &quot;Integration &quot;),
+      AND(  {!$User.FirstName} = &quot;Form &quot;, {!$User.LastName} = &quot;Titan&quot;),
+      {!$User.LastName} = &quot;SSIS&quot;,
+      {!$User.LastName} = &quot;Platform Integration User&quot; ,
+
+/*    part 5    */
+   NOT(  AND( {!rvAccountTrig.LastModifiedBy.FirstName}= &quot;User&quot;,{!rvAccountTrig.LastModifiedBy.LastName}= &quot;Integration &quot;)),
+/*    part 6    */ 
+   NOT(  AND( {!rvAccountTrig.CreatedBy.FirstName}= &quot;User&quot;,{!rvAccountTrig.CreatedBy.LastName}= &quot;Integration &quot;)),
+/*    part 7    */
+      {!rvAccountTrig.DisableValidation__c} = TRUE,
+/*    part 8    */
+      AND ( NOT(CONTAINS({!rvAccountTrig.PersonMailingCountry}, &quot;ישראל&quot;)) ,     NOT(ISBLANK({!rvAccountTrig.PersonMailingCountry}))
+),
+/*    part 9   */ 
+     ISBLANK({!rvAccountTrig.Phone})= TRUE,
+/*    part 10   */ 
+      NOT(AND(LEN({!rvAccountTrig.Phone})=10,LEFT({!rvAccountTrig.Phone}, 1) =&quot;0&quot;))
+      )
+)</expression>
+    </formulas>
+    <interviewLabel>Auto Update Account On New Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Auto Update Account On New Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Mailing_Country_Empty</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>rvAccountPrior</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>rvAccountTrig</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>rvAccountUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>TriggeredByAutomationName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

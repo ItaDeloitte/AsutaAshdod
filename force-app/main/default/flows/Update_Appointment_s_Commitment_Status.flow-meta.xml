@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Is_it_a_Surgery_appointment</name>
+        <label>Is it a Surgery appointment?</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>It is not a Surgery appointment that needs a status change</defaultConnectorLabel>
+        <rules>
+            <name>It_is_a_Surgery_appointment_that_needs_a_status_change</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Appointment__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Surgeries</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Appointment__r.Commitment_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Appointment__r.Commitment_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>6</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_related_appointment</targetReference>
+            </connector>
+            <label>It is a Surgery appointment that needs a status change</label>
+        </rules>
+        <rules>
+            <name>Additional_PreSurgery_Documents</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.file_type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>356</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Appointment_for_Additional_PreSurgery_Documents</targetReference>
+            </connector>
+            <label>Additional PreSurgery Documents</label>
+        </rules>
+    </decisions>
+    <description>כאשר מעלים מסמך מסוג התחייבות שקשור לפגישת ניתוח יש לעדכן את סטטוס ההתחייבות בפגישה לערך &quot;התחייבות בסטטוס המתנת אישור&quot;
+הוספת תרחיש לפיו אם התקבלו טפסי טרום ניתוח יסומן שדה Additional PreSurgery Documents באובייקט פניה Appointment</description>
+    <environments>Default</environments>
+    <interviewLabel>Update Appointment&apos;s commitment status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Appointment&apos;s Commitment Status</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Appointment_for_Additional_PreSurgery_Documents</name>
+        <label>Update Appointment for Additional PreSurgery Documents</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>PreSurgery_Additional_Documents__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Appointment__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_related_appointment</name>
+        <label>Update related appointment</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Appointment__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Commitment_Status__c</field>
+            <value>
+                <stringValue>6</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Appointment__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_it_a_Surgery_appointment</targetReference>
+        </connector>
+        <filterLogic>(1 OR 3 ) AND 2</filterLogic>
+        <filters>
+            <field>file_type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>5</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Appointment__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>file_type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>356</stringValue>
+            </value>
+        </filters>
+        <object>File__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Is_Q1_Contains_Question_Mark</name>
+        <label>Is Q1 Contains Question Mark ?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Triggering_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_The_Q1_Contains_Question_Mark</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Q1__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>?</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Grade_Help</targetReference>
+            </connector>
+            <label>Yes , The Q1 Contains Question Mark</label>
+        </rules>
+    </decisions>
+    <description>MB- 18.05.26- 2845183685-  WF TO FLOW - סקר למטופל</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Orchestrator_Agent_Survey_Create_Or_Update_After_Save&apos; + &apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <interviewLabel>Orchestrator- Agent Survey- Create Or Update- After Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Orchestrator- Agent Survey- Create Or Update- After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Triggering_Record</name>
+        <label>Update Triggering Record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>AgentSurveyUpdate</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Q1_Contains_Question_Mark</targetReference>
+        </connector>
+        <object>Agent_survey__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Update_Grade_Help</name>
+        <label>Update Grade Help</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Triggering_Record</targetReference>
+        </connector>
+        <flowName>Auto_Agent_Survey_Grade_Help_Update</flowName>
+        <inputAssignments>
+            <name>rvAgentSurveyTrig</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>rvAgentSurveyUpdate</name>
+            <value>
+                <elementReference>AgentSurveyUpdate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>tvAutomationName</name>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>AgentSurveyUpdate</assignToReference>
+            <name>rvAgentSurveyUpdate</name>
+        </outputAssignments>
+    </subflows>
+    <variables>
+        <name>AgentSurveyUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Agent_survey__c</objectType>
+    </variables>
+</Flow>

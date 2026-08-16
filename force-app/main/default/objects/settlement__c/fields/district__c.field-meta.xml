@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>district__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Area__c ,
+ &quot;באר שבע&quot;, &quot;דרום&quot;,
+ &quot;אשקלון&quot;, &quot;דרום&quot;,
+&quot;חולון&quot;,&quot;מרכז&quot;,
+&quot;תל אביב&quot;,&quot;מרכז&quot;,
+&quot;רמת גן&quot;,&quot;מרכז&quot;,
+&quot;רמלה&quot;,&quot;מרכז&quot;,
+&quot;רחובות&quot;,&quot;מרכז&quot;,
+&quot;פתח תקווה&quot;,&quot;מרכז&quot;,
+&quot;חיפה&quot;,&quot;צפון&quot;,
+&quot;נצרת&quot;,&quot;צפון&quot;,
+&quot;עכו&quot;,&quot;צפון&quot;,
+&quot;עפולה&quot;,&quot;צפון&quot;,
+&quot;צפת&quot;,&quot;צפון&quot;,
+&quot;גולן&quot;,&quot;צפון&quot;,
+&quot;כנרת&quot;,&quot;צפון&quot;,
+&quot;חדרה&quot;,&quot;צפון&quot;,
+&quot;ג&apos;נין&quot;,&quot;צפון&quot;,
+&quot;כנרת&quot;,&quot;מרכז&quot;,
+&quot;טול כרם&quot;,&quot;מרכז&quot;,
+&quot;שכם&quot;,&quot;מרכז&quot;,
+&quot;השרון&quot;,&quot;מרכז&quot;,
+&quot;בית לחם&quot;,&quot;מרכז&quot;,
+&quot;חברון&quot;,&quot;מרכז&quot;,
+&quot;ירדן )יריחו(&quot;,&quot;מרכז&quot;,
+&quot;ירושלים&quot;,&quot;מרכז&quot;,
+&quot;מודיעין&quot;,&quot;מרכז&quot;,
+&quot;ראמאללה&quot;,&quot;מרכז&quot;,
+&quot;&quot;)</formula>
+    <label>מחוז</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

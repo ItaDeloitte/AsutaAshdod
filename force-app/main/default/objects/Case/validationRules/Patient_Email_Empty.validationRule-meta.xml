@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Patient_Email_Empty</fullName>
+    <active>true</active>
+    <errorConditionFormula>First_Call_Made_Female__c =True &amp;&amp;
+ISCHANGED(Send_First_Kit__c)= True &amp;&amp;
+Send_First_Kit__c=True&amp;&amp;
+ISBLANK(email_from_patient__c)</errorConditionFormula>
+    <errorMessage>המייל של המטופלת ריק ולכן לא ניתן לשלוח את הקיט הראשוני</errorMessage>
+</ValidationRule>

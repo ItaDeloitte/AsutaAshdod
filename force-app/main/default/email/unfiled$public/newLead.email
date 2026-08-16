@@ -1,0 +1,2 @@
+שלום {!Lead.FirstName},
+{!Lead.AutoResponseMessageFromCampaign__c}

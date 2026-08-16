@@ -1,0 +1,40 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="required" type="Boolean" default="false" />
+  <aura:attribute name="label" type="String" default="" />
+  <aura:attribute name="class" type="String" default="" />
+  <aura:attribute name="value" type="String" default="" />
+  <aura:attribute name="disabled" type="Boolean" default="false" />
+  <aura:attribute name="name" type="String" default="" />
+  <aura:attribute name="options" type="List" default="[]" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="onchange" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="{!join(' ',
+  'slds-form-element',
+  v.class
+  )}">
+    <label class="slds-form-element__label">
+      <abbr title="required" class="{!join(' ',
+                'slds-required',
+                v.required?'':'slds-hide'
+                )}">*</abbr>
+      {!v.label}</label>
+    <div class="slds-form-element__control">
+      <div class="slds-combobox-group">
+        <div class="slds-combobox_object-switcher slds-combobox-addon_start">
+          <lightning:combobox name="progress" label="Status" value="{!v.value}" placeholder="Select"
+            options="{!v.options }" variant="label-hidden" disabled="{!v.disabled}" onchange="{!c.onChangeOption}" />
+        </div>
+        <div class="slds-combobox_container slds-combobox-addon_end">
+          {!v.body}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</aura:component>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seniority__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+NOT(ISBLANK( Start_Date__c)), 
+
+
+
+
+
+TEXT( 
+(FLOOR((TODAY() - Start_Date__c) / 365)) 
+) &amp;&quot; שנים &quot; &amp; &quot;ו- &quot; &amp; 
+TEXT( 
+FLOOR((((TODAY() - Start_Date__c) / 365 )-(FLOOR((TODAY() - Start_Date__c) / 365))) 
+*12)) &amp; &quot; חודשים&quot; 
+
+,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Seniority</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

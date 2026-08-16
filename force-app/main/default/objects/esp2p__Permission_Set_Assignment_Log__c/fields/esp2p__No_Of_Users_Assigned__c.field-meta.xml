@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>esp2p__No_Of_Users_Assigned__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To store number active user migrated</description>
+    <externalId>false</externalId>
+    <label>No Of Users Assigned</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

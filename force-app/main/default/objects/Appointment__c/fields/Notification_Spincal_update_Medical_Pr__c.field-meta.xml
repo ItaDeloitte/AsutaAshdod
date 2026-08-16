@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notification_Spincal_update_Medical_Pr__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  Spincal_update_Medical_Procedure__c  = TRUE, &quot;הפעולה הרפואית בפגישה עודכנה על ידי ספינקל&quot; , &quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Notification - Spincal update Medical Pr</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

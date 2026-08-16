@@ -1,0 +1,17 @@
+<template>
+  <c-modal-container is-loading={isLoading}>
+    <div slot="header">
+      <h2 class="slds-modal__title slds-text-heading_medium slds-hyphenate">{labels.Clinics}</h2>
+    </div>
+
+    <div class="inner-content slds-p-around_medium">
+      <c-errors-alert errors={errors} closeable onclose={closeErrorsHandler}></c-errors-alert>
+
+      <div class="">
+        <lightning-datatable key-field="id" data={tableData} columns={tableColumns} onrowaction={rowActionHandler}
+                             min-column-width="80" hide-checkbox-column>
+        </lightning-datatable>
+      </div>
+    </div>
+  </c-modal-container>
+</template>

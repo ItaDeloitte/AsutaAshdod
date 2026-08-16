@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מספר ימים שעברו מהייעוץ הראשוני</label>
+    <name>Days_From_Initial_Consul__c</name>
+</CustomFieldTranslation>

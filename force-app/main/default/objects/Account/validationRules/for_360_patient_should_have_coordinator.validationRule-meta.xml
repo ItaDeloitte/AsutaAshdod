@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>for_360_patient_should_have_coordinator</fullName>
+    <active>true</active>
+    <description>למטופל_360_חייב_להיות_נציג_מתאם</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+(NOT(ISNULL(Case_360__c)) &amp;&amp; ISNULL(X360_Coordinator__c))&amp;&amp;
+(  CreatedBy.ProfileId  &lt;&gt;  $Label.Integration_ProfileId  ||  LastModifiedBy.ProfileId &lt;&gt; $Label.Integration_ProfileId )</errorConditionFormula>
+    <errorMessage>למטופל 360 חייב להיות נציג מתאם</errorMessage>
+</ValidationRule>

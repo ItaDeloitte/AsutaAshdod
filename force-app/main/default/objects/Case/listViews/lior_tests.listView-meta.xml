@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>lior_tests</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Case_subject__c</columns>
+    <columns>sub_case_subject__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>contains</operation>
+        <value>saritke</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,In_Progress</value>
+    </filters>
+    <filters>
+        <field>sub_case_subject__c</field>
+        <operation>notEqual</operation>
+        <value>מערכת קודמת</value>
+    </filters>
+    <label>ליאור - בדיקות</label>
+</ListView>

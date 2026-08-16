@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מוקד</label>
+    <name>CallCenter__c</name>
+    <picklistValues>
+        <masterLabel>אסותא אשדוד</masterLabel>
+        <translation><!-- אסותא אשדוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז הניתוחים</masterLabel>
+        <translation><!-- מרכז הניתוחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז מומחים</masterLabel>
+        <translation><!-- מרכז מומחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז מידע וזימון תורים</masterLabel>
+        <translation><!-- מרכז מידע וזימון תורים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

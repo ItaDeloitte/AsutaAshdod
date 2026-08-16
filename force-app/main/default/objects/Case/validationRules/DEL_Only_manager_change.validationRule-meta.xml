@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEL_Only_manager_change</fullName>
+    <active>false</active>
+    <description>רק מנהל יכול לשנות את בעלי הפניה או את סטטוס הפניה</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos;) &amp;&amp;
+AND( ISCHANGED(Status), $Profile.Name =&quot;Agent&quot;, 
+
+OR( 
+
+AND( NOT(ISPICKVAL( PRIORVALUE(Status),&quot;In_Progress&quot; )), NOT( ISPICKVAL( PRIORVALUE(Status),&quot;New&quot; )))),
+AND( NOT(ISPICKVAL(Status ,&quot;Closed&quot;)),NOT(ISPICKVAL(Status ,&quot;Caneclled&quot;)),NOT(ISPICKVAL(Status ,&quot;Escalated&quot;)),NOT(ISPICKVAL(Status ,&quot;Third Party&quot;)))
+
+)</errorConditionFormula>
+    <errorMessage>שינוי סטטוס של פנייה על ידי נציג יתבצע רק מסטטוס &quot;בטיפול&quot;.
+בעת הקמת פנייה חדשה באופן ידני, יש לשמור אותה בסטטוס &quot;חדש&quot; בלבד.</errorMessage>
+</ValidationRule>

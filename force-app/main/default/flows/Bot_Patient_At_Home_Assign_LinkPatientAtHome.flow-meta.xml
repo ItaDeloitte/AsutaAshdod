@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Bot_Patient_At_Home_Link</name>
+        <label>Assign Bot Patient At Home Link</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>tvLinkPatientAtHome</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fLinkPatientAtHomeFormula</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>AM: 28102025-2009762829- מסרי WA במסע מטופל של עד הבית  Bot Patient At Home -- workaround for populationg a alink sent to the patient before id check.
+
+AM: 24122025- changed the formula &quot;fLinkPatientAtHomeFormula&quot; to identify the salsforce org id. (surgey urgent request)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fLinkPatientAtHomeFormula</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Organization.Id} = &apos;00D7E000000FWtK&apos; , &quot;https://liom25792assutaqa.formtitan.com/ftproject/homeservicerequest&quot;, &quot;https://myassuta.formtitan.com/ftproject/assuta_home_services&quot;)</expression>
+    </formulas>
+    <interviewLabel>Assign {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Bot Patient At Home- Assign LinkPatientAtHome</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Bot_Patient_At_Home_Link</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>tvLinkPatientAtHome</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

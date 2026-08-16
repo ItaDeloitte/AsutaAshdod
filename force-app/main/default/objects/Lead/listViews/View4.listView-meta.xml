@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View4</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>FormerAgent__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>Campaign__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LeadDescription__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>lost,false,win,Pool</value>
+    </filters>
+    <filters>
+        <field>Campaign__c</field>
+        <operation>notContain</operation>
+        <value>Family,מדיסליפ,חדרים פרטיים,פסיכ,אסותא בשבילך,כבד,המרכז האורולוגי באר שבע,MRI,בנק הזרע,תיירות,טסטים,חדר פרטי,פיוז&apos;ן,הרשמה,עד הבית</value>
+    </filters>
+    <filters>
+        <field>LEAD.EMAIL</field>
+        <operation>notEqual</operation>
+        <value>test@test.com</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>9/1/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>notEqual</operation>
+        <value>Inbound_Call</value>
+    </filters>
+    <filters>
+        <field>Campaign__c</field>
+        <operation>notContain</operation>
+        <value>אופטיק,נטישות שירותים פרטיים</value>
+    </filters>
+    <filters>
+        <field>Campaign__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>לידים פתוחים - מוקד שירותים פרטיים</label>
+</ListView>

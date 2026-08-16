@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IdNumberForMaccabi__c</fullName>
+    <description>נוסחה לחישוב ת.ז של מטופל עבור ממשקי מכבי לפי שדה סוג תעודה</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Patient_Account__r.ID_Type__c, &quot;1&quot;) , IDNumber__c, (IF((ISPICKVAL(Patient_Account__r.ID_Type__c, &quot;9&quot;) &amp;&amp; Patient_Account__r.KupaId__c != NULL) ,Patient_Account__r.KupaId__c, IDNumber__c)))</formula>
+    <label>IdNumberForMaccabi</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

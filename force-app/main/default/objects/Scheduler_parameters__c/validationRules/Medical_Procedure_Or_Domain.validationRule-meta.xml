@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medical_Procedure_Or_Domain</fullName>
+    <active>true</active>
+    <description>חייב להיות ערך בשדה פעולה רפואית או תחום כדי ליצור רשומה</description>
+    <errorConditionFormula>ISBLANK( Medical_Procedure__c ) &amp;&amp;  ISBLANK( Domain__c )</errorConditionFormula>
+    <errorMessage>שים לב יש לעדכן ערך כלשהו בשדה פעולה רפואית או תחום</errorMessage>
+</ValidationRule>

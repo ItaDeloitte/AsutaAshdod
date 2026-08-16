@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>醫師</label>
+    <name>HealthCloudGA__Practitioner__c</name>
+    <relationshipLabel>照護計畫參與者</relationshipLabel>
+</CustomFieldTranslation>

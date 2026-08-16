@@ -1,0 +1,27 @@
+<aura:component extends="c:AppointmentAbstractFilter">
+  <!-- attrs -->
+  <aura:attribute name="filterName" type="String" default="" />
+  <aura:attribute name="options" type="List" default="[]" />
+  <aura:attribute name="value" type="List" default="[]" />
+  <aura:attribute name="label" type="String" default="Filter Label" />
+  <aura:attribute name="tooltip" type="Aura.Component[]" />
+  <aura:attribute name="showTooltip" type="Boolean" default="false" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div>
+    <div class="position-relative slds-form-element__label">
+      {!v.label}
+      <aura:if isTrue="{!v.showTooltip}">
+        <span class="px-3 position-absolute filter-tooltip-wrapper">
+          {!v.tooltip}
+        </span>
+      </aura:if>
+    </div>
+    <lightning:checkboxGroup class="" name="Checkbox Group" label="{!v.label}" options="{! v.options }"
+      value="{! v.value }" onchange="{!c.onChangeInput }" />
+  </div>
+</aura:component>

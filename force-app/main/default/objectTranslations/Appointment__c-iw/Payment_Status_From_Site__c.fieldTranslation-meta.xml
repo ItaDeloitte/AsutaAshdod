@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטאטוס תהליך באתר</label>
+    <name>Payment_Status_From_Site__c</name>
+    <picklistValues>
+        <masterLabel>טרם החל</masterLabel>
+        <translation><!-- טרם החל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נדרש תשלום (ה. ע &apos;0&apos;)</masterLabel>
+        <translation><!-- לא נדרש תשלום (ה. ע &apos;0&apos;) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא נדרש תשלום (ה. ע &apos;0&apos;) אבל פתח פקדון וערבון</masterLabel>
+        <translation><!-- לא נדרש תשלום (ה. ע &apos;0&apos;) אבל פתח פקדון וערבון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא תקין</masterLabel>
+        <translation><!-- לא תקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקין</masterLabel>
+        <translation><!-- תקין --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

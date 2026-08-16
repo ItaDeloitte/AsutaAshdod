@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Last Biopsy Result --></label>
+    <name>Last_Biops_Result__c</name>
+    <picklistValues>
+        <masterLabel>חיובית</masterLabel>
+        <translation><!-- חיובית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא רלוונטי</masterLabel>
+        <translation><!-- לא רלוונטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שלילית</masterLabel>
+        <translation><!-- שלילית --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

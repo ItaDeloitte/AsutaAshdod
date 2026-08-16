@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waiting_List__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>עבור פעולות רפואיות ששדה זה מסומן ,ננהל רשימת המתנה לתורים דחופים</description>
+    <label>Waiting List</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

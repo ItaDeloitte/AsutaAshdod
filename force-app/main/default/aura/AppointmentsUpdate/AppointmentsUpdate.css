@@ -1,0 +1,22 @@
+.THIS.update-modal .modal-container,
+.THIS.update-modal .slds-modal__container {
+  margin: 0 auto;
+  min-width: 20rem;
+}
+
+.THIS.update-modal .modal-body,
+.THIS.update-modal .slds-modal__content {
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+
+.THIS .cActionModalInner {
+  height: auto;
+  max-height: none;
+  min-height: 500px;
+}
+
+.THIS .cActionModalInner .dm-body {
+  padding-bottom: 0;
+}

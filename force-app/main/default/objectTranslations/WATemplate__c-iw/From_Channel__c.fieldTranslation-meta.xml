@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- From Channel --></label>
+    <name>From_Channel__c</name>
+    <picklistValues>
+        <masterLabel>Assuta_Enhanced_Bot</masterLabel>
+        <translation><!-- Assuta_Enhanced_Bot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doctors Line</masterLabel>
+        <translation><!-- Doctors Line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance_Company</masterLabel>
+        <translation><!-- Insurance_Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient_At_Home</masterLabel>
+        <translation><!-- Patient_At_Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Services</masterLabel>
+        <translation><!-- Private Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery_Bot</masterLabel>
+        <translation><!-- Surgery_Bot --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

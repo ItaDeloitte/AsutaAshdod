@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notify_GRC_Team</fullName>
+        <ccEmails>GRC_Team@assuta.co.il</ccEmails>
+        <description>Notify GRC Team</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/New_LOCAL_user_created_not_via_AzureAD</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_alert_when_User_Title_is_null</fullName>
+        <ccEmails>GRC_Team@assuta.co.il</ccEmails>
+        <description>Send email alert when User Title is null</description>
+        <protected>false</protected>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/User_Role_Change_Alert</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Copy_Hebrew_First_Name</fullName>
+        <field>FirstName</field>
+        <formula>LEFT( AD_Hebrew_Name__c , FIND( &quot; &quot;, AD_Hebrew_Name__c  ) -1 )</formula>
+        <name>Copy Hebrew First Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_Hebrew_Last_Name</fullName>
+        <field>LastName</field>
+        <formula>RIGHT( AD_Hebrew_Name__c , LEN(AD_Hebrew_Name__c ) - FIND(&quot; &quot;, AD_Hebrew_Name__c ))</formula>
+        <name>Copy Hebrew Last Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_user_AD</fullName>
+        <description>עדכון השם של המשתמש באקטיב דירקטורי</description>
+        <field>User_AD__c</field>
+        <formula>LEFT(Username, FIND(&quot;@&quot;,Username)-1)</formula>
+        <name>update user AD</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Alert on local user creation</fullName>
+        <actions>
+            <name>Notify_GRC_Team</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.CreatedById</field>
+            <operation>notEqual</operation>
+            <value>sfprovusr</value>
+        </criteriaItems>
+        <description>התראה על הקמת משתמש במערכת ללא AD</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Copy Hebrew Name</fullName>
+        <actions>
+            <name>Copy_Hebrew_First_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Copy_Hebrew_Last_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>(AD_Hebrew_Name__c &lt;&gt;   FirstName &amp; &apos; &apos; &amp;LastName )
+&amp;&amp;  NOT(ISBLANK(AD_Hebrew_Name__c  ))</description>
+        <formula>(AD_Hebrew_Name__c &lt;&gt;   FirstName &amp; &apos; &apos; &amp;LastName )
+&amp;&amp;  NOT(ISBLANK(AD_Hebrew_Name__c  ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>update user AD</fullName>
+        <actions>
+            <name>update_user_AD</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>עדכון שם משתמש ב AD</description>
+        <formula>if(!ISBLANK( Username ) &amp;&amp; !ISNULL(Username),true,true)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

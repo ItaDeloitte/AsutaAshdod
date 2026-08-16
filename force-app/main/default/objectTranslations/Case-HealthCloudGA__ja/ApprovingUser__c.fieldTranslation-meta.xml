@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approving User --></label>
+    <name>ApprovingUser__c</name>
+    <picklistValues>
+        <masterLabel>אורטל סולומון</masterLabel>
+        <translation><!-- אורטל סולומון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דוד דולב</masterLabel>
+        <translation><!-- דוד דולב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חופית בר יוסף</masterLabel>
+        <translation><!-- חופית בר יוסף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טטיאנה דוביז&apos;נסקי</masterLabel>
+        <translation><!-- טטיאנה דוביז&apos;נסקי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ילנה לויצקי</masterLabel>
+        <translation><!-- ילנה לויצקי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יקטרינה סומוב</masterLabel>
+        <translation><!-- יקטרינה סומוב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יקטרינה רביאקין</masterLabel>
+        <translation><!-- יקטרינה רביאקין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ליאורה יונה</masterLabel>
+        <translation><!-- ליאורה יונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רגינה פיינליייב פודגור</masterLabel>
+        <translation><!-- רגינה פיינליייב פודגור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רגינה רבקה ויטנר</masterLabel>
+        <translation><!-- רגינה רבקה ויטנר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רוול בלורי</masterLabel>
+        <translation><!-- רוול בלורי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רינת זינזיח דדון</masterLabel>
+        <translation><!-- רינת זינזיח דדון --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

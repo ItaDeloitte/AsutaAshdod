@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assuta_Optic_StageStatus_If_Win_Or_Lost</fullName>
+    <active>true</active>
+    <description>שלב &quot;הפסד&quot; – נדרש חובה למילוי &quot;סטטוס לשלב&quot;
+שלב &quot;ניצחון&quot; - נדרש חובה למילוי &quot;סטטוס לשלב&quot;
+for record type: assuta optic</description>
+    <errorConditionFormula>AND(
+    OR(ISPICKVAL(StageName, &apos;Closed Won&apos;), 
+       ISPICKVAL(StageName, &apos;Closed Lost&apos;)
+       ),
+    ISPICKVAL(StageStatus__c, &apos;&apos;), 
+    $RecordType.DeveloperName = &apos;Assuta_Optic&apos;
+    )</errorConditionFormula>
+    <errorDisplayField>StageStatus__c</errorDisplayField>
+    <errorMessage>חובה למלא ערך בשדה סטטוס שלב עבור שלב &quot;הפסד&quot; או &quot;ניצחון&quot;</errorMessage>
+</ValidationRule>

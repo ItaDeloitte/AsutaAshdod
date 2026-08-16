@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>File__c</baseObject>
+    <category>other</category>
+    <deployed>false</deployed>
+    <description>Assuta Files And Accounts</description>
+    <label>Assuta Files And Accounts</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assuta Files ID</displayNameOverride>
+            <field>Id</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>File Name</displayNameOverride>
+            <field>Name</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity Date</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם מטופל</displayNameOverride>
+            <field>Account__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment</displayNameOverride>
+            <field>Appointment__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Approved Amount Anesthetist</displayNameOverride>
+            <field>Approved_Amount_Anesthetist__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פנייה</displayNameOverride>
+            <field>Case__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מסלול</displayNameOverride>
+            <field>Channel__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס ההתחייבות</displayNameOverride>
+            <field>CommitmentStatus__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קובץ התחייבות</displayNameOverride>
+            <field>Commitment_File__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סיבת הסטטוס</displayNameOverride>
+            <field>Commitment_Reason__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact</displayNameOverride>
+            <field>Contact__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Received</displayNameOverride>
+            <field>Date_Received__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Time of the appointment</displayNameOverride>
+            <field>Date_Time_of_the_appointment__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of commitment</displayNameOverride>
+            <field>Date_of_commitment__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>השתתפות בגין רופא</displayNameOverride>
+            <field>Deductible_Doctor__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deductibles Hospitalization</displayNameOverride>
+            <field>Deductibles_Hospitalization__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Deductibles</displayNameOverride>
+            <field>Deductibles__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם רופא</displayNameOverride>
+            <field>DoctorName__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התמחות רופא מפנה</displayNameOverride>
+            <field>Doctor_Expertise__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ת&quot;ז רופא מפנה</displayNameOverride>
+            <field>Doctor_ID__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>רישיון רופא</displayNameOverride>
+            <field>Doctor_License__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>טלפון רופא מפנה</displayNameOverride>
+            <field>Doctor_Phone__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם רופא זהה?</displayNameOverride>
+            <field>Doctor_name_equal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תחום</displayNameOverride>
+            <field>Domain__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>End Date Commitment</displayNameOverride>
+            <field>End_Date_Commitment__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>File number from Portal</displayNameOverride>
+            <field>File_number_from_Portal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>GateScaner_FileScanStatus</displayNameOverride>
+            <field>GateScaner_FileScanStatus__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>GateScaner_Status</displayNameOverride>
+            <field>GateScaner_Status__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>GateScanner_JobId</displayNameOverride>
+            <field>GateScanner_JobId__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>התחייבות ממכבי?</displayNameOverride>
+            <field>IsMaccabi__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OriginFileVisible</displayNameOverride>
+            <field>OriginFileVisible__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תחום הפניה למכבי</displayNameOverride>
+            <field>MaccabiReferralDomain__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית 2</displayNameOverride>
+            <field>Medical_Procedure2__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית 2 זהה?</displayNameOverride>
+            <field>Medical_Procedure2_equal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית 3</displayNameOverride>
+            <field>Medical_Procedure3__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית 3 זהה?</displayNameOverride>
+            <field>Medical_Procedure3_equal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית 4</displayNameOverride>
+            <field>Medical_Procedure4__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית 4 זהה?</displayNameOverride>
+            <field>Medical_Procedure4_equal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית 1 זהה?</displayNameOverride>
+            <field>Medical_Procedure_Equal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פעולה רפואית</displayNameOverride>
+            <field>Medical_Procedure__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Number of commitment</displayNameOverride>
+            <field>Number_of_commitment__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מספר התחייבות</displayNameOverride>
+            <field>ObligationNumber__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם המטופל זהה?</displayNameOverride>
+            <field>Patient_name_equal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>גורם משלם</displayNameOverride>
+            <field>PayerFactor__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Portal Auto Number</displayNameOverride>
+            <field>Portal_Auto_Number__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קראתי ומאשר</displayNameOverride>
+            <field>Read_and_Approve__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך הפניה</displayNameOverride>
+            <field>ReferralDate__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס קובץ</displayNameOverride>
+            <field>ReferralErrorCode__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מספר הפנייה</displayNameOverride>
+            <field>ReferralNumber__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קובץ הפניה</displayNameOverride>
+            <field>Referral_File__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס הפניה</displayNameOverride>
+            <field>Referral_Status__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג הפניה מכבי</displayNameOverride>
+            <field>Referral_Type__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סטטוס הפנייה מכבי</displayNameOverride>
+            <field>ReferralsExistErrorCode__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>שם רופא מפנה</displayNameOverride>
+            <field>Refferal_Doctor_Name__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>החזר בגין ניתוח</displayNameOverride>
+            <field>Refund_Surgery__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refund for Doctor</displayNameOverride>
+            <field>Refund_for_Doctor__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Refund for Implants</displayNameOverride>
+            <field>Refund_for_Implants__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג הפניה</displayNameOverride>
+            <field>Related_Process__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הערות</displayNameOverride>
+            <field>Remarks__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>בקשה ידנית?</displayNameOverride>
+            <field>Request_Manually__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מספר בקשה</displayNameOverride>
+            <field>Request_Number__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מועד שליחת קובץ</displayNameOverride>
+            <field>Send_File_Date__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Site</displayNameOverride>
+            <field>Site__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>קישור למסמך</displayNameOverride>
+            <field>URL__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>סוג מסמך</displayNameOverride>
+            <field>file_type__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם פתח את הקישור?</displayNameOverride>
+            <field>isread__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תת-סוג מסמך</displayNameOverride>
+            <field>role__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Content Version Id</displayNameOverride>
+            <field>Content_Version_Id__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ETL unique Identifier</displayNameOverride>
+            <field>ETL_unique_Identifier__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor Code</displayNameOverride>
+            <field>Doctor_Code__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status sent file to maccabi</displayNameOverride>
+            <field>Status_sent_file_to_maccabi__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>manipulation created time</displayNameOverride>
+            <field>manipulation_created_time__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תור עבודה מהמסמך</displayNameOverride>
+            <field>Queue_from_doc__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Portal_Status</displayNameOverride>
+            <field>Portal_Status__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>חתימה</displayNameOverride>
+            <field>Signature__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>tesr</displayNameOverride>
+            <field>tesr__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Path to local file</displayNameOverride>
+            <field>Path_to_local_file__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FileSource</displayNameOverride>
+            <field>FileSource__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>חתימה לקיט ניתוחי</displayNameOverride>
+            <field>Signiture_sign__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Maccabi Doctor Code</displayNameOverride>
+            <field>Maccabi_Doctor_Code__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Maccabi Doctor License</displayNameOverride>
+            <field>Maccabi_Doctor_License__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Maccabi Doctor Name</displayNameOverride>
+            <field>Maccabi_Doctor_Name__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>פירוט כשלון ממכבי</displayNameOverride>
+            <field>macabi_failure_detail__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ReferralRequestNumber</displayNameOverride>
+            <field>ReferralRequestNumber__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status Ref Manual To Maccabi</displayNameOverride>
+            <field>StatusRefManualToMaccabi__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Select To Portal</displayNameOverride>
+            <field>SelectToPortal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor Phone Number</displayNameOverride>
+            <field>DoctorPhoneNumber__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor Address</displayNameOverride>
+            <field>DoctorAddress__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Obligation Branch</displayNameOverride>
+            <field>ObligationBranch__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Branch Phone</displayNameOverride>
+            <field>BranchPhone__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ServiceType</displayNameOverride>
+            <field>ServiceType__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assuta Dept Description</displayNameOverride>
+            <field>AssutaDeptDescription__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Treatment Date</displayNameOverride>
+            <field>TreatmentDate__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Treatment Instruction</displayNameOverride>
+            <field>TreatmentInstruction__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Urgency</displayNameOverride>
+            <field>Urgency__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Moked</displayNameOverride>
+            <field>Moked__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Findings</displayNameOverride>
+            <field>Findings__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Complaints</displayNameOverride>
+            <field>Complaints__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Treatment Description 1</displayNameOverride>
+            <field>TreatmentDescription1__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Treatment Description 2</displayNameOverride>
+            <field>TreatmentDescription2__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Treatment Description 3</displayNameOverride>
+            <field>TreatmentDescription3__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Treatment Description 4</displayNameOverride>
+            <field>TreatmentDescription4__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Doctor Specialization</displayNameOverride>
+            <field>DoctorSpecialization__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FileExtension</displayNameOverride>
+            <field>FileExtension__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Title</displayNameOverride>
+            <field>Title__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך אישור מסמך</displayNameOverride>
+            <field>Approved_date__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>מסמך מאושר</displayNameOverride>
+            <field>IsApproved__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>הועבר למערכת קלינית</displayNameOverride>
+            <field>forward_to_clinic_system__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>IsSendAshdodPortal</displayNameOverride>
+            <field>IsSendAshdodPortal__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Description</displayNameOverride>
+            <field>Description__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subject</displayNameOverride>
+            <field>Subject__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AshdodFile</displayNameOverride>
+            <field>AshdodFile__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ForwardToRIS</displayNameOverride>
+            <field>ForwardToRIS__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך הפקה</displayNameOverride>
+            <field>DocDateBegin__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>תאריך תוקף</displayNameOverride>
+            <field>DocDateEnd__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status Send File to Tafnit</displayNameOverride>
+            <field>Status_Send_File_toTtafnit__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>האם החייאת תפנית הצליחה</displayNameOverride>
+            <field>is_succeed_CPR_Tafnit__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SendComSign</displayNameOverride>
+            <field>SendComSign__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Administrative Control</displayNameOverride>
+            <field>Administrative_Control__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pain Clinic Email</displayNameOverride>
+            <field>Pain_Clinic_Email__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pain Clinic Trigger</displayNameOverride>
+            <field>Pain_Clinic_Trigger__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Transferred to Chameleon?</displayNameOverride>
+            <field>Transferred_to_Chameleon__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>File From App</displayNameOverride>
+            <field>File_From_App__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sleep Clinic Trigger</displayNameOverride>
+            <field>Sleep_Clinic_Trigger__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Automation_Name__c</field>
+            <table>File__c</table>
+        </columns>
+        <masterLabel>Assuta Files</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assuta Files : פעולה רפואית : Domain : Domain Code</displayNameOverride>
+            <field>Medical_Procedure__c.Domain__c.DomainCode__c</field>
+            <table>File__c</table>
+        </columns>
+        <masterLabel>Appointment</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assuta Files : שם מטופל : Men&apos;s Health Clinic Patient</displayNameOverride>
+            <field>Account__c.Men_s_Health_Clinic_Patient__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assuta Files : שם מטופל : Men&apos;s Health Clinic Status</displayNameOverride>
+            <field>Account__c.Men_s_Health_Clinic_Status__c</field>
+            <table>File__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account__c.ID_Number__c</field>
+            <table>File__c</table>
+        </columns>
+        <masterLabel>Accounts</masterLabel>
+    </sections>
+</ReportType>

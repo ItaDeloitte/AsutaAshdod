@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Subtopic__c</fullName>
+    <label>Request Subtopic</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>הקמת ספק</fullName>
+                <default>false</default>
+                <label>הקמת ספק</label>
+            </value>
+            <value>
+                <fullName>עדכון פרטי ספק</fullName>
+                <default>false</default>
+                <label>עדכון פרטי ספק</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>אישור אשפוז</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>אישור אשפוז</label>
+            </value>
+            <value>
+                <fullName>בחירה דנית מתוך רשימה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>בחירה דנית מתוך רשימה</label>
+            </value>
+            <value>
+                <fullName>דיווח ובירור</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>דיווח ובירור</label>
+            </value>
+            <value>
+                <fullName>ועדה לענייני הראיון</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ועדה לענייני הראיון</label>
+            </value>
+            <value>
+                <fullName>לפי פגישה מסוג ניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>לפי פגישה מסוג ניתוח</label>
+            </value>
+            <value>
+                <fullName>מכתב שחרור</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>מכתב שחרור</label>
+            </value>
+            <value>
+                <fullName>ממשק נכשל</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ממשק נכשל</label>
+            </value>
+            <value>
+                <fullName>ממשק נקלט בהצלחה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ממשק נקלט בהצלחה</label>
+            </value>
+            <value>
+                <fullName>סיכום ניתוח</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>סיכום ניתוח</label>
+            </value>
+            <value>
+                <fullName>רשימת ביקורים</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>רשימת ביקורים</label>
+            </value>
+            <value>
+                <fullName>שעת לידה</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>שעת לידה</label>
+            </value>
+            <value>
+                <fullName>תיק רפואי מלא</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>תיק רפואי מלא</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

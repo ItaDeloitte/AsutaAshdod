@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>formula_for_imp_de_kit__c</fullName>
+    <externalId>false</externalId>
+    <formula>Implants__r.Name &amp;&quot; &quot;&amp; 
+BR()&amp;
+
+&quot;מחיר מינימום&quot; &amp;&quot; &quot;&amp; &quot;-&quot; &amp;&quot; &quot;&amp;   TEXT(min_price__c ) 
+&amp; BR()&amp;
+&quot;מחיר מקסימום&quot; &amp;&quot; &quot;&amp; &quot;-&quot; &amp;&quot; &quot;&amp;  TEXT(max_price__c )  
+&amp; BR()&amp;
+ notes__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>נוסחה להצגת משתל בקיט</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

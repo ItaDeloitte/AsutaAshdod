@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier_Compact_Layout</fullName>
+    <fields>CaseNumber</fields>
+    <fields>AccountId</fields>
+    <fields>Case_subject__c</fields>
+    <fields>sub_case_subject__c</fields>
+    <fields>RecordTypeId</fields>
+    <label>Supplier Compact Layout</label>
+</CompactLayout>

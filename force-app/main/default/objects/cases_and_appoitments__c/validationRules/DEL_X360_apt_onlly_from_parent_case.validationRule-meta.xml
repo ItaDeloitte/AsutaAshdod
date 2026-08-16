@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEL_X360_apt_onlly_from_parent_case</fullName>
+    <active>false</active>
+    <errorConditionFormula>Case__r.Parent.RecordType.DeveloperName = &quot;Assuta_360&quot; &amp;&amp;
+  NOT(ISBLANK(Appointment__c))</errorConditionFormula>
+    <errorMessage>מטופל זה הינו 360. קביעת תורים תתבצע רק מתוך פניית ה-360 של מטופל זה שמקושרת כפניית אב לפנייה זו</errorMessage>
+</ValidationRule>

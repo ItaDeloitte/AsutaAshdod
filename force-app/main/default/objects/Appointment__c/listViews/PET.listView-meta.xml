@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PET</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>Calendar__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>Rep_Reminder_Status__c</columns>
+    <columns>Remainder_status__c</columns>
+    <columns>manual_arrival__c</columns>
+    <columns>RisAppointmentNotes__c</columns>
+    <columns>Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>domain2__c</field>
+        <operation>contains</operation>
+        <value>PET</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>וידוא הגעה לפגישה,WaitingForAppointment</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>רמת</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>6/24/2021</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <filters>
+        <field>manual_arrival__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Rep_Reminder_Status__c</field>
+        <operation>notEqual</operation>
+        <value>אישור הגעה</value>
+    </filters>
+    <label>וידוא הגעה - PET</label>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cant_schedule_app_for_this_doctor</fullName>
+    <active>true</active>
+    <description>רופא שלא במרכז מומחים או אין לו מרפאת QF אז לא ניתן לזמן לו תורים באופן ישיר</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos;) &amp;&amp;
+ISPICKVAL( Case_subject__c , &quot;זימון רופא מומחה&quot;) &amp;&amp;
+NOT(ISBLANK(Recommended_doc__c)) &amp;&amp; 
+NOT(CONTAINS(Recommended_doc__r.sched_sys_doc_clinics__c, &quot;QFlow&quot;))
+ &amp;&amp;
+ NOT(Recommended_doc__r.Experts_center__c)
+&amp;&amp;
+ NOT(CONTAINS(RecordType.DeveloperName,&quot;360&quot;))</errorConditionFormula>
+    <errorMessage>לא ניתן לזמן לו תורים לרופא שלא במרכז מומחים או אין לו מרפאת QF</errorMessage>
+</ValidationRule>

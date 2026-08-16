@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>payer_factor_ID__c</fullName>
+    <description>HARDCODED ID :(
+transalte picklist to lookup value (hidden)</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Insurer_factor__c, &quot;1&quot;) &amp;&amp; ISPICKVAL( Other_Health_Services__c , &quot;50&quot;), &apos;a0e4J000000hk1ZQAQ&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;1&quot;) &amp;&amp; ISPICKVAL( Other_Health_Services__c , &quot;55&quot;), &apos;a0e4J000000hk1nQAA&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;1&quot;) &amp;&amp; NOT(ISPICKVAL( Other_Health_Services__c , &quot;50&quot;)) &amp;&amp; NOT(ISPICKVAL( Other_Health_Services__c , &quot;55&quot;)), &apos;a0e4J000000hk52QAA&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;2&quot;) &amp;&amp; ISPICKVAL( Other_Health_Services__c , &quot;10&quot;), &apos;a0e4J000000hk5FQAQ&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;2&quot;) &amp;&amp; ISPICKVAL( Other_Health_Services__c , &quot;15&quot;), &apos;a0e4J000000hk5GQAQ&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;2&quot;) &amp;&amp; ISPICKVAL( Other_Health_Services__c , &quot;16&quot;), &apos;a0e4J000000hk5rQAA&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;2&quot;) &amp;&amp; NOT(ISPICKVAL( Other_Health_Services__c , &quot;10&quot;)) &amp;&amp; NOT(ISPICKVAL( Other_Health_Services__c , &quot;15&quot;)) &amp;&amp; NOT(ISPICKVAL( Other_Health_Services__c , &quot;16&quot;)), &apos;a0e4J000000hk5iQAA&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;3&quot;), &apos;a0e4J000000hk5YQAQ&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;4&quot;) &amp;&amp; ISPICKVAL( Other_Health_Services__c , &quot;60&quot;), &apos;a0e4J000000hk5DQAQ&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;4&quot;) &amp;&amp; NOT(ISPICKVAL( Other_Health_Services__c , &quot;60&quot;)), &apos;a0e4J000000hk5OQAQ&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;2000&quot;), &apos;a0e4J000000hk4zQAA&apos;,
+IF(ISPICKVAL(Insurer_factor__c, &quot;0&quot;), &apos;a0e4J000000hk2qQAA&apos;,
+IF(ISPICKVAL(ID_Type__c,&apos;9&apos;), &apos;a0e4J000000hk4uQAA&apos;,
+IF(ISBLANK(Payer_Factor_Insurance__c),&apos;a0e4J000000hk2qQAA&apos; , Payer_Factor_Insurance__c)
+)  
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>payer factor ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

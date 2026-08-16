@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS2Days__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>אינדיקציה ליצירת רשומת סמס עבור הנחיות יומיים לפני הבדיקה לבדיקות מסוג קולונוסקופיה</description>
+    <label>SMS 2 Days</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

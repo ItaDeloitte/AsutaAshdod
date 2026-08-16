@@ -1,0 +1,17 @@
+.THIS {
+  /* ! */
+}
+
+.THIS .buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.THIS .slds-button {
+  margin-bottom: 10px;
+}
+
+.THIS .single-btn-wrapper {
+  margin-left: 0.25rem;
+}

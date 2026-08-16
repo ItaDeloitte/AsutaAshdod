@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>תחנת איסוף</label>
+    <name>CollectionStation__c</name>
+    <picklistValues>
+        <masterLabel>Mega-Lab</masterLabel>
+        <translation>מגלאב</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patho‑Lab</masterLabel>
+        <translation>פתולאב</translation>
+    </picklistValues>
+</CustomFieldTranslation>

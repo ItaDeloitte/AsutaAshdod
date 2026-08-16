@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyActiveCampaigns</fullName>
+    <columns>CAMPAIGN.NAME</columns>
+    <columns>CAMPAIGN.START_DATE</columns>
+    <columns>CAMPAIGN.END_DATE</columns>
+    <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+    <columns>CAMPAIGN.STATUS</columns>
+    <columns>CAMPAIGN.ID</columns>
+    <columns>CampaignPhone__c</columns>
+    <columns>CAMPAIGN.CREATED_DATE</columns>
+    <columns>AutoResponseMessage__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>PARENT_ID</columns>
+    <columns>CAMPAIGN.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>מבצעי הקידום הפעילים שלי</label>
+</ListView>

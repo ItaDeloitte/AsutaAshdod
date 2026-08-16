@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Choose_Branch</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(StageName, &quot;Waiting for matching meeting&quot;),
+    ISBLANK(TEXT(Branch__c)),
+    $RecordType.DeveloperName = &quot;Assuta_Optic&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Branch__c</errorDisplayField>
+    <errorMessage>Opp-001 - Please choose a branch</errorMessage>
+</ValidationRule>

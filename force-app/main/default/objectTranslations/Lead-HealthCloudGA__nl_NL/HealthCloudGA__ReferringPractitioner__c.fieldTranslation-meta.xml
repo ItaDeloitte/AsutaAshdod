@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Verwijzend praktiserend arts</label>
+    <name>HealthCloudGA__ReferringPractitioner__c</name>
+    <relationshipLabel>Leads (verwijzend praktiserend arts)</relationshipLabel>
+</CustomFieldTranslation>

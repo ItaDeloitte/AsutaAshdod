@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_appointment__c</fullName>
+    <description>שדה של תאריך התור.
+לשימוש במסמכים שיוצאים מהמערכת למטופלים.
+
+IF( Time_of_appointment__c = TIMEVALUE( DATETIMEVALUE(TODAY())),
+DATEVALUE(Appointment_Date_Time__c)+1, DATEVALUE(Appointment_Date_Time__c))</description>
+    <formula>IF(NOT(ISBLANK(Appointment_Date__c)),Appointment_Date__c,DATEVALUE( Appointment_Date_Time__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date of appointment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

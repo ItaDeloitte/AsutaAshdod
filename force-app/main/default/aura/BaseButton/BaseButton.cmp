@@ -1,0 +1,34 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="label" type="String" />
+  <aura:attribute name="class" type="String" />
+  <aura:attribute name="disabled" type="Boolean" default="false" />
+  <aura:attribute name="loading" type="Boolean" default="false" />
+  <aura:attribute name="outline" type="Boolean" default="false" />
+  <aura:attribute name="variant" type="String" default="base" />
+  <aura:attribute name="name" type="String" />
+  <aura:attribute name="iconName" type="String" />
+  <aura:attribute name="iconPosition" type="String" default="left" />
+  <aura:attribute name="type" type="String" default="button" />
+  <aura:attribute name="title" type="String" />
+  <aura:attribute name="tabindex" type="Integer" />
+  <aura:attribute name="styleType" type="String" default="" /> <!-- ''|round-icon  -->
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <!-- events -->
+  <aura:registerEvent name="onfocus" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onblur" type="c:GenericComponentEvent" />
+  <aura:registerEvent name="onclick" type="c:GenericComponentEvent" />
+  <!-- methods -->
+  <aura:method name="focus" action="{!c.onFocus}" />
+
+
+  <lightning:button class="{!join(' ',
+          v.styleType=='round-icon'?'round-icon':'',
+          v.class
+        )}" name="{!v.name}" type="{!v.type}" onclick="{!c.click}" variant="{!v.variant}" onfocus="{!c.focus}"
+    onblur="{!c.blur}" title="{!v.title}" tabindex="{!v.tabIndex}" disabled="{!v.disabled}" iconName="{!v.iconName}"
+    iconPosition="{!v.iconPosition}" aura:id="button">
+    <span class="label">{!v.body}{!v.label}</span>
+  </lightning:button>
+</aura:component>

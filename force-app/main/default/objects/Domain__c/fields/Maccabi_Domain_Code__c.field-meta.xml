@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maccabi_Domain_Code__c</fullName>
+    <description>כאשר מושכים הפניות ממכבי יש אפשרות לשלוח תחום ולקבל הפניות שקשורות רק לתחום הזה. שדה זה יכיל את הערך הזה</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Maccabi Referral Code</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

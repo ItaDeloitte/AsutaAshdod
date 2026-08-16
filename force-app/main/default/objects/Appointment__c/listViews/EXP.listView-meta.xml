@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EXP</fullName>
+    <columns>Patient_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>formtitan_experts_survey_link__c</columns>
+    <columns>doc_survey_expert_send__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Appointment_Date__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>patient_been_in_meeting__c</columns>
+    <columns>reason_why_not_new_app__c</columns>
+    <columns>no_show_reason__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>sched_new_app__c</columns>
+    <columns>rec_extra_treat__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Experts</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>מטופל אישר שנכח בפגישה,מטופל אישר שלא נכח בפגישה</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>מילר אהוד,ולד אוריאל,פפו יצחק,מחאג&apos;נה אחמד,חן דוד,חוסאם מאדי,גינדין יעקב,רמון יעקב</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>contains</operation>
+        <value>ייעוץ רופא-מרכז מומחים,ייעוץ רופא SAME DAY-מרכז מומחים</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/1/2022</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>YESTERDAY</value>
+    </filters>
+    <filters>
+        <field>PayerFactor__c</field>
+        <operation>contains</operation>
+        <value>כלל,הפניקס,פרטי</value>
+    </filters>
+    <label>סקרים סגורים - מרכז מומחים</label>
+</ListView>

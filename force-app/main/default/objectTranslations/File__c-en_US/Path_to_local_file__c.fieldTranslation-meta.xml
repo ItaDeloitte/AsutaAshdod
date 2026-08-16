@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- יש להעתיק את כל הנתיב ולהדביק בשורת הכתובת בדפדפן כדי לפתוח את הקובץ --></help>
+    <label><!-- Path to local file --></label>
+    <name>Path_to_local_file__c</name>
+</CustomFieldTranslation>

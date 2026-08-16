@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assuta_Ashdod_Bot_LiveChatTranscript</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Assuta Ashdod Bot Whatsapp</label>
+    <queue>Assuta_Ashdod_Bot</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

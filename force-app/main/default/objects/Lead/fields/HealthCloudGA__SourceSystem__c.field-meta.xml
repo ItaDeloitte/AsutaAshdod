@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__SourceSystem__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Identifies the system that created the record and owns update rights to it.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>מזהה את המערכת שבה נוצרה הרשומה ושבה נמצאות ההרשאות לעדכן אותה. מוגדר כברירת מחדל כ-Health1 עבור רשומות שנוצרו באופן ידני.</inlineHelpText>
+    <label>Source System</label>
+    <length>64</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

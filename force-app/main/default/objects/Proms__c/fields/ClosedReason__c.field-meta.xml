@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedReason__c</fullName>
+    <label>Closed Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>לא מעוניין למלא הסקר</fullName>
+                <default>false</default>
+                <label>לא מעוניין למלא הסקר</label>
+            </value>
+            <value>
+                <fullName>כפילות</fullName>
+                <default>false</default>
+                <label>כפילות</label>
+            </value>
+            <value>
+                <fullName>פג תוקף</fullName>
+                <default>false</default>
+                <label>פג תוקף</label>
+            </value>
+            <value>
+                <fullName>מטופל מילא</fullName>
+                <default>false</default>
+                <label>מטופל מילא</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

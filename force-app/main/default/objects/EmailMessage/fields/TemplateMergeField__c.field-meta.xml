@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TemplateMergeField__c</fullName>
+    <label>Template Merge Field</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AppointmentId__c</fullName>
+                <default>false</default>
+                <label>Appointment</label>
+            </value>
+            <value>
+                <fullName>ParentId</fullName>
+                <default>false</default>
+                <label>Parent Case</label>
+            </value>
+            <value>
+                <fullName>AccountId__c</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Survey_Taker__c</fullName>
+                <default>false</default>
+                <label>Survey Taker</label>
+            </value>
+            <value>
+                <fullName>OpportunityId__c</fullName>
+                <default>false</default>
+                <label>Opportunity</label>
+            </value>
+            <value>
+                <fullName>LeadId__c</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>Medical_Aid_Appointment__c</fullName>
+                <default>false</default>
+                <label>Medical Aid Appointment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

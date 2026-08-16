@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason_5__c</fullName>
+    <label>Case Reason 5</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>חסר צד</fullName>
+                <default>false</default>
+                <label>חסר צד</label>
+            </value>
+            <value>
+                <fullName>צד שגוי</fullName>
+                <default>false</default>
+                <label>צד שגוי</label>
+            </value>
+            <value>
+                <fullName>שם ניתוח לא תואם את מהלך הניתוח</fullName>
+                <default>false</default>
+                <label>שם ניתוח לא תואם את מהלך הניתוח</label>
+            </value>
+            <value>
+                <fullName>תיעוד מכלי פתולוגיה לא תקין</fullName>
+                <default>false</default>
+                <label>תיעוד מכלי פתולוגיה לא תקין</label>
+            </value>
+            <value>
+                <fullName>עדכון ידני ללא עדכון בתיק קליני</fullName>
+                <default>false</default>
+                <label>עדכון ידני ללא עדכון בתיק קליני</label>
+            </value>
+            <value>
+                <fullName>חסר טופס</fullName>
+                <default>false</default>
+                <label>חסר טופס</label>
+            </value>
+            <value>
+                <fullName>חסר תאריך</fullName>
+                <default>false</default>
+                <label>חסר תאריך</label>
+            </value>
+            <value>
+                <fullName>חסר שם רופא מרדים/ מנתח</fullName>
+                <default>false</default>
+                <label>חסר שם רופא מרדים/ מנתח</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד מהלך ניתוח</fullName>
+                <default>false</default>
+                <label>פער בתיעוד מהלך ניתוח</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד אובדן דם</fullName>
+                <default>false</default>
+                <label>פער בתיעוד אובדן דם</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד סיבוכים בניתוח</fullName>
+                <default>false</default>
+                <label>פער בתיעוד סיבוכים בניתוח</label>
+            </value>
+            <value>
+                <fullName>פער בתיעוד מצב המטופל בסיום הניתוח</fullName>
+                <default>false</default>
+                <label>פער בתיעוד מצב המטופל בסיום הניתוח</label>
+            </value>
+            <value>
+                <fullName>חסר תיעוד מתן דם</fullName>
+                <default>false</default>
+                <label>חסר תיעוד מתן דם</label>
+            </value>
+            <value>
+                <fullName>תיעוד פעולה לא מלא/לא תקין</fullName>
+                <default>false</default>
+                <label>תיעוד פעולה לא מלא/לא תקין</label>
+            </value>
+            <value>
+                <fullName>תיעוד אבחנות לא מלא/לא תקין</fullName>
+                <default>false</default>
+                <label>תיעוד אבחנות לא מלא/לא תקין</label>
+            </value>
+            <value>
+                <fullName>מתן המלצות בשחרור לתרופה עבורה רשומה רגישות בתיק המטופל</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>מתן המלצות בשחרור לתרופה עבורה רשומה רגישות בתיק המטופל</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

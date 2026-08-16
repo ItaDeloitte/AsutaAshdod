@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Oncology Institute Treatment Status --></label>
+    <name>Oncology_Institute_Treatment_Status__c</name>
+    <picklistValues>
+        <masterLabel>Closed Without Outbond Call</masterLabel>
+        <translation><!-- Closed Without Outbond Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contacted Pacient And Closed Treatment</masterLabel>
+        <translation><!-- Contacted Pacient And Closed Treatment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled For Chemotherapy</masterLabel>
+        <translation><!-- Scheduled For Chemotherapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled For Oncologist</masterLabel>
+        <translation><!-- Scheduled For Oncologist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled For Radiotherapy</masterLabel>
+        <translation><!-- Scheduled For Radiotherapy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

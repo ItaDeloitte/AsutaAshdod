@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test_gal</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>Campaign__c</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LostReason__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CallBack__c</columns>
+    <columns>LeadDescription__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Campaign__c</field>
+        <operation>equals</operation>
+        <value>אבחון מהיר - טופס עמוד תוכן באתר</value>
+    </filters>
+    <label>אבחון מהיר - טופס עמוד תוכן באתר</label>
+</ListView>

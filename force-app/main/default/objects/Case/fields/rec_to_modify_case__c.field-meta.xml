@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rec_to_modify_case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Latest Recommendation Linked to Case</label>
+    <referenceTo>Recommendations_after_exam__c</referenceTo>
+    <relationshipLabel>Cases (ההמלצה האחרונה שמקושרת לפנייה)</relationshipLabel>
+    <relationshipName>Cases1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<template>
+  <template if:true={hasErrors}>
+    <c-alert-message theme="error" closeable={closeable} onclosealert={closeHandler}>
+      <div class="slds-text-align_center">
+        <div if:true={error}>
+          <lightning-formatted-rich-text key={error} value={error}>
+          </lightning-formatted-rich-text>
+        </div>
+        <template for:each={errors} for:item="error">
+          <div key={error}>
+            <lightning-formatted-rich-text value={error}>
+            </lightning-formatted-rich-text>
+          </div>
+        </template>
+      </div>
+    </c-alert-message>
+  </template>
+</template>

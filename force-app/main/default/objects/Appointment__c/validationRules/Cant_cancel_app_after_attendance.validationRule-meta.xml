@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_cancel_app_after_attendance</fullName>
+    <active>true</active>
+    <description>מטופל שכבר נכח בתור לא יוכל לעדכן לאחריו שהוא מבטלו</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+ISPICKVAL(Appointment_Status__c, &apos;TookPlace&apos;) &amp;&amp;
+ISPICKVAL(Remainder_status__c , &apos;השיב להודעה בשלילה&apos;)</errorConditionFormula>
+    <errorMessage>המטופל כבר נכח בתור ולכן לא יכול לבטלו</errorMessage>
+</ValidationRule>

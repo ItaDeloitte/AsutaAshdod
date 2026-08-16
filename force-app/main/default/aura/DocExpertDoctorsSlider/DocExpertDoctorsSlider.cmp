@@ -1,0 +1,57 @@
+<aura:component extends="c:DocExpertBase">
+  <!-- require -->
+  <ltng:require aura:id="swiper" styles="{!$Resource.swiper+'/dist/css/swiper.min.css'}"
+                scripts="{!$Resource.swiper+'/dist/js/swiper.min.js'}" afterScriptsLoaded="{!c.onSwiperLoaded}" />
+  <!-- attrs -->
+  <aura:attribute name="slides" type="Aura.Component[]" />
+  <aura:attribute name="doctors" type="List" default="[]" />
+  <aura:attribute name="virtualData" type="Map" default="{slides:[]}" />
+  <aura:attribute name="recommendedDoctors" type="List" default="[]" />
+  <aura:attribute name="selectedDoctorId" type="String" />
+  <aura:attribute name="recordId" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="change" value="{!v.doctors}" action="{!c.onChangeDoctors}" />
+  <!-- events -->
+  <aura:registerEvent name="onSlideMove" type="c:GenericComponentEvent" />
+  <!-- methods -->
+  <aura:method name="updateHeight" action="{!c.onUpdateHeight}" />
+  <aura:method name="getSwiper" action="{!c.onGetSwiper}">
+  </aura:method>
+  <aura:method name="slideTo" action="{!c.onSlideTo}">
+    <aura:attribute name="index" type="Integer" />
+  </aura:method>
+
+
+
+  <div>
+    <div class="position-relative wrapper">
+      <div aura:id="swiperContainer" class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- {!v.slides} -->
+          <aura:iteration items="{!v.virtualData.slides}" var="doctor">
+            <div class="swiper-slide doctor-slide" style="{!'left:'+v.virtualData.offset+'px;'}">
+              <c:DocExpertDoctor doctor="{!doctor}" recommendedDoctors="{!v.recommendedDoctors}"
+                                 isSelected="{!v.selectedDoctorId==doctor.doctorId}" recordId="{!v.recordId}" />
+            </div>
+          </aura:iteration>
+        </div>
+
+      </div>
+      <div class="{!join(' ',
+      'buttons-wrapper',
+      v.virtualData.to1==v.doctors.length-1?'next-hidden':''
+      )}">
+        <div aura:id="swiperButton" class="swiper-button-prev">
+          <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-left'}" />
+        </div>
+        <div aura:id="swiperButton" class="swiper-button-next">
+          <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-left'}" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</aura:component>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manager Ashdod ApexPage PermissionSet</label>
+    <pageAccesses>
+        <apexPage>ShowDocFromPortal</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

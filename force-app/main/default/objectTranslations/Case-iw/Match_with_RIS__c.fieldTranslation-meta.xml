@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>התאמה עם RIS</label>
+    <name>Match_with_RIS__c</name>
+    <picklistValues>
+        <masterLabel>Not Yet checked</masterLabel>
+        <translation>טרם נבדק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not required</masterLabel>
+        <translation>לא נדרש</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>recommendations match</masterLabel>
+        <translation>יש התאמה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>recommendations mismatch</masterLabel>
+        <translation>אין התאמה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PayerFactors__c</fullName>
+    <description>גורמים משלמים</description>
+    <label>PayerFactors</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>כללית</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <label>לאומית</label>
+            </value>
+            <value>
+                <fullName>United</fullName>
+                <default>false</default>
+                <label>מאוחדת</label>
+            </value>
+            <value>
+                <fullName>Maccabi</fullName>
+                <default>false</default>
+                <label>מכבי</label>
+            </value>
+            <value>
+                <fullName>Budget</fullName>
+                <default>false</default>
+                <label>ענף תקציבים</label>
+            </value>
+            <value>
+                <fullName>privet</fullName>
+                <default>false</default>
+                <label>פרטי</label>
+            </value>
+            <value>
+                <fullName>Tourist</fullName>
+                <default>false</default>
+                <label>תייר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

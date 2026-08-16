@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>條件</label>
+    <name>HealthCloudGA__Condition__c</name>
+    <relationshipLabel>EHR 條件相關項目</relationshipLabel>
+</CustomFieldTranslation>

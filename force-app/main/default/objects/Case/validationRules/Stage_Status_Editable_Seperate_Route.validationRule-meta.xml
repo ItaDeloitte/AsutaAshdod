@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Status_Editable_Seperate_Route</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL(Case_Route__c , &quot;Seperate_Route&quot;)) 
+&amp;&amp;
+OR(ISCHANGED(Partner_Stage__c),ISCHANGED(Female_Stage__c))</errorConditionFormula>
+    <errorDisplayField>Follow_Up_Status_Changed_Date__c</errorDisplayField>
+    <errorMessage>שדות אלו ניתנים לעריכה רק כאשר מסלול הפנייה הינו &quot;בנפרד&quot;</errorMessage>
+</ValidationRule>

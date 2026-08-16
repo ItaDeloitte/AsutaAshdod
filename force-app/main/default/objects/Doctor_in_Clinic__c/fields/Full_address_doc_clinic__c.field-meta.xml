@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_address_doc_clinic__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(Clinic__r.street_address__c),&quot;&quot;,&quot;רחוב &quot; + Clinic__r.street_address__c + &quot;, &quot;) + IF(ISBLANK(Room__c),&quot;&quot;,&quot;חדר &quot; + Room__c + &quot;, &quot;) + IF(ISBLANK(Floor__c),&quot;&quot;,&quot;קומה &quot; + Floor__c + &quot; &quot;) + IF(ISBLANK(Clinic__r.city_hidden__c),&quot;&quot;,Clinic__r.city_hidden__c + &quot; &quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Full Address Doctor Clinic</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

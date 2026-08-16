@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendDate4DaysBefore__c</fullName>
+    <description>תאריך שבו אמור להישלח הסמס של 4 ימי לפני הבדיקה (התאריך מכיל בתוכו התייחסות לסופ&quot;ש וחגים)- לשימוש בפגישות מסוג קולונסקופיה</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Send Date 4 Days Before</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

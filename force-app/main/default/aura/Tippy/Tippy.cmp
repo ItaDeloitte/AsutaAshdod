@@ -1,0 +1,16 @@
+<aura:component extends="c:BaseComponent">
+  <!-- require -->
+  <ltng:require styles="{!$Resource.tippy+'/index.css'}" scripts="{!$Resource.tippy+'/umd/index.all.min.js'}"
+    afterScriptsLoaded="{!c.onScriptsLoaded}" />
+  <!-- attrs -->
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div>
+    <button aura:id="triggerBtn">Tooltip</button>
+  </div>
+
+</aura:component>

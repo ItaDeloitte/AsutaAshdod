@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Referral Error Code --></label>
+    <name>ReferralErrorCode__c</name>
+    <picklistValues>
+        <masterLabel>אין מסמכים לת&quot;ז</masterLabel>
+        <translation><!-- אין מסמכים לת&quot;ז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרם התקבלה תשובה</masterLabel>
+        <translation><!-- טרם התקבלה תשובה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא כל המסמכים הצלחנו לעתק</masterLabel>
+        <translation><!-- לא כל המסמכים הצלחנו לעתק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נכשל</masterLabel>
+        <translation><!-- נכשל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקין</masterLabel>
+        <translation><!-- תקין --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

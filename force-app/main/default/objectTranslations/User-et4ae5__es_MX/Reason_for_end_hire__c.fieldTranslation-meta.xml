@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason For End Hire --></label>
+    <name>Reason_for_end_hire__c</name>
+    <picklistValues>
+        <masterLabel>התפטרות</masterLabel>
+        <translation><!-- התפטרות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חל&quot;ד</masterLabel>
+        <translation><!-- חל&quot;ד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חל&quot;ת</masterLabel>
+        <translation><!-- חל&quot;ת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניוד</masterLabel>
+        <translation><!-- ניוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פיטורין</masterLabel>
+        <translation><!-- פיטורין --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

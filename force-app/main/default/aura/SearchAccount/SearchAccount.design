@@ -1,0 +1,4 @@
+<design:component>
+  <design:attribute name="showCancelButton" label="Show Cancel Button" required="false" />
+  <design:attribute name="iconSrc" label="Icon Url" required="false" />
+</design:component>

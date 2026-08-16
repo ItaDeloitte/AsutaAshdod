@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תגובה אוטומטית לקייסים שנפתחים באמצעות מייל טו קייס בפניות הציבור- אשדוד</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PublicInquieryAutoResponseAshdod</name>
+    <style>none</style>
+    <subject>אסותא פניות הציבור אשדוד</subject>
+    <textOnly>פונה יקר/ה
+ תודה על פנייתך.
+על מנת להבטיח התייחסות מלאה ושלמה לפנייתך,
+אנא וודא/י כי פנייתך כוללת במידת הצורך פרטים מזהים מלאים, לרבות: מספר תעודת זהות של המטופל/ת
+וכן פרטי התקשרות מלאים של המטופל/ת או מי מטעמו/ה.
+
+אנו נטפל בפנייתך במלוא תשומת הלב ובגמר הבירור נשיב לך.
+
+בברכת בריאות טובה,
+צוות פניות הציבור
+בית החולים האוניברסיטאי אסותא אשדוד ע&quot;ש סמסון</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- IVF Site --></label>
+    <name>IVF_site__c</name>
+    <picklistValues>
+        <masterLabel>אשדוד כלניות</masterLabel>
+        <translation><!-- אשדוד כלניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>באר שבע</masterLabel>
+        <translation><!-- באר שבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיפה</masterLabel>
+        <translation><!-- חיפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ראשון לציון</masterLabel>
+        <translation><!-- ראשון לציון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רמת החייל</masterLabel>
+        <translation><!-- רמת החייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רעננה</masterLabel>
+        <translation><!-- רעננה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FileTypeForWAInPrivateZone__c</fullName>
+    <label>File Type For WA In Private Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TestResults</fullName>
+                <default>false</default>
+                <label>Test Results</label>
+            </value>
+            <value>
+                <fullName>GeneralDocument</fullName>
+                <default>false</default>
+                <label>General Document</label>
+            </value>
+            <value>
+                <fullName>AppointmentSummary</fullName>
+                <default>false</default>
+                <label>Appointment Summary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomGoalName</fullName>
+    <inlineHelpText>בעת יצירת יעדים מותאמים אישית, נשתמש בהגדרה זו במקום בשם של הגדרת היעד, שיהיה כללי יותר, כגון &apos;יעד פיננסי מותאם אישית&apos;.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

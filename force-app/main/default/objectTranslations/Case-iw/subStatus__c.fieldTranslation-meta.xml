@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>תת סטטוס</label>
+    <name>subStatus__c</name>
+    <picklistValues>
+        <masterLabel>Didn&apos;t execute</masterLabel>
+        <translation>לא יצא לפועל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Don&apos;t need next appointment</masterLabel>
+        <translation>אין צורך בפגישת המשך</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Next appointment scheduled</masterLabel>
+        <translation>תואמה פגישת המשך</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No answer</masterLabel>
+        <translation>אין מענה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested in next appointment</masterLabel>
+        <translation>לא מעוניין בפגישת המשך</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Survey sent</masterLabel>
+        <translation>סקר נשלח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for agent</masterLabel>
+        <translation>ממתין לחזרת נציג</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for appointment</masterLabel>
+        <translation>ממתין לתיאום תור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for reminder</masterLabel>
+        <translation>ממתין לתזכור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>appointment was not summoned</masterLabel>
+        <translation>פגישה לא תואמה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>פיצוי/החזר/אי חיוב</label>
+    <name>Refund_NotApproved__c</name>
+    <picklistValues>
+        <masterLabel>אי חיוב</masterLabel>
+        <translation><!-- אי חיוב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החזר</masterLabel>
+        <translation><!-- החזר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פיצוי</masterLabel>
+        <translation><!-- פיצוי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

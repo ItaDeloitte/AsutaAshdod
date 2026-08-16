@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Restriction on displaying calendars --></label>
+    <name>RestrictionOnDisplayingCalendars__c</name>
+    <picklistValues>
+        <masterLabel>Block24</masterLabel>
+        <translation><!-- Block24 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BlockToday</masterLabel>
+        <translation><!-- BlockToday --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NoLimit</masterLabel>
+        <translation><!-- NoLimit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

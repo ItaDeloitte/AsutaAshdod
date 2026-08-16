@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>משלם בתיק</label>
+    <name>Payer__c</name>
+    <picklistValues>
+        <masterLabel>אישה</masterLabel>
+        <translation><!-- אישה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גבר</masterLabel>
+        <translation><!-- גבר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרם נקבע</masterLabel>
+        <translation><!-- טרם נקבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יש לבדוק</masterLabel>
+        <translation><!-- יש לבדוק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא רלוונטי</masterLabel>
+        <translation><!-- לא רלוונטי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

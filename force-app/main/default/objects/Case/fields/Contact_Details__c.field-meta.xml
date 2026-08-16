@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Details__c</fullName>
+    <description>האם ניתן לשלוח לאיש קשר דיוור?</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( ContactId ), &quot;Empty&quot;, IF(
+(ISBLANK(email_from_patient__c) &amp;&amp; ISBLANK( SMS_Phone_Number__c )) || (
+NOT(ISPICKVAL(Contact.Account.Mailing_approval__c,&quot;מאשר דיוור - הכל&quot;)) &amp;&amp;
+NOT(ISPICKVAL(Contact.Account.Mailing_approval__c,
+&quot;מאשר דיוור - שירותי&quot;)) || ISBLANK(  TEXT(preferd_chanal_case__c)  )
+), &quot;Blocked&quot;, &quot;Valid&quot;
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contact Details</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

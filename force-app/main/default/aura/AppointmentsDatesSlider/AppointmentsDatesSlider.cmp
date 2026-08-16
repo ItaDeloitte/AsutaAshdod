@@ -1,0 +1,36 @@
+<aura:component extends="c:AppointmentsBase">
+  <!-- require -->
+  <ltng:require aura:id="swiper" styles="{!$Resource.swiper+'/dist/css/swiper.min.css'}"
+    scripts="{!$Resource.swiper+'/dist/js/swiper.min.js'}" afterScriptsLoaded="{!c.onSwiperLoaded}" />
+  <!-- attrs -->
+  <aura:attribute name="slides" type="Aura.Component[]" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <aura:registerEvent name="onSlideMove" type="c:GenericComponentEvent" />
+  <!-- methods -->
+  <aura:method name="updateHeight" action="{!c.onUpdateHeight}" />
+
+
+  <div>
+    <div class="position-relative wrapper">
+      <div aura:id="swiperContainer" class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          {!v.slides}
+        </div>
+
+      </div>
+
+      <div aura:id="swiperButton" class="swiper-button-prev">
+        <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-left'}" />
+      </div>
+      <div aura:id="swiperButton" class="swiper-button-next">
+        <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-left'}" />
+      </div>
+    </div>
+
+  </div>
+
+</aura:component>

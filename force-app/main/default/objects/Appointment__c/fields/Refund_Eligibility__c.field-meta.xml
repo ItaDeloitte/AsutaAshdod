@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refund_Eligibility__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+NOT(ISBLANK(ReceiptNum__c)),
+NOT(ISBLANK(Accession_Number__c)),
+OR(
+RecordType.DeveloperName = &quot;Institutes&quot;,
+RecordType.DeveloperName = &quot;Experts&quot;
+),
+Medical_Procedure__r.Are_services_private__c = TRUE,
+ISPICKVAL(Appointment_Status__c, &apos;Canceled&apos;),
+ISPICKVAL(PaymentStatus__c, &apos;Valid&apos;),
+OR(
+ISPICKVAL(Canceled_Reason__c, &apos;59&apos;),
+ISPICKVAL(Canceled_Reason__c, &apos;60&apos;)
+)
+),
+IF(
+OR(
+PayerFactor__r.InsuranceCode__c = &apos;11&apos;,
+PayerFactor__r.InsuranceCode__c = &apos;1112&apos;
+),
+&quot;🟢 זיכוי מלא&quot;,
+IF(
+(Appointment_Date_Time__c - Cancellation_date_time__c) * 24 &gt;= 24,
+&quot;🟢 זיכוי מלא&quot;,
+IF(
+(Appointment_Date_Time__c - Cancellation_date_time__c) * 24 &gt;= 12,
+&quot;🟡 זיכוי 50%&quot;,
+IF(
+(Appointment_Date_Time__c - Cancellation_date_time__c) * 24 &gt;= 4,
+&quot;🔴 לא זכאי&quot;,
+&quot;🔴 לא זכאי&quot;
+)
+)
+)
+),
+&quot;&quot;
+)</formula>
+    <label>Refund Eligibility</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New requirement from 20223 story</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Canceled Appointment Ashdod - 20223</name>
+    <style>none</style>
+    <subject>ביטול תור באסותא אשדוד</subject>
+    <textOnly>Assuta Mail
+
+אם אינך רואה מייל זה לחץ/י כאן
+
+ברוך הבא לאסותא
+
+שלום
+
+לך
+
+מה
+
+נשמע</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

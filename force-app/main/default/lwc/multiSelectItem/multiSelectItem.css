@@ -1,0 +1,33 @@
+.no-selection {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.select-option__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.select-option__icon {
+  min-width: 32px;
+  height: 32px;
+}
+
+.slds-listbox__option {
+  padding: 0 0.5rem 0 0.75rem;
+  align-items: center;
+  min-height: 35px;
+}

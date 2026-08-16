@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבת העברה לניהול סיכונים</label>
+    <name>Risk_Description__c</name>
+    <picklistValues>
+        <masterLabel>Cancellation Of Appointments</masterLabel>
+        <translation>ביטול התורים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do Not Want To Continue</masterLabel>
+        <translation>לא מעוניינת להמשיך בתהליך</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Answer More Than 3 Times</masterLabel>
+        <translation>אין מענה מעל 3 פעמים</translation>
+    </picklistValues>
+</CustomFieldTranslation>

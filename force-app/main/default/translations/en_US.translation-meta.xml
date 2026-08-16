@@ -1,0 +1,1374 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <reportTypes>
+        <description><!-- Accounts with Doctor Medical Procedures with Appointments --></description>
+        <label><!-- Accounts with Doctor Medical Procedures with Appointments --></label>
+        <name>Accounts_with_Doctor_Medical_Procedures_with_Appointments</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Doctor Medical Procedures --></label>
+            <name>Doctor Medical Procedures</name>
+        </sections>
+        <sections>
+            <label><!-- חשבונות --></label>
+            <name>חשבונות</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Entitlements with Contacts --></description>
+        <label><!-- Accounts with Entitlements with Contacts --></label>
+        <name>Accounts_with_Entitlements_with_Contacts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+        <sections>
+            <label><!-- חשבונות --></label>
+            <name>חשבונות</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Assuta Files And Accounts --></description>
+        <label><!-- Assuta Files And Accounts --></label>
+        <name>Assuta_Files_And_Accounts</name>
+        <sections>
+            <columns>
+                <label><!-- Assuta Files : שם מטופל : Men&apos;s Health Clinic Patient --></label>
+                <name>Assuta Files : שם מטופל : Men&apos;s Health Clinic Patient</name>
+            </columns>
+            <columns>
+                <label><!-- Assuta Files : שם מטופל : Men&apos;s Health Clinic Status --></label>
+                <name>Assuta Files : שם מטופל : Men&apos;s Health Clinic Status</name>
+            </columns>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Assuta Files : פעולה רפואית : Domain : Domain Code --></label>
+                <name>Assuta Files : פעולה רפואית : Domain : Domain Code</name>
+            </columns>
+            <label><!-- Appointment --></label>
+            <name>Appointment</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Administrative Control --></label>
+                <name>Administrative Control</name>
+            </columns>
+            <columns>
+                <label><!-- Appointment --></label>
+                <name>Appointment</name>
+            </columns>
+            <columns>
+                <label><!-- Approved Amount Anesthetist --></label>
+                <name>Approved Amount Anesthetist</name>
+            </columns>
+            <columns>
+                <label><!-- AshdodFile --></label>
+                <name>AshdodFile</name>
+            </columns>
+            <columns>
+                <label><!-- Assuta Dept Description --></label>
+                <name>Assuta Dept Description</name>
+            </columns>
+            <columns>
+                <label><!-- Assuta Files ID --></label>
+                <name>Assuta Files ID</name>
+            </columns>
+            <columns>
+                <label><!-- Branch Phone --></label>
+                <name>Branch Phone</name>
+            </columns>
+            <columns>
+                <label><!-- Complaints --></label>
+                <name>Complaints</name>
+            </columns>
+            <columns>
+                <label><!-- Contact --></label>
+                <name>Contact</name>
+            </columns>
+            <columns>
+                <label><!-- Content Version Id --></label>
+                <name>Content Version Id</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Date Received --></label>
+                <name>Date Received</name>
+            </columns>
+            <columns>
+                <label><!-- Date Time of the appointment --></label>
+                <name>Date Time of the appointment</name>
+            </columns>
+            <columns>
+                <label><!-- Date of commitment --></label>
+                <name>Date of commitment</name>
+            </columns>
+            <columns>
+                <label><!-- Deductibles --></label>
+                <name>Deductibles</name>
+            </columns>
+            <columns>
+                <label><!-- Deductibles Hospitalization --></label>
+                <name>Deductibles Hospitalization</name>
+            </columns>
+            <columns>
+                <label><!-- Description --></label>
+                <name>Description</name>
+            </columns>
+            <columns>
+                <label><!-- Doctor Address --></label>
+                <name>Doctor Address</name>
+            </columns>
+            <columns>
+                <label><!-- Doctor Code --></label>
+                <name>Doctor Code</name>
+            </columns>
+            <columns>
+                <label><!-- Doctor Phone Number --></label>
+                <name>Doctor Phone Number</name>
+            </columns>
+            <columns>
+                <label><!-- Doctor Specialization --></label>
+                <name>Doctor Specialization</name>
+            </columns>
+            <columns>
+                <label><!-- ETL unique Identifier --></label>
+                <name>ETL unique Identifier</name>
+            </columns>
+            <columns>
+                <label><!-- End Date Commitment --></label>
+                <name>End Date Commitment</name>
+            </columns>
+            <columns>
+                <label><!-- File From App --></label>
+                <name>File From App</name>
+            </columns>
+            <columns>
+                <label><!-- File Name --></label>
+                <name>File Name</name>
+            </columns>
+            <columns>
+                <label><!-- File number from Portal --></label>
+                <name>File number from Portal</name>
+            </columns>
+            <columns>
+                <label><!-- FileExtension --></label>
+                <name>FileExtension</name>
+            </columns>
+            <columns>
+                <label><!-- FileSource --></label>
+                <name>FileSource</name>
+            </columns>
+            <columns>
+                <label><!-- Findings --></label>
+                <name>Findings</name>
+            </columns>
+            <columns>
+                <label><!-- ForwardToRIS --></label>
+                <name>ForwardToRIS</name>
+            </columns>
+            <columns>
+                <label><!-- GateScaner_FileScanStatus --></label>
+                <name>GateScaner_FileScanStatus</name>
+            </columns>
+            <columns>
+                <label><!-- GateScaner_Status --></label>
+                <name>GateScaner_Status</name>
+            </columns>
+            <columns>
+                <label><!-- GateScanner_JobId --></label>
+                <name>GateScanner_JobId</name>
+            </columns>
+            <columns>
+                <label><!-- IsSendAshdodPortal --></label>
+                <name>IsSendAshdodPortal</name>
+            </columns>
+            <columns>
+                <label><!-- Last Activity Date --></label>
+                <name>Last Activity Date</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Maccabi Doctor Code --></label>
+                <name>Maccabi Doctor Code</name>
+            </columns>
+            <columns>
+                <label><!-- Maccabi Doctor License --></label>
+                <name>Maccabi Doctor License</name>
+            </columns>
+            <columns>
+                <label><!-- Maccabi Doctor Name --></label>
+                <name>Maccabi Doctor Name</name>
+            </columns>
+            <columns>
+                <label><!-- Moked --></label>
+                <name>Moked</name>
+            </columns>
+            <columns>
+                <label><!-- Number of commitment --></label>
+                <name>Number of commitment</name>
+            </columns>
+            <columns>
+                <label><!-- Obligation Branch --></label>
+                <name>Obligation Branch</name>
+            </columns>
+            <columns>
+                <label><!-- OriginFileVisible --></label>
+                <name>OriginFileVisible</name>
+            </columns>
+            <columns>
+                <label><!-- Owner --></label>
+                <name>Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Pain Clinic Email --></label>
+                <name>Pain Clinic Email</name>
+            </columns>
+            <columns>
+                <label><!-- Pain Clinic Trigger --></label>
+                <name>Pain Clinic Trigger</name>
+            </columns>
+            <columns>
+                <label><!-- Path to local file --></label>
+                <name>Path to local file</name>
+            </columns>
+            <columns>
+                <label><!-- Portal Auto Number --></label>
+                <name>Portal Auto Number</name>
+            </columns>
+            <columns>
+                <label><!-- Portal_Status --></label>
+                <name>Portal_Status</name>
+            </columns>
+            <columns>
+                <label><!-- Record Type --></label>
+                <name>Record Type</name>
+            </columns>
+            <columns>
+                <label><!-- ReferralRequestNumber --></label>
+                <name>ReferralRequestNumber</name>
+            </columns>
+            <columns>
+                <label><!-- Refund for Doctor --></label>
+                <name>Refund for Doctor</name>
+            </columns>
+            <columns>
+                <label><!-- Refund for Implants --></label>
+                <name>Refund for Implants</name>
+            </columns>
+            <columns>
+                <label><!-- Select To Portal --></label>
+                <name>Select To Portal</name>
+            </columns>
+            <columns>
+                <label><!-- SendComSign --></label>
+                <name>SendComSign</name>
+            </columns>
+            <columns>
+                <label><!-- ServiceType --></label>
+                <name>ServiceType</name>
+            </columns>
+            <columns>
+                <label><!-- Site --></label>
+                <name>Site</name>
+            </columns>
+            <columns>
+                <label><!-- Sleep Clinic Trigger --></label>
+                <name>Sleep Clinic Trigger</name>
+            </columns>
+            <columns>
+                <label><!-- Status Ref Manual To Maccabi --></label>
+                <name>Status Ref Manual To Maccabi</name>
+            </columns>
+            <columns>
+                <label><!-- Status Send File to Tafnit --></label>
+                <name>Status Send File to Tafnit</name>
+            </columns>
+            <columns>
+                <label><!-- Status sent file to maccabi --></label>
+                <name>Status sent file to maccabi</name>
+            </columns>
+            <columns>
+                <label><!-- Subject --></label>
+                <name>Subject</name>
+            </columns>
+            <columns>
+                <label><!-- Title --></label>
+                <name>Title</name>
+            </columns>
+            <columns>
+                <label><!-- Transferred to Chameleon? --></label>
+                <name>Transferred to Chameleon?</name>
+            </columns>
+            <columns>
+                <label><!-- Treatment Date --></label>
+                <name>Treatment Date</name>
+            </columns>
+            <columns>
+                <label><!-- Treatment Description 1 --></label>
+                <name>Treatment Description 1</name>
+            </columns>
+            <columns>
+                <label><!-- Treatment Description 2 --></label>
+                <name>Treatment Description 2</name>
+            </columns>
+            <columns>
+                <label><!-- Treatment Description 3 --></label>
+                <name>Treatment Description 3</name>
+            </columns>
+            <columns>
+                <label><!-- Treatment Description 4 --></label>
+                <name>Treatment Description 4</name>
+            </columns>
+            <columns>
+                <label><!-- Treatment Instruction --></label>
+                <name>Treatment Instruction</name>
+            </columns>
+            <columns>
+                <label><!-- Urgency --></label>
+                <name>Urgency</name>
+            </columns>
+            <columns>
+                <label><!-- manipulation created time --></label>
+                <name>manipulation created time</name>
+            </columns>
+            <columns>
+                <label><!-- tesr --></label>
+                <name>tesr</name>
+            </columns>
+            <columns>
+                <label><!-- בקשה ידנית? --></label>
+                <name>בקשה ידנית?</name>
+            </columns>
+            <columns>
+                <label><!-- גורם משלם --></label>
+                <name>גורם משלם</name>
+            </columns>
+            <columns>
+                <label><!-- האם החייאת תפנית הצליחה --></label>
+                <name>האם החייאת תפנית הצליחה</name>
+            </columns>
+            <columns>
+                <label><!-- האם פתח את הקישור? --></label>
+                <name>האם פתח את הקישור?</name>
+            </columns>
+            <columns>
+                <label><!-- הועבר למערכת קלינית --></label>
+                <name>הועבר למערכת קלינית</name>
+            </columns>
+            <columns>
+                <label><!-- החזר בגין ניתוח --></label>
+                <name>החזר בגין ניתוח</name>
+            </columns>
+            <columns>
+                <label><!-- הערות --></label>
+                <name>הערות</name>
+            </columns>
+            <columns>
+                <label><!-- השתתפות בגין רופא --></label>
+                <name>השתתפות בגין רופא</name>
+            </columns>
+            <columns>
+                <label><!-- התחייבות ממכבי? --></label>
+                <name>התחייבות ממכבי?</name>
+            </columns>
+            <columns>
+                <label><!-- התמחות רופא מפנה --></label>
+                <name>התמחות רופא מפנה</name>
+            </columns>
+            <columns>
+                <label><!-- חתימה --></label>
+                <name>חתימה</name>
+            </columns>
+            <columns>
+                <label><!-- חתימה לקיט ניתוחי --></label>
+                <name>חתימה לקיט ניתוחי</name>
+            </columns>
+            <columns>
+                <label><!-- טלפון רופא מפנה --></label>
+                <name>טלפון רופא מפנה</name>
+            </columns>
+            <columns>
+                <label><!-- מועד שליחת קובץ --></label>
+                <name>מועד שליחת קובץ</name>
+            </columns>
+            <columns>
+                <label><!-- מסלול --></label>
+                <name>מסלול</name>
+            </columns>
+            <columns>
+                <label><!-- מסמך מאושר --></label>
+                <name>מסמך מאושר</name>
+            </columns>
+            <columns>
+                <label><!-- מספר בקשה --></label>
+                <name>מספר בקשה</name>
+            </columns>
+            <columns>
+                <label><!-- מספר הפנייה --></label>
+                <name>מספר הפנייה</name>
+            </columns>
+            <columns>
+                <label><!-- מספר התחייבות --></label>
+                <name>מספר התחייבות</name>
+            </columns>
+            <columns>
+                <label><!-- סוג הפניה --></label>
+                <name>סוג הפניה</name>
+            </columns>
+            <columns>
+                <label><!-- סוג הפניה מכבי --></label>
+                <name>סוג הפניה מכבי</name>
+            </columns>
+            <columns>
+                <label><!-- סוג מסמך --></label>
+                <name>סוג מסמך</name>
+            </columns>
+            <columns>
+                <label><!-- סטטוס ההתחייבות --></label>
+                <name>סטטוס ההתחייבות</name>
+            </columns>
+            <columns>
+                <label><!-- סטטוס הפניה --></label>
+                <name>סטטוס הפניה</name>
+            </columns>
+            <columns>
+                <label><!-- סטטוס הפנייה מכבי --></label>
+                <name>סטטוס הפנייה מכבי</name>
+            </columns>
+            <columns>
+                <label><!-- סטטוס קובץ --></label>
+                <name>סטטוס קובץ</name>
+            </columns>
+            <columns>
+                <label><!-- סיבת הסטטוס --></label>
+                <name>סיבת הסטטוס</name>
+            </columns>
+            <columns>
+                <label><!-- פירוט כשלון ממכבי --></label>
+                <name>פירוט כשלון ממכבי</name>
+            </columns>
+            <columns>
+                <label><!-- פנייה --></label>
+                <name>פנייה</name>
+            </columns>
+            <columns>
+                <label><!-- פעולה רפואית --></label>
+                <name>פעולה רפואית</name>
+            </columns>
+            <columns>
+                <label><!-- פעולה רפואית 1 זהה? --></label>
+                <name>פעולה רפואית 1 זהה?</name>
+            </columns>
+            <columns>
+                <label><!-- פעולה רפואית 2 --></label>
+                <name>פעולה רפואית 2</name>
+            </columns>
+            <columns>
+                <label><!-- פעולה רפואית 2 זהה? --></label>
+                <name>פעולה רפואית 2 זהה?</name>
+            </columns>
+            <columns>
+                <label><!-- פעולה רפואית 3 --></label>
+                <name>פעולה רפואית 3</name>
+            </columns>
+            <columns>
+                <label><!-- פעולה רפואית 3 זהה? --></label>
+                <name>פעולה רפואית 3 זהה?</name>
+            </columns>
+            <columns>
+                <label><!-- פעולה רפואית 4 --></label>
+                <name>פעולה רפואית 4</name>
+            </columns>
+            <columns>
+                <label><!-- פעולה רפואית 4 זהה? --></label>
+                <name>פעולה רפואית 4 זהה?</name>
+            </columns>
+            <columns>
+                <label><!-- קובץ הפניה --></label>
+                <name>קובץ הפניה</name>
+            </columns>
+            <columns>
+                <label><!-- קובץ התחייבות --></label>
+                <name>קובץ התחייבות</name>
+            </columns>
+            <columns>
+                <label><!-- קישור למסמך --></label>
+                <name>קישור למסמך</name>
+            </columns>
+            <columns>
+                <label><!-- קראתי ומאשר --></label>
+                <name>קראתי ומאשר</name>
+            </columns>
+            <columns>
+                <label><!-- רישיון רופא --></label>
+                <name>רישיון רופא</name>
+            </columns>
+            <columns>
+                <label><!-- שם המטופל זהה? --></label>
+                <name>שם המטופל זהה?</name>
+            </columns>
+            <columns>
+                <label><!-- שם מטופל --></label>
+                <name>שם מטופל</name>
+            </columns>
+            <columns>
+                <label><!-- שם רופא --></label>
+                <name>שם רופא</name>
+            </columns>
+            <columns>
+                <label><!-- שם רופא זהה? --></label>
+                <name>שם רופא זהה?</name>
+            </columns>
+            <columns>
+                <label><!-- שם רופא מפנה --></label>
+                <name>שם רופא מפנה</name>
+            </columns>
+            <columns>
+                <label><!-- ת&quot;ז רופא מפנה --></label>
+                <name>ת&quot;ז רופא מפנה</name>
+            </columns>
+            <columns>
+                <label><!-- תאריך אישור מסמך --></label>
+                <name>תאריך אישור מסמך</name>
+            </columns>
+            <columns>
+                <label><!-- תאריך הפניה --></label>
+                <name>תאריך הפניה</name>
+            </columns>
+            <columns>
+                <label><!-- תאריך הפקה --></label>
+                <name>תאריך הפקה</name>
+            </columns>
+            <columns>
+                <label><!-- תאריך תוקף --></label>
+                <name>תאריך תוקף</name>
+            </columns>
+            <columns>
+                <label><!-- תור עבודה מהמסמך --></label>
+                <name>תור עבודה מהמסמך</name>
+            </columns>
+            <columns>
+                <label><!-- תחום --></label>
+                <name>תחום</name>
+            </columns>
+            <columns>
+                <label><!-- תחום הפניה למכבי --></label>
+                <name>תחום הפניה למכבי</name>
+            </columns>
+            <columns>
+                <label><!-- תת-סוג מסמך --></label>
+                <name>תת-סוג מסמך</name>
+            </columns>
+            <label><!-- Assuta Files --></label>
+            <name>Assuta Files</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Assuta Files (new) --></description>
+        <label><!-- Assuta Files (new) --></label>
+        <name>Assuta_Files_new</name>
+        <sections>
+            <label><!-- Assuta Files --></label>
+            <name>Assuta Files</name>
+        </sections>
+        <sections>
+            <label><!-- קבצים --></label>
+            <name>קבצים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Calendars with clinic and cliniuc site --></description>
+        <label><!-- Calendars with clinic and cliniuc site --></label>
+        <name>Calendars_with_clinic_and_cliniuc_site</name>
+        <sections>
+            <label><!-- Calendars --></label>
+            <name>Calendars</name>
+        </sections>
+        <sections>
+            <label><!-- Clinic Actual --></label>
+            <name>Clinic Actual</name>
+        </sections>
+        <sections>
+            <label><!-- Clinic Junction --></label>
+            <name>Clinic Junction</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- ערים --></description>
+        <label><!-- ערים --></label>
+        <name>Cities</name>
+        <sections>
+            <label><!-- Cities --></label>
+            <name>Cities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Conversation Entries --></description>
+        <label><!-- Conversation Entries --></label>
+        <name>Conversation_Entries</name>
+        <sections>
+            <label><!-- Conversation Entries --></label>
+            <name>Conversation Entries</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- doctor_in_site --></description>
+        <label><!-- doctor_in_site --></label>
+        <name>CustomReportType</name>
+        <sections>
+            <label><!-- רופאים באתר --></label>
+            <name>רופאים באתר</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- צאטים --></description>
+        <label><!-- צאטים --></label>
+        <name>CustomReportType_chat</name>
+        <sections>
+            <label><!-- Chat Transcripts --></label>
+            <name>Chat Transcripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- בקרות איכות עם נציגים --></description>
+        <label><!-- בקרות איכות עם נציגים --></label>
+        <name>CustomReportTypezvzvvz</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- בקרות איכות (נציג קשור) --></label>
+            <name>בקרות איכות (נציג קשור)</name>
+        </sections>
+        <sections>
+            <label><!-- משתמשים --></label>
+            <name>משתמשים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Dashboards components --></description>
+        <label><!-- Dashboards components --></label>
+        <name>Dashboards_components</name>
+        <sections>
+            <label><!-- Dashboard Components --></label>
+            <name>Dashboard Components</name>
+        </sections>
+        <sections>
+            <label><!-- Dashboards --></label>
+            <name>Dashboards</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- עזרים לפגישה קבלה מהבית --></description>
+        <label><!-- עזרים לפגישה קבלה מהבית --></label>
+        <name>Dis_App</name>
+        <sections>
+            <label><!-- Medical Aid Appointments --></label>
+            <name>Medical Aid Appointments</name>
+        </sections>
+        <sections>
+            <label><!-- עזרים לפגישה --></label>
+            <name>עזרים לפגישה</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- פעולות רפואיות לרופא --></description>
+        <label><!-- פעולות רפואיות לרופא --></label>
+        <name>Doctor_Medical_Procedure</name>
+        <sections>
+            <label><!-- Doctor Medical Procedures --></label>
+            <name>Doctor Medical Procedures</name>
+        </sections>
+        <sections>
+            <label><!-- פעולות רפואיות לרופא --></label>
+            <name>פעולות רפואיות לרופא</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- רופאים באתר --></description>
+        <label><!-- רופאים באתר --></label>
+        <name>Doctor_Site</name>
+        <sections>
+            <label><!-- רופאים באתר --></label>
+            <name>רופאים באתר</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Doctors with Medical Procedure with Appointments --></description>
+        <label><!-- Doctors with Medical Procedure with Appointments --></label>
+        <name>Doctors_with_Medical_Procedure_with_Appointments</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Doctor Medical Procedures --></label>
+            <name>Doctor Medical Procedures</name>
+        </sections>
+        <sections>
+            <label><!-- חשבונות --></label>
+            <name>חשבונות</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Email Messages --></description>
+        <label><!-- Email Messages --></label>
+        <name>Email_Messages</name>
+        <sections>
+            <label><!-- Email Messages --></label>
+            <name>Email Messages</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Emails --></description>
+        <label><!-- Emails --></label>
+        <name>Emails</name>
+        <sections>
+            <label><!-- Emails --></label>
+            <name>Emails</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- FILES --></description>
+        <label><!-- FILES --></label>
+        <name>FILES</name>
+        <sections>
+            <label><!-- Assuta Files --></label>
+            <name>Assuta Files</name>
+        </sections>
+        <sections>
+            <label><!-- קבצים --></label>
+            <name>קבצים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- קבצים נטשה --></description>
+        <label><!-- קבצים נטשה --></label>
+        <name>File</name>
+        <sections>
+            <label><!-- Assuta Files --></label>
+            <name>Assuta Files</name>
+        </sections>
+        <sections>
+            <label><!-- קבצים --></label>
+            <name>קבצים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Guidelines_GuidelineScenario --></description>
+        <label><!-- Guidelines_GuidelineScenario --></label>
+        <name>Guideline</name>
+        <sections>
+            <label><!-- Guidelines --></label>
+            <name>Guidelines</name>
+        </sections>
+        <sections>
+            <label><!-- הנחיות לתרחישים --></label>
+            <name>הנחיות לתרחישים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- הנחיות --></description>
+        <label><!-- הנחיות --></label>
+        <name>Guidelines</name>
+        <sections>
+            <label><!-- Guidelines --></label>
+            <name>Guidelines</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- חשבונות עם רופא במרפאה --></description>
+        <label><!-- חשבונות עם רופא במרפאה --></label>
+        <name>Hesbob_rofe_mirp</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- חשבונות --></label>
+            <name>חשבונות</name>
+        </sections>
+        <sections>
+            <label><!-- מרפאות הרופא --></label>
+            <name>מרפאות הרופא</name>
+        </sections>
+        <sections>
+            <label><!-- רופאים במרפאה --></label>
+            <name>רופאים במרפאה</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- משתל לפעולה רפואית --></description>
+        <label><!-- משתל לפעולה רפואית --></label>
+        <name>Implants_to_med_prod</name>
+        <sections>
+            <label><!-- משתלים לפעולה רפואית --></label>
+            <name>משתלים לפעולה רפואית</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- תמלילי צ&apos;אט --></description>
+        <label><!-- תמלילי צ&apos;אט --></label>
+        <name>LiveChatTranscript</name>
+        <sections>
+            <label><!-- Chat Transcripts --></label>
+            <name>Chat Transcripts</name>
+        </sections>
+        <sections>
+            <label><!-- תמלילי צ&apos;אט --></label>
+            <name>תמלילי צ&apos;אט</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- MS with User Details --></description>
+        <label><!-- MS with User Details --></label>
+        <name>MS_with_User_Details</name>
+        <sections>
+            <label><!-- Messaging Sessions --></label>
+            <name>Messaging Sessions</name>
+        </sections>
+        <sections>
+            <label><!-- User Details --></label>
+            <name>User Details</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- פעולות רפואיות באתרים --></description>
+        <label><!-- פעולות רפואיות באתרים --></label>
+        <name>Medical_Procedure_in_Sites_c</name>
+        <sections>
+            <label><!-- Medical Procedures in Sites --></label>
+            <name>Medical Procedures in Sites</name>
+        </sections>
+        <sections>
+            <label><!-- פעולות רפואיות באתר --></label>
+            <name>פעולות רפואיות באתר</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Medical_Procedures_In_site --></description>
+        <label><!-- Medical_Procedures_In_site --></label>
+        <name>Medical_Procedures_In_site</name>
+        <sections>
+            <label><!-- Medical Procedures in Sites --></label>
+            <name>Medical Procedures in Sites</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Messaging and cases --></description>
+        <label><!-- Messaging and cases --></label>
+        <name>Messag</name>
+        <sections>
+            <label><!-- Conversation Entries --></label>
+            <name>Conversation Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Messaging Sessions --></label>
+            <name>Messaging Sessions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Messaging End User --></description>
+        <label><!-- Messaging End User --></label>
+        <name>Messaging_End_User</name>
+        <sections>
+            <label><!-- Messaging Sessions --></label>
+            <name>Messaging Sessions</name>
+        </sections>
+        <sections>
+            <label><!-- Messaging Users --></label>
+            <name>Messaging Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Messaging Sessions --></description>
+        <label><!-- Messaging Sessions --></label>
+        <name>Messaging_Sessions</name>
+        <sections>
+            <label><!-- Messaging Sessions --></label>
+            <name>Messaging Sessions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Messaging Sessions With Account --></description>
+        <label><!-- Messaging Sessions With Account --></label>
+        <name>Messaging_Sessions_With_Account</name>
+        <sections>
+            <label><!-- Messaging Sessions --></label>
+            <name>Messaging Sessions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- פניות הציבור עם פרטי פריט פנייה --></description>
+        <label><!-- פניות הציבור עם פרטי פריט פנייה --></label>
+        <name>PNIOT_WITH_ADDITIONAL_ITEM</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- פניית ציבור --></label>
+            <name>פניית ציבור</name>
+        </sections>
+        <sections>
+            <label><!-- פריט פנייה --></label>
+            <name>פריט פנייה</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Payer_Factor__c --></description>
+        <label><!-- Payer_Factor__c --></label>
+        <name>Payer_Factor_c</name>
+        <sections>
+            <label><!-- גורמים משלמים --></label>
+            <name>גורמים משלמים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- בקרות איכות_נטשה --></description>
+        <label><!-- בקרות איכות_נטשה --></label>
+        <name>Q_Control</name>
+        <sections>
+            <label><!-- בקרות איכות --></label>
+            <name>בקרות איכות</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- המלצות לאחר בדיקה עם פרטי פניית יד ביד --></description>
+        <label><!-- המלצות לאחר בדיקה עם פרטי פניית יד ביד --></label>
+        <name>Recommendation_with_yadBeyad_Case</name>
+        <sections>
+            <label><!-- Recommendation after examination --></label>
+            <name>Recommendation after examination</name>
+        </sections>
+        <sections>
+            <label><!-- המלצות לאחר בדיקה --></label>
+            <name>המלצות לאחר בדיקה</name>
+        </sections>
+        <sections>
+            <label><!-- פניות מסלול שד --></label>
+            <name>פניות מסלול שד</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- רופא מומלץ --></description>
+        <label><!-- רופא מומלץ --></label>
+        <name>Recommended_Doctor</name>
+        <sections>
+            <label><!-- רופאים מומלצים --></label>
+            <name>רופאים מומלצים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Scenarios with Domains --></description>
+        <label><!-- Scenarios with Domains --></label>
+        <name>Scenarios_with_Domains</name>
+        <sections>
+            <label><!-- Scenario --></label>
+            <name>Scenario</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Contract Line Items --></description>
+        <label><!-- Service Contracts with Contract Line Items --></label>
+        <name>Service_Contracts_with_Contract_Line_Items</name>
+        <sections>
+            <label><!-- Contract Line Items --></label>
+            <name>Contract Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Entitlements --></description>
+        <label><!-- Service Contracts with Entitlements --></label>
+        <name>Service_Contracts_with_Entitlements</name>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rep Work --></description>
+        <label><!-- Rep Work --></label>
+        <name>SfdcRepWorkReportType</name>
+        <sections>
+            <label><!-- Rep Work --></label>
+            <name>Rep Work</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rep Work with Cases --></description>
+        <label><!-- Rep Work with Cases --></label>
+        <name>SfdcRepWorkWithCasesReportType</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Rep Work --></label>
+            <name>Rep Work</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Rep Presence --></description>
+        <label><!-- Rep Presence --></label>
+        <name>SfdcUserPresenceReportType</name>
+        <sections>
+            <label><!-- User Presence --></label>
+            <name>User Presence</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Survey Questions --></description>
+        <label><!-- Survey Questions --></label>
+        <name>Survey_Questions</name>
+        <sections>
+            <label><!-- Survey Questions --></label>
+            <name>Survey Questions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Survey w/ Questions and Answers --></description>
+        <label><!-- Survey w/ Questions and Answers --></label>
+        <name>Survey_w_Questions_and_Answers</name>
+        <sections>
+            <label><!-- Survey Question Responses --></label>
+            <name>Survey Question Responses</name>
+        </sections>
+        <sections>
+            <label><!-- Survey Questions --></label>
+            <name>Survey Questions</name>
+        </sections>
+        <sections>
+            <label><!-- SurveyQuestionResponses --></label>
+            <name>SurveyQuestionResponses</name>
+        </sections>
+        <sections>
+            <label><!-- SurveyQuestions --></label>
+            <name>SurveyQuestions</name>
+        </sections>
+        <sections>
+            <label><!-- Surveys --></label>
+            <name>Surveys</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User Presence --></description>
+        <label><!-- User Presence --></label>
+        <name>User_Presence</name>
+        <sections>
+            <label><!-- User Presences --></label>
+            <name>User Presences</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users All --></description>
+        <label><!-- Users All --></label>
+        <name>Users_All</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- משתמשים --></label>
+            <name>משתמשים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- רופאים מומלצים עם רופאים --></description>
+        <label><!-- רופאים מומלצים עם רופאים --></label>
+        <name>aa</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- חשבונות --></label>
+            <name>חשבונות</name>
+        </sections>
+        <sections>
+            <label><!-- רופאים מומלצים --></label>
+            <name>רופאים מומלצים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- active calanders per doctor --></description>
+        <label><!-- active calanders per doctor --></label>
+        <name>active_calanders_per_doctor</name>
+        <sections>
+            <label><!-- Calendars --></label>
+            <name>Calendars</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- agreements --></description>
+        <label><!-- agreements --></label>
+        <name>agreements_1</name>
+        <sections>
+            <label><!-- הסכמים --></label>
+            <name>הסכמים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- arrangment_1 --></description>
+        <label><!-- arrangment_1 --></label>
+        <name>arrangment_1</name>
+        <sections>
+            <label><!-- הסדרים --></label>
+            <name>הסדרים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- יומנים ופעולות רפואיות --></description>
+        <label><!-- יומנים ופעולות רפואיות --></label>
+        <name>calender_med</name>
+        <sections>
+            <label><!-- יומנים ופעולות רפואיות --></label>
+            <name>יומנים ופעולות רפואיות</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- chat sesions --></description>
+        <label><!-- chat sesions --></label>
+        <name>chat_sesions</name>
+        <sections>
+            <label><!-- Chat Sessions --></label>
+            <name>Chat Sessions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- שיחות צ&apos;אט --></description>
+        <label><!-- שיחות צ&apos;אט --></label>
+        <name>chat_transcript</name>
+        <sections>
+            <label><!-- Chat Transcripts --></label>
+            <name>Chat Transcripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- chat transcripts --></description>
+        <label><!-- chat transcripts --></label>
+        <name>chat_transcripts</name>
+        <sections>
+            <label><!-- Chat Transcript Events --></label>
+            <name>Chat Transcript Events</name>
+        </sections>
+        <sections>
+            <label><!-- Chat Transcripts --></label>
+            <name>Chat Transcripts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- counries --></description>
+        <label><!-- counries --></label>
+        <name>counries</name>
+        <sections>
+            <label><!-- Countries --></label>
+            <name>Countries</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- doc_med --></description>
+        <label><!-- doc_med --></label>
+        <name>doc_med</name>
+        <sections>
+            <label><!-- Doctor Medical Procedures --></label>
+            <name>Doctor Medical Procedures</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- doctor_med --></description>
+        <label><!-- doctor_med --></label>
+        <name>doctor_med</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- חשבונות --></label>
+            <name>חשבונות</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- רופא פעולה רפואית --></description>
+        <label><!-- רופא פעולה רפואית --></label>
+        <name>doctor_med_p</name>
+        <sections>
+            <label><!-- Doctor Medical Procedures --></label>
+            <name>Doctor Medical Procedures</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- domain in site --></description>
+        <label><!-- domain in site --></label>
+        <name>domain_in_site</name>
+        <sections>
+            <label><!-- מכונים באתר --></label>
+            <name>מכונים באתר</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- experties --></description>
+        <label><!-- experties --></label>
+        <name>experties</name>
+        <sections>
+            <label><!-- Expertises --></label>
+            <name>Expertises</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Run Logs Spring &apos;24 --></description>
+        <label><!-- Orchestration Run Logs Spring &apos;24 --></label>
+        <name>flow_orchestration_log_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- יומני הפעלות מערך --></label>
+            <name>יומני הפעלות מערך</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- הפעלות מערך --></label>
+            <name>הפעלות מערך</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Stage Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Stage Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_stage_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- הפעלות שלבים במערך --></label>
+            <name>הפעלות שלבים במערך</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Step Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Step Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_step_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- הפעלות שלבים במערך --></label>
+            <name>הפעלות שלבים במערך</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- gorem_meshalem_1 --></description>
+        <label><!-- gorem_meshalem_1 --></label>
+        <name>gorem_meshalem_1</name>
+        <sections>
+            <label><!-- גורמים משלמים --></label>
+            <name>גורמים משלמים</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- k --></description>
+        <label><!-- k --></label>
+        <name>k</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- חשבונות --></label>
+            <name>חשבונות</name>
+        </sections>
+        <sections>
+            <label><!-- רופאים במרפאה --></label>
+            <name>רופאים במרפאה</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- medical procedures --></description>
+        <label><!-- medical procedures --></label>
+        <name>medical_procedures</name>
+        <sections>
+            <label><!-- Medical Procedures --></label>
+            <name>Medical Procedures</name>
+        </sections>
+        <sections>
+            <label><!-- פעולות רפואיות --></label>
+            <name>פעולות רפואיות</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- דוח רופאים במרפאה --></description>
+        <label><!-- דוח רופאים במרפאה --></label>
+        <name>rofaim_be</name>
+        <sections>
+            <label><!-- רופאים במרפאה --></label>
+            <name>רופאים במרפאה</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- יומני ראיונות זרימה --></label>
+            <name>יומני ראיונות זרימה</name>
+        </sections>
+        <sections>
+            <label><!-- ערכים ביומן ראיונות זרימה --></label>
+            <name>ערכים ביומן ראיונות זרימה</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- sessions for messaging --></description>
+        <label><!-- sessions for messaging --></label>
+        <name>sessions_for_messaging</name>
+        <sections>
+            <label><!-- Conversation Entries --></label>
+            <name>Conversation Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Messaging Sessions --></label>
+            <name>Messaging Sessions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- user presences --></description>
+        <label><!-- user presences --></label>
+        <name>user_presences</name>
+        <sections>
+            <label><!-- User Presences --></label>
+            <name>User Presences</name>
+        </sections>
+    </reportTypes>
+</Translations>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- סמן במידה והפנייה היא הפנייה הראשית לניהול התור לניתוח --></help>
+    <label><!-- Is it the main case for surgery? --></label>
+    <name>Is_it_the_main_case_for_surgery__c</name>
+</CustomFieldTranslation>

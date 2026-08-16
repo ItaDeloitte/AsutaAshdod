@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsSlotSavedInRIS__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>עדכון sf על ידי אנסמבל כאשר סלוט בריס נצבע באפור אם יש ביטול מריס/sf/אתר
+
+Monday 1860849950</description>
+    <label>Is Slot Saved In RIS</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

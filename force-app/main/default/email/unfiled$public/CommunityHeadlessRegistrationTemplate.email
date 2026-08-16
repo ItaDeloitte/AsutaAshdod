@@ -1,0 +1,7 @@
+שלום {!HeadlessAuth.FirstName} {!HeadlessAuth.LastName},
+
+            כדי לאמת את הרישום שלך בשם {!HeadlessAuth.Username} בקהילת {!Community.Name},‏
+
+            עלינו לאמת את זהותך. הזן את הסיסמה החד-פעמית הזו כשתתבקש.
+
+            סיסמה: {!Verification.Code}

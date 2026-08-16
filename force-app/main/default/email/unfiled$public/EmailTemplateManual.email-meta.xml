@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>מייל להגשה ידנית להתחייבות</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>בקשת התחייבות ידנית מתוך פנייה</name>
+    <style>formalLetter</style>
+    <subject>{!Case.Account} {!Account.ID_Number__c}</subject>
+    <textOnly>תאריך: {!Case.CreatedDate}
+לכבוד: {!Case.Payer_Factor__c}
+הנדון: אישור התחייבות לניתוח - במסגרת הסכם
+שלוחה:
+מר/גב&apos; {!Case.Account} ת.ז {!Case.Patient_ID__c}
+מועמד לניתוח: {!Case.cases_and_appoitments__c}
+תאריך מתוכנן לניתוח: *יש למלא את התאריך*
+רופא מנתח: {!Case.Opearator__c}
+
+מצ&quot;ב מסמך רפואי , אנא הכינו התחייבות כספית בהתאם, תודה,
+
+הערות:
+
+בברכה,
+{!Case.OwnerFullName}
+מח&apos; שיווק
+בי&quot;ח אסותא
+טל&apos;: 03-7643200
+פקס: 03-7643239</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protocol__c</fullName>
+    <label>Protocol</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>p39</fullName>
+                <default>false</default>
+                <label>ללא פרוטוקול</label>
+            </value>
+            <value>
+                <fullName>p1</fullName>
+                <default>false</default>
+                <label>בטן אגן- תלת פאזי</label>
+            </value>
+            <value>
+                <fullName>p2</fullName>
+                <default>false</default>
+                <label>CTU/ CT אורוגרפיה</label>
+            </value>
+            <value>
+                <fullName>p3</fullName>
+                <default>false</default>
+                <label>CTE  אנטרוגרפיה</label>
+            </value>
+            <value>
+                <fullName>p4</fullName>
+                <default>false</default>
+                <label>בטן פרוטוקול לבלב</label>
+            </value>
+            <value>
+                <fullName>p5</fullName>
+                <default>false</default>
+                <label>ללא חומר ניגוד HRCT</label>
+            </value>
+            <value>
+                <fullName>p6</fullName>
+                <default>false</default>
+                <label>CT חזה עם חומר ניגוד</label>
+            </value>
+            <value>
+                <fullName>p7</fullName>
+                <default>false</default>
+                <label>US עורקי איליק</label>
+            </value>
+            <value>
+                <fullName>p8</fullName>
+                <default>false</default>
+                <label>פלטיסמוגרפיה</label>
+            </value>
+            <value>
+                <fullName>p9</fullName>
+                <default>false</default>
+                <label>עורקים טמפורליים</label>
+            </value>
+            <value>
+                <fullName>p10</fullName>
+                <default>false</default>
+                <label>US עורקי ידיים בטמפרטורות שונות</label>
+            </value>
+            <value>
+                <fullName>p11</fullName>
+                <default>false</default>
+                <label>עורקי ידיים בטמפרטורות שונות</label>
+            </value>
+            <value>
+                <fullName>p12</fullName>
+                <default>false</default>
+                <label>מיפוי כליות קפוטן</label>
+            </value>
+            <value>
+                <fullName>p13</fullName>
+                <default>false</default>
+                <label>מיפוי כליות MAG3</label>
+            </value>
+            <value>
+                <fullName>p14</fullName>
+                <default>false</default>
+                <label>MRCP</label>
+            </value>
+            <value>
+                <fullName>p15</fullName>
+                <default>false</default>
+                <label>MRE</label>
+            </value>
+            <value>
+                <fullName>p16</fullName>
+                <default>false</default>
+                <label>MRI אגן רקמות</label>
+            </value>
+            <value>
+                <fullName>p17</fullName>
+                <default>false</default>
+                <label>MRA</label>
+            </value>
+            <value>
+                <fullName>p18</fullName>
+                <default>false</default>
+                <label>MRI מולטיהנס</label>
+            </value>
+            <value>
+                <fullName>p19</fullName>
+                <default>false</default>
+                <label>הבטן עליונה</label>
+            </value>
+            <value>
+                <fullName>p20</fullName>
+                <default>false</default>
+                <label>בשאלה של בטן תחתונה - אשכים</label>
+            </value>
+            <value>
+                <fullName>p21</fullName>
+                <default>false</default>
+                <label>בשאלה של בטן תחתונה - רחם</label>
+            </value>
+            <value>
+                <fullName>p22</fullName>
+                <default>false</default>
+                <label>בשאלה של בטן תחתונה  - אגן קטן</label>
+            </value>
+            <value>
+                <fullName>p23</fullName>
+                <default>false</default>
+                <label>בשאלה של בטן תחתונה  - כליות ודרכי שתן</label>
+            </value>
+            <value>
+                <fullName>p24</fullName>
+                <default>false</default>
+                <label>בשאלה של בטן תחתונה  - רקטום/פיסטולה</label>
+            </value>
+            <value>
+                <fullName>p25</fullName>
+                <default>false</default>
+                <label>פרק ירך</label>
+            </value>
+            <value>
+                <fullName>p26</fullName>
+                <default>false</default>
+                <label>SIJ</label>
+            </value>
+            <value>
+                <fullName>p27</fullName>
+                <default>false</default>
+                <label>סקרואליטיס</label>
+            </value>
+            <value>
+                <fullName>p28</fullName>
+                <default>false</default>
+                <label>אגן ובטן - תלת פאזי (ללא יוד)</label>
+            </value>
+            <value>
+                <fullName>p29</fullName>
+                <default>false</default>
+                <label>(ללא יוד) CTE -CT אנטרוגרפיה</label>
+            </value>
+            <value>
+                <fullName>p30</fullName>
+                <default>false</default>
+                <label>(ללא יוד) CTU/ CT אורוגרפיה</label>
+            </value>
+            <value>
+                <fullName>p31</fullName>
+                <default>false</default>
+                <label>בטן פרוטוקול לבלב (ללא יוד)</label>
+            </value>
+            <value>
+                <fullName>p32</fullName>
+                <default>false</default>
+                <label>HRCT</label>
+            </value>
+            <value>
+                <fullName>p33</fullName>
+                <default>false</default>
+                <label>בטן עליונה (כליות בלדב, כבד, כיס מרה, טחול, אאורטה)</label>
+            </value>
+            <value>
+                <fullName>p34</fullName>
+                <default>false</default>
+                <label>בטן עליונה+תחתונה</label>
+            </value>
+            <value>
+                <fullName>p35</fullName>
+                <default>false</default>
+                <label>בשאלה של כיס מרה מכוווץ</label>
+            </value>
+            <value>
+                <fullName>p36</fullName>
+                <default>false</default>
+                <label>MRCP בשאלה של דרכי מרה ולבלב</label>
+            </value>
+            <value>
+                <fullName>p37</fullName>
+                <default>false</default>
+                <label>ניתוח שד</label>
+            </value>
+            <value>
+                <fullName>p38</fullName>
+                <default>false</default>
+                <label>ניתוח בריאטרי</label>
+            </value>
+            <value>
+                <fullName>p40</fullName>
+                <default>false</default>
+                <label>עצמות טמפורליות</label>
+            </value>
+            <value>
+                <fullName>p41</fullName>
+                <default>false</default>
+                <label>מח + עצמות טמפורליות</label>
+            </value>
+            <value>
+                <fullName>p42</fullName>
+                <default>false</default>
+                <label>סרקואידוזיס של הלב</label>
+            </value>
+            <value>
+                <fullName>p43</fullName>
+                <default>false</default>
+                <label>עם חומר ניגוד</label>
+            </value>
+            <value>
+                <fullName>p44</fullName>
+                <default>false</default>
+                <label>CT חזה ללא חומר ניגוד</label>
+            </value>
+            <value>
+                <fullName>p_45</fullName>
+                <default>false</default>
+                <label>MRI  אגן נוירוגרפיה</label>
+            </value>
+            <value>
+                <fullName>p_46</fullName>
+                <default>false</default>
+                <label>עמילואידוזיס</label>
+            </value>
+            <value>
+                <fullName>p_47</fullName>
+                <default>false</default>
+                <label>ללא חומר ניגוד</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

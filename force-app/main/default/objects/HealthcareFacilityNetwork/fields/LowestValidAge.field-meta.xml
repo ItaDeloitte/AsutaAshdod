@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LowestValidAge</fullName>
+    <inlineHelpText>מציין את הגיל הצעיר ביותר של מטופלים עבור הרשת של מוסד זה.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

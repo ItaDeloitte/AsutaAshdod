@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>שם תור העבודה הוחלף מפניות כללית מושלם ומכבי שבן ל כלניות - כללית מושלם ומכבי שב&quot;ן</description>
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>כלניות - כללית מושלם ומכבי שב&quot;ן</name>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

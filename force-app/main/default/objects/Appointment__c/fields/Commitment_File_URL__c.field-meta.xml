@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commitment_File_URL__c</fullName>
+    <description>קישור לקובץ התחייבות בפורטל המסמכים (בשימוש בממשק מקדים).</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Commitment File URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

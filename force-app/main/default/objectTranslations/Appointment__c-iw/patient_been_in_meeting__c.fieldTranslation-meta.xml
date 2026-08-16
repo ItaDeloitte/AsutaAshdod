@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>המטופל אישר שנכח בפגישה?</label>
+    <name>patient_been_in_meeting__c</name>
+    <picklistValues>
+        <masterLabel>לא נכח</masterLabel>
+        <translation><!-- לא נכח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא ענה</masterLabel>
+        <translation><!-- לא ענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נכח</masterLabel>
+        <translation><!-- נכח --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Physician Hotline Type --></label>
+    <name>kav_larofe_type__c</name>
+    <picklistValues>
+        <masterLabel>בקשה / מידע</masterLabel>
+        <translation><!-- בקשה / מידע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע</masterLabel>
+        <translation><!-- מידע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תלונה</masterLabel>
+        <translation><!-- תלונה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GateScaner_Status --></label>
+    <name>GateScaner_Status__c</name>
+    <picklistValues>
+        <masterLabel>Finished</masterLabel>
+        <translation><!-- Finished --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InQueue</masterLabel>
+        <translation><!-- InQueue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InScan</masterLabel>
+        <translation><!-- InScan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PreScan</masterLabel>
+        <translation><!-- PreScan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received</masterLabel>
+        <translation><!-- Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scaned and failed</masterLabel>
+        <translation><!-- Scaned and failed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

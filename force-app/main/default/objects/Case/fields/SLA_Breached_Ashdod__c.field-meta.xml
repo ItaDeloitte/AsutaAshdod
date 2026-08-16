@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLA_Breached_Ashdod__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Monday 2889823979
+used in entitlement process Assuta Ashdod SLA</description>
+    <label>SLA Breached Ashdod</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

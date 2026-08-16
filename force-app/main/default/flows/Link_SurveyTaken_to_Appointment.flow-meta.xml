@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Copies the SurveyTaken&apos;s &quot;Survey_Link&quot; field to the Appointment&apos;s &quot;Survey_Link&quot; field</description>
+    <environments>Default</environments>
+    <interviewLabel>Link SurveyTaken to Appointment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Link SurveyTaken to Appointment</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Appointment</name>
+        <label>Get Appointment</label>
+        <locationX>617</locationX>
+        <locationY>554</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_URL</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Appointment__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Appointment__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Copies the SurveyTaken&apos;s &quot;Survey_Link&quot; field to the Appointment&apos;s &quot;Survey_Link&quot; field</description>
+        <name>Set_URL</name>
+        <label>Set URL</label>
+        <locationX>907</locationX>
+        <locationY>554</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>preSurgeryLink__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>preSurgeryLink__c</field>
+            <value>
+                <elementReference>$Record.Survey_link__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Appointment__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>490</locationX>
+        <locationY>40</locationY>
+        <connector>
+            <targetReference>Get_Appointment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Survey_link__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SurveyCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PreSurgery</stringValue>
+            </value>
+        </filters>
+        <object>SurveyTaker__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

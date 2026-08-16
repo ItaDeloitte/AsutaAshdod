@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Age_Limit__c</fullName>
+    <label>Age Limit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Limit</fullName>
+                <default>true</default>
+                <label>No Limit</label>
+            </value>
+            <value>
+                <fullName>Up To 18</fullName>
+                <default>false</default>
+                <label>Up To 18</label>
+            </value>
+            <value>
+                <fullName>Up To 19</fullName>
+                <default>false</default>
+                <label>Up To 19</label>
+            </value>
+            <value>
+                <fullName>18 Or More</fullName>
+                <default>false</default>
+                <label>18 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 2 Or More</fullName>
+                <default>false</default>
+                <label>Age 2 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 3 Or More</fullName>
+                <default>false</default>
+                <label>Age 3 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 4 Or More</fullName>
+                <default>false</default>
+                <label>Age 4 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 5 Or More</fullName>
+                <default>false</default>
+                <label>Age 5 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 6 Or More</fullName>
+                <default>false</default>
+                <label>Age 6 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 7 Or More</fullName>
+                <default>false</default>
+                <label>Age 7 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 8 Or More</fullName>
+                <default>false</default>
+                <label>Age 8 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 10 Or More</fullName>
+                <default>false</default>
+                <label>Age 10 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 12 Or More</fullName>
+                <default>false</default>
+                <label>Age 12 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 14 Or More</fullName>
+                <default>false</default>
+                <label>Age 14 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 15 Or More</fullName>
+                <default>false</default>
+                <label>Age 15 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 16 Or More</fullName>
+                <default>false</default>
+                <label>Age 16 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 17 Or More</fullName>
+                <default>false</default>
+                <label>Age 17 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 20 Or More</fullName>
+                <default>false</default>
+                <label>Age 20 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 30 Or More</fullName>
+                <default>false</default>
+                <label>Age 30 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 40 Or More</fullName>
+                <default>false</default>
+                <label>Age 40 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 45 Or More</fullName>
+                <default>false</default>
+                <label>Age 45 Or More</label>
+            </value>
+            <value>
+                <fullName>Age 50 Or More</fullName>
+                <default>false</default>
+                <label>Age 50 Or More</label>
+            </value>
+            <value>
+                <fullName>Up To 16</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Up To 16</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

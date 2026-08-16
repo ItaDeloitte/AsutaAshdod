@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>only_one_option_is_available</fullName>
+    <active>false</active>
+    <description>ניתן לבחור או להעביר למחלקה או למנוע זימון תור, לא שניהם</description>
+    <errorConditionFormula>Transfer_to_department__c &amp;&amp;  Stop_from_scheduling__c</errorConditionFormula>
+    <errorMessage>ניתן לבחור או להעביר למחלקה או למנוע זימון תור, לא שניהם</errorMessage>
+</ValidationRule>

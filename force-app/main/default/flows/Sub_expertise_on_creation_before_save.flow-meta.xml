@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Expertise_Sub_expertise_Unic_Code</name>
+        <label>Update Expertise-Sub-expertise-Unic-Code</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Expertise_Sub_Expertise_Unic_Code__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CodeCalculation</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>YL 26.012026 - added validation that fields is not empty</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CodeCalculation</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Expertise__r.Expertise_Code__c} &amp; &quot; - &quot; &amp; {!$Record.Sub_expertise_code__c}</expression>
+    </formulas>
+    <interviewLabel>Sub_expertise on creation before save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Sub_expertise on creation/update before save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Expertise_Sub_expertise_Unic_Code</targetReference>
+        </connector>
+        <filterFormula>AND(
+(ISNEW() ||
+ISBLANK({!$Record.Expertise_Sub_Expertise_Unic_Code__c})  || 
+(  NOT(ISNEW())   &amp;&amp; ISCHANGED({!$Record.Sub_expertise_code__c}) )   || 
+(  NOT(ISNEW())   &amp;&amp; ISCHANGED({!$Record.Expertise__r.Expertise_Code__c}) )),
+NOT(ISBLANK({!$Record.Sub_expertise_code__c})),
+NOT(ISBLANK({!$Record.Expertise__r.Expertise_Code__c}))
+)</filterFormula>
+        <object>Sub_Expertise__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

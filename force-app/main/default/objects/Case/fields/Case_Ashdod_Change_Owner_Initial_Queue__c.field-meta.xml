@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Ashdod_Change_Owner_Initial_Queue__c</fullName>
+    <description>Monday 5044197589  קשרי קהילה חני שילר</description>
+    <externalId>false</externalId>
+    <formula>IF(
+   AND(
+    CONTAINS(Owner_Queue_wf__c, &quot;אשדוד ציבורי&quot;),
+    NOT(
+        OR(
+            Owner_Queue_wf__c = &quot;אשדוד ציבורי מוקד שח\&quot;מ&quot;,
+            Owner_Queue_wf__c = &quot;אשדוד ציבורי - פניות הציבור&quot;
+        )
+    ),
+    Owner_Queue_wf_Prior__c = &quot;קשרי קהילה אשדוד ציבורי&quot;
+   ),
+ IMAGE(&quot;https://assuta--c.vf.force.com/resource/1754912936000/BlueCircle?&quot;,&quot;Ashdod Shaham To Community&quot;,50,50),
+ &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Ashdod Change Owner Initial Queue</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

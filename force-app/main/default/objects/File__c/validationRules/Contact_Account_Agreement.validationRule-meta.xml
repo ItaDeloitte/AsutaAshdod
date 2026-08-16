@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Account_Agreement</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(file_type__c , &quot;מינוי איש קשר&quot;) &amp;&amp;
+ ISBLANK(  Contact__c  )</errorConditionFormula>
+    <errorMessage>עליך לבחור את איש הקשר אליו מתייחס המסמך</errorMessage>
+</ValidationRule>

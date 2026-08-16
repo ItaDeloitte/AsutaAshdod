@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status Kit Delievery --></label>
+    <name>Status_Kit_delievery__c</name>
+    <picklistValues>
+        <masterLabel>טרם נשלח</masterLabel>
+        <translation><!-- טרם נשלח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נשלח לבן הזוג</masterLabel>
+        <translation><!-- נשלח לבן הזוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נשלח לזוג</masterLabel>
+        <translation><!-- נשלח לזוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נשלח למטופלת</masterLabel>
+        <translation><!-- נשלח למטופלת --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

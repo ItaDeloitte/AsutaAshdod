@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Patient who performed this observation --></help>
+    <label>Patient exécutant</label>
+    <name>HealthCloudGA__PerformingPatient__c</name>
+    <relationshipLabel>Observations DME (patient exécutant)</relationshipLabel>
+</CustomFieldTranslation>

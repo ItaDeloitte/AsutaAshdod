@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבת ביטול הניתוח</label>
+    <name>MAIN_CANCELATION_CAUSE_SURGERY__c</name>
+    <picklistValues>
+        <masterLabel>אדמיניסטרטיבי</masterLabel>
+        <translation><!-- אדמיניסטרטיבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשת המנותח</masterLabel>
+        <translation><!-- בקשת המנותח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הכנה לניתוח לקויה</masterLabel>
+        <translation><!-- הכנה לניתוח לקויה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מצב בריאותי</masterLabel>
+        <translation><!-- מצב בריאותי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירותי</masterLabel>
+        <translation><!-- שירותי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תפעולי</masterLabel>
+        <translation><!-- תפעולי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

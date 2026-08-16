@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>kit_for_inst__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*Eye Surgery condition*/
+
+/* ---------------------------העתק כולל קיט אשדוד חדש--------------------- */
+IF( Site_Code__c =&quot;84&quot; &amp;&amp; domain2__c=&quot;ניתוחי עיניים&quot; &amp;&amp; ISPICKVAL(Medical_Procedure__r.Medical_Procedure_Type__c, &quot;Surgical&quot;),
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/AssutaEyeSurgery?fld366=&quot;&amp;formtitan_id_2__c,
+
+/*גרסא ישנה שמבדילה פגישות שנוצרו דרך הזדמנות:*/
+/*IF(NOT(ISBLANK( Opportunity__c )),
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/App-sales?fld82=&quot;&amp;formtitan_id_2__c,*/
+
+IF($User.Ashdod_employee__c || Site__r.Site_Code__c = &apos;33&apos;,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/AshdodKit2?fld82=&quot;&amp;formtitan_id_2__c
+, IF( Medical_Procedure__r.Procedure_Code__c == &apos;992501&apos; ||Medical_Procedure__r.Procedure_Code__c == &apos;992502&apos; ||Medical_Procedure__r.Procedure_Code__c == &apos;992503&apos; , &quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/GUF?fld38=&quot;&amp;formtitan_id_2__c,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/ft418a1f9e1591797594336_copy?fld82=&quot;&amp;formtitan_id_2__c)
+))
+
+
+/*  ------------------------------- העתק של הנוסחא לפני שינוי והוספה של קיט אשדוד 10/09/2023 ----------------------*/
+/*
+IF( Site_Code__c =&quot;84&quot; &amp;&amp; domain2__c=&quot;ניתוחי עיניים&quot; &amp;&amp; ISPICKVAL(Medical_Procedure__r.Medical_Procedure_Type__c, &quot;Surgical&quot;),
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/AssutaEyeSurgery?fld366=&quot;&amp;formtitan_id_2__c,
+IF(NOT(ISBLANK( Opportunity__c )),
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/App-sales?fld82=&quot;&amp;formtitan_id_2__c,
+
+IF($User.Ashdod_employee__c || Site__r.Site_Code__c = &apos;33&apos;,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/ft7dd18bed1594301306756_copy?fld82=&quot;&amp;formtitan_id_2__c
+, IF( Medical_Procedure__r.Procedure_Code__c == &apos;992501&apos; ||Medical_Procedure__r.Procedure_Code__c == &apos;992502&apos; ||Medical_Procedure__r.Procedure_Code__c == &apos;992503&apos; , &quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/GUF?fld38=&quot;&amp;formtitan_id_2__c,
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/ft418a1f9e1591797594336_copy?fld82=&quot;&amp;formtitan_id_2__c)
+)))
+*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Institute Kit Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

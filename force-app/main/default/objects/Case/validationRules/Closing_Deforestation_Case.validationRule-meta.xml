@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Deforestation_Case</fullName>
+    <active>true</active>
+    <description>סגירת פניות נרמ&quot;ר מסוג בקשות לביעור תתאפשר רק אם שדות החובה ממולאים וגם אם מוזן ערך במשתמש מאשר</description>
+    <errorConditionFormula>ISPICKVAL(Status, &apos;Closed&apos;) &amp;&amp; RecordType.DeveloperName == &apos;Medical_Info_Management&apos;
+&amp;&amp; ISPICKVAL(Case_subject__c, &apos;בקשה לביעור&apos;) &amp;&amp;
+(ISBLANK( TafnitShippmentDate__c ) || ISBLANK( NumOfBoxes__c )||ISBLANK(Tafnit_Date_Of_Approval__c ) || ISBLANK(Approval_Search_Date__c) || ISPICKVAL(ApprovingUser__c, &quot;&quot;) ||ISBLANK( Shipping_Number__c ) || ISBLANK( Site__c ) ||!Deforestation_Imagestore_Approval__c = True || TEXT(ApprovingUser__c) &lt;&gt; $User.Full_Name_Helper__c)</errorConditionFormula>
+    <errorMessage>שים לב, פניה בנושא אישור ביעור ניתנת לסגירה רק על ידי מנהל/משתמש מורשה. בנוסף יש למלא את כל שדות החובה תחת מקטע בקשה לביעור</errorMessage>
+</ValidationRule>

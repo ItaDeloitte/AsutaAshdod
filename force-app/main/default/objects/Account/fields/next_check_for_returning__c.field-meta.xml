@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>next_check_for_returning__c</fullName>
+    <description>שדה עזר לחישוב פנייה חוזרת למטופל</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Next Returning Check</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Phase --></label>
+    <name>Case_Phase__c</name>
+    <picklistValues>
+        <masterLabel>בחינת התאמה לשירות</masterLabel>
+        <translation><!-- בחינת התאמה לשירות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בתהליך</masterLabel>
+        <translation><!-- בתהליך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדש</masterLabel>
+        <translation><!-- חדש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סגירה</masterLabel>
+        <translation><!-- סגירה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

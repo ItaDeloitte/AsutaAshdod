@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג רופא</label>
+    <name>TypeofDoctor__c</name>
+    <picklistValues>
+        <masterLabel>Family Doctor</masterLabel>
+        <translation>רופא משפחה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialist</masterLabel>
+        <translation>רופא מומחה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

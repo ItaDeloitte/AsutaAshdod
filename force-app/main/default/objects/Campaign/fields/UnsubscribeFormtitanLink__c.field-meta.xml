@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnsubscribeFormtitanLink__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://myassuta.formtitan.com/AssutaUnsubscribe&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>UnsubscribeFormtitanLink</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assuta_Agents_At_Home_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>עד הבית - נציגים</label>
+    <queue>Assuta_Agents_At_Home</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

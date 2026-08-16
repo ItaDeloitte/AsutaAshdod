@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_scheduled__c</fullName>
+    <label>Appointment Scheduled</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>תואם תור להדרכה</fullName>
+                <default>false</default>
+                <label>תואם תור להדרכה</label>
+            </value>
+            <value>
+                <fullName>הוצעה הדרכה</fullName>
+                <default>false</default>
+                <label>הוצעה הדרכה</label>
+            </value>
+            <value>
+                <fullName>לחזור למטופל בנוגע להדרכה</fullName>
+                <default>false</default>
+                <label>לחזור למטופל בנוגע להדרכה</label>
+            </value>
+            <value>
+                <fullName>לא מעוניין</fullName>
+                <default>false</default>
+                <label>לא מעוניין</label>
+            </value>
+            <value>
+                <fullName>אין מענה</fullName>
+                <default>false</default>
+                <label>אין מענה</label>
+            </value>
+            <value>
+                <fullName>המטופל יצור איתנו קשר</fullName>
+                <default>false</default>
+                <label>המטופל יצור איתנו קשר</label>
+            </value>
+            <value>
+                <fullName>עבר הדרכה</fullName>
+                <default>false</default>
+                <label>עבר הדרכה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

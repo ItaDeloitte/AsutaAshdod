@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Colonoscopy4DaysBeforeLink__c</fullName>
+    <description>קישור לסרטון 4 ימים לפני פגישת הקולונוסקופיה</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Colonoscopy 4 Days Before Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

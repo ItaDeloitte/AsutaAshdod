@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disease_Management_Specialization__c</fullName>
+    <description>התמחות ניהול מחלה</description>
+    <label>Disease Management Specialization</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>משפחה</fullName>
+                <default>false</default>
+                <label>משפחה</label>
+            </value>
+            <value>
+                <fullName>כירורג</fullName>
+                <default>false</default>
+                <label>כירורג</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

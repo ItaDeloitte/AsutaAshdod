@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>בדיקות וייעוצים:</masterLabel>
+        <translation><!-- בדיקות וייעוצים: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גובה ומשקל</masterLabel>
+        <translation><!-- גובה ומשקל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>היסטוריה רפואית</masterLabel>
+        <translation><!-- היסטוריה רפואית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הרדמה בעבר:</masterLabel>
+        <translation><!-- הרדמה בעבר: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מוצא</masterLabel>
+        <translation><!-- מוצא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מצב משפחתי</masterLabel>
+        <translation><!-- מצב משפחתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מצב תפקודי:</masterLabel>
+        <translation><!-- מצב תפקודי: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי המטופל</masterLabel>
+        <translation><!-- פרטי המטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי הניתוח</masterLabel>
+        <translation><!-- פרטי הניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רגישויות, תרופות והרגלי צריכה:</masterLabel>
+        <translation><!-- רגישויות, תרופות והרגלי צריכה: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תחום כליות:</masterLabel>
+        <translation><!-- תחום כליות: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תחום מחלות אנדוקרינולוגיות:</masterLabel>
+        <translation><!-- תחום מחלות אנדוקרינולוגיות: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תחום מחלות המוטולוגיות:</masterLabel>
+        <translation><!-- תחום מחלות המוטולוגיות: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תחום מחלות ניורולוגיות:</masterLabel>
+        <translation><!-- תחום מחלות ניורולוגיות: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תחום מחלות ריאה:</masterLabel>
+        <translation><!-- תחום מחלות ריאה: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תחום קרדיולוגיה:</masterLabel>
+        <translation><!-- תחום קרדיולוגיה: --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תחום שינה:</masterLabel>
+        <translation><!-- תחום שינה: --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

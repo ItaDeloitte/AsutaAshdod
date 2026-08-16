@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Latest Recommendation Linked to Case --></label>
+    <name>rec_to_modify_case__c</name>
+    <relationshipLabel><!-- Cases (ההמלצה האחרונה שמקושרת לפנייה) --></relationshipLabel>
+</CustomFieldTranslation>

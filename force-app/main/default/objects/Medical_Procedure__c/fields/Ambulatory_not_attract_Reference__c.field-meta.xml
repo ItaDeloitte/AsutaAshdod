@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ambulatory_not_attract_Reference__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>הוספת צ&apos;ק בוקס באובייקט פעולה רפואית (Medical_Procedure__c)
+בשם - אין לפנות למשיכת הפניה אמבולטורית</description>
+    <label>Ambulatory not attract Reference</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

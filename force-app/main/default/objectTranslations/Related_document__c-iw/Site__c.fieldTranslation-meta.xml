@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אתר</label>
+    <name>Site__c</name>
+    <picklistValues>
+        <masterLabel>אסותא באר שבע</masterLabel>
+        <translation><!-- אסותא באר שבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא השלום</masterLabel>
+        <translation><!-- אסותא השלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא חולון</masterLabel>
+        <translation><!-- אסותא חולון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא חיפה</masterLabel>
+        <translation><!-- אסותא חיפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא ירושלים</masterLabel>
+        <translation><!-- אסותא ירושלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא עד הבית</masterLabel>
+        <translation><!-- אסותא עד הבית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא ראשל&quot;צ</masterLabel>
+        <translation><!-- אסותא ראשל&quot;צ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא רמת החייל</masterLabel>
+        <translation><!-- אסותא רמת החייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא רמת החייל – הברזל 14</masterLabel>
+        <translation><!-- אסותא רמת החייל – הברזל 14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא רעננה</masterLabel>
+        <translation><!-- אסותא רעננה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בי&quot;ח אסותא אשדוד ע&quot;ש סמסון</masterLabel>
+        <translation><!-- בי&quot;ח אסותא אשדוד ע&quot;ש סמסון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בניין העוגן - ת&quot;א</masterLabel>
+        <translation><!-- בניין העוגן - ת&quot;א --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז רפואי אסותא אשדוד כלניות</masterLabel>
+        <translation><!-- מרכז רפואי אסותא אשדוד כלניות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניידת MRI</masterLabel>
+        <translation><!-- ניידת MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קריית שמונה</masterLabel>
+        <translation><!-- קריית שמונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ראשון מכונים</masterLabel>
+        <translation><!-- ראשון מכונים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רמה&quot;ח - מגדל המכונים והמרפאות</masterLabel>
+        <translation><!-- רמה&quot;ח - מגדל המכונים והמרפאות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

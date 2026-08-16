@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>English_characters_only</fullName>
+    <active>true</active>
+    <description>לטובת יצירת לינק עבור דף נחיתה TITAN</description>
+    <errorConditionFormula>NOT(
+  REGEX(Name_for_URL__c, &quot;^[a-zA-Z_]*$&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Name_for_URL__c</errorDisplayField>
+    <errorMessage>נא להזין תווים באנגלית בלבד וללא רווחים</errorMessage>
+</ValidationRule>

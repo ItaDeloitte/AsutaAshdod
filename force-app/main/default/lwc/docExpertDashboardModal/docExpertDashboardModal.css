@@ -1,0 +1,52 @@
+.dashboard-wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.dashboard-sidebar {
+  width: 250px;
+  background-color: #f3f5f7;
+  height: 100%;
+  min-height: 1px;
+}
+
+.dashboard-content-col {
+  min-width: 1px;
+}
+
+.dashboard-content {
+  height: 100%;
+  padding-bottom: 55px;
+}
+.header-form {
+}
+
+.header-form__input-wrapper {
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+.header-form__actions {
+  padding-top: 24px;
+}
+
+.header-form__actions,
+.doctors-list {
+  gap: 15px;
+}
+
+.bottom-actions {
+  /* position: absolute; */
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.85);
+}

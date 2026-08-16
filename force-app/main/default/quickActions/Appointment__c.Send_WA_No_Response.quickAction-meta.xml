@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>שלח מסר אין מענה</description>
+    <flowDefinition>Appointment_Send_WA_No_Response</flowDefinition>
+    <label>Send WA No Response</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

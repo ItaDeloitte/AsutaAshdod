@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NOHARDAMA</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Approved_by_anesthesiologist__c</columns>
+    <columns>doc_from_try__c</columns>
+    <columns>Details__c</columns>
+    <columns>Means_of_transmitting_information__c</columns>
+    <columns>Call_center_treatment_status__c</columns>
+    <columns>PreSurgery_Additional_Documents__c</columns>
+    <columns>Have_all_the_documents_been_received__c</columns>
+    <columns>Missing_documents__c</columns>
+    <columns>Anesthesiologist__c</columns>
+    <columns>Refusal_reason_details__c</columns>
+    <columns>Surgeon_informed__c</columns>
+    <columns>Surgery_status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Appointment_Date_Time__c</field>
+        <operation>greaterThan</operation>
+        <value>YESTERDAY</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>Approved_by_anesthesiologist__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </filters>
+    <filters>
+        <field>Surgery_status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled,Postponed</value>
+    </filters>
+    <label>לא מאושרי הרדמה</label>
+</ListView>

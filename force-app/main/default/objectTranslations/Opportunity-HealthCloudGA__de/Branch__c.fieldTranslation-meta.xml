@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Branch --></label>
+    <name>Branch__c</name>
+    <picklistValues>
+        <masterLabel>Ashdod</masterLabel>
+        <translation><!-- Ashdod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beer Sheva</masterLabel>
+        <translation><!-- Beer Sheva --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beit Shemesh</masterLabel>
+        <translation><!-- Beit Shemesh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bnei Brak</masterLabel>
+        <translation><!-- Bnei Brak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haifa</masterLabel>
+        <translation><!-- Haifa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hashalom</masterLabel>
+        <translation><!-- Hashalom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jerusalem</masterLabel>
+        <translation><!-- Jerusalem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ra&apos;anana</masterLabel>
+        <translation><!-- Ra&apos;anana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rishon LeZion</masterLabel>
+        <translation><!-- Rishon LeZion --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

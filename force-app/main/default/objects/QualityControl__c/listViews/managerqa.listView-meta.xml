@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>managerqa</fullName>
+    <columns>NAME</columns>
+    <columns>Open_or_Closed__c</columns>
+    <columns>Mistake_type__c</columns>
+    <columns>Consequences__c</columns>
+    <columns>Feedback_Desc__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Manager_same__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>בקרות איכות בטיפולי 😥</label>
+</ListView>

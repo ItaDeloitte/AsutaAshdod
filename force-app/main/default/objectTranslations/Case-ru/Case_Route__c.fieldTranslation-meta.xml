@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Route --></label>
+    <name>Case_Route__c</name>
+    <picklistValues>
+        <masterLabel>טרם נקבע</masterLabel>
+        <translation><!-- טרם נקבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסלול ביחד</masterLabel>
+        <translation><!-- מסלול ביחד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסלול בנפרד</masterLabel>
+        <translation><!-- מסלול בנפרד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסלול יחיד</masterLabel>
+        <translation><!-- מסלול יחיד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסלול תורם</masterLabel>
+        <translation><!-- מסלול תורם --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

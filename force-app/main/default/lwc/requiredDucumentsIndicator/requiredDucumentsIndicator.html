@@ -1,0 +1,28 @@
+<template>
+    <template if:true={loaded}>
+
+        <lightning-card title="מסמכים נדרשים לפגישה" icon-name='standard:file'>
+            <div class="slds-p-around_medium">
+                <lightning-record-view-form
+                    object-api-name="Appointment__c" 
+                    record-id={recordId} >
+                    <lightning-output-field field-name="Required_documents_status__c"> </lightning-output-field>
+                </lightning-record-view-form>
+
+                <lightning-record-form 
+                    object-api-name="Appointment__c" 
+                    record-id={recordId} 
+                    fields={fields}
+                    mode="view">
+                </lightning-record-form>
+
+                <template for:each={docsData} for:item="doc">
+                    <div key={doc.docName} style="width: fit-content;" class="slds-col slds-size_1-of-3">
+                        {doc.docName} - <template if:true={doc.isUploaded}>✅</template><template
+                            if:false={doc.isUploaded}>❌</template>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </template>
+</template>

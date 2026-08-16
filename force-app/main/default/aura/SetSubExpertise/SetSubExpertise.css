@@ -1,0 +1,7 @@
+.THIS .cActionModalInner {
+  max-height: 400px;
+}
+
+.THIS .cActionModalInner .dm-body {
+  padding-bottom: 0;
+}

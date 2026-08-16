@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_procedure_Nurse__c</fullName>
+    <description>Monday 2009762931</description>
+    <label>Required Procedure Nurse</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fluid/Medication Infusion</fullName>
+                <default>false</default>
+                <label>עירוי נוזלים/תרופות</label>
+            </value>
+            <value>
+                <fullName>Removing Stitches</fullName>
+                <default>false</default>
+                <label>הוצאת תפרים</label>
+            </value>
+            <value>
+                <fullName>Pain Balance</fullName>
+                <default>false</default>
+                <label>איזון כאב</label>
+            </value>
+            <value>
+                <fullName>Insertion/Removal of a Catheter</fullName>
+                <default>false</default>
+                <label>הכנסת/ הוצאת קטטר</label>
+            </value>
+            <value>
+                <fullName>Insertion/Removal of a Zonda</fullName>
+                <default>false</default>
+                <label>הכנסת/ הוצאת זונדה</label>
+            </value>
+            <value>
+                <fullName>Drainage Treatment</fullName>
+                <default>false</default>
+                <label>טיפול בנקזים</label>
+            </value>
+            <value>
+                <fullName>Training in Administering Medications/Injections/Diabetic Foot Assessment</fullName>
+                <default>false</default>
+                <label>הדרכה למתן תרופות/ זריקות/ אומדן כף רגל סוכרתית</label>
+            </value>
+            <value>
+                <fullName>Laboratory Tests</fullName>
+                <default>false</default>
+                <label>בדיקות מעבדה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

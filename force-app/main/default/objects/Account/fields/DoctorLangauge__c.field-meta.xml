@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoctorLangauge__c</fullName>
+    <description>שפת הרופא</description>
+    <label>Doctor Language</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>עברית</fullName>
+                <default>false</default>
+                <label>עברית</label>
+            </value>
+            <value>
+                <fullName>אנגלית</fullName>
+                <default>false</default>
+                <label>אנגלית</label>
+            </value>
+            <value>
+                <fullName>ערבית</fullName>
+                <default>false</default>
+                <label>ערבית</label>
+            </value>
+            <value>
+                <fullName>רוסית</fullName>
+                <default>false</default>
+                <label>רוסית</label>
+            </value>
+            <value>
+                <fullName>אמהרית</fullName>
+                <default>false</default>
+                <label>אמהרית</label>
+            </value>
+            <value>
+                <fullName>צרפתית</fullName>
+                <default>false</default>
+                <label>צרפתית</label>
+            </value>
+            <value>
+                <fullName>ספרדית</fullName>
+                <default>false</default>
+                <label>ספרדית</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,47 @@
+<aura:component implements="lightning:utilityItem" extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="chatsList" type="List" default="[]" />
+  <aura:attribute name="selectedTab" type="String" />
+  <aura:attribute name="utilityLabel" type="String" default="DevChat" />
+  <aura:attribute name="error" type="String" default="" />
+  <aura:attribute name="labels" type="Map" default="{}" />
+
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler event="lightning:omniChannelWorkAccepted" action="{!c.onWorkAccepted}" />
+  <aura:handler event="lightning:omniChannelWorkClosed" action="{! c.onWorkClosed }" />
+  <aura:handler event="lightning:conversationChatEnded" value="{!this}" action="{!c.onConversationChatEnded}" />
+  <aura:handler event="lightning:conversationNewMessage" value="{!this}" action="{!c.onConversationNewMessage}" />
+
+  <!-- events -->
+  <!-- methods -->
+
+  <div aura:id="chatWrapper" class="slds-is-relative">
+    <lightning:omniToolkitAPI aura:id="omniApi" />
+    <lightning:conversationToolkitAPI aura:id="conversationKit" />
+    <lightning:utilityBarAPI aura:id="utilityBar" />
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+    <!-- <div class="quick">quick</div> -->
+    <aura:if isTrue="{!empty(v.chatsList)}">
+      <div class="slds-p-vertical_xx-large slds-text-align_center">No active chats, UPDATED v2</div>
+    </aura:if>
+    <aura:if isTrue="{!!empty(v.chatsList)}">
+      <lightning:tabset class="chat-tabset" onselect="{!c.tabSelectHandler}">
+        <aura:iteration items="{!v.chatsList}" var="chat">
+          <lightning:tab class="chat-tab" label="{!chat.describe.name}" id="{!chat.work.workItemId}">
+            <c:ChatItem chat="{!chat}" onclosechattab="{!c.onCloseChatTab}"></c:ChatItem>
+          </lightning:tab>
+        </aura:iteration>
+      </lightning:tabset>
+    </aura:if>
+
+    <aura:if isTrue="{!v.error}">
+      <div class="notification-container">
+        <c:errorsAlert error="{!v.error}" closeable="true" onclose="{!c.errorCloseHandler}"></c:errorsAlert>
+      </div>
+    </aura:if>
+
+  </div>
+</aura:component>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Reason__c</fullName>
+    <label>מהות השינוי</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>שיחה יוצאת</fullName>
+                <default>false</default>
+                <label>שיחה יוצאת</label>
+            </value>
+            <value>
+                <fullName>שיחה יוצאת במענה</fullName>
+                <default>false</default>
+                <label>שיחה יוצאת במענה</label>
+            </value>
+            <value>
+                <fullName>שיחה יוצאת ללא מענה</fullName>
+                <default>false</default>
+                <label>שיחה יוצאת ללא מענה</label>
+            </value>
+            <value>
+                <fullName>לכמה נשלחו מסמכים</fullName>
+                <default>false</default>
+                <label>לכמה נשלחו מסמכים</label>
+            </value>
+            <value>
+                <fullName>הושלם תהליך (התקבלה החלטה)</fullName>
+                <default>false</default>
+                <label>הושלם תהליך (התקבלה החלטה)</label>
+            </value>
+            <value>
+                <fullName>בוצע תשלום</fullName>
+                <default>false</default>
+                <label>בוצע תשלום</label>
+            </value>
+            <value>
+                <fullName>פניה נסגרה</fullName>
+                <default>false</default>
+                <label>פניה נסגרה</label>
+            </value>
+            <value>
+                <fullName>פניה סומנה כרגישה</fullName>
+                <default>false</default>
+                <label>פניה סומנה כרגישה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

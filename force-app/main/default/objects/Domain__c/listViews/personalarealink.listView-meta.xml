@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>personalarealink</fullName>
+    <columns>Converted_To_Private_Zone__c</columns>
+    <columns>NAME</columns>
+    <columns>DomainCode__c</columns>
+    <columns>Domain_Type__c</columns>
+    <columns>Appointment_Coordination_System__c</columns>
+    <columns>Status__c</columns>
+    <columns>sendingByWhatsApp__c</columns>
+    <columns>Domain_Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Converted_To_Private_Zone__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>תחומים עם הסבה לאיזור האישי בהודעת זימון</label>
+</ListView>

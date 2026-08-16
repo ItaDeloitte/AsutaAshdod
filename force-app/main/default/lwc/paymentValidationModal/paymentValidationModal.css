@@ -1,0 +1,54 @@
+.slds-modal__container{
+    max-width: 500px;
+    width:90%;
+    direction: rtl;
+}
+
+.input-0{
+    width: 16rem;
+    display: inline-block;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.input-1{
+    width: 9rem;
+    display: inline-block;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.input-2{
+    width: 9rem;
+    display: inline-block;
+    text-align: right;
+    margin-right: 2rem;
+}
+.input-3{
+    width: 20rem;
+    display: inline-block;
+    text-align: right;
+    margin-right: 2rem;
+}
+.input-4{
+    width: 30rem;
+    margin-right: 1.7rem;
+    display:inline-flex;
+    padding-top: 1rem;
+}
+.section-1{
+    position: relative;
+}
+.seciton-2{
+    position: absolute;
+}
+
+.spinnerHolder{
+    position: relative;
+    display: inline-block;
+    width: 35rem;
+    /* vertical-align: middle; */
+    white-space: nowrap;
+    transform: translateX(-250px);
+    transform: translateY(-12rem);
+}

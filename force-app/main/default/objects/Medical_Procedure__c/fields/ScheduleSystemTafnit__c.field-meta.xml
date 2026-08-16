@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ScheduleSystemTafnit__c</fullName>
+    <description>ערך השדה יגיע ב ETL</description>
+    <label>Tafnit Scheduling System</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TAFNIT</fullName>
+                <default>false</default>
+                <label>TAFNIT</label>
+            </value>
+            <value>
+                <fullName>RIS</fullName>
+                <default>false</default>
+                <label>RIS</label>
+            </value>
+            <value>
+                <fullName>QFLOW</fullName>
+                <default>false</default>
+                <label>QFLOW</label>
+            </value>
+            <value>
+                <fullName>TAFNIT+QF</fullName>
+                <default>false</default>
+                <label>TAFNIT+QF</label>
+            </value>
+            <value>
+                <fullName>NULL</fullName>
+                <default>false</default>
+                <label>NULL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>진료 프로그램</label>
+    <name>HealthCloudGA__CareProgram__c</name>
+    <relationshipLabel>케어 프로그램 계획 템플릿</relationshipLabel>
+</CustomFieldTranslation>

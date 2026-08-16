@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>read_only_after_creation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISNEW()) ,
+OR(ISCHANGED( Notes__c ) ,
+ISCHANGED(  min_price__c  ) ,
+ISCHANGED(  max_price__c  ) ,
+ISCHANGED(  Implants__c  ) ,
+ISCHANGED(  Implants_mp__c  )) ,
+NOT($Profile.Name = &quot;Manager&quot;)
+)</errorConditionFormula>
+    <errorMessage>לא ניתן לערוך משתל. עבור עריכת מחירי מינימום ומקסימום- פנה/&apos; למנהל/ת</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>2</activeVersionNumber>
+    <description>שליחת חיווי למטופל על זיכוי במסגרת ביטול הפגישה
+22.1 - Flow Refactoring</description>
+    <masterLabel>Appointment - Trigger Flow - Sending SMS To Patient About Credit Process</masterLabel>
+</FlowDefinition>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action Type --></label>
+    <name>OB_Archiver__Type__c</name>
+    <picklistValues>
+        <masterLabel>Archive</masterLabel>
+        <translation><!-- Archive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Export</masterLabel>
+        <translation><!-- Export --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Export-and-download</masterLabel>
+        <translation><!-- Export-and-download --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Export-to-external-bucket</masterLabel>
+        <translation><!-- Export-to-external-bucket --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purge</masterLabel>
+        <translation><!-- Purge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purge-estimation</masterLabel>
+        <translation><!-- Purge-estimation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unarchive</masterLabel>
+        <translation><!-- Unarchive --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

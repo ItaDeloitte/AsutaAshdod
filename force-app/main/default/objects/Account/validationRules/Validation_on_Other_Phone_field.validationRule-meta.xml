@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_on_Other_Phone_field</fullName>
+    <active>false</active>
+    <description>מוודא כי מספר הטלפון יכיל 9 או 10 תווים, ויתחיל ב-0 במידה והמטופל ישראלי.</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+(( LastModifiedById&lt;&gt;&apos;0054J000002QSkU&apos; &amp;&amp; CreatedById&lt;&gt;&apos;0054J000002QSkU&apos; )|| ( LastModifiedById&lt;&gt;&apos;0054J000000vlO1&apos; &amp;&amp; CreatedById&lt;&gt;&apos;0054J000000vlO1&apos; ))
+
+
+&amp;&amp;
+
+((ISNEW() &amp;&amp; DisableValidation__c = false) 
+|| 
+(NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(DisableValidation__c))))
+&amp;&amp; 
+NOT(ISBLANK( PersonOtherPhone )) 
+&amp;&amp; 
+( CONTAINS(PersonMailingCountry , &quot;ישראל&quot;)
+||
+ISBLANK(PersonMailingCountry) ) 
+&amp;&amp; ( 
+NOT(LEN(PersonOtherPhone ) = 9 || LEN(PersonOtherPhone ) = 10) 
+|| 
+( LEFT(PersonOtherPhone , 2) = &quot;01&quot; || LEFT(PersonOtherPhone , 2) = &quot;00&quot; || LEFT(PersonOtherPhone , 2) = &quot;06&quot;) 
+|| 
+NOT( LEFT(PersonOtherPhone , 1) = &quot;0&quot;) 
+)
+&amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;</errorConditionFormula>
+    <errorDisplayField>PersonOtherPhone</errorDisplayField>
+    <errorMessage>מספר הטלפון אינו תקין</errorMessage>
+</ValidationRule>

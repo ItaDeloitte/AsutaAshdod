@@ -1,0 +1,71 @@
+<aura:component extends="c:BaseComponent" implements="flexipage:availableForAllPageTypes,lightning:utilityItem"
+  access="global">
+
+  <!-- attrs -->
+  <aura:attribute name="supportsPopOut" type="Boolean" default="true" />
+  <aura:attribute name="data" type="Map" default="{idType:'',idNumber:''}" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="showCancelButton" type="Boolean" default="false" />
+  <aura:attribute name="queryLimit" type="Integer" default="10" />
+  <aura:attribute name="selectedAccountOption" type="Map" />
+  <aura:attribute name="iconSrc" type="String"
+    default="https://freeiconshop.com/wp-content/uploads/edd/image-solid.png" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="change" value="{!v.data}" action="{!c.onChangeData}" />
+  <aura:handler event="forceCommunity:routeChange" action="{!c.onChangeRoute}" />
+  <!-- events -->
+  <!-- methods -->
+  <aura:method name="cancel" action="{!c.onCancel}" />
+
+
+  <div class="slds-card slds-is-relative">
+    <lightning:utilityBarAPI aura:id="utilitybar" />
+    <lightning:navigation aura:id="navigation" />
+
+    <c:ActionModalInner applyStyles="false">
+      <!--  <aura:set attribute="styles">
+        <aura:html tag="style">
+          .slds-modal__container { width:80%;max-width:600px;}
+        </aura:html>
+      </aura:set> -->
+      <aura:set attribute="title">
+        <div class="slds-text-align_center">
+          <aura:if isTrue="{!v.iconSrc}">
+            <img class="logo-img" src="{!v.iconSrc}" alt="img12" />
+          </aura:if>
+        </div>
+        <!-- {!$Label.c.Search_Account} -->
+      </aura:set>
+      <div class="slds-p-around_medium">
+        <aura:if isTrue="{!v.serverError}">
+          <c:Alert theme="error">
+            <div>
+              <aura:unescapedHtml value="{!v.serverError}" />
+            </div>
+          </c:Alert>
+        </aura:if>
+        <div class="slds-grid slds-wrap slds-gutters">
+          <div class="slds-col slds-size_1-of-1 slds-m-bottom_medium">
+            <c:BaseAutocomplete aura:id="formField" label="" value="{!v.data.idNumber}"
+              onsearch="{!c.onSearch}" oninitsearch="{!c.onSearch}" required="true"
+              placeholder="{!$Label.c.Enter_ID_Number}" isPlainAutoComplete="true" name="idNumber"
+              onchange="{!c.onChangeAutocomplete}" />
+          </div>
+        </div>
+      </div>
+      <aura:set attribute="footer">
+        <aura:if isTrue="{!v.showCancelButton}">
+          <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+            label="{!$Label.c.Cancel}" />
+        </aura:if>
+        <lightning:button variant="brand" type="button" onclick="{!c.onSubmit}" disabled="{!v.isLoading}"
+          label="{!v.selectedAccountOption?$Label.c.Show:$Label.c.Create}" />
+      </aura:set>
+    </c:ActionModalInner>
+    <!-- $Label.c.Search -->
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+</aura:component>

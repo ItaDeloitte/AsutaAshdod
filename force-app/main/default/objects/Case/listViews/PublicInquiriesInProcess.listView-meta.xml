@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PublicInquiriesInProcess</fullName>
+    <booleanFilter>1 AND 2 AND 5 AND (3 OR 4) AND 6</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Subject_Public_Inquiry__c</columns>
+    <columns>Site_Public_Inquiry__c</columns>
+    <columns>CaseCreationDate__c</columns>
+    <columns>DeadlineHandlingDate__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>SLADeviation__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Third Party,הועבר לטיפול מזכירות,Escalated,In_Progress,בטיפול,In_Process,ThirdParty,Awaits_Response,Following</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.PublicInquiries</value>
+    </filters>
+    <filters>
+        <field>Site_Public_Inquiry__c</field>
+        <operation>notContain</operation>
+        <value>סמסון</value>
+    </filters>
+    <filters>
+        <field>Owner_Queue_wf__c</field>
+        <operation>contains</operation>
+        <value>מרכזים</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notContain</operation>
+        <value>אשדוד</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notContain</operation>
+        <value>dafnal@a</value>
+    </filters>
+    <label>פניות הציבור בטיפול - מרכזים</label>
+</ListView>

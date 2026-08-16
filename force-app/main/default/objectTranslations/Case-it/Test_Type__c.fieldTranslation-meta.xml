@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Test Type --></label>
+    <name>Test_Type__c</name>
+    <picklistValues>
+        <masterLabel>CT</masterLabel>
+        <translation><!-- CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EEG</masterLabel>
+        <translation><!-- EEG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI</masterLabel>
+        <translation><!-- MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PET</masterLabel>
+        <translation><!-- PET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RELAX</masterLabel>
+        <translation><!-- RELAX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TCD</masterLabel>
+        <translation><!-- TCD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US</masterLabel>
+        <translation><!-- US --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US שד</masterLabel>
+        <translation><!-- US שד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>א.ר.ם</masterLabel>
+        <translation><!-- א.ר.ם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אורולוגיה א.א.ג</masterLabel>
+        <translation><!-- אורולוגיה א.א.ג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אורומדיק</masterLabel>
+        <translation><!-- אורומדיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אורטוקליניק מרפאת אגר</masterLabel>
+        <translation><!-- אורטוקליניק מרפאת אגר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אורתופדיה נוירוכירורגיה</masterLabel>
+        <translation><!-- אורתופדיה נוירוכירורגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>איה מדיקל</masterLabel>
+        <translation><!-- איה מדיקל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אישפוז יום</masterLabel>
+        <translation><!-- אישפוז יום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא אופטיק</masterLabel>
+        <translation><!-- אסותא אופטיק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסיה מדיקל</masterLabel>
+        <translation><!-- אסיה מדיקל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אקו / אקו במאמץ</masterLabel>
+        <translation><!-- אקו / אקו במאמץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ארגומטריה</masterLabel>
+        <translation><!-- ארגומטריה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אשפוז המטולוגי/פנימי</masterLabel>
+        <translation><!-- אשפוז המטולוגי/פנימי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אשפוז כללי</masterLabel>
+        <translation><!-- אשפוז כללי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה</masterLabel>
+        <translation><!-- בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה ביתית</masterLabel>
+        <translation><!-- בדיקה ביתית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בדיקה במכון</masterLabel>
+        <translation><!-- בדיקה במכון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביופסיה</masterLabel>
+        <translation><!-- ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביופסיות שד</masterLabel>
+        <translation><!-- ביופסיות שד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בנק הזרע</masterLabel>
+        <translation><!-- בנק הזרע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בריאטריה ראשל&quot;צ</masterLabel>
+        <translation><!-- בריאטריה ראשל&quot;צ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גניקולוגיה</masterLabel>
+        <translation><!-- גניקולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גסטרו סרג&apos;רי</masterLabel>
+        <translation><!-- גסטרו סרג&apos;רי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גסטרוסקופיה</masterLabel>
+        <translation><!-- גסטרוסקופיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הולטר</masterLabel>
+        <translation><!-- הולטר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הלפרין - החלפות מפרק</masterLabel>
+        <translation><!-- הלפרין - החלפות מפרק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הישראלי לבריאות המרפק</masterLabel>
+        <translation><!-- המרכז הישראלי לבריאות המרפק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז לאורתופדיה מתקדמת</masterLabel>
+        <translation><!-- המרכז לאורתופדיה מתקדמת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז לניתוחי עמוד שדרה</masterLabel>
+        <translation><!-- המרכז לניתוחי עמוד שדרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השגות על תוצאות בדיקה סרולוגית</masterLabel>
+        <translation><!-- השגות על תוצאות בדיקה סרולוגית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול נמרץ</masterLabel>
+        <translation><!-- טיפול נמרץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ייעוץ אונקולוגי</masterLabel>
+        <translation><!-- ייעוץ אונקולוגי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יעוץ רופא</masterLabel>
+        <translation><!-- יעוץ רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כימותרפיה</masterLabel>
+        <translation><!-- כימותרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כירוגיה כללית</masterLabel>
+        <translation><!-- כירוגיה כללית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לב חזה</masterLabel>
+        <translation><!-- לב חזה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחלקת ילדים</masterLabel>
+        <translation><!-- מחלקת ילדים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיפוי לב</masterLabel>
+        <translation><!-- מיפוי לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיפויים</masterLabel>
+        <translation><!-- מיפויים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכבידנט</masterLabel>
+        <translation><!-- מכבידנט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכון ריפוי בעיסוק</masterLabel>
+        <translation><!-- מכון ריפוי בעיסוק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממוגרפיה</masterLabel>
+        <translation><!-- ממוגרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוח עיניים</masterLabel>
+        <translation><!-- ניתוח עיניים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נשים/כירורגיה ב&apos;</masterLabel>
+        <translation><!-- נשים/כירורגיה ב&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סרג&apos;יקר</masterLabel>
+        <translation><!-- סרג&apos;יקר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פנימית המטולוגיה/ אונקולוגיה</masterLabel>
+        <translation><!-- פנימית המטולוגיה/ אונקולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פנימית/ אורתופדית ב&apos;</masterLabel>
+        <translation><!-- פנימית/ אורתופדית ב&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צפיפות עצם</masterLabel>
+        <translation><!-- צפיפות עצם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קולונוסקופיה</masterLabel>
+        <translation><!-- קולונוסקופיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קולונוסקופיה וירטואלית</masterLabel>
+        <translation><!-- קולונוסקופיה וירטואלית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קולפרו סרג&apos;יקל גרופ</masterLabel>
+        <translation><!-- קולפרו סרג&apos;יקל גרופ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קרדיוהיל</masterLabel>
+        <translation><!-- קרדיוהיל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רדיולוגיה פולשנית</masterLabel>
+        <translation><!-- רדיולוגיה פולשנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רדיותרפיה</masterLabel>
+        <translation><!-- רדיותרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רנטגן</masterLabel>
+        <translation><!-- רנטגן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיניים ראשל&quot;צ</masterLabel>
+        <translation><!-- שיניים ראשל&quot;צ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

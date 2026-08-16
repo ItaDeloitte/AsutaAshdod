@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- שדה בחירה שתמאר סיבה עבור ביטול הזמנה של חדר פרטי --></help>
+    <label>סיבת ביטול חדר פרטי</label>
+    <name>CancelationReasonPrivateRoom__c</name>
+    <picklistValues>
+        <masterLabel>Not interested - No hospitalization for surgery</masterLabel>
+        <translation>לא מעוניין - לא קיים אשפוז בניתוח/לא נשאר ללילה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested - Patient does not know if he will stay</masterLabel>
+        <translation>לא מעוניין - המטופל לא יודע אם נשאר ללילה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested - in being alone in the room</masterLabel>
+        <translation>לא מעוניין להיות לבד בחדר</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested – few days of hospitalization</masterLabel>
+        <translation>לא מעוניין – ימי אשפוז מעטים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested – high price</masterLabel>
+        <translation>לא מעוניין – מחיר גבוה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not interested – will get back to us if relevant</masterLabel>
+        <translation>לא מעוניין – יחזור אלינו במידה ורלוונטי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patients called on the day of surgery to reserve a private room</masterLabel>
+        <translation>מטופלים התקשרו ביום הניתוח לשריון חדר פרטי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The surgery is performed at a site where the call center does not reserve rooms (Haifa, Ashdod, Be&apos;er Sheva).</masterLabel>
+        <translation>הניתוח מתבצע באתר שהמוקד לא משריין חדרים (חיפה, אשדוד,ב&quot;ש)</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג עוסק</label>
+    <name>Supplier_Type__c</name>
+    <picklistValues>
+        <masterLabel>חברה</masterLabel>
+        <translation><!-- חברה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חשבונית עצמית</masterLabel>
+        <translation><!-- חשבונית עצמית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עוסק מורשה</masterLabel>
+        <translation><!-- עוסק מורשה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עוסק פטור</masterLabel>
+        <translation><!-- עוסק פטור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עמותה</masterLabel>
+        <translation><!-- עמותה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

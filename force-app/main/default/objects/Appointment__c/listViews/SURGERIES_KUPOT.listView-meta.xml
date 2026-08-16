@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SURGERIES_KUPOT</fullName>
+    <columns>NAME</columns>
+    <columns>Doctor_Account__c</columns>
+    <columns>Courses_Icon__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Referral_Status_Maccabi__c</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Agreement_with_assuta__c</columns>
+    <columns>domain2__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>processing_status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>בטיפול אדמיניסטרטיבי,ממתין להתחייבות</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date_bigger_than_today__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PayerFactor__c</field>
+        <operation>contains</operation>
+        <value>לאומית,מאוחדת</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>notContain</operation>
+        <value>אבלציה,צנתור,CARTO</value>
+    </filters>
+    <filters>
+        <field>PaymentsRead__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>ניתוחים בטיפול אדמיניסטרטיבי -קופות ל.מ</label>
+</ListView>

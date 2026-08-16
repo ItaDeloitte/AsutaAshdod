@@ -1,0 +1,60 @@
+<aura:component extends="c:BaseComponent" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="apiNames" type="String" default="" />
+  <aura:attribute name="resultList" type="List" default="[]" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="imgLink" type="String" default="" />
+  <aura:attribute name="componentName" type="String" default="" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler event="force:refreshView" action="{!c.onInit}"/>
+  <!-- events -->
+  <!-- methods -->
+
+  <aura:if isTrue="{!or(v.resultList.length > 0, v.serverError)}">
+    <div class="slds-card">
+      <header class="slds-card__header slds-grid slds-einstein-header">
+        <div class="slds-media slds-media_center slds-has-flexi-truncate">
+          <div class="slds-media__figure">
+            <lightning:icon iconName="standard:service_appointment" size="small" />
+          </div>
+          <div class="slds-media__body slds-truncate">
+            <span class="slds-text-heading_small card-title">
+              {!v.componentName}
+            </span>
+          </div>
+        </div>
+        <div class="slds-einstein-header__figure slds-size_1-of-4 slds-medium-size_1-of-3"></div>
+      </header>
+      <div class="slds-card__body">
+        <div class="slds-card__body_inner">
+          <div class="">
+            <p style="text-align: center;" data-aura-rendered-by="3751:0">
+              <img alt="image.png" src="{!v.imgLink}" />
+            </p>
+            <ul class="slds-listbox slds-listbox_vertical slds-list_dotted" role="presentation">
+              <aura:iteration items="{!v.resultList}" var="result">
+                <div class="slds-p-top_small slds-p-left_xx-large">
+                  <li ><span class="slds-truncate" title="{!result}">{!result}</span></li>
+                </div>
+              </aura:iteration>
+            </ul>
+          </div>
+          <div class="slds-p-top_medium">
+            <aura:if isTrue="{!v.serverError}">
+              <c:Alert theme="error">
+                <div>
+                  <aura:unescapedHtml value="{!v.serverError}" />
+                </div>
+              </c:Alert>
+            </aura:if>
+          </div>
+        </div>
+        <c:Spinner isLoading="{!v.isLoading}" size="small" />
+      </div>
+    </div>
+  </aura:if>
+</aura:component>

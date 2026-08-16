@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>EHR 医師</label>
+    <name>HealthCloudGA__EhrPractitioner__c</name>
+    <relationshipLabel>EHR 医師の役割</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- color hexadecimal code --></help>
+    <label>צבע טקסט לגוף</label>
+    <name>MainTextColor__c</name>
+</CustomFieldTranslation>

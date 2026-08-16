@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Assuta_Letterhead</letterhead>
+    <name>בוצעה שיחה ראשונית- זכר-רמת החייל</name>
+    <style>formalLetter</style>
+    <subject>אסותא - מסמכים למילוי</subject>
+    <textOnly>שלום רב,
+
+
+בהמשך לשיחתנו מיום {!Case.Kit_Sending_Date_Partner_IVF__c}, מצורף טופס &quot;הנחיה ליחידה להפריה החוץ גופית ביחס לביציות מופרות מוקפאות&quot; למילוי.
+
+
+נבקשך לקרוא את הטופס בעיון ולהנחות אותנו בחוזר בתוך 30 יום כיצד לפעול, בהתאם לאחת האפשרויות המפורטות בטופס (סעיף 4 )
+
+
+יש לשלוח אלינו את המסמכים הבאים:
+
+א. הטופס המצורף מלא וחתום עם סימון בחירתכם (בסעיף 4)
+
+ב. צילום תעודת זהות של כל אחד מהצדדים + חתימת כל אחד מהצדדים על גבי הצילום + ציון תאריך החתימה
+
+
+את טופס ההחלטה בצרוף המסמכים ניתן:
+
+1. להשיב חזרה למייל זה.
+
+2. לשלוח באמצעות מספר פקס {!Case.Fax_Number_IVF__c} (fax to mail).
+
+
+*במידה ונבחרה אפשרות של המשך הקפאה, אנו ניצור עמך קשר טלפוני לאחר קבלת המסמכים לצורך ביצוע חיוב עבור השירות.
+
+
+לכל שאלה ועניין אנו מזמינים אותך לפנות אלינו במייל {!Case.Site_Email__c} .
+
+
+בברכה,
+
+{!Case.OwnerFullName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Assuta_Letterhead</letterhead>
+    <name>קיט תור לניתוחים</name>
+    <style>freeForm</style>
+    <subject>פרטי התור לאסותא</subject>
+    <textOnly>{!Appointment__c.Patient_Account__c} שלום,
+
+
+
+מצורף לנוחיותך קיט עבור ניתוח {!Medical_Procedure__c.Marketing_Procedure_Name__c} שנקבע עבורך, לצפייה הקש כאן
+
+
+
+
+
+לכל מידע נוסף ניתן לפנות למוקד אסותא במספר 6474*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

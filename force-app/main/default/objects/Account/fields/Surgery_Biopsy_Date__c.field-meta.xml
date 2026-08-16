@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surgery_Biopsy_Date__c</fullName>
+    <description>מועד ניתוח \ ביופסיה (מרפאת בריאות הגבר)</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Surgery / Biopsy Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

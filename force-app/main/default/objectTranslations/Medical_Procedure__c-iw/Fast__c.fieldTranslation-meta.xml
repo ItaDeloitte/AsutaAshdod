@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>צום</label>
+    <name>Fast__c</name>
+    <picklistValues>
+        <masterLabel>Adult - No</masterLabel>
+        <translation>מבוגר - לא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adult - Yes</masterLabel>
+        <translation>מבוגר - כן</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child - No</masterLabel>
+        <translation>ילד - לא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child - Yes</masterLabel>
+        <translation>ילד - כן</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation>לא</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation>כן</translation>
+    </picklistValues>
+</CustomFieldTranslation>

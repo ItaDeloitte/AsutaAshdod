@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Critical</fullName>
+        <default>false</default>
+        <label>Critical</label>
+        <closed>false</closed>
+    </standardValue>
+
+    <standardValue>
+        <fullName>נדרש המשך טיפול</fullName>
+        <default>false</default>
+        <label>נדרש המשך טיפול</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לתיאום ביופסיה</fullName>
+        <default>false</default>
+        <label>ממתין לתיאום ביופסיה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לצד שלישי</fullName>
+        <default>false</default>
+        <label>ממתין לצד שלישי</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>המלצה למומחה</fullName>
+        <default>false</default>
+        <label>המלצה למומחה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>בטיפול</fullName>
+        <default>false</default>
+        <label>בטיפול</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין למועד ביופסיה</fullName>
+        <default>false</default>
+        <label>ממתין למועד ביופסיה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>העברה חזרה למוקד</fullName>
+        <default>false</default>
+        <label>העברה חזרה למוקד</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>סגירת אירוע אוטומטית</fullName>
+        <default>false</default>
+        <label>סגירת אירוע אוטומטית</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לקביעת תור ממוטומיה</fullName>
+        <default>false</default>
+        <label>ממתין לקביעת תור ממוטומיה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>הועבר לטיפול מזכירות</fullName>
+        <default>false</default>
+        <label>הועבר לטיפול מזכירות</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>בטיפול מנהל</fullName>
+        <default>false</default>
+        <label>בטיפול מנהל</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>מטופלת במעקב</fullName>
+        <default>false</default>
+        <label>מטופלת במעקב</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>הועבר לצד שלישי</fullName>
+        <default>false</default>
+        <label>הועבר לצד שלישי</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>המשך טיפול צוות תשלומי רופאים</fullName>
+        <default>false</default>
+        <label>המשך טיפול צוות תשלומי רופאים</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>זימון לבדיקה</fullName>
+        <default>false</default>
+        <label>זימון לבדיקה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>זימון למומחה</fullName>
+        <default>false</default>
+        <label>זימון למומחה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לתזכור על ידי נציג</fullName>
+        <default>false</default>
+        <label>ממתין לתזכור על ידי נציג</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>בבדיקה מול גורם נוסף</fullName>
+        <default>false</default>
+        <label>בבדיקה מול גורם נוסף</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>לא פעיל</fullName>
+        <default>false</default>
+        <label>לא פעיל</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>טופל</fullName>
+        <default>false</default>
+        <label>טופל</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>נדרשת המלצה/קביעת תור לכירורג שד</fullName>
+        <default>false</default>
+        <label>נדרשת המלצה/קביעת תור לכירורג שד</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין למימוש</fullName>
+        <default>false</default>
+        <label>ממתין למימוש</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין למועד בדיקת MRI/PET CT</fullName>
+        <default>false</default>
+        <label>ממתין למועד בדיקת MRI/PET CT</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>בטיפול אגף התחשבנות</fullName>
+        <default>false</default>
+        <label>בטיפול אגף התחשבנות</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>בטיפול אגף רפואה</fullName>
+        <default>false</default>
+        <label>בטיפול אגף רפואה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ניהול סיכונים</fullName>
+        <default>false</default>
+        <label>ניהול סיכונים</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>התקבלו תוצאות ביופסיה</fullName>
+        <default>false</default>
+        <label>התקבלו תוצאות ביופסיה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לשיחה ראשונית</fullName>
+        <default>false</default>
+        <label>ממתין לשיחה ראשונית</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>סגור</fullName>
+        <default>false</default>
+        <label>סגור</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין</fullName>
+        <default>false</default>
+        <label>ממתין</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לקביעת ביופסיה</fullName>
+        <default>false</default>
+        <label>ממתין לקביעת ביופסיה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לסקר על ידי נציג</fullName>
+        <default>false</default>
+        <label>ממתין לסקר על ידי נציג</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>חדש</fullName>
+        <default>false</default>
+        <label>חדש</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>בוטל</fullName>
+        <default>false</default>
+        <label>בוטל</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לחוו&quot;ד רופא</fullName>
+        <default>false</default>
+        <label>ממתין לחוו&quot;ד רופא</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>בטיפול צוות תשלומי רופאים</fullName>
+        <default>false</default>
+        <label>בטיפול צוות תשלומי רופאים</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>המלצה למומחה/בדיקה/צנתור</fullName>
+        <default>false</default>
+        <label>המלצה למומחה/בדיקה/צנתור</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>הועבר למחלקה אונקולוגית</fullName>
+        <default>false</default>
+        <label>הועבר למחלקה אונקולוגית</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>בטיפול אגף סחר ושיווק</fullName>
+        <default>false</default>
+        <label>בטיפול אגף סחר ושיווק</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>התקשרות מול רופא</fullName>
+        <default>false</default>
+        <label>התקשרות מול רופא</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>במעקב</fullName>
+        <default>false</default>
+        <label>במעקב</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>סגירה</fullName>
+        <default>false</default>
+        <label>סגירה</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>התקבלה תשובה</fullName>
+        <default>false</default>
+        <label>התקבלה תשובה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>נקבע תור לניתוח</fullName>
+        <default>false</default>
+        <label>נקבע תור לניתוח</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>העברה לטיפול מנהל</fullName>
+        <default>false</default>
+        <label>העברה לטיפול מנהל</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לתשובה</fullName>
+        <default>false</default>
+        <label>ממתין לתשובה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>פעיל</fullName>
+        <default>false</default>
+        <label>פעיל</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>preSale</fullName>
+        <default>false</default>
+        <label>preSale</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לתוצאת בדיקת MRI/PET CT</fullName>
+        <default>false</default>
+        <label>ממתין לתוצאת בדיקת MRI/PET CT</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</fullName>
+        <default>false</default>
+        <label>ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לתוצאות ביופסיה</fullName>
+        <default>false</default>
+        <label>ממתין לתוצאות ביופסיה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>נשלחה הצעת מחיר</fullName>
+        <default>false</default>
+        <label>נשלחה הצעת מחיר</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין למטופל</fullName>
+        <default>false</default>
+        <label>ממתין למטופל</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>אין מענה</fullName>
+        <default>false</default>
+        <label>אין מענה</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לרופא</fullName>
+        <default>false</default>
+        <label>ממתין לרופא</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In_Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Caneclled</fullName>
+        <default>false</default>
+        <label>Caneclled</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Following</fullName>
+        <default>false</default>
+        <label>Following</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>ממתין לאישור מנהל</fullName>
+        <default>false</default>
+        <label>ממתין לאישור מנהל</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Third Party</fullName>
+        <default>false</default>
+        <label>Third Party</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Service_Adaption</fullName>
+        <default>false</default>
+        <label>Service Adaption</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,130 @@
+.THIS .slds-form-element__control .slds-checkbox__label {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  line-height: 1.875rem;
+  text-decoration: none;
+  color: #0070d2;
+  -webkit-appearance: none;
+  white-space: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label:hover, .THIS .slds-form-element__control .slds-checkbox__label:focus, .THIS .slds-form-element__control .slds-checkbox__label:active, .THIS .slds-form-element__control .slds-checkbox__label:visited {
+  text-decoration: none;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label:hover, .THIS .slds-form-element__control .slds-checkbox__label:focus {
+  color: #005fb2;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label:focus {
+  outline: 0;
+  box-shadow: 0 0 3px #0070D2;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label:active {
+  color: #005fb2;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label[disabled], .THIS .slds-form-element__control .slds-checkbox__label:disabled {
+  color: #dddbda;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label[disabled] *, .THIS .slds-form-element__control .slds-checkbox__label:disabled * {
+  pointer-events: none;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label a {
+  color: currentColor;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label:hover .slds-button__icon, .THIS .slds-form-element__control .slds-checkbox__label:focus .slds-button__icon, .THIS .slds-form-element__control .slds-checkbox__label:active .slds-button__icon, .THIS .slds-form-element__control .slds-checkbox__label[disabled] .slds-button__icon, .THIS .slds-form-element__control .slds-checkbox__label:disabled .slds-button__icon {
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label + .slds-button-group,
+.THIS .slds-form-element__control .slds-checkbox__label + .slds-button-group-list {
+  margin-left: 0.25rem;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label + .slds-button {
+  margin-left: 0.25rem;
+}
+
+.THIS {
+  /* ! */
+}
+
+.THIS .slds-form-element__legend {
+  display: none;
+}
+
+.THIS .filter-tooltip-wrapper {
+  top: 1px;
+}
+
+.THIS .slds-form-element__control {
+  display: flex;
+}
+
+.THIS .slds-form-element__control .slds-checkbox [type="checkbox"]:checked + .slds-checkbox__label {
+  background-color: #eef1f6;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #dddbda;
+  transition: border 0.15s linear;
+  border-color: #dddbda;
+  background-color: white;
+  border-radius: 0;
+  border-width: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label:hover, .THIS .slds-form-element__control .slds-checkbox__label:focus {
+  background-color: #f4f6f9;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label:active {
+  background-color: #eef1f6;
+}
+
+.THIS .slds-form-element__control .slds-checkbox__label .slds-form-element__label {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.THIS .slds-form-element__control .slds-checkbox_faux {
+  display: none;
+}
+
+.THIS .slds-form-element__control .slds-checkbox:first-child .slds-checkbox__label {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.THIS .slds-form-element__control .slds-checkbox:last-child .slds-checkbox__label {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.THIS .slds-form-element__control .slds-checkbox:only-child .slds-checkbox__label {
+  border-radius: 0.25rem;
+}
+
+.THIS .slds-form-element__control .slds-checkbox + .slds-checkbox .slds-checkbox__label {
+  margin-left: -1px;
+}

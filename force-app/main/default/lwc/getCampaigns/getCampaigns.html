@@ -1,0 +1,56 @@
+<template>
+    <lightning-card title={labels.Title}>
+        <lightning-spinner if:true={isLoading} variant="brand" size="small"></lightning-spinner>
+        <div class="slds-p-around_medium">
+            <lightning-button label={labels.BtnTitle} onclick={fetchData}></lightning-button>
+        </div>
+        <div class="slds-p-around_medium">
+            <template if:true={data}>
+                <template if:true={generalData}>
+                    <div><span>{labels.FirstName}: </span>{generalData.firstName}</div>
+                    <div><span>{labels.LastName}: </span>{generalData.lastName}</div>
+                    <div><span>{labels.Status}: </span>{generalData.status}</div>
+                    <div><span>{labels.Sent}: </span>{generalData.sent}</div>
+                </template>
+                <template if:true={campaigns}>
+                    <template for:each={campaigns} for:item="camp">
+                        <div key={camp.id} class="campaign">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-4"><span class="bold">{labels.SendDate}</span></div>
+                                <div class="slds-col slds-size_3-of-4"><span>{camp.sendDate}</span></div>
+                            </div>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-4"><span class="bold">{labels.OpeningDate}</span></div>
+                                <div class="slds-col slds-size_3-of-4"><span>{camp.openingDate}</span></div>
+                            </div>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-4"><span class="bold">{labels.Name}</span></div>
+                                <div class="slds-col slds-size_3-of-4"><span>{camp.name}</span></div>
+                            </div>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-4"><span class="bold">{labels.Status}</span></div>
+                                <div class="slds-col slds-size_3-of-4"><span>{camp.status}</span></div>
+                            </div>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-4"><span class="bold">{labels.OpenCount}</span></div>
+                                <div class="slds-col slds-size_3-of-4"><span>{camp.openCount}</span></div>
+                            </div>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-4"><span class="bold">{labels.Subject}</span></div>
+                                <div class="slds-col slds-size_3-of-4"><span>{camp.subject}</span></div>
+                            </div>
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-4"><span class="bold">{labels.PreviewLink}</span></div>
+                                <div class="slds-col slds-size_3-of-4"><lightning-formatted-url value={camp.previewLink} label={labels.PreviewLink} target="_blank" ></lightning-formatted-url></div>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">{error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

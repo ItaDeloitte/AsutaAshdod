@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecomendedTestType__c</fullName>
+    <label>Recomended Test Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>קרדיאק CT</fullName>
+                <default>false</default>
+                <label>קרדיאק CT</label>
+            </value>
+            <value>
+                <fullName>אקו לב</fullName>
+                <default>false</default>
+                <label>אקו לב</label>
+            </value>
+            <value>
+                <fullName>אקו במאמץ</fullName>
+                <default>false</default>
+                <label>אקו במאמץ</label>
+            </value>
+            <value>
+                <fullName>ארגומטריה</fullName>
+                <default>false</default>
+                <label>ארגומטריה</label>
+            </value>
+            <value>
+                <fullName>מיפוי לב</fullName>
+                <default>false</default>
+                <label>מיפוי לב</label>
+            </value>
+            <value>
+                <fullName>יעוץ רפואי</fullName>
+                <default>false</default>
+                <label>יעוץ רפואי</label>
+            </value>
+            <value>
+                <fullName>פניה טלפונית/מייל</fullName>
+                <default>false</default>
+                <label>פניה טלפונית/מייל</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

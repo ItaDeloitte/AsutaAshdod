@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRIVET_SERVICES</fullName>
+    <columns>Domain__c</columns>
+    <columns>Status__c</columns>
+    <columns>Procedure_Code__c</columns>
+    <columns>NAME</columns>
+    <columns>Are_services_private__c</columns>
+    <columns>MedicalProcedurePrice__c</columns>
+    <columns>des_med__c</columns>
+    <columns>AF_IsPrivateService__c</columns>
+    <columns>Service_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Are_services_private__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Domain__c</field>
+        <operation>notContain</operation>
+        <value>C.T,M.R.I</value>
+    </filters>
+    <label>שירותים פרטיים</label>
+</ListView>

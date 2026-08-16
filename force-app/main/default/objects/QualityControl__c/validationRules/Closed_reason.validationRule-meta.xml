@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002Q8amQAC&apos; ) &amp;&amp;
+(ISPICKVAL(Status_QA__c, &quot;לא נמצא כטעות&quot;) ||
+ISPICKVAL(Status_QA__c, &quot;לא רלוונטי&quot;))
+&amp;&amp;
+LEN(close_reason__c)=0</errorConditionFormula>
+    <errorDisplayField>close_reason__c</errorDisplayField>
+    <errorMessage>יש למלא את סיבת סגירת בקרת האיכות</errorMessage>
+</ValidationRule>

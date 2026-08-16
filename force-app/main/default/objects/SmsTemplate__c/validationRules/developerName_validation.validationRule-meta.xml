@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>developerName_validation</fullName>
+    <active>true</active>
+    <description>יכול להכיל רק אותיות באנגלית (קטנות או גדולות), מספרים, והתו _ בלבד.</description>
+    <errorConditionFormula>(not(REGEX(  DeveloperName__c  ,&quot;([a-zA-Z-_])*&quot;)))||( IF(FIND(&quot; &quot;,  DeveloperName__c  , 1)==0, false, true))</errorConditionFormula>
+    <errorMessage>השדה developerName  יכול להכיל רק אותיות באנגלית (קטנות או גדולות) קו תחתון וללא רווחים.</errorMessage>
+</ValidationRule>

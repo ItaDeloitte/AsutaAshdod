@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>המלצת רופא לשיקום בית</label>
+    <name>Shikum_Bait_Doctor_Rec__c</name>
+    <picklistValues>
+        <masterLabel>הומלץ</masterLabel>
+        <translation><!-- הומלץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא הומלץ</masterLabel>
+        <translation><!-- לא הומלץ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- התאריך בו הוקראו ההנחיות ואושרו ע&quot;י המטופל --></help>
+    <label>תאריך הקראת ההנחיות</label>
+    <name>Date_Instuction_Read__c</name>
+</CustomFieldTranslation>

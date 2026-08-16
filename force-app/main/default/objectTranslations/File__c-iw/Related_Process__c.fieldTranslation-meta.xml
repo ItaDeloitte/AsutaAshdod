@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג הפניה</label>
+    <name>Related_Process__c</name>
+    <picklistValues>
+        <masterLabel>אמבולטורי</masterLabel>
+        <translation><!-- אמבולטורי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוחי</masterLabel>
+        <translation><!-- ניתוחי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>preferd_chanal_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(  Preferred_Channel__c,&quot;Facebook Messenger&quot;) , IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXlK&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF( ISPICKVAL( Preferred_Channel__c,&quot;Email&quot;) , IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXlI&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF( ISPICKVAL(Preferred_Channel__c,&quot;WhatsApp&quot;),IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXlV&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF( ISPICKVAL(Preferred_Channel__c,&quot;Phone&quot;),IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXlQ&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF( ISPICKVAL(Preferred_Channel__c,&quot;Fax&quot;) , IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000J6Ct&amp;oid=00DKI000000MTJU&amp;lastMod=15727925890000&quot;, &quot;&quot; , 30, 30),
+IF( ISPICKVAL(Preferred_Channel__c,&quot;Mail&quot;) , IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXlI&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF( ISPICKVAL(Preferred_Channel__c ,&quot;SMS&quot;),IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXlS&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+&quot;&quot;)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Preferred Channel Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

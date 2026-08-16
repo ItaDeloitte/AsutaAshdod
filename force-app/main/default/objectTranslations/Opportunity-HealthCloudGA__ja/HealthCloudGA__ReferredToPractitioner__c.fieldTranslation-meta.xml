@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>紹介先医師</label>
+    <name>HealthCloudGA__ReferredToPractitioner__c</name>
+    <relationshipLabel>紹介された商談</relationshipLabel>
+</CustomFieldTranslation>

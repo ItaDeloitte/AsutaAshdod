@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Future_Conversation_Date</fullName>
+    <active>true</active>
+    <description>אם בשדה &quot;Conversation with the Patient&quot; הערך הוא Future Call Scheduled
+אז השדה &quot;Future Conversation Date&quot; יהיה חובה.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Conversation_with_the_Patient__c , &quot;Future Call Scheduled&quot;),
+ ISBLANK( FutureConversationDate__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>FutureConversationDate__c</errorDisplayField>
+    <errorMessage>שדה &quot;מועד שיחה עתידית&quot; הינו שדה חובה.</errorMessage>
+</ValidationRule>

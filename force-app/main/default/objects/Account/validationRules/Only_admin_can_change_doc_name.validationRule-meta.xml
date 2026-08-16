@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_admin_can_change_doc_name</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+((ISNEW() &amp;&amp; DisableValidation__c = false) 
+|| 
+(NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED(DisableValidation__c))))
+&amp;&amp; 
+AND( 
+ISCHANGED( Name ), 
+NOT($Profile.Name = &quot;System Administrator&quot;), $RecordType.Name = &quot;Doctor_Account&quot; )&amp;&amp;
+(  CreatedBy.ProfileId  &lt;&gt;  $Label.Integration_ProfileId  ||  LastModifiedBy.ProfileId &lt;&gt; $Label.Integration_ProfileId )</errorConditionFormula>
+    <errorMessage>רק לפרופיל מנהל מערכת מותר לשנות את שם הרופא</errorMessage>
+</ValidationRule>

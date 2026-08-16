@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Builder__Event__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Event</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sent</fullName>
+                <default>false</default>
+                <label>Sent</label>
+            </value>
+            <value>
+                <fullName>Viewed</fullName>
+                <default>false</default>
+                <label>Viewed</label>
+            </value>
+            <value>
+                <fullName>Draft</fullName>
+                <default>false</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Signed</fullName>
+                <default>false</default>
+                <label>Signed</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Disclaimer Confirmed</fullName>
+                <default>false</default>
+                <label>Disclaimer Confirmed</label>
+            </value>
+            <value>
+                <fullName>Face verification failed</fullName>
+                <default>false</default>
+                <label>Face verification failed</label>
+            </value>
+            <value>
+                <fullName>Face verified</fullName>
+                <default>false</default>
+                <label>Face verified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

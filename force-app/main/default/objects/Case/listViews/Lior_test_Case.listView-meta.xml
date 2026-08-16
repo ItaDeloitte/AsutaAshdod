@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lior_test_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Previous_Freezing_Date__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Partner_Name__c</columns>
+    <columns>Eggs_Amount__c</columns>
+    <columns>Partner_ID__c</columns>
+    <columns>CASES.EMAIL</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Case_Origin_Icon__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Lior test</label>
+</ListView>

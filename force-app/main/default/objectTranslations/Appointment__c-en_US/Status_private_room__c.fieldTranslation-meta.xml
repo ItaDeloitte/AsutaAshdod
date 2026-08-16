@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Private Room Status --></label>
+    <name>Status_private_room__c</name>
+    <picklistValues>
+        <masterLabel>בוטל</masterLabel>
+        <translation><!-- בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שולם</masterLabel>
+        <translation><!-- שולם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שוריין חדר</masterLabel>
+        <translation><!-- שוריין חדר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

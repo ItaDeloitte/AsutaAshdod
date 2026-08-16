@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fullname2__c</fullName>
+    <description>שדה עזר לחישוב שם הרופא עם התואר
+מתבסס על תארים ד&quot;ר ופרופסור בלבד</description>
+    <externalId>false</externalId>
+    <formula>IF(LEFT(Name,4) = &quot;ד&apos;&apos;ר&quot;,  SUBSTITUTE(Name, &quot;ד&apos;&apos;ר&quot;, &apos;&apos;)  ,
+IF(LEFT(Name,7) = &quot;פרופסור&quot;,  SUBSTITUTE(Name, &quot;פרופסור&quot;, &apos;&apos;),
+IF(LEFT(Name,5) = &quot;&apos;פרופ&quot;,  SUBSTITUTE(Name, &quot;&apos;פרופ&quot;, &apos;&apos;),Name
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>fullname2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

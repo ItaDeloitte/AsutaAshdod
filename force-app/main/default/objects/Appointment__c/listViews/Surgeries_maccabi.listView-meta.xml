@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surgeries_maccabi</fullName>
+    <columns>NAME</columns>
+    <columns>Id_Patient__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Doctor_Account__c</columns>
+    <columns>Site__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>Courses_Icon__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>status_from_referral_website__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Commitment_Status__c</columns>
+    <columns>Administrative_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Surgeries</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>equals</operation>
+        <value>בטיפול אדמיניסטרטיבי,ממתין להתחייבות,ממתין לאישור,not_arrived</value>
+    </filters>
+    <filters>
+        <field>Appointment_Date_bigger_than_today__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notContain</operation>
+        <value>הזרקה תחת שיקוף,TAVI,אקו,MRI</value>
+    </filters>
+    <filters>
+        <field>MP_code__c</field>
+        <operation>notEqual</operation>
+        <value>,29.9,88.409,37.7,88.40,37.35,983726,980181,88.55,88.59,37.32,50.93,37.34,37.37,69.0142,69.0143,16.00,69.0,57.44,45300,648352,76874,69.023</value>
+    </filters>
+    <filters>
+        <field>Doctor_License_From_Referral__c</field>
+        <operation>notEqual</operation>
+        <value>,110618,22382,29740,28445,31921,21035,33708,24788,24835,31221,84194,19827,13248,8975,24995,14049,27306,26261,34309,23684,30916,35483,99629,18310,37767,22082,36726,29357,21033,30110,37329,109389,35281,35679,35502,35031,83225,15432,98870</value>
+    </filters>
+    <filters>
+        <field>Doctor_License_Number__c</field>
+        <operation>notEqual</operation>
+        <value>22241,120601,84495,26207,37707,110618,32724,26453,87949,810182,36836,23653,37000,98556,28926,86542,20966,28771,32630,36990,127190,29513,36772,102579</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>notContain</operation>
+        <value>סמסון</value>
+    </filters>
+    <filters>
+        <field>PayerFactor__c</field>
+        <operation>notEqual</operation>
+        <value>פרטי-תייר</value>
+    </filters>
+    <label>פריסת ניתוחים ברמת רשת</label>
+</ListView>

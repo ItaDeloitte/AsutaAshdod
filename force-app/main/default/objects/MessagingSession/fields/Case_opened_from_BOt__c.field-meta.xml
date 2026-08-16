@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_opened_from_BOt__c</fullName>
+    <formula>IF(NOT( ISBLANK( New_Case__c)) , TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case opened from BOt</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

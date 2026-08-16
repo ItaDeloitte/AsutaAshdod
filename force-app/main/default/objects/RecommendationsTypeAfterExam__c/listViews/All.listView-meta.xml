@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>Value__c</columns>
+    <columns>NAME</columns>
+    <columns>ETL_Unique_Identifier__c</columns>
+    <columns>RecommendationsAfterExam__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>action_type__c</columns>
+    <columns>Status__c</columns>
+    <columns>RecommendationType__c</columns>
+    <columns>BusinessProcess__c</columns>
+    <columns>OBJECT_ID</columns>
+    <filterScope>Everything</filterScope>
+    <label>הכול</label>
+</ListView>

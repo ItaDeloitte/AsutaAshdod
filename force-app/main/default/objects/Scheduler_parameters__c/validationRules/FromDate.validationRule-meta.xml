@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FromDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(ISPICKVAL(Action_Type__c, &quot;מתאריך&quot;) ,ISBLANK(From_Date__c ), FALSE)</errorConditionFormula>
+    <errorDisplayField>From_Date__c</errorDisplayField>
+    <errorMessage>כדי לשמור את הרשומה יש להזין ערך בשדה מתאריך</errorMessage>
+</ValidationRule>

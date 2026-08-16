@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason_Call_Center__c</fullName>
+    <label>Lost Reason - Call Center</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wrong_Call</fullName>
+                <default>false</default>
+                <label>Wrong Call</label>
+            </value>
+            <value>
+                <fullName>General_service_information</fullName>
+                <default>false</default>
+                <label>General service information</label>
+            </value>
+            <value>
+                <fullName>Update_existing_appointment</fullName>
+                <default>false</default>
+                <label>Update existing appointment</label>
+            </value>
+            <value>
+                <fullName>Service_not_available</fullName>
+                <default>false</default>
+                <label>Service not available</label>
+            </value>
+            <value>
+                <fullName>Inquiry_forwarded_to_department</fullName>
+                <default>false</default>
+                <label>Inquiry forwarded to department</label>
+            </value>
+            <value>
+                <fullName>Doctor_not_coordinated_through_assuta</fullName>
+                <default>false</default>
+                <label>Doctor not coordinated through assuta</label>
+            </value>
+            <value>
+                <fullName>Patient contacted HMO</fullName>
+                <default>false</default>
+                <label>Patient contacted HMO</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+                <label>No Answer</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

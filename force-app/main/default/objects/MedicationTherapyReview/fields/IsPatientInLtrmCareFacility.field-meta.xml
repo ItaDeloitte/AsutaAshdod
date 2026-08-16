@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPatientInLtrmCareFacility</fullName>
+    <inlineHelpText>מציין שהמטופל היה במוסד טיפול לטווח ארוך במהלך בדיקת הטיפול התרופתי.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

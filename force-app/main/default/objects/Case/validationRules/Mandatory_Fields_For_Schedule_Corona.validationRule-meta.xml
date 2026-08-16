@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandatory_Fields_For_Schedule_Corona</fullName>
+    <active>true</active>
+    <description>ולידציה זו הינה ולידציה ייעודית לתהליך זימון תור לבדיקת קורונה. הולידציה מוודא כי כל שדות החובה לתהליך ממולאים.</description>
+    <errorConditionFormula>ISPICKVAL( Case_subject__c , &quot;זימון תור חדש - קורונה&quot;)
+&amp;&amp;
+(ISBLANK( City_Permanent_Residence__c ) 
+||
+ ISBLANK(TEXT( Visited_Abroad_During_Last_14_Days__c )) 
+||
+ ISBLANK(TEXT( Contact_With_Corona_Patient__c )) 
+||
+ ISBLANK(TEXT( Live_With_Coronat_Patient__c )) 
+||
+ ISBLANK(TEXT( Fever_Symptoms_Last_14_Days__c )))</errorConditionFormula>
+    <errorMessage>יש למלא את השדות הבאים תחת כותרת &quot;שאלון קורונה&quot; בטרם שמירת הפנייה: 
+מקום מגורים קבוע
+האם חזרת מחו&quot;ל ב-14 ימים האחרונים?
+ מגע עם חולה קורונה ב-14 ימים האחרונים?
+ מתגורר/ת עם חולה קורונה באשפוז ביתי?
+ חום/תסמינים נשימתיים בשבועיים האחרונים?</errorMessage>
+</ValidationRule>

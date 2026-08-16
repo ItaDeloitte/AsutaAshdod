@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Subject --></label>
+    <name>Case_Subject__c</name>
+    <picklistValues>
+        <masterLabel>בירור אודות תור</masterLabel>
+        <translation><!-- בירור אודות תור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בירור תוצאות בדיקה</masterLabel>
+        <translation><!-- בירור תוצאות בדיקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסכמים</masterLabel>
+        <translation><!-- הסכמים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זימון רופא מומחה</masterLabel>
+        <translation><!-- זימון רופא מומחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זימון תור חדש</masterLabel>
+        <translation><!-- זימון תור חדש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול אדמיניסטרטיבי טרום הניתוח</masterLabel>
+        <translation><!-- טיפול אדמיניסטרטיבי טרום הניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיפול אדמיניסטרטיבי לאחר הניתוח</masterLabel>
+        <translation><!-- טיפול אדמיניסטרטיבי לאחר הניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כתובות ודרכי הגעה</masterLabel>
+        <translation><!-- כתובות ודרכי הגעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע אודות מטופלים</masterLabel>
+        <translation><!-- מידע אודות מטופלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדכון תור לרופא</masterLabel>
+        <translation><!-- עדכון תור לרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדכון תור קיים</masterLabel>
+        <translation><!-- עדכון תור קיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פעולות בגין מטופלים</masterLabel>
+        <translation><!-- פעולות בגין מטופלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שעות פעילות מכונים ומרפאות</masterLabel>
+        <translation><!-- שעות פעילות מכונים ומרפאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשלומים שטרם שולמו</masterLabel>
+        <translation><!-- תשלומים שטרם שולמו --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

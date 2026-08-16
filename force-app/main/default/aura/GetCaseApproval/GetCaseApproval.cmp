@@ -1,0 +1,9 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+  access="global">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" />
+  <aura:attribute name="label" type="String" default="Transfer" />
+  
+  <lightning:button label="{!v.label}" title="{!v.label}" onclick="{! c.handleClick }"/>
+
+</aura:component>

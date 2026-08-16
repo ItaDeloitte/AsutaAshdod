@@ -1,0 +1,314 @@
+<aura:component extends="c:BaseComponent"
+                implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                access="global">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="buttonsVisibility" type="Map" />
+  <!-- design -->
+  <aura:attribute name="SurgeryAppointmentCreation" type="String" default="SurgeryAppointmentCreation: Next" />
+  <aura:attribute name="DocExpert_Next" type="String" default="DocExpert: Next" />
+  <aura:attribute name="DocExpert_Update" type="String" default="DocExpert: Update" />
+  <aura:attribute name="DocExpert_Cancel" type="String" default="DocExpert: Cancel" />
+  <aura:attribute name="DocExpertAppointmentCreation" type="String" default="DocExpertAppointmentCreation: Next" />
+  <aura:attribute name="AppoitmentsShow_Next" type="String" default="AppoitmentsShow: Next" />
+  <aura:attribute name="AppoitmentsShow_Update" type="String" default="AppoitmentsShow: Update" />
+  <aura:attribute name="AppoitmentsShow_Cancel" type="String" default="AppoitmentsShow: Cancel" />
+  <aura:attribute name="TransferToManager_Label" type="String" default="Transfer to manager" />
+  <aura:attribute name="InstitutesAppointment_Update" type="String" default="Update appointment" />
+  <aura:attribute name="SurgeryAppointment_Cancel" type="String" default="Cancel appointment" />
+  <aura:attribute name="Appointment_Convert" type="String" default="Convert" />
+  <aura:attribute name="Appointment_Link" type="String" default="Link" />
+  <aura:attribute name="Appointment_Close" type="String" default="Close" />
+  <aura:attribute name="sendOtpLabel" type="String" default="Send OTP" />
+  <aura:attribute name="contactLabel" type="String" default="Contact" />
+  <aura:attribute name="medicalAidLabel" type="String" default="Medical Aid" />
+  <aura:attribute name="isPaymentButtonEnabled" type="Boolean" default="true" />
+  <aura:attribute name="UrgentAppointmentLabel" type="String" default="Update Urgent Appointment" />
+
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler event="force:refreshView" action="{!c.onRefresh}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:assutaGlobalService aura:id="globalService"></c:assutaGlobalService>
+    <c:globalService aura:id="globalServiceNew"></c:globalService>
+    <aura:if isTrue="{!v.buttonsVisibility}">
+
+      <div class="">
+        <div class="buttons-wrapper">
+          <!-- if case -->
+          <aura:if isTrue="{!v.buttonsVisibility.sobjectType=='Case'}">
+
+            <aura:if isTrue="{!v.buttonsVisibility.recordType=='DOC_expert'}">
+              <aura:if isTrue="{!v.buttonsVisibility.isCreate}">
+                <span class="single-btn-wrapper">
+                  <c:DocExpertShowButton recordId="{!v.recordId}" mode="create"
+                                         sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                         nextLabel="{!v.DocExpert_Next}" updateLabel="{!v.DocExpert_Update}"
+                                         cancelLabel="{!v.DocExpert_Cancel}" />
+                </span>
+
+              </aura:if>
+              <aura:if isTrue="{!v.buttonsVisibility.isUpdate}">
+                <span class="single-btn-wrapper">
+                  <c:DocExpertShowButton recordId="{!v.recordId}" mode="update"
+                                         sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                         nextLabel="{!v.DocExpert_Next}" updateLabel="{!v.DocExpert_Update}"
+                                         cancelLabel="{!v.DocExpert_Cancel}" />
+                </span>
+              </aura:if>
+              <aura:if isTrue="{!v.buttonsVisibility.isCancel}">
+                <span class="single-btn-wrapper">
+                  <c:DocExpertShowButton recordId="{!v.recordId}" mode="cancel"
+                                         sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                         nextLabel="{!v.DocExpert_Next}" updateLabel="{!v.DocExpert_Update}"
+                                         cancelLabel="{!v.DocExpert_Cancel}" />
+                </span>
+              </aura:if>
+            </aura:if>
+
+            <aura:if isTrue="{!v.buttonsVisibility.recordType!='DOC_expert'}">
+              <aura:if isTrue="{!v.buttonsVisibility.isCreate}">
+                <aura:if isTrue="{!or(v.buttonsVisibility.recordType=='Assuta_360',v.buttonsVisibility.recordType=='CaseAfterSale')}">
+                  <span class="single-btn-wrapper">
+                    <c:DocExpertShowButton recordId="{!v.recordId}" mode="create"
+                                           sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                           nextLabel="{!v.DocExpert_Next}" updateLabel="{!v.DocExpert_Update}"
+                                           cancelLabel="{!v.DocExpert_Cancel}" />
+                  </span>
+                </aura:if>
+                <span class="single-btn-wrapper">
+                  <c:AppoitmentsShowButton recordId="{!v.recordId}" mode="create"
+                                           sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                           screenMode="{!v.buttonsVisibility.screenMode}"
+                                           nextLabel="{!v.AppoitmentsShow_Next}"
+                                           updateLabel="{!v.AppoitmentsShow_Update}"
+                                           cancelLabel="{!v.AppoitmentsShow_Cancel}" />
+                </span>
+              </aura:if>
+              <aura:if isTrue="{!v.buttonsVisibility.isUpdate}">
+                <span class="single-btn-wrapper">
+                  <c:AppoitmentsShowButton recordId="{!v.recordId}" mode="update"
+                                           screenMode="{!v.buttonsVisibility.screenMode}"
+                                           sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                           nextLabel="{!v.AppoitmentsShow_Next}"
+                                           updateLabel="{!v.AppoitmentsShow_Update}"
+                                           cancelLabel="{!v.AppoitmentsShow_Cancel}" />
+                </span>
+              </aura:if>
+              <aura:if isTrue="{!v.buttonsVisibility.isCancel}">
+                <span class="single-btn-wrapper">
+                  <c:AppoitmentsShowButton recordId="{!v.recordId}" mode="cancel"
+                                           screenMode="{!v.buttonsVisibility.screenMode}"
+                                           sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                           nextLabel="{!v.AppoitmentsShow_Next}"
+                                           updateLabel="{!v.AppoitmentsShow_Update}"
+                                           cancelLabel="{!v.AppoitmentsShow_Cancel}" />
+                </span>
+              </aura:if>
+            </aura:if>
+
+
+            <aura:if
+                     isTrue="{!or(v.buttonsVisibility.recordType=='Surgery',v.buttonsVisibility.recordType=='CaseAfterSale')}">
+
+              <c:AutoCreateAppointmentButton recordId="{!v.recordId}" caseRTDeveloperName="Surgery"
+                                             appointmentRTDeveloperName="Surgeries"
+                                             nextLabel="{!v.SurgeryAppointmentCreation}" />
+
+            </aura:if>
+
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.ContactDoctor}">
+              <span class="single-btn-wrapper">
+                <lightning:button label="{!v.contactLabel}" variant="neutral" onclick="{!c.onShowContactDoctorModal}" />
+              </span>
+            </aura:if>
+            <span class="single-btn-wrapper">
+              <aura:if isTrue="{!v.buttonsVisibility.recordType=='IVF_Freezing_Eggs'}">
+                <c:ivfCaseModal aura:id="modal" recordId="{!v.recordId}"></c:ivfCaseModal>
+                <lightning:button variant="neutral" onclick="{!c.onShowIVFModal}">{!$Label.c.SendLinkBtnTitle}
+                </lightning:button>
+                <aura:set attribute="else">
+                  <aura:if isTrue="{!v.buttonsVisibility.recordType != 'Appointments'}">
+                    <c:sendLinkForReferral caseId="{!v.recordId}" />
+                  </aura:if>
+                </aura:set>
+              </aura:if>
+            </span>
+            <span class="single-btn-wrapper">
+              <c:checkFreeLinesIvrButton caseId="{!v.recordId}" />
+            </span>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.SendOTP}">
+              <span class="single-btn-wrapper">
+                <lightning:button label="{!v.sendOtpLabel}" variant="neutral" onclick="{!c.onSendOTP}" />
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.LinkToCase}">
+              <span class="single-btn-wrapper">
+                <lightning:button label="{!$Label.c.CaseAppointmentButtons_LinkToCase}" variant="neutral" onclick="{!c.onShowLinkToCaseActionModal}" />
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.TransferToManager}">
+              <span class="single-btn-wrapper">
+                <c:GetCaseApproval recordId="{!v.recordId}" label="{!v.TransferToManager_Label}" />
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.UpdateMedicalAids}">
+              <span class="single-btn-wrapper">
+                <lightning:button variant="neutral" onclick="{!c.onShowDisabilityModal}">{!v.medicalAidLabel}
+                </lightning:button>
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.UploadFilesToClinic}">
+              <span class="single-btn-wrapper">
+                <lightning:button label="{!$Label.c.UploadFilesToClinic}" variant="neutral"
+                                  onclick="{!c.onUploadFilesToClinic}" />
+              </span>
+            </aura:if>
+
+          </aura:if>
+
+          <!-- if single appointment -->
+          <aura:if isTrue="{!v.buttonsVisibility.sobjectType=='Appointment'}">
+            <aura:if isTrue="{!v.buttonsVisibility.isCreate}">
+              <span class="single-btn-wrapper">
+                <c:AppoitmentsShowButton recordId="{!v.recordId}" mode="create"
+                                         screenMode="{!v.buttonsVisibility.screenMode}"
+                                         sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                         nextLabel="{!v.AppoitmentsShow_Next}" updateLabel="{!v.AppoitmentsShow_Update}"
+                                         cancelLabel="{!v.AppoitmentsShow_Cancel}" />
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.isCancel}">
+              <aura:if isTrue="{!v.buttonsVisibility.recordType=='Surgeries'}">
+                <span class="single-btn-wrapper">
+                  <c:SurgeryAppointmentsCancelButton recordId="{!v.recordId}" label="{!v.SurgeryAppointment_Cancel}"
+                                                     sobjectType="{!v.buttonsVisibility.sobjectType}" />
+                </span>
+              </aura:if>
+              <aura:if isTrue="{!v.buttonsVisibility.recordType!='Surgeries'}">
+                <span class="single-btn-wrapper">
+                  <c:AppoitmentsShowButton recordId="{!v.recordId}" mode="cancel"
+                                           screenMode="{!v.buttonsVisibility.screenMode}"
+                                           sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                           nextLabel="{!v.AppoitmentsShow_Next}"
+                                           updateLabel="{!v.AppoitmentsShow_Update}"
+                                           cancelLabel="{!v.AppoitmentsShow_Cancel}" />
+                </span>
+                <span class="single-btn-wrapper">
+                  <!-- <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.Payment}">
+                    <c:paymentValidationModal aura:id="modal" appointmentId="{!v.recordId}"></c:paymentValidationModal>
+                    <lightning:button variant="neutral" onclick="{!c.onShowIVFModal}">בצע חיוב</lightning:button>
+                  </aura:if> -->
+                  <aura:set attribute="else">
+                    <c:sendLinkForReferral caseId="{!v.recordId}" />
+                  </aura:set>
+                </span>
+              </aura:if>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.isUpdate}">
+              <span class="single-btn-wrapper">
+                <aura:if isTrue="{!v.buttonsVisibility.recordType=='Experts'}">
+                  <c:UpdateAppointmentButton updateLabel="{!v.InstitutesAppointment_Update}" recordId="{!v.recordId}"
+                                             sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                             screenMode="doctorHeader" />
+                </aura:if>
+                <aura:if isTrue="{!v.buttonsVisibility.recordType!='Experts'}">
+                  <c:UpdateAppointmentButton updateLabel="{!v.InstitutesAppointment_Update}" recordId="{!v.recordId}"
+                                             sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                             screenMode="{!v.buttonsVisibility.screenMode}" />
+                </aura:if>
+
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.UpdateUrgentApp}">            
+              <span class="single-btn-wrapper">
+                <lightning:button label="{!v.UrgentAppointmentLabel}" variant="neutral" onclick="{!c.onShowForcedAppointment}" />
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.SendQuestionnaireLink}">
+              <span class="single-btn-wrapper">
+                <lightning:button label="{!$Label.c.CaseAppointmentButtons_SendQuestionnaireLink}" variant="neutral" onclick="{!c.onShowSendQuestionnaireLinkModal}" />
+              </span>
+            </aura:if>
+            <span class="single-btn-wrapper">
+              <c:urgentAppointmentButton appointmentId="{!v.recordId}" />
+            </span>
+            <c:hithaivuyotMaccabi appointmentId="{!v.recordId}" />
+            <c:getAmbulatoryCommitment appointmentId="{!v.recordId}" />
+            <c:createReferralManually appointmentId="{!v.recordId}" />
+            <c:getPricesFromAppointment appointmentId="{!v.recordId}" />
+          </aura:if>
+
+          <!-- if Opportunity -->
+          <aura:if isTrue="{!v.buttonsVisibility.sobjectType=='Opportunity'}">
+            <aura:if isTrue="{!v.buttonsVisibility.isCreate}">
+              <span class="single-btn-wrapper">
+                <c:AppoitmentsShowButton recordId="{!v.recordId}" mode="create"
+                                         screenMode="{!v.buttonsVisibility.screenMode}"
+                                         sobjectType="{!v.buttonsVisibility.sobjectType}"
+                                         nextLabel="{!v.AppoitmentsShow_Next}" updateLabel="{!v.AppoitmentsShow_Update}"
+                                         cancelLabel="{!v.AppoitmentsShow_Cancel}" />
+              </span>
+              <span class="single-btn-wrapper">
+                <c:DocExpertShowButton recordId="{!v.recordId}" mode="create"
+                                       sobjectType="{!v.buttonsVisibility.sobjectType}" nextLabel="{!v.DocExpert_Next}"
+                                       updateLabel="{!v.DocExpert_Update}" cancelLabel="{!v.DocExpert_Cancel}" />
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.SendOTP}">
+              <span class="single-btn-wrapper">
+                <lightning:button label="{!v.sendOtpLabel}" variant="neutral" onclick="{!c.onSendOTP}" />
+              </span>
+            </aura:if>
+          </aura:if>
+
+          <aura:if isTrue="{!v.buttonsVisibility.sobjectType=='Account'}">
+            <aura:if isTrue="{!v.buttonsVisibility.isCreate}">
+              <span class="single-btn-wrapper">
+                <c:checkAccountFutureAppointmentButton recordId="{!v.recordId}"></c:checkAccountFutureAppointmentButton>
+              </span>
+            </aura:if>
+            <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.portalMaccabi}">
+              <span class="single-btn-wrapper">
+                <c:portalMaccabiButton recordId="{!v.recordId}"/>
+              </span>
+            </aura:if>
+          </aura:if>
+
+          <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.Close}">
+            <span class="single-btn-wrapper">
+              <lightning:button label="{!v.Appointment_Close}" variant="neutral"
+                                onclick="{!c.onShowCase360CloseModal}" />
+            </span>
+          </aura:if>
+          <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.Link}">
+            <span class="single-btn-wrapper">
+              <c:Case360LinkButton recordId="{!v.recordId}" label="{!v.Appointment_Link}" />
+            </span>
+          </aura:if>
+          <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.Convert}">
+            <span class="single-btn-wrapper">
+              <lightning:button label="{!v.Appointment_Convert}" variant="neutral" onclick="{!c.onConverClick}" />
+            </span>
+          </aura:if>
+          <aura:if isTrue="{!v.buttonsVisibility.additionalButtons.Payment}">
+            <span class="single-btn-wrapper">
+              <c:paymentValidationModal aura:id="modal" appointmentId="{!v.recordId}"></c:paymentValidationModal>
+              <lightning:button variant="neutral" disabled="{!!v.isPaymentButtonEnabled}" onclick="{!c.onShowIVFModal}">
+                בצע חיוב</lightning:button>
+            </span>
+          </aura:if>
+          <!--<c:getReferralsMaccabiFromCase recordId="{!v.recordId}" />-->
+        </div>
+      </div>
+    </aura:if>
+  </div>
+
+
+</aura:component>

@@ -1,0 +1,29 @@
+.doc-expert-dashboard-modal .slds-modal__container {
+  margin: 0 auto;
+  width: 98%;
+  height: 100% !important;
+  max-width: 1900px;
+  min-width: 20rem;
+  padding: 2.5rem 0 3rem 0;
+}
+
+.doc-expert-dashboard-modal .modal-body.slds-modal__content {
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.doc-expert-dashboard-modal .slds-form-element__label {
+  font-weight: 700;
+}
+
+.doc-expert-dashboard-modal c-lookup-input .lookup-help {
+  display: inline-block;
+  padding: 0 5px;
+}
+.doc-expert-dashboard-modal
+  c-lookup-input
+  .lookup-help
+  .slds-form-element__icon {
+  padding: 0;
+}

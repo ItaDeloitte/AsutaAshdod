@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Anonymous_Account</fullName>
+    <active>true</active>
+    <description>אם חשבון אנונימי אז לא ניתן לשמור את הרשומה ששדה טלפון מאוכלס ושדה אימייל מאוכלס</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;PersonAccount&quot; &amp;&amp;  Anonymous_Account__c = true &amp;&amp; 
+
+(
+
+NOT(ISBLANK(Phone)) ||  NOT(ISBLANK( SMS_Phone_Number__c )) ||  NOT(ISBLANK( PersonOtherPhone ))  ||  NOT(ISBLANK( PersonEmail ))
+
+)</errorConditionFormula>
+    <errorMessage>שים לב - לא ניתן לעדכן פרטי קשר למטופל אנונימי</errorMessage>
+</ValidationRule>

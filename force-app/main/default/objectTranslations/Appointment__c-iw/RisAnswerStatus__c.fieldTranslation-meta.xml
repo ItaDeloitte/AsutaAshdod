@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס תוצאות בדיקה מ-RIS</label>
+    <name>RisAnswerStatus__c</name>
+    <picklistValues>
+        <masterLabel>Addendum</masterLabel>
+        <translation>תיקון תשובה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arrived</masterLabel>
+        <translation>התקבל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CancelTechRepReqd</masterLabel>
+        <translation>ביטול הבדיקה ע&quot;י הטכנאי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation>ביטול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CheckingIn</masterLabel>
+        <translation>הגיע לקבלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completion</masterLabel>
+        <translation>הושלם</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dictated</masterLabel>
+        <translation>פוענח עם קובץ קול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discontinued</masterLabel>
+        <translation>הופסק</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ExamDone</masterLabel>
+        <translation>בדיקה בוצעה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ExamDoneTechOnly</masterLabel>
+        <translation>ללא פענוח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ReportDrafted</masterLabel>
+        <translation>פוענח</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled</masterLabel>
+        <translation>תור מתואם</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed1</masterLabel>
+        <translation>חתימה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Started</masterLabel>
+        <translation>בדיקה החלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transcribed</masterLabel>
+        <translation>הוקלד</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Void</masterLabel>
+        <translation>מבוטל</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lead Record Type --></label>
+    <name>Lead_Record_Type__c</name>
+    <picklistValues>
+        <masterLabel>Assuta Family</masterLabel>
+        <translation><!-- Assuta Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assuta Optic</masterLabel>
+        <translation><!-- Assuta Optic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient</masterLabel>
+        <translation><!-- Patient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary Leads</masterLabel>
+        <translation><!-- Secretary Leads --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

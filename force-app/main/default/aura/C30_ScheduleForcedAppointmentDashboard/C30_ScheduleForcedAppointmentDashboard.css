@@ -1,0 +1,250 @@
+.THIS {
+  height: 100%;
+  font-family: "FbReforma", "Salesforce Sans", Arial, sans-serif;
+  font-size: 20px;
+  color: #525252;
+}
+
+.THIS.modal > .modal-container,
+.THIS.modal > .slds-modal__container {
+  margin: 0 auto;
+  width: 98%;
+  max-width: 1858px;
+  min-width: 20rem;
+}
+
+.THIS.modal > .modal-container > .modal-body,
+.THIS.modal > .modal-container > .slds-modal__content,
+.THIS.modal > .slds-modal__container > .modal-body,
+.THIS.modal > .slds-modal__container > .slds-modal__content {
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.THIS .main-wrapper {
+  height: 100%;
+  padding: 30px;
+}
+
+.THIS .sidebar-col {
+  width: 340px;
+  background-color: #f3f5f7;
+  border-radius: 4px;
+  height: 100%;
+  min-height: 1px;
+}
+
+.THIS .content-col {
+  min-width: 1px;
+}
+
+.THIS .sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f5f7;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.THIS .sidebar .refresh-timer__value {
+  color: #e64848;
+}
+
+.THIS .sidebar .appointments-list {
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 30px;
+}
+
+.THIS .error-alert {
+  max-height: 125px;
+  overflow: auto;
+}
+
+.THIS .appointment {
+  height: 100%;
+}
+
+.THIS .appointment__inner {
+  padding: 0 15px;
+}
+
+.THIS .appointment__header {
+  font-size: 26px;
+}
+
+.THIS .edit-input {
+  width: 225px;
+}
+
+.THIS .edit-autocomplete {
+  font-size: 16px;
+}
+
+.THIS .edit-autocomplete .slds-listbox {
+  font-size: 14px;
+}
+
+.THIS .edit-autocomplete .slds-listbox__item {
+  border-bottom: 1px solid #ccc;
+}
+
+.THIS .edit-autocomplete .slds-listbox__item:last-of-type {
+  border-bottom: none;
+}
+
+.THIS .slds-form-element__label {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.THIS .appointment-btn {
+  background-color: #194366;
+}
+
+.THIS .start-date .slds-datepicker {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: auto !important;
+  font-size: 16px;
+}
+
+.THIS .start-date .slds-datepicker td {
+  font-size: 16px;
+}
+
+.THIS .start-date .slds-datepicker .slds-select_container .slds-select {
+  font-size: 16px;
+}
+
+.THIS .bs-row-gutters-small {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.THIS .bs-container-fluid-sm {
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.THIS .bs-container-fluid-sm > .bs-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.THIS .bs-container-fluid-sm > .bs-row > .bs-col,
+.THIS .bs-container-fluid-sm > .bs-row > [class*="bs-col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.THIS .cAppointmentsTooltip {
+  vertical-align: sub;
+}
+
+.THIS .position-element {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  background-color: #fff;
+  box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  width: 0;
+}
+
+.THIS .position-element.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.THIS .catch-autofocus {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  top: -100px;
+  left: 0;
+}
+
+.THIS .fake-edit-field {
+  margin-top: 34px;
+}
+
+.THIS .fake-edit-field_appointment {
+  margin-top: 25px;
+}
+
+.THIS .slds-button {
+  padding-top: 2px;
+}
+
+.THIS .add-btn-wrapper {
+  padding-top: 38px;
+  margin-left: 5px;
+  flex-shrink: 0;
+  min-width: 16px;
+}
+
+.THIS .add-btn-wrapper lightning-primitive-icon {
+  display: flex;
+}
+
+.THIS .edit-btn-wrapper {
+  padding-top: 8px;
+}
+
+.THIS .edit-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.THIS .edit-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.THIS .edit-btn:hover, .THIS .edit-btn:active, .THIS .edit-btn:focus {
+  outline: none;
+}
+
+.THIS .table-wrapper {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.THIS .schedule-popup .slds-modal {
+  position: absolute;
+}
+
+.THIS .schedule-popup .slds-backdrop {
+  position: absolute;
+}
+
+@media (min-width: 1200px) {
+  .THIS .sidebar {
+    width: 340px;
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תגובה לפניות של פניות הציבור - אשדוד</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Email Response PublicInquiry_Ashdod</name>
+    <style>none</style>
+    <subject>{!Case.Contact} מס&apos; ת.ז: {!Account.ID_Number__pc} מס&apos; טלפון: {!Case.phone__c}  מס&apos; פנייה: {!Case.CaseNumber}</subject>
+    <textOnly>פונה יקר/ה
+תודה על פנייתך.
+על מנת להבטיח התייחסות מלאה ושלמה לפנייתך,
+אנא וודא/י כי פנייתך כוללת במידת הצורך פרטים מזהים מלאים, לרבות: מספר תעודת זהות של המטופל/ת
+וכן פרטי התקשרות מלאים של המטופל/ת או מי מטעמו/ה.
+
+אנו נטפל בפנייתך במלוא תשומת הלב ובגמר הבירור נשיב לך.
+
+בברכת בריאות טובה,
+צוות פניות הציבור
+אסותא מרכזים רפואיים</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

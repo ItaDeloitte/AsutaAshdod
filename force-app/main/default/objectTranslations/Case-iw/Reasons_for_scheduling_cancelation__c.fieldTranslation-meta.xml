@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבות לאי תאום</label>
+    <name>Reasons_for_scheduling_cancelation__c</name>
+    <picklistValues>
+        <masterLabel>בוצע במקום אחר</masterLabel>
+        <translation><!-- בוצע במקום אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הומר ל US שד ע&quot;י רופא</masterLabel>
+        <translation><!-- הומר ל US שד ע&quot;י רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החלטת מטופלת</masterLabel>
+        <translation><!-- החלטת מטופלת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החלטת רופא</masterLabel>
+        <translation><!-- החלטת רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתינה להפניית רופא</masterLabel>
+        <translation><!-- ממתינה להפניית רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתינה לפגישה עם רופא</masterLabel>
+        <translation><!-- ממתינה לפגישה עם רופא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

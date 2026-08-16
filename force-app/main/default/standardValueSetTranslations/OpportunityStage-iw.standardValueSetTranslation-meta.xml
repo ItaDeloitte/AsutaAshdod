@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Closed Lost</masterLabel>
+        <translation>הפסד</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed Won</masterLabel>
+        <translation>ניצחון</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Examined</masterLabel>
+        <translation>נבדק</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>In representative care</masterLabel>
+        <translation>בטיפול נציג</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Providing details and questioning</masterLabel>
+        <translation>מסירת פרטים ותשאול</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Task: Return to patient</masterLabel>
+        <translation>משימה: חזרה למטופל</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for contract signing</masterLabel>
+        <translation>ממתין לחתימת חוזה</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for matching meeting</masterLabel>
+        <translation>ממתין לפגישת התאמה</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for optic surgery to be performed</masterLabel>
+        <translation>ממתין לביצוע ניתוח אופטיק</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Waiting for patient</masterLabel>
+        <translation>ממתין להחלטת הלקוח</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

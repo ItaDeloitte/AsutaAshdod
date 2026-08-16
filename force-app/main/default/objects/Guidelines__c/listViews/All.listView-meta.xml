@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Guideline_Type__c</columns>
+    <columns>Guideline_Desc__c</columns>
+    <columns>Language__c</columns>
+    <columns>Remarks__c</columns>
+    <columns>LAST_ACTIVITY</columns>
+    <columns>Status__c</columns>
+    <columns>Desc_Helpfield__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>inactive</value>
+    </filters>
+    <label>All</label>
+</ListView>

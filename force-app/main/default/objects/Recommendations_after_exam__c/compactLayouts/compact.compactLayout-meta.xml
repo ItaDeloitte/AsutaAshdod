@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compact</fullName>
+    <fields>Name</fields>
+    <fields>Patient__c</fields>
+    <fields>Related_Appointment__c</fields>
+    <fields>RecommendationsType__c</fields>
+    <fields>Case360__c</fields>
+    <fields>Status_recommendation__c</fields>
+    <fields>Close_Reason_Memo__c</fields>
+    <label>compact</label>
+</CompactLayout>

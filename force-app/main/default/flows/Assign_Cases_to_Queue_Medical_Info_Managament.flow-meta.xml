@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Assign_Queue_According_to_Site_Code</name>
+        <label>Assign Queue According to Site Code</label>
+        <locationX>1106</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Site_Code</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>59</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_Queue_Field_Raanana</targetReference>
+            </connector>
+            <label>Site Code=59</label>
+        </rules>
+        <rules>
+            <name>Site_Code_60</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>60</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_Queue_Field_Haifa</targetReference>
+            </connector>
+            <label>Site Code=60</label>
+        </rules>
+        <rules>
+            <name>Site_Code_84</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>84</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_Queue_Field_Hashalom</targetReference>
+            </connector>
+            <label>Site Code=84</label>
+        </rules>
+        <rules>
+            <name>Site_Code_69</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>69</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_Queue_Field_Kalaniot</targetReference>
+            </connector>
+            <label>Site Code=69</label>
+        </rules>
+        <rules>
+            <name>Site_Code_62</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>62</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_Queue_Field_BS</targetReference>
+            </connector>
+            <label>Site Code=62</label>
+        </rules>
+        <rules>
+            <name>Site_Code_85</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>85</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_Queue_Field_RL</targetReference>
+            </connector>
+            <label>Site Code=85</label>
+        </rules>
+        <rules>
+            <name>Site_Code_20</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>20</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_Queue_Field_RH</targetReference>
+            </connector>
+            <label>Site Code=20</label>
+        </rules>
+        <rules>
+            <name>Site_Code_45</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__r.Site_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>45</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_Queue_Field_Jerusalem</targetReference>
+            </connector>
+            <label>Site Code=45</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if Field Owner_Queue_wf__c is empty</description>
+        <name>Is_Queue_Empty</name>
+        <label>Is Owner_Queue_wf__c Empty?</label>
+        <locationX>1766</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Owner_Queue_wf_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner_Queue_wf__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_According_to_Site_Code</targetReference>
+            </connector>
+            <label>Owner_Queue_wf__c Empty</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Assign Cases to Queue Medical Info Managament {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Assign Cases to Queue Medical Info Managament</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Owner_Queue_Field_BS</name>
+        <label>Update Owner Queue Field-BS</label>
+        <locationX>1106</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Owner_Queue_wf__c</field>
+            <value>
+                <stringValue>ניהול ורישום מידע רפואי- באר שבע</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_Queue_Field_Haifa</name>
+        <label>Update Owner Queue Field-Haifa</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Owner_Queue_wf__c</field>
+            <value>
+                <stringValue>ניהול ורישום מידע רפואי- חיפה</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_Queue_Field_Hashalom</name>
+        <label>Update Owner Queue Field-Hashalom</label>
+        <locationX>578</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Owner_Queue_wf__c</field>
+            <value>
+                <stringValue>ניהול ורישום מידע רפואי- השלום</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_Queue_Field_Jerusalem</name>
+        <label>Update Owner Queue Field-Jerusalem</label>
+        <locationX>1898</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Owner_Queue_wf__c</field>
+            <value>
+                <stringValue>ניהול ורישום מידע רפואי ירושלים</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_Queue_Field_Kalaniot</name>
+        <label>Update Owner Queue Field-Kalaniot</label>
+        <locationX>842</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Owner_Queue_wf__c</field>
+            <value>
+                <stringValue>ניהול ורישום מידע רפואי- אשדוד כלניות</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_Queue_Field_Raanana</name>
+        <label>Update Owner Queue Field-Raanana</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Owner_Queue_wf__c</field>
+            <value>
+                <stringValue>ניהול ורישום מידע רפואי- רעננה</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_Queue_Field_RH</name>
+        <label>Update Owner Queue Field-RH</label>
+        <locationX>1634</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Owner_Queue_wf__c</field>
+            <value>
+                <stringValue> ניהול ורישום מידע רפואי- רמת החייל</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_Queue_Field_RL</name>
+        <label>Update Owner Queue Field-RL</label>
+        <locationX>1370</locationX>
+        <locationY>539</locationY>
+        <inputAssignments>
+            <field>Owner_Queue_wf__c</field>
+            <value>
+                <stringValue>ניהול ורישום מידע רפואי- ראשון לציון</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>1640</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Queue_Empty</targetReference>
+        </connector>
+        <filterFormula>{!$Record.RecordType.DeveloperName}=&apos;Medical_Info_Management&apos;</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>60</triggerOrder>
+</Flow>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Formtitan link for doctor info modification</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Assuta_Letterhead</letterhead>
+    <name>Formtitan approval link</name>
+    <style>freeForm</style>
+    <subject>A doctor has made an update in his profile</subject>
+    <textOnly>שלום,
+
+הרופא {!Account.Name} עדכן את הפרופיל האישי שלו.
+אנא היכנס ללינק ואשר את השינויים:
+{!Account.Formtitan_approval_link__c}
+
+
+
+תודה</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>file_type__c</fields>
+    <fields>role__c</fields>
+    <label>General Compact Layout</label>
+</CompactLayout>

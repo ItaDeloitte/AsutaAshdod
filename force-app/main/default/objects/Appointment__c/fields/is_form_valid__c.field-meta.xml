@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>is_form_valid__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND(Appointment_Date_Time__c &gt;= NOW(), NOT( ISPICKVAL( Appointment_Status__c , &apos;Canceled&apos;) ) ) , &apos;0&apos;, &apos;1&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Form Valid?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

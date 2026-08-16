@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jastification__c</fullName>
+    <label>Justification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מוצדק</fullName>
+                <default>false</default>
+                <label>מוצדק</label>
+            </value>
+            <value>
+                <fullName>לא מוצדק</fullName>
+                <default>false</default>
+                <label>לא מוצדק</label>
+            </value>
+            <value>
+                <fullName>לא רלוונטי</fullName>
+                <default>false</default>
+                <label>לא רלוונטי</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

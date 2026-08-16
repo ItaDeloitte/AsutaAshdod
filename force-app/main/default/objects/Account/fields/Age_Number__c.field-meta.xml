@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Age_Number__c</fullName>
+    <description>גיל המטופל לפי תאריך הלידה המעודכן</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT( ISBLANK( PersonBirthdate ) ) ,
+IF( DATE( 2000 , MONTH( PersonBirthdate ) , DAY( PersonBirthdate ) ) &lt;= DATE( 2000 , MONTH( TODAY() ) , DAY( TODAY() ) ),
+YEAR (Today()) - YEAR ( PersonBirthdate ),
+YEAR (Today()) - YEAR ( PersonBirthdate ) -1 ),
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Patient Age</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

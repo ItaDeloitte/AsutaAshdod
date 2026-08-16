@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>관련 관찰</label>
+    <name>HealthCloudGA__RelatedObservation__c</name>
+    <relationshipLabel>EHR 관련 관찰(관련 관찰)</relationshipLabel>
+</CustomFieldTranslation>

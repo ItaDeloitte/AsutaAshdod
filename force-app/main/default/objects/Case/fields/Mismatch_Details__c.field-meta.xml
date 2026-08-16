@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mismatch_Details__c</fullName>
+    <description>סטורי 20082</description>
+    <label>Mismatch Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Duplicate Record</fullName>
+                <default>false</default>
+                <label>Duplicate Record</label>
+            </value>
+            <value>
+                <fullName>Additional Exam Required (MRI/US)</fullName>
+                <default>false</default>
+                <label>Additional Exam Required (MRI/US)</label>
+            </value>
+            <value>
+                <fullName>Routine Follow-up</fullName>
+                <default>false</default>
+                <label>Routine Follow-up</label>
+            </value>
+            <value>
+                <fullName>Patient_without_recommendation</fullName>
+                <default>false</default>
+                <label>Patient without recommendation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

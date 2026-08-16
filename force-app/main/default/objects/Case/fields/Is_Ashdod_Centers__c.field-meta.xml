@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Ashdod_Centers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>האם פניה שייכת לאשדוד ציבורי</description>
+    <inlineHelpText>האם פניה שייכת לאשדוד ציבורי</inlineHelpText>
+    <label>Is Ashdod Centers</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

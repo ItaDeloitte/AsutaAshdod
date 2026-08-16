@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Experts_users</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Id_Patient__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Notes__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Doctor_Account__c</columns>
+    <columns>Doctor_arrangement__c</columns>
+    <columns>Date_of_appointment__c</columns>
+    <columns>Agreement__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Experts,Appointment__c.ClosedExperts</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>notEqual</operation>
+        <value>SSIS,Ensemble,לי גר</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>3/1/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Doctor_arrangement__c</field>
+        <operation>contains</operation>
+        <value>הסדר מרכז מומחים</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled</value>
+    </filters>
+    <label>פגישות מומחים - דוח מרכז</label>
+</ListView>

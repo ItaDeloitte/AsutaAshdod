@@ -1,0 +1,41 @@
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Assuta Mail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<center>
+<table id="Table_01" width="1200" height="800" border="0" cellpadding="0" cellspacing="0" style="color:#555555;">
+
+    <tr>
+        <td colspan="5">
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 1.5em; line-height: 1.6em;">
+
+שלום רב,
+<br>
+זוהי תזכורת לתיקון מידי של הפער שנמצא ברשומה רפואית לפני העברת התיק לארכיון. תיק יועבר לארכיון בעוד יומיים.
+פער שטרם טופל הינו באחריות רופא.
+<br>
+בברכה, {!Case.SignatureMedicalInfoFormula__c}
+
+
+<br>
+
+
+
+ </p>
+<a href="mailto:medicalrecords@assuta.co.il" target="_blank">
+                <img src="https://assuta--uat.sandbox.file.force.com/servlet/servlet.ImageServer?id=0157E000001tyVO&oid=00D7E000000FWtK&lastMod=1666095680000" width="1024" height="276" border="0" alt="Assuta"></a>
+
+        </td>
+    </tr>
+
+</table>
+
+
+{!Case.Thread_Token}
+
+
+</center></body>
+</html>

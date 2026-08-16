@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Status --></label>
+    <name>Call_status__c</name>
+    <picklistValues>
+        <masterLabel>אין מענה</masterLabel>
+        <translation><!-- אין מענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מענה</masterLabel>
+        <translation><!-- מענה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

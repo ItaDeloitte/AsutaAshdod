@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>התראה על חריגה צפויה שיקום בית</name>
+    <style>none</style>
+    <subject>אסותא-עדכון שחרור מטופל וקביעת תורים</subject>
+    <textOnly>Assuta Mail
+
+אסותא - עדכון תור
+
+שלום, לתשומת ליבך כי בעוד 10 דקות יפוגו 60 הדקות בפנייה מספר {!Case.CaseNumber}  שנמצאת בסטטוס &quot;ממתין לאישור מול רופא&quot;. אנא טיפולך.
+יש ליצור קשר עם הרופא.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

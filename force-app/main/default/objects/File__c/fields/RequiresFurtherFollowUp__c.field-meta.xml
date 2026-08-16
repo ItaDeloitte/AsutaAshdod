@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequiresFurtherFollowUp__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>סגירת מעגל - פתולוגיה - הצגת מסמכי דימות לרופא מפנה/מפענח/מבצע</description>
+    <label>Requires Further Follow Up</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

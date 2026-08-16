@@ -1,0 +1,106 @@
+.THIS {
+  /* ! */
+}
+
+.THIS .wrapper {
+  padding: 0 30px;
+}
+
+.THIS .swiper-container {
+  display: none;
+}
+
+.THIS .swiper-container.swiper-container-initialized {
+  display: block;
+}
+
+.THIS .swiper-container.swiper-container-initialized ~ .swiper-button-prev,
+.THIS .swiper-container.swiper-container-initialized ~ .swiper-button-next {
+  display: block;
+}
+
+.THIS .swiper-slide {
+  width: auto;
+  padding: 5px;
+}
+
+.THIS .swiper-button-prev,
+.THIS .swiper-button-next {
+  display: none;
+  width: 30px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.THIS .swiper-button-prev.swiper-button-disabled,
+.THIS .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.THIS .swiper-button-prev .cSvgIcon,
+.THIS .swiper-button-next .cSvgIcon {
+  position: absolute;
+  top: 40px;
+}
+
+.THIS .swiper-button-prev .cSvgIcon svg,
+.THIS .swiper-button-next .cSvgIcon svg {
+  width: 20px;
+  height: 20px;
+  stroke: #95999b;
+  transition: stroke 0.2s ease;
+}
+
+.THIS .swiper-button-prev:focus,
+.THIS .swiper-button-next:focus {
+  outline: none;
+}
+
+.THIS .swiper-button-prev:hover .cSvgIcon svg,
+.THIS .swiper-button-next:hover .cSvgIcon svg {
+  stroke: #6e7375;
+}
+
+.THIS .swiper-button-prev::after,
+.THIS .swiper-button-next::after {
+  display: none;
+}
+
+.THIS .swiper-container-rtl ~ .swiper-button-prev,
+.THIS .swiper-button-prev {
+  left: 0;
+  right: auto;
+  background: transparent;
+}
+
+.THIS .swiper-container-rtl ~ .swiper-button-prev .cSvgIcon,
+.THIS .swiper-button-prev .cSvgIcon {
+  left: 2px;
+}
+
+.THIS .swiper-container-rtl ~ .swiper-button-next,
+.THIS .swiper-button-next {
+  right: 0;
+  left: auto;
+  background: transparent;
+}
+
+.THIS .swiper-container-rtl ~ .swiper-button-next .cSvgIcon,
+.THIS .swiper-button-next .cSvgIcon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 2px;
+}
+
+.THIS .swiper-container-rtl ~ .swiper-button-prev .cSvgIcon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.THIS .swiper-container-rtl ~ .swiper-button-next .cSvgIcon {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Area of Responsability --></label>
+    <name>Area_of_Responsability__c</name>
+    <picklistValues>
+        <masterLabel>General</masterLabel>
+        <translation><!-- General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operations Coordinator</masterLabel>
+        <translation><!-- Operations Coordinator --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

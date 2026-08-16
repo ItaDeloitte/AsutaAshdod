@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>RIGHT</fullName>
+        <default>false</default>
+        <label>ימין</label>
+    </customValue>
+    <customValue>
+        <fullName>LEFT</fullName>
+        <default>false</default>
+        <label>שמאל</label>
+    </customValue>
+    <customValue>
+        <fullName>BOTH</fullName>
+        <default>false</default>
+        <label>דו צדדי</label>
+    </customValue>
+    <customValue>
+        <fullName>NOT</fullName>
+        <default>true</default>
+        <label>לא רלוונטי</label>
+    </customValue>
+    <description>צד למוגבלויות</description>
+    <masterLabel>Side Disabilities</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

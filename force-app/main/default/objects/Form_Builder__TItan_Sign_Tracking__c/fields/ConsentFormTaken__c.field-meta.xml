@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConsentFormTaken__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>ConsentFormTaken__c Lookup</description>
+    <label>ConsentFormTaken</label>
+    <referenceTo>ConsentFormTaken__c</referenceTo>
+    <relationshipLabel>Titan Sign Tracking</relationshipLabel>
+    <relationshipName>ttsea876ee164234734b0695d73afa2dc0c</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

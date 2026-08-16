@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q_90_mhd_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>מטופלים לאחר שיחה ממרפאת הגבר</label>
+    <queue>Q_90_mhd</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

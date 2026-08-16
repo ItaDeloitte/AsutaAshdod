@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>מכבי</label>
+    <protected>false</protected>
+    <values>
+        <field>insurerFactor__c</field>
+        <value xsi:type="xsd:string">2</value>
+    </values>
+    <values>
+        <field>pfCode__c</field>
+        <value xsi:type="xsd:string">3</value>
+    </values>
+    <values>
+        <field>pfValues__c</field>
+        <value xsi:type="xsd:string">3,0,166,1111,11,59,2282,1317,22,1112,22370,303,22379,1314,165,2248</value>
+    </values>
+</CustomMetadata>

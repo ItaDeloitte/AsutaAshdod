@@ -1,0 +1,25 @@
+.THIS {
+  /* ! */
+}
+
+.THIS .time-btn {
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+}
+
+.THIS .time-btn:not(:disabled) {
+  color: #525252;
+}
+
+.THIS .time-btn:not(:disabled):active, .THIS .time-btn:not(:disabled):focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.THIS .time-btn:not(:disabled).is-locked, .THIS .time-btn:not(:disabled):hover {
+  background-color: #e8e8e8;
+  color: #525252;
+  box-shadow: 0 0 3px #6d6d6d;
+  font-weight: 700;
+}

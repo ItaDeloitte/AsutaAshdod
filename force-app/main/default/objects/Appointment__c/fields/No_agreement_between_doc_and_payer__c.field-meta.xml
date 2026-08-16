@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_agreement_between_doc_and_payer__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>האם לא קיים הסכם בין הגורם המשלם לרופא?
+יודלק ע&quot;י טריגר שיבדוק עבור ההסכמים של הרופאים</description>
+    <label>No agreement between doc and payer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

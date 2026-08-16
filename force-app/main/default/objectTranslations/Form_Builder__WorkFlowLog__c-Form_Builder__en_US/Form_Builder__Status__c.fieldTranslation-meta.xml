@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Form_Builder__Status__c</name>
+    <picklistValues>
+        <masterLabel>Action Sent</masterLabel>
+        <translation><!-- Action Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action Submitted</masterLabel>
+        <translation><!-- Action Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email Action Clicked</masterLabel>
+        <translation><!-- Email Action Clicked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email Sent</masterLabel>
+        <translation><!-- Email Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email Viewed</masterLabel>
+        <translation><!-- Email Viewed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Summary Viewed</masterLabel>
+        <translation><!-- Summary Viewed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

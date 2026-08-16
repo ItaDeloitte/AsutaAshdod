@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_choose_subStatus</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+NOT(ISPICKVAL(StageName ,&quot;&quot;)),
+ISPICKVAL(StageStatus__c ,&quot;&quot;),
+NOT(ISCHANGED(Case__c )),
+$RecordType.DeveloperName = &quot;Patient_Referral&quot;)</errorConditionFormula>
+    <errorMessage>חובה לבחור תת סטטוס</errorMessage>
+</ValidationRule>

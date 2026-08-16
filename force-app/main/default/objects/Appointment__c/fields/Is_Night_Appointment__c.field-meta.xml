@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Night_Appointment__c</fullName>
+    <formula>IF( OR(AND (HOUR( Time_of_appointment__c )&gt;= 0,HOUR(Time_of_appointment__c ) &lt; 5),AND (MINUTE( Time_of_appointment__c )= 0,HOUR(Time_of_appointment__c ) = 5)), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Night Appointment</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

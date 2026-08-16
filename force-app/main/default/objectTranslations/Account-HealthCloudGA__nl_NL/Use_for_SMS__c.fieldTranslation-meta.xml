@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- סמן אם מספר הטלפון הראשי משמש גם כמספר טלפון לשליחת מסרונים --></help>
+    <label><!-- Use for SMS --></label>
+    <name>Use_for_SMS__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Site_Code__c</columns>
+    <columns>Site_Email__c</columns>
+    <columns>Address__c</columns>
+    <columns>Region__c</columns>
+    <columns>district__c</columns>
+    <columns>allowed_waiting_list__c</columns>
+    <columns>Relevant_for_appointment_screen__c</columns>
+    <columns>Display_on_screen__c</columns>
+    <columns>Maccabi_Code__c</columns>
+    <columns>US_Calendar__c</columns>
+    <columns>SendCoronaSms__c</columns>
+    <columns>settlement__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All</label>
+</ListView>

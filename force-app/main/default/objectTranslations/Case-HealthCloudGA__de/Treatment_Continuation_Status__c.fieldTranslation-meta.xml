@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Treatment Continuation Status --></label>
+    <name>Treatment_Continuation_Status__c</name>
+    <picklistValues>
+        <masterLabel>Additional Tests</masterLabel>
+        <translation><!-- Additional Tests --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Breast MRI</masterLabel>
+        <translation><!-- Breast MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Interested in Continuing the Process</masterLabel>
+        <translation><!-- Not Interested in Continuing the Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Clinic</masterLabel>
+        <translation><!-- Other Clinic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PET CT</masterLabel>
+        <translation><!-- PET CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Hemato Oncology Center</masterLabel>
+        <translation><!-- Referred to Hemato Oncology Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Oncology Center</masterLabel>
+        <translation><!-- Referred to Oncology Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repeat Additional Biopsy</masterLabel>
+        <translation><!-- Repeat Additional Biopsy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialist Recommended</masterLabel>
+        <translation><!-- Specialist Recommended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery Appointment Scheduling</masterLabel>
+        <translation><!-- Surgery Appointment Scheduling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verification Nurse</masterLabel>
+        <translation><!-- Verification Nurse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

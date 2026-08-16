@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Campi referente Nuova persona</label>
+        <name>HealthCloudGA__NewIndividualContactFields</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- עובד אסותא --></description>
+        <label><!-- Assuta Employee --></label>
+        <name>Assuta_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- אנשי קשר --></description>
+        <label><!-- Contact --></label>
+        <name>Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- מלווה של מטופל בניתוח בתהליך קבלה מהבית --></description>
+        <label><!-- Escort --></label>
+        <name>Escort</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Rappresenta un&apos;azienda</description>
+        <label>Azienda</label>
+        <name>HealthCloudGA__IndustriesBusiness</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Rappresenta una persona fisica</description>
+        <label>Persona</label>
+        <name>HealthCloudGA__IndustriesIndividual</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Supplier Contact --></label>
+        <name>Supplier_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- נא להזין אותיות בלבד בשדה זה! --></errorMessage>
+        <name>FirstName_TextValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il tipo di record Persona non può essere modificato</errorMessage>
+        <name>HealthCloudGA__NotAllowingConversionFromIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il tipo di record non può essere modificato in Persona.</errorMessage>
+        <name>HealthCloudGA__NotAllowingConversionToIndividual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא להזין אותיות בלבד בשדה זה! --></errorMessage>
+        <name>LastName_TextValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא להזין מספרים בלבד בשדה טלפון נוסף! --></errorMessage>
+        <name>OtherPhoneCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- !נא להזין מספרים בלבד בשדה טלפון --></errorMessage>
+        <name>PhoneCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;נא לוודא שהחברה שמשויכת לאיש קשר הזה היא מסוג &quot;ספק! --></errorMessage>
+        <name>SupplierAccountValidation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Titan_Forms_Lite --></label>
+        <name>Form_Builder__Titan_Forms_Lite</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Titan_Sign_Wizard --></label>
+        <name>Form_Builder__Titan_Sign_Wizard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label>Aggiungi relazione</label>
+        <name>HealthCloudGA__AddRelation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_SMS --></label>
+        <name>et4ae5__Send_ExactTarget_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+</CustomObjectTranslation>

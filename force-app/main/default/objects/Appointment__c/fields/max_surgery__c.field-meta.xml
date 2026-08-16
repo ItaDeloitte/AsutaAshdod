@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>max_surgery__c</fullName>
+    <description>מציג סכימה של מקסימום למשתלים, שכר טרחה ומחיר של פעולות</description>
+    <externalId>false</externalId>
+    <formula>implantsMaxPrice__c    +
+Payment_to_Doctor__c +
+all_med_pr_cost__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>max surgery</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

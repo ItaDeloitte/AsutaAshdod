@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_Survey_3__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Digital Survey 3</label>
+    <referenceTo>Survey__c</referenceTo>
+    <relationshipLabel>Medical Procedures in Sites (Digital Survey 3)</relationshipLabel>
+    <relationshipName>Medical_Procedures_in_Sites2</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

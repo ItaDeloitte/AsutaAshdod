@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_there_a_need_for_pre_surgery__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>האם יש צורך בטרום ניתוח? - אם יש וי (צ&apos;קבוקס) צריך לקבוע אם לא לא (טרום ניתוח = פעולה אמבולטורית)</description>
+    <label>Pre-Surgery Required</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CallStartTime__c</fullName>
+    <description>זמן התחלת השיחה עבור ממשקי IVR.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Call Start Time for IVR Interfaces</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

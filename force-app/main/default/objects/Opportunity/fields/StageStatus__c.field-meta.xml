@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StageStatus__c</fullName>
+    <label>StageStatus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Assuta_doctor_recommended</fullName>
+                <default>false</default>
+                <label>Assuta doctor recommended</label>
+            </value>
+            <value>
+                <fullName>availability</fullName>
+                <default>false</default>
+                <label>availability</label>
+            </value>
+            <value>
+                <fullName>checkDepartment</fullName>
+                <default>false</default>
+                <label>checkDepartment</label>
+            </value>
+            <value>
+                <fullName>checkDoctor</fullName>
+                <default>false</default>
+                <label>checkDoctor</label>
+            </value>
+            <value>
+                <fullName>checkMoked</fullName>
+                <default>false</default>
+                <label>checkMoked</label>
+            </value>
+            <value>
+                <fullName>Compatibility meeting was scheduled</fullName>
+                <default>false</default>
+                <label>Compatibility meeting was scheduled</label>
+            </value>
+            <value>
+                <fullName>competitors</fullName>
+                <default>false</default>
+                <label>competitors</label>
+            </value>
+            <value>
+                <fullName>Concerned</fullName>
+                <default>false</default>
+                <label>Concerned</label>
+            </value>
+            <value>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+                <label>Consulting</label>
+            </value>
+            <value>
+                <fullName>Contract Signed In Unit</fullName>
+                <default>false</default>
+                <label>Contract Signed In Unit</label>
+            </value>
+            <value>
+                <fullName>Disappeared</fullName>
+                <default>false</default>
+                <label>Disappeared</label>
+            </value>
+            <value>
+                <fullName>distance</fullName>
+                <default>false</default>
+                <label>distance</label>
+            </value>
+            <value>
+                <fullName>Doctor_not_at_Assuta</fullName>
+                <default>false</default>
+                <label>Doctor not at Assuta</label>
+            </value>
+            <value>
+                <fullName>doctorsSuggested</fullName>
+                <default>false</default>
+                <label>doctorsSuggested</label>
+            </value>
+            <value>
+                <fullName>doesntMatch</fullName>
+                <default>false</default>
+                <label>doesntMatch</label>
+            </value>
+            <value>
+                <fullName>Duplicate_Opportunity</fullName>
+                <default>false</default>
+                <label>Duplicate Opportunity</label>
+            </value>
+            <value>
+                <fullName>expert</fullName>
+                <default>false</default>
+                <label>expert</label>
+            </value>
+            <value>
+                <fullName>General information</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General information</label>
+            </value>
+            <value>
+                <fullName>Information sheets have been sent</fullName>
+                <default>false</default>
+                <label>Information sheets have been sent</label>
+            </value>
+            <value>
+                <fullName>In process of medical tests</fullName>
+                <default>false</default>
+                <label>In process of medical tests</label>
+            </value>
+            <value>
+                <fullName>In_Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>institute</fullName>
+                <default>false</default>
+                <label>institute</label>
+            </value>
+            <value>
+                <fullName>Market survey</fullName>
+                <default>false</default>
+                <label>Market survey</label>
+            </value>
+            <value>
+                <fullName>materialSent</fullName>
+                <default>false</default>
+                <label>materialSent</label>
+            </value>
+            <value>
+                <fullName>noAnswer</fullName>
+                <default>false</default>
+                <label>noAnswer</label>
+            </value>
+            <value>
+                <fullName>No_Insurance_Eligibility</fullName>
+                <default>false</default>
+                <label>No Insurance Eligibility</label>
+            </value>
+            <value>
+                <fullName>other</fullName>
+                <default>false</default>
+                <label>other</label>
+            </value>
+            <value>
+                <fullName>Patient performs a market research</fullName>
+                <default>false</default>
+                <label>Patient performs a market research</label>
+            </value>
+            <value>
+                <fullName>Patient undergoing medical tests</fullName>
+                <default>false</default>
+                <label>Patient undergoing medical tests</label>
+            </value>
+            <value>
+                <fullName>pre_operation_instruction_review</fullName>
+                <default>false</default>
+                <label>Pre-Opertation Instruction Review</label>
+            </value>
+            <value>
+                <fullName>price</fullName>
+                <default>false</default>
+                <label>price</label>
+            </value>
+            <value>
+                <fullName>questioning</fullName>
+                <default>true</default>
+                <label>questioning</label>
+            </value>
+            <value>
+                <fullName>Referred_to_Assuta_HaShalom</fullName>
+                <default>false</default>
+                <label>Referred to Assuta HaShalom</label>
+            </value>
+            <value>
+                <fullName>Referred_to_Coordinators</fullName>
+                <default>false</default>
+                <label>Referred to Coordinators</label>
+            </value>
+            <value>
+                <fullName>Regretted</fullName>
+                <default>false</default>
+                <label>Regretted</label>
+            </value>
+            <value>
+                <fullName>surgery</fullName>
+                <default>false</default>
+                <label>surgery</label>
+            </value>
+            <value>
+                <fullName>transferToDepartment</fullName>
+                <default>false</default>
+                <label>transferToDepartment</label>
+            </value>
+            <value>
+                <fullName>Waiting for a convenient time</fullName>
+                <default>false</default>
+                <label>Waiting for a convenient time</label>
+            </value>
+            <value>
+                <fullName>Waiting for Consultation</fullName>
+                <default>false</default>
+                <label>Waiting for Consultation</label>
+            </value>
+            <value>
+                <fullName>Waiting for doctor&apos;s response</fullName>
+                <default>false</default>
+                <label>Waiting for doctor&apos;s response</label>
+            </value>
+            <value>
+                <fullName>Waiting_for_experts_approval</fullName>
+                <default>false</default>
+                <label>Waiting for experts approval</label>
+            </value>
+            <value>
+                <fullName>Waiting for response from Optic</fullName>
+                <default>false</default>
+                <label>Waiting for response from Optic</label>
+            </value>
+            <value>
+                <fullName>Waiting for Shaban eligibility</fullName>
+                <default>false</default>
+                <label>Waiting for Shaban eligibility</label>
+            </value>
+            <value>
+                <fullName>Waiting for Surgery</fullName>
+                <default>false</default>
+                <label>Waiting for Surgery</label>
+            </value>
+            <value>
+                <fullName>NoInsuranceArrangementForSurgery</fullName>
+                <default>false</default>
+                <label>אין הסדר ביטוחי לניתוח</label>
+            </value>
+            <value>
+                <fullName>NoAppointmentBook</fullName>
+                <default>false</default>
+                <label>אין יומן פתוח לרופא</label>
+            </value>
+            <value>
+                <fullName>InsuranceRepChecking</fullName>
+                <default>false</default>
+                <label>בבדיקה מול סוכן ביטוח</label>
+            </value>
+            <value>
+                <fullName>Domain not applying in assuta</fullName>
+                <default>false</default>
+                <label>בדיקה\תחום לא קיים כרגע בשירות</label>
+            </value>
+            <value>
+                <fullName>Performed optic surgery</fullName>
+                <default>false</default>
+                <label>ביצע ניתוח אופטיק</label>
+            </value>
+            <value>
+                <fullName>Age</fullName>
+                <default>false</default>
+                <label>גיל</label>
+            </value>
+            <value>
+                <fullName>Arrived for compatibility check</fullName>
+                <default>false</default>
+                <label>הגיע לבדיקת התאמה</label>
+            </value>
+            <value>
+                <fullName>PrivateRoomOrdered</fullName>
+                <default>false</default>
+                <label>הוזמן חדר פרטי</label>
+            </value>
+            <value>
+                <fullName>NotInterestedPrivateRoom</fullName>
+                <default>false</default>
+                <label>לא מעוניין בחדר פרטי</label>
+            </value>
+            <value>
+                <fullName>Not_Interested_in_Service</fullName>
+                <default>false</default>
+                <label>לא מעוניין בשירות</label>
+            </value>
+            <value>
+                <fullName>NoSuitableDoctorNearby</fullName>
+                <default>false</default>
+                <label>לא נמצא רופא מתאים בקרבת מקום מגוריו</label>
+            </value>
+            <value>
+                <fullName>Pool</fullName>
+                <default>false</default>
+                <label>מאגר</label>
+            </value>
+            <value>
+                <fullName>RefundsFromInsurance</fullName>
+                <default>false</default>
+                <label>מבקש לברר על החזרים מול הביטוח</label>
+            </value>
+            <value>
+                <fullName>ChronicDisease</fullName>
+                <default>false</default>
+                <label>מחלות כרוניות</label>
+            </value>
+            <value>
+                <fullName>EyeDiseases</fullName>
+                <default>false</default>
+                <label>מחלות עיניים</label>
+            </value>
+            <value>
+                <fullName>ממתין לחוו&quot;ד רופא</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ממתין לחוו&quot;ד רופא</label>
+            </value>
+            <value>
+                <fullName>HadSurgeryPreviously</fullName>
+                <default>false</default>
+                <label>נותח בעבר</label>
+            </value>
+            <value>
+                <fullName>נשלחה הצעת מחיר</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>נשלחה הצעת מחיר</label>
+            </value>
+            <value>
+                <fullName>ReffersToKupatHolim</fullName>
+                <default>false</default>
+                <label>פונה לקופה</label>
+            </value>
+            <value>
+                <fullName>OtherService</fullName>
+                <default>false</default>
+                <label>פנה בנוגע לשירות אחר</label>
+            </value>
+            <value>
+                <fullName>NoCoordinatedDoctor</fullName>
+                <default>false</default>
+                <label>רופא שלא מתואם דרכינו</label>
+            </value>
+            <value>
+                <fullName>Harel</fullName>
+                <default>false</default>
+                <label>תואם הראל</label>
+            </value>
+            <value>
+                <fullName>ConsultWithInsuranceRep</fullName>
+                <default>false</default>
+                <label>תואם ייעוץ בעזרת סוכן ביטוח</label>
+            </value>
+            <value>
+                <fullName>AppScheduledByRep</fullName>
+                <default>false</default>
+                <label>תואם תור בעזרת סוכן ביטוח</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Providing details and questioning</controllingFieldValue>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <controllingFieldValue>In representative care</controllingFieldValue>
+            <valueName>noAnswer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Providing details and questioning</controllingFieldValue>
+            <controllingFieldValue>In representative care</controllingFieldValue>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>InsuranceRepChecking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Providing details and questioning</controllingFieldValue>
+            <valueName>questioning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Providing details and questioning</controllingFieldValue>
+            <valueName>Compatibility meeting was scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Providing details and questioning</controllingFieldValue>
+            <valueName>Information sheets have been sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>NoInsuranceArrangementForSurgery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>NoAppointmentBook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Domain not applying in assuta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Age</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Duplicate_Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <valueName>availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>NotInterestedPrivateRoom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Not_Interested_in_Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>doesntMatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>NoSuitableDoctorNearby</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Pool</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>RefundsFromInsurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <valueName>price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>ChronicDisease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>EyeDiseases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>distance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>competitors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Concerned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>HadSurgeryPreviously</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Disappeared</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>ReffersToKupatHolim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>OtherService</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Doctor_not_at_Assuta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>NoCoordinatedDoctor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Harel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <valueName>doctorsSuggested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Patient undergoing medical tests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Waiting for Shaban eligibility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Patient performs a market research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waiting for patient</controllingFieldValue>
+            <valueName>materialSent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In representative care</controllingFieldValue>
+            <valueName>checkMoked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In representative care</controllingFieldValue>
+            <valueName>checkDepartment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In representative care</controllingFieldValue>
+            <valueName>checkDoctor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In representative care</controllingFieldValue>
+            <valueName>Waiting for Surgery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In representative care</controllingFieldValue>
+            <valueName>Waiting for Consultation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>In_Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>In process of medical tests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Assuta_doctor_recommended</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Referred_to_Coordinators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>pre_operation_instruction_review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Waiting_for_experts_approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Waiting for a convenient time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Waiting for response from Optic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Waiting for doctor&apos;s response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Consulting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task: Return to patient</controllingFieldValue>
+            <valueName>Referred_to_Assuta_HaShalom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Performed optic surgery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Arrived for compatibility check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>PrivateRoomOrdered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>transferToDepartment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>ConsultWithInsuranceRep</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>AppScheduledByRep</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>institute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>expert</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>surgery</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Regular Aid</name>
+    <style>none</style>
+    <subject>פגישה למטופל עם עזרים</subject>
+    <textOnly>Assuta Mail
+
+שלום,
+
+
+הינך מקבל הודעה זאת כיוון שנקבעה פגישה למטופל בעל צורך ב: {!Medical_Aid_Appointment__c.Type_of_Assist__c}
+תאריך הפגישה: {!Medical_Aid_Appointment__c.Appointment_Date__c}
+שעת הפגישה: {!Medical_Aid_Appointment__c.Time_of_appointment__c}
+פעולה רפואית: {!Medical_Aid_Appointment__c.Appointment__c}
+שם מטופל: {!Medical_Aid_Appointment__c.Patient__c}
+ת.ז מטופל: {!Medical_Aid_Appointment__c.Patient_ID__c}
+
+בברכה,
+אסותא</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

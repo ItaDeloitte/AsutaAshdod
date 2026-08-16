@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_NOT_Change</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT($User.UserRoleId  = &apos;2F00E4J000000gh97&apos;)
+
+ &amp;&amp;
+( ISCHANGED (Related_User__c) || 
+ISCHANGED ( Mistake_type__c ) ||
+ISCHANGED ( Consequences__c ))</errorConditionFormula>
+    <errorMessage>אינך מורשה לבצע שינויים</errorMessage>
+</ValidationRule>

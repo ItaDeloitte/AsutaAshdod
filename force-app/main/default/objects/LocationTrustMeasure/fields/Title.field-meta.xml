@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Title</fullName>
+    <inlineHelpText>הכותרת העליונה של מדד המיקום שלך שמוצגת לצופים. הקפד על טקסט קצר וענייני! ניתן להשתמש ב-40 תווים לכל היותר, אך כדאי להשתמש ב-20 תווים כדי שהכותרת תופיע בשורה אחת.</inlineHelpText>
+</CustomField>

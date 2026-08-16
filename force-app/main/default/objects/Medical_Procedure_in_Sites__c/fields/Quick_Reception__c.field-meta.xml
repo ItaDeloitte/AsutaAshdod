@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quick_Reception__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>כאשר השדה מסומן, יעביר אינדיקציה לאנסמבל על כך שהפעולה הרופאית באתר מאושרת לקבלה מהירה</description>
+    <label>Quick Reception</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

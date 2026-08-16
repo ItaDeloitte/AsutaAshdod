@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- הרופא לא רשאי לבצע את הפעולה הרפואית --></help>
+    <label>רופא לא מורשה לבצע פעולה רפואית</label>
+    <name>Doc_not_allowed_to_do_medical_procedure__c</name>
+</CustomFieldTranslation>

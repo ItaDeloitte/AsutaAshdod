@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>עדכון שדות כמות שיחה (כללי+יוצאות+מענה)</description>
+        <name>Answered_Status_assignment</name>
+        <label>Answered Status assignment</label>
+        <locationX>1170</locationX>
+        <locationY>871</locationY>
+        <assignmentItems>
+            <assignToReference>Get_case_related_to_task.Number_Of_Answered_Calls__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>עדכן את כמות השיחוות היוצאות לפני מענה</description>
+        <name>Before_answer_assignment</name>
+        <label>Before answer assignment</label>
+        <locationX>1020</locationX>
+        <locationY>484</locationY>
+        <assignmentItems>
+            <assignToReference>Get_case_related_to_task.Number_Of_Unreply_Calls__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>END</name>
+        <label>END</label>
+        <locationX>157</locationX>
+        <locationY>854</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>עדכון כמות שיחות כללי</description>
+        <name>General_number_of_calls_assignment</name>
+        <label>General number of calls assignment</label>
+        <locationX>329</locationX>
+        <locationY>303</locationY>
+        <assignmentItems>
+            <assignToReference>Get_case_related_to_task.Number_Of_Case_Related_Calls__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>הוספת כמות שיחות מקושרות כללי + הוספת כמות שיחות יוצאות</description>
+        <name>Update_1</name>
+        <label>Update 1</label>
+        <locationX>489</locationX>
+        <locationY>637</locationY>
+        <assignmentItems>
+            <assignToReference>Get_case_related_to_task.Number_Of_Case_Related_Calls__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_case_related_to_task.Number_Of_Outgoing_Calls__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Status_equals_answer</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>ZeroingNumberOfUnrepliedCallsUntilAnswer</name>
+        <label>איפוס כמות שיחות ללא מענה עד מענה ראשון</label>
+        <locationX>1112</locationX>
+        <locationY>616</locationY>
+        <assignmentItems>
+            <assignToReference>Get_case_related_to_task.Number_Of_Unreply_Calls__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Answered_Status_assignment</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>בדיקה באיזה תרחיש שיחה אנחנו עומדים</description>
+        <name>Call_Type</name>
+        <label>Call Type</label>
+        <locationX>316</locationX>
+        <locationY>655</locationY>
+        <defaultConnector>
+            <targetReference>General_number_of_calls_assignment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>General number of calls</defaultConnectorLabel>
+        <rules>
+            <name>Outgoing_Call</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Call_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Outcoming call (Outside)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Call_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Outcoming call (Inside)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_1</targetReference>
+            </connector>
+            <label>Outgoing Call</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CheckAmountUnrepliedCallsUntilAnswer</name>
+        <label>בדיקת כמות שיחות ללא מענה עד מענה ראשון</label>
+        <locationX>869</locationX>
+        <locationY>631</locationY>
+        <defaultConnector>
+            <targetReference>Answered_Status_assignment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>כמות שיחות ללא מענה עד מענה ראשון לא ריק</defaultConnectorLabel>
+        <rules>
+            <name>AmountOfUnrepliedCallsUntilAnswerEmpty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_case_related_to_task.Number_Of_Unreply_Calls__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ZeroingNumberOfUnrepliedCallsUntilAnswer</targetReference>
+            </connector>
+            <label>שדה כמות שיחות ללא מענה עד מענה ראשון ריק?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>האם השיחה ללא מענה נוצרה לפני השיחה עם המענה?</description>
+        <name>Decision_3</name>
+        <label>Decision 3</label>
+        <locationX>808</locationX>
+        <locationY>375</locationY>
+        <defaultConnector>
+            <targetReference>Before_answer_assignment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Answered call doesn&apos;t exist</defaultConnectorLabel>
+        <rules>
+            <name>Answered_call_exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_case_related_to_task.Number_Of_Answered_Calls__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_case</targetReference>
+            </connector>
+            <label>Answered call exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>found</name>
+        <label>found?</label>
+        <locationX>149</locationX>
+        <locationY>711</locationY>
+        <defaultConnector>
+            <targetReference>END</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>no</defaultConnectorLabel>
+        <rules>
+            <name>yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_case_related_to_task.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Call_Type</targetReference>
+            </connector>
+            <label>yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>בודק האם השיחה בסטטוס מענה?</description>
+        <name>Status_equals_answer</name>
+        <label>Status equals answer?</label>
+        <locationX>680</locationX>
+        <locationY>645</locationY>
+        <defaultConnector>
+            <targetReference>Decision_3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No answer</defaultConnectorLabel>
+        <rules>
+            <name>Answer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Call_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Reply</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CheckAmountUnrepliedCallsUntilAnswer</targetReference>
+            </connector>
+            <label>Answer?</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Calls counter for IVF reports {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Calls counter for IVF reports</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_case_related_to_task</name>
+        <label>Get case related to task</label>
+        <locationX>164</locationX>
+        <locationY>307</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.WhatId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>עדכון הפניה המקושרת לשיחה שיצרה את התהליך</description>
+        <name>Update_case</name>
+        <label>Update case</label>
+        <locationX>1534</locationX>
+        <locationY>318</locationY>
+        <inputReference>Get_case_related_to_task</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_case_related_to_task</targetReference>
+        </connector>
+        <filterLogic>(1 OR 4) AND 2 AND 3</filterLogic>
+        <filters>
+            <field>Subject</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Call</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>WhatId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Is_IVF__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Subject</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>שיחה</stringValue>
+            </value>
+        </filters>
+        <object>Task</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

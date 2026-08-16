@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AZARIMVEMERKAZIM</fullName>
+    <columns>NAME</columns>
+    <columns>Accessibility_Coordinator__c</columns>
+    <columns>Manager_Email__c</columns>
+    <columns>Another_Business_Factor_Email1__c</columns>
+    <columns>Another_Business_Factor_Email2__c</columns>
+    <columns>Another_Business_Factor_Email3__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Accessibility_Coordinator__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>אתרים - עם פרטי אמונים למוגבלויות ועזרים</label>
+</ListView>

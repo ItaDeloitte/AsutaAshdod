@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Have all the documents been received? --></label>
+    <name>Have_all_the_documents_been_received__c</name>
+    <picklistValues>
+        <masterLabel>התקבלו כל המסמכים</masterLabel>
+        <translation><!-- התקבלו כל המסמכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמכים חסרים</masterLabel>
+        <translation><!-- מסמכים חסרים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

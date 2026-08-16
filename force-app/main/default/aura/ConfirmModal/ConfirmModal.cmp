@@ -1,0 +1,26 @@
+<aura:component>
+  <!-- attrs -->
+  <aura:attribute name="data" type="Object" />
+  <aura:attribute name="isOpen" type="Boolean" default="false" />
+  <aura:attribute name="showCloseButton" type="Boolean" default="true" />
+  <aura:attribute name="confirmBtnText" type="String" />
+  <aura:attribute name="cancelBtnText" type="String" />
+  <aura:attribute name="defaultConfirmBtnText" type="String" default="Confirm" />
+  <aura:attribute name="defaultCancelBtnText" type="String" default="Cancel" />
+  <aura:attribute name="class" type="String" />
+  <!-- events -->
+  <aura:registerEvent name="onclose" type="c:GenericComponentEvent" />
+
+  <c:BaseModal isOpen="{!v.isOpen}" class="{!v.class}" onclose="{!c.onCloseModal}"
+    showCloseButton="{!v.showCloseButton}">
+    <div class="">
+      <div class="confirm-content">{!v.body}</div>
+      <div class="modal-footer slds-modal__footer">
+        <lightning:button type="button" onclick="{!c.onCancel}">{!v.cancelBtnText || v.defaultCancelBtnText}
+        </lightning:button>
+        <lightning:button type="button" variant="brand" onclick="{!c.onConfirm}">{!v.confirmBtnText ||
+          v.defaultConfirmBtnText}</lightning:button>
+      </div>
+    </div>
+  </c:BaseModal>
+</aura:component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>תזכורת לגביי משימה פתוחה</name>
+    <style>freeForm</style>
+    <subject>שים לב! משימה לא הושלמה</subject>
+    <textOnly>שלום {!Task.CreatedBy},
+
+ישנה משימה שיצרת העומדת לעבור את זמן הטיפול בה!
+
+אם המשימה לא נוצרה על ידך יש לבצע בדיקה עם {!Task.Agent_assigned_name__c} לגביי השלמתה
+
+אם יצרת את המשימה - יש לבצעה!
+
+
+למעבר ישיר למשימה יש ללחוץ
+{!Task.URL_Task__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Maccabi Arrangements ETL --></label>
+    <name>Maccabi_Arrangement_ETL__c</name>
+    <picklistValues>
+        <masterLabel>רופא בהסדר</masterLabel>
+        <translation><!-- רופא בהסדר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא קופה</masterLabel>
+        <translation><!-- רופא קופה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

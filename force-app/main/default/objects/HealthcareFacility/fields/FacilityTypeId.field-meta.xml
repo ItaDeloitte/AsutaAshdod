@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FacilityTypeId</fullName>
+    <inlineHelpText>הקוד בהגדרת המערכת שמייצג את הסוג של מוסד זה בהקשר של התפקוד שלו. לדוגמה, מרכז גמילה או מוסד לטיפול במחלות כרוניות.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

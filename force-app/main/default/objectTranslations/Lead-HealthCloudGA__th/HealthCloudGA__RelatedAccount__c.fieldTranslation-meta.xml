@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>บัญชีที่เกี่ยวข้อง</label>
+    <name>HealthCloudGA__RelatedAccount__c</name>
+    <relationshipLabel>ลูกค้าเป้าหมาย (บัญชีที่เกี่ยวข้อง)</relationshipLabel>
+</CustomFieldTranslation>

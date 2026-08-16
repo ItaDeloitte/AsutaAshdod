@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_Not_Kosher__c</fullName>
+    <formula>not(or(
+begins(Phone ,&apos;050-41&apos;),
+begins( Phone,&apos;052-71&apos;),
+begins( Phone,&apos;052-76&apos;),
+begins( Phone,&apos;054-84&apos;),
+begins( Phone,&apos;054-85&apos;),
+begins( Phone,&apos;053-31&apos;),
+begins( Phone,&apos;053-41&apos;),
+begins( Phone,&apos;058-32&apos;),
+begins( Phone,&apos;055-67&apos;),
+begins( Phone,&apos;055-32&apos;),
+begins( Phone,&apos;05041&apos;),
+begins( Phone,&apos;05271&apos;),
+begins( Phone,&apos;05276&apos;),
+begins( Phone,&apos;05484&apos;),
+begins( Phone,&apos;05485&apos;),
+begins( Phone,&apos;05331&apos;),
+begins( Phone,&apos;05341&apos;),
+begins( Phone,&apos;05832&apos;),
+begins( Phone,&apos;05567&apos;),
+begins( Phone,&apos;05532&apos;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Number Not Kosher</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

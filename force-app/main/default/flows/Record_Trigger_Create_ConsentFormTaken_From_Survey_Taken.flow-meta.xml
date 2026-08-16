@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>If A Survey that is realted to a survey Taken has a related ConsentForm - This Flow will Create A new ConsenFormTaken and Add it for the appointment.
+
+FB: Monday - 2910127316</description>
+    <environments>Default</environments>
+    <interviewLabel>Record Trigger - Create ConsentFormTaken From Survey Taken {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Record Trigger - Create ConsentFormTaken From Survey Taken</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_ConsentFormTaken</targetReference>
+        </connector>
+        <filterFormula>NOT(ISBLANK({!$Record.Survey__r.ConsentForm__c}))</filterFormula>
+        <object>SurveyTaker__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Create_ConsentFormTaken</name>
+        <label>Create ConsentFormTaken</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <flowName>Autolunched_create_consenformtaken</flowName>
+        <inputAssignments>
+            <name>rv_surveytaken</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

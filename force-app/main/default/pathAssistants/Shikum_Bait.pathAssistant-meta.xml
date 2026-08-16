@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Case_Phase__c</fieldName>
+    <masterLabel>שיקום בית</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;פניה סגורה&lt;/p&gt;</info>
+        <picklistValueName>Closing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;פניה בתהליך&lt;/p&gt;</info>
+        <picklistValueName>In_Process</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;פניה במצב חדש &lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;פניה במצב התאמה לשירות&lt;/p&gt;</info>
+        <picklistValueName>Service_Adaption</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Shikum_Bait</recordTypeName>
+</PathAssistant>

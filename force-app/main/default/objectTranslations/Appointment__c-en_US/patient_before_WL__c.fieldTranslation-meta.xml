@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Patient Before Cancel --></label>
+    <name>patient_before_WL__c</name>
+    <relationshipLabel><!-- Appointments (מטופל לפני ביטול) --></relationshipLabel>
+</CustomFieldTranslation>

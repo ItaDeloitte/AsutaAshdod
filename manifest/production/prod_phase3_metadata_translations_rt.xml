@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 3 — CustomMetadata + Translations + RecordTypes
+    =====================================
+    Types: CustomMetadata, CustomObjectTranslation, GlobalValueSetTranslation,
+           StandardValueSetTranslation, RecordType (via objects source-dir)
+    Test level: NoTestRun
+    Estimated time: ~20-30 min
+    Dependencies: Phase 2 (Objects + Fields) must succeed first.
+
+    ⚠️ REQUIRED: Translation Workbench must be enabled in Production (Setup → Translation Workbench)
+       before deploying translations. If not enabled: exclude with `**/translations/**` in .forceignore.
+
+    ⚠️ RECORD TYPES — deployed via source-dir (NOT this package):
+       RecordTypes are part of the objects source tree. Deploy with:
+         sf project deploy start --source-dir "force-app/main/default/objects" ^
+           --target-org AsutaProd --test-level NoTestRun
+       This re-deploys objects WITH RecordTypes (after Phase 2 deployed without them).
+       The **/recordTypes/** line in .forceignore MUST be removed before this step.
+
+    ⚠️ EXCLUDED translations:
+       - LeadSource-iw.standardValueSetTranslation (empty — no custom LeadSource values yet)
+       - Permission_Set_Mapping.Chatter_Free + Chatter_Free_Basic (nil required field)
+       - FieldTranslations for 37 excluded fields (see .forceignore)
+       - TaskStatus-iw: 3 values removed (Deferred, In Progress, Waiting on someone else)
+       - TaskPriority-iw: Low value removed
+       - ObjectTranslation gender fixed: 33 files Neuter→Masculine
+
+    COMMANDS (run in this order):
+
+    Step 1 — CustomMetadata + Translations:
+    sf project deploy start ^
+      --metadata CustomMetadata ^
+      --metadata CustomObjectTranslation ^
+      --metadata GlobalValueSetTranslation ^
+      --metadata StandardValueSetTranslation ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase3a_result.json
+
+    Step 2 — RecordTypes (remove **/recordTypes/** from .forceignore first!):
+    sf project deploy start --source-dir "force-app/main/default/objects" ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase3b_rt_result.json
+
+    NOTE: Each --metadata flag must be separate on Windows PowerShell (not comma-separated).
+    NOTE: Translations (*.translation-meta.xml) are deployed via CustomObjectTranslation type.
+
+    StandardValueSets deployed here: CaseOrigin, CaseReason, CaseStatus, LeadStatus,
+    LeadSource, OpportunityStage, TaskStatus — were in Phase 1 package. Translations
+    for these are in StandardValueSetTranslation.
+
+    BusinessProcesses (Lead: Assuta Optic, תיירות מרפא) deployed with RecordTypes in Step 2.
+    Lead BusinessProcess files are under force-app/main/default/objects/Lead/businessProcesses/
+    and are included in the source-dir deploy.
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- ~1,113 custom metadata records (excludes Chatter_Free + Chatter_Free_Basic) -->
+    <types>
+        <members>*</members>
+        <name>CustomMetadata</name>
+    </types>
+
+    <!-- Object translations (Hebrew + English) — 33 gender values fixed -->
+    <types>
+        <members>*</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+
+    <!-- GVS translations -->
+    <types>
+        <members>*</members>
+        <name>GlobalValueSetTranslation</name>
+    </types>
+
+    <!-- SVS translations (TaskStatus-iw fixed, LeadSource-iw excluded) -->
+    <types>
+        <members>*</members>
+        <name>StandardValueSetTranslation</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

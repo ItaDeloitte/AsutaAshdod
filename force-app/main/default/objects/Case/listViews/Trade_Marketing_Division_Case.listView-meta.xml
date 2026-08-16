@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trade_Marketing_Division_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>אגף סחר ושיווק</label>
+    <queue>Trade_Marketing_Division</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

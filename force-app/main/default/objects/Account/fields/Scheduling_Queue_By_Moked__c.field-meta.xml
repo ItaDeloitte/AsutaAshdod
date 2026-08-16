@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheduling_Queue_By_Moked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>זימון תור ע&quot;י המוקד</description>
+    <label>Scheduling Queue By Moked</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

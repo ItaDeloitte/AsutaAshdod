@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תבנית מוגדרת מראש עם סיכום ההטבות של המטופל.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>סיכום אימות הטבות לאנשי מקצוע בתחום הבריאות</name>
+    <style>none</style>
+    <subject>סיכום הטבות עבור {{Patient_Name}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

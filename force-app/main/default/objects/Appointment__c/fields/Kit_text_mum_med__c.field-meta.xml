@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kit_text_mum_med__c</fullName>
+    <externalId>false</externalId>
+    <formula>If ( NOT(ISBLANK (Medical_Procedure__c))&amp;&amp; ISBLANK (Medical_Procedure2__c), &quot;נקבעה עבורך פעולה רפואית אחת&quot; , 
+If ( NOT(ISBLANK (Medical_Procedure__c))&amp;&amp; NOT(ISBLANK (Medical_Procedure2__c)) &amp;&amp; ISBLANK (Medical_Procedure3__c),&quot;נקבעו עבורך 2 פעולות רפואיות.&quot;,
+ If ( NOT(ISBLANK (Medical_Procedure__c))&amp;&amp; NOT(ISBLANK(Medical_Procedure2__c))&amp;&amp; NOT(ISBLANK (Medical_Procedure3__c))&amp;&amp;ISBLANK (Medical_Procedure4__c),&quot;נקבעו עבורך 3 פעולות רפואיות.&quot;,
+
+
+&quot;נקבעו עבורך 4 פעולות רפואיות.&quot; )))
+
+ &amp;&quot; &quot;&amp;&quot;לחץ&quot;&amp;&quot;/&quot;&amp;&quot;י על הפעולה עליה תרצה&quot;&amp;&quot;/&quot;&amp;&quot;י לקבל מידע נוסף&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Text Kit Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

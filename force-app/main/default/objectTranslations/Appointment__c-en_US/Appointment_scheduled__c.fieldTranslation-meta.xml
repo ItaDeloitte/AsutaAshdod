@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Appointment Scheduled --></label>
+    <name>Appointment_scheduled__c</name>
+    <picklistValues>
+        <masterLabel>אין מענה</masterLabel>
+        <translation><!-- אין מענה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הוצעה הדרכה</masterLabel>
+        <translation><!-- הוצעה הדרכה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המטופל יצור איתנו קשר</masterLabel>
+        <translation><!-- המטופל יצור איתנו קשר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניין</masterLabel>
+        <translation><!-- לא מעוניין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לחזור למטופל בנוגע להדרכה</masterLabel>
+        <translation><!-- לחזור למטופל בנוגע להדרכה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עבר הדרכה</masterLabel>
+        <translation><!-- עבר הדרכה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תואם תור להדרכה</masterLabel>
+        <translation><!-- תואם תור להדרכה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

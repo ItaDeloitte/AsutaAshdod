@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Opt_Out_Timestamp</name>
+        <label>Assign Opt Out Timestamp</label>
+        <locationX>50</locationX>
+        <locationY>384</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Opt_Out_Time_Stamp__pc</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>now</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_PhoneToMC</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_PhoneToMC</name>
+        <label>Assign PhoneToMC</label>
+        <locationX>270</locationX>
+        <locationY>576</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.PhoneToMC__pc</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.PhoneToMC_Helper__pc</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SyncToMC_Changed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_TsSyncToMC</name>
+        <label>Assign TsSyncToMC</label>
+        <locationX>138</locationX>
+        <locationY>792</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.TS_Sync_To_MC__pc</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>now</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Triggering_Record</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>180 days after the checkbox &quot;Sync To MC&quot; is changed to false, it needs to be updated to true and that way will be unsynchronized from the MC</description>
+        <name>Check_If_SyncToMC_Is_True</name>
+        <label>Check If SyncToMC Is True</label>
+        <locationX>798</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SyncToMC_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SyncToMC__pc</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Sync_To_MC_To_False</targetReference>
+            </connector>
+            <label>SyncToMC true</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>קיימים 4 תרחישים להטרגת תהליך הסנכרון של ליד ל MC
+1. ליד קיים- בו משתנה הדיוור
+2. ליד חדש
+3. ליד אשר משתנה בו הערך בצקבוס synctomc
+4. ליד שהומר</description>
+        <name>Marketing_Cloud_Triggers</name>
+        <label>Marketing Cloud Triggers</label>
+        <locationX>270</locationX>
+        <locationY>276</locationY>
+        <defaultConnector>
+            <targetReference>Assign_PhoneToMC</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Mailing_Approval_Changed_OPT_IN_OUT</name>
+            <conditionLogic>((1 OR 2) AND (3 OR 4)) OR ((5 OR 6) AND (7 OR 8))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Mailing_approval__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מאשר דיוור - שיווקי</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Mailing_approval__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מאשר דיוור - הכל</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Mailing_approval__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מאשר דיוור - שירותי</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Mailing_approval__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>לא מאשר דיוור - הכל</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Mailing_approval__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>לא מאשר דיוור - הכל</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Mailing_approval__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מאשר דיוור - שירותי</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Mailing_approval__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מאשר דיוור - שיווקי</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Mailing_approval__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>מאשר דיוור - הכל</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Opt_Out_Timestamp</targetReference>
+            </connector>
+            <label>Mailing Approval Changed- OPT IN/OUT</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_Account_Is_New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_PhoneToMC</targetReference>
+            </connector>
+            <label>Account Is New</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>קיימים 4 תרחישים להטרגת תהליך הסנכרון של ליד ל MC
+1. ליד קיים- בו משתנה הדיוור
+2. ליד חדש
+3. ליד אשר משתנה בו הערך בצקבוס synctomc
+4. ליד שהומר</description>
+        <name>SyncToMC_Changed</name>
+        <label>SyncToMC Changed</label>
+        <locationX>270</locationX>
+        <locationY>684</locationY>
+        <defaultConnector>
+            <targetReference>Update_Triggering_Record1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SyncToMC_Changed1</name>
+            <conditionLogic>1 OR 2</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SyncToMC__pc</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_TsSyncToMC</targetReference>
+            </connector>
+            <label>SyncToMC Changed</label>
+        </rules>
+    </decisions>
+    <description>אוטומציה שפועלת על החשבון מטופל בתהליך של ה MC</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>now</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <interviewLabel>Account MC Triggering Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account MC Triggering Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Sync_To_MC_To_False</name>
+        <label>Update Sync To MC To False</label>
+        <locationX>666</locationX>
+        <locationY>384</locationY>
+        <inputAssignments>
+            <field>SyncToMC__pc</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Triggering_Record</name>
+        <label>Update Triggering Record</label>
+        <locationX>138</locationX>
+        <locationY>900</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Triggering_Record1</name>
+        <label>Update Triggering Record</label>
+        <locationX>402</locationX>
+        <locationY>792</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>408</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Marketing_Cloud_Triggers</targetReference>
+        </connector>
+        <filterFormula>ISCHANGED({!$Record.SyncToMC__pc}) || ISCHANGED({!$Record.SMS_Phone_Number__c}) || ISCHANGED({!$Record.Mailing_approval__c}) || ISNEW() &amp;&amp;{!$Record.IsPersonAccount}=True</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Turn_SyncToMC_Off</name>
+            <connector>
+                <targetReference>Check_If_SyncToMC_Is_True</targetReference>
+            </connector>
+            <label>Turn SyncToMC Off</label>
+            <offsetNumber>180</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>TS_Sync_To_MC__pc</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>numofpartialaccounts</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>numofpartialleads</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>PartialMatchesAccount</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>PartialMatchLeads</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+</Flow>

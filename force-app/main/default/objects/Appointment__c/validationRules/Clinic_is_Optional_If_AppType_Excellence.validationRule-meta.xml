@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clinic_is_Optional_If_AppType_Excellence</fullName>
+    <active>false</active>
+    <description>Appointment Type = מצויינות then clinic is optional (not mandatory) - valid only for &quot;Experts&quot; RT  (monday- 5034900669)</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;Experts&apos;,
+    ISPICKVAL(Appointment_Type__c, &apos;Experts&apos;),
+    ISBLANK(Clinic__c )
+   )</errorConditionFormula>
+    <errorDisplayField>Clinic__c</errorDisplayField>
+    <errorMessage>מרפאה הוא שדה חובה כאשר סוג הפגישה הינו &quot;מומחים&quot;</errorMessage>
+</ValidationRule>

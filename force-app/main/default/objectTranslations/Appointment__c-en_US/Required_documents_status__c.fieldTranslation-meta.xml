@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Required documents status --></label>
+    <name>Required_documents_status__c</name>
+    <picklistValues>
+        <masterLabel>All documents sent</masterLabel>
+        <translation><!-- All documents sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No documents uploaded yet</masterLabel>
+        <translation><!-- No documents uploaded yet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Some documents sent</masterLabel>
+        <translation><!-- Some documents sent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

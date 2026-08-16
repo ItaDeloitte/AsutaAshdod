@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Physiologically Relevant time/time-period for observation --></help>
+    <label>敷藥日期/時間</label>
+    <name>HealthCloudGA__AppliesDateTime__c</name>
+</CustomFieldTranslation>

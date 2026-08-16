@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>case_reason_f__c</fullName>
+    <formula>NOT( ISBLANK(  Case_Reason__c) )||
+NOT( ISBLANK(  Case_Reason_2__c) )||
+NOT( ISBLANK(  Case_Reason_3__c) )||
+NOT( ISBLANK(  Case_Reason_4__c) )||
+NOT( ISBLANK(  Case_Reason_5__c) )||
+NOT( ISBLANK(  Case_Reason_6__c) )||
+NOT( ISBLANK(  Case_Reason_7__c) )||
+NOT( ISBLANK(  Case_Reason_8__c) )||
+NOT( ISBLANK(   Case_Reason_Comments__c ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>case reason f</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

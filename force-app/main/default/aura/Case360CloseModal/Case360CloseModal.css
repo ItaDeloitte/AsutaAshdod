@@ -1,0 +1,18 @@
+.THIS.modal .modal-container,
+.THIS.modal .slds-modal__container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  min-width: 20rem;
+}
+
+.THIS.modal .modal-body,
+.THIS.modal .slds-modal__content {
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+
+.THIS .cActionModalInner {
+  max-height: 500px;
+}

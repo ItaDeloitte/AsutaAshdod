@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>תבנית מייל נפרדת לפגישות של פסיכותרפיה עד הבית</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>אסותא - תור לטיפול מרחוק</name>
+    <style>none</style>
+    <subject>אסותא - תור לטיפול מרחוק</subject>
+    <textOnly>שלום, נקבע עבורך מפגש וירטואלי ל{!Calendar__c.Doc_Name__c}:  {!Appointment__c.day_date_hour__c}.
+
+על מנת שנוכל לקיים את הפגישה בצורה מיטבית יש לוודא שברשותך טלפון חכם/מחשב, מחובר לאינטרנט יציב ללא הפרעות קליטה שבאמצעותו ניתן לבצע שיחת וידאו.
+
+לתשומת ליבך, עם הגעת מועד התור נשלח הודעת סמס והודעת דוא&quot;ל עם לינק התחברות לפגישה.
+
+ברכת בריאות איתנה, אסותא מרכזים רפואיים</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

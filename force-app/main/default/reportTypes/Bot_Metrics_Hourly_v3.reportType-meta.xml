@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject></baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>מדדי בוט של Einstein בצבירה לפי שעה.</description>
+    <label>מדדי בוט שעתיים במהדורת Winter &apos;23</label>
+    <sections>
+        <masterLabel>מדדים שעתיים בדו-שיח של הגדרת שיחה</masterLabel>
+    </sections>
+</ReportType>

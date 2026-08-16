@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site</fullName>
+    <fields>Name</fields>
+    <fields>Site_Code__c</fields>
+    <fields>Address__c</fields>
+    <fields>Region__c</fields>
+    <label>Site</label>
+</CompactLayout>

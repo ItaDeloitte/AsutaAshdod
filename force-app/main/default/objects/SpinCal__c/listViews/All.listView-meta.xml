@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>statuscode__c</columns>
+    <columns>operationDateTime__c</columns>
+    <columns>Opercode__c</columns>
+    <columns>doctorID__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>tafnitID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>branchname__c</field>
+        <operation>equals</operation>
+        <value>בי&quot;ח אסותא אשדוד ע&quot;ש סמסון</value>
+    </filters>
+    <label>All</label>
+</ListView>

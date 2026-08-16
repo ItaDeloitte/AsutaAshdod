@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Today_and_Call</fullName>
+    <columns>SUBJECT</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>DUE_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>STATUS</columns>
+    <columns>UUI__c</columns>
+    <columns>Phone__c</columns>
+    <columns>Caller__c</columns>
+    <columns>Called__c</columns>
+    <columns>AgentId__c</columns>
+    <columns>CALLDURATION</columns>
+    <columns>Call_ID__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SUBJECT</field>
+        <operation>equals</operation>
+        <value>Call</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Call_ID__c</field>
+        <operation>equals</operation>
+        <value>00001090981669797124</value>
+    </filters>
+    <label>Today and Call</label>
+</ListView>

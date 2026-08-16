@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Aandoening</label>
+    <name>HealthCloudGA__Condition__c</name>
+    <relationshipLabel>Aan aandoening volgens EPD (elektronisch patiëntendossier) gerelateerde items</relationshipLabel>
+</CustomFieldTranslation>

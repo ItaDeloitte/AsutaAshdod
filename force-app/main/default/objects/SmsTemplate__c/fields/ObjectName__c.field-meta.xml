@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObjectName__c</fullName>
+    <description>בשדה זה יש לשים את הAPI של האובייקט שממנו יוצאת רשומת הסמס הרלוונטית לתוכן זה</description>
+    <inlineHelpText>בשדה זה יש לשים את שם האובייקט שממנו יוצא הסמס ועליו יושבים השדות הדינאמיים. חייב להקפיד שהשם יהיה זהה לשם האובייקט (אותיות גדולות, קטנות, ללא רווחים)</inlineHelpText>
+    <label>ObjectName</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appointment__c</fullName>
+                <default>false</default>
+                <label>Appointment__c</label>
+            </value>
+            <value>
+                <fullName>Case__c</fullName>
+                <default>false</default>
+                <label>Case__c</label>
+            </value>
+            <value>
+                <fullName>Account__c</fullName>
+                <default>false</default>
+                <label>Account__c</label>
+            </value>
+            <value>
+                <fullName>SurveyTaker__c</fullName>
+                <default>false</default>
+                <label>SurveyTaker__c</label>
+            </value>
+            <value>
+                <fullName>Opportunity__c</fullName>
+                <default>false</default>
+                <label>Opportunity__c</label>
+            </value>
+            <value>
+                <fullName>ConsentFormTaken__c</fullName>
+                <default>false</default>
+                <label>ConsentFormTaken__c</label>
+            </value>
+            <value>
+                <fullName>AgentSurvey__c</fullName>
+                <default>false</default>
+                <label>AgentSurvey__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

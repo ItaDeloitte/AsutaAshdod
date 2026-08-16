@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Mandatory_Genetic_Files_Received__c</fullName>
+    <formula>IF( AND( INCLUDES( Genetic_upload_files__c , &quot;270&quot;),INCLUDES( Genetic_upload_files__c , &quot;271&quot;),INCLUDES( Genetic_upload_files__c , &quot;272&quot;)) ,true, false)</formula>
+    <label>All mandatory Genetic Files Received</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

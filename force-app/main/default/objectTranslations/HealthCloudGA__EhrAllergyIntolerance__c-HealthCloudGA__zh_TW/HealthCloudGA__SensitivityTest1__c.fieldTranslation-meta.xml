@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>敏感性測試 1</label>
+    <name>HealthCloudGA__SensitivityTest1__c</name>
+    <relationshipLabel>EHR 過敏不耐症</relationshipLabel>
+</CustomFieldTranslation>

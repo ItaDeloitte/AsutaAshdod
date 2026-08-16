@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsSignDoc__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>קובץ שנוצר בטיטאן וצריך להשלח לממשק חתימות</description>
+    <inlineHelpText>קובץ שנוצר בטיטאן וצריך להשלח לממשק חתימות</inlineHelpText>
+    <label>IsSignDoc</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

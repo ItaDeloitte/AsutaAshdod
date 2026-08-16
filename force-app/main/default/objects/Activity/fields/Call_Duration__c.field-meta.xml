@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Duration__c</fullName>
+    <description>משך זמן השיחה - מחושב ע&quot;י חישוב הפרש הזמנים בין זמן עדכון סטטוס השיחה ל&quot;הסתיימה&quot; לבין זמן יצירת הלוג (נוצר ברגע המענה של הנציג ללקוח).</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Call Duration (Minutes)</label>
+    <length>10</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

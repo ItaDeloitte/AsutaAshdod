@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title={cardTitle}>
+        <div class="slds-p-around_medium">
+            <template if:true={flowApiName}>
+                <lightning-flow
+                    flow-api-name={flowApiName}
+                    onstatuschange={handleStatusChange}>
+                </lightning-flow>
+            </template>
+
+            <template if:false={flowApiName}>
+                <div class="slds-text-color_error">
+                    Flow API Name is missing.
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

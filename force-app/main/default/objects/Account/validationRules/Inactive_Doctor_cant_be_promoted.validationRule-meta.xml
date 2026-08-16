@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Doctor_cant_be_promoted</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  
+OR
+(NOT(ISPICKVAL( Status__c , &quot;פ&quot;)),
+ISPICKVAL( ShowDoctorInDA__c , &quot;לא&quot;)
+),
+Promoted_doctor_DA__c 
+)</errorConditionFormula>
+    <errorMessage>לא ניתן לקדם רופא לא פעיל או שאינו מוצג באתר המלצת רופאים</errorMessage>
+</ValidationRule>

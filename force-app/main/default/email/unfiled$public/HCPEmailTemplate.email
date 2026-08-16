@@ -1,0 +1,51 @@
+<html lang="en">
+            <body style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.6; color: #333; max-width: 700px; margin: auto; padding: 20px; margin: 0px;">
+            <p>שלום {{HealthcareProvider_Salutation}} {{HealthcareProvider_FirstName}} {{HealthcareProvider_LastName}},</p>
+
+            <p>במסגרת תוכנית השירות שלנו למטופלים, אנו משתפים את פרטי ביטוח התרופות המאומתים של המטופל/ת שלך, <strong>{{Patient_Name}}</strong>, כדי לסייע בתכנון הטיפול ובתיאום הגישה.</p>
+
+            <h3 style="font-size: 14px; margin-bottom: 0;">פרטי ביטוח:</h3>
+            <ul style="margin-top: 0;">
+            <li><strong>תוכנית החבר:</strong> {{Insurance_MemberPlanName}}</li>
+            <li><strong>מספר ההחבר:</strong> {{Insurance_MemberPlanMemberNumber}}</li>
+            <li><strong>מספר קבוצה:</strong> {{Insurance_MemberPlanGroupNumber}}</li>
+            <li><strong>סוג תוכנית:</strong> {{Insurance_MemberPlanType}}</li>
+            <li><strong>תקופת כיסוי:</strong> {{Insurance_MemberPlanEffectiveFromDate}} – {{Insurance_MemberPlanEffectiveToDate}}</li>
+            </ul>
+
+            <h3 style="font-size: 14px; margin-bottom: 0;">פרטי תרופות:</h3>
+            <ul style="margin-top: 0;">
+            <li><strong>תרופה:</strong> {{Prescription_Name}} ({{Prescription_Quantity}} {{Prescription_UnitOfMeasure}} למשך {{Prescription_SupplyDuration}} ימים)</li>
+            </ul>
+
+            <h3 style="font-size: 14px; margin-bottom: 0;">פרטי הטבות הביטוח של {{Prescription_Name}}:</h3>
+            <ul style="margin-top: 0;">
+            <li><strong>סטטוס כיסוי:</strong> {{CoverageBenefit_Status}}</li>
+            <li><strong>סוג רשת:</strong> {{Network_Type}}</li>
+            <li><strong>סכום השתתפות עצמית (Co-Pay)‏:</strong> {{CoPay}}</li>
+            <li><strong>סכום השתתפות עצמית (Co-Insurance)‏:</strong> {{CoInsurance}}</li>
+            <li><strong>סכום השתתפות עצמית (Co-Pay) לאינפוזיה:</strong> {{InfusionCoPay}}</li>
+            <li><strong>סכום השתתפות עצמית (Co-Insurance) לאינפוזיה:</strong> {{InfusionCoInsurance}}</li>
+            <li><strong>סכום תשלום קבוע (Deductible)‏:</strong> {{Deductibles}}</li>
+            <li><strong>סכום תשלום קבוע שהוחל (Deductible Applied)‏:</strong> {{DeductiblesApplied}}</li>
+            <li><strong>סכום תשלום קבוע ששולם (Deductible Met)‏:</strong> {{DeductiblesMet}}</li>
+            <li><strong>סכום כולל לתשלום (Out-of-Pocket)‏:</strong> {{Total}}</li>
+            <li><strong>סכום לתשלום שהוחל (Out-of-Pocket Applied)‏:</strong> {{OutOfPocketApplied}}</li>
+            <li><strong>סכום מרבי לתשלום (Out-of-Pocket)‏:</strong> {{OopMax}}</li>
+            <li><strong>סכום מרבי לתשלום ששולם (Out-of-Pocket Met)‏:</strong> {{OopMaxMet}}</li>
+            <li><strong>סכום מרבי למשך החיים:</strong> {{Ltm}}</li>
+            <li><strong>סכום מרבי למשך החיים ביתרה:</strong> {{RemainingLtm}}</li>
+            <li><strong>נדרש אישור מראש:</strong> {{PriorAuthorization_Required}}</li>
+            <li><strong>פרטים נוספים:</strong> {{CoverageBenefit_BenefitNotes}}</li>
+            </ul>
+
+            <p>
+            נא להודיע לנו אם נדרשים מסמכים נוספים או אם נוכל לסייע. אנו מודים לך על השותפות והתמיכה בטיפול ב{{Patient_Name}}.
+            </p>
+
+            <p>
+            תודה,<br>
+            <strong>{{Organization_Name}}</strong>
+            </p>
+            </body>
+            </html>

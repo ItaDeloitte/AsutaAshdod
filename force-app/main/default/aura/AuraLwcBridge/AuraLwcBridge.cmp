@@ -1,0 +1,20 @@
+<aura:component extends="c:BaseComponent"
+                implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes,lightning:availableForFlowScreens" access="global">
+  <!-- attrs -->
+  <!-- handlers -->
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+
+  <!-- events -->
+  <!-- methods -->
+
+  <aura:method name="detachedInit" action="{!c.onDetachedInit}">
+  </aura:method>
+
+
+  <div>
+    <lightning:workspaceAPI aura:id="workspaceApi" />
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:globalService aura:id="globalService"></c:globalService>
+  </div>
+</aura:component>

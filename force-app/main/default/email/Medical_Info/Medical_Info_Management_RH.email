@@ -1,0 +1,66 @@
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Assuta Mail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<center>
+<table id="Table_01" width="1200" height="800" border="0" cellpadding="0" cellspacing="0" style="color:#555555;">
+
+    <tr>
+        <td colspan="5">
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 1.5em; line-height: 1.6em;">
+רופא/ה נכבד/ה,
+<br>
+הרינו להביא לידיעתך כי במסגרת בקרה של תיק רפואי אותו ניהלת עבור מטופל  
+ {!Contact.FirstName} {!Contact.LastName} , מספר נבדק {!Case.Tafnit_Case_Number__c} נמצאו מספר פערים בניהול הרשומה, כדלקמן:
+<br>
+{!IF(NOT(ISBLANK(Case.Case_Reason__c)),'<b>טופס הסכמה לביצוע פעולה: </b> ','')}{!Case.Case_Reason__c} {!IF(NOT(ISBLANK(Case.Case_Reason__c)),'<br> ','')}
+
+{!IF(NOT(ISBLANK(Case.Case_Reason_2__c)),'<b>טופס הסכמה לביצוע פעולה – שימוש בטופס הסכמה כללי: </b>','')}{!Case.Case_Reason_2__c} {!IF(NOT(ISBLANK(Case.Case_Reason_2__c)),'<br>','')}
+
+{!IF(NOT(ISBLANK(Case.Case_Reason_3__c)),'<b>טופס הסכמה להרדמה ומתן דם: </b>','')}{!Case.Case_Reason_3__c} {!IF(NOT(ISBLANK(Case.Case_Reason_3__c)),'<br>','')}
+
+{!IF(NOT(ISBLANK(Case.Case_Reason_4__c)),'<b>מכתב שחרור: </b>','')}{!Case.Case_Reason_4__c} {!IF(NOT(ISBLANK(Case.Case_Reason_4__c)),'<br>','')}
+
+{!IF(NOT(ISBLANK(Case.Case_Reason_5__c)),'<b>דוח ניתוח: </b>','')}{!Case.Case_Reason_5__c} {!IF(NOT(ISBLANK(Case.Case_Reason_5__c)),'<br>','')}
+
+{!IF(NOT(ISBLANK(Case.Case_Reason_6__c)),'<b>היעדר חתימה וחותמת במסמך רפואי: </b>','')}{!Case.Case_Reason_6__c} {!IF(NOT(ISBLANK(Case.Case_Reason_6__c)),'<br>','')}
+
+{!IF(NOT(ISBLANK(Case.Case_Reason_7__c)),'<b>תיעוד לא תקין בעליל של אבחנה/פעולה: </b>','')}{!Case.Case_Reason_7__c} {!IF(NOT(ISBLANK(Case.Case_Reason_7__c)),'<br>','')}
+
+{!IF(NOT(ISBLANK(Case.Case_Reason_8__c)),'<b>קבלה רפואית: </b>','')}{!Case.Case_Reason_8__c} {!IF(NOT(ISBLANK(Case.Case_Reason_8__c)),'<br>','')}
+
+{!IF(NOT(ISBLANK(Case.Case_Reason_Comments__c)),'<b>שימוש  בניסוח Uncoded ללא פירוט בהערות: </b>','')}{!Case.Case_Reason_Comments__c} {!IF(NOT(ISBLANK(Case.Case_Reason_Comments__c)),'<br>','')}
+
+נבקשך להגיע למחלקת ניהול ורישום מידע רפואי לטיפול בפערים האמורים מול רשמת רפואית.
+<br>
+לאחר 30 יום משליחת הודעה זו התיק הרפואי ישלח לארכיון ללא אפשרות לתקן את הרשומה. יש להבין כי לפערים אלו יש משמעות מדיקו-לגאלית.
+<br>
+בברכה,
+<br>
+
+{!Case.SignatureMedicalInfoFormula__c}
+
+{!Case.Thread_Token}
+
+
+ </p>
+<a href="mailto:medicalrecords@assuta.co.il" target="_blank">
+                <img src="https://assuta--uat.sandbox.file.force.com/servlet/servlet.ImageServer?id=0157E000001tyVO&oid=00D7E000000FWtK&lastMod=1666095680000" width="1024" height="276" border="0" alt="Assuta"></a>
+
+        </td>
+    </tr>
+
+</table>
+
+<td hidden>
+{!Case.Thread_Token} <input type="hidden">
+
+</td>
+
+
+
+</center></body>
+</html>

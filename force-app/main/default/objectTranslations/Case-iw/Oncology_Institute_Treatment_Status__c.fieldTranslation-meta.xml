@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס טיפול מכון אונקולוגי</label>
+    <name>Oncology_Institute_Treatment_Status__c</name>
+    <picklistValues>
+        <masterLabel>Closed Without Outbond Call</masterLabel>
+        <translation>נסגר ללא שיחה למטופלת</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contacted Pacient And Closed Treatment</masterLabel>
+        <translation>בוצעה חזרה למטופלת ונסגר מעגל טיפול</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled For Chemotherapy</masterLabel>
+        <translation>תואם תור לכימותרפיה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled For Oncologist</masterLabel>
+        <translation>תואם תור לייעוץ אונקולוג</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled For Radiotherapy</masterLabel>
+        <translation>תואם תור לרדיותרפיה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

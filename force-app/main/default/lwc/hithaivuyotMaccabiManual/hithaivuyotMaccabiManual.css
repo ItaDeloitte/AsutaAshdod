@@ -1,0 +1,54 @@
+.frame{
+    border: 1px solid rgb(221, 219, 218);
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.container {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.input {
+    margin: 0.5em;
+    width: 50%;
+}
+
+.inputDate {
+    margin: 0.5em;
+    width: 87%;
+}
+
+.inputsBlock{
+    display: inline-flex;
+}
+
+.slds-btn_pad {
+    margin: 5px;
+}
+
+.slds-button_neutral, .slds-button--neutral {
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+}
+
+.slds-p-around_medium, .slds-p-around--medium {
+    padding: 0;
+    margin: 0.5em;
+}
+
+.message {
+    margin: 15px;
+    padding-bottom: 10px;
+    white-space: pre-line;
+}
+
+.error {
+    color: red;
+    margin: 15px;
+    padding-bottom: 10px;
+    white-space: pre-line;
+    font-weight: normal;
+}

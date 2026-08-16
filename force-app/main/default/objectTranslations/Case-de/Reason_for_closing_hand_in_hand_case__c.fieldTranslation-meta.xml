@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for closing hand-in-hand case --></label>
+    <name>Reason_for_closing_hand_in_hand_case__c</name>
+    <picklistValues>
+        <masterLabel>Change in radiologist&apos;s recommendation by treating doctor</masterLabel>
+        <translation><!-- Change in radiologist&apos;s recommendation by treating doctor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuation at another medical center</masterLabel>
+        <translation><!-- Continuation at another medical center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Doctor&apos;s decision</masterLabel>
+        <translation><!-- Doctor&apos;s decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Double Referral</masterLabel>
+        <translation><!-- Double Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End of hand-in-hand process</masterLabel>
+        <translation><!-- End of hand-in-hand process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negative biopsy result</masterLabel>
+        <translation><!-- Negative biopsy result --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Further Treatment Required</masterLabel>
+        <translation><!-- No Further Treatment Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No response more than 3 times</masterLabel>
+        <translation><!-- No response more than 3 times --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient does not wish to continue the process</masterLabel>
+        <translation><!-- Patient does not wish to continue the process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redirected to digital</masterLabel>
+        <translation><!-- Redirected to digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong Recommendation</masterLabel>
+        <translation><!-- Wrong Recommendation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

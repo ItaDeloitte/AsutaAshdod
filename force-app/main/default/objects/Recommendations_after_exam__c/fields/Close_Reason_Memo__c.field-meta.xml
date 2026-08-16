@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Reason_Memo__c</fullName>
+    <label>סיבת סגירת המלצה</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type_of_recommendation__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>הושלם</label>
+            </value>
+            <value>
+                <fullName>patient_diagnosed</fullName>
+                <default>false</default>
+                <label>מטופלת מאובחנת</label>
+            </value>
+            <value>
+                <fullName>Without_recommendation</fullName>
+                <default>false</default>
+                <label>ללא המלצה</label>
+            </value>
+            <value>
+                <fullName>Duplicate_record</fullName>
+                <default>false</default>
+                <label>רשומה כפולה</label>
+            </value>
+            <value>
+                <fullName>not_relevant</fullName>
+                <default>false</default>
+                <label>לא אקטואלי</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>בוטל</label>
+            </value>
+            <value>
+                <fullName>Expert_referral</fullName>
+                <default>false</default>
+                <label>מטופל אצל מומחה בתחום על פי הפניה</label>
+            </value>
+            <value>
+                <fullName>Imaging recommendation</fullName>
+                <default>false</default>
+                <label>המלצה על בדיקת דימות ולא על מומחה</label>
+            </value>
+            <value>
+                <fullName>domain_expert_not_exsist</fullName>
+                <default>false</default>
+                <label>לא קיים תחום ברשימת המומחים</label>
+            </value>
+            <value>
+                <fullName>Irrelevant_test</fullName>
+                <default>false</default>
+                <label>בדיקה לא רלוונטית</label>
+            </value>
+            <value>
+                <fullName>Geographic_Area</fullName>
+                <default>false</default>
+                <label>אזור גאוגרפי</label>
+            </value>
+            <value>
+                <fullName>Patient_not_maccabi</fullName>
+                <default>false</default>
+                <label>לא מטופל/ת מכבי</label>
+            </value>
+            <value>
+                <fullName>no_cardialic</fullName>
+                <default>false</default>
+                <label>קדראד נמוך מ3 ללא המלצה קרדיאלית</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Breast</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Breast</controllingFieldValue>
+            <valueName>patient_diagnosed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Breast</controllingFieldValue>
+            <controllingFieldValue>Cardiology</controllingFieldValue>
+            <controllingFieldValue>Cardiac_ct</controllingFieldValue>
+            <valueName>Without_recommendation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Breast</controllingFieldValue>
+            <controllingFieldValue>Consultations</controllingFieldValue>
+            <valueName>Duplicate_record</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Breast</controllingFieldValue>
+            <controllingFieldValue>Cardiology</controllingFieldValue>
+            <controllingFieldValue>prostate</controllingFieldValue>
+            <controllingFieldValue>Cardiac_ct</controllingFieldValue>
+            <valueName>not_relevant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Breast</controllingFieldValue>
+            <valueName>Canceled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultations</controllingFieldValue>
+            <controllingFieldValue>Cardiology</controllingFieldValue>
+            <controllingFieldValue>Cardiac_ct</controllingFieldValue>
+            <valueName>Expert_referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultations</controllingFieldValue>
+            <valueName>Imaging recommendation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultations</controllingFieldValue>
+            <valueName>domain_expert_not_exsist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultations</controllingFieldValue>
+            <valueName>Irrelevant_test</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consultations</controllingFieldValue>
+            <valueName>Geographic_Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cardiology</controllingFieldValue>
+            <controllingFieldValue>prostate</controllingFieldValue>
+            <controllingFieldValue>Cardiac_ct</controllingFieldValue>
+            <valueName>Patient_not_maccabi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cardiology</controllingFieldValue>
+            <controllingFieldValue>Cardiac_ct</controllingFieldValue>
+            <valueName>no_cardialic</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

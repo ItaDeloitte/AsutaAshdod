@@ -1,0 +1,261 @@
+<aura:component extends="c:BaseComponent">
+  <!-- attrs -->
+  <aura:attribute name="recordId" type="String" default="" />
+  <aura:attribute name="isLoading" type="Boolean" default="false" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="editData" type="Map" default="{
+    doctorId:'',
+    contactMethod:'call',
+    phone:'',
+    email:'',
+    smsText:'',
+    emailText:'',
+    savePhone:false,
+    saveEmail:false
+  }" />
+  <aura:attribute name="doctorData" type="Map" />
+  <aura:attribute name="steps" type="List" default="[]" />
+  <aura:attribute name="currentStep" type="Map" />
+  <aura:attribute name="currentStepIndex" type="Integer" />
+  <aura:attribute name="activeAccordionSections" type="List" default="['details']" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="false">
+      <aura:set attribute="title">
+        {!$Label.c.Contact_Doctor}
+      </aura:set>
+      <aura:set attribute="topContent">
+        <div class="slds-p-around_medium no-pointer">
+          <lightning:progressIndicator currentStep="{!v.currentStep.id}" type="path" variant="base">
+            <aura:iteration items="{!v.steps}" var="step">
+              <lightning:progressStep label="{!step.label}" title="{!step.label}" value="{!step.id}" />
+            </aura:iteration>
+          </lightning:progressIndicator>
+        </div>
+      </aura:set>
+      <div class="">
+        <aura:if isTrue="{!v.serverError}">
+          <div class="slds-p-around_medium">
+            <c:Alert theme="error">
+              <div>
+                <aura:unescapedHtml value="{!v.serverError}" />
+              </div>
+            </c:Alert>
+          </div>
+        </aura:if>
+
+        <aura:if isTrue="{!v.staticData}">
+          <div class="slds-p-around_medium">
+            <div>
+              <div class="{!join(' ',
+                v.currentStep.id=='1'?'slds-show':'slds-hide'
+              )}">
+                <div class="slds-grid slds-gutters slds-wrap slds-m-bottom_medium">
+                  <div class="slds-col slds-size_1-of-1">
+                    <c:BaseAutocomplete aura:id="step1Field" name="doctor" required="true" label="{!$Label.c.Doctor}"
+                      value="{!v.editData.doctorId}" onsearch="{!c.onAutocompleteSearch}"
+                      oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="false"
+                      placeholder="Search Doctor" onchange="{!c.onAutocompleteChange}">
+                    </c:BaseAutocomplete>
+                  </div>
+                </div>
+                <aura:if isTrue="{!v.doctorData}">
+                  <div>
+                    <div>
+                      <span class="fw-bold">{!$Label.c.DocName}&nbsp;</span>{!v.doctorData.doctor.Name}
+                    </div>
+                    <div>
+                      <span class="fw-bold">{!$Label.c.Email}&nbsp;</span>{!v.doctorData.doctor.Email__c}
+                    </div>
+                  </div>
+                </aura:if>
+              </div>
+              <div class="{!join(' ',
+                v.currentStep.id=='2'?'slds-show':'slds-hide'
+              )}">
+                <div class="slds-grid slds-gutters slds-wrap">
+                  <div class="slds-col slds-size_1-of-1">
+                    <lightning:radioGroup aura:id="step2Field" class="contact-radio-group" name="contactMethod"
+                      label="{!$Label.c.Select_Contact_Method}" options="{!v.staticData.contactMethods}"
+                      value="{!v.editData.contactMethod}" type="radio" />
+                  </div>
+                </div>
+              </div>
+              <div class="{!join(' ',
+                v.currentStep.id=='3'?'slds-show':'slds-hide'
+              )}">
+                <aura:if isTrue="{!v.currentStep.id=='3'}">
+                  <aura:if isTrue="{!v.editData.contactMethod=='call'}">
+                    <div>
+                      <lightning:accordion aura:id="accordion" activeSectionName="details"
+                        allowMultipleSectionsOpen="true">
+                        <lightning:accordionSection name="details" label="{!$Label.c.Doctor_Details}">
+                          <div>
+                            <div>
+                              <span class="fw-bold">{!$Label.c.DocName}&nbsp;</span>
+                              <a href="{!'/'+v.doctorData.doctor.Id}" target="_blank">{!v.doctorData.doctor.Name}</a>
+                            </div>
+                            <div>
+                              <span class="fw-bold">{!$Label.c.Email}&nbsp;</span>
+                              <a href="{!'mailto:'+v.doctorData.doctor.Email__c}"
+                                target="_blank">{!v.doctorData.doctor.Email__c}</a>
+                            </div>
+                          </div>
+                        </lightning:accordionSection>
+                        <lightning:accordionSection name="contacts" label="{!$Label.c.Doc_Contacts}">
+                          <div>
+                            <aura:if isTrue="{!!empty(v.doctorData.contacts)}">
+                              <aura:iteration items="{!v.doctorData.contacts}" var="contact" indexVar="_index">
+                                <div class="slds-m-bottom_medium details-item">
+                                  <div>
+                                    <span class="fw-bold">{!$Label.c.Contact_Name}&nbsp;</span>
+                                    <a href="{!'/'+contact.Id}" target="_blank">{!contact.Name}</a>
+                                  </div>
+                                </div>
+                              </aura:iteration>
+                              <aura:set attribute="else">
+                                {!$Label.c.NoContacts}
+                              </aura:set>
+                            </aura:if>
+                          </div>
+                        </lightning:accordionSection>
+                        <lightning:accordionSection name="clinics" label="{!$Label.c.DocClinics}">
+                          <div>
+                            <aura:if isTrue="{!!empty(v.doctorData.clinics)}">
+                              <aura:iteration items="{!v.doctorData.clinics}" var="clinic" indexVar="_index">
+                                <div class="slds-m-bottom_medium details-item">
+                                  <div>
+                                    <span class="fw-bold">{!$Label.c.ClinicName}&nbsp;</span>
+                                    <a href="{!'/'+clinic.Id}" target="_blank">{!clinic.Name}</a>
+                                  </div>
+                                  <div>
+                                    <span class="fw-bold">{!$Label.c.ClinicPhone}&nbsp;</span><a
+                                      href="{!'tel:'+clinic.Clinic_Phone__c}"
+                                      target="_blank">{!clinic.Clinic_Phone__c}</a>
+                                  </div>
+                                  <div class="slds-grid">
+                                    <span class="fw-bold">{!$Label.c.ClinicWorkingHours}&nbsp;</span>
+                                    <div>
+                                      <lightning:formattedText value="{!clinic.Working_Hours__c}" />
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <span class="fw-bold">{!$Label.c.Area}&nbsp;</span>{!clinic.Area__c}
+                                  </div>
+                                  <div>
+                                    <span class="fw-bold">{!$Label.c.ClinicAddress}&nbsp;</span>{!clinic.Address__c}
+                                  </div>
+                                  <div>
+                                    <span class="fw-bold">{!$Label.c.ClinicStreetAddress}&nbsp;</span>
+                                    {!clinic.street_address__c}
+                                  </div>
+                                </div>
+                              </aura:iteration>
+                              <aura:set attribute="else">
+                                {!$Label.c.NoClinics}
+                              </aura:set>
+                            </aura:if>
+                          </div>
+                        </lightning:accordionSection>
+                      </lightning:accordion>
+                    </div>
+                  </aura:if>
+                  <aura:if isTrue="{!v.editData.contactMethod=='sms'}">
+                    <div>
+                      <div class="slds-grid slds-gutters slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                          <div class="slds-m-bottom_small">
+                            <c:BaseAutocomplete aura:id="step3Field" name="phone" required="true"
+                              label="{!$Label.c.Phone}" value="{!v.editData.phone}" onsearch="{!c.onAutocompleteSearch}"
+                              oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="true"
+                              placeholder="{!$Label.c.Phone}" onchange="{!c.onAutocompleteChange}">
+                            </c:BaseAutocomplete>
+                          </div>
+                          <div class="slds-m-bottom_small">
+                            <lightning:input type="checkbox" name="savePhone" checked="{!v.editData.savePhone}"
+                              label="{!$Label.c.Save_for_next_use}" />
+                          </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1">
+                          <lightning:select name="quickText" required="false" label="{!$Label.c.Quick_Text}"
+                            onchange="{!c.onSelectQuickText}">
+                            <option value=""></option>
+                            <aura:iteration items="{!v.staticData.quickTexts}" var="option">
+                              <option value="{!option.Id}">{!option.Name}</option>
+                            </aura:iteration>
+                          </lightning:select>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1">
+                          <lightning:textarea aura:id="step3Field" class="textarea" label="{!$Label.c.SMS_Text}"
+                            name="smsText" value="{!v.editData.smsText}" required="true" />
+                        </div>
+                      </div>
+                    </div>
+                  </aura:if>
+                  <aura:if isTrue="{!v.editData.contactMethod=='email'}">
+                    <div>
+                      <div class="slds-grid slds-gutters slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                          <div class="slds-m-bottom_small">
+                            <c:BaseAutocomplete aura:id="step3Field" name="email" required="true"
+                              label="{!$Label.c.Email}" value="{!v.editData.email}" onsearch="{!c.onAutocompleteSearch}"
+                              oninitsearch="{!c.onAutocompleteInitSearch}" isPlainAutoComplete="true"
+                              placeholder="{!$Label.c.Email}" onchange="{!c.onAutocompleteChange}">
+                            </c:BaseAutocomplete>
+                          </div>
+                          <div class="slds-m-bottom_small">
+                            <lightning:input type="checkbox" name="saveEmail" checked="{!v.editData.saveEmail}"
+                              label="{!$Label.c.Save_for_next_use}" />
+                          </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1">
+                          <lightning:select name="quickText" required="false" label="{!$Label.c.Quick_Text}"
+                            onchange="{!c.onSelectQuickText}">
+                            <option value=""></option>
+                            <aura:iteration items="{!v.staticData.quickTexts}" var="option">
+                              <option value="{!option.Id}">{!option.Name}</option>
+                            </aura:iteration>
+                          </lightning:select>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1">
+                          <lightning:textarea aura:id="step3Field" class="textarea" label="{!$Label.c.Email_Text}"
+                            name="emailText" value="{!v.editData.emailText}" required="true" />
+                        </div>
+                      </div>
+                    </div>
+                  </aura:if>
+                </aura:if>
+              </div>
+            </div>
+          </div>
+        </aura:if>
+
+      </div>
+      <aura:set attribute="footer">
+        <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+          label="{!$Label.c.Cancel}" />
+        <aura:if isTrue="{!v.currentStepIndex>0}">
+          <lightning:button variant="neutral" type="button" onclick="{!c.onPrev}" disabled="{!v.isLoading}"
+            label="{!$Label.c.Back}" />
+        </aura:if>
+        <lightning:button variant="brand" type="button" onclick="{!c.onNext}"
+          disabled="{!or(v.isLoading,!v.doctorData)}">
+          <aura:if isTrue="{!v.currentStepIndex==v.steps.length-1}">
+            {!v.editData.contactMethod=='call'?$Label.c.Close:$Label.c.Submit}
+            <aura:set attribute="else">
+              {!$Label.c.Next}
+            </aura:set>
+          </aura:if>
+        </lightning:button>
+      </aura:set>
+    </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" />
+  </div>
+</aura:component>

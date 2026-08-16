@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- שם הרופא מההפנייה --></help>
+    <label><!-- Doctor Name --></label>
+    <name>DoctorName__c</name>
+    <relationshipLabel><!-- Assuta Files (שם רופא) --></relationshipLabel>
+</CustomFieldTranslation>

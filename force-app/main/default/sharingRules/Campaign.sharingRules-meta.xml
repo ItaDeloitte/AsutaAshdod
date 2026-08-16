@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Merkazim</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Merkazim</label>
+        <sharedTo>
+            <group>Merkazim</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Merkazim</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

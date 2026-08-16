@@ -1,0 +1,53 @@
+.THIS .multi-select {
+  width: 100%;
+  min-width: 150px;
+}
+
+.THIS .ms-parent .ms-choice {
+  height: 32px;
+  border: 1px solid #dddbda;
+  text-align: left;
+}
+
+.THIS .ms-parent .ms-choice > span,
+.THIS .ms-parent .ms-choice > div {
+  top: 3px;
+}
+
+.THIS .ms-parent .ms-choice > div {
+  display: none;
+}
+
+.THIS .ms-parent .ms-choice::before, .THIS .ms-parent .ms-choice::after {
+  position: absolute;
+  content: "";
+  right: 0.5rem;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  pointer-events: none;
+}
+
+.THIS .ms-parent .ms-choice::before {
+  border-bottom: 5px solid #061c3f;
+  top: calc((1.75rem / 2) - 6px);
+}
+
+.THIS .ms-parent .ms-choice::after {
+  border-top: 5px solid #061c3f;
+  bottom: calc((1.75rem / 2) - 6px);
+}
+
+.THIS .slds-form-element {
+  display: none;
+}
+
+.THIS .slds-form-element.is-created {
+  display: block;
+}
+
+.THIS .slds-form-element.slds-has-error:not(.is-opened) .ms-parent .ms-choice {
+  border-color: #c23934;
+  box-shadow: #c23934 0 0 0 1px inset;
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Public Inquiry --></label>
+    <name>Subject_Public_Inquiry__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בקשות חריגות</masterLabel>
+        <translation><!-- בקשות חריגות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התנהגות לא הולמת</masterLabel>
+        <translation><!-- התנהגות לא הולמת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יחס לקוי</masterLabel>
+        <translation><!-- יחס לקוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדיניות חברה</masterLabel>
+        <translation><!-- מדיניות חברה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע חסר/שגוי</masterLabel>
+        <translation><!-- מידע חסר/שגוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע למטופל</masterLabel>
+        <translation><!-- מידע למטופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה למנכ&quot;ל</masterLabel>
+        <translation><!-- פניה למנכ&quot;ל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רפואי/אגף הרפואה</masterLabel>
+        <translation><!-- רפואי/אגף הרפואה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רפואי/ניהול סיכונים</masterLabel>
+        <translation><!-- רפואי/ניהול סיכונים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שירות לקוי</masterLabel>
+        <translation><!-- שירות לקוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תודה</masterLabel>
+        <translation><!-- תודה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תלונה</masterLabel>
+        <translation><!-- תלונה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

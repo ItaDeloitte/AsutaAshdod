@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- סוג המועד --></label>
+    <name>Holiday_type__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מועד אזרחי</masterLabel>
+        <translation><!-- מועד אזרחי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מועד מוסלמי</masterLabel>
+        <translation><!-- מועד מוסלמי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מועד נוצרי</masterLabel>
+        <translation><!-- מועד נוצרי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מועד עברי</masterLabel>
+        <translation><!-- מועד עברי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

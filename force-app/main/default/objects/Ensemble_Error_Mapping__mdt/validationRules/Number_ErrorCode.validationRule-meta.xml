@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_ErrorCode</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISNUMBER(ErrorCode__c))</errorConditionFormula>
+    <errorMessage>ErrorCode must be a number</errorMessage>
+</ValidationRule>

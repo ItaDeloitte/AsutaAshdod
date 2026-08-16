@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remainder_time1__c</fullName>
+    <description>שדה עזר.
+הזמן בו התזכורת תישלח ללקוח (פחות שעה*),מחושב ע&quot;י זמן התור פחות הזמן שצריך להודיע מראש על הפעולה הרפואית הרלוונטית
+במידה שמדובר בשישי-הקדמה ביום,במידה ומדובר בשבת-הקדמה ביומיים
+*פחות שעה-על מנת להפעיל את הPB</description>
+    <formula>IF(AND (WEEKDAY((DATEVALUE(Help_Field1_sms__c)))= 6 ,  HOUR(TIMEVALUE(Help_Field1_sms__c)) &gt; 8),(Help_Field1_sms__c -1-(1/24)),
+ IF( WEEKDAY((DATEVALUE(Help_Field1_sms__c))) = 7 ,( Help_Field1_sms__c -2-(1/24)),
+(Help_Field1_sms__c - (1/24) )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Reminder Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

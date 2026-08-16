@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_for_business_day_is_true</fullName>
+    <active>true</active>
+    <errorConditionFormula>((business_day__c)&amp;&amp;( ISBLANK( Start_Time__c ) ||  ISBLANK( End_time__c ) ) )</errorConditionFormula>
+    <errorDisplayField>Start_Time__c</errorDisplayField>
+    <errorMessage>חובה עבור יום עסקים להזין שעת התחלה / סיום פעילות</errorMessage>
+</ValidationRule>

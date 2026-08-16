@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target__c</fullName>
+    <label>Target</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>נשים</fullName>
+                <default>false</default>
+                <label>נשים</label>
+            </value>
+            <value>
+                <fullName>גברים</fullName>
+                <default>false</default>
+                <label>גברים</label>
+            </value>
+            <value>
+                <fullName>מעל גיל 12</fullName>
+                <default>false</default>
+                <label>מעל גיל 12</label>
+            </value>
+            <value>
+                <fullName>מתחת לגיל 50</fullName>
+                <default>false</default>
+                <label>מתחת לגיל 50</label>
+            </value>
+            <value>
+                <fullName>מתחת לגיל 65</fullName>
+                <default>false</default>
+                <label>מתחת לגיל 65</label>
+            </value>
+            <value>
+                <fullName>test_day</fullName>
+                <default>false</default>
+                <label>יום הבדיקה</label>
+            </value>
+            <value>
+                <fullName>מעל גיל 55</fullName>
+                <default>false</default>
+                <label>מעל גיל 55</label>
+            </value>
+            <value>
+                <fullName>מתחת לגיל 55</fullName>
+                <default>false</default>
+                <label>מתחת לגיל 55</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

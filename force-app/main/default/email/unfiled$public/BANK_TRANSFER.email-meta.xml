@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>עברית</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>העברה בנקאית</name>
+    <style>freeForm</style>
+    <subject>בהמשך לפנייתך למוקד</subject>
+    <textOnly>שלום רב, 
+בהמשך לבקשתך, מצורף בהודעה זו מסמך עם פרטי חשבון בנק של אסותא לצורך העברה בנקאית,
+באפשרותך לשלוח את אישור ההעברה לכתובת מייל: kabalot@assuta.co.il לצורך המשך טיפול.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

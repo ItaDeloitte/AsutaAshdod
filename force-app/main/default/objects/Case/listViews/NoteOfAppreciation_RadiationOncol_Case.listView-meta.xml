@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoteOfAppreciation_RadiationOncol_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>תו למחווה- מחלקת קרינה אונקולוגיה</label>
+    <queue>NoteOfAppreciation_RadiationOncol</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BarcodeIdentificationSent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>יסומן TRUE לאחר שליחת הודעת הזדהות למטופל על ידי ברקוד</description>
+    <label>Barcode Identification Sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

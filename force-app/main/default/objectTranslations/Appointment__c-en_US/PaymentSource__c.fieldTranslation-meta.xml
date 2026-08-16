@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Source --></label>
+    <name>PaymentSource__c</name>
+    <picklistValues>
+        <masterLabel>אתר-ApplePay</masterLabel>
+        <translation><!-- אתר-ApplePay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אתר-GooglePay</masterLabel>
+        <translation><!-- אתר-GooglePay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אתר-כרטיס אשראי</masterLabel>
+        <translation><!-- אתר-כרטיס אשראי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נציג</masterLabel>
+        <translation><!-- נציג --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

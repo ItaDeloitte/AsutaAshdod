@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_Remarks</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002Q8amQAC&apos; ) &amp;&amp;
+ISPICKVAL(Status_QA__c, &quot;בוצע משוב&quot;) &amp;&amp;
+LEN(Manager_Remark__c)=0</errorConditionFormula>
+    <errorDisplayField>Manager_Remark__c</errorDisplayField>
+    <errorMessage>נא למלא את הערות המנהל בטרם סגירת בקרת האיכות</errorMessage>
+</ValidationRule>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 4 — Org Structure
+    =====================================
+    Types: Role, Group, Queue
+    Test level: NoTestRun
+    Estimated time: ~10-15 min
+    Dependencies: Phase 2 (Objects) must complete first (Queues reference objects for SObject type)
+
+    NOTE: Queue user members removed (users don't exist yet in prod — users migrate with Profile wave).
+          Queue routing configs removed (Omni-Channel not yet deployed).
+          Both will be restored after Profile wave (manual retrieve from source).
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase4_org_structure.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase4_result.json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- 18 roles -->
+    <types>
+        <members>*</members>
+        <name>Role</name>
+    </types>
+
+    <!-- 159 groups (public groups) -->
+    <types>
+        <members>*</members>
+        <name>Group</name>
+    </types>
+
+    <!-- 510 queues (user members + routing configs removed — see notes above) -->
+    <types>
+        <members>*</members>
+        <name>Queue</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

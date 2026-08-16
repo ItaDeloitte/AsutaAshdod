@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- שדה זה הינו חלק מתהליך זימון תור לבדיקת קורונה.
+במידה והתשובה היא &quot;כן&quot; יש לפעול בהתאם לנהלים -->
+    </help>
+    <label><!-- Live With Coronat Patient --></label>
+    <name>Live_With_Coronat_Patient__c</name>
+    <picklistValues>
+        <masterLabel>כן</masterLabel>
+        <translation><!-- כן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא</masterLabel>
+        <translation><!-- לא --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

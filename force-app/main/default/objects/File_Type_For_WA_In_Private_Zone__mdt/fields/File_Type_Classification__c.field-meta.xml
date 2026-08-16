@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>File_Type_Classification__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>File Type Classification</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Test Results</fullName>
+                <default>true</default>
+                <label>Test Results</label>
+            </value>
+            <value>
+                <fullName>General Document</fullName>
+                <default>false</default>
+                <label>General Document</label>
+            </value>
+            <value>
+                <fullName>Appointment Summary</fullName>
+                <default>false</default>
+                <label>Appointment Summary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

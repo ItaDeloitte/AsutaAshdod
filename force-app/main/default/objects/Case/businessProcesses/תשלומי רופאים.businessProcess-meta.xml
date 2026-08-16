@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>תשלומי רופאים</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>בטיפול אגף התחשבנות</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>בטיפול אגף סחר ושיווק</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>בטיפול אגף רפואה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>בטיפול צוות תשלומי רופאים</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>המשך טיפול צוות תשלומי רופאים</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>חדש</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>טופל</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- האם תיווצר רשומת בקרת איכות במקרה שהציונים נמוכים. --></help>
+    <label><!-- Create Quality Control? --></label>
+    <name>CreateQualityControl__c</name>
+</CustomFieldTranslation>

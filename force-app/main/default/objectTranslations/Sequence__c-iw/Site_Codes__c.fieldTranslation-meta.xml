@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Site Codes --></label>
+    <name>Site_Codes__c</name>
+    <picklistValues>
+        <masterLabel>אסותא אשדוד</masterLabel>
+        <translation><!-- אסותא אשדוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא באר שבע</masterLabel>
+        <translation><!-- אסותא באר שבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא בית שמש</masterLabel>
+        <translation><!-- אסותא בית שמש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא השלום</masterLabel>
+        <translation><!-- אסותא השלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא חיפה</masterLabel>
+        <translation><!-- אסותא חיפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא ירושלים</masterLabel>
+        <translation><!-- אסותא ירושלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא עד הבית</masterLabel>
+        <translation><!-- אסותא עד הבית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא עכו</masterLabel>
+        <translation><!-- אסותא עכו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא ראשל&quot;צ</masterLabel>
+        <translation><!-- אסותא ראשל&quot;צ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא רמת החייל</masterLabel>
+        <translation><!-- אסותא רמת החייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסותא רעננה</masterLabel>
+        <translation><!-- אסותא רעננה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בי&quot;ח אסותא אשדוד ע&quot;ש סמסון</masterLabel>
+        <translation><!-- בי&quot;ח אסותא אשדוד ע&quot;ש סמסון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניידת MRI</masterLabel>
+        <translation><!-- ניידת MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניידת MRI צריפין</masterLabel>
+        <translation><!-- ניידת MRI צריפין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ראשון מכונים</masterLabel>
+        <translation><!-- ראשון מכונים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רמה&quot;ח - מגדל המכונים והמרפאות</masterLabel>
+        <translation><!-- רמה&quot;ח - מגדל המכונים והמרפאות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

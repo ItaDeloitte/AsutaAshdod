@@ -1,0 +1,60 @@
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Assuta Mail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<center>
+<!-- Save for Web Slices (General Mail 2 Copy 4.png) -->
+<table id="Table_01" width="1200" height="1953" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial Hebrew,Arial; direction: rtl; font-size: 1.5em; line-height: 1.6em;">
+    <tr>
+        <td colspan="5">
+            <img src="https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=015J7000000styC&oid=00D4J000000D53o&lastMod=1740490192000" width="500" height="90" alt></td>
+    </tr>
+    <tr>
+        <td colspan="5">
+            <h1 style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 2em; font-size: 2.6em;">
+               אסותא אשדוד - תור שבוטל
+            </h1>
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 2em; line-height: 1.6em;">
+שלום {!Appointment__c.Patient_Account__c},
+<br>
+<br>
+התור ל{!Appointment__c.Medical_Procedure__c} שנקבע עבורך לתאריך ה-{!Appointment__c.Date_of_appointment__c} ב-{!IF(Appointment__c.Calendar_Text__c ="401", " אסותא אשדוד כלניות, מרכז כלניות, שדרות מנחם בגין רובע ח' - שער 2",  Appointment__c.Site__c)} בוטל
+<br>
+<br>
+<b>בברכה,</b>
+<br>
+<b>אסותא אשדוד ע"ש סמסון</b>
+  </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="5">
+    </tr>
+    <tr>
+        <td>
+            <a href="#" target="_blank">
+ <td colspan="5">
+          
+        </td>
+    </tr>
+    <tr>
+        <td>
+<img src="https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=015J7000000styH&oid=00D4J000000D53o&lastMod=1740491230000" width="500" height="200" style="vertical-align:middle;margin:0px 310px" alt></a>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="261" height="1" alt></td>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="275" height="1" alt></td>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="356" height="1" alt></td>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="222" height="1" alt></td>
+        <td>
+            <img src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM" width="86" height="1" alt></td>
+    </tr>
+</table>
+<!-- End Save for Web Slices -->
+
+</center></body>
+</html>

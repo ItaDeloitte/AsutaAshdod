@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מטבע לחיוב</label>
+    <name>ChargingCoin__c</name>
+    <picklistValues>
+        <masterLabel>NIS</masterLabel>
+        <translation><!-- NIS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+.THIS {
+  /* ! */
+}
+
+.THIS.confirmation-modal .modal-container,
+.THIS.confirmation-modal .slds-modal__container {
+  margin: 0 auto;
+  min-width: 20rem;
+  max-width: 500px;
+}
+
+.THIS.confirmation-modal .modal-body,
+.THIS.confirmation-modal .slds-modal__content {
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+
+.THIS .cActionModalInner {
+  max-height: 250px;
+}
+
+.THIS .cActionModalInner .dm-body {
+  padding: 0;
+}
+
+.THIS .confirm-message {
+  font-size: 16px;
+}

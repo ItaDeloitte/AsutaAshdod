@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מטרת השיחה</label>
+    <name>call_target__c</name>
+    <picklistValues>
+        <masterLabel>אישור הגעה לפגישה</masterLabel>
+        <translation><!-- אישור הגעה לפגישה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המלצה על כירורג שד</masterLabel>
+        <translation><!-- המלצה על כירורג שד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טופל</masterLabel>
+        <translation><!-- טופל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה</masterLabel>
+        <translation><!-- לרופא אחרי שבוע בו הודיע עצמאית על תוצאות ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדרש המשך טיפול</masterLabel>
+        <translation><!-- נדרש המשך טיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</masterLabel>
+        <translation><!-- קביעת תור ל-MRI/PET CT/מחלקה אונקולוגית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קביעת תור למחלקה אונקולוגית</masterLabel>
+        <translation><!-- קביעת תור למחלקה אונקולוגית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קביעת תור לניתוח</masterLabel>
+        <translation><!-- קביעת תור לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא ממתין לתוצאת ביופסיה מלאה</masterLabel>
+        <translation><!-- רופא ממתין לתוצאת ביופסיה מלאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא קיבל תוצאת ביופסיה חיובית</masterLabel>
+        <translation><!-- רופא קיבל תוצאת ביופסיה חיובית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רופא קיבל תוצאת תוצאת ביופסיה שלילית</masterLabel>
+        <translation><!-- רופא קיבל תוצאת תוצאת ביופסיה שלילית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה למטופלת לאחר ביופסיה</masterLabel>
+        <translation><!-- שיחה למטופלת לאחר ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה למטופלת לקביעת תור לביופסיה</masterLabel>
+        <translation><!-- שיחה למטופלת לקביעת תור לביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה למטופלת לקביעת תור לייעוץ</masterLabel>
+        <translation><!-- שיחה למטופלת לקביעת תור לייעוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה למטופלת על ביופסיה חיובית</masterLabel>
+        <translation><!-- שיחה למטופלת על ביופסיה חיובית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה למטופלת על ביופסיה שלילית</masterLabel>
+        <translation><!-- שיחה למטופלת על ביופסיה שלילית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה לרופא לאחר ייעוץ</masterLabel>
+        <translation><!-- שיחה לרופא לאחר ייעוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה לרופא לאחר שחרור מניתוח</masterLabel>
+        <translation><!-- שיחה לרופא לאחר שחרור מניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה לרופא לאחר תוצאות ביופסיה</masterLabel>
+        <translation><!-- שיחה לרופא לאחר תוצאות ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחה ראשונית לרופא</masterLabel>
+        <translation><!-- שיחה ראשונית לרופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיחת מעקב למטופלת באונקולוגיה</masterLabel>
+        <translation><!-- שיחת מעקב למטופלת באונקולוגיה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

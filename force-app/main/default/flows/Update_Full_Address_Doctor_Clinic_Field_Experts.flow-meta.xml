@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_Condition_For_Populate_Exact_Location_In_Domain</name>
+        <label>Check Condition For Populate Exact Location In Domain</label>
+        <locationX>709</locationX>
+        <locationY>404</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>CalenderInClinic_Is_Null_False</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Calendar__r.CalenderInClinic__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Calendar__r.Excellent_Clinics__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Full_address_doc_clinic_c_In_Exact_Location_In_Domain</targetReference>
+            </connector>
+            <label>CalenderInClinic Is Null False</label>
+        </rules>
+        <rules>
+            <name>Excellent_Clinics_Is_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Calendar__r.Excellent_Clinics__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Exact_Location_0</targetReference>
+            </connector>
+            <label>Excellent Clinics Is True</label>
+        </rules>
+    </decisions>
+    <description>מעדכן בפגישה בשדה Exact_Location_In_Domain__c את הערך של השדה כתובת מלאה לרופא במרפאה (Full_address_doc_clinic__c)
+לשימוש בפגישות מסוג מומחים, יש שם צורך לעדכן את המיקום המדויק בו מתקיימת הפגישה.
+Eden - 14.8: הוספת עדכון לתנאי אם  excellent clinic מסומן בTRUE - הערך בשדה הAppointment Type בפגישה יהיה עם הערך                                                                                                                                                                                                                                            , אחרת, מומחים.</description>
+    <environments>Default</environments>
+    <interviewLabel>Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Full Address Doctor Clinic Field- Experts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Domain_In_Site</name>
+        <label>Get Domain In Site</label>
+        <locationX>348</locationX>
+        <locationY>255</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Condition_For_Populate_Exact_Location_In_Domain</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Domain__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Domain__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Site_Domain__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Exact_Location_0</name>
+        <label>Update Exact Location In Domain And APP Type Excellent</label>
+        <locationX>949</locationX>
+        <locationY>645</locationY>
+        <inputAssignments>
+            <field>Appointment_Type__c</field>
+            <value>
+                <stringValue>Excellent</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Exact_Location_In_Domain__c</field>
+            <value>
+                <elementReference>Get_Domain_In_Site.Exact_Location_In_Domain__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Full_address_doc_clinic_c_In_Exact_Location_In_Domain</name>
+        <label>Update Full_address_doc_clinic__c In Exact Location In Domain</label>
+        <locationX>519</locationX>
+        <locationY>637</locationY>
+        <inputAssignments>
+            <field>Appointment_Type__c</field>
+            <value>
+                <stringValue>Experts</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Exact_Location_In_Domain__c</field>
+            <value>
+                <elementReference>$Record.Calendar__r.CalenderInClinic__r.Full_address_doc_clinic__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>646</locationX>
+        <locationY>37</locationY>
+        <filterFormula>({!$Record.RecordType.DeveloperName}= &apos;Experts&apos;&amp;&amp;!ISBLANK({!$Record.Calendar__r.CalenderInClinic__c})) || ({!$Record.RecordType.DeveloperName}= &apos;Experts&apos;&amp;&amp;({!$Record.Calendar__r.Excellent_Clinics__c} = True))</filterFormula>
+        <object>Appointment__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Get_Domain_In_Site</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

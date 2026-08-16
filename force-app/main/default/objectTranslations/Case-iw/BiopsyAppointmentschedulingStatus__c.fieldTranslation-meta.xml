@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס תיאום תור לביופסיה</label>
+    <name>BiopsyAppointmentschedulingStatus__c</name>
+    <picklistValues>
+        <masterLabel>Appointment Not Scheduled</masterLabel>
+        <translation>לא תואם תור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appointment Scheduled</masterLabel>
+        <translation>תואם תור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled</masterLabel>
+        <translation>בוטל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred to Department</masterLabel>
+        <translation>הועבר לתיאום מחלקה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

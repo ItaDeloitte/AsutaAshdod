@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Required document integrity --></label>
+    <name>Required_document_integrity__c</name>
+    <picklistValues>
+        <masterLabel>All documents valid</masterLabel>
+        <translation><!-- All documents valid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invalid documents</masterLabel>
+        <translation><!-- Invalid documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not yet checked</masterLabel>
+        <translation><!-- Not yet checked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially sent documents – valid</masterLabel>
+        <translation><!-- Partially sent documents – valid --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

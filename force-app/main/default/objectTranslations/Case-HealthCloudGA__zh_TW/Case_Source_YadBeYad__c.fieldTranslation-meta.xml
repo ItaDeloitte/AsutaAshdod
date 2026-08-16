@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Source YadBeYad --></label>
+    <name>Case_Source_YadBeYad__c</name>
+    <picklistValues>
+        <masterLabel>Outpatient</masterLabel>
+        <translation><!-- Outpatient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recommendation After Examination</masterLabel>
+        <translation><!-- Recommendation After Examination --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

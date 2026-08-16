@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>אישור רופא לשיקום בית</name>
+    <style>none</style>
+    <subject>אסותא-אישור מטופל לשיקום בית</subject>
+    <textOnly>Assuta Mail
+
+אסותא - עדכון תור
+
+שלום ד&quot;ר {!Case.Approving_Doctor_Name__c} ,
+אנא אישורך לשיקום ביתי עבור המטופל {!Case.Account} ת.ז {!Case.Patient_ID__c} בברכה, מוקד זימון תורים אסותא.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

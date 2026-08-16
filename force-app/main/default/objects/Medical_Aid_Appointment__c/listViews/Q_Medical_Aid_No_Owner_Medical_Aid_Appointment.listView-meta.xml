@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q_Medical_Aid_No_Owner_Medical_Aid_Appointment</fullName>
+    <filterScope>Queue</filterScope>
+    <label>משתלים ללא מחלקה</label>
+    <queue>Q_Medical_Aid_No_Owner</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

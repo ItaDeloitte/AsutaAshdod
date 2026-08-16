@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Natasha1</fullName>
+    <columns>Hide_From_Appointment_Screen__c</columns>
+    <columns>Hide_on_bot__c</columns>
+    <columns>QFlowProcedureCode__c</columns>
+    <columns>NAME</columns>
+    <columns>Marketing_Procedure_Name__c</columns>
+    <columns>Medical_Procedure_Type__c</columns>
+    <columns>Domain__c</columns>
+    <columns>Sub_Expertise__c</columns>
+    <columns>Procedure_Code__c</columns>
+    <columns>ScheduleAppointmentSystem__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>instructions__c</columns>
+    <columns>Confidentiality__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>1,פעיל</value>
+    </filters>
+    <filters>
+        <field>Confidentiality_test_results__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>פעולות חסויות ופעילות</label>
+</ListView>

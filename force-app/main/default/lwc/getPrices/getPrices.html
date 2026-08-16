@@ -1,0 +1,120 @@
+<template>
+    <div style={getPricesContainer}>
+
+        <div class="title slds-text-heading--small slds-media_center slds-has-flexi-truncate">עבור פעולה רפואית - <span>{medProcName}</span></div>
+        <div class="fieldscontainer">
+            
+            <lightning-record-picker
+                label="גורם משלם" 
+                placeholder="חפש גורם משלם"
+                object-api-name="Payer_Factor__c"
+                value={selectedPayerFactor}
+                filter={filterPF}
+                display-info={displayInfoPF}
+                matching-info={matchingInfoPF}
+                required="true"
+                onchange={handleRecordPickerChange}>
+            </lightning-record-picker>
+            <div class="separator"></div>
+            <lightning-record-picker
+                label="אתר" 
+                placeholder="חפש אתר"
+                object-api-name="Site__c"
+                value={selectedSite}
+                filter={filterSite}
+                display-info={displayInfoSite}
+                matching-info={matchingInfoSite}
+                required="true"
+                onchange={handleRecordPickerChange}>
+            </lightning-record-picker>
+            <div class="separator"></div>
+            <lightning-record-picker
+                label="רופא" 
+                placeholder="חפש רופא"
+                object-api-name="Account"
+                value={selectedDoctor}
+                filter={filterDoc}
+                display-info={displayInfoDoc}
+                matching-info={matchingInfoDoc}
+                onchange={handleRecordPickerChange}>
+            </lightning-record-picker>
+
+        </div>
+
+        <div class="submitButton">
+            <lightning-button 
+                label="בדוק הסכם ומחיר"
+                title="בדוק הסכם ומחיר"
+                disabled={disableGetPricesBtn}
+                onclick={getPrices}>
+            </lightning-button>              
+        </div>
+        <div if:false={isLoaded} class="loaderHolder">
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </div>
+        
+        <template if:true={isRes}>
+            <div class="slds-grid slds-grid_align-space pad">
+                <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">האם יש הסכם </div>
+                <span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{agreeYesNo}</span>
+            </div>            
+        </template>
+
+
+        <template if:true={isAmbulatory}>
+            <template for:each={sASArray} for:item="sas" for:index="index">
+                <div key={sas.index} class="slds-grid slds-grid_align-space pad">
+                    <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">שם ההסכם </div>
+                    <span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{sas.AgreeName}</span>
+                </div> 
+                <div key={sas.index} class="slds-grid slds-grid_align-space pad">
+                    <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">גורם משלם </div>
+                    <span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{sas.ClientNo}</span>
+                </div> 
+                <div key={sas.index} class="slds-grid slds-grid_align-space pad">
+                    <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">מחיר לפני מע"מ </div>
+                    <span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{sas.NetPrice}</span>
+                </div>            
+                <div key={sas.index} class="slds-grid slds-grid_align-space pad">
+                    <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">מחיר כולל מע"מ </div>
+                    <span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{sas.PriceIncludeVat}</span>
+                </div>  
+                <div key={sas.index} class="slds-grid slds-grid_align-space pad">
+                    <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">מטבע </div>
+                    <span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{sas.Coin}</span>
+                </div>
+                <div key={sas.index} class="bottomSeparator"></div>
+            </template>     
+        </template>
+        
+        <template if:true={isSurgery}>
+            <div class="bottomSeparator"></div>
+
+            <template for:each={priceData} for:item="price" for:index="index">
+                <div key={price.index}>
+                    <div class="slds-grid slds-grid_align-space pad">
+                        <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">{price.label}</div>
+                        <div if:true={price.includeVat}><span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{price.includeVat}</span></div>                
+                    </div>
+                    <div class="slds-grid slds-grid_align-space pad">
+                        <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">מחיר לפני מע"מ </div>
+                        <span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{price.netPrice}</span>
+                    </div>
+                    <div class="slds-grid slds-grid_align-space pad">
+                        <div class="bold slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_4-of-12">מטבע </div>
+                        
+                        <span class="normal slds-col slds-col_bump-right  slds-size_1-of-1 slds-large-size_8-of-12">{price.coin}</span>
+                    </div>
+        
+                    <div class="bottomSeparator"></div>                    
+                </div>
+            </template>
+        </template>
+
+        <template if:true={isError}>
+            <div class="error">{errorMsg}</div>
+        </template>
+
+    </div>
+    
+</template>

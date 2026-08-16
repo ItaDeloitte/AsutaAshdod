@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>number_of_days_tizkurit</fullName>
+    <active>true</active>
+    <errorConditionFormula>(NOT(Reminder_required__c) &amp;&amp; (
+NOT(ISPICKVAL(SMS_Reminder__c,&quot;&quot;) &amp;&amp;
+ ispickval( remainder1WA__c,&apos;&apos;) &amp;&amp;
+ ispickval( remainder2WA__c,&apos;&apos; ))
+||
+NOT(ISPICKVAL(Humen__c,&quot;&quot;))
+||
+NOT(ISPICKVAL(Voice_Reminder__c,&quot;&quot;))
+))
+||
+(Reminder_required__c &amp;&amp;
+(ISPICKVAL(SMS_Reminder__c,&quot;&quot;) &amp;&amp; ispickval( remainder1WA__c, &apos;&apos;) &amp;&amp; ispickval( remainder2WA__c, &apos;&apos;)) &amp;&amp; ISPICKVAL( Voice_Reminder__c ,&quot;&quot;) &amp;&amp;
+ISPICKVAL( Humen__c,&quot;&quot;)
+)</errorConditionFormula>
+    <errorMessage>אם יש צורך בביצוע תזכור, יש לציין את מספר הימים לתזכור לפני הפגישה</errorMessage>
+</ValidationRule>

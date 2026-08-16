@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_From_Migration__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Site (From Migration)</label>
+    <referenceTo>Site__c</referenceTo>
+    <relationshipLabel>בקרות איכות</relationshipLabel>
+    <relationshipName>QC_Site</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

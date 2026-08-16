@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1</fullName>
+        <default>true</default>
+        <label>ID</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>Passport Number</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>סוג מספר זיהוי</description>
+    <masterLabel>ID Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

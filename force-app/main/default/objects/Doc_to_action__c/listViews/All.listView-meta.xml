@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>survey__c</columns>
+    <columns>activity_code__c</columns>
+    <columns>status__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>activity_type__c</columns>
+    <columns>SendToPatient__c</columns>
+    <columns>View_in_portal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>survey__c</field>
+        <operation>contains</operation>
+        <value>וירטואלית</value>
+    </filters>
+    <label>All</label>
+</ListView>

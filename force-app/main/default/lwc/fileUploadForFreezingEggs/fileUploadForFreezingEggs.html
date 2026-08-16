@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="File Upload For Freezing Eggs (CSV)" icon-name="action:add_file">
+        <div class="slds-p-around_medium">
+            <div>
+                <lightning-radio-group name="site"
+                    label="Select Site:"
+                    options={options}
+                    value={value}
+                    required
+                    onchange={handleChange}
+                    type="radio">
+                </lightning-radio-group>   
+            </div> 
+        </br>
+            <div>
+                <lightning-file-upload
+                    label="Attach receipt"
+                    name="fileUploader"
+                    accept={acceptedFormats}
+                    record-id={recordId}
+                    disabled= {isDisabled}
+                    onuploadfinished={handleUploadFinished}
+                    multiple>
+                </lightning-file-upload>
+            </div>
+        </div>
+    </lightning-card>
+</template>

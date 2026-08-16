@@ -1,0 +1,11 @@
+<aura:component extends="c:BaseComponent"  implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:backgroundUtilityItem,forceCommunity:availableForAllPageTypes"
+    access="global">
+    <!-- EMP API component -->
+    <lightning:utilityBarAPI aura:id="utilitybar" />
+    <lightning:empApi aura:id="empApi" />
+    <lightning:workspaceAPI aura:id="workspace" />
+    
+    <!-- Calls the onInit controller function on component initalization -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    
+</aura:component>

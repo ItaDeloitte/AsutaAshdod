@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- גורם אחראי עובד אסותא --></help>
+    <label>גורם אחראי - עובד אסותא</label>
+    <name>Responsible_Employee__c</name>
+    <relationshipLabel>פניות</relationshipLabel>
+</CustomFieldTranslation>

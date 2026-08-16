@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Appointment_Cancel_After_Complet</fullName>
+    <active>true</active>
+    <description>לא ניתן לשנות את סטטוס הפגישה ל&quot;בוטל&quot; או &quot;ממתין לביטול התור&quot; לאחר שהוגדר כ&quot;התקיים&quot;.</description>
+    <errorConditionFormula>AND(
+NOT(CONTAINS($User.Username, &apos;ensemble&apos;)),
+ISCHANGED(Appointment_Status__c),
+OR(
+TEXT(Appointment_Status__c) = &quot;Canceled&quot;,
+TEXT(Appointment_Status__c) = &quot;WaitingForCanceled&quot;
+),
+TEXT(PRIORVALUE(Appointment_Status__c)) = &quot;TookPlace&quot;
+)</errorConditionFormula>
+    <errorMessage>לא ניתן לשנות את סטטוס הפגישה ל&quot;בוטל&quot; או &quot;ממתין לביטול התור&quot; לאחר שהוגדר כ&quot;התקיים&quot;.</errorMessage>
+</ValidationRule>

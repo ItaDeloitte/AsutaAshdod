@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reminder_After_10_Days_Partner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>ערך קודם - נשלחה תזכורת לאחר 10 ימים – גבר</description>
+    <label>Reminder After 10 Days Partner</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

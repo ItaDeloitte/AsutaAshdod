@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>call_flow_connect_rec_case_to__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>עבור קריאה בודדה לפלואו שבודק אם קיימת כבר פניית המלצה פתוחה למטופל ומקשר אותה</description>
+    <label>call flow &quot;connect rec case to exising&quot;</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

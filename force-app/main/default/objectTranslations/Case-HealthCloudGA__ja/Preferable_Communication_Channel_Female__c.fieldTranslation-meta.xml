@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Preferred Communication Channel-Female --></label>
+    <name>Preferable_Communication_Channel_Female__c</name>
+    <picklistValues>
+        <masterLabel>SMS</masterLabel>
+        <translation><!-- SMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דואר אלקטרוני</masterLabel>
+        <translation><!-- דואר אלקטרוני --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

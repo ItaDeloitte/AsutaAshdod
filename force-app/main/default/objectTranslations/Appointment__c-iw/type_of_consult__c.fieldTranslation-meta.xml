@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג ייעוץ</label>
+    <name>type_of_consult__c</name>
+    <picklistValues>
+        <masterLabel>המלצה על רופא מומחה</masterLabel>
+        <translation><!-- המלצה על רופא מומחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זימון תור לאחר המלצה</masterLabel>
+        <translation><!-- זימון תור לאחר המלצה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זימון תור לרופא מומחה</masterLabel>
+        <translation><!-- זימון תור לרופא מומחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממוגרפיה</masterLabel>
+        <translation><!-- ממוגרפיה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Deforestation_Gaps</fullName>
+    <active>true</active>
+    <description>סגירת פניות נרמ&quot;ר מסוג בקשות לביעור- כאשר פערים שהועלו בבדיקה שווה כן, חובה למלא את השדה שימת פערים</description>
+    <errorConditionFormula>ISPICKVAL(Status, &apos;Closed&apos;) &amp;&amp; RecordType.DeveloperName == &apos;Medical_Info_Management&apos;
+&amp;&amp; ISPICKVAL(Case_subject__c, &apos;בקשה לביעור&apos;) &amp;&amp;
+ISBLANK(Gap_Placement__c) &amp;&amp; ISPICKVAL(Control_Gaps__c, &apos;כן&apos;)</errorConditionFormula>
+    <errorDisplayField>Gap_Placement__c</errorDisplayField>
+    <errorMessage>חובה לבחור לפחות ערך אחד של השדה &quot;שימת פערים&quot; במידה וערך בשדה &quot;פערים שהועלו בבקרה&quot; = כן</errorMessage>
+</ValidationRule>

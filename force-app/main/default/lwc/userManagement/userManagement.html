@@ -1,0 +1,31 @@
+<template>
+    <div class="slds-m-around_medium">
+        <div class="slds-text-align_center">רשימת נציגים בערוץ דיגיטל</div>
+        <br/>
+        <div style="height:360px; width: 320x;">
+            <!--style="height:450px;"-->
+            <lightning-datatable class="test3"
+                    key-field="Id"
+                    data={listUser}
+                    columns={columns}
+                    onrowaction={handleRowAction}
+                    show-row-number-column
+                    hide-checkbox-column>
+            </lightning-datatable>
+        </div> 
+        <br/>
+        <div class="slds-form-element__control" style="width:50%;">
+            <label class="slds-form-element__label" for="input" >בחר נציג לערוץ דיגיטל</label>
+            <input id="input" name="input" list="valueList" class="slds-input" type="text" value= {userValue} onchange={handleChange}/>
+            <datalist id="valueList" class="" >
+                <template for:each={itemsUser} for:item='item'>
+                    <option key={item.key} value={item.value}>{item.value}</option>
+                </template>
+            </datalist>
+            <br/><br/>
+            <lightning-button label="הוסף נציג" variant="brand" onclick={addUser} title="הוסף נציג" disabled = {visableBtn}></lightning-button>
+            <br/><br/>
+            <lightning-formatted-text value = {noteLabel} linkify></lightning-formatted-text>
+        </div>
+    </div> 
+</template>

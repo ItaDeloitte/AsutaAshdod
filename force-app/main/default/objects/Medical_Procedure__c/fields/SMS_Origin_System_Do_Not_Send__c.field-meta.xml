@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Origin_System_Do_Not_Send__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>סמס מערכת מקור אי שליחה - כן / לא (שדה ששולח במידה וקביעת התור לא מבוצעת מה-CRM) למשל &quot;כן&quot; במצב של פעולות חסויות</description>
+    <label>SMS Origin System - Do Not Send</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

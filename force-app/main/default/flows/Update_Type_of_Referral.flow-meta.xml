@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Update Type of Referral workflow rule
+Workflow rule description: אם מתקבלת הפניה ממכבי עבור ניתוח (ביצוע פעולה, Hospitalization, חיוב ישיר) 
+אז סוג ההפניה יהיה &apos;ניתוחי&apos;&quot;</description>
+    <label>Update Type of Referral</label>
+    <migratedFromWorkflowRuleName>Update Type of Referral</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>עדכון סוג ההפניה לניתוחי</description>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Related_Process__c</field>
+            <value>
+                <stringValue>0</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterFormula>ISNEW() &amp;&amp; ( ISPICKVAL( {!$Record.Referral_Type__c} , &quot;Hospitalization&quot; ) || ISPICKVAL( {!$Record.Referral_Type__c} , &quot;ביצוע פעולה&quot; ) || ISPICKVAL( {!$Record.Referral_Type__c} , &quot;חיוב ישיר&quot; ) ) &amp;&amp; NOT(ISPICKVAL({!$Record.Referral_Type__c} , &quot;&quot;))</filterFormula>
+        <object>File__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

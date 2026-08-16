@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Tællerenhed for maks. dosis pr. periode</label>
+    <name>HealthCloudGA__MaxDosePerPeriodNumeratorUnit__c</name>
+</CustomFieldTranslation>

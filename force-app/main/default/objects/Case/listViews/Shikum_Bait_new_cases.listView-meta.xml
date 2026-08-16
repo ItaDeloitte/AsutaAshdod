@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shikum_Bait_new_cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Case_Status_Shikum_Bait__c</columns>
+    <columns>Shikum_Bait_Approval__c</columns>
+    <columns>Surgery_Date__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Owner_Queue_wf__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Shikum_Bait</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <label>שיקום בית- פניות חדשות</label>
+</ListView>

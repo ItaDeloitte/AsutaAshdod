@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Liên Hệ Điều Phối Viên Chăm Sóc</label>
+    <name>HealthCloudGA__AssignCareCoordinatorContact__c</name>
+    <relationshipLabel>Các Khách Hàng Tiềm Năng</relationshipLabel>
+</CustomFieldTranslation>

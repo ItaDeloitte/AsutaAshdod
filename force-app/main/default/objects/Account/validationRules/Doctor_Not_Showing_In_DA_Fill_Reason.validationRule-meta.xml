@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doctor_Not_Showing_In_DA_Fill_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(ShowDoctorInDA__c , &quot;לא&quot;)  , ISPICKVAL( Reason_not_show_DA__c , &quot;&quot;)  )</errorConditionFormula>
+    <errorMessage>רופא שלא מוצג באתר המלצת רופאים חייב סיבת אי הצגה</errorMessage>
+</ValidationRule>

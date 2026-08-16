@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס מרדים</label>
+    <name>Anesthesiologist__c</name>
+    <picklistValues>
+        <masterLabel>אושר לאחר בירור מול מנתח</masterLabel>
+        <translation><!-- אושר לאחר בירור מול מנתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטיפול</masterLabel>
+        <translation><!-- בטיפול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטיפול מול המנתח</masterLabel>
+        <translation><!-- בטיפול מול המנתח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דיווח אישור</masterLabel>
+        <translation><!-- דיווח אישור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מאושר - סופי</masterLabel>
+        <translation><!-- לא מאושר - סופי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדרש להגיע למרפאה</masterLabel>
+        <translation><!-- נדרש להגיע למרפאה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AmbulatoryLimitationEndDate__c</fullName>
+    <description>שדה תאריך המסמל את היום שבו ההגבלה של מניעת זימון פגישה לשירות אמבולטורי מסתיימת.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Ambulatory Limitation End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,53 @@
+<template>
+    <!-- <template if:true={isManual}> -->
+        <div class="container">
+            <div>צירת הפניה ידנית</div>
+            <div class="frame">
+                <div class="inputsBlock">
+                    <lightning-input class= "input" type="text" name="DoctorID" value={DoctorID} label="ת.ז. רופא מפנה" placeholder="הכנס ת.ז" onchange={genericOnChange}></lightning-input>
+                    <lightning-input class= "input" type="text" name="ReferenceNumber" value={ReferenceNumber} label="מספר הפניה" placeholder="הכנס מספר הפניה" onchange={genericOnChange}></lightning-input>                    
+                </div>
+                <div class="inputsBlock">
+                    <lightning-input class= "input" type="text" name="Code1" value={Code1} label="קוד טיפול" placeholder="הכנס קוד טיפול" onchange={genericOnChange}></lightning-input>
+                    <lightning-input class= "input" type="text" name="Code2" value={Code2} label="קוד טיפול" placeholder="הכנס קוד טיפול" onchange={genericOnChange}></lightning-input>                    
+                </div>
+                <div class="inputsBlock">
+                    <lightning-input class= "input" type="text" name="Code3" value={Code3} label="קוד טיפול" placeholder="הכנס קוד טיפול" onchange={genericOnChange}></lightning-input>
+                    <lightning-input class= "input" type="text" name="Code4" value={Code4} label="קוד טיפול" placeholder="הכנס קוד טיפול" onchange={genericOnChange}></lightning-input>                    
+                </div>
+                <div class="inputsBlock">
+                    <lightning-input class= "inputDate" type="date" name="DateTreatment" label="תאריך טיפול" onchange={genericOnChange}></lightning-input>
+                </div>
+                <div>
+                    <!-- <div class="slds-p-around_medium lgc-bg">
+                        <lightning-helptext content="ליצירת הפניה מול מכבי או הפקת התחייבות לחץ כאן"></lightning-helptext>
+                    </div> -->
+                    <lightning-button 
+                        variant="brand" 
+                        label='יצירת הפניה ידנית'
+                        title='יצירת הפניה ידנית'
+                        onclick={createReferralManual} 
+                        class="slds-button slds-button_neutral slds-btn_pad">
+                    </lightning-button>
+                    <template if:true={message}>
+                        <div class="message">{message}</div>
+                    </template>
+                    <template if:true={error}>
+                        <div class="error">{error}</div>
+                    </template>
+
+
+                    <lightning-file-upload
+                            label="צרף מסמך הפניה"
+                            name="fileUploader"
+                            accept={acceptedFormats}
+                            record-id={appointmentId}
+                            onuploadfinished={handleUploadFinished}
+                            multiple>
+                    </lightning-file-upload>
+
+                </div>
+            </div>
+        </div>
+    <!-- </template>    -->
+</template>

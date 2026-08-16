@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ConsentForm__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Account__c</columns>
+    <columns>Appointment__c</columns>
+    <columns>Site__c</columns>
+    <columns>Signature_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>11/24/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>ConsentForm__c</field>
+        <operation>notContain</operation>
+        <value>Anesthesia</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>אסותא השלום</value>
+    </filters>
+    <filters>
+        <field>ConsentForm__c</field>
+        <operation>notContain</operation>
+        <value>YAG Posterior Capsulotomy</value>
+    </filters>
+    <filters>
+        <field>ConsentForm__c</field>
+        <operation>notContain</operation>
+        <value>Breast Needle Biopsy</value>
+    </filters>
+    <label>All</label>
+</ListView>

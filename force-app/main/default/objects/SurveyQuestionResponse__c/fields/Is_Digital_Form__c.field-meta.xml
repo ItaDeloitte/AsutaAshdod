@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Digital_Form__c</fullName>
+    <formula>contains(SurveyTaker__r.Survey_link__c, &apos;DigitalForm&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Digital Form</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

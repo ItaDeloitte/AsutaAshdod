@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>疾病</label>
+    <name>HealthCloudGA__Condition__c</name>
+    <relationshipLabel>EHR 疾病相关项目</relationshipLabel>
+</CustomFieldTranslation>

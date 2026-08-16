@@ -1,0 +1,13 @@
+שלום,
+
+ניתוח {!Appointment__c.Appointment_Status__c} -
+
+שם המטופל: {!Appointment__c.Patient_Account__c} 
+תעודת זהות: {!Appointment__c.IDNumber__c}
+מועמד לניתוח/פעולה: {!Appointment__c.Medical_Procedure__c}, {!Appointment__c.Medical_Procedure2__c}, {!Appointment__c.Medical_Procedure3__c}, {!Appointment__c.Medical_Procedure4__c}
+
+תאריך ניתוח מתוכנן: {!Appointment__c.Date_of_appointment__c} 
+רופא: {!Appointment__c.Doctor_Account__c}
+
+לידיעתכם והמשך טיפולכם, 
+אסותא

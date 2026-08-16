@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IVF_Created_by_me</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Patient_ID__c</columns>
+    <columns>Partner_Name__c</columns>
+    <columns>Case_site__c</columns>
+    <columns>Is_Donating__c</columns>
+    <columns>Previous_Freezing_Date__c</columns>
+    <columns>Eggs_Amount__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.IVF_Freezing_Eggs</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>notEqual</operation>
+        <value>autocase</value>
+    </filters>
+    <label>IVF- Created by me</label>
+</ListView>

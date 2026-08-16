@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>通信期間の開始(場所 1)</label>
+    <name>HealthCloudGA__Location1TelecomPeriodStart__c</name>
+</CustomFieldTranslation>

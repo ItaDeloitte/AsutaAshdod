@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IVR_Option_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>מספר המייצג את בחירת הלקוח ב-IVR (כרגע בין 1 ל-5).</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>IVR Option Number</label>
+    <length>1</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

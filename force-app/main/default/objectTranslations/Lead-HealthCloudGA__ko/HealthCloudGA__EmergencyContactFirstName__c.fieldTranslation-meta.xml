@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>긴급 연락처 성(姓)</label>
+    <name>HealthCloudGA__EmergencyContactFirstName__c</name>
+</CustomFieldTranslation>

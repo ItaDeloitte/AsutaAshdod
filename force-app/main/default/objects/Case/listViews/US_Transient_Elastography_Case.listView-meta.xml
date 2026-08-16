@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_Transient_Elastography_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>US – אלסטוגרפיה של הכבד</label>
+    <queue>US_Transient_Elastography</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

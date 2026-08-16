@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>טופס להעלאת קבצים מתוך תור לרופא מומחה</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Upload files to Expert appointment</name>
+    <style>freeForm</style>
+    <subject>העלאת טפסים קראת תור לרופא מומחה</subject>
+    <textOnly>{!Appointment__c.Patient_Account__c} שלום,
+
+
+
+מצורף לנוחיותך קיט עבור תור לרופא מומחה {!Medical_Procedure__c.Marketing_Procedure_Name__c} שנקבע עבורך, לצפייה הקש כאן
+
+
+
+
+
+לכל מידע נוסף ניתן לפנות למוקד אסותא במספר 6474*</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- פרוטוקול --></label>
+    <name>Protocol__c</name>
+    <picklistValues>
+        <masterLabel>(ללא יוד)  CTU/ CT אורוגרפיה</masterLabel>
+        <translation><!-- (ללא יוד)  CTU/ CT אורוגרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ללא יוד) CTE -CT אנטרוגרפיה</masterLabel>
+        <translation><!-- (ללא יוד) CTE -CT אנטרוגרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ללא יוד) HRCT</masterLabel>
+        <translation><!-- (ללא יוד) HRCT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CT חזה עם חומר ניגוד</masterLabel>
+        <translation><!-- CT חזה עם חומר ניגוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTE  אנטרוגרפיה</masterLabel>
+        <translation><!-- CTE  אנטרוגרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTU/ CT אורוגרפיה</masterLabel>
+        <translation><!-- CTU/ CT אורוגרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRA</masterLabel>
+        <translation><!-- MRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRCP</masterLabel>
+        <translation><!-- MRCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRCP בשאלה של דרכי מרה ולבלב</masterLabel>
+        <translation><!-- MRCP בשאלה של דרכי מרה ולבלב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRE</masterLabel>
+        <translation><!-- MRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI אגן רקמות</masterLabel>
+        <translation><!-- MRI אגן רקמות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI מולטיהנס</masterLabel>
+        <translation><!-- MRI מולטיהנס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIJ</masterLabel>
+        <translation><!-- SIJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US עורקי איליק</masterLabel>
+        <translation><!-- US עורקי איליק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US עורקי ידיים בטמפרטורות שונות</masterLabel>
+        <translation><!-- US עורקי ידיים בטמפרטורות שונות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אגן ובטן - תלת פאזי (ללא יוד)</masterLabel>
+        <translation><!-- אגן ובטן - תלת פאזי (ללא יוד) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטן אגן- תלת פאזי</masterLabel>
+        <translation><!-- בטן אגן- תלת פאזי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטן עליונה (כליות בלדב, כבד, כיס מרה, טחול, אאורטה)</masterLabel>
+        <translation><!-- בטן עליונה (כליות בלדב, כבד, כיס מרה, טחול, אאורטה) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטן עליונה+תחתונה</masterLabel>
+        <translation><!-- בטן עליונה+תחתונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטן פרוטוקול לבלב</masterLabel>
+        <translation><!-- בטן פרוטוקול לבלב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בטן פרוטוקול לבלב (ללא יוד)</masterLabel>
+        <translation><!-- בטן פרוטוקול לבלב (ללא יוד) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בשאלה של בטן תחתונה  - אגן קטן</masterLabel>
+        <translation><!-- בשאלה של בטן תחתונה  - אגן קטן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בשאלה של בטן תחתונה  - כליות ודרכי שתן</masterLabel>
+        <translation><!-- בשאלה של בטן תחתונה  - כליות ודרכי שתן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בשאלה של בטן תחתונה  - רקטום/פיסטולה</masterLabel>
+        <translation><!-- בשאלה של בטן תחתונה  - רקטום/פיסטולה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בשאלה של בטן תחתונה - אשכים</masterLabel>
+        <translation><!-- בשאלה של בטן תחתונה - אשכים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בשאלה של בטן תחתונה - רחם</masterLabel>
+        <translation><!-- בשאלה של בטן תחתונה - רחם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בשאלה של כיס מרה מכוווץ</masterLabel>
+        <translation><!-- בשאלה של כיס מרה מכוווץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הבטן עליונה</masterLabel>
+        <translation><!-- הבטן עליונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא חומר ניגוד</masterLabel>
+        <translation><!-- ללא חומר ניגוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא חומר ניגוד HRCT</masterLabel>
+        <translation><!-- ללא חומר ניגוד HRCT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא פרוטוקול</masterLabel>
+        <translation><!-- ללא פרוטוקול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מח + עצמות טמפורליות</masterLabel>
+        <translation><!-- מח + עצמות טמפורליות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיפוי כליות MAG3</masterLabel>
+        <translation><!-- מיפוי כליות MAG3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיפוי כליות קפוטן</masterLabel>
+        <translation><!-- מיפוי כליות קפוטן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוח בריאטרי</masterLabel>
+        <translation><!-- ניתוח בריאטרי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתוח שד</masterLabel>
+        <translation><!-- ניתוח שד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סקרואליטיס</masterLabel>
+        <translation><!-- סקרואליטיס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סרקואידוזיס של הלב</masterLabel>
+        <translation><!-- סרקואידוזיס של הלב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עורקי ידיים בטמפרטורות שונות</masterLabel>
+        <translation><!-- עורקי ידיים בטמפרטורות שונות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עורקים טמפורליים</masterLabel>
+        <translation><!-- עורקים טמפורליים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עם חומר ניגוד</masterLabel>
+        <translation><!-- עם חומר ניגוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עמילואידוזיס</masterLabel>
+        <translation><!-- עמילואידוזיס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עצמות טמפורליות</masterLabel>
+        <translation><!-- עצמות טמפורליות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פלטיסמוגרפיה</masterLabel>
+        <translation><!-- פלטיסמוגרפיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרק ירך</masterLabel>
+        <translation><!-- פרק ירך --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

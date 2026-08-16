@@ -1,0 +1,62 @@
+.THIS .slds-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.THIS .slds-modal__header {
+  border-bottom: 0;
+  padding: 1.5rem 1rem;
+  color: #495662;
+  font-size: 1.25rem;
+}
+
+.THIS .slds-modal__header * {
+  font-family: inherit;
+}
+
+.THIS .slds-modal__container {
+  min-height: 100%;
+  height: auto;
+}
+
+.THIS .slds-modal__content {
+  padding: 0.75rem 1rem;
+  border-radius: 3px;
+  color: #495662;
+}
+
+.THIS .slds-modal__close {
+  border-width: 0;
+}
+
+.THIS .slds-modal__close:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.THIS .slds-modal__close svg {
+  fill: #ecebeb;
+  transition: fill 0.3s;
+}
+
+.THIS .slds-modal__close:hover svg {
+  fill: #ffffff;
+}
+
+.THIS .slds-modal__footer {
+  border-top: 0;
+  padding-bottom: 1rem;
+}
+
+.THIS .modal-dialog {
+  position: relative;
+}
+
+.THIS .focus-input-wrapper {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}

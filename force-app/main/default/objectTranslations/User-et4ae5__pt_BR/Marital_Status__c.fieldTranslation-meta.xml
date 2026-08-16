@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Marital Status --></label>
+    <name>Marital_Status__c</name>
+    <picklistValues>
+        <masterLabel>אלמן</masterLabel>
+        <translation><!-- אלמן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גרוש</masterLabel>
+        <translation><!-- גרוש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נשוי</masterLabel>
+        <translation><!-- נשוי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רווק</masterLabel>
+        <translation><!-- רווק --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

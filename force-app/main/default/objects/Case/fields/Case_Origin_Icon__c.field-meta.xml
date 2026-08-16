@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Origin_Icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(   ISPICKVAL( Origin , &quot;פייסבוק מסנג&apos;ר&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlK&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30), 
+IF( ISPICKVAL( Origin , &quot;sales&quot;) , IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.FileDownload?file=0154J000000zDwZ&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL( Origin , &quot;Facebook&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlI&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30), 
+IF(   ISPICKVAL(Origin , &quot;דואר אלקטרוני&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlI&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30), 
+IF(   ISPICKVAL(Origin , &quot;WhatsApp&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlV&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30), 
+IF(   ISPICKVAL(Origin, &quot;שיחה יוצאת חיצונית&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cp6c&amp;oid=00DKI000000MTJU&amp;lastMod=1564301041000&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL(Origin, &quot;שיחה נכנסת חיצונית&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cp6X&amp;oid=00DKI000000MTJU&amp;lastMod=1564301008000&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL(Origin, &quot;שיחה נכנסת פנימית&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cp6X&amp;oid=00DKI000000MTJU&amp;lastMod=1564301008000&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL(Origin, &quot;שיחה יוצאת פנימית&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cp6c&amp;oid=00DKI000000MTJU&amp;lastMod=1564301041000&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL(Origin , &quot;Chat&quot;) , IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlS&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL(Origin , &quot;SMS&quot;) , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlS&amp;oid=00D7E000000FWtK&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL(Origin , &quot;מערכות מקור&quot;) , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlU&amp;oid=00D7E000000FWtK&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL(Origin , &quot;Web_Site&quot;) , IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXlU&amp;oid=00D7E000000FWtK&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
+IF(   ISPICKVAL(Origin , &quot;פקס&quot;),IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000J6Ct&amp;oid=00DKI000000MTJU&amp;lastMod=1572792589000&quot;, &quot;&quot; , 30, 30),
+IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.ImageServer?id=0154J000000JVK4&amp;oid=00DKI000000MTJU&amp;lastMod=1576505757000&quot;, &quot;&quot; , 30, 30)))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Origin Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

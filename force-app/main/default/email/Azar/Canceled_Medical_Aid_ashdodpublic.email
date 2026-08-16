@@ -1,0 +1,63 @@
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Assuta Mail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<center>
+<!-- Save for Web Slices (General Mail 2 Copy 4.png) -->
+<table id="Table_01" width="1200" height="1953" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial Hebrew,Arial; direction: rtl; font-size: 1.5em; line-height: 1.6em;">
+    <tr>
+        <td colspan="5">
+            <img src="https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=015J7000000styC&oid=00D4J000000D53o&lastMod=1740490192000" width="500" height="90" alt></td>
+    </tr>
+    <tr>
+        <td colspan="5">
+            <h1 style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 2em; font-size: 2.6em;">
+               שלום,
+            </h1>
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 2em; line-height: 1.6em;">
+
+
+<br>
+הינך מקבל הודעה זאת כיוון שבוטל הצורך בעזר לפגישה של המטופל: {!Medical_Aid_Appointment__c.Type_of_Assist__c}
+<br>
+תאריך הפגישה: {!Medical_Aid_Appointment__c.Appointment_Date__c} 
+<br>
+שעת הפגישה: {!Medical_Aid_Appointment__c.Time_of_appointment__c}
+<br>
+שם מטופל: {!Medical_Aid_Appointment__c.Patient__c}
+<br>
+ת.ז מטופל: {!Medical_Aid_Appointment__c.Patient_ID__c}
+
+
+<br>
+
+למעבר לפרטי הפניה <a
+href="{!Medical_Aid_Appointment__c.Link_to_Case__c}">לחץ/י כאן </a>
+<br>
+למעבר לפרטי הפגישה <a
+href="{!Medical_Aid_Appointment__c.Link_to_Appointment__c}">לחץ/י כאן </a> 
+<br>
+
+
+
+<br> 
+
+בברכה,
+<br>
+אסותא אשדוד ציבורי
+  </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="5">
+            <img src="https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=015J7000000styH&oid=00D4J000000D53o&lastMod=1740491230000" width="500" height="200" alt></td>
+    </tr>
+
+</table>
+<!-- End Save for Web Slices -->
+
+</center></body>
+</html>

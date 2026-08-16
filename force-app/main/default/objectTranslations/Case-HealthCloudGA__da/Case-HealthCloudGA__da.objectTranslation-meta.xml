@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>HcCareGapList</label>
+        <name>HealthCloudGA__HcCareGapList</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- Application Files --></label>
+        <name>Application_Files</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- זימון תורים למכונים ומרפאות --></label>
+        <name>Appointments</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- אסותא 360 --></label>
+        <name>Assuta_360</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- מכירות --></label>
+        <name>CaseAfterSale</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- אסותא 360 - סגור --></label>
+        <name>ClosedAssuta360</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- פניית רופא - סגור --></label>
+        <name>ClosedDoc</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- רופאים מומחים - סגור --></label>
+        <name>ClosedExp</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- מידע כללי - סגור --></label>
+        <name>ClosedGen</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- זימון תורים למכונים ומרפאות - סגור --></label>
+        <name>ClosedInstitutes</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ניתוחים - סגור --></label>
+        <name>ClosedSurgeries</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- רופאים מומחים --></label>
+        <name>DOC_expert</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- פניית רופא --></label>
+        <name>Doctor_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- תשלומי רופאים --></label>
+        <name>Doctors_Payments_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- מידע כללי --></label>
+        <name>General_Info</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Definerer behandlingsmangler for en enkeltperson</description>
+        <label>CareGap</label>
+        <name>HealthCloudGA__CareGap</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Definerer en behandlingsplan for en enkeltperson og dennes behandlingsteam</description>
+        <label>CarePlan</label>
+        <name>HealthCloudGA__CarePlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- אשפוז בית --></label>
+        <name>Home_Hospitalization</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- אבחון בית --></label>
+        <name>Home_diagnosis</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IVF הקפאת ביציות --></label>
+        <name>IVF_Freezing_Eggs</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- מיועד לסוכני ביטוח --></description>
+        <label><!-- סוכן ביטוח --></label>
+        <name>Insurance_Agent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ניהול ורישום מידע רפואי --></label>
+        <name>Medical_Info_Management</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- סגל רפואי --></label>
+        <name>Medical_staff</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- פניות הציבור --></label>
+        <name>PublicInquiries</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- פריט פניה פניות ציבור --></label>
+        <name>PublicInquiriesItem</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- שיקום בית --></label>
+        <name>Shikum_Bait</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Supplier --></label>
+        <name>Supplier</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ניתוחים --></label>
+        <name>Surgery</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- יד ביד - שד --></label>
+        <name>YadBeYad_Breast</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- העברה למחלקה --></label>
+        <name>transfer_to_secretaries</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- !נא לוודא שהזנת במספר חשבון בנק מספרים בלבד --></errorMessage>
+        <name>BankAccountCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שהזנת רק מספרים בשדה מספר בנק! --></errorMessage>
+        <name>BankNumberCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;נא להזין ערך בשדות &quot;סיבת הפניה&quot; או &quot;סיבת הפניה הערות! --></errorMessage>
+        <name>BlankField_CaseReason_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;נא להזין ערך בשדות &quot;רופא בפנייה&quot; ו&quot;מרכז רפואי! --></errorMessage>
+        <name>BlankField_Site_DoctorCase_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- !נא להזין ערך בשדה &quot;שם הניתוח&quot; --></errorMessage>
+        <name>BlankField_Surgery_DoctorCase_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;נא להזין ערך בשדה &quot;הערות למקור הפניה לנרמ&quot;ר! --></errorMessage>
+        <name>BlankMedicalInfo_MngmtComment_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;נא להזין ערך בשדה &quot;הערות! --></errorMessage>
+        <name>Blank_Comment_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;נא להזין ערך בשדה &quot;מספר משלוח! --></errorMessage>
+        <name>Blank_ShippingNumber_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שהזנת רק מספרים בשדה מספר סניף! --></errorMessage>
+        <name>BranchNumberCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- !נא לוודא שהזנת במספר ספק מספרים בלבד --></errorMessage>
+        <name>BusinessNumberCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- על מנת לשלוח OTP חובה למלא מספר טלפון נייד לקבלת מסרונים או דואר אלקטרוני ולדאוג שהמטופל או איש הקשר שהמייצג אותו מאשרים דיוור --></errorMessage>
+        <name>Cant_send_OTP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש להעביר פניה בצורה תקינה --></errorMessage>
+        <name>Change_queue_invalid_way</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- הפורמט חייב להיות yyyy-mm-dd --></errorMessage>
+        <name>Check_freezing_date_text_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the reason for closing the hand-in-hand case --></errorMessage>
+        <name>Choose_closing_reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- !נא להזין ערך בשדה &quot;סיבת סגירת הפנייה&quot; על מנת שסגירת הפנייה תתאפשר --></errorMessage>
+        <name>CloseCase_DoctorMedicalUpdateCase</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- שים לב, פניה בנושא אישור ביעור ניתנת לסגירה רק על ידי מנהל/משתמש מורשה. בנוסף יש למלא את כל שדות החובה תחת מקטע בקשה לביעור --></errorMessage>
+        <name>Closing_Deforestation_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה לבחור לפחות ערך אחד של השדה &quot;שימת פערים&quot; במידה וערך בשדה &quot;פערים שהועלו בבקרה&quot; = כן --></errorMessage>
+        <name>Closing_Deforestation_Gaps</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- !נא לוודא שהזנת בשם החברה אותיות בלבד --></errorMessage>
+        <name>CompanyNameCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- !נא לוודא שהזנת במספר טלפון מספרים בלבד --></errorMessage>
+        <name>ContactPhoneCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- שינוי סטטוס של פנייה על ידי נציג יתבצע רק מסטטוס &quot;בטיפול&quot;.
+בעת הקמת פנייה חדשה באופן ידני, יש לשמור אותה בסטטוס &quot;חדש&quot; בלבד. -->
+        </errorMessage>
+        <name>DEL_Only_manager_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לפתוח פניית 360 עבור מטופלות שלא מטופלות במוקד --></errorMessage>
+        <name>DEL_Stop_case_360_if_not_moked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מספר הטלפון אינו תקין --></errorMessage>
+        <name>DEL_Validation_on_Other_Phone_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בסוג פניייה אודות מטופלים יש לבחור את המטופל --></errorMessage>
+        <name>Doc_for_paitent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בפניות מסוג נרמ&quot;ר שנושא הפניה הוא &quot;פניה לרופא לעדכון רשומה רפואית&quot;  או &quot;חשבונית&quot;, יש להזין ערך בשדה &quot;תת נושא הפנייה&quot; --></errorMessage>
+        <name>Empty_SubCaseSubject_MedicalInfo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- !נא לוודא שהזנת במספר פקס מספרים בלבד --></errorMessage>
+        <name>FaxCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא ששם פרטי מכיל אותיות בלבד! --></errorMessage>
+        <name>FirstNameCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- האם הממשק טופל? --></errorMessage>
+        <name>Interface_Handled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא ששם משפחה מכיל אותיות בלבד! --></errorMessage>
+        <name>LastNameCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- יש למלא את השדות הבאים תחת כותרת &quot;שאלון קורונה&quot; בטרם שמירת הפנייה: 
+מקום מגורים קבוע
+האם חזרת מחו&quot;ל ב-14 ימים האחרונים?
+ מגע עם חולה קורונה ב-14 ימים האחרונים?
+ מתגורר/ת עם חולה קורונה באשפוז ביתי?
+ חום/תסמינים נשימתיים בשבועיים האחרונים? -->
+        </errorMessage>
+        <name>Mandatory_Fields_For_Schedule_Corona</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- רק בעלי פניה מסוג מנהל יכול לסגור פניה זו. 
+מנהל/ת - יש להעביר את הפניה לבעלותך ואז לסגור את הפניה -->
+        </errorMessage>
+        <name>MangerMustOwnCase</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בעת סגירת פנייה של נרמ&quot;ר, אם נושא הפניה הוא &quot;חשבונית&quot;, חובה למלא את השדות &quot;מספר חשבונית&quot;, &quot;סה&quot;כ לתשלום&quot;, ו&quot;תת נושא הפנייה&quot; --></errorMessage>
+        <name>MedicalInfo_InvoiceNum_TotalForPayment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- עליך למלא את שדה &quot;פירוט המוצר המבוקש&quot; כאשר השירות המבוקש אינו קיים --></errorMessage>
+        <name>Must_fill_text_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- אנא הזן פירוט סיבת סגירה --></errorMessage>
+        <name>Other_Reason_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- המייל של בן הזוג ריק ולכן לא ניתן לשלוח את הקיט הראשוני --></errorMessage>
+        <name>Partner_Email_Empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- המייל של המטופלת ריק ולכן לא ניתן לשלוח את הקיט הראשוני --></errorMessage>
+        <name>Patient_Email_Empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- !נא לוודא שהזנת במספר טלפון מספרים בלבד --></errorMessage>
+        <name>PhoneCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;יש למלא את השדה &quot;סכום&quot; ואת השדה &quot;גורם מאשר לפיצוי/החזר/אי חיוב --></errorMessage>
+        <name>RefundNotApproved_is_not_empty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- השדה &quot;מועד תור לרופא מומחה&quot; הינו שדה חובה. --></errorMessage>
+        <name>Require_Appointment_Date_with_Specialist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- השדה &quot;מועד התור לביופסיה&quot; הינו שדה חובה. --></errorMessage>
+        <name>Require_Biopsy_Appointment_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- השדה &quot;מצב שיחה עם רופא&quot; הינו שדה חובה. --></errorMessage>
+        <name>Require_Conversation_with_the_Doctor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- שדה &quot;מועד שיחה עתידית&quot; הינו שדה חובה. --></errorMessage>
+        <name>Require_Future_Conversation_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- שדה &quot;פירוט אי התאמה&quot; הינו שדה חובה. --></errorMessage>
+        <name>Require_Mismatch_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- שדות אלו ניתנים לעריכה רק כאשר מסלול הפנייה הינו &quot;בנפרד&quot; --></errorMessage>
+        <name>Stage_Status_Editable_Seperate_Route</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר רחוב מכיל רק מספרים בלבד! --></errorMessage>
+        <name>StreetNumberCheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- אם בפניות מסוג אחזור מידע רפואי ונבחר ערך &quot;טופל ושולם&quot; בסיבת הפנייה, יש להזין ערכים בשדות סה&quot;כ לתשלום ומספר חשבונית --></errorMessage>
+        <name>TotalForPayment_And_InvoiceNum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש להעביר את הפנייה לבעלותך לפני שסוגרים אותה --></errorMessage>
+        <name>UserMustOwmCase</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מספר הטלפון אינו תקין --></errorMessage>
+        <name>Validation_on_Phone_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מספר הנייד אינו תקין --></errorMessage>
+        <name>Validation_on_SMS_phone_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לסגור פנייה שנמצאת בתהליך אישורים --></errorMessage>
+        <name>cant_close_when_approval_process</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לפתוח פנייה שנסגרה --></errorMessage>
+        <name>cant_open_closed_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לזמן לו תורים לרופא שלא במרכז מומחים או אין לו מרפאת QF --></errorMessage>
+        <name>cant_schedule_app_for_this_doctor</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בפניות מסוג &apos;העברה למחלקה&apos; יש למלא סטטוס טיפול --></errorMessage>
+        <name>close_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש למלא סיבת סגירה --></errorMessage>
+        <name>close_reason_360</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בחשבון המטופל רשום שהוא לא מאשר דיוור. יש לבטל את האיסור או למחוק את המספר לקבלת מסרונים שעודכן בפנייה --></errorMessage>
+        <name>dont_allow_sms</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בביטול פנייה - יש לבחור סיבה בשדה המתאים --></errorMessage>
+        <name>enter_case_reason_if_cancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בסגירת פנייה מסוג אחזור מידע רפואי - יש לבחור סיבה בשדה המתאים --></errorMessage>
+        <name>enter_case_reason_if_closed_recovery</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בפנייה מסוג אחזור מידע רפואי, חובה למלא את תת נושא פנייה --></errorMessage>
+        <name>enter_sub_subject_medical_Info_recovery</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- אם הרופא ידוע יש למלא את שמו בשדה &quot;רופא מבוקש&quot; --></errorMessage>
+        <name>if_doc_is_known_then_link_him_to_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמספר תיבת דואר מכיל רק מספרים בלבד! --></errorMessage>
+        <name>mailboxcheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לשלוח OTP אם אין טלפון לקבלת מסרונים או דואר אלקטרוני --></errorMessage>
+        <name>no_address_for_OTP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לוודא שמיקוד מכיל רק מספרים בלבד! --></errorMessage>
+        <name>postalcheck_number_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בעת בחירת תת סטטוס ללא מענה חייב למלא תאריך חזרה --></errorMessage>
+        <name>sales_must_insert_call_back</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בעת בחירת תת סטטוס נקבעה פגישת המשך חייב למלא פירוט פגישת המשך --></errorMessage>
+        <name>sales_next_appointment_explanation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא מוגדר לך מנהל במערכת, לא ניתן לשנות לסטטוס זה --></errorMessage>
+        <name>transfer_to_manager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש לבחור תור עבודה מוקד ולמלא סיבת החזרה למוקד --></errorMessage>
+        <name>transfer_to_moked</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label>Anvend behandlingsplanskabeloner</label>
+        <name>HealthCloudGA__Apply_Care_Plan_Templates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Public_Inquiry_Child --></label>
+        <name>New_Public_Inquiry_Child</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- create_qa --></label>
+        <name>create_qa</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- send_link --></label>
+        <name>send_link</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,18 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="text-align: right;"><p class="MsoNormal" dir="RTL" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span dir="RTL"></span><span dir="RTL"></span><span lang="HE" style="font-family:&quot;Arial&quot;,sans-serif;mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:minor-bidi"><span dir="RTL"></span><span dir="RTL"></span>{!Appointment__c.Patient_Account__c} שלום,<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="HE" style="font-family:&quot;Arial&quot;,sans-serif;mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:minor-bidi"><br></span></p>
+
+<p class="MsoNormal" dir="RTL" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="HE" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:
+minor-bidi">נקבע עבורך תור לתאריך:&nbsp;{!Appointment__c.Date_of_appointment__c} בשעה&nbsp;{!Appointment__c.AppointmentTime__c} באסותא {!Appointment__c.Site__c}.</span></p><p class="MsoNormal" dir="RTL" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span lang="HE" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;mso-bidi-theme-font:
+minor-bidi"><br></span></p><p class="MsoNormal" dir="RTL" style=""><font face="Arial, sans-serif" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">לקבלת פרטים נוספים אודות התור שנקבע, אישור מועד הגעה וקבלת הוראות והנחיות בקישור המצורף:&nbsp;</font><font face="Arial, sans-serif">https://msipser.formtitan.com/origin/fta6dcff831558010404007/?fld2={!Appointment__c.Id}</font></p><p class="MsoNormal" dir="RTL" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="Arial, sans-serif">תודה,</font></p><p class="MsoNormal" dir="RTL" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="Arial, sans-serif">בית חולים אסותא</font></p><br></div>]]></td>
+</tr>
+</table>

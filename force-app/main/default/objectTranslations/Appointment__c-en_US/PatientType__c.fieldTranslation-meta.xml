@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Patient Type --></label>
+    <name>PatientType__c</name>
+    <picklistValues>
+        <masterLabel>אמבולטורי</masterLabel>
+        <translation><!-- אמבולטורי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אשפוז</masterLabel>
+        <translation><!-- אשפוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אשפוז יום</masterLabel>
+        <translation><!-- אשפוז יום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביקור במרפאה</masterLabel>
+        <translation><!-- ביקור במרפאה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא לשלוח סמסים</masterLabel>
+        <translation><!-- לא לשלוח סמסים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיון</masterLabel>
+        <translation><!-- מיון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קבלה לאשפוז</masterLabel>
+        <translation><!-- קבלה לאשפוז --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

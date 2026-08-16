@@ -1,0 +1,16 @@
+.THIS.modal .modal-container,
+.THIS.modal .slds-modal__container {
+  margin: 0 auto;
+  min-width: 20rem;
+}
+
+.THIS.modal .modal-body,
+.THIS.modal .slds-modal__content {
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+
+.THIS .cActionModalInner .dm-body {
+  padding: 0;
+}

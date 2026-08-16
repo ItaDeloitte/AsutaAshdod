@@ -1,0 +1,29 @@
+.THIS {
+  height: 90vh;
+  max-height: 600px;
+  position: relative;
+}
+
+.THIS .catch-autofocus {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.THIS .dm-header__title {
+  font-size: 20px;
+}
+
+.THIS .dm-body {
+  padding-bottom: 60px;
+  background-color: #fff;
+}
+
+.THIS .uiScrollerWrapper {
+  background-color: #fff;
+}
+
+.THIS[dir="rtl"] .slds-modal__footer {
+  text-align: left;
+}

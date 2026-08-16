@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Repeated_Case__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>פנייה חוזרת</description>
+    <inlineHelpText>בדיקה האם מדובר בפנייה חוזרת בטווח של 3 ימים</inlineHelpText>
+    <label>Repeated Case</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

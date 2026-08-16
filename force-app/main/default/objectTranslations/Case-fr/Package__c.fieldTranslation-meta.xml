@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Package --></label>
+    <name>Package__c</name>
+    <picklistValues>
+        <masterLabel>בסיסית</masterLabel>
+        <translation><!-- בסיסית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דו שבועית</masterLabel>
+        <translation><!-- דו שבועית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חבילת החלמה</masterLabel>
+        <translation><!-- חבילת החלמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חבילת החלמה משולבת</masterLabel>
+        <translation><!-- חבילת החלמה משולבת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משולבת</masterLabel>
+        <translation><!-- משולבת --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

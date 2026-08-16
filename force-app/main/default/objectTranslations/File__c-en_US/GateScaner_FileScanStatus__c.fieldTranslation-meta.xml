@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GateScaner_FileScanStatus --></label>
+    <name>GateScaner_FileScanStatus__c</name>
+    <picklistValues>
+        <masterLabel>Drop</masterLabel>
+        <translation><!-- Drop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error</masterLabel>
+        <translation><!-- Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fix</masterLabel>
+        <translation><!-- Fix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ok</masterLabel>
+        <translation><!-- Ok --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

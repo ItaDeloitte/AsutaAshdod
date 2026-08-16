@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>הקוד עצמו</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OTP ACC-CON 2</name>
+    <style>freeForm</style>
+    <subject>אסותא - הקוד שלך</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

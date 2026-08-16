@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>ETL</fullName>
+        <field>ETL_Unique_Identifier__c</field>
+        <formula>Site__r.Site_Code__c &amp; &apos;-&apos; &amp; Medical_Procedure__r.Procedure_Code__c</formula>
+        <name>ETL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Set ETL</fullName>
+        <actions>
+            <name>ETL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCHANGED( Site__c ) || ISCHANGED( Medical_Procedure__c ) || ISNEW() || ISBLANK( ETL_Unique_Identifier__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

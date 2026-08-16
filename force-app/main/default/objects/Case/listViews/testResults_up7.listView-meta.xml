@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>testResults_up7</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Case_subject__c</field>
+        <operation>equals</operation>
+        <value>העברת פנייה למחלקה</value>
+    </filters>
+    <filters>
+        <field>sub_case_subject__c</field>
+        <operation>equals</operation>
+        <value>בירור לגבי תוצאות</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>Platform Integration User</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Caneclled</value>
+    </filters>
+    <label>זירוז תוצאות בדיקה</label>
+</ListView>

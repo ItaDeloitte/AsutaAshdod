@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>site_for_choose__c</fullName>
+    <inlineHelpText>בחר אם קיים אתר/אתרים מועדפים</inlineHelpText>
+    <label>Site for Choose</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ניידת MRI</fullName>
+                <default>false</default>
+                <label>ניידת MRI</label>
+            </value>
+            <value>
+                <fullName>אסותא באר שבע</fullName>
+                <default>false</default>
+                <label>אסותא באר שבע</label>
+            </value>
+            <value>
+                <fullName>אסותא השלום</fullName>
+                <default>false</default>
+                <label>אסותא השלום</label>
+            </value>
+            <value>
+                <fullName>אסותא חיפה</fullName>
+                <default>false</default>
+                <label>אסותא חיפה</label>
+            </value>
+            <value>
+                <fullName>אסותא אשדוד כלניות</fullName>
+                <default>false</default>
+                <label>אסותא אשדוד כלניות</label>
+            </value>
+            <value>
+                <fullName>אסותא ראשל&quot;צ</fullName>
+                <default>false</default>
+                <label>אסותא ראשל&quot;צ</label>
+            </value>
+            <value>
+                <fullName>אסותא רמת החייל</fullName>
+                <default>false</default>
+                <label>אסותא רמת החייל</label>
+            </value>
+            <value>
+                <fullName>אסותא רעננה</fullName>
+                <default>false</default>
+                <label>אסותא רעננה</label>
+            </value>
+            <value>
+                <fullName>בית החולים האוניברסיטאי אסותא אשדוד ע&quot;ש סמסון</fullName>
+                <default>false</default>
+                <label>בית החולים האוניברסיטאי אסותא אשדוד ע&quot;ש סמסון</label>
+            </value>
+            <value>
+                <fullName>בניין העוגן - ת&quot;א</fullName>
+                <default>false</default>
+                <label>בניין העוגן - ת&quot;א</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

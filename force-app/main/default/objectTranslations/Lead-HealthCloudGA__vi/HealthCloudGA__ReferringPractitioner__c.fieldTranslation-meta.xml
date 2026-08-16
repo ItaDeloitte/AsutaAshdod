@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Bác Sĩ Giới Thiệu</label>
+    <name>HealthCloudGA__ReferringPractitioner__c</name>
+    <relationshipLabel>Khách Hàng Tiềm Năng (Bác Sĩ Giới Thiệu)</relationshipLabel>
+</CustomFieldTranslation>

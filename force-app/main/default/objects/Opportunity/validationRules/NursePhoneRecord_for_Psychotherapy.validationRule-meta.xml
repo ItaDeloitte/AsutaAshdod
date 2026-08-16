@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NursePhoneRecord_for_Psychotherapy</fullName>
+    <active>true</active>
+    <description>עבור הזדמנות של ייעוץ פסיכיאטרי וייעוץ רגשי - אסותא עד הבית
+כאשר מדובר במסלול דיגיטל או מסלול מוקד (אלה שני המסלולים הקיימים)
+השדה צריך להיות שדה חובה
+בהזדמנויות של שירותים אחרים זה לא רלוונטי</description>
+    <errorConditionFormula>AND ( ISBLANK(NursePhoneRecord__c), 
+OR(
+				IF((ISPICKVAL(SchedulingMethod__c,&apos;זימון על ידי המוקד&apos;)),TRUE, FALSE),
+					IF((ISPICKVAL(SchedulingMethod__c,&apos;זימון על ידי המטופל בדיגיטל&apos;)),TRUE, FALSE)))</errorConditionFormula>
+    <errorDisplayField>NursePhoneRecord__c</errorDisplayField>
+    <errorMessage>נא לתעד מה סוכם עם המטופל</errorMessage>
+</ValidationRule>

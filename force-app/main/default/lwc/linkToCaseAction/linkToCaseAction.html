@@ -1,0 +1,26 @@
+<!--
+ - Created by danilvinnik on 12.09.2022.
+ -->
+
+<!-- Link To Case Action -->
+<template>
+    <c-modal-container is-loading={isLoading}>
+        <div slot="header">
+            <h2 class="slds-modal__title slds-hyphenate">{labels.title}</h2>
+        </div>
+        <div class="inner-content slds-p-around_medium">
+            <h2 class="prompt">{labels.prompt}</h2>
+            <lightning-datatable columns={columns}
+                                 data={fetchTableData}
+                                 key-field="id"
+                                 onrowselection={handleRowSelection}
+                                 max-row-selection=1
+            >
+            </lightning-datatable>
+        </div>
+        <div slot="footer">
+            <lightning-button class="slds-button" onclick={cancelClickHandler} label={labels.cancel}></lightning-button>
+            <lightning-button class="slds-button" variant="brand" disabled={isButtonDisabled} label={labels.buttonLabelSave} onclick={saveClickHandler}></lightning-button>
+        </div>
+    </c-modal-container>
+</template>

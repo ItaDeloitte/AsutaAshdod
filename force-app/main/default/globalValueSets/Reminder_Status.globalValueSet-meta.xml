@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0</fullName>
+        <default>true</default>
+        <label>טרם תוזכר</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>אישור</label>
+    </customValue>
+    <customValue>
+        <fullName>2</fullName>
+        <default>false</default>
+        <label>לא יכול להגיע</label>
+    </customValue>
+    <customValue>
+        <fullName>3</fullName>
+        <default>false</default>
+        <label>הושארה הודעה</label>
+    </customValue>
+    <customValue>
+        <fullName>4</fullName>
+        <default>false</default>
+        <label>הושארה הודעה בביתו</label>
+    </customValue>
+    <customValue>
+        <fullName>5</fullName>
+        <default>false</default>
+        <label>אין תשובה</label>
+    </customValue>
+    <customValue>
+        <fullName>6</fullName>
+        <default>false</default>
+        <label>לא הגענו לבעל התור</label>
+    </customValue>
+    <customValue>
+        <fullName>7</fullName>
+        <default>false</default>
+        <label>מספר טלפון שגוי</label>
+    </customValue>
+    <customValue>
+        <fullName>8</fullName>
+        <default>false</default>
+        <label>אין תשובה סופית</label>
+    </customValue>
+    <customValue>
+        <fullName>9</fullName>
+        <default>false</default>
+        <label>תזכורית אוטומטית בוטלה</label>
+    </customValue>
+    <customValue>
+        <fullName>10</fullName>
+        <default>false</default>
+        <label>הועבר למוקד</label>
+    </customValue>
+    <customValue>
+        <fullName>0,1,2,3,4,5,6,7,8,9,10</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>0,1,2,3,4,5,6,7,8,9,10</label>
+    </customValue>
+    <description>קוד סטאטוס תזכור</description>
+    <masterLabel>סטאטוס תזכור</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

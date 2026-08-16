@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 9 — Rules + Sharing + Path Assistants
+    =====================================
+    Types: DataIntegrationRule, SharingRules, PathAssistant
+    Test level: NoTestRun
+    Estimated time: ~10-15 min
+    Dependencies:
+      - Phase 2 (Objects) — SharingRules reference objects
+      - Phase 3 (RecordTypes) — PathAssistants reference RecordTypes
+      - Phase 4 (Queues) — SharingRules may share to queues
+
+    NOTE: SharingRecordCollection.sharingRules excluded (empty file — requires content).
+    NOTE: opportunity_stage PathAssistant — if prod has existing Opportunity Path on __MASTER__,
+          delete it manually in Setup → Path Settings before deploying this phase.
+    NOTE: 5 PathAssistants re-excluded in RT שחזור: Case_Path_Exp, Case_Path_Genral,
+          IVF_Case_path, PublicInquires, case_institutes — check CLAUDE.md before deploying.
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase9_rules_sharing.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase9_result.json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Data integration rules -->
+    <types>
+        <members>*</members>
+        <name>DataIntegrationRule</name>
+    </types>
+
+    <!-- Sharing rules (criteria-based) -->
+    <types>
+        <members>*</members>
+        <name>SharingRules</name>
+    </types>
+
+    <!-- Path assistants (Sales Path, Service Path) -->
+    <types>
+        <members>*</members>
+        <name>PathAssistant</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

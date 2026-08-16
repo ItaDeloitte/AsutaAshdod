@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Code_Parent_for_Interface__c</fullName>
+    <description>במידה ויש לקוח אב - קוד לקוח אב, אחרת - קוד הגורם המשלם</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT(ISBLANK(Name_of_parent__c)) ,  Parent_Code__c ,  InsuranceCode__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Code Parent for Interface</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

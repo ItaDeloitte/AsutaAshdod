@@ -1,0 +1,15 @@
+<template>
+    <template if:true={isSurgeryApp}>
+        <lightning-button 
+            label={label.getPricesBtn}
+            title={label.getPricesBtn}
+            onclick={getPrices} 
+            class="slds-m-left_x-small">
+        </lightning-button>
+    </template>
+    <div class="loaderHolder">
+        <template if:false={loaded}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+    </div>
+</template>

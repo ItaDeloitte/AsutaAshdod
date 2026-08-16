@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surgery_Canacel_Reason__c</fullName>
+    <label>Surgery Cancellation  Sub Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MAIN_CANCELATION_CAUSE_SURGERY__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>שינוי במצב הרפואי</fullName>
+                <default>false</default>
+                <label>שינוי במצב הרפואי</label>
+            </value>
+            <value>
+                <fullName>מדדים לא תקינים</fullName>
+                <default>false</default>
+                <label>מדדים לא תקינים</label>
+            </value>
+            <value>
+                <fullName>מטופל מדווח על חולי</fullName>
+                <default>false</default>
+                <label>מטופל מדווח על חולי</label>
+            </value>
+            <value>
+                <fullName>סוכר גבוה</fullName>
+                <default>false</default>
+                <label>סוכר גבוה</label>
+            </value>
+            <value>
+                <fullName>BMI</fullName>
+                <default>false</default>
+                <label>BMI</label>
+            </value>
+            <value>
+                <fullName>נדרש יעוץ מומחה</fullName>
+                <default>false</default>
+                <label>נדרש יעוץ מומחה</label>
+            </value>
+            <value>
+                <fullName>זיהום</fullName>
+                <default>false</default>
+                <label>זיהום</label>
+            </value>
+            <value>
+                <fullName>אין צורך בניתוח</fullName>
+                <default>false</default>
+                <label>אין צורך בניתוח</label>
+            </value>
+            <value>
+                <fullName>קורונה</fullName>
+                <default>false</default>
+                <label>קורונה</label>
+            </value>
+            <value>
+                <fullName>צום</fullName>
+                <default>false</default>
+                <label>צום</label>
+            </value>
+            <value>
+                <fullName>תרופות</fullName>
+                <default>false</default>
+                <label>תרופות</label>
+            </value>
+            <value>
+                <fullName>בדיקות חסרות</fullName>
+                <default>false</default>
+                <label>בדיקות חסרות</label>
+            </value>
+            <value>
+                <fullName>תרופות לפני ניתוח</fullName>
+                <default>false</default>
+                <label>תרופות לפני ניתוח</label>
+            </value>
+            <value>
+                <fullName>הפסקת עישון</fullName>
+                <default>false</default>
+                <label>הפסקת עישון</label>
+            </value>
+            <value>
+                <fullName>נדרש טרום בשנית</fullName>
+                <default>false</default>
+                <label>נדרש טרום בשנית</label>
+            </value>
+            <value>
+                <fullName>בעיה בציוד</fullName>
+                <default>false</default>
+                <label>בעיה בציוד</label>
+            </value>
+            <value>
+                <fullName>העדר מוכנות חדר ניתוח</fullName>
+                <default>false</default>
+                <label>העדר מוכנות חדר ניתוח</label>
+            </value>
+            <value>
+                <fullName>איחור הרופא המנתח</fullName>
+                <default>false</default>
+                <label>איחור הרופא המנתח</label>
+            </value>
+            <value>
+                <fullName>החתמה על הסכמה מדעת</fullName>
+                <default>false</default>
+                <label>החתמה על הסכמה מדעת</label>
+            </value>
+            <value>
+                <fullName>התחייבות</fullName>
+                <default>false</default>
+                <label>התחייבות</label>
+            </value>
+            <value>
+                <fullName>הפניה</fullName>
+                <default>false</default>
+                <label>הפניה</label>
+            </value>
+            <value>
+                <fullName>תשלומים</fullName>
+                <default>false</default>
+                <label>תשלומים</label>
+            </value>
+            <value>
+                <fullName>פקדון</fullName>
+                <default>false</default>
+                <label>פקדון</label>
+            </value>
+            <value>
+                <fullName>התקף חרדה, לחץ</fullName>
+                <default>false</default>
+                <label>התקף חרדה, לחץ</label>
+            </value>
+            <value>
+                <fullName>דת (שמירת שבת)</fullName>
+                <default>false</default>
+                <label>דת (שמירת שבת)</label>
+            </value>
+            <value>
+                <fullName>התחרט</fullName>
+                <default>false</default>
+                <label>התחרט</label>
+            </value>
+            <value>
+                <fullName>יחס לקוי</fullName>
+                <default>false</default>
+                <label>יחס לקוי</label>
+            </value>
+            <value>
+                <fullName>עיכוב בהמתנה</fullName>
+                <default>false</default>
+                <label>עיכוב בהמתנה</label>
+            </value>
+            <value>
+                <fullName>יחס המנתח</fullName>
+                <default>false</default>
+                <label>יחס המנתח</label>
+            </value>
+            <value>
+                <fullName>יחס צוות אסותא</fullName>
+                <default>false</default>
+                <label>יחס צוות אסותא</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>שינוי במצב הרפואי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>מדדים לא תקינים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>מטופל מדווח על חולי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>סוכר גבוה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>BMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>נדרש יעוץ מומחה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>זיהום</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>אין צורך בניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>מצב בריאותי</controllingFieldValue>
+            <valueName>קורונה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>הכנה לניתוח לקויה</controllingFieldValue>
+            <valueName>צום</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>הכנה לניתוח לקויה</controllingFieldValue>
+            <valueName>תרופות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>הכנה לניתוח לקויה</controllingFieldValue>
+            <valueName>בדיקות חסרות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>הכנה לניתוח לקויה</controllingFieldValue>
+            <valueName>תרופות לפני ניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>הכנה לניתוח לקויה</controllingFieldValue>
+            <valueName>הפסקת עישון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>הכנה לניתוח לקויה</controllingFieldValue>
+            <valueName>נדרש טרום בשנית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>תפעולי</controllingFieldValue>
+            <valueName>בעיה בציוד</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>תפעולי</controllingFieldValue>
+            <valueName>העדר מוכנות חדר ניתוח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>תפעולי</controllingFieldValue>
+            <valueName>איחור הרופא המנתח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אדמיניסטרטיבי</controllingFieldValue>
+            <valueName>החתמה על הסכמה מדעת</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אדמיניסטרטיבי</controllingFieldValue>
+            <valueName>התחייבות</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אדמיניסטרטיבי</controllingFieldValue>
+            <valueName>הפניה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אדמיניסטרטיבי</controllingFieldValue>
+            <valueName>תשלומים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אדמיניסטרטיבי</controllingFieldValue>
+            <valueName>פקדון</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשת המנותח</controllingFieldValue>
+            <valueName>התקף חרדה, לחץ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשת המנותח</controllingFieldValue>
+            <valueName>דת (שמירת שבת)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>בקשת המנותח</controllingFieldValue>
+            <valueName>התחרט</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירותי</controllingFieldValue>
+            <valueName>יחס לקוי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירותי</controllingFieldValue>
+            <valueName>עיכוב בהמתנה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירותי</controllingFieldValue>
+            <valueName>יחס המנתח</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>שירותי</controllingFieldValue>
+            <valueName>יחס צוות אסותא</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

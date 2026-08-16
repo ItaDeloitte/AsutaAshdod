@@ -1,0 +1,4 @@
+<design:component>
+  <design:attribute name="utilityLabel" label="Label" description="Label (required and must be same as above label)"
+                    placeholder="Must be same as above label" required="true" />
+</design:component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Callback_Required_Assuta_Family</fullName>
+    <active>true</active>
+    <description>callback required if stage is &quot;task:return to patient&quot;</description>
+    <errorConditionFormula>AND($RecordType.DeveloperName = &quot;Assuta_Family&quot;, 
+    ISPICKVAL(StageName,&apos;Task: Return to patient&apos;),
+    ISBLANK(CallBack__c)
+)</errorConditionFormula>
+    <errorDisplayField>CallBack__c</errorDisplayField>
+    <errorMessage>נא להזין תאריך יעד לחזרה</errorMessage>
+</ValidationRule>

@@ -1,0 +1,64 @@
+<aura:component extends="c:AppointmentsBase">
+  <!-- attrs -->
+  <aura:attribute name="class" type="String" default="" />
+  <aura:attribute name="day" type="Map" />
+  <aura:attribute name="selectedDay" type="Map" />
+  <aura:attribute name="formattedDate" type="String" />
+  <aura:attribute name="staticData" type="Map" />
+  <aura:attribute name="lockedData" type="Map" />
+  <aura:attribute name="isLocked" type="Boolean" default="false" />
+  <aura:attribute name="rowIndex" type="Integer" />
+  <aura:attribute name="selectedRow" type="Integer" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <aura:handler name="change" value="{!v.lockedData}" action="{!c.onChangeLockedData}" />
+  <!-- events -->
+  <aura:registerEvent name="onDaySelect" type="c:GenericComponentEvent" />
+  <!-- methods -->
+
+  <div class="{!join(' ',
+    v.class
+  )}">
+    <div class="{!join(' ',
+    'day-wrapper',
+    and(
+      v.selectedDay,
+      and(
+        v.selectedDay.uniqKey==v.day.uniqKey,
+        v.selectedRow==v.rowIndex
+      )
+    )?'is-selected':'',
+    v.isLocked?'is-locked':''
+    )}">
+      <div class="p-2" onclick="{!c.onSelectDay}">
+        <div class="bs-container-fluid-sm times-header">
+          <div class="bs-row flex-nowrap">
+            <div class="bs-col">
+              <div class="font-weight-bold day">
+                <span class="day__week">
+                  {!v.formattedDate}
+                </span>&nbsp;
+                <lightning:formattedDateTime value="{!v.day.targetDate}" year="2-digit" month="2-digit" day="2-digit" />
+              </div>
+              <div class="mb-1 jewish-date">
+                {!v.day.jewishDate}
+              </div>
+            </div>
+            <aura:if isTrue="{!v.day.isHoliday}">
+              <div class="bs-col-auto d-flex align-items-center">
+                <div class="holiday-icon">
+                  <div class="tooltip">
+                    <span class="tooltiptext">{!v.day.holidayLabel}</span>
+                    <c:SvgIcon src="{!$Resource.appointments + '/assets/sprite.svg#icon-holiday'}"
+                    alternativeText="holiday" />                    
+                  </div>
+                </div>
+              </div>
+            </aura:if>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</aura:component>

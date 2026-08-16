@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cancellation Sub Reason --></label>
+    <name>Cancellation_Sub_Reason__c</name>
+    <picklistValues>
+        <masterLabel>ECG</masterLabel>
+        <translation><!-- ECG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חום</masterLabel>
+        <translation><!-- חום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צינון</masterLabel>
+        <translation><!-- צינון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיעול</masterLabel>
+        <translation><!-- שיעול --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

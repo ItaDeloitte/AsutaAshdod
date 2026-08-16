@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agent_cant_schedule_appointment_passed</fullName>
+    <active>false</active>
+    <description>נציג לא יכול לקבוע תור אם מועד התור חלף</description>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004QaYNQA0&apos;)  &amp;&amp;
+Date_of_appointment__c &lt; TODAY() &amp;&amp; 
+OR(
+ISCHANGED(Date_of_appointment__c),ISNEW()
+)
+&amp;&amp;  OR($Profile.Name = &quot;SalesForce_Agent360Grp&quot;, $Profile.Name = &quot;Agent 360&quot;, $Profile.Name = &quot;Agent&quot;)</errorConditionFormula>
+    <errorMessage>לא ניתן לקבוע תור אם מועד התור חלף</errorMessage>
+</ValidationRule>

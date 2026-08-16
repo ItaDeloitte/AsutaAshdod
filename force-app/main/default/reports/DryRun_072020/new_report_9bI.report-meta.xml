@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Medical_Procedure_1__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Medical_Procedure_2__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Medical_Procedure_3__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Medical_Procedure_4__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.Doctor_Account__c</field>
+    </columns>
+    <columns>
+        <field>Referral_from_doctor_website__c.PayerFactor__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>פניות מאתר רופאים השבוע</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Referral_from_doctor_website__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

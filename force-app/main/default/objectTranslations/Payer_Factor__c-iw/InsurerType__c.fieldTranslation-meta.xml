@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- סוג לקוח גג --></label>
+    <name>InsurerType__c</name>
+    <picklistValues>
+        <masterLabel>חברת ביטוח</masterLabel>
+        <translation><!-- חברת ביטוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סוכן</masterLabel>
+        <translation><!-- סוכן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרטי</masterLabel>
+        <translation><!-- פרטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קופת חולים</masterLabel>
+        <translation><!-- קופת חולים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קופת חולים - שב&quot;ן</masterLabel>
+        <translation><!-- קופת חולים - שב&quot;ן --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

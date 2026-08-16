@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title={title} icon-name={icon}>
+        <div class="slds-m-around_medium">
+            <lightning-record-view-form object-api-name={objectApiName} record-id={searchedRecordId} density="compact">
+                <template for:each={fieldPaths} for:item="nameField" for:index="index">
+                    <lightning-output-field key={nameField.index} class="border" field-name={nameField}> </lightning-output-field>
+                </template>
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</template>

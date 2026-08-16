@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_Opp_Psychotherapy</fullName>
+    <active>true</active>
+    <description>חובה למלא מספר טלפון במידה וערך השדה &apos;אופן זימון התור&apos; הוא על ידי המטופל בדיגיטל</description>
+    <errorConditionFormula>AND( ISPICKVAL(SchedulingMethod__c ,&apos;זימון על ידי המטופל בדיגיטל&apos;), ISBLANK(Phone__c) )</errorConditionFormula>
+    <errorDisplayField>Phone__c</errorDisplayField>
+    <errorMessage>חובה למלא מספר טלפון במידה ואופן זימון התור הוא על ידי המטופל בדיגיטל</errorMessage>
+</ValidationRule>

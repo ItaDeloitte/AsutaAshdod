@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>360 - סגור</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>הועבר למחלקה אונקולוגית</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>המלצה למומחה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>המלצה למומחה%2Fבדיקה%2Fצנתור</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>התקבלו תוצאות ביופסיה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>התקשרות מול רופא</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>זימון לבדיקה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>זימון למומחה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>ממתין</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>ממתין למועד בדיקת MRI%2FPET CT</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>ממתין למועד ביופסיה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>ממתין לקביעת ביופסיה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>ממתין לקביעת תור ל-MRI%2FPET CT%2Fמחלקה אונקולוגית</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>ממתין לקביעת תור ממוטומיה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>ממתין לתוצאות ביופסיה</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>ממתין לתוצאת בדיקת MRI%2FPET CT</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>נדרשת המלצה%2Fקביעת תור לכירורג שד</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>ניהול סיכונים</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>נקבע תור לניתוח</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>סגירת אירוע אוטומטית</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

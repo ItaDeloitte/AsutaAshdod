@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case 360 Status --></label>
+    <name>Case_360_Status__c</name>
+    <picklistValues>
+        <masterLabel>הועבר למחלקה אונקולוגית</masterLabel>
+        <translation><!-- הועבר למחלקה אונקולוגית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקבלו תוצאות ביופסיה חיובית</masterLabel>
+        <translation><!-- התקבלו תוצאות ביופסיה חיובית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקבלו תוצאות ביופסיה לא רלוונטי</masterLabel>
+        <translation><!-- התקבלו תוצאות ביופסיה לא רלוונטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקבלו תוצאות ביופסיה שלילית</masterLabel>
+        <translation><!-- התקבלו תוצאות ביופסיה שלילית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקשרות מול רופא</masterLabel>
+        <translation><!-- התקשרות מול רופא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין למועד בדיקת MRI/PET CT</masterLabel>
+        <translation><!-- ממתין למועד בדיקת MRI/PET CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין למועד ביופסיה</masterLabel>
+        <translation><!-- ממתין למועד ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לקביעת ביופסיה</masterLabel>
+        <translation><!-- ממתין לקביעת ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</masterLabel>
+        <translation><!-- ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לתוצאות ביופסיה</masterLabel>
+        <translation><!-- ממתין לתוצאות ביופסיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לתוצאת בדיקת MRI/PET CT</masterLabel>
+        <translation><!-- ממתין לתוצאת בדיקת MRI/PET CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדרשת המלצה/קביעת תור לכירורג שד</masterLabel>
+        <translation><!-- נדרשת המלצה/קביעת תור לכירורג שד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נקבע תור לניתוח</masterLabel>
+        <translation><!-- נקבע תור לניתוח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סגירת אירוע אוטומטית</masterLabel>
+        <translation><!-- סגירת אירוע אוטומטית --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

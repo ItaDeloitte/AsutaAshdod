@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Mammography_Reminder_Type_2</label>
+    <protected>false</protected>
+    <values>
+        <field>SMS_Content__c</field>
+        <value xsi:type="xsd:string">שלום {0}, להזכירך, נקבע לך תור שיתקיים ב- {1} בתאריך {2}, יום {3} בשעה {4}. אחת מכל 9 נשים תחלה במהלך חייה בסרטן השד. 
+בדיקת ממוגרפיה היא היעילה ביותר לגילוי מוקדם של סרטן השד ומעלה את סיכויי ההחלמה ממנו. לאישור הגעה יש להיכנס ללינק הבא: {5}
+בברכה, אסותא</value>
+    </values>
+    <values>
+        <field>SMS_From__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SMS_Note__c</field>
+        <value xsi:type="xsd:string">שם פרטי של מטופל = {0} ,אתר = {1} , תאריך = {2} ,יום = {3}, שעה = {4} ,לינק לאישור הגעה = {5}</value>
+    </values>
+</CustomMetadata>

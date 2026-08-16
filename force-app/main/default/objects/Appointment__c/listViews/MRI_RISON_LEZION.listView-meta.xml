@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRI_RISON_LEZION</fullName>
+    <columns>Calendar__c</columns>
+    <columns>Medical_Procedure__c</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>IDNumber__c</columns>
+    <columns>PHONE__c</columns>
+    <columns>Remainder_status__c</columns>
+    <columns>Have_you_read_medical_instructors__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Domain__c</field>
+        <operation>contains</operation>
+        <value>M.R.I</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>ראשל&quot;צ</value>
+    </filters>
+    <filters>
+        <field>Date_of_appointment__c</field>
+        <operation>equals</operation>
+        <value>NEXT_N_DAYS:3</value>
+    </filters>
+    <filters>
+        <field>Appointment_Status__c</field>
+        <operation>notEqual</operation>
+        <value>TookPlace,Signature,Canceled,WaitingForCanceled</value>
+    </filters>
+    <label>סטטוס תזכורים - MRI אסותא ראשון לציון</label>
+</ListView>

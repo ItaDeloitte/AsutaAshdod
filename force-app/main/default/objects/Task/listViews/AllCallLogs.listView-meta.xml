@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllCallLogs</fullName>
+    <columns>SUBJECT</columns>
+    <columns>Caller__c</columns>
+    <columns>STATUS</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>ETL_unique_Identifier__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SUBJECT</field>
+        <operation>equals</operation>
+        <value>Call</value>
+    </filters>
+    <label>כל תיעודי השיחות</label>
+</ListView>

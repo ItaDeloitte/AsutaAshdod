@@ -1,0 +1,25 @@
+<template>
+        <template if:true={isMaccabiRef}>
+            <lightning-button 
+                label="פנה שנית לקבלת הפניות"
+                title="פנה שנית לקבלת הפניות"
+                onclick={getReferralsHithaivuyot} 
+                class="slds-m-left_x-small"
+                disabled={isButtonClicked}
+                >
+            </lightning-button>
+        </template>
+        <template if:true={isMaccabiComm}>
+            <lightning-button 
+                label={label.btnTitle}
+                title={label.btnTitle}
+                onclick={getHithaivuyot} 
+                class="slds-m-left_x-small">
+            </lightning-button>
+        </template>
+        <div class="loaderHolder">
+            <template if:false={loaded}>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </template>
+        </div>
+</template>

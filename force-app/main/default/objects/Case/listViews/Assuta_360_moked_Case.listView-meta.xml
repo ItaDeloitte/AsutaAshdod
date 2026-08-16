@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assuta_360_moked_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Case_Origin_Icon__c</columns>
+    <columns>Memo_refferal_doctor__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>toaddressemail__c</field>
+        <operation>notEqual</operation>
+        <value>elizabethd@assuta.co.il,iditn@assuta.co.ilriotyadbyad@assuta.co.il,yadbyadlang@assuta.co.il,yadbyadgi@assuta.co.il</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Case.Assuta_360,Case.ClosedAssuta360</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,סגור,Caneclled</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notEqual</operation>
+        <value>Idit Negushever,elizabeth dudnik</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>notEqual</operation>
+        <value>elizabethd@assuta.co.il,iditn@assuta.co.ilriotyadbyad@assuta.co.il,yadbyadlang@assuta.co.il,yadbyadgi@assuta.co.il</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Appointments</value>
+    </filters>
+    <label>משימות יד ביד</label>
+    <queue>QM_90_371</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>MessagingSession$Name</field>
+    </columns>
+    <columns>
+        <field>MessagingSession$Case</field>
+    </columns>
+    <description>פירוט שיחות</description>
+    <format>Tabular</format>
+    <name>פירוט שיחות מסגינג</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Messaging_Sessions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MessagingSession$AcceptTime</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

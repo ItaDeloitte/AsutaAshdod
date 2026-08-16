@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shaban_icon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( PayerFactor__c ),&quot;&quot;,
+IF( PayerFactor__r.InsuranceCode__c =&quot;31&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cgI5&amp;oid=00DKI000000MTJU&amp;lastMod=1561980859000&quot;, &quot;&quot; , 30, 30),
+IF( PayerFactor__r.InsuranceCode__c =&quot;35&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cgI0&amp;oid=00DKI000000MTJU&amp;lastMod=1561980796000&quot;, &quot;&quot; , 30, 30), 
+IF( PayerFactor__r.InsuranceCode__c =&quot;422&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cgIA&amp;oid=00DKI000000MTJU&amp;lastMod=1561980893000&quot;, &quot;&quot; , 30, 30), 
+IF( PayerFactor__r.InsuranceCode__c =&quot;974631&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cgIF&amp;oid=00DKI000000MTJU&amp;lastMod=1561980952000&quot;, &quot;&quot; , 30, 30), 
+IF( PayerFactor__r.InsuranceCode__c =&quot;7&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cgIP&amp;oid=00DKI000000MTJU&amp;lastMod=1561981285000&quot;, &quot;&quot; , 30, 30), 
+IF( PayerFactor__r.InsuranceCode__c =&quot;47&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cgIU&amp;oid=00DKI000000MTJU&amp;lastMod=1561983999000&quot;, &quot;&quot; , 30, 30), 
+IF( PayerFactor__r.InsuranceCode__c =&quot;411&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cgIZ&amp;oid=00DKI000000MTJU&amp;lastMod=1561982138000&quot;, &quot;&quot; , 30, 30),
+IF( PayerFactor__r.InsuranceCode__c =&quot;412&quot;, IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cgIe&amp;oid=00DKI000000MTJU&amp;lastMod=1561982177000&quot;, &quot;&quot; , 30, 30), &quot;&quot;   
+)))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Shaban Icon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

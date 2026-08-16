@@ -1,0 +1,77 @@
+.timeline_container{
+    width: 100% !Important;
+}
+
+.subTitle{
+    max-width: 45%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bodyField{
+    max-width: 100% !Important;
+}
+
+.fieldName{
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(1, 59, 109);
+}
+
+.subTitle:hover{
+    overflow: visible;
+    white-space: normal;
+}
+
+.slds-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.media_figure {
+    z-index: 1;
+}
+
+.slds-timeline__item_all:before {
+    margin-top: 34px;
+    height: 54%;
+    margin-right: 0.8%;
+}
+
+.slds-timeline_item_expanded:before {
+    height: 84%;
+}
+
+.slds-timeline__item_case:before {
+    background: #f2cf5b;
+}
+
+.slds-timeline__item_appointment:before {
+    background: #0eb58a;
+}
+
+.slds-icon-standard-files:before {
+    background: #f87d76;
+}
+
+.slds-icon-standard-dis:before {
+    background: #ff7b84;
+}
+
+.slds-icon-standard-cont:before{
+    background: #a094ed;
+}
+
+.slds-timeline__item_expandable {
+    margin-left: 0.5rem;
+}
+
+.slds-icon_container_all {
+    margin-left: 0.25rem;
+}
+
+.timeline_date{
+    font-size: 0.89em;
+    color: #505050;
+}

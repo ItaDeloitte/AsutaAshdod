@@ -1,0 +1,62 @@
+.frame {
+    border: 1px solid rgb(221, 219, 218);
+    border-radius: .25rem;
+    width: 100%;
+    background: white;
+    direction: rtl;
+    padding-right: 2%;
+}
+
+.inputsBlock {
+    display: inline-flex;
+    margin: 5px;
+    max-width: 100%;
+}
+
+.separator {
+    width: 20px;
+}
+
+.separtorTop{
+    padding-top: 6.7%;
+  }
+
+.slds-button_neutral, .slds-button--neutral {
+    width: 162%;
+}
+
+.fontBold{
+    font-weight: bold;
+}
+
+.combo {
+    width: 57%
+}
+
+.loaderHolder{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    width: 55px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.linkText {
+    direction: ltr;
+    text-align: right;
+    margin-bottom: 1%;
+    text-decoration: underline;
+}
+
+.slds-card__body {
+    margin-top: .75rem;
+}
+
+.error {
+    color: red;
+    margin: 15px;
+    padding-bottom: 10px;
+    white-space: pre-line;
+    font-weight: normal;
+}

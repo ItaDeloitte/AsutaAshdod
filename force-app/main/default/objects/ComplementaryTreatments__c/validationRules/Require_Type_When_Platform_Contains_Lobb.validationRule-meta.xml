@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Type_When_Platform_Contains_Lobb</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        CONTAINS(TEXT(Platform__c), &quot;Lobby&quot;),
+        CONTAINS(TEXT(Platform__c), &quot;לובי&quot;)
+    ),
+    ISPICKVAL(Type__c, &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Type__c</errorDisplayField>
+    <errorMessage>Type is required when Platform contains &quot;Lobby&quot;</errorMessage>
+</ValidationRule>

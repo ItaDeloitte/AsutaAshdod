@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Competitors Name --></label>
+    <name>Competitors_Name__c</name>
+    <picklistValues>
+        <masterLabel>Ashdod Public Hospital</masterLabel>
+        <translation><!-- Ashdod Public Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assaf Harofeh Hospital</masterLabel>
+        <translation><!-- Assaf Harofeh Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barzilai Hospital</masterLabel>
+        <translation><!-- Barzilai Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blinson Hospital</masterLabel>
+        <translation><!-- Blinson Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bnei Zion Hospital</masterLabel>
+        <translation><!-- Bnei Zion Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hadassah Hospital</masterLabel>
+        <translation><!-- Hadassah Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hillel Yaffe Hospital</masterLabel>
+        <translation><!-- Hillel Yaffe Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ichilov Hospital</masterLabel>
+        <translation><!-- Ichilov Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kaplan Hospital</masterLabel>
+        <translation><!-- Kaplan Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laniado Hospital</masterLabel>
+        <translation><!-- Laniado Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rambam Hospital</masterLabel>
+        <translation><!-- Rambam Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shaare Zedek Hospital</masterLabel>
+        <translation><!-- Shaare Zedek Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soroka Hospital</masterLabel>
+        <translation><!-- Soroka Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tel Hashomer Hospital</masterLabel>
+        <translation><!-- Tel Hashomer Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wolfson Hospital</masterLabel>
+        <translation><!-- Wolfson Hospital --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

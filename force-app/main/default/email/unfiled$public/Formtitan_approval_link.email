@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><br></div><div><div style="font-size: 12pt; direction: rtl;">שלום,&nbsp;</div><div style="font-size: 12pt; direction: rtl;"><br></div><div style="font-size: 12pt; direction: rtl;">הרופא&nbsp; {!Account.Name} עדכן את הפרופיל האישי שלו.&nbsp;</div><div style="font-size: 12pt; direction: rtl;">אנא היכנס ללינק ואשר את השינויים:&nbsp;</div><div style="direction: rtl;"><font face="arial">{!Account.Formtitan_approval_link__c}</font></div><div style="font-size: 12pt; direction: rtl;"><br></div><div style="font-size: 12pt; direction: rtl;"><br></div><div style="font-size: 12pt; direction: rtl;"><br></div><div style="font-size: 12pt; direction: rtl;">תודה</div><div style="font-size: 12pt; direction: ltr;"><br style="background-color: rgb(255, 255, 255);"></div></div>]]></td>
+</tr>
+</table>

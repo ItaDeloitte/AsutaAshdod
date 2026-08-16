@@ -1,0 +1,5 @@
+<design:component >
+    <design:attribute name="componentHeader" label="Header title"/>
+    <design:attribute name="caseRTDeveloperName" label="Case RT Developer Name"/>
+    <design:attribute name="appointmentRTDeveloperName" label="Appointment RT Developer Name"/>
+</design:component>

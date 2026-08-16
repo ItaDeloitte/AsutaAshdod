@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agamon</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Site_Appointment__c</columns>
+    <columns>Score__c</columns>
+    <columns>Recommendation_Type_Agamon__c</columns>
+    <columns>Recommendation_Description_Agamon__c</columns>
+    <columns>Recommendation_Sub_Type_Agamon__c</columns>
+    <columns>Referral_Doctor_Text__c</columns>
+    <columns>Referral_Doctor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site_Appointment__c</field>
+        <operation>notContain</operation>
+        <value>סמסון</value>
+    </filters>
+    <filters>
+        <field>Appointment_Time__c</field>
+        <operation>greaterThan</operation>
+        <value>2/1/2026 12:00 AM</value>
+    </filters>
+    <label>אגמון</label>
+</ListView>

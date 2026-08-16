@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>otp_success__c</fullName>
+    <label>OTP Success?</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>title__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>הצליח</fullName>
+                <default>false</default>
+                <label>הצליח</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>בסיסי</controllingFieldValue>
+            <controllingFieldValue>רגיל</controllingFieldValue>
+            <controllingFieldValue>מחמיר</controllingFieldValue>
+            <valueName>הצליח</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

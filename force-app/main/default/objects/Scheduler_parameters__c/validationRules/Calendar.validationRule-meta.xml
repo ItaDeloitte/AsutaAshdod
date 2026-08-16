@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calendar</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Action_Type__c , &apos;חיפוש לפי יומן&apos;), 
+ISBLANK( Calendar__c ))</errorConditionFormula>
+    <errorDisplayField>Calendar__c</errorDisplayField>
+    <errorMessage>כדי לשמור את הרשומה יש לבחור ערכים בשדות יומן/אתר</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>reachedSlaIcon__c</fullName>
+    <description>יציג אייקון אם ההזדמנות חורגת SLA</description>
+    <externalId>false</externalId>
+    <formula>IF ( ( OpportunityOpenTime__c &gt;= 1), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.FileDownload?file=0154J000000KBxN&quot;, &quot;&quot; ,40,40), &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>reachedSlaIcon</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

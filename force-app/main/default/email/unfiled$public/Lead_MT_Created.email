@@ -1,0 +1,10 @@
+שלום,
+
+נוצר ליד חדש של תיירות מרפא עם פרטים הבאים:
+שם פרטי : {!Lead.FirstName}
+שם משפחה : {!Lead.LastName}
+טלפון : {!Lead.Phone}
+דואר אלקטרוני : {!Lead.Email}
+מדינה : {!Lead.Country}
+קמפיין : {!Lead.Campaign__c}
+מקור הליד : {!Lead.LeadSource}

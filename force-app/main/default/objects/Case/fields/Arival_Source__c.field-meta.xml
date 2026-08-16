@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arival_Source__c</fullName>
+    <label>Arival Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Doctor</fullName>
+                <default>false</default>
+                <label>רופא</label>
+            </value>
+            <value>
+                <fullName>Secretary</fullName>
+                <default>false</default>
+                <label>מזכירה</label>
+            </value>
+            <value>
+                <fullName>Staff</fullName>
+                <default>false</default>
+                <label>איש צוות במחלקה</label>
+            </value>
+            <value>
+                <fullName>Ad</fullName>
+                <default>false</default>
+                <label>פרסומת</label>
+            </value>
+            <value>
+                <fullName>Internet</fullName>
+                <default>false</default>
+                <label>אינטרנט</label>
+            </value>
+            <value>
+                <fullName>PatientFriend</fullName>
+                <default>false</default>
+                <label>מטופל/חבר</label>
+            </value>
+            <value>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+                <label>עלון</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>פייסבוק</fullName>
+                <default>false</default>
+                <label>פייסבוק</label>
+            </value>
+            <value>
+                <fullName>Recurring Patient</fullName>
+                <default>false</default>
+                <label>מטופל חוזר</label>
+            </value>
+            <value>
+                <fullName>Digital Form</fullName>
+                <default>false</default>
+                <label>בקשה מקוונת</label>
+            </value>
+            <value>
+                <fullName>Internal Data</fullName>
+                <default>false</default>
+                <label>Internal Data</label>
+            </value>
+            <value>
+                <fullName>Lobby – Pre Surgery</fullName>
+                <default>false</default>
+                <label>Lobby – Pre Surgery</label>
+            </value>
+            <value>
+                <fullName>Lobby – Post Surgery</fullName>
+                <default>false</default>
+                <label>Lobby – Post Surgery</label>
+            </value>
+            <value>
+                <fullName>Order Summary Screen</fullName>
+                <default>false</default>
+                <label>Order Summary Screen</label>
+            </value>
+            <value>
+                <fullName>Personal Area: Dashboard</fullName>
+                <default>false</default>
+                <label>Personal Area: Dashboard</label>
+            </value>
+            <value>
+                <fullName>Personal Area: Results &amp; Summaries</fullName>
+                <default>false</default>
+                <label>Personal Area: Results &amp; Summaries</label>
+            </value>
+            <value>
+                <fullName>Personal Area: Upcoming Surgery</fullName>
+                <default>false</default>
+                <label>Personal Area: Upcoming Surgery</label>
+            </value>
+            <value>
+                <fullName>Secretary Dashboard</fullName>
+                <default>false</default>
+                <label>Secretary Dashboard</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

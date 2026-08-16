@@ -1,0 +1,64 @@
+<aura:component extends="c:AppointmentsBase" implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+ access="global">
+  <!-- attrs -->
+  <aura:attribute name="modalParams" type="Map" default="{}" />
+  <aura:attribute name="serverError" type="String" default="" />
+  <aura:attribute name="labels" type="Map" default="{}" />
+  <aura:attribute name="patientId" type="String" default="" />
+  <aura:attribute name="idType" type="String" default="" />
+  <aura:attribute name="email" type="String" default="" /> 
+  <aura:attribute name="isChecked" type="Boolean" default="false" />    
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div class="slds-is-relative">
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <c:ActionModalInner applyStyles="true">
+      <aura:set attribute="styles">
+        <aura:html tag="style">
+          .slds-modal__container { width:80%;max-width:600px;}
+        </aura:html>
+      </aura:set>
+        <aura:set attribute="title">
+          <span class="font-weight-bold">{!v.labels.FillPatientEmailTitle}</span>
+        </aura:set>
+
+        <div class="slds-p-around_medium">
+          <aura:if isTrue="{!v.serverError}">
+            <div class="">
+              <c:Alert theme="error">
+                <div>
+                  <aura:unescapedHtml value="{!v.serverError}" />
+                </div>
+              </c:Alert>
+            </div>
+          </aura:if>
+
+          <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size_1-of-1">
+              <div class="slds-m-bottom_small">
+                <lightning:input aura:id="editField" type="email" name="email" required= "{!!v.isChecked}"
+                                 label="{!v.labels.Email}" value="{!v.email}" placeholder="{!v.labels.Email}" />
+              </div>
+              <div class="slds-m-bottom_small">
+                <lightning:input aura:id="editField" type="checkbox" name="notEmail" checked="{!v.isChecked}"
+                                 label="{!v.labels.NoEmailForPatient}" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <aura:set attribute="footer">
+          <lightning:button variant="neutral" type="button" onclick="{!c.onCancel}" disabled="{!v.isLoading}"
+                            label="{!v.labels.Cancel}" />
+          <lightning:button variant="brand" type="button" onclick="{!c.onSubmit}" disabled="{!v.isLoading}"
+                            label="{!v.labels.Submit}" />
+        </aura:set>
+      </c:ActionModalInner>
+    <c:Spinner isLoading="{!v.isLoading}" size="medium" />
+  </div>
+</aura:component>

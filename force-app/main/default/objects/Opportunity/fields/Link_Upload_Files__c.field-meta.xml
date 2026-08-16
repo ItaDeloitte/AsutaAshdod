@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_Upload_Files__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/UploadFilesAccount?fld38=&quot;&amp; AccountId*/
+
+&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;if( Campaign.Name = &apos;תיירות מרפא- אנגלית&apos;,&quot;/UploadFilesEnglish?fld38=&quot;,if( Campaign.Name = &apos;תיירות מרפא- רוסית&apos;, &quot;/UploadFilesRussian?fld38=&quot;,&quot;/UploadFilesAccount?fld38=&quot;))&amp;  Case__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Link Upload Files</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

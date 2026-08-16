@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג פעולה</label>
+    <name>Action_Type__c</name>
+    <picklistValues>
+        <masterLabel>הודעת אזהרה</masterLabel>
+        <translation><!-- הודעת אזהרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיפוש לפי יומן</masterLabel>
+        <translation><!-- חיפוש לפי יומן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מניעת זימון</masterLabel>
+        <translation><!-- מניעת זימון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מניעת זימון ושינוי בעלים</masterLabel>
+        <translation><!-- מניעת זימון ושינוי בעלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתאריך</masterLabel>
+        <translation><!-- מתאריך --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

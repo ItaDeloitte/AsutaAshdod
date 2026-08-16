@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital</fullName>
+    <active>true</active>
+    <description>סקר זה ישלח אם הערוץ של הפניה דיגיטלי</description>
+    <label>סקר - לערוץ דיגיטלי</label>
+</RecordType>

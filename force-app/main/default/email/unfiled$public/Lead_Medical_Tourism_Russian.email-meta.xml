@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Lead Medical Tourism Russian</name>
+    <style>none</style>
+    <subject>Автоматический ответ- больница Ассута</subject>
+    <textOnly>Assuta Mail
+
+Благодарим Вас за обращение на официальный сайт больницы &quot;Ассута&quot;
+Мы получили Ваш запрос, и один из наших представителей свяжется с Вами в ближайшее время.
+С уважением,
+Ассута</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

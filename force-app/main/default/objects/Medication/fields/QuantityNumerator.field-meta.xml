@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuantityNumerator</fullName>
+    <inlineHelpText>הכמות הכוללת של התרופה הנכללת במוצר הארוז. אם מינון התרופה הוא יחס, ציין את ערך המונה. אם מינון התרופה הוא טווח, ציין את ערך המינון התחתון. אם מינון התרופה הוא מנה פשוטה, ציין את הכמות. דוגמאות: אם הכמות היא 10 יחידות/מ&quot;ל, הזן 10 בשדה זה ו-1 ב&apos;מכנה כמות&apos;. אם הכמות היא 1-2 כדורים/יום, הזן 1 בשדה זה ו-2 ב&apos;מכנה כמות&apos;.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HealthCloudGA__IsVisibleOnPatientCard__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Returns true if value of Status Code field is NOT equal to &apos; Resolved &apos;, else returns false.</description>
+    <formula>IF(  UPPER(HealthCloudGA__StatusLabel__c)   &lt;&gt; &apos;RESOLVED&apos; , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>מחזיר True אם הערך של שדה תווית הסטטוס לא שווה ל&apos;נפתר&apos;, אחרת מחזיר False.</inlineHelpText>
+    <label>IsVisibleOnPatientCard</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

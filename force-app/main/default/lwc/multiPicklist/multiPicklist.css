@@ -1,0 +1,11 @@
+.multipicklist__input {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.multipicklist-dropdown {
+  right: 0;
+  left: 0;
+  transform: none;
+}

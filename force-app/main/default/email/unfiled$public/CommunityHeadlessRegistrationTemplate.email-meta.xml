@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>הודעת דוא&quot;ל שהמשתמשים מקבלים עם הסיסמה החד-פעמית שלהם בתהליך ההרשמה ללא ראש</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Experience Cloud: הודעת דוא&quot;ל עם סיסמה חד-פעמית לצורך אימות בתהליך ההרשמה ללא ראש</name>
+    <style>none</style>
+    <subject>אמת את זהותך ב-{!Community.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

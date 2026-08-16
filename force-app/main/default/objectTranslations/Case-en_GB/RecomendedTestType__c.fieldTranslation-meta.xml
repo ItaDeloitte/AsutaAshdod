@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Recomended Test Type --></label>
+    <name>RecomendedTestType__c</name>
+    <picklistValues>
+        <masterLabel>אקו במאמץ</masterLabel>
+        <translation><!-- אקו במאמץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אקו לב</masterLabel>
+        <translation><!-- אקו לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ארגומטריה</masterLabel>
+        <translation><!-- ארגומטריה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יעוץ רפואי</masterLabel>
+        <translation><!-- יעוץ רפואי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיפוי לב</masterLabel>
+        <translation><!-- מיפוי לב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פניה טלפונית/מייל</masterLabel>
+        <translation><!-- פניה טלפונית/מייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קרדיאק CT</masterLabel>
+        <translation><!-- קרדיאק CT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

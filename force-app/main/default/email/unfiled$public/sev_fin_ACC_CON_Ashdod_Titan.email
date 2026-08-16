@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assuta Mail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<table dir="rtl"
+style="font-family: Arial Hebrew,Arial; direction: rtl; font-size: 1.5em; line-height: 1.6em;">
+<tbody>
+<tr>
+<td colspan="5">
+<div> <img
+src="https://assuta--uat.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015KO000000T7vq&oid=00D7E000000FWtK&lastMod=1739440318000" width="500" height="90" alt> </div>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<p
+<be>
+
+            </h1>
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 2em; line-height: 1.6em;">
+
+               אסותא אשדוד- תהליך זיהוי
+            </h1>
+            <p style="font-family: Arial Hebrew, Arial; direction: rtl; padding-left: 2.5em; padding-right: 3.7em; font-size: 2em; line-height: 1.6em;">
+שלום,
+<br>
+<br>
+קיבלת דואר אלקטרוני מבית החולים הציבורי אסותא אשדוד. 
+<br>
+על מנת לצפות בתוכן יש ללחוץ על הקישור המצורף ולהקליד את מספר תעודת הזהות שלך.
+<br>
+<a href={!AccountContactRelation.Severe_Identification_Approved_Cont_Ashd__c}>כאן</a> 
+<br>
+<br>
+תודה,
+<br>
+בית החולים הציבורי אסותא אשדוד
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<div style=""> <img
+src="https://assuta--uat.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015KO000000T7v2&oid=00D7E000000FWtK&lastMod=1739439817000" width="500" height="200" alt> </div>
+</td>
+</tr>
+<tr>
+<td> <img
+src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM"
+height="1" width="261"> </td>
+<td> <img
+src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM"
+height="1" width="275"> </td>
+<td> <img
+src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM"
+height="1" width="356"> </td>
+<td> <img
+src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM"
+height="1" width="222"> </td>
+<td> <img
+src="https://assuta--c.documentforce.com/servlet/servlet.FileDownload?file=0154J000000JIZM"
+height="1" width="86"> </td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

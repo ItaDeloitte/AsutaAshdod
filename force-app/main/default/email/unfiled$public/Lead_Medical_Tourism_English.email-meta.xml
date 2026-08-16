@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Lead Medical Tourism English</name>
+    <style>none</style>
+    <subject>Automatic reply- Assuta Hospital</subject>
+    <textOnly>Assuta Mail
+
+Welcome to the official website of Assuta Medical Centers,
+Thank you for contacting us.
+Please accept this reply as acknowledgement of receipt of your email.
+One of our representatives will deal with your query as soon as possible.
+Thank you
+Assuta</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

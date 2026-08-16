@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>קרבה</label>
+    <name>Relationship__c</name>
+    <picklistValues>
+        <masterLabel>אב</masterLabel>
+        <translation><!-- אב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אח</masterLabel>
+        <translation><!-- אח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחות</masterLabel>
+        <translation><!-- אחות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אם</masterLabel>
+        <translation><!-- אם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בן</masterLabel>
+        <translation><!-- בן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בן/בת זוג</masterLabel>
+        <translation><!-- בן/בת זוג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בת</masterLabel>
+        <translation><!-- בת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סוכן</masterLabel>
+        <translation><!-- סוכן --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- סוג המלצה --></label>
+    <name>Type_of_recommendation__c</name>
+    <picklistValues>
+        <masterLabel>גסטרו</masterLabel>
+        <translation><!-- גסטרו --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ייעוצים</masterLabel>
+        <translation><!-- ייעוצים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ערמונית</masterLabel>
+        <translation><!-- ערמונית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קרדיאק CT</masterLabel>
+        <translation><!-- קרדיאק CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קרדיולוגיה</masterLabel>
+        <translation><!-- קרדיולוגיה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ריאות</masterLabel>
+        <translation><!-- ריאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שד</masterLabel>
+        <translation><!-- שד --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

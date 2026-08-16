@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlanType</fullName>
+    <inlineHelpText>סוג תוכנית הביטוח שאושרה, מתוך &apos;שם רשת משלם&apos;</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

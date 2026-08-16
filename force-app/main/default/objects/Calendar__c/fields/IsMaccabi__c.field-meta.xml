@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsMaccabi__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>יסומן במידה ומדובר ביומן מכבי</description>
+    <inlineHelpText>יסומן במידה ומדובר ביומן מכבי</inlineHelpText>
+    <label>Is Maccabi Calendar?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

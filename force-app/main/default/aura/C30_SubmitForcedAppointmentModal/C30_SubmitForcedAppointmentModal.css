@@ -1,0 +1,35 @@
+.THIS.modal .modal-container,
+.THIS.modal .slds-modal__container {
+  margin: 0 auto;
+  min-width: 20rem;
+}
+
+.THIS.modal .modal-body,
+.THIS.modal .slds-modal__content {
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+
+.THIS .cActionModalInner .dm-body {
+  padding: 0;
+}
+
+.THIS .confirm-message {
+  font-size: 16px;
+}
+
+.THIS .slot-info__label {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.THIS .color-grey{
+  background : lightgrey;
+  color : black;
+}
+
+.THIS .color-white{
+  background : white;
+  color : black;
+}

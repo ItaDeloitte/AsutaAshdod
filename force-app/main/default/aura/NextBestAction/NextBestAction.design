@@ -1,0 +1,5 @@
+<design:component >
+  <design:attribute name="apiNames" label="Fields to display" description="The api names of fields you want to show." />
+  <design:attribute name="imgLink" label="Image" description="Image's link." />
+  <design:attribute name="componentName" label="Name" description="Header name" />
+</design:component>

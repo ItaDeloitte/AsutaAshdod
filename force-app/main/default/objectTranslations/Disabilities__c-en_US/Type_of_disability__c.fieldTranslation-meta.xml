@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of disability --></label>
+    <name>Type_of_disability__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חירשות</masterLabel>
+        <translation><!-- חירשות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כבד ראייה</masterLabel>
+        <translation><!-- כבד ראייה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כבד שמיעה</masterLabel>
+        <translation><!-- כבד שמיעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מוגבלות בדיבור</masterLabel>
+        <translation><!-- מוגבלות בדיבור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מוגבלות בידיים</masterLabel>
+        <translation><!-- מוגבלות בידיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מוגבלות נפשית</masterLabel>
+        <translation><!-- מוגבלות נפשית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניידות</masterLabel>
+        <translation><!-- ניידות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיוור</masterLabel>
+        <translation><!-- עיוור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קוגנטיביות (הבנה)</masterLabel>
+        <translation><!-- קוגנטיביות (הבנה) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קושי בהתמצאות</masterLabel>
+        <translation><!-- קושי בהתמצאות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תקשורתית (ספקטרום אוטיסטי)</masterLabel>
+        <translation><!-- תקשורתית (ספקטרום אוטיסטי) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

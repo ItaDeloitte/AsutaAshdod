@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מערכת מקור פגישה</label>
+    <name>Source_of_appointment__c</name>
+    <picklistValues>
+        <masterLabel>אתר רופאים</masterLabel>
+        <translation><!-- אתר רופאים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זימון חדר ניתוח ספינקל</masterLabel>
+        <translation><!-- זימון חדר ניתוח ספינקל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ידנית מתוך פנייה</masterLabel>
+        <translation><!-- ידנית מתוך פנייה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owned_By_BOT__c</fullName>
+    <formula>Owner:User.Username=&apos;autoproc@00d4j000000d53ouac&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Owned By BOT</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

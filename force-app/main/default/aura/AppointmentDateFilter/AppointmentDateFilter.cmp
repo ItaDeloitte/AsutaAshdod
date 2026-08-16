@@ -1,0 +1,16 @@
+<aura:component extends="c:AppointmentAbstractFilter">
+  <!-- attrs -->
+  <aura:attribute name="filterName" type="String" default="" />
+  <aura:attribute name="value" type="String" />
+  <aura:attribute name="label" type="String" default="Filter label" />
+  <aura:attribute name="min" type="String" />
+  <!-- handlers -->
+  <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+  <aura:handler name="destroy" value="{!this}" action="{!c.onDestroy}" />
+  <!-- events -->
+  <!-- methods -->
+
+  <div>
+    <lightning:input type="date" value="{!v.value}" onchange="{!c.onChangeInput}" label="{!v.label}" min="{!v.min}" />
+  </div>
+</aura:component>

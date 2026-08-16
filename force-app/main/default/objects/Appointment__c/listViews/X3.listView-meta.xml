@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>PayerFactor__c</columns>
+    <columns>Accession_Number__c</columns>
+    <columns>Appointment_Date_Time__c</columns>
+    <columns>Site__c</columns>
+    <columns>Irrelevant_receipt_from_home__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>Order_Notes__c</columns>
+    <columns>PatientType__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Appointment__c.Institutes</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>equals</operation>
+        <value>חלזיון - מתחם השלום</value>
+    </filters>
+    <filters>
+        <field>PayerFactor__c</field>
+        <operation>contains</operation>
+        <value>פרטי</value>
+    </filters>
+    <label>נטשה 3</label>
+</ListView>

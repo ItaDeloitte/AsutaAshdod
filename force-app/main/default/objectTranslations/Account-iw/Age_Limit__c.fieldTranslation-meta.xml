@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>הגבלת גיל</label>
+    <name>Age_Limit__c</name>
+    <picklistValues>
+        <masterLabel>18 Or More</masterLabel>
+        <translation>מגיל 18 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 10 Or More</masterLabel>
+        <translation>מגיל 10 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 12 Or More</masterLabel>
+        <translation>מגיל 12 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 14 Or More</masterLabel>
+        <translation>מגיל 14 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 15 Or More</masterLabel>
+        <translation>מגיל 15 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 16 Or More</masterLabel>
+        <translation>מגיל 16 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 17 Or More</masterLabel>
+        <translation>מגיל 17 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 2 Or More</masterLabel>
+        <translation>מגיל 2 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 20 Or More</masterLabel>
+        <translation>מגיל 20 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 3 Or More</masterLabel>
+        <translation>מגיל 3 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 30 Or More</masterLabel>
+        <translation>מגיל 30 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 4 Or More</masterLabel>
+        <translation>מגיל 4 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 40 Or More</masterLabel>
+        <translation>מגיל 40 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 45 Or More</masterLabel>
+        <translation>מגיל 45 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 5 Or More</masterLabel>
+        <translation>מגיל 5 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 50 Or More</masterLabel>
+        <translation>מגיל 50 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 6 Or More</masterLabel>
+        <translation>מגיל 6 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 7 Or More</masterLabel>
+        <translation>מגיל 7 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Age 8 Or More</masterLabel>
+        <translation>מגיל 8 ומעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Limit</masterLabel>
+        <translation>ללא הגבלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Up To 18</masterLabel>
+        <translation>עד גיל 18</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Up To 19</masterLabel>
+        <translation>עד גיל 19</translation>
+    </picklistValues>
+</CustomFieldTranslation>

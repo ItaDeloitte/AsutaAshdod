@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_from_appointment_screen__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Service field will indicate that record was created from screen. Please do not use in other parts of the system.</description>
+    <label>Created from appointment screen</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

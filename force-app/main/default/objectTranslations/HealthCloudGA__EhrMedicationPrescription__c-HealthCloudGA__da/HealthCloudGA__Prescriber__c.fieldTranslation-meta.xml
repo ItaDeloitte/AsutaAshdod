@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Navn på ordinerende læge</label>
+    <name>HealthCloudGA__Prescriber__c</name>
+    <relationshipLabel>Medicinrecepter</relationshipLabel>
+</CustomFieldTranslation>

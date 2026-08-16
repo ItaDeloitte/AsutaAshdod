@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fill_doctor_picture_URL</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
+$User.Alias =&quot;autocase&quot; &amp;&amp;
+
+(RecordType.DeveloperName = &quot;Doctor_Account&quot; &amp;&amp;
+NOT(ISBLANK(Picture__c )) &amp;&amp;
+ISBLANK( Picture_URL__c ))&amp;&amp;
+NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos;)</errorConditionFormula>
+    <errorMessage>יש להזין את כתובת התמונה של הרופא בשדה המתאים</errorMessage>
+</ValidationRule>

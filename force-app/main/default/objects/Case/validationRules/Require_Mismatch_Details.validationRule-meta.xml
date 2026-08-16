@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Mismatch_Details</fullName>
+    <active>true</active>
+    <description>אם הערך בשדה &quot;Match with RIS&quot; הוא &quot;recommendations mismatch&quot;
+אז השדה &quot;Mismatch Details&quot; יהיה שדה חובה.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Match_with_RIS__c, &quot;recommendations mismatch&quot;),
+    ISPICKVAL(Mismatch_Details__c, &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Mismatch_Details__c</errorDisplayField>
+    <errorMessage>שדה &quot;פירוט אי התאמה&quot; הינו שדה חובה.</errorMessage>
+</ValidationRule>

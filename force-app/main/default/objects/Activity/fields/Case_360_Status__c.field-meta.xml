@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_360_Status__c</fullName>
+    <description>hidden</description>
+    <label>Case 360 Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>נדרשת המלצה/קביעת תור לכירורג שד</fullName>
+                <default>false</default>
+                <label>נדרשת המלצה/קביעת תור לכירורג שד</label>
+            </value>
+            <value>
+                <fullName>התקשרות מול רופא</fullName>
+                <default>false</default>
+                <label>התקשרות מול רופא</label>
+            </value>
+            <value>
+                <fullName>ממתין לקביעת ביופסיה</fullName>
+                <default>false</default>
+                <label>ממתין לקביעת ביופסיה</label>
+            </value>
+            <value>
+                <fullName>ממתין למועד ביופסיה</fullName>
+                <default>false</default>
+                <label>ממתין למועד ביופסיה</label>
+            </value>
+            <value>
+                <fullName>ממתין לתוצאות ביופסיה</fullName>
+                <default>false</default>
+                <label>ממתין לתוצאות ביופסיה</label>
+            </value>
+            <value>
+                <fullName>התקבלו תוצאות ביופסיה חיובית</fullName>
+                <default>false</default>
+                <label>התקבלו תוצאות ביופסיה חיובית</label>
+            </value>
+            <value>
+                <fullName>התקבלו תוצאות ביופסיה שלילית</fullName>
+                <default>false</default>
+                <label>התקבלו תוצאות ביופסיה שלילית</label>
+            </value>
+            <value>
+                <fullName>התקבלו תוצאות ביופסיה לא רלוונטי</fullName>
+                <default>false</default>
+                <label>התקבלו תוצאות ביופסיה לא רלוונטי</label>
+            </value>
+            <value>
+                <fullName>נקבע תור לניתוח</fullName>
+                <default>false</default>
+                <label>נקבע תור לניתוח</label>
+            </value>
+            <value>
+                <fullName>ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</fullName>
+                <default>false</default>
+                <label>ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית</label>
+            </value>
+            <value>
+                <fullName>ממתין למועד בדיקת MRI/PET CT</fullName>
+                <default>false</default>
+                <label>ממתין למועד בדיקת MRI/PET CT</label>
+            </value>
+            <value>
+                <fullName>ממתין לתוצאת בדיקת MRI/PET CT</fullName>
+                <default>false</default>
+                <label>ממתין לתוצאת בדיקת MRI/PET CT</label>
+            </value>
+            <value>
+                <fullName>הועבר למחלקה אונקולוגית</fullName>
+                <default>false</default>
+                <label>הועבר למחלקה אונקולוגית</label>
+            </value>
+            <value>
+                <fullName>סגירת אירוע אוטומטית</fullName>
+                <default>false</default>
+                <label>סגירת אירוע אוטומטית</label>
+            </value>
+            <value>
+                <fullName>בוטל</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>בוטל</label>
+            </value>
+            <value>
+                <fullName>בטיפול</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>בטיפול</label>
+            </value>
+            <value>
+                <fullName>בטיפול מנהל</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>בטיפול מנהל</label>
+            </value>
+            <value>
+                <fullName>הועבר לטיפול מזכירות</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>הועבר לטיפול מזכירות</label>
+            </value>
+            <value>
+                <fullName>חדש</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>חדש</label>
+            </value>
+            <value>
+                <fullName>סגור</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>סגור</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

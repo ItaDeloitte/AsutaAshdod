@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Template Merge Field --></label>
+    <name>TemplateMergeField__c</name>
+    <picklistValues>
+        <masterLabel>Account</masterLabel>
+        <translation><!-- Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appointment</masterLabel>
+        <translation><!-- Appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead</masterLabel>
+        <translation><!-- Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Aid Appointment</masterLabel>
+        <translation><!-- Medical Aid Appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunity</masterLabel>
+        <translation><!-- Opportunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parent Case</masterLabel>
+        <translation><!-- Parent Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Survey Taker</masterLabel>
+        <translation><!-- Survey Taker --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

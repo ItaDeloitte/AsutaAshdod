@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>יוצר Case חדש מסוג מידע כללי כאשר השדה Phone_Inputted_By_Doctor מתעדכן (העדכון מתבצע בממשק אסותא דוק)
+לשימוש בממשק אסותא דוק- הוקם במסגרת משימה 16934</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>פורמולה של הטקטס שיעודכן בשדה תיעוד (description) בקייס שייפתח</description>
+        <name>CaseContentTextFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+   ISBLANK({!$Record.Phone_Inputted_By_Doctor__c}), 
+   null, 
+ &quot;נא לאמת את מספר הטלפון&quot;  
+&amp; &quot; &quot; &amp; LEFT({!$Record.Phone_Inputted_By_Doctor__c},3) &amp; &apos;-&apos; &amp; RIGHT({!$Record.Phone_Inputted_By_Doctor__c},7)
+&amp; &quot; &quot;&amp;
+&quot;מול המטופל ורק לאחר מכן לעדכן בחשבון המטופל&quot; 
+)</expression>
+    </formulas>
+    <interviewLabel>Create Case When Phone Inputted By Doctor Updated {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Case When Phone Inputted By Doctor Updated</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>CaseGeneralInformation</name>
+        <label>יצירת Case מסוג מידע כללי</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case_subject__c</field>
+            <value>
+                <stringValue>עדכון פרטים אישיים</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>CaseContentTextFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G8d0000013f3WEAQ</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>0124J000000hAuUQAU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>sub_case_subject__c</field>
+            <value>
+                <stringValue>UpdatePhone</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>CaseGeneralInformation</targetReference>
+        </connector>
+        <filterFormula>(ISNULL({!$Record__Prior.Id}) &amp;&amp; !ISBLANK({!$Record.Phone_Inputted_By_Doctor__c}) ) || ISCHANGED({!$Record.Phone_Inputted_By_Doctor__c})</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

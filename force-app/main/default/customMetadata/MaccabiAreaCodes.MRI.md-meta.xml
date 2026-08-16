@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>MRI</label>
+    <protected>false</protected>
+    <values>
+        <field>MedicalFieldCode__c</field>
+        <value xsi:type="xsd:string">303</value>
+    </values>
+    <values>
+        <field>ReferralType__c</field>
+        <value xsi:type="xsd:string">MRI</value>
+    </values>
+</CustomMetadata>

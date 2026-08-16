@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>apiNames_validation</fullName>
+    <active>true</active>
+    <description>השדה apiNames__c לא יכול להכיל רווחים או אותיות בעברית.</description>
+    <errorConditionFormula>(not(REGEX( apiNames__c  ,&quot;([a-zA-Z-0-9_,.])*&quot;)))||( IF(FIND(&quot; &quot;,  apiNames__c , 1)==0, false, true))</errorConditionFormula>
+    <errorMessage>השדה apiNames לא יכול להכיל רווחים או אותיות בעברית.</errorMessage>
+</ValidationRule>

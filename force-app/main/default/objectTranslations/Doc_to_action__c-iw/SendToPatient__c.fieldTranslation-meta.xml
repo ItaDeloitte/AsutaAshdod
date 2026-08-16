@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- במידה ושדה זה מסומן יתעדכן ערך בשדה תאריך שליחה למטופל בשאלון למטופל שיווצר לפי הפרמטר שמוגדר בשאלון --></help>
+    <label>שליחה למטופל</label>
+    <name>SendToPatient__c</name>
+</CustomFieldTranslation>

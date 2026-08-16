@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AvailabilityExceptions</fullName>
+    <inlineHelpText>תיאור של חריגות בזמינות באתר, תיאור תמציתי של כל החריגות האפשריות מהזמינות הרגילה באתר, כפרטים בשדות &apos;שעות זמינות&apos; ו&apos;שעות לא זמינות&apos;.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

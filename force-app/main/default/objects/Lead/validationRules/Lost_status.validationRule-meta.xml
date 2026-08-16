@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT($RecordType.DeveloperName = &quot;Patient&quot;),
+  OR(
+    AND(
+      ISPICKVAL(Status, &apos;lost&apos;),
+      ISPICKVAL(LostReason__c, &apos;&apos;)
+    ),
+    AND(
+      ISPICKVAL(LostReason__c, &apos;other&apos;),
+      ISBLANK(LostReasonExplanation__c)
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>חובה למלא סיבת הפסד בעת בחירת סטטוס הפסד, כאשר הסיבה היא אחר חובה למלא טקסט חופשי</errorMessage>
+</ValidationRule>

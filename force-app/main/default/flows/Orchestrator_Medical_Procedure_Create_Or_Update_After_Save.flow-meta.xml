@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Monday 2929195911
+Workflows Rules to Flow
+LA 06-2026</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAutomationName</name>
+        <dataType>String</dataType>
+        <expression>&apos;Orchestrator Medical Procedure Create Or Update After Save&apos;+&apos; ||| &apos;+{!$User.Email}</expression>
+    </formulas>
+    <interviewLabel>Orchestrator_Medical_Procedure_Create_Or_Update_After_Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Orchestrator Medical Procedure Create Or Update After Save</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Medical_Procedure</name>
+        <label>Update Medical Procedure</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>rvMedicalProcedure</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_on_Medical_Procedure</targetReference>
+        </connector>
+        <object>Medical_Procedure__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>Monday 2929195911, LA 06-2026</description>
+        <name>Update_on_Medical_Procedure</name>
+        <label>Update on Medical Procedure</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Medical_Procedure</targetReference>
+        </connector>
+        <flowName>Auto_Update_Medical_Procedure_On_Medical_Procdure_Change</flowName>
+        <inputAssignments>
+            <name>rvMedicalProcedurePrior</name>
+            <value>
+                <elementReference>$Record__Prior</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>rvMedicalProcedureTrig</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>rvMedicalProcedureUpdate</name>
+            <value>
+                <elementReference>rvMedicalProcedure</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>TriggeredByAutomationName</name>
+            <value>
+                <elementReference>fAutomationName</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>rvMedicalProcedure</assignToReference>
+            <name>rvMedicalProcedureUpdate</name>
+        </outputAssignments>
+    </subflows>
+    <variables>
+        <name>rvMedicalProcedure</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Medical_Procedure__c</objectType>
+    </variables>
+</Flow>

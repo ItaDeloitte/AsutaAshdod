@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס מטופל מרפאת בריאות הגבר</label>
+    <name>Men_s_Health_Clinic_Status__c</name>
+    <picklistValues>
+        <masterLabel>Biopdy Results Received</masterLabel>
+        <translation>התקבלו תוצאות פתולוגיות</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tracking</masterLabel>
+        <translation>במעקב</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Examination</masterLabel>
+        <translation>בתהליך בירור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting  For Surgery / Biopsy</masterLabel>
+        <translation>ממתין לניתוח / ביופסיה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting For Biopsy Results</masterLabel>
+        <translation>ממתין לתוצאות פתולוגיות</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting For Initial Consultation</masterLabel>
+        <translation>ממתין לייעוץ ראשוני</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting For Review</masterLabel>
+        <translation>ממתין לביקורת</translation>
+    </picklistValues>
+</CustomFieldTranslation>

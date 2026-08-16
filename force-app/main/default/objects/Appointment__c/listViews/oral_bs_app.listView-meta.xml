@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oral_bs_app</fullName>
+    <columns>NAME</columns>
+    <columns>Appointment_Date__c</columns>
+    <columns>First_Name__c</columns>
+    <columns>Appointment_Status__c</columns>
+    <columns>MP_code__c</columns>
+    <columns>Medical_Procedure__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>אסותא באר שבע,ניידת MRI</value>
+    </filters>
+    <filters>
+        <field>Medical_Procedure__c</field>
+        <operation>contains</operation>
+        <value>MRI ערמונית,(US) טרנס רקטלי+ ביופסיהתביופסיית ערמונית מבוססת MRI-ביופסיית פיוז&apos;ן</value>
+    </filters>
+    <label>פגישות מרכז אורולוגיה באר שבע</label>
+</ListView>
