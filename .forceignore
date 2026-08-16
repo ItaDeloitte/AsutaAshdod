@@ -5626,7 +5626,7 @@ node_modules/
 #**/reportTypes/Omni_Channel_Reports.reportType-meta.xml
 # שוחרר 27/07/2026 ✅ — Omni-Channel הופעל בסנדבוקס
 #**/reportTypes/CustomReportType22.reportType-meta.xml
-**/reportTypes/flow_orchestration_work_item_ootb_crt_two_four_eight.reportType-meta.xml
+#**/reportTypes/flow_orchestration_work_item_ootb_crt_two_four_eight.reportType-meta.xml
 
 # Dashboards מפנות לדוחות שלא קיימים בסנדבוקס — Dashboard ריצה 7 (21/07/2026) ❌ 68/416 — ⚠️ לשחזור לאחר בדיקת הדוחות החסרים
 **/dashboards/AppexchangeServiceSupportDashboards/AshdodDashboards/HRleTILQdMGosZDWikXGGxuBrnRjzZ.dashboard-meta.xml
