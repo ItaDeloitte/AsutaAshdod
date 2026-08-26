@@ -52,7 +52,7 @@ public class fileUploadForFreezingEggsController {
         } catch (Exception e) {
             system.debug(e.getMessage());
         }
-    }
+}
 
     private static Date setStringToDateFormat(String myDate) {
         String[] strDate = myDate.split('\\.');
