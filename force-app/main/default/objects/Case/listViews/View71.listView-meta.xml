@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>View71</fullName>
     <columns>CASES.CASE_NUMBER</columns>
@@ -8,7 +8,6 @@
     <columns>Previous_Freezing_Date__c</columns>
     <columns>Eggs_Amount__c</columns>
     <columns>Case_Status__c</columns>
-    <columns>Payment_Done__c</columns>
     <columns>ProcedurePerformedByLabratory__c</columns>
     <columns>Future_End_Freezing_Date__c</columns>
     <filterScope>Everything</filterScope>

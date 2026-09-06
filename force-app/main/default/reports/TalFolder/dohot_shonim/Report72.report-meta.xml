@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>OWNER</field>
@@ -46,9 +46,8 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,Case.Appointments,Case.General_Info,Case.transfer_to_secretaries,Case.IVF_Freezing_Eggs</value>
+            <value>Case.Appointments,Case.General_Info,Case.transfer_to_secretaries,Case.IVF_Freezing_Eggs</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

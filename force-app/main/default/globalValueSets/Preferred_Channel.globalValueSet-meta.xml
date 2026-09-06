@@ -40,6 +40,11 @@
         <default>false</default>
         <label>לא פעיל</label>
     </customValue>
+    <customValue>
+        <fullName>Fax</fullName>
+        <default>false</default>
+        <label>פקס</label>
+    </customValue>
     <masterLabel>Preferred Channel</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

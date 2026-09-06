@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>OWNER</field>
@@ -583,9 +583,6 @@
         <field>Case.Apex_Assigned__c</field>
     </columns>
     <columns>
-        <field>Case.Applicant_city_of_residence__c</field>
-    </columns>
-    <columns>
         <field>Case.Archive_Form_Submitted__c</field>
     </columns>
     <columns>
@@ -1058,9 +1055,6 @@
     </columns>
     <columns>
         <field>Case.Deforestation_Date_Comments__c</field>
-    </columns>
-    <columns>
-        <field>Case.Opened_by_Doctor__c</field>
     </columns>
     <columns>
         <field>Case.Hashalom_Sleep__c</field>
@@ -3078,7 +3072,6 @@
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -106,7 +106,6 @@
             <operator>notContain</operator>
             <value>דוקטור קאקישווילי דוד</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

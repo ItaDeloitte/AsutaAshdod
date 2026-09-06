@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Agent_survey__c$sending_time__c</field>
@@ -31,7 +31,6 @@
             <operator>contains</operator>
             <value>מיאר,עמית</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>לסיכום שנה חיפה - סקרים</name>

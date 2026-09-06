@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Accession_Number__c</field>
@@ -27,7 +27,6 @@
             <operator>equals</operator>
             <value>Appointment__c.Surgeries,Appointment__c.ClosedSurgeries</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>חדרים ששוריינו בשבוע האחרון</name>

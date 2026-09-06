@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.ID_Type__c</field>
@@ -87,7 +87,6 @@
             <operator>notContain</operator>
             <value>ornit</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>פגישות של דרכונאים עם מספר קופה זמני</name>

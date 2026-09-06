@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>Delete</excludeButtons>
     <excludeButtons>Edit</excludeButtons>
@@ -354,9 +354,6 @@
             <quickActionName>FeedItem.ContentPost</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>SendEmail</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
             <quickActionName>NewTask</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
@@ -436,9 +433,6 @@
     </relatedLists>
     <relatedLists>
         <fields>CONTACT.FULL_NAME</fields>
-        <fields>icon_identification__c</fields>
-        <fields>status__c</fields>
-        <fields>Contact_Status__c</fields>
         <fields>CONTACT.PHONE1</fields>
         <relatedList>RelatedAccountContactRelationList</relatedList>
     </relatedLists>
@@ -477,7 +471,6 @@
         <fields>Appointment_Date_Time__c</fields>
         <fields>Appointment_Status__c</fields>
         <fields>Medical_Procedure__c</fields>
-        <fields>Accession_Number__c</fields>
         <fields>CREATED_DATE</fields>
         <fields>Site__c</fields>
         <fields>Commitment_Status__c</fields>

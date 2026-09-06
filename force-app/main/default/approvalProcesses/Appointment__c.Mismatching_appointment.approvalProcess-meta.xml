@@ -13,8 +13,8 @@
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>zzz_29606db8-725a-4aa0-af63-06e552af74be@deleted.com</name>
-                <type>user</type>
+                <name>Owner</name>
+                <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>

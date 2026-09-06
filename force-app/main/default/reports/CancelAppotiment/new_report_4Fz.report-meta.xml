@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_NAME</field>
@@ -95,7 +95,6 @@
             <operator>notContain</operator>
             <value>ילדים</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>ביטולי פגישות נפרולוגיה</name>

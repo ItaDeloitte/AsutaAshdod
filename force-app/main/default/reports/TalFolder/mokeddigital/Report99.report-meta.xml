@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <aggregateTypes>Average</aggregateTypes>
@@ -28,7 +28,6 @@
             <operator>notContain</operator>
             <value>Lior test,Zaji Tests,קו לרופא,שותפים לדרך</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>ארלנג זמן מענה לנציג - תקופת זמן</name>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Installation</fullName>
+        <default>false</default>
+        <label>Installation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>User Education</fullName>
+        <default>false</default>
+        <label>User Education</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Breakdown</fullName>
+        <default>false</default>
+        <label>Breakdown</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Performance</fullName>
+        <default>false</default>
+        <label>Performance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Feedback</fullName>
+        <default>false</default>
+        <label>Feedback</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>appointment_surgery_set</fullName>
+        <default>false</default>
+        <label>appointment surgery set</label>
+    </standardValue>
+    <standardValue>
+        <fullName>catheterization</fullName>
+        <default>false</default>
+        <label>catheterization</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fusion</fullName>
+        <default>false</default>
+        <label>Fusion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Geographical_area</fullName>
+        <default>false</default>
+        <label>Geographical area</label>
+    </standardValue>
+    <standardValue>
+        <fullName>language</fullName>
+        <default>false</default>
+        <label>language</label>
+    </standardValue>
+    <standardValue>
+        <fullName>med_pro_not_in_assuta</fullName>
+        <default>false</default>
+        <label>med pro not in assuta</label>
+    </standardValue>
+    <standardValue>
+        <fullName>no_answer_morethen_three</fullName>
+        <default>false</default>
+        <label>no answer more than three</label>
+    </standardValue>
+    <standardValue>
+        <fullName>not_required_Continue_clarification</fullName>
+        <default>false</default>
+        <label>not required Continue clarification</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NםResponse/RequestCancelled</fullName>
+        <default>false</default>
+        <label>No Response/Request Cancelled</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Patient_not_maccabi</fullName>
+        <default>false</default>
+        <label>Patient not maccabi</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Treated_by_specialist</fullName>
+        <default>false</default>
+        <label>Treated by specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>אחר</fullName>
+        <default>false</default>
+        <label>אחר</label>
+    </standardValue>
+    <standardValue>
+        <fullName>בבדיקה מול גורם מקצועי</fullName>
+        <default>false</default>
+        <label>בבדיקה מול גורם מקצועי</label>
+    </standardValue>
+    <standardValue>
+        <fullName>בקשה לא תקינה</fullName>
+        <default>false</default>
+        <label>בקשה לא תקינה</label>
+    </standardValue>
+    <standardValue>
+        <fullName>דרכונאית/תיירת</fullName>
+        <default>false</default>
+        <label>דרכונאית/תיירת</label>
+    </standardValue>
+    <standardValue>
+        <fullName>הועבר לניהול סיכונים</fullName>
+        <default>false</default>
+        <label>הועבר לניהול סיכונים</label>
+    </standardValue>
+    <standardValue>
+        <fullName>החלטת רופא</fullName>
+        <default>false</default>
+        <label>החלטת רופא</label>
+    </standardValue>
+    <standardValue>
+        <fullName>המשיכה במרכז רפואי אחר</fullName>
+        <default>false</default>
+        <label>המשיכה במרכז רפואי אחר</label>
+    </standardValue>
+    <standardValue>
+        <fullName>חומר מוכן</fullName>
+        <default>false</default>
+        <label>חומר מוכן</label>
+    </standardValue>
+    <standardValue>
+        <fullName>חוסר מענה</fullName>
+        <default>false</default>
+        <label>חוסר מענה</label>
+    </standardValue>
+    <standardValue>
+        <fullName>טופל ושולם</fullName>
+        <default>false</default>
+        <label>טופל ושולם</label>
+    </standardValue>
+    <standardValue>
+        <fullName>טופל ע&quot;י נציג מיצוי זכויות באמצעות פרש קונספט</fullName>
+        <default>false</default>
+        <label>טופל ע&quot;י נציג מיצוי זכויות באמצעות פרש קונספט</label>
+    </standardValue>
+    <standardValue>
+        <fullName>טופל על ידי נציג מיצוי זכויות</fullName>
+        <default>false</default>
+        <label>טופל על ידי נציג מיצוי זכויות</label>
+    </standardValue>
+    <standardValue>
+        <fullName>לא נמצא חומר</fullName>
+        <default>false</default>
+        <label>לא נמצא חומר</label>
+    </standardValue>
+    <standardValue>
+        <fullName>לא תוקן</fullName>
+        <default>false</default>
+        <label>לא תוקן</label>
+    </standardValue>
+    <standardValue>
+        <fullName>מטופלת בטיפול המחלקה</fullName>
+        <default>false</default>
+        <label>מטופלת בטיפול המחלקה</label>
+    </standardValue>
+    <standardValue>
+        <fullName>מטופלת המשיכה במוסד רפואי אחר	מטופלת המשיכה במוסד רפואי אחר</fullName>
+        <default>false</default>
+        <label>מטופלת המשיכה במוסד רפואי אחר</label>
+    </standardValue>
+    <standardValue>
+        <fullName>מטופלת לא מעוניינת בהמשך תהליך</fullName>
+        <default>false</default>
+        <label>מטופלת לא מעוניינת בהמשך תהליך</label>
+    </standardValue>
+    <standardValue>
+        <fullName>נקבע תור לממוטומיה</fullName>
+        <default>false</default>
+        <label>נקבע תור לממוטומיה</label>
+    </standardValue>
+    <standardValue>
+        <fullName>נקבע/בוצע ביופסיה בסניף אחר</fullName>
+        <default>false</default>
+        <label>נקבע/בוצע ביופסיה בסניף אחר</label>
+    </standardValue>
+    <standardValue>
+        <fullName>נשלח טופס איתור מידע רפואי</fullName>
+        <default>false</default>
+        <label>נשלח טופס איתור מידע רפואי</label>
+    </standardValue>
+    <standardValue>
+        <fullName>סיום תהליך 360</fullName>
+        <default>false</default>
+        <label>סיום תהליך 360</label>
+    </standardValue>
+    <standardValue>
+        <fullName>פניה טופלה ללא חזרה למטופל</fullName>
+        <default>false</default>
+        <label>פניה טופלה ללא חזרה למטופל</label>
+    </standardValue>
+    <standardValue>
+        <fullName>פניה כפולה</fullName>
+        <default>false</default>
+        <label>פניה כפולה</label>
+    </standardValue>
+    <standardValue>
+        <fullName>פניה שגויה</fullName>
+        <default>false</default>
+        <label>פניה שגויה</label>
+    </standardValue>
+    <standardValue>
+        <fullName>פרטים חסרים</fullName>
+        <default>false</default>
+        <label>פרטים חסרים</label>
+    </standardValue>
+    <standardValue>
+        <fullName>רופא לא מעוניין בהמשך תהליך</fullName>
+        <default>false</default>
+        <label>רופא לא מעוניין בהמשך תהליך</label>
+    </standardValue>
+    <standardValue>
+        <fullName>שינוי המלצת הרדיולוג ע&quot;י הרופא המטפל</fullName>
+        <default>false</default>
+        <label>שינוי המלצת הרדיולוג ע&quot;י הרופא המטפל</label>
+    </standardValue>
+    <standardValue>
+        <fullName>תוקן</fullName>
+        <default>false</default>
+        <label>תוקן</label>
+    </standardValue>
+    <standardValue>
+        <fullName>תוקן חלקית</fullName>
+        <default>false</default>
+        <label>תוקן חלקית</label>
+    </standardValue>
+    <standardValue>
+        <fullName>תשובה שלילית של ביופסיה</fullName>
+        <default>false</default>
+        <label>תשובה שלילית של ביופסיה</label>
+    </standardValue>
+</StandardValueSet>

@@ -12,7 +12,9 @@ global with sharing class CreateSurveyToAppScheduleBatch implements Database.Bat
     
     global Database.QueryLocator start(Database.BatchableContext bc) {
         return Database.getQueryLocator([
-            SELECT Id, Medical_Procedure__c, Site__c, Case__c, Appointment_Date_Time__c, Patient_Account__c, Domain__c  
+            SELECT Id, Medical_Procedure__c, Medical_Procedure__r.Procedure_Code__c,
+                   Site__c, Case__c, Appointment_Date_Time__c,
+                   Patient_Account__c, Patient_Account__r.Age_Number__c, Domain__c
                                     FROM Appointment__c
                                     WHERE Site__c = :this.siteId
                                     AND Medical_Procedure__c = :this.procedursId

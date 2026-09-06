@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>OWNER</field>
@@ -37,7 +37,6 @@
             <operator>contains</operator>
             <value>אשדוד ציבורי - אשדוד</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

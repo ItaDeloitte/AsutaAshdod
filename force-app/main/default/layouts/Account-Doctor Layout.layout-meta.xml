@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>DataDotComAccountInsights</excludeButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
@@ -777,9 +777,6 @@
             <quickActionName>FeedItem.ContentPost</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>SendEmail</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
             <quickActionName>NewTask</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
@@ -821,7 +818,6 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>PayerFactor__c</fields>
-        <fields>self_payment__c</fields>
         <fields>not_scheduled_by_moked__c</fields>
         <relatedList>Agreement__c.Doctor_Account__c</relatedList>
     </relatedLists>
@@ -844,6 +840,7 @@
         <fields>Action_Type__c</fields>
         <relatedList>Doctors_Statistics__c.Doctor_Account__c</relatedList>
     </relatedLists>
+    <!-- ⚠️ לשחזור: Case.Opened_by_Doctor__c לא קיים בסנדבוקס — השדה ב-.forceignore. לשחזר לאחר פריסת השדה
     <relatedLists>
         <fields>CASES.CASE_NUMBER</fields>
         <fields>CASES.SUBJECT</fields>
@@ -851,6 +848,7 @@
         <fields>CASES.PRIORITY</fields>
         <relatedList>Case.Opened_by_Doctor__c</relatedList>
     </relatedLists>
+    -->
     <relatedLists>
         <fields>FULL_NAME</fields>
         <fields>CONTACT.TITLE</fields>
@@ -886,7 +884,6 @@
         <fields>CASES.STATUS</fields>
         <fields>CASES.RECORDTYPE</fields>
         <fields>CASES.SUBJECT</fields>
-        <fields>Case_subject__c</fields>
         <fields>sub_case_subject__c</fields>
         <relatedList>RelatedCaseList</relatedList>
     </relatedLists>
@@ -911,7 +908,6 @@
     <relatedLists>
         <fields>Arrangements__c.NAME</fields>
         <fields>Arrangements__c.PayerFactor__c</fields>
-        <fields>self_payment_formula__c</fields>
         <fields>NAME</fields>
         <relatedList>Doctor_arrangement__c.Doctor__c</relatedList>
     </relatedLists>
@@ -979,7 +975,6 @@
         <fields>CREATED_DATE</fields>
         <fields>Site__c</fields>
         <fields>Status__c</fields>
-        <fields>Survey_score__c</fields>
         <fields>fill_date__c</fields>
         <relatedList>SurveyTaker__c.Doctor__c</relatedList>
         <sortField>CREATED_DATE</sortField>

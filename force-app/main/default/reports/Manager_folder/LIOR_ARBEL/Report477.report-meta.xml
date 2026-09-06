@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_CREATED_DATE</field>
@@ -73,7 +73,6 @@
             <operator>notContain</operator>
             <value>רדיו</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>מיפוי תורים שנקבעו שנה מראש- רמהח</name>

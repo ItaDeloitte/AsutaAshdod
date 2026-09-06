@@ -87,10 +87,9 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>דוח חודשי על מצב הפניות בטיפול/סגור 24 שעות אחרונות בכל האתרים</description>
     <isGridLayout>true</isGridLayout>
-    <owner>zzz_d993771a-090a-4449-8c8d-e8a7f0b8c0d3@deleted.com</owner>
-    <runningUser>tomre@assuta.co.il</runningUser>
     <textColor>#000000</textColor>
     <title>דוח מנכל</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Date_of_appointment__c</field>
@@ -48,7 +48,6 @@
             <operator>contains</operator>
             <value>רמת</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>CT רמח מ-12.11 לעידן</name>

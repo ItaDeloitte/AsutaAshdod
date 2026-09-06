@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>FK_NAME</field>
@@ -61,21 +61,8 @@
             <operator>notEqual</operator>
             <value>,Negative biopsy result,End of hand-in-hand process,Wrong Recommendation,Double Referral</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>FK_$Case.AssutaDoctor__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
-        </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>FK_$Case.AssutaDoctor__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>FK_$Case.Reason_for_closing_hand_in_hand_case__c</field>

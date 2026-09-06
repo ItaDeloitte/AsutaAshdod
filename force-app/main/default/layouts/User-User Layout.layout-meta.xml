@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <layoutSections>
         <customLabel>false</customLabel>
@@ -69,14 +69,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Archiver_User__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>et4ae5__ExactTargetForAppExchangeAdmin__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>et4ae5__ExactTargetForAppExchangeUser__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

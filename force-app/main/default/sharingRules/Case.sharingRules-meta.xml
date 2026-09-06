@@ -10,7 +10,7 @@
         <criteriaItems>
             <field>Is_Ashdod_Centers__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -30,7 +30,7 @@
         <criteriaItems>
             <field>Ashdod_Case__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
@@ -142,7 +142,7 @@
         <criteriaItems>
             <field>Is_Ashdod_Centers__c</field>
             <operation>equals</operation>
-            <value>שקר</value>
+            <value>False</value>
         </criteriaItems>
         <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>AgentWork.HandleTime:SUM/60</calculatedFormula>
@@ -94,7 +94,6 @@
             <operator>notContain</operator>
             <value>מומחים,קו לרופא,Ashdod,אשדוד,דיגיטל - ניתוחים,סוכנות ביטוח,זימון חדר ניתוח - חיפה,זימון חדר ניתוח - רמת החייל,וואטסאפ יד ביד,יד ביד,סוכנ</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

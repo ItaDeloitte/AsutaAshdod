@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>עבור יד ביד - שד</description>
     <flexiPageRegions>
@@ -114,6 +114,7 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+    <!--KMSLH_PENDING - restore after kmslh installation
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -123,7 +124,7 @@
                 <componentName>kmslh:KMS_MainSearchComponent</componentName>
                 <identifier>kmslh_KMS_MainSearchComponent</identifier>
             </componentInstance>
-        </itemInstances>
+        </itemInstances>-->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

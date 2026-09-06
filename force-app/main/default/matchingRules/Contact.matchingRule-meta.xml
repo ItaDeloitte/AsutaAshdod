@@ -8,11 +8,7 @@
             <fieldName>Phone</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
-        <matchingRuleItems>
-            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
-            <fieldName>record_type_name__c</fieldName>
-            <matchingMethod>Exact</matchingMethod>
-        </matchingRuleItems>
+
         <ruleStatus>Active</ruleStatus>
     </matchingRules>
     <matchingRules>

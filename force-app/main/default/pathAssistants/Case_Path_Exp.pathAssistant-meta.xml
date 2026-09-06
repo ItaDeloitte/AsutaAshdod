@@ -7,7 +7,7 @@
     <pathAssistantSteps>
         <fieldNames>Reason</fieldNames>
         <fieldNames>Treat_status__c</fieldNames>
-        <picklistValueName>In_Progress</picklistValueName>
+        <picklistValueName>בטיפול</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>DOC_expert</recordTypeName>
 </PathAssistant>

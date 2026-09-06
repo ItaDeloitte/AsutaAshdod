@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>Clone</excludeButtons>
@@ -45,14 +45,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Patient_Account__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Accession_Number__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Time_of_appointment__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -839,14 +831,14 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>Delete</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Appointment__c.send_kit_inst_exp</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>1</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Delete</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>Appointment__c.New_QA_fromapp</actionName>
@@ -934,7 +926,6 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Survey__c</fields>
-        <fields>Fill_Percentage__c</fields>
         <fields>IsLocked__c</fields>
         <fields>Survey_link__c</fields>
         <fields>Taken__c</fields>
@@ -976,7 +967,6 @@
     </relatedLists>
     <relatedLists>
         <fields>Case__c</fields>
-        <fields>Case_subject__c</fields>
         <fields>CREATED_DATE</fields>
         <relatedList>cases_and_appoitments__c.Appointment__c</relatedList>
     </relatedLists>

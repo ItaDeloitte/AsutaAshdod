@@ -83,7 +83,6 @@
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
-    <owner>matanv@assuta.co.il</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -119,9 +118,9 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>matanv@assuta.co.il</runningUser>
     <textColor>#000000</textColor>
     <title>OwnBackup Archiver Dashboard</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

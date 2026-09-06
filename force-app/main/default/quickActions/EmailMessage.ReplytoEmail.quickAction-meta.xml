@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldOverrides>
         <field>BccAddress</field>
@@ -19,7 +19,7 @@ if(EmailMessage.Parent.RecordType.DeveloperName = &apos;IVF_Freezing_Eggs&apos; 
 
 if(EmailMessage.Parent.RecordType.DeveloperName == &apos;Shikum_Bait&apos;, &quot;assutaathome@assuta.co.il&quot;,
 
-if(EmailMessage.Parent.RecordType.DeveloperName == &apos;Home_diagnosis&apos;, &quot;nonreply@assuta.co.il&quot;,
+if(EmailMessage.Parent.RecordType.DeveloperName == &apos;Home_diagnosis&apos;, &quot;ylerfeld@deloitte.co.il&quot;,
 
 if((EmailMessage.Parent.RecordType.DeveloperName = &apos;DOC_expert&apos;) || (EmailMessage.Parent.RecordType.DeveloperName = &apos;ClosedExp&apos;),&quot;experts@assuta.co.il&quot;,
 

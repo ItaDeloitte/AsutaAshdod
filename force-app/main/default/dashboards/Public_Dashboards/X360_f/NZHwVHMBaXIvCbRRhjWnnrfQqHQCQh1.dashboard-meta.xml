@@ -146,6 +146,9 @@
                 </chartSummary>
                 <componentType>Metric</componentType>
                 <dashboardFilterColumns>
+                    <column>CAMPAIGN_SOURCE</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
                     <column>CREATED_DATE</column>
                 </dashboardFilterColumns>
                 <decimalPrecision>-1</decimalPrecision>
@@ -271,6 +274,9 @@
                 </chartSummary>
                 <componentType>Donut</componentType>
                 <dashboardFilterColumns>
+                    <column>CAMPAIGN_SOURCE</column>
+                </dashboardFilterColumns>
+                <dashboardFilterColumns>
                     <column>CREATED_DATE</column>
                 </dashboardFilterColumns>
                 <displayUnits>Auto</displayUnits>
@@ -310,6 +316,9 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <dashboardFilterColumns>
+                    <column>CAMPAIGN_SOURCE</column>
+                </dashboardFilterColumns>
                 <dashboardFilterColumns>
                     <column>CREATED_DATE</column>
                 </dashboardFilterColumns>
@@ -388,10 +397,9 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <owner>hagits@assuta.co.il</owner>
-    <runningUser>hagits@assuta.co.il</runningUser>
     <textColor>#000000</textColor>
     <title>דשבורד ניהול קמפיינים- אסותא עד הבית</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

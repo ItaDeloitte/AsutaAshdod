@@ -22,7 +22,7 @@
     <filters>
         <field>RECORDTYPE</field>
         <operation>equals</operation>
-        <value>0124J000000hAuk,Recommendations_after_exam__c.Memo</value>
+        <value>Recommendations_after_exam__c.Memo</value>
     </filters>
     <filters>
         <field>CREATED_DATE</field>

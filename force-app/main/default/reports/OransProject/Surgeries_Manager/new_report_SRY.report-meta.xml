@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Patient_Account__c</field>
@@ -67,7 +67,6 @@
             <operator>notContain</operator>
             <value>בי&quot;ח אסותא אשדוד ע&quot;ש סמסון</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>ניתוחים - טיפול אדמינטריבי</name>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Pre_surgery_DONE__c</fullName>
     <formula>ISPICKVAL(PreSurgery__r.Appointment_Status__c , &quot;TookPlace&quot;)</formula>

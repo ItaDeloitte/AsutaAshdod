@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Account.Appointments__r$Name</field>
@@ -73,7 +73,6 @@
             <operator>contains</operator>
             <value>סמסון</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>בקרת פגישות MRI כלניות- זימון מרכזים New</name>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>OWNER</field>
@@ -28,7 +28,6 @@
             <operator>equals</operator>
             <value>New,חדש,Third Party,הועבר לטיפול מזכירות,Escalated,In_Progress,בטיפול,נדרשת המלצה/קביעת תור לכירורג שד,התקשרות מול רופא,ממתין לקביעת ביופסיה,ממתין למועד ביופסיה,ממתין לתוצאות ביופסיה,התקבלו תוצאות ביופסיה,נקבע תור לניתוח,ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית,ממתין למועד בדיקת MRI/PET CT,ממתין לתוצאת בדיקת MRI/PET CT,הועבר למחלקה אונקולוגית</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>פניות פתוחות לארכיון</name>

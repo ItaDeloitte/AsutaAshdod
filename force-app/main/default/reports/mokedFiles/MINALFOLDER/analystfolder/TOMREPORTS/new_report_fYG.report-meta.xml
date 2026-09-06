@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -120,7 +120,6 @@
             <operator>equals</operator>
             <value>,רחל אזז,יעל אלי,מיכל ליפנר,יעקב אזולאי,ליעד בן מאיר,מקסים יעקובוב,מרים אזולאי מלכה,מירב לוי,אריאלה רפאלי,שרון מור,יקיר בן מאור,ריבי מונדיי,אהובה קימל,שבתאי סימן טוב,נעמי לוי,רחל חיון,רוני שפריא,מיכל כחלון</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

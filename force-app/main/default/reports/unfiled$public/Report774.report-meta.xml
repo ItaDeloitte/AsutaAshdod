@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>FK_$Account.SMS_Phone_Number__c</field>
@@ -27,7 +27,6 @@
             <operator>contains</operator>
             <value>760902,760903,760907,760908,760917,760918</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>תוריםשאלון ממוגרפיה לפני בדיקת שד לביטול</name>

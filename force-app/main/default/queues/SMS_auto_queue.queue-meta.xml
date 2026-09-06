@@ -4,7 +4,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>assutademo@gmail.com</email>
     <name>תור אוטומטי למסרונים</name>
-    <queueRoutingConfig>Live_Agent</queueRoutingConfig>
     <queueSobject>
         <sobjectType>LiveAgentSession</sobjectType>
     </queueSobject>

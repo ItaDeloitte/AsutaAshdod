@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_CREATED_DATE</field>
@@ -39,7 +39,6 @@
             <operator>contains</operator>
             <value>בריסקו דניאל,חטיב נור,רובוביץ אלכסנדר,אדלר אלדד,רפפורט דניאל,פרץ גיל,מרקוס יונית</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>המלצות מומחים אייקו - 2 רבע&apos; אחרונים</name>

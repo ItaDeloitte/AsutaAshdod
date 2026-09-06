@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Agent_survey__c</baseObject>
     <category>other</category>
@@ -301,11 +301,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedBy</field>
-            <table>Agent_survey__c.Activities</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>IsVisibleInSelfService</field>
             <table>Agent_survey__c.Activities</table>
         </columns>
         <columns>
@@ -633,4 +628,6 @@
         </columns>
         <masterLabel>Activities</masterLabel>
     </sections>
+
+    
 </ReportType>

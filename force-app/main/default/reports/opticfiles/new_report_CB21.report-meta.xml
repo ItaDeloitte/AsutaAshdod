@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -49,10 +49,10 @@
         <field>Opportunity.Appointments__r$Order_Notes__c</field>
     </columns>
     <columns>
-        <field>Opportunity$StageStatus__c</field>
+        <field>Opportunity$StageName</field>
     </columns>
     <columns>
-        <field>Opportunity$StageName</field>
+        <field>Opportunity$StageStatus__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -69,7 +69,6 @@
             <operator>notContain</operator>
             <value>טסט</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

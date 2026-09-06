@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -120,7 +120,6 @@
             <operator>equals</operator>
             <value>ליאל גולן,לרה אילאנוב,רון סויט,דנה לביא ליטיצ&apos;בסקי,אלינור יחזקאל,מישל גנין,מזל דלאל,נירה ורד,אביעד בוקעי,מישל איברהימוב</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

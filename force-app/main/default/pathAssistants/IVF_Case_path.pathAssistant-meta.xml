@@ -6,15 +6,15 @@
     <masterLabel>IVF Case path</masterLabel>
     <pathAssistantSteps>
         <info>&lt;p style=&quot;&quot;&gt;פנייה שנסגרה עקב פתיחת פנייה חדשה לקראת סיום הקפאה &lt;/p&gt;</info>
-        <picklistValueName>Closed</picklistValueName>
+        <picklistValueName>סגור</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <info>&lt;p style=&quot;&quot;&gt;פנייה שנוצרה עבורה לפחות שיחה אחת&lt;/p&gt;</info>
-        <picklistValueName>In_Progress</picklistValueName>
+        <picklistValueName>בטיפול</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <info>&lt;p style=&quot;&quot;&gt;פנייה חדשה שלא טופלה עדין&lt;/p&gt;</info>
-        <picklistValueName>New</picklistValueName>
+        <picklistValueName>חדש</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>IVF_Freezing_Eggs</recordTypeName>
 </PathAssistant>

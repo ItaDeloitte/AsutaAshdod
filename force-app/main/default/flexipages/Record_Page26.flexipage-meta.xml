@@ -195,6 +195,7 @@
                 <identifier>support_milestones</identifier>
             </componentInstance>
         </itemInstances>
+        <!-- ⚠️ לשחזור לאחר הפעלת Next Best Action ב-Setup — Community_strategy
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -241,6 +242,7 @@
                 <identifier>runtime_communities_nba_builderNbaWidget</identifier>
             </componentInstance>
         </itemInstances>
+        -->
         <itemInstances>
             <componentInstance>
                 <componentName>forceChatter:recordFeedContainer</componentName>

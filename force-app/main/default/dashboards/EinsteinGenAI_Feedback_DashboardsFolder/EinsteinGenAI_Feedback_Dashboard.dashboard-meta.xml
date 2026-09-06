@@ -110,10 +110,9 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>Dashboards for Einstein generative AI audit data analytics</description>
     <isGridLayout>true</isGridLayout>
-    <owner>autoproc@00dki000000mtju2a4</owner>
-    <runningUser>autoproc@00dki000000mtju2a4</runningUser>
     <textColor>#000000</textColor>
     <title>Einstein Generative AI Audit &amp; Feedback Data</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Classification__c</fullName>
     <description>סוג המסלול - אדום, ירוק או כתום
@@ -6,7 +6,7 @@
     <label>Classification</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>true</trackHistory>
+    <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -31,3 +31,4 @@
         </valueSetDefinition>
     </valueSet>
 </CustomField>
+

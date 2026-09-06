@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
     <hasActivationRequired>false</hasActivationRequired>
     <label>Ashdod_Agent_PermissionSetGroup</label>
@@ -36,7 +36,6 @@
     <permissionSets>Expertise_c_Edit</permissionSets>
     <permissionSets>Feedback_c_OnlyViewALL</permissionSets>
     <permissionSets>File_c_CU_ViewALL</permissionSets>
-    <permissionSets>Form_Builder_Titan_Sign_Document_c_Read</permissionSets>
     <permissionSets>GateScanner_file_c_Read</permissionSets>
     <permissionSets>Guidance_Scenario_c_OnlyViewALL</permissionSets>
     <permissionSets>Guidelines_c_Read</permissionSets>
@@ -46,7 +45,6 @@
     <permissionSets>Language_new_c_Read</permissionSets>
     <permissionSets>LiveAgentSession_U_ViewALL</permissionSets>
     <permissionSets>LiveChatTranscript_CU_ViewALL</permissionSets>
-    <permissionSets>LiveChatVisitor_CU_ViewALL</permissionSets>
     <permissionSets>Location_Read</permissionSets>
     <permissionSets>Medical_Aid_Appointment_c_CU_ViewALL</permissionSets>
     <permissionSets>Medical_Procedure_c_Read</permissionSets>
@@ -90,10 +88,6 @@
     <permissionSets>calendar_medp_c_CU_ViewALL</permissionSets>
     <permissionSets>cases_and_appoitments_c_CreateEdit</permissionSets>
     <permissionSets>doctor_rank_c_CreateEdit</permissionSets>
-    <permissionSets>kmslh_KMS_Related_Article_c_CreateEdit</permissionSets>
-    <permissionSets>kmslh_KMS_UserArticleRating_c_CreateEdit</permissionSets>
-    <permissionSets>kmslh_KMS_UserScenarioAnswers_c_CreateEdit</permissionSets>
-    <permissionSets>kmslh_TestText_c_CreateEdit</permissionSets>
     <permissionSets>settlement_c_OnlyViewALL</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

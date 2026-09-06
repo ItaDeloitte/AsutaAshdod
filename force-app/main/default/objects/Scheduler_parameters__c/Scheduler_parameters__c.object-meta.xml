@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>Accept</actionName>
@@ -153,7 +153,6 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <gender>Masculine</gender>
     <label>מאפייני זימון</label>
     <nameField>
         <displayFormat>SP-{000}</displayFormat>
@@ -161,14 +160,6 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>מאפייני זימון</pluralLabel>
-    <profileSearchLayouts>
-        <fields>NAME</fields>
-        <fields>Medical_Procedure__c</fields>
-        <fields>Preview_Text__c</fields>
-        <fields>Action_Type__c</fields>
-        <fields>Site__c</fields>
-        <profileName>Marketing (NEW)</profileName>
-    </profileSearchLayouts>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

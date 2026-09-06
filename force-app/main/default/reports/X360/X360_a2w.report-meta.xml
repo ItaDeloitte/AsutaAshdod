@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -49,7 +49,6 @@
             <operator>equals</operator>
             <value>ממתין לקביעת ביופסיה,ממתין למועד ביופסיה,ממתין לתוצאות ביופסיה,התקבלו תוצאות ביופסיה,נקבע תור לניתוח,ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית,ממתין למועד בדיקת MRI/PET CT,ממתין לתוצאת בדיקת MRI/PET CT,הועבר למחלקה אונקולוגית,סגירת אירוע אוטומטית,Closed,סגור,Caneclled</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

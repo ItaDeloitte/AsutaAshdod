@@ -303,10 +303,9 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>לוח מעקב אחריי התקדמות ופעילות של הערכת טרום ניתוח דיגיטלי</description>
     <isGridLayout>true</isGridLayout>
-    <owner>sergeype@assuta.co.il</owner>
-    <runningUser>sergeype@assuta.co.il</runningUser>
     <textColor>#000000</textColor>
     <title>דשבורד נתוני שאלון טרום</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

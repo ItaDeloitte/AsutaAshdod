@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>CancelEdit</actionName>
@@ -135,28 +135,25 @@
         <customTabListAdditionalFields>Patient</customTabListAdditionalFields>
         <customTabListAdditionalFields>CareBarrierType</customTabListAdditionalFields>
         <customTabListAdditionalFields>Case</customTabListAdditionalFields>
-        <customTabListAdditionalFields>SurveyResponse</customTabListAdditionalFields>
         <customTabListAdditionalFields>ProblemDefinition</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Patient</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CareBarrierType</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Case</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>SurveyResponse</lookupDialogsAdditionalFields>
+
         <lookupDialogsAdditionalFields>ProblemDefinition</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Patient</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CareBarrierType</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Case</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>SurveyResponse</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ProblemDefinition</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Patient</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CareBarrierType</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Case</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>SurveyResponse</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ProblemDefinition</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Recommendations_after_exam__c$Name</field>
@@ -39,7 +39,6 @@
             <operator>notContain</operator>
             <value>תקין,לא רלוונטי</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>דוח המלצות ופניות 360 חדש</name>

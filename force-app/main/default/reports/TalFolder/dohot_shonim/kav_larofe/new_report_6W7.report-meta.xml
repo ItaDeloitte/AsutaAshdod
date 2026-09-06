@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CREATED_DATE</field>
@@ -36,9 +36,8 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,Case.Appointments,Case.Assuta_360,Case.ClosedAssuta360,Case.ClosedDoc,Case.ClosedExp,Case.ClosedGen,Case.ClosedInstitutes,Case.ClosedSurgeries,Case.DOC_expert,Case.Doctor_Case,Case.General_Info,Case.Surgery,Case.transfer_to_secretaries,Case.IVF_Freezing_Eggs,Case.HealthCloudGA__CareGap,Case.HealthCloudGA__CarePlan,Case.Shikum_Bait</value>
+            <value>Case.Appointments,Case.Assuta_360,Case.ClosedAssuta360,Case.ClosedDoc,Case.ClosedExp,Case.ClosedGen,Case.ClosedInstitutes,Case.ClosedSurgeries,Case.DOC_expert,Case.Doctor_Case,Case.General_Info,Case.Surgery,Case.transfer_to_secretaries,Case.IVF_Freezing_Eggs,Case.Shikum_Bait</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

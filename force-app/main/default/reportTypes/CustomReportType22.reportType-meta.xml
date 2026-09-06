@@ -4,10 +4,6 @@
     <category>other</category>
     <deployed>false</deployed>
     <description>ס</description>
-    <join>
-        <outerJoin>true</outerJoin>
-        <relationship>AgentWorkSkill</relationship>
-    </join>
     <label>עבודת סוכן</label>
     <sections>
         <columns>
@@ -177,11 +173,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SecondaryRoutingPriority</field>
-            <table>AgentWork</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>IsAutoAcceptEnabled</field>
             <table>AgentWork</table>
         </columns>
@@ -221,64 +212,6 @@
             <table>AgentWork</table>
         </columns>
         <masterLabel>עבודות סוכן</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>true</checkedByDefault>
-            <field>Name</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedBy</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Skill</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SkillLevel</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>IsAdditionalSkill</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>WasDropped</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SkillPriority</field>
-            <table>AgentWork.AgentWorkSkill</table>
-        </columns>
-        <masterLabel>מיומנויות עבודה של סוכן</masterLabel>
     </sections>
     <sections>
         <columns>

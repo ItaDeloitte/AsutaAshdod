@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -99,7 +99,6 @@
             <operator>notEqual</operator>
             <value>,עדי נחום,דניאלה חכם,אזל פאדילה,ילנה קנבנסקי,רשא עיסא,מעיין פרג&apos;ון,שרית חן,ספיר יוסף,אביטל זוסמן,שולי נעים,סמדר רפאל,ילנה קגנסקי,רוית בן שיטרית,רואן אלהואשלה,מירית סימון,יוסי ביטרן,עדי דוהל,מאיה אברהם</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

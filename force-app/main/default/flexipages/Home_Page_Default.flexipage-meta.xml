@@ -26,6 +26,7 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <!-- ⚠️ לשחזור לאחר התקנת Form_Builder — Screen_Exclude_Messages_to_Site_Calendar_CalMedP (FormTitan flow)
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -47,6 +48,7 @@
                 </visibilityRule>
             </componentInstance>
         </itemInstances>
+        -->
         <itemInstances>
             <componentInstance>
                 <componentName>home:recentRecordContainer</componentName>

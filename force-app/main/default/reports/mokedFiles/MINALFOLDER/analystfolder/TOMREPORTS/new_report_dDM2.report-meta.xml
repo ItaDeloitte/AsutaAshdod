@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>(CREATED_DATE:UNIQUE-OPP_CREATED_DATE:UNIQUE)/24</calculatedFormula>
@@ -84,7 +84,6 @@
             <operator>equals</operator>
             <value>גיא אבקסיס,דוד הלוי</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

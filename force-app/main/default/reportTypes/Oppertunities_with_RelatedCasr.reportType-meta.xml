@@ -22,52 +22,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__CurrentGenerators__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__DeliveryInstallationStatus__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Email__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Phone__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__TrackingNumber__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__TrackingNumber__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Diagnosis__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SecondaryDiagnosis__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__PrimaryDiagnosis__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__TertiaryDiagnosis__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -83,16 +43,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Contact</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferringOrganization__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Primary_Insurance__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -113,21 +63,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Patient_Age__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferredToOrganization__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferredToUser__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferredToPractitioner__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -172,11 +107,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Specialty__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>SuccessfulOTP__c</field>
             <table>Opportunity</table>
         </columns>
@@ -188,11 +118,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Contract</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>PartnerAccount</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -257,22 +182,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__InsuranceMemberId__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>FormtitanId__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__InsuranceGroupId__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__IsOutOfNetwork__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -293,11 +203,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>PushCount</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__OrderNumber__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -332,16 +237,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferringUser__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__MainCompetitors__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>CreatedBy</field>
             <table>Opportunity</table>
         </columns>
@@ -367,16 +262,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__InsuranceType__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__TypeOfService__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>RecordType</field>
             <table>Opportunity</table>
         </columns>
@@ -387,27 +272,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Reason_for_Referral__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReasonForOutOfNetworkReferral__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Amount</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Had_eye_surgery_outside_Assuta__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Priority__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -437,11 +307,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferringPractitionerScore__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>codeOTP__c</field>
             <table>Opportunity</table>
         </columns>
@@ -453,11 +318,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Recommended_doc__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferringPractitioner__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -533,11 +393,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>OpportunityCloseDate__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferralReceivedDate__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -1180,11 +1035,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Assuta_Aprrover__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Factor_confirms__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
@@ -1221,11 +1071,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>age__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgencyMeasureVersion__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
         <columns>
@@ -1506,11 +1351,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Deforestation_Date_Comments__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opened_by_Doctor__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
         <columns>
@@ -1820,17 +1660,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgencyMeasureID__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>external_id_formtitan__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystemID__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
         <columns>
@@ -2060,11 +1890,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystem__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Status</field>
             <table>Opportunity.Cases__r</table>
         </columns>
@@ -2265,16 +2090,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Subject_Reference2__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Subject_Reference__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Non_Assuta_Employee__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
@@ -2335,11 +2150,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SortOrder__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>TotalForPayment__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
@@ -2396,11 +2206,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>referralAgency__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgency__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
         <columns>
@@ -2516,11 +2321,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>preferd_chanal_case__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__FinancialValue__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
         <columns>
@@ -2751,11 +2551,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Case_Reason_2__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystemModified__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
         <columns>
@@ -3041,11 +2836,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>SLA_CHANGE__c</field>
-            <table>Opportunity.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__DueDate__c</field>
             <table>Opportunity.Cases__r</table>
         </columns>
         <columns>

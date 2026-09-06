@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>QuickText</baseObject>
     <category>other</category>
@@ -53,11 +53,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Folder</field>
-            <table>QuickText</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>IsInsertable</field>
             <table>QuickText</table>
         </columns>
@@ -78,4 +73,6 @@
         </columns>
         <masterLabel>Quick Text</masterLabel>
     </sections>
+
+    
 </ReportType>

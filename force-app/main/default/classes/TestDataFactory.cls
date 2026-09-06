@@ -1628,7 +1628,7 @@ public class TestDataFactory {
     public static Opportunity getOpportunity() {
         return new Opportunity(
             StageName = 'Closed Won', 
-            StageStatus__c = 'expert', 
+            StageStatus__c = 'expert',
             Name = 'OpportunityTest', 
             CloseDate = Date.today()
         );

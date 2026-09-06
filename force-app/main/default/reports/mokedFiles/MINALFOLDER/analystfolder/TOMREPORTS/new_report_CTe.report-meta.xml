@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -143,7 +143,6 @@
             <operator>equals</operator>
             <value>דפנה בן שמחון,מושיק בלייך,מרים יסובוף,שירלי ביליזר,יניב אברבוך,אוקסנה יפה,גיא ברש,אורה מוסאזדה,שירין זיתון,צחי קנבסקי,יעל סבן,הודא גבארין,יפעת וינגרטן,זהבה טואג</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>CREATED_DATE:UNIQUE-CLOSED_DATE:UNIQUE</calculatedFormula>
@@ -95,7 +95,6 @@
             <operator>notEqual</operator>
             <value>אסנת עקראוי,בלה דוד,ג&apos;ני נויה דנילוב,יארה אבו חזנה,סרגיי פרמיאקוב,רוברטה חיימוביץ,שירז וייס,בדיקת מיצוי זכויות - רפואה אישית מתקדמת,Automated Process,בדיקת מיצוי זכויות – רפואה מותאמת אישית,נטלי ניר,יפעה נייגט,נדים עסלי,טל שרעבי</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

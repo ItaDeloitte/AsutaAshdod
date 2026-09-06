@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>ChangeOwnerOne</excludeButtons>
     <excludeButtons>Clone</excludeButtons>
@@ -29,10 +29,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Accession_Number__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
                 <field>Appointment_Status__c</field>
             </layoutItems>
             <layoutItems>
@@ -54,10 +50,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Doctor_arrangement__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>surgeryMatchedArrangement__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -503,7 +495,6 @@
     </relatedLists>
     <relatedLists>
         <fields>Case__c</fields>
-        <fields>Case_subject__c</fields>
         <fields>CREATED_DATE</fields>
         <relatedList>cases_and_appoitments__c.Appointment__c</relatedList>
     </relatedLists>

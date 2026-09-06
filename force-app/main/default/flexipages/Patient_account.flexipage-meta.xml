@@ -312,6 +312,7 @@
                 <identifier>force_relatedListSingleContainer3</identifier>
             </componentInstance>
         </itemInstances>
+        <!-- ⚠️ לשחזור לאחר הפעלת Salesforce Connect + פריסת displayHistoricCalls LWC
         <itemInstances>
             <componentInstance>
                 <componentName>displayHistoricCalls</componentName>
@@ -325,6 +326,7 @@
                 </visibilityRule>
             </componentInstance>
         </itemInstances>
+        -->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -513,6 +515,7 @@
                 <identifier>force_relatedListSingleContainer12</identifier>
             </componentInstance>
         </itemInstances>
+        <!-- ⚠️ לשחזור לאחר התקנת OB_Archiver — relatedArchivedRecordsWidget (22/07/2026)
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -529,6 +532,7 @@
                 </visibilityRule>
             </componentInstance>
         </itemInstances>
+        -->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

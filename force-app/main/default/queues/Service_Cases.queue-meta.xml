@@ -4,13 +4,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>assutademo@gmail.com</email>
     <name>פניות בנושא שירות - מערך קשרי לקוחות</name>
-    <queueMembers>
-        <users>
-            <user>ofircohe@assuta.co.il.prod</user>
-            <user>zzz_b971e0d5-737b-43e5-abeb-55d9fad1cd90@deleted.com</user>
-            <user>henl@assuta.co.il.prod</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

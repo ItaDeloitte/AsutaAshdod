@@ -398,7 +398,7 @@ public class CaseServices {
         OrgWideEmailAddress owea = [SELECT Id
                                         , Address 
                                     FROM OrgWideEmailAddress 
-                                    WHERE Address = 'nonreply@assuta.co.il' 
+                                    WHERE Address = 'ylerfeld@deloitte.co.il' 
                                     LIMIT 1];
         EmailTemplate template = [SELECT Subject
                                         , HtmlValue
@@ -690,7 +690,7 @@ public class CaseServices {
         OrgWideEmailAddress owea = [SELECT Id
                                             , Address 
                                     FROM OrgWideEmailAddress 
-                                    WHERE Address = 'nonreply@assuta.co.il' 
+                                    WHERE Address = 'ylerfeld@deloitte.co.il' 
                                     LIMIT 1];
         EmailTemplate template = [SELECT Subject
                                         , HtmlValue
@@ -858,7 +858,7 @@ public class CaseServices {
         OrgWideEmailAddress owea = [SELECT Id
                                             , Address 
                                     FROM OrgWideEmailAddress 
-                                    WHERE Address = 'nonreply@assuta.co.il' 
+                                    WHERE Address = 'ylerfeld@deloitte.co.il' 
                                     LIMIT 1];
         EmailTemplate template = [SELECT Subject
                                         , HtmlValue
@@ -1580,7 +1580,7 @@ public class CaseServices {
         OrgWideEmailAddress owea = [SELECT Id
                                             , Address 
                                     FROM OrgWideEmailAddress 
-                                    WHERE Address = 'nonreply@assuta.co.il' 
+                                    WHERE Address = 'ylerfeld@deloitte.co.il' 
                                     LIMIT 1];
         List<Messaging.SingleEmailMessage> mails = new List<Messaging.SingleEmailMessage>();
 

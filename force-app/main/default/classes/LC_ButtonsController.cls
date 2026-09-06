@@ -134,7 +134,7 @@ public class LC_ButtonsController implements ILCController {
         em.ExpectedSendingDateTime__c = Datetime.now();
         em.EmailTemplateId = template.Id;            
         em.EmailTemplateDeveloperName__c = template.DeveloperName;            
-        em.FromAddress = 'nonreply@assuta.co.il';
+        em.FromAddress = 'ylerfeld@deloitte.co.il';
         em.ParentId = cas.Id;
         em.ToAddress = toAddress;
         em.Automation_name__c = 'transferToManagerButton';

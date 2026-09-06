@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_NAME</field>
@@ -37,7 +37,6 @@
             <operator>equals</operator>
             <value>,בטיפול אדמיניסטרטיבי,Typing,Recording,וידוא הגעה לפגישה,NewAppointment,not_arrived,מטופל אישר שלא נכח בפגישה,מטופל אישר שנכח בפגישה,ממתין לאישור,ממתין לאישור המטופל על קיום הפגישה,WaitingForCanceled,ממתין להתחייבות,WaitingForAppointment,נדחה על ידי המנהל,5,3,Urgent_WaitingList,RescheduleByAssuta,RescheduleByClient,4</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>דוח פגישות עם חשבון המטופל חדש</name>

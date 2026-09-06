@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Case$CreatedDate</field>
@@ -48,7 +48,6 @@
             <operator>notContain</operator>
             <value>תור אוטומטי לפניות סגורות,Automated Process</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>פניות עם פגישות - שלשות</name>

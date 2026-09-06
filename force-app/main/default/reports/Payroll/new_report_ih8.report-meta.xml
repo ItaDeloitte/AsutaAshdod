@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -104,7 +104,6 @@
             <operator>equals</operator>
             <value>דוקטור בלכר רונן,דוקטור גוטמן גבריאל,דוקטור גופמן אלכס,דוקטור גפטלר אלכסנדר,דוקטור גרונדשטיין אלון,דוקטור השרוני אמיר,דוקטור מילגרם מיכאל,דוקטור מרום ליאור,פרופסור פלומן יזהר,פרופסור שבת שי,דוקטור שייניס דימטרי,דוקטור ברוסקין אלכסנדר,דוקטור קוך יונתן,דוקטור אלישע אופירם</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

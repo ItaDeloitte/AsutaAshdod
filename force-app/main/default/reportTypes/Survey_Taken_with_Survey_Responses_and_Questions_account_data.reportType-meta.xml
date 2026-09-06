@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>SurveyTaker__c</baseObject>
     <category>other</category>
@@ -358,11 +358,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Signature_HTML__c</field>
-            <table>SurveyTaker__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>My_Submission__c</field>
             <table>SurveyTaker__c</table>
         </columns>
         <masterLabel>Surveys Taken</masterLabel>

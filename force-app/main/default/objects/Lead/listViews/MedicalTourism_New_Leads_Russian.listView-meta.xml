@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>MedicalTourism_New_Leads_Russian</fullName>
-    <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
     <columns>FULL_NAME</columns>
     <columns>LEAD.EMAIL</columns>
     <columns>LEAD.COMPANY</columns>
@@ -15,11 +15,6 @@
         <field>LEAD.STATUS</field>
         <operation>equals</operation>
         <value>New,חדש</value>
-    </filters>
-    <filters>
-        <field>Medical_Tourism__c</field>
-        <operation>equals</operation>
-        <value>1</value>
     </filters>
     <filters>
         <field>Campaign__c</field>

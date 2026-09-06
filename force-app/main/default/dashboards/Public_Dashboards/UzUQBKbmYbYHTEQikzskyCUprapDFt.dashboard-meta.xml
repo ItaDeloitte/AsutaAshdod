@@ -196,10 +196,9 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <owner>ildevsalesforce@deloitte.co.il</owner>
-    <runningUser>ssis@assuta.co.il.prod</runningUser>
     <textColor>#000000</textColor>
     <title>בקרות איכות</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

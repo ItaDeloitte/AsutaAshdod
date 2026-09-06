@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>User.Case$OwnerId$CreatedDate</field>
@@ -27,7 +27,6 @@
             <operator>equals</operator>
             <value>דיגיטל</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>ארלנג דיגיטל - לפי תקופות זמן</name>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>DUE_DATE</field>
@@ -39,7 +39,6 @@
             <operator>contains</operator>
             <value>תור,אני,צריך,צריכה,שפיר,זרע,הריון,CT,צפיפות,MRI,אמא,אבא,סבתא,מטפלת,עובדת זרה,לא מבינה,בת,זוג. בן זוג,חבר,חברה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>דוח חשבונות חדש</name>

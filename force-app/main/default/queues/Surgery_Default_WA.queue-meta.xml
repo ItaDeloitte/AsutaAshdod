@@ -3,7 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>חדרי ניתוח דיפולט</name>
-    <queueRoutingConfig>Operating_Room</queueRoutingConfig>
     <queueSobject>
         <sobjectType>MessagingSession</sobjectType>
     </queueSobject>

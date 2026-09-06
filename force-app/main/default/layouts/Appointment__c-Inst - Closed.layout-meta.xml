@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>ChangeRecordType</excludeButtons>
     <excludeButtons>Clone</excludeButtons>
@@ -273,10 +273,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>SourceSystem__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Accession_Number__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

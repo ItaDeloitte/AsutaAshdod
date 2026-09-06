@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -78,7 +78,6 @@
             <operator>notEqual</operator>
             <value>אסנת עקראוי,בדיקת מיצוי זכויות – רפואה מותאמת אישית,בלה דוד,ג&apos;ני נויה דנילוב,יארה אבו חזנה,סרגיי פרמיאקוב,רוברטה חיימוביץ,שירז וייס</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -6,7 +6,7 @@
     <masterLabel>פניות הציבור</masterLabel>
     <pathAssistantSteps>
         <fieldNames>Status</fieldNames>
-        <picklistValueName>New</picklistValueName>
+        <picklistValueName>חדש</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>PublicInquiries</recordTypeName>
 </PathAssistant>

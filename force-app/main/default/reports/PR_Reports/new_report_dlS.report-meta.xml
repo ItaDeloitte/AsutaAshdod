@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CASE_NUMBER</field>
@@ -55,9 +55,6 @@
         <field>Case.Refund_NotApproved__c</field>
     </columns>
     <columns>
-        <field>Case.Assuta_Aprrover__c</field>
-    </columns>
-    <columns>
         <field>Case.phone__c</field>
     </columns>
     <columns>
@@ -99,7 +96,6 @@
             <operator>contains</operator>
             <value>SSIS</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>עותק של פניה -&gt; פניה</name>

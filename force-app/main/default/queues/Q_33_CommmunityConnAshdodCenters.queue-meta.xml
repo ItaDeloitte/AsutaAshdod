@@ -4,11 +4,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>pniotap@assuta.co.il</email>
     <name>קשרי קהילה אשדוד ציבורי</name>
-    <queueMembers>
-        <users>
-            <user>hanis@assuta.co.il</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

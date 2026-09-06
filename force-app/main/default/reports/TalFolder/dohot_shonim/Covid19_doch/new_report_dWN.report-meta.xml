@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Date_of_appointment__c</field>
@@ -49,7 +49,6 @@
             <operator>notContain</operator>
             <value>סימולציה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>קורונה תקופתי לפי מועד ביצוע</name>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
         <fullName>ActionEmail1010</fullName>
@@ -8,7 +8,7 @@
             <field>Manager_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Azar/Medical_Aid_Break_handelTime</template>
     </alerts>
@@ -20,7 +20,7 @@
             <field>Manager_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Azar/Canceled_Medical_Aid_ashdodpublic</template>
     </alerts>
@@ -32,7 +32,7 @@
             <field>Manager_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Azar/Medical_Aid_ashdodpublic</template>
     </alerts>
@@ -44,7 +44,7 @@
             <field>Email_MedicalAidManager__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Azar/Medical_Aid_SpecificAId_cancel</template>
     </alerts>
@@ -56,7 +56,7 @@
             <field>Manager_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Azar/Medical_Aid_Sites</template>
     </alerts>
@@ -68,7 +68,7 @@
             <field>Manager_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Azar/Canceled_Medical_Aid_Sites</template>
     </alerts>
@@ -80,7 +80,7 @@
             <field>Email_MedicalAidManager__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Azar/Medical_Aid_SpecificAId</template>
     </alerts>
@@ -89,10 +89,9 @@
         <description>שליחת הודעה ליאנה רז על פגישה עם מתרגם לשפת הסימנים</description>
         <protected>false</protected>
         <recipients>
-            <recipient>yanar@assuta.co.il</recipient>
-            <type>user</type>
+            <type>owner</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Azar/Medical_Aid_SpecificAId</template>
     </alerts>

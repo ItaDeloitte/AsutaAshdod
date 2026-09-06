@@ -376,6 +376,7 @@
                 <identifier>force_relatedListSingleContainer4</identifier>
             </componentInstance>
         </itemInstances>
+        <!-- ⚠️ לשחזור: kmslh:KMS_MainSearchComponent — kmslh לא מותקן בסנדבוקס. שחזר לאחר התקנת kmslh.
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -385,7 +386,7 @@
                 <componentName>kmslh:KMS_MainSearchComponent</componentName>
                 <identifier>kmslh_KMS_MainSearchComponent1</identifier>
             </componentInstance>
-        </itemInstances>
+        </itemInstances>-->
         <name>leftsidebar</name>
         <type>Region</type>
     </flexiPageRegions>

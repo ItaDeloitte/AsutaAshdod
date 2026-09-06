@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Appointment_Date_Time__c</field>
@@ -62,7 +62,6 @@
             <operator>contains</operator>
             <value>,שגב,גולדברג,אורון,מרדכי,מוטי,חיים</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

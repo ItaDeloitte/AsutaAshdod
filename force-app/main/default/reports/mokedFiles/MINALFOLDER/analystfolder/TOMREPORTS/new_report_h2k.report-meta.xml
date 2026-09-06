@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_CREATED_DATE</field>
@@ -78,7 +78,6 @@
             <operator>equals</operator>
             <value>92054,92083,QF920541,92050,92016,92080,92036,92033,QF942051,92045,92018,92087,92062,92046,92094,91932,92026,92010,92011,92061,92025,92012,92053,92069,92042,QF920451,13,92048</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

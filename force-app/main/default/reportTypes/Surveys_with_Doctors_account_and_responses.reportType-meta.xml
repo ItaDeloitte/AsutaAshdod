@@ -360,11 +360,6 @@
             <field>Signature_HTML__c</field>
             <table>SurveyTaker__c</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>My_Submission__c</field>
-            <table>SurveyTaker__c</table>
-        </columns>
         <masterLabel>Surveys Taken</masterLabel>
     </sections>
     <sections>
@@ -571,11 +566,16 @@
             <field>Doctor__c.IsActive</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__Active__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Age_Limit__c</field>
@@ -716,11 +716,16 @@
             <field>Doctor__c.CameleonID__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__CarePlan__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Case_360__c</field>
@@ -851,11 +856,16 @@
             <field>Doctor__c.DisabilityIndication__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__Disabled__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Disable_if_not_exist_in_DWH__c</field>
@@ -951,11 +961,16 @@
             <field>Doctor__c.endPotentialDate360__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__EnrollmentType__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.ErgoCom_Recording__c</field>
@@ -1021,16 +1036,26 @@
             <field>Doctor__c.ID_Type__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__IndividualId__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__IndividualType__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Industry</field>
@@ -1041,11 +1066,16 @@
             <field>Doctor__c.Initial_Consultation_Date__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__Institution__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Insurance_Company__c</field>
@@ -1161,11 +1191,16 @@
             <field>Doctor__c.List_of_Prohibitions__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__LowIncome__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Maccabi_Arrangement__c</field>
@@ -1191,26 +1226,41 @@
             <field>Doctor__c.Media_Links__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__MedicaidEligibilityStatus__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Medical_formtitan_approval_link__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__MedicalRecordNumber__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__MedicareEnrollee__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Men_s_Health_Clinic_Patient__c</field>
@@ -1256,11 +1306,16 @@
             <field>Doctor__c.OperatingHours</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__OREC__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Other_Health_Services__c</field>
@@ -1326,11 +1381,16 @@
             <field>Doctor__c.Payer_Factor_Insurance__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__PayerType__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.PersonContact</field>
@@ -1381,11 +1441,16 @@
             <field>Doctor__c.Preferred_Language_Service__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__PrimaryContact__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Promoted_doctor__c</field>
@@ -1571,21 +1636,31 @@
             <field>Doctor__c.SourceLastMarketingMailingUpdate__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__SourceSystem__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.SourceSystemIdentifier</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__SourceSystemId__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Start_Date_shaban_maccabi__c</field>
@@ -1636,11 +1711,16 @@
             <field>Doctor__c.Survey_Avg__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.HealthCloudGA__TaxId__c</field>
             <table>SurveyTaker__c</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Doctor__c.Terms_of_Use_Approval_Date__c</field>

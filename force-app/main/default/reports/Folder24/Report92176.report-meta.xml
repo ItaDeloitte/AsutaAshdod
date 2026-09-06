@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -67,7 +67,6 @@
             <operator>equals</operator>
             <value>92065,RS767724,RS767719,RS76700,RS767730,RS767714,RS939222,RS767708,RS767718,RS76273,RS767728,RS767740,RS767756,RS767732,RS762726,RS767757,RS767727,RS767755,RS767753,RS762727,RS767729,777719,777730,777724,77700,777707,777708,777731,777741,777732,777718,777727,777728,777740,777729,939223</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

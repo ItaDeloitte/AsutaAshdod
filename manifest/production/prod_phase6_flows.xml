@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 6 — Flows
+    =====================================
+    Types: Flow
+    Test level: NoTestRun
+    Estimated time: ~15-20 min
+    Dependencies:
+      - Phase 2 (Objects + Fields) — flows reference fields
+      - Phase 4 (Queues) — some flows assign to queues
+      - Phase 7 (LWC/Aura) — screen flows reference LWC components
+      - Phase 8 (Apex) — flows that call Apex invocable methods
+
+    IMPORTANT: Deploy LWC (Phase 7) BEFORE flows that use LWC screen components.
+               Deploy Apex (Phase 8) BEFORE flows that use Apex invocable actions.
+               If you get errors about missing components, split: deploy non-LWC/non-Apex
+               flows first, then the rest after LWC+Apex phases complete.
+
+    EXCLUDED flows (see .forceignore and CLAUDE.md sעיף 20א):
+      - 11 Lead RecordType flows (deploy after Lead RecordTypes are fully stable)
+      - 14 flows referencing excluded fields (subStatus__c, etc.)
+      - 6 FormTitan flows (deploy after Form_Builder package installed)
+      - 5 AccountContactRelation flows (already enabled — should deploy now)
+      - 3 Survey flows (already enabled — should deploy now)
+      - 8 flows awaiting admin decisions (Campaigns, PolicyCondition, etc.)
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase6_flows.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase6_result.json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- 505+ flows (excluded flows filtered by .forceignore) -->
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

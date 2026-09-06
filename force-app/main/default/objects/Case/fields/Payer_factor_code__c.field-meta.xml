@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Payer_factor_code__c</fullName>
-    <description>שדה פורמולה שיחזיק את קוד גורם משלם עבור קייס אסיינמנט רולס</description>
     <externalId>false</externalId>
     <formula>PayerFactor__r.InsuranceCode__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

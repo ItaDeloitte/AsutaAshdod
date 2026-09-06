@@ -5,17 +5,17 @@ public class AccountContactRelationTest {
     static void makeData(){
         Test.setMock(WebServiceMock.class, new AccountDemographyMock());
 
-        Account patientAcct = TestDataFactory.createPersonAccount();
+        Account patientAcct = TestDataFactory.getAccountPerson();
         patientAcct.RecordTypeId = [SELECT Id FROM RecordType WHERE DeveloperName ='PersonAccount' AND SObjectType = 'Account' LIMIT 1].Id;
         patientAcct.ID_Number__c = '852986371';   //852986371
         //patientAcct.Id_Type__c = '2';
         insert patientAcct;
 
-        Account doctorAcct = TestDataFactory.createAccount();
+        Account doctorAcct = TestDataFactory.getAccountDoctor();
         doctorAcct.RecordTypeId = [SELECT Id FROM RecordType WHERE DeveloperName = 'Doctor_Account' AND SObjectType = 'Account' LIMIT 1].Id;
         insert doctorAcct;
 
-        Contact cont = TestDataFactory.createContact(doctorAcct.Id);
+        Contact cont = TestDataFactory.getContact(doctorAcct.Id);
         insert cont;
     }
 

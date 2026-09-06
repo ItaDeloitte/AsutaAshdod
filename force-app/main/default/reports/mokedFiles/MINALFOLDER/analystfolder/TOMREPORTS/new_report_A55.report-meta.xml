@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>MessagingSession$Name</field>
@@ -46,7 +46,6 @@
             <operator>notEqual</operator>
             <value>1</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>פניות לבוט מחוץ לשעות הפעילות</name>

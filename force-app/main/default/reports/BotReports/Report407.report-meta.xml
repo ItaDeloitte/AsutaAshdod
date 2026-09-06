@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>CDF1:SUM/PARENTGROUPVAL(CDF1:SUM,UserServicePresence.User.Name)</calculatedFormula>
@@ -145,7 +145,6 @@
             <operator>notContain</operator>
             <value>,בת-אל,גיא,מנוחה</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

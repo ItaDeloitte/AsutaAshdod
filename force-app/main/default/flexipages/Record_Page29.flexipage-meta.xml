@@ -177,6 +177,7 @@
                 <identifier>support_milestones</identifier>
             </componentInstance>
         </itemInstances>
+        <!-- ⚠️ לשחזור: NBA builderNbaWidget strategy=X360_patient — Next Best Action לא מופעל בסנדבוקס. שחזר לאחר הפעלת Next Best Action.
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -222,7 +223,7 @@
                 <componentName>runtime_communities_nba:builderNbaWidget</componentName>
                 <identifier>runtime_communities_nba_builderNbaWidget</identifier>
             </componentInstance>
-        </itemInstances>
+        </itemInstances>-->
         <itemInstances>
             <componentInstance>
                 <componentName>forceChatter:recordFeedContainer</componentName>

@@ -3,12 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>תו למחווה- מחלקת קרינה אונקולוגיה</name>
-    <queueMembers>
-        <users>
-            <user>rinatk@assuta.co.il</user>
-            <user>rafaelar@assuta.co.il</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

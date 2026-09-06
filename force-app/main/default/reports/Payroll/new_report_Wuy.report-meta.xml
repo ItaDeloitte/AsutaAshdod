@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -140,7 +140,6 @@
             <operator>contains</operator>
             <value>חוסאם מאדי,פפו יצחק,פפא משה,בשארה בשארה,מחאג&apos;נה אחמד,שמעונוב מרדכי,חן דוד,אביעד הופמן,הרשקו דן,מרום שראלי,דואק סימון דניאל,דוידוביץ ברנרד,מילר אהוד,סוסטיאל ג&apos;אן פרן,סולטאן חלאילה,יאנקולוביץ נעם,אביאל חדד,טובה ליפשיץ,אבו פול אכרם,יואל אורי,רמון יעקב,גיל רביב,דוד מרגל,גפטלר אלכסנדר,מרום ליאור,ירון רם,כהן גדי חיים,מאזן פלאח,סטרולוביץ יוסף,אביתר אפרים,אברהמוב יורם,אלקרנאוי ג&apos;אבר,גינדין יעקב,דוחן אלכסנדר</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

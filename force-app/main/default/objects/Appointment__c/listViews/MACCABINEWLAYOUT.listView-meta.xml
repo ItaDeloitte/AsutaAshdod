@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>MACCABINEWLAYOUT</fullName>
-    <booleanFilter>1 AND 2 AND 8 AND 9 AND (3 OR 4 OR 5 OR (6 AND 7)) AND 10</booleanFilter>
+    <booleanFilter>1 AND 2 AND 7 AND 8 AND (3 OR 4 OR 5 OR 6) AND 9</booleanFilter>
     <columns>PayerFactor__c</columns>
     <columns>Appointment_Date_Time__c</columns>
     <columns>NAME</columns>
@@ -41,11 +41,6 @@
         <field>Deductibles__c</field>
         <operation>greaterThan</operation>
         <value>6000</value>
-    </filters>
-    <filters>
-        <field>PaymentsRead__c</field>
-        <operation>equals</operation>
-        <value>0</value>
     </filters>
     <filters>
         <field>Appointment_Status__c</field>

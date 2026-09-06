@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Supplier</fullName>
     <active>true</active>
     <compactLayoutAssignment>Supplier_Account</compactLayoutAssignment>
     <label>Supplier</label>
-    <picklistValues>
+        <picklistValues>
         <picklist>AccountSource</picklist>
         <values>
             <fullName>AbandoningWhatsApp</fullName>
@@ -51,7 +51,7 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+    
         <picklist>Age_Limit__c</picklist>
         <values>
             <fullName>18 Or More</fullName>
@@ -66,7 +66,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>App_For_Patient__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -77,7 +124,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>AshdodPreferredChannel__c</picklist>
         <values>
             <fullName>SMS</fullName>
@@ -88,7 +182,54 @@
             <default>true</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Asthma__c</picklist>
         <values>
             <fullName>Fatal</fullName>
@@ -115,30 +256,124 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>כן</fullName>
+            <fullName>׳›׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>׳׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא ידוע</fullName>
+            <fullName>׳׳ ׳™׳“׳•׳¢</fullName>
             <default>true</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Blood_Dilution__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>כן</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+    
+        <picklist>Blood_Dilution__c</picklist>
+        <values>
+            <fullName>׳›׳</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳׳</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>CalendarSystem_ETL__c</picklist>
         <values>
             <fullName>Odoro</fullName>
@@ -153,7 +388,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>CalendarSystem__c</picklist>
         <values>
             <fullName>Odoro</fullName>
@@ -168,50 +450,144 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>דרך אתר אסותא</fullName>
+            <fullName>׳“׳¨׳ ׳׳×׳¨ ׳׳¡׳•׳×׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא ניתן לזמן</fullName>
+            <fullName>׳׳ ׳ ׳™׳×׳ ׳׳–׳׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>תיאום דרך אתר האינטרנט של הרופא</fullName>
+            <fullName>׳×׳™׳׳•׳ ׳“׳¨׳ ׳׳×׳¨ ׳”׳׳™׳ ׳˜׳¨׳ ׳˜ ׳©׳ ׳”׳¨׳•׳₪׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>תיאום טלפוני דרך המזכירה</fullName>
+            <fullName>׳×׳™׳׳•׳ ׳˜׳׳₪׳•׳ ׳™ ׳“׳¨׳ ׳”׳׳–׳›׳™׳¨׳”</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Company_Category__c</picklist>
         <values>
-            <fullName>דיור מוגן</fullName>
+            <fullName>׳“׳™׳•׳¨ ׳׳•׳’׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>חברות הייטק</fullName>
+            <fullName>׳—׳‘׳¨׳•׳× ׳”׳™׳™׳˜׳§</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>חברות ממשלתיות</fullName>
+            <fullName>׳—׳‘׳¨׳•׳× ׳׳׳©׳׳×׳™׳•׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מרפאות</fullName>
+            <fullName>׳׳¨׳₪׳׳•׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>סוכני ביטוח</fullName>
+            <fullName>׳¡׳•׳›׳ ׳™ ׳‘׳™׳˜׳•׳—</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>עיסקי</fullName>
+            <fullName>׳¢׳™׳¡׳§׳™</fullName>
             <default>true</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Diabetic__c</picklist>
         <values>
             <fullName>Fatal</fullName>
@@ -238,84 +614,272 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>כן</fullName>
+            <fullName>׳›׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>׳׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא ידוע</fullName>
+            <fullName>׳׳ ׳™׳“׳•׳¢</fullName>
             <default>true</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Disease_Management_Specialization__c</picklist>
         <values>
-            <fullName>כירורג</fullName>
+            <fullName>׳›׳™׳¨׳•׳¨׳’</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>משפחה</fullName>
+            <fullName>׳׳©׳₪׳—׳”</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Doc_Lang_ETL__c</picklist>
         <values>
-            <fullName>אמהרית</fullName>
+            <fullName>׳׳׳”׳¨׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>אנגלית</fullName>
+            <fullName>׳׳ ׳’׳׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>עברית</fullName>
+            <fullName>׳¢׳‘׳¨׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ערבית</fullName>
+            <fullName>׳¢׳¨׳‘׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>צרפתית</fullName>
+            <fullName>׳¦׳¨׳₪׳×׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>רוסית</fullName>
+            <fullName>׳¨׳•׳¡׳™׳×</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>DoctorLangauge__c</picklist>
         <values>
-            <fullName>אמהרית</fullName>
+            <fullName>׳׳׳”׳¨׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>אנגלית</fullName>
+            <fullName>׳׳ ׳’׳׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>עברית</fullName>
+            <fullName>׳¢׳‘׳¨׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ערבית</fullName>
+            <fullName>׳¢׳¨׳‘׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>צרפתית</fullName>
+            <fullName>׳¦׳¨׳₪׳×׳™׳×</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>רוסית</fullName>
+            <fullName>׳¨׳•׳¡׳™׳×</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Dust__c</picklist>
         <values>
             <fullName>Fatal</fullName>
@@ -342,19 +906,66 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>כן</fullName>
+            <fullName>׳›׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>׳׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא ידוע</fullName>
+            <fullName>׳׳ ׳™׳“׳•׳¢</fullName>
             <default>true</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Email_status__c</picklist>
         <values>
             <fullName>NoEmail</fullName>
@@ -365,7 +976,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Employement_Type7__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -380,89 +1038,116 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Gender__c</picklist>
         <values>
-            <fullName>ז</fullName>
+            <fullName>׳–</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ל</fullName>
+            <fullName>׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>נ</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__Active__c</picklist>
-        <values>
-            <fullName>No</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Yes</fullName>
+            <fullName>׳ </fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__EnrollmentType__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>Dual</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ESRD</fullName>
+            <fullName>Docadvisor</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>FBDual</fullName>
+            <fullName>Inbound_Call</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>NonDual</fullName>
-            <default>true</default>
-        </values>
-        <values>
-            <fullName>PBDual</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__IndividualType__c</picklist>
-        <values>
-            <fullName>Group</fullName>
+            <fullName>Web</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Individual</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__MedicareEnrollee__c</picklist>
-        <values>
-            <fullName>Continued</fullName>
+            <fullName>assutaWebsite</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>New Enrollee</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__OREC__c</picklist>
-        <values>
-            <fullName>Age</fullName>
+            <fullName>calls</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Disabled</fullName>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+    
         <picklist>ID_Type__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -477,7 +1162,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Industry</picklist>
         <values>
             <fullName>Agriculture</fullName>
@@ -608,7 +1340,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Insurance_Company__c</picklist>
         <values>
             <fullName>10</fullName>
@@ -647,7 +1426,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Insurer_factor__c</picklist>
         <values>
             <fullName>0</fullName>
@@ -674,7 +1500,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Iodine_sensitivity__c</picklist>
         <values>
             <fullName>Fatal</fullName>
@@ -701,60 +1574,248 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>כן</fullName>
+            <fullName>׳›׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>׳׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא ידוע</fullName>
+            <fullName>׳׳ ׳™׳“׳•׳¢</fullName>
             <default>true</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Maccabi_Arrangement_ETL__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>רופא בהסדר</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>רופא קופה</fullName>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+    
+        <picklist>Maccabi_Arrangement_ETL__c</picklist>
+        <values>
+            <fullName>׳¨׳•׳₪׳ ׳‘׳”׳¡׳“׳¨</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¨׳•׳₪׳ ׳§׳•׳₪׳”</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Maccabi_Arrangement__c</picklist>
         <values>
             <fullName>cash_doc</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>רופא בהסדר</fullName>
+            <fullName>׳¨׳•׳₪׳ ׳‘׳”׳¡׳“׳¨</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Mailing_approval__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>לא מאשר דיוור - הכל</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מאשר דיוור - הכל</fullName>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
+        <picklist>Mailing_approval__c</picklist>
+        <values>
+            <fullName>׳׳ ׳׳׳©׳¨ ׳“׳™׳•׳•׳¨ - ׳”׳›׳</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳׳׳©׳¨ ׳“׳™׳•׳•׳¨ - ׳”׳›׳</fullName>
             <default>true</default>
         </values>
         <values>
-            <fullName>מאשר דיוור - שיווקי</fullName>
+            <fullName>׳׳׳©׳¨ ׳“׳™׳•׳•׳¨ - ׳©׳™׳•׳•׳§׳™</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מאשר דיוור - שירותי</fullName>
+            <fullName>׳׳׳©׳¨ ׳“׳™׳•׳•׳¨ - ׳©׳™׳¨׳•׳×׳™</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Men_s_Health_Clinic_Status__c</picklist>
         <values>
             <fullName>Tracking</fullName>
@@ -765,38 +1826,132 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Metals_in_body__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>גשר שיניים</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>Docadvisor</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא ידוע</fullName>
+            <fullName>Inbound_Call</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מתכות</fullName>
+            <fullName>Web</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>סטנט</fullName>
+            <fullName>assutaWebsite</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>קוצב לב</fullName>
+            <fullName>calls</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>רסיסים</fullName>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+    
+        <picklist>Metals_in_body__c</picklist>
+        <values>
+            <fullName>׳’׳©׳¨ ׳©׳™׳ ׳™׳™׳</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳׳</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳׳ ׳™׳“׳•׳¢</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳׳×׳›׳•׳×</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¡׳˜׳ ׳˜</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳§׳•׳¦׳‘ ׳׳‘</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¨׳¡׳™׳¡׳™׳</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Other_Health_Services__c</picklist>
         <values>
             <fullName>10</fullName>
@@ -835,11 +1990,58 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>ללא</fullName>
+            <fullName>׳׳׳</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Ownership</picklist>
         <values>
             <fullName>Other</fullName>
@@ -858,26 +2060,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Payment_method__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>ביט</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>כרטיס אשראי</fullName>
+            <fullName>Docadvisor</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מזומן</fullName>
+            <fullName>Inbound_Call</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>צ%27ק</fullName>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+    
         <picklist>Pre_surgury_needed__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -892,7 +2122,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Preferred_Channel__c</picklist>
         <values>
             <fullName>Email</fullName>
@@ -923,11 +2200,58 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>לא פעיל</fullName>
+            <fullName>׳׳ ׳₪׳¢׳™׳</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Preferred_Language_Service__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -950,7 +2274,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Privat_Hospital__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -981,7 +2352,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Promoted_doctor__c</picklist>
         <values>
             <fullName>Agreement</fullName>
@@ -1020,7 +2438,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Publick_Hospital__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -1259,29 +2724,170 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Question_1__c</picklist>
         <values>
-            <fullName>כן</fullName>
+            <fullName>׳›׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>׳׳</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Question_2__c</picklist>
         <values>
-            <fullName>כן</fullName>
+            <fullName>׳›׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>׳׳</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Rating</picklist>
         <values>
             <fullName>Cold</fullName>
@@ -1296,42 +2902,136 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Reason_not_show_DA__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>הנהלה</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>הסכמים</fullName>
+            <fullName>Docadvisor</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>הפסיק פעילות</fullName>
+            <fullName>Inbound_Call</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לבקשת הרופא</fullName>
+            <fullName>Web</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>סחר</fullName>
+            <fullName>assutaWebsite</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ציון רופא נמוך</fullName>
+            <fullName>calls</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>רופא מייעץ</fullName>
+            <fullName>commercialMails</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>שיווק</fullName>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+    
+        <picklist>Reason_not_show_DA__c</picklist>
+        <values>
+            <fullName>׳”׳ ׳”׳׳”</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳”׳¡׳›׳׳™׳</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳”׳₪׳¡׳™׳§ ׳₪׳¢׳™׳׳•׳×</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳׳‘׳§׳©׳× ׳”׳¨׳•׳₪׳</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¡׳—׳¨</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¦׳™׳•׳ ׳¨׳•׳₪׳ ׳ ׳׳•׳</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¨׳•׳₪׳ ׳׳™׳™׳¢׳¥</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳©׳™׳•׳•׳§</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>RestrictionOnDisplayingCalendars__c</picklist>
         <values>
             <fullName>Block24</fullName>
@@ -1346,7 +3046,54 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>ShowDoctorInDA__c</picklist>
         <values>
             <fullName>false</fullName>
@@ -1357,61 +3104,202 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Status__c</picklist>
         <values>
-            <fullName>ה</fullName>
+            <fullName>׳”</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ח</fullName>
+            <fullName>׳—</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ל</fullName>
+            <fullName>׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מ</fullName>
+            <fullName>׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>נ</fullName>
+            <fullName>׳ </fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ס</fullName>
+            <fullName>׳¡</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>פ</fullName>
+            <fullName>׳₪</fullName>
             <default>true</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Supplier_Type__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>חברה</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>חשבונית עצמית</fullName>
+            <fullName>Docadvisor</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>עוסק מורשה</fullName>
+            <fullName>Inbound_Call</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>עוסק פטור</fullName>
+            <fullName>Web</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>עמותה</fullName>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+    
+        <picklist>Supplier_Type__c</picklist>
+        <values>
+            <fullName>׳—׳‘׳¨׳”</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳—׳©׳‘׳•׳ ׳™׳× ׳¢׳¦׳׳™׳×</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¢׳•׳¡׳§ ׳׳•׳¨׳©׳”</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¢׳•׳¡׳§ ׳₪׳˜׳•׳¨</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳¢׳׳•׳×׳”</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Type</picklist>
         <values>
             <fullName>Analyst</fullName>
@@ -1454,71 +3342,259 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>Weight__c</picklist>
         <values>
-            <fullName>בין 120 ל-140</fullName>
+            <fullName>׳‘׳™׳ 120 ׳-140</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>בין 140 ל-200</fullName>
+            <fullName>׳‘׳™׳ 140 ׳-200</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מעל 200</fullName>
+            <fullName>׳׳¢׳ 200</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מתחת ל-120</fullName>
+            <fullName>׳׳×׳—׳× ׳-120</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>doctor_degree__c</picklist>
         <values>
-            <fullName>גב%27</fullName>
+            <fullName>׳’׳‘%27</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ד%22ר</fullName>
+            <fullName>׳“%22׳¨</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>מר</fullName>
+            <fullName>׳׳¨</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>פרופסור</fullName>
+            <fullName>׳₪׳¨׳•׳₪׳¡׳•׳¨</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
         <picklist>doctor_settlements__c</picklist>
         <values>
-            <fullName>בת ים</fullName>
+            <fullName>׳‘׳× ׳™׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>חולון</fullName>
+            <fullName>׳—׳•׳׳•׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ראשון לציון</fullName>
+            <fullName>׳¨׳׳©׳•׳ ׳׳¦׳™׳•׳</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>תל אביב</fullName>
+            <fullName>׳×׳ ׳׳‘׳™׳‘</fullName>
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>help_field_two_same_apt__c</picklist>
+        <picklistValues>
+        <picklist>AccountSource</picklist>
         <values>
-            <fullName>כן</fullName>
+            <fullName>AbandoningWhatsApp</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>לא</fullName>
+            <fullName>Docadvisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    
+        <picklist>help_field_two_same_apt__c</picklist>
+        <values>
+            <fullName>׳›׳</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>׳׳</fullName>
             <default>false</default>
         </values>
     </picklistValues>

@@ -168,152 +168,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>PartnerAccount</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Contract</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Diagnosis__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__InsuranceGroupId__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__InsuranceMemberId__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__InsuranceType__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__IsOutOfNetwork__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__CurrentGenerators__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__DeliveryInstallationStatus__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__MainCompetitors__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__OrderNumber__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>kmslh__TrackingNumber__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__PrimaryDiagnosis__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Primary_Insurance__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Priority__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReasonForOutOfNetworkReferral__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Reason_for_Referral__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferralReceivedDate__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferredToOrganization__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferredToPractitioner__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferredToUser__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferringOrganization__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferringPractitionerScore__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferringPractitioner__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__ReferringUser__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SecondaryDiagnosis__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Specialty__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__TertiaryDiagnosis__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__TrackingNumber__c</field>
-            <table>Opportunity</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__TypeOfService__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
@@ -699,11 +554,16 @@
             <field>Account.IsActive</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__Active__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Address__c</field>
@@ -924,11 +784,16 @@
             <field>Account.CameleonID__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__CarePlan__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Case_360__c</field>
@@ -1099,11 +964,16 @@
             <field>Account.DisabilityIndication__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__Disabled__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Disable_if_not_exist_in_DWH__c</field>
@@ -1349,11 +1219,16 @@
             <field>Account.EndPotentialDateOne__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__EnrollmentType__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.ErgoCom_Recording__c</field>
@@ -1569,16 +1444,26 @@
             <field>Account.ID_Type__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__IndividualId__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__IndividualType__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Industry</field>
@@ -1589,11 +1474,16 @@
             <field>Account.Initial_Consultation_Date__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__Institution__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Insurance_Company__c</field>
@@ -1749,11 +1639,16 @@
             <field>Account.List_of_Prohibitions__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__LowIncome__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Maccabi_Arrangement__c</field>
@@ -1789,26 +1684,41 @@
             <field>Account.Media_Links__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__MedicaidEligibilityStatus__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Medical_formtitan_approval_link__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__MedicalRecordNumber__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__MedicareEnrollee__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Men_s_Health_Clinic_Patient__c</field>
@@ -1914,11 +1824,16 @@
             <field>Account.OperatingHours</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__OREC__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Other_Health_Services__c</field>
@@ -2024,11 +1939,16 @@
             <field>Account.Payer_Factor_Insurance__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__PayerType__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Payment_method__c</field>
@@ -2114,11 +2034,16 @@
             <field>Account.prev_name__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__PrimaryContact__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Primary_Contact_Surgeons_Group__c</field>
@@ -2439,21 +2364,31 @@
             <field>Account.SourceLastMarketingMailingUpdate__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__SourceSystem__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.SourceSystemIdentifier</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__SourceSystemId__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.Start_Date_shaban_maccabi__c</field>
@@ -2529,11 +2464,16 @@
             <field>Account.Surveys_Amount__c</field>
             <table>Opportunity</table>
         </columns>
+
+        <!-- WARNING restore after HealthCloudGA package installation
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.HealthCloudGA__TaxId__c</field>
             <table>Opportunity</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Account.TelemedicineDoctor__c</field>

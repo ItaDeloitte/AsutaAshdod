@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Patient_Account__c</field>
@@ -64,7 +64,6 @@
             <operator>notEqual</operator>
             <value>,37.7,37.32,37.34,88.409,37.41,37.6,37.8,88.55,88.59,37.79,88.49,50.93,50.95,37.0</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>חדר פרטי - אסותא חיפה</name>

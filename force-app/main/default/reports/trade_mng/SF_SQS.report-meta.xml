@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <columns>
-        <field>Contact.HealthCloudGA__Age__c</field>
-    </columns>
+
     <columns>
         <field>PC_ADDRESS2_STREET</field>
     </columns>
@@ -37,7 +35,6 @@
             <operator>greaterOrEqual</operator>
             <value>6/1/2020 1:00 AM</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>חשבונות מאשרי דיוור בSF כולל גיל וכתובת</name>

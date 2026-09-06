@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>ACCOUNT.NAME</field>
@@ -37,7 +37,6 @@
             <operator>notContain</operator>
             <value>סמסון</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>אסיא מדיקל חסימה ל- 24 שעות</name>

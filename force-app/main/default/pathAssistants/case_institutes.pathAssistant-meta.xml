@@ -6,18 +6,18 @@
     <masterLabel>פניות - בדיקה</masterLabel>
     <pathAssistantSteps>
         <fieldNames>Treat_status__c</fieldNames>
-        <picklistValueName>Escalated</picklistValueName>
+        <picklistValueName>בטיפול מנהל</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>Reason</fieldNames>
         <fieldNames>Treat_status__c</fieldNames>
-        <picklistValueName>In_Progress</picklistValueName>
+        <picklistValueName>בטיפול</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>OwnerId</fieldNames>
         <fieldNames>Treat_status__c</fieldNames>
         <info>&lt;p&gt;פנייתך הועברה,מועד לחזרה עד 24 שעות לחזרה &lt;/p&gt;</info>
-        <picklistValueName>Third Party</picklistValueName>
+        <picklistValueName>הועבר לטיפול מזכירות</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>Appointments</recordTypeName>
 </PathAssistant>

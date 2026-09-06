@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Account.Cases$CreatedDate</field>
@@ -52,7 +52,6 @@
             <operator>notContain</operator>
             <value>נינה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>פניות שירות שלא מבוצע באסותא - אתמול</name>

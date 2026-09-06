@@ -1,16 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Doctor__c</fullName>
     <label>רופא</label>
-    <lookupFilter>
-        <active>true</active>
-        <filterItems>
-            <field>Account.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Doctor Account</value>
-        </filterItems>
-        <isOptional>false</isOptional>
-    </lookupFilter>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>הסדרים</relationshipLabel>
     <relationshipName>doc_arrangement</relationshipName>
@@ -20,4 +11,13 @@
     <trackTrending>false</trackTrending>
     <type>MasterDetail</type>
     <writeRequiresMasterRead>false</writeRequiresMasterRead>
+<lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Doctor Account</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
 </CustomField>

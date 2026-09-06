@@ -3,16 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>עד הבית - נציגים</name>
-    <queueMembers>
-        <users>
-            <user>oshratbars@assuta.co.il</user>
-            <user>almoggr@assuta.co.il</user>
-            <user>barz@assuta.co.il</user>
-            <user>yaelshapi@assuta.co.il</user>
-            <user>stavpa@assuta.co.il</user>
-            <user>shiranbeni@assuta.co.il</user>
-        </users>
-    </queueMembers>
     <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
     <queueSobject>
         <sobjectType>Case</sobjectType>

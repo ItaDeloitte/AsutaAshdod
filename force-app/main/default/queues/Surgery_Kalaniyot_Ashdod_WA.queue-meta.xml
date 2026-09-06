@@ -3,14 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>זימון חדר ניתוח - אשדוד כלניות</name>
-    <queueMembers>
-        <users>
-            <user>olgap@assuta.co.il</user>
-            <user>valentinaf@assuta.co.il</user>
-            <user>tatyanape@assuta.co.il</user>
-        </users>
-    </queueMembers>
-    <queueRoutingConfig>Operating_Room</queueRoutingConfig>
     <queueSobject>
         <sobjectType>MessagingSession</sobjectType>
     </queueSobject>

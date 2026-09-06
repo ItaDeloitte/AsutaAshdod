@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -154,7 +154,6 @@
             <operator>contains</operator>
             <value>רוסו,פליס,נאמן,מרגלית,מבג&apos;יש,אלישע,ליברמן,ירושלמי,גורדון,אלדד,שולמן,גנוט,רוזנצוויג,רוזנפלד,רובינוב,קליינמן,הורוביץ,צ&apos;טרג&apos;י,חורב,סעדיה,סלוביק,לובובסקי,מתן,מרון,מעיין,מאירוביץ,מאיר,מאור,לנדאו,כץ,כפרי,פרוסו,צביאלי,הוכמן,דקל,גורדין,גולובצ&apos;ינר,בנימיני,בן,בכר,ביטרמן,אניס,לקשטיין,שבת,סמי,דראושה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

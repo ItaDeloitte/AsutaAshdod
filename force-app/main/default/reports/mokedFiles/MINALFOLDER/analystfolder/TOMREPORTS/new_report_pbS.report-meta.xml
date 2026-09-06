@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -143,7 +143,6 @@
             <operator>equals</operator>
             <value>אדיבה בשאר,לטיפה חיידר,חדיגה מוחסן,אבנגלינה שמשום,יפית פורת,אורנה יאסו,איאת אבו עביד,לילה אלחוס,אילנה עידן,אילונה ביביאן,ניסים כשכאש,רנא סואעד,אמנה זישאן,נארימאן דיאב,עינב בן דוד,צליל גולדמן,לאמר אליאס,סיוון כהן,נרדין מרשי,אהובה ויזל,גיטר גיתית,ויקטוריה שומייקו,ישראל עלם,ביילסאן קואיין</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

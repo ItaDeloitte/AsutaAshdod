@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <aggregateTypes>Unique</aggregateTypes>
@@ -55,7 +55,6 @@
             <operator>lessThan</operator>
             <value>61</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>דוח חשבונות מאושרי דיוור - (40-61)</name>

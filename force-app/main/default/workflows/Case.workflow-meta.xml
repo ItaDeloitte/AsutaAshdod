@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
         <fullName>ActionEmail</fullName>
@@ -16,7 +16,7 @@
             <recipient>Quality_of_Service_Manager</recipient>
             <type>role</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Break_Of_SLA</template>
     </alerts>
@@ -31,7 +31,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/SLA_going_to_break</template>
     </alerts>
@@ -46,7 +46,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Alert_Shikum_Pending_Doctor_Approval</template>
     </alerts>
@@ -58,7 +58,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Digital_Document_Archive</template>
     </alerts>
@@ -74,7 +74,7 @@
             <field>Responsible_for_the_case__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Doctors_Payments_SLA_100</template>
     </alerts>
@@ -90,7 +90,7 @@
             <field>Responsible_for_the_case__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Doctors_Payments_SLA_80</template>
     </alerts>
@@ -103,7 +103,7 @@
             <field>Responsible_for_the_case__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Doctors_Payments_SLA_80</template>
     </alerts>
@@ -116,7 +116,7 @@
             <field>Responsible_for_the_case__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Doctors_Payments_SLA_100</template>
     </alerts>
@@ -128,7 +128,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>ramat.info@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>FOLDER_IVF/First_Call_Done_Couple_RH</template>
     </alerts>
@@ -140,7 +140,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>rishon.info@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>FOLDER_IVF/First_Call_Done_Couple_RL</template>
     </alerts>
@@ -152,7 +152,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>ramat.info@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>FOLDER_IVF/First_Call_Done_Female_RH</template>
     </alerts>
@@ -164,7 +164,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>rishon.info@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>FOLDER_IVF/First_Call_Done_Female_RL</template>
     </alerts>
@@ -176,7 +176,7 @@
             <field>Partner_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>ramat.info@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>FOLDER_IVF/First_Call_Done_Male_RH</template>
     </alerts>
@@ -188,7 +188,7 @@
             <field>Partner_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>rishon.info@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>FOLDER_IVF/First_Call_Done_Male_RL</template>
     </alerts>
@@ -200,7 +200,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Digital_Document_FreshConceptPOA</template>
     </alerts>
@@ -212,7 +212,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Digital_Document_Medical_Record</template>
     </alerts>
@@ -224,7 +224,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_OTP</template>
     </alerts>
@@ -236,7 +236,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/OTP_2</template>
     </alerts>
@@ -248,7 +248,7 @@
             <field>manager_mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Break_Of_SLA6</template>
     </alerts>
@@ -259,7 +259,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Shikum_Bait_Release_Update</template>
     </alerts>
@@ -270,7 +270,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Shikum_Bait_Response_Update</template>
     </alerts>
@@ -282,7 +282,7 @@
             <field>Clinic_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Upload_Files_Clinic</template>
     </alerts>
@@ -294,7 +294,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Digital_Document_Upload_File</template>
     </alerts>
@@ -306,7 +306,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Upload_referral</template>
     </alerts>
@@ -318,7 +318,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Auto_response_web</template>
     </alerts>
@@ -330,7 +330,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Auto_response_web_MedicalInfo</template>
     </alerts>
@@ -341,7 +341,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/close_360</template>
     </alerts>
@@ -353,7 +353,7 @@
             <field>email_from_patient__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Doc_Recommendation</template>
     </alerts>
@@ -362,10 +362,9 @@
         <description>referral agency</description>
         <protected>false</protected>
         <recipients>
-            <recipient>guyab@assuta.co.il</recipient>
-            <type>user</type>
+            <type>owner</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/referral_agency</template>
     </alerts>
@@ -1249,7 +1248,7 @@ Case Origin
         <criteriaItems>
             <field>Case.Change_Owner_To_Queue__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <description>ברגע שצק בוקס מסומן מלחליף את הבעלים של הקייס לתור</description>
         <triggerType>onCreateOnly</triggerType>
@@ -1865,7 +1864,7 @@ Case Origin
         <active>false</active>
         <formula>NOT(ISBLANK(toaddressemail__c)) 
 &amp;&amp;
-toaddressemail__c= &apos;rishon.info@assuta.co.il&apos;
+toaddressemail__c= &apos;ylerfeld@deloitte.co.il&apos;
 &amp;&amp;
 ISPICKVAL(Case_site__c, &quot;&quot;)</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1879,7 +1878,7 @@ ISPICKVAL(Case_site__c, &quot;&quot;)</formula>
         <active>false</active>
         <formula>NOT(ISBLANK(toaddressemail__c)) 
 &amp;&amp;
-toaddressemail__c= &apos;ramat.info@assuta.co.il&apos;
+toaddressemail__c= &apos;ylerfeld@deloitte.co.il&apos;
 &amp;&amp;
 ISPICKVAL(Case_site__c, &quot;&quot;)</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1946,7 +1945,7 @@ ISPICKVAL(Case_site__c, &quot;&quot;)</formula>
         <criteriaItems>
             <field>Case.Send_Link_Clinic__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
     </rules>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.IDNumber__c</field>
@@ -39,7 +39,6 @@ TEXT(YEAR((Appointment__c.Date_Appointment__c)))</calculatedFormula>
             <operator>greaterOrEqual</operator>
             <value>1/1/2025 12:00 AM</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

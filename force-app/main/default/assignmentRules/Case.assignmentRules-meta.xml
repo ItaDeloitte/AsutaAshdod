@@ -119,14 +119,14 @@
                 <value>Web_Site</value>
             </criteriaItems>
             <criteriaItems>
-                <field>Case.tofes_web__c</field>
-                <operation>equals</operation>
-                <value>טופס 2</value>
-            </criteriaItems>
-            <criteriaItems>
                 <field>Case.RecordTypeId</field>
                 <operation>notEqual</operation>
                 <value>פניות הציבור</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.tofes_web__c</field>
+                <operation>equals</operation>
+                <value>טופס 2</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -283,7 +283,7 @@
             <criteriaItems>
                 <field>Account.Experts_center__c</field>
                 <operation>equals</operation>
-                <value>אמת</value>
+                <value>True</value>
             </criteriaItems>
             <criteriaItems>
                 <field>Case.sub_case_subject__c</field>

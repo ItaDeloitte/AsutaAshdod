@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -89,7 +89,6 @@
             <operator>equals</operator>
             <value>,preSale,New,חדש,Third Party,הועבר לטיפול מזכירות,Escalated,In_Progress,בטיפול,נדרשת המלצה/קביעת תור לכירורג שד,התקשרות מול רופא,ממתין לקביעת ביופסיה,ממתין לקביעת תור ממוטומיה,ממתין למועד ביופסיה,ממתין לתוצאות ביופסיה,התקבלו תוצאות ביופסיה,ממתין,ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית,ממתין למועד בדיקת MRI/PET CT,ממתין לתוצאת בדיקת MRI/PET CT,נקבע תור לניתוח,הועבר למחלקה אונקולוגית,סגירת אירוע אוטומטית,ממתין למימוש,ממתין לתזכור על ידי נציג,ממתין לסקר על ידי נציג,נדרש המשך טיפול,Closed,סגור,Caneclled,ניהול סיכונים,ממתין לרופא,ממתין למטופל,בבדיקה מול גורם נוסף,העברה לטיפול מנהל,אין מענה,העברה חזרה למוקד,Service_Adaption,In_Process,Closing,המלצה למומחה,זימון למומחה,זימון לבדיקה,recomendation for expert check or catherization,בטיפול צוות תשלומי רופאים,בטיפול אגף סחר ושיווק,בטיפול אגף התחשבנות,בטיפול אגף רפואה,המשך טיפול צוות תשלומי רופאים,טופל,ThirdParty,Awaits_Response,Following,התקבלה תשובה,Active,Not_Active</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

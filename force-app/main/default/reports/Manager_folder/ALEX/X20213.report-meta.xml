@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Appointment_Date_Time__c</field>
@@ -30,7 +30,6 @@
             <operator>equals</operator>
             <value>992503,992502,992501</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>יעוץ גנטי לפני מי שפיר מיוני 2021</name>

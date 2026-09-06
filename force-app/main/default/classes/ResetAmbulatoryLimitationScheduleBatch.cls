@@ -67,7 +67,7 @@ global class ResetAmbulatoryLimitationScheduleBatch implements Database.Batchabl
         return new EmailMessage(            
             EmailTemplateId = template.Id,
             ToAddress = toAddress,
-            FromAddress = 'nonreply@assuta.co.il',
+            FromAddress = 'ylerfeld@deloitte.co.il',
             AccountId__c = account.Id,
             TemplateMergeField__c = 'AccountId__c',
             ExpectedSendingDateTime__c = Datetime.now(),

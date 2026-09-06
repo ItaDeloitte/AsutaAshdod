@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>survey_to_ris</fullName>
     <columns>CREATED_DATE</columns>
     <columns>NAME</columns>
     <columns>Account__c</columns>
-    <columns>Fill_Percentage__c</columns>
     <columns>IsSent__c</columns>
     <columns>SendTime__c</columns>
     <columns>visit_date__c</columns>
@@ -19,11 +18,6 @@
         <field>CREATED_DATE</field>
         <operation>greaterOrEqual</operation>
         <value>5/2/2021 12:00 AM</value>
-    </filters>
-    <filters>
-        <field>Fill_Percentage__c</field>
-        <operation>greaterThan</operation>
-        <value>0.0</value>
     </filters>
     <filters>
         <field>IsSent__c</field>

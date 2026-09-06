@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>DUE_DATE</field>
@@ -54,7 +54,6 @@
             <operator>equals</operator>
             <value>Account.Doctor_Account</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>רופאים עם אתר פעיל ללא אתר ראשי</name>

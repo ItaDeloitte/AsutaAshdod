@@ -559,46 +559,6 @@
             <field>Full_Name_Helper__c</field>
             <table>User</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__Default_ET_Page__c</field>
-            <table>User</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__Default_MID__c</field>
-            <table>User</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ExactTargetForAppExchangeAdmin__c</field>
-            <table>User</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ExactTargetForAppExchangeUser__c</field>
-            <table>User</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ExactTargetUsername__c</field>
-            <table>User</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ExactTarget_OAuth_Token__c</field>
-            <table>User</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ValidExactTargetAdmin__c</field>
-            <table>User</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ValidExactTargetUser__c</field>
-            <table>User</table>
-        </columns>
         <masterLabel>Users</masterLabel>
     </sections>
     <sections>
@@ -945,11 +905,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Opearator__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opened_by_Doctor__c</field>
             <table>User.Case$OwnerId</table>
         </columns>
         <columns>
@@ -2054,51 +2009,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__DueDate__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__FinancialValue__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SortOrder__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgencyMeasureID__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgencyMeasureVersion__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgency__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystemID__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystemModified__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystem__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Admission_Date__c</field>
             <table>User.Case$OwnerId</table>
         </columns>
@@ -2539,11 +2449,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Assuta_Aprrover__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>AttendedHospital__c</field>
             <table>User.Case$OwnerId</table>
         </columns>
@@ -2669,11 +2574,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Subject_Reference__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Subject__c</field>
             <table>User.Case$OwnerId</table>
         </columns>
@@ -2710,11 +2610,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Treating_Employee__c</field>
-            <table>User.Case$OwnerId</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Subject_Reference2__c</field>
             <table>User.Case$OwnerId</table>
         </columns>
         <columns>

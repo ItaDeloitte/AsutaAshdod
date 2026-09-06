@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 12 — Permission Sets + Permission Set Groups
+    =====================================
+    Types: PermissionSet, PermissionSetGroup
+    Test level: NoTestRun
+    Estimated time: ~15-20 min
+    Dependencies: ALL previous phases (permissions reference objects, fields, classes, pages, tabs, apps)
+
+    ⚠️ CURRENT STATUS: PermissionSet re-deploy still has 1 error in sandbox:
+       CvPermissionSet.Case.Subject_Reference2__c — fix in sandbox FIRST before prod.
+       See CLAUDE.md for fix details.
+
+    ⚠️ EXCLUDED PSs (9 — managed namespaces / licenses not available):
+       Afrodita_Ben_Shushan165964131_Permissions, Agentforce_Jade710134809_Permissions,
+       Dean_Salesman977452483_Permissions, Deedee623066363_Permissions,
+       Elizabeth256651492_Permissions, sfdcInternalInt__sfdc_a360,
+       sfdcInternalInt__sfdc_a360_sfcrm_data_extract, sfdcInternalInt__sfdc_aiplatform,
+       dbo_CONV_SF_Activity_Fields_c_x_Read
+
+    ⚠️ EXCLUDED PSGs (13 — force__/CodeBuilder__ namespace, API-restricted):
+       force__* and CodeBuilder__CodeBuilderGroup — cannot be created via metadata API.
+
+    NOTE: Many PS XML files have had blocks removed (HealthCloudGA, kmslh, Form_Builder,
+          et4ae5, Revenue Cloud, etc.). Restore after packages installed.
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase12_permissions.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase12_result.json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- 343 permission sets -->
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- 7 permission set groups (6 custom + Doctor_payments) -->
+    <types>
+        <members>*</members>
+        <name>PermissionSetGroup</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

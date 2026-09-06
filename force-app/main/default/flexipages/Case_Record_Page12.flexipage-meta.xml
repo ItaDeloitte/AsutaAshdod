@@ -234,6 +234,7 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <!-- ⚠️ לשחזור: NBA builderNbaWidget strategy=X360_patient — Next Best Action לא מופעל בסנדבוקס. שחזר לאחר הפעלת Next Best Action.
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -283,7 +284,7 @@
                 <componentName>runtime_communities_nba:builderNbaWidget</componentName>
                 <identifier>runtime_communities_nba_builderNbaWidget</identifier>
             </componentInstance>
-        </itemInstances>
+        </itemInstances>-->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

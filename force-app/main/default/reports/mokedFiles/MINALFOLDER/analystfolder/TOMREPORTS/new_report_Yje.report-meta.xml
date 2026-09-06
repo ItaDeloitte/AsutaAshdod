@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -61,7 +61,6 @@
             <operator>contains</operator>
             <value>גיונל זולפוגרוב,דניאלה דרוקר,יערה ברגרזון צברי,אשגאן פחר,דניאל בוחבוט,חבצלת שיק,סוגוד אבו שרקייה,שקד בושארי,גליה מועלם,אורן מגיד,דליה קסתה,יוסף קרן,משה עובדיה כרמית,עדנה וייס,שנהב שבו,יומא סמקה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

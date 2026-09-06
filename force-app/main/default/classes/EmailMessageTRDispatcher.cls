@@ -33,7 +33,7 @@ public with sharing class EmailMessageTRDispatcher {
 
     /**
      * ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-     * Check if FromAddress is an appropriate org-wide address and override it with 'nonreply@assuta.co.il' if it's not
+     * Check if FromAddress is an appropriate org-wide address and override it with 'ylerfeld@deloitte.co.il' if it's not
      * 
      * Event            BEFORE_INSERT
      * User             *
@@ -46,7 +46,7 @@ public with sharing class EmailMessageTRDispatcher {
     public static void updateFromAddress(List<EmailMessage> newList) {
         System.debug('LOG EmailMessage updateFromAddress ... start');
         List<EmailMessage> emailMessages = new List<EmailMessage>();
-        Set<String> fromAddresses = new Set<String>{'nonreply@assuta.co.il'};
+        Set<String> fromAddresses = new Set<String>{'ylerfeld@deloitte.co.il'};
 
         for (EmailMessage emailMessage_i : newList) {
             if (emailMessage_i.ExpectedSendingDateTime__c != null) {

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -73,7 +73,6 @@
             <operator>contains</operator>
             <value>M.R.I,US,C.T,ממוגרפיה,מי שפיר,גנטיקה,בחר שורה להתעמקות. קרדיולוגיה-לב,עיניים,בירור מהיר</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

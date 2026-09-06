@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CASE_NUMBER</field>
@@ -38,7 +38,6 @@
             <operator>notEqual</operator>
             <value>Case.ClosedDoc,Case.ClosedExp,Case.ClosedGen,Case.ClosedInstitutes,Case.ClosedSurgeries</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>Copy of פרסונל בכירים</name>

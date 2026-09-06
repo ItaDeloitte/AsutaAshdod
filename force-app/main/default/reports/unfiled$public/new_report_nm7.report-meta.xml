@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Medical_Aid_Appointment__c$Name</field>
@@ -55,7 +55,6 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>דוח מוגבלויות ועזרים – קבלה מהבית</name>

@@ -32,6 +32,6 @@
             <fieldName>PersonOtherPhone</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
-        <ruleStatus>ActivationFailed</ruleStatus>
+        <ruleStatus>Inactive</ruleStatus>
     </matchingRules>
 </MatchingRules>

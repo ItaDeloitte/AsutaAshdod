@@ -46,7 +46,7 @@ private with sharing class EmailMessageTRTest {
             EmailTemplateId = template.Id,
             FromName = 'No-Reply-Assuta',
             ToAddress = 'someone@assuta.co.il',
-            FromAddress = 'nonreply@assuta.co.il',
+            FromAddress = 'ylerfeld@deloitte.co.il',
             TemplateMergeField__c = 'AccountId__c',
             ExpectedSendingDateTime__c = System.now()
         );

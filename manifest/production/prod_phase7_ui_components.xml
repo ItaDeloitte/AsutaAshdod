@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 7 — UI Components (LWC, Aura, VF, Messaging)
+    =====================================
+    Types: LightningComponentBundle, AuraDefinitionBundle, ApexPage, ApexComponent,
+           LightningMessageChannel, ExternalServiceRegistration
+    Test level: NoTestRun (no Apex classes/triggers)
+    Estimated time: ~10-15 min
+    Dependencies:
+      - Phase 2 (Objects) — LWC wire adapters reference objects/fields
+      - Phase 5 (Automation) — some LWC trigger workflows
+
+    NOTE: LWC paymentValidationModal requires Doctor_arrangement__c.self_payment__c
+          (deployed as custom field in Objects phase). ✅ already in project.
+    NOTE: displayHistoricCalls LWC excluded (Salesforce Connect not enabled in prod).
+    NOTE: Experience Cloud pages (18 VF pages) — require Experience Cloud license.
+          Verify with prod admin before deploying. Already in project + .forceignore removed.
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase7_ui_components.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase7_result.json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Lightning Web Components -->
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+    <!-- Aura Components -->
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+
+    <!-- Visualforce Pages -->
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+
+    <!-- Visualforce Components -->
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+
+    <!-- Lightning Message Channels -->
+    <types>
+        <members>*</members>
+        <name>LightningMessageChannel</name>
+    </types>
+
+    <!-- External Service Registrations -->
+    <types>
+        <members>*</members>
+        <name>ExternalServiceRegistration</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LostReason__c</fullName>
     <description>סיבת הפסד</description>
@@ -304,7 +304,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>lost</controllingFieldValue>
-            <controllingFieldValue>false</controllingFieldValue>
             <valueName>TransferredToDepartment</valueName>
         </valueSettings>
         <valueSettings>
@@ -321,27 +320,22 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>lost</controllingFieldValue>
-            <controllingFieldValue>false</controllingFieldValue>
             <valueName>Wrong_Number</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>lost</controllingFieldValue>
-            <controllingFieldValue>false</controllingFieldValue>
             <valueName>A Doctor Who Is Not Coordinated Through Us</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>lost</controllingFieldValue>
-            <controllingFieldValue>false</controllingFieldValue>
             <valueName>Repeating Case</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>lost</controllingFieldValue>
-            <controllingFieldValue>false</controllingFieldValue>
             <valueName>Additional Health Services Call / Maccabi</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>lost</controllingFieldValue>
-            <controllingFieldValue>false</controllingFieldValue>
             <valueName>other</valueName>
         </valueSettings>
         <valueSettings>
@@ -355,38 +349,6 @@
         <valueSettings>
             <controllingFieldValue>lost</controllingFieldValue>
             <valueName>No Private Insurance (Price)</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>false</controllingFieldValue>
-            <valueName>Service_doesn&apos;t_exist</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>false</controllingFieldValue>
-            <valueName>Wrong_Transfer</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>false</controllingFieldValue>
-            <valueName>A Patient Contacted To Update An appointment.</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>false</controllingFieldValue>
-            <valueName>Wrong Call</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>false</controllingFieldValue>
-            <valueName>General Service Information</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>false</controllingFieldValue>
-            <valueName>Patient_With_Refferal</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>false</controllingFieldValue>
-            <valueName>Harel</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>false</controllingFieldValue>
-            <valueName>Duplicate</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

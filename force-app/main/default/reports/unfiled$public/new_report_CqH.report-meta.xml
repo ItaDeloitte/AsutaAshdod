@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Patient_Account__c</field>
@@ -33,7 +33,6 @@
             <operator>contains</operator>
             <value>768721,74184,71270,71252,767708,76771,76273,767718,76810</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>פגישות מרכז אורולוגי באר שבע</name>

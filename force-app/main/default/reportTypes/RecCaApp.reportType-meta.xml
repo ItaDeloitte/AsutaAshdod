@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Recommendations_after_exam__c</baseObject>
     <category>other</category>
@@ -615,11 +615,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Opearator__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opened_by_Doctor__c</field>
             <table>Recommendations_after_exam__c.Cases__r</table>
         </columns>
         <columns>
@@ -1715,51 +1710,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>rec_docs__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__DueDate__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__FinancialValue__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SortOrder__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgencyMeasureID__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgencyMeasureVersion__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgency__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystemID__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystemModified__c</field>
-            <table>Recommendations_after_exam__c.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystem__c</field>
             <table>Recommendations_after_exam__c.Cases__r</table>
         </columns>
         <columns>

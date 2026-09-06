@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>create_qa</customButtons>
     <excludeButtons>OpenSlackRecordChannel</excludeButtons>
@@ -53,10 +53,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>AccountId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Case_subject__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -146,10 +142,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>AssignedBackToQueue__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>surgeryMatchedArrangement__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -290,11 +282,6 @@
             <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Case.SendEmail</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>4</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Case.Send_SMS_Button</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>5</sortOrder>
@@ -321,9 +308,6 @@
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
-        <quickActionListItems>
-            <quickActionName>SendEmail</quickActionName>
-        </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FeedItem.TextPost</quickActionName>
         </quickActionListItems>
@@ -412,10 +396,8 @@
         <fields>Appointment_Date_Time__c</fields>
         <fields>Commitment_Status__c</fields>
         <fields>AppointmentTime__c</fields>
-        <fields>Time_of_appointment__c</fields>
         <fields>Doctor_Account__c</fields>
         <fields>Appointment_Status__c</fields>
-        <fields>Accession_Number__c</fields>
         <fields>CREATED_DATE</fields>
         <relatedList>Appointment__c.Case__c</relatedList>
         <sortField>Appointment_Date_Time__c</sortField>

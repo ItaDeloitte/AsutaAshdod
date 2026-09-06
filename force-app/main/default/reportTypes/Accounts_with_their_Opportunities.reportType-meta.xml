@@ -1257,11 +1257,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__Active__c</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>HealthCloudGA__CarePlan__c</field>
             <table>Account</table>
         </columns>
@@ -2181,11 +2176,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>PrimaryPartnerAccount</field>
-            <table>Account.HealthCloudGA__Opportunities__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>PartnerAccount</field>
             <table>Account.HealthCloudGA__Opportunities__r</table>
         </columns>
         <columns>

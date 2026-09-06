@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Network</baseObject>
     <category>other</category>
@@ -119,6 +119,8 @@
             <field>AllowedExtensions</field>
             <table>Network</table>
         </columns>
+        
+        <!-- 33 NetworkMember-User custom fields removed 20/07/2026 (Crm__c, Date_of_end_hire__c, Date_of_exit__c, Date_of_mobility__c, Date_of_return__c, Employee_ID_number__c, Exceptional_approvals__c, Allowed_To_Approve_Doctor_s_Details__c, Field1__c, Group__c, Headphone__c, Marital_Status__c, Phone_code__c, Reason_for_end_hire__c, Reviewed__c, Seniority__c, Start_Date__c, Station_number__c, Super_V__c, TimeZoneOffset__c, Type_of_hire__c, User_AD__c, specialization__c, numberofcases__c, AD_Hebrew_Name__c, cb_dl__c, Ashdod_employee__c, Secret_code_for_approval__c, Site_ivf__c, Site_Code__c, Archiver_User__c, SignatureMedicalInfo__c, Full_Name_Helper__c) - fields do not exist in sandbox (NetworkMember custom fields not deployed). Agent_ID__c also removed (HealthCloudGA). Restore after deploying NetworkMember custom fields. -->
         <masterLabel>רשתות</masterLabel>
     </sections>
     <sections>
@@ -397,226 +399,8 @@
             <field>GlobalIdentity</field>
             <table>Network.NetworkMembers</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Age__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Agent_ID__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Birthday__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Crm__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Date_of_end_hire__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Date_of_exit__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Date_of_mobility__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Date_of_return__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Employee_ID_number__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Exceptional_approvals__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Allowed_To_Approve_Doctor_s_Details__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Field1__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Group__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Headphone__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Marital_Status__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Phone_code__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Reason_for_end_hire__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Reviewed__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Seniority__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Start_Date__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Station_number__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Super_V__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>TimeZoneOffset__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Type_of_hire__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>User_AD__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>specialization__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>numberofcases__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AD_Hebrew_Name__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>cb_dl__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Ashdod_employee__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Secret_code_for_approval__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Site_ivf__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Site_Code__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Archiver_User__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SignatureMedicalInfo__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Full_Name_Helper__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__Default_ET_Page__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__Default_MID__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ExactTargetForAppExchangeAdmin__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ExactTargetForAppExchangeUser__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ExactTargetUsername__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ExactTarget_OAuth_Token__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ValidExactTargetAdmin__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>et4ae5__ValidExactTargetUser__c</field>
-            <table>Network.NetworkMembers</table>
-        </columns>
+        <!--
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastChatterActivityDate</field>
@@ -632,6 +416,8 @@
             <field>Member</field>
             <table>Network.NetworkMembers</table>
         </columns>
+        
+        <!-- 33 NetworkMember-User custom fields removed 20/07/2026 (Crm__c, Date_of_end_hire__c, Date_of_exit__c, Date_of_mobility__c, Date_of_return__c, Employee_ID_number__c, Exceptional_approvals__c, Allowed_To_Approve_Doctor_s_Details__c, Field1__c, Group__c, Headphone__c, Marital_Status__c, Phone_code__c, Reason_for_end_hire__c, Reviewed__c, Seniority__c, Start_Date__c, Station_number__c, Super_V__c, TimeZoneOffset__c, Type_of_hire__c, User_AD__c, specialization__c, numberofcases__c, AD_Hebrew_Name__c, cb_dl__c, Ashdod_employee__c, Secret_code_for_approval__c, Site_ivf__c, Site_Code__c, Archiver_User__c, SignatureMedicalInfo__c, Full_Name_Helper__c) - fields do not exist in sandbox (NetworkMember custom fields not deployed). Agent_ID__c also removed (HealthCloudGA). Restore after deploying NetworkMember custom fields. -->
         <masterLabel>חברים ברשת</masterLabel>
     </sections>
     <sections>
@@ -682,4 +468,6 @@
         </columns>
         <masterLabel>היסטוריית כניסות</masterLabel>
     </sections>
+
+    
 </ReportType>

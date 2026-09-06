@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Give access to the fields:
 
@@ -11,46 +11,6 @@
 • ReferralNumber
 • Related_Process
 • cases_and_appoitments__c.Is_it_the_main_case_for_surgery</description>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment__c.Deductibles__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment__c.Medical_Procedure1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment__c.Medical_Procedure2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment__c.Medical_Procedure3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment__c.Medical_Procedure4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment__c.Number_of_commitment__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment__c.PayerFactor__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Appointment__c.Payment_to_Doctor__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>File__c.Medical_Procedure2__c</field>
@@ -94,6 +54,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>cases_and_appoitments__c.Is_it_the_main_case_for_surgery__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Appointment__c.Payment_to_Doctor__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>

@@ -13,7 +13,7 @@
     <filters>
         <field>Status__c</field>
         <operation>equals</operation>
-        <value>1,פעיל</value>
+        <value>1</value>
     </filters>
     <filters>
         <field>Confidentiality__c</field>

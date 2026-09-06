@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Recommendations_after_exam__c</baseObject>
     <category>other</category>
@@ -286,22 +286,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Case360__c.AssutaDoctor__c</field>
-            <table>Recommendations_after_exam__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Case360__c.Route_Shikum_Bait__c</field>
             <table>Recommendations_after_exam__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Case360__c.BiopsyAppointmentDate__c</field>
-            <table>Recommendations_after_exam__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Case360__c.HMODoctor__c</field>
             <table>Recommendations_after_exam__c</table>
         </columns>
         <columns>

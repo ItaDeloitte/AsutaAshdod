@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Account$Name</field>
@@ -24,7 +24,6 @@
             <operator>contains</operator>
             <value>בן ארי,סרוג&apos;י,מרגל דוד</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>יומני מצוינות</name>

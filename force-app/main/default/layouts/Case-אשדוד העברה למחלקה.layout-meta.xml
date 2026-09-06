@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>CaseHierarchy</excludeButtons>
     <excludeButtons>Clone</excludeButtons>
@@ -13,10 +13,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>AccountId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Case_subject__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -239,11 +235,6 @@
             <sortOrder>2</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Case.SendEmail</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Case.Send_SMS_Button</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>4</sortOrder>
@@ -318,7 +309,6 @@
         <fields>Appointment_Date_Time__c</fields>
         <fields>Doctor_Account__c</fields>
         <fields>Appointment_Status__c</fields>
-        <fields>Accession_Number__c</fields>
         <relatedList>Appointment__c.Case__c</relatedList>
         <sortField>Appointment_Date_Time__c</sortField>
         <sortOrder>Desc</sortOrder>

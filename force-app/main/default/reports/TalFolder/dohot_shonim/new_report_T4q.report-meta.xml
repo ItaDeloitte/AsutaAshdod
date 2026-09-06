@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -101,7 +101,6 @@
             <operator>contains</operator>
             <value>שרית לוין,עינב עומייסי דרור,אופיר מנשה,גיא לוי,אלכסנדרה סטושל,אור-פז פלוטניק,ליעוז שי,תמרה ספיאשווילי,שני טירי,חנית,מירי לוי,שירן פרץ,מוריה כהן,דאהר,עידן תירוש,הדר חתינה,דניאל רזניק,גטאס,דניאלה סידרר,בת-אל,יהודית דיין,אוריה חיים,מיאר ספדי,אלכסנדרה קובלוב,עינבל לזר,טובה תקה,דבורה טרבלו אלפסי,מיסנה סבח,סובר</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

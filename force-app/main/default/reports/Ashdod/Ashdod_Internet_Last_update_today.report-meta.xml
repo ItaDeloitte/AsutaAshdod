@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>OWNER</field>
@@ -692,9 +692,6 @@
     </columns>
     <columns>
         <field>Case.Surgeries_notes__c</field>
-    </columns>
-    <columns>
-        <field>Case.Opened_by_Doctor__c</field>
     </columns>
     <columns>
         <field>Case.Recived_DD__c</field>
@@ -1528,7 +1525,6 @@
             <operator>equals</operator>
             <value>טופס 2</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

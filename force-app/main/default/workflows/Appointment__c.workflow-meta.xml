@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
         <fullName>ActionEmail</fullName>
@@ -8,7 +8,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/hoursaheadAppointment</template>
     </alerts>
@@ -20,7 +20,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/hoursaheadAppointment</template>
     </alerts>
@@ -32,7 +32,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/hoursaheadAppointment</template>
     </alerts>
@@ -44,7 +44,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Appointment_change_Details</template>
     </alerts>
@@ -56,7 +56,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Inst</template>
     </alerts>
@@ -68,7 +68,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Inst_Ashdod_MRI_20223</template>
     </alerts>
@@ -80,7 +80,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Inst_Genetic_Consultation</template>
     </alerts>
@@ -92,7 +92,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Arabic43233</template>
     </alerts>
@@ -104,7 +104,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Arabic45380_evening</template>
     </alerts>
@@ -116,7 +116,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Arabic45380_morning</template>
     </alerts>
@@ -128,7 +128,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Armonit_Biopsy_HE</template>
     </alerts>
@@ -140,7 +140,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Armonit_Biopsy_RU</template>
     </alerts>
@@ -152,7 +152,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/ct_cardiac</template>
     </alerts>
@@ -164,7 +164,7 @@
             <field>Site_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Disabilities</template>
     </alerts>
@@ -176,7 +176,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Canceled_Appointment</template>
     </alerts>
@@ -188,7 +188,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Canceled_Appointment_Ashdod_20223</template>
     </alerts>
@@ -200,7 +200,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Canceled_Appointment_exp</template>
     </alerts>
@@ -212,7 +212,7 @@
             <field>clinic_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Experts_4_clinic</template>
     </alerts>
@@ -224,7 +224,7 @@
             <field>clinic_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Experts_4_clinic_cncl</template>
     </alerts>
@@ -236,7 +236,7 @@
             <field>clinic_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Experts_4_clinic_upd</template>
     </alerts>
@@ -248,7 +248,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/English45380_evening</template>
     </alerts>
@@ -260,7 +260,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/English45380_morning</template>
     </alerts>
@@ -272,7 +272,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Experts_Survey</template>
     </alerts>
@@ -284,7 +284,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Hebrew45380_evening</template>
     </alerts>
@@ -296,7 +296,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Hebrew45380_morning</template>
     </alerts>
@@ -308,7 +308,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>assutaservice@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Home_Admission</template>
     </alerts>
@@ -320,7 +320,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Questionnaire_for_genetic_consultation</template>
     </alerts>
@@ -332,7 +332,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Russian43233</template>
     </alerts>
@@ -344,7 +344,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Russian45380_evening</template>
     </alerts>
@@ -356,7 +356,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Russian45380_morning</template>
     </alerts>
@@ -368,7 +368,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Approval</template>
     </alerts>
@@ -380,7 +380,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Form</template>
     </alerts>
@@ -392,7 +392,7 @@
             <field>Surgey_Reception_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Surgery_was_canceled_by_agent</template>
     </alerts>
@@ -404,7 +404,7 @@
             <field>Site_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Manager_no_agreement_for_doc_and_payer_factor</template>
     </alerts>
@@ -416,7 +416,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Surgery</template>
     </alerts>
@@ -428,7 +428,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Check_Biopsia</template>
     </alerts>
@@ -440,7 +440,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Upload_files_to_expert_appointment</template>
     </alerts>
@@ -452,7 +452,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Upload_files_to_surgery_appointment</template>
     </alerts>
@@ -464,7 +464,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Virtual_Inst</template>
     </alerts>
@@ -476,7 +476,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Break_Of_SLA6</template>
     </alerts>
@@ -488,7 +488,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Surgery</template>
     </alerts>
@@ -500,7 +500,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/biops</template>
     </alerts>
@@ -512,7 +512,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Barietric_arab</template>
     </alerts>
@@ -524,7 +524,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Barietric_eng</template>
     </alerts>
@@ -536,7 +536,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Barietric</template>
     </alerts>
@@ -548,7 +548,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Barietric_rus</template>
     </alerts>
@@ -560,7 +560,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/colonos_arab</template>
     </alerts>
@@ -572,7 +572,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/colonos_eng</template>
     </alerts>
@@ -584,7 +584,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/colonos</template>
     </alerts>
@@ -596,7 +596,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/colonos_rus</template>
     </alerts>
@@ -608,7 +608,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/ct_arab</template>
     </alerts>
@@ -620,7 +620,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/ct_eng</template>
     </alerts>
@@ -632,7 +632,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/ct</template>
     </alerts>
@@ -644,7 +644,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/ct_arab</template>
     </alerts>
@@ -656,7 +656,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/English43233</template>
     </alerts>
@@ -668,7 +668,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/gastro</template>
     </alerts>
@@ -680,7 +680,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/gastro_eng</template>
     </alerts>
@@ -692,7 +692,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/gastro</template>
     </alerts>
@@ -704,7 +704,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/gastro_rus</template>
     </alerts>
@@ -716,7 +716,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/heart_arab</template>
     </alerts>
@@ -728,7 +728,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/heart_eng</template>
     </alerts>
@@ -740,7 +740,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/heart</template>
     </alerts>
@@ -752,7 +752,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/heart_rus</template>
     </alerts>
@@ -764,7 +764,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Hebrew43233</template>
     </alerts>
@@ -776,7 +776,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Experts</template>
     </alerts>
@@ -788,7 +788,7 @@
             <field>Patient_Contact_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Kit_Experts</template>
     </alerts>
@@ -800,7 +800,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Pre_surgery</template>
     </alerts>
@@ -812,7 +812,7 @@
             <field>Doctor_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/expert_appointment_details_for_doctor</template>
     </alerts>
@@ -824,7 +824,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/files_Ramat_Haifa_arab</template>
     </alerts>
@@ -836,7 +836,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/files_Ramat_Haifa_eng</template>
     </alerts>
@@ -848,7 +848,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/files_Ramat_Haifa</template>
     </alerts>
@@ -860,7 +860,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/files_Ramat_Haifa_rus</template>
     </alerts>
@@ -872,7 +872,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/files_Ramat_HaHayal_arab</template>
     </alerts>
@@ -884,7 +884,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/files_Ramat_HaHayal_eng</template>
     </alerts>
@@ -896,7 +896,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/files_Ramat_HaHayal</template>
     </alerts>
@@ -908,7 +908,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/files_Ramat_HaHayal_rus</template>
     </alerts>
@@ -920,7 +920,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/shefir</template>
     </alerts>
@@ -932,7 +932,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/upload_hitchayvut</template>
     </alerts>
@@ -944,7 +944,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/video_eng</template>
     </alerts>
@@ -956,7 +956,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/video_arab</template>
     </alerts>
@@ -968,7 +968,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/video</template>
     </alerts>
@@ -980,7 +980,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/video_rus</template>
     </alerts>
@@ -992,7 +992,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/virtual_arab</template>
     </alerts>
@@ -1004,7 +1004,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/virtual_eng</template>
     </alerts>
@@ -1016,7 +1016,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/virtual</template>
     </alerts>
@@ -1028,7 +1028,7 @@
             <field>Patient_Mail__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/virtual_rus</template>
     </alerts>
@@ -1397,7 +1397,7 @@ LEFT(Medical_Procedure__r.Marketing_Procedure_Name__c , 69))</formula>
     <fieldUpdates>
         <fullName>Update_app_status_Admission</fullName>
         <field>Appointment_Status__c</field>
-        <literalValue>התקבל בביה&quot;ח</literalValue>
+        <literalValue>1</literalValue>
         <name>Update app status - Admission</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
@@ -1417,7 +1417,7 @@ LEFT(Medical_Procedure__r.Marketing_Procedure_Name__c , 69))</formula>
     <fieldUpdates>
         <fullName>Update_app_status_Release</fullName>
         <field>Appointment_Status__c</field>
-        <literalValue>שחרור מטופל</literalValue>
+        <literalValue>3</literalValue>
         <name>Update app status - Release</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
@@ -1681,7 +1681,7 @@ TEXT(YEAR(Date_of_appointment__c))</formula>
         <fullName>update_status_to_unarrived</fullName>
         <description>עדכון סטאטוס הפגישה כאשר המטופל לא הגיע</description>
         <field>Appointment_Status__c</field>
-        <literalValue>לא התקבל דיווח</literalValue>
+        <literalValue>not_arrived</literalValue>
         <name>update status to unarrived</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
@@ -1805,7 +1805,7 @@ TEXT(YEAR(Date_of_appointment__c))</formula>
         <criteriaItems>
             <field>Appointment__c.Send_pre_appointement_form__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <triggerType>onAllChanges</triggerType>
     </rules>
@@ -1947,7 +1947,7 @@ TEXT(YEAR(Date_of_appointment__c))</formula>
         <criteriaItems>
             <field>Appointment__c.Prevent_Automation__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <criteriaItems>
             <field>Appointment__c.Help_Parent_Code_in__c</field>
@@ -1967,12 +1967,12 @@ TEXT(YEAR(Date_of_appointment__c))</formula>
         <criteriaItems>
             <field>Appointment__c.Didkitsent__c</field>
             <operation>equals</operation>
-            <value>שקר</value>
+            <value>False</value>
         </criteriaItems>
         <criteriaItems>
             <field>Appointment__c.Prevent_Automation__c</field>
             <operation>equals</operation>
-            <value>שקר</value>
+            <value>False</value>
         </criteriaItems>
         <criteriaItems>
             <field>Appointment__c.Appointment_Status__c</field>
@@ -2063,7 +2063,7 @@ TEXT(YEAR(Date_of_appointment__c))</formula>
         <criteriaItems>
             <field>Appointment__c.Have_you_read_medical_instructors__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -2135,7 +2135,7 @@ TEXT(YEAR(Date_of_appointment__c))</formula>
         <criteriaItems>
             <field>Appointment__c.more_than_14_days__c</field>
             <operation>equals</operation>
-            <value>שקר</value>
+            <value>False</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -2166,7 +2166,7 @@ TEXT(YEAR(Date_of_appointment__c))</formula>
         <criteriaItems>
             <field>Appointment__c.more_than_14_days__c</field>
             <operation>equals</operation>
-            <value>שקר</value>
+            <value>False</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

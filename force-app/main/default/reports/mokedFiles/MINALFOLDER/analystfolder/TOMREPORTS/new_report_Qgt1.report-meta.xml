@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -127,7 +127,6 @@
             <operator>equals</operator>
             <value>רחמה חאיב,אלה קוגן,אילונה חוטורני,גיטה כץ,ראניה הזימה,סימה הודיה אלדדי,אורלי מק ניקולס פולאק,משה עמיאל,אלאנדרה דיבי,שרה אייס,לובנא עבאס,קטרין אליאס,דאו ניוין,בתאל לוי,יוליה פורטנוב,ערין מוסטפא,זהבה אבבה,אנה פרנק ארנוביץ,שלווה אלטר,אליסה פינצ&apos;וק,מנחם רום</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

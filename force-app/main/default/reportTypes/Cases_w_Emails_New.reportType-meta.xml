@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Case</baseObject>
     <category>other</category>
@@ -242,11 +242,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__DueDate__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>DynamicsCaseNumber1__c</field>
             <table>Case</table>
         </columns>
@@ -268,11 +263,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>IsEscalated</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__FinancialValue__c</field>
             <table>Case</table>
         </columns>
         <columns>
@@ -453,41 +443,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Site_ID__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SortOrder__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgency__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgencyMeasureID__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceAgencyMeasureVersion__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystem__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystemID__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>HealthCloudGA__SourceSystemModified__c</field>
             <table>Case</table>
         </columns>
         <columns>
@@ -818,11 +773,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Surgeries_notes__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opened_by_Doctor__c</field>
             <table>Case</table>
         </columns>
         <columns>

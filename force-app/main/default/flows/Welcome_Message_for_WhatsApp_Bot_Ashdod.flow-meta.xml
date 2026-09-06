@@ -38,6 +38,12 @@
             </value>
         </inputParameters>
         <inputParameters>
+            <name>channelConsentType</name>
+            <value>
+                <stringValue>ImplicitlyOptedIn</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
             <name>allowedSessionStatus</name>
             <value>
                 <stringValue>Any</stringValue>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Account.ID_Number__c</field>
@@ -33,7 +33,6 @@
             <operator>equals</operator>
             <value>,New,חדש,Third Party,הועבר לטיפול מזכירות,Escalated,In_Progress,בטיפול,נדרשת המלצה/קביעת תור לכירורג שד,התקשרות מול רופא,ממתין לקביעת ביופסיה,ממתין לקביעת תור ממוטומיה,ממתין למועד ביופסיה,ממתין לתוצאות ביופסיה,התקבלו תוצאות ביופסיה,ממתין,ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית,ממתין למועד בדיקת MRI/PET CT,ממתין לתוצאת בדיקת MRI/PET CT,נקבע תור לניתוח,הועבר למחלקה אונקולוגית,סגירת אירוע אוטומטית,Closed,סגור,Caneclled,ניהול סיכונים,ממתין לרופא,ממתין למטופל,בבדיקה מול גורם נוסף,העברה לטיפול מנהל,אין מענה,העברה חזרה למוקד,Service_Adaption,In_Process,Closing</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

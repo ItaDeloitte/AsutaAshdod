@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -40,9 +40,6 @@
         <field>Case.BIRAD__c</field>
     </columns>
     <columns>
-        <field>PC_$Contact.HealthCloudGA__PrimaryLanguage__c</field>
-    </columns>
-    <columns>
         <field>Case.DetailsoftheConversation__c</field>
     </columns>
     <columns>
@@ -63,7 +60,6 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

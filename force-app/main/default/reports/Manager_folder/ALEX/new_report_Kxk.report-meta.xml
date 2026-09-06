@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -99,7 +99,6 @@
             <operator>notEqual</operator>
             <value>מיאדה טוחי,אור לי דוידי,שרית חן,רחל חיון,נדיה נמיזנסקי,מירי עמיחי,יניב אברבוך,ורד חדד,אביטל זוסמן,אלונה שוורצמן,גיזיל קוט,גילה גאולה,גלינה ביסנובטי,דניאלה חכם,מירית סיון,ספיר יוסף,אליס הופמן,שולי נעים,נורית אברג׳ל,מירית סימון,מעיין גנפור,רנים סמארה,רותם קטנוב,עדן סבחת,נילי דוידוב,מישל גנין,לרה אילאנוב,ליאל גולן,לאה דניאל,יאנה סדיקוב,טל יוספי,טובה תקה,חגית יסיי,דריה טרוסטיאנסקי,בוסנה טגה,אוקסנה לבד,אנה בקר</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

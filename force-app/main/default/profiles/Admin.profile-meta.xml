@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>false</custom>
     <layoutAssignments>
-        <layout>Acc_Lng__c-חשבון ושפה Layout</layout>
+        <layout>Acc_Lng__c-׳—׳©׳‘׳•׳ ׳•׳©׳₪׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account manager</layout>
@@ -17,64 +17,64 @@
         <layout>Accreditation-Accreditation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ActionPlan-תוכנית פעולה Layout</layout>
+        <layout>ActionPlan-׳×׳•׳›׳ ׳™׳× ׳₪׳¢׳•׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ActionPlanItemDependency-תלות של פריט בתוכנית פעולה Layout</layout>
+        <layout>ActionPlanItemDependency-׳×׳׳•׳× ׳©׳ ׳₪׳¨׳™׳˜ ׳‘׳×׳•׳›׳ ׳™׳× ׳₪׳¢׳•׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ActionPlanTemplate-תבנית תוכנית פעולה Layout</layout>
+        <layout>ActionPlanTemplate-׳×׳‘׳ ׳™׳× ׳×׳•׳›׳ ׳™׳× ׳₪׳¢׳•׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ActionPlanTemplateItem-פריט בתבנית תוכנית פעולה Layout</layout>
+        <layout>ActionPlanTemplateItem-׳₪׳¨׳™׳˜ ׳‘׳×׳‘׳ ׳™׳× ׳×׳•׳›׳ ׳™׳× ׳₪׳¢׳•׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ActionPlanTemplateItemValue-ערך פריט בתבנית תוכנית פעולה Layout</layout>
+        <layout>ActionPlanTemplateItemValue-׳¢׳¨׳ ׳₪׳¨׳™׳˜ ׳‘׳×׳‘׳ ׳™׳× ׳×׳•׳›׳ ׳™׳× ׳₪׳¢׳•׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ActionPlanTemplateVersion-גרסת תבנית תוכנית פעולה Layout</layout>
+        <layout>ActionPlanTemplateVersion-׳’׳¨׳¡׳× ׳×׳‘׳ ׳™׳× ׳×׳•׳›׳ ׳™׳× ׳₪׳¢׳•׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ActionPlnTmplItmDependency-תלות של פריט בתבנית תוכנית פעולה Layout</layout>
+        <layout>ActionPlnTmplItmDependency-׳×׳׳•׳× ׳©׳ ׳₪׳¨׳™׳˜ ׳‘׳×׳‘׳ ׳™׳× ׳×׳•׳›׳ ׳™׳× ׳₪׳¢׳•׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ActivityTiming-פריסת תזמון פעילות</layout>
+        <layout>ActivityTiming-׳₪׳¨׳™׳¡׳× ׳×׳–׳׳•׳ ׳₪׳¢׳™׳׳•׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Address-כתובת Layout</layout>
+        <layout>Address-׳›׳×׳•׳‘׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AgeBandHlthRskAdjFctr-פריסת פקטור התאמה לסיכון בריאותי לטווח גילאים</layout>
+        <layout>AgeBandHlthRskAdjFctr-׳₪׳¨׳™׳¡׳× ׳₪׳§׳˜׳•׳¨ ׳”׳×׳׳׳” ׳׳¡׳™׳›׳•׳ ׳‘׳¨׳™׳׳•׳×׳™ ׳׳˜׳•׳•׳— ׳’׳™׳׳׳™׳</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AgentShiftInfo__c-נתוני משמרת לנציג Layout</layout>
+        <layout>AgentShiftInfo__c-׳ ׳×׳•׳ ׳™ ׳׳©׳׳¨׳× ׳׳ ׳¦׳™׳’ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Agent_survey__c-סקר למטופל Layout</layout>
+        <layout>Agent_survey__c-׳¡׳§׳¨ ׳׳׳˜׳•׳₪׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Agreement__c-הסכם Layout</layout>
+        <layout>Agreement__c-׳”׳¡׳›׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AlternativePaymentMethod-שיטת תשלום חלופית Layout</layout>
+        <layout>AlternativePaymentMethod-׳©׳™׳˜׳× ׳×׳©׳׳•׳ ׳—׳׳•׳₪׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AppointmentInvitation-פריסת הזמנה לפגישה</layout>
+        <layout>AppointmentInvitation-׳₪׳¨׳™׳¡׳× ׳”׳–׳׳ ׳” ׳׳₪׳’׳™׳©׳”</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Appointment_Manager__c-Appointment Manager Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Appointment_To_Survey__c-פגישה לסקר Layout</layout>
+        <layout>Appointment_To_Survey__c-׳₪׳’׳™׳©׳” ׳׳¡׳§׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Appointment__c-Institutes - Admin</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Approval_Request_Tracking__c-מעקב בקשות אישור Layout</layout>
+        <layout>Approval_Request_Tracking__c-׳׳¢׳§׳‘ ׳‘׳§׳©׳•׳× ׳׳™׳©׳•׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Arrangements__c-הסדר Layout</layout>
+        <layout>Arrangements__c-׳”׳¡׳“׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
@@ -83,7 +83,7 @@
         <layout>AssetRelationship-Asset Relationship Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AssignedResource-משאב שהוקצה Layout</layout>
+        <layout>AssignedResource-׳׳©׳׳‘ ׳©׳”׳•׳§׳¦׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AssociatedLocation-Associated Location Layout</layout>
@@ -98,7 +98,7 @@
         <layout>Assuta_Employee__c-Assuta Employee Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AuthorNote-פריסת הערת מחבר</layout>
+        <layout>AuthorNote-׳₪׳¨׳™׳¡׳× ׳”׳¢׳¨׳× ׳׳—׳‘׳¨</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AuthorizationForm-Authorization Form Layout</layout>
@@ -107,7 +107,7 @@
         <layout>AuthorizationFormConsent-Authorization Form Consent Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>AuthorizationFormDataUse-שימוש בנתונים מטופס הרשאה Layout</layout>
+        <layout>AuthorizationFormDataUse-׳©׳™׳׳•׳© ׳‘׳ ׳×׳•׳ ׳™׳ ׳׳˜׳•׳₪׳¡ ׳”׳¨׳©׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
@@ -134,7 +134,7 @@
         <layout>Brief__c-Brief Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>BusinessBrand-מותג עסקי Layout</layout>
+        <layout>BusinessBrand-׳׳•׳×׳’ ׳¢׳¡׳§׳™ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>BusinessLicense-Business License Layout</layout>
@@ -170,7 +170,7 @@
         <layout>CalculationProcedureVersion-Expression Set Version Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Calendar1__c-לוח שנה Layout</layout>
+        <layout>Calendar1__c-׳׳•׳— ׳©׳ ׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Calendar_Alert_Setting__mdt-Calendar Alert Setting Layout</layout>
@@ -197,7 +197,7 @@
         <layout>Cancellation_Reason__mdt-Cancellation_Reason Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CardPaymentMethod-שיטת תשלום בכרטיס Layout</layout>
+        <layout>CardPaymentMethod-׳©׳™׳˜׳× ׳×׳©׳׳•׳ ׳‘׳›׳¨׳˜׳™׳¡ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CareBarrier-Care Barrier Layout</layout>
@@ -221,22 +221,22 @@
         <layout>CareInterventionType-Care Intervention Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CareMetricTarget-יעד מדד טיפול Layout</layout>
+        <layout>CareMetricTarget-׳™׳¢׳“ ׳׳“׳“ ׳˜׳™׳₪׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CareObservation-תצפית טיפולית Layout</layout>
+        <layout>CareObservation-׳×׳¦׳₪׳™׳× ׳˜׳™׳₪׳•׳׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CareObservationComponent-%5F%5FMISSING LABEL%5F%5F PropertyFile - val CareObservationComponent not found in section StandardLayouts</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CarePgmEnrolleeWkOrdStep-פריסת שלב בהזמנת עבודה של נרשם לתוכנית טיפול</layout>
+        <layout>CarePgmEnrolleeWkOrdStep-׳₪׳¨׳™׳¡׳× ׳©׳׳‘ ׳‘׳”׳–׳׳ ׳× ׳¢׳‘׳•׳“׳” ׳©׳ ׳ ׳¨׳©׳ ׳׳×׳•׳›׳ ׳™׳× ׳˜׳™׳₪׳•׳</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CarePgmEnrolleeWorkOrder-פריסת הזמנת עבודה של נרשם לתוכנית טיפול</layout>
+        <layout>CarePgmEnrolleeWorkOrder-׳₪׳¨׳™׳¡׳× ׳”׳–׳׳ ׳× ׳¢׳‘׳•׳“׳” ׳©׳ ׳ ׳¨׳©׳ ׳׳×׳•׳›׳ ׳™׳× ׳˜׳™׳₪׳•׳</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CarePgmProvHealthcareProvider-ספק שירותי בריאות בתוכנית טיפול Layout</layout>
+        <layout>CarePgmProvHealthcareProvider-׳¡׳₪׳§ ׳©׳™׳¨׳•׳×׳™ ׳‘׳¨׳™׳׳•׳× ׳‘׳×׳•׳›׳ ׳™׳× ׳˜׳™׳₪׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CarePreauth-Care Preauth Layout</layout>
@@ -290,7 +290,7 @@
         <layout>CareProviderSearchableField-Care Provider Searchable Field Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CareRegisteredDevice-מכשיר רשום לטיפול Layout</layout>
+        <layout>CareRegisteredDevice-׳׳›׳©׳™׳¨ ׳¨׳©׳•׳ ׳׳˜׳™׳₪׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CareRequest-Care Request Layout</layout>
@@ -302,7 +302,7 @@
         <layout>CareRequestDrug-Care Request Drug Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CareRequestExchangeInfo-פרטי החלפה בבקשת טיפול Layout</layout>
+        <layout>CareRequestExchangeInfo-׳₪׳¨׳˜׳™ ׳”׳—׳׳₪׳” ׳‘׳‘׳§׳©׳× ׳˜׳™׳₪׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CareRequestExtension-Care Request Extension Layout</layout>
@@ -314,13 +314,13 @@
         <layout>CareRequestReviewer-%5F%5FMISSING LABEL%5F%5F PropertyFile - val CareRequestReviewer not found in section StandardLayouts</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CareRequestSupportingCntnt-פריסת תוכן תומך בבקשת טיפול</layout>
+        <layout>CareRequestSupportingCntnt-׳₪׳¨׳™׳¡׳× ׳×׳•׳›׳ ׳×׳•׳׳ ׳‘׳‘׳§׳©׳× ׳˜׳™׳₪׳•׳</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CareSpecialty-Care Specialty Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CareSpecialtyTaxonomy-טקסונומיית התמחות בטיפול Layout</layout>
+        <layout>CareSpecialtyTaxonomy-׳˜׳§׳¡׳•׳ ׳•׳׳™׳™׳× ׳”׳×׳׳—׳•׳× ׳‘׳˜׳™׳₪׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CareSystemFieldMapping-Care System Field Mapping Layout</layout>
@@ -335,7 +335,7 @@
         <layout>CareTaxonomy-Care Taxonomy Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-פניות מידע כללי מנהל</layout>
+        <layout>Case-׳₪׳ ׳™׳•׳× ׳׳™׳“׳¢ ׳›׳׳׳™ ׳׳ ׳”׳</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseClose-Close Case Layout</layout>
@@ -359,13 +359,13 @@
         <layout>CodeBuilder__CodeBuilderSetting__mdt-CodeBuilder__CodeBuilderSetting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CodeSet-סדרת קודים Layout</layout>
+        <layout>CodeSet-׳¡׳“׳¨׳× ׳§׳•׳“׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CodeSetBundle-חבילת סדרות קודים Layout</layout>
+        <layout>CodeSetBundle-׳—׳‘׳™׳׳× ׳¡׳“׳¨׳•׳× ׳§׳•׳“׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CollaborationGroup-קבוצה Layout</layout>
+        <layout>CollaborationGroup-׳§׳‘׳•׳¦׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Collective_Eligibility__c-Collective Eligibility Layout</layout>
@@ -386,10 +386,10 @@
         <layout>CommunityMemberLayout-Community Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ComplementaryTreatments__c-טיפול משלים Layout</layout>
+        <layout>ComplementaryTreatments__c-׳˜׳™׳₪׳•׳ ׳׳©׳׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CondIntrctnHlthRskAdjFctr-פריסת פקטור התאמה לסיכון בריאותי באינטראקציית מצבים</layout>
+        <layout>CondIntrctnHlthRskAdjFctr-׳₪׳¨׳™׳¡׳× ׳₪׳§׳˜׳•׳¨ ׳”׳×׳׳׳” ׳׳¡׳™׳›׳•׳ ׳‘׳¨׳™׳׳•׳×׳™ ׳‘׳׳™׳ ׳˜׳¨׳׳§׳¦׳™׳™׳× ׳׳¦׳‘׳™׳</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ConsentFormTakenParam__c-ConsentFormTakenParam Layout</layout>
@@ -407,28 +407,28 @@
         <layout>Contact-Contact Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContactEncounter-מפגש מגע Layout</layout>
+        <layout>ContactEncounter-׳׳₪׳’׳© ׳׳’׳¢ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContactEncounterParticipant-משתתף במפגש מגע Layout</layout>
+        <layout>ContactEncounterParticipant-׳׳©׳×׳×׳£ ׳‘׳׳₪׳’׳© ׳׳’׳¢ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContactPointAddress-כתובת נקודת קשר Layout</layout>
+        <layout>ContactPointAddress-׳›׳×׳•׳‘׳× ׳ ׳§׳•׳“׳× ׳§׳©׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContactPointEmail-כתובת דוא%22ל בנקודת קשר Layout</layout>
+        <layout>ContactPointEmail-׳›׳×׳•׳‘׳× ׳“׳•׳%22׳ ׳‘׳ ׳§׳•׳“׳× ׳§׳©׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContactPointPhone-מספר טלפון בנקודת קשר Layout</layout>
+        <layout>ContactPointPhone-׳׳¡׳₪׳¨ ׳˜׳׳₪׳•׳ ׳‘׳ ׳§׳•׳“׳× ׳§׳©׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContactPointTypeConsent-Contact Point Type Consent Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContactProfile-פרופיל איש קשר Layout</layout>
+        <layout>ContactProfile-׳₪׳¨׳•׳₪׳™׳ ׳׳™׳© ׳§׳©׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ContactRequest-בקשה ליצירת קשר Layout</layout>
+        <layout>ContactRequest-׳‘׳§׳©׳” ׳׳™׳¦׳™׳¨׳× ׳§׳©׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContentAsset-Asset File Layout</layout>
@@ -455,16 +455,16 @@
         <layout>CoverageBenefitItem-Coverage Benefit Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CoverageBenefitItemLimit-פריסת מגבלת פריט הטבת כיסוי</layout>
+        <layout>CoverageBenefitItemLimit-׳₪׳¨׳™׳¡׳× ׳׳’׳‘׳׳× ׳₪׳¨׳™׳˜ ׳”׳˜׳‘׳× ׳›׳™׳¡׳•׳™</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Create_Tafnit_AC__mdt-Create Tafnit AC Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CreditMemo-תזכיר אשראי Layout</layout>
+        <layout>CreditMemo-׳×׳–׳›׳™׳¨ ׳׳©׳¨׳׳™ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>CreditMemoLine-שורה בתזכיר אשראי Layout</layout>
+        <layout>CreditMemoLine-׳©׳•׳¨׳” ׳‘׳×׳–׳›׳™׳¨ ׳׳©׳¨׳׳™ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Credit_Guard_Env_Variables__mdt-Credit_Guard_Env_Variable Layout</layout>
@@ -473,10 +473,10 @@
         <layout>CspTrustedSite-Trusted URL Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Customer-לקוח Layout</layout>
+        <layout>Customer-׳׳§׳•׳— Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Daily_Tasks_Log_IVF__c-לוג משימות יומי-הקפאת ביציות Layout</layout>
+        <layout>Daily_Tasks_Log_IVF__c-׳׳•׳’ ׳׳©׳™׳׳•׳× ׳™׳•׳׳™-׳”׳§׳₪׳׳× ׳‘׳™׳¦׳™׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>DataAction-Data Action Layout</layout>
@@ -503,10 +503,10 @@
         <layout>DataUseLegalBasis-Data Use Legal Basis Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>DataUsePurpose-מטרת שימוש בנתונים Layout</layout>
+        <layout>DataUsePurpose-׳׳˜׳¨׳× ׳©׳™׳׳•׳© ׳‘׳ ׳×׳•׳ ׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>DelegatedAccount-פריסת חשבון חיצוני מנוהל</layout>
+        <layout>DelegatedAccount-׳₪׳¨׳™׳¡׳× ׳—׳©׳‘׳•׳ ׳—׳™׳¦׳•׳ ׳™ ׳׳ ׳•׳”׳</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Department__c-Department Layout</layout>
@@ -521,10 +521,10 @@
         <layout>Disabilities__c-Disability Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Discipline_note__c-הערות משמעת Layout</layout>
+        <layout>Discipline_note__c-׳”׳¢׳¨׳•׳× ׳׳©׳׳¢׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Doc_to_action__c-פעולה לשאלון Layout</layout>
+        <layout>Doc_to_action__c-׳₪׳¢׳•׳׳” ׳׳©׳׳׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Doctor_Medical_Procedure__c-Doctor Medical Procedure Layout</layout>
@@ -533,25 +533,25 @@
         <layout>Doctor_Secretary__c-Doctor Secretary Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Doctor_Sub_Expertise__c-תת התמחות לרופא Layout</layout>
+        <layout>Doctor_Sub_Expertise__c-׳×׳× ׳”׳×׳׳—׳•׳× ׳׳¨׳•׳₪׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Doctor_arrangement__c-הסדר רופא Layout</layout>
+        <layout>Doctor_arrangement__c-׳”׳¡׳“׳¨ ׳¨׳•׳₪׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Doctor_in_Clinic__c-רופא במרפאה Layout</layout>
+        <layout>Doctor_in_Clinic__c-׳¨׳•׳₪׳ ׳‘׳׳¨׳₪׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Doctor_in_site__c-רופא באתר Layout</layout>
+        <layout>Doctor_in_site__c-׳¨׳•׳₪׳ ׳‘׳׳×׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Doctors_Statistics__c-Doctor Statistic Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Doctors_Test__c-טבלת רופאים לבדיקות Layout</layout>
+        <layout>Doctors_Test__c-׳˜׳‘׳׳× ׳¨׳•׳₪׳׳™׳ ׳׳‘׳“׳™׳§׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>DocumentChecklistItem-פריט ברשימת תיוג של מסמכים Layout</layout>
+        <layout>DocumentChecklistItem-׳₪׳¨׳™׳˜ ׳‘׳¨׳©׳™׳׳× ׳×׳™׳•׳’ ׳©׳ ׳׳¡׳׳›׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>DocumentType-Document Type Layout</layout>
@@ -563,7 +563,7 @@
         <layout>Drawing_Conclusions__c-Drawing Conclusion Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>DuplicateRecordItem-פריט רשומה כפול Layout</layout>
+        <layout>DuplicateRecordItem-׳₪׳¨׳™׳˜ ׳¨׳©׳•׳׳” ׳›׳₪׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
@@ -575,13 +575,13 @@
         <layout>Email__c-Email Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>EmpUserProvisionProcessErr-שגיאה בתהליך הקצאת משתמשים עובדים Layout</layout>
+        <layout>EmpUserProvisionProcessErr-׳©׳’׳™׳׳” ׳‘׳×׳”׳׳™׳ ׳”׳§׳¦׳׳× ׳׳©׳×׳׳©׳™׳ ׳¢׳•׳‘׳“׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>EmpUserProvisioningProcess-תהליך הקצאת משתמשים עובדים Layout</layout>
+        <layout>EmpUserProvisioningProcess-׳×׳”׳׳™׳ ׳”׳§׳¦׳׳× ׳׳©׳×׳׳©׳™׳ ׳¢׳•׳‘׳“׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Employee-עובד Layout</layout>
+        <layout>Employee-׳¢׳•׳‘׳“ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Endpoints__mdt-Endpoints Layout</layout>
@@ -590,10 +590,10 @@
         <layout>EngagementChannelType-Engagement Channel Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>EngagementInteraction-פריסת אינטראקציית מעורבות</layout>
+        <layout>EngagementInteraction-׳₪׳¨׳™׳¡׳× ׳׳™׳ ׳˜׳¨׳׳§׳¦׳™׳™׳× ׳׳¢׳•׳¨׳‘׳•׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>EngagementTopic-פריסת נושא מעורבות</layout>
+        <layout>EngagementTopic-׳₪׳¨׳™׳¡׳× ׳ ׳•׳©׳ ׳׳¢׳•׳¨׳‘׳•׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>EnrollmentEligibilityCriteria-Enrollment Eligibility Criteria Layout</layout>
@@ -641,7 +641,7 @@
         <layout>File_Type_For_WA_In_Private_Zone__mdt-File Type For WA In Private Zone Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>File__c-מסמכים Layout</layout>
+        <layout>File__c-׳׳¡׳׳›׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Filter_Results_Center__mdt-Filter Results Center Layout</layout>
@@ -650,7 +650,7 @@
         <layout>FlowInterview-Flow Interview Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>FlowOrchestrationWorkItem-פריט עבודה במערך Layout</layout>
+        <layout>FlowOrchestrationWorkItem-׳₪׳¨׳™׳˜ ׳¢׳‘׳•׳“׳” ׳‘׳׳¢׳¨׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>FlowRecord-Flow Layout</layout>
@@ -662,7 +662,7 @@
         <layout>Global-Global Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Guidance_Scenario__c-הנחיות לתרחיש Layout</layout>
+        <layout>Guidance_Scenario__c-׳”׳ ׳—׳™׳•׳× ׳׳×׳¨׳—׳™׳© Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Guidelines__c-Guideline Layout</layout>
@@ -674,13 +674,13 @@
         <layout>HealthCareProcedure-Healthcare Procedure Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>HealthScore-פריסת ציון בריאות</layout>
+        <layout>HealthScore-׳₪׳¨׳™׳¡׳× ׳¦׳™׳•׳ ׳‘׳¨׳™׳׳•׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>HealthScoreActionLog-פריסת יומן פעולות ציון בריאות</layout>
+        <layout>HealthScoreActionLog-׳₪׳¨׳™׳¡׳× ׳™׳•׳׳ ׳₪׳¢׳•׳׳•׳× ׳¦׳™׳•׳ ׳‘׳¨׳™׳׳•׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>HealthcareFacility-פריסת מוסד טיפול</layout>
+        <layout>HealthcareFacility-׳₪׳¨׳™׳¡׳× ׳׳•׳¡׳“ ׳˜׳™׳₪׳•׳</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>HealthcareFacilityNetwork-Healthcare Facility Network Layout</layout>
@@ -707,13 +707,13 @@
         <layout>Hidden_Queue__mdt-Hidden Queue Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>HierCondHlthCodeMapping-פריסת מיפוי תקנות בריאותיות לפי היררכיית מצבים</layout>
+        <layout>HierCondHlthCodeMapping-׳₪׳¨׳™׳¡׳× ׳׳™׳₪׳•׳™ ׳×׳§׳ ׳•׳× ׳‘׳¨׳™׳׳•׳×׳™׳•׳× ׳׳₪׳™ ׳”׳™׳¨׳¨׳›׳™׳™׳× ׳׳¦׳‘׳™׳</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>HierCondHlthRskAdjFctr-פריסת פקטור התאמה לסיכון בריאותי לפי היררכיית מצבים</layout>
+        <layout>HierCondHlthRskAdjFctr-׳₪׳¨׳™׳¡׳× ׳₪׳§׳˜׳•׳¨ ׳”׳×׳׳׳” ׳׳¡׳™׳›׳•׳ ׳‘׳¨׳™׳׳•׳×׳™ ׳׳₪׳™ ׳”׳™׳¨׳¨׳›׳™׳™׳× ׳׳¦׳‘׳™׳</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>IVR_Recording__c-הקלטה ל-IVR Layout</layout>
+        <layout>IVR_Recording__c-׳”׳§׳׳˜׳” ׳-IVR Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>IdentityDocument-Identity Document Layout</layout>
@@ -728,10 +728,10 @@
         <layout>Image-Image Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Implants_mp_apt__c-משתל פעולה רפואית לפגישה Layout</layout>
+        <layout>Implants_mp_apt__c-׳׳©׳×׳ ׳₪׳¢׳•׳׳” ׳¨׳₪׳•׳׳™׳× ׳׳₪׳’׳™׳©׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Implants_to_med_prod__c-משתל לפעולה רפואית Layout</layout>
+        <layout>Implants_to_med_prod__c-׳׳©׳×׳ ׳׳₪׳¢׳•׳׳” ׳¨׳₪׳•׳׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Individual-Individual Layout</layout>
@@ -740,28 +740,28 @@
         <layout>Insurer_Factor__mdt-Insurer Factor Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>InterestTag-תג תחום עניין Layout</layout>
+        <layout>InterestTag-׳×׳’ ׳×׳—׳•׳ ׳¢׳ ׳™׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>InternalOrganizationUnit-יחידה ארגונית פנימית Layout</layout>
+        <layout>InternalOrganizationUnit-׳™׳—׳™׳“׳” ׳׳¨׳’׳•׳ ׳™׳× ׳₪׳ ׳™׳׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Invoice-חשבונית Layout</layout>
+        <layout>Invoice-׳—׳©׳‘׳•׳ ׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>InvoiceLine-שורה בחשבונית Layout</layout>
+        <layout>InvoiceLine-׳©׳•׳¨׳” ׳‘׳—׳©׳‘׳•׳ ׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Knowledge__kav-Knowledge Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Language_new__c-שפה Layout</layout>
+        <layout>Language_new__c-׳©׳₪׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Assuta Optic</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ListEmail-דוא%22ל רשימה Layout</layout>
+        <layout>ListEmail-׳“׳•׳%22׳ ׳¨׳©׳™׳׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>LiveAgentSession-Live Agent Session Layout</layout>
@@ -791,7 +791,7 @@
         <layout>Log__c-Log Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MP_combinations_for_technicians__c-שילובי בדיקות לטכנאים Layout</layout>
+        <layout>MP_combinations_for_technicians__c-׳©׳™׳׳•׳‘׳™ ׳‘׳“׳™׳§׳•׳× ׳׳˜׳›׳ ׳׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>MaccabiAreaCodes__mdt-MaccabiMedFieldCodes Layout</layout>
@@ -803,13 +803,13 @@
         <layout>Mammography_Procedures__mdt-Mammography_Procedures Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MedReconRecommendation-פריסת המלצה לפיוס תרופתי</layout>
+        <layout>MedReconRecommendation-׳₪׳¨׳™׳¡׳× ׳”׳׳׳¦׳” ׳׳₪׳™׳•׳¡ ׳×׳¨׳•׳₪׳×׳™</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MedReconStmtRecommendation-פריסת המלצה לפיוס תרופתי בהצהרה</layout>
+        <layout>MedReconStmtRecommendation-׳₪׳¨׳™׳¡׳× ׳”׳׳׳¦׳” ׳׳₪׳™׳•׳¡ ׳×׳¨׳•׳₪׳×׳™ ׳‘׳”׳¦׳”׳¨׳”</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Medical_Aid_Appointment__c-עזר לפגישה Layout</layout>
+        <layout>Medical_Aid_Appointment__c-׳¢׳–׳¨ ׳׳₪׳’׳™׳©׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Medical_Procedure_Link__mdt-Medical Procedure Link Layout</layout>
@@ -830,16 +830,16 @@
         <layout>Medical_Procedure_in_Sites__c-Medical Procedure in Sites Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Medication-פריסת תרופה</layout>
+        <layout>Medication-׳₪׳¨׳™׳¡׳× ׳×׳¨׳•׳₪׳”</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MedicationReconciliation-פריסת פיוס תרופתי</layout>
+        <layout>MedicationReconciliation-׳₪׳¨׳™׳¡׳× ׳₪׳™׳•׳¡ ׳×׳¨׳•׳₪׳×׳™</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MedicationRequest-פריסת בקשת תרופה</layout>
+        <layout>MedicationRequest-׳₪׳¨׳™׳¡׳× ׳‘׳§׳©׳× ׳×׳¨׳•׳₪׳”</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MedicationTherapyReview-פריסת בדיקת טיפול תרופתי</layout>
+        <layout>MedicationTherapyReview-׳₪׳¨׳™׳¡׳× ׳‘׳“׳™׳§׳× ׳˜׳™׳₪׳•׳ ׳×׳¨׳•׳₪׳×׳™</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>MedicinalIngredient-%5F%5FMISSING LABEL%5F%5F PropertyFile - val MedicinalIngredient not found in section StandardLayouts</layout>
@@ -878,7 +878,7 @@
         <layout>OperatingHours-Operating Hours Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>OperatingHoursHoliday-שעות פתיחה - חג Layout</layout>
+        <layout>OperatingHoursHoliday-׳©׳¢׳•׳× ׳₪׳×׳™׳—׳” - ׳—׳’ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
@@ -902,34 +902,34 @@
         <layout>PartyConsent-Party Consent Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Payer_Factor__c-גורם משלם Layout</layout>
+        <layout>Payer_Factor__c-׳’׳•׳¨׳ ׳׳©׳׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Payer_Factor_mapping__mdt-Payer Factor mapping Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Payment-תשלום Layout</layout>
+        <layout>Payment-׳×׳©׳׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PaymentAuthAdjustment-התאמת הרשאת תשלום Layout</layout>
+        <layout>PaymentAuthAdjustment-׳”׳×׳׳׳× ׳”׳¨׳©׳׳× ׳×׳©׳׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PaymentAuthorization-אישור תשלום Layout</layout>
+        <layout>PaymentAuthorization-׳׳™׳©׳•׳¨ ׳×׳©׳׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PaymentGateway-שער תשלום Layout</layout>
+        <layout>PaymentGateway-׳©׳¢׳¨ ׳×׳©׳׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PaymentGatewayLog-יומן שער תשלומים Layout</layout>
+        <layout>PaymentGatewayLog-׳™׳•׳׳ ׳©׳¢׳¨ ׳×׳©׳׳•׳׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PaymentGroup-קבוצת תשלום Layout</layout>
+        <layout>PaymentGroup-׳§׳‘׳•׳¦׳× ׳×׳©׳׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PaymentLineInvoice-חשבונית על שורת תשלום Layout</layout>
+        <layout>PaymentLineInvoice-׳—׳©׳‘׳•׳ ׳™׳× ׳¢׳ ׳©׳•׳¨׳× ׳×׳©׳׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Payment__c-תשלום Layout</layout>
+        <layout>Payment__c-׳×׳©׳׳•׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Permission_Set_Mapping__mdt-Permission Set Mapping Layout</layout>
@@ -958,16 +958,16 @@
         <layout>PersonEducation-Person Education Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PersonLanguage-פריסת שפת אדם</layout>
+        <layout>PersonLanguage-׳₪׳¨׳™׳¡׳× ׳©׳₪׳× ׳׳“׳</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>PersonLifeEvent-Person Life Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PersonName-שם אדם Layout</layout>
+        <layout>PersonName-׳©׳ ׳׳“׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PgmBasedHlthRskAdjFctr-פריסת פקטור התאמה לסיכון בריאותי על בסיס התוכנית</layout>
+        <layout>PgmBasedHlthRskAdjFctr-׳₪׳¨׳™׳¡׳× ׳₪׳§׳˜׳•׳¨ ׳”׳×׳׳׳” ׳׳¡׳™׳›׳•׳ ׳‘׳¨׳™׳׳•׳×׳™ ׳¢׳ ׳‘׳¡׳™׳¡ ׳”׳×׳•׳›׳ ׳™׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Phone_Call_Log__c-Phone Call Log Layout</layout>
@@ -1000,28 +1000,28 @@
         <layout>ProblemDefRelationship-%5F%5FMISSING LABEL%5F%5F PropertyFile - val ProblemDefRelationship not found in section StandardLayouts</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ProblemDefinition-פריסת הגדרת בעיה</layout>
+        <layout>ProblemDefinition-׳₪׳¨׳™׳¡׳× ׳”׳’׳“׳¨׳× ׳‘׳¢׳™׳”</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Procedure_Plan__c-תוכנית רפואית Layout</layout>
+        <layout>Procedure_Plan__c-׳×׳•׳›׳ ׳™׳× ׳¨׳₪׳•׳׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ProcessException-חריגת תהליך Layout</layout>
+        <layout>ProcessException-׳—׳¨׳™׳’׳× ׳×׳”׳׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Product2-Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ProductRequest-בקשת מוצר Layout</layout>
+        <layout>ProductRequest-׳‘׳§׳©׳× ׳׳•׳¦׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ProductRequestLineItem-פריט שורה בבקשת מוצר Layout</layout>
+        <layout>ProductRequestLineItem-׳₪׳¨׳™׳˜ ׳©׳•׳¨׳” ׳‘׳‘׳§׳©׳× ׳׳•׳¦׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Proms__c-שאלון פרומס Layout</layout>
+        <layout>Proms__c-׳©׳׳׳•׳ ׳₪׳¨׳•׳׳¡ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ProviderSearchSyncLog-יומן סנכרון של חיפוש ספקים Layout</layout>
+        <layout>ProviderSearchSyncLog-׳™׳•׳׳ ׳¡׳ ׳›׳¨׳•׳ ׳©׳ ׳—׳™׳₪׳•׳© ׳¡׳₪׳§׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>PurchaserPlan-Purchaser Plan Layout</layout>
@@ -1030,28 +1030,28 @@
         <layout>PurchaserPlanAssn-Purchaser Plan Association Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>QualityControl__c-בקרת איכות Layout</layout>
+        <layout>QualityControl__c-׳‘׳§׳¨׳× ׳׳™׳›׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuickText-Quick Text Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ReceivedDocument-מסמך שהתקבל Layout</layout>
+        <layout>ReceivedDocument-׳׳¡׳׳ ׳©׳”׳×׳§׳‘׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ReceivedDocumentType-סוג מסמך שהתקבל Layout</layout>
+        <layout>ReceivedDocumentType-׳¡׳•׳’ ׳׳¡׳׳ ׳©׳”׳×׳§׳‘׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Recommendation-Recommendation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>RecommendationsTypeAfterExam__c-ממוגרפיה</layout>
+        <layout>RecommendationsTypeAfterExam__c-׳׳׳•׳’׳¨׳₪׳™׳”</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Recommendations_after_exam__c-ממוגרפיה</layout>
+        <layout>Recommendations_after_exam__c-׳׳׳•׳’׳¨׳₪׳™׳”</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Referral_Agents__c-סוכנים מפנים Layout</layout>
+        <layout>Referral_Agents__c-׳¡׳•׳›׳ ׳™׳ ׳׳₪׳ ׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Referral_Domain_mapping__mdt-Referral Domain mapping Layout</layout>
@@ -1060,22 +1060,22 @@
         <layout>Referral_from_doctor_website__c-Referral from doctor website Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Refund-החזר Layout</layout>
+        <layout>Refund-׳”׳—׳–׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>RefundLinePayment-תשלום שורת החזר Layout</layout>
+        <layout>RefundLinePayment-׳×׳©׳׳•׳ ׳©׳•׳¨׳× ׳”׳—׳–׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Related_document__c-Related document Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Reminder__c-תזכורית Layout</layout>
+        <layout>Reminder__c-׳×׳–׳›׳•׳¨׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ResourceAbsence-היעדרות משאב Layout</layout>
+        <layout>ResourceAbsence-׳”׳™׳¢׳“׳¨׳•׳× ׳׳©׳׳‘ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ResourcePreference-העדפת משאב Layout</layout>
+        <layout>ResourcePreference-׳”׳¢׳“׳₪׳× ׳׳©׳׳‘ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>SMSReminder__c-SMSReminder Layout</layout>
@@ -1114,16 +1114,16 @@
         <layout>SecondReminderDomainWA__mdt-SecondReminderDomainWA Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Seller-מוכר Layout</layout>
+        <layout>Seller-׳׳•׳›׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Sequence__c-רצף תורים Layout</layout>
+        <layout>Sequence__c-׳¨׳¦׳£ ׳×׳•׳¨׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ServiceAppointment-פעילות שירות Layout</layout>
+        <layout>ServiceAppointment-׳₪׳¢׳™׳׳•׳× ׳©׳™׳¨׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ServiceAppointmentGroup-קבוצת פגישות שירות Layout</layout>
+        <layout>ServiceAppointmentGroup-׳§׳‘׳•׳¦׳× ׳₪׳’׳™׳©׳•׳× ׳©׳™׳¨׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ServiceContract-Service Contract Layout</layout>
@@ -1135,13 +1135,13 @@
         <layout>ServiceResourceSkill-Service Resource Skill Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ServiceTerritory-אזור שירות Layout</layout>
+        <layout>ServiceTerritory-׳׳–׳•׳¨ ׳©׳™׳¨׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ServiceTerritoryMember-חבר אזור שירות Layout</layout>
+        <layout>ServiceTerritoryMember-׳—׳‘׳¨ ׳׳–׳•׳¨ ׳©׳™׳¨׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ServiceTerritoryRelationship-קשר אזור שירות Layout</layout>
+        <layout>ServiceTerritoryRelationship-׳§׳©׳¨ ׳׳–׳•׳¨ ׳©׳™׳¨׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Service_Line__c-Service Line Layout</layout>
@@ -1150,7 +1150,7 @@
         <layout>Service_Presence_Status_to_exclude__mdt-Service Presence Status to exclude Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Shift-פריסת משמרת</layout>
+        <layout>Shift-׳₪׳¨׳™׳¡׳× ׳׳©׳׳¨׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ShiftWorkTopic-%5F%5FMISSING LABEL%5F%5F PropertyFile - val ShiftWorkTopic not found in section StandardLayouts</layout>
@@ -1165,7 +1165,7 @@
         <layout>SiteIframeWhiteListUrl-Trusted Domains for Inline Frames Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Site_Domain__c-מכון באתר Layout</layout>
+        <layout>Site_Domain__c-׳׳›׳•׳ ׳‘׳׳×׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Site__c-Site Admin</layout>
@@ -1174,7 +1174,7 @@
         <layout>Site_email_address__mdt-Site email address Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SkillRequirement-דרישת מיומנות Layout</layout>
+        <layout>SkillRequirement-׳“׳¨׳™׳©׳× ׳׳™׳•׳׳ ׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>SmsJunction__c-SmsJunction Layout</layout>
@@ -1216,7 +1216,7 @@
         <layout>SurveyVersion-Survey Version Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Survey_Assuta__c-סקר Layout</layout>
+        <layout>Survey_Assuta__c-׳¡׳§׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Survey_Question__c-Survey Question Layout</layout>
@@ -1228,22 +1228,22 @@
         <layout>System__c-System Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>TagCategory-קטגוריית תיוג Layout</layout>
+        <layout>TagCategory-׳§׳˜׳’׳•׳¨׳™׳™׳× ׳×׳™׳•׳’ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>TagCategoryAssignment-הקצאת קטגוריית תיוג Layout</layout>
+        <layout>TagCategoryAssignment-׳”׳§׳¦׳׳× ׳§׳˜׳’׳•׳¨׳™׳™׳× ׳×׳™׳•׳’ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-IVF Task</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Team-פריסת צוות</layout>
+        <layout>Team-׳₪׳¨׳™׳¡׳× ׳¦׳•׳•׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>TeamMember-פריסת חבר צוות</layout>
+        <layout>TeamMember-׳₪׳¨׳™׳¡׳× ׳—׳‘׳¨ ׳¦׳•׳•׳×</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ThreatDetectionFeedback-משוב על זיהוי איומים Layout</layout>
+        <layout>ThreatDetectionFeedback-׳׳©׳•׳‘ ׳¢׳ ׳–׳™׳”׳•׳™ ׳׳™׳•׳׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>TimeSlot-Time Slot Layout</layout>
@@ -1252,10 +1252,10 @@
         <layout>Titan_API__mdt-Titan_API Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>TrackedCommunication-פריסת תקשורת במעקב</layout>
+        <layout>TrackedCommunication-׳₪׳¨׳™׳¡׳× ׳×׳§׳©׳•׳¨׳× ׳‘׳׳¢׳§׳‘</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>TrackedCommunicationDetail-פריסת פרט תקשורת במעקב</layout>
+        <layout>TrackedCommunicationDetail-׳₪׳¨׳™׳¡׳× ׳₪׳¨׳˜ ׳×׳§׳©׳•׳¨׳× ׳‘׳׳¢׳§׳‘</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Trigger_Setting__mdt-Trigger Setting Layout</layout>
@@ -1267,7 +1267,7 @@
         <layout>UIObjectRelationFieldConfig-UI Object Relation Field Configuration Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>UnitOfMeasure-יחידת מידה Layout</layout>
+        <layout>UnitOfMeasure-׳™׳—׳™׳“׳× ׳׳™׳“׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>User-User Layout</layout>
@@ -1276,13 +1276,13 @@
         <layout>UserAlt-User Profile Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>UserProvAccount-חשבון הקצאת משתמשים Layout</layout>
+        <layout>UserProvAccount-׳—׳©׳‘׳•׳ ׳”׳§׳¦׳׳× ׳׳©׳×׳׳©׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>UserProvisioningLog-יומן הקצאת משתמשים Layout</layout>
+        <layout>UserProvisioningLog-׳™׳•׳׳ ׳”׳§׳¦׳׳× ׳׳©׳×׳׳©׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>UserProvisioningRequest-בקשה להקצאת משתמשים Layout</layout>
+        <layout>UserProvisioningRequest-׳‘׳§׳©׳” ׳׳”׳§׳¦׳׳× ׳׳©׳×׳׳©׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>UserRole__mdt-Role Mapping Layout</layout>
@@ -1291,7 +1291,7 @@
         <layout>VDN__c-VDN Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>VideoCall-שיחת וידאו Layout</layout>
+        <layout>VideoCall-׳©׳™׳—׳× ׳•׳™׳“׳׳• Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>VoiceCall-Voice Call Layout</layout>
@@ -1315,43 +1315,43 @@
         <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>WorkProcedure-נוהל עבודה Layout</layout>
+        <layout>WorkProcedure-׳ ׳•׳”׳ ׳¢׳‘׳•׳“׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>WorkProcedureStep-שלב בנוהל עבודה Layout</layout>
+        <layout>WorkProcedureStep-׳©׳׳‘ ׳‘׳ ׳•׳”׳ ׳¢׳‘׳•׳“׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>WorkType-סוג עבודה Layout</layout>
+        <layout>WorkType-׳¡׳•׳’ ׳¢׳‘׳•׳“׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>WorkTypeExtension-הרחבת סוג עבודה Layout</layout>
+        <layout>WorkTypeExtension-׳”׳¨׳—׳‘׳× ׳¡׳•׳’ ׳¢׳‘׳•׳“׳” Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>WorkTypeGroup-קבוצת סוגי עבודות Layout</layout>
+        <layout>WorkTypeGroup-׳§׳‘׳•׳¦׳× ׳¡׳•׳’׳™ ׳¢׳‘׳•׳“׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>WorkTypeGroupMember-חבר בקבוצת סוגי עבודות Layout</layout>
+        <layout>WorkTypeGroupMember-׳—׳‘׳¨ ׳‘׳§׳‘׳•׳¦׳× ׳¡׳•׳’׳™ ׳¢׳‘׳•׳“׳•׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>calendar_medp__c-יומן ופעולה רפואית Layout</layout>
+        <layout>calendar_medp__c-׳™׳•׳׳ ׳•׳₪׳¢׳•׳׳” ׳¨׳₪׳•׳׳™׳× Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>cases_and_appoitments__c-פניות ותורים Layout</layout>
+        <layout>cases_and_appoitments__c-׳₪׳ ׳™׳•׳× ׳•׳×׳•׳¨׳™׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>dbo_CONV_SF_Activity_Fields_c__x-dbo_CONV_SF_Activity_Fields_c Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>doctor_rank__c-ציון רופא Layout</layout>
+        <layout>doctor_rank__c-׳¦׳™׳•׳ ׳¨׳•׳₪׳ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>settlement__c-ישוב Layout</layout>
+        <layout>settlement__c-׳™׳©׳•׳‘ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>survey_to_site__c-שאלון לאתר Layout</layout>
+        <layout>survey_to_site__c-׳©׳׳׳•׳ ׳׳׳×׳¨ Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>waiting_list__c-רשימת המתנה Layout</layout>
+        <layout>waiting_list__c-׳¨׳©׳™׳׳× ׳”׳׳×׳ ׳” Layout</layout>
     </layoutAssignments>
     <loginIpRanges>
         <description>SF Support</description>
@@ -1363,7 +1363,7 @@
         <startAddress>13.110.54.10</startAddress>
     </loginIpRanges>
     <loginIpRanges>
-        <description>רמת החייל אורחים</description>
+        <description>׳¨׳׳× ׳”׳—׳™׳™׳ ׳׳•׳¨׳—׳™׳</description>
         <endAddress>31.168.253.166</endAddress>
         <startAddress>31.168.253.166</startAddress>
     </loginIpRanges>
@@ -2246,6 +2246,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageCases</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>DeleteCases</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

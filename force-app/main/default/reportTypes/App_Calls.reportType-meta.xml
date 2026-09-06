@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Case</baseObject>
     <category>other</category>
@@ -357,11 +357,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Opearator__c</field>
-            <table>Case</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opened_by_Doctor__c</field>
             <table>Case</table>
         </columns>
         <columns>
@@ -3557,11 +3552,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>IsVisibleInSelfService</field>
-            <table>Case.Appointments_makor__r.Activities</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>CallDurationInSeconds</field>
             <table>Case.Appointments_makor__r.Activities</table>
         </columns>
@@ -4261,4 +4251,6 @@
         </columns>
         <masterLabel>פניות</masterLabel>
     </sections>
+
+    
 </ReportType>

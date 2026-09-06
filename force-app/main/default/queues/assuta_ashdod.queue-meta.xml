@@ -3,7 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>אסותא אישי - אשדוד</name>
-    <queueRoutingConfig>Assuta_Ashdod_Bot</queueRoutingConfig>
     <queueSobject>
         <sobjectType>MessagingSession</sobjectType>
     </queueSobject>

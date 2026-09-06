@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>OWNER</field>
@@ -32,7 +32,6 @@
             <operator>equals</operator>
             <value>בדיקה/שירות שלא מבוצע באסותא</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>לא מבוצעות באסותא - פניות נציגים</name>

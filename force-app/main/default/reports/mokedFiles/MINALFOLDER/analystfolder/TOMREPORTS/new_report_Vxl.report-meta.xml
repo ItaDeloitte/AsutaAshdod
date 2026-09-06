@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>RowCount</calculatedFormula>
@@ -84,7 +84,6 @@
             <operator>contains</operator>
             <value>יניב אברבוך,טליה וורקו,שרית חן,מירי עמיחי,ורד חדד,נעמי ואזאנא,מיאדה טוחי,אליזבת גודזישוילי,אור לי דוידי,זיו שחר,דניאל סובר,שושנה פורבס</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

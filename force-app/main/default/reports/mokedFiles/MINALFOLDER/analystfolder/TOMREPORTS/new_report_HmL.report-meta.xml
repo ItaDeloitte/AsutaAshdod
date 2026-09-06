@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CASE_NUMBER</field>
@@ -23,7 +23,6 @@
             <operator>equals</operator>
             <value>רמת החייל - המטולוגיה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>דוח פניות המטולוגיה - רמת החייל</name>

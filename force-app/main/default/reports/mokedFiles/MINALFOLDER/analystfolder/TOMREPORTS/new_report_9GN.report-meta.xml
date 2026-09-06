@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -143,7 +143,6 @@
             <operator>equals</operator>
             <value>יעל סבן,יניב אברבוך,אורה מוסאזדה,גיא ברש,דפנה בן שמחון,זהבה טואג,אוקסנה יפה,מרים יסובוף,שירין זיתון,הודא ג&apos;בארין,יפעת וינגרטן,מושיק בלייך,גלית אלינסון,טובה דוידוב,אתי חזון,אלון ויסמונטסקי,לאה רינברג,ליאת אשר,הודא גבארין</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

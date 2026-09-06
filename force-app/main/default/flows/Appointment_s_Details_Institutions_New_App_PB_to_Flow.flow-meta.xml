@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>65.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
@@ -1620,7 +1620,7 @@ AM: 22122025- 2545503590 - FIX SENDING EMAIL FOR ASHDOD</description>
         <inputAssignments>
             <field>FromAddress</field>
             <value>
-                <stringValue>nonreply@assuta.co.il</stringValue>
+                <stringValue>ylerfeld@deloitte.co.il</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1679,7 +1679,7 @@ AM: 22122025- 2545503590 - FIX SENDING EMAIL FOR ASHDOD</description>
         <inputAssignments>
             <field>FromAddress</field>
             <value>
-                <stringValue>nonreply@assuta.co.il</stringValue>
+                <stringValue>ylerfeld@deloitte.co.il</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1738,7 +1738,7 @@ AM: 22122025- 2545503590 - FIX SENDING EMAIL FOR ASHDOD</description>
         <inputAssignments>
             <field>FromAddress</field>
             <value>
-                <stringValue>nonreply@assuta.co.il</stringValue>
+                <stringValue>ylerfeld@deloitte.co.il</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1809,7 +1809,7 @@ AM: 22122025- 2545503590 - FIX SENDING EMAIL FOR ASHDOD</description>
         <inputAssignments>
             <field>FromAddress</field>
             <value>
-                <stringValue>nonreply@assuta.co.il</stringValue>
+                <stringValue>ylerfeld@deloitte.co.il</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>

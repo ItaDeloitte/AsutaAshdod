@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>FK_$Account.Doctor_Code__c</field>
@@ -44,7 +44,6 @@
             <operator>includes</operator>
             <value>3,89</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>מרפאות מומחים באסותא באר שבע</name>

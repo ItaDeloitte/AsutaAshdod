@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>HealthCloudGA__CarePlan</fullName>
     <active>true</active>
@@ -1945,21 +1945,6 @@
         </values>
         <values>
             <fullName>Research_Transfer</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Refund_NotApproved__c</picklist>
-        <values>
-            <fullName>אי חיוב</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>החזר</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פיצוי</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -4195,17 +4180,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>payment_been_transferred__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>preferd_chanal_case__c</picklist>
         <values>
             <fullName>Email</fullName>
@@ -4383,49 +4357,6 @@
         </values>
         <values>
             <fullName>נפתחה עוד פנייה לפנייה זו</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>subStatus__c</picklist>
-        <values>
-            <fullName>Didn%27t execute</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Don%27t need next appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Next appointment scheduled</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>No answer</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Not interested in next appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Survey sent</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for agent</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for reminder</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>appointment was not summoned</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -5276,22 +5207,37 @@
             <default>false</default>
         </values>
     </picklistValues>
+
     <picklistValues>
         <picklist>tofes_web__c</picklist>
         <values>
-            <fullName>טופס 1</fullName>
+            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 1</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>טופס 2</fullName>
+            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 2</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>טופס 3</fullName>
+            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 3</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>טופס 4</fullName>
+            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>    <picklistValues>
+        <picklist>Refund_NotApproved__c</picklist>
+        <values>
+            <fullName>אי חיוב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>החזר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פיצוי</fullName>
             <default>false</default>
         </values>
     </picklistValues>

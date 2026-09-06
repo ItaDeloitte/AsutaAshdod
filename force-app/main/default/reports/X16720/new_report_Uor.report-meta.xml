@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -50,9 +50,6 @@
         <field>Case.description_history__c</field>
     </columns>
     <columns>
-        <field>PC_$Contact.HealthCloudGA__IndividualId__c</field>
-    </columns>
-    <columns>
         <field>Account.ID_Number__c</field>
     </columns>
     <columns>
@@ -79,7 +76,6 @@
             <operator>notEqual</operator>
             <value>סגירת אירוע אוטומטית,Closed,סגור,Caneclled,Closing</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

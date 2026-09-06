@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CASE_NUMBER</field>
@@ -21,10 +21,12 @@
     <columns>
         <field>CM.TARGET_DATE</field>
     </columns>
+    <!-- ⚠️ לשחזור: ACTUAL_ELPSD_TIME_MINS לא זמין בסנדבוקס (CaseMilestone SLA feature)
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>ACTUAL_ELPSD_TIME_MINS</field>
     </columns>
+    -->
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>TRGT_RESP_MINS</field>
@@ -58,7 +60,6 @@
             <operator>greaterOrEqual</operator>
             <value>TODAY</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

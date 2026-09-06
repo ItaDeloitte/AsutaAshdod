@@ -4,11 +4,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>segelramat@assuta.co.il</email>
     <name>סגל רפואי רמת החייל</name>
-    <queueMembers>
-        <users>
-            <user>matanv@assuta.co.il</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

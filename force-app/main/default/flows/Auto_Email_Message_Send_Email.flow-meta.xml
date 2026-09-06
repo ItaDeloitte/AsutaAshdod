@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>66.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
@@ -18,7 +18,7 @@
             <assignToReference>rvEmailMessage.FromAddress</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>nonreply@assuta.co.il</stringValue>
+                <stringValue>ylerfeld@deloitte.co.il</stringValue>
             </value>
         </assignmentItems>
         <assignmentItems>

@@ -3,13 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Zaji Tests</name>
-    <queueMembers>
-        <users>
-            <user>ildevsalesforce@deloitte.co.il</user>
-            <user>zzz_671c1808-f5b2-4510-b7a5-9863f1415802@deleted.com</user>
-            <user>zzz_9e189691-e476-49e4-846b-773df61936e5@deleted.com</user>
-        </users>
-    </queueMembers>
     <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
     <queueSobject>
         <sobjectType>Case</sobjectType>

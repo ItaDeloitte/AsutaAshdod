@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldOverrides>
         <field>BccAddress</field>
@@ -26,7 +26,7 @@ if(Case.RecordType.DeveloperName = &apos;IVF_Freezing_Eggs&apos; &amp;&amp;  ISP
 
 if(Case.RecordType.DeveloperName == &apos;Shikum_Bait&apos;, &quot;assutaathome@assuta.co.il&quot;,
 
-if(Case.RecordType.DeveloperName == &apos;Home_diagnosis&apos;, &quot;nonreply@assuta.co.il&quot;,
+if(Case.RecordType.DeveloperName == &apos;Home_diagnosis&apos;, &quot;ylerfeld@deloitte.co.il&quot;,
 
 if((Case.RecordType.DeveloperName = &apos;DOC_expert&apos;) || (Case.RecordType.DeveloperName = &apos;ClosedExp&apos;),&quot;experts@assuta.co.il&quot;,
 
@@ -46,7 +46,7 @@ if( Case.RecordType.DeveloperName == &apos;Assuta_360&apos;,   &quot;assuta360@a
 
 
 
-if((Case.RecordType.DeveloperName == &apos;Appointments&apos;) || (Case.RecordType.DeveloperName ==&apos;ClosedInstitutes&apos;), &quot;nonreply@assuta.co.il&quot;,
+if((Case.RecordType.DeveloperName == &apos;Appointments&apos;) || (Case.RecordType.DeveloperName ==&apos;ClosedInstitutes&apos;), &quot;ylerfeld@deloitte.co.il&quot;,
 
 if( Case.RecordType.DeveloperName == &apos;Medical_Info_Management&apos; &amp;&amp; Case.Owner_Queue_wf__c==&quot;ניהול ורישום מידע רפואי- אשדוד כלניות&quot;, &quot;ashdodrecords@assuta.co.il&quot; ,
 if( Case.RecordType.DeveloperName == &apos;Medical_Info_Management&apos; &amp;&amp; Case.Owner_Queue_wf__c==&quot;ניהול ורישום מידע רפואי- באר שבע&quot;, &quot;beershevarecords@assuta.co.il&quot; ,

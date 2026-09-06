@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Date_Appointment__c</field>
@@ -55,7 +55,6 @@
             <operator>equals</operator>
             <value>820132,820134,820135,820138,820144,820145,820146,820999,820139,820140,88163,820131,820143</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>מי שפיר מעל 35 - 3 חודשים אחרונים</name>

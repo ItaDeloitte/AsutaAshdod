@@ -175,11 +175,16 @@
             <field>PreferredUser</field>
             <table>AgentWork</table>
         </columns>
+
+        <!-- WARNING restore after Omni-Channel feature is enabled
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>SecondaryRoutingPriority</field>
             <table>AgentWork</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>IsAutoAcceptEnabled</field>
@@ -395,11 +400,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>First_Assign_Date__c</field>
-            <table>AgentWork.MessagingSession</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>AssignedDateTime</field>
             <table>AgentWork.MessagingSession</table>
         </columns>
@@ -408,11 +408,16 @@
             <field>IsConference</field>
             <table>AgentWork.MessagingSession</table>
         </columns>
+
+        <!-- WARNING restore after Omni-Channel feature is enabled
+
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>SecondaryRoutingPriority</field>
             <table>AgentWork.MessagingSession</table>
         </columns>
+
+        -->
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>IsAutoAcceptEnabled</field>

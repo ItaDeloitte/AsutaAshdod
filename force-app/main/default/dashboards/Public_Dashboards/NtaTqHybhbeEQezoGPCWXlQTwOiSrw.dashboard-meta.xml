@@ -118,10 +118,9 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>Surgery_Reception</description>
     <isGridLayout>true</isGridLayout>
-    <owner>ildevsalesforce@deloitte.co.il</owner>
-    <runningUser>ildevsalesforce@deloitte.co.il</runningUser>
     <textColor>#000000</textColor>
     <title>קבלת ניתוחים</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

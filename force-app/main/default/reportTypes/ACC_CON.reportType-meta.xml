@@ -425,11 +425,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Secret__c</field>
-            <table>Contact.AccountContactRelations</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>birthdate_contact__c</field>
             <table>Contact.AccountContactRelations</table>
         </columns>
@@ -481,11 +476,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>phone_contact__c</field>
-            <table>Contact.AccountContactRelations</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>status__c</field>
             <table>Contact.AccountContactRelations</table>
         </columns>
         <columns>
@@ -1155,11 +1145,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Secret__c</field>
-            <table>Contact.AccountContactRelations</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Sending_Survey__c</field>
             <table>Contact.AccountContactRelations</table>
         </columns>
@@ -1171,11 +1156,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Start_Date_shaban_maccabi__c</field>
-            <table>Contact.AccountContactRelations</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Status__c</field>
             <table>Contact.AccountContactRelations</table>
         </columns>
         <columns>
@@ -1346,11 +1326,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>otp_phone_hidden__c</field>
-            <table>Contact.AccountContactRelations</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>otp_sent__c</field>
             <table>Contact.AccountContactRelations</table>
         </columns>
         <columns>

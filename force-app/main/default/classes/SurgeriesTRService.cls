@@ -494,7 +494,7 @@ public with sharing class SurgeriesTRService {
         Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
         mail.setToAddresses(new List<String>{appt.Patient_Mail__c});
         mail.setSenderDisplayName('Assuta No-Reply');
-        mail.setReplyTo('nonreply@assuta.co.il');
+        mail.setReplyTo('ylerfeld@deloitte.co.il');
         mail.setHtmlBody(template.HtmlValue);
         mail.setPlainTextBody(template.Body);
         mail.setTreatBodiesAsTemplate(true);

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 8 — Apex Classes + Triggers
+    =====================================
+    Types: ApexClass, ApexTrigger
+    Test level: RunLocalTests (REQUIRED for production)
+    Estimated time: ~60-120 min (includes test execution)
+    Dependencies: ALL previous phases must complete first.
+      Apex references: objects, fields, flows (invocable), LWC (page refs), VF pages.
+
+    ⚠️ FASTEST APPROACH — Validate + Quick Deploy:
+    Step 1: Validate (dry run with tests — does NOT deploy):
+      sf project deploy validate --manifest manifest/production/prod_phase8_apex.xml ^
+        --target-org AsutaProd --test-level RunLocalTests --json > prod_phase8_validate.json
+
+    Step 2: Extract job ID from validate result (field: "id")
+      (find "id" : "0AfXXXXXXXXXX" in prod_phase8_validate.json)
+
+    Step 3: Quick Deploy (reuses validated tests — NO re-run, much faster):
+      sf project deploy quick --job-id 0AfXXXXXXXXXX --target-org AsutaProd --json
+
+    ⚠️ EXCLUDED chains (see .forceignore — require dependencies not yet deployed):
+      - AppointmentTriggerService chain (12): requires Case.subStatus__c
+      - PDFGenerator chain (4): requires Form_Builder package
+      - WA batch cascade (2): requires Flow phase
+      - displayHistoricCalls (2): requires Salesforce Connect
+      - InstitutesTRService chain (4): requires all Flow deployments
+      - sendMessageByPopulation_Invoc, LC_JunctionsQueueTest: dead end
+
+    ⚠️ COVERAGE: Prod requires 75%+ overall coverage.
+      If coverage fails: check which classes lack tests. Most excluded test classes
+      are excluded because their dependencies (classes above) are also excluded.
+      The remaining compiled classes should have sufficient coverage from existing tests.
+
+    Command (VALIDATE FIRST):
+    sf project deploy validate --manifest manifest/production/prod_phase8_apex.xml ^
+      --target-org AsutaProd --test-level RunLocalTests --json > prod_phase8_validate.json
+
+    Command (QUICK DEPLOY after validation):
+    sf project deploy quick --job-id <JOB_ID_FROM_VALIDATE> --target-org AsutaProd --json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- All Apex classes not excluded by .forceignore (~610 classes) -->
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- All Apex triggers not excluded by .forceignore -->
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

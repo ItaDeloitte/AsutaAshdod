@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>if(((CDF1:SUM)-floor(CDF1:SUM))&lt;0.6, AVG(CDF1:SUM),
@@ -74,7 +74,6 @@ FLOOR((UNIXTIMESTAMP(AgentWork.AssignedDateTime) - UNIXTIMESTAMP(AgentWork.Reque
             <operator>contains</operator>
             <value>מריה שפרגל,אורית חוה זפרני,נועם רואס,ויקטוריה טבל  בנט,יפה גולן,גלית פזרקר,שני עזרן,מרינה מרילי,אינה שרשוב,נופר מתתיהו,עינב מכלוף,מירי ליזרוביץ,לידר טטרואשוילי,דניאל יוסף,נינה וולקוב פרידמן,איריס ירוס זמנה,שני ואקנין,משי לביאב,ליאן פאר,יפה נידני,אולגה אבזבקייב,ליאת  חנונה,לאה אללי,יפה טרונש מלסה,ניקול פפיסמדוב,מרים אושרי</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <acrossGroupingContext>Case.Case_Time__c</acrossGroupingContext>
@@ -250,7 +250,6 @@
             <operator>notContain</operator>
             <value>ניהול ורישום מידע רפואי</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

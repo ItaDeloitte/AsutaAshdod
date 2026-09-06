@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -81,7 +81,7 @@
             <value>רמת החייל</value>
         </criteriaItems>
         <criteriaItems>
-            <column>FK_PC_$Contact.HealthCloudGA__Age__c</column>
+            <column>FK_$Account.Age_Number__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>lessOrEqual</operator>
@@ -94,7 +94,6 @@
             <operator>contains</operator>
             <value>מיי</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

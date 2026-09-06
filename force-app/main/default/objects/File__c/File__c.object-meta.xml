@@ -128,15 +128,15 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>Record_Page3</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
@@ -165,42 +165,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Assuta Files</pluralLabel>
-    <profileSearchLayouts>
-        <fields>NAME</fields>
-        <fields>file_type__c</fields>
-        <fields>Referral_Status__c</fields>
-        <fields>ReferralNumber__c</fields>
-        <fields>CommitmentStatus__c</fields>
-        <fields>ObligationNumber__c</fields>
-        <profileName>מנהל מערכת</profileName>
-    </profileSearchLayouts>
-    <profileSearchLayouts>
-        <fields>NAME</fields>
-        <fields>file_type__c</fields>
-        <fields>Referral_Status__c</fields>
-        <fields>ReferralNumber__c</fields>
-        <fields>ObligationNumber__c</fields>
-        <fields>CommitmentStatus__c</fields>
-        <profileName>Agent 360</profileName>
-    </profileSearchLayouts>
-    <profileSearchLayouts>
-        <fields>NAME</fields>
-        <fields>file_type__c</fields>
-        <fields>Referral_Status__c</fields>
-        <fields>ReferralNumber__c</fields>
-        <fields>CommitmentStatus__c</fields>
-        <fields>ObligationNumber__c</fields>
-        <profileName>Agent</profileName>
-    </profileSearchLayouts>
-    <profileSearchLayouts>
-        <fields>NAME</fields>
-        <fields>file_type__c</fields>
-        <fields>Referral_Status__c</fields>
-        <fields>ReferralNumber__c</fields>
-        <fields>CommitmentStatus__c</fields>
-        <fields>ObligationNumber__c</fields>
-        <profileName>SalesForce_AdminGrp</profileName>
-    </profileSearchLayouts>
+
     <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>

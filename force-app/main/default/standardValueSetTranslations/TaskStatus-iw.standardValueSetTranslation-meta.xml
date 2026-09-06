@@ -5,19 +5,7 @@
         <translation>הושלם</translation>
     </valueTranslation>
     <valueTranslation>
-        <masterLabel>Deferred</masterLabel>
-        <translation>נדחה</translation>
-    </valueTranslation>
-    <valueTranslation>
-        <masterLabel>In Progress</masterLabel>
-        <translation>בתהליך</translation>
-    </valueTranslation>
-    <valueTranslation>
         <masterLabel>Not Started</masterLabel>
         <translation>טרם החל</translation>
-    </valueTranslation>
-    <valueTranslation>
-        <masterLabel>Waiting on someone else</masterLabel>
-        <translation>ממתין למישהו אחר</translation>
     </valueTranslation>
 </StandardValueSetTranslation>

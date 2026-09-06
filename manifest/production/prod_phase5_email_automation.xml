@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 5 — Email Templates + Automation (non-Flow)
+    =====================================
+    Types: EmailFolder, EmailTemplate, Workflow, ApprovalProcess, AssignmentRules,
+           MatchingRules, DuplicateRule, ApplicationSubtypeDefinition
+    Test level: NoTestRun
+    Estimated time: ~20-30 min
+    Dependencies:
+      - Phase 2 (Objects) — Workflow/Approval reference objects
+      - Phase 4 (Queues) — AssignmentRules assign to queues
+
+    IMPORTANT for Workflow Email Alerts:
+      ylerfeld@deloitte.co.il must be set as Default No-Reply Address in prod:
+      Setup → Email → Organization-Wide Addresses → Add
+
+    NOTE: 2 DuplicateRules excluded (.forceignore): Lead.Duplicate_lead, Contact.Matching_Contact
+          — sortOrder conflicts. Deploy manually in Setup after phase 5.
+
+    NOTE: 3 WorkflowAlerts have placeholder <type>owner</type> instead of specific users:
+          Account.formtitan_link_for_approval, Case.referral_agency,
+          Medical_Aid_Appointment__c.Specific_Medical_Aid_Alert_4YanaRaz
+          — restore after Profile wave (wave 13).
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase5_email_automation.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase5_result.json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Email folders (5) — must deploy before templates -->
+    <types>
+        <members>Azar</members>
+        <members>FOLDER_IVF</members>
+        <members>IVF</members>
+        <members>Medical_Info</members>
+        <members>Public_Inquiries_Email_Templates</members>
+        <name>EmailFolder</name>
+    </types>
+
+    <!-- 333 email templates -->
+    <types>
+        <members>*</members>
+        <name>EmailTemplate</name>
+    </types>
+
+    <!-- Workflow rules + field updates + email alerts -->
+    <types>
+        <members>*</members>
+        <name>Workflow</name>
+    </types>
+
+    <!-- Approval processes -->
+    <types>
+        <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+
+    <!-- Assignment rules (Lead + Case) -->
+    <types>
+        <members>*</members>
+        <name>AssignmentRules</name>
+    </types>
+
+    <!-- Matching rules -->
+    <types>
+        <members>*</members>
+        <name>MatchingRule</name>
+    </types>
+
+    <!-- Duplicate rules (2 excluded — see notes) -->
+    <types>
+        <members>*</members>
+        <name>DuplicateRule</name>
+    </types>
+
+    <!-- Omni-Channel routing type definitions -->
+    <types>
+        <members>*</members>
+        <name>ApplicationSubtypeDefinition</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

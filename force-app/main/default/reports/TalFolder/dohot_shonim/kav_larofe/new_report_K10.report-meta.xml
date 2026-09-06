@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -70,7 +70,6 @@
             <operator>notEqual</operator>
             <value>אסנת עקראוי,בדיקת מיצוי זכויות – רפואה מותאמת אישית,בלה דוד,ג&apos;ני נויה דנילוב,יארה אבו חזנה,סרגיי פרמיאקוב,רוברטה חיימוביץ,שירז וייס,נטלי ניר,Automated Process,רעות נח,ראבקה נחום,בחר שורה להתעמקות. דמיטרי רנדרוק,ענת סררו,עדן מנטל,יוליה רשקובן,טטיאנה פרמיאקוב,רחל אבייב,דמיטרי רנדרוק,אנה בדרוב דיין,אולגה פכוטניק,דיאנה בורוכוב,ולנטינה פרומן,רבקה לאה נחום,חוה ג&apos;ראדה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_CREATED_DATE</field>
@@ -63,7 +63,6 @@
             <operator>notContain</operator>
             <value>סימולצ</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>רופאים מומחים אסיא - 6 חוד&apos; אחרונים 25.3</name>

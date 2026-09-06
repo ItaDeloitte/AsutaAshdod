@@ -64,7 +64,7 @@ global with sharing class SMSSendingScheduleBatch implements Database.Batchable<
 
         if (!errorMap.isEmpty()) {
             List<Messaging.SingleEmailMessage> mails = new List<Messaging.SingleEmailMessage>();
-            OrgWideEmailAddress owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'nonreply@assuta.co.il' LIMIT 1];
+            OrgWideEmailAddress owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'ylerfeld@deloitte.co.il' LIMIT 1];
 
             for (String message_i : errorMap.keySet()) {
                 if (smsIdsMap.containsKey(message_i)) {

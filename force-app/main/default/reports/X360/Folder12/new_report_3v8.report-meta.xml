@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -107,7 +107,6 @@
             <operator>equals</operator>
             <value>,העברה חזרה למוקד,העברה לטיפול מנהל,Service_Adaption,התקבלה תשובה,התקבלו תוצאות ביופסיה,התקשרות מול רופא,זימון לבדיקה,זימון למומחה,New,חדש,טופל,ממתין,ממתין לחוו&quot;ד רופא,ממתין למועד בדיקת MRI/PET CT,ממתין למועד ביופסיה,ממתין למטופל,ממתין למימוש,ממתין לסקר על ידי נציג,ממתין לצד שלישי,ממתין לקביעת ביופסיה,ממתין לקביעת תור ל-MRI/PET CT/מחלקה אונקולוגית,ממתין לקביעת תור ממוטומיה,ממתין לרופא,ממתין לתוצאות ביופסיה,ממתין לתוצאת בדיקת MRI/PET CT,ממתין לתזכור על ידי נציג,Awaits_Response,נדרש המשך טיפול,נדרשת המלצה/קביעת תור לכירורג שד,ניהול סיכונים,נקבע תור לניתוח,נשלחה הצעת מחיר,Active</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

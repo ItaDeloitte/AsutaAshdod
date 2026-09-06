@@ -201,10 +201,9 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>Info about files and documents in the system</description>
     <isGridLayout>true</isGridLayout>
-    <owner>ildevsalesforce@deloitte.co.il</owner>
-    <runningUser>sergeype@assuta.co.il</runningUser>
     <textColor>#000000</textColor>
     <title>File and Document Controls</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

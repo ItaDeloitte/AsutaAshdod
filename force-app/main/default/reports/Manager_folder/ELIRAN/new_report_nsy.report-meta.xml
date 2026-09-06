@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -83,7 +83,6 @@
             <operator>equals</operator>
             <value>,NewAppointment,בטיפול אדמיניסטרטיבי,וידוא הגעה לפגישה,WaitingForAppointment,Urgent_WaitingList,ממתין להתחייבות,ממתין לאישור,בתהליך אישור מנהל,ממתין לאישור המטופל על קיום הפגישה,Recording,Typing,StoppedDuringAppointment,TookPlace,Signature,מטופל אישר שנכח בפגישה,מטופל אישר שלא נכח בפגישה,RescheduleByClient,RescheduleByAssuta,נדחה על ידי המנהל,Canceled,1,3,2,4,5,WaitingForCanceled,CanceledFailed,not_arrived</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

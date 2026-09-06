@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <buckets>
         <bucketType>picklist</bucketType>
@@ -146,7 +146,6 @@ IF( RIGHT(FK_Appointment__c.Id_Patient__c, 1) = &apos;7&apos; ||RIGHT(FK_Appoint
             <operator>equals</operator>
             <value>760902</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

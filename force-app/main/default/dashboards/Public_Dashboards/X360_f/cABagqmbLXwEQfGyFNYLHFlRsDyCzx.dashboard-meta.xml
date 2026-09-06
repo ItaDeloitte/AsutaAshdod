@@ -88,10 +88,9 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>מסע מטופל ריאות יד ביד</description>
     <isGridLayout>true</isGridLayout>
-    <owner>hagits@assuta.co.il</owner>
-    <runningUser>hagits@assuta.co.il</runningUser>
     <textColor>#000000</textColor>
     <title>יד ביד ריאות</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

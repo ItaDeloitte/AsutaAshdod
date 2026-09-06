@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -50,7 +50,6 @@
             <operator>contains</operator>
             <value>בדיקות שינה - וואטסאפ,אסותא לייט - וואטסאפ,מרפאת בריאות הגבר - וואטסאפ,מרפאה פה ולסת - וואטסאפ,דיגיטל צ&apos;אט מומחים,מרכז מומחים - וואטסאפ,שירות US פרטי – וואטסאפ,שירות פיברוסקאן – וואטסאפ,שירות US שד פרטי – וואטסאפ,שירות מרפאת כבד – וואטסאפ,שירות בירור מהיר הראל – וואטסאפ,צ&apos;ק אפ – בדיקות סקר תקופתיות – וואטסאפ,אסותא ONE – וואטסאפ,שירותי ג&apos;יני – סקר גנטי – וואטסאפ,שירות US עיניים פרטי – וואטסאפ,פה ולסת פרטי – וואטסאפ,בדיקות דם פרטיות - וואטסאפ</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

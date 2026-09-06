@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>View18</fullName>
     <columns>NAME</columns>
@@ -8,8 +8,6 @@
     <columns>Final_Cost_of_Med_1__c</columns>
     <columns>Final_Cost_of_Med_2__c</columns>
     <columns>Final_Cost_of_Med_3__c</columns>
-    <columns>Payment_to_Doctor__c</columns>
-    <columns>Cost_of_appointment__c</columns>
     <columns>remarks_kit__c</columns>
     <columns>presurgery_answer__c</columns>
     <filterScope>Everything</filterScope>

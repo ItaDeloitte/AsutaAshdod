@@ -30,7 +30,7 @@ public with sharing class EmailMessageTRService {
         for (EmailMessage emailMessage_i : emailMessages) {
             OrgWideEmailAddress owea_i = fromAddressToOWEAMap.containsKey(emailMessage_i.FromAddress)
                 ? fromAddressToOWEAMap.get(emailMessage_i.FromAddress)
-                : fromAddressToOWEAMap.get('nonreply@assuta.co.il');
+                : fromAddressToOWEAMap.get('ylerfeld@deloitte.co.il');
             emailMessage_i.FromAddress = owea_i.Address;
             emailMessage_i.FromName = owea_i.DisplayName;
         }

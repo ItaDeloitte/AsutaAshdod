@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -53,11 +53,11 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>FK_CASE_STATUS</column>
+            <column>FK_$Case.Patient_Stage__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Follow-up</value>
+            <value>Follow_up</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_CASE_RECORDTYPE</column>
@@ -80,7 +80,6 @@
             <operator>notEqual</operator>
             <value>Wrong Recommendation</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

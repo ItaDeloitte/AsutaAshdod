@@ -4,12 +4,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>pniotash@assuta.co.il</email>
     <name>אשדוד ציבורי- פניות הציבור</name>
-    <queueMembers>
-        <users>
-            <user>zzz_5f8c964c-bf14-42a5-853d-b435ca6e0912@deleted.com</user>
-            <user>zzz_47a2d49a-7f18-41e4-9659-5227dda3c19e@deleted.com</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>OB_Archiver__Storage_MB__c.OB_Archiver__Max_MB__c:SUM - OB_Archiver__Storage_MB__c.OB_Archiver__Remaining_MB__c:SUM</calculatedFormula>
@@ -85,7 +85,6 @@
             <operator>contains</operator>
             <value>Data</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

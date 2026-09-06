@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>ChangeOwnerOne</excludeButtons>
     <excludeButtons>ChangeRecordType</excludeButtons>
@@ -598,18 +598,6 @@
                 <behavior>Readonly</behavior>
                 <field>calculate_price__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>min_surgery__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>max_surgery__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Cost_of_appointment__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -685,10 +673,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Cost_of_medical_operation4__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Payment_to_Doctor__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -877,10 +861,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Process_Status_From_Site__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Payment_Status_From_Site__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -1194,7 +1174,6 @@
     </relatedLists>
     <relatedLists>
         <fields>Case__c</fields>
-        <fields>Case_subject__c</fields>
         <fields>CREATED_DATE</fields>
         <relatedList>cases_and_appoitments__c.Appointment__c</relatedList>
     </relatedLists>

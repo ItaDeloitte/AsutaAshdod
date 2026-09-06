@@ -3,20 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>אסותא עד הבית אחיות</name>
-    <queueMembers>
-        <users>
-            <user>einsteinbotuser@assuta.co.il</user>
-            <user>oshratbars@assuta.co.il</user>
-            <user>irinayan@assuta.co.il</user>
-            <user>barz@assuta.co.il</user>
-            <user>hilaled@assuta.co.il</user>
-            <user>yaelfr@assuta.co.il</user>
-            <user>yaelshapi@assuta.co.il</user>
-            <user>moriyak@assuta.co.il</user>
-            <user>edenman@assuta.co.il</user>
-            <user>kerenshirt@assuta.co.il</user>
-        </users>
-    </queueMembers>
     <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
     <queueSobject>
         <sobjectType>Case</sobjectType>

@@ -3,4 +3,14 @@
     <fullName>Status</fullName>
     <trackFeedHistory>true</trackFeedHistory>
     <trackHistory>true</trackHistory>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ממתין</fullName>
+                <default>false</default>
+                <label>ממתין</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

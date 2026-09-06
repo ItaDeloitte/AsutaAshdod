@@ -139,7 +139,7 @@
         <customTabListAdditionalFields>TransportLocation</customTabListAdditionalFields>
         <customTabListAdditionalFields>ClinicalDeterminationReason</customTabListAdditionalFields>
         <customTabListAdditionalFields>ServicingProvider</customTabListAdditionalFields>
-        <customTabListAdditionalFields>StatusCode</customTabListAdditionalFields>
+
         <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CareRequestCase</lookupDialogsAdditionalFields>
@@ -149,7 +149,6 @@
         <lookupDialogsAdditionalFields>TransportLocation</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ClinicalDeterminationReason</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ServicingProvider</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>StatusCode</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CareRequestCase</lookupPhoneDialogsAdditionalFields>
@@ -159,7 +158,6 @@
         <lookupPhoneDialogsAdditionalFields>TransportLocation</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ClinicalDeterminationReason</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ServicingProvider</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>StatusCode</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CareRequestCase</searchResultsAdditionalFields>
@@ -169,7 +167,6 @@
         <searchResultsAdditionalFields>TransportLocation</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ClinicalDeterminationReason</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ServicingProvider</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>StatusCode</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

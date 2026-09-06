@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    PRODUCTION PHASE 14 — List Views
+    =====================================
+    Types: ListView
+    Test level: NoTestRun
+    Estimated time: ~10-15 min
+    Dependencies:
+      - Phase 4 (Queues) — ListViews filter by Queue
+      - Phase 3 (RecordTypes) — ListViews filter by RecordType
+      - Phase 10 (UI Config) — after FlexiPages/Apps deployed
+
+    NOTE: 4 list views have modified columns (excluded fields):
+      - Appointment__c.FIFO1: PaymentsRead__c filter removed ⚠️ restore after field deployed
+      - Appointment__c.FIFO2: PaymentsRead__c filter removed ⚠️ restore after field deployed
+      - Appointment__c.MACCABINEWLAYOUT: PaymentsRead__c filter removed ⚠️ restore
+      - Case.X360: rec_to_modify_case__c column removed ⚠️ restore after field deployed
+      - ServiceAppointment (3 LVs): WorkTypeName column removed ⚠️ restore after FSL enabled
+
+    Command:
+    sf project deploy start --manifest manifest/production/prod_phase14_listviews.xml ^
+      --target-org AsutaProd --test-level NoTestRun --json > prod_phase14_result.json
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- 1,613 list views -->
+    <types>
+        <members>*</members>
+        <name>ListView</name>
+    </types>
+
+    <version>67.0</version>
+</Package>

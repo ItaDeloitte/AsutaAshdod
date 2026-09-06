@@ -20,7 +20,7 @@
         <criteriaItems>
             <field>MessagingSession.Status</field>
             <operation>equals</operation>
-            <value>ממתין</value>
+            <value>Waiting</value>
         </criteriaItems>
         <criteriaItems>
             <field>MessagingSession.Start_waiting__c</field>

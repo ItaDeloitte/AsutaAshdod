@@ -1642,6 +1642,38 @@ private static Boolean isAllowedAnesthesiaType(Appointment__c appointment) {
         );
     }
 
+    public static void createConsentFormTaken(List<Appointment__c> appointments, Boolean quickReceiptFlow, Id surveyId) {
+        if (appointments == null || appointments.isEmpty()) return;
+        Survey__c survey = [
+            SELECT Id, Survey_Version__c, Immediate_Send__c, days_to_send_survey__c, Maximum_submission__c
+            FROM Survey__c WHERE Id = :surveyId LIMIT 1
+        ];
+        Integer daysToSend = survey.days_to_send_survey__c != null ? Integer.valueOf(survey.days_to_send_survey__c) : null;
+        Integer maxSubmission = survey.Maximum_submission__c != null ? Integer.valueOf(survey.Maximum_submission__c) : null;
+        Id surveyRT = AppointmentTriggerUtil.S_TAKER_RT_MAP.get('Digital_Forms').getRecordTypeId();
+        List<SurveyTaker__c> toInsert = new List<SurveyTaker__c>();
+        for (Appointment__c appt : appointments) {
+            toInsert.add(new SurveyTaker__c(
+                Survey__c = surveyId,
+                RecordTypeId = surveyRT,
+                QuickReceiptFlow__c = quickReceiptFlow,
+                Case__c = appt.Case__c,
+                Site__c = appt.Site__c,
+                Appointment__c = appt.Id,
+                Account__c = appt.Patient_Account__c,
+                Survey_Version__c = survey.Survey_Version__c,
+                Taker_Maximum_submission__c = maxSubmission,
+                visit_date__c = appt.Appointment_Date_Time__c,
+                activity_code__c = appt.Medical_Procedure__r.Procedure_Code__c,
+                IsGuardian__c = appt.Patient_Account__r.Age_Number__c != null && appt.Patient_Account__r.Age_Number__c > 18,
+                sms_send_time__c = getSurveySendDate(appt.Appointment_Date_Time__c, daysToSend, survey.Immediate_Send__c)
+            ));
+        }
+        if (!toInsert.isEmpty()) {
+            insert toInsert;
+        }
+    }
+
     private static DateTime getSurveySendDate(Datetime apptDate, Integer daysToSend, Boolean isImmediateSend) {
         if (isImmediateSend) {
             return System.now();

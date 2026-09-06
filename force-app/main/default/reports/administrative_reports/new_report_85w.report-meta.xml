@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_NAME</field>
@@ -68,7 +68,6 @@
             <operator>contains</operator>
             <value>57500,57452,57523,68.14,68.15,57514,57513</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>פוטנציאל קבלה מהירה רמה&quot;ח צוואר הרחם</name>

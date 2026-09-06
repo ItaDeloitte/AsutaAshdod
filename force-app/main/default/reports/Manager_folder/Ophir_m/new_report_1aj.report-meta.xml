@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>OWNER</field>
@@ -46,7 +46,6 @@
             <operator>contains</operator>
             <value>גיא,עידן,דניאלה,משה,חנית,עינב עומייסי,אופיר,אלכסנדרה,יוסף,דיקלה,לין,ליעוז,אור-פז,תמרה,ענבל לזר,שירן פרץ,עמית,דאהר,מוריה דהן,גטאס,חגית,דניאל רזניק,הדר חתינה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

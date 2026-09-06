@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Appointment__c.Patient_Account__c</field>
@@ -40,7 +40,6 @@
             <operator>equals</operator>
             <value>78469,78789,78070,78071,783061,78608,78605,78610,78799,782152,78609,78215,78231,80000,80007,80009,80019,80017,80013</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -440,10 +440,9 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>This dashboard provides key insights into rep performance, including average handle time, speed to answer, and active time, as well as case metrics such as the number of open, escalated, and closed cases, case origin, and case reason.</description>
     <isGridLayout>true</isGridLayout>
-    <owner>yulialib@assuta.co.il</owner>
-    <runningUser>yulialib@assuta.co.il</runningUser>
     <textColor>#000000</textColor>
     <title>Case Management and Rep Metrics</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

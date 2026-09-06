@@ -174,7 +174,6 @@
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
-    <owner>zzz_9e189691-e476-49e4-846b-773df61936e5@deleted.com</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -278,9 +277,9 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>zzz_671c1808-f5b2-4510-b7a5-9863f1415802@deleted.com</runningUser>
     <textColor>#000000</textColor>
     <title>AppExchange Salesforce Service &amp; Support - Rep/Agent Performance</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
+    <owner>rpincus@deloitte.co.il.ashdod.prod.dev2</owner>
 </Dashboard>

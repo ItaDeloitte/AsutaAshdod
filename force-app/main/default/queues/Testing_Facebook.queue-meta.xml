@@ -3,11 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Testing Facebook</name>
-    <queueMembers>
-        <users>
-            <user>zzz_67faaa74-b33b-42ce-b758-7b0c884c4186@deleted.com</user>
-        </users>
-    </queueMembers>
     <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
     <queueSobject>
         <sobjectType>MessagingSession</sobjectType>

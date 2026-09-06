@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
     <hasActivationRequired>false</hasActivationRequired>
     <label>Ashdod_Manager_PermissionSetGroup</label>
     <permissionSets>AIInsightReason_CU_ViewALL</permissionSets>
     <permissionSets>AIRecordInsight_CU_ViewALL</permissionSets>
-    <permissionSets>AccountBrand_CreateEdit</permissionSets>
     <permissionSets>Account_CU_ViewALL</permissionSets>
     <permissionSets>AgentShiftInfo_c_CU_ViewALL</permissionSets>
     <permissionSets>Agent_survey_c_CreateEdit</permissionSets>
@@ -32,7 +31,6 @@
     <permissionSets>Contact_CU_ViewALL</permissionSets>
     <permissionSets>ContractLineItem_CU_ViewALL</permissionSets>
     <permissionSets>Contract_CreateEdit</permissionSets>
-    <permissionSets>DelegatedAccount_CreateEdit</permissionSets>
     <permissionSets>Discipline_note_c_CU_ViewALL</permissionSets>
     <permissionSets>Doctor_Medical_Procedure_c_CreateEdit</permissionSets>
     <permissionSets>Doctor_arrangement_c_C_ViewALL</permissionSets>
@@ -81,24 +79,16 @@
     <permissionSets>Related_document_c_CU_ViewALL</permissionSets>
     <permissionSets>Reminder_c_CU_ViewALL</permissionSets>
     <permissionSets>SMS_Parent_Session_c_CU_ViewALL</permissionSets>
-    <permissionSets>SignupRequest_CU_ViewALL</permissionSets>
     <permissionSets>Site_c_CU_ViewALL</permissionSets>
     <permissionSets>SocialPost_CU_ViewALL</permissionSets>
     <permissionSets>Solution_CU_ViewALL</permissionSets>
     <permissionSets>SpinCal_c_CU_ViewALL</permissionSets>
     <permissionSets>StreamingChannel_CU_ViewALL</permissionSets>
     <permissionSets>Sub_Expertise_c_U_ViewALL</permissionSets>
-    <permissionSets>SurveyInvitation_CU_ViewALL</permissionSets>
-    <permissionSets>SurveyResponse_CU_ViewALL</permissionSets>
-    <permissionSets>SurveySubject_CU_ViewALL</permissionSets>
     <permissionSets>SurveyTaker_c_CU_ViewALL</permissionSets>
     <permissionSets>Survey_Assuta_c_CU_ViewALL</permissionSets>
     <permissionSets>Survey_CU_ViewALL</permissionSets>
     <permissionSets>VDN_c_CU_ViewALL</permissionSets>
-    <permissionSets>dbo_CONV_SF_Activity_Fields_c_x_Read</permissionSets>
-    <permissionSets>kmslh_KMS_Related_Article_c_CU_ViewALL</permissionSets>
-    <permissionSets>kmslh_KMS_UserArticleRating_c_CU_ViewALL</permissionSets>
-    <permissionSets>kmslh_KMS_UserScenarioAnswers_c_CU_ViewALL</permissionSets>
     <permissionSets>settlement_c_CU_ViewALL</permissionSets>
     <permissionSets>waiting_list_c_CU_ViewALL</permissionSets>
     <status>Updated</status>

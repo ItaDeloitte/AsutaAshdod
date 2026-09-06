@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -96,7 +96,6 @@
             <operator>notEqual</operator>
             <value>,22382,29740,28445,31921,21035,33708,24788,24835,31221,84194,19827,13248,8975,24995,14049,27306,26261,34309,23684,30916,35483,99629,18310,37767,22082,36726,29357,21033,30110,37329,109389,35281,35679,35502,35031,83225,15432,98870</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

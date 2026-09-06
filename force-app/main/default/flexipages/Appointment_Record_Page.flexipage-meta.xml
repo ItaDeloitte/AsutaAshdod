@@ -263,6 +263,7 @@
                 <identifier>c_RecordActionButton</identifier>
             </componentInstance>
         </itemInstances>
+        <!-- ⚠️ לשחזור: NBA builderNbaWidget strategy=NBA_Submit_for_approval — Next Best Action לא מופעל בסנדבוקס. שחזר לאחר הפעלת Next Best Action.
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -315,7 +316,7 @@
                 <componentName>runtime_communities_nba:builderNbaWidget</componentName>
                 <identifier>runtime_communities_nba_builderNbaWidget</identifier>
             </componentInstance>
-        </itemInstances>
+        </itemInstances>-->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

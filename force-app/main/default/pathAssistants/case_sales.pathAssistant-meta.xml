@@ -6,7 +6,7 @@
     <masterLabel>case sales</masterLabel>
     <pathAssistantSteps>
         <fieldNames>subStatus__c</fieldNames>
-        <picklistValueName>Closed</picklistValueName>
+        <picklistValueName>סגור</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>subStatus__c</fieldNames>

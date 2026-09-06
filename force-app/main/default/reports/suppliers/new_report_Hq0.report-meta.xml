@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CASE_NUMBER</field>
@@ -29,10 +29,6 @@
         <field>AGE</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>BUSINESS_AGE</field>
-    </columns>
-    <columns>
         <field>Case.SLA_icon__c</field>
     </columns>
     <filter>
@@ -57,7 +53,6 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>פניות פתוחות- ספקים</name>

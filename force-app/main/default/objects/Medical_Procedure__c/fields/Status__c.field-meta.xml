@@ -21,30 +21,6 @@
                 <default>false</default>
                 <label>לא פעיל</label>
             </value>
-            <value>
-                <fullName>ל</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>ל</label>
-            </value>
-            <value>
-                <fullName>לא פעיל</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>לא פעיל</label>
-            </value>
-            <value>
-                <fullName>פ</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>פ</label>
-            </value>
-            <value>
-                <fullName>פעיל</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>פעיל</label>
-            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

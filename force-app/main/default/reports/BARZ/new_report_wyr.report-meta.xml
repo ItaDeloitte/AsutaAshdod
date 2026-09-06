@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -96,9 +96,7 @@
     <columns>
         <field>CREATED</field>
     </columns>
-    <columns>
-        <field>Lead.HealthCloudGA__StartResumptionOfCareDate__c</field>
-    </columns>
+
     <customDetailFormulas>
         <calculatedFormula>MID(TEXT(CREATED_DATE),12,8)</calculatedFormula>
         <dataType>Text</dataType>
@@ -128,7 +126,6 @@
             <operator>contains</operator>
             <value>נייעס</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

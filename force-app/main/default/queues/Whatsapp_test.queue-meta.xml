@@ -3,12 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Whatsapp test</name>
-    <queueMembers>
-        <users>
-            <user>sergeype@assuta.co.il</user>
-        </users>
-    </queueMembers>
-    <queueRoutingConfig>Whatsapps_routing</queueRoutingConfig>
     <queueSobject>
         <sobjectType>MessagingSession</sobjectType>
     </queueSobject>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>User.Appointment__c$CreatedById$Name</field>
@@ -30,7 +30,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,Appointment__c.Institutes,Appointment__c.Closedins,Appointment__c.Experts,Appointment__c.ClosedExperts,Appointment__c.Surgeries,Appointment__c.ClosedSurgeries</value>
+            <value>Appointment__c.Institutes,Appointment__c.Closedins,Appointment__c.Experts,Appointment__c.ClosedExperts,Appointment__c.Surgeries,Appointment__c.ClosedSurgeries</value>
         </criteriaItems>
         <criteriaItems>
             <column>User.Appointment__c$CreatedById$Medical_Procedure_code__c</column>
@@ -46,7 +46,6 @@
             <operator>notEqual</operator>
             <value>Canceled,2,מטופל אישר שלא נכח בפגישה</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

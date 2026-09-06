@@ -19,7 +19,7 @@ public class SendSMSHandler implements Queueable, Database.AllowsCallouts {
 
     public void execute(QueueableContext context) {
         List<SMS__c> smsList = [SELECT Id, Name, Phone_Number__c, Content__c , SMS_Always__c,From_Phone__c FROM SMS__c WHERE Id IN: smsIds];
-        OrgWideEmailAddress owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'nonreply@assuta.co.il' LIMIT 1];
+        OrgWideEmailAddress owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'ylerfeld@deloitte.co.il' LIMIT 1];
         ws_OutboundSMS.AssutaSMSWSServiceSoap smsService = new ws_OutboundSMS.AssutaSMSWSServiceSoap();
         Map<Id, ws_OutboundSMS.SendText> responsesMap = new Map<Id, ws_OutboundSMS.SendText>();
         Map<String, Exception> errorsMap = new Map<String, Exception>();

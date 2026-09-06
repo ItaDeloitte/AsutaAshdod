@@ -6,17 +6,17 @@
     <masterLabel>Case Path - Genral</masterLabel>
     <pathAssistantSteps>
         <fieldNames>Treat_status__c</fieldNames>
-        <picklistValueName>Escalated</picklistValueName>
+        <picklistValueName>בטיפול מנהל</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>Reason</fieldNames>
         <fieldNames>Treat_status__c</fieldNames>
-        <picklistValueName>In_Progress</picklistValueName>
+        <picklistValueName>בטיפול</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>Reason</fieldNames>
         <fieldNames>Treat_status__c</fieldNames>
-        <picklistValueName>Third Party</picklistValueName>
+        <picklistValueName>הועבר לטיפול מזכירות</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>General_Info</recordTypeName>
 </PathAssistant>

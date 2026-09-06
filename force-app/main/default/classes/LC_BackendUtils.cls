@@ -203,7 +203,7 @@ public without sharing class LC_BackendUtils {
             mail.setToAddresses(new List<String>{aid_i.Email_MedicalAidManager__c});
             mail.setTargetObjectId(aid_i.Patient__r.PersonContactId);
             mail.setSenderDisplayName('Assuta Non Reply'); 
-            mail.setReplyTo('nonreply@assuta.co.il');
+            mail.setReplyTo('ylerfeld@deloitte.co.il');
             mail.setTemplateId(templateId);
             mail.setWhatId(aid_i.Id);
             mails.add(mail);

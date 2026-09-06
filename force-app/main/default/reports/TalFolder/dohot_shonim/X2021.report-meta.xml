@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_CREATED_DATE</field>
@@ -55,7 +55,6 @@
             <operator>contains</operator>
             <value>820132,820138,820139,820999,820125,88152,88159,820146,820144,820145,820134,820135</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>מי שפיר כללית לאלכס - מעודכן פברואר 2021</name>

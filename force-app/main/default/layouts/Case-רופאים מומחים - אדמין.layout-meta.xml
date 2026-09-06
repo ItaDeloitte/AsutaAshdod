@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>create_qa</customButtons>
     <excludeButtons>OpenSlackRecordChannel</excludeButtons>
@@ -61,10 +61,6 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>AccountId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Case_subject__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -274,14 +270,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>tofes_web__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Opened_by_Doctor__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>SuppliedEmail</field>
             </layoutItems>
             <layoutItems>
@@ -320,10 +308,6 @@
                 <field>check2__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>doc_arrangment_not_private_hidden__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>formtitan_otp_link__c</field>
             </layoutItems>
@@ -342,10 +326,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Doctor_Arrangement__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>surgeryMatchedArrangement__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -374,20 +354,12 @@
                 <field>external_id_formtitan__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Time_of_appointment__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Time_of_appointment2222__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>call_flow_connect_rec_case_to__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>related_Case_rec__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -425,11 +397,6 @@
             <actionName>Case.Log_a_call_cst</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Case.SendEmail</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>Case.Send_SMS_Button</actionName>
@@ -532,10 +499,8 @@
         <fields>Appointment_Date_Time__c</fields>
         <fields>Commitment_Status__c</fields>
         <fields>AppointmentTime__c</fields>
-        <fields>Time_of_appointment__c</fields>
         <fields>Doctor_Account__c</fields>
         <fields>Appointment_Status__c</fields>
-        <fields>Accession_Number__c</fields>
         <fields>CREATED_DATE</fields>
         <relatedList>Appointment__c.Case__c</relatedList>
         <sortField>Appointment_Date_Time__c</sortField>

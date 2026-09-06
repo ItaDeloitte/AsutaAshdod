@@ -393,69 +393,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>HealthCloudGA__Active__c</picklist>
-        <values>
-            <fullName>No</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Yes</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__EnrollmentType__c</picklist>
-        <values>
-            <fullName>Dual</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ESRD</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>FBDual</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>NonDual</fullName>
-            <default>true</default>
-        </values>
-        <values>
-            <fullName>PBDual</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__IndividualType__c</picklist>
-        <values>
-            <fullName>Individual</fullName>
-            <default>true</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__MedicareEnrollee__c</picklist>
-        <values>
-            <fullName>Continued</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>New Enrollee</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>HealthCloudGA__OREC__c</picklist>
-        <values>
-            <fullName>Age</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Disabled</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>ID_Type__c</picklist>
         <values>
             <fullName>1</fullName>
@@ -848,25 +785,6 @@
         </values>
         <values>
             <fullName>Subsidiary</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Payment_method__c</picklist>
-        <values>
-            <fullName>ביט</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>כרטיס אשראי</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מזומן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>צ%27ק</fullName>
             <default>false</default>
         </values>
     </picklistValues>

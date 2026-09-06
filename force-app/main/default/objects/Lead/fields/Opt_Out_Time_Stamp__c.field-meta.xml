@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Opt_Out_Time_Stamp__c</fullName>
     <description>date time field that tracks the time stamp when the approves_mailing field is changed</description>
@@ -6,6 +6,6 @@
     <label>Opt Out Time Stamp</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>true</trackHistory>
+    <trackHistory>false</trackHistory>
     <type>DateTime</type>
 </CustomField>

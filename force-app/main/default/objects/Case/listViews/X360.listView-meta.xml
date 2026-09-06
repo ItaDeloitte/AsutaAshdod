@@ -8,9 +8,9 @@
     <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
     <columns>OWNER_NAME</columns>
     <columns>CREATEDBY_USER.ALIAS</columns>
-    <columns>rec_to_modify_case__c</columns>
     <columns>CASES.RECORDTYPE</columns>
     <columns>icon_case_type__c</columns>
+    <columns>rec_to_modify_case__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>CASES.RECORDTYPE</field>

@@ -1,48 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <flexiPageRegions>
+        <!-- dashboards ZdlMhWglBcjKMkKwpNzOZgUTksHQbD + QARClFKaSaMeeKUVXZYnRsvogpTuoi הוסרו — מוחרגים ב-.forceignore. שחזר לאחר פריסת שני הדשבורדים:
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>dashboardName</name>
-                    <value>ZdlMhWglBcjKMkKwpNzOZgUTksHQbD</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>hideOnError</name>
-                    <value>true</value>
-                </componentInstanceProperties>
+                <componentInstanceProperties><name>dashboardName</name><value>ZdlMhWglBcjKMkKwpNzOZgUTksHQbD</value></componentInstanceProperties>
+                <componentInstanceProperties><name>hideOnError</name><value>true</value></componentInstanceProperties>
                 <componentName>desktopDashboards:embeddedDashboard</componentName>
                 <identifier>desktopDashboards_embeddedDashboard</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!$User.Ashdod_employee__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>true</rightValue>
-                    </criteria>
-                </visibilityRule>
+                <visibilityRule><criteria><leftValue>{!$User.Ashdod_employee__c}</leftValue><operator>EQUAL</operator><rightValue>true</rightValue></criteria></visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>dashboardName</name>
-                    <value>QARClFKaSaMeeKUVXZYnRsvogpTuoi</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>hideOnError</name>
-                    <value>true</value>
-                </componentInstanceProperties>
+                <componentInstanceProperties><name>dashboardName</name><value>QARClFKaSaMeeKUVXZYnRsvogpTuoi</value></componentInstanceProperties>
+                <componentInstanceProperties><name>hideOnError</name><value>true</value></componentInstanceProperties>
                 <componentName>desktopDashboards:embeddedDashboard</componentName>
                 <identifier>desktopDashboards_embeddedDashboard2</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!$User.Ashdod_employee__c}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>false</rightValue>
-                    </criteria>
-                </visibilityRule>
+                <visibilityRule><criteria><leftValue>{!$User.Ashdod_employee__c}</leftValue><operator>EQUAL</operator><rightValue>false</rightValue></criteria></visibilityRule>
             </componentInstance>
         </itemInstances>
+        -->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

@@ -25,12 +25,12 @@
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
         <matchingRuleItems>
-            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <blankValueBehavior>MatchBlanks</blankValueBehavior>
             <fieldName>campaignID__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
         <matchingRuleItems>
-            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <blankValueBehavior>MatchBlanks</blankValueBehavior>
             <fieldName>parentCampaignId__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>

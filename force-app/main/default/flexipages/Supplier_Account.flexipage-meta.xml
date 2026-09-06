@@ -207,6 +207,7 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <!-- ⚠️ לשחזור: OB_Archiver:relatedArchivedRecordsWidget — OB_Archiver לא מותקן בסנדבוקס. שחזר לאחר התקנת OB_Archiver.
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -222,7 +223,7 @@
                     </criteria>
                 </visibilityRule>
             </componentInstance>
-        </itemInstances>
+        </itemInstances>-->
         <itemInstances>
             <componentInstance>
                 <componentName>timeline</componentName>

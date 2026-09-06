@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>AgentWork$Name</field>
@@ -47,7 +47,6 @@
             <operator>equals</operator>
             <value>וואטסאפ יד ביד,יד ביד בוט,המשכי טיפול</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Tabular</format>
     <name>עותק של דיגיטל יד ביד זמני המתנה - חודשי</name>

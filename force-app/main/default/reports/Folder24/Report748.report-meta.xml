@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>IF(ISBLANK(Appointment__c.Surgery_Connected__c:UNIQUE), CUST_NAME:UNIQUE/Appointment__c.Surgery_Connected__c:UNIQUE, 0)</calculatedFormula>
@@ -103,7 +103,6 @@
             <operator>contains</operator>
             <value>/8/2024</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

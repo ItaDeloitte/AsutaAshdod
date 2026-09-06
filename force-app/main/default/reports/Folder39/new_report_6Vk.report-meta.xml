@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>Case$CaseNumber</field>
@@ -56,7 +56,6 @@
             <operator>equals</operator>
             <value>Payed_Freezing,UnControlled_Defrost,Research_Donation,Legal_Situation,חוזרת לטיפול,שימור 10 שנים,נפטר,שולם לפני פניה למטופל</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

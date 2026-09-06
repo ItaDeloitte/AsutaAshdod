@@ -330,12 +330,14 @@
                 <identifier>force_relatedListSingleContainer3</identifier>
             </componentInstance>
         </itemInstances>
+        <!-- ⚠️ לשחזור לאחר הפעלת Salesforce Connect + פריסת displayHistoricCalls LWC
         <itemInstances>
             <componentInstance>
                 <componentName>displayHistoricCalls</componentName>
                 <identifier>c_displayHistoricCalls</identifier>
             </componentInstance>
         </itemInstances>
+        -->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

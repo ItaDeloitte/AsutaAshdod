@@ -81,11 +81,13 @@
                 <field>Responsible_Employee__c</field>
                 <uiBehavior>Required</uiBehavior>
             </quickActionLayoutItems>
+            <!-- ⚠️ Subject_Reference__c — נמחק לצמיתות מ-Case בסנדבוקס 12/07/2026. לא לשחזר.
             <quickActionLayoutItems>
                 <emptySpace>false</emptySpace>
                 <field>Subject_Reference__c</field>
                 <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
+            -->
         </quickActionLayoutColumns>
     </quickActionLayout>
     <targetObject>Case</targetObject>

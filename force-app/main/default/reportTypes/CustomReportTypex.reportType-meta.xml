@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Medical_Procedure__c</baseObject>
     <category>other</category>
@@ -3153,11 +3153,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Opearator__c</field>
-            <table>Medical_Procedure__c.Appointments__r.Cases__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Opened_by_Doctor__c</field>
             <table>Medical_Procedure__c.Appointments__r.Cases__r</table>
         </columns>
         <columns>

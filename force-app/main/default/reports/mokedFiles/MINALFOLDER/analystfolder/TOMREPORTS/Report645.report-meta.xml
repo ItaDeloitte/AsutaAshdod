@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -130,7 +130,6 @@
             <operator>equals</operator>
             <value>,Collection_Made,Department_Clarification,Shikum_Bait_Completed,הושלם אבחון בית,Received_Doctor_Response,First_Visit_Scheduled,תואם איסוף ציוד,Appointments_Scheduled</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

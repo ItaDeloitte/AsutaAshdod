@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <name>myRule_16_A1</name>
@@ -390,7 +390,7 @@
         <inputAssignments>
             <field>FromAddress</field>
             <value>
-                <stringValue>nonreply@assuta.co.il</stringValue>
+                <stringValue>ylerfeld@deloitte.co.il</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>

@@ -3,12 +3,6 @@
     <doesIncludeBosses>true</doesIncludeBosses>
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>sales agents</name>
-    <queueMembers>
-        <users>
-            <user>zapierapiusr@assuta.co.il</user>
-            <user>zapierapiusr@assuta365.onmicrosoft.com</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

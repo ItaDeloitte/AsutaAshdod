@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -57,11 +57,11 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>FK_CASE_STATUS</column>
+            <column>FK_$Case.Patient_Stage__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Waiting for Initial Call</value>
+            <value>Waiting_for_Initial_Call</value>
         </criteriaItems>
         <criteriaItems>
             <column>FK_$Case.Conversation_with_the_Patient__c</column>
@@ -84,7 +84,6 @@
             <operator>equals</operator>
             <value>$USER</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <flexiPageRegions>
         <itemInstances>
@@ -599,25 +599,19 @@
                 </visibilityRule>
             </componentInstance>
         </itemInstances>
+        <!-- displayHistoricCalls הוסר — LWC מוחרג (Salesforce Connect לא מופעל). שחזר לאחר הפעלת Salesforce Connect:
         <itemInstances>
             <componentInstance>
                 <componentName>displayHistoricCalls</componentName>
                 <identifier>displayHistoricCalls</identifier>
                 <visibilityRule>
                     <booleanFilter>1 AND 2</booleanFilter>
-                    <criteria>
-                        <leftValue>{!$User.Profile.Name}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>Agent</rightValue>
-                    </criteria>
-                    <criteria>
-                        <leftValue>{!$User.Profile.Name}</leftValue>
-                        <operator>NE</operator>
-                        <rightValue>Secretary</rightValue>
-                    </criteria>
+                    <criteria><leftValue>{!$User.Profile.Name}</leftValue><operator>NE</operator><rightValue>Agent</rightValue></criteria>
+                    <criteria><leftValue>{!$User.Profile.Name}</leftValue><operator>NE</operator><rightValue>Secretary</rightValue></criteria>
                 </visibilityRule>
             </componentInstance>
         </itemInstances>
+        -->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -920,6 +914,7 @@
                 </visibilityRule>
             </componentInstance>
         </itemInstances>
+    <!--KMSLH_PENDING - restore after kmslh installation
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -929,7 +924,7 @@
                 <componentName>kmslh:KMS_MainSearchComponent</componentName>
                 <identifier>kmslh_KMS_MainSearchComponent</identifier>
             </componentInstance>
-        </itemInstances>
+        </itemInstances>-->
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

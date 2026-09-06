@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_NAME</field>
@@ -58,7 +58,6 @@
             <operator>equals</operator>
             <value>Reminder_for_SMS_reminder_Institutes,Reminder_for_SMS_reminder_Experts,Reminder_for_SMS_reminder</value>
         </criteriaItems>
-        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

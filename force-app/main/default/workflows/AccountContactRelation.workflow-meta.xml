@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
         <fullName>Assuta_Basic_Identification</fullName>
@@ -8,7 +8,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Basic_Identification</template>
     </alerts>
@@ -20,7 +20,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Basic_Identification_Ashdod_20223</template>
     </alerts>
@@ -32,7 +32,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Minor_Upload_Files</template>
     </alerts>
@@ -44,7 +44,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_Minor_Upload_Files_Ashdod_20223</template>
     </alerts>
@@ -56,7 +56,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_OTP_ACC_CON_ACC</template>
     </alerts>
@@ -68,7 +68,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_OTP_ACC_CON_ACC_ASHDOD</template>
     </alerts>
@@ -80,7 +80,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_OTP_ACC_CON_Ashdod_Titan</template>
     </alerts>
@@ -92,7 +92,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_SEVERE_ACC_CON_ACC</template>
     </alerts>
@@ -104,7 +104,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_SEVERE_ACC_CON_ACC_ASHDOD</template>
     </alerts>
@@ -116,7 +116,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_SEVERE_ACC_CON_ACC_Ashdod_Titan</template>
     </alerts>
@@ -128,7 +128,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_final_SEVERE_ACC_CON_ACC</template>
     </alerts>
@@ -140,7 +140,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_SEVERE_final_ACC_CON_ACC_ASHDOD</template>
     </alerts>
@@ -152,7 +152,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_SEVERE_final_ACC_CON_ACC_Ashdod_Titan</template>
     </alerts>
@@ -164,7 +164,7 @@
             <field>contact_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_OTP_ACC_CON</template>
     </alerts>
@@ -176,7 +176,7 @@
             <field>contact_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/OTP_ACC_CON2</template>
     </alerts>
@@ -188,7 +188,7 @@
             <field>contact_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_OTP_ACC_CON_Ashdod</template>
     </alerts>
@@ -200,7 +200,7 @@
             <field>contact_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/OTP_ACC_CON_ASHDOD_Titan</template>
     </alerts>
@@ -212,7 +212,7 @@
             <field>person_account_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/rec_info_for_patient</template>
     </alerts>
@@ -224,7 +224,7 @@
             <field>contact_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_sev_fin_ACC_CON</template>
     </alerts>
@@ -236,7 +236,7 @@
             <field>contact_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Assuta_sev_fin_ACC_CON_Ashdod</template>
     </alerts>
@@ -248,7 +248,7 @@
             <field>contact_email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>nonreply@assuta.co.il</senderAddress>
+        <senderAddress>ylerfeld@deloitte.co.il</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/sev_fin_ACC_CON_Ashdod_Titan</template>
     </alerts>
@@ -412,7 +412,7 @@
         <criteriaItems>
             <field>AccountContactRelation.Manually_approval__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <criteriaItems>
             <field>AccountContactRelation.title__c</field>
@@ -436,7 +436,7 @@
         <criteriaItems>
             <field>AccountContactRelation.Manually_approval__c</field>
             <operation>equals</operation>
-            <value>אמת</value>
+            <value>True</value>
         </criteriaItems>
         <criteriaItems>
             <field>AccountContactRelation.title__c</field>

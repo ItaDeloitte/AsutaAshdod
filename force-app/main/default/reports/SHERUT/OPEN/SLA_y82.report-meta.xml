@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -59,7 +59,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,Case.Appointments,Case.Assuta_360,Case.ClosedAssuta360,Case.ClosedDoc,Case.ClosedExp,Case.ClosedGen,Case.ClosedInstitutes,Case.ClosedSurgeries,Case.DOC_expert,Case.Doctor_Case,Case.General_Info,Case.Surgery,Case.transfer_to_secretaries</value>
+            <value>Case.Appointments,Case.Assuta_360,Case.ClosedAssuta360,Case.ClosedDoc,Case.ClosedExp,Case.ClosedGen,Case.ClosedInstitutes,Case.ClosedSurgeries,Case.DOC_expert,Case.Doctor_Case,Case.General_Info,Case.Surgery,Case.transfer_to_secretaries</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
@@ -75,7 +75,6 @@
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

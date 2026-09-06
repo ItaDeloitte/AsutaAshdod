@@ -4,13 +4,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>assutademo@gmail.com</email>
     <name>משימות יד ביד</name>
-    <queueMembers>
-        <users>
-            <user>orlytu@assuta.co.il</user>
-            <user>hagits@assuta.co.il</user>
-            <user>shulin@assuta.co.il</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

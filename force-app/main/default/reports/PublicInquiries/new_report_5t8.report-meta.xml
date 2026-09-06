@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -44,9 +44,6 @@
         <field>Case.CaseCreationDate__c</field>
     </columns>
     <columns>
-        <field>Case.Subject_Reference2__c</field>
-    </columns>
-    <columns>
         <field>Case.Non_Assuta_Employee__c</field>
     </columns>
     <filter>
@@ -78,7 +75,6 @@
             <operator>notContain</operator>
             <value>סמסון</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

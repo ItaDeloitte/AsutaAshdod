@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <hasActivationRequired>false</hasActivationRequired>
     <label>Live Message Setup Flow Ashdod</label>
@@ -22,26 +22,6 @@
         <viewAllFields>false</viewAllFields>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    <servicePresenceStatusAccesses>
-        <enabled>true</enabled>
-        <servicePresenceStatus>Available_Chat</servicePresenceStatus>
-    </servicePresenceStatusAccesses>
-    <servicePresenceStatusAccesses>
-        <enabled>true</enabled>
-        <servicePresenceStatus>Learning</servicePresenceStatus>
-    </servicePresenceStatusAccesses>
-    <servicePresenceStatusAccesses>
-        <enabled>true</enabled>
-        <servicePresenceStatus>Long_Break</servicePresenceStatus>
-    </servicePresenceStatusAccesses>
-    <servicePresenceStatusAccesses>
-        <enabled>true</enabled>
-        <servicePresenceStatus>Papers</servicePresenceStatus>
-    </servicePresenceStatusAccesses>
-    <servicePresenceStatusAccesses>
-        <enabled>true</enabled>
-        <servicePresenceStatus>Short_Break</servicePresenceStatus>
-    </servicePresenceStatusAccesses>
     <userPermissions>
         <enabled>true</enabled>
         <name>CanAccessCE</name>

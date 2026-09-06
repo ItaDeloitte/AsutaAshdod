@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <aggregates>
         <calculatedFormula>Appointment__c.Appointment_Date_Time__c:UNIQUE-Appointment__c.Date_Appointment__c:UNIQUE</calculatedFormula>
@@ -118,7 +118,6 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <chart>
         <backgroundColor1>#FFFFFF</backgroundColor1>
@@ -92,7 +92,6 @@
             <operator>contains</operator>
             <value>אור לי דוידי,אליזבת,דור ליבנה,אפרת,הודיה שבו,וורקנש אבייט,ורד חדד,טליה וורקו,נדיה נמיזנסקי,עומר עזר,שרית חן,תהילה ואנונו,אוריה אבוטבול,מירי עמיחי</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

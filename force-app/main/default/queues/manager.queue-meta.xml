@@ -4,12 +4,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>assutademo@gmail.com</email>
     <name>בכירים</name>
-    <queueMembers>
-        <users>
-            <user>zzz_c37a4f0f-2aff-4ffd-9c86-ae468b7a6090@deleted.com</user>
-            <user>zzz_b971e0d5-737b-43e5-abeb-55d9fad1cd90@deleted.com</user>
-        </users>
-    </queueMembers>
     <queueRoutingConfig>cases_Routing_config</queueRoutingConfig>
     <queueSobject>
         <sobjectType>Appointment__c</sobjectType>

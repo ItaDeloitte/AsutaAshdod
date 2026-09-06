@@ -85,7 +85,7 @@ public class CreateMessageScheduleBatch implements Database.Batchable<sObject>, 
 
                         emailMessageToInsertList.add(new EmailMessage(
                             ToAddress = appointment_i.Patient_Mail__c,
-                            FromAddress = 'nonreply@assuta.co.il',
+                            FromAddress = 'ylerfeld@deloitte.co.il',
                             TemplateMergeField__c = 'AppointmentId__c',
                             AccountId__c = appointment_i.Patient_Account__c,
                             AppointmentId__c = appointment_i.Id,

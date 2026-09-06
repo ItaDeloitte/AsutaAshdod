@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CASE_CREATED_DATE</field>
@@ -33,7 +33,6 @@
             <operator>equals</operator>
             <value>נטלי בלום,יוליה גולובין,מיה ממן,איריס נחמיאס,אנה רוחליס,אוסנת רחמים,אלונה שוורצמן,יפעת שרביט</value>
         </criteriaItems>
-        <language>iw</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
