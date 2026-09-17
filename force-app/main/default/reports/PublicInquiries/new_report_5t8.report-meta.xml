@@ -11,7 +11,7 @@
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Case.Subject_Reference__c</groupingColumn>
+        <groupingColumn>Case.Subject_Public_Inquiry__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
@@ -30,9 +30,6 @@
     </columns>
     <columns>
         <field>SUBJECT</field>
-    </columns>
-    <columns>
-        <field>Case.Subject_Public_Inquiry__c</field>
     </columns>
     <columns>
         <field>Case.Sub_Subject__c</field>
@@ -79,7 +76,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.Subject_Reference__c</field>
+        <field>Case.Subject_Public_Inquiry__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>פרטי פניות לפי נשוא פניה</name>

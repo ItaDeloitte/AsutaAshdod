@@ -40,12 +40,8 @@ public without sharing class LC_BackendUtils {
         }
 
         System.debug('request: ' + JSON.serialize(request));
-        ws_AppointmentNew.CancelAppointmentResponse response;
-        if (!Test.isRunningTest()) {
-            response = new ws_AppointmentNew.AppointmentOperationsSoap().CancelAppointment(request);
-            System.debug('response: ' + JSON.serialize(response));
-        }
-
+        ws_AppointmentNew.CancelAppointmentResponse response = (ws_AppointmentNew.CancelAppointmentResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_CANCEL, request);
+        System.debug('response: ' + JSON.serialize(response));
         return response;
     }
 
@@ -71,7 +67,7 @@ public without sharing class LC_BackendUtils {
         request.PatientDetails.IdType = idType;
 
         // appointment details
-        request.AppointmentDetails = new ws_AppointmentNew.ArrayOfSetAppointmentDetailsSetAppointmentDetails();
+        request.AppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>();
         ws_AppointmentNew.SetAppointmentDetails details = new ws_AppointmentNew.SetAppointmentDetails();
         details.ScheduledStartDate = localizeDateTime(incommingSlot.StartTime, TimeZone.getTimeZone('Asia/Tel_Aviv'), 1);
         details.ModalityCode = String.valueOf(incommingSlot.ModalityCode);
@@ -85,7 +81,7 @@ public without sharing class LC_BackendUtils {
         if (String.isNotBlank(forcedCode)) {
             details.ForceAppointmentCode = forcedCode;
         }
-        request.AppointmentDetails.SetAppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{details};
+        request.AppointmentDetails.add(details);
 
         // order
         request.Order = new ws_AppointmentNew.Order();

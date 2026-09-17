@@ -5559,11 +5559,13 @@ node_modules/
 
 # קטגוריה I: שדות שנמחקו לצמיתות מהסביבה
 # Case.Subject_Reference__c (2) — ⚠️ לא לשחזור
-**/reports/PublicInquiries/new_report_5t8.report-meta.xml
+# Subject_Reference__c הוחלף ב-Subject_Public_Inquiry__c — שוחרר 17/08/2026 ✅
+# **/reports/PublicInquiries/new_report_5t8.report-meta.xml
+# ⛔ חסום לצמיתות — reportType=CaseList@Case.Subject_Reference__c (שדה שנמחק בשם ה-RT עצמו)
 **/reports/PublicInquiriesAshdod/new_report_LDS.report-meta.xml
-# AssutaDoctor__c ב-groupingsDown/chart הוסר מה-XML — שוחרר 27/07/2026 ✅
+# AssutaDoctor__c ב-groupingsDown/chart הוסר, groupingColumn→OWNER, booleanFilter 3→2 — שוחרר 17/08/2026 ✅
 # **/reports/Folder20/Report92191.report-meta.xml
-**/reports/Folder24/YADBEYAD_BREAST/new_report_Hzw.report-meta.xml
+# **/reports/Folder24/YADBEYAD_BREAST/new_report_Hzw.report-meta.xml
 # AssutaDoctor__c ב-groupingsDown הוסר מה-XML — שוחרר 27/07/2026 ✅
 # **/reports/YAD_BE_YAD_MATE/Copy_of_RGZ.report-meta.xml
 

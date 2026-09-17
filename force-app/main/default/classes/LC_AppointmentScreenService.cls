@@ -1587,7 +1587,7 @@ public without sharing class LC_AppointmentScreenService {
 
     private List<Appointment__c> requestProcessIds(ws_AppointmentNew.SetAppointmentRequest request, List<Appointment__c> appts) {
         System.debug('SetAppointmentNew Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.SetAppointmentResponse response = new ws_AppointmentNew.AppointmentOperationsSoap().SetAppointmentNew(request);
+        ws_AppointmentNew.SetAppointmentResponse response = (ws_AppointmentNew.SetAppointmentResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_SET_NEW, request);
         System.debug('SetAppointmentNew Response: ' + JSON.serialize(response));
 
         this.logs.addAll(LogSettingService.getInstance().prepareLog('LC_AppointmentScreen', 'requestProcessIds', JSON.serialize(new Map<Id, Appointment__c>(appts).keySet()), JSON.serialize(request), JSON.serialize(response)));
@@ -2294,7 +2294,7 @@ public without sharing class LC_AppointmentScreenService {
 
     private List<Appointment__c> requestNewProcessIds(ws_AppointmentNew.RescheduleAppointmentRequest request, List<Appointment__c> appts) {
         System.debug('RescheduleAppointmentNew Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.RescheduleAppointmentResponse response = new ws_AppointmentNew.AppointmentOperationsSoap().RescheduleAppointmentNew(request);
+        ws_AppointmentNew.RescheduleAppointmentResponse response = (ws_AppointmentNew.RescheduleAppointmentResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_RESCHEDULE, request);
         System.debug('RescheduleAppointmentNew Response: ' + JSON.serialize(response));
 
         this.logs.addAll(LogSettingService.getInstance().prepareLog('LC_AppointmentScreen', 'requestNewProcessIds', JSON.serialize(new Map<Id, Appointment__c>(appts).keySet()), JSON.serialize(request), JSON.serialize(response)));
@@ -2544,7 +2544,7 @@ public without sharing class LC_AppointmentScreenService {
             this.getSiteCriterias(procedure, ensembleSystem, calendarCode, expertCalendarCode, siteCodes, fromDatetime, toDatetime)};
 
         System.debug('AppointmentSearch Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.AppointmentSearchResponse response = new ws_AppointmentNew.AppointmentOperationsSoap().AppointmentSearch(request);
+        ws_AppointmentNew.AppointmentSearchResponse response = (ws_AppointmentNew.AppointmentSearchResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_SEARCH, request);
         System.debug('AppointmentSearch Response: ' + JSON.serialize(response));
 
         return response;
@@ -2620,7 +2620,7 @@ public without sharing class LC_AppointmentScreenService {
         request.EndTime = request.StartTime.addMinutes(Integer.valueOf(slot.Duration));
 
         System.debug('LockSlot Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.LockSlotResponse response = new ws_AppointmentNew.AppointmentOperationsSoap().LockSlot(request);
+        ws_AppointmentNew.LockSlotResponse response = (ws_AppointmentNew.LockSlotResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_LOCK, request);
         System.debug('LockSlot Response: ' + JSON.serialize(response));
 
         return response;
@@ -2644,7 +2644,7 @@ public without sharing class LC_AppointmentScreenService {
         request.ModalityCode = ensembleSystem == 26 || ensembleSystem == 86 ? String.valueOf(slot.ModalityCode) : String.valueOf(slot.CalendarId);
 
         System.debug('UnlockSlot Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.UnLockSlotResponse response = new ws_AppointmentNew.AppointmentOperationsSoap().UnlockSlot(request);
+        ws_AppointmentNew.UnLockSlotResponse response = (ws_AppointmentNew.UnLockSlotResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_UNLOCK, null, request.SlotLockId);
         System.debug('UnlockSlot Response: ' + JSON.serialize(response));
 
         return response;
@@ -2669,7 +2669,7 @@ public without sharing class LC_AppointmentScreenService {
         request.ModalityCode = ensembleSystem == 26 || ensembleSystem == 86 ? String.valueOf(slot.ModalityCode) : String.valueOf(slot.CalendarId);
 
         System.debug('RelockSlot Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.RefreshLockSlotResponse response = new ws_AppointmentNew.AppointmentOperationsSoap().RefreshLockSlot(request);
+        ws_AppointmentNew.RefreshLockSlotResponse response = (ws_AppointmentNew.RefreshLockSlotResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_REFRESH_LOCK, request, request.SlotLockId);
         System.debug('RelockSlot Response: ' + JSON.serialize(response));
 
         return response;
@@ -2687,8 +2687,7 @@ public without sharing class LC_AppointmentScreenService {
         request.PatientDetails = this.getPatientDetails(patient);
 
         // appointment
-        request.AppointmentDetails = new ws_AppointmentNew.ArrayOfSetAppointmentDetailsSetAppointmentDetails();
-        request.AppointmentDetails.SetAppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{
+        request.AppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{
             this.getAppointmentDetails(slot, appt.Id, forcedCode)};
 
         // order
@@ -2709,10 +2708,9 @@ public without sharing class LC_AppointmentScreenService {
         request.PatientDetails = this.getPatientDetails(patient);
 
         // appointment
-        request.AppointmentDetails = new ws_AppointmentNew.ArrayOfSetAppointmentDetailsSetAppointmentDetails();
-        request.AppointmentDetails.SetAppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{
-            this.getHiddenAppointmentDetails(firstRequest.AppointmentDetails.SetAppointmentDetails.get(0), appt.Id, mdt)};
-        request.AppointmentDetails.SetAppointmentDetails.get(0).ForceAppointmentCode = '10';        
+        request.AppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{
+            this.getHiddenAppointmentDetails(firstRequest.AppointmentDetails.get(0), appt.Id, mdt)};
+        request.AppointmentDetails.get(0).ForceAppointmentCode = '10';
 
         // order
         request.Order = this.getOrderDetails(appt.PayerFactor__r?.InsuranceCode__c);
@@ -2733,14 +2731,12 @@ public without sharing class LC_AppointmentScreenService {
         request.PatientDetails = this.getPatientDetails(patient);
 
         // appointment
-        request.AppointmentDetails = new ws_AppointmentNew.ArrayOfSetAppointmentDetailsSetAppointmentDetails();
-        request.AppointmentDetails.SetAppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{
-            this.getHiddenAppointmentDetails(firstRequest.AppointmentDetails.SetAppointmentDetails.get(0), appt.Id, mdt)};
-        request.AppointmentDetails.SetAppointmentDetails.get(0).ForceAppointmentCode = '10';        
+        request.AppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{
+            this.getHiddenAppointmentDetails(firstRequest.AppointmentDetails.get(0), appt.Id, mdt)};
+        request.AppointmentDetails.get(0).ForceAppointmentCode = '10';
 
         // order
-        request.Order = new ws_AppointmentNew.ArrayOfOrderOrder();
-        request.Order.Order = new List<ws_AppointmentNew.Order>{
+        request.Order = new List<ws_AppointmentNew.Order>{
             this.getOrderDetails(appt.PayerFactor__r?.InsuranceCode__c)};
 
         return request;
@@ -2760,13 +2756,11 @@ public without sharing class LC_AppointmentScreenService {
         request.PatientDetails = this.getPatientDetails(patient);
 
         // appointment
-        request.AppointmentDetails = new ws_AppointmentNew.ArrayOfSetAppointmentDetailsSetAppointmentDetails();
-        request.AppointmentDetails.SetAppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{
+        request.AppointmentDetails = new List<ws_AppointmentNew.SetAppointmentDetails>{
             this.getAppointmentDetails(slot, appt.Id, forcedCode)};
 
         // order
-        request.Order = new ws_AppointmentNew.ArrayOfOrderOrder();
-        request.Order.Order = new List<ws_AppointmentNew.Order>{
+        request.Order = new List<ws_AppointmentNew.Order>{
             this.getOrderDetails(pFactor?.InsuranceCode__c)};
 
         return request;
@@ -2774,24 +2768,24 @@ public without sharing class LC_AppointmentScreenService {
 
     private ws_AppointmentNew.RescheduleAppointmentRequest addMedPlanDetails(ws_AppointmentNew.RescheduleAppointmentRequest request, Appointment__c appt, Medical_Procedure_Plan_All__mdt mdt) {
         // procedure plan and forced code
-        request.AppointmentDetails.SetAppointmentDetails.get(0).ProcedurePlanCode = mdt.ProcedurePlanCode__c;
-        request.AppointmentDetails.SetAppointmentDetails.get(0).ForceAppointmentCode = '2';
+        request.AppointmentDetails.get(0).ProcedurePlanCode = mdt.ProcedurePlanCode__c;
+        request.AppointmentDetails.get(0).ForceAppointmentCode = '2';
 
         // hidden appointment
-        request.AppointmentDetails.SetAppointmentDetails.add(
-            this.getHiddenAppointmentDetails(request.AppointmentDetails.SetAppointmentDetails.get(0), appt.Id, mdt));
+        request.AppointmentDetails.add(
+            this.getHiddenAppointmentDetails(request.AppointmentDetails.get(0), appt.Id, mdt));
 
         return request;
     }
 
     private ws_AppointmentNew.SetAppointmentRequest addMedPlanDetails(ws_AppointmentNew.SetAppointmentRequest request, Appointment__c appt, Medical_Procedure_Plan_All__mdt mdt) {
         // procedure plan and forced code
-        request.AppointmentDetails.SetAppointmentDetails.get(0).ProcedurePlanCode = mdt.ProcedurePlanCode__c;
-        request.AppointmentDetails.SetAppointmentDetails.get(0).ForceAppointmentCode = '2';
+        request.AppointmentDetails.get(0).ProcedurePlanCode = mdt.ProcedurePlanCode__c;
+        request.AppointmentDetails.get(0).ForceAppointmentCode = '2';
 
         // hidden appointment
-        request.AppointmentDetails.SetAppointmentDetails.add(
-            this.getHiddenAppointmentDetails(request.AppointmentDetails.SetAppointmentDetails.get(0), appt.Id, mdt));
+        request.AppointmentDetails.add(
+            this.getHiddenAppointmentDetails(request.AppointmentDetails.get(0), appt.Id, mdt));
 
         return request;
     }

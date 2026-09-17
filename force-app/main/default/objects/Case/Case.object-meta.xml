@@ -211,6 +211,7 @@
         <lookupPhoneDialogsAdditionalFields>Person_Other_Phone__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>SMS_Phone_Number__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Primary_Phone_Partner__c</lookupPhoneDialogsAdditionalFields>
+        <massQuickActions>Update_Case_Status</massQuickActions>
         <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>

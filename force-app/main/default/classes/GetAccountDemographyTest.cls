@@ -9,7 +9,7 @@ public with sharing class GetAccountDemographyTest {
 
     @isTest
     public static void getDemographyTest() {
-        Test.setMock(WebServiceMock.class, new AccountDemographyMock());
+        Test.setMock(HttpCalloutMock.class, new DemographyHttpMock());
         GetAccountDemography.RequestWrp reqWrp = new GetAccountDemography.RequestWrp();
         Account acc = [SELECT Id, ID_Number__c FROM Account LIMIT 1];
         reqWrp.idNumber = acc.ID_Number__c;        

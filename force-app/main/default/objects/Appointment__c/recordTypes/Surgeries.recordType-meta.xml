@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Surgeries</fullName>
     <active>true</active>
@@ -3547,6 +3547,25 @@
         </values>
         <values>
             <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PaymentSource__c</picklist>
+        <values>
+            <fullName>Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WebsiteApplePay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WebsiteGooglePay</fullName>
             <default>false</default>
         </values>
     </picklistValues>

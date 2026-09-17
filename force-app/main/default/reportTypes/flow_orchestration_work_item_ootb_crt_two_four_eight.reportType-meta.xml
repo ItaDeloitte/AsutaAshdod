@@ -38,18 +38,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Assigned User</displayNameOverride>
-            <field>Assignee.User</field>
-            <table>FlowOrchestrationStepInstance.FlowOrchestrationWorkItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <displayNameOverride>Assigned Group or Queue</displayNameOverride>
-            <field>Assignee.Group</field>
-            <table>FlowOrchestrationStepInstance.FlowOrchestrationWorkItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Status</field>
             <table>FlowOrchestrationStepInstance.FlowOrchestrationWorkItems</table>
         </columns>

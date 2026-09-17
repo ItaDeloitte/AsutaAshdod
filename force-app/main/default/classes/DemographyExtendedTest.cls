@@ -67,9 +67,6 @@ private class DemographyExtendedTest {
         patient.BeginMembership = Date.today();
         patient.IsEligble = true;
         
-        DemographyExtended.GetCombinedDemographyResponse_element response = new DemographyExtended.GetCombinedDemographyResponse_element();
-        response.GetCombinedDemographyResult = patient;
-        
         DemographyExtended.Patient_Disability disability = new DemographyExtended.Patient_Disability();
         disability.Dis_Code = 'test';
         disability.Dis_Desc = 'test';
@@ -173,9 +170,6 @@ private class DemographyExtendedTest {
         patient.BeginMembership = String.valueOf(Date.today());
         patient.IsEligble = true;
         
-        ws_DemographyExtended.GetCombinedDemographyResponse_element response = new ws_DemographyExtended.GetCombinedDemographyResponse_element();
-        response.GetCombinedDemographyResult = patient;
-        
         ws_DemographyExtended.Patient_Disability disability = new ws_DemographyExtended.Patient_Disability();
         disability.Dis_Code = 'test';
         disability.Dis_Desc = 'test';
@@ -206,10 +200,8 @@ private class DemographyExtendedTest {
             patientRequest.GetADdata = true;
         }
         
-        ws_DemographyExtended.GetCombinedDemography_element getDemography = new ws_DemographyExtended.GetCombinedDemography_element();
-        getDemography.pRequest = patientRequest;
     }
-    
+
     @isTest
     static void ws_DemographyReqTest() {
         ws_DemographyReq.InfoSorceSystem sorceSystem = new ws_DemographyReq.InfoSorceSystem();
@@ -265,9 +257,6 @@ private class DemographyExtendedTest {
         patient.IdentificationCode = 'IdentificationCode';
         patient.UserSecurityAreaLevel = 'UserSecurityAreaLevel';
         
-        ws_DemographyReq.GetCombinedDemographyResponse_element response = new ws_DemographyReq.GetCombinedDemographyResponse_element();
-        response.GetCombinedDemographyResult = patient;
-        
         ws_DemographyReq.Patient_Disability disability = new ws_DemographyReq.Patient_Disability();
         disability.Dis_Code = 'test';
         disability.Dis_Desc = 'test';
@@ -298,7 +287,5 @@ private class DemographyExtendedTest {
             patientRequest.GetADdata = true;
         }
         
-        ws_DemographyReq.GetCombinedDemography_element getDemography = new ws_DemographyReq.GetCombinedDemography_element();
-        getDemography.pRequest = patientRequest;
     }
 }

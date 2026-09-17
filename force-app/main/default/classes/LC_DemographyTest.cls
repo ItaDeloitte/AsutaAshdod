@@ -19,13 +19,13 @@ private class LC_DemographyTest {
     static void autocompleteAccountTest() {
         Test.startTest();
         LC_Demography controller = new LC_Demography();
-        controller.executeAction(new Map<String, Object>{'actionName' => 'autocompleteAccount', 'personId' => [SELECT Id FROM Account LIMIT 1].Id, 'queryLimit' => '1'});
+        controller.executeAction(new Map<String, Object>{'actionName' => 'autocompleteAccount', 'personIdentifier' => [SELECT Id FROM Account LIMIT 1].Id, 'queryLimit' => '1'});
         Test.stopTest();
     }
     
     @isTest
-    static void retriveAccountTest() {    
-        Test.setMock(WebServiceMock.class, new AccountDemographyMock());
+    static void retriveAccountTest() {
+        Test.setMock(HttpCalloutMock.class, new DemographyHttpMock());
         Test.startTest();
         LC_Demography controller = new LC_Demography();
         controller.executeAction(new Map<String, Object>{
@@ -33,10 +33,10 @@ private class LC_DemographyTest {
         });
         Test.stopTest();
     }
-    
+
     @isTest
     static void updateAccountTest() {
-        Test.setMock(WebServiceMock.class, new AccountDemographyMock());
+        Test.setMock(HttpCalloutMock.class, new DemographyHttpMock());
         Test.startTest();
         LC_Demography controller = new LC_Demography();
         controller.executeAction(new Map<String, Object>{'actionName' => 'updateAccount', 'accountId' => [SELECT Id FROM Account LIMIT 1].Id});
