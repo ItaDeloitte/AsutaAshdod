@@ -1587,7 +1587,7 @@ public without sharing class LC_AppointmentScreenService {
 
     private List<Appointment__c> requestProcessIds(ws_AppointmentNew.SetAppointmentRequest request, List<Appointment__c> appts) {
         System.debug('SetAppointmentNew Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.SetAppointmentResponse response = (ws_AppointmentNew.SetAppointmentResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_SET_NEW, request);
+        ws_AppointmentNew.SetAppointmentResponse response = (ws_AppointmentNew.SetAppointmentResponse) RestApiCallout.call(RestApiCallout.OP_SET_NEW, request);
         System.debug('SetAppointmentNew Response: ' + JSON.serialize(response));
 
         this.logs.addAll(LogSettingService.getInstance().prepareLog('LC_AppointmentScreen', 'requestProcessIds', JSON.serialize(new Map<Id, Appointment__c>(appts).keySet()), JSON.serialize(request), JSON.serialize(response)));
@@ -2294,7 +2294,7 @@ public without sharing class LC_AppointmentScreenService {
 
     private List<Appointment__c> requestNewProcessIds(ws_AppointmentNew.RescheduleAppointmentRequest request, List<Appointment__c> appts) {
         System.debug('RescheduleAppointmentNew Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.RescheduleAppointmentResponse response = (ws_AppointmentNew.RescheduleAppointmentResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_RESCHEDULE, request);
+        ws_AppointmentNew.RescheduleAppointmentResponse response = (ws_AppointmentNew.RescheduleAppointmentResponse) RestApiCallout.call(RestApiCallout.OP_RESCHEDULE, request);
         System.debug('RescheduleAppointmentNew Response: ' + JSON.serialize(response));
 
         this.logs.addAll(LogSettingService.getInstance().prepareLog('LC_AppointmentScreen', 'requestNewProcessIds', JSON.serialize(new Map<Id, Appointment__c>(appts).keySet()), JSON.serialize(request), JSON.serialize(response)));
@@ -2544,7 +2544,7 @@ public without sharing class LC_AppointmentScreenService {
             this.getSiteCriterias(procedure, ensembleSystem, calendarCode, expertCalendarCode, siteCodes, fromDatetime, toDatetime)};
 
         System.debug('AppointmentSearch Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.AppointmentSearchResponse response = (ws_AppointmentNew.AppointmentSearchResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_SEARCH, request);
+        ws_AppointmentNew.AppointmentSearchResponse response = (ws_AppointmentNew.AppointmentSearchResponse) RestApiCallout.call(RestApiCallout.OP_SEARCH, request);
         System.debug('AppointmentSearch Response: ' + JSON.serialize(response));
 
         return response;
@@ -2620,7 +2620,7 @@ public without sharing class LC_AppointmentScreenService {
         request.EndTime = request.StartTime.addMinutes(Integer.valueOf(slot.Duration));
 
         System.debug('LockSlot Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.LockSlotResponse response = (ws_AppointmentNew.LockSlotResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_LOCK, request);
+        ws_AppointmentNew.LockSlotResponse response = (ws_AppointmentNew.LockSlotResponse) RestApiCallout.call(RestApiCallout.OP_LOCK, request);
         System.debug('LockSlot Response: ' + JSON.serialize(response));
 
         return response;
@@ -2644,7 +2644,7 @@ public without sharing class LC_AppointmentScreenService {
         request.ModalityCode = ensembleSystem == 26 || ensembleSystem == 86 ? String.valueOf(slot.ModalityCode) : String.valueOf(slot.CalendarId);
 
         System.debug('UnlockSlot Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.UnLockSlotResponse response = (ws_AppointmentNew.UnLockSlotResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_UNLOCK, null, request.SlotLockId);
+        ws_AppointmentNew.UnLockSlotResponse response = (ws_AppointmentNew.UnLockSlotResponse) RestApiCallout.call(RestApiCallout.OP_UNLOCK, null, request.SlotLockId);
         System.debug('UnlockSlot Response: ' + JSON.serialize(response));
 
         return response;
@@ -2669,7 +2669,7 @@ public without sharing class LC_AppointmentScreenService {
         request.ModalityCode = ensembleSystem == 26 || ensembleSystem == 86 ? String.valueOf(slot.ModalityCode) : String.valueOf(slot.CalendarId);
 
         System.debug('RelockSlot Request: ' + JSON.serialize(request));
-        ws_AppointmentNew.RefreshLockSlotResponse response = (ws_AppointmentNew.RefreshLockSlotResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_REFRESH_LOCK, request, request.SlotLockId);
+        ws_AppointmentNew.RefreshLockSlotResponse response = (ws_AppointmentNew.RefreshLockSlotResponse) RestApiCallout.call(RestApiCallout.OP_REFRESH_LOCK, request, request.SlotLockId);
         System.debug('RelockSlot Response: ' + JSON.serialize(response));
 
         return response;

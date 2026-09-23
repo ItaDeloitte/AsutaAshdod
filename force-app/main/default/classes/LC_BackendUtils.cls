@@ -40,7 +40,7 @@ public without sharing class LC_BackendUtils {
         }
 
         System.debug('request: ' + JSON.serialize(request));
-        ws_AppointmentNew.CancelAppointmentResponse response = (ws_AppointmentNew.CancelAppointmentResponse) EnsembleRestCallout.call(EnsembleRestCallout.OP_CANCEL, request);
+        ws_AppointmentNew.CancelAppointmentResponse response = (ws_AppointmentNew.CancelAppointmentResponse) RestApiCallout.call(RestApiCallout.OP_CANCEL, request);
         System.debug('response: ' + JSON.serialize(response));
         return response;
     }

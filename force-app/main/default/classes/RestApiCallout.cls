@@ -1,4 +1,4 @@
-public class EnsembleRestCallout {
+public class RestApiCallout {
 
     // ── Operation identifiers ────────────────────────────────────────────────
     // Hardcoded now; replace with CustomMetadata lookup in the future.
