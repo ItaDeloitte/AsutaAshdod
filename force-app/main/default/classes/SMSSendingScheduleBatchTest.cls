@@ -20,7 +20,7 @@ public with sharing class SMSSendingScheduleBatchTest {
 
     @IsTest
     static void successTest() {
-        Test.setMock(WebServiceMock.class, new OutboundSMSMock());
+        Test.setMock(HttpCalloutMock.class, new OutboundSMSMock());
 
         Test.startTest();
         Database.executeBatch(new SMSSendingScheduleBatch());

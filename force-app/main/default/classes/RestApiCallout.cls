@@ -46,6 +46,10 @@ public class RestApiCallout {
      * (OP_UNLOCK: DELETE /slots/{slotLockId}, OP_REFRESH_LOCK: PUT /slots/{slotLockId}/lock).
      */
     public static Object call(String operation, Object body, String pathParam) {
+        if (ENV__c.getInstance().Use_Ensemble_Mock__c == true) {
+            return callMock(operation);
+        }
+
         String httpMethod;
         String path;
 
@@ -109,15 +113,47 @@ public class RestApiCallout {
         return out;
     }
 
+    // ── Mock routing ─────────────────────────────────────────────────────────
+
+    private static Object callMock(String operation) {
+        EnsembleSimulator sim = new EnsembleSimulator();
+        switch on operation {
+            when 'cancel'      { return sim.cancel(); }
+            when 'setNew'      { return sim.setNew(); }
+            when 'reschedule'  { return sim.reschedule(); }
+            when 'search'      { return sim.search(); }
+            when 'lock'        { return sim.lock(); }
+            when 'unlock'      { return sim.unlock(); }
+            when 'refreshLock' { return sim.refreshLock(); }
+            when else          { return null; }
+        }
+    }
+
     // ── HTTP core ────────────────────────────────────────────────────────────
+
+    /**
+     * Generic callout for any Named Credential endpoint.
+     * Unlike send(), does not use ENV__c and does not throw on non-2xx —
+     * the caller is responsible for interpreting the response.
+     */
+    public static HttpResponse sendRequest(String endpoint, String method, String body, Integer timeoutMs) {
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint(endpoint);
+        req.setMethod(method);
+        req.setHeader('Content-Type', 'application/json');
+        req.setHeader('Accept', 'application/json');
+        if (body != null) { req.setBody(body); }
+        req.setTimeout(timeoutMs);
+
+        System.debug('RestApiCallout.sendRequest ' + method + ' ' + endpoint);
+
+        HttpResponse res = new Http().send(req);
+        System.debug('RestApiCallout.sendRequest status=' + res.getStatusCode() + ' body=' + res.getBody());
+        return res;
+    }
 
     private static HttpResponse send(String method, String path, String body) {
         ENV__c env = ENV__c.getInstance();
-        List<EnsembleSystem__mdt> creds = [SELECT UserName__c, Password__c FROM EnsembleSystem__mdt LIMIT 1];
-        if (creds.isEmpty()) {
-            LC_BackendUtils.throwEnsembleError('EnsembleSystem__mdt configuration is missing');
-        }
-
         String endpoint = 'callout:Ensemble_AssutaMain_' + env.Env_value__c + path;
 
         HttpRequest req = new HttpRequest();
@@ -125,17 +161,15 @@ public class RestApiCallout {
         req.setMethod(method);
         req.setHeader('Content-Type', 'application/json');
         req.setHeader('Accept', 'application/json');
-        req.setHeader('Authorization', 'Basic ' + EncodingUtil.base64Encode(
-            Blob.valueOf(creds[0].UserName__c + ':' + creds[0].Password__c)));
         if (body != null) { req.setBody(body); }
         req.setTimeout(120000);
 
-        System.debug('EnsembleRestCallout ' + method + ' ' + endpoint);
-        System.debug('EnsembleRestCallout body: ' + req.getBody());
+        System.debug('RestApiCallout ' + method + ' ' + endpoint);
+        System.debug('RestApiCallout body: ' + req.getBody());
 
         try {
             HttpResponse res = new Http().send(req);
-            System.debug('EnsembleRestCallout status=' + res.getStatusCode() + ' body=' + res.getBody());
+            System.debug('RestApiCallout status=' + res.getStatusCode() + ' body=' + res.getBody());
             if (res.getStatusCode() < 200 || res.getStatusCode() >= 300) {
                 LC_BackendUtils.throwEnsembleError('HTTP ' + res.getStatusCode() + ' from Ensemble: ' + res.getBody());
             }

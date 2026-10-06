@@ -33,7 +33,7 @@ global with sharing class SMSSendingScheduleBatch implements Database.Batchable<
     global void execute(Database.BatchableContext BC, List<SMS__c> scope) {
         System.debug('SMSSendingScheduleBatch ... execute');
         System.debug('scope: size: ' + scope.size() + ' value: ' + scope);
-        ws_OutboundSMS.AssutaSMSWSServiceSoap service = new ws_OutboundSMS.AssutaSMSWSServiceSoap();
+        ws_OutboundSMS.AssutaSMSService service = new ws_OutboundSMS.AssutaSMSService();
 
         Map<Id, ws_OutboundSMS.SendText> responseMap = new Map<Id, ws_OutboundSMS.SendText>();
         Map<String, Exception> errorMap = new Map<String, Exception>();
@@ -45,7 +45,7 @@ global with sharing class SMSSendingScheduleBatch implements Database.Batchable<
             }
 
             try {
-                responseMap.put(sms_i.Id, service.SendSMS(sms_i.Phone_Number__c, sms_i.Content__c, 16, sms_i.SMS_Always__c,sms_i.From_Phone__c));
+                responseMap.put(sms_i.Id, service.SendSMS(sms_i.Phone_Number__c, sms_i.Content__c, 16, sms_i.From_Phone__c));
             } catch (Exception e) {
                 if (!errorMap.containsKey(e.getMessage())) {
                     smsIdsMap.put(e.getMessage(), new Set<Id>());

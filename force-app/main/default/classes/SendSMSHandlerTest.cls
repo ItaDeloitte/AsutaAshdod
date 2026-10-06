@@ -42,7 +42,7 @@ private class SendSMSHandlerTest {
 
     @isTest
     static void handleOutgoingSMSTest() { 
-        Test.setMock(WebServiceMock.class, new OutboundSMSMock());
+        Test.setMock(HttpCalloutMock.class, new OutboundSMSMock());
         Test.startTest();
         insert new SMS__c(Type__c = 'Outgoing', Phone_Number__c = '12345', Template_Text__c = 'CheckIn_Digital' + ',' + 'Test');
         Test.stopTest();

@@ -20,7 +20,7 @@ public class SendSMSHandler implements Queueable, Database.AllowsCallouts {
     public void execute(QueueableContext context) {
         List<SMS__c> smsList = [SELECT Id, Name, Phone_Number__c, Content__c , SMS_Always__c,From_Phone__c FROM SMS__c WHERE Id IN: smsIds];
         OrgWideEmailAddress owea = [SELECT Id FROM OrgWideEmailAddress WHERE Address = 'ylerfeld@deloitte.co.il' LIMIT 1];
-        ws_OutboundSMS.AssutaSMSWSServiceSoap smsService = new ws_OutboundSMS.AssutaSMSWSServiceSoap();
+        ws_OutboundSMS.AssutaSMSService smsService = new ws_OutboundSMS.AssutaSMSService();
         Map<Id, ws_OutboundSMS.SendText> responsesMap = new Map<Id, ws_OutboundSMS.SendText>();
         Map<String, Exception> errorsMap = new Map<String, Exception>();
         Map<String, Set<Id>> smsIdsMap = new Map<String, Set<Id>>();
@@ -29,7 +29,7 @@ public class SendSMSHandler implements Queueable, Database.AllowsCallouts {
         for (SMS__c sms_i : smsList) {
             if (Limits.getCallouts() < Limits.getLimitCallouts()) {
                 try {
-                    ws_OutboundSMS.SendText response_i = smsService.SendSMS(sms_i.Phone_Number__c, sms_i.Content__c, 16, sms_i.SMS_Always__c,sms_i.From_Phone__c);
+                    ws_OutboundSMS.SendText response_i = smsService.SendSMS(sms_i.Phone_Number__c, sms_i.Content__c, 16, sms_i.From_Phone__c);
                     responsesMap.put(sms_i.Id, response_i);
                 } catch (Exception e) {
                     if (!errorsMap.containsKey(e.getMessage())) {
