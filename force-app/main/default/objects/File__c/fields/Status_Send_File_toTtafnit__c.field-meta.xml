@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Status_Send_File_toTtafnit__c</fullName>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Status Send File to Tafnit</label>
     <length>255</length>

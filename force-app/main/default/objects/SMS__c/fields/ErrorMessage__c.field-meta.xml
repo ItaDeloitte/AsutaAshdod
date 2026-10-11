@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ErrorMessage__c</fullName>
     <description>מסר המתקבל בעת שליחת הודעה</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>מסר המתקבל בעת שליחת הודעה</inlineHelpText>
     <label>ErrorMessage</label>

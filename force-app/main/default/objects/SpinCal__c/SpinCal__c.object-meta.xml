@@ -158,7 +158,6 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>SpinCal</label>
     <nameField>
-        <encryptionScheme>None</encryptionScheme>
         <label>Spinkal Name</label>
         <trackHistory>true</trackHistory>
         <type>Text</type>

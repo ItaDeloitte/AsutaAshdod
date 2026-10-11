@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- 360 Coordinator --></label>
     <name>X360_Coordinator__c</name>
-    <relationshipLabel><!-- חשבונות (מתאם 360) --></relationshipLabel>
+    <relationshipLabel><!-- Accounts (360 Coordinator) --></relationshipLabel>
 </CustomFieldTranslation>

@@ -16,6 +16,7 @@
         <field>WhoId</field>
         <formula>Case.Account.PersonContactId</formula>
     </fieldOverrides>
+    <label>תיעוד שיחה</label>
     <optionsCreateFeedItem>true</optionsCreateFeedItem>
     <quickActionLayout>
         <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
@@ -48,7 +49,6 @@
         </quickActionLayoutColumns>
         <quickActionLayoutColumns/>
     </quickActionLayout>
-    <standardLabel>LogACall</standardLabel>
     <targetObject>Task</targetObject>
     <targetParentField>What</targetParentField>
     <type>LogACall</type>

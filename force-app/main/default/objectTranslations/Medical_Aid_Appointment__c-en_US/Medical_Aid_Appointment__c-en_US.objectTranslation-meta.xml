@@ -2,12 +2,15 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Medical Aid Appointment</value>
+        <value>Medical Aid Appointment_deprecated</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Medical Aid Appointments</value>
+        <value>Medical Aid Appointments_deprecated</value>
     </caseValues>
-    <nameFieldLabel><!-- Medical Aid Appointment Name --></nameFieldLabel>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- לא ניתן להקים או לערוך עזר לפגישה שמועדה כבר עבר. --></errorMessage>
+        <name>Cant_edit_or_create_aid_after_appt</name>
+    </validationRules>
 </CustomObjectTranslation>

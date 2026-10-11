@@ -1,0 +1,872 @@
+# Org-to-Git Sync -- Deprecated Components Excluded (ADR-001)
+# Source org: astDev (ideutsch@deloitte.co.il.ashdod.prod.dev2)
+# Retrieved at: 2026-10-08T11:44:42Z
+# Git base commit: 690853b37
+# Rule: case-insensitive "_deprecated" in top-level label element or API name
+# Deprecated components: 91   Dependent translation entries: 773
+#
+# Object	MetadataType	ComponentName	MatchedOn	MatchedValue	LocalAction	RelativePath
+Account	CustomField	Accessible_Documents__c	label	Accessible Documents_deprecated	DELETE	force-app/main/default/objects/Account/fields/Accessible_Documents__c.field-meta.xml
+Account	CustomField	AshdodPreferredChannel__c	label	Ashdod Preferred Channel_deprecated	DELETE	force-app/main/default/objects/Account/fields/AshdodPreferredChannel__c.field-meta.xml
+Account	CustomField	CameleonID__c	label	CameleonID_deprecated	DELETE	force-app/main/default/objects/Account/fields/CameleonID__c.field-meta.xml
+Account	CustomField	End_Date_shaban_maccabi__c	label	End Date shaban maccabi_deprecated	DELETE	force-app/main/default/objects/Account/fields/End_Date_shaban_maccabi__c.field-meta.xml
+Account	CustomField	Fax__c	label	Fax_deprecated	DELETE	force-app/main/default/objects/Account/fields/Fax__c.field-meta.xml
+Account	CustomField	Insurance_is_valid__c	label	Insurance is valid_deprecated	DELETE	force-app/main/default/objects/Account/fields/Insurance_is_valid__c.field-meta.xml
+Account	CustomField	Insurance_Seniority__c	label	Insurance Seniority_deprecated	DELETE	force-app/main/default/objects/Account/fields/Insurance_Seniority__c.field-meta.xml
+Account	CustomField	last_name_english__c	label	Last Name In English_deprecated	DELETE	force-app/main/default/objects/Account/fields/last_name_english__c.field-meta.xml
+Account	CustomField	Other_Health_Services__c	label	Other Health Services_deprecated	DELETE	force-app/main/default/objects/Account/fields/Other_Health_Services__c.field-meta.xml
+Account	CustomField	passport_number__c	label	Passport Number_deprecated	DELETE	force-app/main/default/objects/Account/fields/passport_number__c.field-meta.xml
+Account	CustomField	Payer_Factor_Insurance__c	label	Payer Factor Insurance_deprecated	DELETE	force-app/main/default/objects/Account/fields/Payer_Factor_Insurance__c.field-meta.xml
+Account	CustomField	private_name_english__c	label	First Name In English_deprecated	DELETE	force-app/main/default/objects/Account/fields/private_name_english__c.field-meta.xml
+Account	CustomField	Psych_Documents__c	label	Psych Documents_deprecated	DELETE	force-app/main/default/objects/Account/fields/Psych_Documents__c.field-meta.xml
+Account	CustomField	Start_Date_shaban_maccabi__c	label	Start Date shaban maccabi_deprecated	DELETE	force-app/main/default/objects/Account/fields/Start_Date_shaban_maccabi__c.field-meta.xml
+Account	CustomField	VIP_patient__c	label	VIP Patient_deprecated	DELETE	force-app/main/default/objects/Account/fields/VIP_patient__c.field-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/Accessible_Documents__c	dependent	Account.Accessible_Documents__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/Accessible_Documents__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/AshdodPreferredChannel__c	dependent	Account.AshdodPreferredChannel__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/AshdodPreferredChannel__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/CameleonID__c	dependent	Account.CameleonID__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/CameleonID__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/End_Date_shaban_maccabi__c	dependent	Account.End_Date_shaban_maccabi__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/End_Date_shaban_maccabi__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/Fax__c	dependent	Account.Fax__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/Fax__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/Insurance_is_valid__c	dependent	Account.Insurance_is_valid__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/Insurance_is_valid__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/Insurance_Seniority__c	dependent	Account.Insurance_Seniority__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/Insurance_Seniority__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/last_name_english__c	dependent	Account.last_name_english__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/last_name_english__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/Other_Health_Services__c	dependent	Account.Other_Health_Services__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/Other_Health_Services__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/passport_number__c	dependent	Account.passport_number__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/passport_number__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/Payer_Factor_Insurance__c	dependent	Account.Payer_Factor_Insurance__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/Payer_Factor_Insurance__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/private_name_english__c	dependent	Account.private_name_english__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/private_name_english__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/Psych_Documents__c	dependent	Account.Psych_Documents__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/Psych_Documents__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/Start_Date_shaban_maccabi__c	dependent	Account.Start_Date_shaban_maccabi__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/Start_Date_shaban_maccabi__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-en_GB/VIP_patient__c	dependent	Account.VIP_patient__c	DELETE	force-app/main/default/objectTranslations/Account-en_GB/VIP_patient__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/Accessible_Documents__c	dependent	Account.Accessible_Documents__c	DELETE	force-app/main/default/objectTranslations/Account-iw/Accessible_Documents__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/AshdodPreferredChannel__c	dependent	Account.AshdodPreferredChannel__c	DELETE	force-app/main/default/objectTranslations/Account-iw/AshdodPreferredChannel__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/CameleonID__c	dependent	Account.CameleonID__c	DELETE	force-app/main/default/objectTranslations/Account-iw/CameleonID__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/End_Date_shaban_maccabi__c	dependent	Account.End_Date_shaban_maccabi__c	DELETE	force-app/main/default/objectTranslations/Account-iw/End_Date_shaban_maccabi__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/Fax__c	dependent	Account.Fax__c	DELETE	force-app/main/default/objectTranslations/Account-iw/Fax__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/Insurance_is_valid__c	dependent	Account.Insurance_is_valid__c	DELETE	force-app/main/default/objectTranslations/Account-iw/Insurance_is_valid__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/Insurance_Seniority__c	dependent	Account.Insurance_Seniority__c	DELETE	force-app/main/default/objectTranslations/Account-iw/Insurance_Seniority__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/last_name_english__c	dependent	Account.last_name_english__c	DELETE	force-app/main/default/objectTranslations/Account-iw/last_name_english__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/Other_Health_Services__c	dependent	Account.Other_Health_Services__c	DELETE	force-app/main/default/objectTranslations/Account-iw/Other_Health_Services__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/passport_number__c	dependent	Account.passport_number__c	DELETE	force-app/main/default/objectTranslations/Account-iw/passport_number__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/Payer_Factor_Insurance__c	dependent	Account.Payer_Factor_Insurance__c	DELETE	force-app/main/default/objectTranslations/Account-iw/Payer_Factor_Insurance__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/private_name_english__c	dependent	Account.private_name_english__c	DELETE	force-app/main/default/objectTranslations/Account-iw/private_name_english__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/Psych_Documents__c	dependent	Account.Psych_Documents__c	DELETE	force-app/main/default/objectTranslations/Account-iw/Psych_Documents__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/Start_Date_shaban_maccabi__c	dependent	Account.Start_Date_shaban_maccabi__c	DELETE	force-app/main/default/objectTranslations/Account-iw/Start_Date_shaban_maccabi__c.fieldTranslation-meta.xml
+Account	CustomFieldTranslation	Account-iw/VIP_patient__c	dependent	Account.VIP_patient__c	DELETE	force-app/main/default/objectTranslations/Account-iw/VIP_patient__c.fieldTranslation-meta.xml
+Account	CustomObjectTranslationEntry	Account-en_GB:webLinks/Insurance_SMS	dependent	Account.Insurance_SMS	MODIFY	force-app/main/default/objectTranslations/Account-en_GB/Account-en_GB.objectTranslation-meta.xml
+Account	CustomObjectTranslationEntry	Account-iw:webLinks/Insurance_SMS	dependent	Account.Insurance_SMS	MODIFY	force-app/main/default/objectTranslations/Account-iw/Account-iw.objectTranslation-meta.xml
+Account	QuickAction	Account.create_qa_acc	label	צור בקרת איכות_deprecated	DELETE	force-app/main/default/quickActions/Account.create_qa_acc.quickAction-meta.xml
+Account	WebLink	Insurance_SMS	label	SMS הר ביטוח_deprecated	DELETE	force-app/main/default/objects/Account/webLinks/Insurance_SMS.webLink-meta.xml
+Agent_survey__c	CustomField	Opportunity__c	label	Opportunity_deprecated	DELETE	force-app/main/default/objects/Agent_survey__c/fields/Opportunity__c.field-meta.xml
+Agent_survey__c	CustomField	same_manger__c	label	same manger?_deprecated	DELETE	force-app/main/default/objects/Agent_survey__c/fields/same_manger__c.field-meta.xml
+Agent_survey__c	CustomFieldTranslation	Agent_survey__c-en_US/Opportunity__c	dependent	Agent_survey__c.Opportunity__c	DELETE	force-app/main/default/objectTranslations/Agent_survey__c-en_US/Opportunity__c.fieldTranslation-meta.xml
+Agent_survey__c	CustomFieldTranslation	Agent_survey__c-en_US/same_manger__c	dependent	Agent_survey__c.same_manger__c	DELETE	force-app/main/default/objectTranslations/Agent_survey__c-en_US/same_manger__c.fieldTranslation-meta.xml
+Agent_survey__c	CustomFieldTranslation	Agent_survey__c-iw/Opportunity__c	dependent	Agent_survey__c.Opportunity__c	DELETE	force-app/main/default/objectTranslations/Agent_survey__c-iw/Opportunity__c.fieldTranslation-meta.xml
+Agent_survey__c	CustomFieldTranslation	Agent_survey__c-iw/same_manger__c	dependent	Agent_survey__c.same_manger__c	DELETE	force-app/main/default/objectTranslations/Agent_survey__c-iw/same_manger__c.fieldTranslation-meta.xml
+Appointment__c	CustomField	IsCovid19__c	label	Is COVID 19_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/IsCovid19__c.field-meta.xml
+Appointment__c	CustomField	MedicalDocumentReceived__c	label	Medical Document Received_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/MedicalDocumentReceived__c.field-meta.xml
+Appointment__c	CustomField	Procedure_Plan__c	label	Procedure Plan_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/Procedure_Plan__c.field-meta.xml
+Appointment__c	CustomField	reason__c	label	Reason_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/reason__c.field-meta.xml
+Appointment__c	CustomField	Site_Email__c	label	Site Email_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/Site_Email__c.field-meta.xml
+Appointment__c	CustomField	Technician__c	label	Technician_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/Technician__c.field-meta.xml
+Appointment__c	CustomField	technician1__c	label	Techinicien - Text_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/technician1__c.field-meta.xml
+Appointment__c	CustomField	Unicorn_Treated__c	label	Unicorn Treated_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/Unicorn_Treated__c.field-meta.xml
+Appointment__c	CustomField	urgent_apt_360__c	label	Urgent 360 Appointment?_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/urgent_apt_360__c.field-meta.xml
+Appointment__c	CustomField	Value_Unicorn__c	label	Value Unicorn_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/Value_Unicorn__c.field-meta.xml
+Appointment__c	CustomField	Verification_Done_With_Case__c	label	Verification Done With Case_deprecated	DELETE	force-app/main/default/objects/Appointment__c/fields/Verification_Done_With_Case__c.field-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/IsCovid19__c	dependent	Appointment__c.IsCovid19__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/IsCovid19__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/MedicalDocumentReceived__c	dependent	Appointment__c.MedicalDocumentReceived__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/MedicalDocumentReceived__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/Procedure_Plan__c	dependent	Appointment__c.Procedure_Plan__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/Procedure_Plan__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/reason__c	dependent	Appointment__c.reason__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/reason__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/Site_Email__c	dependent	Appointment__c.Site_Email__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/Site_Email__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/Technician__c	dependent	Appointment__c.Technician__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/Technician__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/technician1__c	dependent	Appointment__c.technician1__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/technician1__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/Unicorn_Treated__c	dependent	Appointment__c.Unicorn_Treated__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/Unicorn_Treated__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/urgent_apt_360__c	dependent	Appointment__c.urgent_apt_360__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/urgent_apt_360__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/Value_Unicorn__c	dependent	Appointment__c.Value_Unicorn__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/Value_Unicorn__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-en_US/Verification_Done_With_Case__c	dependent	Appointment__c.Verification_Done_With_Case__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-en_US/Verification_Done_With_Case__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/IsCovid19__c	dependent	Appointment__c.IsCovid19__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/IsCovid19__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/MedicalDocumentReceived__c	dependent	Appointment__c.MedicalDocumentReceived__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/MedicalDocumentReceived__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/Procedure_Plan__c	dependent	Appointment__c.Procedure_Plan__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/Procedure_Plan__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/reason__c	dependent	Appointment__c.reason__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/reason__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/Site_Email__c	dependent	Appointment__c.Site_Email__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/Site_Email__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/Technician__c	dependent	Appointment__c.Technician__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/Technician__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/technician1__c	dependent	Appointment__c.technician1__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/technician1__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/Unicorn_Treated__c	dependent	Appointment__c.Unicorn_Treated__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/Unicorn_Treated__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/urgent_apt_360__c	dependent	Appointment__c.urgent_apt_360__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/urgent_apt_360__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/Value_Unicorn__c	dependent	Appointment__c.Value_Unicorn__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/Value_Unicorn__c.fieldTranslation-meta.xml
+Appointment__c	CustomFieldTranslation	Appointment__c-iw/Verification_Done_With_Case__c	dependent	Appointment__c.Verification_Done_With_Case__c	DELETE	force-app/main/default/objectTranslations/Appointment__c-iw/Verification_Done_With_Case__c.fieldTranslation-meta.xml
+Calendar_Ashdod__c	CustomField	Holiday_Description__c	label	Holiday Description_deprecated	DELETE	force-app/main/default/objects/Calendar_Ashdod__c/fields/Holiday_Description__c.field-meta.xml
+Calendar_Ashdod__c	CustomField	Holiday_Type__c	label	Holiday Type_deprecated	DELETE	force-app/main/default/objects/Calendar_Ashdod__c/fields/Holiday_Type__c.field-meta.xml
+Calendar_Ashdod__c	CustomField	Jewish_Date__c	label	Jewish Date_deprecated	DELETE	force-app/main/default/objects/Calendar_Ashdod__c/fields/Jewish_Date__c.field-meta.xml
+Calendar_Ashdod__c	CustomField	Week_Number__c	label	Week Number_deprecated	DELETE	force-app/main/default/objects/Calendar_Ashdod__c/fields/Week_Number__c.field-meta.xml
+Calendar_Ashdod__c	CustomFieldTranslation	Calendar_Ashdod__c-en_US/Holiday_Description__c	dependent	Calendar_Ashdod__c.Holiday_Description__c	NONE	force-app/main/default/objectTranslations/Calendar_Ashdod__c-en_US/Holiday_Description__c.fieldTranslation-meta.xml
+Calendar_Ashdod__c	CustomFieldTranslation	Calendar_Ashdod__c-en_US/Holiday_Type__c	dependent	Calendar_Ashdod__c.Holiday_Type__c	NONE	force-app/main/default/objectTranslations/Calendar_Ashdod__c-en_US/Holiday_Type__c.fieldTranslation-meta.xml
+Calendar_Ashdod__c	CustomFieldTranslation	Calendar_Ashdod__c-en_US/Jewish_Date__c	dependent	Calendar_Ashdod__c.Jewish_Date__c	NONE	force-app/main/default/objectTranslations/Calendar_Ashdod__c-en_US/Jewish_Date__c.fieldTranslation-meta.xml
+Calendar_Ashdod__c	CustomFieldTranslation	Calendar_Ashdod__c-en_US/Week_Number__c	dependent	Calendar_Ashdod__c.Week_Number__c	NONE	force-app/main/default/objectTranslations/Calendar_Ashdod__c-en_US/Week_Number__c.fieldTranslation-meta.xml
+Calendar_Ashdod__c	CustomFieldTranslation	Calendar_Ashdod__c-iw/Holiday_Description__c	dependent	Calendar_Ashdod__c.Holiday_Description__c	DELETE	force-app/main/default/objectTranslations/Calendar_Ashdod__c-iw/Holiday_Description__c.fieldTranslation-meta.xml
+Calendar_Ashdod__c	CustomFieldTranslation	Calendar_Ashdod__c-iw/Holiday_Type__c	dependent	Calendar_Ashdod__c.Holiday_Type__c	DELETE	force-app/main/default/objectTranslations/Calendar_Ashdod__c-iw/Holiday_Type__c.fieldTranslation-meta.xml
+Calendar_Ashdod__c	CustomFieldTranslation	Calendar_Ashdod__c-iw/Jewish_Date__c	dependent	Calendar_Ashdod__c.Jewish_Date__c	DELETE	force-app/main/default/objectTranslations/Calendar_Ashdod__c-iw/Jewish_Date__c.fieldTranslation-meta.xml
+Calendar_Ashdod__c	CustomFieldTranslation	Calendar_Ashdod__c-iw/Week_Number__c	dependent	Calendar_Ashdod__c.Week_Number__c	DELETE	force-app/main/default/objectTranslations/Calendar_Ashdod__c-iw/Week_Number__c.fieldTranslation-meta.xml
+Case	CustomField	Appointment_Details__c	label	Appointment Details Deprecated	DELETE	force-app/main/default/objects/Case/fields/Appointment_Details__c.field-meta.xml
+Case	CustomField	Approval_Sub_Topic__c	label	Approval Subtopic Deprecated	DELETE	force-app/main/default/objects/Case/fields/Approval_Sub_Topic__c.field-meta.xml
+Case	CustomField	Approval_Topic__c	label	Approval Topic Deprecated	DELETE	force-app/main/default/objects/Case/fields/Approval_Topic__c.field-meta.xml
+Case	CustomField	BIRAD__c	label	BIRAD Deprecated	DELETE	force-app/main/default/objects/Case/fields/BIRAD__c.field-meta.xml
+Case	CustomField	CallAttempts__c	label	CallAttempts Deprecated	DELETE	force-app/main/default/objects/Case/fields/CallAttempts__c.field-meta.xml
+Case	CustomField	Case_Time__c	label	Case Time Deprecated	DELETE	force-app/main/default/objects/Case/fields/Case_Time__c.field-meta.xml
+Case	CustomField	City_Permanent_Residence__c	label	City Permanent Residence Deprecated	DELETE	force-app/main/default/objects/Case/fields/City_Permanent_Residence__c.field-meta.xml
+Case	CustomField	Contact_With_Corona_Patient__c	label	Contact With Corona Patient Deprecated	DELETE	force-app/main/default/objects/Case/fields/Contact_With_Corona_Patient__c.field-meta.xml
+Case	CustomField	Expiration_date_tafnit__c	label	Tafnit Course Expiration Date Deprecated	DELETE	force-app/main/default/objects/Case/fields/Expiration_date_tafnit__c.field-meta.xml
+Case	CustomField	Fever_Symptoms_Last_14_Days__c	label	Fever Symptoms Last 14 Days Deprecated	DELETE	force-app/main/default/objects/Case/fields/Fever_Symptoms_Last_14_Days__c.field-meta.xml
+Case	CustomField	FirstRT__c	label	First RT Deprecated	DELETE	force-app/main/default/objects/Case/fields/FirstRT__c.field-meta.xml
+Case	CustomField	IVF_site__c	label	IVF Site Deprecated	DELETE	force-app/main/default/objects/Case/fields/IVF_site__c.field-meta.xml
+Case	CustomField	last_name_interntet_form__c	label	Last Name Interntet Form Deprecated	DELETE	force-app/main/default/objects/Case/fields/last_name_interntet_form__c.field-meta.xml
+Case	CustomField	Live_With_Coronat_Patient__c	label	Live With Coronat Patient Deprecated	DELETE	force-app/main/default/objects/Case/fields/Live_With_Coronat_Patient__c.field-meta.xml
+Case	CustomField	Referral_agent_Name__c	label	Referral Agent Name Deprecated	DELETE	force-app/main/default/objects/Case/fields/Referral_agent_Name__c.field-meta.xml
+Case	CustomField	Referring_Doctor__c	label	Referring Doctor Deprecated	DELETE	force-app/main/default/objects/Case/fields/Referring_Doctor__c.field-meta.xml
+Case	CustomField	requested_product__c	label	Requested Product Details Deprecated	DELETE	force-app/main/default/objects/Case/fields/requested_product__c.field-meta.xml
+Case	CustomField	Send_DD__c	label	Send DD Deprecated	DELETE	force-app/main/default/objects/Case/fields/Send_DD__c.field-meta.xml
+Case	CustomField	Subject__c	label	Subject Deprecated	DELETE	force-app/main/default/objects/Case/fields/Subject__c.field-meta.xml
+Case	CustomField	Visited_Abroad_During_Last_14_Days__c	label	Returned From Abroad 14 Days? Deprecated	DELETE	force-app/main/default/objects/Case/fields/Visited_Abroad_During_Last_14_Days__c.field-meta.xml
+Case	CustomField	WebsiteFormCaseSubject__c	label	Website Form Case Subject Deprecated	DELETE	force-app/main/default/objects/Case/fields/WebsiteFormCaseSubject__c.field-meta.xml
+Case	CustomFieldTranslation	Case-da/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-da/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-da/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-da/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-da/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-da/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-da/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-da/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-da/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-da/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-da/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-da/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-da/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-da/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-da/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-da/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-da/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-da/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-da/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-da/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-da/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-da/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-da/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-de/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-de/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-de/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-de/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-de/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-de/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-de/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-de/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-de/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-de/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-de/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-de/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-de/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-de/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-de/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-de/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-de/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-de/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-de/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-de/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-de/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-de/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-en_GB/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-en_GB/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-es/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-es/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-es/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-es/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-es/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-es/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-es/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-es/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-es/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-es/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-es/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-es/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-es/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-es/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-es/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-es/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-es/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-es/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-es/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-es/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-es/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-es_MX/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-es_MX/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-fi/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-fi/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-fi/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-fi/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-fi/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-fi/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-fi/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-fi/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fi/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-fi/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-fr/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-fr/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-fr/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-fr/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-fr/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-fr/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-fr/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-fr/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-fr/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-fr/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-it/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-it/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-it/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-it/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-it/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-it/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-it/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-it/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-it/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-it/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-it/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-it/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-it/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-it/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-it/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-it/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-it/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-it/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-it/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-it/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-it/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-it/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-iw/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-iw/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-iw/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-iw/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-iw/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-iw/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-iw/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-iw/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-iw/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-iw/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-ja/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-ja/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-ja/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-ja/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-ja/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-ja/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-ja/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-ja/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ja/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-ja/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-ko/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-ko/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-ko/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-ko/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-ko/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-ko/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-ko/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-ko/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ko/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-ko/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-nl_NL/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-nl_NL/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-pt_BR/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-pt_BR/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-ru/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-ru/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-ru/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-ru/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-ru/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-ru/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-ru/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-ru/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-ru/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-ru/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_CN/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-zh_CN/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Appointment_Details__c	dependent	Case.Appointment_Details__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Appointment_Details__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Approval_Sub_Topic__c	dependent	Case.Approval_Sub_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Approval_Sub_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Approval_Topic__c	dependent	Case.Approval_Topic__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Approval_Topic__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/BIRAD__c	dependent	Case.BIRAD__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/BIRAD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/CallAttempts__c	dependent	Case.CallAttempts__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/CallAttempts__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Case_Time__c	dependent	Case.Case_Time__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Case_Time__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/City_Permanent_Residence__c	dependent	Case.City_Permanent_Residence__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/City_Permanent_Residence__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Contact_With_Corona_Patient__c	dependent	Case.Contact_With_Corona_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Contact_With_Corona_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Expiration_date_tafnit__c	dependent	Case.Expiration_date_tafnit__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Expiration_date_tafnit__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Fever_Symptoms_Last_14_Days__c	dependent	Case.Fever_Symptoms_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Fever_Symptoms_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/FirstRT__c	dependent	Case.FirstRT__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/FirstRT__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/IVF_site__c	dependent	Case.IVF_site__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/IVF_site__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/last_name_interntet_form__c	dependent	Case.last_name_interntet_form__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/last_name_interntet_form__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Live_With_Coronat_Patient__c	dependent	Case.Live_With_Coronat_Patient__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Live_With_Coronat_Patient__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Referral_agent_Name__c	dependent	Case.Referral_agent_Name__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Referral_agent_Name__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Referring_Doctor__c	dependent	Case.Referring_Doctor__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Referring_Doctor__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/requested_product__c	dependent	Case.requested_product__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/requested_product__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Send_DD__c	dependent	Case.Send_DD__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Send_DD__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Subject__c	dependent	Case.Subject__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Subject__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/Visited_Abroad_During_Last_14_Days__c	dependent	Case.Visited_Abroad_During_Last_14_Days__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/Visited_Abroad_During_Last_14_Days__c.fieldTranslation-meta.xml
+Case	CustomFieldTranslation	Case-zh_TW/WebsiteFormCaseSubject__c	dependent	Case.WebsiteFormCaseSubject__c	DELETE	force-app/main/default/objectTranslations/Case-zh_TW/WebsiteFormCaseSubject__c.fieldTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-da:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-da/Case-da.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-de:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-de/Case-de.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-en_GB:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-en_GB/Case-en_GB.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-es/Case-es.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-es_MX:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-es_MX/Case-es_MX.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fi:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-fi/Case-fi.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-fr:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-fr/Case-fr.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-it:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-it/Case-it.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-iw:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-iw/Case-iw.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ja:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-ja/Case-ja.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ko:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-ko/Case-ko.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-nl_NL:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-nl_NL/Case-nl_NL.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-pt_BR:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-pt_BR/Case-pt_BR.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-ru:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-ru/Case-ru.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_CN:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-zh_CN/Case-zh_CN.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Application_Files	dependent	Case.Application_Files	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Assuta_360	dependent	Case.Assuta_360	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/CaseAfterSale	dependent	Case.CaseAfterSale	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/ClosedAssuta360	dependent	Case.ClosedAssuta360	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/ClosedDoc	dependent	Case.ClosedDoc	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/ClosedExp	dependent	Case.ClosedExp	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/ClosedGen	dependent	Case.ClosedGen	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/ClosedInstitutes	dependent	Case.ClosedInstitutes	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/ClosedSurgeries	dependent	Case.ClosedSurgeries	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/DOC_expert	dependent	Case.DOC_expert	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Doctor_Case	dependent	Case.Doctor_Case	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Doctors_Payments_RT	dependent	Case.Doctors_Payments_RT	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Home_diagnosis	dependent	Case.Home_diagnosis	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Home_Hospitalization	dependent	Case.Home_Hospitalization	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Insurance_Agent	dependent	Case.Insurance_Agent	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/IVF_Freezing_Eggs	dependent	Case.IVF_Freezing_Eggs	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Medical_Info_Management	dependent	Case.Medical_Info_Management	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Medical_staff	dependent	Case.Medical_staff	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Shikum_Bait	dependent	Case.Shikum_Bait	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Supplier	dependent	Case.Supplier	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/Surgery	dependent	Case.Surgery	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	CustomObjectTranslationEntry	Case-zh_TW:recordTypes/YadBeYad_Breast	dependent	Case.YadBeYad_Breast	MODIFY	force-app/main/default/objectTranslations/Case-zh_TW/Case-zh_TW.objectTranslation-meta.xml
+Case	RecordType	Application_Files	label	Application Files Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Application_Files.recordType-meta.xml
+Case	RecordType	Assuta_360	label	אסותא 360 Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Assuta_360.recordType-meta.xml
+Case	RecordType	CaseAfterSale	label	מכירות Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/CaseAfterSale.recordType-meta.xml
+Case	RecordType	ClosedAssuta360	label	אסותא 360 - סגור Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/ClosedAssuta360.recordType-meta.xml
+Case	RecordType	ClosedDoc	label	פניית רופא - סגור Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/ClosedDoc.recordType-meta.xml
+Case	RecordType	ClosedExp	label	רופאים מומחים - סגור Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/ClosedExp.recordType-meta.xml
+Case	RecordType	ClosedGen	label	מידע כללי - סגור Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/ClosedGen.recordType-meta.xml
+Case	RecordType	ClosedInstitutes	label	זימון תורים למכונים ומרפאות - סגור Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/ClosedInstitutes.recordType-meta.xml
+Case	RecordType	ClosedSurgeries	label	ניתוחים - סגור Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/ClosedSurgeries.recordType-meta.xml
+Case	RecordType	DOC_expert	label	רופאים מומחים Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/DOC_expert.recordType-meta.xml
+Case	RecordType	Doctor_Case	label	פניית רופא Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Doctor_Case.recordType-meta.xml
+Case	RecordType	Doctors_Payments_RT	label	תשלומי רופאים Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Doctors_Payments_RT.recordType-meta.xml
+Case	RecordType	Home_diagnosis	label	אבחון בית Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Home_diagnosis.recordType-meta.xml
+Case	RecordType	Home_Hospitalization	label	אשפוז בית Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Home_Hospitalization.recordType-meta.xml
+Case	RecordType	Insurance_Agent	label	סוכן ביטוח Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Insurance_Agent.recordType-meta.xml
+Case	RecordType	IVF_Freezing_Eggs	label	IVF הקפאת ביציות Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/IVF_Freezing_Eggs.recordType-meta.xml
+Case	RecordType	Medical_Info_Management	label	ניהול ורישום מידע רפואי Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Medical_Info_Management.recordType-meta.xml
+Case	RecordType	Medical_staff	label	סגל רפואי Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Medical_staff.recordType-meta.xml
+Case	RecordType	Shikum_Bait	label	שיקום בית Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Shikum_Bait.recordType-meta.xml
+Case	RecordType	Supplier	label	Supplier Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Supplier.recordType-meta.xml
+Case	RecordType	Surgery	label	ניתוחים Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/Surgery.recordType-meta.xml
+Case	RecordType	YadBeYad_Breast	label	יד ביד - שד Deprecated	DELETE	force-app/main/default/objects/Case/recordTypes/YadBeYad_Breast.recordType-meta.xml
+Contact	CustomField	Assuta_emp_in_clinic__c	label	Assuta Clinic Employee_deprecated	DELETE	force-app/main/default/objects/Contact/fields/Assuta_emp_in_clinic__c.field-meta.xml
+Contact	CustomField	Clinic__c	label	Clinic_deprecated	DELETE	force-app/main/default/objects/Contact/fields/Clinic__c.field-meta.xml
+Contact	CustomField	Contact_type__c	label	Contact Type_deprecated	DELETE	force-app/main/default/objects/Contact/fields/Contact_type__c.field-meta.xml
+Contact	CustomField	PhoneToMC__c	label	Phone To MC_deprecated	DELETE	force-app/main/default/objects/Contact/fields/PhoneToMC__c.field-meta.xml
+Contact	CustomFieldTranslation	Contact-iw/Assuta_emp_in_clinic__c	dependent	Contact.Assuta_emp_in_clinic__c	DELETE	force-app/main/default/objectTranslations/Contact-iw/Assuta_emp_in_clinic__c.fieldTranslation-meta.xml
+Contact	CustomFieldTranslation	Contact-iw/Clinic__c	dependent	Contact.Clinic__c	DELETE	force-app/main/default/objectTranslations/Contact-iw/Clinic__c.fieldTranslation-meta.xml
+Contact	CustomFieldTranslation	Contact-iw/Contact_type__c	dependent	Contact.Contact_type__c	DELETE	force-app/main/default/objectTranslations/Contact-iw/Contact_type__c.fieldTranslation-meta.xml
+Contact	CustomFieldTranslation	Contact-iw/PhoneToMC__c	dependent	Contact.PhoneToMC__c	DELETE	force-app/main/default/objectTranslations/Contact-iw/PhoneToMC__c.fieldTranslation-meta.xml
+Contact	CustomObjectTranslationEntry	Contact-iw:recordTypes/Assuta_Employee	dependent	Contact.Assuta_Employee	MODIFY	force-app/main/default/objectTranslations/Contact-iw/Contact-iw.objectTranslation-meta.xml
+Contact	CustomObjectTranslationEntry	Contact-iw:recordTypes/Escort	dependent	Contact.Escort	MODIFY	force-app/main/default/objectTranslations/Contact-iw/Contact-iw.objectTranslation-meta.xml
+Contact	CustomObjectTranslationEntry	Contact-iw:recordTypes/Supplier_Contact	dependent	Contact.Supplier_Contact	MODIFY	force-app/main/default/objectTranslations/Contact-iw/Contact-iw.objectTranslation-meta.xml
+Contact	RecordType	Assuta_Employee	label	Assuta Employee_deprecated	DELETE	force-app/main/default/objects/Contact/recordTypes/Assuta_Employee.recordType-meta.xml
+Contact	RecordType	Escort	label	Escort_deprecated	DELETE	force-app/main/default/objects/Contact/recordTypes/Escort.recordType-meta.xml
+Contact	RecordType	Supplier_Contact	label	Supplier Contact_deprecated	DELETE	force-app/main/default/objects/Contact/recordTypes/Supplier_Contact.recordType-meta.xml
+Disabilities__c	CustomField	Date_of_start__c	label	Date of start_deprecated	DELETE	force-app/main/default/objects/Disabilities__c/fields/Date_of_start__c.field-meta.xml
+Disabilities__c	CustomField	Side__c	label	Side_deprecated	DELETE	force-app/main/default/objects/Disabilities__c/fields/Side__c.field-meta.xml
+Disabilities__c	CustomFieldTranslation	Disabilities__c-en_US/Date_of_start__c	dependent	Disabilities__c.Date_of_start__c	DELETE	force-app/main/default/objectTranslations/Disabilities__c-en_US/Date_of_start__c.fieldTranslation-meta.xml
+Disabilities__c	CustomFieldTranslation	Disabilities__c-en_US/Side__c	dependent	Disabilities__c.Side__c	DELETE	force-app/main/default/objectTranslations/Disabilities__c-en_US/Side__c.fieldTranslation-meta.xml
+Disabilities__c	CustomFieldTranslation	Disabilities__c-iw/Date_of_start__c	dependent	Disabilities__c.Date_of_start__c	DELETE	force-app/main/default/objectTranslations/Disabilities__c-iw/Date_of_start__c.fieldTranslation-meta.xml
+Disabilities__c	CustomFieldTranslation	Disabilities__c-iw/Side__c	dependent	Disabilities__c.Side__c	DELETE	force-app/main/default/objectTranslations/Disabilities__c-iw/Side__c.fieldTranslation-meta.xml
+Medical_Aid_Appointment__c	CustomObject	Medical_Aid_Appointment__c	label	Medical Aid Appointment_deprecated	DELETE	force-app/main/default/objects/Medical_Aid_Appointment__c
+Medical_Procedure__c	CustomField	SMS_Reminder__c	label	SMS Reminder_deprecated	DELETE	force-app/main/default/objects/Medical_Procedure__c/fields/SMS_Reminder__c.field-meta.xml
+Medical_Procedure__c	CustomField	Voice_Reminder__c	label	Voice Reminder_deprecated	DELETE	force-app/main/default/objects/Medical_Procedure__c/fields/Voice_Reminder__c.field-meta.xml
+Medical_Procedure__c	CustomFieldTranslation	Medical_Procedure__c-en_US/SMS_Reminder__c	dependent	Medical_Procedure__c.SMS_Reminder__c	DELETE	force-app/main/default/objectTranslations/Medical_Procedure__c-en_US/SMS_Reminder__c.fieldTranslation-meta.xml
+Medical_Procedure__c	CustomFieldTranslation	Medical_Procedure__c-en_US/Voice_Reminder__c	dependent	Medical_Procedure__c.Voice_Reminder__c	DELETE	force-app/main/default/objectTranslations/Medical_Procedure__c-en_US/Voice_Reminder__c.fieldTranslation-meta.xml
+Medical_Procedure__c	CustomFieldTranslation	Medical_Procedure__c-iw/SMS_Reminder__c	dependent	Medical_Procedure__c.SMS_Reminder__c	DELETE	force-app/main/default/objectTranslations/Medical_Procedure__c-iw/SMS_Reminder__c.fieldTranslation-meta.xml
+Medical_Procedure__c	CustomFieldTranslation	Medical_Procedure__c-iw/Voice_Reminder__c	dependent	Medical_Procedure__c.Voice_Reminder__c	DELETE	force-app/main/default/objectTranslations/Medical_Procedure__c-iw/Voice_Reminder__c.fieldTranslation-meta.xml
+Scheduler_parameters__c	CustomField	Protocol__c	label	Protocol_deprecated	DELETE	force-app/main/default/objects/Scheduler_parameters__c/fields/Protocol__c.field-meta.xml
+Scheduler_parameters__c	CustomFieldTranslation	Scheduler_parameters__c-en_US/Protocol__c	dependent	Scheduler_parameters__c.Protocol__c	NONE	force-app/main/default/objectTranslations/Scheduler_parameters__c-en_US/Protocol__c.fieldTranslation-meta.xml
+Scheduler_parameters__c	CustomFieldTranslation	Scheduler_parameters__c-iw/Protocol__c	dependent	Scheduler_parameters__c.Protocol__c	DELETE	force-app/main/default/objectTranslations/Scheduler_parameters__c-iw/Protocol__c.fieldTranslation-meta.xml
+Sequence__c	CustomField	Ashdod__c	label	Ashdod?_deprecated	DELETE	force-app/main/default/objects/Sequence__c/fields/Ashdod__c.field-meta.xml
+Sequence__c	CustomFieldTranslation	Sequence__c-en_US/Ashdod__c	dependent	Sequence__c.Ashdod__c	DELETE	force-app/main/default/objectTranslations/Sequence__c-en_US/Ashdod__c.fieldTranslation-meta.xml
+Sequence__c	CustomFieldTranslation	Sequence__c-iw/Ashdod__c	dependent	Sequence__c.Ashdod__c	DELETE	force-app/main/default/objectTranslations/Sequence__c-iw/Ashdod__c.fieldTranslation-meta.xml

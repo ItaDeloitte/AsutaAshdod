@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Taken__c</fullName>
     <description>Whether the survey was taken or not</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Taken</label>
     <length>10</length>

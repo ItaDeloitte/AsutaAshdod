@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>BIRAD_From_Recommendation__c</fullName>
     <description>BIRAD מתאכלס מהמלצות לאחר בדיקה בflow: Recommendations After Exam - Trigger Flow - After Save</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>BIRAD From Recommendation</label>
     <length>2</length>

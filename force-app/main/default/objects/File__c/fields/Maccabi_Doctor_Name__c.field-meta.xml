@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Maccabi_Doctor_Name__c</fullName>
     <description>שם של רופא ממכבי</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Maccabi Doctor Name</label>
     <length>255</length>

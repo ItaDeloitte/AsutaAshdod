@@ -3,7 +3,6 @@
     <fullName>Patient_Mail__c</fullName>
     <description>שדה עזר
 יאוכלס ע&quot;י המייל של המטופל</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Patient Email</label>
     <required>false</required>

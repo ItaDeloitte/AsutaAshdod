@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- manager of site --></label>
     <name>manager_of_site__c</name>
-    <relationshipLabel><!-- עזרים לפגישה --></relationshipLabel>
+    <relationshipLabel><!-- Medical Aid Appointments_deprecated --></relationshipLabel>
 </CustomFieldTranslation>

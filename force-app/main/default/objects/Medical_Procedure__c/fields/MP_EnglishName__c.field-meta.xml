@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>MP_EnglishName__c</fullName>
     <description>שם פעולה רפואית באנגלית - יגיע מה-ETL</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Medical Procedure English Name</label>
     <length>255</length>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>RIS_Signature_date_time__c</fullName>
     <description>מגיע בממשק סטטוסים מריס</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Ris Signatute Date Time</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

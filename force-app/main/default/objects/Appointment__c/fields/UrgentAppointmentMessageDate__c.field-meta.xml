@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>UrgentAppointmentMessageDate__c</fullName>
     <description>שדה שיכיל את תאריך ושעת הוצאת מסר הקדמת התור למטופל</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>UrgentAppointmentMessageDate</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

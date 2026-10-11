@@ -3,7 +3,6 @@
     <fullName>AssutaEmployeeId__c</fullName>
     <caseSensitive>false</caseSensitive>
     <description>שדה מזהה עבור אנשי קשר של עובד אסותא</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>true</externalId>
     <label>Assuta Employee Id</label>
     <length>18</length>

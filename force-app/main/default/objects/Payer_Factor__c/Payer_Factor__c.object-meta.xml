@@ -159,7 +159,6 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>גורם משלם</label>
     <nameField>
-        <encryptionScheme>None</encryptionScheme>
         <label>שם גורם משלם</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>

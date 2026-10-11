@@ -5,7 +5,7 @@
     <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
 ( ISNEW() || ISCHANGED(ID_Type__c ) || ISCHANGED(Insurer_factor__c) )
 &amp;&amp;
-ISPICKVAL(  ID_Type__c  , &quot;1&quot; )
+( ISPICKVAL(  ID_Type__c  , &quot;1&quot; ) || ISPICKVAL(  ID_Type__c  , &quot;9&quot; ) )
 &amp;&amp;
 ((ISNEW() &amp;&amp; DisableValidation__c = false)
 ||

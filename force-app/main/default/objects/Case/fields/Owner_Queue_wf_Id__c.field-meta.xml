@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Owner_Queue_wf_Id__c</fullName>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Owner Queue Wf Id</label>
     <length>80</length>

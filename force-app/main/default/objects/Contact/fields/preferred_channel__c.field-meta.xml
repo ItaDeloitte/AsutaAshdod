@@ -15,23 +15,8 @@
                 <label>דואר אלקטרוני</label>
             </value>
             <value>
-                <fullName>Facebook Messenger</fullName>
-                <default>false</default>
-                <label>Facebook Messenger</label>
-            </value>
-            <value>
-                <fullName>Fax</fullName>
-                <default>false</default>
-                <label>פקס</label>
-            </value>
-            <value>
-                <fullName>Phone</fullName>
-                <default>true</default>
-                <label>טלפון</label>
-            </value>
-            <value>
                 <fullName>SMS</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>SMS</label>
             </value>
             <value>
@@ -40,19 +25,40 @@
                 <label>Whatsapp</label>
             </value>
             <value>
+                <fullName>Facebook Messenger</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Facebook Messenger</label>
+            </value>
+            <value>
                 <fullName>Mail</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>דואר</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>טלפון</label>
             </value>
             <value>
                 <fullName>Unknown</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>לא ידוע</label>
             </value>
             <value>
                 <fullName>לא פעיל</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>לא פעיל</label>
+            </value>
+            <value>
+                <fullName>Fax</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>פקס</label>
             </value>
         </valueSetDefinition>
     </valueSet>

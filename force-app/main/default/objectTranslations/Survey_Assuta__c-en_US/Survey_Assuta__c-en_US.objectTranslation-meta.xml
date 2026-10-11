@@ -8,5 +8,14 @@
         <plural>true</plural>
         <value>סקרים</value>
     </caseValues>
+    <recordTypes>
+        <description><!-- סקר זה ישלח אם הערוץ של הפניה דיגיטלי --></description>
+        <label><!-- סקר - לערוץ דיגיטלי --></label>
+        <name>Digital</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- סקר - לערוץ אחר --></label>
+        <name>Other</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

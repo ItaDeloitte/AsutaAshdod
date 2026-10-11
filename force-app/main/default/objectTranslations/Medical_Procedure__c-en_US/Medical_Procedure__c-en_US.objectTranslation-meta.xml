@@ -9,4 +9,12 @@
         <value>Medical Procedures</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- חובה למלא שדות של הנחה --></errorMessage>
+        <name>Voucher_Field_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- אם יש צורך בביצוע תזכור, יש לציין את מספר הימים לתזכור לפני הפגישה --></errorMessage>
+        <name>number_of_days_tizkurit</name>
+    </validationRules>
 </CustomObjectTranslation>

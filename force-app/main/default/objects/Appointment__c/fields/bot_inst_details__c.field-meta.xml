@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>bot_inst_details__c</fullName>
+    <description>FORMULA_PENDING | Original: Medical_Procedure__r.Name &amp;amp; &amp;quot; ,&amp;quot; &amp;amp;  BR()&amp;amp; 
+Calendar__r.Name &amp;amp; &amp;quot; ,&amp;quot; &amp;amp; BR()&amp;amp; 
+Site__r.Name &amp;amp; &amp;quot; ,&amp;quot; &amp;amp; BR()&amp;amp; 
+Site__r.Address__c &amp;amp; &amp;quot; ,&amp;quot; &amp;amp; BR()&amp;amp; 
+TEXT(Appointment_Date_Time__c)</description>
     <externalId>false</externalId>
-    <formula>Medical_Procedure__r.Name &amp; &quot; ,&quot; &amp;  BR()&amp; 
-Calendar__r.Name &amp; &quot; ,&quot; &amp; BR()&amp; 
-Site__r.Name &amp; &quot; ,&quot; &amp; BR()&amp; 
-Site__r.Address__c &amp; &quot; ,&quot; &amp; BR()&amp; 
-TEXT(Appointment_Date_Time__c)</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Bot Installation Details</label>
     <required>false</required>

@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>IsAppBefore14__c</fullName>
-    <formula>IF( Time_of_appointment__c  &lt; TIMEVALUE(&quot;14:00:00.00&quot;)+($User.TimeZoneOffset__c /24), true, false)</formula>
+    <description>FORMULA_PENDING | Original: IF( Time_of_appointment__c  &amp;lt; TIMEVALUE(&amp;quot;14:00:00.00&amp;quot;)+($User.TimeZoneOffset__c /24), true, false) | Checks if a given appointment is before 2 pm</description>
+    <formula>false</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Is App Before 14</label>
     <trackHistory>false</trackHistory>

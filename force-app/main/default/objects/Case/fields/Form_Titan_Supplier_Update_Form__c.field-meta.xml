@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Form_Titan_Supplier_Update_Form__c</fullName>
+    <description>FORMULA_PENDING | Original: IF( ISPICKVAL(Status,&amp;quot;Closed&amp;quot;), &amp;quot;https://&amp;quot;&amp;amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;amp;&amp;quot;/Supplier_Case_Otp?fld222=&amp;quot; &amp;amp; formtitan_id_2__c , &amp;quot;&amp;quot;)</description>
     <externalId>false</externalId>
-    <formula>IF( ISPICKVAL(Status,&quot;Closed&quot;), &quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/Supplier_Case_Otp?fld222=&quot; &amp; formtitan_id_2__c , &quot;&quot;)</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Form Titan Supplier Update Form</label>
     <required>false</required>

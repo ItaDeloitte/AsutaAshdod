@@ -22,4 +22,20 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel><!-- מספר המלצה לאחר בדיקה --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- ממוגרפיה --></label>
+        <name>Memo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- המלצה מאסותא דוק --></label>
+        <name>RecommendationFromAssutaDoc</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- בתוכנית רפואית תישלח רק המלצה אחת --></errorMessage>
+        <name>DEL_medical_program</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש למלא סיבת סגירה --></errorMessage>
+        <name>close_reason</name>
+    </validationRules>
 </CustomObjectTranslation>

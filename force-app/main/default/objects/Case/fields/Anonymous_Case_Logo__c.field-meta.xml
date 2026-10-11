@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Anonymous_Case_Logo__c</fullName>
     <externalId>false</externalId>
-    <formula>IF( anonymous_case__c = true, IMAGE(&quot;https://assuta--c.um8.content.force.com/servlet/servlet.FileDownload?file=0158d000000hHnW&quot;, &quot;&quot; , 30, 30), null)</formula>
+    <formula>IF( anonymous_case__c = true, IMAGE(&quot;/apexpages/slds/latest/assets/icons/utility/user_120.png&quot;, &quot;פנייה אנונימית&quot;, 30, 30), null)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Anonymous Case Logo</label>
     <required>false</required>

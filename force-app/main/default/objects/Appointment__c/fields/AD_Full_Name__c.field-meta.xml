@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>AD_Full_Name__c</fullName>
     <description>שם מלא באקטיב דירקטורי</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>שם מלא באקטיב דירקטורי</inlineHelpText>
     <label>AD Full Name</label>

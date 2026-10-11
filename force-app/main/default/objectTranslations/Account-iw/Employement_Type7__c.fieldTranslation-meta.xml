@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Employment Type --></label>
+    <label>סוג העסקה</label>
     <name>Employement_Type7__c</name>
     <picklistValues>
         <masterLabel>אינו עובד מטעם אסותא</masterLabel>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Availability_s_Hours__c</fullName>
     <description>User Story 18890</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Availability&apos;s Hours</label>
     <length>100</length>

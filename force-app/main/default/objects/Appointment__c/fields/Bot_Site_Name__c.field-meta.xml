@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Bot_Site_Name__c</fullName>
+    <description>FORMULA_PENDING | Original: IF(NOT(ISBLANK(Clinic__c)), &amp;quot;שם המרפאה: &amp;quot;&amp;amp; Clinic__r.Name &amp;amp; &amp;apos;. כתובת: &amp;apos; &amp;amp;  Clinic__r.street_address__c &amp;amp; &amp;apos;, &amp;apos; &amp;amp;  Clinic__r.city_hidden__c  , Site__r.Name &amp;amp; &amp;apos;, &amp;apos; &amp;amp;  Site__r.Address__c )</description>
     <externalId>false</externalId>
-    <formula>IF(NOT(ISBLANK(Clinic__c)), &quot;שם המרפאה: &quot;&amp; Clinic__r.Name &amp; &apos;. כתובת: &apos; &amp;  Clinic__r.street_address__c &amp; &apos;, &apos; &amp;  Clinic__r.city_hidden__c  , Site__r.Name &amp; &apos;, &apos; &amp;  Site__r.Address__c )</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Bot Site Name</label>
     <required>false</required>

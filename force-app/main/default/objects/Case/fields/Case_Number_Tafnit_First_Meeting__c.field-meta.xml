@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Case_Number_Tafnit_First_Meeting__c</fullName>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Case Number Tafnit First Meeting</label>
     <length>255</length>

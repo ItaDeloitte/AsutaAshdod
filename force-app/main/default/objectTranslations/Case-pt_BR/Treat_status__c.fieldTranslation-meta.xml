@@ -3,16 +3,8 @@
     <label><!-- Treat Status --></label>
     <name>Treat_status__c</name>
     <picklistValues>
-        <masterLabel>General Information</masterLabel>
-        <translation><!-- General Information --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>בוצעה חזרה למטופל ונסגר מעגל טיפול</masterLabel>
         <translation><!-- בוצעה חזרה למטופל ונסגר מעגל טיפול --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>הוצעו מספר פתרונות למטופל</masterLabel>
-        <translation><!-- הוצעו מספר פתרונות למטופל --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>המטופל ביקש שיחזרו אליו ממוקד הזימון</masterLabel>
@@ -23,8 +15,8 @@
         <translation><!-- טופל עי מנהל --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>נעשה ניסיון התקשרות למטופל- ללא מענה</masterLabel>
-        <translation><!-- נעשה ניסיון התקשרות למטופל- ללא מענה --></translation>
+        <masterLabel>מתן מידע כללי</masterLabel>
+        <translation><!-- מתן מידע כללי --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>נעשו מספר ניסיונות להשגת המטופל ללא הצלחה</masterLabel>
@@ -33,14 +25,6 @@
     <picklistValues>
         <masterLabel>פניה הוחזרה לבעלים הקודמים להמשך טיפול</masterLabel>
         <translation><!-- פניה הוחזרה לבעלים הקודמים להמשך טיפול --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>פניה הועברה לטיפול</masterLabel>
-        <translation><!-- פניה הועברה לטיפול --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>פניה טופלה ללא שיחה</masterLabel>
-        <translation><!-- פניה טופלה ללא שיחה --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>תואם תור</masterLabel>

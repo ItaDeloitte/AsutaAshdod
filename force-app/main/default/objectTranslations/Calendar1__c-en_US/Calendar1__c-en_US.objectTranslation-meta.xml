@@ -9,4 +9,16 @@
         <value>לוח שנה</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- אם זה לא יום עסקים שדות שעה חייבים להיות רקים --></errorMessage>
+        <name>VR_4_business_day_is_fals_4_specific_bot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה עבור יום עסקים להזין שעת התחלה / סיום פעילות --></errorMessage>
+        <name>VR_4_business_day_is_true_4_specific_bot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה עבור יום עסקים להזין שעת התחלה / סיום פעילות --></errorMessage>
+        <name>VR_for_business_day_is_true</name>
+    </validationRules>
 </CustomObjectTranslation>

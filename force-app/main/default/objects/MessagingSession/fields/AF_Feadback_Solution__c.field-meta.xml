@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>AF_Feadback_Solution__c</fullName>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>AF Feadback Solution</label>
     <length>255</length>

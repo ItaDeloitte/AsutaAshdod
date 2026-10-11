@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Signed_Doctor_Text__c</fullName>
     <description>הסבות</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>רופא שחתם על הבדיקה - טקסט</label>
     <length>10</length>

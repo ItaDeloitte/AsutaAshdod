@@ -22,4 +22,8 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel><!-- Reminder Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- אחד משדות החובה חסר --></errorMessage>
+        <name>Not_valid_record</name>
+    </validationRules>
 </CustomObjectTranslation>

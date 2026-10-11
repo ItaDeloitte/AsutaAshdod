@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Titan_Sign_MRI_URL__c</fullName>
     <description>קישור לטופס חתימה לניידת MRI חירום</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Titan Sign MRI URL</label>
     <length>1024</length>
     <trackFeedHistory>false</trackFeedHistory>

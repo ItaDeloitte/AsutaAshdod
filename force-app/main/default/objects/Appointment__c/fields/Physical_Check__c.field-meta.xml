@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Physical_Check__c</fullName>
     <description>בדיקה פיסיקלית</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Physical Check</label>
     <length>32768</length>
     <trackFeedHistory>false</trackFeedHistory>

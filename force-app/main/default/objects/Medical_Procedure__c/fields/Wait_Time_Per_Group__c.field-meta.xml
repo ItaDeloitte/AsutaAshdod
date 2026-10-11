@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wait_Time_Per_Group__c</fullName>
+    <description>משך ההמתנה לתגובה לכל קבוצת שליחה לפני מעבר לקבוצה הבאה (מספר). יחידת הזמן תיקבע עסקית. שדה תצורה בלבד — נשמר לשימוש עתידי של מנגנון השליחה.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>משך ההמתנה לתגובה לכל קבוצת שליחה לפני מעבר לקבוצה הבאה.</inlineHelpText>
+    <label>Wait Time Per Group</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

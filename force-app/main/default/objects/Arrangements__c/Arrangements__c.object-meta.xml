@@ -156,7 +156,6 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>הסדר</label>
     <nameField>
-        <encryptionScheme>None</encryptionScheme>
         <label>שם הסדר</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>

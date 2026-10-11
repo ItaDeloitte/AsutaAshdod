@@ -3,7 +3,6 @@
     <fullName>Transaction_ID__c</fullName>
     <caseSensitive>false</caseSensitive>
     <description>ID של טרנזקציית חיוב - עבור אנליטיקס</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>true</externalId>
     <label>Transaction ID</label>
     <length>255</length>

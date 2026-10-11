@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Insurer_Factor__c</fullName>
     <description>גורם משלם מתוך חשבון המטופל</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Insurer Factor</label>
     <length>20</length>

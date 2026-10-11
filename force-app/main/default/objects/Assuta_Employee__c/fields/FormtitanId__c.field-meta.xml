@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FormtitanId__c</fullName>
     <description>מזהה פורמטייטן. יאוכלס בקוד בעת יצירת עובד אסותא</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>FormtitanId</label>
     <length>255</length>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TechnicianNotes__c</fullName>
     <description>הערות טכנאי מ-RIS.</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Technician Notes</label>
     <length>32768</length>
     <trackFeedHistory>false</trackFeedHistory>

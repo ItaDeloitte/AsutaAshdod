@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>DeveloperName__c</fullName>
     <description>בשדה זה יש לשמור את שם הרשומה. שם משמעותי המכיל אותיות באנגלית, מספרים וקווים תחתונים בלבד</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>בשדה זה יש לשמור את שם הרשומה. יש לתת שם משמעותי המכיל אותיות באנגלית (קטנות וגדולות), מספרים וקווים תחתונים בלבד</inlineHelpText>
     <label>DeveloperName</label>

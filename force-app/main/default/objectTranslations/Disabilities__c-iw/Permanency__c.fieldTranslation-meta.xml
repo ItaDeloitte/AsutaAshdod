@@ -3,11 +3,11 @@
     <label>קביעות</label>
     <name>Permanency__c</name>
     <picklistValues>
-        <masterLabel>Permanent</masterLabel>
-        <translation>קבוע</translation>
+        <masterLabel>זמני</masterLabel>
+        <translation>זמני</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Temporary</masterLabel>
-        <translation>זמני</translation>
+        <masterLabel>קבוע</masterLabel>
+        <translation>קבוע</translation>
     </picklistValues>
 </CustomFieldTranslation>

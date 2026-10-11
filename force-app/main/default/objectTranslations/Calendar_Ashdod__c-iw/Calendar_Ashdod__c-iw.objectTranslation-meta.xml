@@ -6,9 +6,20 @@
         <value>Calendar Ashdod</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הCalendar Ashdod --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>Calendar Ashdod</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הCalendar Ashdod --></value>
+    </caseValues>
     <gender>Masculine</gender>
+    <nameFieldLabel><!-- Day Code --></nameFieldLabel>
 </CustomObjectTranslation>

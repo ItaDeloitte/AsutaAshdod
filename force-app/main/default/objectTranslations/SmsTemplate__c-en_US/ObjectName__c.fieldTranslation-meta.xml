@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- בשדה זה יש לשים את שם האובייקט שממנו יוצא הסמס ועליו יושבים השדות הדינאמיים. חייב להקפיד שהשם יהיה זהה לשם האובייקט (אותיות גדולות, קטנות, ללא רווחים) --></help>
+    <label><!-- ObjectName --></label>
+    <name>ObjectName__c</name>
+    <picklistValues>
+        <masterLabel>Account__c</masterLabel>
+        <translation><!-- Account__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AgentSurvey__c</masterLabel>
+        <translation><!-- AgentSurvey__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appointment__c</masterLabel>
+        <translation><!-- Appointment__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case__c</masterLabel>
+        <translation><!-- Case__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ConsentFormTaken__c</masterLabel>
+        <translation><!-- ConsentFormTaken__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunity__c</masterLabel>
+        <translation><!-- Opportunity__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SurveyTaker__c</masterLabel>
+        <translation><!-- SurveyTaker__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

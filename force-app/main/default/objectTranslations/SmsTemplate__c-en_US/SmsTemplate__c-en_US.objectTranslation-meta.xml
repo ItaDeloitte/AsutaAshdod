@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SmsTemplate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SmsTemplates</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- השדה apiNames לא יכול להכיל רווחים או אותיות בעברית. --></errorMessage>
+        <name>apiNames_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- השדה developerName  יכול להכיל רק אותיות באנגלית (קטנות או גדולות) קו תחתון וללא רווחים. --></errorMessage>
+        <name>developerName_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- עבור שדות דינמיים חייב להוסיף  api names  וסוגריים מסולסלים --></errorMessage>
+        <name>include_merge_field</name>
+    </validationRules>
+</CustomObjectTranslation>

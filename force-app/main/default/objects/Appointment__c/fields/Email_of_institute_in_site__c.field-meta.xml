@@ -3,7 +3,6 @@
     <fullName>Email_of_institute_in_site__c</fullName>
     <description>המייל של מזכירות המחלקה באתר (מכון באתר)
 יעודכן ע&quot;י PB וFLOW</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>DEL Email of institute in site</label>
     <required>false</required>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ADName__c</fullName>
     <description>ערך המתקבל בממשק ממערכת המקור המכיל את השם באקטיב דירקטורי</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>ערך המגיע בממשק, מכיל את שם מבצע הפעולה</inlineHelpText>
     <label>AD Name</label>

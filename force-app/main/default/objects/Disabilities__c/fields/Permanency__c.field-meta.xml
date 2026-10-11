@@ -14,12 +14,12 @@
             <value>
                 <fullName>T</fullName>
                 <default>false</default>
-                <label>Temporary</label>
+                <label>זמני</label>
             </value>
             <value>
                 <fullName>P</fullName>
                 <default>true</default>
-                <label>Permanent</label>
+                <label>קבוע</label>
             </value>
         </valueSetDefinition>
     </valueSet>

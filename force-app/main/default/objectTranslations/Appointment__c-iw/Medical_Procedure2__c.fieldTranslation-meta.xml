@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>פעולה רפואית 2</label>
     <name>Medical_Procedure2__c</name>
-    <relationshipLabel><!-- Appointments (Medical Procedure2) --></relationshipLabel>
+    <relationshipLabel>פגישות</relationshipLabel>
 </CustomFieldTranslation>

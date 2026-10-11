@@ -63,29 +63,11 @@
             </value>
         </valueSetDefinition>
         <valueSettings>
-            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
-            <valueName>Waiting for appointment</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
-            <valueName>Waiting for reminder</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
-            <valueName>Survey sent</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>ממתין לתזכור על ידי נציג</controllingFieldValue>
-            <controllingFieldValue>ממתין לסקר על ידי נציג</controllingFieldValue>
-            <controllingFieldValue>נדרש המשך טיפול</controllingFieldValue>
             <controllingFieldValue>Closed</controllingFieldValue>
-            <valueName>No answer</valueName>
-        </valueSettings>
-        <valueSettings>
+            <controllingFieldValue>נדרש המשך טיפול</controllingFieldValue>
             <controllingFieldValue>ממתין לתזכור על ידי נציג</controllingFieldValue>
             <controllingFieldValue>ממתין לסקר על ידי נציג</controllingFieldValue>
-            <controllingFieldValue>נדרש המשך טיפול</controllingFieldValue>
-            <valueName>Waiting for agent</valueName>
+            <valueName>No answer</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Closed</controllingFieldValue>
@@ -106,6 +88,24 @@
         <valueSettings>
             <controllingFieldValue>Closed</controllingFieldValue>
             <valueName>appointment was not summoned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>נדרש המשך טיפול</controllingFieldValue>
+            <controllingFieldValue>ממתין לתזכור על ידי נציג</controllingFieldValue>
+            <controllingFieldValue>ממתין לסקר על ידי נציג</controllingFieldValue>
+            <valueName>Waiting for agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
+            <valueName>Waiting for appointment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
+            <valueName>Waiting for reminder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ממתין למימוש</controllingFieldValue>
+            <valueName>Survey sent</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

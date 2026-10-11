@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Score__c</fullName>
     <description>עבור ממשק אגמון</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Score</label>
     <length>20</length>

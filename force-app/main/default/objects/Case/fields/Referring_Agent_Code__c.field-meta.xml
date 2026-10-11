@@ -3,7 +3,6 @@
     <fullName>Referring_Agent_Code__c</fullName>
     <description>קוד סוכן מפנה.
 (נמשך ע&quot;י תפנית במסגרת ממשק מקדים).</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Referring Agent Code</label>
     <length>50</length>

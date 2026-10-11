@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Procedure_Plan_Text__c</fullName>
     <description>קוד תוכנית רפואית לצורך אינטגרציה</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Procedure Plan Text</label>
     <length>20</length>

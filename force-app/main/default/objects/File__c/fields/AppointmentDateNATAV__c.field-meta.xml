@@ -3,7 +3,6 @@
     <fullName>AppointmentDateNATAV__c</fullName>
     <description>תאריך ביצוע הבדיקה 
 מתאכלס על ידי אינטגרציה (מגיע מהנתב)</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Appointment Date NATAV</label>
     <length>255</length>

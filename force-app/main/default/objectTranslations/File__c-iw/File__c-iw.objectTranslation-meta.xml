@@ -22,4 +22,55 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>שם מסמך</nameFieldLabel>
+    <recordTypes>
+        <label><!-- התחייבות --></label>
+        <name>Commitment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- מסמכים של אישור ועדה ממכבי --></description>
+        <label><!-- אישור ועדה --></label>
+        <name>Committee_approval</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- טיפול משלים --></label>
+        <name>Complementary_Treatments</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- תמונה איזור אישי לרופא --></label>
+        <name>Doctor_Photo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- מסמכי רופא --></label>
+        <name>DoctorsFiles</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- כללי --></label>
+        <name>General</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- מסמכי תשלום רופאים --></label>
+        <name>Medical_Payments</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- משמש להעלאת מסמכים של טרום ניתוח --></description>
+        <label><!-- PreSurgery --></label>
+        <name>PreSurgery</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- מסמכים עבור פניות הציבור --></description>
+        <label><!-- פניות הציבור --></label>
+        <name>Public_Inquiries</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- הפנייה --></label>
+        <name>Referral</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- יש להזין מספר בשדה זה. שכן השדה מכיל רק מספרים --></errorMessage>
+        <name>CommitmentOnlyNumber</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- עליך לבחור את איש הקשר אליו מתייחס המסמך --></errorMessage>
+        <name>Contact_Account_Agreement</name>
+    </validationRules>
 </CustomObjectTranslation>

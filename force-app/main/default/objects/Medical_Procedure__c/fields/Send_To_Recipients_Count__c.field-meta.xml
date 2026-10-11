@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_To_Recipients_Count__c</fullName>
+    <description>מספר הממתינים ברשימת ההמתנה שאליהם תישלח הודעה. שדה ריק = שליחה לכל הממתינים ברשימה; 0 = לא לשלוח כלל לממתינים; מספר חיובי N = שליחה ל-N נמענים בלבד. שדה תצורה בלבד — נשמר לשימוש עתידי של מנגנון השליחה.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ריק = שליחה לכל הממתינים ברשימה; 0 = לא לשלוח כלל לממתינים; מספר חיובי N = שליחה ל-N נמענים בלבד.</inlineHelpText>
+    <label>Send To Recipients Count</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

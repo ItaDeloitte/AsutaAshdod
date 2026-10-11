@@ -3,7 +3,6 @@
     <fullName>Notes__c</fullName>
     <description>הערות לפגישה
 בניתוחים - הערות מהפנייה של הרופא</description>
-    <encryptionScheme>None</encryptionScheme>
     <inlineHelpText>הערות לפגישה</inlineHelpText>
     <label>Notes</label>
     <length>32768</length>

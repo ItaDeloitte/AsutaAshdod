@@ -3,7 +3,6 @@
     <fullName>AppointmentTimeNATAV__c</fullName>
     <description>שעת ביצוע הבדיקה 
 מתאכלס על ידי אינטגרציה (מגיע מהנתב)</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Appointment Time NATAV</label>
     <length>255</length>

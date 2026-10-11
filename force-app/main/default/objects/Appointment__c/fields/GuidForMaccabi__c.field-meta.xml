@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>GuidForMaccabi__c</fullName>
     <caseSensitive>true</caseSensitive>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>מזהה בקשה להתחייבות במכבי</inlineHelpText>
     <label>Guid For Maccabi</label>

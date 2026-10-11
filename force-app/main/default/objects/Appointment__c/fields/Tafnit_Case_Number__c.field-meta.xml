@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Tafnit_Case_Number__c</fullName>
     <description>קוד תיק בתפנית</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Tafnit Case Number</label>
     <length>100</length>

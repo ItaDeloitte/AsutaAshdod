@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Matched_Within_Waitlist__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marked manually by the agent when the appointment was matched as part of the waiting list process. Standalone field, not written by automation.</description>
+    <label>Matched Within Waitlist</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

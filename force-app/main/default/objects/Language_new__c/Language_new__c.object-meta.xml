@@ -155,7 +155,6 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Language</label>
     <nameField>
-        <encryptionScheme>None</encryptionScheme>
         <label>שם שפה</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>

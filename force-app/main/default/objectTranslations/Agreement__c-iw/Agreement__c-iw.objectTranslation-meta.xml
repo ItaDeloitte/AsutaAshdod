@@ -22,4 +22,12 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel><!-- שם הסכם --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Experts --></label>
+        <name>Experts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Institutes --></label>
+        <name>Institutes</name>
+    </recordTypes>
 </CustomObjectTranslation>

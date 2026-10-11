@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CityFromSiteAndClinic__c</fullName>
     <description>value on this field will be set daily via schedul job. valus are all the cities in doctor&apos;s sites and clinics</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>CityFromSiteAndClinic</label>
     <length>255</length>

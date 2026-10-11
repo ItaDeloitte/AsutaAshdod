@@ -3,7 +3,6 @@
     <fullName>SpinCal_ID__c</fullName>
     <description>מזהה רשומת ניתוח בספינקל
 עבור ממשקים</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>SpinCal ID</label>
     <length>50</length>

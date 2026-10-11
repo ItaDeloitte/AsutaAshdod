@@ -8,5 +8,13 @@
         <plural>true</plural>
         <value>הסכמים</value>
     </caseValues>
+    <recordTypes>
+        <label><!-- Experts --></label>
+        <name>Experts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Institutes --></label>
+        <name>Institutes</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

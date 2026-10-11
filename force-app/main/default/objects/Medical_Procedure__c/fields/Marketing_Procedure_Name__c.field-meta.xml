@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Marketing_Procedure_Name__c</fullName>
     <description>שם הפעולה השיווקי</description>
-    <encryptionScheme>None</encryptionScheme>
     <inlineHelpText>משקף את שם הפעולה השיווקי</inlineHelpText>
     <label>Marketing Procedure Name</label>
     <required>false</required>

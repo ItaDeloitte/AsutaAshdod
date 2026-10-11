@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>code_tizkurit__c</fullName>
     <description>can this be deleted?</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Code Tizkurit</label>
     <length>10</length>

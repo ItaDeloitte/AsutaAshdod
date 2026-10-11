@@ -6,9 +6,20 @@
         <value>עובדי אסותא</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- העובדי אסותא --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>Assuta Employees</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הAssuta Employees --></value>
+    </caseValues>
     <gender>Feminine</gender>
+    <nameFieldLabel><!-- Assuta Employee Name --></nameFieldLabel>
 </CustomObjectTranslation>

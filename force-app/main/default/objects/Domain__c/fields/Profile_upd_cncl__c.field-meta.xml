@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Profile_upd_cncl__c</fullName>
     <description>פרופילים שיכולים לעדכן או לבטל תורים דרך הכפתור</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Profile upd cncl</label>
     <length>255</length>

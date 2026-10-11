@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>clinic_address__c</fullName>
+    <description>FORMULA_PENDING | Original: Clinic__r.street_address__c + &amp;apos; &amp;apos; +  Clinic__r.city_hidden__c | לאימייל טמפלייט קיט מומחים</description>
     <externalId>false</externalId>
-    <formula>Clinic__r.street_address__c + &apos; &apos; +  Clinic__r.city_hidden__c</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Clinic Address</label>
     <required>false</required>

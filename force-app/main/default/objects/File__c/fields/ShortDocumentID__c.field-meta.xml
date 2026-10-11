@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ShortDocumentID__c</fullName>
     <description>עבור פתולוגיה- סגירת מעגל</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Short Document ID</label>
     <length>50</length>

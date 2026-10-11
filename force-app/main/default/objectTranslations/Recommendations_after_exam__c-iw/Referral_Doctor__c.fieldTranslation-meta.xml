@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label><!-- רופא מפנה --></label>
     <name>Referral_Doctor__c</name>
-    <relationshipLabel><!-- המלצות לאחר בדיקה (רופא מפנה) --></relationshipLabel>
+    <relationshipLabel><!-- Recommendation after examination (רופא מפנה) --></relationshipLabel>
 </CustomFieldTranslation>

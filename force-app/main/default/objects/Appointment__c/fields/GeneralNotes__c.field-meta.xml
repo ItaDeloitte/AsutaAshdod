@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>GeneralNotes__c</fullName>
     <description>הערה כללית מתפנית.</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>General Notes</label>
     <length>1000</length>
     <trackFeedHistory>false</trackFeedHistory>

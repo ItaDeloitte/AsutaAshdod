@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Description__c</fullName>
     <description>תיאור הפקת לקחים עבור פניות הציבור</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Description</label>
     <length>2000</length>
     <trackHistory>false</trackHistory>

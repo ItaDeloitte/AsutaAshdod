@@ -156,7 +156,6 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>הסכם</label>
     <nameField>
-        <encryptionScheme>None</encryptionScheme>
         <label>שם הסכם</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>

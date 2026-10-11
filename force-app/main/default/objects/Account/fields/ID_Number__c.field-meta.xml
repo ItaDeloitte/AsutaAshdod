@@ -3,7 +3,6 @@
     <fullName>ID_Number__c</fullName>
     <description>מספר זיהוי
 ייחודי עבור סוג מספר זיהוי</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>true</externalId>
     <label>Patient/Account ID Number</label>
     <length>50</length>

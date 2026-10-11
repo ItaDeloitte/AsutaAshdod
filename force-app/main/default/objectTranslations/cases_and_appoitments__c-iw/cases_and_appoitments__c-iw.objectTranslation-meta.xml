@@ -22,4 +22,8 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>פניה ופגישה</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- מטופל זה הינו 360. קביעת תורים תתבצע רק מתוך פניית ה-360 של מטופל זה שמקושרת כפניית אב לפנייה זו --></errorMessage>
+        <name>DEL_X360_apt_onlly_from_parent_case</name>
+    </validationRules>
 </CustomObjectTranslation>

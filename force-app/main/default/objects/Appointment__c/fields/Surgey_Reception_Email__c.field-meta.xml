@@ -3,7 +3,6 @@
     <fullName>Surgey_Reception_Email__c</fullName>
     <description>מייל של קבלת הניתוחים באתר - לשליחת מייל על ביטול ניתוח
 יעודכן ע&quot;י PB</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Surgey Reception Email</label>
     <required>false</required>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Name_Required_Contact_RT</fullName>
+    <active>true</active>
+    <description>מחייב שם פרטי באנשי קשר מסוג רשומה Contact. לא ניתן לחייב שם פרטי דרך Layout מאחר ששדה השם הוא שדה מאוחד. מוגבל לסוג רשומה Contact בלבד.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Contact&quot; &amp;&amp; ISBLANK(FirstName)</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>חובה להזין שם פרטי עבור איש קשר מסוג זה.</errorMessage>
+</ValidationRule>

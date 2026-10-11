@@ -1,8 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>RT_HEBREW_NAME__c</fullName>
+    <description>FORMULA_PENDING | Original: IF( RecordType.DeveloperName = &amp;apos;Institutes&amp;apos;, &amp;apos;מכונים&amp;apos;, IF( RecordType.DeveloperName = &amp;apos;Experts&amp;apos;, &amp;apos;מומחים&amp;apos; , IF( RecordType.DeveloperName = &amp;apos;Surgeries&amp;apos;, &amp;apos;ניתוחים&amp;apos;, 
+
+&amp;quot;&amp;quot;
+
+)))</description>
     <externalId>false</externalId>
-    <formula>IF( RecordType.DeveloperName = &apos;Institutes&apos;, &apos;מכונים&apos;, IF( RecordType.DeveloperName = &apos;Experts&apos;, &apos;מומחים&apos; , IF( RecordType.DeveloperName = &apos;Surgeries&apos;, &apos;ניתוחים&apos;, 
+    <formula>IF( RecordType.DeveloperName = &apos;Institutes&apos;, &apos;מכונים&apos;, IF( RecordType.DeveloperName = &apos;Experts&apos;, &apos;מומחים&apos; , IF( RecordType.DeveloperName = &apos;Surgeries&apos;, &apos;ניתוחים&apos;,
 
 &quot;&quot;
 

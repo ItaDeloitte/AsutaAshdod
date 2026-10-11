@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Approving_Factor_Comments__c</fullName>
     <description>שדה המשמש לפניות מסוג נרמ&quot;ר לנושא הפניה &quot;בקשה לביעור&quot;</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Approving Factor Comments</label>
     <length>250</length>

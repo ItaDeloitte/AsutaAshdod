@@ -583,10 +583,6 @@
         <translation><!-- העלאת רמת זיהוי לאיש קשר --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>העתק דיסק</masterLabel>
-        <translation><!-- העתק דיסק --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>הפעולה לא דווחה בתיק</masterLabel>
         <translation><!-- הפעולה לא דווחה בתיק --></translation>
     </picklistValues>
@@ -681,10 +677,6 @@
     <picklistValues>
         <masterLabel>ועדה לענייני הריון</masterLabel>
         <translation><!-- ועדה לענייני הריון --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>זימון באופן פרטי</masterLabel>
-        <translation><!-- זימון באופן פרטי --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>זימון תור חדש</masterLabel>
@@ -1163,10 +1155,6 @@
         <translation><!-- עדכון טלפון --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>עדכון עזר לפגישה</masterLabel>
-        <translation><!-- עדכון עזר לפגישה --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>עדכון על ניתוח שלא צלח</masterLabel>
         <translation><!-- עדכון על ניתוח שלא צלח --></translation>
     </picklistValues>
@@ -1409,10 +1397,6 @@
     <picklistValues>
         <masterLabel>שליחת קבלה / חשבונית למטופל</masterLabel>
         <translation><!-- שליחת קבלה / חשבונית למטופל --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>שליחת תוצאות בדואר</masterLabel>
-        <translation><!-- שליחת תוצאות בדואר --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>שליפת רשומה רפואית</masterLabel>

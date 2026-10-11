@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Sub_expertise_code__c</fullName>
     <description>קוד תת התמחות</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Sub expertise code</label>
     <length>6</length>

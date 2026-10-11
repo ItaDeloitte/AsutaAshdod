@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Operating_room_cost__c</fullName>
     <description>עלות עבור תוספת 15 דק&apos; חדר ניתוח - ממשק מחירונים והסכמים</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Operating room cost</label>
     <length>20</length>

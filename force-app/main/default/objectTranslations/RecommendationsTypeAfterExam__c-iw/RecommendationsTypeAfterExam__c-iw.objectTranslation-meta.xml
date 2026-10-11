@@ -22,4 +22,20 @@
     </caseValues>
     <gender><!-- Masculine --></gender>
     <nameFieldLabel><!-- שם סוג המלצה לאחר בדיקה --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- AssutaDocRecommendations --></label>
+        <name>AssutaDocRecommendations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ביופסיה --></label>
+        <name>Biopsia</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cardiology --></label>
+        <name>Cardiology</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ממוגרפיה --></label>
+        <name>Memo</name>
+    </recordTypes>
 </CustomObjectTranslation>

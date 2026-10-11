@@ -6,9 +6,20 @@
         <value>Event Inquiry</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הEvent Inquiry --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>Event Inquiry</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הEvent Inquiry --></value>
+    </caseValues>
     <gender>Feminine</gender>
+    <nameFieldLabel><!-- Event Inquiry Name --></nameFieldLabel>
 </CustomObjectTranslation>

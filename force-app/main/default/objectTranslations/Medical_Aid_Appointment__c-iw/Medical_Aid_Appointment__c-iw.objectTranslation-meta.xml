@@ -22,4 +22,8 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel>שם עזר לפגישה</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- לא ניתן להקים או לערוך עזר לפגישה שמועדה כבר עבר. --></errorMessage>
+        <name>Cant_edit_or_create_aid_after_appt</name>
+    </validationRules>
 </CustomObjectTranslation>

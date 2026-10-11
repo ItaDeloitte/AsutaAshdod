@@ -21,6 +21,41 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>BuyerAttributes</picklist>
+        <values>
+            <fullName>BusinessUser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Champion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DecisionMaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ExecutiveSponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TechnicalExpert</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Contact_type__c</picklist>
         <values>
             <fullName>מטופל ואנשי קשר למטופל</fullName>
@@ -28,6 +63,44 @@
         </values>
         <values>
             <fullName>עובד אסותא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GenderIdentity</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonbinary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Listed</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -43,6 +116,49 @@
         </values>
         <values>
             <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>AbandoningWhatsApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound_Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assutaWebsite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>commercialMails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>dataBase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -66,6 +182,29 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>MaritalStatus</picklist>
+        <values>
+            <fullName>Divorced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Married</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Separated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Widowed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Name</picklist>
         <values>
             <fullName>Dr%2E</fullName>
@@ -85,6 +224,33 @@
         </values>
         <values>
             <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pronouns</picklist>
+        <values>
+            <fullName>He%2FHim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>He%2FThey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>She%2FHer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>She%2FThey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>They%2FThem</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -141,78 +307,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Facebook Messenger</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Fax</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mail</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Phone</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>SMS</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Unknown</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Whatsapp</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא פעיל</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>LeadSource</picklist>
-        <values>
-            <fullName>AbandoningWhatsApp</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Inbound_Call</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Web</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>assutaWebsite</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>calls</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>commercialMails</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>dataBase</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>doctors</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>facebook</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>otherApplications</fullName>
             <default>false</default>
         </values>
     </picklistValues>

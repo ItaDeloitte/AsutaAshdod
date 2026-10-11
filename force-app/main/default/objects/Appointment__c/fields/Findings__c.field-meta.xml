@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Findings__c</fullName>
     <description>ממצאים מהפניית רופא לניתוח</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Findings</label>
     <length>32768</length>
     <trackFeedHistory>false</trackFeedHistory>

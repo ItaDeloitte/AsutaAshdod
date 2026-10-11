@@ -4,7 +4,6 @@
     <businessStatus>Active</businessStatus>
     <caseSensitive>false</caseSensitive>
     <description>נועד לטובת הסבות נתונים לשקף את מספר האירוע במערכת הדינאמיקס</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>true</externalId>
     <label>Dynamics Case Number</label>
     <length>255</length>

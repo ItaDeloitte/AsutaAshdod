@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Queue_from_doc__c</fullName>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>File Queue</label>
     <length>240</length>

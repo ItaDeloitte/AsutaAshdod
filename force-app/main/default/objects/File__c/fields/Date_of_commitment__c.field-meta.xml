@@ -3,7 +3,6 @@
     <fullName>Date_of_commitment__c</fullName>
     <description>תאריך הפקת התחייבות
 מגיע ממכבי</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Date of commitment</label>
     <required>false</required>
     <trackHistory>false</trackHistory>

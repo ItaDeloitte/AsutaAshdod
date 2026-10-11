@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Icon_payer__c</fullName>
+    <description>FORMULA_PENDING | Original: IF(ISBLANK( PayerFactor__c ),&amp;quot;&amp;quot;,PayerFactor__r.Icon__c)</description>
     <externalId>false</externalId>
-    <formula>IF(ISBLANK( PayerFactor__c ),&quot;&quot;,PayerFactor__r.Icon__c)</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Payer Factor Icon</label>
     <required>false</required>

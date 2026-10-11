@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Cancellation_date_time__c</fullName>
     <description>מחזיק את תאריך ושעת ביטול הפגישה לטובת חישוב זכאות לזיכויים</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Cancellation Date/Time</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

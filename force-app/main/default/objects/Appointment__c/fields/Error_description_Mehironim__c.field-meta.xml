@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Error_description_Mehironim__c</fullName>
     <description>הודעת שגיאה מממשק מחירונים והסכמים מתפנית</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Error description Mehironim</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

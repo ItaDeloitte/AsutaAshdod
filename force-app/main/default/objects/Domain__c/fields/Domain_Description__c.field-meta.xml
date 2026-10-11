@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Domain_Description__c</fullName>
     <description>תיאור (רקע) התחום</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Domain Description</label>
     <length>32768</length>
     <trackHistory>false</trackHistory>

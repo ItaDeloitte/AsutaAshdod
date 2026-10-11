@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Email__c</fullName>
     <description>כתובת דוא&quot;ל לרופא או לקבוצת רופאים</description>
-    <encryptionScheme>CaseInsensitiveDeterministicEncryption</encryptionScheme>
     <externalId>false</externalId>
     <label>Doctor&apos;s Email</label>
     <required>false</required>

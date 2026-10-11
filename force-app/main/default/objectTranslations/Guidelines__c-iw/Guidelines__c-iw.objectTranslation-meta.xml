@@ -22,4 +22,8 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>שם ההנחייה</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- אם סוג ההנחיה הינה &quot;הנחיית מסמכים&quot;  חובה לבחור ערך עבור &quot;מסמכים נדרשים&quot;. --></errorMessage>
+        <name>If_Guideline_Type_D_Required_Documents</name>
+    </validationRules>
 </CustomObjectTranslation>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Owner_For_Transfer__c</fullName>
     <description>הבעלים אליו מועבר התור</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Owner For Transfer</label>
     <length>30</length>

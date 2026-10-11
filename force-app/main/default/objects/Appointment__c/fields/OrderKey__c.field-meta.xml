@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>OrderKey__c</fullName>
     <description>שדה עזר שנועד לתמוך בממשק זימון תורים</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Order Key</label>
     <length>50</length>

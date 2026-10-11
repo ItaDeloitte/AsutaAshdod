@@ -2,13 +2,13 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Icon_insurgence__c</fullName>
     <externalId>false</externalId>
-    <formula>IF(ISPICKVAL(Insurer_factor__c, &quot;2&quot;), IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXPm&amp;oid=00DKI000000MTJU&amp;lastMod=1560868699000&quot;, &quot;&quot; , 30, 30),
-IF(ISPICKVAL(Insurer_factor__c, &quot;4&quot;), IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXPr&amp;oid=00DKI000000MTJU&amp;lastMod=1560677722000&quot;, &quot;&quot; , 30, 30),
-IF(ISPICKVAL(Insurer_factor__c, &quot;1&quot;), IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXPw&amp;oid=00DKI000000MTJU&amp;lastMod=1560677600000&quot;, &quot;&quot; , 30, 30),
-IF(ISPICKVAL(Insurer_factor__c, &quot;3&quot;), IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXQ1&amp;oid=00DKI000000MTJU&amp;lastMod=1560677837000&quot;, &quot;&quot; , 30, 30),
+    <formula>IF(ISPICKVAL(Insurer_factor__c, &quot;2&quot;), IMAGE(&quot;/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068Wm0000029B1V&amp;operationContext=DELIVERY&amp;contentId=05TWm000003Lr1F&amp;page=0&amp;d=/a/Wm0000005N2P/N3YTX2ujQAPB0xta8MYQhukwEdwoOCUr0vpEvst0SNA&amp;oid=00DWm000002DPp3&amp;dpt=null&amp;viewId=&quot;, &quot;מכבי&quot; , 30, 30),
+IF(ISPICKVAL(Insurer_factor__c, &quot;4&quot;), IMAGE(&quot;/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068Wm0000029Azt&amp;operationContext=DELIVERY&amp;contentId=05TWm000003LkMX&amp;page=0&amp;d=/a/Wm0000005N0n/Smo6Dhbm7clCqX33fKHWJ0ya7wQUXxwzlg.mefv6MgQ&amp;oid=00DWm000002DPp3&amp;dpt=null&amp;viewId=&quot;, &quot;לאומית&quot; , 30, 30),
+IF(ISPICKVAL(Insurer_factor__c, &quot;1&quot;), IMAGE(&quot;/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=068Wm0000029AyH&amp;operationContext=DELIVERY&amp;contentId=05TWm000003LrxH&amp;page=0&amp;d=/a/Wm0000005MzB/gNzsnzkMxppxXy1jIq9O04c8OlF0n8watK9kHAQV0JA&amp;oid=00DWm000002DPp3&amp;dpt=null&amp;viewId=&quot;, &quot;כללית&quot; , 30, 30),
+IF(ISPICKVAL(Insurer_factor__c, &quot;3&quot;), IMAGE(&quot;/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068Wm0000029B6L&amp;operationContext=DELIVERY&amp;contentId=05TWm000003Lwk1&amp;page=0&amp;d=/a/Wm0000005N41/URWiUS4H.VpsOV.UdpT26LLaWqog2svKN_aB412WARI&amp;oid=00DWm000002DPp3&amp;dpt=null&amp;viewId=&quot;, &quot;מאוחדת&quot; , 30, 30),
 IF(ISPICKVAL(Insurer_factor__c, &quot;36&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQ6&amp;oid=00DKI000000MTJU&amp;lastMod=1559476346000&quot;, &quot;&quot; , 30, 30),
 IF(ISPICKVAL(Insurer_factor__c, &quot;תיירות מרפא&quot;), IMAGE(&quot;https://assuta--c.documentforce.com/servlet/servlet.ImageServer?id=0154J000000cXQB&amp;oid=00DKI000000MTJU&amp;lastMod=1559476681000&quot;, &quot;&quot; , 30, 30),
-IF(ISPICKVAL(Insurer_factor__c, &quot;0&quot;), IMAGE(&quot;https://assuta.my.salesforce.com/servlet/servlet.ImageServer?id=0154J000000cXmY&amp;oid=00DKI000000MTJU&amp;lastMod=1565102370000&quot;, &quot;&quot; , 30, 30),
+IF(ISPICKVAL(Insurer_factor__c, &quot;0&quot;), &quot;פרטי&quot;,
 &quot;&quot;)))))))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Insurance Factor Icon</label>

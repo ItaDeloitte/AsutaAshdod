@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Directions__c</fullName>
     <description>דרכי הגעה</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>Directions</label>
     <length>32768</length>
     <trackHistory>false</trackHistory>

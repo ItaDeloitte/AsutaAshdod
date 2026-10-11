@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Appointments</fullName>
     <active>true</active>
     <businessProcess>זימון תורים למכונים ומרפאות</businessProcess>
     <compactLayoutAssignment>Zimun</compactLayoutAssignment>
-    <label>זימון תורים למכונים ומרפאות</label>
+    <label>זימון תור</label>
     <picklistValues>
         <picklist>ActivityType__c</picklist>
         <values>
@@ -652,11 +652,7 @@
     <picklistValues>
         <picklist>Case_subject__c</picklist>
         <values>
-            <fullName>ContinueTreatment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Request_to_coordinate_amniocentesis_Digital</fullName>
+            <fullName>בירור אודות תור</fullName>
             <default>false</default>
         </values>
         <values>
@@ -664,55 +660,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>העברת שיחה למוקד אחר</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>זימון תור חדש</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>זימון תור חדש - קורונה</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>עדכון תור קיים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין REZOM</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין אנדרולוגיה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין ביופסיית פיוז%27ן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין בירור מהיר עיניים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין הזעת יתר</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין כאב</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין לייזר קטרקט</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין נוירוכירורגיה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>קמפיין שימור ביציות</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1333,31 +1285,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Facebook</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>SMS</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Web_Site</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>WhatsApp</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>דואר אלקטרוני</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>זימון אינטרנטי אסותא</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>זימון אינטרנטי מכבי</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1373,35 +1301,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>פייסבוק מסנג%27ר</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>פניות הציבור</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>פקס</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פרונטלי</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>שיחה יוצאת חיצונית</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>שיחה יוצאת פנימית</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>שיחה נכנסת חיצונית</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>שיחה נכנסת פנימית</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1759,10 +1663,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>בבדיקה מול גורם מקצועי</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>חוסר מענה</fullName>
             <default>false</default>
         </values>
@@ -1772,10 +1672,6 @@
         </values>
         <values>
             <fullName>פניה כפולה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פניה שגויה</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1907,6 +1803,21 @@
         </values>
         <values>
             <fullName>Research_Transfer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Refund_NotApproved__c</picklist>
+        <values>
+            <fullName>אי חיוב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>החזר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פיצוי</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -3886,6 +3797,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>בוצעה חזרה למטופל ונסגר מעגל טיפול</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>המטופל ביקש שיחזרו אליו ממוקד הזימון</fullName>
             <default>false</default>
         </values>
@@ -3895,6 +3810,10 @@
         </values>
         <values>
             <fullName>נעשו מספר ניסיונות להשגת המטופל ללא הצלחה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פניה הוחזרה לבעלים הקודמים להמשך טיפול</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4146,21 +4065,20 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>payment_been_transferred__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>preferd_chanal_case__c</picklist>
         <values>
             <fullName>Email</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Facebook Messenger</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mail</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Phone</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4168,16 +4086,8 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Unknown</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Whatsapp</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא פעיל</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
     </picklistValues>
     <picklistValues>
@@ -4475,6 +4385,49 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>subStatus__c</picklist>
+        <values>
+            <fullName>Didn%27t execute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t need next appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Next appointment scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested in next appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for reminder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>appointment was not summoned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>sub_case_subject__c</picklist>
         <values>
             <fullName>אחזור מידע מהארכיון ורשומות רפואיות</fullName>
@@ -4525,23 +4478,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>זימון באופן פרטי</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>זימון תור חדש</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>זימון תור חדש - פרסונל</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>טיפול בתקלה באתר</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>כתובות ודרכי הגעה</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4565,39 +4502,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>מוקד מידע וזימון תורים %E2%80%93 משימות מהמכונים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מוקד מידע וזימון תורים - מאסטרים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מוקד מידע וזימון תורים - מתחילים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מוקד מידע וזימון תורים - מתקדמים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מוקד מידע וזימון תורים- ייעוץ טרום מי שפיר</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>מערכת קודמת</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מרכז מומיחים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מרכז ניתוחים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>עדכון עזר לפגישה</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4621,80 +4526,22 @@
             <default>false</default>
         </values>
     </picklistValues>
-
     <picklistValues>
         <picklist>tofes_web__c</picklist>
         <values>
-            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 1</fullName>
+            <fullName>טופס 1</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 2</fullName>
+            <fullName>טופס 2</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 3</fullName>
+            <fullName>טופס 3</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 4</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>subStatus__c</picklist>
-        <values>
-            <fullName>Didn%27t execute</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Don%27t need next appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Next appointment scheduled</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>No answer</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Not interested in next appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Survey sent</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for agent</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for reminder</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>appointment was not summoned</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>    <picklistValues>
-        <picklist>Refund_NotApproved__c</picklist>
-        <values>
-            <fullName>אי חיוב</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>החזר</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פיצוי</fullName>
+            <fullName>טופס 4</fullName>
             <default>false</default>
         </values>
     </picklistValues>

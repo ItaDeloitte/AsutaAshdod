@@ -3,7 +3,6 @@
     <fullName>ETL_Unique_Identifier__c</fullName>
     <caseSensitive>false</caseSensitive>
     <description>משמש ליצירת מזהה ייחודי לכל קשר בין פנייה לתור שמגיעים בהסבות</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>true</externalId>
     <label>ETL Unique Identifier</label>
     <length>255</length>

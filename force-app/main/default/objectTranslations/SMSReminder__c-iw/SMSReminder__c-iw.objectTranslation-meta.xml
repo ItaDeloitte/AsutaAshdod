@@ -6,9 +6,20 @@
         <value>SMSReminder</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הSMSReminder --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>SMSReminders</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הSMSReminders --></value>
+    </caseValues>
     <gender>Feminine</gender>
+    <nameFieldLabel><!-- SMSReminder Name --></nameFieldLabel>
 </CustomObjectTranslation>

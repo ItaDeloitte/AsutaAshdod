@@ -155,7 +155,6 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>VDN</label>
     <nameField>
-        <encryptionScheme>None</encryptionScheme>
         <label>VDN Name</label>
         <trackHistory>true</trackHistory>
         <type>Text</type>

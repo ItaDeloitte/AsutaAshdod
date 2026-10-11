@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_subject_when_Owner_is_Queue</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(ISNULL( OwnerId )), Change_Owner_To_Queue__c=TRUE, NOT(Subject = &quot;העברת פניה למחלקה&quot;))</errorConditionFormula>
+    <errorMessage>&quot;כשבעלי הפנייה הם תור העבודה של המחלקה, נושא הפנייה צריך להיות &quot;העברת פניה למחלקה</errorMessage>
+</ValidationRule>

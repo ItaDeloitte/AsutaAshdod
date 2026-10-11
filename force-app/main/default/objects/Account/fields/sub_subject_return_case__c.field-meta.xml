@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>sub_subject_return_case__c</fullName>
     <description>השדה יכיל את תתי-הנושא של הפניות החוזרות של החשבון מהשבוע האחרון</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <inlineHelpText>השדה יכיל את תתי-הנושא של הפניות החוזרות של החשבון מהשבוע האחרון</inlineHelpText>
     <label>Sub subject return case</label>

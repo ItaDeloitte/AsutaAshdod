@@ -1,8 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Has_a_kit_been_sent__c</fullName>
+    <description>FORMULA_PENDING | Original: if( Medical_Procedure__r.Confidentiality__c =true,&amp;apos;לא נשלח קיט - פעולה חסויה&amp;apos;,  if(ISBLANK(Case__r.SMS_Phone_Number__c )=true,&amp;apos;חסר טלפון בפניה&amp;apos;,if( ISPICKVAL( Patient_Account__r.Mailing_approval__c , &amp;apos;לא מאשר דיוור - הכל&amp;apos;)=true ,&amp;apos;מטופל לא מאשר דיוור&amp;apos;,if( ISBLANK( Accession_Number__c )=true,&amp;apos;חסר מזהה מערכת&amp;apos;,&amp;apos;תקין,ניתן לשלוח קיט&amp;apos; ))))</description>
     <externalId>false</externalId>
-    <formula>if( Medical_Procedure__r.Confidentiality__c =true,&apos;לא נשלח קיט - פעולה חסויה&apos;,  if(ISBLANK(Case__r.SMS_Phone_Number__c )=true,&apos;חסר טלפון בפניה&apos;,if( ISPICKVAL( Patient_Account__r.Mailing_approval__c , &apos;לא מאשר דיוור - הכל&apos;)=true ,&apos;מטופל לא מאשר דיוור&apos;,if( ISBLANK( Accession_Number__c )=true,&apos;חסר מזהה מערכת&apos;,&apos;תקין,ניתן לשלוח קיט&apos; ))))</formula>
+    <formula>IF( Medical_Procedure__r.Confidentiality__c = true, &quot;לא נשלח קיט - פעולה חסויה&quot;,
+IF( ISBLANK( Case__r.SMS_Phone_Number__c ) = true, &quot;חסר טלפון בפניה&quot;,
+IF( ISPICKVAL( Patient_Account__r.Mailing_approval__c, &quot;לא מאשר דיוור - הכל&quot; ) = true, &quot;מטופל לא מאשר דיוור&quot;,
+IF( ISBLANK( Accession_Number__c ) = true, &quot;חסר מזהה מערכת&quot;,
+&quot;תקין, ניתן לשלוח קיט&quot;
+))))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Is It Possible To Send A Kit?</label>
     <required>false</required>

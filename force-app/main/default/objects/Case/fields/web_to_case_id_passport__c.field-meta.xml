@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>web_to_case_id_passport__c</fullName>
     <description>אמצעי הזיהוי כפי שהוכנס על ידי המשתמש</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Web To Case Id Passport</label>
     <length>25</length>

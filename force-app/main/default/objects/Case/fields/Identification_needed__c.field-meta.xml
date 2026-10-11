@@ -1,24 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Identification_needed__c</fullName>
+    <description>FORMULA_PENDING | Original: IF(AND(ISPICKVAL(Case_subject__c , &amp;quot;כתובות ודרכי הגעה&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;שעות פעילות מכונים ומרפאות&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;טיפול אדמיניסטרטיבי טרום הניתוח&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;מועמד ל-360&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;עדכון פרטים אישיים&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;שעות פעילות מוקדי השירות של אסותא&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;נגישות&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;דרושים/דרושות&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;העברת פנייה למחלקה&amp;quot;) || ISPICKVAL(Case_subject__c , &amp;quot;זימון תור חדש&amp;quot;)|| ISPICKVAL(Case_subject__c , &amp;quot;זימון רופא מומחה&amp;quot;),NOT(OTP_Succ...(truncated) | ע&quot;פ נושא הפנייה, מוחלט סוג הזיהוי הנדרש שהנציג צריך לבצע מול המטופל בטרם הוא נותן לו מענה</description>
     <externalId>false</externalId>
-    <formula>IF(AND(ISPICKVAL(Case_subject__c , &quot;כתובות ודרכי הגעה&quot;) || ISPICKVAL(Case_subject__c , &quot;שעות פעילות מכונים ומרפאות&quot;) || ISPICKVAL(Case_subject__c , &quot;טיפול אדמיניסטרטיבי טרום הניתוח&quot;) || ISPICKVAL(Case_subject__c , &quot;מועמד ל-360&quot;) || ISPICKVAL(Case_subject__c , &quot;עדכון פרטים אישיים&quot;) || ISPICKVAL(Case_subject__c , &quot;שעות פעילות מוקדי השירות של אסותא&quot;) || ISPICKVAL(Case_subject__c , &quot;נגישות&quot;) || ISPICKVAL(Case_subject__c , &quot;דרושים/דרושות&quot;) || ISPICKVAL(Case_subject__c , &quot;העברת פנייה למחלקה&quot;) || ISPICKVAL(Case_subject__c , &quot;זימון תור חדש&quot;)|| ISPICKVAL(Case_subject__c , &quot;זימון רופא מומחה&quot;),NOT(OTP_Succeeded__c)) ,IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlO&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
-IF(AND(ISPICKVAL(Case_subject__c , &quot;עדכון תור קיים&quot;) || ISPICKVAL(Case_subject__c , &quot;ממוגרפיה&quot;) || ISPICKVAL(Case_subject__c , &quot;בירור אודות תור&quot;) || ISPICKVAL(Case_subject__c , &quot;עדכון תור לרופא&quot;) ,NOT(OTP_Succeeded__c)), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlM&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
-
-IF(AND(ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) || ISPICKVAL(Case_subject__c,&quot;טיפול אדמיניסטרטיבי לאחר הניתוח&quot;)||(ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) &amp;&amp; ISPICKVAL(sub_case_subject__c,&apos;אחזור מידע מהארכיון ורשומות רפואיות&apos;)) || (ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) &amp;&amp; ISPICKVAL(sub_case_subject__c,&apos;בקשה לשליחת תוצאות&apos;) || RecordType.DeveloperName = &quot;PublicInquiries&quot; || RecordType.DeveloperName = &quot;PublicInquiriesItem&quot; ) ,NOT(OTP_Succeeded__c)), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000cXlN&amp;oid=00DKI000000MTJU&amp;lastMod=1559558276000&quot;, &quot;&quot; , 30, 30),
-
-IF(AND(ISPICKVAL(Case_subject__c , &quot;כתובות ודרכי הגעה&quot;) || ISPICKVAL(Case_subject__c , &quot;שעות פעילות מכונים ומרפאות&quot;) || ISPICKVAL(Case_subject__c , &quot;טיפול אדמיניסטרטיבי טרום הניתוח&quot;) || ISPICKVAL(Case_subject__c , &quot;מועמד ל-360&quot;)|| ISPICKVAL(Case_subject__c , &quot;זימון תור חדש&quot;)|| ISPICKVAL(Case_subject__c , &quot;זימון רופא מומחה&quot;),OTP_Succeeded__c) ,IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000IfAH&amp;oid=00DKI000000MTJU&amp;lastMod=1568903149000&quot;, &quot;&quot; , 30, 30),
-
-IF(AND(ISPICKVAL(Case_subject__c , &quot;עדכון תור קיים&quot;) || ISPICKVAL(Case_subject__c , &quot;ממוגרפיה&quot;) || ISPICKVAL(Case_subject__c , &quot;בירור אודות תור&quot;) || ISPICKVAL(Case_subject__c , &quot;עדכון תור לרופא&quot;),OTP_Succeeded__c), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000IfAC&amp;oid=00DKI000000MTJU&amp;lastMod=1568903104000&quot;, &quot;&quot; , 30, 30),
-
-IF(AND(ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) || ISPICKVAL(Case_subject__c,&quot;טיפול אדמיניסטרטיבי לאחר הניתוח&quot;)|| (ISPICKVAL(Case_subject__c , &quot;בירור תוצאות בדיקה&quot;) &amp;&amp; ISPICKVAL(sub_case_subject__c,&apos;בקשה לשליחת תוצאות&apos;) || RecordType.DeveloperName = &quot;PublicInquiries&quot; || RecordType.DeveloperName = &quot;PublicInquiriesItem&quot; ) ,OTP_Succeeded__c), IMAGE(&quot;https://assuta--c.um5.content.force.com/servlet/servlet.ImageServer?id=0154J000000IfA7&amp;oid=00DKI000000MTJU&amp;lastMod=1568903045000&quot;, &quot;&quot; , 30, 30),&quot;&quot;
-
-)
-)
-)
-)
-)
-)</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>צהוב - בסיסי, כתום - רגיל, אדום - מחמיר</inlineHelpText>
     <label>Identification needed</label>

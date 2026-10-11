@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Medical_Procedure_code__c</fullName>
+    <description>FORMULA_PENDING | Original: Medical_Procedure__r.Procedure_Code__c</description>
     <externalId>false</externalId>
-    <formula>Medical_Procedure__r.Procedure_Code__c</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Medical Procedure Code</label>
     <required>false</required>

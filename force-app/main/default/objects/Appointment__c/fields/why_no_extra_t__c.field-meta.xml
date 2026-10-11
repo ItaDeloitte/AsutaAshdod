@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>why_no_extra_t__c</fullName>
     <description>סקר מומחים לאחר תור</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Why No Extra Treatment?</label>
     <length>255</length>

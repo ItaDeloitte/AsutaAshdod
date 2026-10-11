@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Account_ID_TMP__c</fullName>
     <description>Used for bot prechat</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Account ID TMP</label>
     <length>255</length>

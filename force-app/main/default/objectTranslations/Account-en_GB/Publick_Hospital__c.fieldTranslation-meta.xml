@@ -3,10 +3,6 @@
     <label><!-- Public Hospital --></label>
     <name>Publick_Hospital__c</name>
     <picklistValues>
-        <masterLabel>המרכז הרפואי האוניברסיטאי סורוקה</masterLabel>
-        <translation><!--   המרכז הרפואי האוניברסיטאי סורוקה --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>אסותא אשדוד ציבורי</masterLabel>
         <translation><!-- אסותא אשדוד ציבורי --></translation>
     </picklistValues>
@@ -145,6 +141,10 @@
     <picklistValues>
         <masterLabel>המרכז הרפואי בית גדי נתניה</masterLabel>
         <translation><!-- המרכז הרפואי בית גדי נתניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>המרכז הרפואי האוניברסיטאי סורוקה</masterLabel>
+        <translation><!-- המרכז הרפואי האוניברסיטאי סורוקה --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>המרכז הרפואי הגריאטרי הרצפלד בגדרה</masterLabel>

@@ -3,7 +3,6 @@
     <fullName>End_Date_Commitment__c</fullName>
     <description>תאריך סיום תוקף התחייבות
 מגיע בממשק ממכבי</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>End Date Commitment</label>
     <required>false</required>
     <trackHistory>false</trackHistory>

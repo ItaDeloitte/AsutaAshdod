@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Canceled_Reason__c</fullName>
     <description>במידה והתור בוטל, מאיזו סיבה</description>
@@ -321,7 +321,11 @@
                 <default>false</default>
                 <label>תור הוקדם מהאזור האישי</label>
             </value>
+            <value>
+                <fullName>64</fullName>
+                <default>false</default>
+                <label>בוטל תור במסגרת רשימת המתנה</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
-

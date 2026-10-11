@@ -156,7 +156,6 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>City</label>
     <nameField>
-        <encryptionScheme>None</encryptionScheme>
         <label>City Name</label>
         <type>Text</type>
     </nameField>

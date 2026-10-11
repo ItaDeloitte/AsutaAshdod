@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offer_Appointment_Hours__c</fullName>
+    <description>The activity hours during which an appointment can be offered from the waiting list (multi-select). &apos;All Hours&apos; is the default value.</description>
+    <inlineHelpText>Select one or more time windows during which an appointment can be offered.</inlineHelpText>
+    <label>Activity hours to offer appointment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All_Hours</fullName>
+                <default>true</default>
+                <label>כל השעות</label>
+            </value>
+            <value>
+                <fullName>Morning</fullName>
+                <default>false</default>
+                <label>בוקר</label>
+            </value>
+            <value>
+                <fullName>Noon</fullName>
+                <default>false</default>
+                <label>צהריים</label>
+            </value>
+            <value>
+                <fullName>Evening</fullName>
+                <default>false</default>
+                <label>ערב</label>
+            </value>
+            <value>
+                <fullName>Night</fullName>
+                <default>false</default>
+                <label>לילה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

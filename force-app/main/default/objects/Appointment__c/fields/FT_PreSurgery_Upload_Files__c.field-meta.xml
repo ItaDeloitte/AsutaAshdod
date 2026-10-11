@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FT_PreSurgery_Upload_Files__c</fullName>
+    <description>FORMULA_PENDING | Original: &amp;quot;https://&amp;quot;&amp;amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;amp;&amp;quot;/PreSurgery?fld57=&amp;quot;&amp;amp; formtitan_id_2__c</description>
     <externalId>false</externalId>
-    <formula>&quot;https://&quot;&amp;$Setup.Form_Titan_Domain__c.Domain__c&amp;&quot;/PreSurgery?fld57=&quot;&amp; formtitan_id_2__c</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>FT PreSurgery Upload Files</label>
     <required>false</required>

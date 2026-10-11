@@ -11,12 +11,12 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>פעיל</fullName>
+                <fullName>1</fullName>
                 <default>false</default>
                 <label>פעיל</label>
             </value>
             <value>
-                <fullName>לא פעיל</fullName>
+                <fullName>2</fullName>
                 <default>false</default>
                 <label>לא פעיל</label>
             </value>

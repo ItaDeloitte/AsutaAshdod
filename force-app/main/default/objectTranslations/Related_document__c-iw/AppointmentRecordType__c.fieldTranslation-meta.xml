@@ -4,14 +4,14 @@
     <name>AppointmentRecordType__c</name>
     <picklistValues>
         <masterLabel>Experts</masterLabel>
-        <translation><!-- Experts --></translation>
+        <translation>התייעצות עם מומחים</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Institutes</masterLabel>
-        <translation><!-- Institutes --></translation>
+        <translation>מכונים</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Surgeries</masterLabel>
-        <translation><!-- Surgeries --></translation>
+        <translation>ניתוחים</translation>
     </picklistValues>
 </CustomFieldTranslation>

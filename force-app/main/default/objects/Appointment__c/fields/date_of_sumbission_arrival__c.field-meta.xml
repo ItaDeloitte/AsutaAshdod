@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>date_of_sumbission_arrival__c</fullName>
-    <encryptionScheme>None</encryptionScheme>
     <label>Submission Approval Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

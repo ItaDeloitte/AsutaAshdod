@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Procedure_expected_Duration__c</fullName>
     <description>צפי דקות לפעולה- משך הפעולה</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Procedure expected Duration (min)</label>
     <length>255</length>

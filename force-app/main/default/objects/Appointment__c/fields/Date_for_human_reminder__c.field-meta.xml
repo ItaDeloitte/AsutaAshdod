@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Date_for_human_reminder__c</fullName>
-    <encryptionScheme>None</encryptionScheme>
     <label>Agent Reminder Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

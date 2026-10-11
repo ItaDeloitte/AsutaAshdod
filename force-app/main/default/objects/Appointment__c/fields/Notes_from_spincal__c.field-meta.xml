@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Notes_from_spincal__c</fullName>
     <description>הערות על חדר ניתוח מספינקל</description>
-    <encryptionScheme>None</encryptionScheme>
     <inlineHelpText>מספינקל</inlineHelpText>
     <label>Notes from spincal</label>
     <length>32768</length>

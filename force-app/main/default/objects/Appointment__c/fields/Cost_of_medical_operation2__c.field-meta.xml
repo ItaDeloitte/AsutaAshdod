@@ -3,7 +3,6 @@
     <fullName>Cost_of_medical_operation2__c</fullName>
     <defaultValue>&apos;0&apos;</defaultValue>
     <description>עלות הפעולה הרפואית, 2 - ממשק מחירונים והסכמים</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Cost of medical operation2</label>
     <length>20</length>

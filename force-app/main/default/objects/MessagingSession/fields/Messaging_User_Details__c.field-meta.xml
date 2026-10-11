@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Messaging_User_Details__c</fullName>
+    <description>מרכז את פרטי המטופל (שם מלא, תאריך לידה וגורם מבטח) מהחשבון המקושר לשיחה, לתצוגה מהירה של הנציג על שיחת המסרים. מוצג רק כאשר קיים חשבון מקושר.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  ISBLANK(New_Account__c),
+  &quot;&quot;,
+  New_Account__r.Name &amp;
+  IF( ISBLANK(TEXT(New_Account__r.LeadBirthdate__c)), &quot;&quot;, BR() &amp; TEXT(New_Account__r.LeadBirthdate__c) ) &amp;
+  IF( ISBLANK(New_Account__r.Insurer_Factor_text__c), &quot;&quot;, BR() &amp; New_Account__r.Insurer_Factor_text__c )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>פרטי המשתמש במסרים</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

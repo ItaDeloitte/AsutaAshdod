@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>URL_To_ID_File__c</fullName>
     <description>קישור לקובץ תעודת זהות - קבלה מהבית</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>ID File Link</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

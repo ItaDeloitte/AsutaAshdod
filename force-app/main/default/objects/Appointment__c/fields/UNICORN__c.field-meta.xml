@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>UNICORN__c</fullName>
     <description>UNICORN - קבלה מהבית</description>
-    <encryptionScheme>None</encryptionScheme>
     <label>UNICORN</label>
     <length>300</length>
     <trackFeedHistory>false</trackFeedHistory>

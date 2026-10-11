@@ -3,10 +3,6 @@
     <label><!-- Preferred Case Communication Channel --></label>
     <name>preferd_chanal_case__c</name>
     <picklistValues>
-        <masterLabel>Facebook Messenger</masterLabel>
-        <translation><!-- Facebook Messenger --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>SMS</masterLabel>
         <translation><!-- SMS --></translation>
     </picklistValues>
@@ -15,23 +11,7 @@
         <translation><!-- Whatsapp --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>דואר</masterLabel>
-        <translation><!-- דואר --></translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>דואר אלקטרוני</masterLabel>
         <translation><!-- דואר אלקטרוני --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>טלפון</masterLabel>
-        <translation><!-- טלפון --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>לא ידוע</masterLabel>
-        <translation><!-- לא ידוע --></translation>
-    </picklistValues>
-    <picklistValues>
-        <masterLabel>לא פעיל</masterLabel>
-        <translation><!-- לא פעיל --></translation>
     </picklistValues>
 </CustomFieldTranslation>

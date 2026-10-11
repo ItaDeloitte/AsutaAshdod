@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>code__c</fullName>
     <description>קוד יומן - can this be deleted?</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Code</label>
     <length>10</length>

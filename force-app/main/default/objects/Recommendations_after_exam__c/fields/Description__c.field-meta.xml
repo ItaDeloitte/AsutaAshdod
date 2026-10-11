@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Description__c</fullName>
     <description>הסבות</description>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>תיאור</label>
     <length>255</length>

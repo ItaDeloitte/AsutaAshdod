@@ -6,9 +6,20 @@
         <value>Service Line</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הService Line --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>Service Lines</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הService Lines --></value>
+    </caseValues>
     <gender>Feminine</gender>
+    <nameFieldLabel><!-- Service Line  Name --></nameFieldLabel>
 </CustomObjectTranslation>
