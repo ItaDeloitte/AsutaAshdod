@@ -5697,3 +5697,10 @@ node_modules/
 **/dashboards/ramat_infod/FckeuWjibSJOolZNUHlDaSxBxYsGoc1.dashboard-meta.xml
 **/dashboards/rishon_infod/FckeuWjibSJOolZNUHlDaSxBxYsGoc11.dashboard-meta.xml
 **/dashboards/shikum_bait/NRIJWoQoTpoQdqUdcYHvOUJCNKeYKX.dashboard-meta.xml
+
+# ===== PROD WAVE 2 TEMPORARY EXCLUSIONS =====
+# TEMPORARY EXCLUDE — Medical_Procedure__c.number_of_days_tizkurit
+# Reason: Active validation rule references deprecated fields SMS_Reminder__c and Voice_Reminder__c.
+# The rule is ACTIVE in astDev. Excluding until the business owner rewrites the rule.
+# Restore: remove this line, re-add to manifest, and deploy after rewrite.
+force-app/main/default/objects/Medical_Procedure__c/validationRules/number_of_days_tizkurit.validationRule-meta.xml
