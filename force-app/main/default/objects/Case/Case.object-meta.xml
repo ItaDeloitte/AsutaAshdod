@@ -196,6 +196,14 @@
         <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
         <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
         <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeStatus</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>MassMergeCase</excludedStandardButtons>
+        <excludedStandardButtons>MassAddToActionableList</excludedStandardButtons>
+        <excludedStandardButtons>MassAssignRecordLabel</excludedStandardButtons>
+        <excludedStandardButtons>OmniChannelMassRouteWork</excludedStandardButtons>
+        <excludedStandardButtons>SendToGrid</excludedStandardButtons>
         <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
@@ -215,7 +223,7 @@
         <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER_NAME</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
 </CustomObject>

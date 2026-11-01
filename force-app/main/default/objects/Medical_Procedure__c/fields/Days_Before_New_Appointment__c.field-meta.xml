@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Before_New_Appointment__c</fullName>
+    <description>How many days before the new appointment date a slot can be offered from the waiting list. Whole number only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of days before the new appointment date within which a slot can be offered.</inlineHelpText>
+    <label>Days before new appointment to offer</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

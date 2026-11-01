@@ -46,3 +46,10 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
+
+# Managed Packages — not deployable from source, installed as packages
+**HealthCloudGA**
+**permissionsets**
+
+# Retrieved/working copy — source of truth is force-app/
+test/

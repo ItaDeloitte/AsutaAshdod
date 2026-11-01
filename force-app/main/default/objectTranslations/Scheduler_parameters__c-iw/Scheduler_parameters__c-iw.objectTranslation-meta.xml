@@ -22,4 +22,32 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>שם</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- כדי לשמור את הרשומה יש לבחור ערכים בשדות יומן/אתר --></errorMessage>
+        <name>Calendar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- כדי לשמור את הרשומה יש להזין ערך בשדה מתאריך --></errorMessage>
+        <name>FromDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- שים לב יש להזין בשדה עד שעה ערך גדול יותר מערך בשדה משעה --></errorMessage>
+        <name>From_to_hour</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- שים לב יש לעדכן ערך כלשהו בשדה פעולה רפואית או תחום --></errorMessage>
+        <name>Medical_Procedure_Or_Domain</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש לבחור תור עבודה להעברה --></errorMessage>
+        <name>OwnerForTransfer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- כדי לשמור את הרשומה יש לבחור ערכים בשדות יומן/אתר --></errorMessage>
+        <name>Site</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- כדי לשמור את הרשומה יש להזין ערך בשדה טקסט להצגה --></errorMessage>
+        <name>Warningmessage</name>
+    </validationRules>
 </CustomObjectTranslation>

@@ -8,5 +8,21 @@
         <plural>true</plural>
         <value>Recommendation after examination</value>
     </caseValues>
+    <recordTypes>
+        <label><!-- ממוגרפיה --></label>
+        <name>Memo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- המלצה מאסותא דוק --></label>
+        <name>RecommendationFromAssutaDoc</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- בתוכנית רפואית תישלח רק המלצה אחת --></errorMessage>
+        <name>DEL_medical_program</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש למלא סיבת סגירה --></errorMessage>
+        <name>close_reason</name>
+    </validationRules>
 </CustomObjectTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tafnit Status --></label>
+    <name>Tafnit_Status__c</name>
+    <picklistValues>
+        <masterLabel>הפסיק פעילות זמנית</masterLabel>
+        <translation><!-- הפסיק פעילות זמנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חסום</masterLabel>
+        <translation><!-- חסום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא פעיל לוגיסטי</masterLabel>
+        <translation><!-- לא פעיל לוגיסטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מועמד</masterLabel>
+        <translation><!-- מועמד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סגור</masterLabel>
+        <translation><!-- סגור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פעיל לוגיסטי</masterLabel>
+        <translation><!-- פעיל לוגיסטי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

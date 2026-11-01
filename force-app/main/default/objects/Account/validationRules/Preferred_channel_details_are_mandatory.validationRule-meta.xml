@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Preferred_channel_details_are_mandatory</fullName>
-    <active>true</active>
-    <description>.חוק המוודא כי פרטי ההתקשרות של דרך ההתקשרות המועדפת מלאים
-לדוגמה, אם דרך ההתקשרות המועדפת היא טלפון, מספר הטלפון חייב להיות מלא.</description>
+    <active>false</active>
+    <description>Preferred_channel_details_are_mandatory_deprecated — בוטל (לא פעיל). הוחלף בחוק Contact_Detail_Required_For_Pref_Channel. חוק זה וידא כי פרטי ההתקשרות של דרך ההתקשרות המועדפת מלאים. ענפי פקס ודואר אינם רלוונטיים לאחר ביטול הערכים.</description>
     <errorConditionFormula>NOT( $User.Id = &apos;0054J000002PIdC&apos; || $User.Id = &apos;0054J000002Q8am&apos; || $User.Id = &apos;0054J000002QSkU&apos; || $User.Id = &apos;0054J000004QaYN&apos; || $User.Id = &apos;0054J000004RQEhQAO&apos; || $User.Id = &apos;0054J000000vlO1QAI&apos;) &amp;&amp;
 ((ISNEW() &amp;&amp; DisableValidation__c = false) 
 &amp;&amp; 
@@ -29,5 +28,5 @@ LastModifiedBy.ProfileId &lt;&gt; &apos;00e4J000000Iqdb&apos;
  RecordType.DeveloperName = &quot;PersonAccount&quot;
 &amp;&amp; CreatedById  &lt;&gt; &apos;2F0014J00000Jp1GHQAZ&apos;
 &amp;&amp; $User.Ashdod_employee__c = false</errorConditionFormula>
-    <errorMessage>למטופל לא מוגדר ערוץ מועדף כראוי</errorMessage>
+    <errorMessage>למטופל לא מוגדר ערוץ מועדף כראוי [חוק זה בוטל - deprecated]</errorMessage>
 </ValidationRule>

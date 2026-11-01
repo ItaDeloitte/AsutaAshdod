@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Site_Code__c</fullName>
+    <description>FORMULA_PENDING | Original: Appointment__r.Site__r.Code_Tizkurit__c | קוד תזכורית של אתר</description>
     <externalId>false</externalId>
-    <formula>Appointment__r.Site__r.Code_Tizkurit__c</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <label>Site Code</label>
     <required>false</required>
     <trackHistory>false</trackHistory>

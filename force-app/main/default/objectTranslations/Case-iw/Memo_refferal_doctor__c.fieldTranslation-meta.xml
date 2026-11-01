@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>רופא מפנה</label>
     <name>Memo_refferal_doctor__c</name>
-    <relationshipLabel><!-- Cases (רופא מפנה) --></relationshipLabel>
+    <relationshipLabel>פניות</relationshipLabel>
 </CustomFieldTranslation>

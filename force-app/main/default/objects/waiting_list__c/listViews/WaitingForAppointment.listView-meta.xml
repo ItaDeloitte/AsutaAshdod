@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WaitingForAppointment</fullName>
+    <columns>NAME</columns>
+    <columns>Patient_Account__c</columns>
+    <columns>Patient_ID_Number__c</columns>
+    <columns>Medical_Procedure_Ref__c</columns>
+    <columns>Urgency_Classification__c</columns>
+    <columns>Existing_Appointment__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>status__c</field>
+        <operation>equals</operation>
+        <value>ממתין להקדמת תור</value>
+    </filters>
+    <label>ממתין להקדמת תור</label>
+</ListView>

@@ -8,5 +8,21 @@
         <plural>true</plural>
         <value>סוגי המלצות לאחר בדיקה</value>
     </caseValues>
+    <recordTypes>
+        <label><!-- AssutaDocRecommendations --></label>
+        <name>AssutaDocRecommendations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ביופסיה --></label>
+        <name>Biopsia</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cardiology --></label>
+        <name>Cardiology</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ממוגרפיה --></label>
+        <name>Memo</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

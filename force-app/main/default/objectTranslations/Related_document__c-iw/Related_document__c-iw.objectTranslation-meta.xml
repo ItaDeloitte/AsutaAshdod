@@ -6,9 +6,24 @@
         <value>Related document</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הRelated document --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>Related documents</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הRelated documents --></value>
+    </caseValues>
     <gender>Masculine</gender>
+    <nameFieldLabel><!-- Related document Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- שעת התחלה חייבת להיות קטנה משעת סיום --></errorMessage>
+        <name>Hours</name>
+    </validationRules>
 </CustomObjectTranslation>

@@ -33,21 +33,5 @@
                 <label>טופס 4</label>
             </value>
         </valueSetDefinition>
-        <valueSettings>
-            <controllingFieldValue>Web_Site</controllingFieldValue>
-            <valueName>טופס 1</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Web_Site</controllingFieldValue>
-            <valueName>טופס 2</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Web_Site</controllingFieldValue>
-            <valueName>טופס 3</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Web_Site</controllingFieldValue>
-            <valueName>טופס 4</valueName>
-        </valueSettings>
     </valueSet>
 </CustomField>

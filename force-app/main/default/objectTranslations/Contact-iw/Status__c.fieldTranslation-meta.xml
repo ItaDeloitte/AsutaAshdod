@@ -4,11 +4,11 @@
     <name>Status__c</name>
     <picklistValues>
         <masterLabel>Active</masterLabel>
-        <translation><!-- Active --></translation>
+        <translation>פעיל</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Not Active</masterLabel>
-        <translation><!-- Not Active --></translation>
+        <translation>לא פעיל</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>לא פעיל</masterLabel>

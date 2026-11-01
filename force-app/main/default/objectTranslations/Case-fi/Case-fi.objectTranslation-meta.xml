@@ -1,99 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fieldSets>
-        <label><!-- HcCareGapList --></label>
-        <name>HealthCloudGA__HcCareGapList</name>
-    </fieldSets>
     <recordTypes>
-        <label><!-- Application Files --></label>
-        <name>Application_Files</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- זימון תורים למכונים ומרפאות --></label>
+        <label><!-- זימון תור --></label>
         <name>Appointments</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- אסותא 360 --></label>
-        <name>Assuta_360</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- מכירות --></label>
-        <name>CaseAfterSale</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- אסותא 360 - סגור --></label>
-        <name>ClosedAssuta360</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- פניית רופא - סגור --></label>
-        <name>ClosedDoc</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- רופאים מומחים - סגור --></label>
-        <name>ClosedExp</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- מידע כללי - סגור --></label>
-        <name>ClosedGen</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- זימון תורים למכונים ומרפאות - סגור --></label>
-        <name>ClosedInstitutes</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- ניתוחים - סגור --></label>
-        <name>ClosedSurgeries</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- רופאים מומחים --></label>
-        <name>DOC_expert</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- פניית רופא --></label>
-        <name>Doctor_Case</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- תשלומי רופאים --></label>
-        <name>Doctors_Payments_RT</name>
     </recordTypes>
     <recordTypes>
         <label><!-- מידע כללי --></label>
         <name>General_Info</name>
-    </recordTypes>
-    <recordTypes>
-        <description><!-- Defines a care gap for an individual --></description>
-        <label><!-- CareGap --></label>
-        <name>HealthCloudGA__CareGap</name>
-    </recordTypes>
-    <recordTypes>
-        <description><!-- Defines a care plan for an individual and their care team --></description>
-        <label><!-- CarePlan --></label>
-        <name>HealthCloudGA__CarePlan</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- אשפוז בית --></label>
-        <name>Home_Hospitalization</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- אבחון בית --></label>
-        <name>Home_diagnosis</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- IVF הקפאת ביציות --></label>
-        <name>IVF_Freezing_Eggs</name>
-    </recordTypes>
-    <recordTypes>
-        <description><!-- מיועד לסוכני ביטוח --></description>
-        <label><!-- סוכן ביטוח --></label>
-        <name>Insurance_Agent</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- ניהול ורישום מידע רפואי --></label>
-        <name>Medical_Info_Management</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- סגל רפואי --></label>
-        <name>Medical_staff</name>
     </recordTypes>
     <recordTypes>
         <label><!-- פניות הציבור --></label>
@@ -102,22 +15,6 @@
     <recordTypes>
         <label><!-- פריט פניה פניות ציבור --></label>
         <name>PublicInquiriesItem</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- שיקום בית --></label>
-        <name>Shikum_Bait</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- Supplier --></label>
-        <name>Supplier</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- ניתוחים --></label>
-        <name>Surgery</name>
-    </recordTypes>
-    <recordTypes>
-        <label><!-- יד ביד - שד --></label>
-        <name>YadBeYad_Breast</name>
     </recordTypes>
     <recordTypes>
         <label><!-- העברה למחלקה --></label>
@@ -168,6 +65,10 @@
         <name>Cant_send_OTP</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- &quot;כשבעלי הפנייה הם תור העבודה של המחלקה, נושא הפנייה צריך להיות &quot;העברת פניה למחלקה --></errorMessage>
+        <name>Case_subject_when_Owner_is_Queue</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- יש להעביר פניה בצורה תקינה --></errorMessage>
         <name>Change_queue_invalid_way</name>
     </validationRules>
@@ -200,10 +101,7 @@
         <name>ContactPhoneCheck_number_format</name>
     </validationRules>
     <validationRules>
-        <errorMessage>
-            <!-- שינוי סטטוס של פנייה על ידי נציג יתבצע רק מסטטוס &quot;בטיפול&quot;.
-בעת הקמת פנייה חדשה באופן ידני, יש לשמור אותה בסטטוס &quot;חדש&quot; בלבד. -->
-        </errorMessage>
+        <errorMessage></errorMessage>
         <name>DEL_Only_manager_change</name>
     </validationRules>
     <validationRules>
@@ -239,21 +137,11 @@
         <name>LastNameCheck_number_format</name>
     </validationRules>
     <validationRules>
-        <errorMessage>
-            <!-- יש למלא את השדות הבאים תחת כותרת &quot;שאלון קורונה&quot; בטרם שמירת הפנייה: 
-מקום מגורים קבוע
-האם חזרת מחו&quot;ל ב-14 ימים האחרונים?
- מגע עם חולה קורונה ב-14 ימים האחרונים?
- מתגורר/ת עם חולה קורונה באשפוז ביתי?
- חום/תסמינים נשימתיים בשבועיים האחרונים? -->
-        </errorMessage>
+        <errorMessage></errorMessage>
         <name>Mandatory_Fields_For_Schedule_Corona</name>
     </validationRules>
     <validationRules>
-        <errorMessage>
-            <!-- רק בעלי פניה מסוג מנהל יכול לסגור פניה זו. 
-מנהל/ת - יש להעביר את הפניה לבעלותך ואז לסגור את הפניה -->
-        </errorMessage>
+        <errorMessage></errorMessage>
         <name>MangerMustOwnCase</name>
     </validationRules>
     <validationRules>
@@ -409,10 +297,6 @@
         <name>Form_Builder__FT_Generate_PDF</name>
     </webLinks>
     <webLinks>
-        <label><!-- Apply_Care_Plan_Templates --></label>
-        <name>HealthCloudGA__Apply_Care_Plan_Templates</name>
-    </webLinks>
-    <webLinks>
         <label><!-- New_Public_Inquiry_Child --></label>
         <name>New_Public_Inquiry_Child</name>
     </webLinks>
@@ -425,3 +309,25 @@
         <name>send_link</name>
     </webLinks>
 </CustomObjectTranslation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

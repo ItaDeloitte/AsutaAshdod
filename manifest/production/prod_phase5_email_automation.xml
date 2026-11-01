@@ -17,9 +17,8 @@
     NOTE: 2 DuplicateRules excluded (.forceignore): Lead.Duplicate_lead, Contact.Matching_Contact
           — sortOrder conflicts. Deploy manually in Setup after phase 5.
 
-    NOTE: 3 WorkflowAlerts have placeholder <type>owner</type> instead of specific users:
-          Account.formtitan_link_for_approval, Case.referral_agency,
-          Medical_Aid_Appointment__c.Specific_Medical_Aid_Alert_4YanaRaz
+    NOTE: 2 WorkflowAlerts have placeholder <type>owner</type> instead of specific users:
+          Account.formtitan_link_for_approval, Case.referral_agency
           — restore after Profile wave (wave 13).
 
     Command:

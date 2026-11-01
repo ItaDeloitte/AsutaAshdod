@@ -22,4 +22,18 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel><!-- Survey Response --></nameFieldLabel>
+    <recordTypes>
+        <description><!-- פרוייקט שאלונים דיגיטלים --></description>
+        <label><!-- Digital Forms --></label>
+        <name>Digital_Forms</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- חוות דעת על רופאים --></description>
+        <label><!-- Doc Advisor --></label>
+        <name>Doc_Advisor</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- חובה למלא סיבת הפיכה ללא פעיל --></errorMessage>
+        <name>Taken_not_active</name>
+    </validationRules>
 </CustomObjectTranslation>

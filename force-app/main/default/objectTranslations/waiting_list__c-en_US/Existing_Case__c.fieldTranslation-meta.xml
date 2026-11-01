@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- הפנייה הקיימת של המטופל. --></help>
+    <label><!-- Existing Case --></label>
+    <name>Existing_Case__c</name>
+    <relationshipLabel><!-- Waiting Lists (Existing Case) --></relationshipLabel>
+</CustomFieldTranslation>

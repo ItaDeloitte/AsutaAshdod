@@ -8,5 +8,19 @@
         <plural>true</plural>
         <value>Surveys Taken</value>
     </caseValues>
+    <recordTypes>
+        <description><!-- פרוייקט שאלונים דיגיטלים --></description>
+        <label><!-- Digital Forms --></label>
+        <name>Digital_Forms</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- חוות דעת על רופאים --></description>
+        <label><!-- Doc Advisor --></label>
+        <name>Doc_Advisor</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- חובה למלא סיבת הפיכה ללא פעיל --></errorMessage>
+        <name>Taken_not_active</name>
+    </validationRules>
 </CustomObjectTranslation>

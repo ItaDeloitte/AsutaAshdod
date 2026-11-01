@@ -8,6 +8,9 @@
         <plural>true</plural>
         <value>מסמכים נלווים</value>
     </caseValues>
-    <nameFieldLabel><!-- Related document Number --></nameFieldLabel>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- שעת התחלה חייבת להיות קטנה משעת סיום --></errorMessage>
+        <name>Hours</name>
+    </validationRules>
 </CustomObjectTranslation>

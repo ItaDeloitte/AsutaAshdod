@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>שם הרופא המאשר</label>
     <name>Approving_Doctor_Name__c</name>
-    <relationshipLabel><!-- Cases (שם הרופא המאשר) --></relationshipLabel>
+    <relationshipLabel>פניות</relationshipLabel>
 </CustomFieldTranslation>

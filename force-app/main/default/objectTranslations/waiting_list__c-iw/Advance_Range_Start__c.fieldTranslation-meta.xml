@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- מאיזה תאריך ניתן להקדים את התור. --></help>
+    <label>טווח הקדמה - תאריך התחלה</label>
+    <name>Advance_Range_Start__c</name>
+</CustomFieldTranslation>

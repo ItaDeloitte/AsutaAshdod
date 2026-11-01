@@ -9,4 +9,8 @@
         <value>Reminders</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- אחד משדות החובה חסר --></errorMessage>
+        <name>Not_valid_record</name>
+    </validationRules>
 </CustomObjectTranslation>

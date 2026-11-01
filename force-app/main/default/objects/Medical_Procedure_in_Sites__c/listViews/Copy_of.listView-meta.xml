@@ -21,11 +21,6 @@
         <operation>equals</operation>
         <value>20</value>
     </filters>
-    <filters>
-        <field>DigitalSignConsentForm__c</field>
-        <operation>equals</operation>
-        <value>Breast Needle Biopsy</value>
-    </filters>
     <label>פרוצדורות חתימה דיגיטלית (ביופסיה שד 20)</label>
     <sharedTo>
         <group>Admins</group>

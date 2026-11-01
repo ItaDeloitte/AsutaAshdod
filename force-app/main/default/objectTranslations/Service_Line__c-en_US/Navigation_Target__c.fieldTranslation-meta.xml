@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Navigation Target --></label>
+    <name>Navigation_Target__c</name>
+    <picklistValues>
+        <masterLabel>Show_Domains</masterLabel>
+        <translation><!-- Show_Domains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Show_Procedures</masterLabel>
+        <translation><!-- Show_Procedures --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

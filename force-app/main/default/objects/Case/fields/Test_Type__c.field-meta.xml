@@ -345,6 +345,86 @@
             </value>
         </valueSetDefinition>
         <valueSettings>
+            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
+            <controllingFieldValue>דימות</controllingFieldValue>
+            <controllingFieldValue>קרדיולוגיה</controllingFieldValue>
+            <valueName>אחר</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
+            <valueName>ייעוץ אונקולוגי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
+            <valueName>כימותרפיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
+            <valueName>רדיותרפיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>RELAX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אורולוגיה א.א.ג</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אורתופדיה נוירוכירורגיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אישפוז יום</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אשפוז המטולוגי/פנימי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>אשפוז כללי</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>גניקולוגיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <controllingFieldValue>גסטרו</controllingFieldValue>
+            <valueName>גסטרוסקופיה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>טיפול נמרץ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>כירוגיה כללית</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>לב חזה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>מחלקת ילדים</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>נשים/כירורגיה ב&apos;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <valueName>פנימית/ אורתופדית ב&apos;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>אשפוז</controllingFieldValue>
+            <controllingFieldValue>גסטרו</controllingFieldValue>
+            <valueName>קולונוסקופיה</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>מרפאות חוץ</controllingFieldValue>
             <valueName>א.ר.ם</valueName>
         </valueSettings>
@@ -421,106 +501,6 @@
             <valueName>שיניים ראשל&quot;צ</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>RELAX</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>אורולוגיה א.א.ג</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>אורתופדיה נוירוכירורגיה</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>אישפוז יום</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>אשפוז המטולוגי/פנימי</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>אשפוז כללי</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>גניקולוגיה</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <controllingFieldValue>גסטרו</controllingFieldValue>
-            <valueName>גסטרוסקופיה</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>טיפול נמרץ</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>כירוגיה כללית</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>לב חזה</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>מחלקת ילדים</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>נשים/כירורגיה ב&apos;</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <valueName>פנימית/ אורתופדית ב&apos;</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אשפוז</controllingFieldValue>
-            <controllingFieldValue>גסטרו</controllingFieldValue>
-            <valueName>קולונוסקופיה</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>נוירולוגיה</controllingFieldValue>
-            <valueName>EEG</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>נוירולוגיה</controllingFieldValue>
-            <valueName>TCD</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
-            <controllingFieldValue>דימות</controllingFieldValue>
-            <controllingFieldValue>קרדיולוגיה</controllingFieldValue>
-            <valueName>אחר</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
-            <valueName>ייעוץ אונקולוגי</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
-            <valueName>כימותרפיה</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>אונקולוגיה</controllingFieldValue>
-            <valueName>רדיותרפיה</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>עיניים</controllingFieldValue>
-            <valueName>בדיקה</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>עיניים</controllingFieldValue>
-            <valueName>יעוץ רופא</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>עיניים</controllingFieldValue>
-            <valueName>ניתוח עיניים</valueName>
-        </valueSettings>
-        <valueSettings>
             <controllingFieldValue>דימות</controllingFieldValue>
             <valueName>CT</valueName>
         </valueSettings>
@@ -571,6 +551,26 @@
         <valueSettings>
             <controllingFieldValue>דימות</controllingFieldValue>
             <valueName>רנטגן</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>נוירולוגיה</controllingFieldValue>
+            <valueName>EEG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>נוירולוגיה</controllingFieldValue>
+            <valueName>TCD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>עיניים</controllingFieldValue>
+            <valueName>בדיקה</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>עיניים</controllingFieldValue>
+            <valueName>יעוץ רופא</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>עיניים</controllingFieldValue>
+            <valueName>ניתוח עיניים</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>קרדיולוגיה</controllingFieldValue>

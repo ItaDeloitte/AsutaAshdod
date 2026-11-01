@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>עיר מגורים</label>
     <name>City__c</name>
-    <relationshipLabel><!-- Contacts --></relationshipLabel>
+    <relationshipLabel>אנשי קשר</relationshipLabel>
 </CustomFieldTranslation>

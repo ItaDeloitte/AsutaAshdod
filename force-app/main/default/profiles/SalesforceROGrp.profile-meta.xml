@@ -112,9 +112,6 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
         <layout>Award-Award Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Bank__c-Bank Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>BoardCertification-Board Certification Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -392,12 +389,6 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
     </layoutAssignments>
     <layoutAssignments>
         <layout>ConsentFormTaken__c-ConsentFormTaken Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ConsentFormToSite__c-ConsentFormToSite Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ConsentForm__c-ConsentForm Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-Contact Layout</layout>
@@ -805,9 +796,6 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
         <layout>MedReconStmtRecommendation-פריסת המלצה לפיוס תרופתי בהצהרה</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Medical_Aid_Appointment__c-עזר לפגישה Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Medical_Procedure_Link__mdt-Medical Procedure Link Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -863,9 +851,6 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
     </layoutAssignments>
     <layoutAssignments>
         <layout>Number_Of_Payments__mdt-Number Of Payments Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Nursery__c-משתלים Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OmniInteractionConfig-Omni Interaction Configuration Layout</layout>
@@ -1203,9 +1188,6 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
         <layout>Survey_Assuta__c-סקר Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Survey_Question__c-Survey Question Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Survey__c-Survey Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1392,10 +1374,6 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Bank__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Bot_Business_Hours__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -1441,14 +1419,6 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
     </tabVisibilities>
     <tabVisibilities>
         <tab>ConsentFormTaken__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>ConsentFormToSite__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>ConsentForm__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -1568,19 +1538,11 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Medical_Aid_Appointment__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Medical_Procedure__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Medical_Procedure_in_Sites__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Nursery__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -1685,10 +1647,6 @@ Is provisioned automatically by Azure AD from &quot;SalesForceROGrp&quot;.</desc
     </tabVisibilities>
     <tabVisibilities>
         <tab>Survey_Assuta__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Survey_Question__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

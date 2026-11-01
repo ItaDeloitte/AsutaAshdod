@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Appointment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>קישור לתור החדש שנקבע למטופל.</description>
+    <inlineHelpText>התור החדש שנקבע למטופל.</inlineHelpText>
+    <label>New Appointment</label>
+    <referenceTo>Appointment__c</referenceTo>
+    <relationshipLabel>Waiting Lists (New Appointment)</relationshipLabel>
+    <relationshipName>waiting_list_new_appt</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

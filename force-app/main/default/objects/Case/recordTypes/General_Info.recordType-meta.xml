@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>General_Info</fullName>
     <active>true</active>
@@ -17,60 +17,6 @@
         </values>
         <values>
             <fullName>אשפוז ואמבולטורי</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Approval_Sub_Topic__c</picklist>
-        <values>
-            <fullName>11</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>13</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>8</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Approval_Topic__c</picklist>
-        <values>
-            <fullName>2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>7</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -624,21 +570,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Case_Time__c</picklist>
-        <values>
-            <fullName>24hto48h</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>above48h</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>under24h</fullName>
-            <default>true</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Case_site__c</picklist>
         <values>
             <fullName>Ramat_Hahayal</fullName>
@@ -646,69 +577,6 @@
         </values>
         <values>
             <fullName>Rishon_Letzion</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Case_subject__c</picklist>
-        <values>
-            <fullName>ContinueTreatment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>InformationPosition</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ONE</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Yad_Beyad_Candidate</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>note_of_appreciation</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>בירור אודות תור</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>דרושים%2Fדרושות</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>העברת פנייה למחלקה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>כתובות ודרכי הגעה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מידע על בתי חולים%2Fקופות חולים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מסמכים נלווים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>נגישות</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>עדכון פרטים אישיים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>שעות פעילות מוקדי השירות של אסותא</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>שעות פעילות מכונים ומרפאות</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -783,17 +651,6 @@
         </values>
         <values>
             <fullName>Wolfson Hospital</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Contact_With_Corona_Patient__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -954,17 +811,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Fever_Symptoms_Last_14_Days__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Findings_Details__c</picklist>
         <values>
             <fullName>Negative</fullName>
@@ -1049,33 +895,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>IVF_site__c</picklist>
-        <values>
-            <fullName>אשדוד כלניות</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>באר שבע</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>חיפה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ראשון לציון</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>רמת החייל</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>רעננה</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Identification_Done__c</picklist>
         <values>
             <fullName>Couple_Identification</fullName>
@@ -1151,17 +970,6 @@
         </values>
         <values>
             <fullName>שלילית</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Live_With_Coronat_Patient__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1325,31 +1133,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Facebook</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>SMS</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Web_Site</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>WhatsApp</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>דואר אלקטרוני</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>זימון אינטרנטי אסותא</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>זימון אינטרנטי מכבי</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1365,35 +1149,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>פייסבוק מסנג%27ר</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>פניות הציבור</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>פקס</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פרונטלי</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>שיחה יוצאת חיצונית</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>שיחה יוצאת פנימית</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>שיחה נכנסת חיצונית</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>שיחה נכנסת פנימית</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1751,10 +1511,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>בבדיקה מול גורם מקצועי</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>חוסר מענה</fullName>
             <default>false</default>
         </values>
@@ -1764,10 +1520,6 @@
         </values>
         <values>
             <fullName>פניה כפולה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פניה שגויה</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1899,6 +1651,21 @@
         </values>
         <values>
             <fullName>Research_Transfer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Refund_NotApproved__c</picklist>
+        <values>
+            <fullName>אי חיוב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>החזר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פיצוי</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -3586,37 +3353,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Subject__c</picklist>
-        <values>
-            <fullName>אחר</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>בקשות חריגות</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מידע למטופל</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פניה למנכ%22ל</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>רפואי%2Fניהול סיכונים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>תודה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>תלונה</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Test_Type__c</picklist>
         <values>
             <fullName>CT</fullName>
@@ -3983,17 +3719,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Visited_Abroad_During_Last_14_Days__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Website_Language__c</picklist>
         <values>
             <fullName>ar</fullName>
@@ -4130,37 +3855,20 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>payment_been_transferred__c</picklist>
+        <values>
+            <fullName>כן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>preferd_chanal_case__c</picklist>
         <values>
-            <fullName>Email</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Facebook Messenger</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mail</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Phone</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>SMS</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Unknown</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Whatsapp</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא פעיל</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -4315,6 +4023,49 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>subStatus__c</picklist>
+        <values>
+            <fullName>Didn%27t execute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t need next appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Next appointment scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not interested in next appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for reminder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>appointment was not summoned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>sub_case_subject__c</picklist>
         <values>
             <fullName>Assuta_Rishon</fullName>
@@ -4449,14 +4200,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>העתק דיסק</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>זימון באופן פרטי</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>חניה</fullName>
             <default>false</default>
         </values>
@@ -4509,10 +4252,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>שליחת תוצאות בדואר</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>שעות פעילות מוקדי השירות של אסותא</fullName>
             <default>false</default>
         </values>
@@ -4521,80 +4260,22 @@
             <default>false</default>
         </values>
     </picklistValues>
-
     <picklistValues>
         <picklist>tofes_web__c</picklist>
         <values>
-            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 1</fullName>
+            <fullName>טופס 1</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 2</fullName>
+            <fullName>טופס 2</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 3</fullName>
+            <fullName>טופס 3</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>&#x05D8;&#x05D5;&#x05E4;&#x05E1; 4</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>subStatus__c</picklist>
-        <values>
-            <fullName>Didn%27t execute</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Don%27t need next appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Next appointment scheduled</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>No answer</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Not interested in next appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Survey sent</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for agent</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for appointment</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Waiting for reminder</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>appointment was not summoned</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>    <picklistValues>
-        <picklist>Refund_NotApproved__c</picklist>
-        <values>
-            <fullName>אי חיוב</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>החזר</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פיצוי</fullName>
+            <fullName>טופס 4</fullName>
             <default>false</default>
         </values>
     </picklistValues>

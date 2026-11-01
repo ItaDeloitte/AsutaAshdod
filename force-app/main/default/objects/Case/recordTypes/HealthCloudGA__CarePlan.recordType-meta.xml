@@ -21,41 +21,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Approval_Sub_Topic__c</picklist>
-        <values>
-            <fullName>11</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>13</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>8</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Approval_Topic__c</picklist>
         <values>
             <fullName>2</fullName>

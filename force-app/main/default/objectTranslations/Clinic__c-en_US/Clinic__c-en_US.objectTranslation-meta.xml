@@ -9,4 +9,8 @@
         <value>מרפאות</value>
     </caseValues>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- מספר הטלפון אינו תקין --></errorMessage>
+        <name>Validation_on_Phone_field</name>
+    </validationRules>
 </CustomObjectTranslation>

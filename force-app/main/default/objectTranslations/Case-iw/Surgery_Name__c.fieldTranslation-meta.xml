@@ -3,5 +3,5 @@
     <help><!-- שדה שמתאלס אוטומטית בשיקום בית --></help>
     <label>שם הניתוח</label>
     <name>Surgery_Name__c</name>
-    <relationshipLabel><!-- Cases (שם הניתוח) --></relationshipLabel>
+    <relationshipLabel>פניות</relationshipLabel>
 </CustomFieldTranslation>

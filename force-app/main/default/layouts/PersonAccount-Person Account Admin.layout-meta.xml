@@ -949,12 +949,6 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Appointment__c</fields>
-        <fields>Type_of_Assist__c</fields>
-        <relatedList>Medical_Aid_Appointment__c.Patient__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <fields>Type__c</fields>
         <fields>Phone_Number__c</fields>
         <fields>Phone_number_is_valid__c</fields>

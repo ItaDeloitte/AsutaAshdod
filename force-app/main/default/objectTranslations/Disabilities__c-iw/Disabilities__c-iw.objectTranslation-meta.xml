@@ -22,4 +22,14 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>שם</nameFieldLabel>
+    <recordTypes>
+        <description><!-- עזרים --></description>
+        <label><!-- Assistance --></label>
+        <name>Assistance</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- מוגבלות --></description>
+        <label><!-- Disability --></label>
+        <name>Disability</name>
+    </recordTypes>
 </CustomObjectTranslation>

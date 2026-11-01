@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- משך ההמתנה לתגובה לכל קבוצת שליחה לפני מעבר לקבוצה הבאה. --></help>
+    <label><!-- Wait Time Per Group --></label>
+    <name>Wait_Time_Per_Group__c</name>
+</CustomFieldTranslation>

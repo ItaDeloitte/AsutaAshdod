@@ -49,10 +49,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Survey_Question__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>SurveyTaker__c</field>
             </layoutItems>
             <layoutItems>

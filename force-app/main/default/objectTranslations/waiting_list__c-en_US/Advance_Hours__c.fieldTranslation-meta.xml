@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- באילו שעות ביום ניתן להקדים את התור. --></help>
+    <label><!-- Advance Hours --></label>
+    <name>Advance_Hours__c</name>
+    <picklistValues>
+        <masterLabel>בוקר</masterLabel>
+        <translation><!-- בוקר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כל השעות</masterLabel>
+        <translation><!-- כל השעות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לילה</masterLabel>
+        <translation><!-- לילה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ערב</masterLabel>
+        <translation><!-- ערב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צהריים</masterLabel>
+        <translation><!-- צהריים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

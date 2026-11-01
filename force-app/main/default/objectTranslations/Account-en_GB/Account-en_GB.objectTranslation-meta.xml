@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fieldSets>
-        <label><!-- New External Member​ --></label>
-        <name>HealthCloudGA__QuickAddIndividual</name>
-    </fieldSets>
     <recordTypes>
         <label><!-- Doctor Account --></label>
         <name>Doctor_Account</name>
@@ -11,26 +7,6 @@
     <recordTypes>
         <label><!-- General Account --></label>
         <name>General_Account</name>
-    </recordTypes>
-    <recordTypes>
-        <description><!-- Represents a business or an organization --></description>
-        <label><!-- Business --></label>
-        <name>HealthCloudGA__IndustriesBusiness</name>
-    </recordTypes>
-    <recordTypes>
-        <description><!-- Represents a Household --></description>
-        <label><!-- Household --></label>
-        <name>HealthCloudGA__IndustriesHousehold</name>
-    </recordTypes>
-    <recordTypes>
-        <description><!-- Represents an Individual --></description>
-        <label><!-- Individual --></label>
-        <name>HealthCloudGA__IndustriesIndividual</name>
-    </recordTypes>
-    <recordTypes>
-        <description><!-- Represents a Payer --></description>
-        <label><!-- Payer --></label>
-        <name>HealthCloudGA__IndustriesPayer</name>
     </recordTypes>
     <recordTypes>
         <description><!-- health-care professional trained in methods of treatment and rehabilitation other than the use of drugs or surgery --></description>
@@ -48,6 +24,10 @@
     <recordTypes>
         <label><!-- Technician --></label>
         <name>Technician</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Test For Delete --></label>
+        <name>Test_For_Delete</name>
     </recordTypes>
     <validationRules>
         <errorMessage><!-- נא לוודא ששם החשבון מכיל אותיות בלבד! --></errorMessage>
@@ -70,6 +50,10 @@
         <name>CameleonIDCheck_number_format</name>
     </validationRules>
     <validationRules>
+        <errorMessage><!-- יש למלא את פרטי ההתקשרות המתאימים לערוץ המועדף שנבחר: כתובת מייל עבור ערוץ דואר אלקטרוני, או מספר טלפון עבור ערוץ Whatsapp --></errorMessage>
+        <name>Contact_Detail_Required_For_Pref_Channel</name>
+    </validationRules>
+    <validationRules>
         <errorMessage><!-- קוד רופא הינו שדה חובה עבור התפקיד שהוזן --></errorMessage>
         <name>Doctor_Code_Is_Mandatory_For_Roles</name>
     </validationRules>
@@ -84,14 +68,6 @@
     <validationRules>
         <errorMessage><!-- לתשומת ליבך: לא ניתן להקים מטופל עם תאריך לידה עתידי. יש לעדכן תאריך הלידה ולשמור בשנית --></errorMessage>
         <name>Future_Birth_Date_is_not_allowed</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- The Individual record type can&apos;t be changed --></errorMessage>
-        <name>HealthCloudGA__NotAllowingConversionFromIndividual</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- The record type can&apos;t be changed to Individual. --></errorMessage>
-        <name>HealthCloudGA__NotAllowingConversionToIndividual</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- לא ניתן לקדם רופא לא פעיל או שאינו מוצג באתר המלצת רופאים --></errorMessage>
@@ -130,7 +106,11 @@
         <name>Phone_is_not_kosher_if_its_also_for_SMS</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- למטופל לא מוגדר ערוץ מועדף כראוי --></errorMessage>
+        <errorMessage><!-- יש לבחור ערוץ מועדף לפני שמירת החשבון --></errorMessage>
+        <name>Preferred_Channel_is_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- למטופל לא מוגדר ערוץ מועדף כראוי [חוק זה בוטל - deprecated] --></errorMessage>
         <name>Preferred_channel_details_are_mandatory</name>
     </validationRules>
     <validationRules>
@@ -206,10 +186,6 @@
         <name>HooversProfile</name>
     </webLinks>
     <webLinks>
-        <label><!-- Insurance_SMS --></label>
-        <name>Insurance_SMS</name>
-    </webLinks>
-    <webLinks>
         <label><!-- Search_Account --></label>
         <name>Search_Account</name>
     </webLinks>
@@ -217,20 +193,5 @@
         <label><!-- YahooMaps --></label>
         <name>YahooMaps</name>
     </webLinks>
-    <webLinks>
-        <label><!-- ExactTarget_Resubscribe --></label>
-        <name>et4ae5__ExactTarget_Resubscribe</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- ExactTarget_Unsubscribe --></label>
-        <name>et4ae5__ExactTarget_Unsubscribe</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- Send_ExactTarget_Email --></label>
-        <name>et4ae5__Send_ExactTarget_Email</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- View_ExactTarget_Analytics --></label>
-        <name>et4ae5__View_ExactTarget_Analytics</name>
-    </webLinks>
 </CustomObjectTranslation>
+

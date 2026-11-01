@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- רמת הדחיפות של המטופל ברשימת ההמתנה. --></help>
+    <label>סיווג דחיפות</label>
+    <name>Urgency_Classification__c</name>
+    <picklistValues>
+        <masterLabel>דחוף</masterLabel>
+        <translation><!-- דחוף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דחוף מאוד</masterLabel>
+        <translation><!-- דחוף מאוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא דחוף</masterLabel>
+        <translation><!-- לא דחוף --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

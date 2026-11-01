@@ -2,5 +2,5 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>קביעת פגישה לרופא</label>
     <name>Contact_doctor__c</name>
-    <relationshipLabel><!-- Cases (Contact doctor) --></relationshipLabel>
+    <relationshipLabel>פניות</relationshipLabel>
 </CustomFieldTranslation>

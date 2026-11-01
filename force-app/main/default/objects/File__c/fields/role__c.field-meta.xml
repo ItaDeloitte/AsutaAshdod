@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>role__c</fullName>
     <description>עבור מסמך מינוי איש קשר למטופל</description>
@@ -51,4 +51,3 @@
         </valueSettings>
     </valueSet>
 </CustomField>
-

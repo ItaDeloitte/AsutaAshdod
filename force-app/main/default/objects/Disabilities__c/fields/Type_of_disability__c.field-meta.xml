@@ -14,6 +14,7 @@
             <value>
                 <fullName>120</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>אחר</label>
             </value>
             <value>
@@ -22,28 +23,31 @@
                 <label>חירשות</label>
             </value>
             <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>חרשות / כבד שמיעה</label>
+            </value>
+            <value>
                 <fullName>40</fullName>
                 <default>false</default>
                 <label>כבד ראייה</label>
             </value>
             <value>
-                <fullName>20</fullName>
-                <default>false</default>
-                <label>כבד שמיעה</label>
-            </value>
-            <value>
                 <fullName>80</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>מוגבלות בדיבור</label>
             </value>
             <value>
                 <fullName>70</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>מוגבלות בידיים</label>
             </value>
             <value>
                 <fullName>90</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>מוגבלות נפשית</label>
             </value>
             <value>
@@ -59,16 +63,19 @@
             <value>
                 <fullName>60</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>קוגנטיביות (הבנה)</label>
             </value>
             <value>
                 <fullName>110</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>קושי בהתמצאות</label>
             </value>
             <value>
                 <fullName>100</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>תקשורתית (ספקטרום אוטיסטי)</label>
             </value>
         </valueSetDefinition>

@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>apnt_time_secondprocedure__c</fullName>
+    <description>FORMULA_PENDING | Original: AppointmentTime__c &amp;amp;&amp;quot; &amp;quot;&amp;amp;  included_MP__r.Name</description>
     <externalId>false</externalId>
-    <formula>AppointmentTime__c &amp;&quot; &quot;&amp;  included_MP__r.Name</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Appointment Time Second Procedure</label>
     <required>false</required>

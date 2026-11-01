@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicate whether a waiting list exists and whether it is managed manually or automatically. --></help>
+    <label><!-- Waiting List Management --></label>
+    <name>Waiting_List_Management__c</name>
+    <picklistValues>
+        <masterLabel>ניהול אוטומטי</masterLabel>
+        <translation><!-- ניהול אוטומטי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניהול ידני</masterLabel>
+        <translation><!-- ניהול ידני --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

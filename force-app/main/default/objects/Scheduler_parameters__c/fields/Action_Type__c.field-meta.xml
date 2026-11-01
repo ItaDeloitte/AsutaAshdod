@@ -20,11 +20,6 @@
                 <label>הודעת אזהרה</label>
             </value>
             <value>
-                <fullName>מניעת זימון ושינוי בעלים</fullName>
-                <default>false</default>
-                <label>מניעת זימון ושינוי בעלים</label>
-            </value>
-            <value>
                 <fullName>מתאריך</fullName>
                 <default>false</default>
                 <label>מתאריך</label>
@@ -33,6 +28,12 @@
                 <fullName>חיפוש לפי יומן</fullName>
                 <default>false</default>
                 <label>חיפוש לפי יומן</label>
+            </value>
+            <value>
+                <fullName>מניעת זימון ושינוי בעלים</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>מניעת זימון ושינוי בעלים</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -777,13 +777,6 @@
         <relatedList>Payment__c.Appointment__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <fields>NAME</fields>
-        <fields>Type_of_Assist__c</fields>
-        <fields>Status__c</fields>
-        <relatedList>Medical_Aid_Appointment__c.Appointment__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>NAME</fields>
         <fields>SLA__c</fields>
         <fields>Mistake_type__c</fields>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- FromPhone --></label>
+    <name>FromPhone__c</name>
+    <picklistValues>
+        <masterLabel>AshdodHosp</masterLabel>
+        <translation><!-- AshdodHosp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assuta</masterLabel>
+        <translation><!-- Assuta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AssutaHosp</masterLabel>
+        <translation><!-- AssutaHosp --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -6,9 +6,20 @@
         <value>ConsentFormTaken</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הConsentFormTaken --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>ConsentFormsTaken</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הConsentFormsTaken --></value>
+    </caseValues>
     <gender>Masculine</gender>
+    <nameFieldLabel><!-- ConsentFormTakenName --></nameFieldLabel>
 </CustomObjectTranslation>

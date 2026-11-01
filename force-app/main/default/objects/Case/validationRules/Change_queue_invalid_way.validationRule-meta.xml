@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Change_queue_invalid_way</fullName>
-    <active>true</active>
+    <active>false</active>
     <errorConditionFormula>RecordType.DeveloperName != &quot;transfer_to_secretaries&quot; &amp;&amp; RecordType.DeveloperName != &quot;Medical_Info_Management&quot; &amp;&amp; RecordType.DeveloperName != &quot;Appointments&quot; &amp;&amp;
 BEGINS(Owner:Queue.DeveloperName , &quot;Q_&quot;)
 &amp;&amp; ISCHANGED( OwnerId )</errorConditionFormula>

@@ -6,9 +6,28 @@
         <value>משתל פעולה רפואית לפגישה</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- המשתל פעולה רפואית לפגישה --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>משתלים פעולות רפואיות לפגישה</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- המשתלים פעולות רפואיות לפגישה --></value>
+    </caseValues>
     <gender>Feminine</gender>
+    <nameFieldLabel><!-- משתל פעולה רפואית לפגישה Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- יש לבחור משתל יחיד או מטבלת משתלים או מטבלת משתלים לפעולה רפואית --></errorMessage>
+        <name>Implamant_selection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לערוך משתל. עבור עריכת מחירי מינימום ומקסימום- פנה/&apos; למנהל/ת --></errorMessage>
+        <name>read_only_after_creation</name>
+    </validationRules>
 </CustomObjectTranslation>

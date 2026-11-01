@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>RT_text__c</fullName>
+    <description>FORMULA_PENDING | Original: RecordType.DeveloperName</description>
     <externalId>false</externalId>
-    <formula>RecordType.DeveloperName</formula>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>RT text</label>
     <required>false</required>

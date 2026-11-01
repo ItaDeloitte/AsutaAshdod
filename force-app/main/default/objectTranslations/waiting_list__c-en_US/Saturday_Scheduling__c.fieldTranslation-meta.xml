@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- האם מותר לקבוע תור בשבת. --></help>
+    <label><!-- Saturday Scheduling --></label>
+    <name>Saturday_Scheduling__c</name>
+    <picklistValues>
+        <masterLabel>לא ניתן לקבוע</masterLabel>
+        <translation><!-- לא ניתן לקבוע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא העדפה</masterLabel>
+        <translation><!-- ללא העדפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ניתן לקבוע</masterLabel>
+        <translation><!-- ניתן לקבוע --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

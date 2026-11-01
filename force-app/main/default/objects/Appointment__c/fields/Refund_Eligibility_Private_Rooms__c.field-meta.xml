@@ -1,28 +1,29 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Refund_Eligibility_Private_Rooms__c</fullName>
-    <externalId>false</externalId>
-    <formula>IF(
+    <description>FORMULA_PENDING | Original: IF(
   AND(
-    RecordType.DeveloperName = &quot;Surgeries&quot;,
+    RecordType.DeveloperName = &amp;quot;Surgeries&amp;quot;,
     NOT(ISBLANK(ReceiptNum__c)),
-    ISPICKVAL(Status_private_room__c, &quot;Canceled&quot;)
+    ISPICKVAL(Status_private_room__c, &amp;quot;Canceled&amp;quot;)
   ),
   IF(
-    (Appointment_Date_Time__c - Cancellation_Date_Time_Private_Rooms__c) * 24 &gt;= 24,
-    &quot;🟢 זיכוי מלא&quot;,
+    (Appointment_Date_Time__c - Cancellation_Date_Time_Private_Rooms__c) * 24 &amp;gt;= 24,
+    &amp;quot;🟢 זיכוי מלא&amp;quot;,
     IF(
-      (Appointment_Date_Time__c - Cancellation_Date_Time_Private_Rooms__c) * 24 &gt;= 12,
-      &quot;🟡 זיכוי 50%&quot;,
+      (Appointment_Date_Time__c - Cancellation_Date_Time_Private_Rooms__c) * 24 &amp;gt;= 12,
+      &amp;quot;🟡 זיכוי 50%&amp;quot;,
       IF(
-        (Appointment_Date_Time__c - Cancellation_Date_Time_Private_Rooms__c) * 24 &gt;= 4,
-        &quot;🔴 לא זכאי&quot;,
-        &quot;🔴 לא זכאי&quot;
+        (Appointment_Date_Time__c - Cancellation_Date_Time_Private_Rooms__c) * 24 &amp;gt;= 4,
+        &amp;quot;🔴 לא זכאי&amp;quot;,
+        &amp;quot;🔴 לא זכאי&amp;quot;
       )
     )
   ),
-  &quot;&quot;
-)</formula>
+  &amp;quot;&amp;quot;
+)</description>
+    <externalId>false</externalId>
+    <formula>&quot;FORMULA_PENDING&quot;</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Refund Eligibility - Private Rooms</label>
     <required>false</required>

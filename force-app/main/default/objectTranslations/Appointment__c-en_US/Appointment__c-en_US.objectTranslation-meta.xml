@@ -8,5 +8,145 @@
         <plural>true</plural>
         <value>Appointments</value>
     </caseValues>
+    <recordTypes>
+        <label><!-- ייעוץ - סגור --></label>
+        <name>ClosedExperts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ניתוח - סגור --></label>
+        <name>ClosedSurgeries</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- בדיקה - סגור --></label>
+        <name>Closedins</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ייעוץ --></label>
+        <name>Experts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- בדיקה --></label>
+        <name>Institutes</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ניתוח --></label>
+        <name>Surgeries</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לקבוע תור אם מועד התור חלף --></errorMessage>
+        <name>Agent_cant_schedule_appointment_passed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Cancel Reason is required when Cancel Reason is 61 --></errorMessage>
+        <name>CancelReasonTafnitRequiredWhenReason61</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לציין את הסיבה שבגינה בוטל התור --></errorMessage>
+        <name>Cancelation_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- המטופל כבר נכח בתור ולכן לא יכול לבטלו --></errorMessage>
+        <name>Cant_cancel_app_after_attendance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מרפאה הוא שדה חובה כאשר סוג הפגישה הינו &quot;מומחים&quot; --></errorMessage>
+        <name>Clinic_is_Optional_If_AppType_Excellence</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש להזין מספר בשדה זה. שכן השדה מכיל רק מספרים --></errorMessage>
+        <name>CommitmentOnlyNumber</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא להזין פירוט --></errorMessage>
+        <name>Details_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- APP-0020: יש להזין את הסכום ששולם --></errorMessage>
+        <name>Is_bank_transfer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לפרט אילו מסמכים חסרים --></errorMessage>
+        <name>Missing_documents_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לשנות נציג --></errorMessage>
+        <name>No_change_for_assisting_Agent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לשנות את סטטוס הפגישה ל&quot;בוטל&quot; או &quot;ממתין לביטול התור&quot; לאחר שהוגדר כ&quot;התקיים&quot;. --></errorMessage>
+        <name>Prevent_Appointment_Cancel_After_Complet</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא להזין את פירוט סיבת הסירוב --></errorMessage>
+        <name>Refusal_details_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- נא לציין את סיבת הדחיפות של הפגישה --></errorMessage>
+        <name>Urgency_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- עבור פגישת ייעוץ יש למלא רופא או יומן רופא --></errorMessage>
+        <name>choose_calendar_or_doctor_for_experts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- מטופל זה הינו 360. ניהול התורים יתבצע רק מתוך פניית ה-360 של מטופל זה שמקושרת כפניית אב לפנייה זו --></errorMessage>
+        <name>for_360_patient_only_parent_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- בפגישת ייעוץ ניתן לבחור רק ב-2 פעולות רפואיות: זימון רופא חדש או זימון רופא חוזר --></errorMessage>
+        <name>if_experts_only_2_medical_procedures</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- אם לא מתקבלת אינדיקציה ממערכות המקור על הגעה לתור מומחים (אין יומן בפגישה), אז הסטאטוס של הפגישה לא יכול להיות &quot;התקיים&quot; ויהיה מושפע מסקר מומחים --></errorMessage>
+        <name>no_indication_for_arrival_impacts_status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- אין רשימת המתנה עבור הפעולה הרפואית המבוקשת --></errorMessage>
+        <name>no_waiting_list_for_medical_procedure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לשמור רשימת המתנה באתר שנבחר --></errorMessage>
+        <name>no_waiting_list_for_site</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- יש למלא את הסיבה האחרת לדחיפות התור --></errorMessage>
+        <name>other_yrgent_reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לקבוע למטופל מתחת גיל 15 תור לאחר השעה 20:00 --></errorMessage>
+        <name>pre_surgery_for_15_years_old</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לקבוע למטופל מעל גיל 65 תור לאחר השעה 13:00 --></errorMessage>
+        <name>pre_surgery_for_65_years_old</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- לא ניתן לקבוע טרום ניתוח למנותחות שד לאחר השעה 13:00 --></errorMessage>
+        <name>pre_surgery_for_breast</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- גיל המטופל אינו תואם לפעולה הרפואית --></errorMessage>
+        <name>procedures_for_children</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- אנא פרט מהי סיבת הביטול --></errorMessage>
+        <name>reason_for_cancelation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Emergency_Mobile_MRI --></label>
+        <name>Emergency_Mobile_MRI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Kit_To_PDF --></label>
+        <name>Kit_To_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quote_SMS_Button --></label>
+        <name>Quote_SMS_Button</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Testapproval --></label>
+        <name>Testapproval</name>
+    </webLinks>
 </CustomObjectTranslation>

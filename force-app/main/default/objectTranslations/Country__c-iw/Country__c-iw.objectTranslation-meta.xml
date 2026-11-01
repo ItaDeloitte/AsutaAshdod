@@ -6,9 +6,20 @@
         <value>Country</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הCountry --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>Countries</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הCountries --></value>
+    </caseValues>
     <gender>Feminine</gender>
+    <nameFieldLabel><!-- country Name --></nameFieldLabel>
 </CustomObjectTranslation>

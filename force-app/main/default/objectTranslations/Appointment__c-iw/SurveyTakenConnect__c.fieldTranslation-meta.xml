@@ -3,5 +3,5 @@
     <help><!-- Lookup to Survey Taken Object --></help>
     <label><!-- SurveyTakenConnect --></label>
     <name>SurveyTakenConnect__c</name>
-    <relationshipLabel><!-- Surveys Taken --></relationshipLabel>
+    <relationshipLabel>פגישות</relationshipLabel>
 </CustomFieldTranslation>

@@ -6,9 +6,32 @@
         <value>SmsTemplate</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הSmsTemplate --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>SmsTemplates</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הSmsTemplates --></value>
+    </caseValues>
     <gender>Masculine</gender>
+    <nameFieldLabel><!-- SmsTemplate Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- השדה apiNames לא יכול להכיל רווחים או אותיות בעברית. --></errorMessage>
+        <name>apiNames_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- השדה developerName  יכול להכיל רק אותיות באנגלית (קטנות או גדולות) קו תחתון וללא רווחים. --></errorMessage>
+        <name>developerName_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- עבור שדות דינמיים חייב להוסיף  api names  וסוגריים מסולסלים --></errorMessage>
+        <name>include_merge_field</name>
+    </validationRules>
 </CustomObjectTranslation>

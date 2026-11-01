@@ -68,12 +68,6 @@
         <layout>ConsentFormTaken__c-ConsentFormTaken Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ConsentFormToSite__c-ConsentFormToSite Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ConsentForm__c-ConsentForm Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>ContactProfile-פרופיל איש קשר Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -299,10 +293,6 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Bank__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Bot_Business_Hours__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -348,14 +338,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>ConsentFormTaken__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>ConsentFormToSite__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>ConsentForm__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -475,19 +457,11 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Medical_Aid_Appointment__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Medical_Procedure__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Medical_Procedure_in_Sites__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Nursery__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -592,10 +566,6 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Survey_Assuta__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Survey_Question__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

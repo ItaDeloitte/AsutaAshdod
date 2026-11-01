@@ -4,7 +4,7 @@
     <description>מזהה ייחודי עבור המוגבלות. 
 הוקם לטובת האינטגרציה, על מנת לדעת האם העזר כבר קיים במערכת או לא.</description>
     <externalId>false</externalId>
-    <formula>Patient_Account__r.Id &amp; TEXT(Date_of_start__c)</formula>
+    <formula>Patient_Account__r.Id</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Assitsance Identifier</label>
     <required>false</required>

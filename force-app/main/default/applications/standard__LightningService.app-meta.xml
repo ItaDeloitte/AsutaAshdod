@@ -13828,7 +13828,6 @@
     <tabs>standard-OmniSupervisorLightning</tabs>
     <tabs>Implants_mp_apt__c</tabs>
     <tabs>IVR_Recording__c</tabs>
-    <tabs>Medical_Aid_Appointment__c</tabs>
     <tabs>MP_combinations_for_technicians__c</tabs>
     <tabs>dbo_CONV_SF_Activity_Fields_c__x</tabs>
     <tabs>ExcludedParameters__c</tabs>
@@ -13843,15 +13842,12 @@
     <tabs>Payment__c</tabs>
     <tabs>Related_document__c</tabs>
     <tabs>Country__c</tabs>
-    <tabs>Bank__c</tabs>
     <tabs>Referral_Agents__c</tabs>
     <tabs>ComplementaryTreatments__c</tabs>
     <tabs>SMSReminder__c</tabs>
     <tabs>et4ae5__Business_Unit__c</tabs>
     <tabs>et4ae5__Configuration__c</tabs>
     <tabs>Calendar_Ashdod__c</tabs>
-    <tabs>ConsentFormToSite__c</tabs>
-    <tabs>ConsentForm__c</tabs>
     <tabs>ConsentFormTaken__c</tabs>
     <tabs>PreMedicalProcedure__c</tabs>
     <tabs>PreMedicalForAppointment__c</tabs>
@@ -13884,9 +13880,6 @@
             <tab>AssutaFileLog__c</tab>
         </mappings>
         <mappings>
-            <tab>Bank__c</tab>
-        </mappings>
-        <mappings>
             <tab>Bot_Business_Hours__c</tab>
         </mappings>
         <mappings>
@@ -13903,12 +13896,6 @@
         </mappings>
         <mappings>
             <tab>ConsentFormTaken__c</tab>
-        </mappings>
-        <mappings>
-            <tab>ConsentFormToSite__c</tab>
-        </mappings>
-        <mappings>
-            <tab>ConsentForm__c</tab>
         </mappings>
         <mappings>
             <tab>Country__c</tab>
@@ -13957,9 +13944,6 @@
         </mappings>
         <mappings>
             <tab>MP_combinations_for_technicians__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Medical_Aid_Appointment__c</tab>
         </mappings>
         <mappings>
             <tab>Medical_Procedure__c</tab>
