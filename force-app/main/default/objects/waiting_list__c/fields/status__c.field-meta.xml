@@ -11,24 +11,48 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>ממתין</fullName>
+                <fullName>ממתין להקדמת תור</fullName>
                 <default>true</default>
-                <label>ממתין לשיבוץ</label>
+                <label>ממתין להקדמת תור</label>
             </value>
             <value>
-                <fullName>שובץ</fullName>
+                <fullName>הוקדם תור בהצלחה</fullName>
                 <default>false</default>
-                <label>שובץ</label>
+                <label>הוקדם תור בהצלחה</label>
             </value>
             <value>
-                <fullName>ממתין לתשובת מטופל</fullName>
+                <fullName>בוטל לבקשת המטופל</fullName>
                 <default>false</default>
-                <label>ממתין לתשובת מטופל</label>
+                <label>בוטל לבקשת המטופל</label>
+            </value>
+            <value>
+                <fullName>בוטל-לא נמצא תור מוקדם יותר</fullName>
+                <default>false</default>
+                <label>בוטל-לא נמצא תור מוקדם יותר</label>
             </value>
             <value>
                 <fullName>בוטל</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>בוטל</label>
+            </value>
+            <value>
+                <fullName>ממתין</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ממתין לשיבוץ</label>
+            </value>
+            <value>
+                <fullName>ממתין לתשובת מטופל</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ממתין לתשובת מטופל</label>
+            </value>
+            <value>
+                <fullName>שובץ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>שובץ</label>
             </value>
         </valueSetDefinition>
     </valueSet>

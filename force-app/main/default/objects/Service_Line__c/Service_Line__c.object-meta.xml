@@ -128,22 +128,6 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Service_Line_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Service_Line_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -161,6 +145,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Service Line</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Service Line  Name</label>
         <type>Text</type>
     </nameField>

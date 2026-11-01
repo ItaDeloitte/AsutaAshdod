@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Saturday_Scheduling_Required_On_Assign</fullName>
+    <active>false</active>
+    <description>מחייבת מילוי שדה קביעת תור בשבת כאשר מקושר תור חדש — הן ביצירה והן בעריכה. פועלת כאשר קיים תור חדש מקושר והשדה ריק.</description>
+    <errorConditionFormula>NOT(ISBLANK(New_Appointment__c)) &amp;&amp;
+ISPICKVAL(Saturday_Scheduling__c, &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Saturday_Scheduling__c</errorDisplayField>
+    <errorMessage>יש לציין אם ניתן לקבוע בשבת לפני קישור התור החדש.</errorMessage>
+</ValidationRule>

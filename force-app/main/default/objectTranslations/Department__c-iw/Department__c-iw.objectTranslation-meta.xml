@@ -6,9 +6,20 @@
         <value>Department</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הDepartment --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>Departments</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הDepartments --></value>
+    </caseValues>
     <gender>Feminine</gender>
+    <nameFieldLabel><!-- Department Name --></nameFieldLabel>
 </CustomObjectTranslation>

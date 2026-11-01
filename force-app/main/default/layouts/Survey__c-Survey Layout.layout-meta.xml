@@ -30,10 +30,6 @@
                 <field>Share_with_Guest_User__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Questions__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Thank_You_Link__c</field>
             </layoutItems>
@@ -84,10 +80,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>formtitan_param__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ConsentForm__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -175,17 +167,6 @@
     <miniLayout>
         <fields>URL__c</fields>
     </miniLayout>
-    <relatedLists>
-        <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
-        <fields>Question__c</fields>
-        <fields>Type__c</fields>
-        <fields>page__c</fields>
-        <fields>OrderNumber__c</fields>
-        <relatedList>Survey_Question__c.Survey__c</relatedList>
-        <sortField>OrderNumber__c</sortField>
-        <sortOrder>Asc</sortOrder>
-    </relatedLists>
     <relatedLists>
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>

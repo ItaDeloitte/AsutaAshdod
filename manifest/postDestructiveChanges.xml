@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CoronaReminderSchedulableBatch</members>
+        <members>CoronaReminderSchedulableBatchTest</members><!-- done-->
+        <members>CreateSurgerySMSSchedulableBatch</members><!-- done-->
+        <members>CreateSurgerySMSSchedulableBatchTest</members><!-- done-->
+        <members>RunKillSmsAfterAptExpert</members><!-- done-->
+        <members>RunKillSmsAfterAptExpertTest</members><!-- done-->
+        <members>GastroColonoscopySchedulableBatch</members><!-- done check git-->
+        <members>GastroAdminMessageSchedulableBatch</members><!-- done check git-->
+        <members>HomeAdmissionSMSSchedulableBatch</members><!-- done check git-->
+        <members>HomeAdmissionSMSSchedulableBatchTest</members><!-- done check git-->
+        <members>IVFReminderSchedulableBatch</members><!-- done check git-->
+        <members>IVFReminderSchedulableBatchTest</members><!-- done check git-->
+        <members>IVFNewCaseSchedulableBatch</members><!-- done check git-->
+        <members>IVFNewCaseSchedulableBatchTest</members><!-- done check git-->
+        <members>PreSurgeryReminderSchedulableBatch</members><!-- done check git-->
+        <members>PreSurgeryReminderSchedulableBatchTest</members><!-- done check git-->
+        <members>SendSurveyToDoctorsScheduleBatch</members><!-- done check git-->
+        <members>SendSurveyToDoctorsScheduleBatchTest</members><!-- done check git-->
+        <members>DocAdvisorSurveyCreatorSchedulableBatch</members><!-- done check git-->
+        <members>DocAdvisorSurveyCreatorTest</members><!-- done check git-->
+        <members>DeleteDuplicateSurveyResponseBatch</members><!-- done check git-->
+        <members>DeleteDuplicateSurveyResponseBatchTest</members><!-- done check git-->
+        <members>ExecuteDeleteDMLSurveyResponseBatch</members><!-- done check git-->
+        <members>ExecuteDeleteDMLSurveyResponseBatchTest</members><!-- done check git-->
+        <members>SQRIsForAvgFixBatch</members>
+        <members>SQRIsForAvgFixBatchTest</members>
+        <members>WA_FirstReminderSchedulableBatch</members>
+        <members>WA_SecondReminderSchedulableBatch</members>
+        <members>WA_ReminderBatchable</members>
+        <members>WA_ReminderBatchableTest</members>
+        <members>WA_ExpertDoctorReminderSchedule</members>
+        <members>WA_ExpertDoctorReminderScheduleTest</members>
+        <members>WA_SendingBarcodeIdentifySchedule</members>
+        <members>WA_SendingBarcodeIdentifyScheduleTest</members>
+        <members>RunOutWAFirstReminderFlow</members>
+        <members>RunOutWARemindersFlowTest</members>
+        <members>RunOutWASecondReminderFlow</members>
+        <members>RemoveSyncToMCSchedulableBatch</members>
+        <members>RemoveSyncToMCSchedulableBatchTest</members>
+         <members>LeadTRDispatcher</members>
+        <members>LeadTRHandler</members>
+        <members>LeadTRTest</members>
+        <members>UrgentAppointmentsSchedulableBatch</members>
+        <members>UrgentAppointmentsSchedulableBatchTest</members>
+        <members>CountProceduresOnAcctBatch</members>
+        <members>CountProceduresOnAcctBatchTest</members>
+        <members>DisableContactSchedulableBatch</members>
+        <members>DisableContactSchedulableBatchTest</members>
+        <members>UpdateLeadInQueueBatch</members>
+        <members>UpdateLeadInQueueBatchTest</members>
+        <members>DataLoaderLeadExportCondition</members>
+        <members>DataLoaderLeadExportConditionTest</members>
+        <members>LeadTRService</members>
+        <members>LC_CampaignSelectionController</members>
+        <members>LC_CampaignSelectionService</members>
+        <members>LC_CaseDoctorArrangement</members> 
+        <members>LC_CaseDoctorArrangementTest</members>
+        <members>LC_ChatTranscriptAccount</members>
+        <members>LC_ChatTranscriptAccountTest</members>
+        <members>LC_DocExpertiseController</members>
+        <members>LC_DocExpertiseControllerTest</members>
+        <members>LC_DoctorSummaryReportController</members>
+        <members>LC_DoctorSummaryReportTest</members>
+        <members>LC_LiveAgentController</members>
+        <members>LC_LiveAgentControllerTest</members>
+        <members>Bot_AppointmentController</members>
+        <members>Bot_AppointmentControllerTest</members>
+        <members>Bot_LockSlotController</members>
+        <members>Bot_LockSlotControllerTest</members>
+        <members>Bot_TextAppointmentSerach</members>
+        <members>Bot_TextAppointmentSerachTest</members>
+        <members>Bot_UpdateTranscript</members>
+        <members>Bot_UpdateTranscriptTest</members>
+        <members>GetCampaigns_LWCtrl</members>
+        <members>GetCampaigns_LWCtrlTest</members>
+        <members>fileUploadForFreezingEggsController</members>
+        <members>fileUploadForFreezingEggsTest</members>
+        <members>fileUploadForFreezingEggsQueueable</members>
+        <members>GettingStartedController</members>
+        <members>GettingStartedController_Test</members>
+        <members>ClinicServices</members>
+        <members>ClinicTriggerDispatcher</members>
+        <members>ClinicTriggerHandler</members>
+        <members>DocInClinicServices</members>
+        <members>DocInClinicTriggerDispatcher</members>
+        <members>DocInClinicTriggerHandler</members>
+        <members>DocMedProcedureServices</members>
+        <members>DocMedProcedureTriggerDispatcher</members>
+        <members>DocMedProcedureTriggerHandler</members>
+        <members>ExpertsTRDispatcher</members>
+        <members>ExpertsTRHandler</members>
+        <members>ExpertsTRService</members>
+        <members>AgreementTriggerDispatcher</members>
+        <members>AgreementTriggerHandler</members>
+        <members>AgreementTriggerService</members>
+        <members>ArrangementTriggerDispatcher</members>
+        <members>ArrangementTriggerHandler</members>
+        <members>ArrangementTriggerService</members>
+        <members>CalendarTriggerDispatcher</members>
+        <members>CalendarTriggerHandler</members>
+        <members>CalendarTriggerService</members>
+        <members>ApprovalRequestTrackingTriggerDisptacher</members>
+        <members>ApprovalRequestTrackingTriggerHandler</members>
+        <members>ApprovalRequestTrackingTriggerService</members>
+        <members>CampaignTriggerDispatcher</members>
+        <members>CampaignTriggerHandler</members>
+        <members>OpportunityTriggerDispatcher</members>
+        <members>OpportunityTriggerHandler</members>
+        <members>ChatTranscriptService</members>
+        <members>ChatTranscriptTriggerDispatcher</members>
+        <members>ChatTranscriptTriggerHandller</members>
+        <members>Implants_mp_aptTriggerDispatcher</members>
+        <members>LiveAgentChatQueueable</members>
+        <members>CPRCourseFileUploadingScheduleBatch</members>
+        <members>DoctorAbandonmentScheduleBatch</members>
+        <members>DoctorSummaryReportBatch</members>
+        <members>DocAdvisorGradeSchedulableBatch</members>
+        <members>DocAdvisorGradeScheduleBatch</members>
+        <members>UpdateDoctorsScheduleBatch</members>
+        <members>RunReportForExpertProcess</members>
+        <members>ClinicServicesTest</members>
+        <members>DocInClinicServicesTest</members>
+        <members>DocMedProcedureServicesTest</members>
+        <members>AgreementServiceTest</members>
+        <members>CalendarTriggerServiceTest</members>
+        <members>ApprovalRequestTrackingServiceTest</members>
+        <members>CampaignTriggerDispatcherTest</members>
+        <members>OpportunityTriggerDispatcherTest</members>
+        <members>ChatTranscriptServiceTest</members>
+        <members>LiveAgentChatQueueableTest</members>
+        <members>SMSParentSessionServiceTest</members>
+        <members>CPRCourseFileUploadingScheduleBatchTest</members>
+        <members>DoctorAbandonmentScheduleBatchTest</members>
+        <members>DoctorSummaryReportBatchTest</members>
+        <members>DocAdvisorGradeSchedulableBatchTest</members>
+        <members>DocAdvisorGradeScheduleBatchTest</members>
+        <members>RunReportForExpertProcessTest</members>
+        <members>UpdateDoctorsScheduleBatchTest</members>
+        <members>ws_ClosestExpertAppointment</members>
+        <members>ws_FutureCase</members>
+        <members>ws_FutureCaseInTafnit</members>
+        <members>ws_GetCampaigns_REST</members>
+        <members>ws_IsServiceRetAnsw_Batchable</members>
+        <members>ws_IsServiceRetAnsw_Schedule</members>
+        <members>ws_UploadCPRCourseFileToTafnit</members>
+        <members>CommitmentReminderScheduleBatch</members>
+        <members>CreateFutureCaseInTafnitScheduleBatch</members>
+        <members>CommitmentReminderScheduleBatchTest</members>
+        <members>CreateFutureCaseScheduleBatchTest</members>
+        <members>ws_ClosestExpertAppointmentTest</members>
+        <members>ws_FutureCase_Test</members>
+        <members>ws_GetCampaigns_REST_Test</members>
+        <members>ws_IsServiceRetAnsw_Invocable_TEST</members>
+        <members>ws_UploadCPRCourseFileToTafnitTest</members>
+      <name>ApexClass</name>
+    </types>
+
+     <types>
+        <members>LeadTR</members>
+        <members>ClinicTrigger</members>
+        <members>DocInClinicTrigger</members>
+        <members>DocMedProcedureTrigger</members>
+        <members>AppointmentTrigger</members>
+        <members>AgreementTrigger</members>
+        <members>ArrangementTrigger</members>
+        <members>CalendarTrigger</members>
+        <members>ApprovalRequestTrackingTrigger</members>
+        <members>CampaignTrigger</members>
+        <members>OpportunityTrigger</members>
+        <members>ChatTranscriptTrigger</members>
+        <members>Implants_mp_aptTrigger</members>
+        <name>ApexTrigger</name>
+        <name>ApexTrigger</name>
+    </types>
+
+     <types>
+        <members>DoctorSummaryReportButton</members>
+        <members>UpdateCaseDoctorArrangement</members>
+        <members>UpdateChatTranscriptAccount</members>
+        <members>LiveAgentChat</members>
+        <members>DocExpertDashboard</members>
+        <members>DocExpertDoctorsSlider</members>
+        <members>DocExpertDoctor</members>
+        <members>DocExpertClinicsModal</members>
+        <members>Cases360Modal</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+
+     <types>
+        <members>Getting_Started_With_Survey_Force</members>
+        <name>ApexPage</name>
+    </types>
+
+     <types>
+        <members>assignCampaign</members>
+        <members>getCampaigns</members>
+        <members>fileUploadForFreezingEggs</members>
+        <name>LightningComponentbundle</name>
+    </types>
+
+
+    <version>65.0</version>
+</Package>
+
+ <!--  <members>RedirectToAppointment</members> רחל
+        <members>RedirectToAppointmentTest</members>רחל
+        <members>LC_PreSaleController</members><!-- leave-->
+        <members>LC_PreSaleTest</members><!-- leave-->
+        <members>LC_RecommendExamCase</members><!-- leave-->
+        <members>LC_RecommendExamCaseTest</members><!-- leave-->
+        <members>LC_SurgeriesAppointment</members><!-- leave-->
+        <members>LC_SurgeriesAppointmentTest</members><!-- leave-->
+        <members>LC_SurgeryCancel</members><!-- leave-->
+        <members>LC_SurgeryCancelTest</members><!-- leave-->
+        <members>LC_UtilityBarController</members><!-- leave-->
+        <members>LC_UtilityBarTest</members><!-- leave-->
+        <members>LC_UtilityBarService</members><!-- leave-->
+        <members>LC_LeadAccount</members><!-- leave-->
+        <members>LC_LeadAccountTest</members><!-- leave-->
+        <members>LC_CustomChatController</members> <!-- leave-->
+        <members>LC_CustomChatControllerTest</members><!-- leave-->
+          <members>UserManagementController</members><!-- leave-->
+        <members>UserManagementControllerTest</members><!-- leave-->
+        <members>SoftphoneContactSearchController</members><!-- leave-->
+        <members>SoftphoneContactSearchService</members><!-- leave-->
+        <members>SoftphoneProviderController</members><!-- leave-->
+        <members>SoftphoneProviderControllerTest</members><!-- leave-->
+          <!--<members>Implants_mp_aptTriggerServiceTest</members>-->
+          <!--<members>ExpertProcedureServiceTest</members>-->
+          <!-- <members>Implants_mp_aptTriggerService</members>-->
+           <!--<members>ExpertProcedureService</members>-->
+
+           <!-- הערה -->
+        <!--<members>LexInputFieldCompCtrl</members> -->
+        <!--<members>LexInputFieldCompCtrl_Test</members>-->
+        <!-- <members>GSurveysController</members>
+        <members>GSurveysController_Test</members>-->
+       <!-- <members>SurveyManagerController</members>
+        <members>SurveyManagerController_Test</members>-->
+
+         <!-- <types>
+        <members>LexInputField</members>
+        <name>ApexComponent</name>
+
+    </types>-->
+  <!--  <members>SurveyManagerPage</members>
+        <members>GSurveys</members>-->

@@ -4,6 +4,7 @@
     <caseSensitive>false</caseSensitive>
     <description>קוד רופא
 מספר רישיון</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>true</externalId>
     <label>Doctor Code</label>
     <length>50</length>

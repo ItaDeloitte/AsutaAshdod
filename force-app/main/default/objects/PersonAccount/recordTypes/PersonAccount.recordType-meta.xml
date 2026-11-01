@@ -159,21 +159,6 @@
             <default>false</default>
         </values>
     </picklistValues>
-    
-        <picklist>AshdodPreferredChannel__c</picklist>
-        <values>
-            <fullName>Email</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>SMS</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>WA</fullName>
-            <default>true</default>
-        </values>
-    </picklistValues>
         <picklistValues>
         <picklist>AccountSource</picklist>
         <values>

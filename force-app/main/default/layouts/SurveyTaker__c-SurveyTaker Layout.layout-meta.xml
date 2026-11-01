@@ -199,19 +199,6 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Survey_Question__c.Question__c</fields>
-        <fields>Response__c</fields>
-        <fields>Page__c</fields>
-        <fields>Order__c</fields>
-        <fields>IsAnswered__c</fields>
-        <fields>Survey_Question__c.Type__c</fields>
-        <fields>QuestionName__c</fields>
-        <fields>QuestionType__c</fields>
-        <fields>UnShow__c</fields>
-        <relatedList>SurveyQuestionResponse__c.SurveyTaker__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
         <relatedList>ConsentFormTaken__c.Survey_Taken__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>

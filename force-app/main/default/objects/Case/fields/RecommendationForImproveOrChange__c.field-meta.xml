@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>RecommendationForImproveOrChange__c</fullName>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Recommendation For Improve Or Change</label>
     <length>255</length>

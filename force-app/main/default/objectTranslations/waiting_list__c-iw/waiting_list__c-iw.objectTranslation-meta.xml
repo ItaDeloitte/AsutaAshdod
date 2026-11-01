@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <article>None</article>
@@ -22,4 +22,16 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel><!-- Waiting List Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- יש לציין אם ניתן לקבוע בשבת לפני קישור התור החדש. --></errorMessage>
+        <name>Saturday_Scheduling_Required_On_Assign</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- deprecated --></errorMessage>
+        <name>medical_procedure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- deprecated --></errorMessage>
+        <name>time_between_appointments</name>
+    </validationRules>
 </CustomObjectTranslation>

@@ -4,9 +4,8 @@
     <columns>NAME</columns>
     <columns>Account__c</columns>
     <columns>Appointment__c</columns>
-    <columns>ConsentForm__c</columns>
     <columns>Medical_Procedure__c</columns>
     <columns>Case__c</columns>
     <filterScope>Mine</filterScope>
-    <label>consent form taken list</label>
+    <label>consent form taken list_deprecated</label>
 </ListView>

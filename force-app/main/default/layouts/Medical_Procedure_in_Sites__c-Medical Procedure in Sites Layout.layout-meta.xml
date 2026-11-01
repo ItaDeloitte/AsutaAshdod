@@ -41,14 +41,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>DigitalSignConsentForm__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>DigitalSignConsentForm1__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Digital_Survey1__c</field>
             </layoutItems>
             <layoutItems>

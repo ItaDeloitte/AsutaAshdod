@@ -6,9 +6,28 @@
         <value>ConsentForm</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הConsentForm --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>ConsentForms</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הConsentForms --></value>
+    </caseValues>
     <gender>Masculine</gender>
+    <nameFieldLabel><!-- ConsentForm Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- ConsentForm --></label>
+        <name>ConsentForm</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to modify this Name field. --></errorMessage>
+        <name>Lock_Record_Name</name>
+    </validationRules>
 </CustomObjectTranslation>

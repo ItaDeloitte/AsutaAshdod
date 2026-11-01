@@ -10,4 +10,16 @@
     </caseValues>
     <nameFieldLabel>Waiting List</nameFieldLabel>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- יש לציין אם ניתן לקבוע בשבת לפני קישור התור החדש. --></errorMessage>
+        <name>Saturday_Scheduling_Required_On_Assign</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- deprecated --></errorMessage>
+        <name>medical_procedure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- deprecated --></errorMessage>
+        <name>time_between_appointments</name>
+    </validationRules>
 </CustomObjectTranslation>

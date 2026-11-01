@@ -155,6 +155,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>ישוב</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>settlement</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>

@@ -8,5 +8,9 @@
         <plural>true</plural>
         <value>Sites</value>
     </caseValues>
+    <recordTypes>
+        <label><!-- Site --></label>
+        <name>Site</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

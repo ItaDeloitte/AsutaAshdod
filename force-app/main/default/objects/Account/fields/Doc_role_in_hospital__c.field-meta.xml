@@ -3,6 +3,7 @@
     <fullName>Doc_role_in_hospital__c</fullName>
     <description>חלק מתפקיד הרופא
 מגיע בממשק מתפנית</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Hospital Doctor Role</label>
     <length>20</length>

@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Sub-Expertise</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Sub-Expertise Name</label>
         <trackHistory>true</trackHistory>
         <type>Text</type>

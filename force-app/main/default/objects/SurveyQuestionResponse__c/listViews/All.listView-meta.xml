@@ -3,7 +3,6 @@
     <fullName>All</fullName>
     <columns>NAME</columns>
     <columns>OBJECT_ID</columns>
-    <columns>Survey_Question__c</columns>
     <columns>SurveyTaker__c</columns>
     <columns>QuestionName__c</columns>
     <filterScope>Everything</filterScope>

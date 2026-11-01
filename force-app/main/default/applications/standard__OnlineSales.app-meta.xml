@@ -2358,7 +2358,6 @@
     </profileActionOverrides>
     <tabs>standard-OnlineSalesHome</tabs>
     <tabs>Payment__c</tabs>
-    <tabs>Bank__c</tabs>
     <tabs>Referral_Agents__c</tabs>
     <tabs>ComplementaryTreatments__c</tabs>
     <tabs>SMSReminder__c</tabs>
@@ -2366,8 +2365,6 @@
     <tabs>standard-SalesforceContract</tabs>
     <tabs>standard-SalesforceInvoice</tabs>
     <tabs>standard-SalesforceProductCatalog</tabs>
-    <tabs>ConsentFormToSite__c</tabs>
-    <tabs>ConsentForm__c</tabs>
     <tabs>ConsentFormTaken__c</tabs>
     <tabs>PreMedicalProcedure__c</tabs>
     <tabs>PreMedicalForAppointment__c</tabs>

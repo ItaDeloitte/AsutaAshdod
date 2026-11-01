@@ -3,6 +3,7 @@
     <fullName>GateScanner_JobId__c</fullName>
     <caseSensitive>false</caseSensitive>
     <description>job id that received from upload document method of gate scanner (SASA)</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>GateScanner_JobId</label>
     <length>45</length>

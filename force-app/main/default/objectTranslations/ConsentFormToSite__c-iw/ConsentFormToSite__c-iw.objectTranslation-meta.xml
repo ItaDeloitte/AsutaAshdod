@@ -6,9 +6,20 @@
         <value>ConsentForm to Site and MP</value>
     </caseValues>
     <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- הConsentForm to Site and MP --></value>
+    </caseValues>
+    <caseValues>
         <article>None</article>
         <plural>true</plural>
         <value>ConsentFormsToSite</value>
     </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- הConsentFormsToSite --></value>
+    </caseValues>
     <gender>Masculine</gender>
+    <nameFieldLabel><!-- ConsentFormToSite Name --></nameFieldLabel>
 </CustomObjectTranslation>

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Flag_For_Expired_SLA__c</fullName>
-    <description>FORMULA_PENDING | Original: if( SLA_Breached_Ashdod__c = true, 
-   if ( $Organization.Id = &amp;apos;00D7E000000FWtK&amp;apos;, 
-        IMAGE(&amp;quot;https://assuta--uat--c.sandbox.vf.force.com/resource/1731584444000/HighImportanceImage&amp;quot;, &amp;quot;High Importance&amp;quot;, 50, 50),
-        IMAGE(&amp;quot;https://assuta--c.vf.force.com/resource/1731849084000/HighImportanceImage&amp;quot;, &amp;quot;High Importance&amp;quot;, 50, 50)
-     ),
-  &amp;apos;&amp;apos;) | Monday 2904270599</description>
     <externalId>false</externalId>
-    <formula>&quot;FORMULA_PENDING&quot;</formula>
+    <formula>IF(SLA_Breached_Ashdod__c, &quot;🔴&quot;, &quot;&quot;)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>Flag For Expired SLA</label>
+    <label>דגל עבור SLA שפג</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <type>Text</type>

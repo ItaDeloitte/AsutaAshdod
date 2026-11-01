@@ -4,6 +4,7 @@
     <description>תאריך תחילת חברות במכבי
 מגיעה בממשק דמוגרפיה
 ותק חברות במכבי יחשוב על בסיסו</description>
+    <encryptionScheme>None</encryptionScheme>
     <label>Begin Insurance</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

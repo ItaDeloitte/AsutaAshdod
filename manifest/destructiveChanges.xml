@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>LexInputFieldCompCtrl_Test</members>
+        <members>GSurveysController</members>
+        <members>GSurveysController_Test</members>
+        <members>SurveyManagerController</members>
+        <members>SurveyManagerController_Test</members>
+        <name>ApexClass</name>
+    </types>
+    <version>65.0</version>
+</Package>

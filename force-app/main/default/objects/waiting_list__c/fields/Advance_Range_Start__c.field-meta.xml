@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advance_Range_Start__c</fullName>
+    <defaultValue>TODAY()</defaultValue>
+    <description>תאריך ההתחלה של טווח ההקדמה. ברירת מחדל היום.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <inlineHelpText>מאיזה תאריך ניתן להקדים את התור.</inlineHelpText>
+    <label>Advance Range Start</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

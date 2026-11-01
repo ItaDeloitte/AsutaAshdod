@@ -13,10 +13,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Implants__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Medical_Procedure__c</field>
             </layoutItems>
             <layoutItems>
@@ -26,14 +22,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>ETL_Unique_Identifier__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>formula_for_imp_de_kit__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>formula_imp_name__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

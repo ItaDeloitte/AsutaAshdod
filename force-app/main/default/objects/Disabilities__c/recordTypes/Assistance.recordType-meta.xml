@@ -17,25 +17,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Side__c</picklist>
-        <values>
-            <fullName>BOTH</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>LEFT</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>NOT</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>RIGHT</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Status_Disability__c</picklist>
         <values>
             <fullName>לא פעיל</fullName>

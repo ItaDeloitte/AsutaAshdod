@@ -22,4 +22,8 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>שם האתר</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Site --></label>
+        <name>Site</name>
+    </recordTypes>
 </CustomObjectTranslation>

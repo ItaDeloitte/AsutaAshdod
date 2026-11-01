@@ -162,17 +162,6 @@
     </validationRules>
     <validationRules>
         <errorMessage>
-            <!-- יש למלא את השדות הבאים תחת כותרת &quot;שאלון קורונה&quot; בטרם שמירת הפנייה: 
-מקום מגורים קבוע
-האם חזרת מחו&quot;ל ב-14 ימים האחרונים?
- מגע עם חולה קורונה ב-14 ימים האחרונים?
- מתגורר/ת עם חולה קורונה באשפוז ביתי?
- חום/תסמינים נשימתיים בשבועיים האחרונים? -->
-        </errorMessage>
-        <name>Mandatory_Fields_For_Schedule_Corona</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage>
             <!-- רק בעלי פניה מסוג מנהל יכול לסגור פניה זו. 
 מנהל/ת - יש להעביר את הפניה לבעלותך ואז לסגור את הפניה -->
         </errorMessage>

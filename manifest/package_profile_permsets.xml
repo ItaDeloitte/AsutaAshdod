@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Admin</members>
+       <!-- <members>Agent</members>
+        <members>Agent 360</members>
+        <members>Agent Ashdod</members>
+        <members>Analytics Cloud Integration User</members>
+        <members>Analytics Cloud Security User</members>
+        <members>Anypoint Integration</members>
+        <members>AshdodGoogleAds</members>
+        <members>Chatter External User</members>
+        <members>ContractManager</members>
+        <members>CPQ Integration User</members>
+        <members>Customer Community Login User</members>
+        <members>Customer Community Plus Login User</members>
+        <members>Customer Community Plus User</members>
+        <members>Customer Community User</members>
+        <members>Customer Internal</members>
+        <members>Deloitte Admin for Go-Live</members>
+        <members>Doctor_Coordinator</members>
+        <members>Doctors Payments</members>
+        <members>Doctors Personal Area Profile</members>
+        <members>Einstein Agent User</members>
+        <members>ESW_Agentforce_JADE_Chat_1768316975253 Profile</members>
+        <members>ESW_Assuta_Ashdod_Chat_for_1715765075873 Profile</members>
+        <members>ESW_Assuta_Personal_1744028256192 Profile</members>
+        <members>ESW_Assuta_Site_Portal_1744028392284 Profile</members>
+        <members>ESW_FB_Assuta_1744019709270 Profile</members>
+        <members>ESW_FB_Assuta_1744019774707 Profile</members>
+        <members>ESW_FB_Assuta_1744019876830 Profile</members>
+        <members>ESW_FB_Assuta_1744019943966 Profile</members>
+        <members>ESW_FB_Assuta_1744020050863 Profile</members>
+        <members>ESW_FB_assuta_1744028956005 Profile</members>
+        <members>ESW_FB_assuta_1744029035812 Profile</members>
+        <members>ESW_FB_Assuta_1744032055789 Profile</members>
+        <members>ESW_FB_Assuta_1744032131464 Profile</members>
+        <members>ESW_FB_Assuta_1744106198830 Profile</members>
+        <members>ESW_FB_Assuta_1744106286345 Profile</members>
+        <members>External Apps Login User</members>
+        <members>External Einstein Agent User</members>
+        <members>FormTitan_Backup</members>
+        <members>FormTitan_Profile</members>
+        <members>Guest License User</members>
+        <members>Identity User</members>
+        <members>Integration Profile</members>
+        <members>IT Sandbox Mgmt</members>
+        <members>KMS</members>
+        <members>Limited Access User</members>
+        <members>Manager</members>
+        <members>Manager Ashdod</members>
+        <members>Marketing (NEW)</members>
+        <members>MarketingProfile</members>
+        <members>MCAS</members>
+        <members>MedicalTourism</members>
+        <members>Minimum Access - API Only Integrations</members>
+        <members>Minimum Access - Salesforce</members>
+        <members>OwnBackupUSR</members>
+        <members>Partner Community User</members>
+        <members>Partner Community User Custom</members>
+        <members>PR_Agent</members>
+        <members>PR_Agent_Ashdod</members>
+        <members>PR_Manager</members>
+        <members>PR_Manager_Ashdod</members>
+        <members>PR_Secretary</members>
+        <members>PR_Secretary_Ashdod</members>
+        <members>Provisioning no IP limit</members>
+        <members>Public Inquiries</members>
+        <members>Public Inquiries - Ashdod</members>
+        <members>Read Only</members>
+        <members>Sales Insights Integration User</members>
+        <members>Salesforce API Only System Integrations</members>
+        <members>SalesForce_AdaptiveShieldGrp</members>
+        <members>SalesForce_AdminGrp</members>
+        <members>SalesForce_ITSupportTeamGrp</members>
+        <members>SalesForceDeloitteGrp</members>
+        <members>SalesForceDoctors</members>
+        <members>SalesforceIQ Integration User</members>
+        <members>SalesforceROGrp</members>
+        <members>Secretary</members>
+        <members>Secretary - IVF</members>
+        <members>Secretary Ashdod</members>
+        <members>Senior Agent</members>
+        <members>ServiceCloud</members>
+        <members>Site for live chat Profile</members>
+        <members>SolutionManager</members>
+        <members>Standard</members>
+        <members>Supplier</members>
+        <members>Survey-Agent</members>
+        <members>TelleAll Agent</members>
+        <members>testassutademo Profile</members>
+        <members>ZapierProfile</members>-->
+        <name>PermissionSet</name>
+    </types>
+    <version>64.0</version>
+</Package>

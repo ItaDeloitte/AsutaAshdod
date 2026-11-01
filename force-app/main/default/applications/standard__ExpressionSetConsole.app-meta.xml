@@ -1920,13 +1920,10 @@
     <tabs>standard-DecisionTable</tabs>
     <tabs>standard-ExpressionSetTemplate</tabs>
     <tabs>standard-ExpressionSet</tabs>
-    <tabs>Bank__c</tabs>
     <tabs>Referral_Agents__c</tabs>
     <tabs>ComplementaryTreatments__c</tabs>
     <tabs>SMSReminder__c</tabs>
     <tabs>Calendar_Ashdod__c</tabs>
-    <tabs>ConsentFormToSite__c</tabs>
-    <tabs>ConsentForm__c</tabs>
     <tabs>ConsentFormTaken__c</tabs>
     <tabs>PreMedicalProcedure__c</tabs>
     <tabs>PreMedicalForAppointment__c</tabs>
@@ -1939,9 +1936,6 @@
     <workspaceConfig>
         <mappings>
             <tab>AssutaFileLog__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Bank__c</tab>
         </mappings>
         <mappings>
             <tab>Bot_Business_Hours__c</tab>
@@ -1957,12 +1951,6 @@
         </mappings>
         <mappings>
             <tab>ConsentFormTaken__c</tab>
-        </mappings>
-        <mappings>
-            <tab>ConsentFormToSite__c</tab>
-        </mappings>
-        <mappings>
-            <tab>ConsentForm__c</tab>
         </mappings>
         <mappings>
             <tab>PreMedicalForAppointment__c</tab>

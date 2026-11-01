@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>phone__c</fullName>
     <externalId>false</externalId>
-    <formula>Appointment__r.Patient_Account__r.Phone</formula>
+    <formula>Patient_Account__r.Phone</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Phone</label>
     <required>false</required>

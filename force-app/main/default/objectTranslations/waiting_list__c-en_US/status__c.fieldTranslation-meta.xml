@@ -3,19 +3,19 @@
     <label><!-- Status --></label>
     <name>status__c</name>
     <picklistValues>
-        <masterLabel>בוטל</masterLabel>
-        <translation><!-- בוטל --></translation>
+        <masterLabel>בוטל לבקשת המטופל</masterLabel>
+        <translation><!-- בוטל לבקשת המטופל --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>ממתין לשיבוץ</masterLabel>
-        <translation><!-- ממתין לשיבוץ --></translation>
+        <masterLabel>בוטל-לא נמצא תור מוקדם יותר</masterLabel>
+        <translation><!-- בוטל-לא נמצא תור מוקדם יותר --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>ממתין לתשובת מטופל</masterLabel>
-        <translation><!-- ממתין לתשובת מטופל --></translation>
+        <masterLabel>הוקדם תור בהצלחה</masterLabel>
+        <translation><!-- הוקדם תור בהצלחה --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>שובץ</masterLabel>
-        <translation><!-- שובץ --></translation>
+        <masterLabel>ממתין להקדמת תור</masterLabel>
+        <translation><!-- ממתין להקדמת תור --></translation>
     </picklistValues>
 </CustomFieldTranslation>

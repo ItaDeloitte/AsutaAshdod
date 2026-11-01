@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>PassportNumList__c</fullName>
     <description>רשימה של מספרי דרכונים</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Passport Num List</label>
     <length>255</length>

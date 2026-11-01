@@ -22,4 +22,8 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>שם מרפאה</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- מספר הטלפון אינו תקין --></errorMessage>
+        <name>Validation_on_Phone_field</name>
+    </validationRules>
 </CustomObjectTranslation>

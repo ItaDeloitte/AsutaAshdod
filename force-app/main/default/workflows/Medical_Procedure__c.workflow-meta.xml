@@ -20,6 +20,7 @@
         <criteriaItems>
             <field>Medical_Procedure__c.Marketing_Procedure_Name__c</field>
             <operation>equals</operation>
+            <value></value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>

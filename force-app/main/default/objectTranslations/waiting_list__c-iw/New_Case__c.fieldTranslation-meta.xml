@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- הפנייה החדשה שנקבעה למטופל. --></help>
+    <label>הפנייה החדשה</label>
+    <name>New_Case__c</name>
+    <relationshipLabel><!-- Waiting Lists (New Case) --></relationshipLabel>
+</CustomFieldTranslation>

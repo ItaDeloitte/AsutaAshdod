@@ -21,60 +21,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Approval_Sub_Topic__c</picklist>
-        <values>
-            <fullName>11</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>13</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>8</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>9</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Approval_Topic__c</picklist>
-        <values>
-            <fullName>2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>6</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>7</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>ApprovingUser__c</picklist>
         <values>
             <fullName>אורטל סולומון</fullName>
@@ -624,21 +570,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Case_Time__c</picklist>
-        <values>
-            <fullName>24hto48h</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>above48h</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>under24h</fullName>
-            <default>true</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Case_site__c</picklist>
         <values>
             <fullName>Ramat_Hahayal</fullName>
@@ -743,17 +674,6 @@
         </values>
         <values>
             <fullName>Wolfson Hospital</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Contact_With_Corona_Patient__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -914,17 +834,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Fever_Symptoms_Last_14_Days__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Findings_Details__c</picklist>
         <values>
             <fullName>Negative</fullName>
@@ -1009,33 +918,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>IVF_site__c</picklist>
-        <values>
-            <fullName>אשדוד כלניות</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>באר שבע</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>חיפה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ראשון לציון</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>רמת החייל</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>רעננה</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Identification_Done__c</picklist>
         <values>
             <fullName>Couple_Identification</fullName>
@@ -1111,17 +993,6 @@
         </values>
         <values>
             <fullName>שלילית</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Live_With_Coronat_Patient__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -3505,37 +3376,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Subject__c</picklist>
-        <values>
-            <fullName>אחר</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>בקשות חריגות</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מידע למטופל</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>פניה למנכ%22ל</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>רפואי%2Fניהול סיכונים</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>תודה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>תלונה</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Test_Type__c</picklist>
         <values>
             <fullName>CT</fullName>
@@ -3914,17 +3754,6 @@
         </values>
         <values>
             <fullName>Specialist</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Visited_Abroad_During_Last_14_Days__c</picklist>
-        <values>
-            <fullName>כן</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>לא</fullName>
             <default>false</default>
         </values>
     </picklistValues>

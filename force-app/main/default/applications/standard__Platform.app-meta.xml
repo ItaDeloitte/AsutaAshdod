@@ -48,7 +48,6 @@
     <tabs>waiting_list__c</tabs>
     <tabs>QualityControl__c</tabs>
     <tabs>Agent_survey__c</tabs>
-    <tabs>Nursery__c</tabs>
     <tabs>Survey_Assuta__c</tabs>
     <tabs>Agreement__c</tabs>
     <tabs>Doctor_arrangement__c</tabs>
@@ -63,7 +62,6 @@
     <tabs>cases_and_appoitments__c</tabs>
     <tabs>Implants_mp_apt__c</tabs>
     <tabs>IVR_Recording__c</tabs>
-    <tabs>Medical_Aid_Appointment__c</tabs>
     <tabs>MP_combinations_for_technicians__c</tabs>
     <tabs>Appointment_To_Survey__c</tabs>
     <tabs>System__c</tabs>
@@ -72,13 +70,10 @@
     <tabs>Log__c</tabs>
     <tabs>Daily_Tasks_Log_IVF__c</tabs>
     <tabs>Payment__c</tabs>
-    <tabs>Bank__c</tabs>
     <tabs>Referral_Agents__c</tabs>
     <tabs>ComplementaryTreatments__c</tabs>
     <tabs>SMSReminder__c</tabs>
     <tabs>Calendar_Ashdod__c</tabs>
-    <tabs>ConsentFormToSite__c</tabs>
-    <tabs>ConsentForm__c</tabs>
     <tabs>ConsentFormTaken__c</tabs>
     <tabs>PreMedicalProcedure__c</tabs>
     <tabs>PreMedicalForAppointment__c</tabs>

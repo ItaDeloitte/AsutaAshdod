@@ -258,17 +258,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>AshdodPreferredChannel__c</picklist>
-        <values>
-            <fullName>SMS</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>WA</fullName>
-            <default>true</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Asthma__c</picklist>
         <values>
             <fullName>Fatal</fullName>
@@ -882,56 +871,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Other_Health_Services__c</picklist>
-        <values>
-            <fullName>15</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>20</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>25</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>50</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>55</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>60</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ללא</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Ownership</picklist>
-        <values>
-            <fullName>Other</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Private</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Public</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Subsidiary</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Payment_method__c</picklist>
         <values>
             <fullName>ביט</fullName>
@@ -1507,32 +1446,6 @@
         </values>
         <values>
             <fullName>מתחת ל-120</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>alcdcti__Active__c</picklist>
-        <values>
-            <fullName>No</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Yes</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>alcdcti__CustomerPriority__c</picklist>
-        <values>
-            <fullName>High</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Low</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Medium</fullName>
             <default>false</default>
         </values>
     </picklistValues>

@@ -6,21 +6,6 @@
     <description>אנשי קשר</description>
     <label>Contact</label>
     <picklistValues>
-        <picklist>Assuta_emp_in_clinic__c</picklist>
-        <values>
-            <fullName>מזכיר%2Fה</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מנהל%2Fת</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>מנכ%22לית</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>BuyerAttributes</picklist>
         <values>
             <fullName>BusinessUser</fullName>
@@ -52,17 +37,6 @@
         </values>
         <values>
             <fullName>TechnicalExpert</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Contact_type__c</picklist>
-        <values>
-            <fullName>מטופל ואנשי קשר למטופל</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>עובד אסותא</fullName>
             <default>false</default>
         </values>
     </picklistValues>

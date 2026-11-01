@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Domain__c</fullName>
     <description>תחום הפעולה הרפואית</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>Domain</label>
     <length>255</length>

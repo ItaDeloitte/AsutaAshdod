@@ -3,6 +3,7 @@
     <fullName>Admission_Date__c</fullName>
     <description>תאריך קבלת המטופל
 מממשק ביקורים דחיפה</description>
+    <encryptionScheme>None</encryptionScheme>
     <label>Admission Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

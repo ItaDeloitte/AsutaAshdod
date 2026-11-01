@@ -1109,21 +1109,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>IsCovid19__c</picklist>
-        <values>
-            <fullName>1</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>MAIN_CANCELATION_CAUSE_SURGERY__c</picklist>
         <values>
             <fullName>אדמיניסטרטיבי</fullName>

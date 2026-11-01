@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Medication__c</fullName>
     <description>תרופות</description>
+    <encryptionScheme>None</encryptionScheme>
     <label>Medication</label>
     <length>32768</length>
     <trackFeedHistory>false</trackFeedHistory>

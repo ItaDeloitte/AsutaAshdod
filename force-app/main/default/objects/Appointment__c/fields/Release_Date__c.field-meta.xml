@@ -3,6 +3,7 @@
     <fullName>Release_Date__c</fullName>
     <description>תאריך שחרור המטופל
 מממשק ביקורים דחיפה</description>
+    <encryptionScheme>None</encryptionScheme>
     <label>Release Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

@@ -3,6 +3,7 @@
     <fullName>File_number_from_Portal__c</fullName>
     <caseSensitive>false</caseSensitive>
     <description>מספר מזהה של המסמך שמגיע מהפורטל OriginalFileName</description>
+    <encryptionScheme>None</encryptionScheme>
     <externalId>true</externalId>
     <label>File number from Portal</label>
     <length>20</length>

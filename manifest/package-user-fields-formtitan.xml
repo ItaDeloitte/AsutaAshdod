@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Form_Titan_Domain__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Activity.Call_Type__c</members>
+        <members>Activity.related_account__c</members>
+        <members>Form_Titan_Domain__c.Domain__c</members>
+        <members>MessagingEndUser.Phone_Number__c</members>
+        <members>User.Ashdod_employee__c</members>
+        <members>User.Full_Name_Helper__c</members>
+        <members>User.Site_ivf__c</members>
+        <members>User.TimeZoneOffset__c</members>
+        <members>Activity.CallStartTime__c</members>
+        <members>User.SignatureMedicalInfo__c</members>
+         <members>Activity.Is_IVF__c</members>
+         <members>Activity.Call_status__c</members>
+        <name>CustomField</name>
+    </types>
+   <types>
+        <members>Task.TASKS</members>
+        <name>RecordType</name>
+    </types>
+
+    <version>64.0</version>
+</Package>
+

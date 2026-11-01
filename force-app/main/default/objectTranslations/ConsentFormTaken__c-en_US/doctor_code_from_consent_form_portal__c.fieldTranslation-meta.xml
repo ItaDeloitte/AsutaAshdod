@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Doctor code from consent form portal --></label>
+    <name>doctor_code_from_consent_form_portal__c</name>
+</CustomFieldTranslation>

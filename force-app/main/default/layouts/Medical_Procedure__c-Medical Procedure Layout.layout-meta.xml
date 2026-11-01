@@ -626,13 +626,6 @@
         <relatedList>Case.Medical_Procedure__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>Nursery__c.NAME</fields>
-        <fields>min_price__c</fields>
-        <fields>max_price__c</fields>
-        <fields>Nursery__c.remarks__c</fields>
-        <relatedList>Implants_to_med_prod__c.Medical_Procedure__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>NAME</fields>
         <relatedList>File__c.Medical_Procedure__c</relatedList>
     </relatedLists>

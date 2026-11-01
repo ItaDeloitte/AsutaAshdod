@@ -1143,14 +1143,6 @@
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
-        <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
-        <fields>Type_of_Assist__c</fields>
-        <fields>Status__c</fields>
-        <relatedList>Medical_Aid_Appointment__c.Appointment__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
         <fields>ACTIVITY.TASK</fields>

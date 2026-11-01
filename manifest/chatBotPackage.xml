@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Leads_Pop_up</members>
+        <members>Manager_Ashdod_ApexClass_PermissionSet</members>
+        <members>Apex_classes</members>
+        <members>sfdc_chatbot_service_permset</members>
+        <members>Survey_Force_Admin</members>
+        <members>Survey_Force_SuperAdmin</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>65.0</version>
+</Package>
